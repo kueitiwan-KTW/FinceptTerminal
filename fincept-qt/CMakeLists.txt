@@ -2010,6 +2010,55 @@ add_custom_command(TARGET FinceptTerminal POST_BUILD
     COMMENT "Copying requirements files to build output..."
 )
 
+# ── 繁體中文翻譯支援 (.ts → .qm) ────────────────────────────────────────────
+# 使用 lrelease 將 Qt Linguist .ts 檔案編譯為二進位 .qm 檔案。
+# 翻譯檔會在建置後複製到 exe 旁的 translations/ 目錄。
+set(FINCEPT_TS_FILE "${CMAKE_CURRENT_SOURCE_DIR}/translations/fincept_zh_TW.ts")
+set(FINCEPT_QM_FILE "${CMAKE_CURRENT_BINARY_DIR}/translations/fincept_zh_TW.qm")
+
+if(EXISTS "${FINCEPT_TS_FILE}")
+    find_program(LRELEASE_EXECUTABLE lrelease
+        HINTS "${Qt6_DIR}/../../../bin"
+              "${Qt6_DIR}/../../bin"
+              "$ENV{QTDIR}/bin"
+    )
+    if(LRELEASE_EXECUTABLE)
+        add_custom_command(
+            OUTPUT "${FINCEPT_QM_FILE}"
+            COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_CURRENT_BINARY_DIR}/translations"
+            COMMAND "${LRELEASE_EXECUTABLE}" "${FINCEPT_TS_FILE}" -qm "${FINCEPT_QM_FILE}"
+            DEPENDS "${FINCEPT_TS_FILE}"
+            COMMENT "[i18n] 編譯繁體中文翻譯檔 .ts → .qm"
+        )
+        add_custom_target(translations ALL DEPENDS "${FINCEPT_QM_FILE}")
+        add_dependencies(FinceptTerminal translations)
+
+        # 複製 .qm 到建置輸出目錄
+        add_custom_command(TARGET FinceptTerminal POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E make_directory
+                "$<TARGET_FILE_DIR:FinceptTerminal>/translations"
+            COMMAND ${CMAKE_COMMAND} -E copy_if_different
+                "${FINCEPT_QM_FILE}"
+                "$<TARGET_FILE_DIR:FinceptTerminal>/translations/fincept_zh_TW.qm"
+            COMMENT "[i18n] 複製翻譯檔到建置輸出目錄"
+        )
+
+        # Linux 安裝規則 — 翻譯檔放到 /opt/fincept/translations/
+        if(NOT WIN32 AND NOT APPLE)
+            install(FILES "${FINCEPT_QM_FILE}"
+                    DESTINATION "share/fincept-terminal/translations"
+                    COMPONENT core)
+        endif()
+
+        message(STATUS "  i18n             : zh_TW (lrelease found)")
+    else()
+        message(WARNING "[i18n] lrelease 未找到 — 翻譯檔不會被編譯。"
+                        "請安裝 qttools6-dev-tools 或設定 Qt6_DIR")
+    endif()
+else()
+    message(STATUS "  i18n             : 無翻譯檔（${FINCEPT_TS_FILE}）")
+endif()
+
 # Bundle yt-dlp for dashboard YouTube playback on all platforms.
 # Override path with: -DFINCEPT_YTDLP_EXE=/abs/path/to/yt-dlp[.exe]
 set(FINCEPT_YTDLP_EXE "" CACHE FILEPATH "Path to yt-dlp executable to bundle with FinceptTerminal")

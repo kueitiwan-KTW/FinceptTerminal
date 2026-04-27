@@ -33,11 +33,13 @@ RUN apt-get update && apt-get install -y \
     pkg-config wget \
     && rm -rf /var/lib/apt/lists/*
 
-# 用 aqtinstall 安裝 Qt 6.8.3
+# 用 aqtinstall 安裝 Qt 6.8.3（含 linguist tools 用於 lrelease 翻譯編譯）
 RUN pip3 install --break-system-packages aqtinstall && \
     aqt install-qt linux desktop 6.8.3 linux_gcc_64 \
       --outputdir /opt/qt \
       -m qtcharts qtwebsockets qtmultimedia qtspeech qt5compat && \
+    aqt install-tool linux desktop tools_qtlinguist qt.tools.qtlinguist \
+      --outputdir /opt/qt 2>/dev/null || true && \
     echo "Qt 6.8.3 安裝完成"
 
 ENV Qt6_DIR=/opt/qt/6.8.3/gcc_64
@@ -74,6 +76,8 @@ RUN cd /build/fincept-qt && \
 RUN cd /build/fincept-qt/build && \
     mkdir -p /opt/fincept/bin /opt/fincept/lib /opt/fincept/translations && \
     cp FinceptTerminal /opt/fincept/bin/ 2>/dev/null || true && \
+    # 複製翻譯檔（從 build 輸出目錄 + 原始碼目錄都嘗試）
+    find /build/fincept-qt/build -name "*.qm" -exec cp {} /opt/fincept/translations/ \; 2>/dev/null || true && \
     cp /build/fincept-qt/translations/*.qm /opt/fincept/translations/ 2>/dev/null || true && \
     # 複製 Qt runtime libs
     cp -a ${Qt6_DIR}/lib/libQt6*.so* /opt/fincept/lib/ 2>/dev/null || true && \

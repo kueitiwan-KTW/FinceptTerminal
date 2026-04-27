@@ -113,25 +113,24 @@ int main(int argc, char* argv[]) {
 #endif
     app.setApplicationVersion(QStringLiteral(FINCEPT_VERSION_STRING));
 
-    // ── 載入繁體中文翻譯 ────────────────────────────────────────────────────
-    // 優先使用環境變數 FINCEPT_LANG，其次 QLocale 系統語系。
-    // Docker 容器可透過 -e FINCEPT_LANG=zh_TW 或 -e LANG=zh_TW.UTF-8 控制。
+    // ── 載入繁體中文翻譯（繁中版預設啟用）─────────────────────────────────────
+    // 此 fork 為繁中專用版本，預設強制載入 zh_TW 翻譯。
+    // 可透過 -e FINCEPT_LANG=en 環境變數切回英文。
     QTranslator translator;
     {
-        QString locale = qEnvironmentVariable("FINCEPT_LANG");
-        if (locale.isEmpty()) {
-            locale = QLocale::system().name(); // e.g. "zh_TW"
-        }
-        if (locale.startsWith("zh")) {
+        QString lang = qEnvironmentVariable("FINCEPT_LANG");
+        bool force_english = (lang.compare("en", Qt::CaseInsensitive) == 0);
+
+        if (!force_english) {
             bool loaded = translator.load("fincept_zh_TW", ":/translations")
-                       || translator.load("fincept_zh_TW", QCoreApplication::applicationDirPath() + "/translations")
+                       || translator.load("fincept_zh_TW", "/opt/fincept/translations")
                        || translator.load("fincept_zh_TW", "/usr/share/fincept/translations")
-                       || translator.load("fincept_zh_TW", "/opt/fincept/translations");
+                       || translator.load("fincept_zh_TW", QCoreApplication::applicationDirPath() + "/translations");
             if (loaded) {
                 QCoreApplication::installTranslator(&translator);
                 qInfo() << "[i18n] 已載入繁體中文翻譯";
             } else {
-                qWarning() << "[i18n] 找不到繁體中文翻譯檔 fincept_zh_TW.qm";
+                qWarning() << "[i18n] 找不到繁體中文翻譯檔 fincept_zh_TW.qm — 介面將顯示英文";
             }
         }
     }
