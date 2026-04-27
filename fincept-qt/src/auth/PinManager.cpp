@@ -8,6 +8,7 @@
 #include <QRandomGenerator>
 
 #include <climits>
+#include <QCoreApplication>
 
 namespace fincept::auth {
 
@@ -31,17 +32,17 @@ bool constant_time_equals(const QByteArray& a, const QByteArray& b) {
 // future QR/companion setup, tests, scripted flows — gets the same guardrails.
 QString weak_pin_reason(const QString& pin) {
     if (pin.length() != 6)
-        return QStringLiteral("PIN must be exactly 6 digits");
+        return QCoreApplication::translate("FinceptTerminal", "PIN must be exactly 6 digits");
     for (const QChar& c : pin) {
         if (!c.isDigit())
-            return QStringLiteral("PIN must contain only digits");
+            return QCoreApplication::translate("FinceptTerminal", "PIN must contain only digits");
     }
     bool all_same = true;
     for (int i = 1; i < pin.length(); ++i) {
         if (pin[i] != pin[0]) { all_same = false; break; }
     }
     if (all_same)
-        return QStringLiteral("PIN is too simple — use unique digits");
+        return QCoreApplication::translate("FinceptTerminal", "PIN is too simple — use unique digits");
 
     bool seq_up = true, seq_down = true;
     for (int i = 1; i < pin.length(); ++i) {
@@ -49,7 +50,7 @@ QString weak_pin_reason(const QString& pin) {
         if (pin[i].unicode() != pin[i - 1].unicode() - 1) seq_down = false;
     }
     if (seq_up || seq_down)
-        return QStringLiteral("PIN is too simple — avoid sequential digits");
+        return QCoreApplication::translate("FinceptTerminal", "PIN is too simple — avoid sequential digits");
 
     return QString();
 }

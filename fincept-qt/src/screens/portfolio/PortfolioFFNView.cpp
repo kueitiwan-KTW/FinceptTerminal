@@ -851,7 +851,7 @@ void PortfolioFFNView::run_ffn() {
         return;
 
     run_btn_->setEnabled(false);
-    status_label_->setText("Running FFN analysis...");
+    status_label_->setText(tr("Running FFN analysis..."));
     status_label_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::AMBER()));
 
     QStringList symbols;
@@ -875,7 +875,7 @@ void PortfolioFFNView::run_ffn() {
                 self->run_btn_->setEnabled(true);
 
                 if (!r.success) {
-                    self->status_label_->setText("FFN failed — check Python/yfinance");
+                    self->status_label_->setText(tr("FFN failed — check Python/yfinance"));
                     self->status_label_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::NEGATIVE()));
                     LOG_ERROR("FFNView", "FFN script failed: " + r.error.left(300));
                     return;

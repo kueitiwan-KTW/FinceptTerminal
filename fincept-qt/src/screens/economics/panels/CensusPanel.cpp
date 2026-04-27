@@ -86,7 +86,7 @@ void CensusPanel::build_controls(QHBoxLayout* thl) {
         dataset_combo_->addItem(d.label, d.command);
     dataset_combo_->setFixedHeight(26);
     dataset_combo_->setMinimumWidth(220);
-    dataset_combo_->setToolTip("ACS 5-year estimates, state level");
+    dataset_combo_->setToolTip(tr("ACS 5-year estimates, state level"));
 
     thl->addWidget(lbl);
     thl->addWidget(dataset_combo_);

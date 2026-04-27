@@ -200,7 +200,7 @@ QWidget* ToolsViewPanel::build_left_panel() {
 
     target_combo_ = new QComboBox;
     target_combo_->setStyleSheet(combo_style());
-    target_combo_->setPlaceholderText("Select target...");
+    target_combo_->setPlaceholderText(tr("Select target..."));
     vl->addWidget(target_combo_);
 
     target_status_ = new QLabel("No target selected");
@@ -243,7 +243,7 @@ QWidget* ToolsViewPanel::build_left_panel() {
     assign_btn_->setCursor(Qt::PointingHandCursor);
     assign_btn_->setStyleSheet(btn_primary_style());
     assign_btn_->setEnabled(false);
-    assign_btn_->setToolTip("Save selected tools to the chosen agent or team");
+    assign_btn_->setToolTip(tr("Save selected tools to the chosen agent or team"));
     bottom_row->addWidget(assign_btn_);
 
     vl->addLayout(bottom_row);
@@ -279,7 +279,7 @@ QWidget* ToolsViewPanel::build_center_panel() {
 
     // ── Search ────────────────────────────────────────────────────────────────
     search_edit_ = new QLineEdit;
-    search_edit_->setPlaceholderText("Search tools...");
+    search_edit_->setPlaceholderText(tr("Search tools..."));
     search_edit_->setStyleSheet(input_style());
     search_edit_->setClearButtonEnabled(true);
     vl->addWidget(search_edit_);
@@ -345,7 +345,7 @@ QWidget* ToolsViewPanel::build_right_panel() {
     detail_desc_->setReadOnly(true);
     detail_desc_->setStyleSheet(textedit_style());
     detail_desc_->setFixedHeight(90);
-    detail_desc_->setPlaceholderText("Click a tool to see details...");
+    detail_desc_->setPlaceholderText(tr("Click a tool to see details..."));
     vl->addWidget(detail_desc_);
 
     vl->addWidget(h_line());
@@ -366,7 +366,7 @@ QWidget* ToolsViewPanel::build_right_panel() {
     detail_used_by_ = new QTextEdit;
     detail_used_by_->setReadOnly(true);
     detail_used_by_->setStyleSheet(textedit_style());
-    detail_used_by_->setPlaceholderText("No agents or teams use this tool yet.");
+    detail_used_by_->setPlaceholderText(tr("No agents or teams use this tool yet."));
     vl->addWidget(detail_used_by_, 1);
 
     return panel;
@@ -438,7 +438,7 @@ void ToolsViewPanel::setup_connections() {
     // Target combo — update status label
     connect(target_combo_, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int idx) {
         if (idx < 0) {
-            target_status_->setText("No target selected");
+            target_status_->setText(tr("No target selected"));
             assign_btn_->setEnabled(false);
             return;
         }
@@ -789,8 +789,8 @@ QStringList ToolsViewPanel::tools_of_target() const {
 
 void ToolsViewPanel::copy_tool_name(const QString& name) {
     QApplication::clipboard()->setText(name);
-    copy_btn_->setText("COPIED!");
-    QTimer::singleShot(1500, this, [this]() { copy_btn_->setText("COPY NAME"); });
+    copy_btn_->setText(tr("COPIED!"));
+    QTimer::singleShot(1500, this, [this]() { copy_btn_->setText(tr("COPY NAME")); });
 }
 
 } // namespace fincept::screens

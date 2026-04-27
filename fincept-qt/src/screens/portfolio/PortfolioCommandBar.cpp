@@ -102,14 +102,14 @@ void PortfolioCommandBar::build_row1(QHBoxLayout* layout) {
     refresh_btn_ = new QPushButton("\u21BB");
     refresh_btn_->setFixedSize(24, 22);
     refresh_btn_->setCursor(Qt::PointingHandCursor);
-    refresh_btn_->setToolTip("Refresh portfolio data");
+    refresh_btn_->setToolTip(tr("Refresh portfolio data"));
     refresh_btn_->setObjectName("pfIconBtn");
     connect(refresh_btn_, &QPushButton::clicked, this, &PortfolioCommandBar::refresh_requested);
     layout->addWidget(refresh_btn_);
 
     interval_cb_ = new QComboBox;
     interval_cb_->setFixedHeight(22);
-    interval_cb_->setToolTip("Auto-refresh interval");
+    interval_cb_->setToolTip(tr("Auto-refresh interval"));
     interval_cb_->addItem("1m", 60000);
     interval_cb_->addItem("5m", 300000);
     interval_cb_->addItem("10m", 600000);
@@ -148,7 +148,7 @@ void PortfolioCommandBar::build_portfolio_selector() {
     dd_layout->setSpacing(2);
 
     search_edit_ = new QLineEdit;
-    search_edit_->setPlaceholderText("Search portfolios...");
+    search_edit_->setPlaceholderText(tr("Search portfolios..."));
     search_edit_->setFixedHeight(26);
     search_edit_->setStyleSheet(QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                                         "  padding:0 8px; font-size:11px; }"
@@ -240,10 +240,10 @@ void PortfolioCommandBar::build_stats_cluster(QHBoxLayout* layout) {
 
 void PortfolioCommandBar::build_overflow_menu() {
     overflow_btn_ = new QToolButton(this);
-    overflow_btn_->setText("\u22EF"); // horizontal ellipsis
+    overflow_btn_->setText(tr("\u22EF")); // horizontal ellipsis
     overflow_btn_->setFixedSize(24, 22);
     overflow_btn_->setCursor(Qt::PointingHandCursor);
-    overflow_btn_->setToolTip("More actions");
+    overflow_btn_->setToolTip(tr("More actions"));
     overflow_btn_->setPopupMode(QToolButton::InstantPopup);
     overflow_btn_->setObjectName("pfOverflowBtn");
 
@@ -512,7 +512,7 @@ void PortfolioCommandBar::set_has_portfolios(bool has) {
     tabs_container_->setVisible(false);
     tools_cluster_->setVisible(false);
     if (!has) {
-        selector_btn_->setText("NO PORTFOLIOS \u2014 CREATE ONE  \u25BE");
+        selector_btn_->setText(tr("NO PORTFOLIOS \u2014 CREATE ONE  \u25BE"));
     }
 }
 

@@ -27,7 +27,7 @@ static const char* OPEN_DLG_SS =
     "QPushButton#openBtn:disabled{background:#4a3000;color:#666;}";
 
 WorkspaceOpenDialog::WorkspaceOpenDialog(QWidget* parent) : QDialog(parent) {
-    setWindowTitle("Open Workspace");
+    setWindowTitle(tr("Open Workspace"));
     setModal(true);
     setFixedSize(760, 480);
     setStyleSheet(OPEN_DLG_SS);

@@ -435,7 +435,7 @@ void EquityBottomPanel::set_orders(const QVector<trading::BrokerOrderInfo>& orde
             connect(btn, &QPushButton::clicked, this, [this, oid, qty, prc]() {
                 // Show inline edit dialog
                 auto* dlg = new QDialog(this);
-                dlg->setWindowTitle("Modify Order");
+                dlg->setWindowTitle(tr("Modify Order"));
                 dlg->setFixedWidth(280);
                 dlg->setStyleSheet(QString("QDialog { background: %1; color: %2; }"
                                            "QLabel { color: %3; font-size: 11px; }"
@@ -704,11 +704,11 @@ void EquityBottomPanel::set_clock(const trading::MarketClock& clock) {
         return;
 
     if (clock.is_open) {
-        clock_status_label_->setText("● MARKET OPEN");
+        clock_status_label_->setText(tr("● MARKET OPEN"));
         clock_status_label_->setStyleSheet(
             QString("color: %1; font-size: 11px; font-weight: 700;").arg(fincept::ui::colors::POSITIVE()));
     } else {
-        clock_status_label_->setText("● MARKET CLOSED");
+        clock_status_label_->setText(tr("● MARKET CLOSED"));
         clock_status_label_->setStyleSheet(
             QString("color: %1; font-size: 11px; font-weight: 700;").arg(fincept::ui::colors::NEGATIVE()));
     }

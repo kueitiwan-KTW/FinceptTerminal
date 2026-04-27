@@ -52,21 +52,21 @@ QString UpdateService::current_platform_key() {
 
 #if defined(Q_OS_WIN)
     if (is_arm64)
-        return QStringLiteral("windows-arm64");
+        return tr("windows-arm64");
     if (is_x64)
-        return QStringLiteral("windows-x64");
+        return tr("windows-x64");
     return {};
 #elif defined(Q_OS_MACOS)
     if (is_arm64)
-        return QStringLiteral("macos-arm64");
+        return tr("macos-arm64");
     if (is_x64)
-        return QStringLiteral("macos-x64");
+        return tr("macos-x64");
     return {};
 #elif defined(Q_OS_LINUX)
     if (is_arm64)
-        return QStringLiteral("linux-arm64");
+        return tr("linux-arm64");
     if (is_x64)
-        return QStringLiteral("linux-x64");
+        return tr("linux-x64");
     return {};
 #else
     return {};
@@ -76,7 +76,7 @@ QString UpdateService::current_platform_key() {
 // ── Version parsing ─────────────────────────────────────────────────────────
 
 bool UpdateService::parse_version(const QString& s, int& major, int& minor, int& patch) {
-    static const QRegularExpression re(QStringLiteral("^(\\d+)\\.(\\d+)\\.(\\d+)$"));
+    static const QRegularExpression re(tr("^(\\d+)\\.(\\d+)\\.(\\d+)$"));
     const auto m = re.match(s);
     if (!m.hasMatch())
         return false;
@@ -130,7 +130,7 @@ void UpdateService::check_for_updates(bool silent) {
         LOG_INFO("UpdateService",
                  QString("Skipping update check — running version '%1' is not a release build").arg(local_version));
         if (!silent_)
-            show_error(QStringLiteral("This is a development build (%1). Auto-update is disabled.").arg(local_version));
+            show_error(tr("This is a development build (%1). Auto-update is disabled.").arg(local_version));
         emit check_finished(false);
         return;
     }
@@ -140,7 +140,7 @@ void UpdateService::check_for_updates(bool silent) {
         LOG_WARN("UpdateService", QString("Unsupported platform/arch: %1 / %2")
                                       .arg(QSysInfo::kernelType(), QSysInfo::currentCpuArchitecture()));
         if (!silent_)
-            show_error(QStringLiteral("Auto-update is not supported on this platform."));
+            show_error(tr("Auto-update is not supported on this platform."));
         emit check_finished(false);
         return;
     }
@@ -170,7 +170,7 @@ void UpdateService::on_manifest_reply_finished() {
         LOG_WARN("UpdateService",
                  QString("Manifest fetch failed: %1 (%2)").arg(reply->errorString()).arg(reply->error()));
         if (!silent_)
-            show_error(QStringLiteral("Could not reach the update server.\n\n%1").arg(reply->errorString()));
+            show_error(tr("Could not reach the update server.\n\n%1").arg(reply->errorString()));
         finish_check(false);
         return;
     }
@@ -181,7 +181,7 @@ void UpdateService::on_manifest_reply_finished() {
     if (parse_err.error != QJsonParseError::NoError || !doc.isObject()) {
         LOG_WARN("UpdateService", QString("Manifest JSON parse failed: %1").arg(parse_err.errorString()));
         if (!silent_)
-            show_error(QStringLiteral("The update manifest is malformed."));
+            show_error(tr("The update manifest is malformed."));
         finish_check(false);
         return;
     }
@@ -197,10 +197,10 @@ void UpdateService::on_manifest_reply_finished() {
     }
 
     const QJsonObject entry = updates.value(key).toObject();
-    const QString remote_version = entry.value(QStringLiteral("latest-version")).toString();
-    const QString download_url = entry.value(QStringLiteral("download-url")).toString();
-    const QString sha256 = entry.value(QStringLiteral("sha256")).toString().trimmed().toLower();
-    const QString open_url = entry.value(QStringLiteral("open-url")).toString();
+    const QString remote_version = entry.value(tr("latest-version")).toString();
+    const QString download_url = entry.value(tr("download-url")).toString();
+    const QString sha256 = entry.value(tr("sha256")).toString().trimmed().toLower();
+    const QString open_url = entry.value(tr("open-url")).toString();
     const QString changelog = entry.value(QStringLiteral("changelog")).toString();
 
     latest_version_ = remote_version;
@@ -219,8 +219,8 @@ void UpdateService::on_manifest_reply_finished() {
                  QString("Already up to date — local=%1, remote=%2").arg(local_version, remote_version));
         if (!silent_) {
             QMessageBox::information(
-                dialog_parent(), QStringLiteral("Fincept Terminal"),
-                QStringLiteral("You're running the latest version (%1).").arg(local_version));
+                dialog_parent(), tr("Fincept Terminal"),
+                tr("You're running the latest version (%1).").arg(local_version));
         }
         finish_check(false);
         return;
@@ -238,19 +238,19 @@ void UpdateService::on_manifest_reply_finished() {
     if (!changelog.isEmpty()) {
         QString snippet = changelog;
         if (snippet.size() > 500)
-            snippet = snippet.left(500) + QStringLiteral("\n…");
-        prompt += QStringLiteral("What's new:\n%1\n\n").arg(snippet);
+            snippet = snippet.left(500) + tr("\n…");
+        prompt += tr("What's new:\n%1\n\n").arg(snippet);
     }
-    prompt += QStringLiteral("Download the installer now?");
+    prompt += tr("Download the installer now?");
 
     QMessageBox box(dialog_parent());
-    box.setWindowTitle(QStringLiteral("Update Available"));
+    box.setWindowTitle(tr("Update Available"));
     box.setIcon(QMessageBox::Information);
     box.setText(prompt);
-    QPushButton* install_btn = box.addButton(QStringLiteral("Download && Install"), QMessageBox::AcceptRole);
+    QPushButton* install_btn = box.addButton(tr("Download && Install"), QMessageBox::AcceptRole);
     QPushButton* release_btn = open_url.isEmpty()
                                    ? nullptr
-                                   : box.addButton(QStringLiteral("View Release Notes"), QMessageBox::HelpRole);
+                                   : box.addButton(tr("View Release Notes"), QMessageBox::HelpRole);
     box.addButton(QMessageBox::Cancel);
     box.setDefaultButton(install_btn);
     box.exec();
@@ -287,7 +287,7 @@ void UpdateService::start_download(const QString& url, const QString& expected_s
 
     LOG_INFO("UpdateService",
              QString("Downloading installer: %1 → %2 (expected sha256=%3)")
-                 .arg(url, pending_local_path_, expected_sha256.isEmpty() ? QStringLiteral("<none>") : expected_sha256));
+                 .arg(url, pending_local_path_, expected_sha256.isEmpty() ? tr("<none>") : expected_sha256));
 
     QNetworkRequest req{QUrl(url)};
     req.setAttribute(QNetworkRequest::RedirectPolicyAttribute, QNetworkRequest::NoLessSafeRedirectPolicy);
@@ -317,7 +317,7 @@ void UpdateService::on_download_reply_finished() {
 
     if (reply->error() != QNetworkReply::NoError) {
         LOG_ERROR("UpdateService", QString("Installer download failed: %1").arg(reply->errorString()));
-        show_error(QStringLiteral("The installer could not be downloaded.\n\n%1").arg(reply->errorString()));
+        show_error(tr("The installer could not be downloaded.\n\n%1").arg(reply->errorString()));
         QFile::remove(pending_local_path_);
         finish_check(true);
         return;
@@ -327,7 +327,7 @@ void UpdateService::on_download_reply_finished() {
     QFile f(pending_local_path_);
     if (!f.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
         LOG_ERROR("UpdateService", QString("Cannot open %1 for writing: %2").arg(pending_local_path_, f.errorString()));
-        show_error(QStringLiteral("Cannot save the installer to disk:\n%1").arg(f.errorString()));
+        show_error(tr("Cannot save the installer to disk:\n%1").arg(f.errorString()));
         finish_check(true);
         return;
     }
@@ -341,7 +341,7 @@ void UpdateService::on_download_reply_finished() {
         QFile vf(pending_local_path_);
         if (!vf.open(QIODevice::ReadOnly)) {
             LOG_ERROR("UpdateService", QString("Cannot reopen %1 for hashing").arg(pending_local_path_));
-            show_error(QStringLiteral("Could not verify the downloaded installer."));
+            show_error(tr("Could not verify the downloaded installer."));
             QFile::remove(pending_local_path_);
             finish_check(true);
             return;
@@ -350,7 +350,7 @@ void UpdateService::on_download_reply_finished() {
         if (!hasher.addData(&vf)) {
             vf.close();
             LOG_ERROR("UpdateService", "Sha256 hashing failed");
-            show_error(QStringLiteral("Could not verify the downloaded installer."));
+            show_error(tr("Could not verify the downloaded installer."));
             QFile::remove(pending_local_path_);
             finish_check(true);
             return;
@@ -406,7 +406,7 @@ void UpdateService::launch_installer(const QString& path) {
         LOG_WARN("UpdateService", "startDetached failed — falling back to reveal-in-file-manager");
         reveal_in_file_manager(path);
         QMessageBox::information(
-            dialog_parent(), QStringLiteral("Update Downloaded"),
+            dialog_parent(), tr("Update Downloaded"),
             QStringLiteral("The installer has been downloaded to:\n%1\n\n"
                            "Please run it manually to complete the update.")
                 .arg(QDir::toNativeSeparators(path)));
@@ -426,7 +426,7 @@ void UpdateService::finish_check(bool update_found) {
 }
 
 void UpdateService::show_error(const QString& text) {
-    QMessageBox::warning(dialog_parent(), QStringLiteral("Fincept Terminal"), text);
+    QMessageBox::warning(dialog_parent(), tr("Fincept Terminal"), text);
 }
 
 } // namespace fincept::services

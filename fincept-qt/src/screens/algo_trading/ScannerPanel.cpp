@@ -494,7 +494,7 @@ void ScannerPanel::build_ui() {
 void ScannerPanel::on_scan() {
     QJsonArray conditions = gather_from_layout(conditions_layout_);
     if (conditions.isEmpty()) {
-        status_label_->setText("Add at least one scan condition.");
+        status_label_->setText(tr("Add at least one scan condition."));
         status_label_->setStyleSheet(QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                                          .arg(fincept::ui::colors::NEGATIVE())
                                          .arg(fincept::ui::fonts::SMALL)
@@ -505,7 +505,7 @@ void ScannerPanel::on_scan() {
     // Parse symbols
     QString raw = symbols_edit_->toPlainText().trimmed();
     if (raw.isEmpty()) {
-        status_label_->setText("Enter symbols to scan.");
+        status_label_->setText(tr("Enter symbols to scan."));
         status_label_->setStyleSheet(QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                                          .arg(fincept::ui::colors::NEGATIVE())
                                          .arg(fincept::ui::fonts::SMALL)

@@ -514,7 +514,7 @@ void EquityTradingScreen::update_account_menu() {
     const auto accounts = AccountManager::instance().active_accounts();
 
     if (accounts.isEmpty()) {
-        account_btn_->setText("NO ACCOUNT");
+        account_btn_->setText(tr("NO ACCOUNT"));
         return;
     }
 
@@ -543,7 +543,7 @@ void EquityTradingScreen::update_connection_status() {
             ++connected;
     }
     if (accounts.isEmpty()) {
-        conn_label_->setText("○ NO ACCOUNTS");
+        conn_label_->setText(tr("○ NO ACCOUNTS"));
         conn_label_->setStyleSheet(QString("color: %1; font-size: 10px; font-weight: 700;").arg(ui::colors::TEXT_TERTIARY()));
     } else if (connected == accounts.size()) {
         conn_label_->setText(QString("● %1/%2 CONNECTED").arg(connected).arg(accounts.size()));
@@ -1101,7 +1101,7 @@ void EquityTradingScreen::on_import_holdings_requested(const QVector<trading::Br
                                        : QString("%1 - Holdings").arg(account.display_name);
 
     QDialog dlg(this);
-    dlg.setWindowTitle("Import holdings into portfolio");
+    dlg.setWindowTitle(tr("Import holdings into portfolio"));
     dlg.setMinimumSize(780, 560);
 
     auto* v = new QVBoxLayout(&dlg);

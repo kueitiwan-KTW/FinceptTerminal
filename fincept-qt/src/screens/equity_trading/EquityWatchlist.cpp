@@ -41,7 +41,7 @@ EquityWatchlist::EquityWatchlist(QWidget* parent) : QWidget(parent) {
     // Search / filter
     filter_edit_ = new QLineEdit;
     filter_edit_->setObjectName("eqWatchlistSearch");
-    filter_edit_->setPlaceholderText("Filter...");
+    filter_edit_->setPlaceholderText(tr("Filter..."));
     filter_edit_->setFixedHeight(26);
     connect(filter_edit_, &QLineEdit::textChanged, this, &EquityWatchlist::on_filter_changed);
     layout->addWidget(filter_edit_);
@@ -55,7 +55,7 @@ EquityWatchlist::EquityWatchlist(QWidget* parent) : QWidget(parent) {
 
     add_edit_ = new QLineEdit;
     add_edit_->setObjectName("eqWatchlistAddEdit");
-    add_edit_->setPlaceholderText("Add symbol...");
+    add_edit_->setPlaceholderText(tr("Add symbol..."));
     add_edit_->setFixedHeight(22);
     connect(add_edit_, &QLineEdit::textChanged, this, &EquityWatchlist::on_add_text_changed);
     connect(add_edit_, &QLineEdit::returnPressed, this, &EquityWatchlist::on_add_symbol_entered);

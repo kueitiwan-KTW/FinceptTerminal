@@ -112,12 +112,12 @@ void NewsCategoryWidget::on_articles(const QVariant& v) {
 
 QDialog* NewsCategoryWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — News Category");
+    dlg->setWindowTitle(tr("Configure — News Category"));
     auto* form = new QFormLayout(dlg);
 
     auto* edit = new QLineEdit(dlg);
     edit->setText(category_);
-    edit->setPlaceholderText("markets | geopolitics | crypto | …");
+    edit->setPlaceholderText(tr("markets | geopolitics | crypto | …"));
     form->addRow("Category", edit);
 
     auto* spin = new QSpinBox(dlg);

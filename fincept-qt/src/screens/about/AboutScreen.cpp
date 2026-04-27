@@ -133,7 +133,7 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
         auto* right = new QVBoxLayout;
         right->setSpacing(4);
         right->setAlignment(Qt::AlignRight);
-        auto* ver = new QLabel(QStringLiteral("v%1").arg(QApplication::applicationVersion()));
+        auto* ver = new QLabel(tr("v%1").arg(QApplication::applicationVersion()));
         ver->setStyleSheet(QString("color: %1; font-size: 18px; font-weight: bold; background: transparent; "
                                    "font-family: 'Consolas','Courier New',monospace;")
                                .arg(ui::colors::AMBER()));
@@ -141,12 +141,12 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
         right->addWidget(ver);
 
         // Check-for-updates button — user-initiated, always shows a result dialog.
-        auto* check_btn = new QPushButton(QStringLiteral("Check for Updates"));
+        auto* check_btn = new QPushButton(tr("Check for Updates"));
         check_btn->setStyleSheet(LINK_BTN());
         check_btn->setCursor(Qt::PointingHandCursor);
         connect(check_btn, &QPushButton::clicked, this, [this, check_btn]() {
             check_btn->setEnabled(false);
-            check_btn->setText(QStringLiteral("Checking…"));
+            check_btn->setText(tr("Checking…"));
             auto& svc = services::UpdateService::instance();
             svc.set_dialog_parent(window());
             // Re-enable the button when the check completes. Using a unique
@@ -154,7 +154,7 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
             connect(&svc, &services::UpdateService::check_finished, check_btn,
                     [check_btn](bool /*found*/) {
                         check_btn->setEnabled(true);
-                        check_btn->setText(QStringLiteral("Check for Updates"));
+                        check_btn->setText(tr("Check for Updates"));
                     },
                     Qt::SingleShotConnection);
             svc.check_for_updates(/*silent=*/false);

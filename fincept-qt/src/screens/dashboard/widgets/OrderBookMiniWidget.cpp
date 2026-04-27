@@ -71,7 +71,7 @@ void OrderBookMiniWidget::apply_config(const QJsonObject& cfg) {
         broker_id_ = acct.broker_id;
         header_hint_->setText(acct.display_name.isEmpty() ? account_id_ : acct.display_name);
     } else {
-        header_hint_->setText("No active account — click gear to configure");
+        header_hint_->setText(tr("No active account — click gear to configure"));
     }
 
     if (isVisible() && !broker_id_.isEmpty() && !account_id_.isEmpty()) {
@@ -158,7 +158,7 @@ void OrderBookMiniWidget::populate(const QVector<trading::BrokerOrderInfo>& rows
         table_->setItem(i, 4, status);
 
         auto* cancel_btn = new QPushButton("×", table_);
-        cancel_btn->setToolTip("Cancel order " + o.order_id);
+        cancel_btn->setToolTip(tr("Cancel order ") + o.order_id);
         cancel_btn->setCursor(Qt::PointingHandCursor);
         cancel_btn->setFixedHeight(18);
         cancel_btn->setStyleSheet(QString("QPushButton{color:%1;background:transparent;border:1px solid %2;"
@@ -195,7 +195,7 @@ void OrderBookMiniWidget::cancel_order(const QString& order_id) {
 
 QDialog* OrderBookMiniWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Working Orders");
+    dlg->setWindowTitle(tr("Configure — Working Orders"));
     auto* form = new QFormLayout(dlg);
 
     auto* combo = new QComboBox(dlg);

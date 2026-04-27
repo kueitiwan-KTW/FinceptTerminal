@@ -1,4 +1,5 @@
 #include "core/crash/CrashHandler.h"
+#include <QCoreApplication>
 
 #ifdef _WIN32
 #    include "core/config/AppPaths.h"

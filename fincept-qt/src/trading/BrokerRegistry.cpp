@@ -22,6 +22,7 @@
 #include "trading/brokers/tradier/TradierBroker.h"
 #include "trading/brokers/upstox/UpstoxBroker.h"
 #include "trading/brokers/zerodha/ZerodhaBroker.h"
+#include <QCoreApplication>
 
 namespace fincept::trading {
 

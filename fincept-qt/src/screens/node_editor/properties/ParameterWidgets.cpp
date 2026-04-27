@@ -12,6 +12,7 @@
 #include <QHBoxLayout>
 #include <QJsonDocument>
 #include <QPushButton>
+#include <QCoreApplication>
 
 namespace fincept::workflow {
 
@@ -198,7 +199,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         // Import button — opens file dialog, imports into FileManagerService, auto-selects
         auto* import_btn = new QPushButton("+ Import");
         import_btn->setFixedHeight(24);
-        import_btn->setToolTip("Import a file from your PC into the File Manager");
+        import_btn->setToolTip(QCoreApplication::translate("FinceptTerminal", "Import a file from your PC into the File Manager"));
         import_btn->setStyleSheet(QString("QPushButton { background: %1; color: %2;"
                                           " border: 1px solid %3; font-family: Consolas;"
                                           " font-size: 10px; padding: 0 6px; }"
@@ -304,7 +305,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
 
         auto* refresh_btn = new QPushButton("↻");
         refresh_btn->setFixedSize(24, 24);
-        refresh_btn->setToolTip("Refresh agent list");
+        refresh_btn->setToolTip(QCoreApplication::translate("FinceptTerminal", "Refresh agent list"));
         refresh_btn->setStyleSheet(QString("QPushButton { background:%1; color:#7c3aed;"
                                            " border:1px solid %1; font-size:13px; }"
                                            "QPushButton:hover { background:%2; }")
@@ -409,7 +410,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
 
         auto* refresh_btn = new QPushButton("↻");
         refresh_btn->setFixedSize(24, 24);
-        refresh_btn->setToolTip("Refresh tool list");
+        refresh_btn->setToolTip(QCoreApplication::translate("FinceptTerminal", "Refresh tool list"));
         refresh_btn->setStyleSheet(QString("QPushButton { background:%1; color:#6366f1;"
                                            " border:1px solid %1; font-size:13px; }"
                                            "QPushButton:hover { background:%2; }")

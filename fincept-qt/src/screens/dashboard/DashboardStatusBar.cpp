@@ -190,7 +190,7 @@ void DashboardStatusBar::ping_api() {
 
 void DashboardStatusBar::set_latency(int ms) {
     if (ms < 0) {
-        latency_label_->setText("LAT: ERR");
+        latency_label_->setText(tr("LAT: ERR"));
         latency_label_->setStyleSheet(
             QString("color:%1;font-weight:bold;background:transparent;").arg(ui::colors::NEGATIVE()));
         return;

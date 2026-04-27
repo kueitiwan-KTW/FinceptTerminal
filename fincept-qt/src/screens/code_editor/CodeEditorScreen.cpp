@@ -502,7 +502,7 @@ void CellWidget::set_index(int index) {
 
 void CellWidget::update_gutter() {
     if (running_) {
-        gutter_number_->setText("[*]");
+        gutter_number_->setText(tr("[*]"));
         gutter_number_->setStyleSheet(QString("color:%1; font-family:%2; font-size:%3px; font-weight:700;")
                                           .arg(colors::WARNING(), fonts::DATA_FAMILY)
                                           .arg(fonts::TINY));
@@ -1193,7 +1193,7 @@ void CodeEditorScreen::on_run_cell(const QString& cell_id) {
     ++execution_counter_;
     int exec_num = execution_counter_;
 
-    kernel_label_->setText("KERNEL: BUSY");
+    kernel_label_->setText(tr("KERNEL: BUSY"));
     kernel_label_->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; font-weight:600;"
                                          " letter-spacing:0.5px; padding:0 8px;")
                                      .arg(colors::WARNING(), fonts::DATA_FAMILY));
@@ -1248,7 +1248,7 @@ void CodeEditorScreen::on_run_cell(const QString& cell_id) {
             widget->set_running(false);
         }
 
-        self->kernel_label_->setText("KERNEL: IDLE");
+        self->kernel_label_->setText(tr("KERNEL: IDLE"));
         self->kernel_label_->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; font-weight:600;"
                                                    " letter-spacing:0.5px; padding:0 8px;")
                                                .arg(colors::POSITIVE(), fonts::DATA_FAMILY));

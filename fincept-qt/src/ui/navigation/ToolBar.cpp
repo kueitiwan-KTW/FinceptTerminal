@@ -106,7 +106,7 @@ ToolBar::ToolBar(QWidget* parent) : QWidget(parent) {
     sep();
     plan_btn_ = new QPushButton("---");
     plan_btn_->setCursor(Qt::PointingHandCursor);
-    plan_btn_->setToolTip("View Plans & Pricing");
+    plan_btn_->setToolTip(tr("View Plans & Pricing"));
     plan_btn_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     connect(plan_btn_, &QPushButton::clicked, this, &ToolBar::plan_clicked);
     hl->addWidget(plan_btn_);
@@ -115,7 +115,7 @@ ToolBar::ToolBar(QWidget* parent) : QWidget(parent) {
     chat_mode_btn_ = new QPushButton(QString::fromUtf8("⬡ CHAT"));
     chat_mode_btn_->setFixedHeight(20);
     chat_mode_btn_->setCursor(Qt::PointingHandCursor);
-    chat_mode_btn_->setToolTip("Switch to Chat Mode (F9)");
+    chat_mode_btn_->setToolTip(tr("Switch to Chat Mode (F9)"));
     chat_mode_btn_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     connect(chat_mode_btn_, &QPushButton::clicked, this, &ToolBar::chat_mode_toggled);
     hl->addWidget(chat_mode_btn_);

@@ -25,6 +25,7 @@
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QProcessEnvironment>
+#include <QCoreApplication>
 
 namespace fincept::services {
 
@@ -52,13 +53,13 @@ class PythonSttProvider : public SttProvider {
             python_exe = python::PythonRunner::instance().python_path();
 
         if (python_exe.isEmpty()) {
-            emit fatal_error(QStringLiteral("Python not available — cannot start voice input"));
+            emit fatal_error(QCoreApplication::translate("FinceptTerminal", "Python not available — cannot start voice input"));
             return;
         }
 
         const QString script = script_path();
         if (!QFileInfo::exists(script)) {
-            emit fatal_error(QStringLiteral("Voice script not found: ") + script);
+            emit fatal_error(QCoreApplication::translate("FinceptTerminal", "Voice script not found: ") + script);
             return;
         }
 
@@ -97,7 +98,7 @@ class PythonSttProvider : public SttProvider {
         connect(process_, &QProcess::finished, this, &PythonSttProvider::on_process_finished);
         connect(process_, &QProcess::errorOccurred, this, [this](QProcess::ProcessError err) {
             if (err == QProcess::FailedToStart) {
-                emit fatal_error(QStringLiteral("Failed to start voice recognition process"));
+                emit fatal_error(QCoreApplication::translate("FinceptTerminal", "Failed to start voice recognition process"));
                 stop();
             }
         });
@@ -210,7 +211,7 @@ class PythonSttProvider : public SttProvider {
         if (was_active) {
             emit active_changed(false);
             if (status == QProcess::CrashExit || exit_code != 0)
-                emit error(QStringLiteral("Voice recognition stopped unexpectedly"));
+                emit error(QCoreApplication::translate("FinceptTerminal", "Voice recognition stopped unexpectedly"));
         }
     }
 

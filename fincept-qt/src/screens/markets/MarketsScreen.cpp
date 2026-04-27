@@ -62,7 +62,7 @@ MarketsScreen::MarketsScreen(QWidget* parent) : QWidget(parent) {
         refresh_in_progress_ = false;
         pending_refreshes_   = 0;
         if (status_label_) {
-            status_label_->setText("● TIMEOUT");
+            status_label_->setText(tr("● TIMEOUT"));
             status_label_->setStyleSheet(lbl_ss(ui::colors::NEGATIVE(), true));
         }
     });
@@ -244,8 +244,8 @@ void MarketsScreen::open_editor_for_new_panel(int col_index) {
 
 void MarketsScreen::on_panel_delete(const QString& panel_id) {
     QMessageBox mb(this);
-    mb.setWindowTitle("Remove Panel");
-    mb.setText("Remove this panel?");
+    mb.setWindowTitle(tr("Remove Panel"));
+    mb.setText(tr("Remove this panel?"));
     mb.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);
     mb.setDefaultButton(QMessageBox::Cancel);
     mb.setStyleSheet(QString("background:%1;color:%2;")
@@ -420,8 +420,8 @@ QWidget* MarketsScreen::build_header_bar() {
     auto* reset_btn = make_ctrl_btn("RESET");
     connect(reset_btn, &QPushButton::clicked, this, [this]() {
         QMessageBox mb(this);
-        mb.setWindowTitle("Reset Panels");
-        mb.setText("Reset all panels to defaults?");
+        mb.setWindowTitle(tr("Reset Panels"));
+        mb.setText(tr("Reset all panels to defaults?"));
         mb.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);
         mb.setStyleSheet(QString("background:%1;color:%2;")
                              .arg(ui::colors::BG_BASE(), ui::colors::TEXT_PRIMARY()));
@@ -542,7 +542,7 @@ void MarketsScreen::refresh_all() {
     pending_refreshes_   = panels_.size();
 
     if (status_label_) {
-        status_label_->setText("● LOADING");
+        status_label_->setText(tr("● LOADING"));
         status_label_->setStyleSheet(lbl_ss(ui::colors::AMBER(), true));
     }
 
@@ -558,7 +558,7 @@ void MarketsScreen::refresh_all() {
             last_refresh_time_   = QDateTime::currentDateTime();
             counter->deleteLater();
             if (status_label_) {
-                status_label_->setText("● READY");
+                status_label_->setText(tr("● READY"));
                 status_label_->setStyleSheet(lbl_ss(ui::colors::POSITIVE(), true));
             }
             if (last_upd_label_) {

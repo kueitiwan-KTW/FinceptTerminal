@@ -168,12 +168,12 @@ QWidget* NewsDetailPanel::build_content_view() {
     save_btn_ = new QPushButton("SAVE", content);
     save_btn_->setObjectName("newsDetailSaveBtn");
     save_btn_->setFixedHeight(24);
-    save_btn_->setToolTip("Save article to File Manager");
+    save_btn_->setToolTip(tr("Save article to File Manager"));
 
     bookmark_btn_ = new QPushButton("BOOKMARK", content);
     bookmark_btn_->setObjectName("newsDetailSaveBtn");
     bookmark_btn_->setFixedHeight(24);
-    bookmark_btn_->setToolTip("Bookmark article");
+    bookmark_btn_->setToolTip(tr("Bookmark article"));
     bookmark_btn_->setCheckable(true);
 
     // Translate button
@@ -200,7 +200,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     connect(analyze_btn_, &QPushButton::clicked, this, [this]() {
         if (!has_article_)
             return;
-        analyze_btn_->setText("ANALYZING...");
+        analyze_btn_->setText(tr("ANALYZING..."));
         analyze_btn_->setEnabled(false);
         analyze_timeout_->start();
         emit analyze_requested(current_article_.link);

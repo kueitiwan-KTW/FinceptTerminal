@@ -138,7 +138,7 @@ void PolymarketBrowsePanel::set_events(const QVector<PredictionEvent>& events) {
 
 void PolymarketBrowsePanel::set_loading(bool loading) {
     if (loading) {
-        header_->setText("LOADING...");
+        header_->setText(tr("LOADING..."));
     } else {
         const int total = model_->rowCount();
         header_->setText(QString("%1  %2").arg(events_mode_ ? "EVENTS" : "MARKETS").arg(total));

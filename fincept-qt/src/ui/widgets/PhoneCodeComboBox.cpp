@@ -294,7 +294,7 @@ PhoneCodeComboBox::PhoneCodeComboBox(QWidget* parent) : QComboBox(parent) {
     if (auto* le = lineEdit()) {
         le->setStyleSheet("QLineEdit { background:transparent; color:#e5e5e5; border:none;"
                           "  font-size:14px; font-family:'Consolas','Courier New',monospace; padding:0; }");
-        le->setPlaceholderText("Search country…");
+        le->setPlaceholderText(tr("Search country…"));
 
         // When user manually edits the field, try to match and update dial code
         connect(le, &QLineEdit::textEdited, this, [this](const QString& text) {

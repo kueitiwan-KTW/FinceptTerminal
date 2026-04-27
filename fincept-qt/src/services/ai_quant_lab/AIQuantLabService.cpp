@@ -193,7 +193,7 @@ void AIQuantLabService::train_rl_agent(const QJsonObject& params) {
             } else if (!result.error.isEmpty()) {
                 msg = result.error;
             } else {
-                msg = QStringLiteral("Training ended without result");
+                msg = tr("Training ended without result");
             }
             LOG_ERROR("AIQuantLab", QString("[rl_trading/train] Failed: %1").arg(msg));
             emit self->error_occurred("rl_trading", msg);

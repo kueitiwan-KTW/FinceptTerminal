@@ -191,8 +191,8 @@ void EquityTalippTab::set_symbol(const QString& symbol) {
     if (symbol == current_symbol_)
         return;
     current_symbol_ = symbol;
-    data_points_lbl_->setText("—  data points  |  TALIpp Engine");
-    status_label_->setText("Select an indicator and click CALCULATE.");
+    data_points_lbl_->setText(tr("—  data points  |  TALIpp Engine"));
+    status_label_->setText(tr("Select an indicator and click CALCULATE."));
     empty_widget_->show();
     results_widget_->hide();
     loading_overlay_->hide_loading(); // reset overlay on symbol change
@@ -404,7 +404,7 @@ QVariantMap EquityTalippTab::collect_params() const {
 // ── on_compute_clicked ────────────────────────────────────────────────────────
 void EquityTalippTab::on_compute_clicked() {
     if (current_symbol_.isEmpty()) {
-        status_label_->setText("No symbol loaded. Search for a symbol first.");
+        status_label_->setText(tr("No symbol loaded. Search for a symbol first."));
         return;
     }
     QString id = indicator_combo_->currentData().toString();
@@ -413,8 +413,8 @@ void EquityTalippTab::on_compute_clicked() {
         return;
 
     compute_btn_->setEnabled(false);
-    compute_btn_->setText("COMPUTING…");
-    status_label_->setText("Computing " + label + "…");
+    compute_btn_->setText(tr("COMPUTING…"));
+    status_label_->setText(tr("Computing ") + label + "…");
     loading_overlay_->show_loading("COMPUTING " + label.toUpper() + "…");
     empty_widget_->show();
     results_widget_->hide();
@@ -516,11 +516,11 @@ void EquityTalippTab::rebuild_chart(const QString& /*indicator_id*/, const QVect
 // ── on_talipp_result ──────────────────────────────────────────────────────────
 void EquityTalippTab::on_talipp_result(QString indicator, QVector<double> values, QVector<qint64> timestamps) {
     compute_btn_->setEnabled(true);
-    compute_btn_->setText("▶  CALCULATE");
+    compute_btn_->setText(tr("▶  CALCULATE"));
     loading_overlay_->hide_loading();
 
     if (values.isEmpty()) {
-        status_label_->setText("No data returned for " + indicator);
+        status_label_->setText(tr("No data returned for ") + indicator);
         empty_widget_->show();
         results_widget_->hide();
         return;

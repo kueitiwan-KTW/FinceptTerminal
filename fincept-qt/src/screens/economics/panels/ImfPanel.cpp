@@ -70,7 +70,7 @@ ImfPanel::ImfPanel(QWidget* parent) : EconPanelBase(kImfSourceId, kImfColor, par
     lvl->addWidget(hdr);
 
     indicator_search_ = new QLineEdit;
-    indicator_search_->setPlaceholderText("Filter indicators…");
+    indicator_search_->setPlaceholderText(tr("Filter indicators…"));
     indicator_search_->setStyleSheet(search_input_style());
     connect(indicator_search_, &QLineEdit::textChanged, this, &ImfPanel::on_indicator_filter);
     lvl->addWidget(indicator_search_);

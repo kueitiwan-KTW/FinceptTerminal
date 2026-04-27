@@ -123,7 +123,7 @@ void VideoPlayerWidget::build_channel_list() {
     irl->setSpacing(4);
 
     url_input_ = new QLineEdit;
-    url_input_->setPlaceholderText("YouTube URL, HLS (.m3u8), MP4, or direct stream...");
+    url_input_->setPlaceholderText(tr("YouTube URL, HLS (.m3u8), MP4, or direct stream..."));
     connect(url_input_, &QLineEdit::returnPressed, this, &VideoPlayerWidget::play_custom_url);
     irl->addWidget(url_input_, 1);
 
@@ -280,7 +280,7 @@ void VideoPlayerWidget::resolve_youtube_and_play(const QString& youtube_url, con
     const QString ytdlp_program = resolve_ytdlp_program();
     if (ytdlp_program.isEmpty()) {
         set_loading(false);
-        status_label_->setText("yt-dlp not found. Bundle yt-dlp.exe next to FinceptTerminal.exe.");
+        status_label_->setText(tr("yt-dlp not found. Bundle yt-dlp.exe next to FinceptTerminal.exe."));
         status_label_->show();
         LOG_ERROR("VideoPlayer", "yt-dlp not found in app directory or PATH");
         return;
@@ -320,7 +320,7 @@ void VideoPlayerWidget::on_ytdlp_finished(int exit_code, QProcess::ExitStatus /*
 
     if (stream_url.isEmpty()) {
         set_loading(false);
-        status_label_->setText("Could not extract stream URL.");
+        status_label_->setText(tr("Could not extract stream URL."));
         status_label_->show();
         return;
     }
@@ -335,7 +335,7 @@ void VideoPlayerWidget::on_ytdlp_error(QProcess::ProcessError /*error*/) {
 
     const QString err = proc->errorString();
     set_loading(false);
-    status_label_->setText("Failed to start yt-dlp: " + (err.isEmpty() ? QString("Unknown error") : err.left(90)));
+    status_label_->setText(tr("Failed to start yt-dlp: ") + (err.isEmpty() ? QString("Unknown error") : err.left(90)));
     status_label_->show();
     LOG_ERROR("VideoPlayer", "yt-dlp process error: " + err);
     proc->deleteLater();
@@ -368,7 +368,7 @@ void VideoPlayerWidget::stop_playback() {
 
 void VideoPlayerWidget::set_loading(bool loading) {
     if (loading) {
-        status_label_->setText("Resolving stream via yt-dlp...");
+        status_label_->setText(tr("Resolving stream via yt-dlp..."));
         status_label_->show();
     } else {
         status_label_->hide();

@@ -300,7 +300,7 @@ void ForumPostReaderPanel::build_ui() {
     compose_hl->setSpacing(8);
 
     reply_input_ = new QLineEdit;
-    reply_input_->setPlaceholderText("Write a reply...");
+    reply_input_->setPlaceholderText(tr("Write a reply..."));
     reply_input_->setFixedHeight(32);
     reply_input_->setStyleSheet(QString("QLineEdit{background:rgba(255,255,255,0.03);color:%1;"
                                         "border:1px solid %2;padding:4px 12px;font-size:12px;"

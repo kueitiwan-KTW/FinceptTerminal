@@ -223,7 +223,7 @@ QWidget* WatchlistScreen::build_main_panel() {
     al->addWidget(add_label_);
 
     add_input_ = new QLineEdit;
-    add_input_->setPlaceholderText("AAPL, MSFT, TSLA...");
+    add_input_->setPlaceholderText(tr("AAPL, MSFT, TSLA..."));
     add_input_->setFixedHeight(28);
     al->addWidget(add_input_, 1);
 
@@ -561,7 +561,7 @@ void WatchlistScreen::on_delete_watchlist() {
     fincept::WatchlistRepository::instance().remove(current_wl_id_);
     current_wl_id_.clear();
     table_->clear_data();
-    panel_title_->setText("Select a watchlist");
+    panel_title_->setText(tr("Select a watchlist"));
     stock_count_->clear();
     load_watchlists();
 }

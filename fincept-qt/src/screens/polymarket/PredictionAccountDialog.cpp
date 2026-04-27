@@ -212,8 +212,8 @@ void PredictionAccountDialog::on_save_polymarket() {
         pm_status_->setText(tr("<span style='color:#dc2626'>Private key is required.</span>"));
         return;
     }
-    if (!c.private_key.startsWith(QStringLiteral("0x"))) {
-        c.private_key.prepend(QStringLiteral("0x"));
+    if (!c.private_key.startsWith(tr("0x"))) {
+        c.private_key.prepend(tr("0x"));
     }
     if (c.private_key.size() != 66) {
         pm_status_->setText(tr(

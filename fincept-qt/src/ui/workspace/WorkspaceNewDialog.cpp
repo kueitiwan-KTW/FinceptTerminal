@@ -32,7 +32,7 @@ static const char* DLG_SS =
     "QPushButton#createBtn:disabled{background:#4a3000;color:#666;}";
 
 WorkspaceNewDialog::WorkspaceNewDialog(QWidget* parent) : QDialog(parent) {
-    setWindowTitle("New Workspace");
+    setWindowTitle(tr("New Workspace"));
     setModal(true);
     setFixedSize(680, 460);
     setStyleSheet(DLG_SS);
@@ -71,7 +71,7 @@ void WorkspaceNewDialog::setup_ui() {
     right->addWidget(name_label);
 
     name_edit_ = new QLineEdit;
-    name_edit_->setPlaceholderText("My Workspace");
+    name_edit_->setPlaceholderText(tr("My Workspace"));
     right->addWidget(name_edit_);
 
     auto* desc_label = new QLabel("Description (optional)");
@@ -80,7 +80,7 @@ void WorkspaceNewDialog::setup_ui() {
 
     description_edit_ = new QPlainTextEdit;
     description_edit_->setFixedHeight(70);
-    description_edit_->setPlaceholderText("What is this workspace for?");
+    description_edit_->setPlaceholderText(tr("What is this workspace for?"));
     right->addWidget(description_edit_);
 
     auto* prev_label = new QLabel("Preview");

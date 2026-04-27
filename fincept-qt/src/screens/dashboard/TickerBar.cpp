@@ -63,7 +63,7 @@ TickerBar::TickerBar(QWidget* parent) : QWidget(parent) {
     hl->addWidget(lbl);
 
     edit_input_ = new QLineEdit(edit_bar_);
-    edit_input_->setPlaceholderText("AAPL, MSFT, ^GSPC, BTC-USD ...");
+    edit_input_->setPlaceholderText(tr("AAPL, MSFT, ^GSPC, BTC-USD ..."));
     edit_input_->setStyleSheet(
         QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                 " font-size:10px; padding:1px 6px; font-family:Consolas; }"

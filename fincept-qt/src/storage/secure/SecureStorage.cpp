@@ -5,6 +5,7 @@
 #include <QCryptographicHash>
 #include <QSettings>
 #include <QSysInfo>
+#include <QCoreApplication>
 
 // ── Platform-specific credential storage ──────────────────────────────────────
 //

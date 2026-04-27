@@ -53,7 +53,7 @@ void StrategyListPanel::build_ui() {
     top_hl->setSpacing(8);
 
     search_edit_ = new QLineEdit(top_bar);
-    search_edit_->setPlaceholderText("Search strategies...");
+    search_edit_->setPlaceholderText(tr("Search strategies..."));
     search_edit_->setFixedHeight(28);
     search_edit_->setStyleSheet(
         QString("QLineEdit { background:%1; border:1px solid %2; color:%3;"

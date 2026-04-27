@@ -968,7 +968,7 @@ void QuantStatsView::run_quantstats() {
         return;
     qs_running_ = true;
     qs_run_btn_->setEnabled(false);
-    qs_status_->setText("Fetching 1-year price history...");
+    qs_status_->setText(tr("Fetching 1-year price history..."));
     qs_status_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::AMBER()));
 
     QStringList symbols;
@@ -1018,7 +1018,7 @@ void QuantStatsView::run_monte_carlo() {
         return;
     mc_running_ = true;
     mc_run_btn_->setEnabled(false);
-    mc_status_->setText("Running 1000 simulation paths...");
+    mc_status_->setText(tr("Running 1000 simulation paths..."));
     mc_status_->setStyleSheet(QString("color:%1; font-size:10px;").arg(ui::colors::AMBER()));
 
     QStringList symbols;

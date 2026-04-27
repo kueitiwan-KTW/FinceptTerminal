@@ -187,12 +187,12 @@ void SparklineStripWidget::on_points(const QString& symbol, const QVector<double
 
 QDialog* SparklineStripWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Sparklines");
+    dlg->setWindowTitle(tr("Configure — Sparklines"));
     auto* form = new QFormLayout(dlg);
 
     auto* edit = new QLineEdit(dlg);
     edit->setText(symbols_.join(", "));
-    edit->setPlaceholderText("e.g. AAPL, MSFT, NVDA");
+    edit->setPlaceholderText(tr("e.g. AAPL, MSFT, NVDA"));
     form->addRow("Symbols", edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);

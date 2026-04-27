@@ -170,7 +170,7 @@ void PythonEnvSection::build_ui() {
     thl->setSpacing(8);
 
     search_input_ = new QLineEdit(this);
-    search_input_->setPlaceholderText("Filter packages...");
+    search_input_->setPlaceholderText(tr("Filter packages..."));
     search_input_->setFixedWidth(200);
     search_input_->setStyleSheet(input_ss());
     thl->addWidget(search_input_);
@@ -675,7 +675,7 @@ void PythonEnvSection::start_action(const QList<ActionBatch>& batches) {
     install_bar_->setValue(0);
     install_bar_->setVisible(true);
     install_log_->setVisible(true);
-    install_log_->setText("Starting...");
+    install_log_->setText(tr("Starting..."));
 
     run_next_batch();
 }

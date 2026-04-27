@@ -214,7 +214,7 @@ void FileManagerScreen::build_filter_bar(QVBoxLayout* root) {
     r1l->setSpacing(8);
 
     search_input_ = new QLineEdit;
-    search_input_->setPlaceholderText("Search files by name, type, or source...");
+    search_input_->setPlaceholderText(tr("Search files by name, type, or source..."));
     search_input_->setStyleSheet(
         QString("QLineEdit{background:%1;color:%2;border:1px solid %3;"
                 "padding:5px 10px;font-size:12px;%4}"
@@ -466,7 +466,7 @@ void FileManagerScreen::show_preview(const QString& file_id) {
     if (f.mime_type.contains("image") || f.mime_type.contains("video") || f.mime_type.contains("audio") ||
         f.mime_type.contains("zip") || f.mime_type.contains("spreadsheet") || f.mime_type.contains("excel") ||
         f.mime_type.contains("vnd.openxmlformats")) {
-        preview_empty_->setText("Binary file — preview not available.\nUse SAVE to download.");
+        preview_empty_->setText(tr("Binary file — preview not available.\nUse SAVE to download."));
         preview_empty_->setVisible(true);
         return;
     }
@@ -474,7 +474,7 @@ void FileManagerScreen::show_preview(const QString& file_id) {
     QString path = FileManagerService::instance().full_path(f.name);
     QFile file(path);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        preview_empty_->setText("Cannot open file for preview.");
+        preview_empty_->setText(tr("Cannot open file for preview."));
         preview_empty_->setVisible(true);
         return;
     }
@@ -544,7 +544,7 @@ void FileManagerScreen::clear_preview() {
     preview_table_->setVisible(false);
     preview_title_->clear();
     preview_meta_->clear();
-    preview_empty_->setText("Select a file to preview");
+    preview_empty_->setText(tr("Select a file to preview"));
     preview_empty_->setVisible(true);
     preview_panel_->setVisible(false);
 }

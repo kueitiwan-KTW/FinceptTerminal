@@ -345,7 +345,7 @@ void PortfolioOptimizationView::run_optimization() {
 
     running_ = true;
     run_btn_->setEnabled(false);
-    status_label_->setText("Running optimization…");
+    status_label_->setText(tr("Running optimization…"));
     status_label_->setStyleSheet(QString("color:%1; font-size:10px;").arg(ui::colors::AMBER()));
 
     QJsonArray symbols_arr;

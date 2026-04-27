@@ -896,7 +896,7 @@ QWidget* PortfolioScreen::build_main_view() {
     filter_hl->addWidget(filter_icon);
 
     auto* filter_edit = new QLineEdit;
-    filter_edit->setPlaceholderText("Filter positions…");
+    filter_edit->setPlaceholderText(tr("Filter positions…"));
     filter_edit->setStyleSheet(QString("QLineEdit { background:transparent; color:%1; border:none;"
                                        "  font-size:11px; font-family:%2; }"
                                        "QLineEdit:focus { color:%3; }")

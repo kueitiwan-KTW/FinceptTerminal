@@ -41,7 +41,7 @@ PortfolioStatusBar::PortfolioStatusBar(QWidget* parent) : QWidget(parent) {
     add_divider();
 
     auto* version_lbl = make_label(ui::colors::TEXT_TERTIARY);
-    version_lbl->setText("PORTFOLIO TERMINAL v4.0");
+    version_lbl->setText(tr("PORTFOLIO TERMINAL v4.0"));
 
     add_divider();
 
@@ -52,12 +52,12 @@ PortfolioStatusBar::PortfolioStatusBar(QWidget* parent) : QWidget(parent) {
 
     // Live indicator
     live_label_ = make_label(ui::colors::POSITIVE, true);
-    live_label_->setText("\u25CF LIVE");
+    live_label_->setText(tr("\u25CF LIVE"));
 
     add_divider();
 
     positions_label_ = make_label(ui::colors::TEXT_SECONDARY);
-    positions_label_->setText("0 positions");
+    positions_label_->setText(tr("0 positions"));
 
     layout->addStretch();
 

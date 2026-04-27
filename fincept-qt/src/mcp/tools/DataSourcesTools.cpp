@@ -13,6 +13,7 @@
 #include <QJsonObject>
 #include <QTcpSocket>
 #include <QUuid>
+#include <QCoreApplication>
 
 namespace fincept::mcp::tools {
 

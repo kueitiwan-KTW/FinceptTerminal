@@ -90,8 +90,8 @@ void KalshiWsClient::ensure_connected() {
     if (ws_->is_connected()) return;
     if (!creds_.is_valid()) return;
     LOG_DEBUG("KalshiWS",
-              QStringLiteral("Ready to connect to ") + (creds_.use_demo ? kDemoWs : kProdWs) +
-                  QStringLiteral(" (connect deferred to Phase 7)"));
+              tr("Ready to connect to ") + (creds_.use_demo ? kDemoWs : kProdWs) +
+                  tr(" (connect deferred to Phase 7)"));
 }
 
 void KalshiWsClient::send_subscribe(const QStringList& tickers) {
@@ -165,16 +165,16 @@ void KalshiWsClient::on_message(const QString& msg) {
     if (type == QStringLiteral("ticker")) {
         if (ticker.isEmpty()) return;
         const double yes_price = kalshi_fp_to_double(payload.value("yes_bid_dollars"));
-        if (yes_price > 0) publish_price(ticker + QStringLiteral(":yes"), yes_price);
+        if (yes_price > 0) publish_price(ticker + tr(":yes"), yes_price);
         const double no_price = kalshi_fp_to_double(payload.value("no_bid_dollars"));
-        if (no_price > 0) publish_price(ticker + QStringLiteral(":no"), no_price);
+        if (no_price > 0) publish_price(ticker + tr(":no"), no_price);
         return;
     }
 
     if (type == QStringLiteral("trade")) {
         if (ticker.isEmpty()) return;
         pr::PredictionTrade t;
-        t.asset_id = ticker + QStringLiteral(":yes");
+        t.asset_id = ticker + tr(":yes");
         const QString ts_side = payload.value("taker_side").toString().toLower();
         t.side = (ts_side == QStringLiteral("no")) ? QStringLiteral("SELL")
                                                    : QStringLiteral("BUY");

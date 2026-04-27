@@ -7,6 +7,7 @@
 #include <QJsonDocument>
 
 #include <cstdint>
+#include <QCoreApplication>
 
 namespace fincept {
 

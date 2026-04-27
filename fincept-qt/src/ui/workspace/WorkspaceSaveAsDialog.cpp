@@ -26,7 +26,7 @@ static const char* SAVEAS_DLG_SS = "QDialog{background:#0a0a0a;color:#e5e5e5;}"
                                    "QPushButton#saveBtn:disabled{background:#4a3000;color:#666;}";
 
 WorkspaceSaveAsDialog::WorkspaceSaveAsDialog(QWidget* parent) : QDialog(parent) {
-    setWindowTitle("Save Workspace As");
+    setWindowTitle(tr("Save Workspace As"));
     setModal(true);
     setFixedSize(420, 180);
     setStyleSheet(SAVEAS_DLG_SS);
@@ -44,7 +44,7 @@ void WorkspaceSaveAsDialog::setup_ui() {
     vl->addWidget(name_label);
 
     name_edit_ = new QLineEdit;
-    name_edit_->setPlaceholderText("Enter a name");
+    name_edit_->setPlaceholderText(tr("Enter a name"));
     // Pre-fill with current workspace name
     name_edit_->setText(WorkspaceManager::instance().current_workspace_name());
     name_edit_->selectAll();

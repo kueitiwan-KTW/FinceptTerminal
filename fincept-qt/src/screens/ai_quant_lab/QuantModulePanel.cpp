@@ -378,7 +378,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     rvl->setContentsMargins(12, 12, 12, 12);
     rvl->setSpacing(8);
     auto* risk_returns = new QLineEdit(risk);
-    risk_returns->setPlaceholderText("Daily returns (comma-separated, e.g. 0.01,-0.02,0.005)");
+    risk_returns->setPlaceholderText(tr("Daily returns (comma-separated, e.g. 0.01,-0.02,0.005)"));
     risk_returns->setStyleSheet(input_ss());
     text_inputs_["gs_risk_returns"] = risk_returns;
     rvl->addWidget(build_input_row("Daily Returns", risk_returns, risk));
@@ -387,7 +387,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     rvl->addWidget(build_input_row("Risk-Free Rate", risk_rf, risk));
     auto* risk_run = make_run_button("CALCULATE RISK METRICS", risk);
     connect(risk_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         params["returns"] = text_inputs_["gs_risk_returns"]->text();
         params["risk_free_rate"] = double_inputs_["gs_risk_rf"]->value() / 100.0;
@@ -403,18 +403,18 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     pvl->setContentsMargins(12, 12, 12, 12);
     pvl->setSpacing(8);
     auto* port_ret = new QLineEdit(port);
-    port_ret->setPlaceholderText("Portfolio returns (comma-separated)");
+    port_ret->setPlaceholderText(tr("Portfolio returns (comma-separated)"));
     port_ret->setStyleSheet(input_ss());
     text_inputs_["gs_port_returns"] = port_ret;
     pvl->addWidget(build_input_row("Portfolio Returns", port_ret, port));
     auto* bench_ret = new QLineEdit(port);
-    bench_ret->setPlaceholderText("Benchmark returns (comma-separated)");
+    bench_ret->setPlaceholderText(tr("Benchmark returns (comma-separated)"));
     bench_ret->setStyleSheet(input_ss());
     text_inputs_["gs_bench_returns"] = bench_ret;
     pvl->addWidget(build_input_row("Benchmark Returns", bench_ret, port));
     auto* port_run = make_run_button("ANALYZE PORTFOLIO", port);
     connect(port_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing...");
+        status_label_->setText(tr("Analyzing..."));
         QJsonObject params;
         params["returns"] = text_inputs_["gs_port_returns"]->text();
         params["benchmark_returns"] = text_inputs_["gs_bench_returns"]->text();
@@ -451,7 +451,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     gvl->addWidget(build_input_row("Option Type", g_type, greeks));
     auto* greeks_run = make_run_button("CALCULATE GREEKS", greeks);
     connect(greeks_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         params["spot"] = double_inputs_["gs_spot"]->value();
         params["strike"] = double_inputs_["gs_strike"]->value();
@@ -471,7 +471,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     vvl->setContentsMargins(12, 12, 12, 12);
     vvl->setSpacing(8);
     auto* var_ret = new QLineEdit(var);
-    var_ret->setPlaceholderText("Daily returns (comma-separated)");
+    var_ret->setPlaceholderText(tr("Daily returns (comma-separated)"));
     var_ret->setStyleSheet(input_ss());
     text_inputs_["gs_var_returns"] = var_ret;
     vvl->addWidget(build_input_row("Daily Returns", var_ret, var));
@@ -483,7 +483,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     vvl->addWidget(build_input_row("Confidence Level", var_conf, var));
     auto* var_run = make_run_button("CALCULATE VaR", var);
     connect(var_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         params["returns"] = text_inputs_["gs_var_returns"]->text();
         params["position_value"] = double_inputs_["gs_var_position"]->value();
@@ -500,7 +500,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     svl->setContentsMargins(12, 12, 12, 12);
     svl->setSpacing(8);
     auto* st_ret = new QLineEdit(stress);
-    st_ret->setPlaceholderText("Daily returns (comma-separated)");
+    st_ret->setPlaceholderText(tr("Daily returns (comma-separated)"));
     st_ret->setStyleSheet(input_ss());
     text_inputs_["gs_stress_returns"] = st_ret;
     svl->addWidget(build_input_row("Daily Returns", st_ret, stress));
@@ -513,7 +513,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     svl->addWidget(st_hint);
     auto* stress_run = make_run_button("RUN STRESS TEST", stress);
     connect(stress_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Stress testing...");
+        status_label_->setText(tr("Stress testing..."));
         QJsonObject params;
         params["returns"] = text_inputs_["gs_stress_returns"]->text();
         params["position_value"] = double_inputs_["gs_stress_position"]->value();
@@ -549,7 +549,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     bvl->addWidget(build_input_row("Lookback Period", bt_lookback, bt));
     auto* bt_run = make_run_button("RUN BACKTEST", bt);
     connect(bt_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Backtesting...");
+        status_label_->setText(tr("Backtesting..."));
         QJsonObject params;
         params["strategy"] = combo_inputs_["gs_bt_strategy"]->currentText();
         params["ticker"] = text_inputs_["gs_bt_ticker"]->text();
@@ -567,13 +567,13 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     stvl->setContentsMargins(12, 12, 12, 12);
     stvl->setSpacing(8);
     auto* st_vals = new QLineEdit(stats);
-    st_vals->setPlaceholderText("Values (comma-separated, e.g. 10.5,11.2,9.8)");
+    st_vals->setPlaceholderText(tr("Values (comma-separated, e.g. 10.5,11.2,9.8)"));
     st_vals->setStyleSheet(input_ss());
     text_inputs_["gs_stats_values"] = st_vals;
     stvl->addWidget(build_input_row("Values", st_vals, stats));
     auto* stats_run = make_run_button("CALCULATE STATISTICS", stats);
     connect(stats_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         params["values"] = text_inputs_["gs_stats_values"]->text();
         AIQuantLabService::instance().gs_statistics(params);
@@ -612,7 +612,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
     vl->addWidget(data_lbl);
 
     auto* symbol = new QLineEdit(w);
-    symbol->setPlaceholderText("Ticker symbol (e.g. AAPL) or comma-separated values");
+    symbol->setPlaceholderText(tr("Ticker symbol (e.g. AAPL) or comma-separated values"));
     symbol->setStyleSheet(input_ss());
     text_inputs_["cfa_symbol"] = symbol;
     vl->addWidget(build_input_row("Symbol / Data", symbol, w));
@@ -627,7 +627,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
 
     auto* run = make_run_button("RUN ANALYSIS", w);
     connect(run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running...");
+        status_label_->setText(tr("Running..."));
         QJsonObject params;
         params["data"] = text_inputs_["cfa_symbol"]->text();
         auto cmd = combo_inputs_["cfa_analysis"]->currentText();
@@ -662,7 +662,7 @@ QWidget* QuantModulePanel::build_backtesting_panel() {
     vl->addWidget(build_input_row("Strategy", strat, w));
 
     auto* instruments = new QLineEdit(w);
-    instruments->setPlaceholderText("AAPL,MSFT,GOOG,AMZN");
+    instruments->setPlaceholderText(tr("AAPL,MSFT,GOOG,AMZN"));
     instruments->setStyleSheet(input_ss());
     text_inputs_["bt_instruments"] = instruments;
     vl->addWidget(build_input_row("Instruments", instruments, w));
@@ -693,14 +693,14 @@ QWidget* QuantModulePanel::build_backtesting_panel() {
     vl->addWidget(build_input_row("Top K Positions", topk, w));
 
     auto* benchmark = new QLineEdit(w);
-    benchmark->setPlaceholderText("SH000300 (CSI300)");
+    benchmark->setPlaceholderText(tr("SH000300 (CSI300)"));
     benchmark->setStyleSheet(input_ss());
     text_inputs_["bt_benchmark"] = benchmark;
     vl->addWidget(build_input_row("Benchmark", benchmark, w));
 
     auto* run = make_run_button("RUN BACKTEST", w);
     connect(run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Backtesting...");
+        status_label_->setText(tr("Backtesting..."));
         QJsonObject params;
         QJsonObject strategy_config;
         strategy_config["type"] = combo_inputs_["bt_strategy"]->currentText();
@@ -776,7 +776,7 @@ QWidget* QuantModulePanel::build_rl_trading_panel() {
         rl_progress_stats_->setVisible(true);
         rl_log_console_->setVisible(true);
         rl_train_button_->setEnabled(false);
-        status_label_->setText("Training RL Agent...");
+        status_label_->setText(tr("Training RL Agent..."));
         QJsonObject params;
         params["algorithm"] = combo_inputs_["rl_algo"]->currentText();
         params["ticker"] = text_inputs_["rl_ticker"]->text();
@@ -884,7 +884,7 @@ QWidget* QuantModulePanel::build_advanced_models_panel() {
 
     auto* run = make_run_button("CREATE & TRAIN MODEL", w);
     connect(run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Training...");
+        status_label_->setText(tr("Training..."));
         QJsonObject params;
         params["model_type"] = combo_inputs_["adv_model"]->currentText();
         QJsonObject config;
@@ -950,9 +950,9 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     da_vl->addWidget(desc);
 
     auto* task_edit = new QTextEdit(da_w);
-    task_edit->setPlaceholderText("Describe your analysis task...\n"
+    task_edit->setPlaceholderText(tr("Describe your analysis task...\n"
                                   "e.g. \"Conduct a full investment analysis of NVDA: research fundamentals, "
-                                  "assess risks, and give a buy/sell/hold recommendation with price target\"");
+                                  "assess risks, and give a buy/sell/hold recommendation with price target\""));
     task_edit->setFixedHeight(90);
     task_edit->setStyleSheet(QString("QTextEdit { background:%1; color:%2; border:1px solid %3;"
                                      "font-family:%4; font-size:%5px; padding:6px; }")
@@ -968,7 +968,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     da_vl->addWidget(build_input_row("Agent Type", agent_type, da_w));
 
     auto* thread_id = new QLineEdit(da_w);
-    thread_id->setPlaceholderText("Optional — leave blank to auto-generate");
+    thread_id->setPlaceholderText(tr("Optional — leave blank to auto-generate"));
     thread_id->setStyleSheet(QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                                      "font-family:%4; font-size:%5px; padding:6px 8px; }")
                                  .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED())
@@ -989,7 +989,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Running...");
+        status_label_->setText(tr("Running..."));
         clear_results();
         QJsonObject params;
         params["task"] = task;
@@ -1004,7 +1004,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
 
     agent_output_ = new QTextEdit(da_w);
     agent_output_->setReadOnly(true);
-    agent_output_->setPlaceholderText("Analysis results will appear here...");
+    agent_output_->setPlaceholderText(tr("Analysis results will appear here..."));
     agent_output_->setMinimumHeight(300);
     agent_output_->setStyleSheet(output_ss());
     da_vl->addWidget(agent_output_, 1);
@@ -1067,7 +1067,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
                                  .arg(ui::fonts::TINY)
                                  .arg(ui::colors::BG_BASE()));
     connect(check_btn, &QPushButton::clicked, this, [status_txt]() {
-        status_txt->setText("Checking...");
+        status_txt->setText(tr("Checking..."));
         AIQuantLabService::instance().rd_agent_check_status();
     });
     sbl->addWidget(check_btn);
@@ -1082,7 +1082,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
                               .arg(ui::fonts::TINY)
                               .arg(ui::colors::BG_BASE()));
     connect(ui_btn, &QPushButton::clicked, this, [status_txt]() {
-        status_txt->setText("Starting log viewer...");
+        status_txt->setText(tr("Starting log viewer..."));
         AIQuantLabService::instance().rd_agent_start_ui();
     });
     sbl->addWidget(ui_btn);
@@ -1090,9 +1090,9 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     auto* mcp_btn = new QPushButton("MCP TOOLS", status_bar);
     mcp_btn->setCursor(Qt::PointingHandCursor);
     mcp_btn->setCheckable(true);
-    mcp_btn->setToolTip("Start/stop the Fincept MCP tool server\n"
+    mcp_btn->setToolTip(tr("Start/stop the Fincept MCP tool server\n"
                         "Gives RD-Agent loops access to market data,\n"
-                        "financial news and economics tools.");
+                        "financial news and economics tools."));
     mcp_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
                                    "font-family:%2; font-size:%3px; padding:2px 8px; border-radius:2px; }"
                                    "QPushButton:checked { background:%4; color:%5; border-color:%4; }"
@@ -1104,11 +1104,11 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
                                .arg(ui::colors::BG_BASE()));
     connect(mcp_btn, &QPushButton::toggled, this, [mcp_btn, status_txt](bool checked) {
         if (checked) {
-            status_txt->setText("Starting MCP tool server...");
+            status_txt->setText(tr("Starting MCP tool server..."));
             AIQuantLabService::instance().rd_agent_start_mcp_server();
         } else {
-            status_txt->setText("MCP tool server stopped");
-            mcp_btn->setText("MCP TOOLS");
+            status_txt->setText(tr("MCP tool server stopped"));
+            mcp_btn->setText(tr("MCP TOOLS"));
         }
     });
     sbl->addWidget(mcp_btn);
@@ -1163,8 +1163,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Starting...");
-        status_txt->setText("Factor mining started...");
+        status_label_->setText(tr("Starting..."));
+        status_txt->setText(tr("Factor mining started..."));
         QJsonObject params;
         params["task_description"] = desc_text;
         params["target_market"] = fm_market->currentText();
@@ -1216,8 +1216,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Starting...");
-        status_txt->setText("Model optimization started...");
+        status_label_->setText(tr("Starting..."));
+        status_txt->setText(tr("Model optimization started..."));
         QJsonObject params;
         params["model_type"] = mo_model->currentText();
         params["optimization_target"] = mo_target->currentText();
@@ -1275,8 +1275,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Starting...");
-        status_txt->setText("Quant research started...");
+        status_label_->setText(tr("Starting..."));
+        status_txt->setText(tr("Quant research started..."));
         QJsonObject params;
         params["research_goal"] = goal;
         params["target_market"] = qr_market->currentText();
@@ -1320,7 +1320,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     tm_hl->addWidget(refresh_btn);
 
     auto* task_id_input = new QLineEdit(tm_toolbar);
-    task_id_input->setPlaceholderText("Task ID...");
+    task_id_input->setPlaceholderText(tr("Task ID..."));
     task_id_input->setStyleSheet(input_ss());
     task_id_input->setFixedWidth(200);
     tm_hl->addWidget(task_id_input);
@@ -1378,7 +1378,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     // Output area for factor results
     rd_agent_output_ = new QTextEdit(tm_w);
     rd_agent_output_->setReadOnly(true);
-    rd_agent_output_->setPlaceholderText("Select a task and click GET FACTORS / GET MODEL to view results...");
+    rd_agent_output_->setPlaceholderText(tr("Select a task and click GET FACTORS / GET MODEL to view results..."));
     rd_agent_output_->setFixedHeight(160);
     rd_agent_output_->setStyleSheet(output_ss());
     tm_vl->addWidget(rd_agent_output_);
@@ -1463,7 +1463,7 @@ QWidget* QuantModulePanel::build_generic_panel() {
 
     // Command input
     auto* cmd = new QLineEdit(w);
-    cmd->setPlaceholderText("Command (e.g. analyze, train, list_models)");
+    cmd->setPlaceholderText(tr("Command (e.g. analyze, train, list_models)"));
     cmd->setStyleSheet(QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                                "font-family:%4; font-size:%5px; padding:6px 8px; }")
                            .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED())
@@ -1485,7 +1485,7 @@ QWidget* QuantModulePanel::build_generic_panel() {
 
     auto* run = make_run_button("EXECUTE", w);
     connect(run, &QPushButton::clicked, this, [this, params_edit]() {
-        status_label_->setText("Running...");
+        status_label_->setText(tr("Running..."));
         auto cmd_text = text_inputs_["gen_command"]->text().trimmed();
         if (cmd_text.isEmpty())
             cmd_text = "analyze";
@@ -2150,7 +2150,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
     // ── RD-Agent: start_mcp_server ────────────────────────────────────────────
     if (command == "start_mcp_server") {
         if (!payload["success"].toBool()) {
-            status_label_->setText("MCP server failed");
+            status_label_->setText(tr("MCP server failed"));
             if (rd_agent_output_)
                 rd_agent_output_->setPlainText(
                     QString("MCP server failed to start:\n%1\n\nInstall: %2")
@@ -2379,7 +2379,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
             lbl->setWordWrap(true);
             lbl->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_PRIMARY()));
             results_layout_->addWidget(lbl);
-            status_label_->setText("Feature importance loaded");
+            status_label_->setText(tr("Feature importance loaded"));
             return;
         }
         display_result(payload);
@@ -2418,7 +2418,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
                 QString("Created: %1  [%2]").arg(payload["model_id"].toString(), payload["model_type"].toString()), this);
             lbl->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_PRIMARY()));
             results_layout_->addWidget(lbl);
-            status_label_->setText("Model created");
+            status_label_->setText(tr("Model created"));
             return;
         }
         if (command == "train") {
@@ -2448,7 +2448,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
                 QString("Prediction: %1").arg(pred.isNull() ? "N/A" : QString::number(pred.toDouble(), 'f', 6)), this);
             lbl->setStyleSheet(QString("color:%1; font-weight:700;").arg(module_.color.name()));
             results_layout_->addWidget(lbl);
-            status_label_->setText("Prediction ready");
+            status_label_->setText(tr("Prediction ready"));
             return;
         }
         if (command == "performance") {
@@ -2525,7 +2525,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
             lbl->setWordWrap(true);
             lbl->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_PRIMARY()));
             results_layout_->addWidget(lbl);
-            status_label_->setText("Ensemble created");
+            status_label_->setText(tr("Ensemble created"));
             return;
         }
         if (command == "tune_hyperparameters") {
@@ -2840,7 +2840,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
                 status_label_->setText(QString("Window %1/%2").arg(idx).arg(total));
             } else if (event == "ensemble") {
                 if (log) log->append(QString("  %1").arg(payload["message"].toString()));
-                status_label_->setText("Combining rolling results...");
+                status_label_->setText(tr("Combining rolling results..."));
             } else if (event == "done") {
                 const int total = payload["windows_trained"].toInt();
                 if (pb) { pb->setValue(total); pb->setFormat("Complete"); }
@@ -3003,7 +3003,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
             lbl->setWordWrap(true);
             lbl->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_PRIMARY()));
             results_layout_->addWidget(lbl);
-            status_label_->setText("Schedule created — switch to Schedules tab to view");
+            status_label_->setText(tr("Schedule created — switch to Schedules tab to view"));
             return;
         }
 
@@ -3093,7 +3093,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     ivl->setSpacing(8);
 
     auto* ind_data = new QLineEdit(ind);
-    ind_data->setPlaceholderText("Price data (comma-separated, e.g. 100,102,101,105,108)");
+    ind_data->setPlaceholderText(tr("Price data (comma-separated, e.g. 100,102,101,105,108)"));
     ind_data->setStyleSheet(input_ss());
     text_inputs_["fe_data"] = ind_data;
     ivl->addWidget(build_input_row("Price Data", ind_data, ind));
@@ -3114,7 +3114,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
 
     auto* ind_run = make_run_button("COMPUTE INDICATOR", ind);
     connect(ind_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Computing...");
+        status_label_->setText(tr("Computing..."));
         QJsonObject params;
         params["data"] = text_inputs_["fe_data"]->text();
         params["indicator"] = combo_inputs_["fe_indicator"]->currentText();
@@ -3138,7 +3138,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     svl->addWidget(build_input_row("Features (JSON)", sel_features, sel));
 
     auto* sel_returns = new QLineEdit(sel);
-    sel_returns->setPlaceholderText("Target returns (comma-separated)");
+    sel_returns->setPlaceholderText(tr("Target returns (comma-separated)"));
     sel_returns->setStyleSheet(input_ss());
     text_inputs_["fe_sel_returns"] = sel_returns;
     svl->addWidget(build_input_row("Returns", sel_returns, sel));
@@ -3152,7 +3152,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
 
     auto* sel_run = make_run_button("SELECT FEATURES BY IC", sel);
     connect(sel_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Selecting...");
+        status_label_->setText(tr("Selecting..."));
         QJsonObject params;
         auto feat_text = text_inputs_["fe_sel_features"]->text();
         auto doc = QJsonDocument::fromJson(feat_text.toUtf8());
@@ -3179,14 +3179,14 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     evl->addWidget(build_input_row("OHLCV Data (JSON)", expr_data, expr));
 
     auto* expr_expr = new QLineEdit(expr);
-    expr_expr->setPlaceholderText("e.g. Mean(close, 5) / Std(close, 20)");
+    expr_expr->setPlaceholderText(tr("e.g. Mean(close, 5) / Std(close, 20)"));
     expr_expr->setStyleSheet(input_ss());
     text_inputs_["fe_expression"] = expr_expr;
     evl->addWidget(build_input_row("Expression", expr_expr, expr));
 
     auto* expr_run = make_run_button("EVALUATE EXPRESSION", expr);
     connect(expr_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Evaluating...");
+        status_label_->setText(tr("Evaluating..."));
         QJsonObject params;
         auto data_text = text_inputs_["fe_expr_data"]->text();
         auto doc = QJsonDocument::fromJson(data_text.toUtf8());
@@ -3225,20 +3225,20 @@ QWidget* QuantModulePanel::build_portfolio_opt_panel() {
         tvl->setSpacing(8);
 
         auto* assets_in = new QLineEdit(t);
-        assets_in->setPlaceholderText("Asset names (comma-separated, e.g. AAPL,GOOG,MSFT)");
+        assets_in->setPlaceholderText(tr("Asset names (comma-separated, e.g. AAPL,GOOG,MSFT)"));
         assets_in->setStyleSheet(input_ss());
         text_inputs_[method_id + "_assets"] = assets_in;
         tvl->addWidget(build_input_row("Assets", assets_in, t));
 
         auto* cov_in = new QLineEdit(t);
-        cov_in->setPlaceholderText("Covariance matrix JSON: [[0.04,0.01],[0.01,0.09]]");
+        cov_in->setPlaceholderText(tr("Covariance matrix JSON: [[0.04,0.01],[0.01,0.09]]"));
         cov_in->setStyleSheet(input_ss());
         text_inputs_[method_id + "_cov"] = cov_in;
         tvl->addWidget(build_input_row("Covariance Matrix", cov_in, t));
 
         if (needs_returns) {
             auto* ret_in = new QLineEdit(t);
-            ret_in->setPlaceholderText("Expected returns (comma-separated, e.g. 0.10,0.15,0.12)");
+            ret_in->setPlaceholderText(tr("Expected returns (comma-separated, e.g. 0.10,0.15,0.12)"));
             ret_in->setStyleSheet(input_ss());
             text_inputs_[method_id + "_returns"] = ret_in;
             tvl->addWidget(build_input_row("Expected Returns", ret_in, t));
@@ -3250,7 +3250,7 @@ QWidget* QuantModulePanel::build_portfolio_opt_panel() {
 
         auto* run = make_run_button(btn_label, t);
         connect(run, &QPushButton::clicked, this, [this, method_id, needs_returns]() {
-            status_label_->setText("Optimizing...");
+            status_label_->setText(tr("Optimizing..."));
             QJsonObject params;
             auto assets_str = text_inputs_[method_id + "_assets"]->text().split(',');
             QJsonArray assets_arr;
@@ -3285,33 +3285,33 @@ QWidget* QuantModulePanel::build_portfolio_opt_panel() {
     blvl->setContentsMargins(12, 12, 12, 12);
     blvl->setSpacing(8);
     auto* bl_assets = new QLineEdit(bl);
-    bl_assets->setPlaceholderText("Asset names (comma-separated)");
+    bl_assets->setPlaceholderText(tr("Asset names (comma-separated)"));
     bl_assets->setStyleSheet(input_ss());
     text_inputs_["bl_assets"] = bl_assets;
     blvl->addWidget(build_input_row("Assets", bl_assets, bl));
     auto* bl_caps = new QLineEdit(bl);
-    bl_caps->setPlaceholderText("Market caps (comma-separated, e.g. 2000,1500,800)");
+    bl_caps->setPlaceholderText(tr("Market caps (comma-separated, e.g. 2000,1500,800)"));
     bl_caps->setStyleSheet(input_ss());
     text_inputs_["bl_caps"] = bl_caps;
     blvl->addWidget(build_input_row("Market Caps ($B)", bl_caps, bl));
     auto* bl_cov = new QLineEdit(bl);
-    bl_cov->setPlaceholderText("Covariance matrix JSON: [[0.04,0.01],[0.01,0.09]]");
+    bl_cov->setPlaceholderText(tr("Covariance matrix JSON: [[0.04,0.01],[0.01,0.09]]"));
     bl_cov->setStyleSheet(input_ss());
     text_inputs_["bl_cov"] = bl_cov;
     blvl->addWidget(build_input_row("Covariance Matrix", bl_cov, bl));
     auto* bl_views = new QLineEdit(bl);
-    bl_views->setPlaceholderText("Views (comma-separated, e.g. 0.05,0.10)");
+    bl_views->setPlaceholderText(tr("Views (comma-separated, e.g. 0.05,0.10)"));
     bl_views->setStyleSheet(input_ss());
     text_inputs_["bl_views"] = bl_views;
     blvl->addWidget(build_input_row("Views", bl_views, bl));
     auto* bl_conf = new QLineEdit(bl);
-    bl_conf->setPlaceholderText("View confidences (e.g. 0.8,0.6)");
+    bl_conf->setPlaceholderText(tr("View confidences (e.g. 0.8,0.6)"));
     bl_conf->setStyleSheet(input_ss());
     text_inputs_["bl_conf"] = bl_conf;
     blvl->addWidget(build_input_row("View Confidences", bl_conf, bl));
     auto* bl_run = make_run_button("RUN BLACK-LITTERMAN", bl);
     connect(bl_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running BL...");
+        status_label_->setText(tr("Running BL..."));
         QJsonObject params;
         QJsonArray caps, views, confs, assets;
         for (auto& v : text_inputs_["bl_caps"]->text().split(','))
@@ -3359,12 +3359,12 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     icvl->setContentsMargins(12, 12, 12, 12);
     icvl->setSpacing(8);
     auto* ic_preds = new QLineEdit(ic);
-    ic_preds->setPlaceholderText("Predictions (comma-separated, e.g. 0.1,0.2,-0.1,0.3)");
+    ic_preds->setPlaceholderText(tr("Predictions (comma-separated, e.g. 0.1,0.2,-0.1,0.3)"));
     ic_preds->setStyleSheet(input_ss());
     text_inputs_["ev_predictions"] = ic_preds;
     icvl->addWidget(build_input_row("Predictions", ic_preds, ic));
     auto* ic_rets = new QLineEdit(ic);
-    ic_rets->setPlaceholderText("Actual returns (comma-separated)");
+    ic_rets->setPlaceholderText(tr("Actual returns (comma-separated)"));
     ic_rets->setStyleSheet(input_ss());
     text_inputs_["ev_returns"] = ic_rets;
     icvl->addWidget(build_input_row("Returns", ic_rets, ic));
@@ -3375,7 +3375,7 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     icvl->addWidget(build_input_row("Method", ic_method, ic));
     auto* ic_run = make_run_button("CALCULATE IC METRICS", ic);
     connect(ic_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         QJsonArray preds, rets;
         for (auto& v : text_inputs_["ev_predictions"]->text().split(','))
@@ -3397,23 +3397,23 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     repvl->setContentsMargins(12, 12, 12, 12);
     repvl->setSpacing(8);
     auto* rep_name = new QLineEdit(rep);
-    rep_name->setPlaceholderText("Factor name (e.g. momentum)");
+    rep_name->setPlaceholderText(tr("Factor name (e.g. momentum)"));
     rep_name->setStyleSheet(input_ss());
     text_inputs_["ev_factor_name"] = rep_name;
     repvl->addWidget(build_input_row("Factor Name", rep_name, rep));
     auto* rep_preds = new QLineEdit(rep);
-    rep_preds->setPlaceholderText("Predictions (comma-separated)");
+    rep_preds->setPlaceholderText(tr("Predictions (comma-separated)"));
     rep_preds->setStyleSheet(input_ss());
     text_inputs_["ev_rep_preds"] = rep_preds;
     repvl->addWidget(build_input_row("Predictions", rep_preds, rep));
     auto* rep_rets = new QLineEdit(rep);
-    rep_rets->setPlaceholderText("Returns (comma-separated)");
+    rep_rets->setPlaceholderText(tr("Returns (comma-separated)"));
     rep_rets->setStyleSheet(input_ss());
     text_inputs_["ev_rep_returns"] = rep_rets;
     repvl->addWidget(build_input_row("Returns", rep_rets, rep));
     auto* rep_run = make_run_button("GENERATE EVALUATION REPORT", rep);
     connect(rep_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Generating...");
+        status_label_->setText(tr("Generating..."));
         QJsonObject params;
         QJsonArray preds, rets;
         for (auto& v : text_inputs_["ev_rep_preds"]->text().split(','))
@@ -3435,12 +3435,12 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     riskvl->setContentsMargins(12, 12, 12, 12);
     riskvl->setSpacing(8);
     auto* risk_rets = new QLineEdit(risk);
-    risk_rets->setPlaceholderText("Daily returns (comma-separated)");
+    risk_rets->setPlaceholderText(tr("Daily returns (comma-separated)"));
     risk_rets->setStyleSheet(input_ss());
     text_inputs_["ev_risk_returns"] = risk_rets;
     riskvl->addWidget(build_input_row("Returns", risk_rets, risk));
     auto* risk_bench = new QLineEdit(risk);
-    risk_bench->setPlaceholderText("Benchmark returns (optional, comma-separated)");
+    risk_bench->setPlaceholderText(tr("Benchmark returns (optional, comma-separated)"));
     risk_bench->setStyleSheet(input_ss());
     text_inputs_["ev_risk_bench"] = risk_bench;
     riskvl->addWidget(build_input_row("Benchmark (opt.)", risk_bench, risk));
@@ -3449,7 +3449,7 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     riskvl->addWidget(build_input_row("Confidence Level", risk_conf, risk));
     auto* risk_run = make_run_button("CALCULATE RISK METRICS", risk);
     connect(risk_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         QJsonArray rets;
         for (auto& v : text_inputs_["ev_risk_returns"]->text().split(','))
@@ -3493,7 +3493,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     tkvl->setContentsMargins(12, 12, 12, 12);
     tkvl->setSpacing(8);
     auto* tk_signal = new QLineEdit(topk);
-    tk_signal->setPlaceholderText("Signal values (comma-separated)");
+    tk_signal->setPlaceholderText(tr("Signal values (comma-separated)"));
     tk_signal->setStyleSheet(input_ss());
     text_inputs_["st_tk_signal"] = tk_signal;
     tkvl->addWidget(build_input_row("Signal", tk_signal, topk));
@@ -3511,7 +3511,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     tkvl->addWidget(build_input_row("N-Drop", tk_drop, topk));
     auto* tk_run = make_run_button("CREATE TOPK-DROPOUT STRATEGY", topk);
     connect(tk_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Creating...");
+        status_label_->setText(tr("Creating..."));
         QJsonObject params;
         QJsonArray signal;
         for (auto& v : text_inputs_["st_tk_signal"]->text().split(','))
@@ -3531,7 +3531,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     rpvl->setContentsMargins(12, 12, 12, 12);
     rpvl->setSpacing(8);
     auto* rp_returns = new QLineEdit(rp);
-    rp_returns->setPlaceholderText("Asset returns matrix JSON: [[0.01,-0.02,...],[...]]");
+    rp_returns->setPlaceholderText(tr("Asset returns matrix JSON: [[0.01,-0.02,...],[...]]"));
     rp_returns->setStyleSheet(input_ss());
     text_inputs_["st_rp_returns"] = rp_returns;
     rpvl->addWidget(build_input_row("Returns Matrix", rp_returns, rp));
@@ -3545,7 +3545,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     rpvl->addWidget(build_input_row("Rebalance", rp_freq, rp));
     auto* rp_run = make_run_button("CREATE RISK PARITY STRATEGY", rp);
     connect(rp_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Creating...");
+        status_label_->setText(tr("Creating..."));
         QJsonObject params;
         auto ret_doc = QJsonDocument::fromJson(text_inputs_["st_rp_returns"]->text().toUtf8());
         if (!ret_doc.isNull())
@@ -3564,12 +3564,12 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     pmvl->setContentsMargins(12, 12, 12, 12);
     pmvl->setSpacing(8);
     auto* pm_rets = new QLineEdit(pm);
-    pm_rets->setPlaceholderText("Portfolio returns (comma-separated)");
+    pm_rets->setPlaceholderText(tr("Portfolio returns (comma-separated)"));
     pm_rets->setStyleSheet(input_ss());
     text_inputs_["st_pm_returns"] = pm_rets;
     pmvl->addWidget(build_input_row("Returns", pm_rets, pm));
     auto* pm_bench = new QLineEdit(pm);
-    pm_bench->setPlaceholderText("Benchmark returns (optional)");
+    pm_bench->setPlaceholderText(tr("Benchmark returns (optional)"));
     pm_bench->setStyleSheet(input_ss());
     text_inputs_["st_pm_bench"] = pm_bench;
     pmvl->addWidget(build_input_row("Benchmark (opt.)", pm_bench, pm));
@@ -3578,7 +3578,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     pmvl->addWidget(build_input_row("Risk-Free Rate", pm_rf, pm));
     auto* pm_run = make_run_button("CALCULATE PORTFOLIO METRICS", pm);
     connect(pm_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating...");
+        status_label_->setText(tr("Calculating..."));
         QJsonObject params;
         QJsonArray rets;
         for (auto& v : text_inputs_["st_pm_returns"]->text().split(','))
@@ -3630,7 +3630,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     ltvl->addWidget(lt_info);
     auto* lt_run = make_run_button("LIST ALL PROCESSORS", list_tab);
     connect(lt_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().dataproc_list_processors();
     });
     ltvl->addWidget(lt_run);
@@ -3654,7 +3654,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     ptvl->addWidget(build_input_row("Processors (JSON)", pipe_procs, pipe_tab));
     auto* pipe_run = make_run_button("CREATE PIPELINE", pipe_tab);
     connect(pipe_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Creating...");
+        status_label_->setText(tr("Creating..."));
         QJsonObject params;
         params["pipeline_id"] = text_inputs_["dp_pipeline_id"]->text();
         auto doc = QJsonDocument::fromJson(text_inputs_["dp_processors"]->text().toUtf8());
@@ -3672,7 +3672,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     procvl->setContentsMargins(12, 12, 12, 12);
     procvl->setSpacing(8);
     auto* proc_pid = new QLineEdit(proc_tab);
-    proc_pid->setPlaceholderText("Pipeline ID (must be created first)");
+    proc_pid->setPlaceholderText(tr("Pipeline ID (must be created first)"));
     proc_pid->setStyleSheet(input_ss());
     text_inputs_["dp_proc_pid"] = proc_pid;
     procvl->addWidget(build_input_row("Pipeline ID", proc_pid, proc_tab));
@@ -3683,7 +3683,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     procvl->addWidget(build_input_row("Data (JSON)", proc_data, proc_tab));
     auto* proc_run = make_run_button("PROCESS DATA", proc_tab);
     connect(proc_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Processing...");
+        status_label_->setText(tr("Processing..."));
         QJsonObject params;
         params["pipeline_id"] = text_inputs_["dp_proc_pid"]->text();
         auto doc = QJsonDocument::fromJson(text_inputs_["dp_proc_data"]->text().toUtf8());
@@ -3719,12 +3719,12 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     icvl->setContentsMargins(12, 12, 12, 12);
     icvl->setSpacing(8);
     auto* ic_preds = new QLineEdit(ic_tab);
-    ic_preds->setPlaceholderText("Predictions (comma-separated)");
+    ic_preds->setPlaceholderText(tr("Predictions (comma-separated)"));
     ic_preds->setStyleSheet(input_ss());
     text_inputs_["rp_ic_preds"] = ic_preds;
     icvl->addWidget(build_input_row("Predictions", ic_preds, ic_tab));
     auto* ic_rets = new QLineEdit(ic_tab);
-    ic_rets->setPlaceholderText("Returns (comma-separated)");
+    ic_rets->setPlaceholderText(tr("Returns (comma-separated)"));
     ic_rets->setStyleSheet(input_ss());
     text_inputs_["rp_ic_rets"] = ic_rets;
     icvl->addWidget(build_input_row("Returns", ic_rets, ic_tab));
@@ -3735,7 +3735,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     icvl->addWidget(build_input_row("Method", ic_method, ic_tab));
     auto* ic_run = make_run_button("GENERATE IC ANALYSIS", ic_tab);
     connect(ic_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing...");
+        status_label_->setText(tr("Analyzing..."));
         QJsonObject params;
         QJsonArray preds, rets;
         for (auto& v : text_inputs_["rp_ic_preds"]->text().split(','))
@@ -3757,23 +3757,23 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     mpvl->setContentsMargins(12, 12, 12, 12);
     mpvl->setSpacing(8);
     auto* mp_preds = new QLineEdit(mp_tab);
-    mp_preds->setPlaceholderText("Model predictions (comma-separated)");
+    mp_preds->setPlaceholderText(tr("Model predictions (comma-separated)"));
     mp_preds->setStyleSheet(input_ss());
     text_inputs_["rp_mp_preds"] = mp_preds;
     mpvl->addWidget(build_input_row("Predictions", mp_preds, mp_tab));
     auto* mp_rets = new QLineEdit(mp_tab);
-    mp_rets->setPlaceholderText("Actual returns (comma-separated)");
+    mp_rets->setPlaceholderText(tr("Actual returns (comma-separated)"));
     mp_rets->setStyleSheet(input_ss());
     text_inputs_["rp_mp_rets"] = mp_rets;
     mpvl->addWidget(build_input_row("Returns", mp_rets, mp_tab));
     auto* mp_name = new QLineEdit(mp_tab);
-    mp_name->setPlaceholderText("Model name (e.g. LightGBM)");
+    mp_name->setPlaceholderText(tr("Model name (e.g. LightGBM)"));
     mp_name->setStyleSheet(input_ss());
     text_inputs_["rp_mp_name"] = mp_name;
     mpvl->addWidget(build_input_row("Model Name", mp_name, mp_tab));
     auto* mp_run = make_run_button("GENERATE MODEL PERFORMANCE REPORT", mp_tab);
     connect(mp_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Generating...");
+        status_label_->setText(tr("Generating..."));
         QJsonObject params;
         QJsonArray preds, rets;
         for (auto& v : text_inputs_["rp_mp_preds"]->text().split(','))
@@ -3796,23 +3796,23 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     crvl->setContentsMargins(12, 12, 12, 12);
     crvl->setSpacing(8);
     auto* cr_rets = new QLineEdit(cr_tab);
-    cr_rets->setPlaceholderText("Portfolio returns (comma-separated)");
+    cr_rets->setPlaceholderText(tr("Portfolio returns (comma-separated)"));
     cr_rets->setStyleSheet(input_ss());
     text_inputs_["rp_cr_rets"] = cr_rets;
     crvl->addWidget(build_input_row("Returns", cr_rets, cr_tab));
     auto* cr_bench = new QLineEdit(cr_tab);
-    cr_bench->setPlaceholderText("Benchmark returns (optional, comma-separated)");
+    cr_bench->setPlaceholderText(tr("Benchmark returns (optional, comma-separated)"));
     cr_bench->setStyleSheet(input_ss());
     text_inputs_["rp_cr_bench"] = cr_bench;
     crvl->addWidget(build_input_row("Benchmark (opt.)", cr_bench, cr_tab));
     auto* cr_title = new QLineEdit(cr_tab);
-    cr_title->setPlaceholderText("Chart title (e.g. Strategy vs Benchmark)");
+    cr_title->setPlaceholderText(tr("Chart title (e.g. Strategy vs Benchmark)"));
     cr_title->setStyleSheet(input_ss());
     text_inputs_["rp_cr_title"] = cr_title;
     crvl->addWidget(build_input_row("Title", cr_title, cr_tab));
     auto* cr_run = make_run_button("GENERATE CUMULATIVE RETURN CHART", cr_tab);
     connect(cr_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Generating...");
+        status_label_->setText(tr("Generating..."));
         QJsonObject params;
         QJsonArray rets;
         for (auto& v : text_inputs_["rp_cr_rets"]->text().split(','))
@@ -3865,13 +3865,13 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     libvl->addWidget(lib_info);
     auto* lib_run = make_run_button("BROWSE FACTOR LIBRARY", lib_tab);
     connect(lib_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().factor_get_library();
     });
     libvl->addWidget(lib_run);
     auto* inst_run = make_run_button("LIST INSTRUMENTS", lib_tab);
     connect(inst_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().factor_get_instruments();
     });
     libvl->addWidget(inst_run);
@@ -3884,28 +3884,28 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     datavl->setContentsMargins(12, 12, 12, 12);
     datavl->setSpacing(8);
     auto* fd_instr = new QLineEdit(data_tab);
-    fd_instr->setPlaceholderText("Instruments (comma-separated, e.g. aapl,msft)");
+    fd_instr->setPlaceholderText(tr("Instruments (comma-separated, e.g. aapl,msft)"));
     fd_instr->setStyleSheet(input_ss());
     text_inputs_["fd_instruments"] = fd_instr;
     datavl->addWidget(build_input_row("Instruments", fd_instr, data_tab));
     auto* fd_fields = new QLineEdit(data_tab);
-    fd_fields->setPlaceholderText("Fields (comma-separated, e.g. $close,$volume,$open)");
+    fd_fields->setPlaceholderText(tr("Fields (comma-separated, e.g. $close,$volume,$open)"));
     fd_fields->setStyleSheet(input_ss());
     text_inputs_["fd_fields"] = fd_fields;
     datavl->addWidget(build_input_row("Fields", fd_fields, data_tab));
     auto* fd_start = new QLineEdit(data_tab);
-    fd_start->setPlaceholderText("Start date (YYYY-MM-DD, e.g. 2019-01-01)");
+    fd_start->setPlaceholderText(tr("Start date (YYYY-MM-DD, e.g. 2019-01-01)"));
     fd_start->setStyleSheet(input_ss());
     text_inputs_["fd_start"] = fd_start;
     datavl->addWidget(build_input_row("Start Date", fd_start, data_tab));
     auto* fd_end = new QLineEdit(data_tab);
-    fd_end->setPlaceholderText("End date (YYYY-MM-DD, e.g. 2020-11-10)");
+    fd_end->setPlaceholderText(tr("End date (YYYY-MM-DD, e.g. 2020-11-10)"));
     fd_end->setStyleSheet(input_ss());
     text_inputs_["fd_end"] = fd_end;
     datavl->addWidget(build_input_row("End Date", fd_end, data_tab));
     auto* fd_run = make_run_button("FETCH DATA", data_tab);
     connect(fd_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Fetching...");
+        status_label_->setText(tr("Fetching..."));
         QJsonObject params;
         QJsonArray instr;
         for (auto& s : text_inputs_["fd_instruments"]->text().split(','))
@@ -3933,18 +3933,18 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     calvl->setContentsMargins(12, 12, 12, 12);
     calvl->setSpacing(8);
     auto* cal_start = new QLineEdit(cal_tab);
-    cal_start->setPlaceholderText("Start date (YYYY-MM-DD)");
+    cal_start->setPlaceholderText(tr("Start date (YYYY-MM-DD)"));
     cal_start->setStyleSheet(input_ss());
     text_inputs_["fd_cal_start"] = cal_start;
     calvl->addWidget(build_input_row("Start Date", cal_start, cal_tab));
     auto* cal_end = new QLineEdit(cal_tab);
-    cal_end->setPlaceholderText("End date (YYYY-MM-DD)");
+    cal_end->setPlaceholderText(tr("End date (YYYY-MM-DD)"));
     cal_end->setStyleSheet(input_ss());
     text_inputs_["fd_cal_end"] = cal_end;
     calvl->addWidget(build_input_row("End Date", cal_end, cal_tab));
     auto* cal_run = make_run_button("GET TRADING CALENDAR", cal_tab);
     connect(cal_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         QJsonObject params;
         if (!text_inputs_["fd_cal_start"]->text().isEmpty())
             params["start_date"] = text_inputs_["fd_cal_start"]->text().trimmed();
@@ -3989,13 +3989,13 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     btvl->addWidget(bt_info);
     auto* bt_list = make_run_button("LIST ALL MODELS", browse_tab);
     connect(bt_list, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().model_list();
     });
     btvl->addWidget(bt_list);
     auto* bt_status = make_run_button("CHECK QLIB STATUS", browse_tab);
     connect(bt_status, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Checking...");
+        status_label_->setText(tr("Checking..."));
         AIQuantLabService::instance().model_check_status();
     });
     btvl->addWidget(bt_status);
@@ -4013,23 +4013,23 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     combo_inputs_["ml_model_type"] = ml_type;
     ttvl->addWidget(build_input_row("Model Type", ml_type, train_tab));
     auto* ml_instr = new QLineEdit(train_tab);
-    ml_instr->setPlaceholderText("Instruments (comma-separated, e.g. aapl,msft)");
+    ml_instr->setPlaceholderText(tr("Instruments (comma-separated, e.g. aapl,msft)"));
     ml_instr->setStyleSheet(input_ss());
     text_inputs_["ml_instruments"] = ml_instr;
     ttvl->addWidget(build_input_row("Instruments", ml_instr, train_tab));
     auto* ml_start = new QLineEdit(train_tab);
-    ml_start->setPlaceholderText("Train start (YYYY-MM-DD)");
+    ml_start->setPlaceholderText(tr("Train start (YYYY-MM-DD)"));
     ml_start->setStyleSheet(input_ss());
     text_inputs_["ml_start"] = ml_start;
     ttvl->addWidget(build_input_row("Start Date", ml_start, train_tab));
     auto* ml_end = new QLineEdit(train_tab);
-    ml_end->setPlaceholderText("Train end (YYYY-MM-DD)");
+    ml_end->setPlaceholderText(tr("Train end (YYYY-MM-DD)"));
     ml_end->setStyleSheet(input_ss());
     text_inputs_["ml_end"] = ml_end;
     ttvl->addWidget(build_input_row("End Date", ml_end, train_tab));
     auto* ml_run = make_run_button("TRAIN MODEL", train_tab);
     connect(ml_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Training...");
+        status_label_->setText(tr("Training..."));
         QJsonObject params;
         params["model_type"] = combo_inputs_["ml_model_type"]->currentText();
         QJsonArray instr;
@@ -4053,28 +4053,28 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     btvl2->setContentsMargins(12, 12, 12, 12);
     btvl2->setSpacing(8);
     auto* bt_model = new QLineEdit(bt_tab);
-    bt_model->setPlaceholderText("Model ID (from training output)");
+    bt_model->setPlaceholderText(tr("Model ID (from training output)"));
     bt_model->setStyleSheet(input_ss());
     text_inputs_["ml_bt_model"] = bt_model;
     btvl2->addWidget(build_input_row("Model ID", bt_model, bt_tab));
     auto* bt_instr = new QLineEdit(bt_tab);
-    bt_instr->setPlaceholderText("Instruments (comma-separated)");
+    bt_instr->setPlaceholderText(tr("Instruments (comma-separated)"));
     bt_instr->setStyleSheet(input_ss());
     text_inputs_["ml_bt_instr"] = bt_instr;
     btvl2->addWidget(build_input_row("Instruments", bt_instr, bt_tab));
     auto* bt_start2 = new QLineEdit(bt_tab);
-    bt_start2->setPlaceholderText("Backtest start (YYYY-MM-DD)");
+    bt_start2->setPlaceholderText(tr("Backtest start (YYYY-MM-DD)"));
     bt_start2->setStyleSheet(input_ss());
     text_inputs_["ml_bt_start"] = bt_start2;
     btvl2->addWidget(build_input_row("Start Date", bt_start2, bt_tab));
     auto* bt_end2 = new QLineEdit(bt_tab);
-    bt_end2->setPlaceholderText("Backtest end (YYYY-MM-DD)");
+    bt_end2->setPlaceholderText(tr("Backtest end (YYYY-MM-DD)"));
     bt_end2->setStyleSheet(input_ss());
     text_inputs_["ml_bt_end"] = bt_end2;
     btvl2->addWidget(build_input_row("End Date", bt_end2, bt_tab));
     auto* bt_run2 = make_run_button("RUN BACKTEST", bt_tab);
     connect(bt_run2, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running backtest...");
+        status_label_->setText(tr("Running backtest..."));
         QJsonObject params;
         params["model_id"] = text_inputs_["ml_bt_model"]->text().trimmed();
         QJsonArray instr;
@@ -4116,28 +4116,28 @@ QWidget* QuantModulePanel::build_live_signals_panel() {
     sigvl->setContentsMargins(12, 12, 12, 12);
     sigvl->setSpacing(8);
     auto* sig_instr = new QLineEdit(sig_tab);
-    sig_instr->setPlaceholderText("Instruments (comma-separated, e.g. aapl,msft,goog)");
+    sig_instr->setPlaceholderText(tr("Instruments (comma-separated, e.g. aapl,msft,goog)"));
     sig_instr->setStyleSheet(input_ss());
     text_inputs_["ls_instruments"] = sig_instr;
     sigvl->addWidget(build_input_row("Instruments", sig_instr, sig_tab));
     auto* sig_fields = new QLineEdit(sig_tab);
-    sig_fields->setPlaceholderText("Fields (e.g. $close,$open,$high,$low,$volume)");
+    sig_fields->setPlaceholderText(tr("Fields (e.g. $close,$open,$high,$low,$volume)"));
     sig_fields->setStyleSheet(input_ss());
     text_inputs_["ls_fields"] = sig_fields;
     sigvl->addWidget(build_input_row("Fields", sig_fields, sig_tab));
     auto* sig_start = new QLineEdit(sig_tab);
-    sig_start->setPlaceholderText("Start date (YYYY-MM-DD)");
+    sig_start->setPlaceholderText(tr("Start date (YYYY-MM-DD)"));
     sig_start->setStyleSheet(input_ss());
     text_inputs_["ls_start"] = sig_start;
     sigvl->addWidget(build_input_row("Start Date", sig_start, sig_tab));
     auto* sig_end = new QLineEdit(sig_tab);
-    sig_end->setPlaceholderText("End date (YYYY-MM-DD)");
+    sig_end->setPlaceholderText(tr("End date (YYYY-MM-DD)"));
     sig_end->setStyleSheet(input_ss());
     text_inputs_["ls_end"] = sig_end;
     sigvl->addWidget(build_input_row("End Date", sig_end, sig_tab));
     auto* sig_run = make_run_button("FETCH SIGNALS", sig_tab);
     connect(sig_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Fetching...");
+        status_label_->setText(tr("Fetching..."));
         QJsonObject params;
         QJsonArray instr;
         for (auto& s : text_inputs_["ls_instruments"]->text().split(','))
@@ -4165,23 +4165,23 @@ QWidget* QuantModulePanel::build_live_signals_panel() {
     favl->setContentsMargins(12, 12, 12, 12);
     favl->setSpacing(8);
     auto* fa_instr = new QLineEdit(fa_tab);
-    fa_instr->setPlaceholderText("Instruments (comma-separated)");
+    fa_instr->setPlaceholderText(tr("Instruments (comma-separated)"));
     fa_instr->setStyleSheet(input_ss());
     text_inputs_["ls_fa_instr"] = fa_instr;
     favl->addWidget(build_input_row("Instruments", fa_instr, fa_tab));
     auto* fa_start = new QLineEdit(fa_tab);
-    fa_start->setPlaceholderText("Start date (YYYY-MM-DD)");
+    fa_start->setPlaceholderText(tr("Start date (YYYY-MM-DD)"));
     fa_start->setStyleSheet(input_ss());
     text_inputs_["ls_fa_start"] = fa_start;
     favl->addWidget(build_input_row("Start Date", fa_start, fa_tab));
     auto* fa_end = new QLineEdit(fa_tab);
-    fa_end->setPlaceholderText("End date (YYYY-MM-DD)");
+    fa_end->setPlaceholderText(tr("End date (YYYY-MM-DD)"));
     fa_end->setStyleSheet(input_ss());
     text_inputs_["ls_fa_end"] = fa_end;
     favl->addWidget(build_input_row("End Date", fa_end, fa_tab));
     auto* fa_run = make_run_button("RUN FACTOR ANALYSIS", fa_tab);
     connect(fa_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing...");
+        status_label_->setText(tr("Analyzing..."));
         QJsonObject params;
         QJsonArray instr;
         for (auto& s : text_inputs_["ls_fa_instr"]->text().split(','))
@@ -4204,13 +4204,13 @@ QWidget* QuantModulePanel::build_live_signals_panel() {
     fivl->setContentsMargins(12, 12, 12, 12);
     fivl->setSpacing(8);
     auto* fi_model = new QLineEdit(fi_tab);
-    fi_model->setPlaceholderText("Trained model ID");
+    fi_model->setPlaceholderText(tr("Trained model ID"));
     fi_model->setStyleSheet(input_ss());
     text_inputs_["ls_fi_model"] = fi_model;
     fivl->addWidget(build_input_row("Model ID", fi_model, fi_tab));
     auto* fi_run = make_run_button("GET FEATURE IMPORTANCE", fi_tab);
     connect(fi_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         QJsonObject params;
         params["model_id"] = text_inputs_["ls_fi_model"]->text().trimmed();
         AIQuantLabService::instance().signals_get_feature_importance(params);
@@ -4251,7 +4251,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     mtvl->addWidget(mt_info);
     auto* mt_list = make_run_button("LIST ALL MODELS", models_tab);
     connect(mt_list, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().online_list_models();
     });
     mtvl->addWidget(mt_list);
@@ -4269,13 +4269,13 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     combo_inputs_["ol_model_type"] = ol_model_type;
     ctvl->addWidget(build_input_row("Model Type", ol_model_type, create_tab));
     auto* ol_model_id = new QLineEdit(create_tab);
-    ol_model_id->setPlaceholderText("Model ID (optional, auto-generated if blank)");
+    ol_model_id->setPlaceholderText(tr("Model ID (optional, auto-generated if blank)"));
     ol_model_id->setStyleSheet(input_ss());
     text_inputs_["ol_model_id"] = ol_model_id;
     ctvl->addWidget(build_input_row("Model ID", ol_model_id, create_tab));
     auto* ol_create = make_run_button("CREATE MODEL", create_tab);
     connect(ol_create, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Creating...");
+        status_label_->setText(tr("Creating..."));
         QJsonObject params;
         params["model_type"] = combo_inputs_["ol_model_type"]->currentText();
         auto mid = text_inputs_["ol_model_id"]->text().trimmed();
@@ -4293,7 +4293,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     ttvl->setContentsMargins(12, 12, 12, 12);
     ttvl->setSpacing(8);
     auto* ol_tid = new QLineEdit(train_tab);
-    ol_tid->setPlaceholderText("Model ID");
+    ol_tid->setPlaceholderText(tr("Model ID"));
     ol_tid->setStyleSheet(input_ss());
     text_inputs_["ol_train_id"] = ol_tid;
     ttvl->addWidget(build_input_row("Model ID", ol_tid, train_tab));
@@ -4303,13 +4303,13 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     text_inputs_["ol_features"] = ol_feats;
     ttvl->addWidget(build_input_row("Features (JSON)", ol_feats, train_tab));
     auto* ol_target = new QLineEdit(train_tab);
-    ol_target->setPlaceholderText("Target value (e.g. 0.02)");
+    ol_target->setPlaceholderText(tr("Target value (e.g. 0.02)"));
     ol_target->setStyleSheet(input_ss());
     text_inputs_["ol_target"] = ol_target;
     ttvl->addWidget(build_input_row("Target", ol_target, train_tab));
     auto* ol_train = make_run_button("TRAIN ONE STEP", train_tab);
     connect(ol_train, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Training...");
+        status_label_->setText(tr("Training..."));
         QJsonObject params;
         params["model_id"] = text_inputs_["ol_train_id"]->text().trimmed();
         auto doc = QJsonDocument::fromJson(text_inputs_["ol_features"]->text().toUtf8());
@@ -4328,7 +4328,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     predvl->setContentsMargins(12, 12, 12, 12);
     predvl->setSpacing(8);
     auto* ol_pid = new QLineEdit(pred_tab);
-    ol_pid->setPlaceholderText("Model ID");
+    ol_pid->setPlaceholderText(tr("Model ID"));
     ol_pid->setStyleSheet(input_ss());
     text_inputs_["ol_pred_id"] = ol_pid;
     predvl->addWidget(build_input_row("Model ID", ol_pid, pred_tab));
@@ -4339,7 +4339,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     predvl->addWidget(build_input_row("Features (JSON)", ol_pfeats, pred_tab));
     auto* ol_pred = make_run_button("PREDICT", pred_tab);
     connect(ol_pred, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Predicting...");
+        status_label_->setText(tr("Predicting..."));
         QJsonObject params;
         params["model_id"] = text_inputs_["ol_pred_id"]->text().trimmed();
         auto doc = QJsonDocument::fromJson(text_inputs_["ol_pred_feats"]->text().toUtf8());
@@ -4350,7 +4350,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     predvl->addWidget(ol_pred);
     auto* ol_perf = make_run_button("GET PERFORMANCE", pred_tab);
     connect(ol_perf, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         QJsonObject params;
         params["model_id"] = text_inputs_["ol_pred_id"]->text().trimmed();
         AIQuantLabService::instance().online_performance(params);
@@ -4391,7 +4391,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     selvl->addWidget(sel_info);
     auto* sel_list_btn = make_run_button("LIST AVAILABLE MODELS", sel_tab);
     connect(sel_list_btn, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().meta_list_models();
     });
     selvl->addWidget(sel_list_btn);
@@ -4407,7 +4407,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     selvl->addWidget(build_input_row("Task Type", sel_task, sel_tab));
     auto* sel_run = make_run_button("RUN MODEL SELECTION", sel_tab);
     connect(sel_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Selecting...");
+        status_label_->setText(tr("Selecting..."));
         QJsonObject params;
         QJsonArray model_ids;
         for (auto& s : text_inputs_["ml_sel_models"]->text().split(','))
@@ -4427,7 +4427,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     ensvl->setContentsMargins(12, 12, 12, 12);
     ensvl->setSpacing(8);
     auto* ens_keys = new QLineEdit(ens_tab);
-    ens_keys->setPlaceholderText("Model keys (from selection output, comma-separated)");
+    ens_keys->setPlaceholderText(tr("Model keys (from selection output, comma-separated)"));
     ens_keys->setStyleSheet(input_ss());
     text_inputs_["ml_ens_keys"] = ens_keys;
     ensvl->addWidget(build_input_row("Model Keys", ens_keys, ens_tab));
@@ -4438,7 +4438,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     ensvl->addWidget(build_input_row("Ensemble Method", ens_method, ens_tab));
     auto* ens_run = make_run_button("CREATE ENSEMBLE", ens_tab);
     connect(ens_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Creating ensemble...");
+        status_label_->setText(tr("Creating ensemble..."));
         QJsonObject params;
         QJsonArray keys;
         for (auto& s : text_inputs_["ml_ens_keys"]->text().split(','))
@@ -4474,7 +4474,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     tunevl->addWidget(build_input_row("Search Method", tune_method, tune_tab));
     auto* tune_run = make_run_button("TUNE HYPERPARAMETERS", tune_tab);
     connect(tune_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Tuning...");
+        status_label_->setText(tr("Tuning..."));
         QJsonObject params;
         params["model_id"] = combo_inputs_["ml_tune_model"]->currentText();
         auto doc = QJsonDocument::fromJson(text_inputs_["ml_tune_grid"]->text().toUtf8());
@@ -4486,7 +4486,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     tunevl->addWidget(tune_run);
     auto* results_btn = make_run_button("GET ALL RESULTS", tune_tab);
     connect(results_btn, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading...");
+        status_label_->setText(tr("Loading..."));
         AIQuantLabService::instance().meta_get_results();
     });
     tunevl->addWidget(results_btn);
@@ -4533,7 +4533,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     hft_symbol->setText("BTC/USDT");
     hft_symbol->setFixedWidth(100);
     hft_symbol->setStyleSheet(input_ss());
-    hft_symbol->setToolTip("e.g. BTC/USDT, ETH/USDT");
+    hft_symbol->setToolTip(tr("e.g. BTC/USDT, ETH/USDT"));
     text_inputs_["hft_symbol"] = hft_symbol;
 
     auto* depth_lbl = new QLabel("DEPTH", top_bar);
@@ -4578,7 +4578,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     ob_ctrl->setSpacing(8);
     auto* ob_fetch = make_run_button("FETCH LIVE ORDER BOOK", ob_tab);
     connect(ob_fetch, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Fetching live order book...");
+        status_label_->setText(tr("Fetching live order book..."));
         QJsonObject p;
         p["exchange"] = combo_inputs_["hft_exchange"]->currentText();
         p["symbol"]   = text_inputs_["hft_symbol"]->text().trimmed();
@@ -4731,7 +4731,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
 
     auto* mm_run = make_run_button("CALCULATE OPTIMAL QUOTES", mm_section);
     connect(mm_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Fetching live data + computing quotes...");
+        status_label_->setText(tr("Fetching live data + computing quotes..."));
         QJsonObject p;
         p["exchange"]         = combo_inputs_["hft_exchange"]->currentText();
         p["symbol"]           = text_inputs_["hft_symbol"]->text().trimmed();
@@ -4788,7 +4788,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
 
     auto* tox_run = make_run_button("DETECT TOXIC FLOW", tox_section);
     connect(tox_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Fetching trades + analyzing flow...");
+        status_label_->setText(tr("Fetching trades + analyzing flow..."));
         QJsonObject p;
         p["exchange"] = combo_inputs_["hft_exchange"]->currentText();
         p["symbol"]   = text_inputs_["hft_symbol"]->text().trimmed();
@@ -4859,7 +4859,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
 
     auto* slip_run = make_run_button("ESTIMATE SLIPPAGE", slip_section);
     connect(slip_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Walking order book...");
+        status_label_->setText(tr("Walking order book..."));
         QJsonObject p;
         p["exchange"] = combo_inputs_["hft_exchange"]->currentText();
         p["symbol"]   = text_inputs_["hft_symbol"]->text().trimmed();
@@ -4919,9 +4919,9 @@ QWidget* QuantModulePanel::build_hft_panel() {
     auto* bot_hl = new QHBoxLayout(bottom_bar);
     bot_hl->setContentsMargins(12, 6, 12, 6);
     auto* analyze_btn = make_run_button("⚡ FULL ANALYSIS — FETCH ALL & COMPUTE", bottom_bar);
-    analyze_btn->setToolTip("Fetches live order book + trades, computes book metrics, market making quotes, toxic flow, and slippage in one call");
+    analyze_btn->setToolTip(tr("Fetches live order book + trades, computes book metrics, market making quotes, toxic flow, and slippage in one call"));
     connect(analyze_btn, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running full microstructure analysis...");
+        status_label_->setText(tr("Running full microstructure analysis..."));
         QJsonObject p;
         p["exchange"]          = combo_inputs_["hft_exchange"]->currentText();
         p["symbol"]            = text_inputs_["hft_symbol"]->text().trimmed();
@@ -4991,7 +4991,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
 
     auto* lt_run = make_run_button("REFRESH SCHEDULES", list_tab);
     connect(lt_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading schedules...");
+        status_label_->setText(tr("Loading schedules..."));
         AIQuantLabService::instance().rolling_list_schedules();
     });
     ltvl->addWidget(lt_run);
@@ -5010,7 +5010,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     ctvl->addWidget(build_input_row("Model ID *", rr_model_id, create_tab));
 
     auto* rr_conf = new QLineEdit(create_tab);
-    rr_conf->setPlaceholderText("Optional: path to Qlib YAML config (leave blank for built-in LightGBM+Alpha158)");
+    rr_conf->setPlaceholderText(tr("Optional: path to Qlib YAML config (leave blank for built-in LightGBM+Alpha158)"));
     rr_conf->setStyleSheet(input_ss());
     text_inputs_["rr_conf_path"] = rr_conf;
     ctvl->addWidget(build_input_row("Config Path", rr_conf, create_tab));
@@ -5022,13 +5022,13 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     ctvl->addWidget(build_input_row("Frequency", rr_freq, create_tab));
 
     auto* rr_window = new QLineEdit(create_tab);
-    rr_window->setPlaceholderText("Rolling window in trading days (default: 252)");
+    rr_window->setPlaceholderText(tr("Rolling window in trading days (default: 252)"));
     rr_window->setStyleSheet(input_ss());
     text_inputs_["rr_window"] = rr_window;
     ctvl->addWidget(build_input_row("Window (days)", rr_window, create_tab));
 
     auto* rr_step = new QLineEdit(create_tab);
-    rr_step->setPlaceholderText("Step size between windows (default: 20)");
+    rr_step->setPlaceholderText(tr("Step size between windows (default: 20)"));
     rr_step->setStyleSheet(input_ss());
     text_inputs_["rr_step"] = rr_step;
     ctvl->addWidget(build_input_row("Step (days)", rr_step, create_tab));
@@ -5056,10 +5056,10 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
         const QString mid = text_inputs_["rr_model_id"]->text().trimmed();
         const QString cp  = text_inputs_["rr_conf_path"]->text().trimmed();
         if (mid.isEmpty() && cp.isEmpty()) {
-            status_label_->setText("Enter a Model ID or Config Path to preview.");
+            status_label_->setText(tr("Enter a Model ID or Config Path to preview."));
             return;
         }
-        status_label_->setText("Generating preview...");
+        status_label_->setText(tr("Generating preview..."));
         QJsonObject params;
         if (!mid.isEmpty()) params["model_id"] = mid;
         if (!cp.isEmpty())  params["conf_path"] = cp;
@@ -5073,10 +5073,10 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     connect(rr_create, &QPushButton::clicked, this, [this]() {
         const QString mid = text_inputs_["rr_model_id"]->text().trimmed();
         if (mid.isEmpty()) {
-            status_label_->setText("Model ID is required.");
+            status_label_->setText(tr("Model ID is required."));
             return;
         }
-        status_label_->setText("Creating schedule...");
+        status_label_->setText(tr("Creating schedule..."));
         QJsonObject params;
         params["model_id"]  = mid;
         params["frequency"] = combo_inputs_["rr_frequency"]->currentText();
@@ -5108,7 +5108,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     retrainvl->addWidget(rt_info);
 
     auto* rr_exec_id = new QLineEdit(retrain_tab);
-    rr_exec_id->setPlaceholderText("Model ID (must be in Schedules)");
+    rr_exec_id->setPlaceholderText(tr("Model ID (must be in Schedules)"));
     rr_exec_id->setStyleSheet(input_ss());
     text_inputs_["rr_exec_id"] = rr_exec_id;
     retrainvl->addWidget(build_input_row("Model ID *", rr_exec_id, retrain_tab));
@@ -5132,7 +5132,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     auto* rr_log = new QTextEdit(retrain_tab);
     rr_log->setObjectName("rr_log");
     rr_log->setReadOnly(true);
-    rr_log->setPlaceholderText("Training progress will stream here...");
+    rr_log->setPlaceholderText(tr("Training progress will stream here..."));
     rr_log->setStyleSheet(output_ss());
     rr_log->setMinimumHeight(140);
     retrainvl->addWidget(rr_log, 1);
@@ -5141,7 +5141,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     connect(rr_exec, &QPushButton::clicked, this, [this]() {
         const QString mid = text_inputs_["rr_exec_id"]->text().trimmed();
         if (mid.isEmpty()) {
-            status_label_->setText("Model ID is required.");
+            status_label_->setText(tr("Model ID is required."));
             return;
         }
         // Reset progress UI
@@ -5151,7 +5151,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
         }
         if (auto* log = this->findChild<QTextEdit*>("rr_log"))
             log->clear();
-        status_label_->setText("Retraining...");
+        status_label_->setText(tr("Retraining..."));
         QJsonObject params;
         params["model_id"] = mid;
         AIQuantLabService::instance().rolling_execute_retrain(params);

@@ -10,6 +10,7 @@
 
 #include <QJsonDocument>
 #include <QJsonParseError>
+#include <QCoreApplication>
 
 namespace fincept::services {
 
@@ -109,7 +110,7 @@ void EconomicsService::execute(const QString& source_id, const QString& script, 
                 const QString error_code = res.data.value("error_code").toString();
                 const QString message = res.data["error"].toString();
                 // Prefix with [CODE] so panels can branch on it without a schema change.
-                res.error = error_code.isEmpty() ? message : (QStringLiteral("[") + error_code + QStringLiteral("] ") + message);
+                res.error = error_code.isEmpty() ? message : (QStringLiteral("[") + error_code + QCoreApplication::translate("FinceptTerminal", "] ") + message);
                 emit self->result_ready(request_id, res);
                 return;
             }

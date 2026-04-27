@@ -132,7 +132,7 @@ void ForumSidebarPanel::build_ui() {
     search_icon->setFixedWidth(16);
 
     search_input_ = new QLineEdit;
-    search_input_->setPlaceholderText("Search discussions...");
+    search_input_->setPlaceholderText(tr("Search discussions..."));
     search_input_->setStyleSheet(QString("QLineEdit{background:rgba(255,255,255,0.03);color:%1;"
                                          "border:1px solid %2;padding:3px 10px;"
                                          "font-size:11px;border-radius:3px;%3}"
@@ -213,7 +213,7 @@ void ForumSidebarPanel::build_ui() {
     auto* trending_btn = new QPushButton;
     trending_btn->setFixedHeight(34);
     trending_btn->setCursor(Qt::PointingHandCursor);
-    trending_btn->setText("  ▲  TRENDING POSTS");
+    trending_btn->setText(tr("  ▲  TRENDING POSTS"));
     trending_btn->setStyleSheet(
         QString("QPushButton{background:rgba(217,119,6,0.04);color:%1;border:none;"
                 "border-bottom:1px solid %2;text-align:left;padding:0 14px;"
@@ -241,7 +241,7 @@ void ForumSidebarPanel::build_ui() {
     auto* new_post_btn = new QPushButton("+");
     new_post_btn->setFixedSize(18, 18);
     new_post_btn->setCursor(Qt::PointingHandCursor);
-    new_post_btn->setToolTip("New post");
+    new_post_btn->setToolTip(tr("New post"));
     new_post_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:none;"
                                         "font-size:14px;font-weight:700;%2}"
                                         "QPushButton:hover{color:%3;}")

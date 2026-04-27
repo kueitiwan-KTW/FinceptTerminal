@@ -49,7 +49,7 @@ void FredPanel::build_controls(QHBoxLayout* thl) {
     lbl2->setStyleSheet(ctrl_label_style());
 
     series_input_ = new QLineEdit;
-    series_input_->setPlaceholderText("e.g. GDPC1");
+    series_input_->setPlaceholderText(tr("e.g. GDPC1"));
     series_input_->setFixedHeight(26);
     series_input_->setFixedWidth(100);
 

@@ -1,0 +1,132 @@
+# FinceptTerminal 繁體中文版 — 多階段建構
+# 使用 aqtinstall 安裝 Qt 6.8.3
+
+# ============================================================
+# 階段 1：編譯
+# ============================================================
+FROM ubuntu:24.04 AS builder
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Taipei
+
+# 建構工具 + aqtinstall 的 Python
+RUN apt-get update && apt-get install -y \
+    build-essential cmake ninja-build git \
+    python3 python3-pip python3-venv \
+    libgl1-mesa-dev libglu1-mesa-dev \
+    libx11-dev libx11-xcb-dev libxcb1-dev \
+    libxcb-glx0-dev libxcb-keysyms1-dev \
+    libxcb-image0-dev libxcb-shm0-dev \
+    libxcb-icccm4-dev libxcb-sync-dev \
+    libxcb-xfixes0-dev libxcb-shape0-dev \
+    libxcb-randr0-dev libxcb-render-util0-dev \
+    libxcb-xinerama0-dev libxcb-xkb-dev \
+    libxkbcommon-dev libxkbcommon-x11-dev \
+    libssl-dev libfontconfig1-dev libfreetype6-dev \
+    libharfbuzz-dev libjpeg-dev libpng-dev \
+    libsqlite3-dev libdbus-1-dev \
+    libglib2.0-dev libatspi2.0-dev \
+    libxrender-dev libxi-dev libxtst-dev \
+    libpulse-dev libasound2-dev \
+    libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev \
+    libdrm-dev libgbm-dev libegl1-mesa-dev \
+    pkg-config wget \
+    && rm -rf /var/lib/apt/lists/*
+
+# 用 aqtinstall 安裝 Qt 6.8.3
+RUN pip3 install --break-system-packages aqtinstall && \
+    aqt install-qt linux desktop 6.8.3 linux_gcc_64 \
+      --outputdir /opt/qt \
+      -m qtcharts qtwebsockets qtmultimedia qtspeech qt5compat && \
+    echo "Qt 6.8.3 安裝完成"
+
+ENV Qt6_DIR=/opt/qt/6.8.3/gcc_64
+ENV CMAKE_PREFIX_PATH=${Qt6_DIR}
+ENV PATH=${Qt6_DIR}/bin:${PATH}
+ENV LD_LIBRARY_PATH=${Qt6_DIR}/lib:${LD_LIBRARY_PATH}
+
+WORKDIR /build
+
+# 複製原始碼
+COPY fincept-qt/ ./fincept-qt/
+
+# 先用 lrelease 編譯翻譯檔 .ts → .qm
+RUN mkdir -p /build/fincept-qt/translations && \
+    if [ -f /build/fincept-qt/translations/fincept_zh_TW.ts ]; then \
+        ${Qt6_DIR}/bin/lrelease /build/fincept-qt/translations/fincept_zh_TW.ts \
+            -qm /build/fincept-qt/translations/fincept_zh_TW.qm 2>&1 || \
+        echo "[i18n] lrelease 可能不在 PATH，嘗試 linguist-tools..." ; \
+    fi
+
+# CMake 配置
+RUN cd /build/fincept-qt && \
+    cmake -B build -G Ninja \
+        -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_PREFIX_PATH=${Qt6_DIR} \
+        -DCMAKE_INSTALL_PREFIX=/opt/fincept \
+        2>&1 | tee /tmp/cmake_config.log | tail -30
+
+# 建構（使用全部 CPU 核心）
+RUN cd /build/fincept-qt && \
+    cmake --build build --parallel $(nproc) 2>&1 | tee /tmp/cmake_build.log | tail -50
+
+# 安裝
+RUN cd /build/fincept-qt/build && \
+    mkdir -p /opt/fincept/bin /opt/fincept/lib /opt/fincept/translations && \
+    cp FinceptTerminal /opt/fincept/bin/ 2>/dev/null || true && \
+    cp /build/fincept-qt/translations/*.qm /opt/fincept/translations/ 2>/dev/null || true && \
+    # 複製 Qt runtime libs
+    cp -a ${Qt6_DIR}/lib/libQt6*.so* /opt/fincept/lib/ 2>/dev/null || true && \
+    cp -a ${Qt6_DIR}/plugins /opt/fincept/ 2>/dev/null || true && \
+    # 複製建構過程中的第三方依賴庫（如 libqgeoview）
+    find /build/fincept-qt/build/_deps -name "*.so*" -exec cp -a {} /opt/fincept/lib/ \; 2>/dev/null || true && \
+    # 複製 Qt 附帶的 ICU 和其他共享庫
+    cp -a ${Qt6_DIR}/lib/libicu*.so* /opt/fincept/lib/ 2>/dev/null || true && \
+    cp -a ${Qt6_DIR}/lib/libQt6*.so* /opt/fincept/lib/ 2>/dev/null || true && \
+    # 複製 resources 目錄（含 requirements-numpy1/2.txt 等安裝所需檔案）
+    cp -r /build/fincept-qt/resources /opt/fincept/bin/resources 2>/dev/null || true
+
+# ============================================================
+# 階段 2：執行環境
+# ============================================================
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Taipei
+ENV LANG=zh_TW.UTF-8
+ENV LC_ALL=zh_TW.UTF-8
+ENV FINCEPT_LANG=zh_TW
+
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-dri libegl1 libegl-mesa0 libgbm1 \
+    libopengl0 libglx0 libglx-mesa0 \
+    libx11-6 libxcb1 libxkbcommon0 libxkbcommon-x11-0 \
+    libxcb-cursor0 libxcb-keysyms1 libxcb-shape0 \
+    libxcb-xfixes0 libxcb-randr0 libxcb-render-util0 \
+    libxcb-icccm4 libxcb-image0 libxcb-shm0 \
+    libxcb-sync1 libxcb-xinerama0 libxcb-xkb1 \
+    libxcb-glx0 libxcb-render0 \
+    libfontconfig1 libfreetype6 libharfbuzz0b \
+    libdbus-1-3 libglib2.0-0 \
+    libpulse0 libdrm2 libxrender1 libxi6 libxtst6 \
+    libsqlite3-0 libssl3t64 \
+    libgstreamer1.0-0 libgstreamer-plugins-base1.0-0 \
+    xvfb x11vnc novnc websockify fluxbox \
+    fonts-noto-cjk fonts-noto-cjk-extra \
+    locales curl ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN locale-gen zh_TW.UTF-8
+
+# 從建構階段複製
+COPY --from=builder /opt/fincept /opt/fincept
+
+ENV LD_LIBRARY_PATH=/opt/fincept/lib
+ENV QT_PLUGIN_PATH=/opt/fincept/plugins
+
+COPY docker-entrypoint-zh.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 6080
+
+ENTRYPOINT ["/entrypoint.sh"]

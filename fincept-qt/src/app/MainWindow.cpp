@@ -561,23 +561,23 @@ MainWindow::MainWindow(int window_id, QWidget* parent) : QMainWindow(parent), wi
             }
             move_to_screen(target);
         } else if (action.startsWith("panel_")) {
-            // Float a screen — in ADS mode, navigate dock_router; in legacy, spawn window
-            static const QMap<QString, QPair<QString, QString>> panel_map = {
-                {"panel_dashboard", {"Dashboard", "dashboard"}},
-                {"panel_watchlist", {"Watchlist", "watchlist"}},
-                {"panel_news", {"News Feed", "news"}},
-                {"panel_portfolio", {"Portfolio", "portfolio"}},
-                {"panel_markets", {"Markets", "markets"}},
-                {"panel_crypto", {"Crypto Trading", "crypto_trading"}},
-                {"panel_equity", {"Equity Trading", "equity_trading"}},
-                {"panel_algo", {"Algo Trading", "algo_trading"}},
-                {"panel_research", {"Equity Research", "equity_research"}},
-                {"panel_economics", {"Economics", "economics"}},
-                {"panel_geopolitics", {"Geopolitics", "geopolitics"}},
-                {"panel_ai_chat", {"AI Chat", "ai_chat"}},
+            // 面板路由表 — route ID 不翻譯，title 不再使用
+            static const QMap<QString, QString> panel_route_map = {
+                {"panel_dashboard", "dashboard"},
+                {"panel_watchlist", "watchlist"},
+                {"panel_news", "news"},
+                {"panel_portfolio", "portfolio"},
+                {"panel_markets", "markets"},
+                {"panel_crypto", "crypto_trading"},
+                {"panel_equity", "equity_trading"},
+                {"panel_algo", "algo_trading"},
+                {"panel_research", "equity_research"},
+                {"panel_economics", "economics"},
+                {"panel_geopolitics", "geopolitics"},
+                {"panel_ai_chat", "ai_chat"},
             };
-            if (panel_map.contains(action)) {
-                const auto [title, route] = panel_map[action];
+            if (panel_route_map.contains(action)) {
+                const QString route = panel_route_map[action];
                 if (dock_router_)
                     dock_router_->navigate(route);
             }

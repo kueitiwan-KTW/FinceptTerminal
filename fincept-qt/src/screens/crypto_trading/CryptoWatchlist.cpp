@@ -72,7 +72,7 @@ CryptoWatchlist::CryptoWatchlist(QWidget* parent) : QWidget(parent) {
     // Search
     filter_edit_ = new QLineEdit;
     filter_edit_->setObjectName("cryptoWatchlistSearch");
-    filter_edit_->setPlaceholderText("Search...");
+    filter_edit_->setPlaceholderText(tr("Search..."));
     filter_edit_->setFixedHeight(24);
     connect(filter_edit_, &QLineEdit::textChanged, this, &CryptoWatchlist::on_filter_changed);
     layout->addWidget(filter_edit_);

@@ -110,7 +110,7 @@ RegisterScreen::RegisterScreen(QWidget* parent) : QWidget(parent) {
     auto& auth = auth::AuthManager::instance();
     connect(&auth, &auth::AuthManager::signup_succeeded, this, [this]() {
         register_btn_->setEnabled(true);
-        register_btn_->setText("  CREATE ACCOUNT  ");
+        register_btn_->setText(tr("  CREATE ACCOUNT  "));
         otp_email_->setText(email_->text().trimmed());
         otp_input_->clear();
         otp_error_->hide();
@@ -118,14 +118,14 @@ RegisterScreen::RegisterScreen(QWidget* parent) : QWidget(parent) {
     });
     connect(&auth, &auth::AuthManager::signup_failed, this, [this](const QString& err) {
         register_btn_->setEnabled(true);
-        register_btn_->setText("  CREATE ACCOUNT  ");
+        register_btn_->setText(tr("  CREATE ACCOUNT  "));
         error_label_->setText(err);
         error_label_->show();
     });
     connect(&auth, &auth::AuthManager::otp_verified, this, [this]() { verify_btn_->setEnabled(true); });
     connect(&auth, &auth::AuthManager::otp_failed, this, [this](const QString& err) {
         verify_btn_->setEnabled(true);
-        verify_btn_->setText("  VERIFY  ");
+        verify_btn_->setText(tr("  VERIFY  "));
         otp_error_->setText(err);
         otp_error_->show();
     });
@@ -363,7 +363,7 @@ void RegisterScreen::build_otp_page() {
     vl->addWidget(lbl);
 
     otp_input_ = new QLineEdit;
-    otp_input_->setPlaceholderText("enter code from email");
+    otp_input_->setPlaceholderText(tr("enter code from email"));
     otp_input_->setFixedHeight(34);
     otp_input_->setStyleSheet(QString("QLineEdit {"
                                       "  background: %1; color: %2;"
@@ -433,12 +433,12 @@ void RegisterScreen::on_register() {
     QString cpw = confirm_pw_->text();
 
     if (fn.isEmpty() || ln.isEmpty() || em.isEmpty() || ph.isEmpty() || pw.isEmpty() || cpw.isEmpty()) {
-        error_label_->setText("All fields are required");
+        error_label_->setText(tr("All fields are required"));
         error_label_->show();
         return;
     }
     if (cc.isEmpty()) {
-        error_label_->setText("Country code is required (e.g. +1, +91)");
+        error_label_->setText(tr("Country code is required (e.g. +1, +91)"));
         error_label_->show();
         return;
     }
@@ -454,25 +454,25 @@ void RegisterScreen::on_register() {
         return;
     }
     if (pw != cpw) {
-        error_label_->setText("Passwords do not match");
+        error_label_->setText(tr("Passwords do not match"));
         error_label_->show();
         return;
     }
     if (pw.length() < 8) {
-        error_label_->setText("Password must be at least 8 characters");
+        error_label_->setText(tr("Password must be at least 8 characters"));
         error_label_->show();
         return;
     }
 
     QString username = auth::sanitize_input(fn + ln).toLower();
     if (username.length() < 3 || username.length() > 50) {
-        error_label_->setText("Username must be 3-50 characters");
+        error_label_->setText(tr("Username must be 3-50 characters"));
         error_label_->show();
         return;
     }
 
     register_btn_->setEnabled(false);
-    register_btn_->setText("  CREATING...  ");
+    register_btn_->setText(tr("  CREATING...  "));
     auth::AuthManager::instance().signup(username, em, pw, ph, {}, cc);
 }
 
@@ -480,12 +480,12 @@ void RegisterScreen::on_verify_otp() {
     otp_error_->hide();
     QString code = otp_input_->text().trimmed();
     if (code.isEmpty()) {
-        otp_error_->setText("Enter the verification code");
+        otp_error_->setText(tr("Enter the verification code"));
         otp_error_->show();
         return;
     }
     verify_btn_->setEnabled(false);
-    verify_btn_->setText("  VERIFYING...  ");
+    verify_btn_->setText(tr("  VERIFYING...  "));
     auth::AuthManager::instance().verify_otp(email_->text().trimmed(), code);
 }
 

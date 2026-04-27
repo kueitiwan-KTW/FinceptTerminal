@@ -195,7 +195,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
     r1->setSpacing(8);
     r1->addWidget(field_lbl("Name"));
     name_edit_ = new QLineEdit;
-    name_edit_->setPlaceholderText("e.g. My Equity Analyst");
+    name_edit_->setPlaceholderText(tr("e.g. My Equity Analyst"));
     name_edit_->setStyleSheet(input_style());
     r1->addWidget(name_edit_, 1);
     r1->addWidget(field_lbl("Category"));
@@ -207,7 +207,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
     vl->addLayout(r1);
 
     desc_edit_ = new QPlainTextEdit;
-    desc_edit_->setPlaceholderText("Brief description of what this agent does...");
+    desc_edit_->setPlaceholderText(tr("Brief description of what this agent does..."));
     desc_edit_->setFixedHeight(52);
     desc_edit_->setStyleSheet(QString("QPlainTextEdit{%1}").arg(input_style()));
     vl->addWidget(desc_edit_);
@@ -216,7 +216,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
     vl->addWidget(section_label("MODEL"));
 
     llm_profile_combo_ = new QComboBox;
-    llm_profile_combo_->setToolTip("LLM profile for this agent. Configure profiles in Settings > LLM Config.");
+    llm_profile_combo_->setToolTip(tr("LLM profile for this agent. Configure profiles in Settings > LLM Config."));
     llm_profile_combo_->setStyleSheet(combo_style());
     vl->addWidget(llm_profile_combo_);
 
@@ -229,7 +229,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
     vl->addWidget(section_label("INSTRUCTIONS"));
 
     instructions_edit_ = new QPlainTextEdit;
-    instructions_edit_->setPlaceholderText("System prompt — role, goals, constraints, persona...");
+    instructions_edit_->setPlaceholderText(tr("System prompt — role, goals, constraints, persona..."));
     instructions_edit_->setMinimumHeight(110);
     instructions_edit_->setStyleSheet(QString("QPlainTextEdit{%1}").arg(input_style()));
     vl->addWidget(instructions_edit_);
@@ -238,7 +238,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
     vl->addWidget(section_label("TOOLS"));
 
     tool_search_edit_ = new QLineEdit;
-    tool_search_edit_->setPlaceholderText("Filter tools...");
+    tool_search_edit_->setPlaceholderText(tr("Filter tools..."));
     tool_search_edit_->setStyleSheet(input_style());
     vl->addWidget(tool_search_edit_);
 
@@ -308,7 +308,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
         kr1->addWidget(knowledge_type_combo_, 1);
         sl->addLayout(kr1);
         knowledge_urls_edit_ = new QPlainTextEdit;
-        knowledge_urls_edit_->setPlaceholderText("URLs (one per line)");
+        knowledge_urls_edit_->setPlaceholderText(tr("URLs (one per line)"));
         knowledge_urls_edit_->setFixedHeight(52);
         knowledge_urls_edit_->setStyleSheet(QString("QPlainTextEdit{%1}").arg(input_style()));
         sl->addWidget(knowledge_urls_edit_);
@@ -499,7 +499,7 @@ QWidget* CreateAgentPanel::build_test_panel() {
     bl->addWidget(qlbl);
 
     test_query_edit_ = new QPlainTextEdit;
-    test_query_edit_->setPlaceholderText("Enter test query...");
+    test_query_edit_->setPlaceholderText(tr("Enter test query..."));
     test_query_edit_->setFixedHeight(72);
     test_query_edit_->setStyleSheet(
         QString("QPlainTextEdit{background:%1;color:%2;border:1px solid %3;padding:6px;font-size:12px;}")
@@ -559,12 +559,12 @@ void CreateAgentPanel::setup_connections() {
 
     auto& svc = services::AgentService::instance();
     connect(&svc, &services::AgentService::config_saved, this, [this]() {
-        status_lbl_->setText("Saved successfully");
+        status_lbl_->setText(tr("Saved successfully"));
         status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::POSITIVE()));
         load_saved_agents();
     });
     connect(&svc, &services::AgentService::config_deleted, this, [this]() {
-        status_lbl_->setText("Agent deleted");
+        status_lbl_->setText(tr("Agent deleted"));
         status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::WARNING()));
         editing_id_.clear();
         load_saved_agents();
@@ -589,7 +589,7 @@ void CreateAgentPanel::setup_connections() {
             return;
         pending_request_id_.clear();
         test_btn_->setEnabled(true);
-        test_btn_->setText("RUN TEST");
+        test_btn_->setText(tr("RUN TEST"));
         if (r.success) {
             test_result_->setPlainText(r.response);
             test_status_lbl_->setText(QString("Done in %1ms").arg(r.execution_time_ms));
@@ -607,7 +607,7 @@ void CreateAgentPanel::setup_connections() {
             return;
         pending_request_id_.clear();
         test_btn_->setEnabled(true);
-        test_btn_->setText("RUN TEST");
+        test_btn_->setText(tr("RUN TEST"));
         if (r.success) {
             test_result_->setPlainText(r.response);
             test_status_lbl_->setText(QString("Done in %1ms").arg(r.execution_time_ms));
@@ -713,7 +713,7 @@ void CreateAgentPanel::refresh_llm_pill() {
         llm_resolved_lbl_->setStyleSheet(
             QString("color:%1;font-size:10px;padding:1px 0 4px 0;").arg(ui::colors::TEXT_TERTIARY()));
     } else {
-        llm_resolved_lbl_->setText("No provider — Settings > LLM Config");
+        llm_resolved_lbl_->setText(tr("No provider — Settings > LLM Config"));
         llm_resolved_lbl_->setStyleSheet(
             QString("color:%1;font-size:10px;padding:1px 0 4px 0;").arg(ui::colors::NEGATIVE()));
     }
@@ -839,7 +839,7 @@ void CreateAgentPanel::clear_form() {
     memory_session_summary_check_->setChecked(false);
     test_result_->clear();
     test_status_lbl_->clear();
-    status_lbl_->setText("Form cleared");
+    status_lbl_->setText(tr("Form cleared"));
     status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::TEXT_TERTIARY()));
 }
 
@@ -931,7 +931,7 @@ QJsonObject CreateAgentPanel::build_config_json() const {
 void CreateAgentPanel::save_agent() {
     const QString name = name_edit_->text().trimmed();
     if (name.isEmpty()) {
-        status_lbl_->setText("Agent name is required");
+        status_lbl_->setText(tr("Agent name is required"));
         status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::NEGATIVE()));
         return;
     }
@@ -963,9 +963,9 @@ void CreateAgentPanel::test_agent() {
     if (query.isEmpty())
         return;
     test_btn_->setEnabled(false);
-    test_btn_->setText("RUNNING...");
+    test_btn_->setText(tr("RUNNING..."));
     test_result_->clear();
-    test_status_lbl_->setText("Running...");
+    test_status_lbl_->setText(tr("Running..."));
     test_status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::AMBER()));
     pending_request_id_ = services::AgentService::instance().run_agent_streaming(query, build_config_json());
 }
@@ -983,7 +983,7 @@ void CreateAgentPanel::export_json() {
     QFile file(path);
     if (file.open(QIODevice::WriteOnly))
         file.write(QJsonDocument(out).toJson(QJsonDocument::Indented));
-    status_lbl_->setText("Exported: " + path);
+    status_lbl_->setText(tr("Exported: ") + path);
     status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::POSITIVE()));
 }
 
@@ -1002,7 +1002,7 @@ void CreateAgentPanel::import_json() {
     cfg.category = obj["category"].toString("custom");
     cfg.config_json = QString::fromUtf8(QJsonDocument(obj["config"].toObject()).toJson(QJsonDocument::Compact));
     load_agent_into_form(cfg);
-    status_lbl_->setText("Imported from file");
+    status_lbl_->setText(tr("Imported from file"));
     status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::CYAN()));
 }
 

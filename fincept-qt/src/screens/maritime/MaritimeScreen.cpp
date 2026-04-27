@@ -434,7 +434,7 @@ QWidget* MaritimeScreen::build_right_panel() {
     vl->addWidget(imo_lbl);
 
     imo_edit_ = new QLineEdit(content);
-    imo_edit_->setPlaceholderText("e.g. 9344745");
+    imo_edit_->setPlaceholderText(tr("e.g. 9344745"));
     imo_edit_->setStyleSheet(input_ss());
     connect(imo_edit_, &QLineEdit::returnPressed, this, &MaritimeScreen::on_search_vessel);
     connect(imo_edit_, &QLineEdit::textChanged, this,
@@ -723,11 +723,11 @@ void MaritimeScreen::on_vessel_found(VesselData vessel) {
     search_result_card_->setVisible(true);
     search_result_label_->setVisible(false);
     sr_name_->setText(vessel.name);
-    sr_imo_->setText("IMO: " + vessel.imo);
+    sr_imo_->setText(tr("IMO: ") + vessel.imo);
     sr_position_->setText(QString("Position: %1, %2").arg(vessel.latitude, 0, 'f', 4).arg(vessel.longitude, 0, 'f', 4));
     sr_speed_->setText(QString("Speed: %1 kn").arg(vessel.speed, 0, 'f', 1));
     sr_from_->setText("From: " + (vessel.from_port.isEmpty() ? "—" : vessel.from_port));
-    sr_to_->setText("To: " + (vessel.to_port.isEmpty() ? "—" : vessel.to_port));
+    sr_to_->setText(tr("To: ") + (vessel.to_port.isEmpty() ? "—" : vessel.to_port));
     set_status("READY", ui::colors::POSITIVE);
 }
 
@@ -749,7 +749,7 @@ void MaritimeScreen::on_route_selected(int row) {
     const auto& r = routes_[row];
     route_detail_->setVisible(true);
     rd_name_->setText(r.name);
-    rd_value_->setText("Trade Value: " + r.value);
+    rd_value_->setText(tr("Trade Value: ") + r.value);
     rd_status_->setText("Status: " + r.status.toUpper());
     rd_status_->setStyleSheet(QString("color:%1; font-size:9px; font-family:%2;")
                                   .arg(route_status_color(r.status).name())

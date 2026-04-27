@@ -114,14 +114,14 @@ void NodeEditorToolbar::build_ui() {
     undo_btn_ = new QPushButton("UNDO");
     undo_btn_->setStyleSheet(btn_style());
     undo_btn_->setEnabled(false);
-    undo_btn_->setToolTip("Undo last action (Ctrl+Z)");
+    undo_btn_->setToolTip(tr("Undo last action (Ctrl+Z)"));
     layout->addWidget(undo_btn_);
     connect(undo_btn_, &QPushButton::clicked, this, &NodeEditorToolbar::undo_clicked);
 
     redo_btn_ = new QPushButton("REDO");
     redo_btn_->setStyleSheet(btn_style());
     redo_btn_->setEnabled(false);
-    redo_btn_->setToolTip("Redo last action (Ctrl+Y)");
+    redo_btn_->setToolTip(tr("Redo last action (Ctrl+Y)"));
     layout->addWidget(redo_btn_);
     connect(redo_btn_, &QPushButton::clicked, this, &NodeEditorToolbar::redo_clicked);
 
@@ -134,13 +134,13 @@ void NodeEditorToolbar::build_ui() {
     // ── Save / Load / Clear ────────────────────────────────────────
     auto* save_btn = new QPushButton("SAVE");
     save_btn->setStyleSheet(btn_style());
-    save_btn->setToolTip("Save workflow to database");
+    save_btn->setToolTip(tr("Save workflow to database"));
     layout->addWidget(save_btn);
     connect(save_btn, &QPushButton::clicked, this, &NodeEditorToolbar::save_clicked);
 
     auto* load_btn = new QPushButton("LOAD");
     load_btn->setStyleSheet(btn_style());
-    load_btn->setToolTip("Load a saved workflow");
+    load_btn->setToolTip(tr("Load a saved workflow"));
     layout->addWidget(load_btn);
     connect(load_btn, &QPushButton::clicked, this, &NodeEditorToolbar::load_clicked);
 

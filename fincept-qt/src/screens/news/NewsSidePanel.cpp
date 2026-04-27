@@ -138,7 +138,7 @@ void NewsSidePanel::build_monitors_section(QVBoxLayout* parent) {
 
     monitor_input_ = new QLineEdit(add_row);
     monitor_input_->setObjectName("newsMonitorInput");
-    monitor_input_->setPlaceholderText("label: kw1, kw2");
+    monitor_input_->setPlaceholderText(tr("label: kw1, kw2"));
     monitor_input_->setFixedHeight(22);
 
     auto* add_btn = new QPushButton("+", add_row);

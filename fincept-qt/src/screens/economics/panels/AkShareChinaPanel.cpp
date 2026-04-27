@@ -57,7 +57,7 @@ void AkShareChinaPanel::build_controls(QHBoxLayout* thl) {
         series_combo_->addItem(s.label, s.command);
     series_combo_->setFixedHeight(26);
     series_combo_->setMinimumWidth(260);
-    series_combo_->setToolTip("Data from China National Bureau of Statistics via AkShare");
+    series_combo_->setToolTip(tr("Data from China National Bureau of Statistics via AkShare"));
 
     thl->addWidget(lbl);
     thl->addWidget(series_combo_);

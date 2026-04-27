@@ -180,7 +180,7 @@ QWidget* GovDataFrancePanel::build_toolbar() {
 
     search_input_ = new QLineEdit;
     search_input_->setObjectName("govSearch");
-    search_input_->setPlaceholderText("Search…");
+    search_input_->setPlaceholderText(tr("Search…"));
     search_input_->setFixedWidth(210);
     search_input_->setFixedHeight(26);
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataFrancePanel::on_fetch);
@@ -236,7 +236,7 @@ void GovDataFrancePanel::on_tab_changed(int tab_index) {
             row_count_label_->setText(QString::number(current_datasets_.size()) + " datasets");
         }
         update_breadcrumb("Datasets");
-        search_input_->setPlaceholderText("Search datasets…");
+        search_input_->setPlaceholderText(tr("Search datasets…"));
         search_input_->setFocus();
     } else if (view == Geo) {
         if (current_geo_.isEmpty()) {
@@ -246,7 +246,7 @@ void GovDataFrancePanel::on_tab_changed(int tab_index) {
             row_count_label_->setText(QString::number(current_geo_.size()) + " municipalities");
         }
         update_breadcrumb("Geo Search — Municipalities");
-        search_input_->setPlaceholderText("Municipality name…");
+        search_input_->setPlaceholderText(tr("Municipality name…"));
         search_input_->setFocus();
     }
 

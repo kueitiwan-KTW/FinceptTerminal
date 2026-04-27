@@ -445,7 +445,7 @@ void AIQuantLabScreen::update_right_panel() {
         QString("color:%1; font-weight:700; font-size:11px; background:transparent;").arg(mod.color.name()));
     right_category_->setText(QString(mod.category).replace('_', '/') + " module");
     right_desc_->setText(mod.description);
-    right_script_->setText("Script: " + mod.script);
+    right_script_->setText(tr("Script: ") + mod.script);
 }
 
 // ── IStatefulScreen ───────────────────────────────────────────────────────────

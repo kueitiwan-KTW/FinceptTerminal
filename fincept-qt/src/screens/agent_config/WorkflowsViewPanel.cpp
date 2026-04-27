@@ -189,7 +189,7 @@ QWidget* WorkflowsViewPanel::build_params_panel() {
     bl->addWidget(lbl_llm);
 
     llm_profile_combo_ = new QComboBox;
-    llm_profile_combo_->setToolTip("LLM profile used by this workflow run");
+    llm_profile_combo_->setToolTip(tr("LLM profile used by this workflow run"));
     llm_profile_combo_->setStyleSheet(
         QString("QComboBox{background:%1;color:%2;border:1px solid %3;padding:3px 6px;font-size:11px;}"
                 "QComboBox::drop-down{border:none;}"
@@ -217,7 +217,7 @@ QWidget* WorkflowsViewPanel::build_params_panel() {
                                .arg(ui::colors::TEXT_SECONDARY()));
         sl->addWidget(lbl);
         symbol_input_ = new QLineEdit;
-        symbol_input_->setPlaceholderText("e.g. AAPL");
+        symbol_input_->setPlaceholderText(tr("e.g. AAPL"));
         symbol_input_->setMaximumWidth(110);
         symbol_input_->setStyleSheet(
             QString("background:%1;color:%2;border:1px solid %3;padding:3px 6px;font-size:12px;")
@@ -239,7 +239,7 @@ QWidget* WorkflowsViewPanel::build_params_panel() {
             QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;").arg(ui::colors::TEXT_SECONDARY()));
         ql->addWidget(lbl);
         query_input_ = new QTextEdit;
-        query_input_->setPlaceholderText("Enter query for this workflow...");
+        query_input_->setPlaceholderText(tr("Enter query for this workflow..."));
         query_input_->setFixedHeight(90);
         query_input_->setStyleSheet(
             QString("QTextEdit{background:%1;color:%2;border:1px solid %3;padding:6px;font-size:12px;}")
@@ -362,7 +362,7 @@ void WorkflowsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN WORKFLOW");
+        run_btn_->setText(tr("RUN WORKFLOW"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
             const QString msg = QString("Done in %1ms").arg(r.execution_time_ms);
@@ -401,7 +401,7 @@ void WorkflowsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN WORKFLOW");
+        run_btn_->setText(tr("RUN WORKFLOW"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
             const QString msg = QString("Done in %1ms").arg(r.execution_time_ms);
@@ -422,7 +422,7 @@ void WorkflowsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN WORKFLOW");
+        run_btn_->setText(tr("RUN WORKFLOW"));
         result_display_->setPlainText("Error: " + msg);
         output_status_->setText("ERROR");
         output_status_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::NEGATIVE()));
@@ -436,7 +436,7 @@ void WorkflowsViewPanel::setup_connections() {
             if (!resolved.provider.isEmpty())
                 llm_resolved_lbl_->setText(resolved.provider.toUpper() + " / " + resolved.model_id + " (inherited)");
             else
-                llm_resolved_lbl_->setText("No provider — Settings > LLM Config");
+                llm_resolved_lbl_->setText(tr("No provider — Settings > LLM Config"));
         } else {
             const auto pr2 = LlmProfileRepository::instance().list_profiles();
             const auto profs = pr2.is_ok() ? pr2.value() : QVector<LlmProfile>{};
@@ -496,11 +496,11 @@ void WorkflowsViewPanel::run_current_workflow() {
 
     executing_ = true;
     run_btn_->setEnabled(false);
-    run_btn_->setText("RUNNING...");
+    run_btn_->setText(tr("RUNNING..."));
     result_display_->clear();
     log_display_->clear();
     output_title_->setText(QString("OUTPUT  —  %1").arg(current_workflow_type_.toUpper()));
-    output_status_->setText("Executing...");
+    output_status_->setText(tr("Executing..."));
     output_status_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::AMBER()));
     log_display_->append(QString("[START] %1").arg(current_workflow_type_));
 
@@ -510,8 +510,8 @@ void WorkflowsViewPanel::run_current_workflow() {
         if (sym.isEmpty()) {
             executing_ = false;
             run_btn_->setEnabled(true);
-            run_btn_->setText("RUN WORKFLOW");
-            params_status_->setText("Symbol is required");
+            run_btn_->setText(tr("RUN WORKFLOW"));
+            params_status_->setText(tr("Symbol is required"));
             params_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
             return;
         }
@@ -523,8 +523,8 @@ void WorkflowsViewPanel::run_current_workflow() {
         if (q.isEmpty()) {
             executing_ = false;
             run_btn_->setEnabled(true);
-            run_btn_->setText("RUN WORKFLOW");
-            params_status_->setText("Query is required");
+            run_btn_->setText(tr("RUN WORKFLOW"));
+            params_status_->setText(tr("Query is required"));
             params_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
             return;
         }

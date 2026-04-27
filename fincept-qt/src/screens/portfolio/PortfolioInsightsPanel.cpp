@@ -68,7 +68,7 @@ PortfolioInsightsPanel::PortfolioInsightsPanel(QWidget* parent) : QWidget(parent
                 upper = "OPPS";
             ai_run_->setText(QString("RE-RUN %1 ANALYSIS").arg(upper));
         } else {
-            const QString msg = r.error.isEmpty() ? QStringLiteral("No response received.") : r.error;
+            const QString msg = r.error.isEmpty() ? tr("No response received.") : r.error;
             render_error(ai_content_, "Analysis failed.\n\n" + msg);
         }
     });
@@ -77,7 +77,7 @@ PortfolioInsightsPanel::PortfolioInsightsPanel(QWidget* parent) : QWidget(parent
             [this](const QString& request_id, const QString& status) {
                 if (request_id != agent_pending_req_id_)
                     return;
-                header_status_->setText("● " + status);
+                header_status_->setText(tr("● ") + status);
             });
 
     // Live token streaming — accumulate into agent_streaming_text_ and show
@@ -119,7 +119,7 @@ PortfolioInsightsPanel::PortfolioInsightsPanel(QWidget* parent) : QWidget(parent
                     agent_cache_.insert(agent_id, final_text);
                     agent_meta_->setText(QString("Last run %1  •  %2ms").arg(fmt_now()).arg(r.execution_time_ms));
                     render_result(agent_content_, final_text);
-                    agent_run_->setText("RE-RUN AGENT");
+                    agent_run_->setText(tr("RE-RUN AGENT"));
                 } else if (r.success) {
                     // Agent reported success but produced no text — likely a
                     // config issue (no LLM key in the agent's profile, etc.).
@@ -128,7 +128,7 @@ PortfolioInsightsPanel::PortfolioInsightsPanel(QWidget* parent) : QWidget(parent
                                  "Check the agent's LLM profile in Agent Config → Agents, "
                                  "and make sure an API key is set in Settings → LLM Configuration.");
                 } else {
-                    const QString msg = r.error.isEmpty() ? QStringLiteral("No response received.") : r.error;
+                    const QString msg = r.error.isEmpty() ? tr("No response received.") : r.error;
                     render_error(agent_content_, "Agent run failed.\n\n" + msg);
                 }
             });
@@ -199,7 +199,7 @@ void PortfolioInsightsPanel::build_ui() {
     auto* close_btn = new QPushButton("×");
     close_btn->setFixedSize(28, 28);
     close_btn->setCursor(Qt::PointingHandCursor);
-    close_btn->setToolTip("Close  (Esc)");
+    close_btn->setToolTip(tr("Close  (Esc)"));
     close_btn->setStyleSheet(QString("QPushButton { background:transparent; border:none; color:%1;"
                                      "  font-size:20px; font-weight:300; }"
                                      "QPushButton:hover { color:%2; background:%3; }")

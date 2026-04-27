@@ -435,13 +435,13 @@ void PolymarketDetailPanel::on_submit_clicked() {
     if (!price_ok || price <= 0.0 || price >= 1.0) {
         ticket_status_lbl_->setStyleSheet(
             QString("color: %1; font-size: 10px; background: transparent;").arg(colors::NEGATIVE()));
-        ticket_status_lbl_->setText("Invalid price — enter a value between 0 and 1");
+        ticket_status_lbl_->setText(tr("Invalid price — enter a value between 0 and 1"));
         return;
     }
     if (!size_ok || size <= 0.0) {
         ticket_status_lbl_->setStyleSheet(
             QString("color: %1; font-size: 10px; background: transparent;").arg(colors::NEGATIVE()));
-        ticket_status_lbl_->setText("Invalid size — must be > 0");
+        ticket_status_lbl_->setText(tr("Invalid size — must be > 0"));
         return;
     }
 
@@ -460,7 +460,7 @@ void PolymarketDetailPanel::on_submit_clicked() {
 
     ticket_status_lbl_->setStyleSheet(
         QString("color: %1; font-size: 10px; background: transparent;").arg(colors::TEXT_DIM()));
-    ticket_status_lbl_->setText("Submitting…");
+    ticket_status_lbl_->setText(tr("Submitting…"));
     ticket_submit_btn_->setEnabled(false);
     emit place_order(req);
 }
@@ -887,7 +887,7 @@ void PolymarketDetailPanel::set_polymarket_extras_enabled(bool enabled) {
 void PolymarketDetailPanel::clear() {
     has_last_market_ = false;
     last_market_ = {};
-    question_label_->setText("Select a market to view details");
+    question_label_->setText(tr("Select a market to view details"));
     volume_label_->setText("—");
     liquidity_label_->setText("—");
     end_date_label_->setText("—");

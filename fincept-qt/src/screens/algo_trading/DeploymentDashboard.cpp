@@ -459,7 +459,7 @@ void DeploymentDashboard::on_deployments_loaded(QVector<AlgoDeployment> deployme
     update_summary(deployments);
 
     if (deployments.isEmpty()) {
-        status_label_->setText("No active deployments.");
+        status_label_->setText(tr("No active deployments."));
         status_label_->setVisible(true);
     } else {
         status_label_->setText(QString("%1 deployment(s)").arg(deployments.size()));

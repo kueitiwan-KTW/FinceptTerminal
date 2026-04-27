@@ -503,15 +503,15 @@ QWidget* AlphaArenaScreen::create_right_panel() {
     // 1: HITL
     hitl_content_ = new QTextEdit;
     hitl_content_->setReadOnly(true);
-    hitl_content_->setPlaceholderText("Human-in-the-loop approvals will appear here.\n"
-                                      "High-risk trades require manual approval before execution.");
+    hitl_content_->setPlaceholderText(tr("Human-in-the-loop approvals will appear here.\n"
+                                      "High-risk trades require manual approval before execution."));
     right_stack_->addWidget(hitl_content_);
 
     // 2: Sentiment
     sentiment_content_ = new QTextEdit;
     sentiment_content_->setReadOnly(true);
-    sentiment_content_->setPlaceholderText("Market sentiment analysis will appear here.\n"
-                                           "Mood: RISK_ON / RISK_OFF / MIXED");
+    sentiment_content_->setPlaceholderText(tr("Market sentiment analysis will appear here.\n"
+                                           "Mood: RISK_ON / RISK_OFF / MIXED"));
     right_stack_->addWidget(sentiment_content_);
 
     // 3: Metrics
@@ -526,22 +526,22 @@ QWidget* AlphaArenaScreen::create_right_panel() {
     // 4: Grid
     grid_content_ = new QTextEdit;
     grid_content_->setReadOnly(true);
-    grid_content_->setPlaceholderText("Grid trading strategy configuration.\n"
-                                      "Place buy/sell orders at regular price intervals.");
+    grid_content_->setPlaceholderText(tr("Grid trading strategy configuration.\n"
+                                      "Place buy/sell orders at regular price intervals."));
     right_stack_->addWidget(grid_content_);
 
     // 5: Research
     research_content_ = new QTextEdit;
     research_content_->setReadOnly(true);
-    research_content_->setPlaceholderText("SEC filings and company research.\n"
-                                          "Search by ticker to load 10-K, 10-Q, 8-K filings.");
+    research_content_->setPlaceholderText(tr("SEC filings and company research.\n"
+                                          "Search by ticker to load 10-K, 10-Q, 8-K filings."));
     right_stack_->addWidget(research_content_);
 
     // 6: Broker
     broker_content_ = new QTextEdit;
     broker_content_->setReadOnly(true);
-    broker_content_->setPlaceholderText("Broker selection and configuration.\n"
-                                        "Supported: Kraken, Binance, Coinbase, and more.");
+    broker_content_->setPlaceholderText(tr("Broker selection and configuration.\n"
+                                        "Supported: Kraken, Binance, Coinbase, and more."));
     right_stack_->addWidget(broker_content_);
 
     vl->addWidget(right_stack_, 1);
@@ -610,7 +610,7 @@ QWidget* AlphaArenaScreen::create_status_bar() {
 void AlphaArenaScreen::on_create_competition() {
     auto selected = model_list_->selectedItems();
     if (selected.size() < 2) {
-        status_info_->setText("Select at least 2 models");
+        status_info_->setText(tr("Select at least 2 models"));
         return;
     }
 
@@ -719,21 +719,21 @@ void AlphaArenaScreen::on_reset() {
     status_badge_->setStyleSheet(QString("color: %1; background: rgba(217,119,6,0.15); "
                                          "font-size: 8px; font-weight: 700; padding: 2px 6px;")
                                      .arg(colors::AMBER()));
-    cycle_label_->setText("CYCLE 0");
+    cycle_label_->setText(tr("CYCLE 0"));
     price_label_->hide();
     leaderboard_table_->setRowCount(0);
-    leaderboard_cycle_->setText("Cycle 0");
+    leaderboard_cycle_->setText(tr("Cycle 0"));
     decisions_list_->clear();
     metrics_table_->setRowCount(0);
 
     run_btn_->setEnabled(false);
     auto_btn_->setEnabled(false);
-    auto_btn_->setText("AUTO RUN");
+    auto_btn_->setText(tr("AUTO RUN"));
     auto_btn_->setProperty("running", false);
     auto_btn_->style()->unpolish(auto_btn_);
     auto_btn_->style()->polish(auto_btn_);
 
-    status_comp_->setText("NO COMPETITION");
+    status_comp_->setText(tr("NO COMPETITION"));
     status_models_->clear();
     status_info_->clear();
 
@@ -818,8 +818,8 @@ void AlphaArenaScreen::run_python_action(const QString& action, const QJsonObjec
             if (action == "run_cycle") {
                 int cycle_number = obj["cycle_number"].toInt(self->cycle_count_ + 1);
                 self->cycle_count_ = cycle_number;
-                self->cycle_label_->setText("CYCLE " + QString::number(self->cycle_count_));
-                self->leaderboard_cycle_->setText("Cycle " + QString::number(self->cycle_count_));
+                self->cycle_label_->setText(tr("CYCLE ") + QString::number(self->cycle_count_));
+                self->leaderboard_cycle_->setText(tr("Cycle ") + QString::number(self->cycle_count_));
 
                 self->status_badge_->setText("RUNNING");
                 self->status_badge_->setStyleSheet(QString("color: %1; background: rgba(22,163,74,0.15); "
@@ -844,7 +844,7 @@ void AlphaArenaScreen::run_python_action(const QString& action, const QJsonObjec
                         self->update_decisions(decisions);
                 }
 
-                self->status_info_->setText("Cycle " + QString::number(self->cycle_count_) + " complete");
+                self->status_info_->setText(tr("Cycle ") + QString::number(self->cycle_count_) + " complete");
                 LOG_INFO("AlphaArena", "Cycle " + QString::number(self->cycle_count_) + " complete");
 
             } else if (action == "get_leaderboard") {

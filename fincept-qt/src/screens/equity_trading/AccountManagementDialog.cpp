@@ -50,7 +50,7 @@ static QLabel* make_field_label(const QString& text) {
 
 AccountManagementDialog::AccountManagementDialog(QWidget* parent)
     : QDialog(parent) {
-    setWindowTitle("Manage Broker Accounts");
+    setWindowTitle(QCoreApplication::translate("FinceptTerminal", "Manage Broker Accounts"));
     setMinimumSize(700, 480);
     setStyleSheet(QString("QDialog { background: %1; color: %2; }"
                           "QLabel#fieldLabel { color: %3; font-size: 11px; font-weight: 700; }"
@@ -105,7 +105,7 @@ void AccountManagementDialog::setup_ui() {
     add_row->addWidget(broker_picker_, 1);
 
     display_name_input_ = new QLineEdit;
-    display_name_input_->setPlaceholderText("Account name...");
+    display_name_input_->setPlaceholderText(tr("Account name..."));
     add_row->addWidget(display_name_input_, 1);
     left->addLayout(add_row);
 
@@ -446,7 +446,7 @@ void AccountManagementDialog::on_connect_account() {
     // HTTP call (BrokerHttp::execute uses QEventLoop), so running it on the UI
     // thread freezes the entire terminal until the request completes. Offload
     // to a worker thread and post results back via QMetaObject::invokeMethod.
-    form_status_->setText("Connecting...");
+    form_status_->setText(tr("Connecting..."));
     form_status_->setStyleSheet(QString("color: %1;").arg(colors::AMBER()));
     connect_btn_->setEnabled(false);
 
@@ -561,7 +561,7 @@ void AccountManagementDialog::build_zerodha_form() {
     v->addWidget(z_status_);
 
     // Collapsible "First-time setup" panel
-    z_setup_toggle_ = new QPushButton(QString::fromUtf8("\xe2\x96\xb8") + QStringLiteral(" First-time setup (4 steps)"));
+    z_setup_toggle_ = new QPushButton(QString::fromUtf8("\xe2\x96\xb8") + tr(" First-time setup (4 steps)"));
     z_setup_toggle_->setStyleSheet(QString("text-align:left;background:transparent;color:%1;"
                                            "border:none;padding:4px 0;font-weight:700;")
                                        .arg(colors::AMBER()));
@@ -592,7 +592,7 @@ void AccountManagementDialog::build_zerodha_form() {
         const bool vis = !self->z_setup_panel_->isVisible();
         self->z_setup_panel_->setVisible(vis);
         self->z_setup_toggle_->setText((vis ? QString::fromUtf8("\xe2\x96\xbe") : QString::fromUtf8("\xe2\x96\xb8"))
-                                       + QStringLiteral(" First-time setup (4 steps)"));
+                                       + tr(" First-time setup (4 steps)"));
     });
 
     // Mode radio
@@ -743,7 +743,7 @@ void AccountManagementDialog::on_connect_zerodha_totp() {
     // BUG 1 FIX: persist immediately so failure doesn't wipe the form.
     persist_zerodha_creds_before_auth();
 
-    z_status_->setText("Logging in...");
+    z_status_->setText(tr("Logging in..."));
     z_status_->setStyleSheet(QString("color:%1;").arg(colors::AMBER()));
     z_connect_btn_->setEnabled(false);
 
@@ -801,7 +801,7 @@ void AccountManagementDialog::on_connect_zerodha_browser() {
     const QString api_key = z_api_key_->text().trimmed();
     const QString api_secret = z_api_secret_->text();
     if (api_key.isEmpty() || api_secret.isEmpty()) {
-        z_status_->setText("Enter API Key and API Secret first");
+        z_status_->setText(tr("Enter API Key and API Secret first"));
         z_status_->setStyleSheet(QString("color:%1;").arg(colors::NEGATIVE()));
         return;
     }
@@ -817,7 +817,7 @@ void AccountManagementDialog::on_connect_zerodha_browser() {
     z_redirect_server_ = new trading::auth::RedirectServer(this);
 
     if (!z_redirect_server_->start(5010, 120)) {
-        z_status_->setText("Port 5010 busy - use manual paste fallback");
+        z_status_->setText(tr("Port 5010 busy - use manual paste fallback"));
         z_status_->setStyleSheet(QString("color:%1;").arg(colors::NEGATIVE()));
         z_redirect_server_->deleteLater();
         z_redirect_server_ = nullptr;
@@ -829,7 +829,7 @@ void AccountManagementDialog::on_connect_zerodha_browser() {
     connect(z_redirect_server_, &trading::auth::RedirectServer::request_token_received, this,
             [self, api_key, api_secret](const QString& token) {
                 if (!self) return;
-                self->z_status_->setText("Exchanging token...");
+                self->z_status_->setText(tr("Exchanging token..."));
                 self->exchange_and_store_token_async(api_key, api_secret, token);
                 if (self->z_redirect_server_) {
                     self->z_redirect_server_->deleteLater();
@@ -838,7 +838,7 @@ void AccountManagementDialog::on_connect_zerodha_browser() {
             });
     connect(z_redirect_server_, &trading::auth::RedirectServer::timeout, this, [self]() {
         if (!self) return;
-        self->z_status_->setText("Browser login timed out - try again or paste manually");
+        self->z_status_->setText(tr("Browser login timed out - try again or paste manually"));
         self->z_status_->setStyleSheet(QString("color:%1;").arg(colors::NEGATIVE()));
         if (self->z_redirect_server_) {
             self->z_redirect_server_->deleteLater();
@@ -880,7 +880,7 @@ void AccountManagementDialog::on_connect_zerodha_manual_paste() {
         return;
     }
     persist_zerodha_creds_before_auth();
-    z_status_->setText("Exchanging token...");
+    z_status_->setText(tr("Exchanging token..."));
     z_status_->setStyleSheet(QString("color:%1;").arg(colors::AMBER()));
     exchange_and_store_token_async(api_key, api_secret, token);
 }

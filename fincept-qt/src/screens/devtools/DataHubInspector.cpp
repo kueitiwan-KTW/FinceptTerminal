@@ -7,6 +7,7 @@
 #include <QTableWidget>
 #include <QTableWidgetItem>
 #include <QVBoxLayout>
+#include <QCoreApplication>
 
 namespace fincept::screens::devtools {
 
@@ -14,9 +15,9 @@ namespace {
 QString format_age(qint64 ms_since_epoch) {
     if (ms_since_epoch <= 0) return QStringLiteral("—");
     const qint64 age = QDateTime::currentMSecsSinceEpoch() - ms_since_epoch;
-    if (age < 1000) return QStringLiteral("%1 ms").arg(age);
-    if (age < 60000) return QStringLiteral("%1 s").arg(age / 1000);
-    return QStringLiteral("%1 m").arg(age / 60000);
+    if (age < 1000) return QCoreApplication::translate("FinceptTerminal", "%1 ms").arg(age);
+    if (age < 60000) return QCoreApplication::translate("FinceptTerminal", "%1 s").arg(age / 1000);
+    return QCoreApplication::translate("FinceptTerminal", "%1 m").arg(age / 60000);
 }
 } // namespace
 
@@ -62,7 +63,7 @@ void DataHubInspector::refresh() {
         table_->setItem(row, 4, new QTableWidgetItem(format_age(s.last_refresh_request_ms)));
         QString state_label;
         if (s.push_only) state_label = QStringLiteral("push");
-        else if (s.in_flight) state_label = QStringLiteral("in-flight");
+        else if (s.in_flight) state_label = tr("in-flight");
         else state_label = QStringLiteral("idle");
         table_->setItem(row, 5, new QTableWidgetItem(state_label));
     }

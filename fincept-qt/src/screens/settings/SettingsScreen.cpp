@@ -366,7 +366,7 @@ QWidget* SettingsScreen::build_credentials() {
 
         auto* field = new QLineEdit;
         field->setEchoMode(QLineEdit::Password);
-        field->setPlaceholderText("Not configured");
+        field->setPlaceholderText(tr("Not configured"));
         field->setStyleSheet(input_ss());
         cred_fields_[key] = field;
         bhl->addWidget(field, 1);
@@ -381,7 +381,7 @@ QWidget* SettingsScreen::build_credentials() {
             QString val = field->text().trimmed();
             if (val.isEmpty()) {
                 SecureStorage::instance().remove(key);
-                field->setPlaceholderText("Not configured");
+                field->setPlaceholderText(tr("Not configured"));
                 status_lbl->setText("Cleared");
                 status_lbl->setStyleSheet(
                     QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
@@ -390,12 +390,12 @@ QWidget* SettingsScreen::build_credentials() {
                 auto r = SecureStorage::instance().store(key, val);
                 if (r.is_ok()) {
                     field->clear();
-                    field->setPlaceholderText("•••••••• (saved)");
-                    status_lbl->setText("Saved ✓");
+                    field->setPlaceholderText(tr("•••••••• (saved)"));
+                    status_lbl->setText(tr("Saved ✓"));
                     status_lbl->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::POSITIVE()));
                     LOG_INFO("Credentials", "Stored key: " + key);
                 } else {
-                    status_lbl->setText("Save failed");
+                    status_lbl->setText(tr("Save failed"));
                     status_lbl->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::NEGATIVE()));
                     LOG_ERROR("Credentials", "Failed to store " + key);
                 }
@@ -423,13 +423,13 @@ void SettingsScreen::load_credentials() {
         auto r = SecureStorage::instance().retrieve(key);
         if (r.is_ok() && !r.value().isEmpty()) {
             field->clear();
-            field->setPlaceholderText("•••••••• (saved)");
-            status->setText("Saved ✓");
+            field->setPlaceholderText(tr("•••••••• (saved)"));
+            status->setText(tr("Saved ✓"));
             status->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::POSITIVE()));
         } else {
             field->clear();
-            field->setPlaceholderText("Not configured");
-            status->setText("Not set");
+            field->setPlaceholderText(tr("Not configured"));
+            status->setText(tr("Not set"));
             status->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
         }
     }
@@ -877,7 +877,7 @@ QWidget* SettingsScreen::build_notifications() {
             save_provider_fields(pid, pw);
             NotificationService::instance().reload_all_configs();
 
-            pw.status_lbl->setText("Sending...");
+            pw.status_lbl->setText(tr("Sending..."));
             pw.status_lbl->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
 
             NotificationRequest req;
@@ -890,10 +890,10 @@ QWidget* SettingsScreen::build_notifications() {
                 if (!status_ptr)
                     return;
                 if (ok) {
-                    status_ptr->setText("✓ Sent successfully");
+                    status_ptr->setText(tr("✓ Sent successfully"));
                     status_ptr->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::POSITIVE()));
                 } else {
-                    status_ptr->setText("✗ " + err.left(60));
+                    status_ptr->setText(tr("✗ ") + err.left(60));
                     status_ptr->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::NEGATIVE()));
                 }
             });
@@ -1683,7 +1683,7 @@ QWidget* SettingsScreen::build_storage() {
             auto rec = query.record();
             int cols = rec.count();
             if (cols == 0) {
-                sql_status_->setText("OK — no columns returned");
+                sql_status_->setText(tr("OK — no columns returned"));
                 sql_status_->setStyleSheet(
                     QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
                 return;
@@ -2440,7 +2440,7 @@ QWidget* SettingsScreen::build_logging() {
         rl->setSpacing(8);
 
         auto* tag_edit = new QLineEdit(tag);
-        tag_edit->setPlaceholderText("Tag name");
+        tag_edit->setPlaceholderText(tr("Tag name"));
         tag_edit->setFixedWidth(220);
         tag_edit->setStyleSheet(input_ss());
 
@@ -2661,7 +2661,7 @@ QWidget* SettingsScreen::build_security() {
         const QString confirm = sec_confirm_pin_->text();
 
         if (new_pin != confirm) {
-            sec_pin_error_->setText("New PINs do not match");
+            sec_pin_error_->setText(tr("New PINs do not match"));
             sec_pin_error_->show();
             sec_confirm_pin_->clear();
             sec_confirm_pin_->setFocus();
@@ -2680,7 +2680,7 @@ QWidget* SettingsScreen::build_security() {
             return;
         }
 
-        sec_pin_success_->setText("PIN updated successfully");
+        sec_pin_success_->setText(tr("PIN updated successfully"));
         sec_pin_success_->show();
         sec_current_pin_->clear();
         sec_new_pin_->clear();
@@ -2811,7 +2811,7 @@ void SettingsScreen::load_security() {
         if (pm.has_pin())
             sec_pin_status_->setText("CONFIGURED");
         else
-            sec_pin_status_->setText("NOT SET");
+            sec_pin_status_->setText(tr("NOT SET"));
         sec_pin_status_->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;")
                                            .arg(pm.has_pin() ? ui::colors::POSITIVE() : ui::colors::NEGATIVE()));
     }
@@ -2950,7 +2950,7 @@ QWidget* SettingsScreen::build_profiles() {
     new_hl->setSpacing(8);
 
     auto* name_input = new QLineEdit;
-    name_input->setPlaceholderText("profile-name  (alphanumeric, - and _ only)");
+    name_input->setPlaceholderText(tr("profile-name  (alphanumeric, - and _ only)"));
     name_input->setStyleSheet(input_ss());
     new_hl->addWidget(name_input, 1);
 

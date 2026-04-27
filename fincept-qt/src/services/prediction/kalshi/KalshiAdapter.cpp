@@ -13,6 +13,7 @@
 #include <QUuid>
 
 #include <cmath>
+#include <QCoreApplication>
 
 namespace fincept::services::prediction::kalshi_ns {
 
@@ -134,19 +135,19 @@ void KalshiAdapter::fetch_price_history(const QString& asset_id, const QString& 
     // Map UI interval to Kalshi's period_interval (minutes). Kalshi only
     // supports 1, 60, 1440.
     int period = 60;
-    if (interval == QStringLiteral("1h") || interval == QStringLiteral("6h")) period = 60;
-    else if (interval == QStringLiteral("1d")) period = 60;
-    else if (interval == QStringLiteral("1w") || interval == QStringLiteral("1m") ||
+    if (interval == tr("1h") || interval == tr("6h")) period = 60;
+    else if (interval == tr("1d")) period = 60;
+    else if (interval == tr("1w") || interval == tr("1m") ||
              interval == QStringLiteral("max")) period = 1440;
-    else if (interval == QStringLiteral("1min") || interval == QStringLiteral("5min")) period = 1;
+    else if (interval == tr("1min") || interval == tr("5min")) period = 1;
 
     // Default to last 7 days if the caller didn't give us a range.
     const qint64 end = QDateTime::currentSecsSinceEpoch();
     qint64 start = end - (7 * 24 * 3600);
-    if (interval == QStringLiteral("1w")) start = end - (7 * 24 * 3600);
-    else if (interval == QStringLiteral("1m")) start = end - (30 * 24 * 3600);
-    else if (interval == QStringLiteral("6h")) start = end - (6 * 3600);
-    else if (interval == QStringLiteral("1h")) start = end - 3600;
+    if (interval == tr("1w")) start = end - (7 * 24 * 3600);
+    else if (interval == tr("1m")) start = end - (30 * 24 * 3600);
+    else if (interval == tr("6h")) start = end - (6 * 3600);
+    else if (interval == tr("1h")) start = end - 3600;
 
     // Kalshi candlestick endpoint requires the series ticker. Prefer the
     // cached mapping populated from markets_ready/events_ready responses;
@@ -165,7 +166,7 @@ void KalshiAdapter::fetch_price_history(const QString& asset_id, const QString& 
 void KalshiAdapter::fetch_recent_trades(const pr::MarketKey& key, int limit) {
     if (key.market_id.isEmpty()) {
         emit error_occurred(QStringLiteral("fetch_recent_trades"),
-                            QStringLiteral("Kalshi trades require a ticker"));
+                            tr("Kalshi trades require a ticker"));
         return;
     }
     rest_->fetch_market_trades(key.market_id, limit);
@@ -207,7 +208,7 @@ QString KalshiAdapter::account_label() const {
 }
 
 void KalshiAdapter::stub_unsupported(const QString& ctx) {
-    emit error_occurred(ctx, QStringLiteral("Kalshi adapter: not supported in this call"));
+    emit error_occurred(ctx, tr("Kalshi adapter: not supported in this call"));
 }
 
 // prediction_kalshi.py also exposes `settlements` and `decrease_order`
@@ -227,7 +228,7 @@ QJsonObject KalshiAdapter::creds_to_json() const {
 void KalshiAdapter::run_py(const QString& command, const QJsonObject& extra,
                            std::function<void(const QJsonObject&)> on_ok, const QString& ctx) {
     if (!creds_.is_valid()) {
-        emit error_occurred(ctx, QStringLiteral("No Kalshi credentials — connect an account first"));
+        emit error_occurred(ctx, QCoreApplication::translate("FinceptTerminal", "No Kalshi credentials — connect an account first"));
         return;
     }
     QJsonObject payload = creds_to_json();
@@ -251,13 +252,13 @@ void KalshiAdapter::run_py(const QString& command, const QJsonObject& extra,
             auto doc = QJsonDocument::fromJson(json_str.toUtf8(), &perr);
             if (doc.isNull() || !doc.isObject()) {
                 emit self->error_occurred(
-                    ctx, QStringLiteral("Kalshi bridge: non-JSON response — ") + perr.errorString());
+                    ctx, QCoreApplication::translate("FinceptTerminal", "Kalshi bridge: non-JSON response — ") + perr.errorString());
                 return;
             }
             const auto obj = doc.object();
             if (!obj.value("ok").toBool()) {
                 emit self->error_occurred(ctx, obj.value("error").toString(
-                    QStringLiteral("Kalshi command failed")));
+                    QCoreApplication::translate("FinceptTerminal", "Kalshi command failed")));
                 return;
             }
             on_ok(obj);
@@ -402,7 +403,7 @@ void KalshiAdapter::cancel_all_for_market(const pr::MarketKey& key, const QStrin
     // cancels). Empty result set is a silent success.
     if (key.market_id.isEmpty()) {
         emit error_occurred(QStringLiteral("cancel_all_for_market"),
-                            QStringLiteral("Kalshi cancel-all requires a ticker"));
+                            tr("Kalshi cancel-all requires a ticker"));
         return;
     }
     const QString ticker = key.market_id;

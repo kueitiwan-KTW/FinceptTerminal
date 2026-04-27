@@ -200,7 +200,7 @@ void TradeAnalysisPanel::build_ui() {
             .arg(w.darker(120).name());
     }());
     connect(run0, &QPushButton::clicked, this, [this, vol_spin, price_spin, cons_spin]() {
-        status_label_->setText("Analyzing...");
+        status_label_->setText(tr("Analyzing..."));
         QJsonObject p;
         p["trade_volume_gdp"] = vol_spin->value();
         p["price_reduction_percent"] = price_spin->value();
@@ -277,7 +277,7 @@ void TradeAnalysisPanel::build_ui() {
     }());
     connect(run1, &QPushButton::clicked, this,
             [this, tariff_spin, quota_spin, subsidy_spin, dev_combo, maturity_combo]() {
-                status_label_->setText("Analyzing...");
+                status_label_->setText(tr("Analyzing..."));
                 QJsonObject p;
                 p["tariff_rate"] = tariff_spin->value();
                 p["quota_volume"] = quota_spin->value();
@@ -342,7 +342,7 @@ void TradeAnalysisPanel::build_ui() {
             .arg(w.darker(120).name());
     }());
     connect(run2, &QPushButton::clicked, this, [this, bloc_combo, tc_spin, td_spin]() {
-        status_label_->setText("Analyzing...");
+        status_label_->setText(tr("Analyzing..."));
         QJsonObject p;
         p["integration_type"] = bloc_combo->currentData().toString();
         p["trade_creation"] = tc_spin->value();
@@ -404,7 +404,7 @@ void TradeAnalysisPanel::build_ui() {
             .arg(w.darker(120).name());
     }());
     connect(run3, &QPushButton::clicked, this, [this, lib_combo, tariff_cut_spin, gdp_spin]() {
-        status_label_->setText("Analyzing...");
+        status_label_->setText(tr("Analyzing..."));
         QJsonObject p;
         p["liberalization_type"] = lib_combo->currentData().toString();
         p["tariff_reduction"] = tariff_cut_spin->value();

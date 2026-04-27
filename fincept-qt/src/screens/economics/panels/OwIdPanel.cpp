@@ -62,7 +62,7 @@ void OwIdPanel::build_controls(QHBoxLayout* thl) {
     country_edit_ = new QLineEdit("United States");
     country_edit_->setFixedHeight(26);
     country_edit_->setFixedWidth(130);
-    country_edit_->setPlaceholderText("Country…");
+    country_edit_->setPlaceholderText(tr("Country…"));
 
     start_edit_ = new QLineEdit("2000");
     start_edit_->setFixedHeight(26);

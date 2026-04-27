@@ -167,7 +167,7 @@ void PortfolioPerfChart::build_ui() {
     benchmark_btn_->setFixedSize(60, 22);
     benchmark_btn_->setCheckable(true);
     benchmark_btn_->setCursor(Qt::PointingHandCursor);
-    benchmark_btn_->setToolTip("Overlay benchmark index (auto-selected by portfolio currency)");
+    benchmark_btn_->setToolTip(tr("Overlay benchmark index (auto-selected by portfolio currency)"));
     benchmark_btn_->setStyleSheet(
         QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
                 "  font-size:9px; font-weight:700; border-radius:2px; }"
@@ -189,8 +189,8 @@ void PortfolioPerfChart::build_ui() {
     indexed_btn_->setFixedSize(28, 22);
     indexed_btn_->setCheckable(true);
     indexed_btn_->setCursor(Qt::PointingHandCursor);
-    indexed_btn_->setToolTip("Indexed view: rebase portfolio and benchmark to 100 at the start of\n"
-                             "the selected period. Use when comparing different currencies.");
+    indexed_btn_->setToolTip(tr("Indexed view: rebase portfolio and benchmark to 100 at the start of\n"
+                             "the selected period. Use when comparing different currencies."));
     indexed_btn_->setStyleSheet(
         QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
                 "  font-size:9px; font-weight:700; border-radius:2px; }"
@@ -241,7 +241,7 @@ void PortfolioPerfChart::build_ui() {
     cost_basis_label_ = new QLabel;
     cost_basis_label_->setStyleSheet(
         QString("color:%1; font-size:11px;").arg(ui::colors::TEXT_TERTIARY()));
-    cost_basis_label_->setToolTip("Total cost basis — the dashed horizontal line on the chart.");
+    cost_basis_label_->setToolTip(tr("Total cost basis — the dashed horizontal line on the chart."));
     info_bar->addWidget(cost_basis_label_);
 
     info_bar->addStretch();
@@ -342,7 +342,7 @@ void PortfolioPerfChart::update_period_buttons_enabled() {
         // Other periods are always allowed: backfill kicks in when clicked.
         btn->setEnabled(feasible);
         btn->setToolTip(feasible ? QString()
-                                 : QStringLiteral("Needs intraday data — daily snapshots only."));
+                                 : tr("Needs intraday data — daily snapshots only."));
     }
 }
 
@@ -361,7 +361,7 @@ void PortfolioPerfChart::update_chart() {
     }
 
     if (summary_.holdings.isEmpty()) {
-        period_change_label_->setText("No data");
+        period_change_label_->setText(tr("No data"));
         total_return_label_->clear();
         nav_label_->clear();
         if (cost_basis_label_)

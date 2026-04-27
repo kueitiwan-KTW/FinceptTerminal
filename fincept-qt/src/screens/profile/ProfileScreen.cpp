@@ -685,7 +685,7 @@ void ProfileScreen::fetch_login_history() {
 
 void ProfileScreen::show_edit_profile_dialog() {
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Edit Profile");
+    dlg->setWindowTitle(tr("Edit Profile"));
     dlg->setFixedSize(420, 300);
     dlg->setStyleSheet(QString("background:%1;color:%2;font-family:'Consolas',monospace;")
                            .arg(ui::colors::BG_SURFACE(), ui::colors::TEXT_PRIMARY()));
@@ -786,7 +786,7 @@ void ProfileScreen::show_delete_account_dialog() {
 
     // Second confirmation — type email to confirm
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Confirm Account Deletion");
+    dlg->setWindowTitle(tr("Confirm Account Deletion"));
     dlg->setFixedSize(400, 200);
     dlg->setStyleSheet(QString("background:%1;color:%2;font-family:'Consolas',monospace;")
                            .arg(ui::colors::BG_SURFACE(), ui::colors::TEXT_PRIMARY()));

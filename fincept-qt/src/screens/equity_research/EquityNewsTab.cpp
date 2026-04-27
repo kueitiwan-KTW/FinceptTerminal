@@ -26,7 +26,7 @@ void EquityNewsTab::set_symbol(const QString& symbol) {
     clear_cards();
     count_label_->setText("");
     company_label_->setText(symbol);
-    status_label_->setText("Loading news…");
+    status_label_->setText(tr("Loading news…"));
     status_label_->show();
     loading_overlay_->show_loading("LOADING NEWS…");
     services::equity::EquityResearchService::instance().fetch_news(symbol, 20);
@@ -119,7 +119,7 @@ void EquityNewsTab::populate(const QVector<services::equity::NewsArticle>& artic
     count_label_->setText(QString("%1 articles").arg(articles.size()));
 
     if (articles.isEmpty()) {
-        status_label_->setText("No news found for " + current_symbol_);
+        status_label_->setText(tr("No news found for ") + current_symbol_);
         status_label_->show();
         return;
     }

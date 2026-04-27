@@ -47,7 +47,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     drawer_btn_->setFixedHeight(20);
     drawer_btn_->setCursor(Qt::PointingHandCursor);
     drawer_btn_->setCheckable(true);
-    drawer_btn_->setToolTip("Toggle intelligence drawer");
+    drawer_btn_->setToolTip(tr("Toggle intelligence drawer"));
     hl->addWidget(drawer_btn_);
     connect(drawer_btn_, &QPushButton::clicked, this, &NewsCommandBar::drawer_toggle_requested);
 
@@ -56,7 +56,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     // Search input — compact
     search_input_ = new QLineEdit(row);
     search_input_->setObjectName("newsCommandBarSearch");
-    search_input_->setPlaceholderText("Search...");
+    search_input_->setPlaceholderText(tr("Search..."));
     search_input_->setFixedWidth(120);
     search_input_->setFixedHeight(20);
     hl->addWidget(search_input_);
@@ -193,7 +193,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     summarize_btn_ = new QPushButton("AI", row);
     summarize_btn_->setObjectName("newsDetailAnalyzeBtn");
     summarize_btn_->setFixedHeight(20);
-    summarize_btn_->setToolTip("AI Brief — summarize headlines");
+    summarize_btn_->setToolTip(tr("AI Brief — summarize headlines"));
     hl->addWidget(summarize_btn_);
     connect(summarize_btn_, &QPushButton::clicked, this, &NewsCommandBar::summarize_clicked);
 

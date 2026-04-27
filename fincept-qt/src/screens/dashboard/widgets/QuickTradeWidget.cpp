@@ -44,7 +44,7 @@ QuickTradeWidget::QuickTradeWidget(QWidget* parent) : BaseWidget("QUICK TRADE", 
     srl->setSpacing(6);
 
     symbol_input_ = new QLineEdit;
-    symbol_input_->setPlaceholderText("Symbol (e.g. AAPL)");
+    symbol_input_->setPlaceholderText(tr("Symbol (e.g. AAPL)"));
     symbol_input_->setText("AAPL");
     srl->addWidget(symbol_input_, 1);
 

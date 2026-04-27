@@ -5,6 +5,7 @@
 
 #include <QJsonDocument>
 #include <QJsonParseError>
+#include <QCoreApplication>
 
 namespace fincept::services::akshare {
 
@@ -20,7 +21,7 @@ void AkShareService::fetch_endpoints(const QString& script, EndpointsCallback cb
             EndpointsResult out;
             if (!result.success) {
                 out.error = result.error.isEmpty()
-                                ? QStringLiteral("Endpoint listing failed")
+                                ? tr("Endpoint listing failed")
                                 : result.error;
                 LOG_ERROR("AkShareService",
                           QStringLiteral("%1 get_all_endpoints failed: %2")
@@ -31,7 +32,7 @@ void AkShareService::fetch_endpoints(const QString& script, EndpointsCallback cb
 
             const QString json_str = fincept::python::extract_json(result.output);
             if (json_str.isEmpty()) {
-                out.error = QStringLiteral("Empty endpoint response");
+                out.error = tr("Empty endpoint response");
                 if (cb) cb(out);
                 return;
             }
@@ -39,7 +40,7 @@ void AkShareService::fetch_endpoints(const QString& script, EndpointsCallback cb
             QJsonParseError err;
             const auto doc = QJsonDocument::fromJson(json_str.toUtf8(), &err);
             if (doc.isNull() || !doc.isObject()) {
-                out.error = QStringLiteral("Invalid endpoint JSON: %1").arg(err.errorString());
+                out.error = tr("Invalid endpoint JSON: %1").arg(err.errorString());
                 if (cb) cb(out);
                 return;
             }
@@ -60,9 +61,9 @@ void AkShareService::query(const QString& script, const QString& endpoint,
         [cb = std::move(cb), script, endpoint](const fincept::python::PythonResult& result) {
             QueryResult out;
             if (!result.success) {
-                out.error = result.error.isEmpty() ? QStringLiteral("Query failed") : result.error;
+                out.error = result.error.isEmpty() ? QCoreApplication::translate("FinceptTerminal", "Query failed") : result.error;
                 LOG_ERROR("AkShareService",
-                          QStringLiteral("%1 %2 failed: %3")
+                          QCoreApplication::translate("FinceptTerminal", "%1 %2 failed: %3")
                               .arg(script, endpoint, out.error.left(300)));
                 if (cb) cb(out);
                 return;
@@ -70,7 +71,7 @@ void AkShareService::query(const QString& script, const QString& endpoint,
 
             const QString json_str = fincept::python::extract_json(result.output);
             if (json_str.isEmpty()) {
-                out.error = QStringLiteral("No data from %1").arg(endpoint);
+                out.error = QCoreApplication::translate("FinceptTerminal", "No data from %1").arg(endpoint);
                 if (cb) cb(out);
                 return;
             }
@@ -78,7 +79,7 @@ void AkShareService::query(const QString& script, const QString& endpoint,
             QJsonParseError err;
             const auto doc = QJsonDocument::fromJson(json_str.toUtf8(), &err);
             if (doc.isNull()) {
-                out.error = QStringLiteral("JSON parse error: %1").arg(err.errorString());
+                out.error = QCoreApplication::translate("FinceptTerminal", "JSON parse error: %1").arg(err.errorString());
                 if (cb) cb(out);
                 return;
             }
@@ -91,7 +92,7 @@ void AkShareService::query(const QString& script, const QString& endpoint,
                 return;
             }
             if (obj.contains("success") && !obj["success"].toBool()) {
-                out.error = obj.value("error").toString(QStringLiteral("Query returned failure"));
+                out.error = obj.value("error").toString(QCoreApplication::translate("FinceptTerminal", "Query returned failure"));
                 if (cb) cb(out);
                 return;
             }

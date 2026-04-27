@@ -13,6 +13,7 @@
 #include <QJsonObject>
 #include <QPointer>
 #include <QUuid>
+#include <QCoreApplication>
 
 namespace fincept::services::prediction::polymarket_ns {
 
@@ -117,7 +118,7 @@ void PolymarketAdapter::fetch_price_history(const QString& asset_id,
 void PolymarketAdapter::fetch_recent_trades(const pr::MarketKey& key, int limit) {
     if (key.market_id.isEmpty()) {
         emit error_occurred(QStringLiteral("fetch_recent_trades"),
-                            QStringLiteral("Polymarket trades require condition id"));
+                            tr("Polymarket trades require condition id"));
         return;
     }
     service_->fetch_trades(key.market_id, limit);
@@ -173,7 +174,7 @@ void PolymarketAdapter::reload_credentials() {
 }
 
 void PolymarketAdapter::stub_unsupported(const QString& ctx) {
-    emit error_occurred(ctx, QStringLiteral("Polymarket adapter: not supported in this call"));
+    emit error_occurred(ctx, tr("Polymarket adapter: not supported in this call"));
 }
 
 // ── Python bridge ───────────────────────────────────────────────────────────
@@ -209,13 +210,13 @@ void PolymarketAdapter::run_py(const QString& command, const QJsonObject& payloa
             if (doc.isNull() || !doc.isObject()) {
                 emit self->error_occurred(
                     ctx,
-                    QStringLiteral("Python response is not JSON: ") + perr.errorString());
+                    QCoreApplication::translate("FinceptTerminal", "Python response is not JSON: ") + perr.errorString());
                 return;
             }
             const auto obj = doc.object();
             if (!obj.value("ok").toBool()) {
                 emit self->error_occurred(ctx, obj.value("error").toString(
-                    QStringLiteral("Python command failed")));
+                    QCoreApplication::translate("FinceptTerminal", "Python command failed")));
                 return;
             }
             on_ok(obj);
@@ -225,7 +226,7 @@ void PolymarketAdapter::run_py(const QString& command, const QJsonObject& payloa
 void PolymarketAdapter::ensure_api_creds(
     std::function<void(const pr::PolymarketCredentials&)> then, const QString& ctx) {
     if (!creds_ || !creds_->is_valid()) {
-        emit error_occurred(ctx, QStringLiteral("No Polymarket credentials — connect an account first"));
+        emit error_occurred(ctx, QCoreApplication::translate("FinceptTerminal", "No Polymarket credentials — connect an account first"));
         return;
     }
     if (!creds_->api_key.isEmpty()) {

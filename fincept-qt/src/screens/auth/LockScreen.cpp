@@ -515,7 +515,7 @@ void LockScreen::on_setup_submit() {
 
     // Match check is UI-only — PinManager has no concept of a confirm field.
     if (pin != confirm) {
-        setup_error_->setText("PINs do not match");
+        setup_error_->setText(tr("PINs do not match"));
         setup_error_->show();
         setup_confirm_input_->clear();
         setup_confirm_input_->setFocus();
@@ -547,7 +547,7 @@ void LockScreen::on_unlock_submit() {
 
     QString pin = unlock_pin_input_->text();
     if (pin.isEmpty()) {
-        unlock_error_->setText("Enter your PIN");
+        unlock_error_->setText(tr("Enter your PIN"));
         unlock_error_->show();
         return;
     }
@@ -578,7 +578,7 @@ void LockScreen::on_unlock_submit() {
         update_lockout_display();
         lockout_timer_->start();
     } else {
-        unlock_error_->setText("Incorrect PIN");
+        unlock_error_->setText(tr("Incorrect PIN"));
         unlock_error_->show();
         unlock_lockout_label_->hide();
     }

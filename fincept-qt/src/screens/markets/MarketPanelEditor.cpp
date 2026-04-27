@@ -69,7 +69,7 @@ void MarketPanelEditor::build_ui() {
     root->addWidget(title_lbl);
 
     title_edit_ = new QLineEdit(config_.title);
-    title_edit_->setPlaceholderText("e.g. My Tech Stocks");
+    title_edit_->setPlaceholderText(tr("e.g. My Tech Stocks"));
     title_edit_->setStyleSheet(input_ss());
     root->addWidget(title_edit_);
 
@@ -116,7 +116,7 @@ void MarketPanelEditor::build_ui() {
     root->addWidget(search_lbl);
 
     search_edit_ = new QLineEdit;
-    search_edit_->setPlaceholderText("Search symbol or name: AAPL, Reliance, Bitcoin ...");
+    search_edit_->setPlaceholderText(tr("Search symbol or name: AAPL, Reliance, Bitcoin ..."));
     search_edit_->setStyleSheet(input_ss());
     search_edit_->installEventFilter(this);
     root->addWidget(search_edit_);

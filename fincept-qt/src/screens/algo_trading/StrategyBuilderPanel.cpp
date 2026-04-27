@@ -239,7 +239,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     name_lbl->setStyleSheet(kLabelStyle());
     vl->addWidget(name_lbl);
     name_edit_ = new QLineEdit(content);
-    name_edit_->setPlaceholderText("My Strategy");
+    name_edit_->setPlaceholderText(tr("My Strategy"));
     name_edit_->setStyleSheet(kInputStyle());
     name_edit_->setFixedHeight(30);
     vl->addWidget(name_edit_);
@@ -248,7 +248,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     desc_lbl->setStyleSheet(kLabelStyle());
     vl->addWidget(desc_lbl);
     desc_edit_ = new QLineEdit(content);
-    desc_edit_->setPlaceholderText("Strategy description...");
+    desc_edit_->setPlaceholderText(tr("Strategy description..."));
     desc_edit_->setStyleSheet(kInputStyle());
     desc_edit_->setFixedHeight(30);
     vl->addWidget(desc_edit_);
@@ -463,14 +463,14 @@ QWidget* StrategyBuilderPanel::build_right_pane() {
     params_gl->addWidget(make_param_col("CAPITAL ($)", bt_capital_), 0, 1);
 
     bt_start_date_ = new QLineEdit;
-    bt_start_date_->setPlaceholderText("YYYY-MM-DD");
+    bt_start_date_->setPlaceholderText(tr("YYYY-MM-DD"));
     bt_start_date_->setText("2024-01-01");
     bt_start_date_->setStyleSheet(kInputStyle());
     bt_start_date_->setFixedHeight(30);
     params_gl->addWidget(make_param_col("START DATE", bt_start_date_), 1, 0);
 
     bt_end_date_ = new QLineEdit;
-    bt_end_date_->setPlaceholderText("YYYY-MM-DD");
+    bt_end_date_->setPlaceholderText(tr("YYYY-MM-DD"));
     bt_end_date_->setText("2025-01-01");
     bt_end_date_->setStyleSheet(kInputStyle());
     bt_end_date_->setFixedHeight(30);
@@ -664,7 +664,7 @@ void StrategyBuilderPanel::display_backtest_result(const QJsonObject& payload) {
     set_kpi(kpi_max_dd_val_,
             QString("-%1%").arg(qAbs(max_dd), 0, 'f', 2),
             fincept::ui::colors::NEGATIVE);
-    kpi_max_dd_sub_->setText("Max Drawdown");
+    kpi_max_dd_sub_->setText(tr("Max Drawdown"));
 
     // WIN RATE
     set_kpi(kpi_win_rate_val_,
@@ -674,7 +674,7 @@ void StrategyBuilderPanel::display_backtest_result(const QJsonObject& payload) {
 
     // TOTAL TRADES
     set_kpi(kpi_trades_val_, QString::number(total_trades), fincept::ui::colors::TEXT_PRIMARY);
-    kpi_trades_sub_->setText("Total trades");
+    kpi_trades_sub_->setText(tr("Total trades"));
 
     // PROFIT FACTOR
     set_kpi(kpi_profit_factor_val_, QString::number(profit_factor, 'f', 2),
@@ -685,7 +685,7 @@ void StrategyBuilderPanel::display_backtest_result(const QJsonObject& payload) {
 // ── on_backtest_result ───────────────────────────────────────────────────────
 
 void StrategyBuilderPanel::on_backtest_result(const QJsonObject& payload) {
-    status_label_->setText("Backtest complete.");
+    status_label_->setText(tr("Backtest complete."));
     status_label_->setStyleSheet(
         QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
             .arg(fincept::ui::colors::POSITIVE())
@@ -699,7 +699,7 @@ void StrategyBuilderPanel::on_backtest_result(const QJsonObject& payload) {
 
 void StrategyBuilderPanel::on_save() {
     if (name_edit_->text().trimmed().isEmpty()) {
-        status_label_->setText("Strategy name is required.");
+        status_label_->setText(tr("Strategy name is required."));
         status_label_->setStyleSheet(
             QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                 .arg(fincept::ui::colors::NEGATIVE())
@@ -721,7 +721,7 @@ void StrategyBuilderPanel::on_save() {
     strategy.take_profit      = take_profit_spin_->value();
     strategy.trailing_stop    = trailing_stop_spin_->value();
 
-    status_label_->setText("Saving...");
+    status_label_->setText(tr("Saving..."));
     status_label_->setStyleSheet(
         QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
             .arg(fincept::ui::colors::TEXT_SECONDARY())
@@ -773,7 +773,7 @@ void StrategyBuilderPanel::on_save() {
 void StrategyBuilderPanel::on_backtest() {
     QString symbol = bt_symbol_->text().trimmed();
     if (symbol.isEmpty()) {
-        status_label_->setText("Enter a symbol for backtesting.");
+        status_label_->setText(tr("Enter a symbol for backtesting."));
         status_label_->setStyleSheet(
             QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                 .arg(fincept::ui::colors::NEGATIVE())
@@ -782,7 +782,7 @@ void StrategyBuilderPanel::on_backtest() {
         return;
     }
 
-    status_label_->setText("Running backtest...");
+    status_label_->setText(tr("Running backtest..."));
     status_label_->setStyleSheet(
         QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
             .arg(fincept::ui::colors::CYAN())

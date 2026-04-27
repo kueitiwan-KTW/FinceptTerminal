@@ -95,7 +95,7 @@ void EconomicCalendarWidget::refresh_data() {
         set_loading(false);
         if (!result.is_ok()) {
             status_label_->setVisible(true);
-            status_label_->setText("Failed to load calendar");
+            status_label_->setText(tr("Failed to load calendar"));
             return;
         }
 
@@ -122,7 +122,7 @@ void EconomicCalendarWidget::refresh_data() {
 
         if (events.isEmpty()) {
             status_label_->setVisible(true);
-            status_label_->setText("No events available");
+            status_label_->setText(tr("No events available"));
             return;
         }
 

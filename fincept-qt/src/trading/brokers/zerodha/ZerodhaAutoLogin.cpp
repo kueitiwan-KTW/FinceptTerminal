@@ -14,6 +14,7 @@
 #include <QNetworkRequest>
 #include <QUrl>
 #include <QUrlQuery>
+#include <QCoreApplication>
 
 namespace fincept::trading::zerodha {
 
@@ -94,7 +95,7 @@ AutoLoginResult run_auto_login(const QString& user_id, const QString& password,
         HttpResult r = do_request(nam, req, body, /*is_post=*/true, /*follow=*/false);
         if (r.status != 200) {
             out.token.error = extract_error(r.body, r.network_error.isEmpty()
-                                                       ? QStringLiteral("Invalid Kite user ID or password")
+                                                       ? QCoreApplication::translate("FinceptTerminal", "Invalid Kite user ID or password")
                                                        : r.network_error);
             return out;
         }

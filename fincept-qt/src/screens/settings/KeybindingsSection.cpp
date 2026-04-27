@@ -103,7 +103,7 @@ void KeybindingsSection::build_ui() {
 
     // Search bar
     search_input_ = new QLineEdit;
-    search_input_->setPlaceholderText("Search actions...");
+    search_input_->setPlaceholderText(tr("Search actions..."));
     search_input_->setStyleSheet(
         QString("QLineEdit{background:%1;color:%2;border:1px solid %3;padding:6px;}"
                 "QLineEdit:focus{border:1px solid %4;}")

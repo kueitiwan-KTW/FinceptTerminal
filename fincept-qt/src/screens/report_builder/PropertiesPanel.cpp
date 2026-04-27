@@ -238,7 +238,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
 
         editor_layout_->addWidget(make_label("X Labels (comma-separated):"));
         auto* labels_edit = new QLineEdit(component->config.value("labels", ""));
-        labels_edit->setPlaceholderText("Jan,Feb,Mar,Apr,May,Jun");
+        labels_edit->setPlaceholderText(tr("Jan,Feb,Mar,Apr,May,Jun"));
         connect(labels_edit, &QLineEdit::textChanged, this,
                 [this](const QString& val) { emit config_changed(current_index_, "labels", val); });
         editor_layout_->addWidget(labels_edit);
@@ -266,7 +266,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         hr_hl->setSpacing(4);
 
         auto* hist_ticker = new QLineEdit;
-        hist_ticker->setPlaceholderText("e.g. AAPL");
+        hist_ticker->setPlaceholderText(tr("e.g. AAPL"));
         hr_hl->addWidget(hist_ticker, 1);
 
         auto* hist_btn = new QPushButton("Fetch");
@@ -307,7 +307,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         tr_hl->setSpacing(4);
 
         auto* ticker_edit = new QLineEdit;
-        ticker_edit->setPlaceholderText("e.g. AAPL");
+        ticker_edit->setPlaceholderText(tr("e.g. AAPL"));
         tr_hl->addWidget(ticker_edit, 1);
 
         auto* fetch_stats_btn = new QPushButton("Fetch");
@@ -335,12 +335,12 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         data_edit->setPlainText(component->config.value("data", ""));
         data_edit->setMinimumHeight(120);
         data_edit->setMaximumHeight(200);
-        data_edit->setPlaceholderText("P/E Ratio: 28.4\n"
+        data_edit->setPlaceholderText(tr("P/E Ratio: 28.4\n"
                                       "Market Cap: $2.9T\n"
                                       "52W High: $199.62\n"
                                       "52W Low: $124.17\n"
                                       "Dividend Yield: 0.51%\n"
-                                      "EPS: $6.43");
+                                      "EPS: $6.43"));
         connect(data_edit, &QTextEdit::textChanged, this,
                 [this, data_edit]() { emit config_changed(current_index_, "data", data_edit->toPlainText()); });
         editor_layout_->addWidget(data_edit);
@@ -360,7 +360,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
 
         editor_layout_->addWidget(make_label("Heading (optional):"));
         auto* heading_edit = new QLineEdit(component->config.value("heading", ""));
-        heading_edit->setPlaceholderText("e.g. Key Risk, Note, Important");
+        heading_edit->setPlaceholderText(tr("e.g. Key Risk, Note, Important"));
         connect(heading_edit, &QLineEdit::textChanged, this,
                 [this](const QString& val) { emit config_changed(current_index_, "heading", val); });
         editor_layout_->addWidget(heading_edit);
@@ -378,21 +378,21 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
     if (component->type == "sparkline") {
         editor_layout_->addWidget(make_label("Label:"));
         auto* title_edit = new QLineEdit(component->config.value("title", ""));
-        title_edit->setPlaceholderText("e.g. AAPL");
+        title_edit->setPlaceholderText(tr("e.g. AAPL"));
         connect(title_edit, &QLineEdit::textChanged, this,
                 [this](const QString& val) { emit config_changed(current_index_, "title", val); });
         editor_layout_->addWidget(title_edit);
 
         editor_layout_->addWidget(make_label("Current Value:"));
         auto* val_edit = new QLineEdit(component->config.value("current", ""));
-        val_edit->setPlaceholderText("e.g. $189.30");
+        val_edit->setPlaceholderText(tr("e.g. $189.30"));
         connect(val_edit, &QLineEdit::textChanged, this,
                 [this](const QString& val) { emit config_changed(current_index_, "current", val); });
         editor_layout_->addWidget(val_edit);
 
         editor_layout_->addWidget(make_label("Change %:"));
         auto* chg_edit = new QLineEdit(component->config.value("change_pct", ""));
-        chg_edit->setPlaceholderText("e.g. +2.34 or -1.10");
+        chg_edit->setPlaceholderText(tr("e.g. +2.34 or -1.10"));
         connect(chg_edit, &QLineEdit::textChanged, this,
                 [this](const QString& val) { emit config_changed(current_index_, "change_pct", val); });
         editor_layout_->addWidget(chg_edit);
@@ -448,12 +448,12 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
                 QString tmp = QStandardPaths::writableLocation(QStandardPaths::TempLocation) +
                               QString("/fincept_paste_%1.png").arg(QDateTime::currentMSecsSinceEpoch());
                 if (img.save(tmp)) {
-                    path_lbl->setText("(clipboard image)");
+                    path_lbl->setText(tr("(clipboard image)"));
                     emit config_changed(current_index_, "path", tmp);
                     emit config_changed(current_index_, "clipboard", "1");
                 }
             } else {
-                path_lbl->setText("(no image in clipboard)");
+                path_lbl->setText(tr("(no image in clipboard)"));
             }
         });
         editor_layout_->addWidget(paste_btn);
@@ -481,7 +481,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         // Caption
         editor_layout_->addWidget(make_label("Caption (optional):"));
         auto* caption_edit = new QLineEdit(component->config.value("caption", ""));
-        caption_edit->setPlaceholderText("e.g. Figure 1: Revenue growth");
+        caption_edit->setPlaceholderText(tr("e.g. Figure 1: Revenue growth"));
         connect(caption_edit, &QLineEdit::textChanged, this,
                 [this](const QString& val) { emit config_changed(current_index_, "caption", val); });
         editor_layout_->addWidget(caption_edit);
@@ -502,7 +502,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
     if (component->type == "market_data") {
         editor_layout_->addWidget(make_label("Ticker Symbol:"));
         auto* sym_edit = new QLineEdit;
-        sym_edit->setPlaceholderText("e.g. AAPL, BTC-USD, ^GSPC");
+        sym_edit->setPlaceholderText(tr("e.g. AAPL, BTC-USD, ^GSPC"));
         sym_edit->setText(component->config.value("symbol", ""));
         editor_layout_->addWidget(sym_edit);
 

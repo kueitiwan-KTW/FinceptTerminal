@@ -12,6 +12,7 @@
 #include <QPointer>
 #include <QUrl>
 #include <QUrlQuery>
+#include <QCoreApplication>
 
 namespace fincept::services::prediction::kalshi_ns {
 
@@ -50,8 +51,8 @@ static pr::PredictionMarket parse_market(const QJsonObject& obj) {
     m.key.exchange_id = QString::fromLatin1(kExchangeId);
     m.key.market_id = obj.value("ticker").toString();
     m.key.event_id = obj.value("event_ticker").toString();
-    m.key.asset_ids = {m.key.market_id + QStringLiteral(":yes"),
-                       m.key.market_id + QStringLiteral(":no")};
+    m.key.asset_ids = {m.key.market_id + QCoreApplication::translate("FinceptTerminal", ":yes"),
+                       m.key.market_id + QCoreApplication::translate("FinceptTerminal", ":no")};
 
     // Kalshi has title + yes_sub_title / no_sub_title. We use title as the
     // question and fall back to the combined sub-titles if title is missing.
@@ -170,7 +171,7 @@ void KalshiRestClient::get_json(const QString& path, JsonCallback on_success, co
         QJsonParseError perr;
         auto doc = QJsonDocument::fromJson(data, &perr);
         if (doc.isNull()) {
-            emit self->request_error(error_ctx, QStringLiteral("JSON parse: ") + perr.errorString());
+            emit self->request_error(error_ctx, tr("JSON parse: ") + perr.errorString());
             return;
         }
         on_success(doc);
@@ -336,11 +337,11 @@ void KalshiRestClient::fetch_order_book(const QString& ticker, int depth) {
                  const auto no_bids = ob.value("no_dollars").toArray();
 
                  pr::PredictionOrderBook yes_book;
-                 yes_book.asset_id = ticker_copy + QStringLiteral(":yes");
+                 yes_book.asset_id = ticker_copy + tr(":yes");
                  fill_book_from_levels(yes_book, yes_bids, no_bids);
 
                  pr::PredictionOrderBook no_book;
-                 no_book.asset_id = ticker_copy + QStringLiteral(":no");
+                 no_book.asset_id = ticker_copy + tr(":no");
                  fill_book_from_levels(no_book, no_bids, yes_bids);
 
                  emit self->order_book_ready(yes_book, no_book, ticker_copy);
@@ -366,7 +367,7 @@ void KalshiRestClient::fetch_candlesticks(const QString& series_ticker, const QS
              [self, ticker_copy](const QJsonDocument& doc) {
                  if (!self) return;
                  pr::PriceHistory h;
-                 h.asset_id = ticker_copy + QStringLiteral(":yes");
+                 h.asset_id = ticker_copy + QCoreApplication::translate("FinceptTerminal", ":yes");
                  const auto arr = doc.object().value("candlesticks").toArray();
                  h.points.reserve(arr.size());
                  for (const auto& v : arr) {
@@ -406,7 +407,7 @@ void KalshiRestClient::fetch_market_trades(const QString& ticker, int limit, con
                  for (const auto& v : arr) {
                      const auto o = v.toObject();
                      pr::PredictionTrade t;
-                     t.asset_id = o.value("ticker").toString() + QStringLiteral(":yes");
+                     t.asset_id = o.value("ticker").toString() + tr(":yes");
                      // taker_side is "yes"/"no"; map to BUY/SELL for the
                      // unified shape. YES-taker = BUY of YES; NO-taker = SELL.
                      const QString ts_side = o.value("taker_side").toString().toLower();
@@ -429,7 +430,7 @@ void KalshiRestClient::fetch_market_trades(const QString& ticker, int limit, con
 
 static pr::PredictionTrade parse_trade(const QJsonObject& o) {
     pr::PredictionTrade t;
-    t.asset_id = o.value("ticker").toString() + QStringLiteral(":yes");
+    t.asset_id = o.value("ticker").toString() + QCoreApplication::translate("FinceptTerminal", ":yes");
     const QString ts_side = o.value("taker_side").toString().toLower();
     t.side = (ts_side == QStringLiteral("no")) ? QStringLiteral("SELL")
                                                 : QStringLiteral("BUY");
@@ -540,7 +541,7 @@ void KalshiRestClient::fetch_batch_candlesticks(const QStringList& tickers,
                      if (t.isEmpty()) continue;
                      out.insert(t, parse_candlestick_history(
                                       o.value("candlesticks").toArray(),
-                                      t + QStringLiteral(":yes")));
+                                      t + QCoreApplication::translate("FinceptTerminal", ":yes")));
                  }
                  emit self->batch_candlesticks_ready(out);
              },
@@ -590,7 +591,7 @@ void KalshiRestClient::fetch_historical_candlesticks(const QString& ticker,
                  if (!self) return;
                  auto h = parse_candlestick_history(
                      doc.object().value("candlesticks").toArray(),
-                     ticker_copy + QStringLiteral(":yes"));
+                     ticker_copy + QCoreApplication::translate("FinceptTerminal", ":yes"));
                  emit self->historical_candlesticks_ready(h, ticker_copy);
              },
              QStringLiteral("Kalshi.fetch_historical_candlesticks"));

@@ -3,6 +3,7 @@
 #include "network/http/HttpClient.h"
 
 #include <QJsonObject>
+#include <QCoreApplication>
 
 namespace fincept::notifications {
 

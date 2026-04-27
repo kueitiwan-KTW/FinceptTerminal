@@ -186,7 +186,7 @@ QWidget* AgentsViewPanel::build_config_panel() {
     // ── INSTRUCTIONS ──
     vl->addWidget(section_hdr("INSTRUCTIONS"));
     instructions_edit_ = new QPlainTextEdit;
-    instructions_edit_->setPlaceholderText("System prompt / instructions...");
+    instructions_edit_->setPlaceholderText(tr("System prompt / instructions..."));
     instructions_edit_->setMaximumHeight(120);
     instructions_edit_->setStyleSheet(QString("QPlainTextEdit{%1}").arg(kInput));
     vl->addWidget(instructions_edit_);
@@ -320,7 +320,7 @@ QWidget* AgentsViewPanel::build_query_panel() {
     vl->addLayout(opts);
 
     query_input_ = new QPlainTextEdit;
-    query_input_->setPlaceholderText("Enter a query to test this agent...");
+    query_input_->setPlaceholderText(tr("Enter a query to test this agent..."));
     query_input_->setMaximumHeight(80);
     query_input_->setStyleSheet(
         QString("QPlainTextEdit{background:%1;color:%2;border:1px solid %3;padding:8px;font-size:12px;}")
@@ -433,7 +433,7 @@ void AgentsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN AGENT");
+        run_btn_->setText(tr("RUN AGENT"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
             result_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
@@ -469,7 +469,7 @@ void AgentsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN AGENT");
+        run_btn_->setText(tr("RUN AGENT"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
             result_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
@@ -598,7 +598,7 @@ void AgentsViewPanel::refresh_llm_pill() {
         llm_resolved_lbl_->setStyleSheet(
             QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::TEXT_TERTIARY()));
     } else {
-        llm_resolved_lbl_->setText("No provider configured — go to Settings > LLM Config");
+        llm_resolved_lbl_->setText(tr("No provider configured — go to Settings > LLM Config"));
         llm_resolved_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
     }
 }
@@ -752,7 +752,7 @@ void AgentsViewPanel::save_current_config() {
     db.category = agent.category;
     db.config_json = QString::fromUtf8(QJsonDocument(build_config_from_editor()).toJson(QJsonDocument::Compact));
     services::AgentService::instance().save_config(db);
-    result_status_->setText("Config saved");
+    result_status_->setText(tr("Config saved"));
     result_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
 }
 
@@ -760,7 +760,7 @@ void AgentsViewPanel::delete_current_config() {
     if (selected_agent_idx_ < 0 || selected_agent_idx_ >= filtered_agents_.size())
         return;
     services::AgentService::instance().delete_config(filtered_agents_[selected_agent_idx_].id);
-    result_status_->setText("Config deleted");
+    result_status_->setText(tr("Config deleted"));
     result_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::WARNING()));
 }
 
@@ -771,10 +771,10 @@ void AgentsViewPanel::run_query() {
 
     executing_ = true;
     run_btn_->setEnabled(false);
-    run_btn_->setText("RUNNING...");
+    run_btn_->setText(tr("RUNNING..."));
     result_display_->clear();
     routing_info_label_->hide();
-    result_status_->setText("Executing...");
+    result_status_->setText(tr("Executing..."));
     result_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::AMBER()));
 
     const QJsonObject config = build_config_from_editor();

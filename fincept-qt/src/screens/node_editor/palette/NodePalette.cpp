@@ -54,7 +54,7 @@ void NodePalette::build_ui() {
     sl->setContentsMargins(8, 6, 8, 6);
 
     search_input_ = new QLineEdit;
-    search_input_->setPlaceholderText("Search nodes...");
+    search_input_->setPlaceholderText(tr("Search nodes..."));
     search_input_->setStyleSheet(
         QString("QLineEdit {"
                 "  background: %1; color: %2; border: 1px solid %3;"

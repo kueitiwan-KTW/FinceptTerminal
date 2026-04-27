@@ -105,12 +105,12 @@ void PolymarketStatusBar::set_selected(const QString& question) {
 
 void PolymarketStatusBar::set_ws_status(bool connected) {
     if (connected) {
-        ws_label_->setText("● LIVE");
+        ws_label_->setText(tr("● LIVE"));
         ws_label_->setStyleSheet(
             QString("color: %1; font-size: 8px; font-weight: 700; background: transparent;")
                 .arg(colors::POSITIVE()));
     } else {
-        ws_label_->setText("○ OFF");
+        ws_label_->setText(tr("○ OFF"));
         ws_label_->setStyleSheet(
             QString("color: %1; font-size: 8px; background: transparent;").arg(colors::TEXT_DIM()));
     }

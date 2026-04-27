@@ -759,7 +759,7 @@ void ReportBuilderScreen::show_recent_dialog() {
     QStringList recent = load_recent();
 
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Recent Reports");
+    dlg->setWindowTitle(tr("Recent Reports"));
     dlg->setMinimumWidth(500);
     dlg->setStyleSheet(
         QString("QDialog { background: %1; color: %2; }"
@@ -876,7 +876,7 @@ void ReportBuilderScreen::show_template_dialog() {
     };
 
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Report Templates");
+    dlg->setWindowTitle(tr("Report Templates"));
     dlg->setMinimumSize(680, 520);
     dlg->setStyleSheet(QString("QDialog    { background: %1; color: %2; }"
                                "QListWidget { background: %3; color: %2; border: 1px solid %4; }"
@@ -1003,7 +1003,7 @@ void ReportBuilderScreen::show_theme_dialog() {
     };
 
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Report Theme");
+    dlg->setWindowTitle(tr("Report Theme"));
     dlg->setMinimumWidth(380);
     dlg->setStyleSheet(
         QString("QDialog { background: %1; color: %2; }"
@@ -1055,7 +1055,7 @@ void ReportBuilderScreen::show_theme_dialog() {
 
 void ReportBuilderScreen::show_metadata_dialog() {
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Report Metadata");
+    dlg->setWindowTitle(tr("Report Metadata"));
     dlg->setMinimumWidth(420);
     dlg->setStyleSheet(
         QString("QDialog { background: %1; color: %2; }"
@@ -1073,7 +1073,7 @@ void ReportBuilderScreen::show_metadata_dialog() {
     auto* author_edit = new QLineEdit(metadata_.author);
     auto* company_edit = new QLineEdit(metadata_.company);
     auto* date_edit = new QLineEdit(metadata_.date);
-    date_edit->setPlaceholderText("yyyy-MM-dd");
+    date_edit->setPlaceholderText(tr("yyyy-MM-dd"));
 
     auto lbl_style = QString("color: %1;").arg(ui::colors::GRAY());
     auto* tl = new QLabel("Title:");
@@ -1111,7 +1111,7 @@ void ReportBuilderScreen::show_metadata_dialog() {
     hc_edit->setPlaceholderText("Center");
     hr_edit->setPlaceholderText("Right");
     fl_edit->setPlaceholderText("Left");
-    fc_edit->setPlaceholderText("Center (use {page})");
+    fc_edit->setPlaceholderText(tr("Center (use {page})"));
     fr_edit->setPlaceholderText("Right");
 
     auto f_row = [&](const char* left_text, QLineEdit* l, QLineEdit* c, QLineEdit* r) {

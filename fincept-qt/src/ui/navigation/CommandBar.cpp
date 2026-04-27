@@ -482,7 +482,7 @@ CommandBar::CommandBar(QWidget* parent) : QWidget(parent) {
 
     input_ = new QLineEdit(this);
     input_->setFixedHeight(24);
-    input_->setPlaceholderText("> Enter Command or /type ...");
+    input_->setPlaceholderText(tr("> Enter Command or /type ..."));
     input_->setStyleSheet(input_ss());
     input_->installEventFilter(this);
     hl->addWidget(input_);
@@ -864,7 +864,7 @@ void CommandBar::on_text_changed(const QString& text) {
                                      .arg(colors::TEXT_PRIMARY.get()));
         alias_lbl->setFixedWidth(72);
 
-        auto* sep_lbl = new QLabel(QStringLiteral("\u203A"));
+        auto* sep_lbl = new QLabel(tr("\u203A"));
         sep_lbl->setStyleSheet(
             QString("color:%1;font-size:12px;background:transparent;").arg(colors::TEXT_TERTIARY.get()));
 
@@ -1096,7 +1096,7 @@ void CommandBar::show_slash_suggestions(const QString& partial) {
                                      .arg(colors::AMBER.get()));
         slash_lbl->setFixedWidth(80);
 
-        auto* sep_lbl = new QLabel(QStringLiteral("\u203A"));
+        auto* sep_lbl = new QLabel(tr("\u203A"));
         sep_lbl->setStyleSheet(
             QString("color:%1;font-size:12px;background:transparent;").arg(colors::TEXT_TERTIARY.get()));
 
@@ -1298,7 +1298,7 @@ void CommandBar::show_dock_verb_suggestions(const QString& primary_id) {
                                     .arg(colors::AMBER.get()));
         verb_lbl->setFixedWidth(64);
 
-        auto* sep = new QLabel(QStringLiteral("\u203A"));
+        auto* sep = new QLabel(tr("\u203A"));
         sep->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;").arg(colors::TEXT_TERTIARY.get()));
 
         auto* hint_lbl = new QLabel(v.hint);
@@ -1356,7 +1356,7 @@ void CommandBar::show_dock_secondary_suggestions(const QString& verb, const QStr
                                      .arg(colors::TEXT_PRIMARY.get()));
         alias_lbl->setFixedWidth(72);
 
-        auto* sep = new QLabel(QStringLiteral("\u203A"));
+        auto* sep = new QLabel(tr("\u203A"));
         sep->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;").arg(colors::TEXT_TERTIARY.get()));
 
         auto* name_lbl = new QLabel(cmd.name);

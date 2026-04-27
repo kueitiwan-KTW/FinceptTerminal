@@ -224,7 +224,7 @@ QWidget* GeopoliticsScreen::build_filter_panel() {
     country_lbl->setStyleSheet(label_style);
     vl->addWidget(country_lbl);
     country_edit_ = new QLineEdit(panel);
-    country_edit_->setPlaceholderText("e.g. Ukraine");
+    country_edit_->setPlaceholderText(tr("e.g. Ukraine"));
     country_edit_->setStyleSheet(input_style);
     connect(country_edit_, &QLineEdit::returnPressed, this, &GeopoliticsScreen::on_apply_filters);
     vl->addWidget(country_edit_);
@@ -233,7 +233,7 @@ QWidget* GeopoliticsScreen::build_filter_panel() {
     city_lbl->setStyleSheet(label_style);
     vl->addWidget(city_lbl);
     city_edit_ = new QLineEdit(panel);
-    city_edit_->setPlaceholderText("e.g. Kyiv");
+    city_edit_->setPlaceholderText(tr("e.g. Kyiv"));
     city_edit_->setStyleSheet(input_style);
     connect(city_edit_, &QLineEdit::returnPressed, this, &GeopoliticsScreen::on_apply_filters);
     vl->addWidget(city_edit_);
@@ -370,7 +370,7 @@ void GeopoliticsScreen::on_apply_filters() {
     auto country = country_edit_->text().trimmed();
     auto city = city_edit_->text().trimmed();
     auto category = category_combo_->currentData().toString();
-    status_label_->setText("LOADING...");
+    status_label_->setText(tr("LOADING..."));
     status_label_->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;")
                                      .arg(ui::colors::WARNING())
                                      .arg(ui::fonts::TINY)

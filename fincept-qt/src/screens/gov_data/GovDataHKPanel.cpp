@@ -167,7 +167,7 @@ QWidget* GovDataHKPanel::build_toolbar() {
 
     search_input_ = new QLineEdit;
     search_input_->setObjectName("govSearch");
-    search_input_->setPlaceholderText("Filter datasets…");
+    search_input_->setPlaceholderText(tr("Filter datasets…"));
     search_input_->setFixedWidth(210);
     search_input_->setFixedHeight(26);
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataHKPanel::on_fetch);
@@ -502,7 +502,7 @@ void GovDataHKPanel::populate_resources(const QJsonArray& json) {
         auto* mod_item = new QTableWidgetItem(modified.isEmpty() ? "—" : modified);
         mod_item->setData(Qt::UserRole, url);
         if (!url.isEmpty()) {
-            mod_item->setText("↗ OPEN");
+            mod_item->setText(tr("↗ OPEN"));
             mod_item->setForeground(QColor(kGovDataHKColor));
             mod_item->setTextAlignment(Qt::AlignCenter);
         }

@@ -158,7 +158,7 @@ void CryptoTickerWidget::on_ticker(const QString& pair, const fincept::trading::
 
 QDialog* CryptoTickerWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Crypto Ticker");
+    dlg->setWindowTitle(tr("Configure — Crypto Ticker"));
     auto* form = new QFormLayout(dlg);
 
     auto* combo = new QComboBox(dlg);
@@ -168,7 +168,7 @@ QDialog* CryptoTickerWidget::make_config_dialog(QWidget* parent) {
 
     auto* edit = new QLineEdit(dlg);
     edit->setText(pairs_.join(", "));
-    edit->setPlaceholderText("e.g. BTC/USD, ETH/USD, SOL/USD");
+    edit->setPlaceholderText(tr("e.g. BTC/USD, ETH/USD, SOL/USD"));
     form->addRow("Pairs", edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);

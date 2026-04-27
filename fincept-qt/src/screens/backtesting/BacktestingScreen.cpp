@@ -540,7 +540,7 @@ QWidget* BacktestingScreen::build_right_panel() {
     sym_lbl->setStyleSheet(label_style);
     vl->addWidget(sym_lbl);
     symbols_edit_ = new QLineEdit("SPY", content);
-    symbols_edit_->setPlaceholderText("SPY,AAPL,MSFT");
+    symbols_edit_->setPlaceholderText(tr("SPY,AAPL,MSFT"));
     symbols_edit_->setStyleSheet(input_style);
     vl->addWidget(symbols_edit_);
 

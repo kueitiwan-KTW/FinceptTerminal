@@ -4,6 +4,7 @@
 
 #include <QJsonObject>
 #include <QUuid>
+#include <QCoreApplication>
 
 namespace fincept::notifications {
 

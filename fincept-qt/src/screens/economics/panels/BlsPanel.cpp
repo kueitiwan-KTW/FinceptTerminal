@@ -85,7 +85,7 @@ void BlsPanel::build_controls(QHBoxLayout* thl) {
     lbl2->setStyleSheet(ctrl_label_style());
 
     series_input_ = new QLineEdit;
-    series_input_->setPlaceholderText("e.g. CES0000000001");
+    series_input_->setPlaceholderText(tr("e.g. CES0000000001"));
     series_input_->setFixedHeight(26);
     series_input_->setFixedWidth(140);
 

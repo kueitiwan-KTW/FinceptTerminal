@@ -124,7 +124,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
 
     price_edit_ = new QLineEdit;
     price_edit_->setObjectName("cryptoOeInput");
-    price_edit_->setPlaceholderText("Limit price");
+    price_edit_->setPlaceholderText(tr("Limit price"));
     price_edit_->setEnabled(false);
     price_edit_->setFixedHeight(26);
     connect(price_edit_, &QLineEdit::textChanged, this, [this]() { update_cost_preview(); });
@@ -137,7 +137,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
 
     stop_price_edit_ = new QLineEdit;
     stop_price_edit_->setObjectName("cryptoOeInput");
-    stop_price_edit_->setPlaceholderText("Stop price");
+    stop_price_edit_->setPlaceholderText(tr("Stop price"));
     stop_price_edit_->setEnabled(false);
     stop_price_edit_->setFixedHeight(26);
     form->addWidget(stop_price_edit_);
@@ -160,14 +160,14 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     sl_lbl->setObjectName("cryptoOeLabel");
     sl_edit_ = new QLineEdit;
     sl_edit_->setObjectName("cryptoOeInput");
-    sl_edit_->setPlaceholderText("Stop Loss");
+    sl_edit_->setPlaceholderText(tr("Stop Loss"));
     sl_edit_->setFixedHeight(26);
 
     auto* tp_lbl = new QLabel("TP");
     tp_lbl->setObjectName("cryptoOeLabel");
     tp_edit_ = new QLineEdit;
     tp_edit_->setObjectName("cryptoOeInput");
-    tp_edit_->setPlaceholderText("Take Profit");
+    tp_edit_->setPlaceholderText(tr("Take Profit"));
     tp_edit_->setFixedHeight(26);
 
     adv_layout->addWidget(sl_lbl);
@@ -329,7 +329,7 @@ void CryptoOrderEntry::on_submit() {
 
     const double qty = qty_edit_->text().toDouble();
     if (qty <= 0) {
-        status_label_->setText("Enter a valid quantity");
+        status_label_->setText(tr("Enter a valid quantity"));
         status_label_->setProperty("error", true);
         status_label_->style()->unpolish(status_label_);
         status_label_->style()->polish(status_label_);
@@ -368,7 +368,7 @@ void CryptoOrderEntry::update_cost_preview() {
     if (qty > 0 && price > 0)
         cost_label_->setText(QString("Est: $%1").arg(qty * price, 0, 'f', 2));
     else
-        cost_label_->setText("Est: --");
+        cost_label_->setText(tr("Est: --"));
 }
 
 } // namespace fincept::screens::crypto

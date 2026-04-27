@@ -386,7 +386,7 @@ QWidget* QuantLibScreen::create_right_panel() {
 
     result_view_ = new QTextEdit;
     result_view_->setReadOnly(true);
-    result_view_->setPlaceholderText("Select a module and endpoint, then execute to see results...");
+    result_view_->setPlaceholderText(tr("Select a module and endpoint, then execute to see results..."));
     result_stack_->addWidget(result_view_);
 
     result_table_ = new QTableWidget;
@@ -1211,7 +1211,7 @@ void QuantLibScreen::populate_panels(int module_index) {
 
 void QuantLibScreen::execute_api(const QString& endpoint, const QJsonObject& params) {
     set_loading(true);
-    result_status_->setText("Computing...");
+    result_status_->setText(tr("Computing..."));
 
     QPointer<QuantLibScreen> self = this;
     services::QuantLibClient::instance().call(endpoint, params, [self, endpoint](mcp::ToolResult result) {

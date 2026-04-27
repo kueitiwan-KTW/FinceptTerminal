@@ -941,7 +941,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
     bl->setSpacing(10);
 
     api_name_ = new QLineEdit;
-    api_name_->setPlaceholderText("e.g. Upstox OHLCV");
+    api_name_->setPlaceholderText(tr("e.g. Upstox OHLCV"));
     bl->addWidget(create_form_row("MAPPING NAME", api_name_));
 
     api_base_url_ = new QLineEdit;
@@ -959,7 +959,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
                                       create_form_row("AUTHENTICATION", api_auth_type_)));
 
     api_auth_value_ = new QLineEdit;
-    api_auth_value_->setPlaceholderText("Token / API Key value");
+    api_auth_value_->setPlaceholderText(tr("Token / API Key value"));
     api_auth_value_->setEchoMode(QLineEdit::Password);
     bl->addWidget(create_form_row("AUTH VALUE", api_auth_value_));
 
@@ -1245,7 +1245,7 @@ QWidget* DataMappingScreen::create_test_save_panel() {
     test_output_->setObjectName("dmTestOutput");
     test_output_->setReadOnly(true);
     test_output_->setMinimumHeight(200);
-    test_output_->setPlaceholderText("Test results will appear here...");
+    test_output_->setPlaceholderText(tr("Test results will appear here..."));
     bl->addWidget(test_output_);
 
     // Save button
@@ -1621,24 +1621,24 @@ void DataMappingScreen::on_prev_step() {
 void DataMappingScreen::on_test_api() {
     QString url = api_base_url_->text().trimmed() + api_endpoint_->text().trimmed();
     if (url.isEmpty()) {
-        api_test_status_->setText("Enter a URL first");
+        api_test_status_->setText(tr("Enter a URL first"));
         return;
     }
 
     api_test_btn_->setEnabled(false);
-    api_test_status_->setText("Testing...");
+    api_test_status_->setText(tr("Testing..."));
 
     // Use HttpClient for the test request
     auto callback = [this](Result<QJsonDocument> result) {
         api_test_btn_->setEnabled(true);
         if (result.is_ok()) {
             sample_data_ = result.value();
-            api_test_status_->setText("SUCCESS — Sample data received");
+            api_test_status_->setText(tr("SUCCESS — Sample data received"));
             api_test_status_->setStyleSheet(
                 QString("color: %1; font-size: 9px; background: transparent;").arg(colors::POSITIVE()));
             LOG_INFO("DataMapping", "API test success");
         } else {
-            api_test_status_->setText("FAILED — " + QString::fromStdString(result.error()));
+            api_test_status_->setText(tr("FAILED — ") + QString::fromStdString(result.error()));
             api_test_status_->setStyleSheet(
                 QString("color: %1; font-size: 9px; background: transparent;").arg(colors::NEGATIVE()));
             LOG_ERROR("DataMapping", "API test failed: " + QString::fromStdString(result.error()));
@@ -1664,12 +1664,12 @@ void DataMappingScreen::on_test_api() {
 
 void DataMappingScreen::on_test_mapping() {
     if (sample_data_.isNull()) {
-        test_status_->setText("No sample data — test API first (Step 1)");
+        test_status_->setText(tr("No sample data — test API first (Step 1)"));
         return;
     }
 
     test_btn_->setEnabled(false);
-    test_status_->setText("Running test...");
+    test_status_->setText(tr("Running test..."));
 
     // Build a summary of the mapping configuration
     QJsonObject summary;
@@ -1717,17 +1717,17 @@ void DataMappingScreen::on_test_mapping() {
 
     bool success = mappings.size() > 0;
     if (success) {
-        test_status_->setText("TEST PASSED");
+        test_status_->setText(tr("TEST PASSED"));
         test_status_->setStyleSheet(
             QString("color: %1; font-size: 9px; background: transparent;").arg(colors::POSITIVE()));
         save_btn_->setEnabled(true);
-        right_test_info_->setText("Test: PASSED");
+        right_test_info_->setText(tr("Test: PASSED"));
     } else {
-        test_status_->setText("TEST FAILED — No field mappings configured");
+        test_status_->setText(tr("TEST FAILED — No field mappings configured"));
         test_status_->setStyleSheet(
             QString("color: %1; font-size: 9px; background: transparent;").arg(colors::NEGATIVE()));
         save_btn_->setEnabled(false);
-        right_test_info_->setText("Test: FAILED");
+        right_test_info_->setText(tr("Test: FAILED"));
     }
 
     test_btn_->setEnabled(true);
@@ -1737,7 +1737,7 @@ void DataMappingScreen::on_test_mapping() {
 void DataMappingScreen::on_save_mapping() {
     const QString name = api_name_->text().trimmed();
     if (name.isEmpty()) {
-        test_status_->setText("Enter a mapping name first");
+        test_status_->setText(tr("Enter a mapping name first"));
         return;
     }
 
@@ -1763,7 +1763,7 @@ void DataMappingScreen::on_save_mapping() {
     auto r = DataMappingRepository::instance().save(dm);
     if (r.is_err()) {
         LOG_ERROR("DataMapping", "Failed to save: " + QString::fromStdString(r.error()));
-        test_status_->setText("Save failed — database error");
+        test_status_->setText(tr("Save failed — database error"));
         return;
     }
 
@@ -1792,7 +1792,7 @@ void DataMappingScreen::on_run_mapping() {
                 LOG_INFO("DataMapping", "Run complete: " + dm.name);
             } else {
                 const QString errs = rec.errors.join(", ");
-                self->test_status_->setText("RUN FAILED — " + errs);
+                self->test_status_->setText(tr("RUN FAILED — ") + errs);
                 LOG_WARN("DataMapping", "Run failed: " + errs);
             }
         });
@@ -1835,9 +1835,9 @@ void DataMappingScreen::on_new_mapping() {
     sample_data_ = QJsonDocument();
     test_result_ = QJsonObject();
     test_output_->clear();
-    test_status_->setText("Not yet tested");
+    test_status_->setText(tr("Not yet tested"));
     save_btn_->setEnabled(false);
-    right_test_info_->setText("Test: --");
+    right_test_info_->setText(tr("Test: --"));
 
     on_view_changed(2); // create
     on_step_changed(0);
@@ -1875,7 +1875,7 @@ void DataMappingScreen::load_mappings_from_db() {
     }
 
     if (status_mappings_) {
-        status_mappings_->setText("Saved: " + QString::number(saved_mappings_.size()));
+        status_mappings_->setText(tr("Saved: ") + QString::number(saved_mappings_.size()));
     }
 }
 

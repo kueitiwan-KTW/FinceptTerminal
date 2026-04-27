@@ -3,6 +3,7 @@
 #include "core/logging/Logger.h"
 
 #include <QSqlQuery>
+#include <QCoreApplication>
 
 namespace fincept::trading {
 

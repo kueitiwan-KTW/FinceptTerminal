@@ -59,6 +59,10 @@
 
 #include <memory>
 
+// 繁體中文翻譯支援
+#include <QTranslator>
+#include <QLocale>
+
 #include <singleapplication.h>
 
 #ifdef Q_OS_WIN
@@ -108,6 +112,29 @@ int main(int argc, char* argv[]) {
 #    define FINCEPT_VERSION_STRING "0.0.0-dev"
 #endif
     app.setApplicationVersion(QStringLiteral(FINCEPT_VERSION_STRING));
+
+    // ── 載入繁體中文翻譯 ────────────────────────────────────────────────────
+    // 優先使用環境變數 FINCEPT_LANG，其次 QLocale 系統語系。
+    // Docker 容器可透過 -e FINCEPT_LANG=zh_TW 或 -e LANG=zh_TW.UTF-8 控制。
+    QTranslator translator;
+    {
+        QString locale = qEnvironmentVariable("FINCEPT_LANG");
+        if (locale.isEmpty()) {
+            locale = QLocale::system().name(); // e.g. "zh_TW"
+        }
+        if (locale.startsWith("zh")) {
+            bool loaded = translator.load("fincept_zh_TW", ":/translations")
+                       || translator.load("fincept_zh_TW", QCoreApplication::applicationDirPath() + "/translations")
+                       || translator.load("fincept_zh_TW", "/usr/share/fincept/translations")
+                       || translator.load("fincept_zh_TW", "/opt/fincept/translations");
+            if (loaded) {
+                QCoreApplication::installTranslator(&translator);
+                qInfo() << "[i18n] 已載入繁體中文翻譯";
+            } else {
+                qWarning() << "[i18n] 找不到繁體中文翻譯檔 fincept_zh_TW.qm";
+            }
+        }
+    }
 
     // ── Secondary instance: signal primary to open a new window, then exit ───
     // The primary receives receivedMessage() and calls open_new_window().
@@ -452,7 +479,7 @@ int main(int argc, char* argv[]) {
         // (e.g. user somehow triggers it twice before the window is hidden).
         auto* setup_screen = new fincept::screens::SetupScreen;
         QPointer<fincept::screens::SetupScreen> screen_guard(setup_screen);
-        setup_screen->setWindowTitle("Fincept Terminal — First-Time Setup");
+        setup_screen->setWindowTitle(QCoreApplication::translate("FinceptTerminal", "Fincept Terminal — First-Time Setup"));
         setup_screen->resize(800, 600);
         setup_screen->show();
 

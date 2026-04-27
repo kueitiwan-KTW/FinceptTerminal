@@ -34,6 +34,7 @@
 #include <QXmlStreamReader>
 
 #include <algorithm>
+#include <QCoreApplication>
 
 namespace fincept::screens::widgets {
 
@@ -97,9 +98,9 @@ QString strip_tags(const QString& frag) {
     static const QRegularExpression kStyle(
         QStringLiteral("<style[^>]*>.*?</style>"),
         QRegularExpression::CaseInsensitiveOption | QRegularExpression::DotMatchesEverythingOption);
-    static const QRegularExpression kBr(QStringLiteral("<br\\s*/?>|</(p|div|li|tr)>"),
+    static const QRegularExpression kBr(QCoreApplication::translate("FinceptTerminal", "<br\\s*/?>|</(p|div|li|tr)>"),
                                         QRegularExpression::CaseInsensitiveOption);
-    static const QRegularExpression kTag(QStringLiteral("<[^>]+>"));
+    static const QRegularExpression kTag(QCoreApplication::translate("FinceptTerminal", "<[^>]+>"));
     static const QRegularExpression kWs(QStringLiteral("\\s+"));
 
     QString s = frag;
@@ -128,7 +129,7 @@ QString detect_charset(const QByteArray& head_bytes, const QString& content_type
         QRegularExpression::CaseInsensitiveOption);
     if (const auto m = kMeta.match(head); m.hasMatch())
         return m.captured(1);
-    return QStringLiteral("utf-8");
+    return QCoreApplication::translate("FinceptTerminal", "utf-8");
 }
 
 // Flatten a JSON value into a row cell string.
@@ -535,18 +536,18 @@ QVector<ScrapedTable> WebScraperWidget::parse_html_tables(const QString& html) c
     QVector<ScrapedTable> out;
 
     static const QRegularExpression kTableRe(
-        QStringLiteral("<table\\b[^>]*>(.*?)</table>"),
+        tr("<table\\b[^>]*>(.*?)</table>"),
         QRegularExpression::CaseInsensitiveOption | QRegularExpression::DotMatchesEverythingOption);
     static const QRegularExpression kRowRe(
-        QStringLiteral("<tr\\b[^>]*>(.*?)</tr>"),
+        tr("<tr\\b[^>]*>(.*?)</tr>"),
         QRegularExpression::CaseInsensitiveOption | QRegularExpression::DotMatchesEverythingOption);
     static const QRegularExpression kCellRe(
-        QStringLiteral("<(t[hd])\\b([^>]*)>(.*?)</\\1>"),
+        tr("<(t[hd])\\b([^>]*)>(.*?)</\\1>"),
         QRegularExpression::CaseInsensitiveOption | QRegularExpression::DotMatchesEverythingOption);
     static const QRegularExpression kColspanRe(QStringLiteral("colspan\\s*=\\s*\"?(\\d+)\"?"),
                                                 QRegularExpression::CaseInsensitiveOption);
     static const QRegularExpression kCaptionRe(
-        QStringLiteral("<caption[^>]*>(.*?)</caption>"),
+        tr("<caption[^>]*>(.*?)</caption>"),
         QRegularExpression::CaseInsensitiveOption | QRegularExpression::DotMatchesEverythingOption);
 
     int table_idx = 0;
@@ -703,7 +704,7 @@ QVector<ScrapedTable> WebScraperWidget::parse_json_tables(const QByteArray& body
     };
 
     if (root.isArray()) {
-        ScrapedTable t = table_from_array(root.toArray(), QStringLiteral("root[]"));
+        ScrapedTable t = table_from_array(root.toArray(), tr("root[]"));
         if (!t.rows.isEmpty())
             out.append(std::move(t));
     } else if (root.isObject()) {
@@ -872,7 +873,7 @@ QVector<ScrapedTable> WebScraperWidget::parse_xml_tables(const QByteArray& body)
         if (keys.isEmpty())
             continue;
         ScrapedTable t;
-        t.label = QStringLiteral("<%1> × %2").arg(it.key()).arg(recs.size());
+        t.label = tr("<%1> × %2").arg(it.key()).arg(recs.size());
         t.headers = keys;
         for (const auto& r : recs) {
             QStringList row;
@@ -902,7 +903,7 @@ QVector<ScrapedTable> WebScraperWidget::parse_xml_tables(const QByteArray& body)
 
 QDialog* WebScraperWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Web Scraper");
+    dlg->setWindowTitle(tr("Configure — Web Scraper"));
     dlg->resize(520, 420);
     auto* form = new QFormLayout(dlg);
 
@@ -932,12 +933,12 @@ QDialog* WebScraperWidget::make_config_dialog(QWidget* parent) {
 
     auto* enc_edit = new QLineEdit(dlg);
     enc_edit->setText(encoding_);
-    enc_edit->setPlaceholderText("auto (from Content-Type / <meta>)");
+    enc_edit->setPlaceholderText(tr("auto (from Content-Type / <meta>)"));
     form->addRow("Encoding", enc_edit);
 
     auto* json_path_edit = new QLineEdit(dlg);
     json_path_edit->setText(json_path_);
-    json_path_edit->setPlaceholderText("e.g. data.items  (JSON only)");
+    json_path_edit->setPlaceholderText(tr("e.g. data.items  (JSON only)"));
     form->addRow("JSON path", json_path_edit);
 
     auto* headers_edit = new QPlainTextEdit(dlg);

@@ -128,7 +128,7 @@ void TradeTapeWidget::render() {
 
 QDialog* TradeTapeWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Trades");
+    dlg->setWindowTitle(tr("Configure — Trades"));
     auto* form = new QFormLayout(dlg);
 
     auto* ex = new QComboBox(dlg);
@@ -138,7 +138,7 @@ QDialog* TradeTapeWidget::make_config_dialog(QWidget* parent) {
 
     auto* pair = new QLineEdit(dlg);
     pair->setText(pair_);
-    pair->setPlaceholderText("e.g. BTC/USD");
+    pair->setPlaceholderText(tr("e.g. BTC/USD"));
     form->addRow("Pair", pair);
 
     auto* spin = new QSpinBox(dlg);

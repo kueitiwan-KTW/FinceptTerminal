@@ -23,6 +23,7 @@
 #include <QVBoxLayout>
 
 #include <cmath>
+#include <QCoreApplication>
 
 namespace fincept::screens {
 
@@ -889,7 +890,7 @@ void PolymarketScreen::on_kalshi_exchange_schedule(const QJsonObject& schedule) 
         const auto first = standard.first().toObject();
         const QString open = first.value("open_time").toString();
         if (!open.isEmpty())
-            next = QStringLiteral("Next open: ") + open;
+            next = tr("Next open: ") + open;
     }
     status_bar_->set_next_session(next);
 }
@@ -907,7 +908,7 @@ void PolymarketScreen::on_kalshi_ws_trade(const pred::PredictionTrade& trade) {
 void PolymarketScreen::on_kalshi_market_lifecycle(const QString& ticker,
                                                   const QString& status) {
     LOG_INFO("PredictionMarkets",
-             QStringLiteral("Kalshi lifecycle: %1 → %2").arg(ticker, status));
+             QCoreApplication::translate("FinceptTerminal", "Kalshi lifecycle: %1 → %2").arg(ticker, status));
     // When a visible market flips status, refresh just that row. Avoid
     // reloading the whole view — a market going paused/closed shouldn't
     // disturb the rest of the browse panel.
@@ -1026,21 +1027,21 @@ void PolymarketScreen::on_kalshi_series_detail(const QString& series_ticker,
     const QString contract_url = series.value(QStringLiteral("contract_url")).toString();
 
     QStringList lines;
-    if (!title.isEmpty()) lines << QStringLiteral("<b>%1</b>").arg(title.toHtmlEscaped());
+    if (!title.isEmpty()) lines << QCoreApplication::translate("FinceptTerminal", "<b>%1</b>").arg(title.toHtmlEscaped());
     if (!series_ticker.isEmpty())
-        lines << QStringLiteral("Series: %1").arg(series_ticker);
+        lines << QCoreApplication::translate("FinceptTerminal", "Series: %1").arg(series_ticker);
     if (!frequency.isEmpty())
-        lines << QStringLiteral("Frequency: %1").arg(frequency);
+        lines << QCoreApplication::translate("FinceptTerminal", "Frequency: %1").arg(frequency);
     if (!fee_type.isEmpty()) {
-        QString fee_line = QStringLiteral("Fees: %1").arg(fee_type);
+        QString fee_line = QCoreApplication::translate("FinceptTerminal", "Fees: %1").arg(fee_type);
         if (fee_mult > 0.0)
-            fee_line += QStringLiteral(" (×%1)").arg(fee_mult);
+            fee_line += QCoreApplication::translate("FinceptTerminal", " (×%1)").arg(fee_mult);
         lines << fee_line;
     }
     if (!contract_url.isEmpty())
-        lines << QStringLiteral("<i>%1</i>").arg(contract_url.toHtmlEscaped());
+        lines << QCoreApplication::translate("FinceptTerminal", "<i>%1</i>").arg(contract_url.toHtmlEscaped());
 
-    detail_panel_->set_series_tooltip(lines.join(QStringLiteral("<br>")));
+    detail_panel_->set_series_tooltip(lines.join(QCoreApplication::translate("FinceptTerminal", "<br>")));
 }
 
 // ── IStatefulScreen ─────────────────────────────────────────────────────────

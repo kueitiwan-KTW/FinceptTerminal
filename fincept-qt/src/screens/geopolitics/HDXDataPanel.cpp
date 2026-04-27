@@ -76,7 +76,7 @@ void HDXDataPanel::build_ui() {
     hhl->addStretch();
 
     search_edit_ = new QLineEdit(header);
-    search_edit_->setPlaceholderText("Search HDX datasets...");
+    search_edit_->setPlaceholderText(tr("Search HDX datasets..."));
     search_edit_->setFixedWidth(240);
     search_edit_->setStyleSheet(QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                                         "font-family:%4; font-size:%5px; padding:4px 8px; }"
@@ -177,7 +177,7 @@ void HDXDataPanel::build_ui() {
     country_combo_ = new QComboBox(explorer_bar_);
     country_combo_->setStyleSheet(combo_style);
     country_combo_->setEditable(true);
-    country_combo_->setPlaceholderText("Select country");
+    country_combo_->setPlaceholderText(tr("Select country"));
     for (const auto& r : critical_regions())
         country_combo_->addItem(r);
     ehl->addWidget(country_combo_);

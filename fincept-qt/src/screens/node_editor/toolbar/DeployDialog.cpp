@@ -17,7 +17,7 @@ static QString deploy_input_style() {
 }
 
 DeployDialog::DeployDialog(const QString& current_name, QWidget* parent) : QDialog(parent) {
-    setWindowTitle("Deploy Workflow");
+    setWindowTitle(tr("Deploy Workflow"));
     setFixedSize(420, 320);
     setStyleSheet(QString("QDialog { background: %1; }").arg(ui::colors::BG_SURFACE()));
     build_ui(current_name);
@@ -66,7 +66,7 @@ void DeployDialog::build_ui(const QString& current_name) {
     root->addWidget(desc_label);
 
     desc_edit_ = new QPlainTextEdit;
-    desc_edit_->setPlaceholderText("Describe what this workflow does...");
+    desc_edit_->setPlaceholderText(tr("Describe what this workflow does..."));
     desc_edit_->setMaximumHeight(80);
     desc_edit_->setStyleSheet(QString("QPlainTextEdit { %1 } QPlainTextEdit:focus { border: 1px solid %2; }")
                                   .arg(deploy_input_style(), ui::colors::AMBER()));

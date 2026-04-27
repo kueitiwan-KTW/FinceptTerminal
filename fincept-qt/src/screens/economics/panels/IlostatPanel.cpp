@@ -64,10 +64,10 @@ void IlostatPanel::build_controls(QHBoxLayout* thl) {
     country_edit_ = new QLineEdit("USA");
     country_edit_->setFixedHeight(26);
     country_edit_->setFixedWidth(120);
-    country_edit_->setPlaceholderText("ISO-2 code…");
-    country_edit_->setToolTip("ISO-2 country code, e.g. USA, GBR, DEU\n"
+    country_edit_->setPlaceholderText(tr("ISO-2 code…"));
+    country_edit_->setToolTip(tr("ISO-2 country code, e.g. USA, GBR, DEU\n"
                               "Multiple: CAN+USA+GBR\n"
-                              "All countries: ALL");
+                              "All countries: ALL"));
 
     start_edit_ = new QLineEdit("2010");
     start_edit_->setFixedHeight(26);

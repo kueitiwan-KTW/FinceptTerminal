@@ -291,7 +291,7 @@ QWidget* AkShareScreen::create_endpoint_panel() {
 
     search_input_ = new QLineEdit;
     search_input_->setObjectName("akSearchInput");
-    search_input_->setPlaceholderText("Search endpoints...");
+    search_input_->setPlaceholderText(tr("Search endpoints..."));
     connect(search_input_, &QLineEdit::textChanged, this, &AkShareScreen::on_search_changed);
 
     endpoint_count_ = new QLabel("0 endpoints");
@@ -338,7 +338,7 @@ QWidget* AkShareScreen::create_params_panel() {
     start_label->setObjectName("akParamLabel");
     param_start_ = new QLineEdit;
     param_start_->setObjectName("akParamInput");
-    param_start_->setPlaceholderText("YYYY-MM-DD");
+    param_start_->setPlaceholderText(tr("YYYY-MM-DD"));
     param_start_->setFixedWidth(100);
 
     // End date
@@ -346,7 +346,7 @@ QWidget* AkShareScreen::create_params_panel() {
     end_label->setObjectName("akParamLabel");
     param_end_ = new QLineEdit;
     param_end_->setObjectName("akParamInput");
-    param_end_->setPlaceholderText("YYYY-MM-DD");
+    param_end_->setPlaceholderText(tr("YYYY-MM-DD"));
     param_end_->setFixedWidth(100);
 
     // Period
@@ -572,7 +572,7 @@ void AkShareScreen::load_endpoints(const AkShareSource& source) {
 
     set_loading(true);
     endpoint_list_->clear();
-    data_status_->setText("Loading endpoints...");
+    data_status_->setText(tr("Loading endpoints..."));
 
     QPointer<AkShareScreen> self = this;
 
@@ -585,7 +585,7 @@ void AkShareScreen::load_endpoints(const AkShareSource& source) {
             self->set_loading(false);
 
             if (!r.success) {
-                self->data_status_->setText("Failed to load endpoints");
+                self->data_status_->setText(tr("Failed to load endpoints"));
                 return;
             }
 
@@ -648,7 +648,7 @@ void AkShareScreen::populate_endpoint_list(const QJsonObject& result) {
     }
 
     endpoint_count_->setText(QString::number(all_endpoints.size()) + " endpoints");
-    data_status_->setText("Select an endpoint");
+    data_status_->setText(tr("Select an endpoint"));
     LOG_INFO("AkShare", "Loaded " + QString::number(all_endpoints.size()) + " endpoints");
 }
 
@@ -672,7 +672,7 @@ void AkShareScreen::execute_query(const QString& script, const QString& endpoint
     }
 
     set_loading(true);
-    data_status_->setText("Querying " + endpoint + "...");
+    data_status_->setText(tr("Querying ") + endpoint + "...");
     record_count_->hide();
 
     QPointer<AkShareScreen> self = this;
@@ -720,7 +720,7 @@ void AkShareScreen::display_table_data(const QJsonArray& rows_json) {
     data_table_->setColumnCount(0);
 
     if (rows_json.isEmpty()) {
-        data_status_->setText("No data returned");
+        data_status_->setText(tr("No data returned"));
         return;
     }
 
@@ -806,7 +806,7 @@ void AkShareScreen::set_loading(bool loading) {
     exec_btn_->setEnabled(!loading);
     refresh_btn_->setEnabled(!loading && !active_endpoint_.isEmpty());
     if (loading) {
-        data_status_->setText("Loading...");
+        data_status_->setText(tr("Loading..."));
     }
 }
 

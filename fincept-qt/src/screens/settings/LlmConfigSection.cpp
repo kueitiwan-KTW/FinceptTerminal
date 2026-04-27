@@ -323,7 +323,7 @@ QWidget* LlmConfigSection::build_form_panel() {
     auto* p_lbl = new QLabel("Provider");
     lbl_style(p_lbl);
     provider_edit_ = new QLineEdit;
-    provider_edit_->setPlaceholderText("e.g. openai");
+    provider_edit_->setPlaceholderText(tr("e.g. openai"));
     provider_edit_->setReadOnly(true); // set by selection
     field_style(provider_edit_);
     provider_edit_->setStyleSheet(provider_edit_->styleSheet() +
@@ -334,7 +334,7 @@ QWidget* LlmConfigSection::build_form_panel() {
     auto* k_lbl = new QLabel("API Key");
     lbl_style(k_lbl);
     api_key_edit_ = new QLineEdit;
-    api_key_edit_->setPlaceholderText("sk-...");
+    api_key_edit_->setPlaceholderText(tr("sk-..."));
     api_key_edit_->setEchoMode(QLineEdit::Password);
     field_style(api_key_edit_);
     form->addRow(k_lbl, api_key_edit_);
@@ -345,7 +345,7 @@ QWidget* LlmConfigSection::build_form_panel() {
     model_combo_ = new QComboBox;
     model_combo_->setEditable(true);
     model_combo_->setMinimumWidth(260);
-    model_combo_->lineEdit()->setPlaceholderText("Select or type model...");
+    model_combo_->lineEdit()->setPlaceholderText(tr("Select or type model..."));
     model_combo_->setStyleSheet("QComboBox{background:" + QString(ui::colors::BG_RAISED()) +
                                 ";color:" + QString(ui::colors::TEXT_PRIMARY()) + ";border:1px solid " +
                                 QString(ui::colors::BORDER_MED()) +
@@ -390,7 +390,7 @@ QWidget* LlmConfigSection::build_form_panel() {
     auto* b_lbl = new QLabel("Base URL");
     lbl_style(b_lbl);
     base_url_edit_ = new QLineEdit;
-    base_url_edit_->setPlaceholderText("Optional — leave empty for default");
+    base_url_edit_->setPlaceholderText(tr("Optional — leave empty for default"));
     field_style(base_url_edit_);
     form->addRow(b_lbl, base_url_edit_);
 
@@ -405,8 +405,8 @@ QWidget* LlmConfigSection::build_form_panel() {
                                 ";}"
                                 "QCheckBox::indicator:checked{background:" +
                                 QString(ui::colors::AMBER()) + ";border-color:" + QString(ui::colors::AMBER()) + ";}");
-    tools_check_->setToolTip("When enabled, the AI can interact with the terminal: navigate screens, fetch market "
-                             "data, manage watchlists, etc.");
+    tools_check_->setToolTip(tr("When enabled, the AI can interact with the terminal: navigate screens, fetch market "
+                             "data, manage watchlists, etc."));
     form->addRow(new QLabel(""), tools_check_);
 
     vl->addLayout(form);
@@ -509,7 +509,7 @@ QWidget* LlmConfigSection::build_global_panel() {
     auto* sp_lbl = new QLabel("System Prompt");
     sp_lbl->setStyleSheet("color:" + QString(ui::colors::TEXT_SECONDARY()) + ";");
     system_prompt_ = new QPlainTextEdit;
-    system_prompt_->setPlaceholderText("Optional system prompt for the LLM...");
+    system_prompt_->setPlaceholderText(tr("Optional system prompt for the LLM..."));
     system_prompt_->setFixedHeight(60);
     system_prompt_->setStyleSheet("QPlainTextEdit{background:" + QString(ui::colors::BG_RAISED()) +
                                   ";color:" + QString(ui::colors::TEXT_PRIMARY()) + ";border:1px solid " +
@@ -648,9 +648,9 @@ void LlmConfigSection::populate_form(const QString& provider) {
                 auto stored = SettingsRepository::instance().get("fincept_api_key");
                 if (stored.is_ok() && !stored.value().isEmpty()) {
                     QString masked = stored.value().left(8) + "...";
-                    api_key_edit_->setPlaceholderText("Linked to your Fincept account: " + masked);
+                    api_key_edit_->setPlaceholderText(tr("Linked to your Fincept account: ") + masked);
                 } else {
-                    api_key_edit_->setPlaceholderText("Login to your Fincept account to enable");
+                    api_key_edit_->setPlaceholderText(tr("Login to your Fincept account to enable"));
                 }
                 api_key_edit_->setEnabled(false);
                 // Fincept is a managed service — hide model/base_url/fetch
@@ -660,7 +660,7 @@ void LlmConfigSection::populate_form(const QString& provider) {
             } else {
                 api_key_edit_->setText(p.api_key);
                 api_key_edit_->setEnabled(true);
-                api_key_edit_->setPlaceholderText("sk-...");
+                api_key_edit_->setPlaceholderText(tr("sk-..."));
                 model_combo_->setVisible(true);
                 model_combo_->setEnabled(true);
                 fetch_btn_->setVisible(true);
@@ -678,9 +678,9 @@ void LlmConfigSection::populate_form(const QString& provider) {
     if (is_fincept) {
         auto stored = SettingsRepository::instance().get("fincept_api_key");
         if (stored.is_ok() && !stored.value().isEmpty())
-            api_key_edit_->setPlaceholderText("Linked to your Fincept account: " + stored.value().left(8) + "...");
+            api_key_edit_->setPlaceholderText(tr("Linked to your Fincept account: ") + stored.value().left(8) + "...");
         else
-            api_key_edit_->setPlaceholderText("Login to your Fincept account to enable");
+            api_key_edit_->setPlaceholderText(tr("Login to your Fincept account to enable"));
         model_combo_->setVisible(false);
         fetch_btn_->setVisible(false);
         base_url_edit_->setVisible(false);
@@ -1050,7 +1050,7 @@ QWidget* LlmConfigSection::build_profile_form_panel() {
 
     vl->addWidget(lbl("PROFILE NAME"));
     profile_name_edit_ = new QLineEdit;
-    profile_name_edit_->setPlaceholderText("e.g. Fast Groq, Careful Claude, Coding minimax");
+    profile_name_edit_->setPlaceholderText(tr("e.g. Fast Groq, Careful Claude, Coding minimax"));
     profile_name_edit_->setStyleSheet(field_style());
     vl->addWidget(profile_name_edit_);
 
@@ -1072,13 +1072,13 @@ QWidget* LlmConfigSection::build_profile_form_panel() {
     vl->addWidget(lbl("API KEY"));
     profile_api_key_edit_ = new QLineEdit;
     profile_api_key_edit_->setEchoMode(QLineEdit::Password);
-    profile_api_key_edit_->setPlaceholderText("Leave blank to inherit from provider");
+    profile_api_key_edit_->setPlaceholderText(tr("Leave blank to inherit from provider"));
     profile_api_key_edit_->setStyleSheet(field_style());
     vl->addWidget(profile_api_key_edit_);
 
     vl->addWidget(lbl("BASE URL (custom endpoint)"));
     profile_base_url_edit_ = new QLineEdit;
-    profile_base_url_edit_->setPlaceholderText("Leave blank to use provider default");
+    profile_base_url_edit_->setPlaceholderText(tr("Leave blank to use provider default"));
     profile_base_url_edit_->setStyleSheet(field_style());
     vl->addWidget(profile_base_url_edit_);
 
@@ -1106,7 +1106,7 @@ QWidget* LlmConfigSection::build_profile_form_panel() {
 
     vl->addWidget(lbl("SYSTEM PROMPT OVERRIDE (optional)"));
     profile_prompt_edit_ = new QPlainTextEdit;
-    profile_prompt_edit_->setPlaceholderText("Leave blank to use global system prompt");
+    profile_prompt_edit_->setPlaceholderText(tr("Leave blank to use global system prompt"));
     profile_prompt_edit_->setMaximumHeight(80);
     profile_prompt_edit_->setStyleSheet(QString("QPlainTextEdit{%1}").arg(field_style()));
     vl->addWidget(profile_prompt_edit_);

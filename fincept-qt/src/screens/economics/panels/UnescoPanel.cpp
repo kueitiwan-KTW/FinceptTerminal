@@ -105,7 +105,7 @@ UnescoPanel::UnescoPanel(QWidget* parent) : EconPanelBase(kUnescoSourceId, kUnes
 
     // Indicator search
     indicator_search_ = new QLineEdit;
-    indicator_search_->setPlaceholderText("Filter indicators…");
+    indicator_search_->setPlaceholderText(tr("Filter indicators…"));
     indicator_search_->setStyleSheet(search_input_style());
     indicator_search_->setFixedHeight(28);
     connect(indicator_search_, &QLineEdit::textChanged, this, &UnescoPanel::on_indicator_filter);
@@ -148,18 +148,18 @@ void UnescoPanel::build_controls(QHBoxLayout* thl) {
     };
 
     country_input_ = new QLineEdit;
-    country_input_->setPlaceholderText("Country (e.g. USA, GBR, IND)");
+    country_input_->setPlaceholderText(tr("Country (e.g. USA, GBR, IND)"));
     country_input_->setText("USA");
     country_input_->setFixedHeight(26);
     country_input_->setFixedWidth(140);
 
     start_input_ = new QLineEdit;
-    start_input_->setPlaceholderText("Start year");
+    start_input_->setPlaceholderText(tr("Start year"));
     start_input_->setFixedHeight(26);
     start_input_->setFixedWidth(70);
 
     end_input_ = new QLineEdit;
-    end_input_->setPlaceholderText("End year");
+    end_input_->setPlaceholderText(tr("End year"));
     end_input_->setFixedHeight(26);
     end_input_->setFixedWidth(70);
 

@@ -139,13 +139,13 @@ void AgentChatPanel::build_ui() {
     agent_selector_->setSizeAdjustPolicy(QComboBox::AdjustToContents);
     agent_selector_->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
     agent_selector_->setCursor(Qt::PointingHandCursor);
-    agent_selector_->setToolTip("Select a configured agent, or Default to use the global LLM.");
+    agent_selector_->setToolTip(tr("Select a configured agent, or Default to use the global LLM."));
 
     // Editable + completer gives us an inline search bar inside the dropdown.
     // PopupCompletion shows filtered matches as a popup list while typing.
     agent_selector_->setEditable(true);
     agent_selector_->setInsertPolicy(QComboBox::NoInsert);
-    agent_selector_->lineEdit()->setPlaceholderText("Search agent...");
+    agent_selector_->lineEdit()->setPlaceholderText(tr("Search agent..."));
     agent_selector_->lineEdit()->setClearButtonEnabled(true);
     {
         auto* completer = new QCompleter(agent_selector_->model(), agent_selector_);
@@ -191,7 +191,7 @@ void AgentChatPanel::build_ui() {
     hdr_model_lbl_->setStyleSheet(QString("color:%1;font-size:9px;background:%2;border:1px solid %3;"
                                           "border-radius:3px;padding:2px 8px;")
                                       .arg(col::TEXT_SECONDARY(), col::BG_BASE(), col::BORDER_MED()));
-    hdr_model_lbl_->setToolTip("Active LLM — configure in Settings > LLM Configuration");
+    hdr_model_lbl_->setToolTip(tr("Active LLM — configure in Settings > LLM Configuration"));
     hl->addWidget(hdr_model_lbl_);
 
     // Status chip
@@ -212,7 +212,7 @@ void AgentChatPanel::build_ui() {
     route_toggle_->setCheckable(true);
     route_toggle_->setCursor(Qt::PointingHandCursor);
     route_toggle_->setFixedHeight(28);
-    route_toggle_->setToolTip("When ON, the system picks the best agent for each query.");
+    route_toggle_->setToolTip(tr("When ON, the system picks the best agent for each query."));
     route_toggle_->setStyleSheet(
         QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                 "padding:3px 10px;font-size:9px;font-weight:600;border-radius:3px;}"
@@ -373,7 +373,7 @@ void AgentChatPanel::build_ui() {
     il->setSpacing(10);
 
     input_edit_ = new QTextEdit;
-    input_edit_->setPlaceholderText("Message agent... (Shift+Enter for new line, Enter to send)");
+    input_edit_->setPlaceholderText(tr("Message agent... (Shift+Enter for new line, Enter to send)"));
     input_edit_->setFixedHeight(44);
     input_edit_->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     input_edit_->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -493,7 +493,7 @@ void AgentChatPanel::setup_connections() {
                     }
                     scroll_to_bottom();
                 }
-                status_label_->setText("Streaming...");
+                status_label_->setText(tr("Streaming..."));
             });
 
     connect(&svc, &services::AgentService::agent_stream_done, this, [this](services::AgentExecutionResult r) {
@@ -530,7 +530,7 @@ void AgentChatPanel::setup_connections() {
             hdr_status_lbl_->setText("Ready");
             hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
         } else {
-            status_label_->setText("Agent execution failed");
+            status_label_->setText(tr("Agent execution failed"));
             hdr_status_lbl_->setText("Error");
             hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::NEGATIVE()));
         }
@@ -599,13 +599,13 @@ void AgentChatPanel::update_llm_status() {
         hdr_status_lbl_->setText("Ready");
         hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
     } else {
-        hdr_model_lbl_->setText("No LLM configured");
+        hdr_model_lbl_->setText(tr("No LLM configured"));
         hdr_model_lbl_->setStyleSheet(QString("color:%1;font-size:9px;background:%2;border:1px solid %3;"
                                               "border-radius:3px;padding:2px 8px;")
                                           .arg(col::NEGATIVE(), col::BG_BASE(), col::NEGATIVE()));
         hdr_status_lbl_->setText("Unconfigured");
         hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::NEGATIVE()));
-        status_label_->setText("No LLM provider configured — go to Settings > LLM Configuration");
+        status_label_->setText(tr("No LLM provider configured — go to Settings > LLM Configuration"));
     }
 }
 
@@ -938,7 +938,7 @@ void AgentChatPanel::set_executing(bool on) {
     if (on) {
         hdr_status_lbl_->setText("Streaming");
         hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::AMBER()));
-        status_label_->setText("Processing...");
+        status_label_->setText(tr("Processing..."));
     }
     if (!on) {
         pending_request_id_.clear();
@@ -955,7 +955,7 @@ void AgentChatPanel::show_typing(bool on) {
         return;
     if (on) {
         typing_step_ = 0;
-        typing_dots_lbl_->setText("Agent is thinking");
+        typing_dots_lbl_->setText(tr("Agent is thinking"));
         typing_indicator_->show();
         typing_timer_->start();
     } else {

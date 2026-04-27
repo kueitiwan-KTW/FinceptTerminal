@@ -96,12 +96,12 @@ void AdbPanel::build_controls(QHBoxLayout* thl) {
     indicator_input_->setFixedWidth(130);
 
     start_input_ = new QLineEdit;
-    start_input_->setPlaceholderText("Start year");
+    start_input_->setPlaceholderText(tr("Start year"));
     start_input_->setFixedHeight(26);
     start_input_->setFixedWidth(70);
 
     end_input_ = new QLineEdit;
-    end_input_->setPlaceholderText("End year");
+    end_input_->setPlaceholderText(tr("End year"));
     end_input_->setFixedHeight(26);
     end_input_->setFixedWidth(70);
 

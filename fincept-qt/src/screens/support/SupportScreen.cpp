@@ -201,7 +201,7 @@ SupportScreen::SupportScreen(QWidget* parent) : QWidget(parent) {
 
         refresh_btn_ = new QPushButton("↻");
         refresh_btn_->setFixedSize(30, 26);
-        refresh_btn_->setToolTip("Refresh tickets");
+        refresh_btn_->setToolTip(tr("Refresh tickets"));
         refresh_btn_->setStyleSheet(SS_BTN_GHOST());
         connect(refresh_btn_, &QPushButton::clicked, this, &SupportScreen::load_tickets);
         bl->addWidget(refresh_btn_);
@@ -319,7 +319,7 @@ QWidget* SupportScreen::build_sidebar() {
 
         // Search
         search_input_ = new QLineEdit;
-        search_input_->setPlaceholderText("🔍  Search tickets…");
+        search_input_->setPlaceholderText(tr("🔍  Search tickets…"));
         search_input_->setFixedHeight(30);
         search_input_->setStyleSheet(SS_INPUT());
         hl->addWidget(search_input_);
@@ -483,7 +483,7 @@ QWidget* SupportScreen::build_create_page() {
     };
 
     subject_input_ = new QLineEdit;
-    subject_input_->setPlaceholderText("Brief summary of your issue");
+    subject_input_->setPlaceholderText(tr("Brief summary of your issue"));
     subject_input_->setFixedHeight(38);
     subject_input_->setStyleSheet(SS_INPUT());
     add_field("Subject", subject_input_, true);
@@ -531,11 +531,11 @@ QWidget* SupportScreen::build_create_page() {
         cl->addLayout(hdr);
 
         desc_input_ = new QTextEdit;
-        desc_input_->setPlaceholderText("Please describe:\n"
+        desc_input_->setPlaceholderText(tr("Please describe:\n"
                                         "• What were you doing?\n"
                                         "• What did you expect to happen?\n"
                                         "• What actually happened?\n"
-                                        "• Steps to reproduce (if applicable)");
+                                        "• Steps to reproduce (if applicable)"));
         desc_input_->setMinimumHeight(160);
         desc_input_->setMaximumHeight(280);
         desc_input_->setStyleSheet(SS_INPUT());
@@ -745,7 +745,7 @@ QWidget* SupportScreen::build_detail_page() {
         rbl->addLayout(reply_hdr);
 
         msg_input_ = new QTextEdit;
-        msg_input_->setPlaceholderText("Type your reply…");
+        msg_input_->setPlaceholderText(tr("Type your reply…"));
         msg_input_->setFixedHeight(80);
         msg_input_->setStyleSheet(SS_INPUT());
         rbl->addWidget(msg_input_);
@@ -1090,12 +1090,12 @@ void SupportScreen::on_create_ticket() {
         return;
 
     set_busy(true);
-    create_btn_->setText("Submitting…");
+    create_btn_->setText(tr("Submitting…"));
 
     auth::UserApi::instance().create_ticket(subject, desc, category_combo_->currentText().toLower().replace(' ', '_'),
                                             priority_combo_->currentText().toLower(), [this](auth::ApiResponse r) {
                                                 set_busy(false);
-                                                create_btn_->setText("Submit Ticket →");
+                                                create_btn_->setText(tr("Submit Ticket →"));
                                                 if (r.success) {
                                                     subject_input_->clear();
                                                     desc_input_->clear();
@@ -1115,11 +1115,11 @@ void SupportScreen::on_send_message() {
         return;
 
     set_busy(true);
-    send_btn_->setText("Sending…");
+    send_btn_->setText(tr("Sending…"));
 
     auth::UserApi::instance().add_ticket_message(selected_ticket_id_, msg, [this, msg](auth::ApiResponse r) {
         set_busy(false);
-        send_btn_->setText("Send Reply →");
+        send_btn_->setText(tr("Send Reply →"));
         if (!r.success)
             return;
 

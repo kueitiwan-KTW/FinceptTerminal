@@ -101,7 +101,7 @@ void DBnomicsDataTable::build_ui() {
 void DBnomicsDataTable::set_loading(bool on) {
     if (on) {
         frame_ = 0;
-        spin_label_->setText("⣾  LOADING OBSERVATIONS...");
+        spin_label_->setText(tr("⣾  LOADING OBSERVATIONS..."));
         stack_->setCurrentIndex(0);
         spin_timer_->start();
     } else {

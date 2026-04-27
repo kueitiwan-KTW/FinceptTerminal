@@ -148,7 +148,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
 
     price_edit_ = new QLineEdit;
     price_edit_->setObjectName("eqOeInput");
-    price_edit_->setPlaceholderText("Limit price");
+    price_edit_->setPlaceholderText(tr("Limit price"));
     price_edit_->setEnabled(false);
     price_edit_->setFixedHeight(26);
     connect(price_edit_, &QLineEdit::textChanged, this, [this]() { update_cost_preview(); });
@@ -161,7 +161,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
 
     stop_price_edit_ = new QLineEdit;
     stop_price_edit_->setObjectName("eqOeInput");
-    stop_price_edit_->setPlaceholderText("Trigger price");
+    stop_price_edit_->setPlaceholderText(tr("Trigger price"));
     stop_price_edit_->setEnabled(false);
     stop_price_edit_->setFixedHeight(26);
     form->addWidget(stop_price_edit_);
@@ -184,14 +184,14 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     sl_lbl->setObjectName("eqOeLabel");
     sl_edit_ = new QLineEdit;
     sl_edit_->setObjectName("eqOeInput");
-    sl_edit_->setPlaceholderText("Stop Loss");
+    sl_edit_->setPlaceholderText(tr("Stop Loss"));
     sl_edit_->setFixedHeight(26);
 
     auto* tp_lbl = new QLabel("TP");
     tp_lbl->setObjectName("eqOeLabel");
     tp_edit_ = new QLineEdit;
     tp_edit_->setObjectName("eqOeInput");
-    tp_edit_->setPlaceholderText("Take Profit");
+    tp_edit_->setPlaceholderText(tr("Take Profit"));
     tp_edit_->setFixedHeight(26);
 
     adv_layout->addWidget(sl_lbl);
@@ -232,7 +232,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     broadcast_btn_->setObjectName("eqBroadcastBtn");
     broadcast_btn_->setFixedHeight(34);
     broadcast_btn_->setCursor(Qt::PointingHandCursor);
-    broadcast_btn_->setToolTip("Broadcast this order to multiple accounts");
+    broadcast_btn_->setToolTip(tr("Broadcast this order to multiple accounts"));
     broadcast_btn_->setStyleSheet(
         QString("QPushButton { background: %1; color: %2; font-weight: 700; font-size: 11px; border-radius: 2px; }"
                 "QPushButton:hover { background: %3; }")
@@ -240,7 +240,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     connect(broadcast_btn_, &QPushButton::clicked, this, [this]() {
         const double qty = qty_edit_->text().toDouble();
         if (qty <= 0) {
-            status_label_->setText("Enter a valid quantity");
+            status_label_->setText(tr("Enter a valid quantity"));
             status_label_->setStyleSheet(QString("color: %1;").arg(colors::NEGATIVE()));
             return;
         }
@@ -390,7 +390,7 @@ void EquityOrderEntry::set_exchange(const QString& exchange) {
 void EquityOrderEntry::on_submit() {
     const double qty = qty_edit_->text().toDouble();
     if (qty <= 0) {
-        status_label_->setText("Enter a valid quantity");
+        status_label_->setText(tr("Enter a valid quantity"));
         status_label_->setStyleSheet(QString("color: %1;").arg(colors::NEGATIVE()));
         return;
     }
@@ -437,7 +437,7 @@ void EquityOrderEntry::update_cost_preview() {
     if (qty > 0 && price > 0)
         cost_label_->setText(QString("Est: %1%2").arg(sym).arg(qty * price, 0, 'f', 2));
     else
-        cost_label_->setText("Est: --");
+        cost_label_->setText(tr("Est: --"));
 }
 
 void EquityOrderEntry::set_broker_id(const QString& broker_id) {

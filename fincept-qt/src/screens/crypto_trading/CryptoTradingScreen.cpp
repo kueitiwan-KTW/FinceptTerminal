@@ -458,7 +458,7 @@ void CryptoTradingScreen::hub_subscribe_topics() {
     //    session; a pattern sub avoids having to resubscribe on every
     //    timeframe change). Filter by the exact symbol in the slot.
     const QString ohlc_pattern = QStringLiteral("ws:") + exch + QStringLiteral(":ohlc:") + primary +
-                                 QStringLiteral(":*");
+                                 tr(":*");
     hub.subscribe_pattern(this, ohlc_pattern,
                           [self, primary](const QString& /*topic*/, const QVariant& v) {
                               if (!self || self->selected_symbol_ != primary)

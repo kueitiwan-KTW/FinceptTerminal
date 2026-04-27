@@ -108,7 +108,7 @@ QWidget* ChatMessagePanel::build_header() {
 
     mode_btn_ = new QPushButton("LITE");
     mode_btn_->setFixedHeight(22);
-    mode_btn_->setToolTip("Toggle Lite / Deep mode");
+    mode_btn_->setToolTip(tr("Toggle Lite / Deep mode"));
     mode_btn_->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:1px solid %3;"
                 "border-radius:0px;font-size:11px;font-weight:600;padding:0 10px;"
@@ -250,7 +250,7 @@ QWidget* ChatMessagePanel::build_input_area() {
     vl->setSpacing(6);
 
     input_box_ = new QPlainTextEdit;
-    input_box_->setPlaceholderText("Ask anything... (Enter to send, Shift+Enter for new line)");
+    input_box_->setPlaceholderText(tr("Ask anything... (Enter to send, Shift+Enter for new line)"));
     input_box_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     input_box_->setFixedHeight(36);
     input_box_->setStyleSheet(QString("QPlainTextEdit{background:%1;color:%2;border:1px solid %3;"
@@ -292,7 +292,7 @@ QWidget* ChatMessagePanel::build_input_area() {
 
     optimize_btn_ = new QPushButton("Optimize");
     optimize_btn_->setFixedHeight(26);
-    optimize_btn_->setToolTip("Optimize prompt with AI");
+    optimize_btn_->setToolTip(tr("Optimize prompt with AI"));
     optimize_btn_->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:1px solid %3;"
                                          "border-radius:0px;font-size:12px;padding:0 10px;font-family:%4;}"
                                          "QPushButton:hover{background:%5;color:%6;border-color:%6;}"
@@ -354,7 +354,7 @@ void ChatMessagePanel::clear_messages() {
     messages_layout_->addStretch(1);
     show_welcome(true);
     total_tokens_ = 0;
-    hdr_tokens_lbl_->setText("0 tokens");
+    hdr_tokens_lbl_->setText(tr("0 tokens"));
     thinking_card_ = nullptr;
 }
 
@@ -554,7 +554,7 @@ void ChatMessagePanel::on_stream_step_finish(int tokens_used) {
 void ChatMessagePanel::on_stream_thinking(const QString& content) {
     if (!content.isEmpty()) {
         pending_thinking_.append(content);
-        typing_status_lbl_->setText("thinking...");
+        typing_status_lbl_->setText(tr("thinking..."));
     }
 }
 
@@ -627,7 +627,7 @@ void ChatMessagePanel::set_credits(int credits) {
     if (credits > 0)
         hdr_credits_lbl_->setText(QString("%1 credits").arg(QLocale(QLocale::English).toString(credits)));
     else
-        hdr_credits_lbl_->setText("0 credits");
+        hdr_credits_lbl_->setText(tr("0 credits"));
 }
 
 // ── Send / Optimize ──────────────────────────────────────────────────────────

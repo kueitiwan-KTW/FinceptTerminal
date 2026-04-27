@@ -127,7 +127,7 @@ void VoiceConfigSection::build_ui() {
     key_lbl->setStyleSheet(label_ss());
     api_key_edit_ = new QLineEdit;
     api_key_edit_->setEchoMode(QLineEdit::Password);
-    api_key_edit_->setPlaceholderText("Paste your Deepgram API key");
+    api_key_edit_->setPlaceholderText(tr("Paste your Deepgram API key"));
     api_key_edit_->setStyleSheet(input_ss());
     api_key_edit_->setMinimumWidth(320);
     show_key_btn_ = new QPushButton("Show");
@@ -180,7 +180,7 @@ void VoiceConfigSection::build_ui() {
     auto* kt_lbl = new QLabel("Key terms");
     kt_lbl->setStyleSheet(label_ss());
     keyterms_edit_ = new QLineEdit;
-    keyterms_edit_->setPlaceholderText("AAPL, BTCUSD, Nifty (comma-separated)");
+    keyterms_edit_->setPlaceholderText(tr("AAPL, BTCUSD, Nifty (comma-separated)"));
     keyterms_edit_->setStyleSheet(input_ss());
     keyterms_edit_->setMinimumWidth(320);
     kt_hl->addWidget(kt_lbl);
@@ -291,13 +291,13 @@ void VoiceConfigSection::on_save() {
     } else {
         auto r = SecureStorage::instance().store(kSecureKey, api_key);
         if (r.is_err()) {
-            set_status(QStringLiteral("Failed to save API key: ") + QString::fromStdString(r.error()), true);
+            set_status(tr("Failed to save API key: ") + QString::fromStdString(r.error()), true);
             return;
         }
     }
 
     LOG_INFO(TAG, QString("Voice config saved (provider=%1)").arg(provider));
-    set_status(QStringLiteral("Saved. Changes apply on next voice session."), false);
+    set_status(tr("Saved. Changes apply on next voice session."), false);
     emit config_changed();
 }
 

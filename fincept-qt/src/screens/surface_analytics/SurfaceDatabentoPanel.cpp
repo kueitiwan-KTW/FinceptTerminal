@@ -37,7 +37,7 @@ void SurfaceDatabentoPanel::setup_ui() {
     key_hl->setSpacing(4);
 
     api_key_input_ = new QLineEdit(key_row);
-    api_key_input_->setPlaceholderText("Databento API key (db-...)");
+    api_key_input_->setPlaceholderText(tr("Databento API key (db-...)"));
     api_key_input_->setEchoMode(QLineEdit::Password);
     api_key_input_->setStyleSheet(QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                                           " padding:4px 8px; font-size:10px; border-radius:2px; }"
@@ -122,12 +122,12 @@ void SurfaceDatabentoPanel::setup_ui() {
 void SurfaceDatabentoPanel::update_key_status() {
     auto& svc = DatabentoService::instance();
     if (svc.has_api_key()) {
-        key_status_lbl_->setText("API key stored");
+        key_status_lbl_->setText(tr("API key stored"));
         key_status_lbl_->setStyleSheet(QString("font-size:9px; color:%1;").arg(colors::POSITIVE()));
         fetch_btn_->setEnabled(true);
         test_btn_->setEnabled(true);
     } else {
-        key_status_lbl_->setText("No API key — enter key above");
+        key_status_lbl_->setText(tr("No API key — enter key above"));
         key_status_lbl_->setStyleSheet(QString("font-size:9px; color:%1;").arg(colors::NEGATIVE()));
         fetch_btn_->setEnabled(false);
         test_btn_->setEnabled(false);
@@ -135,9 +135,9 @@ void SurfaceDatabentoPanel::update_key_status() {
 
     QDateTime last = svc.last_fetch_time();
     if (last.isValid())
-        last_fetch_lbl_->setText("Last fetch: " + last.toString("hh:mm:ss"));
+        last_fetch_lbl_->setText(tr("Last fetch: ") + last.toString("hh:mm:ss"));
     else
-        last_fetch_lbl_->setText("No data fetched yet");
+        last_fetch_lbl_->setText(tr("No data fetched yet"));
 }
 
 void SurfaceDatabentoPanel::set_active_chart(ChartType type, const QString& symbol, float spot) {
@@ -147,33 +147,33 @@ void SurfaceDatabentoPanel::set_active_chart(ChartType type, const QString& symb
 
     // Update fetch button label based on what data we'll request
     if (needs_vol_surface())
-        fetch_btn_->setText("FETCH OPTIONS CHAIN");
+        fetch_btn_->setText(tr("FETCH OPTIONS CHAIN"));
     else if (needs_local_vol())
-        fetch_btn_->setText("FETCH LOCAL VOL");
+        fetch_btn_->setText(tr("FETCH LOCAL VOL"));
     else if (needs_implied_dividend())
-        fetch_btn_->setText("FETCH IMPLIED DIV");
+        fetch_btn_->setText(tr("FETCH IMPLIED DIV"));
     else if (needs_liquidity())
-        fetch_btn_->setText("FETCH LIQUIDITY");
+        fetch_btn_->setText(tr("FETCH LIQUIDITY"));
     else if (needs_futures())
-        fetch_btn_->setText("FETCH FUTURES CURVE");
+        fetch_btn_->setText(tr("FETCH FUTURES CURVE"));
     else if (needs_commodity_vol())
-        fetch_btn_->setText("FETCH COMMODITY VOL");
+        fetch_btn_->setText(tr("FETCH COMMODITY VOL"));
     else if (needs_crack_spread())
-        fetch_btn_->setText("FETCH CRACK SPREAD");
+        fetch_btn_->setText(tr("FETCH CRACK SPREAD"));
     else if (needs_stress_test())
-        fetch_btn_->setText("FETCH STRESS TEST");
+        fetch_btn_->setText(tr("FETCH STRESS TEST"));
     else if (needs_yield_curve())
-        fetch_btn_->setText("FETCH YIELD CURVE");
+        fetch_btn_->setText(tr("FETCH YIELD CURVE"));
     else if (needs_forward_rate())
-        fetch_btn_->setText("FETCH FORWARD RATE");
+        fetch_btn_->setText(tr("FETCH FORWARD RATE"));
     else if (needs_rate_path())
-        fetch_btn_->setText("FETCH RATE PATH");
+        fetch_btn_->setText(tr("FETCH RATE PATH"));
     else if (needs_fx_forward_points())
-        fetch_btn_->setText("FETCH FX FORWARDS");
+        fetch_btn_->setText(tr("FETCH FX FORWARDS"));
     else if (needs_ohlcv())
-        fetch_btn_->setText("FETCH OHLCV DATA");
+        fetch_btn_->setText(tr("FETCH OHLCV DATA"));
     else
-        fetch_btn_->setText("FETCH LIVE DATA");
+        fetch_btn_->setText(tr("FETCH LIVE DATA"));
 }
 
 bool SurfaceDatabentoPanel::needs_vol_surface() const {
@@ -323,7 +323,7 @@ void SurfaceDatabentoPanel::on_connection_tested(bool ok, const QString& msg) {
     connected_ = ok;
     set_status(ok ? "Connected: " + msg : "Failed: " + msg, !ok);
     if (ok) {
-        key_status_lbl_->setText("API key valid");
+        key_status_lbl_->setText(tr("API key valid"));
         key_status_lbl_->setStyleSheet(QString("font-size:9px; color:%1;").arg(colors::POSITIVE()));
     }
 }
@@ -345,7 +345,7 @@ void SurfaceDatabentoPanel::on_ohlcv_ready(const fincept::DatabentoOhlcvResult& 
         return;
     }
     set_status(QString("OHLCV ready: %1 symbols").arg(r.data.size()));
-    last_fetch_lbl_->setText("Last fetch: " + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
+    last_fetch_lbl_->setText(tr("Last fetch: ") + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
     emit ohlcv_received(r);
 }
 
@@ -358,7 +358,7 @@ void SurfaceDatabentoPanel::on_vol_ready(const fincept::DatabentoVolSurfaceResul
     set_status(QString("Options chain ready: %1 strikes x %2 expiries")
                    .arg(r.vol.strikes.size())
                    .arg(r.vol.expirations.size()));
-    last_fetch_lbl_->setText("Last fetch: " + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
+    last_fetch_lbl_->setText(tr("Last fetch: ") + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
     emit vol_surface_received(r);
 }
 
@@ -369,7 +369,7 @@ void SurfaceDatabentoPanel::on_futures_ready(const fincept::DatabentoFuturesResu
         return;
     }
     set_status(QString("Futures ready: %1 contracts").arg(r.forward.commodities.size()));
-    last_fetch_lbl_->setText("Last fetch: " + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
+    last_fetch_lbl_->setText(tr("Last fetch: ") + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
     emit futures_received(r);
 }
 
@@ -380,7 +380,7 @@ void SurfaceDatabentoPanel::on_surface_ready(const fincept::DatabentoSurfaceResu
         return;
     }
     set_status(QString("%1 ready: %2 rows").arg(r.type).arg(r.z.size()));
-    last_fetch_lbl_->setText("Last fetch: " + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
+    last_fetch_lbl_->setText(tr("Last fetch: ") + DatabentoService::instance().last_fetch_time().toString("hh:mm:ss"));
     emit surface_received(r);
 }
 

@@ -60,7 +60,7 @@ class TemplatePreview : public QWidget {
 };
 
 TemplatePicker::TemplatePicker(QWidget* parent) : QDialog(parent) {
-    setWindowTitle("Choose Dashboard Template");
+    setWindowTitle(tr("Choose Dashboard Template"));
     setFixedSize(640, 400);
     setStyleSheet(QString("QDialog { background: %1; }"
                           "QPushButton { background: %2; border: 1px solid %3; color: %4; "

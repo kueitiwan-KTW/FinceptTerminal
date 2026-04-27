@@ -259,7 +259,7 @@ QWidget* AsiaMarketsScreen::create_left_panel() {
 
     search_input_ = new QLineEdit;
     search_input_->setObjectName("asiaSearchInput");
-    search_input_->setPlaceholderText("Search endpoints...");
+    search_input_->setPlaceholderText(tr("Search endpoints..."));
     connect(search_input_, &QLineEdit::textChanged, this, &AsiaMarketsScreen::on_search_changed);
 
     // Symbol input row
@@ -271,7 +271,7 @@ QWidget* AsiaMarketsScreen::create_left_panel() {
     sym_label->setObjectName("asiaParamLabel");
     symbol_input_ = new QLineEdit;
     symbol_input_->setObjectName("asiaSymbolInput");
-    symbol_input_->setPlaceholderText("e.g. 000001");
+    symbol_input_->setPlaceholderText(tr("e.g. 000001"));
     symbol_input_->setMaxLength(20);
     srl->addWidget(sym_label);
     srl->addWidget(symbol_input_, 1);
@@ -503,7 +503,7 @@ void AsiaMarketsScreen::load_endpoints(int cat_index) {
 
     set_loading(true);
     endpoint_list_->clear();
-    data_status_->setText("Loading endpoints...");
+    data_status_->setText(tr("Loading endpoints..."));
 
     QPointer<AsiaMarketsScreen> self = this;
 
@@ -514,7 +514,7 @@ void AsiaMarketsScreen::load_endpoints(int cat_index) {
             self->set_loading(false);
 
             if (!r.success) {
-                self->data_status_->setText("Failed to load endpoints");
+                self->data_status_->setText(tr("Failed to load endpoints"));
                 return;
             }
 
@@ -574,7 +574,7 @@ void AsiaMarketsScreen::populate_endpoint_list(const QJsonObject& result) {
     }
 
     endpoint_count_label_->setText(QString::number(all_endpoints.size()) + " endpoints");
-    data_status_->setText("Select an endpoint");
+    data_status_->setText(tr("Select an endpoint"));
     LOG_INFO("AsiaMarkets", "Loaded " + QString::number(all_endpoints.size()) + " endpoints");
 
     // Auto-select: prefer a _sina endpoint (reliable), fallback to first real endpoint
@@ -624,7 +624,7 @@ void AsiaMarketsScreen::execute_query(const QString& endpoint, const QStringList
     }
 
     set_loading(true);
-    data_status_->setText("Querying " + endpoint + "...");
+    data_status_->setText(tr("Querying ") + endpoint + "...");
     record_count_->hide();
 
     QPointer<AsiaMarketsScreen> self = this;
@@ -669,7 +669,7 @@ void AsiaMarketsScreen::execute_query(const QString& endpoint, const QStringList
 
 void AsiaMarketsScreen::display_table(const QJsonArray& rows_json) {
     if (rows_json.isEmpty()) {
-        data_status_->setText("No data returned");
+        data_status_->setText(tr("No data returned"));
         return;
     }
 

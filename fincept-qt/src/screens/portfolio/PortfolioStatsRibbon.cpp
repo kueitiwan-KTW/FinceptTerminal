@@ -32,21 +32,21 @@ PortfolioStatsRibbon::PortfolioStatsRibbon(QWidget* parent) : QWidget(parent) {
     primary_layout->setSpacing(0);
 
     total_value_ = add_hero(primary_layout, "TOTAL VALUE", ui::colors::WARNING);
-    total_value_.container->setToolTip("Current market value of all holdings.\n"
-                                       "Sum of (quantity × current price) for every position.");
+    total_value_.container->setToolTip(tr("Current market value of all holdings.\n"
+                                       "Sum of (quantity × current price) for every position."));
 
     pnl_ = add_hero(primary_layout, "UNREALIZED P&L", ui::colors::TEXT_PRIMARY);
-    pnl_.container->setToolTip("Unrealized profit or loss across all open positions.\n"
+    pnl_.container->setToolTip(tr("Unrealized profit or loss across all open positions.\n"
                                "Calculated as: market value − total cost basis.\n"
-                               "This gain/loss is not realized until you sell.");
+                               "This gain/loss is not realized until you sell."));
 
     day_change_ = add_hero(primary_layout, "DAY CHANGE", ui::colors::TEXT_PRIMARY);
-    day_change_.container->setToolTip("Total portfolio value change today.\n"
-                                      "Weighted sum of each holding's intraday change.");
+    day_change_.container->setToolTip(tr("Total portfolio value change today.\n"
+                                      "Weighted sum of each holding's intraday change."));
 
     positions_ = add_hero(primary_layout, "POSITIONS", ui::colors::TEXT_PRIMARY);
-    positions_.container->setToolTip("Number of distinct holdings in this portfolio,\n"
-                                     "split into gainers (▲) and losers (▼) today.");
+    positions_.container->setToolTip(tr("Number of distinct holdings in this portfolio,\n"
+                                     "split into gainers (▲) and losers (▼) today."));
 
     outer->addWidget(primary_row_);
 
@@ -81,42 +81,42 @@ PortfolioStatsRibbon::PortfolioStatsRibbon(QWidget* parent) : QWidget(parent) {
     chips_layout->setSpacing(6);
 
     cost_basis_ = add_chip(chips_layout, "COST", ui::colors::CYAN);
-    cost_basis_.container->setToolTip("Total amount invested — sum of (avg buy price × quantity)\n"
-                                      "for all current positions. Used to compute P&L.");
+    cost_basis_.container->setToolTip(tr("Total amount invested — sum of (avg buy price × quantity)\n"
+                                      "for all current positions. Used to compute P&L."));
 
     concentration_ = add_chip(chips_layout, "CONC", ui::colors::AMBER);
-    concentration_.container->setToolTip("Concentration risk: combined weight of the top 3 holdings.\n"
+    concentration_.container->setToolTip(tr("Concentration risk: combined weight of the top 3 holdings.\n"
                                          "Values above 50% indicate a concentrated portfolio.\n"
-                                         "Lower is generally better for diversification.");
+                                         "Lower is generally better for diversification."));
 
     sharpe_ = add_chip(chips_layout, "SHARPE", ui::colors::CYAN);
-    sharpe_.container->setToolTip("Sharpe Ratio: risk-adjusted return over a risk-free rate.\n"
+    sharpe_.container->setToolTip(tr("Sharpe Ratio: risk-adjusted return over a risk-free rate.\n"
                                   "Formula: (mean daily return − risk-free rate) / std dev × √252.\n"
-                                  "Above 1.0 = good, above 2.0 = very good, below 0 = worse than risk-free.");
+                                  "Above 1.0 = good, above 2.0 = very good, below 0 = worse than risk-free."));
 
     beta_ = add_chip(chips_layout, "BETA", ui::colors::WARNING);
-    beta_.container->setToolTip("Portfolio sensitivity to broad market moves.\n"
+    beta_.container->setToolTip(tr("Portfolio sensitivity to broad market moves.\n"
                                 "Beta = 1.0: moves with the market. >1.0: more volatile.\n"
-                                "<1.0: less volatile. Negative: inverse correlation.");
+                                "<1.0: less volatile. Negative: inverse correlation."));
 
     volatility_ = add_chip(chips_layout, "VOL 30D", ui::colors::AMBER);
-    volatility_.container->setToolTip("Annualized portfolio volatility (std deviation of returns).\n"
+    volatility_.container->setToolTip(tr("Annualized portfolio volatility (std deviation of returns).\n"
                                       "Formula: std dev of daily returns × √252.\n"
-                                      "Higher values indicate greater price swings.");
+                                      "Higher values indicate greater price swings."));
 
     max_drawdown_ = add_chip(chips_layout, "MDD", ui::colors::NEGATIVE);
-    max_drawdown_.container->setToolTip("Maximum peak-to-trough decline in portfolio value.\n"
+    max_drawdown_.container->setToolTip(tr("Maximum peak-to-trough decline in portfolio value.\n"
                                         "Measures the worst loss experienced from a high point.\n"
-                                        "Lower magnitude = better capital preservation.");
+                                        "Lower magnitude = better capital preservation."));
 
     var95_ = add_chip(chips_layout, "VAR 95%", ui::colors::NEGATIVE);
-    var95_.container->setToolTip("Value at Risk at 95% confidence — the maximum expected\n"
-                                 "single-day loss 95% of the time based on historical returns.");
+    var95_.container->setToolTip(tr("Value at Risk at 95% confidence — the maximum expected\n"
+                                 "single-day loss 95% of the time based on historical returns."));
 
     risk_score_ = add_chip(chips_layout, "RISK", ui::colors::NEGATIVE);
-    risk_score_.container->setToolTip("Composite risk score from 0 (low) to 100 (high).\n"
+    risk_score_.container->setToolTip(tr("Composite risk score from 0 (low) to 100 (high).\n"
                                       "Weighted from: volatility, max drawdown, concentration,\n"
-                                      "beta, and VaR. Lower is safer.");
+                                      "beta, and VaR. Lower is safer."));
 
     chips_layout->addStretch(1);
     scroll->setWidget(chips_host);

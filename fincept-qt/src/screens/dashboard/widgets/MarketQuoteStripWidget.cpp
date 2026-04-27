@@ -151,12 +151,12 @@ void MarketQuoteStripWidget::on_quote(const fincept::services::QuoteData& q) {
 
 QDialog* MarketQuoteStripWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Quote Strip");
+    dlg->setWindowTitle(tr("Configure — Quote Strip"));
     auto* form = new QFormLayout(dlg);
 
     auto* edit = new QLineEdit(dlg);
     edit->setText(symbols_.join(", "));
-    edit->setPlaceholderText("e.g. AAPL, MSFT, GOOGL");
+    edit->setPlaceholderText(tr("e.g. AAPL, MSFT, GOOGL"));
     form->addRow("Symbols", edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);

@@ -282,7 +282,7 @@ QWidget* McpServersScreen::create_header() {
 
     search_input_ = new QLineEdit;
     search_input_->setObjectName("mcpSearchInput");
-    search_input_->setPlaceholderText("Search...");
+    search_input_->setPlaceholderText(tr("Search..."));
     connect(search_input_, &QLineEdit::textChanged, this, &McpServersScreen::on_search_changed);
     hl->addWidget(search_input_);
 
@@ -477,7 +477,7 @@ void McpServersScreen::on_install_server(int index) {
 
     // Pre-fill the add-server dialog with catalog data
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Add  " + e.name);
+    dlg->setWindowTitle(tr("Add  ") + e.name);
     dlg->setMinimumWidth(460);
     auto* form = new QFormLayout(dlg);
     form->setContentsMargins(16, 16, 16, 8);
@@ -509,7 +509,7 @@ void McpServersScreen::on_install_server(int index) {
                 field->setText(e.env_placeholders[ki]);
                 field->selectAll(); // highlight so first keystroke replaces it
             } else {
-                field->setPlaceholderText("Enter " + key);
+                field->setPlaceholderText(tr("Enter ") + key);
             }
             form->addRow(key, field);
             env_fields.append({key, field});
@@ -681,18 +681,18 @@ void McpServersScreen::on_view_logs() {
 
 void McpServersScreen::on_add_server() {
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Add Custom MCP Server");
+    dlg->setWindowTitle(tr("Add Custom MCP Server"));
     dlg->setMinimumWidth(460);
     auto* form = new QFormLayout(dlg);
     form->setContentsMargins(16, 16, 16, 8);
     form->setSpacing(10);
 
     auto* name_edit = new QLineEdit;
-    name_edit->setPlaceholderText("e.g. My Custom Server");
+    name_edit->setPlaceholderText(tr("e.g. My Custom Server"));
     form->addRow("Name", name_edit);
 
     auto* desc_edit = new QLineEdit;
-    desc_edit->setPlaceholderText("Short description");
+    desc_edit->setPlaceholderText(tr("Short description"));
     form->addRow("Description", desc_edit);
 
     auto* cmd_edit = new QLineEdit("uvx");
@@ -703,7 +703,7 @@ void McpServersScreen::on_add_server() {
     form->addRow("Arguments", args_edit);
 
     auto* env_edit = new QLineEdit;
-    env_edit->setPlaceholderText("KEY=value KEY2=value2");
+    env_edit->setPlaceholderText(tr("KEY=value KEY2=value2"));
     form->addRow("Env Vars", env_edit);
 
     auto* cat_combo = new QComboBox;
@@ -954,7 +954,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
         } else {
             // Enable — start on background thread to avoid freezing the UI.
             // start_server() blocks for process launch + handshake (can take 60s+).
-            toggle_btn->setText("⟳ STARTING...");
+            toggle_btn->setText(tr("⟳ STARTING..."));
             toggle_btn->setEnabled(false);
             (void)QtConcurrent::run([sid, self]() {
                 const auto r = McpManager::instance().start_server(sid);

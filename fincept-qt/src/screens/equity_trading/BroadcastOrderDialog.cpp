@@ -10,6 +10,7 @@
 #include <QPointer>
 #include <QScrollArea>
 #include <QtConcurrent/QtConcurrent>
+#include <QCoreApplication>
 
 namespace fincept::screens::equity {
 
@@ -18,7 +19,7 @@ using namespace fincept::trading;
 
 BroadcastOrderDialog::BroadcastOrderDialog(const trading::UnifiedOrder& order, QWidget* parent)
     : QDialog(parent), order_(order) {
-    setWindowTitle("Broadcast Order");
+    setWindowTitle(QCoreApplication::translate("FinceptTerminal", "Broadcast Order"));
     setMinimumSize(450, 380);
     setStyleSheet(QString("QDialog { background: %1; color: %2; }"
                           "QCheckBox { color: %2; font-size: 12px; spacing: 6px; }"
@@ -161,7 +162,7 @@ void BroadcastOrderDialog::on_place_order() {
     }
 
     if (selected.isEmpty()) {
-        status_label_->setText("Select at least one account");
+        status_label_->setText(tr("Select at least one account"));
         status_label_->setStyleSheet(QString("color: %1;").arg(colors::NEGATIVE()));
         return;
     }

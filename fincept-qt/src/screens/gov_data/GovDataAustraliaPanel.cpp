@@ -201,7 +201,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
     // Search input
     search_input_ = new QLineEdit;
     search_input_->setObjectName("govSearch");
-    search_input_->setPlaceholderText("Search datasets…");
+    search_input_->setPlaceholderText(tr("Search datasets…"));
     search_input_->setFixedWidth(200);
     search_input_->setFixedHeight(26);
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataAustraliaPanel::on_search);

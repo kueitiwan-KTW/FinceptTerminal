@@ -82,15 +82,15 @@ void SetupScreen::build_ui() {
                              .arg(kAccent, fonts::DATA_FAMILY));
     cl->addWidget(title);
 
-    subtitle_lbl_ = new QLabel("Getting your workspace ready", center);
+    subtitle_lbl_ = new QLabel(tr("Getting your workspace ready"), center);
     subtitle_lbl_->setAlignment(Qt::AlignCenter);
     subtitle_lbl_->setStyleSheet(
         QString("color:%1; font-family:%2; font-size:13px;").arg(colors::TEXT_SECONDARY(), fonts::DATA_FAMILY));
     cl->addWidget(subtitle_lbl_);
 
     // Brief plain-English explanation
-    auto* intro = new QLabel("We need to download a few tools and data libraries once.\n"
-                             "This only happens the first time — future launches are instant.",
+    auto* intro = new QLabel(tr("We need to download a few tools and data libraries once.\n"
+                             "This only happens the first time — future launches are instant."),
                              center);
     intro->setAlignment(Qt::AlignCenter);
     intro->setWordWrap(true);
@@ -107,20 +107,20 @@ void SetupScreen::build_ui() {
 
     // ── Step rows — plain-English labels + technical key hidden inside ────────
     cl->addWidget(
-        build_step_row("uv", "Download Installer", "Downloads the tool that manages everything else (~13 MB)"));
+        build_step_row("uv", tr("Download Installer"), tr("Downloads the tool that manages everything else (~13 MB)")));
     cl->addWidget(
-        build_step_row("python", "Install Python Runtime", "The programming language engine used for all analytics"));
-    cl->addWidget(build_step_row("venv", "Create Isolated Workspaces",
-                                 "Two sandboxed environments to keep library versions conflict-free"));
-    cl->addWidget(build_step_row("packages-numpy1", "Install Trading Libraries",
-                                 "Backtesting, portfolio optimization and legacy quant tools"));
-    cl->addWidget(build_step_row("packages-numpy2", "Install Analytics Libraries",
-                                 "Machine learning, data science and AI agent frameworks"));
+        build_step_row("python", tr("Install Python Runtime"), tr("The programming language engine used for all analytics")));
+    cl->addWidget(build_step_row("venv", tr("Create Isolated Workspaces"),
+                                 tr("Two sandboxed environments to keep library versions conflict-free")));
+    cl->addWidget(build_step_row("packages-numpy1", tr("Install Trading Libraries"),
+                                 tr("Backtesting, portfolio optimization and legacy quant tools")));
+    cl->addWidget(build_step_row("packages-numpy2", tr("Install Analytics Libraries"),
+                                 tr("Machine learning, data science and AI agent frameworks")));
 
     cl->addSpacing(16);
 
     // ── Action buttons ────────────────────────────────────────────────────────
-    begin_btn_ = new QPushButton("BEGIN SETUP", center);
+    begin_btn_ = new QPushButton(tr("BEGIN SETUP"), center);
     begin_btn_->setFixedHeight(46);
     begin_btn_->setCursor(Qt::PointingHandCursor);
     begin_btn_->setStyleSheet(
@@ -183,7 +183,7 @@ void SetupScreen::build_ui() {
     cl->addWidget(summary_lbl_);
 
     // Skip button
-    skip_btn_ = new QPushButton("SKIP & CONTINUE", center);
+    skip_btn_ = new QPushButton(tr("SKIP & CONTINUE"), center);
     skip_btn_->setFixedHeight(36);
     skip_btn_->setCursor(Qt::PointingHandCursor);
     skip_btn_->setVisible(false);
@@ -196,7 +196,7 @@ void SetupScreen::build_ui() {
     cl->addWidget(skip_btn_);
 
     // Install dir — small, dim, for power users
-    auto* dir_label = new QLabel("Installing to: " + python::PythonSetupManager::instance().install_dir(), center);
+    auto* dir_label = new QLabel(tr("Installing to: ") + python::PythonSetupManager::instance().install_dir(), center);
     dir_label->setAlignment(Qt::AlignCenter);
     dir_label->setStyleSheet(
         QString("color:%1; font-family:%2; font-size:9px; margin-top:6px;").arg(colors::TEXT_DIM(), fonts::DATA_FAMILY));
@@ -248,7 +248,7 @@ QWidget* SetupScreen::build_step_row(const QString& key, const QString& label, c
     hl->addWidget(bar, 1);
 
     // Right: status badge
-    auto* status = new QLabel("Waiting", row);
+    auto* status = new QLabel(tr("Waiting"), row);
     status->setFixedWidth(72);
     status->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     status->setStyleSheet(
@@ -313,7 +313,7 @@ void SetupScreen::mark_step_active(const QString& key) {
     if (!steps_.contains(key))
         return;
     auto& s = steps_[key];
-    s.status->setText("Working...");
+    s.status->setText(tr("Working..."));
     s.status->setStyleSheet(QString("color:%1; font-family:%2; font-size:9px;").arg(kAccent, fonts::DATA_FAMILY));
     start_pulse(key);
 }
@@ -324,8 +324,8 @@ void SetupScreen::mark_step_active(const QString& key) {
 
 void SetupScreen::on_begin_setup() {
     begin_btn_->setEnabled(false);
-    begin_btn_->setText("SETTING UP...");
-    status_label_->setText("Setup in progress — please keep the application open");
+    begin_btn_->setText(tr("SETTING UP..."));
+    status_label_->setText(tr("Setup in progress — please keep the application open"));
     status_label_->setStyleSheet(
         QString("color:%1; font-family:%2; font-size:10px; margin-top:6px;").arg(kAccent, fonts::DATA_FAMILY));
 
@@ -334,11 +334,11 @@ void SetupScreen::on_begin_setup() {
     if (live_row_)
         live_row_->setVisible(true);
     if (elapsed_lbl_)
-        elapsed_lbl_->setText("Elapsed: 0s");
+        elapsed_lbl_->setText(tr("Elapsed: 0s"));
     if (down_lbl_)
-        down_lbl_->setText(QStringLiteral("\u2193 0 B/s"));
+        down_lbl_->setText(tr("\u2193 0 B/s"));
     if (up_lbl_)
-        up_lbl_->setText(QStringLiteral("\u2191 0 B/s"));
+        up_lbl_->setText(tr("\u2191 0 B/s"));
     if (net_meter_)
         net_meter_->start(1000);
     if (elapsed_timer_)
@@ -351,9 +351,9 @@ void SetupScreen::on_begin_setup() {
 
 void SetupScreen::on_net_speed(qint64 down_bps, qint64 up_bps) {
     if (down_lbl_)
-        down_lbl_->setText(QStringLiteral("\u2193 ") + fincept::net::NetSpeedMeter::format_bps(down_bps));
+        down_lbl_->setText(tr("\u2193 ") + fincept::net::NetSpeedMeter::format_bps(down_bps));
     if (up_lbl_)
-        up_lbl_->setText(QStringLiteral("\u2191 ") + fincept::net::NetSpeedMeter::format_bps(up_bps));
+        up_lbl_->setText(tr("\u2191 ") + fincept::net::NetSpeedMeter::format_bps(up_bps));
     if (sparkline_)
         sparkline_->push(down_bps);
 }
@@ -364,9 +364,9 @@ void SetupScreen::on_elapsed_tick() {
     const qint64 secs = (QDateTime::currentMSecsSinceEpoch() - setup_started_ms_) / 1000;
     QString text;
     if (secs < 60)
-        text = QString("Elapsed: %1s").arg(secs);
+        text = tr("Elapsed: %1s").arg(secs);
     else
-        text = QString("Elapsed: %1m %2s").arg(secs / 60).arg(secs % 60);
+        text = tr("Elapsed: %1m %2s").arg(secs / 60).arg(secs % 60);
     elapsed_lbl_->setText(text);
 }
 
@@ -380,7 +380,7 @@ void SetupScreen::on_progress(const python::SetupProgress& progress) {
             // Stop pulse, show red failed badge
             stop_pulse(key);
             s.bar->setValue(s.pulse_val > 0 ? s.pulse_val : 0);
-            s.status->setText("FAILED");
+            s.status->setText(tr("FAILED"));
             s.status->setStyleSheet(
                 QString("color:%1; font-family:%2; font-size:9px;").arg(colors::RED(), fonts::DATA_FAMILY));
         } else if (progress.progress == 0) {
@@ -402,10 +402,10 @@ void SetupScreen::on_progress(const python::SetupProgress& progress) {
     // Plain-English status line — strip internal technical messages
     QString msg = progress.message;
     // Replace internal step identifiers users don't need to see
-    msg.replace("venv-numpy1", "Trading workspace");
-    msg.replace("venv-numpy2", "Analytics workspace");
-    msg.replace("requirements-numpy1.txt", "trading library list");
-    msg.replace("requirements-numpy2.txt", "analytics library list");
+    msg.replace("venv-numpy1", tr("Trading workspace"));
+    msg.replace("venv-numpy2", tr("Analytics workspace"));
+    msg.replace("requirements-numpy1.txt", tr("trading library list"));
+    msg.replace("requirements-numpy2.txt", tr("analytics library list"));
     status_label_->setText(msg);
 }
 
@@ -418,10 +418,10 @@ void SetupScreen::on_setup_done(bool success, const QString& error) {
 
     if (success) {
         LOG_INFO("SetupScreen", "Python setup completed — all steps done");
-        status_label_->setText("Everything is ready! Launching Fincept Terminal...");
+        status_label_->setText(tr("Everything is ready! Launching Fincept Terminal..."));
         status_label_->setStyleSheet(
             QString("color:%1; font-family:%2; font-size:10px; margin-top:6px;").arg(colors::GREEN(), fonts::DATA_FAMILY));
-        begin_btn_->setText("LAUNCH");
+        begin_btn_->setText(tr("LAUNCH"));
         if (timeout_timer_)
             timeout_timer_->stop();
         QTimer::singleShot(1500, this, [this]() { emit setup_complete(); });
@@ -431,8 +431,8 @@ void SetupScreen::on_setup_done(bool success, const QString& error) {
             stop_pulse(*it);
 
         begin_btn_->setEnabled(true);
-        begin_btn_->setText("RETRY SETUP");
-        status_label_->setText("Something went wrong during setup. Check your internet connection and try again.");
+        begin_btn_->setText(tr("RETRY SETUP"));
+        status_label_->setText(tr("Something went wrong during setup. Check your internet connection and try again."));
         status_label_->setStyleSheet(
             QString("color:%1; font-family:%2; font-size:10px; margin-top:6px;").arg(colors::RED(), fonts::DATA_FAMILY));
         LOG_ERROR("SetupScreen", "Setup failed: " + error);
@@ -454,8 +454,8 @@ void SetupScreen::on_skip_clicked() {
 
 void SetupScreen::on_setup_timeout() {
     LOG_WARN("SetupScreen", "Setup timed out after 15 minutes — showing skip option");
-    status_label_->setText("Setup is taking longer than expected — possibly a slow internet connection.\n"
-                           "You can wait or skip and continue with limited functionality.");
+    status_label_->setText(tr("Setup is taking longer than expected — possibly a slow internet connection.\n"
+                           "You can wait or skip and continue with limited functionality."));
     status_label_->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; margin-top:6px;")
                                      .arg(colors::TEXT_TERTIARY(), fonts::DATA_FAMILY));
     if (skip_btn_)
@@ -468,7 +468,7 @@ void SetupScreen::mark_step_done(const QString& key) {
     stop_pulse(key);
     auto& s = steps_[key];
     s.bar->setValue(100);
-    s.status->setText("DONE");
+    s.status->setText(tr("DONE"));
     s.status->setStyleSheet(QString("color:%1; font-family:%2; font-size:9px;").arg(colors::GREEN(), fonts::DATA_FAMILY));
 }
 
@@ -504,19 +504,19 @@ void SetupScreen::prefill_completed_steps() {
             self->summary_lbl_->setText({});
 
             if (all_done) {
-                self->subtitle_lbl_->setText("Your workspace is fully configured");
+                self->subtitle_lbl_->setText(tr("Your workspace is fully configured"));
                 self->begin_btn_->setEnabled(false);
-                self->begin_btn_->setText("ALREADY COMPLETE");
-                self->status_label_->setText("Everything is installed and ready to go.");
+                self->begin_btn_->setText(tr("ALREADY COMPLETE"));
+                self->status_label_->setText(tr("Everything is installed and ready to go."));
             } else if (any_done) {
-                self->subtitle_lbl_->setText("Finishing your workspace setup");
-                self->begin_btn_->setText("CONTINUE SETUP");
+                self->subtitle_lbl_->setText(tr("Finishing your workspace setup"));
+                self->begin_btn_->setText(tr("CONTINUE SETUP"));
                 self->status_label_->setText(
                     "Only the missing pieces will be downloaded. Needs an internet connection.");
             } else {
-                self->subtitle_lbl_->setText("Getting your workspace ready");
-                self->begin_btn_->setText("BEGIN SETUP");
-                self->status_label_->setText("Takes about 3–5 minutes. Needs an internet connection.");
+                self->subtitle_lbl_->setText(tr("Getting your workspace ready"));
+                self->begin_btn_->setText(tr("BEGIN SETUP"));
+                self->status_label_->setText(tr("Takes about 3–5 minutes. Needs an internet connection."));
             }
         }, Qt::QueuedConnection);
     });

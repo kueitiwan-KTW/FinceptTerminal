@@ -898,7 +898,7 @@ void AltInvestmentsScreen::run_analysis(const QString& command, const QJsonObjec
     }
 
     set_loading(true);
-    verdict_badge_->setText("ANALYZING...");
+    verdict_badge_->setText(tr("ANALYZING..."));
     verdict_badge_->setStyleSheet(QString("color:%1; background:rgba(217,119,6,0.15);"
                                           " font-size:11px; font-weight:700; padding:4px 14px;")
                                       .arg(colors::AMBER()));

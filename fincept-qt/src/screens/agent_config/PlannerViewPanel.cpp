@@ -80,7 +80,7 @@ QWidget* PlannerViewPanel::build_templates_panel() {
     vl->addWidget(profile_lbl);
 
     llm_profile_combo_ = new QComboBox;
-    llm_profile_combo_->setToolTip("LLM profile used for plan generation and execution");
+    llm_profile_combo_->setToolTip(tr("LLM profile used for plan generation and execution"));
     llm_profile_combo_->setStyleSheet(
         QString("QComboBox{background:%1;color:%2;border:1px solid %3;padding:4px 8px;font-size:11px;}"
                 "QComboBox::drop-down{border:none;}")
@@ -100,7 +100,7 @@ QWidget* PlannerViewPanel::build_templates_panel() {
     vl->addWidget(pf_lbl);
 
     portfolio_combo_ = new QComboBox;
-    portfolio_combo_->setToolTip("Portfolio to use as context for rebalance / analysis plans");
+    portfolio_combo_->setToolTip(tr("Portfolio to use as context for rebalance / analysis plans"));
     portfolio_combo_->setStyleSheet(
         QString("QComboBox{background:%1;color:%2;border:1px solid %3;padding:4px 8px;font-size:11px;}"
                 "QComboBox::drop-down{border:none;}")
@@ -133,7 +133,7 @@ QWidget* PlannerViewPanel::build_templates_panel() {
     vl->addWidget(cl);
 
     custom_query_ = new QPlainTextEdit;
-    custom_query_->setPlaceholderText("Describe what you want to plan...");
+    custom_query_->setPlaceholderText(tr("Describe what you want to plan..."));
     custom_query_->setMaximumHeight(100);
     custom_query_->setStyleSheet(QString("QPlainTextEdit{%1}").arg(kIn));
     vl->addWidget(custom_query_);
@@ -156,7 +156,7 @@ QWidget* PlannerViewPanel::build_templates_panel() {
     vl->addWidget(history_header_);
 
     history_search_ = new QLineEdit;
-    history_search_->setPlaceholderText("Search history...");
+    history_search_->setPlaceholderText(tr("Search history..."));
     history_search_->setStyleSheet(kIn);
     vl->addWidget(history_search_);
 
@@ -321,7 +321,7 @@ void PlannerViewPanel::setup_connections() {
         pending_request_id_.clear();
         loading_overlay_->hide_loading();
         generate_btn_->setEnabled(true);
-        generate_btn_->setText("GENERATE PLAN");
+        generate_btn_->setText(tr("GENERATE PLAN"));
         current_plan_ = plan;
         populate_plan(plan);
         execute_btn_->setEnabled(true);
@@ -338,7 +338,7 @@ void PlannerViewPanel::setup_connections() {
         pending_request_id_.clear();
         loading_overlay_->hide_loading();
         execute_btn_->setEnabled(true);
-        execute_btn_->setText("EXECUTE PLAN");
+        execute_btn_->setText(tr("EXECUTE PLAN"));
         current_plan_ = plan;
         plan_status_->setText(plan.has_failed ? "FAILED" : "COMPLETED");
         plan_status_->setStyleSheet(
@@ -367,9 +367,9 @@ void PlannerViewPanel::setup_connections() {
             pending_request_id_.clear();
             loading_overlay_->hide_loading();
             generate_btn_->setEnabled(true);
-            generate_btn_->setText("GENERATE PLAN");
+            generate_btn_->setText(tr("GENERATE PLAN"));
             execute_btn_->setEnabled(!current_plan_.steps.isEmpty());
-            execute_btn_->setText("EXECUTE PLAN");
+            execute_btn_->setText(tr("EXECUTE PLAN"));
             progress_bar_->setValue(0);
             plan_status_->setText("ERROR");
             plan_status_->setStyleSheet(
@@ -427,7 +427,7 @@ void PlannerViewPanel::generate_plan() {
 
     generating_ = true;
     generate_btn_->setEnabled(false);
-    generate_btn_->setText("GENERATING...");
+    generate_btn_->setText(tr("GENERATING..."));
     steps_table_->setRowCount(0);
     execute_btn_->setEnabled(false);
     result_display_->clear();
@@ -455,7 +455,7 @@ void PlannerViewPanel::execute_plan() {
         return;
     executing_ = true;
     execute_btn_->setEnabled(false);
-    execute_btn_->setText("EXECUTING...");
+    execute_btn_->setText(tr("EXECUTING..."));
     result_display_->clear();
     progress_bar_->setValue(0);
     plan_status_->setText("EXECUTING");
@@ -594,7 +594,7 @@ void PlannerViewPanel::copy_result() {
     QString text = result_display_->toPlainText();
     if (!text.isEmpty()) {
         QApplication::clipboard()->setText(text);
-        copy_btn_->setText("COPIED!");
+        copy_btn_->setText(tr("COPIED!"));
         QTimer::singleShot(1500, this, [this]() { copy_btn_->setText("COPY"); });
     }
 }

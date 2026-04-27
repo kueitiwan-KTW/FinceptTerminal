@@ -1022,7 +1022,7 @@ static bool run_process(const QString& program, const QStringList& args,
     if (!proc.waitForFinished(kTimeoutMs)) {
         proc.kill();
         if (stderr_out)
-            *stderr_out = QStringLiteral("timed out");
+            *stderr_out = QCoreApplication::translate("FinceptTerminal", "timed out");
         return false;
     }
 

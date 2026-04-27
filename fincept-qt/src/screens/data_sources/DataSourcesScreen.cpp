@@ -565,7 +565,7 @@ QWidget* DataSourcesScreen::build_screen_header() {
     // Search
     search_edit_ = new QLineEdit;
     search_edit_->setObjectName("dsSearch");
-    search_edit_->setPlaceholderText("search connectors...");
+    search_edit_->setPlaceholderText(tr("search connectors..."));
     search_edit_->setFixedSize(240, 26);
     connect(search_edit_, &QLineEdit::textChanged, this, &DataSourcesScreen::on_search_changed);
     hl->addWidget(search_edit_);
@@ -1094,7 +1094,7 @@ QWidget* DataSourcesScreen::build_connections_page() {
     // Search
     conn_search_edit_ = new QLineEdit;
     conn_search_edit_->setObjectName("dsSearchConn");
-    conn_search_edit_->setPlaceholderText("filter connections...");
+    conn_search_edit_->setPlaceholderText(tr("filter connections..."));
     conn_search_edit_->setFixedSize(220, 22);
     connect(conn_search_edit_, &QLineEdit::textChanged, this, &DataSourcesScreen::on_connections_search_changed);
     tb_hl->addWidget(conn_search_edit_);
@@ -1352,7 +1352,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     form->addWidget(tags_lbl, row, 0);
 
     auto* tags_edit = new QLineEdit;
-    tags_edit->setPlaceholderText("Comma-separated tags, e.g. prod, live, trading");
+    tags_edit->setPlaceholderText(tr("Comma-separated tags, e.g. prod, live, trading"));
     tags_edit->setFixedHeight(34);
     tags_edit->setText(existing_loaded ? existing.tags : "");
     form->addWidget(tags_edit, row, 1);
@@ -1427,7 +1427,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
             }
 
             if (field.required && field.type != FieldType::Checkbox && text_value.isEmpty()) {
-                status->setText("Missing required field: " + field.label);
+                status->setText(tr("Missing required field: ") + field.label);
                 status->setStyleSheet(
                     QString("color:%1;font-size:12px;font-weight:700;background:transparent;").arg(col::NEGATIVE()));
                 return;
@@ -1449,7 +1449,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
 
         const auto result = DataSourceRepository::instance().save(ds);
         if (result.is_err()) {
-            status->setText("Failed to save: " + QString::fromStdString(result.error()));
+            status->setText(tr("Failed to save: ") + QString::fromStdString(result.error()));
             status->setStyleSheet(
                 QString("color:%1;font-size:12px;font-weight:700;background:transparent;").arg(col::NEGATIVE()));
             return;
@@ -1764,8 +1764,8 @@ void DataSourcesScreen::update_detail_panel() {
                                               "font-size:13px;font-weight:700;color:%1;background:%2;"
                                               "border:1px solid %1;")
                                           .arg(col::AMBER(), col::BG_BASE()));
-        detail_title_->setText("Select a connector");
-        detail_description_->setText("Double-click any row to configure");
+        detail_title_->setText(tr("Select a connector"));
+        detail_description_->setText(tr("Double-click any row to configure"));
         detail_category_value_->setText("--");
         detail_transport_value_->setText("--");
         detail_auth_value_->setText("--");
@@ -2784,9 +2784,9 @@ void DataSourcesScreen::on_bulk_delete_selected() {
         return;
 
     QMessageBox confirm(this);
-    confirm.setWindowTitle("Delete Connections");
+    confirm.setWindowTitle(tr("Delete Connections"));
     confirm.setText(QString("Delete %1 selected connection(s)?").arg(selected_ids.size()));
-    confirm.setInformativeText("This cannot be undone.");
+    confirm.setInformativeText(tr("This cannot be undone."));
     confirm.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);
     confirm.setDefaultButton(QMessageBox::Cancel);
     confirm.setStyleSheet(

@@ -10,6 +10,7 @@
 #include <QStyle>
 #include <QTimer>
 #include <QVBoxLayout>
+#include <QCoreApplication>
 
 using namespace fincept::ui;
 
@@ -89,7 +90,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     key_lbl->setObjectName("credFieldLabel");
     layout->addWidget(key_lbl);
     key_edit_ = new QLineEdit;
-    key_edit_->setPlaceholderText("Enter API key");
+    key_edit_->setPlaceholderText(QCoreApplication::translate("FinceptTerminal", "Enter API key"));
     key_edit_->setFixedHeight(28);
     layout->addWidget(key_edit_);
 
@@ -98,7 +99,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     secret_lbl->setObjectName("credFieldLabel");
     layout->addWidget(secret_lbl);
     secret_edit_ = new QLineEdit;
-    secret_edit_->setPlaceholderText("Enter API secret");
+    secret_edit_->setPlaceholderText(QCoreApplication::translate("FinceptTerminal", "Enter API secret"));
     secret_edit_->setEchoMode(QLineEdit::Password);
     secret_edit_->setFixedHeight(28);
     layout->addWidget(secret_edit_);
@@ -120,7 +121,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     layout->addWidget(totp_lbl);
 
     totp_secret_edit_ = new QLineEdit;
-    totp_secret_edit_->setPlaceholderText("Base32 secret (optional)");
+    totp_secret_edit_->setPlaceholderText(QCoreApplication::translate("FinceptTerminal", "Base32 secret (optional)"));
     totp_secret_edit_->setEchoMode(QLineEdit::Password);
     totp_secret_edit_->setFixedHeight(28);
     layout->addWidget(totp_secret_edit_);
@@ -144,7 +145,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     connect(totp_secret_edit_, &QLineEdit::textChanged, this, [this](const QString& text) {
         if (text.trimmed().isEmpty()) {
             totp_timer_->stop();
-            totp_code_label_->setText("CODE: --");
+            totp_code_label_->setText(QCoreApplication::translate("FinceptTerminal", "CODE: --"));
             totp_countdown_label_->setText("");
         } else {
             refresh_totp();
@@ -233,7 +234,7 @@ void CryptoCredentials::refresh_totp() {
             if (!self)
                 return;
             if (!r.success) {
-                self->totp_code_label_->setText("CODE: ERR");
+                self->totp_code_label_->setText(tr("CODE: ERR"));
                 self->totp_countdown_label_->setText("");
                 return;
             }

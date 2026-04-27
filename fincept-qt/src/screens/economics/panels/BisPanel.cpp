@@ -74,18 +74,18 @@ void BisPanel::build_controls(QHBoxLayout* thl) {
     connect(dataset_combo_, &QComboBox::currentIndexChanged, this, &BisPanel::on_dataset_changed);
 
     country_input_ = new QLineEdit;
-    country_input_->setPlaceholderText("Country code");
+    country_input_->setPlaceholderText(tr("Country code"));
     country_input_->setText("US");
     country_input_->setFixedHeight(26);
     country_input_->setFixedWidth(70);
 
     start_input_ = new QLineEdit;
-    start_input_->setPlaceholderText("Start year");
+    start_input_->setPlaceholderText(tr("Start year"));
     start_input_->setFixedHeight(26);
     start_input_->setFixedWidth(70);
 
     end_input_ = new QLineEdit;
-    end_input_->setPlaceholderText("End year");
+    end_input_->setPlaceholderText(tr("End year"));
     end_input_->setFixedHeight(26);
     end_input_->setFixedWidth(70);
 

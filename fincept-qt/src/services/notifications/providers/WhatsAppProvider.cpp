@@ -4,6 +4,7 @@
 
 #include <QByteArray>
 #include <QJsonObject>
+#include <QCoreApplication>
 
 namespace fincept::notifications {
 

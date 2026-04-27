@@ -328,7 +328,7 @@ QWidget* McpServersSection::build_tools_tab() {
 
 void McpServersSection::on_add_server() {
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("Add MCP Server");
+    dlg->setWindowTitle(tr("Add MCP Server"));
     dlg->setMinimumWidth(480);
     dlg->setStyleSheet("background:" + QString(ui::colors::BG_SURFACE()) +
                        ";color:" + QString(ui::colors::TEXT_PRIMARY()) + ";");
@@ -485,7 +485,7 @@ void McpServersSection::load_servers() {
     if (server_list_->count() > 0)
         server_list_->setCurrentRow(0);
     else
-        detail_lbl_->setText("No external servers configured.\nClick '+ Add' to add one.");
+        detail_lbl_->setText(tr("No external servers configured.\nClick '+ Add' to add one."));
 }
 
 void McpServersSection::load_tools() {

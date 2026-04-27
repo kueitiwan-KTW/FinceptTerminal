@@ -432,13 +432,13 @@ print(json.dumps(matrix))
 
 QString PortfolioService::default_benchmark_for_currency(const QString& currency) {
     const QString c = currency.trimmed().toUpper();
-    if (c == "CAD") return QStringLiteral("^GSPTSE");
-    if (c == "GBP") return QStringLiteral("^FTSE");
-    if (c == "EUR") return QStringLiteral("^STOXX50E");
-    if (c == "AUD") return QStringLiteral("^AXJO");
-    if (c == "INR") return QStringLiteral("^NSEI");
-    if (c == "JPY") return QStringLiteral("^N225");
-    if (c == "HKD") return QStringLiteral("^HSI");
+    if (c == "CAD") return tr("^GSPTSE");
+    if (c == "GBP") return tr("^FTSE");
+    if (c == "EUR") return tr("^STOXX50E");
+    if (c == "AUD") return tr("^AXJO");
+    if (c == "INR") return tr("^NSEI");
+    if (c == "JPY") return tr("^N225");
+    if (c == "HKD") return tr("^HSI");
     return QStringLiteral("SPY"); // USD and unknown
 }
 

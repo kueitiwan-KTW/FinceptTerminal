@@ -100,7 +100,7 @@ void DBnomicsChartWidget::build_ui() {
 
     auto* chart = new QChart();
     style_chart(chart, false);
-    chart->setTitle("NO DATA — SELECT A SERIES FROM THE LEFT PANEL");
+    chart->setTitle(tr("NO DATA — SELECT A SERIES FROM THE LEFT PANEL"));
     chart_view_->setChart(chart);
     chart_view_->setBackgroundBrush(QBrush(QColor(ui::colors::BG_BASE())));
     stack_->addWidget(chart_view_); // index 1
@@ -128,7 +128,7 @@ void DBnomicsChartWidget::set_compact(bool compact) {
 void DBnomicsChartWidget::set_loading(bool on) {
     if (on) {
         frame_ = 0;
-        spin_label_->setText("⣾  FETCHING DATA...");
+        spin_label_->setText(tr("⣾  FETCHING DATA..."));
         stack_->setCurrentIndex(0);
         spin_timer_->start();
     } else {
@@ -143,7 +143,7 @@ void DBnomicsChartWidget::clear() {
     const auto axes = chart->axes();
     for (auto* axis : axes)
         chart->removeAxis(axis);
-    chart->setTitle("NO DATA — SELECT A SERIES FROM THE LEFT PANEL");
+    chart->setTitle(tr("NO DATA — SELECT A SERIES FROM THE LEFT PANEL"));
 }
 
 void DBnomicsChartWidget::set_data(const QVector<services::DbnDataPoint>& series, services::DbnChartType chart_type) {

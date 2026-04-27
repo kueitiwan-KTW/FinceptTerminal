@@ -144,7 +144,7 @@ void PricingScreen::showEvent(QShowEvent* event) {
     auto& auth = auth::AuthManager::instance();
     if (auth.is_authenticated()) {
         // Show loading while we fetch fresh data
-        loading_label_->setText("Updating plan status...");
+        loading_label_->setText(tr("Updating plan status..."));
         loading_label_->show();
         user_info_label_->hide();
 
@@ -412,14 +412,14 @@ QWidget* PricingScreen::create_plan_card(const auth::SubscriptionPlan& plan, int
     } else if (plan.is_free) {
         bool user_has_paid = auth_mgr.is_authenticated() && auth_mgr.session().has_paid_plan();
         if (user_has_paid) {
-            btn->setText("FREE TIER");
+            btn->setText(tr("FREE TIER"));
             btn->setEnabled(false);
             btn->setStyleSheet(QString("QPushButton { background: %1; color: %2; "
                                        "border: 1px solid %3; font-size: 11px; font-weight: 700; %4 }")
                                    .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_DIM(), ui::colors::BORDER_DIM())
                                    .arg(MF));
         } else {
-            btn->setText("CONTINUE FREE");
+            btn->setText(tr("CONTINUE FREE"));
             btn->setStyleSheet(QString("QPushButton { background: %1; color: %2; "
                                        "border: 1px solid %3; font-size: 11px; font-weight: 700; %4 }"
                                        "QPushButton:hover { color: %5; background: %6; }")
@@ -429,7 +429,7 @@ QWidget* PricingScreen::create_plan_card(const auth::SubscriptionPlan& plan, int
             connect(btn, &QPushButton::clicked, this, &PricingScreen::navigate_dashboard);
         }
     } else {
-        btn->setText("SELECT PLAN");
+        btn->setText(tr("SELECT PLAN"));
         btn->setStyleSheet(
             QString("QPushButton { background: rgba(217,119,6,0.1); color: %1; "
                     "border: 1px solid %2; font-size: 11px; font-weight: 700; %3 }"
@@ -453,7 +453,7 @@ void PricingScreen::on_select_plan(const QString& plan_id) {
     for (auto* btn : cards_container_->findChildren<QPushButton*>()) {
         if (btn->text() == "SELECT PLAN") {
             btn->setEnabled(false);
-            btn->setText("PROCESSING...");
+            btn->setText(tr("PROCESSING..."));
         }
     }
     error_label_->hide();
@@ -462,7 +462,7 @@ void PricingScreen::on_select_plan(const QString& plan_id) {
         for (auto* btn : cards_container_->findChildren<QPushButton*>()) {
             if (btn->text() == "PROCESSING...") {
                 btn->setEnabled(true);
-                btn->setText("SELECT PLAN");
+                btn->setText(tr("SELECT PLAN"));
             }
         }
 
@@ -478,7 +478,7 @@ void PricingScreen::on_select_plan(const QString& plan_id) {
 
         QString token = data["token"].toString();
         if (token.isEmpty()) {
-            error_label_->setText("No checkout token received from server");
+            error_label_->setText(tr("No checkout token received from server"));
             error_label_->show();
             return;
         }

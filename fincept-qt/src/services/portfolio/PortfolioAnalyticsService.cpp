@@ -6,6 +6,7 @@
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QCoreApplication>
 
 namespace fincept::services {
 
@@ -70,18 +71,18 @@ void PortfolioAnalyticsService::run_script(const QString& script,
             AnalyticsResult out;
             if (!result.success || result.output.trimmed().isEmpty()) {
                 out.error = result.error.isEmpty()
-                                ? QStringLiteral("%1 returned empty output").arg(script)
+                                ? QCoreApplication::translate("FinceptTerminal", "%1 returned empty output").arg(script)
                                 : result.error;
                 LOG_ERROR("PortfolioAnalyticsService",
-                          QStringLiteral("%1 failed: %2").arg(script, out.error.left(300)));
+                          QCoreApplication::translate("FinceptTerminal", "%1 failed: %2").arg(script, out.error.left(300)));
                 if (cb) cb(out);
                 return;
             }
             const auto doc = QJsonDocument::fromJson(result.output.trimmed().toUtf8());
             if (!doc.isObject()) {
-                out.error = QStringLiteral("%1 returned malformed JSON").arg(script);
+                out.error = QCoreApplication::translate("FinceptTerminal", "%1 returned malformed JSON").arg(script);
                 LOG_ERROR("PortfolioAnalyticsService",
-                          QStringLiteral("%1: bad JSON: %2").arg(script, result.output.left(200)));
+                          QCoreApplication::translate("FinceptTerminal", "%1: bad JSON: %2").arg(script, result.output.left(200)));
                 if (cb) cb(out);
                 return;
             }

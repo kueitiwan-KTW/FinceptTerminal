@@ -112,7 +112,7 @@ void RelationshipMapScreen::build_ui() {
 
     // Search with autocomplete
     search_input_ = new QLineEdit;
-    search_input_->setPlaceholderText("Search assets (AAPL, Tesla, RELIANCE...)");
+    search_input_->setPlaceholderText(tr("Search assets (AAPL, Tesla, RELIANCE...)"));
     search_input_->setFixedWidth(320);
     search_input_->setStyleSheet(
         QString("QLineEdit { background: %1; color: %2; border: 1px solid %3; "
@@ -179,7 +179,7 @@ void RelationshipMapScreen::build_ui() {
     auto* fit_btn = new QPushButton("FIT");
     fit_btn->setCursor(Qt::PointingHandCursor);
     fit_btn->setFixedHeight(28);
-    fit_btn->setToolTip("Fit graph to view (or press Home)");
+    fit_btn->setToolTip(tr("Fit graph to view (or press Home)"));
     fit_btn->setStyleSheet(
         QString("QPushButton { background: transparent; color: %1; border: 1px solid %2; "
                 "padding: 0 10px; font-size: 10px; %3 }"

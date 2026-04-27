@@ -5,6 +5,7 @@
 
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QCoreApplication>
 
 namespace fincept::services::prediction {
 
@@ -87,7 +88,7 @@ bool PredictionCredentialStore::save_polymarket(const PolymarketCredentials& cre
                                                       encode(to_json(creds)));
     if (r.is_err()) {
         LOG_ERROR("PredictionCreds",
-                  QStringLiteral("SecureStorage.store(polymarket) failed: ") +
+                  QCoreApplication::translate("FinceptTerminal", "SecureStorage.store(polymarket) failed: ") +
                       QString::fromStdString(r.error()));
         return false;
     }
@@ -117,7 +118,7 @@ bool PredictionCredentialStore::save_kalshi(const kalshi_ns::KalshiCredentials& 
                                                       encode(to_json(creds)));
     if (r.is_err()) {
         LOG_ERROR("PredictionCreds",
-                  QStringLiteral("SecureStorage.store(kalshi) failed: ") +
+                  QCoreApplication::translate("FinceptTerminal", "SecureStorage.store(kalshi) failed: ") +
                       QString::fromStdString(r.error()));
         return false;
     }

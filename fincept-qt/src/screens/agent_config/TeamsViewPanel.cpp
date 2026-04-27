@@ -196,7 +196,7 @@ QWidget* TeamsViewPanel::build_execution_panel() {
     vl->addWidget(llm_hdr);
 
     team_profile_combo_ = new QComboBox;
-    team_profile_combo_->setToolTip("LLM profile for the team coordinator. Members use their own assigned profiles.");
+    team_profile_combo_->setToolTip(tr("LLM profile for the team coordinator. Members use their own assigned profiles."));
     team_profile_combo_->setStyleSheet(
         QString("QComboBox{%1}QComboBox::drop-down{border:none;}"
                 "QComboBox QAbstractItemView{background:%2;color:%3;selection-background-color:%4;}")
@@ -213,7 +213,7 @@ QWidget* TeamsViewPanel::build_execution_panel() {
         QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;padding-top:4px;").arg(ui::colors::AMBER()));
     vl->addWidget(qh);
     query_input_ = new QPlainTextEdit;
-    query_input_->setPlaceholderText("Enter a query for the team...");
+    query_input_->setPlaceholderText(tr("Enter a query for the team..."));
     query_input_->setMaximumHeight(80);
     query_input_->setStyleSheet(
         QString("QPlainTextEdit{background:%1;color:%2;border:1px solid %3;padding:8px;font-size:12px;}")
@@ -287,7 +287,7 @@ void TeamsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN TEAM");
+        run_btn_->setText(tr("RUN TEAM"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
             exec_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
@@ -325,7 +325,7 @@ void TeamsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN TEAM");
+        run_btn_->setText(tr("RUN TEAM"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
             exec_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
@@ -352,7 +352,7 @@ void TeamsViewPanel::setup_connections() {
         executing_ = false;
         pending_request_id_.clear();
         run_btn_->setEnabled(true);
-        run_btn_->setText("RUN TEAM");
+        run_btn_->setText(tr("RUN TEAM"));
         exec_status_->setText("ERROR");
         exec_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
         log_display_->append("[ERROR] " + msg);
@@ -473,7 +473,7 @@ void TeamsViewPanel::refresh_team_llm_label() {
         team_resolved_lbl_->setStyleSheet(
             QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::TEXT_TERTIARY()));
     } else {
-        team_resolved_lbl_->setText("No provider — go to Settings > LLM Config");
+        team_resolved_lbl_->setText(tr("No provider — go to Settings > LLM Config"));
         team_resolved_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
     }
 }
@@ -484,9 +484,9 @@ void TeamsViewPanel::run_team() {
         return;
     executing_ = true;
     run_btn_->setEnabled(false);
-    run_btn_->setText("RUNNING...");
+    run_btn_->setText(tr("RUNNING..."));
     result_display_->clear();
-    exec_status_->setText("Executing...");
+    exec_status_->setText(tr("Executing..."));
     exec_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::AMBER()));
     log_display_->append(QString("[START] Running team (%1 members, mode: %2)")
                              .arg(team_members_.size())

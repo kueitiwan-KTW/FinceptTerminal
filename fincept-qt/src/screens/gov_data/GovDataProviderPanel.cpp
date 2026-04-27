@@ -321,7 +321,7 @@ QWidget* GovDataProviderPanel::build_toolbar() {
     // Search input — always visible and active, press Enter to search
     search_input_ = new QLineEdit;
     search_input_->setObjectName("govSearch");
-    search_input_->setPlaceholderText("Search datasets…  ↵");
+    search_input_->setPlaceholderText(tr("Search datasets…  ↵"));
     search_input_->setFixedWidth(210);
     search_input_->setFixedHeight(24);
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataProviderPanel::on_search);
@@ -761,7 +761,7 @@ void GovDataProviderPanel::on_export_csv() {
 
     QFile file(path);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        export_btn_->setText("✗ FAILED");
+        export_btn_->setText(tr("✗ FAILED"));
         QTimer::singleShot(2000, this, [this]() { export_btn_->setText("CSV"); });
         return;
     }
@@ -786,7 +786,7 @@ void GovDataProviderPanel::on_export_csv() {
         out << row.join(",") << "\n";
     }
 
-    export_btn_->setText("✓ SAVED");
+    export_btn_->setText(tr("✓ SAVED"));
     QTimer::singleShot(1500, this, [this]() { export_btn_->setText("CSV"); });
 }
 

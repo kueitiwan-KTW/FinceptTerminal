@@ -255,7 +255,7 @@ void AiChatScreen::build_sidebar() {
     new_btn_ = new QPushButton("＋");
     new_btn_->setFixedSize(34, 34);
     new_btn_->setCursor(Qt::PointingHandCursor);
-    new_btn_->setToolTip("New Chat  (Ctrl+N)");
+    new_btn_->setToolTip(tr("New Chat  (Ctrl+N)"));
     new_btn_->setStyleSheet(
         QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                 "border-radius:0px;font-size:20px;font-weight:700;}"
@@ -273,7 +273,7 @@ void AiChatScreen::build_sidebar() {
     swl->setContentsMargins(10, 8, 10, 8);
 
     search_edit_ = new QLineEdit;
-    search_edit_->setPlaceholderText("Search sessions...");
+    search_edit_->setPlaceholderText(tr("Search sessions..."));
     search_edit_->setFixedHeight(30);
     search_edit_->setStyleSheet(QString("QLineEdit{background:%1;color:%2;border:1px solid %3;"
                                         "border-radius:0px;padding:2px 10px;font-size:%4px;}"
@@ -352,11 +352,11 @@ void AiChatScreen::build_sidebar() {
 
     provider_lbl_ = new QLabel("No provider");
     provider_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;font-weight:600;").arg(col::AMBER()).arg(fnt::SMALL));
-    provider_lbl_->setToolTip("Active LLM Provider");
+    provider_lbl_->setToolTip(tr("Active LLM Provider"));
 
     model_lbl_ = new QLabel("No model");
     model_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;").arg(col::TEXT_SECONDARY()).arg(fnt::TINY));
-    model_lbl_->setToolTip("Active Model — change in Settings > LLM Configuration");
+    model_lbl_->setToolTip(tr("Active Model — change in Settings > LLM Configuration"));
 
     fl->addWidget(provider_lbl_);
     fl->addWidget(model_lbl_);
@@ -444,7 +444,7 @@ QWidget* AiChatScreen::build_header_bar() {
                                       .arg(col::TEXT_SECONDARY())
                                       .arg(fnt::TINY)
                                       .arg(col::BG_BASE(), col::BORDER_MED()));
-    hdr_model_lbl_->setToolTip("Active model — change in Settings > LLM Configuration");
+    hdr_model_lbl_->setToolTip(tr("Active model — change in Settings > LLM Configuration"));
     hl->addWidget(hdr_model_lbl_);
 
     // Status text
@@ -564,7 +564,7 @@ QWidget* AiChatScreen::build_input_area() {
     hl->setSpacing(10);
 
     input_box_ = new QPlainTextEdit;
-    input_box_->setPlaceholderText("Message Fincept AI...");
+    input_box_->setPlaceholderText(tr("Message Fincept AI..."));
     input_box_->setFixedHeight(44);
     input_box_->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     input_box_->setStyleSheet(QString("QPlainTextEdit{background:%1;color:%2;border:1px solid %3;"
@@ -585,7 +585,7 @@ QWidget* AiChatScreen::build_input_area() {
     attach_btn_ = new QPushButton("⊕");
     attach_btn_->setFixedSize(44, 44);
     attach_btn_->setCursor(Qt::PointingHandCursor);
-    attach_btn_->setToolTip("Attach a file to this message");
+    attach_btn_->setToolTip(tr("Attach a file to this message"));
     attach_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                                        "border-radius:0px;font-size:20px;font-weight:700;}"
                                        "QPushButton:hover{background:rgba(217,119,6,0.15);border-color:%1;}"
@@ -660,7 +660,7 @@ void AiChatScreen::on_typing_indicator_tick() {
 void AiChatScreen::show_typing(bool show) {
     if (show) {
         typing_step_ = 0;
-        typing_dots_lbl_->setText("AI is thinking");
+        typing_dots_lbl_->setText(tr("AI is thinking"));
         typing_indicator_->show();
         typing_timer_->start();
     } else {
@@ -804,7 +804,7 @@ void AiChatScreen::on_attach_file() {
     attached_file_path_ = paths.first(); // single attach for now
     QFileInfo fi(attached_file_path_);
     if (attach_badge_) {
-        attach_badge_->setText("⊕ " + fi.fileName());
+        attach_badge_->setText(tr("⊕ ") + fi.fileName());
         attach_badge_->setVisible(true);
     }
     if (attach_btn_)
@@ -914,7 +914,7 @@ void AiChatScreen::on_stream_chunk(const QString& chunk, bool done) {
     // Tool-call clear sentinel: reset bubble content (removes partial XML)
     if (chunk.startsWith("\x01__TOOL_CALL_CLEAR__")) {
         bubble->setProperty("acc", QString("Calling tool..."));
-        bubble->setText("Calling tool...");
+        bubble->setText(tr("Calling tool..."));
         scroll_to_bottom();
         return;
     }
@@ -1079,7 +1079,7 @@ void AiChatScreen::add_message_bubble(const QString& role, const QString& conten
         QString plain = content;
         connect(copy_btn, &QPushButton::clicked, this, [plain, copy_btn]() {
             QApplication::clipboard()->setText(plain);
-            copy_btn->setText("Copied!");
+            copy_btn->setText(tr("Copied!"));
             QTimer::singleShot(1500, copy_btn, [copy_btn]() { copy_btn->setText("Copy"); });
         });
         fhl->addWidget(copy_btn);
@@ -1153,7 +1153,7 @@ QLabel* AiChatScreen::add_streaming_bubble() {
     copy_btn->hide();
     connect(copy_btn, &QPushButton::clicked, this, [body, copy_btn]() {
         QApplication::clipboard()->setText(body->property("acc").toString());
-        copy_btn->setText("Copied!");
+        copy_btn->setText(tr("Copied!"));
         QTimer::singleShot(1500, copy_btn, [copy_btn]() { copy_btn->setText("Copy"); });
     });
     auto* footer = new QWidget;
@@ -1218,7 +1218,7 @@ void AiChatScreen::update_stats() {
     else if (!active_session_id_.isEmpty())
         hdr_session_lbl_->setText(active_session_id_.left(8));
     else
-        hdr_session_lbl_->setText("New Conversation");
+        hdr_session_lbl_->setText(tr("New Conversation"));
 
     // Token count in header
     if (total_tokens_ > 0) {
@@ -1252,20 +1252,20 @@ void AiChatScreen::update_stats() {
 
         // Header model pill — show "Provider / Model" for clarity
         if (is_fincept) {
-            hdr_model_lbl_->setText("Fincept LLM");
-            hdr_model_lbl_->setToolTip("Fincept managed AI service\n\nChange in Settings > LLM Configuration");
+            hdr_model_lbl_->setText(tr("Fincept LLM"));
+            hdr_model_lbl_->setToolTip(tr("Fincept managed AI service\n\nChange in Settings > LLM Configuration"));
         } else {
             hdr_model_lbl_->setText(provider_raw.left(1).toUpper() + provider_raw.mid(1) + " / " + model_short);
-            hdr_model_lbl_->setToolTip("Provider: " + prov_display + "\nModel: " + model_raw +
+            hdr_model_lbl_->setToolTip(tr("Provider: ") + prov_display + "\nModel: " + model_raw +
                                        "\n\nChange in Settings > LLM Configuration");
         }
     } else {
-        provider_lbl_->setText("No provider");
+        provider_lbl_->setText(tr("No provider"));
         provider_lbl_->setStyleSheet(
             QString("color:%1;font-size:%2px;font-weight:600;").arg(col::NEGATIVE()).arg(fnt::SMALL));
-        model_lbl_->setText("Configure in Settings");
+        model_lbl_->setText(tr("Configure in Settings"));
         model_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;").arg(col::TEXT_DIM()).arg(fnt::TINY));
-        hdr_model_lbl_->setText("No model");
+        hdr_model_lbl_->setText(tr("No model"));
     }
 }
 

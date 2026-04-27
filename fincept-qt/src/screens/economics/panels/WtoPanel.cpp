@@ -87,13 +87,13 @@ void WtoPanel::build_controls(QHBoxLayout* thl) {
     indicator_combo_->setMinimumWidth(270);
 
     reporter_input_ = new QLineEdit;
-    reporter_input_->setPlaceholderText("Reporter (e.g. US, CN, DE)");
+    reporter_input_->setPlaceholderText(tr("Reporter (e.g. US, CN, DE)"));
     reporter_input_->setText("US");
     reporter_input_->setFixedHeight(26);
     reporter_input_->setFixedWidth(130);
 
     years_input_ = new QLineEdit;
-    years_input_->setPlaceholderText("Years (e.g. 2015-2023)");
+    years_input_->setPlaceholderText(tr("Years (e.g. 2015-2023)"));
     years_input_->setText("2015-2023");
     years_input_->setFixedHeight(26);
     years_input_->setFixedWidth(110);
@@ -120,12 +120,12 @@ void WtoPanel::on_section_changed(int index) {
     if (is_timeseries) {
         apikey_notice_->setText("Requires WTO_API_KEY");
         apikey_notice_->setStyleSheet(notice_style());
-        reporter_input_->setPlaceholderText("Reporter (e.g. US, CN, DE)");
+        reporter_input_->setPlaceholderText(tr("Reporter (e.g. US, CN, DE)"));
     } else {
-        apikey_notice_->setText("Free — no API key");
+        apikey_notice_->setText(tr("Free — no API key"));
         apikey_notice_->setStyleSheet(
             QString("color:%1; font-size:9px; background:transparent;").arg(ui::colors::POSITIVE()));
-        reporter_input_->setPlaceholderText("Member code (e.g. US, CN)");
+        reporter_input_->setPlaceholderText(tr("Member code (e.g. US, CN)"));
     }
 }
 

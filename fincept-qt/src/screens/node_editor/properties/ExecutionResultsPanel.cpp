@@ -212,7 +212,7 @@ void ExecutionResultsPanel::build_ui() {
                                          "  border: none; font-size: 10px; }"
                                          "QPushButton:hover { color: %2; }")
                                      .arg(ui::colors::TEXT_SECONDARY(), ui::colors::TEXT_PRIMARY()));
-    collapse_btn_->setToolTip("Expand / Collapse");
+    collapse_btn_->setToolTip(tr("Expand / Collapse"));
     connect(collapse_btn_, &QPushButton::clicked, this, [this]() { set_collapsed(!collapsed_); });
     hl->addWidget(collapse_btn_);
 
@@ -260,10 +260,10 @@ void ExecutionResultsPanel::build_ui() {
                                      "  border: none; font-family: Consolas; font-size: 10px; }"
                                      "QPushButton:hover { color: %2; }")
                                  .arg(ui::colors::TEXT_TERTIARY(), ui::colors::AMBER()));
-    copy_btn_->setToolTip("Copy all results to clipboard");
+    copy_btn_->setToolTip(tr("Copy all results to clipboard"));
     connect(copy_btn_, &QPushButton::clicked, this, [this]() {
         QGuiApplication::clipboard()->setText(copy_buffer_);
-        copy_btn_->setText("COPIED!");
+        copy_btn_->setText(tr("COPIED!"));
         copy_btn_->setStyleSheet(QString("QPushButton { background: transparent; color: %1;"
                                          "  border: none; font-family: Consolas; font-size: 10px; }")
                                      .arg(ui::colors::POSITIVE()));
@@ -332,7 +332,7 @@ void ExecutionResultsPanel::set_started(const QString& workflow_id) {
     clear();
     show();
     set_collapsed(false); // auto-expand when execution starts
-    status_label_->setText("RUNNING…");
+    status_label_->setText(tr("RUNNING…"));
     status_label_->setStyleSheet(QString("color: %1; font-family: Consolas;"
                                          " font-size: 10px; font-weight: bold;")
                                      .arg(ui::colors::AMBER()));

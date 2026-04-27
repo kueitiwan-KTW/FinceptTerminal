@@ -90,7 +90,7 @@ void PythonWorker::stop() {
         if (proc_->state() != QProcess::NotRunning)
             proc_->kill();
     }
-    fail_all_pending(QStringLiteral("worker shutting down"));
+    fail_all_pending(tr("worker shutting down"));
 }
 
 void PythonWorker::ensure_started() {
@@ -176,7 +176,7 @@ void PythonWorker::on_process_finished(int exit_code, QProcess::ExitStatus statu
         LOG_ERROR("PythonWorker",
                   QString("Restart cap (%1) reached — giving up, pending requests will fail")
                       .arg(kMaxRestarts));
-        fail_all_pending(QStringLiteral("worker restart cap reached"));
+        fail_all_pending(tr("worker restart cap reached"));
         return;
     }
     ++restart_count_;

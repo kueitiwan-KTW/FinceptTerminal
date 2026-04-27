@@ -421,7 +421,7 @@ void ChatAgentPanel::refresh_mcp_servers() {
                 auto* item = new QListWidgetItem("Not available.");
                 item->setFlags(item->flags() & ~Qt::ItemIsEnabled);
                 mcp_list_->addItem(item);
-                mcp_tools_lbl_->setText("MCP not available.");
+                mcp_tools_lbl_->setText(tr("MCP not available."));
                 LOG_WARN("ChatAgentPanel", "MCP load failed: " + err);
                 return;
             }

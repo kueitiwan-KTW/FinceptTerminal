@@ -78,7 +78,7 @@ void RedirectServer::handle_new_connection() {
                 error_msg = err.isEmpty() ? QStringLiteral("request_token missing in redirect") : err;
             }
         } else {
-            error_msg = QStringLiteral("Malformed request");
+            error_msg = tr("Malformed request");
         }
 
         const QByteArray body(kResponseHtml);

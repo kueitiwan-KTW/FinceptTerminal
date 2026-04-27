@@ -155,11 +155,11 @@ void PolymarketPriceWidget::on_price(const QString& asset_id, double price) {
 
 QDialog* PolymarketPriceWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Polymarket");
+    dlg->setWindowTitle(tr("Configure — Polymarket"));
     auto* form = new QFormLayout(dlg);
 
     auto* edit = new QPlainTextEdit(dlg);
-    edit->setPlaceholderText("One per line:  <asset_id> | <label>");
+    edit->setPlaceholderText(tr("One per line:  <asset_id> | <label>"));
     QStringList lines;
     for (const auto& e : entries_)
         lines.append(e.asset_id + " | " + e.label);

@@ -109,7 +109,7 @@ QWidget* CustomIndexView::build_create_panel() {
     };
 
     name_edit_ = new QLineEdit;
-    name_edit_->setPlaceholderText("My Custom Index");
+    name_edit_->setPlaceholderText(tr("My Custom Index"));
     name_edit_->setFixedSize(160, 24);
     name_edit_->setStyleSheet(input_style());
     add_field("NAME:", name_edit_);
@@ -324,7 +324,7 @@ void CustomIndexView::create_index() {
 
     const double base = base_edit_->text().toDouble();
     if (base <= 0.0) {
-        create_status_->setText("Base value must be positive.");
+        create_status_->setText(tr("Base value must be positive."));
         create_status_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::NEGATIVE()));
         create_status_->show();
         return;
@@ -355,7 +355,7 @@ void CustomIndexView::create_index() {
     }
 
     if (constituents.isEmpty()) {
-        create_status_->setText("Select at least one constituent.");
+        create_status_->setText(tr("Select at least one constituent."));
         create_status_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::NEGATIVE()));
         create_status_->show();
         return;

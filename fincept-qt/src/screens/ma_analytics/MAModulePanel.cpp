@@ -252,7 +252,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* dcf_run = make_run_button("RUN DCF ANALYSIS", dcf);
     connect(dcf_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running DCF...");
+        status_label_->setText(tr("Running DCF..."));
         QJsonObject params;
         params["ebit"] = double_inputs_["dcf_ebit"]->value();
         params["tax_rate"] = double_inputs_["dcf_tax"]->value() / 100.0;
@@ -310,7 +310,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* lbo_run = make_run_button("RUN LBO ANALYSIS", lbo);
     connect(lbo_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running LBO...");
+        status_label_->setText(tr("Running LBO..."));
         QJsonObject params;
         params["entry_valuation"] = double_inputs_["lbo_entry"]->value();
         params["exit_valuation"] = double_inputs_["lbo_exit"]->value();
@@ -358,7 +358,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* lbof_run = make_run_button("BUILD LBO MODEL", lbo_full);
     connect(lbof_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Building LBO Model...");
+        status_label_->setText(tr("Building LBO Model..."));
         QJsonObject params;
         params["ebitda"] = double_inputs_["lbof_ebitda"]->value();
         params["entry_multiple"] = double_inputs_["lbof_entry_multiple"]->value();
@@ -404,7 +404,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* ds_run = make_run_button("ANALYZE DEBT SCHEDULE", lbo_ds);
     connect(ds_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing Debt Schedule...");
+        status_label_->setText(tr("Analyzing Debt Schedule..."));
         QJsonObject params;
         params["senior_debt"] = double_inputs_["lbo_sr_debt"]->value();
         params["senior_rate"] = double_inputs_["lbo_sr_rate"]->value() / 100.0;
@@ -454,7 +454,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* sens_run = make_run_button("RUN LBO SENSITIVITY", lbo_sens);
     connect(sens_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running LBO Sensitivity...");
+        status_label_->setText(tr("Running LBO Sensitivity..."));
         QJsonObject params;
         params["entry_base"] = double_inputs_["sens_entry_base"]->value();
         params["exit_base"] = double_inputs_["sens_exit_base"]->value();
@@ -483,7 +483,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* comps_target = new QComboBox(comps);
     comps_target->setEditable(true);
-    comps_target->setPlaceholderText("Target ticker (e.g. AAPL)");
+    comps_target->setPlaceholderText(tr("Target ticker (e.g. AAPL)"));
     comps_target->setStyleSheet(QString("QComboBox { background:%1; color:%2; border:1px solid %3;"
                                         "font-family:%4; font-size:%5px; padding:4px 6px; }")
                                     .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED())
@@ -494,14 +494,14 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* comps_peers = new QComboBox(comps);
     comps_peers->setEditable(true);
-    comps_peers->setPlaceholderText("MSFT,GOOG,AMZN");
+    comps_peers->setPlaceholderText(tr("MSFT,GOOG,AMZN"));
     comps_peers->setStyleSheet(comps_target->styleSheet());
     combo_inputs_["comps_peers"] = comps_peers;
     comps_vl->addWidget(build_input_row("Comp Tickers", comps_peers, comps));
 
     auto* comps_run = make_run_button("RUN TRADING COMPS", comps);
     connect(comps_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running Trading Comps...");
+        status_label_->setText(tr("Running Trading Comps..."));
         QJsonObject params;
         params["target_ticker"] = combo_inputs_["comps_target"]->currentText();
         params["comp_tickers"] = combo_inputs_["comps_peers"]->currentText();
@@ -527,7 +527,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
 
     auto* prec_run = make_run_button("RUN PRECEDENT ANALYSIS", prec);
     connect(prec_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running Precedent Txns...");
+        status_label_->setText(tr("Running Precedent Txns..."));
         QJsonObject params;
         params["target_revenue"] = double_inputs_["prec_revenue"]->value();
         params["target_ebitda"] = double_inputs_["prec_ebitda"]->value();
@@ -621,7 +621,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* ad_run = make_run_button("RUN ACCRETION/DILUTION", ad);
     connect(ad_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running Accretion/Dilution...");
+        status_label_->setText(tr("Running Accretion/Dilution..."));
         QJsonObject params;
         QJsonObject acquirer;
         acquirer["revenue"] = double_inputs_["acq_revenue"]->value();
@@ -666,7 +666,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* syn_run = make_run_button("VALUE SYNERGIES", syn);
     connect(syn_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Valuing Synergies...");
+        status_label_->setText(tr("Valuing Synergies..."));
         QJsonObject params;
         params["revenue_synergy_pct"] = double_inputs_["rev_synergy_pct"]->value() / 100.0;
         params["cost_synergy_pct"] = double_inputs_["cost_synergy_pct"]->value() / 100.0;
@@ -694,7 +694,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* pf_run = make_run_button("BUILD PRO FORMA", pf);
     connect(pf_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Building Pro Forma...");
+        status_label_->setText(tr("Building Pro Forma..."));
         QJsonObject params;
         params["years"] = int_inputs_["pf_years"]->value();
         params["revenue_growth"] = double_inputs_["pf_rev_growth"]->value() / 100.0;
@@ -734,7 +734,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* su_run = make_run_button("CALCULATE SOURCES & USES", su);
     connect(su_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Sources & Uses...");
+        status_label_->setText(tr("Calculating Sources & Uses..."));
         QJsonObject params;
         params["deal_value"] = double_inputs_["deal_value"]->value();
         params["cash"] = double_inputs_["su_cash"]->value();
@@ -766,7 +766,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* contrib_run = make_run_button("ANALYZE CONTRIBUTION", contrib);
     connect(contrib_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing Contribution...");
+        status_label_->setText(tr("Analyzing Contribution..."));
         QJsonObject params;
         QJsonObject acquirer;
         acquirer["revenue"] = double_inputs_["acq_revenue"]->value();
@@ -808,7 +808,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* pay_run = make_run_button("ANALYZE PAYMENT STRUCTURE", pay_str);
     connect(pay_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing Payment...");
+        status_label_->setText(tr("Analyzing Payment..."));
         QJsonObject params;
         params["purchase_price"] = double_inputs_["pay_purchase_price"]->value();
         params["cash_pct"] = double_inputs_["pay_cash_pct"]->value() / 100.0;
@@ -844,7 +844,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* earn_run = make_run_button("VALUE EARNOUT", earn);
     connect(earn_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Valuing Earnout...");
+        status_label_->setText(tr("Valuing Earnout..."));
         QJsonObject params;
         params["earnout_amount"] = double_inputs_["earn_base_amount"]->value();
         params["revenue_threshold"] = double_inputs_["earn_threshold"]->value();
@@ -876,7 +876,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* exch_run = make_run_button("CALCULATE EXCHANGE RATIO", exch);
     connect(exch_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Exchange Ratio...");
+        status_label_->setText(tr("Calculating Exchange Ratio..."));
         QJsonObject params;
         params["acquirer_price"] = double_inputs_["exch_acq_price"]->value();
         params["target_price"] = double_inputs_["exch_tgt_price"]->value();
@@ -907,7 +907,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* collar_run = make_run_button("ANALYZE COLLAR", collar);
     connect(collar_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing Collar...");
+        status_label_->setText(tr("Analyzing Collar..."));
         QJsonObject params;
         params["floor_price"] = double_inputs_["collar_floor"]->value();
         params["cap_price"] = double_inputs_["collar_cap"]->value();
@@ -948,7 +948,7 @@ QWidget* MAModulePanel::build_merger_panel() {
 
     auto* cvr_run = make_run_button("VALUE CVR", cvr);
     connect(cvr_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Valuing CVR...");
+        status_label_->setText(tr("Valuing CVR..."));
         QJsonObject params;
         params["type"] = combo_inputs_["cvr_type"]->currentText();
         params["max_payout"] = double_inputs_["cvr_max_payout"]->value();
@@ -994,14 +994,14 @@ QWidget* MAModulePanel::build_deals_panel() {
 
     auto* scan_btn = make_run_button("SCAN SEC FILINGS", ctl);
     connect(scan_btn, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Scanning SEC EDGAR...");
+        status_label_->setText(tr("Scanning SEC EDGAR..."));
         MAAnalyticsService::instance().scan_filings(int_inputs_["scan_days"]->value());
     });
     ctl_hl->addWidget(scan_btn);
 
     auto* load_btn = make_run_button("LOAD ALL DEALS", ctl);
     connect(load_btn, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Loading deals...");
+        status_label_->setText(tr("Loading deals..."));
         MAAnalyticsService::instance().get_all_deals();
     });
     ctl_hl->addWidget(load_btn);
@@ -1011,7 +1011,7 @@ QWidget* MAModulePanel::build_deals_panel() {
     // Search
     auto* search_box = new QComboBox(w);
     search_box->setEditable(true);
-    search_box->setPlaceholderText("Search deals by target, acquirer, or industry...");
+    search_box->setPlaceholderText(tr("Search deals by target, acquirer, or industry..."));
     search_box->setStyleSheet(QString("QComboBox { background:%1; color:%2; border:1px solid %3;"
                                       "font-family:%4; font-size:%5px; padding:6px 10px; }")
                                   .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED())
@@ -1022,7 +1022,7 @@ QWidget* MAModulePanel::build_deals_panel() {
     connect(search_box->lineEdit(), &QLineEdit::returnPressed, this, [this]() {
         auto q = combo_inputs_["deal_search"]->currentText();
         if (!q.isEmpty()) {
-            status_label_->setText("Searching deals...");
+            status_label_->setText(tr("Searching deals..."));
             MAAnalyticsService::instance().search_deals(q);
         }
     });
@@ -1068,7 +1068,7 @@ QWidget* MAModulePanel::build_startup_panel() {
 
     auto* berkus_run = make_run_button("CALCULATE BERKUS", berkus);
     connect(berkus_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Berkus...");
+        status_label_->setText(tr("Calculating Berkus..."));
         QJsonObject params;
         QJsonArray scores;
         for (int i = 0; i < 5; ++i)
@@ -1106,7 +1106,7 @@ QWidget* MAModulePanel::build_startup_panel() {
 
     auto* sc_run = make_run_button("CALCULATE SCORECARD", sc);
     connect(sc_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Scorecard...");
+        status_label_->setText(tr("Calculating Scorecard..."));
         QJsonObject params;
         params["stage"] = combo_inputs_["sc_stage"]->currentText();
         QJsonArray assessments;
@@ -1143,7 +1143,7 @@ QWidget* MAModulePanel::build_startup_panel() {
 
     auto* vc_run = make_run_button("CALCULATE VC METHOD", vc);
     connect(vc_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating VC Method...");
+        status_label_->setText(tr("Calculating VC Method..."));
         QJsonObject params;
         params["exit_metric"] = double_inputs_["vc_exit_metric"]->value();
         params["exit_multiple"] = double_inputs_["vc_multiple"]->value();
@@ -1183,7 +1183,7 @@ QWidget* MAModulePanel::build_startup_panel() {
 
     auto* fc_run = make_run_button("CALCULATE FIRST CHICAGO", fc);
     connect(fc_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating First Chicago...");
+        status_label_->setText(tr("Calculating First Chicago..."));
         QJsonObject params;
         QJsonArray scenarios;
         for (int i = 0; i < 3; ++i) {
@@ -1220,7 +1220,7 @@ QWidget* MAModulePanel::build_startup_panel() {
 
     auto* rf_run = make_run_button("CALCULATE RISK FACTOR", rf);
     connect(rf_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Risk Factor...");
+        status_label_->setText(tr("Calculating Risk Factor..."));
         QJsonObject params;
         params["base_valuation"] = double_inputs_["rf_base"]->value();
         QJsonArray assessments;
@@ -1249,7 +1249,7 @@ QWidget* MAModulePanel::build_startup_panel() {
 
     auto* comp_run = make_run_button("RUN ALL METHODS", comp);
     connect(comp_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running Comprehensive...");
+        status_label_->setText(tr("Running Comprehensive..."));
         QJsonObject params;
         // Gather all startup inputs
         QJsonArray berkus_scores;
@@ -1315,7 +1315,7 @@ QWidget* MAModulePanel::build_fairness_panel() {
 
     auto* fa_run = make_run_button("GENERATE FAIRNESS OPINION", fa);
     connect(fa_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Generating Fairness Opinion...");
+        status_label_->setText(tr("Generating Fairness Opinion..."));
         QJsonObject params;
         params["offer_price"] = double_inputs_["fo_offer_price"]->value();
         QJsonArray methods;
@@ -1360,7 +1360,7 @@ QWidget* MAModulePanel::build_fairness_panel() {
 
     auto* pa_run = make_run_button("ANALYZE PREMIUM", pa);
     connect(pa_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Analyzing Premium...");
+        status_label_->setText(tr("Analyzing Premium..."));
         QJsonObject params;
         params["offer_price"] = double_inputs_["pa_offer"]->value();
         params["price_1d"] = double_inputs_["pa_price_1d"]->value();
@@ -1388,7 +1388,7 @@ QWidget* MAModulePanel::build_fairness_panel() {
 
     auto* pq_run = make_run_button("ASSESS PROCESS QUALITY", pq);
     connect(pq_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Assessing Process Quality...");
+        status_label_->setText(tr("Assessing Process Quality..."));
         QJsonObject params;
         QJsonArray factors;
         for (int i = 0; i < 8; ++i)
@@ -1470,7 +1470,7 @@ QWidget* MAModulePanel::build_industry_panel() {
 
     auto* tech_run = make_run_button("CALCULATE TECH METRICS", tech);
     connect(tech_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Tech Metrics...");
+        status_label_->setText(tr("Calculating Tech Metrics..."));
         QJsonObject params;
         params["sector"] = combo_inputs_["tech_sector"]->currentText();
         params["arr"] = double_inputs_["tech_arr"]->value();
@@ -1524,7 +1524,7 @@ QWidget* MAModulePanel::build_industry_panel() {
 
     auto* hc_run = make_run_button("CALCULATE HC METRICS", hc);
     connect(hc_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating Healthcare Metrics...");
+        status_label_->setText(tr("Calculating Healthcare Metrics..."));
         QJsonObject params;
         params["sector"] = combo_inputs_["hc_sector"]->currentText();
         params["revenue"] = double_inputs_["hc_revenue"]->value();
@@ -1581,7 +1581,7 @@ QWidget* MAModulePanel::build_industry_panel() {
 
     auto* fs_run = make_run_button("CALCULATE FINSERV METRICS", fs);
     connect(fs_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Calculating FinServ Metrics...");
+        status_label_->setText(tr("Calculating FinServ Metrics..."));
         QJsonObject params;
         params["sector"] = combo_inputs_["fs_sector"]->currentText();
         params["total_assets"] = double_inputs_["fs_total_assets"]->value();
@@ -1657,7 +1657,7 @@ QWidget* MAModulePanel::build_advanced_panel() {
 
     auto* mc_run = make_run_button("RUN MONTE CARLO", mc);
     connect(mc_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running Monte Carlo...");
+        status_label_->setText(tr("Running Monte Carlo..."));
         QJsonObject params;
         params["base_valuation"] = double_inputs_["mc_base"]->value();
         params["rev_growth_mean"] = double_inputs_["mc_rev_growth_mean"]->value() / 100.0;
@@ -1702,7 +1702,7 @@ QWidget* MAModulePanel::build_advanced_panel() {
 
     auto* reg_run = make_run_button("RUN REGRESSION", reg);
     connect(reg_run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running Regression...");
+        status_label_->setText(tr("Running Regression..."));
         QJsonObject params;
         params["type"] = combo_inputs_["reg_type"]->currentText().toLower();
         QJsonObject subject;
@@ -1770,7 +1770,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
 
     auto* cmp_run = make_run_button("COMPARE DEALS", cmp);
     connect(cmp_run, &QPushButton::clicked, this, [this, cmp_text]() {
-        status_label_->setText("Comparing Deals...");
+        status_label_->setText(tr("Comparing Deals..."));
         auto doc = QJsonDocument::fromJson(cmp_text->toPlainText().toUtf8());
         QJsonObject params;
         params["deals"] = doc.array();
@@ -1797,14 +1797,14 @@ QWidget* MAModulePanel::build_comparison_panel() {
     rank_vl->addWidget(build_input_row("Rank By", rank_criteria, rank));
 
     auto* rank_text = new QTextEdit(rank);
-    rank_text->setPlaceholderText("Same JSON array format as Compare tab...");
+    rank_text->setPlaceholderText(tr("Same JSON array format as Compare tab..."));
     rank_text->setMaximumHeight(120);
     rank_text->setStyleSheet(cmp_text->styleSheet());
     rank_vl->addWidget(rank_text);
 
     auto* rank_run = make_run_button("RANK DEALS", rank);
     connect(rank_run, &QPushButton::clicked, this, [this, rank_text]() {
-        status_label_->setText("Ranking Deals...");
+        status_label_->setText(tr("Ranking Deals..."));
         auto doc = QJsonDocument::fromJson(rank_text->toPlainText().toUtf8());
         QJsonObject params;
         params["deals"] = doc.array();
@@ -1826,14 +1826,14 @@ QWidget* MAModulePanel::build_comparison_panel() {
     bench_vl->addWidget(build_input_row("Target Premium %", bench_premium, bench));
 
     auto* bench_text = new QTextEdit(bench);
-    bench_text->setPlaceholderText("Comparable deals JSON array...");
+    bench_text->setPlaceholderText(tr("Comparable deals JSON array..."));
     bench_text->setMaximumHeight(120);
     bench_text->setStyleSheet(cmp_text->styleSheet());
     bench_vl->addWidget(bench_text);
 
     auto* bench_run = make_run_button("BENCHMARK PREMIUM", bench);
     connect(bench_run, &QPushButton::clicked, this, [this, bench_text]() {
-        status_label_->setText("Benchmarking Premium...");
+        status_label_->setText(tr("Benchmarking Premium..."));
         auto doc = QJsonDocument::fromJson(bench_text->toPlainText().toUtf8());
         QJsonObject params;
         params["target_premium"] = double_inputs_["bench_premium"]->value() / 100.0;
@@ -1858,7 +1858,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
 
     auto* pay_run = make_run_button("ANALYZE PAYMENT STRUCTURES", pay);
     connect(pay_run, &QPushButton::clicked, this, [this, pay_text]() {
-        status_label_->setText("Analyzing Payment Structures...");
+        status_label_->setText(tr("Analyzing Payment Structures..."));
         auto doc = QJsonDocument::fromJson(pay_text->toPlainText().toUtf8());
         QJsonObject params;
         params["deals"] = doc.array();
@@ -1875,14 +1875,14 @@ QWidget* MAModulePanel::build_comparison_panel() {
     ind_vl->setSpacing(8);
 
     auto* ind_text = new QTextEdit(ind);
-    ind_text->setPlaceholderText("Deals JSON with industry field...");
+    ind_text->setPlaceholderText(tr("Deals JSON with industry field..."));
     ind_text->setMaximumHeight(120);
     ind_text->setStyleSheet(cmp_text->styleSheet());
     ind_vl->addWidget(ind_text);
 
     auto* ind_run = make_run_button("ANALYZE BY INDUSTRY", ind);
     connect(ind_run, &QPushButton::clicked, this, [this, ind_text]() {
-        status_label_->setText("Analyzing Industry Deals...");
+        status_label_->setText(tr("Analyzing Industry Deals..."));
         auto doc = QJsonDocument::fromJson(ind_text->toPlainText().toUtf8());
         QJsonObject params;
         params["deals"] = doc.array();

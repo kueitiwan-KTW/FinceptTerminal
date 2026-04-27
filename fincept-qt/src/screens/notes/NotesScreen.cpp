@@ -200,7 +200,7 @@ QWidget* NotesScreen::build_notes_list_panel() {
     tl->setSpacing(6);
 
     search_input_ = new QLineEdit;
-    search_input_->setPlaceholderText("Search notes...");
+    search_input_->setPlaceholderText(tr("Search notes..."));
     search_input_->setStyleSheet(kInput());
     search_input_->setFixedHeight(28);
     connect(search_input_, &QLineEdit::textChanged, this, &NotesScreen::on_search_changed);
@@ -342,7 +342,7 @@ QWidget* NotesScreen::build_editor_panel() {
 
     auto* export_btn = new QPushButton("EXPORT");
     export_btn->setStyleSheet(kSecondaryBtn());
-    export_btn->setToolTip("Export this note as a Markdown file to the File Manager");
+    export_btn->setToolTip(tr("Export this note as a Markdown file to the File Manager"));
     connect(export_btn, &QPushButton::clicked, this, &NotesScreen::on_export_note);
     edit_toolbar->addWidget(export_btn);
 
@@ -351,7 +351,7 @@ QWidget* NotesScreen::build_editor_panel() {
 
     // Title
     edit_title_ = new QLineEdit;
-    edit_title_->setPlaceholderText("Note title...");
+    edit_title_->setPlaceholderText(tr("Note title..."));
     edit_title_->setStyleSheet(kInput() + " QLineEdit { font-size: 16px; font-weight: 700; }");
     edit_title_->setFixedHeight(28);
     edl->addWidget(edit_title_);
@@ -398,13 +398,13 @@ QWidget* NotesScreen::build_editor_panel() {
     tag_row->setSpacing(8);
     tag_row->addWidget(make_label("TAGS:"));
     edit_tags_ = new QLineEdit;
-    edit_tags_->setPlaceholderText("tag1, tag2, ...");
+    edit_tags_->setPlaceholderText(tr("tag1, tag2, ..."));
     edit_tags_->setStyleSheet(kInput());
     tag_row->addWidget(edit_tags_);
 
     tag_row->addWidget(make_label("TICKERS:"));
     edit_tickers_ = new QLineEdit;
-    edit_tickers_->setPlaceholderText("AAPL, MSFT, ...");
+    edit_tickers_->setPlaceholderText(tr("AAPL, MSFT, ..."));
     edit_tickers_->setStyleSheet(kInput());
     tag_row->addWidget(edit_tickers_);
     edl->addLayout(tag_row);
@@ -412,7 +412,7 @@ QWidget* NotesScreen::build_editor_panel() {
     // Content editor
     edit_content_ = new QTextEdit;
     edit_content_->setStyleSheet(kTextEdit());
-    edit_content_->setPlaceholderText("Write your note here...");
+    edit_content_->setPlaceholderText(tr("Write your note here..."));
     edl->addWidget(edit_content_, 1);
 
     right_stack_->addWidget(edit_page); // index 2
@@ -462,7 +462,7 @@ void NotesScreen::update_notes_list() {
         QString pri_col = priority_color(n.priority);
         item->setForeground(QColor(pri_col));
         if (n.is_favorite)
-            item->setText("* " + display);
+            item->setText(tr("* ") + display);
         notes_list_->addItem(item);
     }
     notes_list_->blockSignals(false);

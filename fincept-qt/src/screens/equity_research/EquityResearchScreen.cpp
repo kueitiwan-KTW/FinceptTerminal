@@ -136,7 +136,7 @@ QWidget* EquityResearchScreen::build_title_bar() {
     symbol_label_ = new QLabel;
     symbol_label_->setStyleSheet(QString("color:%1; font-size:14px; font-weight:600;").arg(ui::colors::TEXT_PRIMARY()));
     symbol_label_->setCursor(Qt::OpenHandCursor);
-    symbol_label_->setToolTip("Drag to broadcast this symbol to any panel");
+    symbol_label_->setToolTip(tr("Drag to broadcast this symbol to any panel"));
     // Drag-out: pull the current symbol from the live member so the filter
     // always ships the most recent ticker, not whatever was loaded at build.
     symbol_dnd::installDragSource(
@@ -247,7 +247,7 @@ void EquityResearchScreen::load_symbol(const QString& symbol) {
     // Update title bar and quote bar
     symbol_label_->setText(symbol);
     sym_label_->setText(symbol);
-    price_label_->setText("Loading\xe2\x80\xa6");
+    price_label_->setText(tr("Loading\xe2\x80\xa6"));
 
     // Overview always loads (tab 0 is default)
     overview_tab_->set_symbol(symbol);
@@ -307,7 +307,7 @@ void EquityResearchScreen::update_quote_bar(const services::equity::QuoteData& q
         return QString::number(static_cast<qint64>(v));
     };
 
-    vol_label_->setText("VOL: " + fmt_vol(q.volume));
+    vol_label_->setText(tr("VOL: ") + fmt_vol(q.volume));
     hl_label_->setText(QString("H:%1%2  L:%1%3").arg(cs).arg(q.high, 0, 'f', 2).arg(q.low, 0, 'f', 2));
 }
 

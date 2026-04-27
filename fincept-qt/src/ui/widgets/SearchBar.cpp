@@ -13,7 +13,7 @@ SearchBar::SearchBar(QWidget* parent) : QWidget(parent) {
     hl->setSpacing(0);
 
     input_ = new QLineEdit;
-    input_->setPlaceholderText("Enter command or search...");
+    input_->setPlaceholderText(tr("Enter command or search..."));
     input_->setStyleSheet(QString("QLineEdit { background: %1; color: %2; border: 1px solid %3; "
                                   "padding: 4px 12px; font-size: 13px; } "
                                   "QLineEdit:focus { border-color: %4; }")

@@ -19,7 +19,7 @@ void StatusBadge::set_status(Status s) {
             setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::RED()));
             break;
         case Status::Loading:
-            setText("LOADING...");
+            setText(tr("LOADING..."));
             setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::GRAY()));
             break;
         case Status::Idle:

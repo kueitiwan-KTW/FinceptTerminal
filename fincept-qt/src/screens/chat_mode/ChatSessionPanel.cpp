@@ -43,7 +43,7 @@ void ChatSessionPanel::build_ui() {
     exit_btn_ = new QPushButton("TERMINAL");
     exit_btn_->setFixedHeight(20);
     exit_btn_->setCursor(Qt::PointingHandCursor);
-    exit_btn_->setToolTip("Switch to Terminal Mode (F9)");
+    exit_btn_->setToolTip(tr("Switch to Terminal Mode (F9)"));
     exit_btn_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     exit_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                                      "padding:0 8px;font-weight:700;font-size:10px;"
@@ -56,7 +56,7 @@ void ChatSessionPanel::build_ui() {
 
     // Search
     search_edit_ = new QLineEdit;
-    search_edit_->setPlaceholderText("Search...");
+    search_edit_->setPlaceholderText(tr("Search..."));
     search_edit_->setFixedHeight(28);
     search_edit_->setStyleSheet(
         QString("QLineEdit{background:%1;color:%2;border:1px solid %3;"

@@ -114,7 +114,7 @@ void EiaPanel::on_source_changed(int index) {
         // WPSR
         for (const auto& c : kWpsrCategories)
             category_combo_->addItem(c.first, c.second);
-        apikey_notice_->setText("No API key needed");
+        apikey_notice_->setText(tr("No API key needed"));
         apikey_notice_->setStyleSheet(
             QString("color:%1; font-size:9px; background:transparent;").arg(ui::colors::POSITIVE()));
     } else {

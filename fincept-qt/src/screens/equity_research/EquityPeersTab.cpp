@@ -130,7 +130,7 @@ void EquityPeersTab::on_load_clicked() {
             peers.append(p.trimmed().toUpper());
     if (peers.isEmpty())
         return;
-    status_label_->setText("Loading peer data…");
+    status_label_->setText(tr("Loading peer data…"));
     status_label_->show();
     services::equity::EquityResearchService::instance().fetch_peers(current_symbol_, peers);
 }

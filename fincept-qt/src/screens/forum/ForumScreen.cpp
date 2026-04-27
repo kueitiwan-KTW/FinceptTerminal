@@ -164,7 +164,7 @@ void ForumScreen::build_ui() {
                 return;
             // Profile popup
             auto* dlg = new QDialog(this);
-            dlg->setWindowTitle("USER PROFILE");
+            dlg->setWindowTitle(tr("USER PROFILE"));
             dlg->setFixedSize(380, 340);
             dlg->setStyleSheet(QString("QDialog{background:%1;border:1px solid %2;}"
                                        "QLabel{background:transparent;"
@@ -433,7 +433,7 @@ void ForumScreen::on_new_post_requested() {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 void ForumScreen::show_new_post_dialog(int category_id) {
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("NEW POST");
+    dlg->setWindowTitle(tr("NEW POST"));
     dlg->setMinimumSize(560, 400);
     dlg->setStyleSheet(QString("QDialog{background:%1;border:1px solid %2;}"
                                "QLabel{color:%3;font-size:11px;background:transparent;"
@@ -471,14 +471,14 @@ void ForumScreen::show_new_post_dialog(int category_id) {
     title_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;%2")
                                  .arg(ui::colors::TEXT_TERTIARY(), M(10)));
     auto* title_edit = new QLineEdit;
-    title_edit->setPlaceholderText("Give your post a descriptive title...");
+    title_edit->setPlaceholderText(tr("Give your post a descriptive title..."));
     title_edit->setFixedHeight(36);
 
     auto* content_lbl = new QLabel("CONTENT");
     content_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;%2")
                                    .arg(ui::colors::TEXT_TERTIARY(), M(10)));
     auto* body_edit = new QTextEdit;
-    body_edit->setPlaceholderText("Write your thoughts...");
+    body_edit->setPlaceholderText(tr("Write your thoughts..."));
 
     vl->addWidget(title_lbl);
     vl->addWidget(title_edit);
@@ -536,7 +536,7 @@ void ForumScreen::show_new_post_dialog(int category_id) {
 
 void ForumScreen::show_edit_profile_dialog(const services::ForumProfile& profile) {
     auto* dlg = new QDialog(this);
-    dlg->setWindowTitle("EDIT PROFILE");
+    dlg->setWindowTitle(tr("EDIT PROFILE"));
     dlg->setMinimumSize(440, 320);
     dlg->setStyleSheet(QString("QDialog{background:%1;border:1px solid %2;}"
                                "QLabel{color:%3;font-size:11px;background:transparent;"

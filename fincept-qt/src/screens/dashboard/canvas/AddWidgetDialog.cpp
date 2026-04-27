@@ -58,7 +58,7 @@ QString AddWidgetDialog::icon_for_widget(const QString& type_id) {
 // ── Constructor ─────────────────────────────────────────────────────────────
 
 AddWidgetDialog::AddWidgetDialog(QWidget* parent) : QDialog(parent) {
-    setWindowTitle("Add Widget");
+    setWindowTitle(tr("Add Widget"));
     setFixedSize(620, 520);
     setStyleSheet(QString("QDialog { background: %1; }").arg(ui::colors::BG_BASE()));
 
@@ -81,7 +81,7 @@ AddWidgetDialog::AddWidgetDialog(QWidget* parent) : QDialog(parent) {
 
     // ── Search ──
     search_bar_ = new QLineEdit;
-    search_bar_->setPlaceholderText("Search widgets...");
+    search_bar_->setPlaceholderText(tr("Search widgets..."));
     search_bar_->setFixedHeight(30);
     search_bar_->setStyleSheet(
         QString("QLineEdit { background: %1; border: 1px solid %2; color: %3; "

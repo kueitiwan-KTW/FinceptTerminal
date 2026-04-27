@@ -6,6 +6,7 @@
 
 #include <md4c-html.h>
 #include <string>
+#include <QCoreApplication>
 
 namespace fincept::ui {
 

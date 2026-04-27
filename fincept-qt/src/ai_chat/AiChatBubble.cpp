@@ -265,7 +265,7 @@ QWidget* AiChatBubble::build_panel_header() {
     new_btn_ = new QPushButton("＋");
     new_btn_->setFixedSize(28, 26);
     new_btn_->setCursor(Qt::PointingHandCursor);
-    new_btn_->setToolTip("New conversation");
+    new_btn_->setToolTip(tr("New conversation"));
     new_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                                     "font-size:18px;font-weight:700;border-radius:0px;}"
                                     "QPushButton:hover{background:%3;color:%1;}")
@@ -297,7 +297,7 @@ QWidget* AiChatBubble::build_input_row() {
 
     input_box_ = new QPlainTextEdit;
     input_box_->setFixedHeight(38);
-    input_box_->setPlaceholderText("Ask anything…");
+    input_box_->setPlaceholderText(tr("Ask anything…"));
     input_box_->setStyleSheet(QString("QPlainTextEdit{background:%1;color:%2;border:1px solid %3;"
                                       "border-radius:0px;padding:6px 10px;font-size:13px;}"
                                       "QPlainTextEdit:focus{border-color:%4;}")
@@ -309,7 +309,7 @@ QWidget* AiChatBubble::build_input_row() {
     mic_btn_->setFixedSize(36, 36);
     mic_btn_->setCheckable(true);
     mic_btn_->setCursor(Qt::PointingHandCursor);
-    mic_btn_->setToolTip("Voice input");
+    mic_btn_->setToolTip(tr("Voice input"));
     mic_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                                     "border-radius:0px;font-size:18px;}"
                                     "QPushButton:hover{border-color:%3;}"
@@ -321,7 +321,7 @@ QWidget* AiChatBubble::build_input_row() {
     send_btn_ = new QPushButton("↑");
     send_btn_->setFixedSize(36, 36);
     send_btn_->setCursor(Qt::PointingHandCursor);
-    send_btn_->setToolTip("Send  (Enter)");
+    send_btn_->setToolTip(tr("Send  (Enter)"));
     send_btn_->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:none;"
                 "border-radius:0px;font-size:20px;font-weight:700;}"
@@ -475,7 +475,7 @@ void AiChatBubble::on_send() {
 
     // Show typing indicator
     if (voice_status_lbl_)
-        voice_status_lbl_->setText("AI is thinking…");
+        voice_status_lbl_->setText(tr("AI is thinking…"));
 
     // Defer streaming bubble creation to first non-empty chunk.
     // Use shared_ptr<bool> so the single flag is shared between outer (bg thread)
@@ -776,7 +776,7 @@ void AiChatBubble::on_transcription(const QString& text) {
 
 void AiChatBubble::on_stt_error(const QString& message) {
     if (voice_status_lbl_)
-        voice_status_lbl_->setText(QStringLiteral("⚠ ") + message);
+        voice_status_lbl_->setText(tr("⚠ ") + message);
 }
 
 // ── Voice mode ────────────────────────────────────────────────────────────────
@@ -791,14 +791,14 @@ void AiChatBubble::on_toggle_voice_mode() {
         // but AI responses will not be spoken aloud.
 #ifndef HAS_QT_TTS
         if (voice_status_lbl_)
-            voice_status_lbl_->setText("⚠ Voice responses unavailable — Qt TextToSpeech not installed. "
-                                       "Input-only mode active.");
+            voice_status_lbl_->setText(tr("⚠ Voice responses unavailable — Qt TextToSpeech not installed. "
+                                       "Input-only mode active."));
 #else
         // Check at runtime whether any TTS engine is available
         if (tts_engine_ && tts_engine_->availableEngines().isEmpty()) {
             if (voice_status_lbl_)
-                voice_status_lbl_->setText("⚠ No TTS engine found (install speech-dispatcher on Linux). "
-                                           "Input-only mode active.");
+                voice_status_lbl_->setText(tr("⚠ No TTS engine found (install speech-dispatcher on Linux). "
+                                           "Input-only mode active."));
         }
 #endif
         QTimer::singleShot(300, this, &AiChatBubble::start_listening);
@@ -855,7 +855,7 @@ void AiChatBubble::speak_text(const QString& text) {
     is_speaking_ = false;
     stop_speech_btn_->hide();
     if (voice_status_lbl_)
-        voice_status_lbl_->setText("Voice response skipped (TTS unavailable)");
+        voice_status_lbl_->setText(tr("Voice response skipped (TTS unavailable)"));
     update_voice_status();
     if (voice_mode_ && !is_listening_ && !streaming_)
         QTimer::singleShot(400, this, &AiChatBubble::start_listening);
@@ -896,15 +896,15 @@ void AiChatBubble::update_voice_status() {
 
     // Show status for both mic-only mode and full voice mode.
     if (is_speaking_) {
-        voice_status_lbl_->setText("▶ AI speaking…");
+        voice_status_lbl_->setText(tr("▶ AI speaking…"));
         voice_status_lbl_->setStyleSheet(
             QString("color:%1;font-size:11px;font-style:italic;background:transparent;").arg(col::WARNING()));
     } else if (is_listening_) {
-        voice_status_lbl_->setText("● Listening — speak now…");
+        voice_status_lbl_->setText(tr("● Listening — speak now…"));
         voice_status_lbl_->setStyleSheet(
             QString("color:%1;font-size:11px;font-style:italic;background:transparent;").arg(col::POSITIVE()));
     } else if (streaming_) {
-        voice_status_lbl_->setText("AI is thinking…");
+        voice_status_lbl_->setText(tr("AI is thinking…"));
         voice_status_lbl_->setStyleSheet(
             QString("color:%1;font-size:11px;font-style:italic;background:transparent;").arg(col::TEXT_DIM()));
     } else {

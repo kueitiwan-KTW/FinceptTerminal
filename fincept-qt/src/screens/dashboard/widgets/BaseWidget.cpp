@@ -6,6 +6,7 @@
 #include <QPalette>
 #include <QSize>
 #include <QStyle>
+#include <QCoreApplication>
 
 namespace fincept::screens::widgets {
 
@@ -64,7 +65,7 @@ BaseWidget::BaseWidget(const QString& title, QWidget* parent, const QString& acc
     config_btn_->setText("");
     config_btn_->setIcon(style()->standardIcon(QStyle::SP_FileDialogDetailedView));
     config_btn_->setIconSize(QSize(12, 12));
-    config_btn_->setToolTip("Configure widget");
+    config_btn_->setToolTip(QCoreApplication::translate("FinceptTerminal", "Configure widget"));
     config_btn_->setCursor(Qt::PointingHandCursor);
     config_btn_->setVisible(false);
     config_btn_->setStyleSheet(
@@ -82,7 +83,7 @@ BaseWidget::BaseWidget(const QString& title, QWidget* parent, const QString& acc
     refresh_btn_->setText("");
     refresh_btn_->setIcon(style()->standardIcon(QStyle::SP_BrowserReload));
     refresh_btn_->setIconSize(QSize(12, 12));
-    refresh_btn_->setToolTip("Refresh widget data");
+    refresh_btn_->setToolTip(QCoreApplication::translate("FinceptTerminal", "Refresh widget data"));
     refresh_btn_->setCursor(Qt::PointingHandCursor);
     refresh_btn_->setStyleSheet(
         QString("QPushButton { color: %1; background: %2; border: 1px solid %3; border-radius: 2px; "
@@ -99,7 +100,7 @@ BaseWidget::BaseWidget(const QString& title, QWidget* parent, const QString& acc
     close_btn->setText("");
     close_btn->setIcon(style()->standardIcon(QStyle::SP_TitleBarCloseButton));
     close_btn->setIconSize(QSize(11, 11));
-    close_btn->setToolTip("Close widget");
+    close_btn->setToolTip(QCoreApplication::translate("FinceptTerminal", "Close widget"));
     close_btn->setCursor(Qt::PointingHandCursor);
     close_btn->setStyleSheet(
         QString("QPushButton { color: %1; background: %2; border: 1px solid %3; border-radius: 2px; "

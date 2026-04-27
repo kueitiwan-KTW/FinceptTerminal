@@ -20,17 +20,17 @@ void PythonCliService::run(const QString& script, const QStringList& args, CliCa
             CliResult out;
             if (!result.success) {
                 out.error = result.error.isEmpty()
-                                ? QStringLiteral("Python process failed")
+                                ? tr("Python process failed")
                                 : result.error;
                 LOG_ERROR("PythonCliService",
-                          QStringLiteral("%1 failed: %2").arg(script, out.error.left(300)));
+                          tr("%1 failed: %2").arg(script, out.error.left(300)));
                 if (cb) cb(out);
                 return;
             }
 
             const QString json_str = fincept::python::extract_json(result.output);
             if (json_str.isEmpty()) {
-                out.error = QStringLiteral("No JSON output from %1").arg(script);
+                out.error = tr("No JSON output from %1").arg(script);
                 if (cb) cb(out);
                 return;
             }
@@ -38,19 +38,19 @@ void PythonCliService::run(const QString& script, const QStringList& args, CliCa
             QJsonParseError err;
             const auto doc = QJsonDocument::fromJson(json_str.toUtf8(), &err);
             if (doc.isNull() || !doc.isObject()) {
-                out.error = QStringLiteral("Invalid JSON: %1").arg(err.errorString());
+                out.error = tr("Invalid JSON: %1").arg(err.errorString());
                 if (cb) cb(out);
                 return;
             }
 
             const QJsonObject obj = doc.object();
             if (obj.contains("error")) {
-                out.error = obj["error"].toString(QStringLiteral("Script reported error"));
+                out.error = obj["error"].toString(tr("Script reported error"));
                 if (cb) cb(out);
                 return;
             }
             if (obj.contains("success") && !obj["success"].toBool(true)) {
-                out.error = obj.value("error").toString(QStringLiteral("Script reported failure"));
+                out.error = obj.value("error").toString(tr("Script reported failure"));
                 if (cb) cb(out);
                 return;
             }

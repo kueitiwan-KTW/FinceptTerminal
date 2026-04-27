@@ -374,7 +374,7 @@ void ForumThreadPanel::build_ui() {
     comp_hl->setSpacing(10);
 
     t_reply_input_ = new QLineEdit;
-    t_reply_input_->setPlaceholderText("Write a reply...");
+    t_reply_input_->setPlaceholderText(tr("Write a reply..."));
     t_reply_input_->setFixedHeight(34);
     t_reply_input_->setStyleSheet(QString("QLineEdit{background:rgba(255,255,255,0.03);color:%1;"
                                           "border:1px solid %2;padding:6px 14px;font-size:12px;"

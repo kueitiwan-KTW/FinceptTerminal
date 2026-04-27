@@ -69,7 +69,7 @@ WorldBankPanel::WorldBankPanel(QWidget* parent) : EconPanelBase(kWorldBankSource
     // Country
     lvl->addWidget(section_header("COUNTRY"));
     country_search_ = new QLineEdit;
-    country_search_->setPlaceholderText("Filter countries…");
+    country_search_->setPlaceholderText(tr("Filter countries…"));
     country_search_->setStyleSheet(search_input_style());
     connect(country_search_, &QLineEdit::textChanged, this, &WorldBankPanel::on_country_filter);
     lvl->addWidget(country_search_);
@@ -85,7 +85,7 @@ WorldBankPanel::WorldBankPanel(QWidget* parent) : EconPanelBase(kWorldBankSource
     // Indicator
     lvl->addWidget(section_header("INDICATOR"));
     indicator_search_ = new QLineEdit;
-    indicator_search_->setPlaceholderText("Filter indicators…");
+    indicator_search_->setPlaceholderText(tr("Filter indicators…"));
     indicator_search_->setStyleSheet(search_input_style());
     connect(indicator_search_, &QLineEdit::textChanged, this, &WorldBankPanel::on_indicator_filter);
     lvl->addWidget(indicator_search_);

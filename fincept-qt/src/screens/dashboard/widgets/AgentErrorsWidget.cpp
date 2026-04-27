@@ -106,7 +106,7 @@ void AgentErrorsWidget::render() {
 
 QDialog* AgentErrorsWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Agent Errors");
+    dlg->setWindowTitle(tr("Configure — Agent Errors"));
     auto* form = new QFormLayout(dlg);
 
     auto* spin = new QSpinBox(dlg);

@@ -101,7 +101,7 @@ void EquitySentimentTab::set_symbol(const QString& symbol) {
     coverage_label_->setText("");
     content_widget_->hide();
     clear_sources();
-    status_label_->setText("Loading market sentiment…");
+    status_label_->setText(tr("Loading market sentiment…"));
     status_label_->show();
     loading_overlay_->show_loading("LOADING SENTIMENT…");
     services::equity::MarketSentimentService::instance().fetch_snapshot(symbol);
@@ -151,7 +151,7 @@ void EquitySentimentTab::build_ui() {
         if (!current_symbol_.isEmpty()) {
             content_widget_->hide();
             clear_sources();
-            status_label_->setText("Refreshing market sentiment…");
+            status_label_->setText(tr("Refreshing market sentiment…"));
             status_label_->show();
             loading_overlay_->show_loading("REFRESHING SENTIMENT…");
             services::equity::MarketSentimentService::instance().fetch_snapshot(current_symbol_, 7, true);

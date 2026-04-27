@@ -143,7 +143,7 @@ BeaPanel::BeaPanel(QWidget* parent) : EconPanelBase(kBeaSourceId, kBeaColor, par
 
     // Indicator search
     indicator_search_ = new QLineEdit;
-    indicator_search_->setPlaceholderText("Filter indicators…");
+    indicator_search_->setPlaceholderText(tr("Filter indicators…"));
     indicator_search_->setStyleSheet(search_input_style());
     indicator_search_->setFixedHeight(28);
     connect(indicator_search_, &QLineEdit::textChanged, this, &BeaPanel::on_indicator_filter);
@@ -186,13 +186,13 @@ void BeaPanel::build_controls(QHBoxLayout* thl) {
     };
 
     start_input_ = new QLineEdit;
-    start_input_->setPlaceholderText("Start year");
+    start_input_->setPlaceholderText(tr("Start year"));
     start_input_->setText("2000");
     start_input_->setFixedHeight(26);
     start_input_->setFixedWidth(75);
 
     end_input_ = new QLineEdit;
-    end_input_->setPlaceholderText("End year");
+    end_input_->setPlaceholderText(tr("End year"));
     end_input_->setText(QString::number(QDate::currentDate().year()));
     end_input_->setFixedHeight(26);
     end_input_->setFixedWidth(75);

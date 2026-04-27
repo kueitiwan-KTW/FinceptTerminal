@@ -1,4 +1,5 @@
 #include "screens/polymarket/ExchangePresentation.h"
+#include <QCoreApplication>
 
 #include "services/prediction/PredictionExchangeAdapter.h"
 #include "services/prediction/PredictionExchangeRegistry.h"
@@ -17,9 +18,9 @@ QString ExchangePresentation::format_price(double prob) const {
     // decides how to render it.
     switch (price_style) {
     case PriceStyle::ProbabilityCents:
-        return QStringLiteral("%1\u00A2").arg(qRound(prob * 100.0));  // "52¢"
+        return QCoreApplication::translate("FinceptTerminal", "%1\u00A2").arg(qRound(prob * 100.0));  // "52¢"
     case PriceStyle::Dollars:
-        return QStringLiteral("$%1").arg(prob, 0, 'f', 2);             // "$0.52"
+        return QCoreApplication::translate("FinceptTerminal", "$%1").arg(prob, 0, 'f', 2);             // "$0.52"
     }
     return QString::number(prob);
 }
@@ -29,9 +30,9 @@ QString ExchangePresentation::format_volume(double v) const {
     // Currency badges like "USDC" are shown separately (account chip + stats
     // label) so volume formatting always uses a dollar-sign prefix; injecting
     // "USDC" into every cell would be noisy.
-    if (v >= 1e9) return QStringLiteral("%1%2B").arg(sym).arg(v / 1e9, 0, 'f', 1);
-    if (v >= 1e6) return QStringLiteral("%1%2M").arg(sym).arg(v / 1e6, 0, 'f', 1);
-    if (v >= 1e3) return QStringLiteral("%1%2K").arg(sym).arg(v / 1e3, 0, 'f', 1);
+    if (v >= 1e9) return QCoreApplication::translate("FinceptTerminal", "%1%2B").arg(sym).arg(v / 1e9, 0, 'f', 1);
+    if (v >= 1e6) return QCoreApplication::translate("FinceptTerminal", "%1%2M").arg(sym).arg(v / 1e6, 0, 'f', 1);
+    if (v >= 1e3) return QCoreApplication::translate("FinceptTerminal", "%1%2K").arg(sym).arg(v / 1e3, 0, 'f', 1);
     return QStringLiteral("%1%2").arg(sym).arg(v, 0, 'f', 0);
 }
 
@@ -72,15 +73,15 @@ ExchangePresentation::StatusBadge ExchangePresentation::status_badge(
                                    "Orders cannot be placed until reopened.")};
         }
         if (kalshi_status == QStringLiteral("open")) {
-            QString tip = QStringLiteral("Market is open for trading.");
+            QString tip = QCoreApplication::translate("FinceptTerminal", "Market is open for trading.");
             if (!market.end_date_iso.isEmpty())
-                tip += QStringLiteral(" Closes ") + market.end_date_iso + QStringLiteral(".");
+                tip += QCoreApplication::translate("FinceptTerminal", " Closes ") + market.end_date_iso + QStringLiteral(".");
             return {QStringLiteral("OPEN"), accent, accent_bg, tip};
         }
         if (kalshi_status == QStringLiteral("unopened")) {
-            QString tip = QStringLiteral("Market has not yet opened for trading.");
+            QString tip = QCoreApplication::translate("FinceptTerminal", "Market has not yet opened for trading.");
             if (!market.end_date_iso.isEmpty())
-                tip += QStringLiteral(" Close time: ") + market.end_date_iso + QStringLiteral(".");
+                tip += QCoreApplication::translate("FinceptTerminal", " Close time: ") + market.end_date_iso + QStringLiteral(".");
             return {QStringLiteral("PENDING"), QColor(colors::TEXT_DIM()),
                     QColor(0, 0, 0, 0), tip};
         }
@@ -89,15 +90,15 @@ ExchangePresentation::StatusBadge ExchangePresentation::status_badge(
     if (market.closed) {
         return {QStringLiteral("RESOLVED"), QColor(colors::POSITIVE()),
                 QColor(22, 163, 74, 38),
-                QStringLiteral("Market has resolved. No further trading.")};
+                QCoreApplication::translate("FinceptTerminal", "Market has resolved. No further trading.")};
     }
     if (market.active) {
         return {QStringLiteral("ACTIVE"), accent, accent_bg,
-                QStringLiteral("Market is accepting orders.")};
+                QCoreApplication::translate("FinceptTerminal", "Market is accepting orders.")};
     }
     return {QStringLiteral("INACTIVE"), QColor(colors::TEXT_DIM()),
             QColor(0, 0, 0, 0),
-            QStringLiteral("Market not currently trading.")};
+            QCoreApplication::translate("FinceptTerminal", "Market not currently trading.")};
 }
 
 // ── Factories ───────────────────────────────────────────────────────────────
