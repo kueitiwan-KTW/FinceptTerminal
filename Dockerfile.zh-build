@@ -68,9 +68,9 @@ RUN cd /build/fincept-qt && \
         -DCMAKE_INSTALL_PREFIX=/opt/fincept \
         2>&1 | tee /tmp/cmake_config.log | tail -30
 
-# 建構（使用全部 CPU 核心）
+# 建構（限制平行數為 2，避免 x86_64 模擬 OOM）
 RUN cd /build/fincept-qt && \
-    cmake --build build --parallel $(nproc) 2>&1 | tee /tmp/cmake_build.log | tail -50
+    cmake --build build --parallel 2 2>&1 | tee /tmp/cmake_build.log | tail -50
 
 # 安裝
 RUN cd /build/fincept-qt/build && \
