@@ -90,6 +90,56 @@ struct ApiResponse {
     int status_code = 0;
 };
 
+// ── SaaS 擴展型別（KTW-SaaS 整合）──────────────────────────────────────────
+
+struct SaasFinceptFeatures {
+    bool trading = false;
+    bool intelligence = true;
+    QString llm_tier = "auto";
+
+    static SaasFinceptFeatures from_json(const QJsonObject& obj) {
+        SaasFinceptFeatures f;
+        f.trading = obj["trading"].toBool();
+        f.intelligence = obj["intelligence"].toBool(true);
+        f.llm_tier = obj["llm_tier"].toString("auto");
+        return f;
+    }
+
+    QJsonObject to_json() const {
+        QJsonObject obj;
+        obj["trading"] = trading;
+        obj["intelligence"] = intelligence;
+        obj["llm_tier"] = llm_tier;
+        return obj;
+    }
+};
+
+struct SaasTenantInfo {
+    int tenant_id = 0;
+    QString tenant_name;
+    QString plan;
+    SaasFinceptFeatures fincept_features;
+
+    static SaasTenantInfo from_json(const QJsonObject& obj) {
+        SaasTenantInfo t;
+        t.tenant_id = obj["tenant_id"].toInt();
+        t.tenant_name = obj["tenant_name"].toString();
+        t.plan = obj["plan"].toString();
+        if (obj.contains("fincept_features"))
+            t.fincept_features = SaasFinceptFeatures::from_json(obj["fincept_features"].toObject());
+        return t;
+    }
+
+    QJsonObject to_json() const {
+        QJsonObject obj;
+        obj["tenant_id"] = tenant_id;
+        obj["tenant_name"] = tenant_name;
+        obj["plan"] = plan;
+        obj["fincept_features"] = fincept_features.to_json();
+        return obj;
+    }
+};
+
 struct UserProfile {
     int id = 0;
     QString username;
@@ -104,6 +154,9 @@ struct UserProfile {
     QString country_code;
     QString created_at;
     QString last_login_at;
+    // SaaS 擴展
+    SaasTenantInfo saas;
+    bool is_saas_user = false;
 
     static UserProfile from_json(const QJsonObject& obj) {
         UserProfile p;
@@ -120,6 +173,14 @@ struct UserProfile {
         p.country_code = obj["country_code"].toString();
         p.created_at = obj["created_at"].toString();
         p.last_login_at = obj["last_login_at"].toString();
+        // SaaS 擴展欄位
+        if (obj.contains("saas")) {
+            p.saas = SaasTenantInfo::from_json(obj["saas"].toObject());
+            p.is_saas_user = true;
+            // SaaS 的 plan 同步到 account_type
+            if (!p.saas.plan.isEmpty())
+                p.account_type = p.saas.plan;
+        }
         return p;
     }
 };

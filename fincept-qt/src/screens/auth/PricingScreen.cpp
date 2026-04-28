@@ -2,6 +2,7 @@
 
 #include "auth/AuthApi.h"
 #include "auth/AuthManager.h"
+#include "core/config/AppConfig.h"
 #include "ui/theme/Theme.h"
 
 #include <QApplication>
@@ -85,6 +86,18 @@ void PricingScreen::build_ui() {
     subtitle->setStyleSheet(
         QString("color: %1; font-size: 13px; background: transparent; %2").arg(ui::colors::TEXT_TERTIARY()).arg(MF));
     vl->addWidget(subtitle);
+
+    // SaaS 模式提示
+    if (fincept::AppConfig::instance().use_saas_auth()) {
+        auto* saas_note = new QLabel("方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform");
+        saas_note->setAlignment(Qt::AlignCenter);
+        saas_note->setStyleSheet(
+            QString("color: %1; font-size: 11px; background: rgba(22,163,74,0.08); "
+                    "border: 1px solid %2; padding: 4px 12px; %3")
+                .arg(ui::colors::POSITIVE(), ui::colors::POSITIVE())
+                .arg(MF));
+        vl->addWidget(saas_note);
+    }
 
     user_info_label_ = new QLabel;
     user_info_label_->setAlignment(Qt::AlignCenter);
@@ -483,8 +496,16 @@ void PricingScreen::on_select_plan(const QString& plan_id) {
             return;
         }
 
-        QString url = QString("https://fincept.in/checkout?token=%1&plan=%2")
-                          .arg(QUrl::toPercentEncoding(token), QUrl::toPercentEncoding(plan_id));
+        QString url;
+        auto& cfg = fincept::AppConfig::instance();
+        if (cfg.use_saas_auth()) {
+            // SaaS 模式：跳轉至 SaaS Dashboard 方案管理頁面
+            url = cfg.saas_base_url() + "/dashboard/settings/billing?plan=" + QUrl::toPercentEncoding(plan_id);
+        } else {
+            // 原生模式：跳轉至 Fincept checkout
+            url = QString("https://fincept.in/checkout?token=%1&plan=%2")
+                      .arg(QUrl::toPercentEncoding(token), QUrl::toPercentEncoding(plan_id));
+        }
         QDesktopServices::openUrl(QUrl(url));
 
         // Store plan before payment so we can detect changes

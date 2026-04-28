@@ -14,10 +14,14 @@ class AppConfig {
     void set(const QString& key, const QVariant& value);
     void remove(const QString& key);
 
-    // Typed accessors for common settings
+    // 既有的 Typed accessors
     QString api_base_url() const;
     bool dark_mode() const;
     int refresh_interval_ms() const;
+
+    // KTW SaaS 整合
+    QString saas_base_url() const;
+    bool use_saas_auth() const;
 
   private:
     AppConfig();

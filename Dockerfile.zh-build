@@ -131,6 +131,19 @@ ENV QT_PLUGIN_PATH=/opt/fincept/plugins
 COPY docker-entrypoint-zh.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+# KTW SaaS 環境變數宣告（容器啟動時由外部注入值）
+ENV KTW_SAAS_URL=""
+ENV KTW_TENANT_ID=""
+ENV KTW_JWT_TOKEN=""
+ENV KTW_LLM_TIER="L1"
+ENV KTW_INTELLIGENCE_ENABLED="true"
+ENV KTW_TRADING_ENABLED="false"
+ENV KTW_HEALTH_PORT=""
+
+# 租戶資料卷掛載點
+VOLUME ["/data/tenant"]
+
 EXPOSE 6080
+EXPOSE 8888
 
 ENTRYPOINT ["/entrypoint.sh"]

@@ -3,6 +3,7 @@
 #include "auth/AuthApi.h"
 #include "auth/PinManager.h"
 #include "auth/UserApi.h"
+#include "core/config/AppConfig.h"
 #include "core/logging/Logger.h"
 #include "network/http/HttpClient.h"
 #include "storage/repositories/LlmConfigRepository.h"
@@ -496,12 +497,12 @@ void AuthManager::auto_configure_fincept_llm() {
     if (session_.api_key.isEmpty())
         return;
 
-    // Always store API key in settings — LlmService resolves it at runtime
+    auto& cfg = fincept::AppConfig::instance();
+
+    // 儲存 API key
     fincept::SettingsRepository::instance().set("fincept_api_key", session_.api_key, "auth");
 
-    // Only create the fincept provider row if it doesn't already exist.
-    // This prevents overwriting the user's model/settings choice on every
-    // session revalidation (~30s interval).
+    // 檢查是否已存在 fincept provider
     auto providers = LlmConfigRepository::instance().list_providers();
     bool fincept_exists = false;
     if (providers.is_ok()) {
@@ -516,13 +517,23 @@ void AuthManager::auto_configure_fincept_llm() {
     if (!fincept_exists) {
         LlmConfig fincept_llm;
         fincept_llm.provider = "fincept";
-        fincept_llm.model = "MiniMax-M2.7";
-        fincept_llm.base_url = {};
+
+        if (cfg.use_saas_auth()) {
+            // SaaS 模式：使用 SaaS LLM 代理端點
+            fincept_llm.model = "saas-auto";
+            fincept_llm.base_url = cfg.saas_base_url() + "/api/fincept/llm";
+            LOG_INFO("Auth", "Created fincept LLM provider config (SaaS mode: " + cfg.saas_base_url() + ")");
+        } else {
+            // 原生模式：使用 MiniMax
+            fincept_llm.model = "MiniMax-M2.7";
+            fincept_llm.base_url = {};
+            LOG_INFO("Auth", "Created fincept LLM provider config");
+        }
+
         LlmConfigRepository::instance().save_provider(fincept_llm);
-        LOG_INFO("Auth", "Created fincept LLM provider config");
     }
 
-    // Set as active if no other provider is currently active
+    // 如果沒有任何 active provider，設為 fincept
     auto active = LlmConfigRepository::instance().get_active_provider();
     bool has_active = active.is_ok() && !active.value().provider.isEmpty();
     if (!has_active)

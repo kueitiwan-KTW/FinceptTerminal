@@ -1,0 +1,109 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# KTW SaaS — Fincept Terminal 容器池編排
+#
+# 架構：多個無狀態 Terminal 容器 + 中央管理器
+# 租戶使用時動態分配容器，不使用時釋放
+#
+# 使用方式：
+#   docker compose -f docker-compose.pool.yml up -d
+#   docker compose -f docker-compose.pool.yml up -d --scale terminal=5
+#
+# 環境變數（由 SaaS 平台注入）：
+#   KTW_SAAS_URL       - SaaS 平台 URL（必填）
+#   KTW_TENANT_ID      - 租戶 ID（容器分配時注入）
+#   KTW_JWT_TOKEN       - 認證 Token（動態簽發）
+#   KTW_LLM_TIER        - AI 等級 (L1/L2/L3)
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── Terminal 容器池（可水平擴展）───────────────────────────────────────────
+  terminal:
+    build:
+      context: .
+      dockerfile: Dockerfile.zh-build
+    image: ktw/fincept-terminal:zh-latest
+    restart: unless-stopped
+    environment:
+      # SaaS 平台連線（必填）
+      KTW_SAAS_URL: "${KTW_SAAS_URL:-https://platform.ktweb.io}"
+
+      # 租戶設定（由 pool-manager 動態注入）
+      KTW_TENANT_ID: "${KTW_TENANT_ID:-}"
+      KTW_JWT_TOKEN: "${KTW_JWT_TOKEN:-}"
+      KTW_LLM_TIER: "${KTW_LLM_TIER:-L1}"
+      KTW_INTELLIGENCE_ENABLED: "${KTW_INTELLIGENCE_ENABLED:-true}"
+      KTW_TRADING_ENABLED: "${KTW_TRADING_ENABLED:-false}"
+
+      # 顯示設定
+      RESOLUTION: "${RESOLUTION:-1920x1080x24}"
+      NOVNC_PORT: "6080"
+
+      # 健康檢查端口
+      KTW_HEALTH_PORT: "8888"
+
+      # 中文語系
+      FINCEPT_LANG: "zh_TW"
+      LANG: "zh_TW.UTF-8"
+      LC_ALL: "zh_TW.UTF-8"
+      TZ: "Asia/Taipei"
+    volumes:
+      # 租戶持久化資料卷（每個容器獨立）
+      - tenant-data:/data/tenant
+    ports:
+      - "${NOVNC_EXTERNAL_PORT:-6080}:6080"   # noVNC Web 存取
+      - "${HEALTH_EXTERNAL_PORT:-8888}:8888"   # 健康檢查
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:8888"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+    networks:
+      - ktw-terminal-net
+
+  # ── Pool Manager（容器池管理器）──────────────────────────────────────────
+  # 負責容器的分配、回收、健康檢查
+  # 這是一個輕量級 API 服務，由 SaaS Platform 呼叫
+  pool-manager:
+    image: ktw/fincept-pool-manager:latest
+    build:
+      context: ./pool-manager
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      KTW_SAAS_URL: "${KTW_SAAS_URL:-https://platform.ktweb.io}"
+      POOL_SIZE: "${POOL_SIZE:-3}"
+      POOL_MAX_SIZE: "${POOL_MAX_SIZE:-10}"
+      POOL_IDLE_TIMEOUT: "${POOL_IDLE_TIMEOUT:-300}"
+      DOCKER_SOCKET: "/var/run/docker.sock"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - pool-state:/data/pool
+    ports:
+      - "${POOL_MANAGER_PORT:-9090}:9090"
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:9090/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      - ktw-terminal-net
+
+volumes:
+  tenant-data:
+    driver: local
+  pool-state:
+    driver: local
+
+networks:
+  ktw-terminal-net:
+    driver: bridge

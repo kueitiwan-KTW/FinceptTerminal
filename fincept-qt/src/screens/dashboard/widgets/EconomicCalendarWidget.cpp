@@ -1,11 +1,14 @@
 #include "screens/dashboard/widgets/EconomicCalendarWidget.h"
 
+#include "core/config/AppConfig.h"
 #include "network/http/HttpClient.h"
+#include "services/KtwIntelligenceService.h"
 #include "ui/theme/Theme.h"
 
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QJsonObject>
+#include <QSet>
 
 namespace fincept::screens::widgets {
 
@@ -31,6 +34,7 @@ EconomicCalendarWidget::EconomicCalendarWidget(QWidget* parent)
     make_hdr("DATE", 2);
     make_hdr("ACT", 1, Qt::AlignRight);
     make_hdr("FCST", 1, Qt::AlignRight);
+    make_hdr("SRC", 1, Qt::AlignRight);  // 來源標示
     make_hdr("IMP", 1, Qt::AlignRight);
     vl->addWidget(header_widget_);
 
@@ -87,48 +91,109 @@ void EconomicCalendarWidget::on_theme_changed() {
 
 void EconomicCalendarWidget::refresh_data() {
     set_loading(true);
+    fincept_events_ = QJsonArray();
+    saas_events_ = QJsonArray();
+    pending_fetches_ = 1;  // Fincept 原生請求必定有
 
-    // Response shape: {"success":true,"data":{"events":[...],"total_count":N,...}}
+    // 檢查是否啟用 SaaS 情報室
+    if (fincept::KtwIntelligenceService::instance().is_available())
+        pending_fetches_ = 2;
+
+    // ── 1. Fincept 原生 API ─────────────────────────────────────────────
     QString url = "https://api.fincept.in/macro/upcoming-events?limit=25";
-
     fincept::HttpClient::instance().get(url, [this](fincept::Result<QJsonDocument> result) {
-        set_loading(false);
-        if (!result.is_ok()) {
-            status_label_->setVisible(true);
-            status_label_->setText(tr("Failed to load calendar"));
-            return;
-        }
-
-        auto doc = result.value();
-        QJsonArray events;
-
-        if (doc.isObject()) {
-            auto root = doc.object();
-            // {"success":true,"data":{"events":[...]}}
-            if (root.contains("data") && root["data"].isObject()) {
-                auto data = root["data"].toObject();
-                if (data.contains("events") && data["events"].isArray())
-                    events = data["events"].toArray();
+        if (result.is_ok()) {
+            auto doc = result.value();
+            QJsonArray events;
+            if (doc.isObject()) {
+                auto root = doc.object();
+                if (root.contains("data") && root["data"].isObject()) {
+                    auto data = root["data"].toObject();
+                    if (data.contains("events") && data["events"].isArray())
+                        events = data["events"].toArray();
+                }
+                if (events.isEmpty() && root.contains("data") && root["data"].isArray())
+                    events = root["data"].toArray();
+                if (events.isEmpty() && root.contains("events") && root["events"].isArray())
+                    events = root["events"].toArray();
+            } else if (doc.isArray()) {
+                events = doc.array();
             }
-            // fallback: {"data":[...]}
-            if (events.isEmpty() && root.contains("data") && root["data"].isArray())
-                events = root["data"].toArray();
-            // fallback: {"events":[...]}
-            if (events.isEmpty() && root.contains("events") && root["events"].isArray())
-                events = root["events"].toArray();
-        } else if (doc.isArray()) {
-            events = doc.array();
+            // 標記來源為 Fincept
+            for (int i = 0; i < events.size(); ++i) {
+                auto obj = events[i].toObject();
+                obj["_source"] = "FIN";
+                events[i] = obj;
+            }
+            fincept_events_ = events;
         }
-
-        if (events.isEmpty()) {
-            status_label_->setVisible(true);
-            status_label_->setText(tr("No events available"));
-            return;
-        }
-
-        status_label_->setVisible(false);
-        populate(events);
+        --pending_fetches_;
+        if (pending_fetches_ <= 0)
+            merge_and_populate();
     });
+
+    // ── 2. SaaS 情報室 API（可用時）──────────────────────────────────────
+    if (fincept::KtwIntelligenceService::instance().is_available())
+        fetch_saas_data();
+}
+
+void EconomicCalendarWidget::fetch_saas_data() {
+    using DT = fincept::KtwIntelligenceService::DataType;
+    fincept::KtwIntelligenceService::instance().fetch(DT::Calendar, 25,
+        [this](fincept::KtwIntelligenceService::IntelligenceResult result) {
+            if (result.success) {
+                QJsonArray events;
+                for (const auto& item : result.items) {
+                    QJsonObject obj = item.raw;
+                    // 確保基本欄位存在
+                    if (!obj.contains("event") && !item.title.isEmpty())
+                        obj["event"] = item.title;
+                    obj["_source"] = "KTW";  // 標記來源為 KTW SaaS
+                    events.append(obj);
+                }
+                saas_events_ = events;
+            }
+            --pending_fetches_;
+            if (pending_fetches_ <= 0)
+                merge_and_populate();
+        });
+}
+
+void EconomicCalendarWidget::merge_and_populate() {
+    set_loading(false);
+
+    // 合併兩路數據
+    QJsonArray merged;
+    QSet<QString> seen_keys;
+
+    // 先加入 Fincept 原生數據
+    for (const auto& v : fincept_events_) {
+        auto obj = v.toObject();
+        QString key = obj["event"].toString().toLower().trimmed() + "|" + obj["date"].toString();
+        if (!seen_keys.contains(key)) {
+            seen_keys.insert(key);
+            merged.append(v);
+        }
+    }
+
+    // 再加入 SaaS 數據（去重）
+    for (const auto& v : saas_events_) {
+        auto obj = v.toObject();
+        QString key = obj["event"].toString().toLower().trimmed() + "|" + obj["date"].toString();
+        if (!seen_keys.contains(key)) {
+            seen_keys.insert(key);
+            merged.append(v);
+        }
+    }
+
+    if (merged.isEmpty()) {
+        status_label_->setVisible(true);
+        status_label_->setText(tr("No events available"));
+        return;
+    }
+
+    status_label_->setVisible(false);
+    populate(merged);
 }
 
 void EconomicCalendarWidget::populate(const QJsonArray& events) {
@@ -224,6 +289,15 @@ void EconomicCalendarWidget::populate(const QJsonArray& events) {
         imp_lbl->setStyleSheet(
             QString("color: %1; font-size: 9px; font-weight: bold; background: transparent;").arg(imp_color));
         rl->addWidget(imp_lbl, 1);
+
+        // 數據來源標示
+        QString src = e["_source"].toString("FIN");
+        QString src_color = (src == "KTW") ? ui::colors::POSITIVE() : ui::colors::TEXT_TERTIARY();
+        auto* src_lbl = new QLabel(src);
+        src_lbl->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
+        src_lbl->setStyleSheet(
+            QString("color: %1; font-size: 8px; font-weight: bold; background: transparent;").arg(src_color));
+        rl->addWidget(src_lbl, 1);
 
         list_layout_->addWidget(row);
         alt = !alt;

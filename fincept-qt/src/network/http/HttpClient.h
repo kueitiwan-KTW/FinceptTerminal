@@ -31,6 +31,11 @@ class HttpClient : public QObject {
     void clear_session_token();
     void set_base_url(const QString& base);
 
+    // KTW SaaS 專用方法（使用 saas_base_url 而非 api_base_url）
+    void saas_get(const QString& path, JsonCallback callback);
+    void saas_post(const QString& path, const QJsonObject& body, JsonCallback callback);
+    void saas_put(const QString& path, const QJsonObject& body, JsonCallback callback);
+
   private:
     HttpClient();
     QNetworkRequest build_request(const QString& url) const;

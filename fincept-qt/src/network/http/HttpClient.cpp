@@ -1,5 +1,6 @@
 #include "network/http/HttpClient.h"
 
+#include "core/config/AppConfig.h"
 #include "core/logging/Logger.h"
 
 #include <QUrl>
@@ -128,6 +129,28 @@ void HttpClient::clear_session_token() {
 
 void HttpClient::set_base_url(const QString& base) {
     base_url_ = base;
+}
+
+// ── KTW SaaS 專用方法 ──────────────────────────────────────────────────────
+// 使用 AppConfig::saas_base_url() 建構完整 URL
+// 認證方式：Authorization: Bearer <JWT>（而非 X-API-Key）
+
+void HttpClient::saas_get(const QString& path, JsonCallback callback) {
+    auto& cfg = fincept::AppConfig::instance();
+    QString full_url = cfg.saas_base_url() + path;
+    get(full_url, std::move(callback));
+}
+
+void HttpClient::saas_post(const QString& path, const QJsonObject& body, JsonCallback callback) {
+    auto& cfg = fincept::AppConfig::instance();
+    QString full_url = cfg.saas_base_url() + path;
+    post(full_url, body, std::move(callback));
+}
+
+void HttpClient::saas_put(const QString& path, const QJsonObject& body, JsonCallback callback) {
+    auto& cfg = fincept::AppConfig::instance();
+    QString full_url = cfg.saas_base_url() + path;
+    put(full_url, body, std::move(callback));
 }
 
 } // namespace fincept

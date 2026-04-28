@@ -1,5 +1,6 @@
 #include "auth/AuthApi.h"
 
+#include "core/config/AppConfig.h"
 #include "core/logging/Logger.h"
 #include "network/http/HttpClient.h"
 
@@ -175,13 +176,42 @@ void AuthApi::request(const QString& method, const QString& endpoint, const QJso
 // ── Health ───────────────────────────────────────────────────────────────────
 
 void AuthApi::check_health(std::function<void(bool)> cb) {
-    request("GET", "/health", {}, [cb](ApiResponse r) { cb(r.success); });
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        // SaaS 模式：呼叫 SaaS 健康檢查端點
+        auto& http = fincept::HttpClient::instance();
+        http.saas_get("/api/fincept/health", [cb](fincept::Result<QJsonDocument> r) {
+            cb(r.is_ok());
+        });
+    } else {
+        request("GET", "/health", {}, [cb](ApiResponse r) { cb(r.success); });
+    }
 }
 
 // ── Unauthenticated auth endpoints ───────────────────────────────────────────
 
 void AuthApi::login(const LoginRequest& req, Callback cb) {
-    request("POST", "/user/login", req.to_json(), cb);
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        // SaaS 模式：呼叫 /api/fincept/auth
+        auto& http = fincept::HttpClient::instance();
+        http.saas_post("/api/fincept/auth", req.to_json(), [cb](fincept::Result<QJsonDocument> r) {
+            if (r.is_err()) {
+                cb({false, {}, QString::fromStdString(r.error()), 0});
+                return;
+            }
+            auto obj = r.value().object();
+            bool success = obj["success"].toBool();
+            if (!success) {
+                cb({false, obj, obj["error"].toString("Login failed"), 403});
+                return;
+            }
+            // SaaS 回傳格式：{success: true, data: {api_key, session_token, ...}}
+            cb({true, obj, {}, 200});
+        });
+    } else {
+        request("POST", "/user/login", req.to_json(), cb);
+    }
 }
 
 void AuthApi::register_user(const RegisterRequest& req, Callback cb) {
@@ -218,11 +248,37 @@ void AuthApi::logout(Callback cb) {
 }
 
 void AuthApi::session_pulse(Callback cb) {
-    request("GET", "/user/session-pulse", {}, cb);
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        auto& http = fincept::HttpClient::instance();
+        http.saas_get("/api/fincept/pulse", [cb](fincept::Result<QJsonDocument> r) {
+            if (r.is_err()) {
+                cb({false, {}, "Pulse failed", 0});
+                return;
+            }
+            cb({true, r.value().object(), {}, 200});
+        });
+    } else {
+        request("GET", "/user/session-pulse", {}, cb);
+    }
 }
 
 void AuthApi::get_user_profile(Callback cb) {
-    request("GET", "/user/profile", {}, cb);
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        auto& http = fincept::HttpClient::instance();
+        http.saas_get("/api/fincept/profile", [cb](fincept::Result<QJsonDocument> r) {
+            if (r.is_err()) {
+                cb({false, {}, QString::fromStdString(r.error()), 0});
+                return;
+            }
+            auto obj = r.value().object();
+            bool success = obj["success"].toBool();
+            cb({success, obj, obj["error"].toString(), success ? 200 : 401});
+        });
+    } else {
+        request("GET", "/user/profile", {}, cb);
+    }
 }
 
 void AuthApi::update_user_profile(const QJsonObject& data, Callback cb) {
@@ -230,7 +286,20 @@ void AuthApi::update_user_profile(const QJsonObject& data, Callback cb) {
 }
 
 void AuthApi::validate_api_key(Callback cb) {
-    request("GET", "/auth/validate", {}, cb);
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        auto& http = fincept::HttpClient::instance();
+        http.saas_get("/api/fincept/validate", [cb](fincept::Result<QJsonDocument> r) {
+            if (r.is_err()) {
+                cb({false, {}, "Token invalid", 401});
+                return;
+            }
+            auto obj = r.value().object();
+            cb({obj["valid"].toBool(), obj, {}, 200});
+        });
+    } else {
+        request("GET", "/auth/validate", {}, cb);
+    }
 }
 
 void AuthApi::regenerate_api_key(Callback cb) {
@@ -240,7 +309,19 @@ void AuthApi::regenerate_api_key(Callback cb) {
 // ── Subscription / payment ────────────────────────────────────────────────────
 
 void AuthApi::get_subscription_plans(Callback cb) {
-    request("GET", "/cashfree/plans", {}, cb);
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        auto& http = fincept::HttpClient::instance();
+        http.saas_get("/api/fincept/plans", [cb](fincept::Result<QJsonDocument> r) {
+            if (r.is_err()) {
+                cb({false, {}, "Failed to fetch plans", 0});
+                return;
+            }
+            cb({true, r.value().object(), {}, 200});
+        });
+    } else {
+        request("GET", "/cashfree/plans", {}, cb);
+    }
 }
 
 void AuthApi::generate_checkout_token(const QString& plan_id, Callback cb) {

@@ -717,6 +717,8 @@ set(SERVICE_SOURCES
     src/services/workflow/WorkflowExecutor.cpp
     src/services/workflow/ExpressionEngine.cpp
 
+    # KTW SaaS 情報室數據服務
+    src/services/KtwIntelligenceService.cpp
     src/services/workspace/WorkspaceSerializer.cpp
     src/services/workspace/WorkspaceManager.cpp
     src/services/workspace/WorkspaceTemplates.cpp
