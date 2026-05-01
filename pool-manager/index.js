@@ -46,6 +46,84 @@ const pool = new Map()
 
 let nextPort = 6081 // noVNC 端口分配起始值
 
+// ── 啟動時掃描既有容器 ─────────────────────────────────────────────────────
+
+/**
+ * 掃描 Docker 中帶有 ktw.pool=terminal label 的已存在容器
+ * 將正在運行的容器納入記憶體池，避免重啟後容器脫鉤導致名稱衝突（409）
+ */
+async function scanExistingContainers() {
+  try {
+    const containers = await docker.listContainers({
+      all: true, // 包含已停止的
+      filters: { label: ['ktw.pool=terminal'] },
+    })
+
+    let adopted = 0
+    let cleaned = 0
+
+    for (const info of containers) {
+      const shortId = info.Id.substring(0, 12)
+      const name = (info.Names?.[0] || '').replace(/^\//, '')
+      const isRunning = info.State === 'running'
+      const tenantLabel = info.Labels?.['ktw.tenant'] || ''
+
+      // 從端口綁定中取得 noVNC 端口（6080 對應的 HostPort）
+      let hostPort = 0
+      const portBindings = info.Ports || []
+      for (const p of portBindings) {
+        if (p.PrivatePort === 6080 && p.PublicPort) {
+          hostPort = p.PublicPort
+          break
+        }
+      }
+
+      if (!isRunning) {
+        // 已停止的容器 → 移除，避免名稱佔用
+        try {
+          const container = docker.getContainer(info.Id)
+          await container.remove({ force: true })
+          cleaned++
+          console.log(`[掃描] 🧹 已移除停止的容器: ${name || shortId}`)
+        } catch (err) {
+          console.error(`[掃描] 移除失敗: ${name || shortId}`, err.message)
+        }
+        continue
+      }
+
+      if (!hostPort) {
+        console.log(`[掃描] ⚠️ 容器 ${name || shortId} 無 noVNC 端口綁定，跳過`)
+        continue
+      }
+
+      // 納入記憶體池
+      const entry = {
+        containerId: shortId,
+        status: tenantLabel ? 'assigned' : 'idle',
+        tenantId: tenantLabel || null,
+        noVncUrl: tenantLabel ? `http://localhost:${hostPort}/vnc.html` : null,
+        port: hostPort,
+        assignedAt: tenantLabel ? now() : 0,
+        lastActivity: now(),
+      }
+      pool.set(shortId, entry)
+      adopted++
+
+      // 同步 nextPort：確保不會分配到已佔用的端口
+      if (hostPort >= nextPort) {
+        nextPort = hostPort + 1
+        if (nextPort > 6200) nextPort = 6081
+      }
+
+      console.log(`[掃描] ✅ 納管容器: ${name || shortId} (port=${hostPort}${tenantLabel ? `, tenant=${tenantLabel}` : ''})`)
+    }
+
+    console.log(`[掃描] 完成 — 納管 ${adopted} 個運行中容器，清理 ${cleaned} 個已停止容器`)
+  } catch (err) {
+    console.error('[掃描] ❌ 掃描失敗:', err.message)
+  }
+}
+
 // ── 工具函式 ────────────────────────────────────────────────────────────────
 
 function now() { return Date.now() }
@@ -95,48 +173,67 @@ async function createTerminalContainer(tenantId = null, options = {}) {
     binds.push(`fincept-tenant-${tenantId}-data:/data/tenant`)
   }
 
-  try {
-    const container = await docker.createContainer({
-      Image: IMAGE_NAME,
-      name: tenantId ? `fincept-${tenantId}` : undefined,
-      Env: env,
-      ExposedPorts: { '6080/tcp': {}, '8888/tcp': {} },
-      HostConfig: {
-        PortBindings: {
-          '6080/tcp': [{ HostPort: String(port) }],
-          '8888/tcp': [{ HostPort: String(port + 1000) }],
+  // 建立容器（含 409 名稱衝突自動清理重試）
+  const containerName = tenantId ? `fincept-${tenantId}` : undefined
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const container = await docker.createContainer({
+        Image: IMAGE_NAME,
+        name: containerName,
+        Env: env,
+        ExposedPorts: { '6080/tcp': {}, '8888/tcp': {} },
+        HostConfig: {
+          PortBindings: {
+            '6080/tcp': [{ HostPort: String(port) }],
+            '8888/tcp': [{ HostPort: String(port + 1000) }],
+          },
+          Binds: binds.length > 0 ? binds : undefined,
+          RestartPolicy: { Name: 'unless-stopped' },
+          Memory: 2 * 1024 * 1024 * 1024,  // 2GB
+          NanoCpus: 2 * 1e9,               // 2 CPU
         },
-        Binds: binds.length > 0 ? binds : undefined,
-        RestartPolicy: { Name: 'unless-stopped' },
-        Memory: 2 * 1024 * 1024 * 1024,  // 2GB
-        NanoCpus: 2 * 1e9,               // 2 CPU
-      },
-      Labels: {
-        'ktw.pool': 'terminal',
-        'ktw.status': tenantId ? 'assigned' : 'idle',
-        'ktw.tenant': tenantId || '',
-      },
-    })
+        Labels: {
+          'ktw.pool': 'terminal',
+          'ktw.status': tenantId ? 'assigned' : 'idle',
+          'ktw.tenant': tenantId || '',
+        },
+      })
 
-    await container.start()
+      await container.start()
 
-    const entry = {
-      containerId: container.id.substring(0, 12),
-      status: tenantId ? 'assigned' : 'idle',
-      tenantId: tenantId || null,
-      noVncUrl: tenantId ? `http://localhost:${port}/vnc.html` : null,
-      port,
-      assignedAt: tenantId ? now() : 0,
-      lastActivity: now(),
+      const entry = {
+        containerId: container.id.substring(0, 12),
+        status: tenantId ? 'assigned' : 'idle',
+        tenantId: tenantId || null,
+        noVncUrl: tenantId ? `http://localhost:${port}/vnc.html` : null,
+        port,
+        assignedAt: tenantId ? now() : 0,
+        lastActivity: now(),
+      }
+
+      pool.set(entry.containerId, entry)
+      console.log(`[Pool] ✅ 容器已建立: ${entry.containerId} (port=${port}${tenantId ? `, tenant=${tenantId}` : ''})`)
+      return entry
+    } catch (err) {
+      // HTTP 409: 容器名稱衝突 → 移除舊容器後重試
+      if (err.statusCode === 409 && containerName && attempt === 0) {
+        console.log(`[Pool] ⚠️ 名稱衝突: ${containerName}，嘗試移除舊容器後重建...`)
+        try {
+          const old = docker.getContainer(containerName)
+          await old.stop({ t: 5 }).catch(() => {}) // 可能已停止
+          await old.remove({ force: true })
+          console.log(`[Pool] 🧹 舊容器 ${containerName} 已移除`)
+          continue // 重試建立
+        } catch (cleanErr) {
+          console.error(`[Pool] ❌ 移除舊容器失敗:`, cleanErr.message)
+        }
+      }
+      console.error(`[Pool] ❌ 建立容器失敗:`, err.message)
+      return null
     }
-
-    pool.set(entry.containerId, entry)
-    console.log(`[Pool] ✅ 容器已建立: ${entry.containerId} (port=${port}${tenantId ? `, tenant=${tenantId}` : ''})`)
-    return entry
-  } catch (err) {
-    console.error(`[Pool] ❌ 建立容器失敗:`, err.message)
-    return null
   }
+  return null
 }
 
 /**
@@ -315,5 +412,8 @@ server.listen(PORT, async () => {
   console.log(`  模式: 按需建立（allocate 時建立，release 時銷毀）`)
   console.log(`${'═'.repeat(60)}\n`)
 
-  console.log(`[啟動] ✅ 容器池管理器就緒，等待租戶分配請求...`)
+  // 啟動時掃描並納管已存在的 Docker 容器
+  await scanExistingContainers()
+
+  console.log(`[啟動] ✅ 容器池管理器就緒（池中 ${pool.size} 個容器），等待租戶分配請求...`)
 })
