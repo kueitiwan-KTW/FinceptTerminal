@@ -236,6 +236,10 @@ RUN rm -rf ${FINCEPT_ROOT}/uv-cache /root/.cache
 COPY docker-entrypoint-zh.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+# Fluxbox kiosk 模式設定 — 強制 FinceptTerminal 視窗永遠最大化
+COPY fluxbox-apps /root/.fluxbox/apps
+COPY fluxbox-init /root/.fluxbox/init
+
 # KTW SaaS 環境變數宣告（容器啟動時由外部注入值）
 ENV KTW_SAAS_URL=""
 ENV KTW_TENANT_ID=""

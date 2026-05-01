@@ -94,7 +94,8 @@ trap save_tenant_data SIGTERM SIGINT EXIT
 Xvfb "${DISPLAY}" -screen 0 "${RESOLUTION}" -ac +extension GLX &
 sleep 1
 
-# 啟動視窗管理器
+# 啟動視窗管理器（kiosk 模式 — 強制最大化、無視窗裝飾）
+echo "[Kiosk] 啟動 fluxbox kiosk 模式（視窗永遠最大化）"
 fluxbox -display "${DISPLAY}" &
 sleep 0.5
 

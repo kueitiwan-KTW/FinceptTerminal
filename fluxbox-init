@@ -1,0 +1,21 @@
+# Fluxbox 初始化設定 — KTW SaaS Kiosk 模式
+# 隱藏不需要的 UI 元素，打造乾淨的金融終端環境
+
+# 停用工具列和 Slit
+session.screen0.toolbar.visible: false
+session.screen0.slit.autoHide: true
+session.screen0.slit.onTop: false
+
+# 停用視窗標籤和裝飾
+session.screen0.tab.width: 0
+session.screen0.defaultDeco: NONE
+
+# 停用桌面滾輪切換
+session.screen0.desktopwheeling: false
+
+# 焦點模式
+session.screen0.focusModel: ClickFocus
+
+# 停用最大化時的視窗裝飾
+session.screen0.maxDisableResize: true
+session.screen0.maxDisableMove: true

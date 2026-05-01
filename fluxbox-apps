@@ -1,0 +1,17 @@
+# Fluxbox 應用規則 — KTW SaaS Kiosk 模式
+# 強制 FinceptTerminal 視窗永遠最大化，移除視窗裝飾
+# 租戶無法縮小、移動或調整視窗大小
+
+[app] (name=FinceptTerminal)
+  [Maximized]   {yes}
+  [Deco]        {NONE}
+  [Layer]       {2}
+  [Dimensions]  {100% 100%}
+  [Position]    (UPPERLEFT)  {0 0}
+[end]
+
+# 通用 fallback — 所有其他視窗也最大化（防止彈出視窗脫離 kiosk）
+[app] (name=.*)
+  [Maximized]   {yes}
+  [Deco]        {NONE}
+[end]
