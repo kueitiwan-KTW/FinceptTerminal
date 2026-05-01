@@ -97,7 +97,7 @@
         </message>
         <message>
             <source> First-time setup (4 steps)</source>
-            <translation> First-time setup (4 steps)</translation>
+            <translation> 首次設定（4 個步驟）</translation>
         </message>
         <message>
             <source> [%1]</source>
@@ -3025,7 +3025,7 @@
         </message>
         <message>
             <source>Fincept Terminal — First-Time Setup</source>
-            <translation>Fincept Terminal — First-Time Setup</translation>
+            <translation>Fincept Terminal — 首次設定</translation>
         </message>
         <message>
             <source>Fincept async poll %1 status=%2</source>
@@ -6057,7 +6057,7 @@
         </message>
         <message>
             <source>Takes about 3–5 minutes. Needs an internet connection.</source>
-            <translation>Takes about 3–5 minutes. Needs an internet connection.</translation>
+            <translation>大約需要 3–5 分鐘。需要網路連線。</translation>
         </message>
         <message>
             <source>Target returns (comma-separated)</source>
