@@ -118,6 +118,10 @@ RUN apt-get update && apt-get install -y \
     xvfb x11vnc novnc websockify fluxbox \
     fonts-noto-cjk fonts-noto-cjk-extra \
     locales curl ca-certificates netcat-openbsd \
+    # 預烘焙 Python 套件編譯所需（PyAudio 需 portaudio + gcc）
+    build-essential gcc g++ \
+    portaudio19-dev libffi-dev libsqlite3-dev \
+    libhdf5-dev pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
 RUN locale-gen zh_TW.UTF-8
@@ -177,6 +181,7 @@ RUN UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
 RUN UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
     UV_COMPILE_BYTECODE=1 \
     UV_HTTP_TIMEOUT=120 \
+    PEEWEE_NO_SQLITE_EXTENSIONS=1 \
     ${FINCEPT_ROOT}/uv/uv pip install \
       --python ${FINCEPT_ROOT}/venv-numpy2/bin/python3 \
       -r /opt/fincept/bin/resources/requirements-numpy2.txt
