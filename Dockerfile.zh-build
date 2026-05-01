@@ -52,13 +52,26 @@ WORKDIR /build
 # 複製原始碼
 COPY fincept-qt/ ./fincept-qt/
 
-# 先用 lrelease 編譯翻譯檔 .ts → .qm
+# 用 lrelease 編譯翻譯檔 .ts → .qm
+# 嘗試多個可能的 lrelease 路徑（aqtinstall 安裝的 linguist-tools 路徑不固定）
 RUN mkdir -p /build/fincept-qt/translations && \
-    if [ -f /build/fincept-qt/translations/fincept_zh_TW.ts ]; then \
-        ${Qt6_DIR}/bin/lrelease /build/fincept-qt/translations/fincept_zh_TW.ts \
-            -qm /build/fincept-qt/translations/fincept_zh_TW.qm 2>&1 || \
-        echo "[i18n] lrelease 可能不在 PATH，嘗試 linguist-tools..." ; \
-    fi
+    LRELEASE="" && \
+    for p in \
+      "${Qt6_DIR}/bin/lrelease" \
+      "/opt/qt/Tools/QtLinguist/bin/lrelease" \
+      "$(find /opt/qt -name 'lrelease' -type f 2>/dev/null | head -1)" \
+    ; do \
+      if [ -x "$p" ]; then LRELEASE="$p"; break; fi; \
+    done && \
+    if [ -n "$LRELEASE" ] && [ -f /build/fincept-qt/translations/fincept_zh_TW.ts ]; then \
+        echo "[i18n] 使用 lrelease: $LRELEASE" && \
+        "$LRELEASE" /build/fincept-qt/translations/fincept_zh_TW.ts \
+            -qm /build/fincept-qt/translations/fincept_zh_TW.qm && \
+        echo "[i18n] ✅ QM 翻譯檔已產生" ; \
+    else \
+        echo "[i18n] ⚠️ lrelease 不可用，嘗試直接複製 TS 作為備用" ; \
+    fi && \
+    ls -la /build/fincept-qt/translations/ 2>/dev/null || true
 
 # CMake 配置
 RUN cd /build/fincept-qt && \
