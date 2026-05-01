@@ -64,36 +64,57 @@ async function readBody(req) {
 // ── 容器管理 ────────────────────────────────────────────────────────────────
 
 /**
- * 建立一個新的 Terminal 容器（預熱狀態）
+ * 建立一個新的 Terminal 容器
+ * @param {string|null} tenantId - 指定租戶時掛載對應的具名 Volume
+ * @param {Object} options - 環境變數選項
  */
-async function createTerminalContainer() {
+async function createTerminalContainer(tenantId = null, options = {}) {
   const port = nextPort++
   if (nextPort > 6200) nextPort = 6081 // 端口循環使用
+
+  // 環境變數（容器啟動時 entrypoint.sh 會讀取這些值）
+  const env = [
+    `KTW_SAAS_URL=${SAAS_URL}`,
+    'KTW_HEALTH_PORT=8888',
+    'FINCEPT_LANG=zh_TW',
+    'LANG=zh_TW.UTF-8',
+    'TZ=Asia/Taipei',
+    'RESOLUTION=1920x1080x24',
+    `KTW_TENANT_ID=${tenantId || ''}`,
+    `KTW_JWT_TOKEN=${options.jwtToken || ''}`,
+    `KTW_LLM_TIER=${options.llmTier || 'L1'}`,
+    `KTW_INTELLIGENCE_ENABLED=${options.intelligenceEnabled !== false}`,
+    `KTW_TRADING_ENABLED=${options.tradingEnabled === true}`,
+  ]
+
+  // Volume 掛載：租戶資料隔離
+  const binds = []
+  if (tenantId) {
+    // 使用 Docker 具名 Volume（fincept-tenant-{id}-data）
+    // entrypoint.sh 會將 /data/tenant 內的子目錄 symlink 到 Fincept 工作目錄
+    binds.push(`fincept-tenant-${tenantId}-data:/data/tenant`)
+  }
 
   try {
     const container = await docker.createContainer({
       Image: IMAGE_NAME,
-      Env: [
-        `KTW_SAAS_URL=${SAAS_URL}`,
-        'KTW_HEALTH_PORT=8888',
-        'FINCEPT_LANG=zh_TW',
-        'LANG=zh_TW.UTF-8',
-        'TZ=Asia/Taipei',
-        'RESOLUTION=1920x1080x24',
-      ],
+      name: tenantId ? `fincept-${tenantId}` : undefined,
+      Env: env,
       ExposedPorts: { '6080/tcp': {}, '8888/tcp': {} },
       HostConfig: {
         PortBindings: {
           '6080/tcp': [{ HostPort: String(port) }],
-          '8888/tcp': [{ HostPort: String(port + 1000) }], // 健康檢查端口 = noVNC + 1000
+          '8888/tcp': [{ HostPort: String(port + 1000) }],
         },
+        Binds: binds.length > 0 ? binds : undefined,
         RestartPolicy: { Name: 'unless-stopped' },
         Memory: 2 * 1024 * 1024 * 1024,  // 2GB
         NanoCpus: 2 * 1e9,               // 2 CPU
       },
       Labels: {
         'ktw.pool': 'terminal',
-        'ktw.status': 'idle',
+        'ktw.status': tenantId ? 'assigned' : 'idle',
+        'ktw.tenant': tenantId || '',
       },
     })
 
@@ -101,16 +122,16 @@ async function createTerminalContainer() {
 
     const entry = {
       containerId: container.id.substring(0, 12),
-      status: 'idle',
-      tenantId: null,
-      noVncUrl: null,
+      status: tenantId ? 'assigned' : 'idle',
+      tenantId: tenantId || null,
+      noVncUrl: tenantId ? `http://localhost:${port}/vnc.html` : null,
       port,
-      assignedAt: 0,
+      assignedAt: tenantId ? now() : 0,
       lastActivity: now(),
     }
 
     pool.set(entry.containerId, entry)
-    console.log(`[Pool] ✅ 容器已建立: ${entry.containerId} (port=${port})`)
+    console.log(`[Pool] ✅ 容器已建立: ${entry.containerId} (port=${port}${tenantId ? `, tenant=${tenantId}` : ''})`)
     return entry
   } catch (err) {
     console.error(`[Pool] ❌ 建立容器失敗:`, err.message)
@@ -120,6 +141,7 @@ async function createTerminalContainer() {
 
 /**
  * 分配容器給租戶
+ * 策略：直接建立帶有正確 env + volume 的容器（非 exec 注入，因為 exec export 只在子 shell 生效）
  */
 async function allocateContainer(tenantId, jwtToken, options = {}) {
   // 檢查該租戶是否已有容器
@@ -130,70 +152,42 @@ async function allocateContainer(tenantId, jwtToken, options = {}) {
     }
   }
 
-  // 找一個閒置容器
-  let target = null
-  for (const [, entry] of pool) {
-    if (entry.status === 'idle') {
-      target = entry
-      break
-    }
-  }
-
-  // 沒有閒置容器 → 動態建立（不超過上限）
-  if (!target) {
-    if (pool.size >= MAX_SIZE) {
-      return null // 容器池已滿
-    }
-    target = await createTerminalContainer()
-    if (!target) return null
-  }
-
-  // 注入租戶環境變數（透過 Docker exec 設定）
-  try {
-    const container = docker.getContainer(target.containerId)
-
-    // 透過 exec 寫入租戶設定檔
-    const exec = await container.exec({
-      Cmd: ['sh', '-c', `
-        export KTW_TENANT_ID="${tenantId}"
-        export KTW_JWT_TOKEN="${jwtToken || ''}"
-        export KTW_LLM_TIER="${options.llmTier || 'L1'}"
-        export KTW_INTELLIGENCE_ENABLED="${options.intelligenceEnabled !== false}"
-        export KTW_TRADING_ENABLED="${options.tradingEnabled === true}"
-        echo '{"tenantId":"${tenantId}","assignedAt":"'$(date -Iseconds)'"}' > /data/tenant/assignment.json
-      `],
-      AttachStdout: false,
-      AttachStderr: false,
-    })
-    await exec.start()
-
-    target.status = 'assigned'
-    target.tenantId = tenantId
-    target.noVncUrl = `http://localhost:${target.port}/vnc.html`
-    target.assignedAt = now()
-    target.lastActivity = now()
-
-    console.log(`[Pool] 🔗 容器 ${target.containerId} 已分配給租戶 ${tenantId}`)
-    return target
-  } catch (err) {
-    console.error(`[Pool] ❌ 分配失敗:`, err.message)
+  // 超過上限 → 拒絕
+  if (pool.size >= MAX_SIZE) {
     return null
   }
+
+  // 直接建立帶租戶設定的容器（環境變數 + Volume 掛載在 create 時設定）
+  const entry = await createTerminalContainer(tenantId, {
+    jwtToken,
+    llmTier: options.llmTier,
+    intelligenceEnabled: options.intelligenceEnabled,
+    tradingEnabled: options.tradingEnabled,
+  })
+
+  if (!entry) return null
+
+  console.log(`[Pool] 🔗 容器 ${entry.containerId} 已分配給租戶 ${tenantId}`)
+  return entry
 }
 
 /**
- * 釋放租戶容器（歸池）
+ * 釋放租戶容器（停止 + 移除，因為每個容器帶有租戶專屬 Volume 和 env）
+ * 租戶資料保留在具名 Volume 中（fincept-tenant-{id}-data），下次 allocate 會重新掛載
  */
 async function releaseContainer(tenantId) {
-  for (const [, entry] of pool) {
+  for (const [id, entry] of pool) {
     if (entry.tenantId === tenantId && entry.status === 'assigned') {
-      entry.status = 'idle'
-      entry.tenantId = null
-      entry.noVncUrl = null
-      entry.assignedAt = 0
-      entry.lastActivity = now()
-
-      console.log(`[Pool] 🔓 容器 ${entry.containerId} 已歸池（租戶 ${tenantId}）`)
+      try {
+        const container = docker.getContainer(entry.containerId)
+        await container.stop({ t: 10 })
+        await container.remove()
+        pool.delete(id)
+        console.log(`[Pool] 🔓 容器 ${entry.containerId} 已停止並移除（租戶 ${tenantId}，資料保留在 Volume）`)
+      } catch (err) {
+        console.error(`[Pool] 釋放失敗: ${entry.containerId}`, err.message)
+        pool.delete(id)
+      }
       return true
     }
   }
@@ -203,40 +197,30 @@ async function releaseContainer(tenantId) {
 // ── 定期維護 ────────────────────────────────────────────────────────────────
 
 /**
- * 清理閒置過久的容器（保留最低 POOL_SIZE 個）
+ * 健康檢查 + 清理異常容器
+ * 按需建立模式下不需要預熱，只需要清理
  */
 async function maintenance() {
-  const idleEntries = [...pool.values()].filter(e => e.status === 'idle')
-
-  // 超過基礎池大小的閒置容器，且閒置超過逾時
-  for (const entry of idleEntries) {
-    if (pool.size <= POOL_SIZE) break
-    if (now() - entry.lastActivity > IDLE_TIMEOUT * 1000) {
+  for (const [id, entry] of pool) {
+    if (entry.status === 'assigned') {
+      // 檢查已分配容器是否還活著
       try {
         const container = docker.getContainer(entry.containerId)
-        await container.stop({ t: 10 })
-        await container.remove()
-        pool.delete(entry.containerId)
-        console.log(`[維護] 🗑️ 移除閒置容器: ${entry.containerId}`)
-      } catch (err) {
-        console.error(`[維護] 移除失敗: ${entry.containerId}`, err.message)
+        const info = await container.inspect()
+        if (!info.State.Running) {
+          console.log(`[維護] ⚠️ 容器 ${id} 已停止，從池中移除`)
+          pool.delete(id)
+        }
+      } catch {
+        console.log(`[維護] ⚠️ 容器 ${id} 不存在，從池中移除`)
+        pool.delete(id)
       }
-    }
-  }
-
-  // 確保池中至少有 POOL_SIZE 個容器
-  const total = pool.size
-  if (total < POOL_SIZE) {
-    const needed = POOL_SIZE - total
-    console.log(`[維護] 預熱 ${needed} 個容器...`)
-    for (let i = 0; i < needed; i++) {
-      await createTerminalContainer()
     }
   }
 }
 
-// 每 30 秒維護一次
-setInterval(maintenance, 30_000)
+// 每 60 秒維護一次
+setInterval(maintenance, 60_000)
 
 // ── HTTP 伺服器 ─────────────────────────────────────────────────────────────
 
@@ -327,14 +311,9 @@ server.listen(PORT, async () => {
   console.log(`  KTW SaaS — Fincept Terminal 容器池管理器`)
   console.log(`  端口: ${PORT}`)
   console.log(`  SaaS URL: ${SAAS_URL}`)
-  console.log(`  池大小: ${POOL_SIZE} (最大: ${MAX_SIZE})`)
-  console.log(`  閒置逾時: ${IDLE_TIMEOUT}s`)
+  console.log(`  最大容器數: ${MAX_SIZE}`)
+  console.log(`  模式: 按需建立（allocate 時建立，release 時銷毀）`)
   console.log(`${'═'.repeat(60)}\n`)
 
-  // 初始預熱
-  console.log(`[啟動] 預熱 ${POOL_SIZE} 個 Terminal 容器...`)
-  for (let i = 0; i < POOL_SIZE; i++) {
-    await createTerminalContainer()
-  }
-  console.log(`[啟動] ✅ 預熱完成，容器池就緒`)
+  console.log(`[啟動] ✅ 容器池管理器就緒，等待租戶分配請求...`)
 })

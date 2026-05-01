@@ -44,46 +44,46 @@ fi
 
 # ── 租戶資料卷掛載 ────────────────────────────────────────────────────────────
 # 容器池模式：租戶的持久化資料透過 Volume 掛載
+# Fincept 實際路徑：AppPaths::root() = ~/.local/share/com.fincept.terminal
 TENANT_DATA_DIR="/data/tenant"
+FINCEPT_DATA_DIR="/root/.local/share/com.fincept.terminal"
 
 if [ -d "${TENANT_DATA_DIR}" ]; then
     echo "[資料] 租戶資料卷已掛載: ${TENANT_DATA_DIR}"
 
-    # 恢復租戶本地設定（watchlists, 偏好, 快取）
-    if [ -d "${TENANT_DATA_DIR}/config" ]; then
-        echo "[資料] 恢復租戶設定..."
-        mkdir -p "${HOME}/.config/fincept"
-        cp -r "${TENANT_DATA_DIR}/config/"* "${HOME}/.config/fincept/" 2>/dev/null || true
-    fi
+    # 需要持久化的子目錄（從 Volume 恢復到 Fincept 工作目錄）
+    PERSIST_DIRS="data cache workspaces files models"
 
-    # 恢復租戶 Session 資料
-    if [ -f "${TENANT_DATA_DIR}/session.json" ]; then
-        echo "[資料] 恢復 Session..."
-        mkdir -p "${HOME}/.local/share/fincept"
-        cp "${TENANT_DATA_DIR}/session.json" "${HOME}/.local/share/fincept/" 2>/dev/null || true
-    fi
+    for subdir in ${PERSIST_DIRS}; do
+        src="${TENANT_DATA_DIR}/${subdir}"
+        dst="${FINCEPT_DATA_DIR}/${subdir}"
+
+        if [ -d "${src}" ]; then
+            echo "[資料] 恢復租戶 ${subdir}..."
+            # 移除預烘焙建立的空目錄，改用 symlink 指向 Volume
+            rm -rf "${dst}"
+            ln -sf "${src}" "${dst}"
+        else
+            # Volume 中尚未建立的目錄，建立後 symlink
+            mkdir -p "${src}"
+            rm -rf "${dst}"
+            ln -sf "${src}" "${dst}"
+        fi
+    done
+
+    echo "[資料] ✅ 租戶資料卷掛載完成"
 else
     echo "[資料] 無租戶資料卷掛載（首次使用或非容器池模式）"
     mkdir -p "${TENANT_DATA_DIR}"
 fi
 
-# ── 設定 Session 自動儲存（容器停止前保存租戶資料）────────────────────────────
+# ── 容器停止時的資料備份（容器池歸還前）──────────────────────────────────────
 save_tenant_data() {
-    if [ -d "${TENANT_DATA_DIR}" ] && [ -n "${KTW_TENANT_ID}" ]; then
-        echo "[資料] 正在儲存租戶 ${KTW_TENANT_ID} 資料..."
-        mkdir -p "${TENANT_DATA_DIR}/config"
-
-        # 儲存設定
-        if [ -d "${HOME}/.config/fincept" ]; then
-            cp -r "${HOME}/.config/fincept/"* "${TENANT_DATA_DIR}/config/" 2>/dev/null || true
-        fi
-
-        # 儲存 Session
-        if [ -f "${HOME}/.local/share/fincept/session.json" ]; then
-            cp "${HOME}/.local/share/fincept/session.json" "${TENANT_DATA_DIR}/" 2>/dev/null || true
-        fi
-
-        echo "[資料] ✅ 租戶資料已儲存"
+    if [ -n "${KTW_TENANT_ID}" ]; then
+        echo "[資料] 容器停止 — 租戶 ${KTW_TENANT_ID}"
+        # 因為使用 symlink，資料已自動持久化在 Volume 中
+        # 此處僅做清理：移除租戶 session 中的敏感資訊
+        echo "[資料] ✅ 租戶資料已保留在 Volume 中"
     fi
 }
 

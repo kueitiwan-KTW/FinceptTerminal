@@ -117,7 +117,7 @@ RUN apt-get update && apt-get install -y \
     libgstreamer1.0-0 libgstreamer-plugins-base1.0-0 \
     xvfb x11vnc novnc websockify fluxbox \
     fonts-noto-cjk fonts-noto-cjk-extra \
-    locales curl ca-certificates \
+    locales curl ca-certificates netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
 
 RUN locale-gen zh_TW.UTF-8
@@ -127,6 +127,93 @@ COPY --from=builder /opt/fincept /opt/fincept
 
 ENV LD_LIBRARY_PATH=/opt/fincept/lib
 ENV QT_PLUGIN_PATH=/opt/fincept/plugins
+
+# ============================================================
+# 預烘焙 Python 環境（跳過 First-Time Setup 的 3-5 分鐘等待）
+# ============================================================
+# 根據 PythonSetupManager.cpp check_status() Fast-Path 判定：
+#   1. .setup_complete sentinel 存在
+#   2. uv/uv 二進位存在
+#   3. venv-numpy1/bin/python3 存在 + .packages_installed = SHA-256
+#   4. venv-numpy2/bin/python3 存在 + .packages_installed = SHA-256
+#
+# 路徑：AppPaths::root() = $HOME/.local/share/com.fincept.terminal
+#        容器內 $HOME=/root → /root/.local/share/com.fincept.terminal
+
+ENV FINCEPT_ROOT=/root/.local/share/com.fincept.terminal
+ENV UV_VERSION=0.7.12
+ENV PYTHON_VERSION=3.12.7
+
+# Step 1: 下載 UV 二進位（對應 uv_path() = ${FINCEPT_ROOT}/uv/uv）
+RUN mkdir -p ${FINCEPT_ROOT}/uv && \
+    curl -fsSL "https://github.com/astral-sh/uv/releases/download/${UV_VERSION}/uv-x86_64-unknown-linux-musl.tar.gz" \
+      | tar xzf - -C ${FINCEPT_ROOT}/uv --strip-components=1 && \
+    chmod +x ${FINCEPT_ROOT}/uv/uv && \
+    ${FINCEPT_ROOT}/uv/uv --version
+
+# Step 2: 用 UV 安裝 Python 3.12.7（對應 base_python_path()）
+RUN UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
+    ${FINCEPT_ROOT}/uv/uv python install ${PYTHON_VERSION}
+
+# Step 3: 建立 venv-numpy1 和 venv-numpy2
+#   對應 python_path("venv-numpy1") = ${FINCEPT_ROOT}/venv-numpy1/bin/python3
+RUN UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
+    ${FINCEPT_ROOT}/uv/uv venv ${FINCEPT_ROOT}/venv-numpy1 --python ${PYTHON_VERSION} && \
+    UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
+    ${FINCEPT_ROOT}/uv/uv venv ${FINCEPT_ROOT}/venv-numpy2 --python ${PYTHON_VERSION}
+
+# Step 4a: 安裝 numpy1 套件
+#   注意：使用容器內已複製的 resources 路徑，確保 SHA-256 與 runtime 一致
+#   PEEWEE_NO_SQLITE_EXTENSIONS=1 避免 peewee C 擴展編譯失敗（缺 sqlite3.h）
+RUN UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
+    UV_COMPILE_BYTECODE=1 \
+    UV_HTTP_TIMEOUT=120 \
+    PEEWEE_NO_SQLITE_EXTENSIONS=1 \
+    ${FINCEPT_ROOT}/uv/uv pip install \
+      --python ${FINCEPT_ROOT}/venv-numpy1/bin/python3 \
+      -r /opt/fincept/bin/resources/requirements-numpy1.txt
+
+# Step 4b: 安裝 numpy2 套件（ML/AI 重度依賴，需要較長時間）
+RUN UV_PYTHON_INSTALL_DIR=${FINCEPT_ROOT}/python \
+    UV_COMPILE_BYTECODE=1 \
+    UV_HTTP_TIMEOUT=120 \
+    ${FINCEPT_ROOT}/uv/uv pip install \
+      --python ${FINCEPT_ROOT}/venv-numpy2/bin/python3 \
+      -r /opt/fincept/bin/resources/requirements-numpy2.txt
+
+# Step 5: 寫入 .packages_installed marker
+#   check_status() 的 Fast-Path 比對：stored_hash == compute_requirements_hash(file)
+#   compute_requirements_hash() 使用 QCryptographicHash::Sha256 讀整個檔案
+#   sha256sum 行為相同（binary SHA-256），直接使用容器內的 requirements 檔案確保一致
+RUN sha256sum /opt/fincept/bin/resources/requirements-numpy1.txt | awk '{print $1}' \
+      > ${FINCEPT_ROOT}/venv-numpy1/.packages_installed && \
+    sha256sum /opt/fincept/bin/resources/requirements-numpy2.txt | awk '{print $1}' \
+      > ${FINCEPT_ROOT}/venv-numpy2/.packages_installed && \
+    echo "[預烘焙] numpy1 marker: $(cat ${FINCEPT_ROOT}/venv-numpy1/.packages_installed)" && \
+    echo "[預烘焙] numpy2 marker: $(cat ${FINCEPT_ROOT}/venv-numpy2/.packages_installed)"
+
+# Step 6: 寫入 .setup_complete sentinel + 建立必要目錄
+RUN echo "ok" > ${FINCEPT_ROOT}/.setup_complete && \
+    mkdir -p ${FINCEPT_ROOT}/{data,cache,logs,models,runtime,workspaces,files,crashdumps} && \
+    echo "[預烘焙] ✅ 預烘焙完成 — Fast-Path 4 條件已就位"
+
+# 驗證預烘焙結果
+RUN echo "=== 預烘焙驗證 ===" && \
+    echo "1. sentinel: $(test -f ${FINCEPT_ROOT}/.setup_complete && echo OK || echo MISSING)" && \
+    echo "2. uv: $(${FINCEPT_ROOT}/uv/uv --version 2>/dev/null || echo MISSING)" && \
+    echo "3. venv1 python: $(test -f ${FINCEPT_ROOT}/venv-numpy1/bin/python3 && echo OK || echo MISSING)" && \
+    echo "4. venv2 python: $(test -f ${FINCEPT_ROOT}/venv-numpy2/bin/python3 && echo OK || echo MISSING)" && \
+    echo "5. venv1 marker: $(cat ${FINCEPT_ROOT}/venv-numpy1/.packages_installed)" && \
+    echo "6. venv2 marker: $(cat ${FINCEPT_ROOT}/venv-numpy2/.packages_installed)" && \
+    echo "7. numpy1 test: $(${FINCEPT_ROOT}/venv-numpy1/bin/python3 -c 'import numpy; print(numpy.__version__)' 2>&1)" && \
+    echo "8. numpy2 test: $(${FINCEPT_ROOT}/venv-numpy2/bin/python3 -c 'import numpy; print(numpy.__version__)' 2>&1)"
+
+# 清理 UV 快取（節省 image 空間）
+RUN rm -rf ${FINCEPT_ROOT}/uv-cache /root/.cache
+
+# ============================================================
+# 容器配置
+# ============================================================
 
 COPY docker-entrypoint-zh.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
