@@ -1,5 +1,7 @@
 #include "auth/AuthManager.h"
 
+#include <QProcessEnvironment>
+
 #include "auth/AuthApi.h"
 #include "auth/PinManager.h"
 #include "auth/UserApi.h"
@@ -126,6 +128,9 @@ void AuthManager::clear_session() {
 }
 
 bool AuthManager::needs_pin_setup() const {
+    // SSO 模式不需要 PIN — 安全性由 SaaS session 保障
+    if (is_sso_mode_)
+        return false;
     return session_.authenticated && !PinManager::instance().has_pin();
 }
 
@@ -135,6 +140,25 @@ void AuthManager::initialize() {
     set_loading(true);
     load_session();
 
+    // ── SSO 路徑：KTW_JWT_TOKEN 環境變數存在 → 自動登入（跳過手動登入流程）──
+    auto& cfg = fincept::AppConfig::instance();
+    if (cfg.use_saas_auth()) {
+        QString sso_token = QProcessEnvironment::systemEnvironment()
+                                .value("KTW_JWT_TOKEN");
+        if (!sso_token.isEmpty()) {
+            LOG_INFO("Auth", "SSO: 偵測到 KTW_JWT_TOKEN，嘗試自動登入...");
+            is_sso_mode_ = true;
+            session_.api_key = sso_token;
+            auto& http = fincept::HttpClient::instance();
+            http.set_auth_header(sso_token);
+            http.clear_session_token();
+            // 走既有 profile → subscription 驗證鏈路
+            validate_saved_session();
+            return;
+        }
+    }
+
+    // ── 既有路徑：本地 session 恢復 ──
     if (!session_.api_key.isEmpty()) {
         // Apply api_key ONLY — do NOT send the stale session_token during
         // startup validation. The server enforces single-session via

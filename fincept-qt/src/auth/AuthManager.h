@@ -36,6 +36,9 @@ class AuthManager : public QObject {
     /// True if user needs to set up a PIN (authenticated but no PIN configured).
     bool needs_pin_setup() const;
 
+    /// True if running in SaaS SSO mode (auto-login via KTW_JWT_TOKEN env var).
+    bool is_sso_mode() const { return is_sso_mode_; }
+
   signals:
     void auth_state_changed();
     void login_succeeded();
@@ -81,6 +84,7 @@ class AuthManager : public QObject {
     SessionData session_;
     bool is_loading_ = true;
     bool is_logging_out_ = false;
+    bool is_sso_mode_ = false; // SSO 自動登入模式（容器池注入 KTW_JWT_TOKEN）
 };
 
 } // namespace fincept::auth
