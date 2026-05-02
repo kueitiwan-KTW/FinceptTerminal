@@ -27,6 +27,10 @@ using ReportComponent = ::fincept::report::ReportComponent;
 using ReportMetadata  = ::fincept::report::ReportMetadata;
 using ReportTheme     = ::fincept::report::ReportTheme;
 
+// Namespace alias — .cpp uses report_themes::xxx() which now lives
+// in fincept::report::themes.
+namespace report_themes = ::fincept::report::themes;
+
 // Forward declarations for undo commands (defined after the class).
 class AddComponentCommand;
 class RemoveComponentCommand;
@@ -74,10 +78,12 @@ class ReportBuilderScreen : public QWidget, public IStatefulScreen {
     void duplicate_at(int index);
     void move_up_at(int index);
     void move_down_at(int index);
+    void update_component(int index, const QString& content, const QMap<QString, QString>& config);
 
     // I/O
     void load_report(const QString& path);
     void update_recent(const QString& path);
+    QStringList load_recent() const;
     QString serialize_to_json() const;
     bool deserialize_from_json(const QString& json);
     void apply_template(const QString& name);
@@ -88,7 +94,7 @@ class ReportBuilderScreen : public QWidget, public IStatefulScreen {
     int next_id_  = 1;
     QUndoStack* undo_stack_ = nullptr;
     ReportMetadata metadata_;
-    ReportTheme theme_;
+    ReportTheme theme_ = report_themes::light_professional();
     QString current_file_;
     QTimer* autosave_ = nullptr;
     QString autosave_path_;
