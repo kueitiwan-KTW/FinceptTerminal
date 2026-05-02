@@ -157,11 +157,10 @@ set(CMAKE_UNITY_BUILD ON)
 # 32 was too large: one TU change forced a 32-file recompile; 14 limits blast radius.
 set(CMAKE_UNITY_BUILD_BATCH_SIZE 14)
 
-# 關閉 MOC/UIC/RCC 自動生成檔案的 Unity build
-# mocs_compilation.cpp 合併多個 moc_*.cpp 時，跨 namespace 的型別
-# （如 fincept::ui::MapPin、fincept::report::ReportComponent）會
-# 在 Unity TU 中產生衝突。每個 MOC 檔案獨立編譯即可避免。
-set(CMAKE_AUTOGEN_UNITY_BUILD OFF)
+# 注意：Qt AUTOMOC 會將所有 moc_*.cpp 合併到一個
+# mocs_compilation.cpp 中。這不受 CMAKE_UNITY_BUILD 控制。
+# 如果跨 namespace 的型別在 MOC 合併 TU 中衝突，需要在
+# Header 裡使用完全限定名（FQN）來解決，而非嘗試拆分 MOC TU。
 
 # FetchContent: default to skipping the update step after first download to cut
 # configure time by 5-15s on incremental configures. Not FORCEd so developers

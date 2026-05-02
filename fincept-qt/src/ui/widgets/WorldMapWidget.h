@@ -26,8 +26,8 @@ class WorldMapWidget : public QWidget {
   public:
     explicit WorldMapWidget(QWidget* parent = nullptr);
 
-    void set_pins(const QVector<MapPin>& pins);
-    void add_pin(const MapPin& pin);
+    void set_pins(const QVector<fincept::ui::MapPin>& pins);
+    void add_pin(const fincept::ui::MapPin& pin);
     void clear_pins();
     int pin_count() const { return pins_.size(); }
 
@@ -46,7 +46,7 @@ class WorldMapWidget : public QWidget {
 
     QGVMap* map_ = nullptr;
     QGVLayer* marker_layer_ = nullptr;
-    QVector<MapPin> pins_;
+    QVector<fincept::ui::MapPin> pins_;
     bool map_ready_ = false;
 };
 

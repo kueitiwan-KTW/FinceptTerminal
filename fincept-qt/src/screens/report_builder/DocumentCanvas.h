@@ -1,4 +1,5 @@
 #pragma once
+#include "core/report/ReportDocument.h"
 #include <QScrollArea>
 #include <QTextEdit>
 #include <QVBoxLayout>
@@ -6,9 +7,10 @@
 
 namespace fincept::screens {
 
-struct ReportComponent;
-struct ReportMetadata;
-struct ReportTheme;
+// 使用 fincept::report namespace 的型別，避免 MOC 合併 TU 衝突
+using ReportComponent = ::fincept::report::ReportComponent;
+using ReportMetadata  = ::fincept::report::ReportMetadata;
+using ReportTheme     = ::fincept::report::ReportTheme;
 
 /// Center panel — paginated A4 document canvas.
 /// Each page is a separate QTextEdit with visible gap between pages,

@@ -1,11 +1,13 @@
 #pragma once
+#include "core/report/ReportDocument.h"
 #include <QStackedWidget>
 #include <QVBoxLayout>
 #include <QWidget>
 
 namespace fincept::screens {
 
-struct ReportComponent;
+// 使用 fincept::report namespace 的型別，避免 MOC 合併 TU 衝突
+using ReportComponent = ::fincept::report::ReportComponent;
 
 /// Right panel — context-sensitive property editor for selected component.
 class PropertiesPanel : public QWidget {
