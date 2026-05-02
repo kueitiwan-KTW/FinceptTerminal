@@ -1,4 +1,13 @@
 #pragma once
+
+#include <QMediaPlayer>
+#include <QTextEdit>
+
+#ifdef HAS_QT_TTS
+#include <QTextToSpeech>
+#else
+class QTextToSpeech;
+#endif
 // AiChatBubble — Floating "Quick Chat" assistant bubble.
 //
 // EXPLICITLY independent of the AI Chat tab:
@@ -50,10 +59,13 @@ class AiChatBubble : public QWidget {
     void on_streaming_done(ai_chat::LlmResponse response);
     void on_toggle_voice_mode();
     void on_toggle_mic();
+    void on_toggle_open();
     void on_stop_speech();
     void on_transcription(const QString& text);
     void on_stt_listening_changed(bool active);
     void on_stt_error(const QString& message);
+    void on_new_session();
+    void on_tts_media_status(QMediaPlayer::MediaStatus status);
 
   private:
     enum class Status { Idle, Listening, Thinking, Speaking, Error };
@@ -94,7 +106,7 @@ class AiChatBubble : public QWidget {
     /// the bubble is to stay separate from the AI Chat tab.
     std::vector<ai_chat::ConversationMessage> chat_history_;
 
-    QPointer<QLabel> streaming_bubble_;
+    QPointer<QTextEdit> streaming_bubble_;
 
     // ── Build helpers ────────────────────────────────────────────────────────
     void build_bubble_button();
@@ -110,19 +122,34 @@ class AiChatBubble : public QWidget {
     void close_panel();
     void show_welcome_if_empty();
     void hide_welcome();
+    void ensure_session();
     void add_bubble(const QString& role, const QString& text);
-    QLabel* add_streaming_bubble();
+    QTextEdit* add_streaming_bubble();
     void scroll_to_bottom();
     void set_input_enabled(bool enabled);
+    void set_ui_enabled(bool enabled);
     void update_unread(int delta);
     void start_listening();
     void stop_listening();
     void speak_text(const QString& text);
     void stop_tts();
+    void update_voice_status();
+    void animate_pulse();
+    QWidget* build_voice_status_bar();
 
     // ── Status / mic visuals ─────────────────────────────────────────────────
     void render_status();                  // derive Status from flags + paint
     void set_mic_listening_visual(bool on);
+
+    // ── TTS / Media 成員 ─────────────────────────────────────────────────────
+    QTextToSpeech* tts_engine_   = nullptr;
+    QMediaPlayer*  tts_player_   = nullptr;
+    QTimer*        pulse_timer_  = nullptr;
+    int            pulse_step_   = 0;
+    QLabel*        voice_status_lbl_ = nullptr;
+    QWidget*       voice_status_bar_ = nullptr;
+    QString        active_session_id_;
+    std::vector<ai_chat::ConversationMessage> history_;
 };
 
 } // namespace fincept
