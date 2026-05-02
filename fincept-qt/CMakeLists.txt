@@ -157,6 +157,12 @@ set(CMAKE_UNITY_BUILD ON)
 # 32 was too large: one TU change forced a 32-file recompile; 14 limits blast radius.
 set(CMAKE_UNITY_BUILD_BATCH_SIZE 14)
 
+# 關閉 MOC/UIC/RCC 自動生成檔案的 Unity build
+# mocs_compilation.cpp 合併多個 moc_*.cpp 時，跨 namespace 的型別
+# （如 fincept::ui::MapPin、fincept::report::ReportComponent）會
+# 在 Unity TU 中產生衝突。每個 MOC 檔案獨立編譯即可避免。
+set(CMAKE_AUTOGEN_UNITY_BUILD OFF)
+
 # FetchContent: default to skipping the update step after first download to cut
 # configure time by 5-15s on incremental configures. Not FORCEd so developers
 # can toggle it off (-DFETCHCONTENT_UPDATES_DISCONNECTED=OFF) when a GIT_TAG is
@@ -1894,12 +1900,6 @@ add_executable(FinceptTerminal ${_FINCEPT_EXE_FLAGS}
     ${APP_SOURCES}
     src/services/updater/UpdateService.cpp
     ${_FINCEPT_PLATFORM_SOURCES}
-)
-
-# 關閉 MOC 自動生成檔案的 Unity build，避免 mocs_compilation.cpp
-# 合併多個 moc_*.cpp 時 namespace scope 衝突（如 fincept::ui::MapPin）
-set_target_properties(FinceptTerminal PROPERTIES
-    AUTOGEN_UNITY_BUILD OFF
 )
 
 target_include_directories(FinceptTerminal PRIVATE
