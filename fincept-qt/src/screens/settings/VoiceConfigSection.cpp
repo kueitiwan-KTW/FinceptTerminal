@@ -99,13 +99,13 @@ void VoiceConfigSection::build_ui() {
     prov_hl->setContentsMargins(0, 0, 0, 0);
     auto* prov_lbl = new QLabel("Provider");
     prov_lbl->setStyleSheet(label_ss());
-    provider_combo_ = new QComboBox;
-    provider_combo_->setStyleSheet(combo_ss());
-    provider_combo_->addItem("Google (free, default)", "google");
-    provider_combo_->addItem("Deepgram (API key required)", "deepgram");
+    stt_provider_combo_ = new QComboBox;
+    stt_provider_combo_->setStyleSheet(combo_ss());
+    stt_provider_combo_->addItem("Google (free, default)", "google");
+    stt_provider_combo_->addItem("Deepgram (API key required)", "deepgram");
     prov_hl->addWidget(prov_lbl);
     prov_hl->addStretch();
-    prov_hl->addWidget(provider_combo_);
+    prov_hl->addWidget(stt_provider_combo_);
     vl->addWidget(prov_row);
 
     // ── Deepgram group (hidden for Google) ───────────────────────────────────
@@ -145,15 +145,15 @@ void VoiceConfigSection::build_ui() {
     model_hl->setContentsMargins(0, 0, 0, 0);
     auto* model_lbl = new QLabel("Model");
     model_lbl->setStyleSheet(label_ss());
-    model_combo_ = new QComboBox;
-    model_combo_->setStyleSheet(combo_ss());
-    model_combo_->addItem("nova-3 (recommended)", "nova-3");
-    model_combo_->addItem("nova-2", "nova-2");
-    model_combo_->addItem("enhanced", "enhanced");
-    model_combo_->addItem("base", "base");
+    stt_model_combo_ = new QComboBox;
+    stt_model_combo_->setStyleSheet(combo_ss());
+    stt_model_combo_->addItem("nova-3 (recommended)", "nova-3");
+    stt_model_combo_->addItem("nova-2", "nova-2");
+    stt_model_combo_->addItem("enhanced", "enhanced");
+    stt_model_combo_->addItem("base", "base");
     model_hl->addWidget(model_lbl);
     model_hl->addStretch();
-    model_hl->addWidget(model_combo_);
+    model_hl->addWidget(stt_model_combo_);
     dg_vl->addWidget(model_row);
 
     // Language dropdown
@@ -162,15 +162,15 @@ void VoiceConfigSection::build_ui() {
     lang_hl->setContentsMargins(0, 0, 0, 0);
     auto* lang_lbl = new QLabel("Language");
     lang_lbl->setStyleSheet(label_ss());
-    language_combo_ = new QComboBox;
-    language_combo_->setStyleSheet(combo_ss());
-    language_combo_->addItem("English (auto)", "en");
-    language_combo_->addItem("English (US)", "en-US");
-    language_combo_->addItem("English (UK)", "en-GB");
-    language_combo_->addItem("Multilingual (nova-3 only)", "multi");
+    stt_language_combo_ = new QComboBox;
+    stt_language_combo_->setStyleSheet(combo_ss());
+    stt_language_combo_->addItem("English (auto)", "en");
+    stt_language_combo_->addItem("English (US)", "en-US");
+    stt_language_combo_->addItem("English (UK)", "en-GB");
+    stt_language_combo_->addItem("Multilingual (nova-3 only)", "multi");
     lang_hl->addWidget(lang_lbl);
     lang_hl->addStretch();
-    lang_hl->addWidget(language_combo_);
+    lang_hl->addWidget(stt_language_combo_);
     dg_vl->addWidget(lang_row);
 
     // Keyterms
@@ -221,7 +221,7 @@ void VoiceConfigSection::build_ui() {
     outer->addWidget(scroll);
 
     // ── Wiring ──────────────────────────────────────────────────────────────
-    connect(provider_combo_, qOverload<int>(&QComboBox::currentIndexChanged),
+    connect(stt_provider_combo_, qOverload<int>(&QComboBox::currentIndexChanged),
             this, &VoiceConfigSection::on_provider_changed);
     connect(show_key_btn_, &QPushButton::clicked, this, &VoiceConfigSection::on_show_hide_key);
     connect(save_btn_, &QPushButton::clicked, this, &VoiceConfigSection::on_save);
@@ -234,35 +234,36 @@ void VoiceConfigSection::reload() {
     auto& cfg = AppConfig::instance();
 
     const QString provider = cfg.get("voice/provider", "google").toString().toLower();
-    const int idx = provider_combo_->findData(provider);
-    provider_combo_->setCurrentIndex(idx >= 0 ? idx : 0);
+    const int idx = stt_provider_combo_->findData(provider);
+    stt_provider_combo_->setCurrentIndex(idx >= 0 ? idx : 0);
 
     // API key from SecureStorage
     auto key_res = SecureStorage::instance().retrieve(kSecureKey);
     api_key_edit_->setText(key_res.is_ok() ? key_res.value() : QString());
 
     const QString model = cfg.get("voice/deepgram/model", "nova-3").toString();
-    const int midx = model_combo_->findData(model);
-    model_combo_->setCurrentIndex(midx >= 0 ? midx : 0);
+    const int midx = stt_model_combo_->findData(model);
+    stt_model_combo_->setCurrentIndex(midx >= 0 ? midx : 0);
 
     const QString lang = cfg.get("voice/deepgram/language", "en").toString();
-    const int lidx = language_combo_->findData(lang);
-    language_combo_->setCurrentIndex(lidx >= 0 ? lidx : 0);
+    const int lidx = stt_language_combo_->findData(lang);
+    stt_language_combo_->setCurrentIndex(lidx >= 0 ? lidx : 0);
 
     keyterms_edit_->setText(cfg.get("voice/deepgram/keyterms", "").toString());
 
-    apply_provider_visibility(provider);
+    apply_provider_visibility();
     set_status({}, false);
 }
 
-void VoiceConfigSection::apply_provider_visibility(const QString& provider) {
-    const bool is_dg = (provider == "deepgram");
+void VoiceConfigSection::apply_provider_visibility() {
+    const QString stt_prov = stt_provider_combo_->currentData().toString();
+    const bool is_dg = (stt_prov == "deepgram");
     deepgram_group_->setVisible(is_dg);
     test_btn_->setVisible(is_dg);
 }
 
-void VoiceConfigSection::on_provider_changed(int /*index*/) {
-    apply_provider_visibility(provider_combo_->currentData().toString());
+void VoiceConfigSection::on_provider_changed() {
+    apply_provider_visibility();
 }
 
 void VoiceConfigSection::on_show_hide_key() {
@@ -277,10 +278,10 @@ void VoiceConfigSection::on_show_hide_key() {
 
 void VoiceConfigSection::on_save() {
     auto& cfg = AppConfig::instance();
-    const QString provider = provider_combo_->currentData().toString();
+    const QString provider = stt_provider_combo_->currentData().toString();
     cfg.set("voice/provider", provider);
-    cfg.set("voice/deepgram/model", model_combo_->currentData().toString());
-    cfg.set("voice/deepgram/language", language_combo_->currentData().toString());
+    cfg.set("voice/deepgram/model", stt_model_combo_->currentData().toString());
+    cfg.set("voice/deepgram/language", stt_language_combo_->currentData().toString());
     cfg.set("voice/deepgram/keyterms", keyterms_edit_->text().trimmed());
 
     const QString api_key = api_key_edit_->text().trimmed();
