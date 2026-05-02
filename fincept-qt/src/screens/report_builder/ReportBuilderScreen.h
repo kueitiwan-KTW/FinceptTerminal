@@ -1,102 +1,143 @@
 #pragma once
+// ReportBuilderScreen — full document-owning widget.
+//
+// Maintains its own component list, metadata, theme, undo stack, autosave,
+// and recent files.  LLM/MCP tools may also mutate through the friend
+// UndoCommand classes defined below.
+
+#include "core/report/ReportDocument.h"
 #include "screens/IStatefulScreen.h"
 #include "screens/report_builder/ComponentToolbar.h"
 #include "screens/report_builder/DocumentCanvas.h"
 #include "screens/report_builder/PropertiesPanel.h"
 
+#include <QPropertyAnimation>
+#include <QPushButton>
 #include <QSplitter>
 #include <QTimer>
-#include <QUndoCommand>
 #include <QUndoStack>
 #include <QWidget>
 
 namespace fincept::screens {
 
-struct ReportComponent {
-    int id = 0;
-    // Types: heading, text, table, image, chart, sparkline, stats_block,
-    //        callout, code, divider, quote, list, market_data, page_break, toc
-    QString type;
-    QString content;
-    QMap<QString, QString> config;
+// Type aliases — keep the original names resolving after the model moved to
+// core/report so that other headers (DocumentCanvas, PropertiesPanel) which
+// already use `using …` aliases do not conflict.
+using ReportComponent = ::fincept::report::ReportComponent;
+using ReportMetadata  = ::fincept::report::ReportMetadata;
+using ReportTheme     = ::fincept::report::ReportTheme;
+
+// Forward declarations for undo commands (defined after the class).
+class AddComponentCommand;
+class RemoveComponentCommand;
+class UpdateComponentCommand;
+class MoveComponentCommand;
+
+class ReportBuilderScreen : public QWidget, public IStatefulScreen {
+    Q_OBJECT
+  public:
+    explicit ReportBuilderScreen(QWidget* parent = nullptr);
+    ~ReportBuilderScreen() override;
+
+    void restore_state(const QVariantMap& state) override;
+    QVariantMap save_state() const override;
+    QString state_key() const override { return "report_builder"; }
+    int state_version() const override { return 3; }
+
+    // ── Accessors used by UndoCommand classes ────────────────────────────
+    QList<ReportComponent>& components() { return components_; }
+    const QList<ReportComponent>& components() const { return components_; }
+    int& selected() { return selected_; }
+
+    // ── Direct (no-undo-push) operations ─────────────────────────────────
+    void add_component_direct(const ReportComponent& comp, int at = -1);
+    void remove_component_direct(int index);
+    void update_component_direct(int index, const QString& content, const QMap<QString, QString>& config);
+    void swap_components(int a, int b);
+
+    void refresh_canvas();
+    void refresh_structure();
+
+  private:
+    QWidget* build_toolbar();
+
+    // Dialogs
+    void show_recent_dialog();
+    void show_template_dialog();
+    void show_theme_dialog();
+    void show_metadata_dialog();
+
+    // User-driven operations
+    void add_component(const QString& type);
+    void select_component(int index);
+    void remove_component_at(int index);
+    void duplicate_at(int index);
+    void move_up_at(int index);
+    void move_down_at(int index);
+
+    // I/O
+    void load_report(const QString& path);
+    void update_recent(const QString& path);
+    QString serialize_to_json() const;
+    bool deserialize_from_json(const QString& json);
+    void apply_template(const QString& name);
+
+    // ── Document state ───────────────────────────────────────────────────
+    QList<ReportComponent> components_;
+    int selected_ = -1;
+    int next_id_  = 1;
+    QUndoStack* undo_stack_ = nullptr;
+    ReportMetadata metadata_;
+    ReportTheme theme_;
+    QString current_file_;
+    QTimer* autosave_ = nullptr;
+    QString autosave_path_;
+
+    // ── Children ─────────────────────────────────────────────────────────
+    ComponentToolbar* comp_toolbar_ = nullptr;
+    DocumentCanvas*   canvas_       = nullptr;
+    PropertiesPanel*  properties_   = nullptr;
+    QSplitter*        splitter_     = nullptr;
+
+    // ── Side-panel collapse state ────────────────────────────────────────
+    QPushButton* left_toggle_btn_  = nullptr;
+    QPushButton* right_toggle_btn_ = nullptr;
+    QPropertyAnimation* left_anim_  = nullptr;
+    QPropertyAnimation* right_anim_ = nullptr;
+    bool left_collapsed_  = false;
+    bool right_collapsed_ = false;
+    static constexpr int kLeftPanelWidth  = 240;
+    static constexpr int kRightPanelWidth = 280;
+    void apply_left_collapsed(bool collapsed, bool animate);
+    void apply_right_collapsed(bool collapsed, bool animate);
+
+    friend class AddComponentCommand;
+    friend class RemoveComponentCommand;
+    friend class UpdateComponentCommand;
+    friend class MoveComponentCommand;
+
+  private slots:
+    void on_toggle_left();
+    void on_toggle_right();
+    void on_save();
+    void on_open();
+    void on_new();
+    void on_auto_save();
+    void on_export_pdf();
+    void on_preview();
+
+  protected:
+    void showEvent(QShowEvent* e) override;
+    void hideEvent(QHideEvent* e) override;
 };
 
-struct ReportMetadata {
-    QString title = "Untitled Report";
-    QString author = "Analyst";
-    QString company = "Fincept Corporation";
-    QString date;
-    QString header_left;
-    QString header_center;
-    QString header_right;
-    QString footer_left;
-    QString footer_center = "Page {page}";
-    QString footer_right;
-    bool show_page_numbers = true;
-};
-
-// Report color theme
-struct ReportTheme {
-    QString name;
-    QString heading_color;
-    QString accent_color;
-    QString page_bg;
-    QString text_color;
-    QString table_header_bg;
-    QString table_header_fg;
-    QString code_bg;
-    QString quote_bg;
-    QString meta_color;
-    QString divider_color;
-};
-
-namespace report_themes {
-inline ReportTheme light_professional() {
-    return {"Light Professional",
-            "#1a1a1a",
-            "#d97706",
-            "#ffffff",
-            "#333333",
-            "#f0f0f0",
-            "#1a1a1a",
-            "#f5f5f5",
-            "#f9f9f9",
-            "#666666",
-            "#cccccc"};
-}
-inline ReportTheme dark_corporate() {
-    return {"Dark Corporate", "#e5e5e5", "#d97706", "#1e1e1e", "#cccccc", "#2a2a2a",
-            "#e5e5e5",        "#111111", "#1a1a1a", "#808080", "#444444"};
-}
-inline ReportTheme bloomberg() {
-    return {"Bloomberg Terminal",
-            "#ff8c00",
-            "#ff8c00",
-            "#0a0a0a",
-            "#d4d4d4",
-            "#1a0a00",
-            "#ff8c00",
-            "#050505",
-            "#0f0f0f",
-            "#888888",
-            "#333300"};
-}
-inline ReportTheme midnight_blue() {
-    return {"Midnight Blue", "#e2e8f0", "#3b82f6", "#0f172a", "#cbd5e1", "#1e3a5f",
-            "#e2e8f0",       "#0d1b2e", "#132033", "#64748b", "#1e3a5f"};
-}
-} // namespace report_themes
-
-// ── Undo Commands ──────────────────────────────────────────────────────────────
-
-class ReportBuilderScreen;
+// ── Undo Commands ────────────────────────────────────────────────────────────
 
 class AddComponentCommand : public QUndoCommand {
   public:
     AddComponentCommand(ReportBuilderScreen* screen, const ReportComponent& comp, int insert_at);
-    void undo() override;
     void redo() override;
-
+    void undo() override;
   private:
     ReportBuilderScreen* screen_;
     ReportComponent comp_;
@@ -106,9 +147,8 @@ class AddComponentCommand : public QUndoCommand {
 class RemoveComponentCommand : public QUndoCommand {
   public:
     RemoveComponentCommand(ReportBuilderScreen* screen, int index);
-    void undo() override;
     void redo() override;
-
+    void undo() override;
   private:
     ReportBuilderScreen* screen_;
     ReportComponent saved_;
@@ -120,11 +160,10 @@ class UpdateComponentCommand : public QUndoCommand {
     UpdateComponentCommand(ReportBuilderScreen* screen, int index, const QString& old_content,
                            const QMap<QString, QString>& old_config, const QString& new_content,
                            const QMap<QString, QString>& new_config);
-    void undo() override;
     void redo() override;
-    int id() const override { return 1001; }
+    void undo() override;
     bool mergeWith(const QUndoCommand* other) override;
-
+    int id() const override { return 1001; }
   private:
     ReportBuilderScreen* screen_;
     int index_;
@@ -135,83 +174,12 @@ class UpdateComponentCommand : public QUndoCommand {
 class MoveComponentCommand : public QUndoCommand {
   public:
     MoveComponentCommand(ReportBuilderScreen* screen, int from, int to);
-    void undo() override;
     void redo() override;
-
+    void undo() override;
   private:
     ReportBuilderScreen* screen_;
     int from_, to_;
 };
 
-// ── Main Screen ────────────────────────────────────────────────────────────────
-
-class ReportBuilderScreen : public QWidget, public IStatefulScreen {
-    Q_OBJECT
-  public:
-    explicit ReportBuilderScreen(QWidget* parent = nullptr);
-
-    void restore_state(const QVariantMap& state) override;
-    QVariantMap save_state() const override;
-    QString state_key() const override { return "report_builder"; }
-    int state_version() const override { return 1; }
-
-    // Called by undo commands — do NOT push to undo stack inside these
-    void add_component_direct(const ReportComponent& comp, int at);
-    void remove_component_direct(int index);
-    void update_component_direct(int index, const QString& content, const QMap<QString, QString>& config);
-    void swap_components(int a, int b);
-
-    QVector<ReportComponent>& components() { return components_; }
-    const QVector<ReportComponent>& components() const { return components_; }
-    int& selected() { return selected_; }
-
-    void refresh_canvas();
-    void refresh_structure();
-
-  private:
-    QWidget* build_toolbar();
-    void apply_template(const QString& name);
-    void load_report(const QString& path);
-    QString serialize_to_json() const;
-    bool deserialize_from_json(const QString& json);
-    void update_recent(const QString& path);
-    QStringList load_recent() const;
-    void show_recent_dialog();
-    void show_template_dialog();
-    void show_theme_dialog();
-    void show_metadata_dialog();
-
-    // Public-facing operations that push to undo stack
-    void add_component(const QString& type);
-    void select_component(int index);
-    void remove_component(int index);
-    void update_component(int index, const QString& content, const QMap<QString, QString>& config);
-
-    ComponentToolbar* comp_toolbar_ = nullptr;
-    DocumentCanvas* canvas_ = nullptr;
-    PropertiesPanel* properties_ = nullptr;
-    QSplitter* splitter_ = nullptr;
-    QUndoStack* undo_stack_ = nullptr;
-    QTimer* autosave_ = nullptr;
-
-    QVector<ReportComponent> components_;
-    ReportMetadata metadata_;
-    ReportTheme theme_ = report_themes::light_professional();
-    int selected_ = -1;
-    int next_id_ = 1;
-    QString current_file_;
-    QString autosave_path_;
-
-    void showEvent(QShowEvent* e) override;
-    void hideEvent(QHideEvent* e) override;
-
-  private slots:
-    void on_save();
-    void on_open();
-    void on_new();
-    void on_auto_save();
-    void on_export_pdf();
-    void on_preview();
-};
-
 } // namespace fincept::screens
+
