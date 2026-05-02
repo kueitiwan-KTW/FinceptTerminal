@@ -39,6 +39,7 @@ class HttpClient : public QObject {
   private:
     HttpClient();
     QNetworkRequest build_request(const QString& url) const;
+    QNetworkRequest build_saas_request(const QString& full_url) const;
     void handle_reply(QNetworkReply* reply, JsonCallback callback);
 
     QNetworkAccessManager* nam_ = nullptr;

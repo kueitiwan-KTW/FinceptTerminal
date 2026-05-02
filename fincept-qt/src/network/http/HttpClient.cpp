@@ -135,22 +135,45 @@ void HttpClient::set_base_url(const QString& base) {
 // 使用 AppConfig::saas_base_url() 建構完整 URL
 // 認證方式：Authorization: Bearer <JWT>（而非 X-API-Key）
 
+QNetworkRequest HttpClient::build_saas_request(const QString& full_url) const {
+    QUrl qurl(full_url);
+    QNetworkRequest req{qurl};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    req.setHeader(QNetworkRequest::UserAgentHeader, "FinceptTerminal/4.0");
+
+    // SaaS 請求始終附加 Authorization header — 不受 same_host 判斷影響
+    // api_key_ 存放的是 JWT token（由 AuthManager::initialize 設定）
+    if (!api_key_.isEmpty()) {
+        req.setRawHeader("Authorization", ("Bearer " + api_key_).toUtf8());
+    }
+    return req;
+}
+
 void HttpClient::saas_get(const QString& path, JsonCallback callback) {
     auto& cfg = fincept::AppConfig::instance();
     QString full_url = cfg.saas_base_url() + path;
-    get(full_url, std::move(callback));
+    LOG_DEBUG("HTTP", "SAAS GET " + full_url);
+    auto* reply = nam_->get(build_saas_request(full_url));
+    handle_reply(reply, std::move(callback));
 }
 
 void HttpClient::saas_post(const QString& path, const QJsonObject& body, JsonCallback callback) {
     auto& cfg = fincept::AppConfig::instance();
     QString full_url = cfg.saas_base_url() + path;
-    post(full_url, body, std::move(callback));
+    LOG_DEBUG("HTTP", "SAAS POST " + full_url);
+    QJsonDocument doc(body);
+    auto* reply = nam_->post(build_saas_request(full_url), doc.toJson());
+    handle_reply(reply, std::move(callback));
 }
 
 void HttpClient::saas_put(const QString& path, const QJsonObject& body, JsonCallback callback) {
     auto& cfg = fincept::AppConfig::instance();
     QString full_url = cfg.saas_base_url() + path;
-    put(full_url, body, std::move(callback));
+    LOG_DEBUG("HTTP", "SAAS PUT " + full_url);
+    QJsonDocument doc(body);
+    auto* reply = nam_->put(build_saas_request(full_url), doc.toJson());
+    handle_reply(reply, std::move(callback));
 }
 
 } // namespace fincept
+

@@ -20,7 +20,7 @@ import Docker from 'dockerode'
 
 // ── 設定 ────────────────────────────────────────────────────────────────────
 const PORT = parseInt(process.env.POOL_MANAGER_PORT || '9090')
-const SAAS_URL = process.env.KTW_SAAS_URL || 'https://platform.ktweb.io'
+const SAAS_URL = process.env.KTW_SAAS_URL || 'https://ktwsmart.com'
 const POOL_SIZE = parseInt(process.env.POOL_SIZE || '3')        // 預熱容器數
 const MAX_SIZE = parseInt(process.env.POOL_MAX_SIZE || '10')    // 最大容器數
 const IDLE_TIMEOUT = parseInt(process.env.POOL_IDLE_TIMEOUT || '300') // 閒置逾時（秒）
