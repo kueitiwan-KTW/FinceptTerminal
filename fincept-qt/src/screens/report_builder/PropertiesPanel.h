@@ -1,16 +1,11 @@
 #pragma once
-#include "core/report/ReportDocument.h"
-
 #include <QStackedWidget>
 #include <QVBoxLayout>
 #include <QWidget>
 
 namespace fincept::screens {
 
-// ReportComponent comes from core/report/ReportDocument.h. PropertiesPanel
-// historically used the screens-namespace forward declaration; with the
-// model migrated to fincept::report we refer to the concrete type directly.
-using ReportComponent = ::fincept::report::ReportComponent;
+struct ReportComponent;
 
 /// Right panel — context-sensitive property editor for selected component.
 class PropertiesPanel : public QWidget {

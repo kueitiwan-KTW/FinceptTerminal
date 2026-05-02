@@ -24,10 +24,6 @@ class NewsFeedPanel : public QWidget {
     void show_breaking(const QVector<services::NewsCluster>& breaking_clusters);
     void clear_breaking();
     void set_loading(bool loading);
-    /// When loading has finished but no articles arrived, show a non-blocking
-    /// empty-state message ("No articles available — check connection").
-    /// Calling with `false` (or any successful set_wire_articles) hides it.
-    void set_empty_state(bool empty);
     void scroll_to(const QString& article_id);
     void set_selected(const QString& article_id);
     void select_next();
@@ -76,9 +72,6 @@ class NewsFeedPanel : public QWidget {
     QTimer* skeleton_anim_timer_ = nullptr;
     int skeleton_phase_ = 0;
     bool is_loading_ = false;
-
-    // Empty-state widget (shown when loading is done + no articles)
-    QWidget* empty_state_ = nullptr;
 };
 
 } // namespace fincept::screens

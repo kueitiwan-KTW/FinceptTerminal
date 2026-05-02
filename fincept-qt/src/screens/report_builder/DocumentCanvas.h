@@ -1,6 +1,4 @@
 #pragma once
-#include "core/report/ReportDocument.h"
-
 #include <QScrollArea>
 #include <QTextEdit>
 #include <QVBoxLayout>
@@ -8,12 +6,9 @@
 
 namespace fincept::screens {
 
-// Re-export the canonical types under the screens namespace so existing
-// implementation code (which qualifies them as fincept::screens::Report*)
-// keeps compiling unchanged.
-using ReportComponent = ::fincept::report::ReportComponent;
-using ReportMetadata = ::fincept::report::ReportMetadata;
-using ReportTheme = ::fincept::report::ReportTheme;
+struct ReportComponent;
+struct ReportMetadata;
+struct ReportTheme;
 
 /// Center panel — paginated A4 document canvas.
 /// Each page is a separate QTextEdit with visible gap between pages,

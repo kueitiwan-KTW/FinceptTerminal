@@ -1,6 +1,5 @@
 // src/screens/backtesting/BacktestingScreen.h
 #pragma once
-#include "core/symbol/IGroupLinked.h"
 #include "screens/IStatefulScreen.h"
 #include "services/backtesting/BacktestingTypes.h"
 
@@ -26,9 +25,8 @@
 namespace fincept::screens {
 
 /// Multi-provider backtesting terminal with 6 providers, 9 commands, 50+ strategies.
-class BacktestingScreen : public QWidget, public IStatefulScreen, public IGroupLinked {
+class BacktestingScreen : public QWidget, public IStatefulScreen {
     Q_OBJECT
-    Q_INTERFACES(fincept::IGroupLinked)
   public:
     explicit BacktestingScreen(QWidget* parent = nullptr);
 
@@ -36,15 +34,6 @@ class BacktestingScreen : public QWidget, public IStatefulScreen, public IGroupL
     QVariantMap save_state() const override;
     QString state_key() const override { return "backtesting"; }
     int state_version() const override { return 1; }
-
-    // IGroupLinked — backtest is multi-symbol, but the *first* symbol in the
-    // line edit acts as the active ticker for group linking. Receiving a
-    // group symbol overwrites the entire field with that one symbol; users
-    // who want a multi-symbol backtest add more after publishing.
-    void set_group(SymbolGroup g) override { link_group_ = g; }
-    SymbolGroup group() const override { return link_group_; }
-    void on_group_symbol_changed(const SymbolRef& ref) override;
-    SymbolRef current_symbol() const override;
 
   protected:
     void showEvent(QShowEvent* event) override;
@@ -151,10 +140,6 @@ class BacktestingScreen : public QWidget, public IStatefulScreen, public IGroupL
 
     bool first_show_ = true;
     bool is_running_ = false;
-
-    // Symbol-group link (None when unlinked).
-    SymbolGroup link_group_ = SymbolGroup::None;
-    void publish_first_symbol_to_group();
 };
 
 } // namespace fincept::screens
