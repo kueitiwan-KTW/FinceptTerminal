@@ -2,13 +2,16 @@
 
 #include "auth/AuthManager.h"
 #include "auth/AuthTypes.h"
+#include "core/config/AppConfig.h"
 #include "ui/theme/Theme.h"
 
+#include <QDesktopServices>
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QHideEvent>
 #include <QPainter>
 #include <QStackedWidget>
+#include <QUrl>
 #include <QVBoxLayout>
 
 namespace fincept::screens {
@@ -119,6 +122,7 @@ LoginScreen::LoginScreen(QWidget* parent) : QWidget(parent) {
     build_login_page();
     build_mfa_page();
     build_conflict_page();
+    build_device_page();
 
     overlay->addWidget(pages_, 0, Qt::AlignCenter);
 
@@ -129,6 +133,15 @@ LoginScreen::LoginScreen(QWidget* parent) : QWidget(parent) {
     connect(&auth, &auth::AuthManager::login_active_session, this, &LoginScreen::on_active_session);
     connect(&auth, &auth::AuthManager::mfa_verified, this, &LoginScreen::on_mfa_verified);
     connect(&auth, &auth::AuthManager::mfa_failed, this, &LoginScreen::on_mfa_failed);
+
+    // Device Flow 信號連接
+    connect(&auth, &auth::AuthManager::device_code_received, this, &LoginScreen::on_device_code_received);
+    connect(&auth, &auth::AuthManager::device_flow_complete, this, &LoginScreen::on_device_flow_complete);
+    connect(&auth, &auth::AuthManager::device_flow_failed, this, &LoginScreen::on_device_flow_failed);
+    connect(&auth, &auth::AuthManager::device_flow_expired, this, &LoginScreen::on_device_flow_expired);
+
+    // 偵測 SaaS 模式
+    is_saas_mode_ = AppConfig::instance().use_saas_auth();
 }
 
 // ── Background Paint ─────────────────────────────────────────────────────────
@@ -216,7 +229,7 @@ void LoginScreen::build_login_page() {
     email_input_->setStyleSheet(input_style());
     vl->addWidget(email_input_);
 
-    // Password
+    // Password（SaaS 模式下隱藏密碼欄位）
     auto* pw_lbl = new QLabel(tr("PASSWORD"));
     pw_lbl->setStyleSheet(label_style());
     vl->addWidget(pw_lbl);
@@ -245,6 +258,13 @@ void LoginScreen::build_login_page() {
     prl->addWidget(show_pw_btn_);
     vl->addWidget(pw_row);
 
+    // SaaS 模式：隱藏密碼欄位
+    bool saas = AppConfig::instance().use_saas_auth();
+    if (saas) {
+        pw_lbl->hide();
+        pw_row->hide();
+    }
+
     // Error
     error_label_ = new QLabel;
     error_label_->setWordWrap(true);
@@ -268,16 +288,18 @@ void LoginScreen::build_login_page() {
     brl->addWidget(forgot_btn);
     brl->addStretch();
 
-    login_btn_ = new QPushButton(tr("  SIGN IN  "));
+    // SaaS 模式：按鈕文字改為 VERIFY ACCOUNT，隱藏 Forgot Password
+    login_btn_ = new QPushButton(saas ? tr("  VERIFY ACCOUNT  ") : tr("  SIGN IN  "));
     login_btn_->setFixedHeight(32);
     login_btn_->setStyleSheet(btn_primary());
     connect(login_btn_, &QPushButton::clicked, this, &LoginScreen::on_login);
     brl->addWidget(login_btn_);
+    if (saas) forgot_btn->hide();
     vl->addWidget(btn_row);
 
     vl->addWidget(make_separator());
 
-    // Register link
+    // Register link（SaaS 模式隱藏 — 用戶由平台管理）
     auto* reg_row = new QWidget(this);
     reg_row->setStyleSheet("background: transparent;");
     auto* rrl = new QHBoxLayout(reg_row);
@@ -297,9 +319,15 @@ void LoginScreen::build_login_page() {
     connect(signup_btn, &QPushButton::clicked, this, &LoginScreen::navigate_register);
     rrl->addWidget(signup_btn);
     vl->addWidget(reg_row);
+    if (saas) reg_row->hide();
 
-    connect(password_input_, &QLineEdit::returnPressed, this, &LoginScreen::on_login);
-    connect(email_input_, &QLineEdit::returnPressed, this, [this]() { password_input_->setFocus(); });
+    // SaaS 模式：email Enter 直接觸發登入；非 SaaS：Enter 跳到密碼
+    if (saas) {
+        connect(email_input_, &QLineEdit::returnPressed, this, &LoginScreen::on_login);
+    } else {
+        connect(password_input_, &QLineEdit::returnPressed, this, &LoginScreen::on_login);
+        connect(email_input_, &QLineEdit::returnPressed, this, [this]() { password_input_->setFocus(); });
+    }
 
     pages_->addWidget(page);
 }
@@ -451,13 +479,23 @@ void LoginScreen::build_conflict_page() {
 
 void LoginScreen::on_login() {
     QString email = email_input_->text().trimmed();
-    QString password = password_input_->text();
 
     auto v = auth::validate_email(email);
     if (!v.valid) {
         show_error(v.error);
         return;
     }
+
+    // SaaS 模式：走 Device Authorization Flow
+    if (is_saas_mode_) {
+        clear_error();
+        set_loading(true);
+        auth::AuthManager::instance().start_device_flow(email);
+        return;
+    }
+
+    // 非 SaaS 模式：走傳統帳密登入
+    QString password = password_input_->text();
     if (password.isEmpty()) {
         show_error(tr("Please enter your password"));
         return;
@@ -545,8 +583,148 @@ void LoginScreen::clear_error() {
 void LoginScreen::set_loading(bool loading) {
     login_btn_->setEnabled(!loading);
     email_input_->setEnabled(!loading);
-    password_input_->setEnabled(!loading);
-    login_btn_->setText(loading ? tr("  SIGNING IN...  ") : tr("  SIGN IN  "));
+    if (!is_saas_mode_)
+        password_input_->setEnabled(!loading);
+    if (is_saas_mode_)
+        login_btn_->setText(loading ? tr("  VERIFYING...  ") : tr("  VERIFY ACCOUNT  "));
+    else
+        login_btn_->setText(loading ? tr("  SIGNING IN...  ") : tr("  SIGN IN  "));
+}
+
+// ── Device Authorization Page ────────────────────────────────────────────────
+
+void LoginScreen::build_device_page() {
+    device_page_ = new QWidget(this);
+    device_page_->setStyleSheet(card_style());
+
+    auto* vl = new QVBoxLayout(device_page_);
+    vl->setContentsMargins(28, 22, 28, 22);
+    vl->setSpacing(14);
+
+    // Header
+    auto* header = new QWidget(this);
+    header->setFixedHeight(38);
+    header->setStyleSheet(QString("background: %1; border: none;").arg(ui::colors::BG_RAISED()));
+    auto* hl = new QHBoxLayout(header);
+    hl->setContentsMargins(14, 0, 14, 0);
+
+    auto* title = new QLabel(tr("DEVICE AUTHORIZATION"));
+    title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
+                                 "background: transparent; letter-spacing: 1px;"
+                                 "font-family: 'Consolas','Courier New',monospace;")
+                             .arg(ui::colors::AMBER()));
+    hl->addWidget(title);
+    hl->addStretch();
+
+    auto* brand = new QLabel("RFC 8628");
+    brand->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
+                                 "background: transparent; letter-spacing: 0.5px;"
+                                 "font-family: 'Consolas','Courier New',monospace;")
+                             .arg(ui::colors::TEXT_DIM()));
+    hl->addWidget(brand);
+    vl->addWidget(header);
+
+    // 說明文字
+    auto* desc = new QLabel(tr("Enter the code below in your browser to authorize this terminal."));
+    desc->setWordWrap(true);
+    desc->setStyleSheet(muted_style());
+    vl->addWidget(desc);
+
+    vl->addWidget(make_separator());
+
+    // 授權碼（大字 monospace）
+    auto* code_lbl = new QLabel(tr("AUTHORIZATION CODE"));
+    code_lbl->setStyleSheet(label_style());
+    code_lbl->setAlignment(Qt::AlignCenter);
+    vl->addWidget(code_lbl);
+
+    device_code_label_ = new QLabel("XXXX-XXXX");
+    device_code_label_->setAlignment(Qt::AlignCenter);
+    device_code_label_->setStyleSheet(
+        QString("color: %1; font-size: 32px; font-weight: 900;"
+                "letter-spacing: 6px; padding: 16px 0;"
+                "background: %2; border: 1px solid %3;"
+                "font-family: 'Consolas','Courier New',monospace;")
+            .arg(ui::colors::AMBER(), ui::colors::BG_BASE(), ui::colors::AMBER_DIM()));
+    vl->addWidget(device_code_label_);
+
+    vl->addWidget(make_separator());
+
+    // 開啟瀏覽器按鈕
+    device_open_browser_btn_ = new QPushButton(tr("  OPEN BROWSER  "));
+    device_open_browser_btn_->setFixedHeight(32);
+    device_open_browser_btn_->setStyleSheet(btn_primary());
+    connect(device_open_browser_btn_, &QPushButton::clicked, this, [this]() {
+        if (!device_verification_url_.isEmpty())
+            QDesktopServices::openUrl(QUrl(device_verification_url_));
+    });
+    vl->addWidget(device_open_browser_btn_);
+
+    // 狀態文字
+    device_status_label_ = new QLabel(tr("Waiting for authorization..."));
+    device_status_label_->setAlignment(Qt::AlignCenter);
+    device_status_label_->setStyleSheet(
+        QString("color: %1; font-size: 13px; background: transparent;"
+                "font-family: 'Consolas','Courier New',monospace;")
+            .arg(ui::colors::TEXT_SECONDARY()));
+    vl->addWidget(device_status_label_);
+
+    // 取消按鈕
+    auto* cancel_btn = new QPushButton(tr("  CANCEL  "));
+    cancel_btn->setFixedHeight(32);
+    cancel_btn->setStyleSheet(btn_standard());
+    connect(cancel_btn, &QPushButton::clicked, this, [this]() {
+        auth::AuthManager::instance().cancel_device_flow();
+        // 停止等待動畫
+        if (device_dot_timer_) device_dot_timer_->stop();
+        pages_->setCurrentIndex(0);
+        set_loading(false);
+    });
+    vl->addWidget(cancel_btn);
+
+    // 等待動畫 timer
+    device_dot_timer_ = new QTimer(this);
+    connect(device_dot_timer_, &QTimer::timeout, this, [this]() {
+        device_dot_count_ = (device_dot_count_ + 1) % 4;
+        QString dots = QString(".").repeated(device_dot_count_);
+        device_status_label_->setText(tr("Waiting for authorization") + dots);
+    });
+
+    pages_->addWidget(device_page_);
+}
+
+// ── Device Flow Slots ────────────────────────────────────────────────────────
+
+void LoginScreen::on_device_code_received(const QString& user_code, const QString& verification_url) {
+    set_loading(false);
+    device_code_label_->setText(user_code);
+    device_verification_url_ = verification_url;
+    device_dot_count_ = 0;
+    device_dot_timer_->start(600);
+    pages_->setCurrentIndex(3); // 第 4 頁 = Device Flow
+
+    // 自動開啟瀏覽器
+    QDesktopServices::openUrl(QUrl(verification_url));
+}
+
+void LoginScreen::on_device_flow_complete() {
+    if (device_dot_timer_) device_dot_timer_->stop();
+    device_status_label_->setText(tr("Authorization successful!"));
+    // on_login_succeeded 會被 AuthManager::login_succeeded 觸發
+}
+
+void LoginScreen::on_device_flow_failed(const QString& error) {
+    if (device_dot_timer_) device_dot_timer_->stop();
+    set_loading(false);
+    pages_->setCurrentIndex(0);
+    show_error(error);
+}
+
+void LoginScreen::on_device_flow_expired() {
+    if (device_dot_timer_) device_dot_timer_->stop();
+    set_loading(false);
+    pages_->setCurrentIndex(0);
+    show_error(tr("Authorization code expired. Please try again."));
 }
 
 } // namespace fincept::screens

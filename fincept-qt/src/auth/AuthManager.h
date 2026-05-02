@@ -2,6 +2,7 @@
 #include "auth/AuthTypes.h"
 
 #include <QObject>
+#include <QTimer>
 
 #include <functional>
 
@@ -27,6 +28,10 @@ class AuthManager : public QObject {
     void forgot_password(const QString& email);
     void reset_password(const QString& email, const QString& otp, const QString& new_password);
     void logout();
+
+    // Device Authorization Flow（RFC 8628 — SaaS 模式專用）
+    void start_device_flow(const QString& email);
+    void cancel_device_flow();
 
     // Session management
     void initialize();
@@ -66,6 +71,12 @@ class AuthManager : public QObject {
     /// Emitted after login + PIN verify (or setup) — terminal is fully unlocked.
     void terminal_unlocked();
 
+    // Device Flow 信號
+    void device_code_received(const QString& user_code, const QString& verification_url);
+    void device_flow_complete();
+    void device_flow_failed(const QString& error);
+    void device_flow_expired();
+
   private:
     AuthManager();
 
@@ -79,12 +90,21 @@ class AuthManager : public QObject {
     void complete_auth_flow(std::function<void()> on_done);
     void auto_configure_fincept_llm();
     QString generate_device_id() const;
+
+    // Device Flow 輪詢
+    void on_device_poll_tick();
+    void stop_device_polling();
     QJsonObject unwrap_data(const QJsonObject& raw) const;
 
     SessionData session_;
     bool is_loading_ = true;
     bool is_logging_out_ = false;
     bool is_sso_mode_ = false; // SSO 自動登入模式（容器池注入 KTW_JWT_TOKEN）
+
+    // Device Flow 狀態
+    QTimer* device_poll_timer_ = nullptr;
+    QString device_code_;
+    int device_poll_interval_ = 5; // 秒
 };
 
 } // namespace fincept::auth

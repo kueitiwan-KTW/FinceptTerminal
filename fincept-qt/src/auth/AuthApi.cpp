@@ -306,6 +306,46 @@ void AuthApi::regenerate_api_key(Callback cb) {
     request("POST", "/user/regenerate-api-key", {}, cb);
 }
 
+// ── Device Authorization Flow（RFC 8628）─────────────────────────────────────
+
+void AuthApi::device_request_code(const QString& email, Callback cb) {
+    QJsonObject body;
+    body["email"] = email;
+    auto& http = fincept::HttpClient::instance();
+    http.saas_post("/api/fincept/device/code", body, [cb](fincept::Result<QJsonDocument> r) {
+        if (r.is_err()) {
+            QString err = QString::fromStdString(r.error());
+            int status = 0;
+            if (err.startsWith("HTTP_"))
+                status = err.mid(5).toInt();
+            cb({false, {}, status == 403 ? "此帳號無法使用 Device Flow" : "網路連線失敗", status});
+            return;
+        }
+        auto obj = r.value().object();
+        // 錯誤回應帶 error 欄位
+        if (obj.contains("error")) {
+            cb({false, obj, obj["error"].toString(), 400});
+            return;
+        }
+        cb({true, obj, {}, 200});
+    });
+}
+
+void AuthApi::device_poll(const QString& device_code, Callback cb) {
+    QJsonObject body;
+    body["device_code"] = device_code;
+    auto& http = fincept::HttpClient::instance();
+    http.saas_post("/api/fincept/device/poll", body, [cb](fincept::Result<QJsonDocument> r) {
+        if (r.is_err()) {
+            cb({false, {}, "網路連線失敗", 0});
+            return;
+        }
+        auto obj = r.value().object();
+        // poll 回應永遠帶 status 欄位，直接傳回讓 caller 判斷
+        cb({true, obj, obj.value("error").toString(), 200});
+    });
+}
+
 // ── Subscription / payment ────────────────────────────────────────────────────
 
 void AuthApi::get_subscription_plans(Callback cb) {

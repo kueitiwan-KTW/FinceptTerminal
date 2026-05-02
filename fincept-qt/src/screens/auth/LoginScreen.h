@@ -3,6 +3,7 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QStackedWidget>
+#include <QTimer>
 #include <QWidget>
 
 namespace fincept::screens {
@@ -38,10 +39,23 @@ class LoginScreen : public QWidget {
     void build_login_page();
     void build_mfa_page();
     void build_conflict_page();
+    void build_device_page();
 
     void show_error(const QString& msg);
     void clear_error();
     void set_loading(bool loading);
+
+    // SaaS 模式狀態
+    bool is_saas_mode_ = false;
+
+    // Device Flow 頁面元件
+    QWidget* device_page_ = nullptr;
+    QLabel* device_code_label_ = nullptr;
+    QLabel* device_status_label_ = nullptr;
+    QPushButton* device_open_browser_btn_ = nullptr;
+    QString device_verification_url_;
+    QTimer* device_dot_timer_ = nullptr;
+    int device_dot_count_ = 0;
 
   protected:
     void paintEvent(QPaintEvent* event) override;
@@ -59,6 +73,12 @@ class LoginScreen : public QWidget {
     void on_active_session(const QString& msg);
     void on_mfa_verified();
     void on_mfa_failed(const QString& error);
+
+    // Device Flow slots
+    void on_device_code_received(const QString& user_code, const QString& verification_url);
+    void on_device_flow_complete();
+    void on_device_flow_failed(const QString& error);
+    void on_device_flow_expired();
 };
 
 } // namespace fincept::screens

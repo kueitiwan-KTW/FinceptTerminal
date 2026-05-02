@@ -38,6 +38,10 @@ class AuthApi : public QObject {
     // Unauthenticated
     void get_auth_status(Callback cb);
 
+    // Device Authorization Flow（RFC 8628 — 無認證公開端點）
+    void device_request_code(const QString& email, Callback cb);
+    void device_poll(const QString& device_code, Callback cb);
+
     // Subscription / payment
     void get_subscription_plans(Callback cb);
     void generate_checkout_token(const QString& plan_id, Callback cb);

@@ -314,6 +314,132 @@ void AuthManager::login(const QString& email, const QString& password, bool forc
     });
 }
 
+// ── Device Authorization Flow（RFC 8628）─────────────────────────────────────
+
+void AuthManager::start_device_flow(const QString& email) {
+    set_loading(true);
+    stop_device_polling(); // 清理先前的輪詢（如有）
+
+    AuthApi::instance().device_request_code(
+        sanitize_input(email).toLower(),
+        [this](ApiResponse r) {
+            if (!r.success) {
+                set_loading(false);
+                emit device_flow_failed(r.error.isEmpty() ? "無法取得授權碼" : r.error);
+                return;
+            }
+
+            // 解析回應：device_code, user_code, verification_url, interval
+            device_code_ = r.data["device_code"].toString();
+            QString user_code = r.data["user_code"].toString();
+            QString verification_url = r.data["verification_url"].toString();
+            device_poll_interval_ = r.data.value("interval").toInt(5);
+
+            if (device_code_.isEmpty() || user_code.isEmpty()) {
+                set_loading(false);
+                emit device_flow_failed("伺服器回應格式錯誤");
+                return;
+            }
+
+            LOG_INFO("Auth", "Device Flow: 取得 user_code " + user_code + " (interval=" + QString::number(device_poll_interval_) + "s)");
+
+            // 啟動輪詢 timer
+            if (!device_poll_timer_) {
+                device_poll_timer_ = new QTimer(this);
+                connect(device_poll_timer_, &QTimer::timeout, this, &AuthManager::on_device_poll_tick);
+            }
+            device_poll_timer_->start(device_poll_interval_ * 1000);
+
+            set_loading(false);
+            emit device_code_received(user_code, verification_url);
+        }
+    );
+}
+
+void AuthManager::cancel_device_flow() {
+    stop_device_polling();
+    set_loading(false);
+}
+
+void AuthManager::on_device_poll_tick() {
+    if (device_code_.isEmpty()) {
+        stop_device_polling();
+        return;
+    }
+
+    AuthApi::instance().device_poll(device_code_, [this](ApiResponse r) {
+        if (!r.success) {
+            // 網路錯誤 — 不停止輪詢，繼續重試
+            LOG_WARN("Auth", "Device poll 網路錯誤，繼續重試...");
+            return;
+        }
+
+        QString status = r.data["status"].toString();
+
+        if (status == "authorization_pending") {
+            // 尚未授權，繼續等待
+            return;
+        }
+
+        if (status == "slow_down") {
+            // 增加輪詢間隔 5 秒
+            device_poll_interval_ += 5;
+            if (device_poll_timer_)
+                device_poll_timer_->setInterval(device_poll_interval_ * 1000);
+            LOG_INFO("Auth", "Device poll slow_down, interval=" + QString::number(device_poll_interval_) + "s");
+            return;
+        }
+
+        if (status == "complete") {
+            // 授權完成 — 取得 JWT token
+            stop_device_polling();
+            QString token = r.data["token"].toString();
+            if (token.isEmpty()) {
+                emit device_flow_failed("授權完成但未收到 token");
+                return;
+            }
+
+            LOG_INFO("Auth", "Device Flow: 授權完成，設定 JWT token");
+            set_loading(true);
+
+            // 設定 JWT（與 SSO 路徑一致）
+            is_sso_mode_ = true;
+            session_.api_key = token;
+            apply_tokens(token, {});
+
+            // 走既有驗證鏈路：fetch profile → auto_configure_fincept_llm
+            fetch_user_profile([this] {
+                emit device_flow_complete();
+                emit login_succeeded();
+            });
+            return;
+        }
+
+        if (status == "expired") {
+            stop_device_polling();
+            emit device_flow_expired();
+            return;
+        }
+
+        if (status == "access_denied") {
+            stop_device_polling();
+            emit device_flow_failed("授權被拒絕");
+            return;
+        }
+
+        // 未知狀態
+        LOG_WARN("Auth", "Device poll 未知狀態: " + status);
+    });
+}
+
+void AuthManager::stop_device_polling() {
+    if (device_poll_timer_) {
+        device_poll_timer_->stop();
+    }
+    device_code_.clear();
+    device_poll_interval_ = 5;
+}
+
 // ── Signup ───────────────────────────────────────────────────────────────────
 
 void AuthManager::signup(const QString& username, const QString& email, const QString& password, const QString& phone,
