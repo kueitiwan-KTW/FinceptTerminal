@@ -2081,4 +2081,46 @@ void ReportBuilderScreen::restore_state(const QVariantMap& state) {
         current_file_ = file;
 }
 
+// ── Stubs for methods declared in header but not yet migrated ────────────────
+
+void ReportBuilderScreen::on_toggle_left() {
+    // TODO: 上游新增的側邊面板收合功能，尚未實作
+}
+
+void ReportBuilderScreen::on_toggle_right() {
+    // TODO: 上游新增的側邊面板收合功能，尚未實作
+}
+
+void ReportBuilderScreen::apply_left_collapsed(bool /*collapsed*/, bool /*animate*/) {
+    // TODO: 上游新增的側邊面板收合功能，尚未實作
+}
+
+void ReportBuilderScreen::apply_right_collapsed(bool /*collapsed*/, bool /*animate*/) {
+    // TODO: 上游新增的側邊面板收合功能，尚未實作
+}
+
+void ReportBuilderScreen::remove_component_at(int index) {
+    remove_component(index);
+}
+
+void ReportBuilderScreen::duplicate_at(int index) {
+    if (index >= 0 && index < components_.size()) {
+        ReportComponent copy = components_[index];
+        copy.id = next_id_++;
+        add_component_direct(copy, index + 1);
+    }
+}
+
+void ReportBuilderScreen::move_up_at(int index) {
+    if (index > 0 && index < components_.size()) {
+        undo_stack_->push(new MoveComponentCommand(this, index, index - 1));
+    }
+}
+
+void ReportBuilderScreen::move_down_at(int index) {
+    if (index >= 0 && index < components_.size() - 1) {
+        undo_stack_->push(new MoveComponentCommand(this, index, index + 1));
+    }
+}
+
 } // namespace fincept::screens

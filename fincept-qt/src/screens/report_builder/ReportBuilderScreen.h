@@ -78,6 +78,7 @@ class ReportBuilderScreen : public QWidget, public IStatefulScreen {
     void duplicate_at(int index);
     void move_up_at(int index);
     void move_down_at(int index);
+    void remove_component(int index);
     void update_component(int index, const QString& content, const QMap<QString, QString>& config);
 
     // I/O
