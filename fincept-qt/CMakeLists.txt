@@ -1896,6 +1896,12 @@ add_executable(FinceptTerminal ${_FINCEPT_EXE_FLAGS}
     ${_FINCEPT_PLATFORM_SOURCES}
 )
 
+# 關閉 MOC 自動生成檔案的 Unity build，避免 mocs_compilation.cpp
+# 合併多個 moc_*.cpp 時 namespace scope 衝突（如 fincept::ui::MapPin）
+set_target_properties(FinceptTerminal PROPERTIES
+    AUTOGEN_UNITY_BUILD OFF
+)
+
 target_include_directories(FinceptTerminal PRIVATE
     src
     ${SingleApplication_SOURCE_DIR}
