@@ -2,6 +2,7 @@
 #include "screens/IStatefulScreen.h"
 
 #include <QCheckBox>
+#include <QHideEvent>
 #include <QComboBox>
 #include <QFrame>
 #include <QHash>
@@ -30,6 +31,7 @@ class SettingsScreen : public QWidget, public IStatefulScreen {
 
   protected:
     void showEvent(QShowEvent* e) override;
+    void hideEvent(QHideEvent* e) override;
 
   private:
     QStackedWidget* sections_ = nullptr;
@@ -136,6 +138,12 @@ class SettingsScreen : public QWidget, public IStatefulScreen {
     void load_security();
     void refresh_audit_log();
     void refresh_storage_stats();
+    void reload_all_sections();
+
+    // ── MCP event helpers ────────────────────────────────────────────────────
+    void subscribe_mcp_events();
+    void unsubscribe_mcp_events();
+    QList<int> mcp_event_subs_;
 
     // ── Notification helpers ──────────────────────────────────────────────────
     void save_provider_fields(const QString& provider_id, const ProviderWidgets& pw);
