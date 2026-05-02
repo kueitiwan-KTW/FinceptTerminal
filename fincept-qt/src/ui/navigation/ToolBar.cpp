@@ -1,4 +1,4 @@
-﻿#include "ui/navigation/ToolBar.h"
+#include "ui/navigation/ToolBar.h"
 
 #include "auth/AuthManager.h"
 #include "ui/theme/Theme.h"
@@ -106,7 +106,7 @@ ToolBar::ToolBar(QWidget* parent) : QWidget(parent) {
     sep();
     plan_btn_ = new QPushButton("---");
     plan_btn_->setCursor(Qt::PointingHandCursor);
-    plan_btn_->setToolTip(tr("View Plans & Pricing"));
+    plan_btn_->setToolTip("View Plans & Pricing");
     plan_btn_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     connect(plan_btn_, &QPushButton::clicked, this, &ToolBar::plan_clicked);
     hl->addWidget(plan_btn_);
@@ -115,7 +115,7 @@ ToolBar::ToolBar(QWidget* parent) : QWidget(parent) {
     chat_mode_btn_ = new QPushButton(QString::fromUtf8("⬡ CHAT"));
     chat_mode_btn_->setFixedHeight(20);
     chat_mode_btn_->setCursor(Qt::PointingHandCursor);
-    chat_mode_btn_->setToolTip(tr("Switch to Chat Mode (F9)"));
+    chat_mode_btn_->setToolTip("Switch to Chat Mode (F9)");
     chat_mode_btn_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     connect(chat_mode_btn_, &QPushButton::clicked, this, &ToolBar::chat_mode_toggled);
     hl->addWidget(chat_mode_btn_);
@@ -270,7 +270,7 @@ QMenu* ToolBar::build_file_menu() {
 
     // "Move to Monitor" — rebuilt on every popup so plug/unplug events are
     // reflected without restarting the app. Emits "move_to_monitor:<name>"
-    // so WindowFrame can look the screen up by name (indices are unstable).
+    // so MainWindow can look the screen up by name (indices are unstable).
     auto* monitors = m->addMenu("Move to Monitor");
     monitors->setStyleSheet(popup_ss());
     connect(monitors, &QMenu::aboutToShow, this, [this, monitors]() {
@@ -351,10 +351,6 @@ QMenu* ToolBar::build_navigate_menu() {
     nav(trd, "Derivatives", "derivatives");
     nav(trd, "Watchlist", "watchlist");
 
-    // Crypto / on-chain identity
-    auto* crypto = add_sub("Crypto");
-    nav(crypto, "Crypto Center", "crypto_center");
-
     // Research & Intelligence
     auto* res = add_sub("Research & Intelligence");
     nav(res, "Equity Research", "equity_research");
@@ -398,7 +394,7 @@ QMenu* ToolBar::build_view_menu() {
     m->addSeparator();
     m->addAction("Focus Mode\tF10", this, [this]() { emit action_triggered("focus_mode"); });
     // Phase 11: the shortcut is Ctrl+Shift+T; we don't mark the QAction as
-    // checkable because its state is owned by WindowFrame::always_on_top_ —
+    // checkable because its state is owned by MainWindow::always_on_top_ —
     // a checkable toolbar action would drift out of sync on window focus
     // changes. If the user cares about the visual, the window's title bar
     // retains the OS-level "always on top" decoration on most platforms.

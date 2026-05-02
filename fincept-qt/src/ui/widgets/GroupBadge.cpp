@@ -11,7 +11,7 @@ namespace fincept::ui {
 
 GroupBadge::GroupBadge(QWidget* parent) : QWidget(parent) {
     setCursor(Qt::PointingHandCursor);
-    setToolTip(tr("Symbol link group — click to cycle, right-click for menu"));
+    setToolTip("Symbol link group — click to cycle, right-click for menu");
     setAttribute(Qt::WA_Hover);
 }
 

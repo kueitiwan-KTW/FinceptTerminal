@@ -2,7 +2,6 @@
 
 #include "core/symbol/SymbolContext.h"
 #include "core/symbol/SymbolDragSource.h"
-#include "core/symbol/SymbolGroupRegistry.h"
 #include "services/pushpins/PushpinService.h"
 
 #include <QAction>
@@ -71,11 +70,8 @@ void SymbolChip::contextMenuEvent(QContextMenuEvent* e) {
     });
 
     menu.addSeparator();
-    auto& registry = SymbolGroupRegistry::instance();
-    for (SymbolGroup g : registry.enabled_groups()) {
-        auto* act = menu.addAction(QStringLiteral("Broadcast to %1  (%2)")
-                                       .arg(registry.name(g))
-                                       .arg(symbol_group_letter(g)));
+    for (SymbolGroup g : all_symbol_groups()) {
+        auto* act = menu.addAction(QString("Broadcast to Group %1").arg(symbol_group_letter(g)));
         connect(act, &QAction::triggered, this, [this, g]() { broadcast_to_group(g); });
     }
     menu.exec(e->globalPos());
