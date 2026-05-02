@@ -1,5 +1,6 @@
 #include "services/markets/MarketDataService.h"
 
+#include "auth/AuthManager.h"
 #include "core/logging/Logger.h"
 #include "python/PythonRunner.h"
 #include "python/PythonWorker.h"
@@ -311,13 +312,20 @@ void MarketDataService::fetch_quotes(const QStringList& symbols, QuoteCallback c
     }
 }
 
+// ── 工具函式：判斷是否為台股符號（.TW / .TWO / ^TWII）──────────────────────
+static bool is_tw_symbol(const QString& sym) {
+    return sym.endsWith(QStringLiteral(".TW"), Qt::CaseInsensitive)
+        || sym.endsWith(QStringLiteral(".TWO"), Qt::CaseInsensitive)
+        || sym == QStringLiteral("^TWII");
+}
+
 void MarketDataService::flush_batch() {
     batch_scheduled_ = false;
 
     if (pending_.isEmpty())
         return;
 
-    // Collect all unique symbols from pending requests
+    // 收集所有不重複的符號
     QSet<QString> all_symbols_set;
     for (const auto& req : pending_) {
         for (const auto& sym : req.symbols) {
@@ -326,104 +334,286 @@ void MarketDataService::flush_batch() {
     }
     QStringList all_symbols = all_symbols_set.values();
 
-    // Take ownership of pending callbacks
+    // 取得 pending callback 所有權
     auto requests = std::move(pending_);
     pending_.clear();
 
+    // ── 分流：台股符號走 ktw_taiwan_realtime.py，其餘走 yfinance ──────────
+    QStringList tw_symbols;
+    QStringList yf_symbols;
+    for (const auto& sym : all_symbols) {
+        if (is_tw_symbol(sym))
+            tw_symbols.append(sym);
+        else
+            yf_symbols.append(sym);
+    }
+
     LOG_INFO("MarketData",
-             QString("Batch fetch: %1 unique symbols from %2 requests").arg(all_symbols.size()).arg(requests.size()));
+             QString("Batch fetch: %1 symbols (%2 TW + %3 yfinance) from %4 requests")
+                 .arg(all_symbols.size()).arg(tw_symbols.size()).arg(yf_symbols.size()).arg(requests.size()));
 
-    QStringList args;
-    args << "batch_quotes";
-    args.append(all_symbols);
+    // ── 共用狀態：等兩條路徑都完成後再分發結果 ──────────────────────────────
+    struct BatchState {
+        QVector<QuoteData> all_quotes;
+        int pending_paths = 0;
+        bool any_success = false;
+        QVector<PendingRequest> requests;
+    };
+    auto state = std::make_shared<BatchState>();
+    state->requests = std::move(requests);
 
-    python::PythonRunner::instance().run(
-        "yfinance_data.py", args, [this, requests = std::move(requests)](python::PythonResult result) {
-            QVector<QuoteData> all_quotes;
+    // 計算需要等待的異步路徑數
+    if (!tw_symbols.isEmpty()) state->pending_paths++;
+    if (!yf_symbols.isEmpty()) state->pending_paths++;
+    if (state->pending_paths == 0) {
+        // 不應發生，但保險起見
+        for (const auto& req : state->requests) req.cb(true, {});
+        return;
+    }
 
-            if (result.success) {
-                auto doc = QJsonDocument::fromJson(result.output.toUtf8());
+    // ── 共用 lambda：解析 QuoteData 與寫入快取 ───────────────────────────────
+    auto parse_quote = [](const QJsonObject& q) -> QuoteData {
+        return {q["symbol"].toString(),
+                q["name"].toString(q["symbol"].toString()),
+                q["price"].toDouble(),
+                q["change"].toDouble(),
+                q["change_percent"].toDouble(q["change_pct"].toDouble()),
+                q["high"].toDouble(),
+                q["low"].toDouble(),
+                q["volume"].toDouble()};
+    };
 
-                auto parse_quote = [](const QJsonObject& q) -> QuoteData {
-                    return {q["symbol"].toString(),
-                            q["name"].toString(q["symbol"].toString()),
-                            q["price"].toDouble(),
-                            q["change"].toDouble(),
-                            q["change_percent"].toDouble(),
-                            q["high"].toDouble(),
-                            q["low"].toDouble(),
-                            q["volume"].toDouble()};
-                };
+    auto store_quote = [](const QuoteData& q) {
+        QJsonObject o;
+        o["symbol"] = q.symbol;
+        o["name"] = q.name;
+        o["price"] = q.price;
+        o["change"] = q.change;
+        o["change_pct"] = q.change_pct;
+        o["high"] = q.high;
+        o["low"] = q.low;
+        o["volume"] = q.volume;
+        fincept::CacheManager::instance().put(
+            "market:" + q.symbol,
+            QVariant(QString::fromUtf8(QJsonDocument(o).toJson(QJsonDocument::Compact))), kQuoteCacheTtlSec,
+            "market_data");
+    };
 
-                auto store_quote = [](const QuoteData& q) {
-                    QJsonObject o;
-                    o["symbol"] = q.symbol;
-                    o["name"] = q.name;
-                    o["price"] = q.price;
-                    o["change"] = q.change;
-                    o["change_pct"] = q.change_pct;
-                    o["high"] = q.high;
-                    o["low"] = q.low;
-                    o["volume"] = q.volume;
-                    fincept::CacheManager::instance().put(
-                        "market:" + q.symbol,
-                        QVariant(QString::fromUtf8(QJsonDocument(o).toJson(QJsonDocument::Compact))), kQuoteCacheTtlSec,
-                        "market_data");
-                };
+    // ── 共用 lambda：當一條路徑完成後，檢查是否所有路徑都已完成 ─────────────
+    auto try_fan_out = [this, state]() {
+        if (state->pending_paths > 0)
+            return; // 還有路徑未完成
 
-                if (doc.isArray()) {
-                    for (const auto& v : doc.array()) {
-                        auto q = v.toObject();
-                        if (q.contains("error"))
-                            continue;
-                        auto quote = parse_quote(q);
-                        all_quotes.append(quote);
-                        store_quote(quote);
-                        publish_quote_to_hub(quote);
-                    }
-                } else if (doc.isObject()) {
-                    auto obj = doc.object();
-                    if (obj.contains("symbol") && !obj.contains("error")) {
-                        auto quote = parse_quote(obj);
-                        all_quotes.append(quote);
-                        store_quote(quote);
-                        publish_quote_to_hub(quote);
+        LOG_INFO("MarketData", QString("All paths done: %1 total quotes").arg(state->all_quotes.size()));
+
+        // 分發結果給各等待的 callback（按各自請求的符號過濾）
+        for (const auto& req : state->requests) {
+            if (!state->any_success) {
+                // 全部失敗 — 嘗試從過期快取提供
+                QVector<QuoteData> stale;
+                for (const auto& sym : req.symbols) {
+                    const QVariant cv = fincept::CacheManager::instance().get("market:" + sym);
+                    if (!cv.isNull()) {
+                        const QJsonObject o = QJsonDocument::fromJson(cv.toString().toUtf8()).object();
+                        stale.append({o["symbol"].toString(), o["name"].toString(), o["price"].toDouble(),
+                                      o["change"].toDouble(), o["change_pct"].toDouble(), o["high"].toDouble(),
+                                      o["low"].toDouble(), o["volume"].toDouble()});
                     }
                 }
-
-                LOG_INFO("MarketData", QString("Fetched %1 quotes (cached)").arg(all_quotes.size()));
-            } else {
-                LOG_WARN("MarketData", "Batch fetch failed: " + result.error);
+                req.cb(!stale.isEmpty(), stale);
+                continue;
             }
 
-            // Fan out results to each waiting callback, filtered to their requested symbols
-            for (const auto& req : requests) {
-                if (!result.success) {
-                    // On failure, try to serve from stale cache (ignoring TTL)
-                    QVector<QuoteData> stale;
-                    for (const auto& sym : req.symbols) {
-                        const QVariant cv = fincept::CacheManager::instance().get("market:" + sym);
-                        if (!cv.isNull()) {
-                            const QJsonObject o = QJsonDocument::fromJson(cv.toString().toUtf8()).object();
-                            stale.append({o["symbol"].toString(), o["name"].toString(), o["price"].toDouble(),
-                                          o["change"].toDouble(), o["change_pct"].toDouble(), o["high"].toDouble(),
-                                          o["low"].toDouble(), o["volume"].toDouble()});
+            QSet<QString> wanted(req.symbols.begin(), req.symbols.end());
+            QVector<QuoteData> filtered;
+            for (const auto& q : state->all_quotes) {
+                if (wanted.contains(q.symbol)) {
+                    filtered.append(q);
+                }
+            }
+            req.cb(true, filtered);
+        }
+    };
+
+    // ── 路徑 A：台股符號 → ktw_taiwan_realtime.py（Fugle SSE / REST）────────
+    if (!tw_symbols.isEmpty()) {
+        // 注入認證 token 給 Python 子進程（走 Platform 代理需要）
+        const auto& sess = auth::AuthManager::instance().session();
+        if (!sess.api_key.isEmpty()) {
+            qputenv("KTW_API_KEY", sess.api_key.toUtf8());
+        }
+
+        // 先嘗試即時行情橋接器
+        QStringList tw_args;
+        tw_args << "latest_quotes";
+
+        python::PythonRunner::instance().run(
+            "ktw_taiwan_realtime.py", tw_args,
+            [this, state, tw_symbols, parse_quote, store_quote, try_fan_out](python::PythonResult tw_result) {
+                bool tw_ok = false;
+
+                if (tw_result.success) {
+                    auto doc = QJsonDocument::fromJson(tw_result.output.toUtf8());
+                    if (doc.isObject()) {
+                        auto obj = doc.object();
+                        if (obj["success"].toBool()) {
+                            auto data = obj["data"].toArray();
+                            // 建立快速查詢表：從即時行情取得的符號
+                            QSet<QString> fetched_syms;
+                            for (const auto& v : data) {
+                                auto q = v.toObject();
+                                // 即時行情的 symbol 可能是純數字（如 2330），需要映射回 .TW 格式
+                                QString sym = q["symbol"].toString();
+                                // 嘗試在台股符號清單中找到匹配
+                                QString matched_sym;
+                                for (const auto& tw_sym : tw_symbols) {
+                                    // 比對：2330.TW 的前綴 2330 == 即時行情的 symbol
+                                    if (tw_sym.startsWith(sym) || tw_sym == sym) {
+                                        matched_sym = tw_sym;
+                                        break;
+                                    }
+                                }
+                                if (matched_sym.isEmpty())
+                                    matched_sym = sym; // 無法映射則用原始值
+
+                                QuoteData quote;
+                                quote.symbol = matched_sym;
+                                quote.name = q["name"].toString(matched_sym);
+                                quote.price = q["closePrice"].toDouble(q["price"].toDouble());
+                                quote.change = q["change"].toDouble();
+                                quote.change_pct = q["changePercent"].toDouble(q["change_pct"].toDouble());
+                                quote.high = q["highPrice"].toDouble(q["high"].toDouble());
+                                quote.low = q["lowPrice"].toDouble(q["low"].toDouble());
+                                quote.volume = q["volume"].toDouble();
+
+                                state->all_quotes.append(quote);
+                                store_quote(quote);
+                                publish_quote_to_hub(quote);
+                                fetched_syms.insert(matched_sym);
+                            }
+
+                            tw_ok = !fetched_syms.isEmpty();
+                            if (tw_ok) {
+                                LOG_INFO("MarketData",
+                                         QString("TW realtime: %1 quotes via Fugle").arg(fetched_syms.size()));
+                            }
+
+                            // 檢查是否有台股符號未從即時行情取得 — 回退到 yfinance
+                            QStringList tw_fallback;
+                            for (const auto& sym : tw_symbols) {
+                                if (!fetched_syms.contains(sym))
+                                    tw_fallback.append(sym);
+                            }
+                            if (!tw_fallback.isEmpty()) {
+                                LOG_INFO("MarketData",
+                                         QString("TW fallback: %1 symbols via yfinance").arg(tw_fallback.size()));
+                                // 用 yfinance 補漏
+                                QStringList fb_args;
+                                fb_args << "batch_quotes" << tw_fallback;
+                                python::PythonRunner::instance().run(
+                                    "yfinance_data.py", fb_args,
+                                    [this, state, parse_quote, store_quote, try_fan_out](python::PythonResult fb_r) {
+                                        if (fb_r.success) {
+                                            auto doc = QJsonDocument::fromJson(fb_r.output.toUtf8());
+                                            if (doc.isArray()) {
+                                                for (const auto& v : doc.array()) {
+                                                    auto q = v.toObject();
+                                                    if (q.contains("error")) continue;
+                                                    auto quote = parse_quote(q);
+                                                    state->all_quotes.append(quote);
+                                                    store_quote(quote);
+                                                    publish_quote_to_hub(quote);
+                                                }
+                                            }
+                                        }
+                                        // 不論 fallback 成功與否，此路徑完成
+                                        state->any_success = true;
+                                        state->pending_paths--;
+                                        try_fan_out();
+                                    });
+                                return; // fallback 路徑會負責 pending_paths--
+                            }
                         }
                     }
-                    req.cb(!stale.isEmpty(), stale);
-                    continue;
                 }
 
-                QSet<QString> wanted(req.symbols.begin(), req.symbols.end());
-                QVector<QuoteData> filtered;
-                for (const auto& q : all_quotes) {
-                    if (wanted.contains(q.symbol)) {
-                        filtered.append(q);
-                    }
+                if (!tw_ok) {
+                    // KTW 路由完全失敗 — 全部台股符號回退到 yfinance
+                    LOG_WARN("MarketData", "TW realtime failed, fallback to yfinance for all TW symbols");
+                    QStringList fb_args;
+                    fb_args << "batch_quotes" << tw_symbols;
+                    python::PythonRunner::instance().run(
+                        "yfinance_data.py", fb_args,
+                        [this, state, parse_quote, store_quote, try_fan_out](python::PythonResult fb_r) {
+                            if (fb_r.success) {
+                                auto doc = QJsonDocument::fromJson(fb_r.output.toUtf8());
+                                if (doc.isArray()) {
+                                    for (const auto& v : doc.array()) {
+                                        auto q = v.toObject();
+                                        if (q.contains("error")) continue;
+                                        auto quote = parse_quote(q);
+                                        state->all_quotes.append(quote);
+                                        store_quote(quote);
+                                        publish_quote_to_hub(quote);
+                                    }
+                                }
+                                state->any_success = true;
+                            }
+                            state->pending_paths--;
+                            try_fan_out();
+                        });
+                    return; // fallback 路徑會負責 pending_paths--
                 }
-                req.cb(true, filtered);
-            }
-        });
+
+                // KTW 即時行情成功且無需 fallback
+                state->any_success = true;
+                state->pending_paths--;
+                try_fan_out();
+            });
+    }
+
+    // ── 路徑 B：非台股符號 → yfinance_data.py（原始路徑）─────────────────────
+    if (!yf_symbols.isEmpty()) {
+        QStringList yf_args;
+        yf_args << "batch_quotes";
+        yf_args.append(yf_symbols);
+
+        python::PythonRunner::instance().run(
+            "yfinance_data.py", yf_args,
+            [this, state, parse_quote, store_quote, try_fan_out](python::PythonResult result) {
+                if (result.success) {
+                    auto doc = QJsonDocument::fromJson(result.output.toUtf8());
+
+                    if (doc.isArray()) {
+                        for (const auto& v : doc.array()) {
+                            auto q = v.toObject();
+                            if (q.contains("error"))
+                                continue;
+                            auto quote = parse_quote(q);
+                            state->all_quotes.append(quote);
+                            store_quote(quote);
+                            publish_quote_to_hub(quote);
+                        }
+                    } else if (doc.isObject()) {
+                        auto obj = doc.object();
+                        if (obj.contains("symbol") && !obj.contains("error")) {
+                            auto quote = parse_quote(obj);
+                            state->all_quotes.append(quote);
+                            store_quote(quote);
+                            publish_quote_to_hub(quote);
+                        }
+                    }
+
+                    state->any_success = true;
+                    LOG_INFO("MarketData", QString("yfinance: %1 quotes fetched").arg(state->all_quotes.size()));
+                } else {
+                    LOG_WARN("MarketData", "yfinance batch fetch failed: " + result.error);
+                }
+
+                state->pending_paths--;
+                try_fan_out();
+            });
+    }
 }
 
 // ── News fetch (unchanged) ──────────────────────────────────────────────────
@@ -583,7 +773,8 @@ void MarketDataService::fetch_history(const QString& symbol, const QString& peri
 
 QStringList MarketDataService::indices_symbols() {
     return {"^GSPC", "^DJI",  "^IXIC", "^RUT",      "^FTSE",  "^GDAXI",
-            "^FCHI", "^N225", "^HSI",  "000001.SS", "^BSESN", "^NSEI"};
+            "^FCHI", "^N225", "^HSI",  "000001.SS", "^BSESN", "^NSEI",
+            "^TWII"};
 }
 
 QStringList MarketDataService::forex_symbols() {
@@ -610,7 +801,7 @@ QVector<MarketCategory> MarketDataService::default_global_markets() {
     return {
         {"Stock Indices",
          {"^GSPC", "^IXIC", "^DJI", "^RUT", "^VIX", "^FTSE", "^GDAXI", "^N225", "^FCHI", "^HSI", "^AXJO", "^BSESN",
-          "^NSEI", "^STOXX50E", "^NYA", "^SOX", "^IBEX", "^AEX"}},
+          "^NSEI", "^TWII", "^STOXX50E", "^NYA", "^SOX", "^IBEX", "^AEX"}},
         {"Forex",
          {"EURUSD=X", "GBPUSD=X", "USDJPY=X", "USDCHF=X", "USDCAD=X", "AUDUSD=X", "NZDUSD=X", "EURGBP=X", "EURJPY=X",
           "GBPJPY=X", "USDCNY=X", "USDINR=X"}},
@@ -656,6 +847,21 @@ QVector<RegionalMarket> MarketDataService::default_regional_markets() {
              {"ZTO", "ZTO Express"},
              {"VNET", "VNET Group"},
              {"TAL", "TAL Education"},
+         }},
+        {"Taiwan",
+         {
+             {"2330.TW", "TSMC 台積電"},
+             {"2317.TW", "Hon Hai 鴻海精密"},
+             {"2454.TW", "MediaTek 聯發科"},
+             {"2308.TW", "Delta 台達電子"},
+             {"2382.TW", "Quanta 廣達電腦"},
+             {"2303.TW", "UMC 聯電"},
+             {"2881.TW", "Fubon FG 富邦金"},
+             {"2882.TW", "Cathay FG 國泰金"},
+             {"2891.TW", "CTBC FG 中信金"},
+             {"1301.TW", "Formosa 台塑"},
+             {"2412.TW", "CHT 中華電信"},
+             {"3711.TW", "ASE 日月光投控"},
          }},
         {"United States",
          {

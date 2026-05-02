@@ -72,7 +72,7 @@ class AsiaMarketsScreen : public QWidget, public IStatefulScreen {
     int active_category_ = 0;
 
     // Market regions
-    QStringList regions_ = {"CN_A", "CN_B", "HK", "US"};
+    QStringList regions_ = {"CN_A", "CN_B", "HK", "US", "TW"};
     int active_region_ = 0;
 
     // Endpoint cache per script

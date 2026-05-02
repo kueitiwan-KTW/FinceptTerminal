@@ -103,6 +103,7 @@ static QString to_yfinance_symbol(const QString& symbol, const QString& exchange
         {"SET", ".BK"},
         {"PSE", ".PS"},
         {"TPEX", ".TWO"},
+        {"TWSE", ".TW"},
         // Europe — Germany
         {"XETR", ".DE"},
         {"FWB", ".F"},

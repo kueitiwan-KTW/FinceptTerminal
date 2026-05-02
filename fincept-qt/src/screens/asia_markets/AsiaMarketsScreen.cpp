@@ -132,6 +132,7 @@ static QList<StockCategory> build_categories() {
         {"boards", "BOARDS", "akshare_stocks_board.py", "#00E5FF", 49},
         {"margin", "MARGIN/HSGT", "akshare_stocks_margin.py", "#FF8800", 46},
         {"hot_news", "HOT & NEWS", "akshare_stocks_hot.py", "#FF6B6B", 55},
+        {"taiwan", "TAIWAN", "taiwan_market_data_service.py", "#E83F25", 9},
     };
 }
 
@@ -198,7 +199,7 @@ QWidget* AsiaMarketsScreen::create_header() {
     title_col->setSpacing(0);
     auto* title = new QLabel("ASIA MARKETS TERMINAL");
     title->setObjectName("asiaHeaderTitle");
-    auto* sub = new QLabel("398+ STOCK ENDPOINTS | CN A/B, HK, US");
+    auto* sub = new QLabel("407+ STOCK ENDPOINTS | CN A/B, HK, US, TW");
     sub->setObjectName("asiaHeaderSub");
     title_col->addWidget(title);
     title_col->addWidget(sub);
@@ -206,7 +207,7 @@ QWidget* AsiaMarketsScreen::create_header() {
     hl->addStretch(1);
 
     // Region buttons
-    const QStringList region_labels = {"CN A", "CN B", "HK", "US"};
+    const QStringList region_labels = {"CN A", "CN B", "HK", "US", "TW"};
     for (int i = 0; i < regions_.size(); ++i) {
         auto* btn = new QPushButton(region_labels[i]);
         btn->setObjectName("asiaRegionBtn");
