@@ -120,9 +120,17 @@ void MaritimeScreen::hideEvent(QHideEvent* e) {
 
 void MaritimeScreen::connect_service() {
     auto& svc = MaritimeService::instance();
-    connect(&svc, &MaritimeService::vessels_loaded, this, &MaritimeScreen::on_vessels_loaded);
+    // 新版 Service signal 使用 VesselsPage/VesselHistoryPage 封裝，
+    // 用 lambda 轉接到舊版 Screen 的 slot 簽名
+    connect(&svc, &MaritimeService::vessels_loaded, this,
+            [this](services::maritime::VesselsPage page) {
+                on_vessels_loaded(page.vessels, page.total_count);
+            });
     connect(&svc, &MaritimeService::vessel_found, this, &MaritimeScreen::on_vessel_found);
-    connect(&svc, &MaritimeService::vessel_history_loaded, this, &MaritimeScreen::on_vessel_history);
+    connect(&svc, &MaritimeService::vessel_history_loaded, this,
+            [this](services::maritime::VesselHistoryPage page) {
+                on_vessel_history(page.history);
+            });
     connect(&svc, &MaritimeService::error_occurred, this, &MaritimeScreen::on_error);
 }
 
