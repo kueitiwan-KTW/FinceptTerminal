@@ -196,7 +196,7 @@ void LoginScreen::build_login_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel(tr("SIGN IN"));
+    auto* title = new QLabel(tr("登入"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -204,7 +204,7 @@ void LoginScreen::build_login_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* brand = new QLabel("FINCEPT");
+    auto* brand = new QLabel("金融終端");
     brand->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 0.5px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -212,14 +212,14 @@ void LoginScreen::build_login_page() {
     hl->addWidget(brand);
     vl->addWidget(header);
 
-    auto* subtitle = new QLabel(tr("Access your terminal account"));
+    auto* subtitle = new QLabel(tr("登入您的終端機帳戶"));
     subtitle->setStyleSheet(muted_style());
     vl->addWidget(subtitle);
 
     vl->addWidget(make_separator());
 
     // Email
-    auto* email_lbl = new QLabel(tr("EMAIL"));
+    auto* email_lbl = new QLabel(tr("電子郵件"));
     email_lbl->setStyleSheet(label_style());
     vl->addWidget(email_lbl);
 
@@ -230,7 +230,7 @@ void LoginScreen::build_login_page() {
     vl->addWidget(email_input_);
 
     // Password（SaaS 模式下隱藏密碼欄位）
-    auto* pw_lbl = new QLabel(tr("PASSWORD"));
+    auto* pw_lbl = new QLabel(tr("密碼"));
     pw_lbl->setStyleSheet(label_style());
     vl->addWidget(pw_lbl);
 
@@ -241,19 +241,19 @@ void LoginScreen::build_login_page() {
     prl->setSpacing(4);
 
     password_input_ = new QLineEdit;
-    password_input_->setPlaceholderText(tr("enter password"));
+    password_input_->setPlaceholderText(tr("輸入密碼"));
     password_input_->setEchoMode(QLineEdit::Password);
     password_input_->setFixedHeight(34);
     password_input_->setStyleSheet(input_style());
     prl->addWidget(password_input_);
 
-    show_pw_btn_ = new QPushButton(tr("SHOW"));
+    show_pw_btn_ = new QPushButton(tr("顯示"));
     show_pw_btn_->setFixedSize(58, 34);
     show_pw_btn_->setStyleSheet(btn_standard());
     connect(show_pw_btn_, &QPushButton::clicked, this, [this]() {
         bool hidden = password_input_->echoMode() == QLineEdit::Password;
         password_input_->setEchoMode(hidden ? QLineEdit::Normal : QLineEdit::Password);
-        show_pw_btn_->setText(hidden ? tr("HIDE") : tr("SHOW"));
+        show_pw_btn_->setText(hidden ? tr("隱藏") : tr("顯示"));
     });
     prl->addWidget(show_pw_btn_);
     vl->addWidget(pw_row);
@@ -282,14 +282,14 @@ void LoginScreen::build_login_page() {
     auto* brl = new QHBoxLayout(btn_row);
     brl->setContentsMargins(0, 0, 0, 0);
 
-    auto* forgot_btn = new QPushButton(tr("FORGOT PASSWORD?"));
+    auto* forgot_btn = new QPushButton(tr("忘記密碼？"));
     forgot_btn->setStyleSheet(link_style());
     connect(forgot_btn, &QPushButton::clicked, this, &LoginScreen::navigate_forgot_password);
     brl->addWidget(forgot_btn);
     brl->addStretch();
 
     // SaaS 模式：按鈕文字改為 VERIFY ACCOUNT，隱藏 Forgot Password
-    login_btn_ = new QPushButton(saas ? tr("  VERIFY ACCOUNT  ") : tr("  SIGN IN  "));
+    login_btn_ = new QPushButton(saas ? tr("  驗證帳戶  ") : tr("  登入  "));
     login_btn_->setFixedHeight(32);
     login_btn_->setStyleSheet(btn_primary());
     connect(login_btn_, &QPushButton::clicked, this, &LoginScreen::on_login);
@@ -306,11 +306,11 @@ void LoginScreen::build_login_page() {
     rrl->setContentsMargins(0, 0, 0, 0);
     rrl->setAlignment(Qt::AlignCenter);
 
-    auto* no_acct = new QLabel(tr("No account?"));
+    auto* no_acct = new QLabel(tr("沒有帳戶？"));
     no_acct->setStyleSheet(muted_style());
     rrl->addWidget(no_acct);
 
-    auto* signup_btn = new QPushButton(tr("SIGN UP"));
+    auto* signup_btn = new QPushButton(tr("註冊"));
     signup_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none;"
                                       "  font-size: 13px; font-weight: 700;"
                                       "  font-family: 'Consolas','Courier New',monospace; }"
@@ -348,7 +348,7 @@ void LoginScreen::build_mfa_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel(tr("TWO-FACTOR AUTH"));
+    auto* title = new QLabel(tr("雙重驗證"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -356,7 +356,7 @@ void LoginScreen::build_mfa_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* indicator = new QLabel(tr("SECURE"));
+    auto* indicator = new QLabel(tr("安全"));
     indicator->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                      "background: transparent; letter-spacing: 0.5px;"
                                      "font-family: 'Consolas','Courier New',monospace;")
@@ -364,14 +364,14 @@ void LoginScreen::build_mfa_page() {
     hl->addWidget(indicator);
     vl->addWidget(header);
 
-    auto* sub = new QLabel(tr("Enter the 6-digit code from your authenticator"));
+    auto* sub = new QLabel(tr("請輸入驗證器的 6 位數驗證碼"));
     sub->setWordWrap(true);
     sub->setStyleSheet(muted_style());
     vl->addWidget(sub);
 
     vl->addWidget(make_separator());
 
-    auto* lbl = new QLabel(tr("VERIFICATION CODE"));
+    auto* lbl = new QLabel(tr("驗證碼"));
     lbl->setStyleSheet(label_style());
     vl->addWidget(lbl);
 
@@ -402,13 +402,13 @@ void LoginScreen::build_mfa_page() {
     mfa_error_->hide();
     vl->addWidget(mfa_error_);
 
-    mfa_verify_btn_ = new QPushButton(tr("  VERIFY  "));
+    mfa_verify_btn_ = new QPushButton(tr("  驗證  "));
     mfa_verify_btn_->setFixedHeight(32);
     mfa_verify_btn_->setStyleSheet(btn_primary());
     connect(mfa_verify_btn_, &QPushButton::clicked, this, &LoginScreen::on_mfa_verify);
     vl->addWidget(mfa_verify_btn_);
 
-    auto* back = new QPushButton(tr("BACK TO LOGIN"));
+    auto* back = new QPushButton(tr("返回登入"));
     back->setStyleSheet(link_style());
     connect(back, &QPushButton::clicked, this, [this]() { pages_->setCurrentIndex(0); });
     vl->addWidget(back, 0, Qt::AlignCenter);
@@ -434,7 +434,7 @@ void LoginScreen::build_conflict_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel(tr("SESSION CONFLICT"));
+    auto* title = new QLabel(tr("工作階段衝突"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -442,7 +442,7 @@ void LoginScreen::build_conflict_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* warn = new QLabel(tr("WARNING"));
+    auto* warn = new QLabel(tr("警告"));
     warn->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                 "background: transparent; letter-spacing: 0.5px;"
                                 "font-family: 'Consolas','Courier New',monospace;")
@@ -459,13 +459,13 @@ void LoginScreen::build_conflict_page() {
 
     vl->addWidget(make_separator());
 
-    auto* force_btn = new QPushButton(tr("  LOG OUT OTHER SESSION & CONTINUE  "));
+    auto* force_btn = new QPushButton(tr("  登出其他工作階段並繼續  "));
     force_btn->setFixedHeight(32);
     force_btn->setStyleSheet(btn_danger());
     connect(force_btn, &QPushButton::clicked, this, &LoginScreen::on_force_login);
     vl->addWidget(force_btn);
 
-    auto* cancel_btn = new QPushButton(tr("  CANCEL  "));
+    auto* cancel_btn = new QPushButton(tr("  取消  "));
     cancel_btn->setFixedHeight(32);
     cancel_btn->setStyleSheet(btn_standard());
     connect(cancel_btn, &QPushButton::clicked, this, [this]() { pages_->setCurrentIndex(0); });
@@ -497,7 +497,7 @@ void LoginScreen::on_login() {
     // 非 SaaS 模式：走傳統帳密登入
     QString password = password_input_->text();
     if (password.isEmpty()) {
-        show_error(tr("Please enter your password"));
+        show_error(tr("請輸入您的密碼"));
         return;
     }
 
@@ -509,7 +509,7 @@ void LoginScreen::on_login() {
 void LoginScreen::on_mfa_verify() {
     QString code = mfa_input_->text().trimmed();
     if (code.isEmpty()) {
-        mfa_error_->setText(tr("Please enter the code"));
+        mfa_error_->setText(tr("請輸入驗證碼"));
         mfa_error_->show();
         return;
     }
@@ -586,9 +586,9 @@ void LoginScreen::set_loading(bool loading) {
     if (!is_saas_mode_)
         password_input_->setEnabled(!loading);
     if (is_saas_mode_)
-        login_btn_->setText(loading ? tr("  VERIFYING...  ") : tr("  VERIFY ACCOUNT  "));
+        login_btn_->setText(loading ? tr("  驗證中...  ") : tr("  驗證帳戶  "));
     else
-        login_btn_->setText(loading ? tr("  SIGNING IN...  ") : tr("  SIGN IN  "));
+        login_btn_->setText(loading ? tr("  登入中...  ") : tr("  登入  "));
 }
 
 // ── Device Authorization Page ────────────────────────────────────────────────
@@ -608,7 +608,7 @@ void LoginScreen::build_device_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel(tr("DEVICE AUTHORIZATION"));
+    auto* title = new QLabel(tr("裝置授權"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -625,7 +625,7 @@ void LoginScreen::build_device_page() {
     vl->addWidget(header);
 
     // 說明文字
-    auto* desc = new QLabel(tr("Enter the code below in your browser to authorize this terminal."));
+    auto* desc = new QLabel(tr("請在瀏覽器中輸入以下驗證碼以授權此終端機。"));
     desc->setWordWrap(true);
     desc->setStyleSheet(muted_style());
     vl->addWidget(desc);
@@ -633,7 +633,7 @@ void LoginScreen::build_device_page() {
     vl->addWidget(make_separator());
 
     // 授權碼（大字 monospace）
-    auto* code_lbl = new QLabel(tr("AUTHORIZATION CODE"));
+    auto* code_lbl = new QLabel(tr("授權碼"));
     code_lbl->setStyleSheet(label_style());
     code_lbl->setAlignment(Qt::AlignCenter);
     vl->addWidget(code_lbl);
@@ -651,7 +651,7 @@ void LoginScreen::build_device_page() {
     vl->addWidget(make_separator());
 
     // 開啟瀏覽器按鈕
-    device_open_browser_btn_ = new QPushButton(tr("  OPEN BROWSER  "));
+    device_open_browser_btn_ = new QPushButton(tr("  開啟瀏覽器  "));
     device_open_browser_btn_->setFixedHeight(32);
     device_open_browser_btn_->setStyleSheet(btn_primary());
     connect(device_open_browser_btn_, &QPushButton::clicked, this, [this]() {
@@ -661,7 +661,7 @@ void LoginScreen::build_device_page() {
     vl->addWidget(device_open_browser_btn_);
 
     // 狀態文字
-    device_status_label_ = new QLabel(tr("Waiting for authorization..."));
+    device_status_label_ = new QLabel(tr("等待授權中..."));
     device_status_label_->setAlignment(Qt::AlignCenter);
     device_status_label_->setStyleSheet(
         QString("color: %1; font-size: 13px; background: transparent;"
@@ -670,7 +670,7 @@ void LoginScreen::build_device_page() {
     vl->addWidget(device_status_label_);
 
     // 取消按鈕
-    auto* cancel_btn = new QPushButton(tr("  CANCEL  "));
+    auto* cancel_btn = new QPushButton(tr("  取消  "));
     cancel_btn->setFixedHeight(32);
     cancel_btn->setStyleSheet(btn_standard());
     connect(cancel_btn, &QPushButton::clicked, this, [this]() {
@@ -687,7 +687,7 @@ void LoginScreen::build_device_page() {
     connect(device_dot_timer_, &QTimer::timeout, this, [this]() {
         device_dot_count_ = (device_dot_count_ + 1) % 4;
         QString dots = QString(".").repeated(device_dot_count_);
-        device_status_label_->setText(tr("Waiting for authorization") + dots);
+        device_status_label_->setText(tr("等待授權中") + dots);
     });
 
     pages_->addWidget(device_page_);
@@ -709,7 +709,7 @@ void LoginScreen::on_device_code_received(const QString& user_code, const QStrin
 
 void LoginScreen::on_device_flow_complete() {
     if (device_dot_timer_) device_dot_timer_->stop();
-    device_status_label_->setText(tr("Authorization successful!"));
+    device_status_label_->setText(tr("授權成功！"));
     // on_login_succeeded 會被 AuthManager::login_succeeded 觸發
 }
 
@@ -724,7 +724,7 @@ void LoginScreen::on_device_flow_expired() {
     if (device_dot_timer_) device_dot_timer_->stop();
     set_loading(false);
     pages_->setCurrentIndex(0);
-    show_error(tr("Authorization code expired. Please try again."));
+    show_error(tr("授權碼已過期，請重新嘗試。"));
 }
 
 } // namespace fincept::screens
