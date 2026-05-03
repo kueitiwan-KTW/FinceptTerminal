@@ -1,0 +1,81 @@
+name: Deploy zh-TW Docker Image to ktwserver
+
+# 觸發條件：push 到 main 且有 .cpp/.h 或 Dockerfile 變更
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'fincept-qt/src/**'
+      - 'Dockerfile'
+      - 'entrypoint.sh'
+  workflow_dispatch: # 手動觸發
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  deploy:
+    name: Build & Deploy on ktwserver
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: SSH 到 ktwserver 執行完整部署流程
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.KTWSERVER_TAILSCALE_IP }}
+          username: ${{ secrets.KTWSERVER_USER }}
+          key: ${{ secrets.KTWSERVER_SSH_KEY }}
+          port: 22
+          command_timeout: 50m
+          script: |
+            set -e
+            echo "═══════════════════════════════════════════════════"
+            echo "  Fincept Terminal zh-TW — 自動部署"
+            echo "  時間: $(TZ=Asia/Taipei date '+%Y-%m-%d %H:%M:%S')"
+            echo "═══════════════════════════════════════════════════"
+
+            cd /home/ktwserver/ktw-projects/fincept-terminal-zh
+
+            # 1. 拉取最新程式碼
+            echo "[1/5] 拉取最新程式碼..."
+            git fetch origin main
+            git reset --hard origin/main
+            echo "✅ 目前 commit: $(git log --oneline -1)"
+
+            # 2. 建構 Docker image（x86_64 原生建構，使用 zh-build Dockerfile）
+            echo "[2/5] 開始建構 Docker image..."
+            docker build \
+              -f Dockerfile.zh-build \
+              --tag ktw/fincept-terminal:zh-latest \
+              --tag ktw/fincept-terminal:zh-$(git rev-parse --short HEAD) \
+              .
+            echo "✅ Image 建構完成"
+
+            # 3. 停止並移除舊的租戶容器
+            echo "[3/5] 停止舊容器..."
+            CONTAINERS=$(docker ps -q --filter "label=ktw.pool=terminal" 2>/dev/null || true)
+            if [ -n "$CONTAINERS" ]; then
+              docker stop $CONTAINERS || true
+              docker rm $CONTAINERS || true
+              echo "✅ 已停止 $(echo $CONTAINERS | wc -w) 個舊容器"
+            else
+              echo "ℹ️ 無運行中的容器"
+            fi
+
+            # 4. 重啟 Pool Manager（systemd 服務，讓它用新 image）
+            echo "[4/5] 重啟 Pool Manager..."
+            sudo systemctl restart fincept-pool-manager
+            echo "✅ Pool Manager 已重啟"
+
+            # 5. 清理舊 image（保留最新 2 個 tag）
+            echo "[5/5] 清理舊 image..."
+            docker image prune -f --filter "label=ktw.pool=terminal" 2>/dev/null || true
+            echo "✅ 清理完成"
+
+            echo ""
+            echo "═══════════════════════════════════════════════════"
+            echo "  ✅ 部署完成！"
+            echo "  新 image: ktw/fincept-terminal:zh-latest"
+            echo "  下次租戶存取 Fincept 時會自動使用新 image"
+            echo "═══════════════════════════════════════════════════"
