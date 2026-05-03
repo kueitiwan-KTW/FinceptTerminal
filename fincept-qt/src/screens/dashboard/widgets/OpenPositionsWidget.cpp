@@ -19,7 +19,7 @@
 namespace fincept::screens::widgets {
 
 OpenPositionsWidget::OpenPositionsWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("OPEN POSITIONS", parent) {
+    : BaseWidget("未平倉部位", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(4);

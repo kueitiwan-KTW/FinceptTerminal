@@ -24,7 +24,7 @@
 namespace fincept::screens::widgets {
 
 OrderBookMiniWidget::OrderBookMiniWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("WORKING ORDERS", parent) {
+    : BaseWidget("委託單", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(4);

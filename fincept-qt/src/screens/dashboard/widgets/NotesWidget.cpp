@@ -59,7 +59,7 @@ QString sentiment_color(const QString& s) {
 } // namespace
 
 NotesWidget::NotesWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("NOTES", parent, ui::colors::AMBER()) {
+    : BaseWidget("備忘錄", parent, ui::colors::AMBER()) {
     auto* vl = content_layout();
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);

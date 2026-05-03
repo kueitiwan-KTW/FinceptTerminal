@@ -21,7 +21,7 @@ const QStringList kDefaultSymbols = {"AAPL", "MSFT", "GOOGL", "AMZN", "NVDA"};
 } // namespace
 
 MarketQuoteStripWidget::MarketQuoteStripWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("QUOTE STRIP", parent) {
+    : BaseWidget("報價條", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(10, 8, 10, 8);
     vl->setSpacing(4);

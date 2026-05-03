@@ -17,7 +17,7 @@ using fincept::services::FileManagerService;
 
 static const char* MF = "font-family:'Consolas','Courier New',monospace;";
 
-RecentFilesWidget::RecentFilesWidget(QWidget* parent) : BaseWidget("Recent Files", parent, ui::colors::AMBER.get()) {
+RecentFilesWidget::RecentFilesWidget(QWidget* parent) : BaseWidget("最近檔案", parent, ui::colors::AMBER.get()) {
 
     scroll_ = new QScrollArea;
     scroll_->setWidgetResizable(true);

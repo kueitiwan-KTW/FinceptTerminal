@@ -42,7 +42,7 @@ static bool is_youtube_url(const QString& url) {
 
 // ─────────────────────────────────────────────────────────────────────────────
 
-VideoPlayerWidget::VideoPlayerWidget(QWidget* parent) : BaseWidget("LIVE TV / STREAMS", parent, ui::colors::AMBER()) {
+VideoPlayerWidget::VideoPlayerWidget(QWidget* parent) : BaseWidget("直播 / 串流", parent, ui::colors::AMBER()) {
 
     stack_ = new QStackedWidget;
     stack_->setStyleSheet("background: transparent;");

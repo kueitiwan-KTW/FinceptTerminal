@@ -10,7 +10,7 @@
 namespace fincept::screens::widgets {
 
 WatchlistWidget::WatchlistWidget(QWidget* parent)
-    : BaseWidget("WATCHLIST", parent, ui::colors::INFO),
+    : BaseWidget("自選清單", parent, ui::colors::INFO),
       symbols_({"AAPL", "MSFT", "GOOGL", "AMZN", "NVDA", "TSLA", "META", "JPM"}) {
 
     auto* vl = content_layout();
@@ -48,7 +48,7 @@ WatchlistWidget::WatchlistWidget(QWidget* parent)
 
     // Table
     table_ = new ui::DataTable;
-    table_->set_headers({"SYMBOL", "PRICE", "CHG", "CHG%"});
+    table_->set_headers({"代號", "價格", "漲跌", "漲跌%"});
     table_->set_column_widths({100, 90, 80, 70});
     vl->addWidget(table_);
 

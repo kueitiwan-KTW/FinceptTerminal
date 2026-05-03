@@ -67,7 +67,7 @@ const QStringList kDefaultSymbols = {"AAPL", "MSFT", "GOOGL", "NVDA"};
 } // namespace
 
 SparklineStripWidget::SparklineStripWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("SPARKLINES", parent) {
+    : BaseWidget("走勢圖", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(10, 8, 10, 8);
     vl->setSpacing(4);

@@ -9,7 +9,7 @@
 
 namespace fincept::screens::widgets {
 
-NewsWidget::NewsWidget(QWidget* parent) : BaseWidget("MARKET NEWS", parent, ui::colors::CYAN) {
+NewsWidget::NewsWidget(QWidget* parent) : BaseWidget("市場新聞", parent, ui::colors::CYAN) {
     scroll_area_ = new QScrollArea;
     scroll_area_->setWidgetResizable(true);
 

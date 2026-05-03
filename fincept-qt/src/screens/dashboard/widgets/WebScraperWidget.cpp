@@ -177,7 +177,7 @@ QJsonValue walk_json_path(const QJsonValue& root, const QString& dotted) {
 // ─── ctor / dtor ──────────────────────────────────────────────────────────
 
 WebScraperWidget::WebScraperWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("WEB SCRAPER", parent) {
+    : BaseWidget("網頁爬蟲", parent) {
     net_ = new QNetworkAccessManager(this);
     connect(net_, &QNetworkAccessManager::finished, this, &WebScraperWidget::handle_reply);
 

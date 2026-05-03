@@ -19,7 +19,7 @@
 namespace fincept::screens::widgets {
 
 NewsCategoryWidget::NewsCategoryWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("NEWS — CATEGORY", parent) {
+    : BaseWidget("新聞分類", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(4);

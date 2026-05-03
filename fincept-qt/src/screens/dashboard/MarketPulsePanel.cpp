@@ -313,7 +313,7 @@ QWidget* MarketPulsePanel::build_header() {
     header_icon_ = new QLabel(QChar(0x25C8));
     hl->addWidget(header_icon_);
 
-    header_title_ = new QLabel("MARKET PULSE");
+    header_title_ = new QLabel("市場脈動");
     hl->addWidget(header_title_);
     hl->addStretch();
 
@@ -343,15 +343,15 @@ QWidget* MarketPulsePanel::build_section_header(const QString& title, const QStr
     // Store pointers into the corresponding SectionHeader member
     // so refresh_theme() can re-apply styles later.
     SectionHeader* sh = nullptr;
-    if (title == "MARKET BREADTH")
+    if (title == "市場寬度")
         sh = &sh_breadth_;
-    else if (title == "TOP GAINERS")
+    else if (title == "漲幅排行")
         sh = &sh_gainers_;
-    else if (title == "TOP LOSERS")
+    else if (title == "跌幅排行")
         sh = &sh_losers_;
-    else if (title == "GLOBAL SNAPSHOT")
+    else if (title == "全球快照")
         sh = &sh_snapshot_;
-    else if (title == "MARKET HOURS")
+    else if (title == "交易時段")
         sh = &sh_hours_;
 
     if (sh) {
@@ -376,7 +376,7 @@ QWidget* MarketPulsePanel::build_fear_greed_section() {
     auto* hrl = new QHBoxLayout(header_row);
     hrl->setContentsMargins(0, 0, 0, 0);
 
-    fg_header_label_ = new QLabel("FEAR & GREED INDEX");
+    fg_header_label_ = new QLabel("恐懼與貪婪指數");
     hrl->addWidget(fg_header_label_);
     hrl->addStretch();
 
@@ -403,7 +403,7 @@ QWidget* MarketPulsePanel::build_fear_greed_section() {
 
     srl->addStretch();
 
-    fg_sentiment_ = new QLabel("LOADING...");
+    fg_sentiment_ = new QLabel("載入中...");
     srl->addWidget(fg_sentiment_);
     // All styling applied by refresh_theme()
 
@@ -419,7 +419,7 @@ QWidget* MarketPulsePanel::build_breadth_section() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    vl->addWidget(build_section_header("MARKET BREADTH", QChar(0x2593), ui::colors::CYAN()));
+    vl->addWidget(build_section_header("市場寬度", QChar(0x2593), ui::colors::CYAN()));
 
     auto* bars = new QWidget(this);
     auto* bl = new QVBoxLayout(bars);
@@ -532,7 +532,7 @@ QWidget* MarketPulsePanel::build_gainers_section() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    vl->addWidget(build_section_header("TOP GAINERS", QChar(0x2191), ui::colors::POSITIVE()));
+    vl->addWidget(build_section_header("漲幅排行", QChar(0x2191), ui::colors::POSITIVE()));
 
     auto* rows_w = new QWidget(this);
     gainers_layout_ = new QVBoxLayout(rows_w);
@@ -553,7 +553,7 @@ QWidget* MarketPulsePanel::build_losers_section() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    vl->addWidget(build_section_header("TOP LOSERS", QChar(0x2193), ui::colors::NEGATIVE()));
+    vl->addWidget(build_section_header("跌幅排行", QChar(0x2193), ui::colors::NEGATIVE()));
 
     auto* rows_w = new QWidget(this);
     losers_layout_ = new QVBoxLayout(rows_w);
@@ -607,7 +607,7 @@ QWidget* MarketPulsePanel::build_global_snapshot_section() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    vl->addWidget(build_section_header("GLOBAL SNAPSHOT", QChar(0x25CB), ui::colors::INFO()));
+    vl->addWidget(build_section_header("全球快照", QChar(0x25CB), ui::colors::INFO()));
 
     // Build stat rows — colors are applied by refresh_theme()
     struct RowDef {
@@ -652,7 +652,7 @@ QWidget* MarketPulsePanel::build_market_hours_section() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    vl->addWidget(build_section_header("MARKET HOURS", QChar(0x26A1), ui::colors::WARNING()));
+    vl->addWidget(build_section_header("交易時段", QChar(0x26A1), ui::colors::WARNING()));
 
     auto* content = new QWidget(this);
     auto* cl = new QVBoxLayout(content);
@@ -705,29 +705,29 @@ QString MarketPulsePanel::market_status(const QString& region) {
     int day = now.date().dayOfWeek(); // 1=Mon, 7=Sun
 
     if (day >= 6)
-        return "CLOSED";
+        return "休市";
 
     if (region == "US") {
         if (hour >= 13 && hour < 14)
-            return "PRE";
+            return "盤前";
         if (hour >= 14 && hour < 21)
-            return "OPEN";
+            return "開市";
     } else if (region == "UK") {
         if (hour >= 7 && hour < 8)
-            return "PRE";
+            return "盤前";
         if (hour >= 8 && hour < 17)
-            return "OPEN";
+            return "開市";
     } else if (region == "JP") {
         if (hour >= 0 && hour < 6)
-            return "OPEN";
+            return "開市";
     } else if (region == "CN") {
         if (hour >= 1 && hour < 7)
-            return "OPEN";
+            return "開市";
     } else if (region == "IN") {
         if (hour >= 3 && hour < 10)
-            return "OPEN";
+            return "開市";
     }
-    return "CLOSED";
+    return "休市";
 }
 
 // ── Refresh ───────────────────────────────────────────────────────────────────
@@ -735,9 +735,9 @@ QString MarketPulsePanel::market_status(const QString& region) {
 void MarketPulsePanel::refresh_market_hours() {
     for (auto& hr : hours_rows_) {
         QString status = market_status(hr.region);
-        QString color = (status == "OPEN")  ? ui::colors::POSITIVE()
-                        : (status == "PRE") ? ui::colors::WARNING()
-                                            : ui::colors::NEGATIVE();
+        QString color = (status == "開市")  ? ui::colors::POSITIVE()
+                        : (status == "盤前") ? ui::colors::WARNING()
+                                             : ui::colors::NEGATIVE();
         hr.dot->setStyleSheet(QString("background: %1; border-radius: 2px;").arg(color));
         hr.status->setText(status);
         hr.status->setStyleSheet(

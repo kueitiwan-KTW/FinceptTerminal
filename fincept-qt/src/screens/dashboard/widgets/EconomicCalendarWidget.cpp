@@ -13,7 +13,7 @@
 namespace fincept::screens::widgets {
 
 EconomicCalendarWidget::EconomicCalendarWidget(QWidget* parent)
-    : BaseWidget("ECONOMIC CALENDAR", parent, ui::colors::CYAN()) {
+    : BaseWidget("經濟日曆", parent, ui::colors::CYAN()) {
     auto* vl = content_layout();
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);

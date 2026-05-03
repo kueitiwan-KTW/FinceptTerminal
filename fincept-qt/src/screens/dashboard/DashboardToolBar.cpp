@@ -58,7 +58,7 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
 
     make_sep(ll);
 
-    status_text_ = new QLabel("LIVE");
+    status_text_ = new QLabel("即時");
     status_text_->setObjectName("dtStatus");
     ll->addWidget(status_text_);
 
@@ -71,7 +71,7 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
 
     make_sep(ll);
 
-    widget_count_ = new QLabel("0 WIDGETS");
+    widget_count_ = new QLabel("0 個小工具");
     widget_count_->setObjectName("dtWidgetCount");
     ll->addWidget(widget_count_);
 
@@ -86,13 +86,13 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
     rl->setContentsMargins(0, 0, 0, 0);
     rl->setSpacing(4);
 
-    compact_btn_ = new QPushButton("COMPACT");
+    compact_btn_ = new QPushButton("精簡");
     compact_btn_->setFixedHeight(20);
     compact_btn_->setObjectName("dtBtn");
     connect(compact_btn_, &QPushButton::clicked, this, &DashboardToolBar::toggle_compact_clicked);
     rl->addWidget(compact_btn_);
 
-    pulse_btn_ = new QPushButton("PULSE");
+    pulse_btn_ = new QPushButton("脈動");
     pulse_btn_->setFixedHeight(20);
     pulse_btn_->setObjectName("dtBtn");
     connect(pulse_btn_, &QPushButton::clicked, this, &DashboardToolBar::toggle_pulse_clicked);
@@ -100,19 +100,19 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
 
     make_sep(rl);
 
-    auto* add_btn = new QPushButton("+ ADD");
+    auto* add_btn = new QPushButton("+ 新增");
     add_btn->setFixedHeight(20);
     add_btn->setObjectName("dtAddBtn");
     connect(add_btn, &QPushButton::clicked, this, &DashboardToolBar::add_widget_clicked);
     rl->addWidget(add_btn);
 
-    auto* save_btn = new QPushButton("SAVE");
+    auto* save_btn = new QPushButton("儲存");
     save_btn->setFixedHeight(20);
     save_btn->setObjectName("dtBtn");
     connect(save_btn, &QPushButton::clicked, this, &DashboardToolBar::save_layout_clicked);
     rl->addWidget(save_btn);
 
-    auto* reset_btn = new QPushButton("RESET");
+    auto* reset_btn = new QPushButton("重設");
     reset_btn->setFixedHeight(20);
     reset_btn->setObjectName("dtResetBtn");
     connect(reset_btn, &QPushButton::clicked, this, &DashboardToolBar::reset_layout_clicked);
@@ -188,12 +188,12 @@ void DashboardToolBar::update_clock() {
 }
 
 void DashboardToolBar::set_widget_count(int count) {
-    widget_count_->setText(QString("%1 WIDGETS").arg(count));
+    widget_count_->setText(QString("%1 個小工具").arg(count));
 }
 
 void DashboardToolBar::set_connected(bool connected) {
     connected_ = connected;
-    status_text_->setText(connected ? "LIVE" : "OFFLINE");
+    status_text_->setText(connected ? "即時" : "離線");
     // refresh_theme handles the base color; override just this label dynamically
     status_text_->setStyleSheet(QString("color:%1;font-weight:bold;background:transparent;")
                                     .arg(connected ? ui::colors::POSITIVE() : ui::colors::NEGATIVE()));

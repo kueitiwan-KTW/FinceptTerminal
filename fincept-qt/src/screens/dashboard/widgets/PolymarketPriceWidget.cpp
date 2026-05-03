@@ -15,7 +15,7 @@
 namespace fincept::screens::widgets {
 
 PolymarketPriceWidget::PolymarketPriceWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("POLYMARKET", parent) {
+    : BaseWidget("預測市場", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(10, 8, 10, 8);
     vl->setSpacing(4);

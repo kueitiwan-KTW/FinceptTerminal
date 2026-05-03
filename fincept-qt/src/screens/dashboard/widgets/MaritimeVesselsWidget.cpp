@@ -28,7 +28,7 @@ QStringList default_imos() {
 } // namespace
 
 MaritimeVesselsWidget::MaritimeVesselsWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("MARITIME VESSELS", parent, ui::colors::CYAN()) {
+    : BaseWidget("海運船舶", parent, ui::colors::CYAN()) {
     auto* vl = content_layout();
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);

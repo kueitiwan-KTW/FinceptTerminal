@@ -18,7 +18,7 @@
 namespace fincept::screens::widgets {
 
 BrokerHoldingsWidget::BrokerHoldingsWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("HOLDINGS", parent) {
+    : BaseWidget("持倉明細", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(4);

@@ -29,7 +29,7 @@ QString fmt_pnl(double v) {
 } // namespace
 
 TodayPnLWidget::TodayPnLWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("TODAY P&L", parent) {
+    : BaseWidget("今日損益", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(10, 8, 10, 8);
     vl->setSpacing(6);

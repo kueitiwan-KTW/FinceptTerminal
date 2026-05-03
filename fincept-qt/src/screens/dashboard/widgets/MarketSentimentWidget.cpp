@@ -14,7 +14,7 @@ inline const QStringList kSentimentSymbols = {
     "CVX",  "COIN", "PLTR", "SOFI",  "NKE",  "PFE",  "PYPL"};
 }
 
-MarketSentimentWidget::MarketSentimentWidget(QWidget* parent) : BaseWidget("MARKET SENTIMENT", parent) {
+MarketSentimentWidget::MarketSentimentWidget(QWidget* parent) : BaseWidget("市場情緒", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(8);
@@ -40,7 +40,7 @@ MarketSentimentWidget::MarketSentimentWidget(QWidget* parent) : BaseWidget("MARK
 
     bl->addWidget(score_row);
 
-    verdict_label_ = new QLabel("LOADING...");
+    verdict_label_ = new QLabel("載入中...");
     verdict_label_->setAlignment(Qt::AlignCenter);
     bl->addWidget(verdict_label_);
 

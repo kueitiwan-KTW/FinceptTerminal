@@ -16,7 +16,7 @@ inline const QStringList kPerfSymbols = {"^GSPC", "^IXIC", "^DJI", "^RUT", "^VIX
 namespace fincept::screens::widgets {
 
 PerformanceWidget::PerformanceWidget(QWidget* parent)
-    : BaseWidget("PERFORMANCE TRACKER", parent, ui::colors::POSITIVE()) {
+    : BaseWidget("績效追蹤", parent, ui::colors::POSITIVE()) {
     auto* vl = content_layout();
 
     // We'll show metrics derived from real benchmark ETF data

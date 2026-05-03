@@ -23,7 +23,7 @@ constexpr const char* kDefaultExchange = "kraken";
 } // namespace
 
 CryptoTickerWidget::CryptoTickerWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("CRYPTO TICKER", parent) {
+    : BaseWidget("加密貨幣行情", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(10, 8, 10, 8);
     vl->setSpacing(4);

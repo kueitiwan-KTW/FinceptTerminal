@@ -10,7 +10,7 @@ inline QuoteTableWidget* create_indices_widget(QWidget* parent = nullptr) {
         {"^FTSE", "FTSE 100"}, {"^GDAXI", "DAX"},         {"^FCHI", "CAC 40"},  {"^N225", "NIKKEI 225"},
         {"^HSI", "HANG SENG"}, {"000001.SS", "SHANGHAI"}, {"^BSESN", "SENSEX"}, {"^NSEI", "NIFTY 50"},
     };
-    return new QuoteTableWidget("GLOBAL INDICES", services::MarketDataService::indices_symbols(), labels, 2, {},
+    return new QuoteTableWidget("全球指數", services::MarketDataService::indices_symbols(), labels, 2, {},
                                 parent);
 }
 

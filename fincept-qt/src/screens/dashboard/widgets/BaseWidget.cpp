@@ -158,7 +158,7 @@ void BaseWidget::refresh_base_theme() {
 
 void BaseWidget::set_loading(bool loading) {
     loading_label_->setVisible(loading);
-    loading_label_->setText(loading ? "LOADING..." : "");
+    loading_label_->setText(loading ? "載入中..." : "");
 }
 
 void BaseWidget::set_error(const QString& error) {

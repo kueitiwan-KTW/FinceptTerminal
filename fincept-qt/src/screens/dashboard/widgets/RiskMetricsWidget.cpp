@@ -16,7 +16,7 @@ namespace fincept::screens::widgets {
 static const QStringList kRiskSymbols = {"^VIX", "SPY", "QQQ",  "IWM",  "TLT", "NVDA",
                                          "TSLA", "AMD", "META", "PLTR", "COIN"};
 
-RiskMetricsWidget::RiskMetricsWidget(QWidget* parent) : BaseWidget("RISK METRICS", parent, ui::colors::NEGATIVE()) {
+RiskMetricsWidget::RiskMetricsWidget(QWidget* parent) : BaseWidget("風險指標", parent, ui::colors::NEGATIVE()) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(6);

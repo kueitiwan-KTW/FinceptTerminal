@@ -18,10 +18,10 @@ TabBar::TabBar(QWidget* parent) : QWidget(parent) {
     tab_layout_->setSpacing(2);
 
     QVector<TabDef> tabs = {
-        {"dashboard", "DASHBOARD"}, {"markets", "MARKETS"},   {"crypto_trading", "CRYPTO"},  {"portfolio", "PORTFOLIO"},
-        {"news", "NEWS"},           {"ai_chat", "AI CHAT"},   {"backtesting", "BACKTEST"},   {"algo_trading", "ALGO"},
-        {"node_editor", "NODES"},   {"code_editor", "CODE"},  {"ai_quant_lab", "QUANT LAB"}, {"quantlib", "QUANTLIB"},
-        {"forum", "FORUM"},         {"settings", "SETTINGS"}, {"profile", "PROFILE"},
+        {"dashboard", "儀表板"},     {"markets", "市場"},       {"crypto_trading", "加密貨幣"},  {"portfolio", "投資組合"},
+        {"news", "新聞"},            {"ai_chat", "AI 對話"},    {"backtesting", "回測"},         {"algo_trading", "演算法"},
+        {"node_editor", "節點"},     {"code_editor", "程式碼"},  {"ai_quant_lab", "量化實驗室"},   {"quantlib", "量化函式庫"},
+        {"forum", "論壇"},           {"settings", "設定"},       {"profile", "個人檔案"},
     };
     for (const auto& def : tabs)
         add_tab(def);

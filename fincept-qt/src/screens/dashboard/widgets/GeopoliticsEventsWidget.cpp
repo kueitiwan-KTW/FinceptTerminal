@@ -33,7 +33,7 @@ QString format_relative(const QString& iso) {
 } // namespace
 
 GeopoliticsEventsWidget::GeopoliticsEventsWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("GEOPOLITICS EVENTS", parent, ui::colors::NEGATIVE()) {
+    : BaseWidget("地緣政治事件", parent, ui::colors::NEGATIVE()) {
     auto* vl = content_layout();
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);

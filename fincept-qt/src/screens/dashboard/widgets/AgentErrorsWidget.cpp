@@ -14,7 +14,7 @@
 namespace fincept::screens::widgets {
 
 AgentErrorsWidget::AgentErrorsWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("AGENT ERRORS", parent) {
+    : BaseWidget("代理錯誤", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(4);

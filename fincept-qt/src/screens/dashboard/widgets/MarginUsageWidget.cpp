@@ -32,7 +32,7 @@ QString fmt_money(double v) {
 } // namespace
 
 MarginUsageWidget::MarginUsageWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("MARGIN USAGE", parent) {
+    : BaseWidget("保證金使用", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(10, 8, 10, 8);
     vl->setSpacing(6);

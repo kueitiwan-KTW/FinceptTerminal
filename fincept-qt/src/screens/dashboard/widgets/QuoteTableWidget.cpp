@@ -17,7 +17,7 @@ QuoteTableWidget::QuoteTableWidget(const QString& title, const QStringList& symb
       label_map_(label_map),
       price_decimals_(price_decimals) {
     table_ = new ui::DataTable;
-    table_->set_headers({"SYMBOL", "PRICE", "CHG", "CHG%"});
+    table_->set_headers({"代號", "價格", "漲跌", "漲跌%"});
     table_->set_column_widths({130, 100, 80, 70});
     content_layout()->addWidget(table_);
 

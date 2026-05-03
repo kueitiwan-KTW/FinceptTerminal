@@ -18,7 +18,7 @@
 namespace fincept::screens::widgets {
 
 TradeTapeWidget::TradeTapeWidget(const QJsonObject& cfg, QWidget* parent)
-    : BaseWidget("TRADES", parent) {
+    : BaseWidget("成交紀錄", parent) {
     auto* vl = content_layout();
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(4);

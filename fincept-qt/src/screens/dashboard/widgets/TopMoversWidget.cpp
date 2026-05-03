@@ -7,7 +7,7 @@
 
 namespace fincept::screens::widgets {
 
-TopMoversWidget::TopMoversWidget(QWidget* parent) : BaseWidget("TOP MOVERS", parent) {
+TopMoversWidget::TopMoversWidget(QWidget* parent) : BaseWidget("漲跌排行", parent) {
     // Tab toggle
     auto* tab_bar = new QWidget(this);
     tab_bar->setFixedHeight(26);
@@ -28,7 +28,7 @@ TopMoversWidget::TopMoversWidget(QWidget* parent) : BaseWidget("TOP MOVERS", par
 
     // Table
     table_ = new ui::DataTable;
-    table_->set_headers({"SYMBOL", "PRICE", "CHG%"});
+    table_->set_headers({"代號", "價格", "漲跌%"});
     table_->set_column_widths({100, 90, 80});
     content_layout()->addWidget(table_);
 
