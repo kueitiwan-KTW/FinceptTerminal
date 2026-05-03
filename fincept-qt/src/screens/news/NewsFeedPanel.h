@@ -28,6 +28,7 @@ class NewsFeedPanel : public QWidget {
     void set_selected(const QString& article_id);
     void select_next();
     void select_previous();
+    void set_empty_state(bool empty);
 
   signals:
     void article_clicked(const services::NewsArticle& article);
@@ -72,6 +73,9 @@ class NewsFeedPanel : public QWidget {
     QTimer* skeleton_anim_timer_ = nullptr;
     int skeleton_phase_ = 0;
     bool is_loading_ = false;
+
+    // 空狀態 widget
+    QWidget* empty_state_ = nullptr;
 };
 
 } // namespace fincept::screens

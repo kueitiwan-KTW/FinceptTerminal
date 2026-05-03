@@ -56,17 +56,24 @@ ARG CMAKE_VERSION=3.27.7
 # aqtinstall arch for Linux on ARM; the on-disk install path is still
 # `gcc_arm64`. x86_64 maps to `linux_gcc_64` / `gcc_64` (the 6.8 rename).
 #
+# IMPORTANT: aqtinstall uses different **host** names per arch:
+#   x86_64 → host=linux,       arch=linux_gcc_64
+#   arm64  → host=linux_arm64, arch=linux_gcc_arm64
+# Using host=linux for arm64 will silently fail (no linux_gcc_arm64 listed).
+#
 # We resolve these once in a short shell block and persist them as /etc/build.env
 # so later RUN steps can re-source them. Doing the resolution in-image (rather
 # than as additional ARGs) keeps the `docker build` CLI simple.
 RUN set -eux; \
     case "${TARGETARCH}" in \
       amd64) \
+        QT_HOST=linux; \
         QT_ARCH_AQT=linux_gcc_64; \
         QT_ARCH_PATH=gcc_64; \
         CMAKE_ASSET="cmake-${CMAKE_VERSION}-linux-x86_64.sh"; \
         ;; \
       arm64) \
+        QT_HOST=linux_arm64; \
         QT_ARCH_AQT=linux_gcc_arm64; \
         QT_ARCH_PATH=gcc_arm64; \
         CMAKE_ASSET="cmake-${CMAKE_VERSION}-linux-aarch64.sh"; \
@@ -74,6 +81,7 @@ RUN set -eux; \
       *) echo "Unsupported TARGETARCH: ${TARGETARCH}" >&2; exit 1 ;; \
     esac; \
     { \
+      echo "QT_HOST=${QT_HOST}"; \
       echo "QT_ARCH_AQT=${QT_ARCH_AQT}"; \
       echo "QT_ARCH_PATH=${QT_ARCH_PATH}"; \
       echo "CMAKE_ASSET=${CMAKE_ASSET}"; \
@@ -126,11 +134,12 @@ RUN . /etc/build.env \
 # Qt 6.8.3 via aqtinstall. Modules match QT_MODULES in release.yml. Retry
 # loop rides through transient drops from the Qt mirror. --break-system-packages
 # is required on trixie's PEP 668 pip.
+# NOTE: QT_HOST differs per arch (linux vs linux_arm64) — see build.env.
 ENV QT_ROOT=/opt/Qt
 RUN . /etc/build.env \
     && pip3 install --break-system-packages --no-cache-dir aqtinstall \
     && for attempt in 1 2 3 4 5; do \
-         python3 -m aqt install-qt linux desktop "${QT_VERSION}" "${QT_ARCH_AQT}" \
+         python3 -m aqt install-qt "${QT_HOST}" desktop "${QT_VERSION}" "${QT_ARCH_AQT}" \
            --outputdir "${QT_ROOT}" \
            --modules qtcharts qtwebsockets qtmultimedia \
          && break \

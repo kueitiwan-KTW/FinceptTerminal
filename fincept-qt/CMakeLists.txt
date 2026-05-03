@@ -1224,17 +1224,9 @@ set(SCREEN_SOURCES
     # AI Quant Lab
     src/screens/ai_quant_lab/AIQuantLabScreen.cpp
     src/screens/ai_quant_lab/QuantModulePanel.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_GS.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_RL.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp
+    # 注意：QuantModulePanel_*.cpp 子檔案不加入編譯，
+    # 因為 QuantModulePanel.cpp (4509 行) 已包含全部函式定義。
+    # 同時編譯會導致 multiple definition linker error。
 
     # Backtesting
     src/screens/backtesting/BacktestingScreen.cpp
@@ -1429,17 +1421,6 @@ set_source_files_properties(
     src/screens/agent_config/WorkflowsViewPanel.cpp
     src/screens/ai_quant_lab/AIQuantLabScreen.cpp
     src/screens/ai_quant_lab/QuantModulePanel.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_GS.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_RL.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp
-    src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp
     src/screens/akshare/AkShareScreen.cpp
     src/screens/algo_trading/AlgoTradingScreen.cpp
     src/screens/algo_trading/DeploymentDashboard.cpp

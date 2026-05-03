@@ -4,6 +4,7 @@
 #include "screens/crypto_trading/CryptoTypes.h"
 #include "trading/TradingTypes.h"
 
+#include <QHash>
 #include <QJsonArray>
 #include <QLabel>
 #include <QTabWidget>
@@ -42,6 +43,9 @@ class CryptoBottomPanel : public QWidget {
     void add_trade_entry(const TradeEntry& trade);
     void set_depth_data(const QVector<QPair<double, double>>& bids, const QVector<QPair<double, double>>& asks,
                         double spread, double spread_pct);
+
+    // 根據最新報價更新持倉損益
+    void update_position_prices(const QHash<QString, double>& last_prices);
 
   signals:
     void cancel_order_requested(const QString& order_id);

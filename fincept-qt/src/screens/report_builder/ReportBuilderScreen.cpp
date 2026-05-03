@@ -2123,4 +2123,6 @@ void ReportBuilderScreen::move_down_at(int index) {
     }
 }
 
+ReportBuilderScreen::~ReportBuilderScreen() = default;
+
 } // namespace fincept::screens

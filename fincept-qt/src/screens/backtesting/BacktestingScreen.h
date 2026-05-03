@@ -2,6 +2,8 @@
 #pragma once
 #include "screens/IStatefulScreen.h"
 #include "services/backtesting/BacktestingTypes.h"
+#include "core/symbol/SymbolRef.h"
+#include "core/symbol/SymbolGroup.h"
 
 #include <QCheckBox>
 #include <QComboBox>
@@ -47,6 +49,7 @@ class BacktestingScreen : public QWidget, public IStatefulScreen {
     void on_result(const QString& provider, const QString& command, const QJsonObject& data);
     void on_error(const QString& context, const QString& message);
     void on_command_options_loaded(const QString& provider, const QJsonObject& options);
+    void on_group_symbol_changed(const SymbolRef& ref);
 
   private:
     void build_ui();
@@ -66,6 +69,8 @@ class BacktestingScreen : public QWidget, public IStatefulScreen {
     void clear_results();
     QJsonObject gather_args();
     QJsonObject gather_strategy_params();
+    SymbolRef current_symbol() const;
+    void publish_first_symbol_to_group();
 
     // Provider state (cached to avoid repeated heap allocation)
     QVector<services::backtest::Provider> providers_;
@@ -140,6 +145,7 @@ class BacktestingScreen : public QWidget, public IStatefulScreen {
 
     bool first_show_ = true;
     bool is_running_ = false;
+    SymbolGroup link_group_ = SymbolGroup::None;
 };
 
 } // namespace fincept::screens

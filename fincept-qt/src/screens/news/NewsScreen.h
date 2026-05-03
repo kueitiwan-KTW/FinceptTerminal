@@ -91,6 +91,10 @@ class NewsScreen : public QWidget, public IStatefulScreen, public IGroupLinked {
 
     int64_t time_window_seconds() const;
 
+    // MCP 事件訂閱（畫面可見時訂閱，隱藏時取消）
+    void subscribe_mcp_events();
+    void unsubscribe_mcp_events();
+
     // Panels
     NewsCommandBar* command_bar_ = nullptr;
     NewsSidePanel* side_panel_ = nullptr;
@@ -147,6 +151,9 @@ class NewsScreen : public QWidget, public IStatefulScreen, public IGroupLinked {
 
     // Symbol group link — SymbolGroup::None when unlinked.
     SymbolGroup link_group_ = SymbolGroup::None;
+
+    // MCP EventBus 訂閱 ID
+    QList<int> mcp_event_subs_;
 };
 
 } // namespace fincept::screens

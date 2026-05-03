@@ -17,6 +17,7 @@ struct MapPin {
     QString label;
     QColor color{255, 100, 0};
     double radius = 5.0;
+    int id = -1;  // 用於事件回溯
 };
 
 /// Interactive world map widget backed by QGeoView (real OSM/CartoDB tiles).

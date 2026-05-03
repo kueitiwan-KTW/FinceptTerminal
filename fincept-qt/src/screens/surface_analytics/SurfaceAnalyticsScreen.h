@@ -2,6 +2,7 @@
 // SurfaceAnalyticsScreen — 35 financial surface visualizations
 // Equity derivatives, fixed income, FX, credit, commodities, risk, macro
 
+#include "SurfaceCapabilities.h"
 #include "SurfaceDemoData.h"
 #include "SurfaceTypes.h"
 #include "core/symbol/IGroupLinked.h"
@@ -9,6 +10,7 @@
 #include "services/databento/DatabentoService.h"
 
 #include <QComboBox>
+#include <QHash>
 #include <QLabel>
 #include <QPushButton>
 #include <QScrollArea>
@@ -20,9 +22,12 @@
 namespace fincept::surface {
 
 class Surface3DWidget;
+class SurfaceLineWidget;
 class SurfaceTableWidget;
 class SurfaceMetricsPanel;
 class SurfaceDatabentoPanel;
+class SurfaceControlPanel;
+class SurfaceDataInspector;
 
 class SurfaceAnalyticsScreen : public QWidget,
                                public fincept::screens::IStatefulScreen,
@@ -49,14 +54,23 @@ class SurfaceAnalyticsScreen : public QWidget,
     void on_surface_clicked(int cat, int surf_index);
     void on_view_3d();
     void on_view_table();
+    void on_view_line();
     void on_import_csv();
     void on_refresh();
     void on_symbol_changed(int index);
+    void on_controls_changed();
+    void on_control_symbol_changed(const QString& sym);
+    void on_fetch_requested();
     // Databento data slots
     void on_vol_surface_received(const fincept::DatabentoVolSurfaceResult& r);
     void on_ohlcv_received(const fincept::DatabentoOhlcvResult& r);
     void on_futures_received(const fincept::DatabentoFuturesResult& r);
     void on_surface_received(const fincept::DatabentoSurfaceResult& r);
+    // DB provider slots
+    void on_db_fetch_started(const QString& provider);
+    void on_db_fetch_failed(const QString& msg);
+    void on_db_connection_tested(bool ok, const QString& msg);
+    void on_db_raw_response(const QString& provider, const QString& raw);
 
   protected:
     void showEvent(QShowEvent* e) override;
@@ -71,7 +85,15 @@ class SurfaceAnalyticsScreen : public QWidget,
     void load_demo_data();
     void update_chart();
     void update_metrics();
+    void update_line_view();
+    void update_inspector_lineage();
+    void apply_view_mode_buttons();
+    void refresh_provider_status();
+    void load_dataset_range_for_active_capability();
     void dispatch_csv(const QString& path);
+    QString current_symbol_or_default() const;
+    float spot_for(const QString& sym) const;
+    const std::vector<std::vector<float>>* active_z_grid() const;
 
     // Control bar widgets (kept for dynamic rebuild)
     QWidget* category_bar_ = nullptr;
@@ -79,17 +101,22 @@ class SurfaceAnalyticsScreen : public QWidget,
     QComboBox* symbol_combo_ = nullptr;
     QPushButton* btn_3d_ = nullptr;
     QPushButton* btn_table_ = nullptr;
+    QPushButton* btn_line_ = nullptr;
 
     // Main panels
     SurfaceDatabentoPanel* databento_panel_ = nullptr;
     SurfaceMetricsPanel* metrics_panel_ = nullptr;
+    SurfaceControlPanel* control_panel_ = nullptr;
+    SurfaceDataInspector* data_inspector_ = nullptr;
     Surface3DWidget* surface_3d_ = nullptr;
+    SurfaceLineWidget* surface_line_ = nullptr;
     SurfaceTableWidget* surface_table_ = nullptr;
     QStackedWidget* view_stack_ = nullptr;
 
     // State
     int active_category_ = 0;
     ChartType active_chart_ = ChartType::Volatility;
+    ViewMode view_mode_ = ViewMode::Surface3D;
     bool show_table_ = false;
 
     // Equity symbol list
@@ -97,6 +124,7 @@ class SurfaceAnalyticsScreen : public QWidget,
     static constexpr float VOL_SPOTS[] = {450, 380, 200, 175, 250, 120, 180};
     static constexpr int N_SYMBOLS = 7;
     int selected_symbol_ = 0;
+    mutable QHash<QString, float> spot_cache_;  // spot_for() const 快取
 
     // Correlation assets
     std::vector<std::string> corr_assets_ = {"SPY", "QQQ", "IWM", "DIA", "GLD", "TLT", "IEF", "HYG"};

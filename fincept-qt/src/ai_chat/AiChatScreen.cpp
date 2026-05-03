@@ -1341,4 +1341,21 @@ void AiChatScreen::restore_state(const QVariantMap& state) {
     }
 }
 
+void AiChatScreen::on_toggle_sidebar() {
+    apply_sidebar_collapsed(!sidebar_collapsed_, true);
+}
+
+void AiChatScreen::apply_sidebar_collapsed(bool collapsed, bool animate) {
+    sidebar_collapsed_ = collapsed;
+    const int target = collapsed ? 0 : 280;
+    if (animate && sidebar_anim_) {
+        sidebar_anim_->stop();
+        sidebar_anim_->setStartValue(sidebar_->width());
+        sidebar_anim_->setEndValue(target);
+        sidebar_anim_->start();
+    } else if (sidebar_) {
+        sidebar_->setFixedWidth(target);
+    }
+}
+
 } // namespace fincept::screens

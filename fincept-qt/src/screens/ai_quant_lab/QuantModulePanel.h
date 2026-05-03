@@ -56,6 +56,10 @@ class QuantModulePanel : public QWidget {
     QWidget* build_strategy_builder_panel();
     QWidget* build_data_processors_panel();
     QWidget* build_quant_reporting_panel();
+    QWidget* build_fortitudo_panel();
+    QWidget* build_functime_panel();
+    QWidget* build_gluonts_panel();
+    QWidget* build_statsmodels_panel();
 
     // Helpers
     QWidget* build_input_row(const QString& label, QWidget* input, QWidget* parent);
@@ -66,7 +70,15 @@ class QuantModulePanel : public QWidget {
     QJsonObject llm_config_from_combo(QComboBox* combo) const;
     void display_result(const QJsonObject& data);
     void display_backtest_result(const QJsonObject& data);
+    void display_gs_result(const QString& command, const QJsonObject& payload);
+    void display_cfa_result(const QString& command, const QJsonObject& payload);
+    void display_fortitudo_result(const QString& command, const QJsonObject& payload);
+    void display_functime_result(const QString& command, const QJsonObject& payload);
+    void display_gluonts_result(const QString& command, const QJsonObject& payload);
+    void display_statsmodels_result(const QString& command, const QJsonObject& payload);
+    void display_quant_reporting_result(const QString& command, const QJsonObject& payload);
     void display_error(const QString& msg);
+    void show_loading(const QString& message);
     void clear_results();
 
     void refresh_theme();

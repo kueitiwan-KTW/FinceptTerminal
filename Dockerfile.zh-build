@@ -1,10 +1,14 @@
 # FinceptTerminal 繁體中文版 — 多階段建構
 # 使用 aqtinstall 安裝 Qt 6.8.3
+# 支援 linux/amd64 與 linux/arm64 雙架構
 
 # ============================================================
 # 階段 1：編譯
 # ============================================================
 FROM ubuntu:24.04 AS builder
+
+# Docker BuildKit 注入 TARGETARCH（amd64 或 arm64）
+ARG TARGETARCH
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Taipei
@@ -33,19 +37,35 @@ RUN apt-get update && apt-get install -y \
     pkg-config wget \
     && rm -rf /var/lib/apt/lists/*
 
-# 用 aqtinstall 安裝 Qt 6.8.3（含 linguist tools 用於 lrelease 翻譯編譯）
+# 用 aqtinstall 安裝 Qt 6.8.3
+# ARM64: aqt install-qt linux_arm64 desktop 6.8.3 linux_gcc_arm64
+# AMD64: aqt install-qt linux desktop 6.8.3 linux_gcc_64
 RUN pip3 install --break-system-packages aqtinstall && \
-    aqt install-qt linux desktop 6.8.3 linux_gcc_64 \
+    if [ "$TARGETARCH" = "arm64" ]; then \
+        QT_HOST="linux_arm64"; QT_ARCH="linux_gcc_arm64"; QT_SUBDIR="gcc_arm64"; \
+    else \
+        QT_HOST="linux"; QT_ARCH="linux_gcc_64"; QT_SUBDIR="gcc_64"; \
+    fi && \
+    echo "[Qt] 安裝架構: host=$QT_HOST arch=$QT_ARCH subdir=$QT_SUBDIR" && \
+    aqt install-qt $QT_HOST desktop 6.8.3 $QT_ARCH \
       --outputdir /opt/qt \
       -m qtcharts qtwebsockets qtmultimedia qtspeech qt5compat && \
-    aqt install-tool linux desktop tools_qtlinguist qt.tools.qtlinguist \
+    # 標記實際子目錄路徑給後續使用
+    echo "$QT_SUBDIR" > /opt/qt/.qt_subdir && \
+    # linguist tools（可能失敗，不影響建構）
+    aqt install-tool $QT_HOST desktop tools_qtlinguist qt.tools.qtlinguist \
       --outputdir /opt/qt 2>/dev/null || true && \
-    echo "Qt 6.8.3 安裝完成"
+    echo "Qt 6.8.3 安裝完成 ($QT_ARCH)"
 
-ENV Qt6_DIR=/opt/qt/6.8.3/gcc_64
-ENV CMAKE_PREFIX_PATH=${Qt6_DIR}
-ENV PATH=${Qt6_DIR}/bin:${PATH}
-ENV LD_LIBRARY_PATH=${Qt6_DIR}/lib:${LD_LIBRARY_PATH}
+# 動態設定 Qt 路徑（根據架構）
+RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \
+    echo "export Qt6_DIR=/opt/qt/6.8.3/$QT_SUBDIR" >> /etc/profile.d/qt.sh && \
+    echo "export CMAKE_PREFIX_PATH=/opt/qt/6.8.3/$QT_SUBDIR" >> /etc/profile.d/qt.sh && \
+    echo "export PATH=/opt/qt/6.8.3/$QT_SUBDIR/bin:\$PATH" >> /etc/profile.d/qt.sh && \
+    echo "export LD_LIBRARY_PATH=/opt/qt/6.8.3/$QT_SUBDIR/lib:\$LD_LIBRARY_PATH" >> /etc/profile.d/qt.sh
+
+# 供 RUN 指令使用的環境變數
+ENV QT_SUBDIR_FILE=/opt/qt/.qt_subdir
 
 WORKDIR /build
 
@@ -53,8 +73,9 @@ WORKDIR /build
 COPY fincept-qt/ ./fincept-qt/
 
 # 用 lrelease 編譯翻譯檔 .ts → .qm
-# 嘗試多個可能的 lrelease 路徑（aqtinstall 安裝的 linguist-tools 路徑不固定）
-RUN mkdir -p /build/fincept-qt/translations && \
+RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \
+    Qt6_DIR="/opt/qt/6.8.3/$QT_SUBDIR" && \
+    mkdir -p /build/fincept-qt/translations && \
     LRELEASE="" && \
     for p in \
       "${Qt6_DIR}/bin/lrelease" \
@@ -74,19 +95,23 @@ RUN mkdir -p /build/fincept-qt/translations && \
     ls -la /build/fincept-qt/translations/ 2>/dev/null || true
 
 # CMake 配置
-RUN cd /build/fincept-qt && \
+RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \
+    Qt6_DIR="/opt/qt/6.8.3/$QT_SUBDIR" && \
+    cd /build/fincept-qt && \
     cmake -B build -G Ninja \
         -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_PREFIX_PATH=${Qt6_DIR} \
         -DCMAKE_INSTALL_PREFIX=/opt/fincept \
         2>&1 | tee /tmp/cmake_config.log | tail -30
 
-# 建構（限制平行數為 2，避免 x86_64 模擬 OOM）
+# 建構（限制平行數為 2，避免模擬環境 OOM）
 RUN cd /build/fincept-qt && \
     cmake --build build --parallel 2 2>&1 | tee /tmp/cmake_build.log | tail -50
 
 # 安裝
-RUN cd /build/fincept-qt/build && \
+RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \
+    Qt6_DIR="/opt/qt/6.8.3/$QT_SUBDIR" && \
+    cd /build/fincept-qt/build && \
     mkdir -p /opt/fincept/bin /opt/fincept/lib /opt/fincept/translations && \
     cp FinceptTerminal /opt/fincept/bin/ 2>/dev/null || true && \
     # 複製翻譯檔（從 build 輸出目錄 + 原始碼目錄都嘗試）
@@ -107,6 +132,8 @@ RUN cd /build/fincept-qt/build && \
 # 階段 2：執行環境
 # ============================================================
 FROM ubuntu:24.04
+
+ARG TARGETARCH
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Taipei
@@ -161,9 +188,16 @@ ENV FINCEPT_ROOT=/root/.local/share/com.fincept.terminal
 ENV UV_VERSION=0.7.12
 ENV PYTHON_VERSION=3.12.7
 
-# Step 1: 下載 UV 二進位（對應 uv_path() = ${FINCEPT_ROOT}/uv/uv）
-RUN mkdir -p ${FINCEPT_ROOT}/uv && \
-    curl -fsSL "https://github.com/astral-sh/uv/releases/download/${UV_VERSION}/uv-x86_64-unknown-linux-musl.tar.gz" \
+# Step 1: 下載 UV 二進位（根據架構選擇正確版本）
+# ARM64: uv-aarch64-unknown-linux-musl
+# AMD64: uv-x86_64-unknown-linux-musl
+RUN if [ "$TARGETARCH" = "arm64" ]; then \
+        UV_ARCH="aarch64-unknown-linux-musl"; \
+    else \
+        UV_ARCH="x86_64-unknown-linux-musl"; \
+    fi && \
+    mkdir -p ${FINCEPT_ROOT}/uv && \
+    curl -fsSL "https://github.com/astral-sh/uv/releases/download/${UV_VERSION}/uv-${UV_ARCH}.tar.gz" \
       | tar xzf - -C ${FINCEPT_ROOT}/uv --strip-components=1 && \
     chmod +x ${FINCEPT_ROOT}/uv/uv && \
     ${FINCEPT_ROOT}/uv/uv --version

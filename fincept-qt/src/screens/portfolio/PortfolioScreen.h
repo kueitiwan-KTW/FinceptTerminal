@@ -2,6 +2,8 @@
 #pragma once
 #include "screens/IStatefulScreen.h"
 #include "screens/portfolio/PortfolioTypes.h"
+#include "core/symbol/SymbolRef.h"
+#include "core/symbol/SymbolGroup.h"
 
 #include <QHideEvent>
 #include <QPropertyAnimation>
@@ -60,6 +62,7 @@ class PortfolioScreen : public QWidget, public IStatefulScreen {
     void on_buy_requested();
     void on_sell_requested();
     void on_order_panel_close();
+    void on_group_symbol_changed(const SymbolRef& ref);
 
   private:
     void build_ui();
@@ -74,6 +77,7 @@ class PortfolioScreen : public QWidget, public IStatefulScreen {
     void reposition_order_panel();
     void animate_order_panel_in();
     const portfolio::HoldingWithQuote* find_holding(const QString& symbol) const;
+    SymbolRef current_symbol() const;
 
     // Sub-widgets
     PortfolioCommandBar* command_bar_ = nullptr;
@@ -118,6 +122,7 @@ class PortfolioScreen : public QWidget, public IStatefulScreen {
 
     // Positions section header — count badge updates with holdings
     QLabel* positions_count_label_ = nullptr;
+    SymbolGroup link_group_ = SymbolGroup::None;
 };
 
 } // namespace fincept::screens

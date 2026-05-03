@@ -1660,4 +1660,8 @@ fincept::SymbolRef SurfaceAnalyticsScreen::current_symbol() const {
     return fincept::SymbolRef::equity(s);
 }
 
+void SurfaceAnalyticsScreen::on_symbol_changed(int /*index*/) {
+    // 觸發重新載入表面資料（待完整整合）
+}
+
 } // namespace fincept::surface

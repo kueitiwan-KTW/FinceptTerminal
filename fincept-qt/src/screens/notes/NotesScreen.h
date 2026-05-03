@@ -9,6 +9,8 @@
 #include <QPushButton>
 #include <QStackedWidget>
 #include <QTextEdit>
+#include <QHideEvent>
+#include <QShowEvent>
 #include <QWidget>
 
 namespace fincept::screens {
@@ -24,6 +26,10 @@ class NotesScreen : public QWidget, public IStatefulScreen {
     QVariantMap save_state() const override;
     QString state_key() const override { return "notes"; }
     int state_version() const override { return 1; }
+
+  protected:
+    void showEvent(QShowEvent* event) override;
+    void hideEvent(QHideEvent* event) override;
 
   private slots:
     void on_category_selected(int row);
@@ -47,6 +53,10 @@ class NotesScreen : public QWidget, public IStatefulScreen {
     void clear_editor();
     void enter_edit_mode();
     void enter_view_mode();
+
+    // MCP 事件訂閱（畫面可見時訂閱，隱藏時取消）
+    void subscribe_mcp_events();
+    void unsubscribe_mcp_events();
 
     // Data
     QVector<fincept::FinancialNote> notes_;
@@ -78,6 +88,9 @@ class NotesScreen : public QWidget, public IStatefulScreen {
     QComboBox* edit_sentiment_ = nullptr;
     QLineEdit* edit_tags_ = nullptr;
     QLineEdit* edit_tickers_ = nullptr;
+
+    // MCP EventBus 訂閱 ID
+    QList<int> mcp_event_subs_;
 };
 
 } // namespace fincept::screens

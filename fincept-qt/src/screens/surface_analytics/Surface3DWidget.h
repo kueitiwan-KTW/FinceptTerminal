@@ -21,6 +21,9 @@ class Surface3DWidget : public QWidget {
 
     void clear();
 
+    /// 標記 3D 渲染是否受支援（不支援時顯示 fallback 訊息）
+    void set_supported(bool supported);
+
   protected:
     void paintEvent(QPaintEvent* event) override;
     void mousePressEvent(QMouseEvent* event) override;
@@ -58,6 +61,8 @@ class Surface3DWidget : public QWidget {
     bool dragging_ = false;
     QPoint drag_start_;
     float drag_start_yaw_ = 0, drag_start_pitch_ = 0;
+
+    bool supported_ = true;  // 3D 渲染支援旗標
 };
 
 } // namespace fincept::surface

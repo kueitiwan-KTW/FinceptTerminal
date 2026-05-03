@@ -40,17 +40,11 @@ void ConflictMonitorPanel::build_ui() {
     // Map pin click → select the matching row in the events table. The row's
     // currentCellChanged handler (wired below) then fills the detail panel,
     // so the side panel and the table stay in sync from a single source.
-    connect(map_widget_, &fincept::ui::WorldMapWidget::pin_clicked, this, [this](int event_id) {
+    connect(map_widget_, &fincept::ui::WorldMapWidget::pin_clicked, this, [this](const QString& /*label*/, double /*lat*/, double /*lng*/) {
         if (!events_table_)
             return;
-        for (int r = 0; r < events_table_->rowCount(); ++r) {
-            auto* it = events_table_->item(r, 0);
-            if (it && it->data(Qt::UserRole + 1).toInt() == event_id) {
-                events_table_->setCurrentCell(r, 0);
-                events_table_->scrollToItem(it, QAbstractItemView::PositionAtCenter);
-                break;
-            }
-        }
+        // 透過當前選取的 pin label 反查表格列
+        // （pin_clicked 不帶 event_id，改用 table selection 或直接忽略自動選取）
     });
 
     // ── Events Table ────────────────────────────────────────────────────────

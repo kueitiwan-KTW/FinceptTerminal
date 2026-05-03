@@ -63,6 +63,10 @@ class WatchlistScreen : public QWidget, public IStatefulScreen, public IGroupLin
     void hub_unsubscribe_all();
     void rebuild_from_cache();
 
+    // MCP 事件訂閱（畫面可見時訂閱，隱藏時取消）
+    void subscribe_mcp_events();
+    void unsubscribe_mcp_events();
+
     // Data
     QVector<fincept::Watchlist> watchlists_;
     QVector<fincept::WatchlistStock> stocks_;
@@ -100,6 +104,9 @@ class WatchlistScreen : public QWidget, public IStatefulScreen, public IGroupLin
     // Emit the currently-selected symbol into the linked group, if any.
     // Safe to call with no selection — no-op.
     void publish_selection_to_group();
+
+    // MCP EventBus 訂閱 ID
+    QList<int> mcp_event_subs_;
 };
 
 } // namespace fincept::screens
