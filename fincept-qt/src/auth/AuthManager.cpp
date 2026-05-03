@@ -1,6 +1,8 @@
 #include "auth/AuthManager.h"
 
 #include <QProcessEnvironment>
+#include <QFile>
+#include <QTextStream>
 
 #include "auth/AuthApi.h"
 #include "auth/PinManager.h"
@@ -152,6 +154,8 @@ void AuthManager::initialize() {
             auto& http = fincept::HttpClient::instance();
             http.set_auth_header(sso_token);
             http.clear_session_token();
+            // 啟動 JWT 檔案監視（Pool Manager 定期寫入新 JWT 到 /tmp/.ktw_jwt）
+            setup_jwt_file_watcher();
             // 走既有 profile → subscription 驗證鏈路
             validate_saved_session();
             return;
@@ -696,3 +700,76 @@ void AuthManager::auto_configure_fincept_llm() {
 }
 
 } // namespace fincept::auth
+
+// ── JWT 檔案監視（SSO Token Refresh）─────────────────────────────────────────
+// Pool Manager 定期透過 docker exec 將新 JWT 寫入 /tmp/.ktw_jwt
+// AuthManager 透過 QFileSystemWatcher 監視此檔，檔案變更時自動更新 session
+
+void fincept::auth::AuthManager::setup_jwt_file_watcher() {
+    if (jwt_watcher_) return; // 已啟動
+
+    const QString jwt_path = QStringLiteral("/tmp/.ktw_jwt");
+    jwt_watcher_ = new QFileSystemWatcher(this);
+
+    // 如果檔案已存在，直接監視
+    if (QFile::exists(jwt_path)) {
+        jwt_watcher_->addPath(jwt_path);
+    }
+
+    // 監視 /tmp 目錄（當檔案尚不存在時，等待 Pool Manager 建立）
+    jwt_watcher_->addPath(QStringLiteral("/tmp"));
+
+    connect(jwt_watcher_, &QFileSystemWatcher::fileChanged,
+            this, &AuthManager::on_jwt_file_changed);
+
+    // 當目錄變更時（檔案新建），嘗試添加檔案監視
+    connect(jwt_watcher_, &QFileSystemWatcher::directoryChanged,
+            this, [this, jwt_path](const QString&) {
+                if (QFile::exists(jwt_path) && !jwt_watcher_->files().contains(jwt_path)) {
+                    jwt_watcher_->addPath(jwt_path);
+                    // 檔案剛建立，立即讀取
+                    on_jwt_file_changed(jwt_path);
+                }
+            });
+
+    LOG_INFO("Auth", "SSO: JWT 檔案監視已啟動 (/tmp/.ktw_jwt)");
+}
+
+void fincept::auth::AuthManager::on_jwt_file_changed(const QString& path) {
+    if (path != QStringLiteral("/tmp/.ktw_jwt")) return;
+
+    QFile file(path);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        LOG_WARN("Auth", "SSO: 無法讀取 JWT 檔案: " + path);
+        return;
+    }
+
+    QTextStream in(&file);
+    QString new_token = in.readAll().trimmed();
+    file.close();
+
+    if (new_token.isEmpty() || new_token == session_.api_key) {
+        return; // 空檔或 token 未變，跳過
+    }
+
+    LOG_INFO("Auth", "SSO: 偵測到新 JWT，更新 session...");
+
+    // 更新 session + HttpClient
+    session_.api_key = new_token;
+    auto& http = fincept::HttpClient::instance();
+    http.set_auth_header(new_token);
+
+    // 儲存到 SecureStorage（持久化）
+    auto sr = fincept::SecureStorage::instance().store("api_key", new_token);
+    if (sr.is_err())
+        LOG_WARN("Auth", "SecureStorage: 更新 api_key 失敗");
+
+    // 重新註冊監視（QFileSystemWatcher 在檔案變更後可能移除監視）
+    if (!jwt_watcher_->files().contains(path)) {
+        jwt_watcher_->addPath(path);
+    }
+
+    // 靜默重新驗證 profile（不影響 UI）
+    LOG_INFO("Auth", "SSO: 重新驗證 profile...");
+    validate_saved_session();
+}

@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QTimer>
+#include <QFileSystemWatcher>
 
 #include <functional>
 
@@ -96,6 +97,10 @@ class AuthManager : public QObject {
     void stop_device_polling();
     QJsonObject unwrap_data(const QJsonObject& raw) const;
 
+    // Token Refresh 檔案監視（Pool Manager 定期寫入 /tmp/.ktw_jwt）
+    void setup_jwt_file_watcher();
+    void on_jwt_file_changed(const QString& path);
+
     SessionData session_;
     bool is_loading_ = true;
     bool is_logging_out_ = false;
@@ -105,6 +110,9 @@ class AuthManager : public QObject {
     QTimer* device_poll_timer_ = nullptr;
     QString device_code_;
     int device_poll_interval_ = 5; // 秒
+
+    // JWT 檔案監視器（SSO Token Refresh）
+    QFileSystemWatcher* jwt_watcher_ = nullptr;
 };
 
 } // namespace fincept::auth

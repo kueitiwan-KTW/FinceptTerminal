@@ -26,6 +26,10 @@ const MAX_SIZE = parseInt(process.env.POOL_MAX_SIZE || '10')    // 最大容器�
 const IDLE_TIMEOUT = parseInt(process.env.POOL_IDLE_TIMEOUT || '300') // 閒置逾時（秒）
 const IMAGE_NAME = 'ktw/fincept-terminal:zh-latest'
 
+// Token Refresh 設定
+const FINCEPT_POOL_SECRET = process.env.FINCEPT_POOL_SECRET || ''
+const TOKEN_REFRESH_INTERVAL = parseInt(process.env.TOKEN_REFRESH_INTERVAL || '1800000') // 30 分鐘
+
 const docker = new Docker({ socketPath: process.env.DOCKER_SOCKET || '/var/run/docker.sock' })
 
 // ── 容器池狀態 ──────────────────────────────────────────────────────────────
@@ -319,6 +323,86 @@ async function maintenance() {
 // 每 60 秒維護一次
 setInterval(maintenance, 60_000)
 
+// ── Token Refresh ───────────────────────────────────────────────────────────
+
+/**
+ * 為單一容器刷新 JWT Token
+ * 流程：呼叫 Platform API → 取得新 JWT → docker exec 寫入 /tmp/.ktw_jwt
+ * @param {PoolEntry} entry - 容器池項目
+ * @returns {boolean} 是否成功
+ */
+async function refreshTokenForContainer(entry) {
+  if (!entry.tenantId || entry.status !== 'assigned') return false
+  if (!FINCEPT_POOL_SECRET) {
+    console.warn('[Token Refresh] ⚠️ FINCEPT_POOL_SECRET 未設定，跳過')
+    return false
+  }
+
+  try {
+    // 1. 呼叫 Platform Token Refresh API
+    const res = await fetch(`${SAAS_URL}/api/fincept/token/refresh`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        tenantId: entry.tenantId,
+        secret: FINCEPT_POOL_SECRET,
+      }),
+      signal: AbortSignal.timeout(10_000),
+    })
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}))
+      console.error(`[Token Refresh] ❌ 租戶 ${entry.tenantId} 刷新失敗 (${res.status}):`, err.error)
+      return false
+    }
+
+    const data = await res.json()
+    if (!data.token) {
+      console.error(`[Token Refresh] ❌ 租戶 ${entry.tenantId} 回傳無 token`)
+      return false
+    }
+
+    // 2. 透過 docker exec 將新 JWT 寫入容器的 /tmp/.ktw_jwt
+    const container = docker.getContainer(entry.containerId)
+    const exec = await container.exec({
+      Cmd: ['bash', '-c', `echo '${data.token}' > /tmp/.ktw_jwt && chmod 600 /tmp/.ktw_jwt`],
+      AttachStdout: true,
+      AttachStderr: true,
+    })
+    await exec.start({ Detach: false })
+
+    console.log(`[Token Refresh] ✅ 租戶 ${entry.tenantId} (容器 ${entry.containerId}) JWT 已刷新 → /tmp/.ktw_jwt`)
+    return true
+  } catch (err) {
+    console.error(`[Token Refresh] ❌ 租戶 ${entry.tenantId} 例外:`, err.message)
+    return false
+  }
+}
+
+/**
+ * 為所有 assigned 容器刷新 JWT
+ * 啟動時立即執行一次 + 之後每 30 分鐘執行
+ */
+async function refreshAllTokens() {
+  const assigned = [...pool.values()].filter(e => e.status === 'assigned')
+  if (assigned.length === 0) return
+
+  console.log(`[Token Refresh] 🔄 開始為 ${assigned.length} 個容器刷新 JWT...`)
+  let success = 0
+  let failed = 0
+
+  for (const entry of assigned) {
+    const ok = await refreshTokenForContainer(entry)
+    if (ok) success++
+    else failed++
+  }
+
+  console.log(`[Token Refresh] 完成 — 成功 ${success}，失敗 ${failed}`)
+}
+
+// 每 30 分鐘刷新所有容器的 JWT
+setInterval(refreshAllTokens, TOKEN_REFRESH_INTERVAL)
+
 // ── HTTP 伺服器 ─────────────────────────────────────────────────────────────
 
 const server = createServer(async (req, res) => {
@@ -381,6 +465,12 @@ const server = createServer(async (req, res) => {
       return json(res, 200, { pool: entries, config: { poolSize: POOL_SIZE, maxSize: MAX_SIZE, idleTimeout: IDLE_TIMEOUT } })
     }
 
+    // 手動觸發 Token Refresh（管理端點）
+    if (req.method === 'POST' && url.pathname === '/api/pool/refresh-tokens') {
+      await refreshAllTokens()
+      return json(res, 200, { success: true, message: '已觸發全量 Token Refresh' })
+    }
+
     // 查詢租戶容器
     if (req.method === 'GET' && url.pathname.startsWith('/api/pool/tenant/')) {
       const tenantId = url.pathname.split('/').pop()
@@ -414,6 +504,14 @@ server.listen(PORT, async () => {
 
   // 啟動時掃描並納管已存在的 Docker 容器
   await scanExistingContainers()
+
+  // 啟動後立即為所有已分配容器刷新 JWT（修復舊容器 Token 過期問題）
+  if (FINCEPT_POOL_SECRET) {
+    console.log('[啟動] 🔑 FINCEPT_POOL_SECRET 已設定，將執行首次 Token Refresh...')
+    setTimeout(refreshAllTokens, 3000) // 延遲 3 秒，確保容器掃描完成
+  } else {
+    console.warn('[啟動] ⚠️ FINCEPT_POOL_SECRET 未設定，Token Refresh 功能停用')
+  }
 
   console.log(`[啟動] ✅ 容器池管理器就緒（池中 ${pool.size} 個容器），等待租戶分配請求...`)
 })
