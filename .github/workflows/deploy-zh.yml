@@ -51,20 +51,39 @@ jobs:
 
             cd /home/ktwserver/ktw-projects/fincept-terminal-zh
 
-            # 1. 拉取最新程式碼
+            # 1. 偵測 C++ 原始碼變更（比對 git pull 前後的 SHA-256）
             echo "[1/5] 拉取最新程式碼..."
+            OLD_SRC_HASH=$(find fincept-qt/src -name '*.cpp' -o -name '*.h' -o -name '*.ui' 2>/dev/null | sort | xargs sha256sum 2>/dev/null | sha256sum | cut -d' ' -f1)
+            OLD_DOCKER_HASH=$(sha256sum Dockerfile.zh-build 2>/dev/null | cut -d' ' -f1 || echo "none")
             git fetch origin main
             git reset --hard origin/main
+            NEW_SRC_HASH=$(find fincept-qt/src -name '*.cpp' -o -name '*.h' -o -name '*.ui' 2>/dev/null | sort | xargs sha256sum 2>/dev/null | sha256sum | cut -d' ' -f1)
+            NEW_DOCKER_HASH=$(sha256sum Dockerfile.zh-build 2>/dev/null | cut -d' ' -f1 || echo "none")
             echo "✅ 目前 commit: $(git log --oneline -1)"
 
-            # 2. 建構 Docker image（x86_64 原生建構，使用 zh-build Dockerfile）
-            echo "[2/5] 開始建構 Docker image..."
-            docker build \
-              -f Dockerfile.zh-build \
-              --tag ktw/fincept-terminal:zh-latest \
-              --tag ktw/fincept-terminal:zh-$(git rev-parse --short HEAD) \
-              .
-            echo "✅ Image 建構完成"
+            # 2. 條件式建構 — 只在 C++ 原始碼或 Dockerfile 變更時重建
+            NEED_BUILD=false
+            if [ "$OLD_SRC_HASH" != "$NEW_SRC_HASH" ]; then
+              echo "[2/5] ⚡ C++ 原始碼有變更，需要重建 image"
+              NEED_BUILD=true
+            elif [ "$OLD_DOCKER_HASH" != "$NEW_DOCKER_HASH" ]; then
+              echo "[2/5] ⚡ Dockerfile 有變更，需要重建 image"
+              NEED_BUILD=true
+            elif ! docker image inspect ktw/fincept-terminal:zh-latest >/dev/null 2>&1; then
+              echo "[2/5] ⚡ Image 不存在，需要首次建構"
+              NEED_BUILD=true
+            else
+              echo "[2/5] ⏭️ C++ 原始碼與 Dockerfile 均未變更，跳過建構（省 ~35 分鐘）"
+            fi
+
+            if [ "$NEED_BUILD" = "true" ]; then
+              docker build \
+                -f Dockerfile.zh-build \
+                --tag ktw/fincept-terminal:zh-latest \
+                --tag ktw/fincept-terminal:zh-$(git rev-parse --short HEAD) \
+                .
+              echo "✅ Image 建構完成"
+            fi
 
             # 3. 停止並移除舊的租戶容器
             echo "[3/5] 停止舊容器..."
