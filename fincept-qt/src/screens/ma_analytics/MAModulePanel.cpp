@@ -1758,8 +1758,8 @@ QWidget* MAModulePanel::build_comparison_panel() {
     cmp_vl->addWidget(cmp_hint);
 
     auto* cmp_text = new QTextEdit(cmp);
-    cmp_text->setPlaceholderText(tr("[{\")acquirer\":\"MSFT\",\"target\":\"ATVI\",\"deal_value\":68700,\"premium\":45.3,"
-                                 "\"ev_revenue\":8.7,\"ev_ebitda\":23.1}]");
+    cmp_text->setPlaceholderText(tr("[{acquirer:MSFT, target:ATVI, deal_value:68700, premium:45.3,"
+                                 "ev_revenue:8.7, ev_ebitda:23.1}]"));
     cmp_text->setMaximumHeight(120);
     cmp_text->setStyleSheet(QString("QTextEdit { background:%1; color:%2; border:1px solid %3;"
                                     "font-family:%4; font-size:%5px; padding:8px; }")

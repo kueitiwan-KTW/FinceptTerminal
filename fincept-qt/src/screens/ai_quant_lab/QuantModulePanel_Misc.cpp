@@ -187,7 +187,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     svl->setSpacing(8);
 
     auto* sel_features = new QLineEdit(sel);
-    sel_features->setPlaceholderText(tr("Feature values JSON: {\")rsi\":[...],\"macd\":[...]}");
+    sel_features->setPlaceholderText(tr("Feature values JSON: {rsi:[...],macd:[...]}"));
     sel_features->setStyleSheet(input_ss());
     text_inputs_["fe_sel_features"] = sel_features;
     svl->addWidget(build_input_row("Features (JSON)", sel_features, sel));

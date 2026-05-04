@@ -285,9 +285,10 @@ COPY fluxbox-apps /root/.fluxbox/apps
 COPY fluxbox-init /root/.fluxbox/init
 
 # KTW SaaS 環境變數宣告（容器啟動時由外部注入值）
+# 注意：KTW_JWT_TOKEN 為敏感值，不在 Dockerfile 中宣告，
+# 必須由 docker run -e 或 docker-compose environment 在 runtime 注入
 ENV KTW_SAAS_URL=""
 ENV KTW_TENANT_ID=""
-ENV KTW_JWT_TOKEN=""
 ENV KTW_LLM_TIER="L1"
 ENV KTW_INTELLIGENCE_ENABLED="true"
 ENV KTW_TRADING_ENABLED="false"

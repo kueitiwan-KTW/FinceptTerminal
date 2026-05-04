@@ -435,7 +435,7 @@ QWidget* QuantModulePanel::build_generic_panel() {
 
     // JSON params
     auto* params_edit = new QTextEdit(w);
-    params_edit->setPlaceholderText(tr("JSON parameters (optional)\ne.g. {\")ticker\":\"AAPL\"}");
+    params_edit->setPlaceholderText(tr("JSON parameters (optional)\ne.g. {ticker:AAPL}"));
     params_edit->setMaximumHeight(100);
     params_edit->setStyleSheet(QString("QTextEdit { background:%1; color:%2; border:1px solid %3;"
                                        "font-family:%4; font-size:%5px; padding:6px; }")

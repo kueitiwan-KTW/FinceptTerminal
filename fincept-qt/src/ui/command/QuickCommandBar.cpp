@@ -1,4 +1,4 @@
-﻿#include "ui/command/QuickCommandBar.h"
+#include "ui/command/QuickCommandBar.h"
 
 #include "app/TerminalShell.h"
 #include "app/WindowFrame.h"
@@ -40,7 +40,7 @@ QuickCommandBar::QuickCommandBar(QWidget* parent) : QFrame(parent) {
     hl->addWidget(prompt);
 
     input_ = new QLineEdit(this);
-    input_->setPlaceholderText(tr("Type a command (e.g. 'layout switch \")Morning\"', AAPL, ?). Esc to dismiss.");
+    input_->setPlaceholderText(tr("Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss."));
     connect(input_, &QLineEdit::returnPressed, this, &QuickCommandBar::on_submit);
     hl->addWidget(input_, /*stretch=*/1);
 

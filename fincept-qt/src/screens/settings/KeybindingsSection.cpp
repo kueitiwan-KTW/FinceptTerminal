@@ -79,7 +79,7 @@ void KeyCaptureDialog::keyPressEvent(QKeyEvent* event) {
     auto conflict = KeyConfigManager::instance().find_conflict(captured_, action_);
     if (conflict.has_value()) {
         const QString name = KeyConfigManager::instance().display_name(conflict.value());
-        conflict_label_->setText(tr("Warning: already used by \")" + name + "\"");
+        conflict_label_->setText(tr("Warning: already used by ") + name);
         conflict_label_->show();
     } else {
         conflict_label_->hide();
