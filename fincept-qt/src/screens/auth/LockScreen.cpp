@@ -215,7 +215,7 @@ void LockScreen::build_setup_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("安全設定");
+    auto* title = new QLabel(tr("安全設定"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -223,7 +223,7 @@ void LockScreen::build_setup_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* badge = new QLabel("必要");
+    auto* badge = new QLabel(tr("必要"));
     badge->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 0.5px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -231,7 +231,7 @@ void LockScreen::build_setup_page() {
     hl->addWidget(badge);
     vl->addWidget(header);
 
-    auto* subtitle = new QLabel("請建立 6 位數 PIN 碼以保護您的終端機");
+    auto* subtitle = new QLabel(tr("請建立 6 位數 PIN 碼以保護您的終端機"));
     subtitle->setWordWrap(true);
     subtitle->setStyleSheet(muted_style());
     vl->addWidget(subtitle);
@@ -247,7 +247,7 @@ void LockScreen::build_setup_page() {
     vl->addWidget(make_separator());
 
     // PIN input
-    auto* pin_lbl = new QLabel("輸入 PIN 碼");
+    auto* pin_lbl = new QLabel(tr("輸入 PIN 碼"));
     pin_lbl->setStyleSheet(label_style());
     vl->addWidget(pin_lbl);
 
@@ -262,7 +262,7 @@ void LockScreen::build_setup_page() {
     vl->addWidget(setup_pin_input_);
 
     // Confirm PIN input
-    auto* confirm_lbl = new QLabel("確認 PIN 碼");
+    auto* confirm_lbl = new QLabel(tr("確認 PIN 碼"));
     confirm_lbl->setStyleSheet(label_style());
     vl->addWidget(confirm_lbl);
 
@@ -286,7 +286,7 @@ void LockScreen::build_setup_page() {
     vl->addWidget(make_separator());
 
     // Submit button
-    setup_btn_ = new QPushButton("  設定 PIN 碼  ");
+    setup_btn_ = new QPushButton(tr("  設定 PIN 碼  "));
     setup_btn_->setFixedHeight(34);
     setup_btn_->setStyleSheet(btn_primary());
     connect(setup_btn_, &QPushButton::clicked, this, &LockScreen::on_setup_submit);
@@ -327,7 +327,7 @@ void LockScreen::build_unlock_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("終端機已鎖定");
+    auto* title = new QLabel(tr("終端機已鎖定"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -335,7 +335,7 @@ void LockScreen::build_unlock_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* secure_badge = new QLabel("安全");
+    auto* secure_badge = new QLabel(tr("安全"));
     secure_badge->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                         "background: transparent; letter-spacing: 0.5px;"
                                         "font-family: 'Consolas','Courier New',monospace;")
@@ -343,14 +343,14 @@ void LockScreen::build_unlock_page() {
     hl->addWidget(secure_badge);
     vl->addWidget(header);
 
-    auto* subtitle = new QLabel("請輸入 6 位數 PIN 碼以解鎖");
+    auto* subtitle = new QLabel(tr("請輸入 6 位數 PIN 碼以解鎖"));
     subtitle->setStyleSheet(muted_style());
     vl->addWidget(subtitle);
 
     vl->addWidget(make_separator());
 
     // PIN input
-    auto* pin_lbl = new QLabel("PIN 碼");
+    auto* pin_lbl = new QLabel(tr("PIN 碼"));
     pin_lbl->setStyleSheet(label_style());
     vl->addWidget(pin_lbl);
 
@@ -394,7 +394,7 @@ void LockScreen::build_unlock_page() {
     vl->addWidget(make_separator());
 
     // Unlock button
-    unlock_btn_ = new QPushButton("  解鎖  ");
+    unlock_btn_ = new QPushButton(tr("  解鎖  "));
     unlock_btn_->setFixedHeight(34);
     unlock_btn_->setStyleSheet(btn_primary());
     connect(unlock_btn_, &QPushButton::clicked, this, &LockScreen::on_unlock_submit);
@@ -424,7 +424,7 @@ void LockScreen::build_lockout_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("帳戶已鎖定");
+    auto* title = new QLabel(tr("帳戶已鎖定"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -432,7 +432,7 @@ void LockScreen::build_lockout_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* warn = new QLabel("安全警告");
+    auto* warn = new QLabel(tr("安全警告"));
     warn->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                 "background: transparent; letter-spacing: 0.5px;"
                                 "font-family: 'Consolas','Courier New',monospace;")
@@ -452,7 +452,7 @@ void LockScreen::build_lockout_page() {
 
     vl->addWidget(make_separator());
 
-    auto* reauth_btn = new QPushButton("  重新登入  ");
+    auto* reauth_btn = new QPushButton(tr("  重新登入  "));
     reauth_btn->setFixedHeight(34);
     reauth_btn->setStyleSheet(btn_danger());
     connect(reauth_btn, &QPushButton::clicked, this, [this]() { emit reauth_requested(); });

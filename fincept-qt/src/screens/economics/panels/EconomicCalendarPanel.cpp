@@ -62,9 +62,9 @@ void EconomicCalendarPanel::build_controls(QHBoxLayout* thl) {
     date_edit_->setFixedWidth(120);
 
     filter_combo_ = new QComboBox;
-    filter_combo_->addItem("All Events", 0);
-    filter_combo_->addItem("Medium + High", 2);
-    filter_combo_->addItem("High Only", 3);
+    filter_combo_->addItem(tr("All Events"), 0);
+    filter_combo_->addItem(tr("Medium + High"), 2);
+    filter_combo_->addItem(tr("High Only"), 3);
     filter_combo_->setFixedHeight(26);
     filter_combo_->setFixedWidth(110);
 

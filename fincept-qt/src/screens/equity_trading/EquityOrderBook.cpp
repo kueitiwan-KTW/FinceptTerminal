@@ -48,7 +48,7 @@ EquityOrderBook::EquityOrderBook(QWidget* parent) : QWidget(parent) {
     auto* h_layout = new QHBoxLayout(header);
     h_layout->setContentsMargins(8, 0, 8, 0);
 
-    auto* title = new QLabel("MARKET DEPTH");
+    auto* title = new QLabel(tr("MARKET DEPTH"));
     title->setObjectName("eqObTitle");
     h_layout->addWidget(title);
     h_layout->addStretch();
@@ -56,7 +56,7 @@ EquityOrderBook::EquityOrderBook(QWidget* parent) : QWidget(parent) {
     layout->addWidget(header);
 
     // Spread label
-    spread_label_ = new QLabel("Spread: --");
+    spread_label_ = new QLabel(tr("Spread: --"));
     spread_label_->setObjectName("eqObSpread");
     spread_label_->setFixedHeight(SPREAD_H);
     spread_label_->setAlignment(Qt::AlignCenter);

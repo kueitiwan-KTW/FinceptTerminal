@@ -58,12 +58,12 @@ void SymbolChip::mouseReleaseEvent(QMouseEvent* e) {
 void SymbolChip::contextMenuEvent(QContextMenuEvent* e) {
     QMenu menu(this);
 
-    auto* copy = menu.addAction("Copy Ticker");
+    auto* copy = menu.addAction(tr("Copy Ticker"));
     connect(copy, &QAction::triggered, this, [this]() {
         QApplication::clipboard()->setText(ref_.symbol);
     });
 
-    auto* remove = menu.addAction("Remove Pin");
+    auto* remove = menu.addAction(tr("Remove Pin"));
     connect(remove, &QAction::triggered, this, [this]() {
         emit remove_requested(ref_);
         PushpinService::instance().unpin(ref_);

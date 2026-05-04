@@ -46,7 +46,7 @@ CommandPalette::CommandPalette(QWidget* parent) : QDialog(parent) {
     vl->setSpacing(6);
 
     input_ = new QLineEdit(this);
-    input_->setPlaceholderText("Search actions, layouts… (Esc to cancel, Enter to run)");
+    input_->setPlaceholderText(tr("Search actions, layouts… (Esc to cancel, Enter to run)"));
     connect(input_, &QLineEdit::textChanged, this, &CommandPalette::on_text_changed);
     connect(input_, &QLineEdit::returnPressed, this, &CommandPalette::on_accept);
     vl->addWidget(input_);

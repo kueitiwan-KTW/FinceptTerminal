@@ -75,7 +75,7 @@ void BisPanel::build_controls(QHBoxLayout* thl) {
 
     country_input_ = new QLineEdit;
     country_input_->setPlaceholderText(tr("Country code"));
-    country_input_->setText("US");
+    country_input_->setText(tr("US"));
     country_input_->setFixedHeight(26);
     country_input_->setFixedWidth(70);
 

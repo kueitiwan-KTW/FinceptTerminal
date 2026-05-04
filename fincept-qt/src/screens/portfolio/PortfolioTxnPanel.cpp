@@ -38,7 +38,7 @@ void PortfolioTxnPanel::build_ui() {
     collapse_btn_ = new QPushButton("▾");
     collapse_btn_->setFixedSize(22, 22);
     collapse_btn_->setCursor(Qt::PointingHandCursor);
-    collapse_btn_->setToolTip("Collapse / expand transaction history");
+    collapse_btn_->setToolTip(tr("Collapse / expand transaction history"));
     collapse_btn_->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %2;"
                                          "  font-size:11px; font-weight:700; }"
                                          "QPushButton:hover { color:%3; border-color:%3; }")

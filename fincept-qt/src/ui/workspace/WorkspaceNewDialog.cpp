@@ -46,7 +46,7 @@ void WorkspaceNewDialog::setup_ui() {
 
     // ── Left: template list ───────────────────────────────────────────────────
     auto* left = new QVBoxLayout;
-    auto* tpl_label = new QLabel("Template");
+    auto* tpl_label = new QLabel(tr("Template"));
     tpl_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     left->addWidget(tpl_label);
 
@@ -66,7 +66,7 @@ void WorkspaceNewDialog::setup_ui() {
     auto* right = new QVBoxLayout;
     right->setSpacing(10);
 
-    auto* name_label = new QLabel("Workspace Name");
+    auto* name_label = new QLabel(tr("Workspace Name"));
     name_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     right->addWidget(name_label);
 
@@ -74,7 +74,7 @@ void WorkspaceNewDialog::setup_ui() {
     name_edit_->setPlaceholderText(tr("My Workspace"));
     right->addWidget(name_edit_);
 
-    auto* desc_label = new QLabel("Description (optional)");
+    auto* desc_label = new QLabel(tr("Description (optional)"));
     desc_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     right->addWidget(desc_label);
 
@@ -83,7 +83,7 @@ void WorkspaceNewDialog::setup_ui() {
     description_edit_->setPlaceholderText(tr("What is this workspace for?"));
     right->addWidget(description_edit_);
 
-    auto* prev_label = new QLabel("Preview");
+    auto* prev_label = new QLabel(tr("Preview"));
     prev_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     right->addWidget(prev_label);
 
@@ -99,8 +99,8 @@ void WorkspaceNewDialog::setup_ui() {
     // Buttons
     auto* btn_row = new QHBoxLayout;
     btn_row->addStretch();
-    auto* cancel_btn = new QPushButton("Cancel");
-    create_btn_ = new QPushButton("Create");
+    auto* cancel_btn = new QPushButton(tr("Cancel"));
+    create_btn_ = new QPushButton(tr("Create"));
     create_btn_->setObjectName("createBtn");
     create_btn_->setEnabled(false);
     btn_row->addWidget(cancel_btn);

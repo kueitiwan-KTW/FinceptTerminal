@@ -152,7 +152,7 @@ QWidget* NotesScreen::build_category_sidebar() {
     lay->setSpacing(0);
 
     // Header
-    auto* header = new QLabel("  CATEGORIES");
+    auto* header = new QLabel(tr("  CATEGORIES"));
     header->setFixedHeight(34);
     header->setStyleSheet(QString("background: %1; color: %2; font-size: 12px; font-weight: 700; "
                                   "letter-spacing: 0.5px; border-bottom: 1px solid %3; padding-left: 12px; "
@@ -208,7 +208,7 @@ QWidget* NotesScreen::build_notes_list_panel() {
     connect(search_input_, &QLineEdit::textChanged, this, &NotesScreen::on_search_changed);
     tl->addWidget(search_input_);
 
-    auto* new_btn = new QPushButton("+ NEW");
+    auto* new_btn = new QPushButton(tr("+ NEW"));
     new_btn->setFixedSize(70, 24);
     new_btn->setStyleSheet(kActionBtn());
     connect(new_btn, &QPushButton::clicked, this, &NotesScreen::on_new_note);
@@ -223,7 +223,7 @@ QWidget* NotesScreen::build_notes_list_panel() {
     lay->addWidget(notes_list_);
 
     // Footer count
-    count_label_ = new QLabel("0 notes");
+    count_label_ = new QLabel(tr("0 notes"));
     count_label_->setFixedHeight(26);
     count_label_->setAlignment(Qt::AlignCenter);
     count_label_->setStyleSheet(QString("background: %1; color: %2; font-size: 11px; border-top: 1px solid %3; "
@@ -244,7 +244,7 @@ QWidget* NotesScreen::build_editor_panel() {
     empty->setStyleSheet(QString("background: %1;").arg(BG_BASE()));
     auto* el = new QVBoxLayout(empty);
     el->setAlignment(Qt::AlignCenter);
-    auto* empty_label = new QLabel("Select a note or create a new one");
+    auto* empty_label = new QLabel(tr("Select a note or create a new one"));
     empty_label->setStyleSheet(
         QString("color: %1; font-size: 14px; font-family: 'Consolas','Courier New',monospace;").arg(TEXT_TERTIARY()));
     el->addWidget(empty_label, 0, Qt::AlignCenter);
@@ -259,17 +259,17 @@ QWidget* NotesScreen::build_editor_panel() {
 
     // View toolbar
     auto* view_toolbar = new QHBoxLayout;
-    auto* edit_btn = new QPushButton("EDIT");
+    auto* edit_btn = new QPushButton(tr("EDIT"));
     edit_btn->setStyleSheet(kSecondaryBtn());
     connect(edit_btn, &QPushButton::clicked, this, &NotesScreen::enter_edit_mode);
     view_toolbar->addWidget(edit_btn);
 
-    auto* fav_btn = new QPushButton("FAV");
+    auto* fav_btn = new QPushButton(tr("FAV"));
     fav_btn->setStyleSheet(kSecondaryBtn());
     connect(fav_btn, &QPushButton::clicked, this, &NotesScreen::on_toggle_favorite);
     view_toolbar->addWidget(fav_btn);
 
-    auto* archive_btn = new QPushButton("ARCHIVE");
+    auto* archive_btn = new QPushButton(tr("ARCHIVE"));
     archive_btn->setStyleSheet(kSecondaryBtn());
     connect(archive_btn, &QPushButton::clicked, this, &NotesScreen::on_toggle_archive);
     view_toolbar->addWidget(archive_btn);
@@ -325,12 +325,12 @@ QWidget* NotesScreen::build_editor_panel() {
 
     // Save/Cancel bar
     auto* edit_toolbar = new QHBoxLayout;
-    auto* save_btn = new QPushButton("SAVE");
+    auto* save_btn = new QPushButton(tr("SAVE"));
     save_btn->setStyleSheet(kActionBtn());
     connect(save_btn, &QPushButton::clicked, this, &NotesScreen::on_save_note);
     edit_toolbar->addWidget(save_btn);
 
-    auto* cancel_btn = new QPushButton("CANCEL");
+    auto* cancel_btn = new QPushButton(tr("CANCEL"));
     cancel_btn->setStyleSheet(kSecondaryBtn());
     connect(cancel_btn, &QPushButton::clicked, this, [this]() {
         if (selected_note_id_ > 0) {
@@ -342,7 +342,7 @@ QWidget* NotesScreen::build_editor_panel() {
     });
     edit_toolbar->addWidget(cancel_btn);
 
-    auto* export_btn = new QPushButton("EXPORT");
+    auto* export_btn = new QPushButton(tr("EXPORT"));
     export_btn->setStyleSheet(kSecondaryBtn());
     export_btn->setToolTip(tr("Export this note as a Markdown file to the File Manager"));
     connect(export_btn, &QPushButton::clicked, this, &NotesScreen::on_export_note);

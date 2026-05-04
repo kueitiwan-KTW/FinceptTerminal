@@ -311,7 +311,7 @@ QWidget* SupportScreen::build_sidebar() {
         hl->setSpacing(8);
 
         // New ticket button — full width
-        auto* new_btn = new QPushButton("＋  New Ticket");
+        auto* new_btn = new QPushButton(tr("＋  New Ticket"));
         new_btn->setFixedHeight(34);
         new_btn->setStyleSheet(SS_BTN_PRIMARY());
         connect(new_btn, &QPushButton::clicked, this, [this]() { content_stack_->setCurrentIndex(1); });
@@ -410,7 +410,7 @@ QWidget* SupportScreen::build_empty_state() {
 
     vl->addSpacing(16);
 
-    auto* btn = new QPushButton("＋  Create New Ticket");
+    auto* btn = new QPushButton(tr("＋  Create New Ticket"));
     btn->setFixedSize(200, 36);
     btn->setStyleSheet(SS_BTN_PRIMARY());
     connect(btn, &QPushButton::clicked, this, [this]() { content_stack_->setCurrentIndex(1); });
@@ -437,7 +437,7 @@ QWidget* SupportScreen::build_create_page() {
 
     // Page header
     {
-        auto* cancel_btn = new QPushButton("← Back");
+        auto* cancel_btn = new QPushButton(tr("← Back"));
         cancel_btn->setFlat(true);
         cancel_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:none;"
                                           "font-size:11px;padding:0;%2}"
@@ -557,14 +557,14 @@ QWidget* SupportScreen::build_create_page() {
     {
         auto* ar = new QHBoxLayout;
 
-        auto* cancel2 = new QPushButton("Cancel");
+        auto* cancel2 = new QPushButton(tr("Cancel"));
         cancel2->setFixedHeight(38);
         cancel2->setStyleSheet(SS_BTN_GHOST());
         connect(cancel2, &QPushButton::clicked, this, [this]() { content_stack_->setCurrentIndex(0); });
         ar->addWidget(cancel2);
         ar->addStretch();
 
-        create_btn_ = new QPushButton("Submit Ticket →");
+        create_btn_ = new QPushButton(tr("Submit Ticket →"));
         create_btn_->setFixedHeight(38);
         create_btn_->setMinimumWidth(160);
         create_btn_->setStyleSheet(SS_BTN_SUCCESS());
@@ -640,14 +640,14 @@ QWidget* SupportScreen::build_detail_page() {
                                               .arg(ui::colors::CYAN(), ui::colors::BG_BASE(), MF));
         hl->addWidget(detail_status_lbl_);
 
-        close_btn_ = new QPushButton("Close Ticket");
+        close_btn_ = new QPushButton(tr("Close Ticket"));
         close_btn_->setFixedHeight(28);
         close_btn_->setStyleSheet(SS_BTN_DANGER());
         close_btn_->hide();
         connect(close_btn_, &QPushButton::clicked, this, &SupportScreen::on_close_ticket);
         hl->addWidget(close_btn_);
 
-        reopen_btn_ = new QPushButton("Reopen");
+        reopen_btn_ = new QPushButton(tr("Reopen"));
         reopen_btn_->setFixedHeight(28);
         reopen_btn_->setStyleSheet(SS_BTN_OUTLINE());
         reopen_btn_->hide();
@@ -711,7 +711,7 @@ QWidget* SupportScreen::build_detail_page() {
         auto* dt = lbl("This is a demo ticket. Open a real ticket to get support from our team.",
                        ui::colors::TEXT_SECONDARY(), 11, false, true);
         dbl->addWidget(dt, 1);
-        auto* db = new QPushButton("New Ticket");
+        auto* db = new QPushButton(tr("New Ticket"));
         db->setFixedHeight(28);
         db->setStyleSheet(SS_BTN_PRIMARY());
         connect(db, &QPushButton::clicked, this, [this]() { content_stack_->setCurrentIndex(1); });
@@ -752,7 +752,7 @@ QWidget* SupportScreen::build_detail_page() {
 
         auto* send_row = new QHBoxLayout;
         send_row->addStretch();
-        send_btn_ = new QPushButton("Send Reply →");
+        send_btn_ = new QPushButton(tr("Send Reply →"));
         send_btn_->setFixedHeight(34);
         send_btn_->setMinimumWidth(140);
         send_btn_->setStyleSheet(SS_BTN_SUCCESS());

@@ -129,7 +129,7 @@ QWidget* PortfolioOptimizationView::build_optimize_tab() {
 
     config->addStretch();
 
-    run_btn_ = new QPushButton("\u25B6 RUN OPTIMIZATION");
+    run_btn_ = new QPushButton(tr("\u25B6 RUN OPTIMIZATION"));
     run_btn_->setFixedHeight(26);
     run_btn_->setCursor(Qt::PointingHandCursor);
     run_btn_->setStyleSheet(QString("QPushButton { background:%1; color:%5; border:none;"
@@ -161,7 +161,7 @@ QWidget* PortfolioOptimizationView::build_frontier_tab() {
     auto* layout = new QVBoxLayout(w);
     layout->setContentsMargins(12, 8, 12, 8);
 
-    auto* title = new QLabel("EFFICIENT FRONTIER");
+    auto* title = new QLabel(tr("EFFICIENT FRONTIER"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -223,7 +223,7 @@ QWidget* PortfolioOptimizationView::build_strategies_tab() {
     layout->setContentsMargins(12, 8, 12, 8);
     layout->setSpacing(8);
 
-    auto* title = new QLabel("STRATEGY COMPARISON  (populated after optimization)");
+    auto* title = new QLabel(tr("STRATEGY COMPARISON  (populated after optimization)"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -248,7 +248,7 @@ QWidget* PortfolioOptimizationView::build_compare_tab() {
     layout->setContentsMargins(12, 8, 12, 8);
     layout->setSpacing(8);
 
-    auto* title = new QLabel("WEIGHT COMPARISON  (all methods, per symbol)");
+    auto* title = new QLabel(tr("WEIGHT COMPARISON  (all methods, per symbol)"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -270,7 +270,7 @@ QWidget* PortfolioOptimizationView::build_backtest_tab() {
     layout->setContentsMargins(16, 12, 16, 12);
     layout->setAlignment(Qt::AlignCenter);
 
-    auto* title = new QLabel("BACKTEST RESULTS");
+    auto* title = new QLabel(tr("BACKTEST RESULTS"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     title->setAlignment(Qt::AlignCenter);
@@ -286,7 +286,7 @@ QWidget* PortfolioOptimizationView::build_risk_tab() {
     auto* layout = new QVBoxLayout(w);
     layout->setContentsMargins(16, 12, 16, 12);
 
-    auto* title = new QLabel("RISK DECOMPOSITION");
+    auto* title = new QLabel(tr("RISK DECOMPOSITION"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -302,7 +302,7 @@ QWidget* PortfolioOptimizationView::build_stress_tab() {
     auto* layout = new QVBoxLayout(w);
     layout->setContentsMargins(16, 12, 16, 12);
 
-    auto* title = new QLabel("OPTIMIZATION STRESS SCENARIOS");
+    auto* title = new QLabel(tr("OPTIMIZATION STRESS SCENARIOS"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -317,7 +317,7 @@ QWidget* PortfolioOptimizationView::build_black_litterman_tab() {
     auto* layout = new QVBoxLayout(w);
     layout->setContentsMargins(16, 12, 16, 12);
 
-    auto* title = new QLabel("BLACK-LITTERMAN MODEL");
+    auto* title = new QLabel(tr("BLACK-LITTERMAN MODEL"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);

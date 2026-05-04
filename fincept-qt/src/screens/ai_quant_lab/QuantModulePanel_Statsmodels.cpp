@@ -83,7 +83,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     oll->setSpacing(8);
 
     auto* ols_y = new QLineEdit(ols);
-    ols_y->setPlaceholderText("Dependent variable y (>= 10 values)");
+    ols_y->setPlaceholderText(tr("Dependent variable y (>= 10 values)"));
     ols_y->setStyleSheet(input_ss());
     text_inputs_["sm_ols_y"] = ols_y;
     oll->addWidget(build_input_row("y (Dependent)", ols_y, ols));
@@ -91,7 +91,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
                                    "100-pt synthetic series (level ~50)"));
 
     auto* ols_x = new QLineEdit(ols);
-    ols_x->setPlaceholderText("Regressor x (single column, same length as y). For multi-feature use the JSON 2D form.");
+    ols_x->setPlaceholderText(tr("Regressor x (single column, same length as y). For multi-feature use the JSON 2D form."));
     ols_x->setStyleSheet(input_ss());
     text_inputs_["sm_ols_x"] = ols_x;
     oll->addWidget(build_input_row("x (Regressor)", ols_x, ols));
@@ -143,7 +143,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     arl->setSpacing(8);
 
     auto* ar_vals = new QLineEdit(ar);
-    ar_vals->setPlaceholderText("Time series values (>= 30)");
+    ar_vals->setPlaceholderText(tr("Time series values (>= 30)"));
     ar_vals->setStyleSheet(input_ss());
     text_inputs_["sm_ar_values"] = ar_vals;
     arl->addWidget(build_input_row("Series Values", ar_vals, ar));
@@ -214,7 +214,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     stl->setSpacing(8);
 
     auto* st_vals = new QLineEdit(st);
-    st_vals->setPlaceholderText("Time series values (>= 30)");
+    st_vals->setPlaceholderText(tr("Time series values (>= 30)"));
     st_vals->setStyleSheet(input_ss());
     text_inputs_["sm_st_values"] = st_vals;
     stl->addWidget(build_input_row("Series Values", st_vals, st));
@@ -230,14 +230,14 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
 
     auto* st_adf = new QComboBox(st);
     st_adf->addItems({"c", "ct", "ctt", "n"});
-    st_adf->setToolTip("c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant");
+    st_adf->setToolTip(tr("c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant"));
     st_adf->setStyleSheet(combo_ss());
     combo_inputs_["sm_st_adf_reg"] = st_adf;
     stl->addWidget(build_input_row("ADF Regression Type", st_adf, st));
 
     auto* st_kpss = new QComboBox(st);
     st_kpss->addItems({"c", "ct"});
-    st_kpss->setToolTip("c = constant only, ct = constant + trend");
+    st_kpss->setToolTip(tr("c = constant only, ct = constant + trend"));
     st_kpss->setStyleSheet(combo_ss());
     combo_inputs_["sm_st_kpss_reg"] = st_kpss;
     stl->addWidget(build_input_row("KPSS Regression Type", st_kpss, st));
@@ -273,7 +273,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     apl->setSpacing(8);
 
     auto* ap_vals = new QLineEdit(ap);
-    ap_vals->setPlaceholderText("Time series values (>= 20). Used for ARIMA(p,q) order selection.");
+    ap_vals->setPlaceholderText(tr("Time series values (>= 20). Used for ARIMA(p,q) order selection."));
     ap_vals->setStyleSheet(input_ss());
     text_inputs_["sm_ap_values"] = ap_vals;
     apl->addWidget(build_input_row("Series Values", ap_vals, ap));
@@ -316,7 +316,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     gcl->setSpacing(8);
 
     auto* gc_y = new QLineEdit(gc);
-    gc_y->setPlaceholderText("Effect series y (the one we ask: 'is this caused by x?')");
+    gc_y->setPlaceholderText(tr("Effect series y (the one we ask: 'is this caused by x?')"));
     gc_y->setStyleSheet(input_ss());
     text_inputs_["sm_gc_y"] = gc_y;
     gcl->addWidget(build_input_row("y (Effect)", gc_y, gc));
@@ -324,7 +324,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
                                    "200-pt synthetic effect series"));
 
     auto* gc_x = new QLineEdit(gc);
-    gc_x->setPlaceholderText("Potential cause series x (same length as y)");
+    gc_x->setPlaceholderText(tr("Potential cause series x (same length as y)"));
     gc_x->setStyleSheet(input_ss());
     text_inputs_["sm_gc_x"] = gc_x;
     gcl->addWidget(build_input_row("x (Potential Cause)", gc_x, gc));
@@ -385,7 +385,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     del->setSpacing(8);
 
     auto* de_vals = new QLineEdit(de);
-    de_vals->setPlaceholderText("Numeric values (>= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.");
+    de_vals->setPlaceholderText(tr("Numeric values (>= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests."));
     de_vals->setStyleSheet(input_ss());
     text_inputs_["sm_de_values"] = de_vals;
     del->addWidget(build_input_row("Values", de_vals, de));
@@ -473,7 +473,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
                                .arg(ui::colors::TEXT_SECONDARY(), ui::colors::BG_SURFACE(),
                                     ui::colors::BORDER_DIM()));
         results_layout_->addWidget(lbl);
-        status_label_->setText("Statsmodels backend ready");
+        status_label_->setText(tr("Statsmodels backend ready"));
         return;
     }
 
@@ -682,7 +682,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const QJsonObject kp = d.value("kpss").toObject();
 
         // ADF row
-        auto* adf_lbl = new QLabel("ADF (H₀: unit root → non-stationary)");
+        auto* adf_lbl = new QLabel(tr("ADF (H₀: unit root → non-stationary)"));
         adf_lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                    .arg(ui::colors::TEXT_TERTIARY()));
         results_layout_->addWidget(adf_lbl);
@@ -707,7 +707,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         results_layout_->addWidget(gs_card_row(adf_crit, this));
 
         // KPSS row
-        auto* kpss_lbl = new QLabel("KPSS (H₀: stationary)");
+        auto* kpss_lbl = new QLabel(tr("KPSS (H₀: stationary)"));
         kpss_lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                     .arg(ui::colors::TEXT_TERTIARY()));
         results_layout_->addWidget(kpss_lbl);
@@ -901,7 +901,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         results_layout_->addWidget(gs_card_row(shape, this));
 
         // Normality
-        auto* nh = new QLabel("NORMALITY  (H₀: data is normally distributed; p > 0.05 ⇒ cannot reject normal)");
+        auto* nh = new QLabel(tr("NORMALITY  (H₀: data is normally distributed; p > 0.05 ⇒ cannot reject normal)"));
         nh->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                               .arg(ui::colors::TEXT_TERTIARY()));
         results_layout_->addWidget(nh);

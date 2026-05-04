@@ -1062,7 +1062,7 @@ void BacktestingScreen::on_provider_changed(int index) {
     // Clear stale strategies and show loading state
     strategies_.clear();
     strategy_category_combo_->clear();
-    strategy_category_combo_->addItem("Loading...");
+    strategy_category_combo_->addItem(tr("Loading..."));
     strategy_combo_->clear();
 
     const auto& slug = providers_[index].slug;

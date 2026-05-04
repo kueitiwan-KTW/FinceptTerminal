@@ -69,9 +69,9 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
 
     // ── Symbol / data input ─────────────────────────────────────────────────
     auto* symbol = new QLineEdit(w);
-    symbol->setPlaceholderText("Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values");
+    symbol->setPlaceholderText(tr("Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values"));
     symbol->setStyleSheet(input_ss());
-    symbol->setText("AAPL");
+    symbol->setText(tr("AAPL"));
     text_inputs_["cfa_symbol"] = symbol;
     vl->addWidget(build_input_row("Symbol / Data", symbol, w));
 
@@ -193,8 +193,8 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
         pt->setStyleSheet(combo_ss());
         combo_inputs_["cfa_sup_problem"] = pt;
         auto* algos = new QLineEdit(stack);
-        algos->setText("ridge,random_forest");
-        algos->setPlaceholderText("comma-separated: ridge,lasso,random_forest,svr,knn");
+        algos->setText(tr("ridge,random_forest"));
+        algos->setPlaceholderText(tr("comma-separated: ridge,lasso,random_forest,svr,knn"));
         algos->setStyleSheet(input_ss());
         text_inputs_["cfa_sup_algorithms"] = algos;
         add_page({
@@ -211,8 +211,8 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
         lags->setStyleSheet(spinbox_ss());
         int_inputs_["cfa_unsup_lags"] = lags;
         auto* methods = new QLineEdit(stack);
-        methods->setText("pca,kmeans");
-        methods->setPlaceholderText("comma-separated: pca,kmeans,agglomerative");
+        methods->setText(tr("pca,kmeans"));
+        methods->setPlaceholderText(tr("comma-separated: pca,kmeans,agglomerative"));
         methods->setStyleSheet(input_ss());
         text_inputs_["cfa_unsup_methods"] = methods;
         add_page({
@@ -245,8 +245,8 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
     // 7: resampling_methods — methods, n_resamples
     {
         auto* m = new QLineEdit(stack);
-        m->setText("bootstrap,jackknife");
-        m->setPlaceholderText("comma-separated: bootstrap,jackknife,permutation");
+        m->setText(tr("bootstrap,jackknife"));
+        m->setPlaceholderText(tr("comma-separated: bootstrap,jackknife,permutation"));
         m->setStyleSheet(input_ss());
         text_inputs_["cfa_resample_methods"] = m;
         auto* n = new QSpinBox(stack);
@@ -267,7 +267,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
         size->setStyleSheet(spinbox_ss());
         int_inputs_["cfa_sampling_size"] = size;
         auto* m = new QLineEdit(stack);
-        m->setText("simple,stratified,systematic");
+        m->setText(tr("simple,stratified,systematic"));
         m->setStyleSheet(input_ss());
         text_inputs_["cfa_sampling_methods"] = m;
         add_page({
@@ -282,7 +282,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
         dist->setStyleSheet(combo_ss());
         combo_inputs_["cfa_clt_dist"] = dist;
         auto* sizes = new QLineEdit(stack);
-        sizes->setText("5,10,30,100");
+        sizes->setText(tr("5,10,30,100"));
         sizes->setStyleSheet(input_ss());
         text_inputs_["cfa_clt_sizes"] = sizes;
         auto* n = new QSpinBox(stack);
@@ -303,7 +303,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
         auto* sd = make_double_spin(0.0001, 1e6, 1.0, 4, "", stack);
         double_inputs_["cfa_serr_std"] = sd;
         auto* sizes = new QLineEdit(stack);
-        sizes->setText("10,30,50,100,500");
+        sizes->setText(tr("10,30,50,100,500"));
         sizes->setStyleSheet(input_ss());
         text_inputs_["cfa_serr_sizes"] = sizes;
         auto* conf = make_double_spin(0.5, 0.999, 0.95, 3, "", stack);
@@ -346,7 +346,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
     // ── Run button ──────────────────────────────────────────────────────────
     auto* run = make_run_button("RUN ANALYSIS", w);
     connect(run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Running...");
+        status_label_->setText(tr("Running..."));
         const QString cmd = combo_inputs_["cfa_analysis"]->currentText();
         const QString raw = text_inputs_["cfa_symbol"]->text().trimmed();
 
@@ -360,7 +360,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
                                  cmd != "central_limit_theorem");
         if (needs_data && raw.isEmpty()) {
             display_error("Please enter a ticker symbol or comma-separated values");
-            status_label_->setText("Error");
+            status_label_->setText(tr("Error"));
             return;
         }
         if (cmd == "sampling_techniques")
@@ -606,7 +606,7 @@ void QuantModulePanel::display_cfa_result(const QString& command, const QJsonObj
     results_layout_->addWidget(raw);
 
     // ── Export button ───────────────────────────────────────────────────────
-    auto* export_btn = new QPushButton("EXPORT RESULTS");
+    auto* export_btn = new QPushButton(tr("EXPORT RESULTS"));
     export_btn->setCursor(Qt::PointingHandCursor);
     export_btn->setFixedHeight(28);
     export_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %2; "
@@ -633,7 +633,7 @@ void QuantModulePanel::display_cfa_result(const QString& command, const QJsonObj
     });
     results_layout_->addWidget(export_btn);
 
-    status_label_->setText("Done");
+    status_label_->setText(tr("Done"));
 }
 
 } // namespace fincept::screens

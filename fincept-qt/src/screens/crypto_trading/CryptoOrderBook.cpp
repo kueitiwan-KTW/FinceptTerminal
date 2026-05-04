@@ -87,7 +87,7 @@ CryptoOrderBook::CryptoOrderBook(QWidget* parent) : QWidget(parent) {
     h_layout->setContentsMargins(8, 0, 8, 0);
     h_layout->setSpacing(2);
 
-    auto* title = new QLabel("ORDER BOOK");
+    auto* title = new QLabel(tr("ORDER BOOK"));
     title->setObjectName("cryptoObTitle");
     h_layout->addWidget(title);
     h_layout->addStretch();
@@ -106,7 +106,7 @@ CryptoOrderBook::CryptoOrderBook(QWidget* parent) : QWidget(parent) {
     layout->addWidget(header);
 
     // Spread label
-    spread_label_ = new QLabel("Spread: --");
+    spread_label_ = new QLabel(tr("Spread: --"));
     spread_label_->setObjectName("cryptoObSpread");
     spread_label_->setAlignment(Qt::AlignCenter);
     spread_label_->setFixedHeight(SPREAD_H);

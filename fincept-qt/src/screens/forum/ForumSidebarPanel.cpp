@@ -59,7 +59,7 @@ void ForumSidebarPanel::build_ui() {
     auto* brand_icon = new QLabel("◈");
     brand_icon->setStyleSheet(QString("color:%1;font-size:20px;background:transparent;").arg(ui::colors::AMBER()));
 
-    auto* brand_title = new QLabel("COMMUNITY");
+    auto* brand_title = new QLabel(tr("COMMUNITY"));
     brand_title->setStyleSheet(QString("color:%1;font-size:13px;font-weight:700;letter-spacing:2px;"
                                        "background:transparent;%2")
                                    .arg(ui::colors::TEXT_PRIMARY(), M(13)));
@@ -97,7 +97,7 @@ void ForumSidebarPanel::build_ui() {
     profile_info->setSpacing(1);
     profile_info->setContentsMargins(0, 0, 0, 0);
 
-    profile_name_lbl_ = new QLabel("Loading...");
+    profile_name_lbl_ = new QLabel(tr("Loading..."));
     profile_name_lbl_->setStyleSheet(QString("color:%1;font-size:12px;font-weight:700;background:transparent;%2")
                                          .arg(ui::colors::TEXT_PRIMARY(), M(12)));
 
@@ -172,7 +172,7 @@ void ForumSidebarPanel::build_ui() {
         QString("background:%1;border-bottom:1px solid %2;").arg(ui::colors::BG_SURFACE(), ui::colors::BORDER_DIM()));
     auto* sh_hl = new QHBoxLayout(stats_hdr);
     sh_hl->setContentsMargins(14, 0, 14, 0);
-    auto* sh_lbl = new QLabel("ACTIVITY");
+    auto* sh_lbl = new QLabel(tr("ACTIVITY"));
     sh_lbl->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;letter-spacing:1.5px;"
                                   "background:transparent;%2")
                               .arg(ui::colors::TEXT_TERTIARY(), M(9)));
@@ -233,7 +233,7 @@ void ForumSidebarPanel::build_ui() {
     ch_hl->setSpacing(6);
     auto* ch_dot = new QLabel("●");
     ch_dot->setStyleSheet(QString("color:%1;font-size:6px;background:transparent;").arg(ui::colors::AMBER()));
-    auto* ch_lbl = new QLabel("CHANNELS");
+    auto* ch_lbl = new QLabel(tr("CHANNELS"));
     ch_lbl->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;letter-spacing:1.5px;"
                                   "background:transparent;%2")
                               .arg(ui::colors::TEXT_TERTIARY(), M(9)));
@@ -275,7 +275,7 @@ void ForumSidebarPanel::build_ui() {
     lb_hl->setSpacing(6);
     auto* lb_dot = new QLabel("★");
     lb_dot->setStyleSheet(QString("color:%1;font-size:8px;background:transparent;").arg(ui::colors::AMBER()));
-    auto* lb_lbl = new QLabel("LEADERBOARD");
+    auto* lb_lbl = new QLabel(tr("LEADERBOARD"));
     lb_lbl->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;letter-spacing:1.5px;"
                                   "background:transparent;%2")
                               .arg(ui::colors::TEXT_TERTIARY(), M(9)));
@@ -290,7 +290,7 @@ void ForumSidebarPanel::build_ui() {
     contrib_layout_->setContentsMargins(0, 0, 0, 0);
     contrib_layout_->setSpacing(0);
 
-    auto* ph = new QLabel("  loading...");
+    auto* ph = new QLabel(tr("  loading..."));
     ph->setFixedHeight(28);
     ph->setStyleSheet(QString("color:%1;font-size:10px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(10)));
     contrib_layout_->addWidget(ph);
@@ -442,7 +442,7 @@ void ForumSidebarPanel::rebuild_contributors() {
     }
 
     if (contributors_.isEmpty()) {
-        auto* ph = new QLabel("  No contributors yet");
+        auto* ph = new QLabel(tr("  No contributors yet"));
         ph->setFixedHeight(28);
         ph->setStyleSheet(
             QString("color:%1;font-size:10px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(10)));

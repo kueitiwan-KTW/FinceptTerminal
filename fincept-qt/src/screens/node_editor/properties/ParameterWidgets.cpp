@@ -173,7 +173,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         auto populate = [combo, allowed_exts](const QString& select_path = {}) {
             QString prev = select_path.isEmpty() ? combo->currentData().toString() : select_path;
             combo->clear();
-            combo->addItem("— select file —", QString());
+            combo->addItem(tr("— select file —"), QString());
 
             auto& svc = fincept::services::FileManagerService::instance();
             for (const auto& v : svc.all_files()) {
@@ -197,7 +197,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         rl->addWidget(combo, 1);
 
         // Import button — opens file dialog, imports into FileManagerService, auto-selects
-        auto* import_btn = new QPushButton("+ Import");
+        auto* import_btn = new QPushButton(tr("+ Import"));
         import_btn->setFixedHeight(24);
         import_btn->setToolTip(QCoreApplication::translate("FinceptTerminal", "Import a file from your PC into the File Manager"));
         import_btn->setStyleSheet(QString("QPushButton { background: %1; color: %2;"
@@ -265,7 +265,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
             if (combo->count() > 0)
                 saved = combo->currentData().toString();
             combo->clear();
-            combo->addItem("— select agent —", QString());
+            combo->addItem(tr("— select agent —"), QString());
 
             const auto agents = fincept::services::AgentService::instance().cached_agents();
             for (const auto& a : agents) {
@@ -297,7 +297,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         if (svc.cached_agent_count() > 0) {
             populate_agents(); // cache hot — fill immediately
         } else {
-            combo->addItem("Loading agents…", QString());
+            combo->addItem(tr("Loading agents…"), QString());
             trigger_discovery();
         }
 
@@ -330,7 +330,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
                     "  border:1px solid %2; selection-background-color:#7c3aed;"
                     "  font-family:Consolas; }")
                 .arg(input_style(), ui::colors::BORDER_MED(), ui::colors::BG_HOVER(), ui::colors::TEXT_PRIMARY()));
-        combo->addItem("— agent default —", QString());
+        combo->addItem(tr("— agent default —"), QString());
 
         QString saved = current_value.toString();
         auto res = fincept::LlmProfileRepository::instance().list_profiles();
@@ -344,7 +344,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         }
         layout->addWidget(combo);
 
-        auto* hint = new QLabel("Leave blank to use the LLM assigned to the agent in Agent Config");
+        auto* hint = new QLabel(tr("Leave blank to use the LLM assigned to the agent in Agent Config"));
         hint->setStyleSheet(QString("color:%1; font-family:Consolas; font-size:10px;").arg(ui::colors::TEXT_TERTIARY()));
         hint->setWordWrap(true);
         layout->addWidget(hint);
@@ -374,7 +374,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         auto populate_tools = [combo, current_value]() {
             QString saved = combo->count() > 0 ? combo->currentData().toString() : current_value.toString();
             combo->clear();
-            combo->addItem("— select tool —", QString());
+            combo->addItem(tr("— select tool —"), QString());
 
             auto tools = mcp::McpService::instance().get_all_tools();
             // Group by category for readability — use server_name as group header hint
@@ -382,7 +382,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
             for (const auto& t : tools) {
                 if (t.server_name != last_server) {
                     // Separator item (not selectable)
-                    combo->addItem("── " + t.server_name + " ──", QString());
+                    combo->addItem(tr("── ") + t.server_name + " ──", QString());
                     auto* model = qobject_cast<QStandardItemModel*>(combo->model());
                     if (model) {
                         auto* sep = model->item(combo->count() - 1);
@@ -402,7 +402,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
             }
         };
 
-        combo->addItem("Loading tools…", QString());
+        combo->addItem(tr("Loading tools…"), QString());
         // Populate async so we don't block the UI thread constructing the panel
         QMetaObject::invokeMethod(combo, [populate_tools]() { populate_tools(); }, Qt::QueuedConnection);
 
@@ -418,7 +418,7 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
         rl->addWidget(refresh_btn);
         layout->addWidget(row);
 
-        auto* hint = new QLabel("All Fincept internal tools. Input JSON flows in as arguments.");
+        auto* hint = new QLabel(tr("All Fincept internal tools. Input JSON flows in as arguments."));
         hint->setStyleSheet(QString("color:%1; font-family:Consolas; font-size:10px;").arg(ui::colors::TEXT_TERTIARY()));
         hint->setWordWrap(true);
         layout->addWidget(hint);

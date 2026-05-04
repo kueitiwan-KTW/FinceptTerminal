@@ -362,7 +362,7 @@ void NewsCommandBar::set_unseen_count(int count) {
 void NewsCommandBar::show_summary(const QString& summary) {
     summary_label_->setText(summary);
     summary_label_->show();
-    summarize_btn_->setText("AI");
+    summarize_btn_->setText(tr("AI"));
     summarize_btn_->setEnabled(true);
 }
 

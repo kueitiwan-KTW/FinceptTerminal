@@ -63,11 +63,11 @@ void ChatAgentPanel::build_ui() {
 
     tab_bar_ = new QTabBar;
     tab_bar_->setExpanding(true);
-    tab_bar_->addTab("Mem");
-    tab_bar_->addTab("Sched");
-    tab_bar_->addTab("Tasks");
-    tab_bar_->addTab("MCP");
-    tab_bar_->addTab("Monitor");
+    tab_bar_->addTab(tr("Mem"));
+    tab_bar_->addTab(tr("Sched"));
+    tab_bar_->addTab(tr("Tasks"));
+    tab_bar_->addTab(tr("MCP"));
+    tab_bar_->addTab(tr("Monitor"));
     tab_bar_->setStyleSheet(QString("QTabBar{background:%1;border-bottom:1px solid %2;}"
                                     "QTabBar::tab{background:%1;color:%3;padding:6px 0;"
                                     "font-size:11px;font-family:'Consolas','Courier New',monospace;"
@@ -109,7 +109,7 @@ QWidget* ChatAgentPanel::build_memory_tab() {
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(6);
 
-    auto* title = new QLabel("AGENT MEMORY");
+    auto* title = new QLabel(tr("AGENT MEMORY"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
@@ -143,11 +143,11 @@ QWidget* ChatAgentPanel::build_schedules_tab() {
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(6);
 
-    auto* title = new QLabel("SCHEDULED QUERIES");
+    auto* title = new QLabel(tr("SCHEDULED QUERIES"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
-    auto* hint = new QLabel("Cron-based agent queries (e.g. daily 9 AM).");
+    auto* hint = new QLabel(tr("Cron-based agent queries (e.g. daily 9 AM)."));
     hint->setWordWrap(true);
     hint->setStyleSheet(hint_ss());
     vl->addWidget(hint);
@@ -186,11 +186,11 @@ QWidget* ChatAgentPanel::build_tasks_tab() {
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(6);
 
-    auto* title = new QLabel("BACKGROUND TASKS");
+    auto* title = new QLabel(tr("BACKGROUND TASKS"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
-    task_status_lbl_ = new QLabel("Long-running agent queries.");
+    task_status_lbl_ = new QLabel(tr("Long-running agent queries."));
     task_status_lbl_->setWordWrap(true);
     task_status_lbl_->setStyleSheet(hint_ss());
     vl->addWidget(task_status_lbl_);
@@ -239,11 +239,11 @@ QWidget* ChatAgentPanel::build_mcp_tab() {
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(6);
 
-    auto* title = new QLabel("MCP SERVERS");
+    auto* title = new QLabel(tr("MCP SERVERS"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
-    mcp_tools_lbl_ = new QLabel("Model Context Protocol tool servers.");
+    mcp_tools_lbl_ = new QLabel(tr("Model Context Protocol tool servers."));
     mcp_tools_lbl_->setWordWrap(true);
     mcp_tools_lbl_->setStyleSheet(hint_ss());
     vl->addWidget(mcp_tools_lbl_);
@@ -278,11 +278,11 @@ QWidget* ChatAgentPanel::build_monitors_tab() {
     vl->setContentsMargins(8, 8, 8, 8);
     vl->setSpacing(6);
 
-    auto* title = new QLabel("DATA MONITORS");
+    auto* title = new QLabel(tr("DATA MONITORS"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
-    auto* hint = new QLabel("Watch sources, trigger agent analysis.");
+    auto* hint = new QLabel(tr("Watch sources, trigger agent analysis."));
     hint->setWordWrap(true);
     hint->setStyleSheet(hint_ss());
     vl->addWidget(hint);

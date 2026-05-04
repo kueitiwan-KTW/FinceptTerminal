@@ -197,9 +197,9 @@ QWidget* AsiaMarketsScreen::create_header() {
     // Title
     auto* title_col = new QVBoxLayout;
     title_col->setSpacing(0);
-    auto* title = new QLabel("ASIA MARKETS TERMINAL");
+    auto* title = new QLabel(tr("ASIA MARKETS TERMINAL"));
     title->setObjectName("asiaHeaderTitle");
-    auto* sub = new QLabel("407+ STOCK ENDPOINTS | CN A/B, HK, US, TW");
+    auto* sub = new QLabel(tr("407+ STOCK ENDPOINTS | CN A/B, HK, US, TW"));
     sub->setObjectName("asiaHeaderSub");
     title_col->addWidget(title);
     title_col->addWidget(sub);
@@ -268,7 +268,7 @@ QWidget* AsiaMarketsScreen::create_left_panel() {
     auto* srl = new QHBoxLayout(sym_row);
     srl->setContentsMargins(0, 0, 0, 0);
     srl->setSpacing(6);
-    auto* sym_label = new QLabel("SYMBOL");
+    auto* sym_label = new QLabel(tr("SYMBOL"));
     sym_label->setObjectName("asiaParamLabel");
     symbol_input_ = new QLineEdit;
     symbol_input_->setObjectName("asiaSymbolInput");
@@ -277,7 +277,7 @@ QWidget* AsiaMarketsScreen::create_left_panel() {
     srl->addWidget(sym_label);
     srl->addWidget(symbol_input_, 1);
 
-    endpoint_count_label_ = new QLabel("0 endpoints");
+    endpoint_count_label_ = new QLabel(tr("0 endpoints"));
     endpoint_count_label_->setObjectName("asiaEndpointCount");
 
     il->addWidget(search_input_);
@@ -310,14 +310,14 @@ QWidget* AsiaMarketsScreen::create_data_panel() {
     tbl->setContentsMargins(12, 0, 12, 0);
     tbl->setSpacing(8);
 
-    data_status_ = new QLabel("Select a category to begin");
+    data_status_ = new QLabel(tr("Select a category to begin"));
     data_status_->setObjectName("asiaDataStatus");
 
     record_count_ = new QLabel;
     record_count_->setObjectName("asiaRecordCount");
     record_count_->hide();
 
-    exec_btn_ = new QPushButton("EXECUTE");
+    exec_btn_ = new QPushButton(tr("EXECUTE"));
     exec_btn_->setObjectName("asiaExecBtn");
     exec_btn_->setCursor(Qt::PointingHandCursor);
     exec_btn_->setFixedWidth(70);
@@ -330,7 +330,7 @@ QWidget* AsiaMarketsScreen::create_data_panel() {
     view_toggle_btn_->setFixedWidth(50);
     connect(view_toggle_btn_, &QPushButton::clicked, this, &AsiaMarketsScreen::on_view_toggle);
 
-    auto* refresh_btn = new QPushButton("REFRESH");
+    auto* refresh_btn = new QPushButton(tr("REFRESH"));
     refresh_btn->setObjectName("asiaRefreshBtn");
     refresh_btn->setCursor(Qt::PointingHandCursor);
     refresh_btn->setFixedWidth(65);
@@ -375,17 +375,17 @@ QWidget* AsiaMarketsScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    auto* left = new QLabel("ASIA MARKETS");
+    auto* left = new QLabel(tr("ASIA MARKETS"));
     left->setObjectName("asiaStatusText");
     hl->addWidget(left);
     hl->addStretch(1);
 
-    status_category_ = new QLabel("CATEGORY: REALTIME");
+    status_category_ = new QLabel(tr("CATEGORY: REALTIME"));
     status_category_->setObjectName("asiaStatusText");
     hl->addWidget(status_category_);
 
     hl->addSpacing(16);
-    status_region_ = new QLabel("REGION: CN_A");
+    status_region_ = new QLabel(tr("REGION: CN_A"));
     status_region_->setObjectName("asiaStatusHighlight");
     hl->addWidget(status_region_);
 
@@ -408,7 +408,7 @@ void AsiaMarketsScreen::on_category_changed(int index) {
         cat_btns_[i]->style()->polish(cat_btns_[i]);
     }
 
-    status_category_->setText("CATEGORY: " + categories_[index].name);
+    status_category_->setText(tr("CATEGORY: ") + categories_[index].name);
     search_input_->clear();
 
     LOG_INFO("AsiaMarkets", "Category: " + categories_[index].name);
@@ -430,7 +430,7 @@ void AsiaMarketsScreen::on_region_changed(int index) {
         region_btns_[i]->style()->polish(region_btns_[i]);
     }
 
-    status_region_->setText("REGION: " + regions_[index]);
+    status_region_->setText(tr("REGION: ") + regions_[index]);
     LOG_INFO("AsiaMarkets", "Region: " + regions_[index]);
     ScreenStateManager::instance().notify_changed(this);
 }
@@ -734,7 +734,7 @@ void AsiaMarketsScreen::display_json(const QJsonArray& rows_json) {
 }
 
 void AsiaMarketsScreen::display_error(const QString& error) {
-    data_status_->setText("Error");
+    data_status_->setText(tr("Error"));
     record_count_->hide();
 
     data_table_->clear();

@@ -63,7 +63,7 @@ NewsDetailPanel::NewsDetailPanel(QWidget* parent) : QWidget(parent) {
     analyze_timeout_->setInterval(30000);
     connect(analyze_timeout_, &QTimer::timeout, this, [this]() {
         if (analyze_btn_) {
-            analyze_btn_->setText("ANALYZE");
+            analyze_btn_->setText(tr("ANALYZE"));
             analyze_btn_->setEnabled(true);
         }
     });
@@ -245,7 +245,7 @@ QWidget* NewsDetailPanel::build_content_view() {
         services::NewsNlpService::instance().translate_text(
             current_article_.headline + "\n\n" + current_article_.summary, "en",
             [this](bool ok, QString translated, QString detected_lang) {
-                translate_btn_->setText("TRANSLATE");
+                translate_btn_->setText(tr("TRANSLATE"));
                 translate_btn_->setEnabled(true);
                 if (ok && !translated.isEmpty()) {
                     summary_label_->setText(QString("[%1 -> EN] %2").arg(detected_lang, translated));
@@ -471,7 +471,7 @@ void NewsDetailPanel::show_article(const services::NewsArticle& article) {
 
     // Reset analysis
     analysis_section_->hide();
-    analyze_btn_->setText("ANALYZE");
+    analyze_btn_->setText(tr("ANALYZE"));
     analyze_btn_->setEnabled(true);
     analyze_timeout_->stop();
 
@@ -497,7 +497,7 @@ void NewsDetailPanel::show_article(const services::NewsArticle& article) {
 }
 
 void NewsDetailPanel::show_analysis(const services::NewsAnalysis& analysis) {
-    analyze_btn_->setText("ANALYZE");
+    analyze_btn_->setText(tr("ANALYZE"));
     analyze_btn_->setEnabled(true);
     analyze_timeout_->stop();
 

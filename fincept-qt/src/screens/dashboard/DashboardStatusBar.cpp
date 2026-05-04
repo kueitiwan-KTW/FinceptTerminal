@@ -67,20 +67,20 @@ DashboardStatusBar::DashboardStatusBar(QWidget* parent) : QWidget(parent) {
     }
 
     ll->addWidget(make_sep());
-    ll->addWidget(make_lbl("SESSION:", "dsLabel"));
-    uptime_label_ = new QLabel("00:00:00");
+    ll->addWidget(make_lbl(tr("SESSION:"), "dsLabel"));
+    uptime_label_ = new QLabel(tr("00:00:00"));
     uptime_label_->setObjectName("dsUptime");
     ll->addWidget(uptime_label_);
 
     ll->addWidget(make_sep());
-    ll->addWidget(make_lbl("LAYOUT:", "dsLabel"));
-    layout_label_ = new QLabel("ACTIVE");
+    ll->addWidget(make_lbl(tr("LAYOUT:"), "dsLabel"));
+    layout_label_ = new QLabel(tr("ACTIVE"));
     layout_label_->setObjectName("dsLayout");
     ll->addWidget(layout_label_);
 
     ll->addWidget(make_sep());
-    ll->addWidget(make_lbl("FEEDS:", "dsLabel"));
-    feeds_label_ = new QLabel("CONNECTED");
+    ll->addWidget(make_lbl(tr("FEEDS:"), "dsLabel"));
+    feeds_label_ = new QLabel(tr("CONNECTED"));
     feeds_label_->setObjectName("dsFeeds");
     ll->addWidget(feeds_label_);
 
@@ -93,15 +93,15 @@ DashboardStatusBar::DashboardStatusBar(QWidget* parent) : QWidget(parent) {
     rl->setContentsMargins(0, 0, 0, 0);
     rl->setSpacing(8);
 
-    rl->addWidget(make_lbl("MEM: OPTIMAL", "dsMem"));
+    rl->addWidget(make_lbl(tr("MEM: OPTIMAL"), "dsMem"));
     rl->addWidget(make_sep());
 
-    latency_label_ = new QLabel("LAT: ---");
+    latency_label_ = new QLabel(tr("LAT: ---"));
     latency_label_->setObjectName("dsLatency");
     rl->addWidget(latency_label_);
 
     rl->addWidget(make_sep());
-    rl->addWidget(make_lbl(QString::fromUtf8("● READY"), "dsReady"));
+    rl->addWidget(make_lbl(QString::fromUtf8("● ") + tr("READY"), "dsReady"));
     rl->addWidget(make_sep());
 
     // ── Notification bell ──────────────────────────────────────────────────
@@ -165,14 +165,14 @@ void DashboardStatusBar::update_uptime() {
 }
 
 void DashboardStatusBar::set_widget_count(int count) {
-    layout_label_->setText(count > 0 ? "ACTIVE" : "EMPTY");
+    layout_label_->setText(count > 0 ? tr("ACTIVE") : tr("EMPTY"));
     layout_label_->setStyleSheet(QString("color:%1;font-weight:bold;background:transparent;")
                                      .arg(count > 0 ? ui::colors::POSITIVE() : ui::colors::TEXT_SECONDARY()));
 }
 
 void DashboardStatusBar::set_connected(bool connected) {
     connected_ = connected;
-    feeds_label_->setText(connected ? "CONNECTED" : "DISCONNECTED");
+    feeds_label_->setText(connected ? tr("CONNECTED") : tr("DISCONNECTED"));
     feeds_label_->setStyleSheet(QString("color:%1;font-weight:bold;background:transparent;")
                                     .arg(connected ? ui::colors::POSITIVE() : ui::colors::NEGATIVE()));
 }
@@ -195,7 +195,7 @@ void DashboardStatusBar::set_latency(int ms) {
             QString("color:%1;font-weight:bold;background:transparent;").arg(ui::colors::NEGATIVE()));
         return;
     }
-    latency_label_->setText(QString("LAT: %1ms").arg(ms));
+    latency_label_->setText(tr("LAT: %1ms").arg(ms));
     const QString color = ms < 100 ? ui::colors::POSITIVE() : ms < 300 ? ui::colors::AMBER() : ui::colors::NEGATIVE();
     latency_label_->setStyleSheet(QString("color:%1;font-weight:bold;background:transparent;").arg(color));
 }

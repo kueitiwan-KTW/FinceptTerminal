@@ -420,8 +420,8 @@ void PortfolioBlotter::on_context_menu(const QPoint& pos) {
     }());
     menu.addSeparator();
 
-    auto* edit_act = menu.addAction("Edit Transaction");
-    auto* delete_act = menu.addAction("Close / Delete Position");
+    auto* edit_act = menu.addAction(tr("Edit Transaction"));
+    auto* delete_act = menu.addAction(tr("Close / Delete Position"));
 
     edit_act->setIcon(QIcon());
     delete_act->setIcon(QIcon());

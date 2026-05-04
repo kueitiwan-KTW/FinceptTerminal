@@ -65,7 +65,7 @@ ImfPanel::ImfPanel(QWidget* parent) : EconPanelBase(kImfSourceId, kImfColor, par
     lvl->setContentsMargins(0, 0, 0, 0);
     lvl->setSpacing(0);
 
-    auto* hdr = new QLabel("IMF INDICATOR");
+    auto* hdr = new QLabel(tr("IMF INDICATOR"));
     hdr->setStyleSheet(section_lbl_style() + section_hdr_style());
     lvl->addWidget(hdr);
 
@@ -103,7 +103,7 @@ void ImfPanel::activate() {
 // ── Controls ──────────────────────────────────────────────────────────────────
 
 void ImfPanel::build_controls(QHBoxLayout* thl) {
-    auto* lbl = new QLabel("COUNTRY");
+    auto* lbl = new QLabel(tr("COUNTRY"));
     lbl->setStyleSheet(ctrl_label_style());
     country_combo_ = new QComboBox;
     for (const auto& pair : kImfCountries)

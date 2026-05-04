@@ -53,7 +53,7 @@ void GovDataHKPanel::build_ui() {
     auto* bcl = new QHBoxLayout(breadcrumb_);
     bcl->setContentsMargins(14, 0, 14, 0);
     bcl->setSpacing(4);
-    breadcrumb_label_ = new QLabel("Categories");
+    breadcrumb_label_ = new QLabel(tr("Categories"));
     breadcrumb_label_->setObjectName("govBreadcrumbText");
     bcl->addWidget(breadcrumb_label_);
     bcl->addStretch(1);
@@ -139,7 +139,7 @@ QWidget* GovDataHKPanel::build_toolbar() {
     hl->setContentsMargins(10, 0, 10, 0);
     hl->setSpacing(5);
 
-    back_btn_ = new QPushButton("← BACK");
+    back_btn_ = new QPushButton(tr("← BACK"));
     back_btn_->setObjectName("govBackBtn");
     back_btn_->setVisible(false);
     back_btn_->setCursor(Qt::PointingHandCursor);
@@ -148,7 +148,7 @@ QWidget* GovDataHKPanel::build_toolbar() {
 
     hl->addSpacing(4);
 
-    categories_btn_ = new QPushButton("CATEGORIES");
+    categories_btn_ = new QPushButton(tr("CATEGORIES"));
     categories_btn_->setObjectName("govTabBtn");
     categories_btn_->setCheckable(true);
     categories_btn_->setChecked(true);
@@ -156,7 +156,7 @@ QWidget* GovDataHKPanel::build_toolbar() {
     connect(categories_btn_, &QPushButton::clicked, this, [this]() { on_tab_changed(Categories); });
     hl->addWidget(categories_btn_);
 
-    datasets_btn_ = new QPushButton("DATASETS");
+    datasets_btn_ = new QPushButton(tr("DATASETS"));
     datasets_btn_->setObjectName("govTabBtn");
     datasets_btn_->setCheckable(true);
     datasets_btn_->setCursor(Qt::PointingHandCursor);
@@ -173,7 +173,7 @@ QWidget* GovDataHKPanel::build_toolbar() {
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataHKPanel::on_fetch);
     hl->addWidget(search_input_);
 
-    fetch_btn_ = new QPushButton("FETCH");
+    fetch_btn_ = new QPushButton(tr("FETCH"));
     fetch_btn_->setObjectName("govFetchBtn");
     fetch_btn_->setCursor(Qt::PointingHandCursor);
     connect(fetch_btn_, &QPushButton::clicked, this, &GovDataHKPanel::on_fetch);
@@ -522,7 +522,7 @@ void GovDataHKPanel::show_loading(const QString& message) {
 
 void GovDataHKPanel::show_error(const QString& message) {
     status_label_->setStyleSheet(QString("color:%1; font-size:12px; background:transparent;").arg(colors::NEGATIVE()));
-    status_label_->setText("Error: " + message);
+    status_label_->setText(tr("Error: ") + message);
     content_stack_->setCurrentIndex(Status);
     LOG_ERROR("GovHK", message);
 }

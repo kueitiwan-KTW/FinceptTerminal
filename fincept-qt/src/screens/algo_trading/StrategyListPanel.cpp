@@ -68,7 +68,7 @@ void StrategyListPanel::build_ui() {
     cat_combo_ = new QComboBox(top_bar);
     cat_combo_->setFixedHeight(28);
     cat_combo_->setFixedWidth(150);
-    cat_combo_->addItem("All Categories");
+    cat_combo_->addItem(tr("All Categories"));
     const QString combo_style =
         QString("QComboBox { background:%1; color:%2; border:1px solid %3;"
                 " padding:2px 6px; font-size:%4px; font-family:%5; }"
@@ -306,7 +306,7 @@ void StrategyListPanel::on_strategies_loaded(QVector<AlgoStrategy> strategies) {
     const QString prev_cat = cat_combo_->currentIndex() > 0 ? cat_combo_->currentText() : QString();
     cat_combo_->blockSignals(true);
     cat_combo_->clear();
-    cat_combo_->addItem("All Categories");
+    cat_combo_->addItem(tr("All Categories"));
     QStringList cats;
     for (const auto& s : strategies_)
         if (!cats.contains(s.description))

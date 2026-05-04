@@ -320,7 +320,7 @@ QWidget* TradeVizScreen::build_tab_bar() {
     hl->addStretch();
 
     // Right side: "Trade Flow" title
-    auto* title = new QLabel("Trade Flow");
+    auto* title = new QLabel(tr("Trade Flow"));
     title->setStyleSheet(QString("color: %1; font-size: 16px; font-weight: bold; background: transparent;"
                                  " padding-right: 14px; font-family: 'Consolas','Courier New',monospace;")
                              .arg(ui::colors::AMBER()));
@@ -352,7 +352,7 @@ QWidget* TradeVizScreen::build_filter_bar() {
     hl->addWidget(country_combo_);
 
     // Browse button
-    auto* browse = new QLabel("20) Browse");
+    auto* browse = new QLabel(tr("20) Browse"));
     browse->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: bold; background: transparent;"
                                   " font-family: 'Consolas','Courier New',monospace;")
                               .arg(ui::colors::TEXT_PRIMARY()));
@@ -361,7 +361,7 @@ QWidget* TradeVizScreen::build_filter_bar() {
     hl->addSpacing(10);
 
     // Order by
-    auto* order_lbl = new QLabel("Order by");
+    auto* order_lbl = new QLabel(tr("Order by"));
     order_lbl->setStyleSheet(QString("color: %1; font-size: 11px; font-weight: bold; background: transparent;"
                                      " font-family: 'Consolas','Courier New',monospace;")
                                  .arg(ui::colors::TEXT_SECONDARY()));
@@ -375,7 +375,7 @@ QWidget* TradeVizScreen::build_filter_bar() {
     hl->addSpacing(10);
 
     // Periodicity
-    auto* period_lbl = new QLabel("Periodicity");
+    auto* period_lbl = new QLabel(tr("Periodicity"));
     period_lbl->setStyleSheet(QString("color: %1; font-size: 11px; font-weight: bold; background: transparent;"
                                       " font-family: 'Consolas','Courier New',monospace;")
                                   .arg(ui::colors::TEXT_SECONDARY()));
@@ -389,7 +389,7 @@ QWidget* TradeVizScreen::build_filter_bar() {
     hl->addSpacing(10);
 
     // Year navigation
-    auto* prev_btn = new QLabel("<<");
+    auto* prev_btn = new QLabel(tr("<<"));
     prev_btn->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: bold; background: transparent;"
                                     " font-family: 'Consolas','Courier New',monospace;")
                                 .arg(ui::colors::TEXT_SECONDARY()));
@@ -403,7 +403,7 @@ QWidget* TradeVizScreen::build_filter_bar() {
     }
     hl->addWidget(year_combo_);
 
-    auto* next_btn = new QLabel(">>");
+    auto* next_btn = new QLabel(tr(">>"));
     next_btn->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: bold; background: transparent;"
                                     " font-family: 'Consolas','Courier New',monospace;")
                                 .arg(ui::colors::TEXT_SECONDARY()));

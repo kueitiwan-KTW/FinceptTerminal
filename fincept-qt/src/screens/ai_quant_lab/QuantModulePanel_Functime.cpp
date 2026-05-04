@@ -81,7 +81,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     fcl->setSpacing(8);
 
     auto* fc_vals = new QLineEdit(fc);
-    fc_vals->setPlaceholderText("Time series values (>= 30). CSV, space, or newline separated.");
+    fc_vals->setPlaceholderText(tr("Time series values (>= 30). CSV, space, or newline separated."));
     fc_vals->setStyleSheet(input_ss());
     text_inputs_["fn_fc_values"] = fc_vals;
     fcl->addWidget(build_input_row("Series Values", fc_vals, fc));
@@ -158,7 +158,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     anl->setSpacing(8);
 
     auto* an_vals = new QLineEdit(an);
-    an_vals->setPlaceholderText("Time series values (>= 20)");
+    an_vals->setPlaceholderText(tr("Time series values (>= 20)"));
     an_vals->setStyleSheet(input_ss());
     text_inputs_["fn_an_values"] = an_vals;
     anl->addWidget(build_input_row("Series Values", an_vals, an));
@@ -216,7 +216,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     sel->setSpacing(8);
 
     auto* se_vals = new QLineEdit(se);
-    se_vals->setPlaceholderText("Time series values (>= 24). Period auto-detected if left at 0.");
+    se_vals->setPlaceholderText(tr("Time series values (>= 24). Period auto-detected if left at 0."));
     se_vals->setStyleSheet(input_ss());
     text_inputs_["fn_se_values"] = se_vals;
     sel->addWidget(build_input_row("Series Values", se_vals, se));
@@ -267,7 +267,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     mel->setSpacing(8);
 
     auto* me_act = new QLineEdit(me);
-    me_act->setPlaceholderText("Actual values (must match predicted length)");
+    me_act->setPlaceholderText(tr("Actual values (must match predicted length)"));
     me_act->setStyleSheet(input_ss());
     text_inputs_["fn_me_actual"] = me_act;
     mel->addWidget(build_input_row("Actual", me_act, me));
@@ -275,7 +275,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
                                    "100-pt synthetic 'actual' series (level ~50)"));
 
     auto* me_pred = new QLineEdit(me);
-    me_pred->setPlaceholderText("Predicted values (same length as actual)");
+    me_pred->setPlaceholderText(tr("Predicted values (same length as actual)"));
     me_pred->setStyleSheet(input_ss());
     text_inputs_["fn_me_pred"] = me_pred;
     mel->addWidget(build_input_row("Predicted", me_pred, me));
@@ -320,7 +320,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     cil->setSpacing(8);
 
     auto* ci_vals = new QLineEdit(ci);
-    ci_vals->setPlaceholderText("Series values (training history, >= 30)");
+    ci_vals->setPlaceholderText(tr("Series values (training history, >= 30)"));
     ci_vals->setStyleSheet(input_ss());
     text_inputs_["fn_ci_values"] = ci_vals;
     cil->addWidget(build_input_row("Series Values", ci_vals, ci));
@@ -392,7 +392,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     stl->setSpacing(8);
 
     auto* st_vals = new QLineEdit(st);
-    st_vals->setPlaceholderText("Series values (>= 30) — runs ADF + KPSS at each differencing order");
+    st_vals->setPlaceholderText(tr("Series values (>= 30) — runs ADF + KPSS at each differencing order"));
     st_vals->setStyleSheet(input_ss());
     text_inputs_["fn_st_values"] = st_vals;
     stl->addWidget(build_input_row("Series Values", st_vals, st));
@@ -488,7 +488,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
                                .arg(ui::colors::TEXT_SECONDARY(), ui::colors::BG_SURFACE(),
                                     ui::colors::BORDER_DIM()));
         results_layout_->addWidget(lbl);
-        status_label_->setText("Functime backend ready");
+        status_label_->setText(tr("Functime backend ready"));
         return;
     }
 
@@ -651,7 +651,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
             }
             results_layout_->addWidget(table);
         } else {
-            auto* clean = new QLabel("No anomalies detected at the configured threshold.");
+            auto* clean = new QLabel(tr("No anomalies detected at the configured threshold."));
             clean->setStyleSheet(QString("color:%1; font-size:11px; padding:10px;"
                                          "background:rgba(34,197,94,0.06); border:1px solid rgba(34,197,94,0.25); border-radius:2px;")
                                      .arg(ui::colors::POSITIVE()));

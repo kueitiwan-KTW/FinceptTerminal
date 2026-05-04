@@ -44,11 +44,11 @@ QuickTradeWidget::QuickTradeWidget(QWidget* parent) : BaseWidget("快速交易",
     srl->setSpacing(6);
 
     symbol_input_ = new QLineEdit;
-    symbol_input_->setPlaceholderText("代號 (如 AAPL)");
-    symbol_input_->setText("AAPL");
+    symbol_input_->setPlaceholderText(tr("代號 (如 AAPL)"));
+    symbol_input_->setText(tr("AAPL"));
     srl->addWidget(symbol_input_, 1);
 
-    lookup_btn_ = new QPushButton("查詢");
+    lookup_btn_ = new QPushButton(tr("查詢"));
     srl->addWidget(lookup_btn_);
     vl->addWidget(search_row);
 
@@ -74,10 +74,10 @@ QuickTradeWidget::QuickTradeWidget(QWidget* parent) : BaseWidget("快速交易",
     price_col->addWidget(price_label_);
 
     auto* bid_ask_row = new QHBoxLayout;
-    bid_label_ = new QLabel("買價 --");
+    bid_label_ = new QLabel(tr("買價 --"));
     bid_ask_row->addWidget(bid_label_);
     bid_ask_row->addSpacing(8);
-    ask_label_ = new QLabel("賣價 --");
+    ask_label_ = new QLabel(tr("賣價 --"));
     bid_ask_row->addWidget(ask_label_);
     price_col->addLayout(bid_ask_row);
     qcl->addLayout(price_col);
@@ -107,27 +107,27 @@ QuickTradeWidget::QuickTradeWidget(QWidget* parent) : BaseWidget("快速交易",
     auto* qp_row = new QHBoxLayout;
     qp_row->setSpacing(6);
 
-    qty_lbl_ = new QLabel("數量");
+    qty_lbl_ = new QLabel(tr("數量"));
     qp_row->addWidget(qty_lbl_);
 
     qty_input_ = new QLineEdit("10");
     qty_input_->setValidator(new QDoubleValidator(0, 1e9, 4, qty_input_));
     qp_row->addWidget(qty_input_, 1);
 
-    price_lbl_ = new QLabel("價格");
+    price_lbl_ = new QLabel(tr("價格"));
     qp_row->addWidget(price_lbl_);
 
     price_input_ = new QLineEdit;
-    price_input_->setPlaceholderText("市價");
+    price_input_->setPlaceholderText(tr("市價"));
     qp_row->addWidget(price_input_, 1);
     vl->addLayout(qp_row);
 
     // Estimated total
-    est_total_ = new QLabel("預估總額  --");
+    est_total_ = new QLabel(tr("預估總額  --"));
     vl->addWidget(est_total_);
 
     // Submit button
-    submit_btn_ = new QPushButton("送出委託");
+    submit_btn_ = new QPushButton(tr("送出委託"));
     submit_btn_->setFixedHeight(32);
     vl->addWidget(submit_btn_);
 

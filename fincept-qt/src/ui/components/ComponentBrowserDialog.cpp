@@ -93,7 +93,7 @@ void ComponentBrowserDialog::build_ui() {
         "QListWidget::item{padding:8px 14px;border:none;}"
         "QListWidget::item:selected{background:#1f2937;color:#d97706;border-left:3px solid #d97706;}"
         "QListWidget::item:hover{background:#111827;}");
-    category_list_->addItem("All");
+    category_list_->addItem(tr("All"));
     for (const QString& c : ComponentCatalog::instance().categories())
         category_list_->addItem(c);
     category_list_->setCurrentRow(0);

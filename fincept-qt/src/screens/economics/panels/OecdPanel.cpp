@@ -58,9 +58,9 @@ void OecdPanel::build_controls(QHBoxLayout* thl) {
     country_combo_->setFixedHeight(26);
 
     frequency_combo_ = new QComboBox;
-    frequency_combo_->addItem("Annual", "A");
-    frequency_combo_->addItem("Quarterly", "Q");
-    frequency_combo_->addItem("Monthly", "M");
+    frequency_combo_->addItem(tr("Annual"), "A");
+    frequency_combo_->addItem(tr("Quarterly"), "Q");
+    frequency_combo_->addItem(tr("Monthly"), "M");
     frequency_combo_->setFixedHeight(26);
 
     thl->addWidget(lbl("DATASET"));

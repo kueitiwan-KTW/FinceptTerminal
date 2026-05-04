@@ -57,7 +57,7 @@ QWidget* ProfileScreen::make_data_row(const QString& label, QLabel*& value_out) 
                            .arg(ui::colors::TEXT_SECONDARY(), MF));
     hl->addWidget(lbl);
     hl->addStretch();
-    value_out = new QLabel("\xe2\x80\x94");
+    value_out = new QLabel(tr("\xe2\x80\x94"));
     value_out->setStyleSheet(
         QString("color:%1;font-size:13px;font-weight:700;background:transparent;%2").arg(ui::colors::TEXT_PRIMARY(), MF));
     hl->addWidget(value_out);
@@ -111,7 +111,7 @@ void ProfileScreen::build_header(QVBoxLayout* root) {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(14, 0, 14, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel("PROFILE & ACCOUNT");
+    auto* title = new QLabel(tr("PROFILE & ACCOUNT"));
     title->setStyleSheet(
         QString("color:%1;font-size:14px;font-weight:700;background:transparent;%2").arg(ui::colors::AMBER(), MF));
     hl->addWidget(title);
@@ -128,7 +128,7 @@ void ProfileScreen::build_header(QVBoxLayout* root) {
     plan_badge_->setStyleSheet(
         QString("color:%1;font-size:12px;font-weight:700;background:transparent;%2").arg(ui::colors::AMBER(), MF));
     hl->addWidget(plan_badge_);
-    auto* rb = new QPushButton("REFRESH");
+    auto* rb = new QPushButton(tr("REFRESH"));
     rb->setFixedHeight(22);
     rb->setCursor(Qt::PointingHandCursor);
     rb->setStyleSheet(
@@ -203,7 +203,7 @@ QWidget* ProfileScreen::build_overview() {
     avl->addWidget(make_data_row("COUNTRY", ov_country_));
     avl->addWidget(make_data_row("EMAIL VERIFIED", ov_verified_));
     avl->addWidget(make_data_row("2FA ENABLED", ov_mfa_));
-    auto* eb = new QPushButton("EDIT PROFILE");
+    auto* eb = new QPushButton(tr("EDIT PROFILE"));
     eb->setFixedHeight(26);
     eb->setCursor(Qt::PointingHandCursor);
     eb->setStyleSheet(
@@ -222,7 +222,7 @@ QWidget* ProfileScreen::build_overview() {
         QString("color:%1;font-size:42px;font-weight:700;background:transparent;padding:20px 0 4px 0;%2")
             .arg(ui::colors::CYAN(), MF));
     cvl2->addWidget(ov_credits_big_);
-    auto* cl = new QLabel("AVAILABLE CREDITS");
+    auto* cl = new QLabel(tr("AVAILABLE CREDITS"));
     cl->setAlignment(Qt::AlignCenter);
     cl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;background:transparent;letter-spacing:0."
                               "5px;padding-bottom:12px;%2")
@@ -242,7 +242,7 @@ QWidget* ProfileScreen::build_overview() {
     auto* arl = new QHBoxLayout(ar);
     arl->setContentsMargins(12, 8, 12, 8);
     arl->setSpacing(10);
-    auto* eb2 = new QPushButton("EDIT PROFILE");
+    auto* eb2 = new QPushButton(tr("EDIT PROFILE"));
     eb2->setFixedHeight(26);
     eb2->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:1px solid %3;padding:0 12px;"
@@ -250,7 +250,7 @@ QWidget* ProfileScreen::build_overview() {
             .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_SECONDARY(), ui::colors::BORDER_DIM(), ui::colors::TEXT_PRIMARY()));
     connect(eb2, &QPushButton::clicked, this, &ProfileScreen::show_edit_profile_dialog);
     arl->addWidget(eb2);
-    auto* lb = new QPushButton("LOGOUT");
+    auto* lb = new QPushButton(tr("LOGOUT"));
     lb->setFixedHeight(26);
     lb->setStyleSheet(
         QString("QPushButton{background:rgba(220,38,38,0.1);color:%1;border:1px solid #7f1d1d;padding:0 12px;"
@@ -355,7 +355,7 @@ QWidget* ProfileScreen::build_security() {
     sec_api_key_->setStyleSheet(
         QString("color:%1;font-size:13px;background:transparent;%2").arg(ui::colors::TEXT_PRIMARY(), MF));
     krl->addWidget(sec_api_key_, 1);
-    auto* sb = new QPushButton("SHOW");
+    auto* sb = new QPushButton(tr("SHOW"));
     sb->setFixedHeight(22);
     sb->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:1px solid %3;padding:0 10px;"
@@ -368,7 +368,7 @@ QWidget* ProfileScreen::build_security() {
                                                : QString(20, QChar(0x2022)));
     });
     krl->addWidget(sb);
-    auto* cb = new QPushButton("COPY");
+    auto* cb = new QPushButton(tr("COPY"));
     cb->setFixedHeight(22);
     cb->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:1px solid %3;padding:0 10px;"
@@ -378,12 +378,12 @@ QWidget* ProfileScreen::build_security() {
         auto key = auth::AuthManager::instance().session().api_key;
         if (!key.isEmpty()) {
             QApplication::clipboard()->setText(key);
-            cb->setText("COPIED");
-            QTimer::singleShot(1500, cb, [cb]() { cb->setText("COPY"); });
+            cb->setText(tr("COPIED"));
+            QTimer::singleShot(1500, cb, [cb]() { cb->setText(tr("COPY")); });
         }
     });
     krl->addWidget(cb);
-    auto* rg = new QPushButton("REGENERATE");
+    auto* rg = new QPushButton(tr("REGENERATE"));
     rg->setFixedHeight(22);
     rg->setStyleSheet(QString("QPushButton{background:rgba(217,119,6,0.1);color:%1;border:1px solid %2;padding:0 10px;"
                               "font-size:10px;font-weight:700;font-family:'Consolas',monospace;}QPushButton:hover{"
@@ -521,7 +521,7 @@ void ProfileScreen::refresh_all() {
     plan_badge_->setText(s.account_type().toUpper());
     ov_username_->setText(s.user_info.username.isEmpty() ? "N/A" : s.user_info.username);
     ov_email_->setText(s.user_info.email.isEmpty() ? "N/A" : s.user_info.email);
-    ov_user_type_->setText("REGISTERED");
+    ov_user_type_->setText(tr("REGISTERED"));
     ov_account_type_->setText(s.account_type().toUpper());
     ov_account_type_->setStyleSheet(
         QString("color:%1;font-size:13px;font-weight:700;background:transparent;%2").arg(ui::colors::AMBER(), MF));
@@ -692,7 +692,7 @@ void ProfileScreen::show_edit_profile_dialog() {
     auto* vl = new QVBoxLayout(dlg);
     vl->setContentsMargins(20, 16, 20, 16);
     vl->setSpacing(10);
-    auto* t = new QLabel("EDIT PROFILE");
+    auto* t = new QLabel(tr("EDIT PROFILE"));
     t->setStyleSheet(QString("color:%1;font-size:14px;font-weight:700;background:transparent;").arg(ui::colors::AMBER()));
     vl->addWidget(t);
     const auto& s = auth::AuthManager::instance().session();
@@ -715,11 +715,11 @@ void ProfileScreen::show_edit_profile_dialog() {
     brl->setContentsMargins(0, 0, 0, 0);
     brl->setSpacing(8);
     brl->addStretch();
-    auto* cn = new QPushButton("CANCEL");
+    auto* cn = new QPushButton(tr("CANCEL"));
     cn->setFixedHeight(26);
     connect(cn, &QPushButton::clicked, dlg, &QDialog::reject);
     brl->addWidget(cn);
-    auto* sv = new QPushButton("SAVE");
+    auto* sv = new QPushButton(tr("SAVE"));
     sv->setFixedHeight(26);
     sv->setStyleSheet(
         QString(
@@ -794,7 +794,7 @@ void ProfileScreen::show_delete_account_dialog() {
     vl->setContentsMargins(20, 16, 20, 16);
     vl->setSpacing(10);
 
-    auto* warn = new QLabel("TYPE YOUR EMAIL ADDRESS TO CONFIRM:");
+    auto* warn = new QLabel(tr("TYPE YOUR EMAIL ADDRESS TO CONFIRM:"));
     warn->setStyleSheet(QString("color:%1;font-size:11px;font-weight:700;background:transparent;").arg(ui::colors::NEGATIVE()));
     vl->addWidget(warn);
 
@@ -809,7 +809,7 @@ void ProfileScreen::show_delete_account_dialog() {
 
     auto* brl = new QHBoxLayout;
     brl->addStretch();
-    auto* cancel = new QPushButton("CANCEL");
+    auto* cancel = new QPushButton(tr("CANCEL"));
     cancel->setFixedHeight(26);
     connect(cancel, &QPushButton::clicked, dlg, &QDialog::reject);
     brl->addWidget(cancel);

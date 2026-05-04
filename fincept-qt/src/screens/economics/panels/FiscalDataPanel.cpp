@@ -46,7 +46,7 @@ void FiscalDataPanel::activate() {
 }
 
 void FiscalDataPanel::build_controls(QHBoxLayout* thl) {
-    auto* lbl = new QLabel("DATASET");
+    auto* lbl = new QLabel(tr("DATASET"));
     lbl->setStyleSheet(ctrl_label_style());
 
     series_combo_ = new QComboBox;

@@ -187,7 +187,7 @@ void PortfolioInsightsPanel::build_ui() {
     hl->setContentsMargins(16, 0, 8, 0);
     hl->setSpacing(8);
 
-    auto* title = new QLabel("PORTFOLIO INSIGHTS");
+    auto* title = new QLabel(tr("PORTFOLIO INSIGHTS"));
     title->setStyleSheet(QString("color:%1; font-size:11px; font-weight:800; letter-spacing:2px;").arg(amber));
     hl->addWidget(title);
 
@@ -267,7 +267,7 @@ QWidget* PortfolioInsightsPanel::build_ai_page() {
     cl->setContentsMargins(16, 12, 16, 12);
     cl->setSpacing(10);
 
-    auto* label = new QLabel("ANALYSIS TYPE");
+    auto* label = new QLabel(tr("ANALYSIS TYPE"));
     label->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; letter-spacing:1.5px;").arg(text3));
     cl->addWidget(label);
 
@@ -296,7 +296,7 @@ QWidget* PortfolioInsightsPanel::build_ai_page() {
     pill_row->addStretch();
     cl->addLayout(pill_row);
 
-    ai_run_ = new QPushButton("RUN FULL ANALYSIS");
+    ai_run_ = new QPushButton(tr("RUN FULL ANALYSIS"));
     ai_run_->setCursor(Qt::PointingHandCursor);
     ai_run_->setFixedHeight(36);
     ai_run_->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"
@@ -378,7 +378,7 @@ QWidget* PortfolioInsightsPanel::build_agent_page() {
     agent_desc_->setStyleSheet(QString("color:%1; font-size:10px; line-height:1.5;").arg(text2));
     cl->addWidget(agent_desc_);
 
-    agent_run_ = new QPushButton("RUN AGENT");
+    agent_run_ = new QPushButton(tr("RUN AGENT"));
     agent_run_->setCursor(Qt::PointingHandCursor);
     agent_run_->setFixedHeight(36);
     agent_run_->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"
@@ -491,7 +491,7 @@ void PortfolioInsightsPanel::reload_agents() {
     } else {
         // Cache cold — show a disabled "discovering" placeholder and kick
         // off discovery. agents_discovered will repopulate us when it lands.
-        agent_cb_->addItem("Discovering agents…", "");
+        agent_cb_->addItem(tr("Discovering agents…"), "");
         agent_cb_->setItemData(0, "Loading agents from finagent_core. If this persists, make sure "
                                   "Python is installed and open Agent Config for more details.",
                                Qt::UserRole + 1);

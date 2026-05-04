@@ -116,7 +116,7 @@ QWidget* DocsScreen::make_skill_panel(const QString& beginner, const QString& in
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    auto* hdr = new QLabel("SKILL LEVELS");
+    auto* hdr = new QLabel(tr("SKILL LEVELS"));
     hdr->setStyleSheet(QString("color: %1; font-size: 11px; font-weight: bold; letter-spacing: 0.5px;"
                                " background: %2; padding: 8px 12px; border-bottom: 1px solid %3;"
                                " font-family: 'Consolas','Courier New',monospace;")
@@ -1542,7 +1542,7 @@ DocsScreen::DocsScreen(QWidget* parent) : QWidget(parent) {
     cmd_hl->setContentsMargins(10, 0, 10, 0);
     cmd_hl->setSpacing(10);
 
-    auto* title = new QLabel("DOCUMENTATION");
+    auto* title = new QLabel(tr("DOCUMENTATION"));
     title->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: bold; letter-spacing: 1px;"
                                  " background: transparent; font-family: 'Consolas','Courier New',monospace;")
                              .arg(ui::colors::AMBER()));
@@ -1553,7 +1553,7 @@ DocsScreen::DocsScreen(QWidget* parent) : QWidget(parent) {
                            .arg(ui::colors::BORDER_BRIGHT()));
     cmd_hl->addWidget(sep);
 
-    breadcrumb_ = new QLabel("FINCEPT TERMINAL v4.0.0");
+    breadcrumb_ = new QLabel(tr("FINCEPT TERMINAL v4.0.0"));
     breadcrumb_->setStyleSheet(QString("color: %1; font-size: 11px; font-weight: bold;"
                                        " background: transparent; letter-spacing: 0.5px;"
                                        " font-family: 'Consolas','Courier New',monospace;")
@@ -1562,7 +1562,7 @@ DocsScreen::DocsScreen(QWidget* parent) : QWidget(parent) {
 
     cmd_hl->addStretch();
 
-    auto* count = new QLabel("35 TOPICS  |  9 CATEGORIES");
+    auto* count = new QLabel(tr("35 TOPICS  |  9 CATEGORIES"));
     count->setStyleSheet(QString("color: %1; font-size: 11px; background: transparent;"
                                  " font-family: 'Consolas','Courier New',monospace;")
                              .arg(ui::colors::TEXT_TERTIARY()));

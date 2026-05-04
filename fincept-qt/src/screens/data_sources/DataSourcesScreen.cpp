@@ -545,7 +545,7 @@ QWidget* DataSourcesScreen::build_screen_header() {
     hl->setContentsMargins(14, 0, 14, 0);
     hl->setSpacing(0);
 
-    auto* title = new QLabel("DATA SOURCES");
+    auto* title = new QLabel(tr("DATA SOURCES"));
     title->setObjectName("dsScreenTitle");
     hl->addWidget(title);
 
@@ -760,7 +760,7 @@ QWidget* DataSourcesScreen::build_category_panel() {
     hdr->setFixedHeight(30);
     auto* hdr_hl = new QHBoxLayout(hdr);
     hdr_hl->setContentsMargins(14, 0, 14, 0);
-    auto* hdr_title = new QLabel("CATEGORY");
+    auto* hdr_title = new QLabel(tr("CATEGORY"));
     hdr_title->setObjectName("dsSidebarTitle");
     hdr_hl->addWidget(hdr_title);
     vl->addWidget(hdr);
@@ -778,7 +778,7 @@ QWidget* DataSourcesScreen::build_category_panel() {
     prov_hdr->setFixedHeight(28);
     auto* prov_hl = new QHBoxLayout(prov_hdr);
     prov_hl->setContentsMargins(14, 0, 14, 0);
-    auto* prov_title = new QLabel("TOP PROVIDERS");
+    auto* prov_title = new QLabel(tr("TOP PROVIDERS"));
     prov_title->setObjectName("dsSidebarTitle");
     prov_hl->addWidget(prov_title);
     vl->addWidget(prov_hdr);
@@ -813,7 +813,7 @@ QWidget* DataSourcesScreen::build_connector_panel() {
     hdr_hl->setContentsMargins(12, 0, 12, 0);
     hdr_hl->setSpacing(8);
 
-    auto* panel_title = new QLabel("CONNECTORS");
+    auto* panel_title = new QLabel(tr("CONNECTORS"));
     panel_title->setObjectName("dsConnPanelTitle");
     hdr_hl->addWidget(panel_title);
 
@@ -883,7 +883,7 @@ QWidget* DataSourcesScreen::build_detail_panel() {
     hdr->setFixedHeight(30);
     auto* hdr_hl = new QHBoxLayout(hdr);
     hdr_hl->setContentsMargins(12, 0, 12, 0);
-    auto* hdr_title = new QLabel("INSPECTOR");
+    auto* hdr_title = new QLabel(tr("INSPECTOR"));
     hdr_title->setObjectName("dsDetailTitle");
     hdr_hl->addWidget(hdr_title);
     vl->addWidget(hdr);
@@ -916,10 +916,10 @@ QWidget* DataSourcesScreen::build_detail_panel() {
 
     auto* id_text = new QVBoxLayout;
     id_text->setSpacing(2);
-    detail_title_ = new QLabel("Select a connector");
+    detail_title_ = new QLabel(tr("Select a connector"));
     detail_title_->setObjectName("dsDetailName");
     id_text->addWidget(detail_title_);
-    detail_description_ = new QLabel("Double-click to configure");
+    detail_description_ = new QLabel(tr("Double-click to configure"));
     detail_description_->setObjectName("dsDetailDesc");
     detail_description_->setWordWrap(true);
     id_text->addWidget(detail_description_);
@@ -961,7 +961,7 @@ QWidget* DataSourcesScreen::build_detail_panel() {
     fields_hdr->setFixedHeight(26);
     auto* fh_hl = new QHBoxLayout(fields_hdr);
     fh_hl->setContentsMargins(12, 0, 12, 0);
-    auto* fh_lbl = new QLabel("CONFIG FIELDS");
+    auto* fh_lbl = new QLabel(tr("CONFIG FIELDS"));
     fh_lbl->setObjectName("dsSectionSep");
     fh_hl->addWidget(fh_lbl);
     body_vl->addWidget(fields_hdr);
@@ -990,7 +990,7 @@ QWidget* DataSourcesScreen::build_detail_panel() {
     conns_hdr->setFixedHeight(26);
     auto* ch_hl = new QHBoxLayout(conns_hdr);
     ch_hl->setContentsMargins(12, 0, 12, 0);
-    auto* ch_lbl = new QLabel("SAVED CONNECTIONS");
+    auto* ch_lbl = new QLabel(tr("SAVED CONNECTIONS"));
     ch_lbl->setObjectName("dsSectionSep");
     ch_hl->addWidget(ch_lbl);
     body_vl->addWidget(conns_hdr);
@@ -1010,7 +1010,7 @@ QWidget* DataSourcesScreen::build_detail_panel() {
     act_vl->setContentsMargins(12, 10, 12, 10);
     act_vl->setSpacing(6);
 
-    new_connection_btn_ = new QPushButton("+ ADD CONNECTION");
+    new_connection_btn_ = new QPushButton(tr("+ ADD CONNECTION"));
     new_connection_btn_->setObjectName("dsBtnAccent");
     new_connection_btn_->setFixedHeight(28);
     new_connection_btn_->setCursor(Qt::PointingHandCursor);
@@ -1021,7 +1021,7 @@ QWidget* DataSourcesScreen::build_detail_panel() {
     auto* edit_test_hl = new QHBoxLayout;
     edit_test_hl->setSpacing(6);
 
-    edit_connection_btn_ = new QPushButton("EDIT");
+    edit_connection_btn_ = new QPushButton(tr("EDIT"));
     edit_connection_btn_->setObjectName("dsBtn");
     edit_connection_btn_->setFixedHeight(26);
     edit_connection_btn_->setCursor(Qt::PointingHandCursor);
@@ -1030,7 +1030,7 @@ QWidget* DataSourcesScreen::build_detail_panel() {
             [this]() { on_connection_edit(effective_detail_connection_id()); });
     edit_test_hl->addWidget(edit_connection_btn_);
 
-    test_connection_btn_ = new QPushButton("TEST");
+    test_connection_btn_ = new QPushButton(tr("TEST"));
     test_connection_btn_->setObjectName("dsBtnGreen");
     test_connection_btn_->setFixedHeight(26);
     test_connection_btn_->setCursor(Qt::PointingHandCursor);
@@ -1069,12 +1069,12 @@ QWidget* DataSourcesScreen::build_connections_page() {
     hdr_hl->setContentsMargins(12, 0, 12, 0);
     hdr_hl->setSpacing(8);
 
-    auto* hdr_title = new QLabel("SAVED CONNECTIONS");
+    auto* hdr_title = new QLabel(tr("SAVED CONNECTIONS"));
     hdr_title->setObjectName("dsConnPanelTitle");
     hdr_hl->addWidget(hdr_title);
     hdr_hl->addStretch();
 
-    auto* add_conn_btn = new QPushButton("+ ADD");
+    auto* add_conn_btn = new QPushButton(tr("+ ADD"));
     add_conn_btn->setObjectName("dsBtnAccent");
     add_conn_btn->setFixedHeight(24);
     add_conn_btn->setCursor(Qt::PointingHandCursor);
@@ -1102,14 +1102,14 @@ QWidget* DataSourcesScreen::build_connections_page() {
     tb_hl->addStretch();
 
     // Bulk buttons
-    bulk_enable_btn_ = new QPushButton("ENABLE ALL");
+    bulk_enable_btn_ = new QPushButton(tr("ENABLE ALL"));
     bulk_enable_btn_->setObjectName("dsBtnGreen");
     bulk_enable_btn_->setFixedHeight(22);
     bulk_enable_btn_->setCursor(Qt::PointingHandCursor);
     connect(bulk_enable_btn_, &QPushButton::clicked, this, &DataSourcesScreen::on_bulk_enable_all);
     tb_hl->addWidget(bulk_enable_btn_);
 
-    bulk_disable_btn_ = new QPushButton("DISABLE ALL");
+    bulk_disable_btn_ = new QPushButton(tr("DISABLE ALL"));
     bulk_disable_btn_->setObjectName("dsBtn");
     bulk_disable_btn_->setFixedHeight(22);
     bulk_disable_btn_->setCursor(Qt::PointingHandCursor);
@@ -1274,7 +1274,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
 
     int row = 0;
 
-    auto* name_lbl = new QLabel("Connection Name");
+    auto* name_lbl = new QLabel(tr("Connection Name"));
     name_lbl->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     form->addWidget(name_lbl, row, 0);
 
@@ -1286,7 +1286,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     form->addWidget(name_edit, row, 1);
     ++row;
 
-    auto* enabled_lbl = new QLabel("Enable Connection");
+    auto* enabled_lbl = new QLabel(tr("Enable Connection"));
     enabled_lbl->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     form->addWidget(enabled_lbl, row, 0);
 
@@ -1347,7 +1347,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     }
 
     // Tags field
-    auto* tags_lbl = new QLabel("Tags");
+    auto* tags_lbl = new QLabel(tr("Tags"));
     tags_lbl->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     form->addWidget(tags_lbl, row, 0);
 
@@ -1360,7 +1360,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
 
     body_vl->addLayout(form);
 
-    auto* note = new QLabel("Fields marked with * are required.");
+    auto* note = new QLabel(tr("Fields marked with * are required."));
     note->setWordWrap(true);
     note->setStyleSheet(
         QString("color:%1;font-size:11px;font-style:italic;background:transparent;").arg(col::TEXT_TERTIARY()));
@@ -1382,7 +1382,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     status->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;").arg(col::TEXT_SECONDARY()));
     footer_hl->addWidget(status, 1);
 
-    auto* cancel = new QPushButton("Cancel");
+    auto* cancel = new QPushButton(tr("Cancel"));
     cancel->setCursor(Qt::PointingHandCursor);
     cancel->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:1px solid %3;}"
                                   "QPushButton:hover{background:%3;color:%4;}")
@@ -2335,12 +2335,12 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
         auto* vl = new QVBoxLayout(&result_dlg);
         vl->setContentsMargins(24, 20, 24, 16);
         vl->setSpacing(10);
-        auto* lbl = new QLabel("This connector does not support connectivity testing.");
+        auto* lbl = new QLabel(tr("This connector does not support connectivity testing."));
         lbl->setWordWrap(true);
         lbl->setStyleSheet(QString("color:%1;font-size:13px;background:transparent;").arg(col::TEXT_SECONDARY()));
         vl->addWidget(lbl);
         vl->addStretch();
-        auto* btn = new QPushButton("Close");
+        auto* btn = new QPushButton(tr("Close"));
         btn->setCursor(Qt::PointingHandCursor);
         QObject::connect(btn, &QPushButton::clicked, &result_dlg, &QDialog::accept);
         auto* row = new QHBoxLayout;
@@ -2507,7 +2507,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
         lbl->setStyleSheet(QString("color:%1;font-size:13px;background:transparent;").arg(col::TEXT_SECONDARY()));
         vl->addWidget(lbl);
         vl->addStretch();
-        auto* btn = new QPushButton("Close");
+        auto* btn = new QPushButton(tr("Close"));
         btn->setCursor(Qt::PointingHandCursor);
         QObject::connect(btn, &QPushButton::clicked, &result_dlg, &QDialog::accept);
         auto* row = new QHBoxLayout;
@@ -2596,7 +2596,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
 
                     if (success) {
                         auto* note =
-                            new QLabel("Note: TCP reachability confirmed. API key validity is not verified here.");
+                            new QLabel(tr("Note: TCP reachability confirmed. API key validity is not verified here."));
                         note->setWordWrap(true);
                         note->setStyleSheet(QString("color:%1;font-size:11px;font-style:italic;background:transparent;")
                                                 .arg(col::TEXT_TERTIARY()));
@@ -2604,7 +2604,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
                     }
                     vl->addStretch();
 
-                    auto* close_btn = new QPushButton("Close");
+                    auto* close_btn = new QPushButton(tr("Close"));
                     close_btn->setCursor(Qt::PointingHandCursor);
                     QObject::connect(close_btn, &QPushButton::clicked, &result_dlg, &QDialog::accept);
                     auto* btn_row = new QHBoxLayout;

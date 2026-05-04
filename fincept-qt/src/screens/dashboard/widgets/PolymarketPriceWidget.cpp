@@ -75,7 +75,7 @@ void PolymarketPriceWidget::build_rows() {
     rows_.clear();
 
     if (entries_.isEmpty()) {
-        auto* hint = new QLabel("No markets configured — click gear to add");
+        auto* hint = new QLabel(tr("No markets configured — click gear to add"));
         hint->setStyleSheet(
             QString("color:%1;font-size:10px;background:transparent;padding:4px 0;")
                 .arg(ui::colors::TEXT_TERTIARY()));

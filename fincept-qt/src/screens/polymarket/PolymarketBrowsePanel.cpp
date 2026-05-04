@@ -31,7 +31,7 @@ PolymarketBrowsePanel::PolymarketBrowsePanel(QWidget* parent) : QWidget(parent) 
     hbl->setContentsMargins(12, 0, 8, 0);
     hbl->setSpacing(6);
 
-    header_ = new QLabel("MARKETS");
+    header_ = new QLabel(tr("MARKETS"));
     header_->setStyleSheet(
         QString("color: %1; font-size: 9px; font-weight: 700; letter-spacing: 0.8px; "
                 "background: transparent;")
@@ -100,7 +100,7 @@ PolymarketBrowsePanel::PolymarketBrowsePanel(QWidget* parent) : QWidget(parent) 
     prev_btn_->setCursor(Qt::PointingHandCursor);
     connect(prev_btn_, &QPushButton::clicked, this, &PolymarketBrowsePanel::on_prev);
 
-    page_label_ = new QLabel("1 / 1");
+    page_label_ = new QLabel(tr("1 / 1"));
     page_label_->setStyleSheet(
         QString("color: %1; font-size: 9px; background: transparent; min-width: 40px;")
             .arg(colors::TEXT_SECONDARY()));
@@ -148,7 +148,7 @@ void PolymarketBrowsePanel::set_loading(bool loading) {
 void PolymarketBrowsePanel::clear() {
     events_mode_ = false;
     model_->set_markets({});
-    header_->setText("MARKETS");
+    header_->setText(tr("MARKETS"));
     current_page_ = 0;
     update_page();
 }

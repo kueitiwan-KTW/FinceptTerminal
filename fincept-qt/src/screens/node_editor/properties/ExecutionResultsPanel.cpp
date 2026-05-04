@@ -216,7 +216,7 @@ void ExecutionResultsPanel::build_ui() {
     connect(collapse_btn_, &QPushButton::clicked, this, [this]() { set_collapsed(!collapsed_); });
     hl->addWidget(collapse_btn_);
 
-    auto* title = new QLabel("EXECUTION RESULTS");
+    auto* title = new QLabel(tr("EXECUTION RESULTS"));
     title->setStyleSheet(QString("color: %1; font-family: Consolas; font-size: 10px;"
                                  " font-weight: bold; letter-spacing: 0.5px;")
                              .arg(ui::colors::AMBER()));
@@ -231,7 +231,7 @@ void ExecutionResultsPanel::build_ui() {
     hl->addStretch();
 
     // Status label
-    status_label_ = new QLabel("IDLE");
+    status_label_ = new QLabel(tr("IDLE"));
     status_label_->setStyleSheet(QString("color: %1; font-family: Consolas;"
                                          " font-size: 10px; font-weight: bold;")
                                      .arg(ui::colors::TEXT_TERTIARY()));
@@ -244,7 +244,7 @@ void ExecutionResultsPanel::build_ui() {
     hl->addWidget(vsep);
 
     // Clear button
-    clear_btn_ = new QPushButton("CLEAR");
+    clear_btn_ = new QPushButton(tr("CLEAR"));
     clear_btn_->setFixedHeight(20);
     clear_btn_->setStyleSheet(QString("QPushButton { background: transparent; color: %1;"
                                       "  border: none; font-family: Consolas; font-size: 10px; }"
@@ -254,7 +254,7 @@ void ExecutionResultsPanel::build_ui() {
     hl->addWidget(clear_btn_);
 
     // Copy button
-    copy_btn_ = new QPushButton("COPY");
+    copy_btn_ = new QPushButton(tr("COPY"));
     copy_btn_->setFixedHeight(20);
     copy_btn_->setStyleSheet(QString("QPushButton { background: transparent; color: %1;"
                                      "  border: none; font-family: Consolas; font-size: 10px; }"
@@ -268,7 +268,7 @@ void ExecutionResultsPanel::build_ui() {
                                          "  border: none; font-family: Consolas; font-size: 10px; }")
                                      .arg(ui::colors::POSITIVE()));
         QTimer::singleShot(1500, copy_btn_, [this]() {
-            copy_btn_->setText("COPY");
+            copy_btn_->setText(tr("COPY"));
             copy_btn_->setStyleSheet(QString("QPushButton { background: transparent; color: %1;"
                                              "  border: none; font-family: Consolas; font-size: 10px; }"
                                              "QPushButton:hover { color: %2; }")
@@ -321,7 +321,7 @@ void ExecutionResultsPanel::clear() {
     error_count_ = 0;
     copy_buffer_.clear();
     node_counter_->setText("");
-    status_label_->setText("IDLE");
+    status_label_->setText(tr("IDLE"));
     status_label_->setStyleSheet(QString("color: %1; font-family: Consolas;"
                                          " font-size: 10px; font-weight: bold;")
                                      .arg(ui::colors::TEXT_TERTIARY()));

@@ -60,23 +60,23 @@ void FileManagerScreen::build_ui() {
     hhl->setContentsMargins(14, 10, 14, 10);
     hhl->setSpacing(8);
 
-    auto* title = new QLabel("FILE MANAGER");
+    auto* title = new QLabel(tr("FILE MANAGER"));
     title->setStyleSheet(
         QString("color:%1;font-size:14px;font-weight:700;letter-spacing:0.5px;background:transparent;%2")
             .arg(colors::AMBER(), MF));
     hhl->addWidget(title);
 
-    auto* sub = new QLabel("Manage files across the terminal");
+    auto* sub = new QLabel(tr("Manage files across the terminal"));
     sub->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;%2").arg(colors::TEXT_TERTIARY(), MF));
     hhl->addWidget(sub);
     hhl->addStretch();
 
-    stats_label_ = new QLabel("0 files | 0 B");
+    stats_label_ = new QLabel(tr("0 files | 0 B"));
     stats_label_->setStyleSheet(
         QString("color:%1;font-size:11px;background:transparent;%2").arg(colors::TEXT_DIM(), MF));
     hhl->addWidget(stats_label_);
 
-    refresh_btn_ = new QPushButton("REFRESH");
+    refresh_btn_ = new QPushButton(tr("REFRESH"));
     refresh_btn_->setCursor(Qt::PointingHandCursor);
     refresh_btn_->setStyleSheet(
         QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -89,7 +89,7 @@ void FileManagerScreen::build_ui() {
     });
     hhl->addWidget(refresh_btn_);
 
-    upload_btn_ = new QPushButton("UPLOAD FILES");
+    upload_btn_ = new QPushButton(tr("UPLOAD FILES"));
     upload_btn_->setCursor(Qt::PointingHandCursor);
     upload_btn_->setStyleSheet(QString("QPushButton{background:rgba(217,119,6,0.1);color:%1;border:1px solid %3;"
                                        "padding:4px 12px;font-size:11px;font-weight:700;%2}"
@@ -113,7 +113,7 @@ void FileManagerScreen::build_ui() {
     bbl->setContentsMargins(14, 6, 14, 6);
     bbl->setSpacing(10);
 
-    auto* sel_lbl = new QLabel("Selected files:");
+    auto* sel_lbl = new QLabel(tr("Selected files:"));
     sel_lbl->setStyleSheet(
         QString("color:%1;font-size:11px;background:transparent;%2").arg(colors::TEXT_SECONDARY(), MF));
     bbl->addWidget(sel_lbl);
@@ -128,7 +128,7 @@ void FileManagerScreen::build_ui() {
     bbl->addWidget(bulk_delete_btn_);
     bbl->addStretch();
 
-    auto* desel_btn = new QPushButton("CLEAR SELECTION");
+    auto* desel_btn = new QPushButton(tr("CLEAR SELECTION"));
     desel_btn->setCursor(Qt::PointingHandCursor);
     desel_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                                      "padding:3px 12px;font-size:11px;%3}"
@@ -180,7 +180,7 @@ void FileManagerScreen::build_quota_bar(QVBoxLayout* root) {
     ql->setContentsMargins(14, 6, 14, 6);
     ql->setSpacing(10);
 
-    quota_label_ = new QLabel("Storage: 0 B / 500 MB");
+    quota_label_ = new QLabel(tr("Storage: 0 B / 500 MB"));
     quota_label_->setStyleSheet(
         QString("color:%1;font-size:11px;background:transparent;%2").arg(colors::TEXT_DIM(), MF));
     ql->addWidget(quota_label_);
@@ -223,7 +223,7 @@ void FileManagerScreen::build_filter_bar(QVBoxLayout* root) {
     connect(search_input_, &QLineEdit::textChanged, this, [this]() { render_files(); });
     r1l->addWidget(search_input_, 1);
 
-    auto* sort_lbl = new QLabel("Sort:");
+    auto* sort_lbl = new QLabel(tr("Sort:"));
     sort_lbl->setStyleSheet(QString("color:%1;font-size:11px;background:transparent;%2").arg(colors::TEXT_DIM(), MF));
     r1l->addWidget(sort_lbl);
 
@@ -299,7 +299,7 @@ QWidget* FileManagerScreen::build_preview_panel() {
     auto* hhl = new QHBoxLayout(hdr);
     hhl->setContentsMargins(12, 8, 12, 8);
 
-    auto* plbl = new QLabel("PREVIEW");
+    auto* plbl = new QLabel(tr("PREVIEW"));
     plbl->setStyleSheet(QString("color:%1;font-size:11px;font-weight:700;letter-spacing:1px;background:transparent;%2")
                             .arg(colors::AMBER(), MF));
     hhl->addWidget(plbl);
@@ -359,7 +359,7 @@ QWidget* FileManagerScreen::build_preview_panel() {
     vl->addWidget(preview_table_, 1);
 
     // Empty/binary state
-    preview_empty_ = new QLabel("Select a file to preview");
+    preview_empty_ = new QLabel(tr("Select a file to preview"));
     preview_empty_->setAlignment(Qt::AlignCenter);
     preview_empty_->setWordWrap(true);
     preview_empty_->setStyleSheet(
@@ -532,7 +532,7 @@ void FileManagerScreen::show_preview(const QString& file_id) {
 
     preview_text_->setPlainText(content);
     if (content.length() == 64000)
-        preview_text_->append("\n\n[... truncated at 64K characters ...]");
+        preview_text_->append(tr("\n\n[... truncated at 64K characters ...]"));
     preview_text_->setVisible(true);
 }
 
@@ -625,13 +625,13 @@ void FileManagerScreen::render_files() {
             skl->setContentsMargins(24, 24, 24, 24);
             skl->setSpacing(20);
 
-            auto* hero_lbl = new QLabel("[ FM ]");
+            auto* hero_lbl = new QLabel(tr("[ FM ]"));
             hero_lbl->setAlignment(Qt::AlignCenter);
             hero_lbl->setStyleSheet(
                 QString("color:%1;font-size:36px;font-weight:700;background:transparent;%2").arg(colors::AMBER(), MF));
             skl->addWidget(hero_lbl);
 
-            auto* hero_sub = new QLabel("Your terminal file index is empty.");
+            auto* hero_sub = new QLabel(tr("Your terminal file index is empty."));
             hero_sub->setAlignment(Qt::AlignCenter);
             hero_sub->setStyleSheet(
                 QString("color:%1;font-size:14px;background:transparent;%2").arg(colors::TEXT_SECONDARY(), MF));
@@ -651,7 +651,7 @@ void FileManagerScreen::render_files() {
             div->setStyleSheet(QString("background:%1;max-height:1px;border:none;").arg(colors::BORDER_DIM()));
             skl->addWidget(div);
 
-            auto* sources_lbl = new QLabel("FILES ARE COLLECTED FROM");
+            auto* sources_lbl = new QLabel(tr("FILES ARE COLLECTED FROM"));
             sources_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;"
                                                "background:transparent;%2")
                                            .arg(colors::TEXT_DIM(), MF));
@@ -718,7 +718,7 @@ void FileManagerScreen::render_files() {
             div2->setStyleSheet(QString("background:%1;max-height:1px;border:none;").arg(colors::BORDER_DIM()));
             skl->addWidget(div2);
 
-            auto* tips_lbl = new QLabel("TIPS");
+            auto* tips_lbl = new QLabel(tr("TIPS"));
             tips_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;"
                                             "background:transparent;%2")
                                         .arg(colors::TEXT_DIM(), MF));
@@ -739,7 +739,7 @@ void FileManagerScreen::render_files() {
             skl->addStretch();
             file_layout_->addWidget(skeleton);
         } else {
-            auto* empty = new QLabel("No files match your search or filter.");
+            auto* empty = new QLabel(tr("No files match your search or filter."));
             empty->setAlignment(Qt::AlignCenter);
             empty->setStyleSheet(QString("color:%1;font-size:13px;padding:40px;%2").arg(colors::TEXT_DIM(), MF));
             file_layout_->addWidget(empty);
@@ -819,7 +819,7 @@ void FileManagerScreen::render_files() {
         info->installEventFilter(this);
         connect(name_lbl, &QLabel::linkActivated, this, [this, fid]() { show_preview(fid); });
         // Use a transparent button overlay trick — simpler: connect via QPushButton
-        auto* preview_btn = new QPushButton("PREVIEW");
+        auto* preview_btn = new QPushButton(tr("PREVIEW"));
         preview_btn->setCursor(Qt::PointingHandCursor);
         preview_btn->setFixedHeight(26);
         preview_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -845,7 +845,7 @@ void FileManagerScreen::render_files() {
         }
 
         // Save button
-        auto* dl_btn = new QPushButton("SAVE");
+        auto* dl_btn = new QPushButton(tr("SAVE"));
         dl_btn->setCursor(Qt::PointingHandCursor);
         dl_btn->setFixedSize(54, 26);
         dl_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -856,7 +856,7 @@ void FileManagerScreen::render_files() {
         hl->addWidget(dl_btn);
 
         // Delete button
-        auto* del_btn = new QPushButton("DEL");
+        auto* del_btn = new QPushButton(tr("DEL"));
         del_btn->setCursor(Qt::PointingHandCursor);
         del_btn->setFixedSize(44, 26);
         del_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"

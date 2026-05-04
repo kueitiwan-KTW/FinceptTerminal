@@ -142,7 +142,7 @@ void CryptoTradingScreen::setup_ui() {
     cmd_layout->setSpacing(6);
 
     // Exchange button + menu
-    exchange_btn_ = new QPushButton("KRAKEN");
+    exchange_btn_ = new QPushButton(tr("KRAKEN"));
     exchange_btn_->setObjectName("cryptoExchangeBtn");
     exchange_btn_->setFixedHeight(22);
     exchange_btn_->setCursor(Qt::PointingHandCursor);
@@ -186,25 +186,25 @@ void CryptoTradingScreen::setup_ui() {
     cmd_layout->addWidget(ticker_bar_, 1);
 
     // WS status
-    ws_status_ = new QLabel("REST");
+    ws_status_ = new QLabel(tr("REST"));
     ws_status_->setObjectName("cryptoWsStatus");
     ws_status_->setStyleSheet(QString("color: %1;").arg(ui::colors::WARNING()));
     cmd_layout->addWidget(ws_status_);
 
     // Clock
-    clock_label_ = new QLabel("--:--:--");
+    clock_label_ = new QLabel(tr("--:--:--"));
     clock_label_->setObjectName("cryptoClock");
     cmd_layout->addWidget(clock_label_);
 
     // API button
-    api_btn_ = new QPushButton("API");
+    api_btn_ = new QPushButton(tr("API"));
     api_btn_->setObjectName("cryptoApiBtn");
     api_btn_->setFixedHeight(22);
     api_btn_->setCursor(Qt::PointingHandCursor);
     cmd_layout->addWidget(api_btn_);
 
     // Mode button
-    mode_btn_ = new QPushButton("PAPER");
+    mode_btn_ = new QPushButton(tr("PAPER"));
     mode_btn_->setObjectName("cryptoModeBtn");
     mode_btn_->setProperty("mode", "paper");
     mode_btn_->setCheckable(true);
@@ -495,7 +495,7 @@ void CryptoTradingScreen::init_exchange() {
             // still displays data via scripts.
             LOG_ERROR(TAG, "WS stream failed to start — remaining on REST polling for " + exchange_id_);
             if (ws_status_) {
-                ws_status_->setText("REST");
+                ws_status_->setText(tr("REST"));
                 ws_status_->setStyleSheet(QString("color: %1;").arg(ui::colors::WARNING()));
             }
             last_ws_status_label_state_ = 0;

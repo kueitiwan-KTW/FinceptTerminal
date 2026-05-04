@@ -70,7 +70,7 @@ GeopoliticsEventsWidget::GeopoliticsEventsWidget(const QJsonObject& cfg, QWidget
     list_layout_->setContentsMargins(0, 0, 0, 0);
     list_layout_->setSpacing(0);
 
-    status_label_ = new QLabel("Loading…");
+    status_label_ = new QLabel(tr("Loading…"));
     status_label_->setAlignment(Qt::AlignCenter);
     list_layout_->addWidget(status_label_);
     list_layout_->addStretch();
@@ -146,7 +146,7 @@ void GeopoliticsEventsWidget::populate(const QVariant& payload) {
     using fincept::services::geo::EventsPage;
     if (!payload.canConvert<EventsPage>()) {
         clear_rows();
-        status_label_ = new QLabel("Awaiting events…");
+        status_label_ = new QLabel(tr("Awaiting events…"));
         status_label_->setAlignment(Qt::AlignCenter);
         status_label_->setStyleSheet(QString("color:%1;font-size:10px;padding:16px;background:transparent;")
                                          .arg(ui::colors::TEXT_TERTIARY()));
@@ -159,7 +159,7 @@ void GeopoliticsEventsWidget::populate(const QVariant& payload) {
     clear_rows();
 
     if (page.events.isEmpty()) {
-        status_label_ = new QLabel("No events available");
+        status_label_ = new QLabel(tr("No events available"));
         status_label_->setAlignment(Qt::AlignCenter);
         status_label_->setStyleSheet(QString("color:%1;font-size:10px;padding:16px;background:transparent;")
                                          .arg(ui::colors::TEXT_TERTIARY()));
@@ -252,7 +252,7 @@ void GeopoliticsEventsWidget::populate(const QVariant& payload) {
 
 QDialog* GeopoliticsEventsWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Geopolitics Events");
+    dlg->setWindowTitle(tr("Configure — Geopolitics Events"));
     auto* form = new QFormLayout(dlg);
 
     auto* spin = new QSpinBox(dlg);

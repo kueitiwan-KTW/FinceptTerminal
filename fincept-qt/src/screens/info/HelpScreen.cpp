@@ -121,13 +121,13 @@ HelpScreen::HelpScreen(QWidget* parent) : QWidget(parent) {
         auto* text_vl = new QVBoxLayout;
         text_vl->setSpacing(5);
 
-        auto* title = new QLabel("HELP CENTER");
+        auto* title = new QLabel(tr("HELP CENTER"));
         title->setStyleSheet(QString("color: %1; font-size: 22px; font-weight: 700; letter-spacing: 2px;"
                                      " background: transparent; %2")
                                  .arg(colors::AMBER(), MF));
         text_vl->addWidget(title);
 
-        auto* sub = new QLabel("Find answers, get support, and connect with the Fincept community.");
+        auto* sub = new QLabel(tr("Find answers, get support, and connect with the Fincept community."));
         sub->setStyleSheet(
             QString("color: %1; font-size: 12px; background: transparent; %2").arg(colors::TEXT_SECONDARY(), MF));
         text_vl->addWidget(sub);

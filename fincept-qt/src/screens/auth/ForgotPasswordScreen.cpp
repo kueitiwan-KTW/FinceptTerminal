@@ -163,7 +163,7 @@ void ForgotPasswordScreen::build_email_page() {
     connect(back, &QPushButton::clicked, this, &ForgotPasswordScreen::navigate_login);
     hl->addWidget(back);
 
-    auto* title = new QLabel("重設密碼");
+    auto* title = new QLabel(tr("重設密碼"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -172,14 +172,14 @@ void ForgotPasswordScreen::build_email_page() {
     hl->addStretch();
     vl->addWidget(header);
 
-    auto* sub = new QLabel("輸入您的電子郵件，我們將發送驗證碼。");
+    auto* sub = new QLabel(tr("輸入您的電子郵件，我們將發送驗證碼。"));
     sub->setWordWrap(true);
     sub->setStyleSheet(muted_style());
     vl->addWidget(sub);
 
     vl->addWidget(make_separator());
 
-    auto* lbl = new QLabel("電子郵件");
+    auto* lbl = new QLabel(tr("電子郵件"));
     lbl->setStyleSheet(label_style());
     vl->addWidget(lbl);
 
@@ -199,7 +199,7 @@ void ForgotPasswordScreen::build_email_page() {
     error_label_->hide();
     vl->addWidget(error_label_);
 
-    auto* send_btn = new QPushButton("  發送驗證碼  ");
+    auto* send_btn = new QPushButton(tr("  發送驗證碼  "));
     send_btn->setFixedHeight(32);
     send_btn->setStyleSheet(btn_primary());
     connect(send_btn, &QPushButton::clicked, this, &ForgotPasswordScreen::on_send_code);
@@ -208,7 +208,7 @@ void ForgotPasswordScreen::build_email_page() {
 
     vl->addWidget(make_separator());
 
-    auto* back_login = new QPushButton("記住密碼了？返回登入");
+    auto* back_login = new QPushButton(tr("記住密碼了？返回登入"));
     back_login->setStyleSheet(link_style());
     connect(back_login, &QPushButton::clicked, this, &ForgotPasswordScreen::navigate_login);
     vl->addWidget(back_login, 0, Qt::AlignCenter);
@@ -233,7 +233,7 @@ void ForgotPasswordScreen::build_otp_sent_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("檢查您的郵件");
+    auto* title = new QLabel(tr("檢查您的郵件"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -242,20 +242,20 @@ void ForgotPasswordScreen::build_otp_sent_page() {
     hl->addStretch();
     vl->addWidget(header);
 
-    auto* sub = new QLabel("我們已發送驗證碼。請在下一個畫面輸入以重設密碼。");
+    auto* sub = new QLabel(tr("我們已發送驗證碼。請在下一個畫面輸入以重設密碼。"));
     sub->setWordWrap(true);
     sub->setStyleSheet(muted_style());
     vl->addWidget(sub);
 
     vl->addWidget(make_separator());
 
-    auto* cont_btn = new QPushButton("  我已收到驗證碼  ");
+    auto* cont_btn = new QPushButton(tr("  我已收到驗證碼  "));
     cont_btn->setFixedHeight(32);
     cont_btn->setStyleSheet(btn_primary());
     connect(cont_btn, &QPushButton::clicked, this, [this]() { pages_->setCurrentIndex(2); });
     vl->addWidget(cont_btn);
 
-    auto* resend = new QPushButton("未收到？重新發送");
+    auto* resend = new QPushButton(tr("未收到？重新發送"));
     resend->setStyleSheet(link_style());
     connect(resend, &QPushButton::clicked, this, &ForgotPasswordScreen::on_resend);
     vl->addWidget(resend, 0, Qt::AlignCenter);
@@ -280,7 +280,7 @@ void ForgotPasswordScreen::build_reset_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("重設密碼");
+    auto* title = new QLabel(tr("重設密碼"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -323,7 +323,7 @@ void ForgotPasswordScreen::build_reset_page() {
         err->show();
     });
 
-    auto* reset_btn = new QPushButton("  重設密碼  ");
+    auto* reset_btn = new QPushButton(tr("  重設密碼  "));
     reset_btn->setFixedHeight(32);
     reset_btn->setStyleSheet(btn_primary());
     connect(reset_btn, &QPushButton::clicked, this, &ForgotPasswordScreen::on_reset_password);
@@ -350,7 +350,7 @@ void ForgotPasswordScreen::build_success_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("密碼已重設");
+    auto* title = new QLabel(tr("密碼已重設"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -358,7 +358,7 @@ void ForgotPasswordScreen::build_success_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* status = new QLabel("成功");
+    auto* status = new QLabel(tr("成功"));
     status->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                   "background: transparent; letter-spacing: 0.5px;"
                                   "font-family: 'Consolas','Courier New',monospace;")
@@ -366,7 +366,7 @@ void ForgotPasswordScreen::build_success_page() {
     hl->addWidget(status);
     vl->addWidget(header);
 
-    auto* sub = new QLabel("您的密碼已重設成功。現在可以使用新密碼登入。");
+    auto* sub = new QLabel(tr("您的密碼已重設成功。現在可以使用新密碼登入。"));
     sub->setWordWrap(true);
     sub->setAlignment(Qt::AlignCenter);
     sub->setStyleSheet(muted_style());
@@ -374,7 +374,7 @@ void ForgotPasswordScreen::build_success_page() {
 
     vl->addWidget(make_separator());
 
-    auto* login_btn = new QPushButton("  繼續登入  ");
+    auto* login_btn = new QPushButton(tr("  繼續登入  "));
     login_btn->setFixedHeight(32);
     login_btn->setStyleSheet(btn_primary());
     connect(login_btn, &QPushButton::clicked, this, &ForgotPasswordScreen::navigate_login);

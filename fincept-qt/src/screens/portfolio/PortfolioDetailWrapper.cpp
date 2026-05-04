@@ -38,7 +38,7 @@ void PortfolioDetailWrapper::build_ui() {
     h_layout->setSpacing(8);
 
     // Back button
-    back_btn_ = new QPushButton("\u2190 BACK");
+    back_btn_ = new QPushButton(tr("\u2190 BACK"));
     back_btn_->setFixedHeight(24);
     back_btn_->setCursor(Qt::PointingHandCursor);
     back_btn_->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"

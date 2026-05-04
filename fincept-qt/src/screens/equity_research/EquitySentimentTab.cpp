@@ -122,7 +122,7 @@ void EquitySentimentTab::build_ui() {
     header_layout->setContentsMargins(14, 8, 14, 8);
     header_layout->setSpacing(12);
 
-    auto* title = new QLabel("MARKET SENTIMENT");
+    auto* title = new QLabel(tr("MARKET SENTIMENT"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:2px; background:transparent; border:0;")
             .arg(ui::colors::AMBER()));
@@ -141,7 +141,7 @@ void EquitySentimentTab::build_ui() {
 
     header_layout->addStretch();
 
-    auto* refresh_button = new QPushButton("REFRESH");
+    auto* refresh_button = new QPushButton(tr("REFRESH"));
     refresh_button->setStyleSheet(
         QString("QPushButton { background:transparent; color:%1; border:1px solid %2; border-radius:3px; "
                 "padding:4px 12px; font-size:10px; font-weight:700; }"
@@ -160,7 +160,7 @@ void EquitySentimentTab::build_ui() {
     header_layout->addWidget(refresh_button);
     root->addWidget(header);
 
-    status_label_ = new QLabel("Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.");
+    status_label_ = new QLabel(tr("Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot."));
     status_label_->setAlignment(Qt::AlignCenter);
     status_label_->setStyleSheet(
         QString("color:%1; font-size:12px; padding:20px; background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
@@ -258,7 +258,7 @@ void EquitySentimentTab::populate(const services::equity::MarketSentimentSnapsho
             add_row("Sentiment", QString::number(source.sentiment_score, 'f', 2),
                     source.sentiment_score >= 0.0 ? ui::colors::POSITIVE() : ui::colors::NEGATIVE());
         } else {
-            auto* empty = new QLabel("No snapshot available.");
+            auto* empty = new QLabel(tr("No snapshot available."));
             empty->setWordWrap(true);
             empty->setStyleSheet(
                 QString("color:%1; font-size:11px; background:transparent; border:0;").arg(ui::colors::TEXT_TERTIARY()));

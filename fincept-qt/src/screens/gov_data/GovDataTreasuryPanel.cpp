@@ -186,7 +186,7 @@ void GovDataTreasuryPanel::build_ui() {
     svl->addWidget(cards_row);
 
     // Breakdown table
-    auto* breakdown_hdr = new QLabel("SECURITY TYPE BREAKDOWN");
+    auto* breakdown_hdr = new QLabel(tr("SECURITY TYPE BREAKDOWN"));
     breakdown_hdr->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; letter-spacing:1px;"
                                          " background:transparent; margin-top:8px;")
                                      .arg(kGovDataTreasuryColor));
@@ -229,20 +229,20 @@ QWidget* GovDataTreasuryPanel::build_toolbar() {
     hl->setSpacing(5);
 
     // Endpoint tabs
-    prices_btn_ = new QPushButton("PRICES");
+    prices_btn_ = new QPushButton(tr("PRICES"));
     prices_btn_->setObjectName("govTreasTab");
     prices_btn_->setCheckable(true);
     prices_btn_->setChecked(true);
     prices_btn_->setCursor(Qt::PointingHandCursor);
     connect(prices_btn_, &QPushButton::clicked, this, [this]() { on_endpoint_changed(Prices); });
 
-    auctions_btn_ = new QPushButton("AUCTIONS");
+    auctions_btn_ = new QPushButton(tr("AUCTIONS"));
     auctions_btn_->setObjectName("govTreasTab");
     auctions_btn_->setCheckable(true);
     auctions_btn_->setCursor(Qt::PointingHandCursor);
     connect(auctions_btn_, &QPushButton::clicked, this, [this]() { on_endpoint_changed(Auctions); });
 
-    summary_btn_ = new QPushButton("SUMMARY");
+    summary_btn_ = new QPushButton(tr("SUMMARY"));
     summary_btn_->setObjectName("govTreasTab");
     summary_btn_->setCheckable(true);
     summary_btn_->setCursor(Qt::PointingHandCursor);
@@ -253,7 +253,7 @@ QWidget* GovDataTreasuryPanel::build_toolbar() {
     hl->addWidget(summary_btn_);
     hl->addStretch(1);
 
-    fetch_btn_ = new QPushButton("FETCH");
+    fetch_btn_ = new QPushButton(tr("FETCH"));
     fetch_btn_->setObjectName("govFetchBtn");
     fetch_btn_->setCursor(Qt::PointingHandCursor);
     connect(fetch_btn_, &QPushButton::clicked, this, &GovDataTreasuryPanel::on_fetch);
@@ -308,12 +308,12 @@ QWidget* GovDataTreasuryPanel::build_filter_bar() {
     hl->addWidget(make_lbl("TYPE"));
 
     security_type_ = new QComboBox;
-    security_type_->addItem("All", "all");
-    security_type_->addItem("Bills", "bill");
-    security_type_->addItem("Notes", "note");
-    security_type_->addItem("Bonds", "bond");
-    security_type_->addItem("TIPS", "tips");
-    security_type_->addItem("FRN", "frn");
+    security_type_->addItem(tr("All"), "all");
+    security_type_->addItem(tr("Bills"), "bill");
+    security_type_->addItem(tr("Notes"), "note");
+    security_type_->addItem(tr("Bonds"), "bond");
+    security_type_->addItem(tr("TIPS"), "tips");
+    security_type_->addItem(tr("FRN"), "frn");
     security_type_->setFixedHeight(24);
     hl->addWidget(security_type_);
 
@@ -494,7 +494,7 @@ void GovDataTreasuryPanel::show_loading(const QString& message) {
 
 void GovDataTreasuryPanel::show_error(const QString& message) {
     status_label_->setStyleSheet(QString("color:%1; font-size:12px; background:transparent;").arg(colors::NEGATIVE()));
-    status_label_->setText("Error: " + message);
+    status_label_->setText(tr("Error: ") + message);
     content_stack_->setCurrentIndex(3);
 }
 

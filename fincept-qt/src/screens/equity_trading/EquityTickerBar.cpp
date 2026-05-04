@@ -28,27 +28,27 @@ EquityTickerBar::EquityTickerBar(QWidget* parent) : QWidget(parent) {
     change_label_->setObjectName("eqChange");
     layout->addWidget(change_label_);
 
-    bid_label_ = new QLabel("B:--");
+    bid_label_ = new QLabel(tr("B:--"));
     bid_label_->setObjectName("eqBid");
     layout->addWidget(bid_label_);
 
-    ask_label_ = new QLabel("A:--");
+    ask_label_ = new QLabel(tr("A:--"));
     ask_label_->setObjectName("eqAsk");
     layout->addWidget(ask_label_);
 
-    spread_label_ = new QLabel("S:--");
+    spread_label_ = new QLabel(tr("S:--"));
     spread_label_->setObjectName("eqSpreadInline");
     layout->addWidget(spread_label_);
 
-    high_label_ = new QLabel("H:--");
+    high_label_ = new QLabel(tr("H:--"));
     high_label_->setObjectName("eqStatLabel");
     layout->addWidget(high_label_);
 
-    low_label_ = new QLabel("L:--");
+    low_label_ = new QLabel(tr("L:--"));
     low_label_->setObjectName("eqStatLabel");
     layout->addWidget(low_label_);
 
-    volume_label_ = new QLabel("Vol:--");
+    volume_label_ = new QLabel(tr("Vol:--"));
     volume_label_->setObjectName("eqStatLabel");
     layout->addWidget(volume_label_);
 

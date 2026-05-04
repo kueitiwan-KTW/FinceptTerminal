@@ -155,7 +155,7 @@ SettingsScreen::SettingsScreen(QWidget* parent) : QWidget(parent) {
     nvl->setContentsMargins(8, 16, 8, 8);
     nvl->setSpacing(2);
 
-    auto* title = new QLabel("SETTINGS");
+    auto* title = new QLabel(tr("SETTINGS"));
     title->setStyleSheet(section_title_ss());
     nvl->addWidget(title);
     nvl->addSpacing(12);
@@ -376,13 +376,13 @@ QWidget* SettingsScreen::build_credentials() {
     vl->setSpacing(0);
 
     // Title
-    auto* t = new QLabel("API CREDENTIALS");
+    auto* t = new QLabel(tr("API CREDENTIALS"));
     t->setStyleSheet(section_title_ss());
     vl->addWidget(t);
     vl->addSpacing(4);
 
     auto* info =
-        new QLabel("Store API keys securely in the OS keychain. Keys are never written to disk in plain text.");
+        new QLabel(tr("Store API keys securely in the OS keychain. Keys are never written to disk in plain text."));
     info->setWordWrap(true);
     info->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
     vl->addWidget(info);
@@ -417,7 +417,7 @@ QWidget* SettingsScreen::build_credentials() {
         hhl->addStretch();
 
         // Status label — persisted across load_credentials calls
-        auto* status_lbl = new QLabel("Not set");
+        auto* status_lbl = new QLabel(tr("Not set"));
         status_lbl->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
         hhl->addWidget(status_lbl);
         cred_status_[key] = status_lbl;
@@ -438,7 +438,7 @@ QWidget* SettingsScreen::build_credentials() {
         cred_fields_[key] = field;
         bhl->addWidget(field, 1);
 
-        auto* save_btn = new QPushButton("Save");
+        auto* save_btn = new QPushButton(tr("Save"));
         save_btn->setFixedHeight(30);
         save_btn->setFixedWidth(70);
         save_btn->setStyleSheet(btn_primary_ss());
@@ -449,7 +449,7 @@ QWidget* SettingsScreen::build_credentials() {
             if (val.isEmpty()) {
                 SecureStorage::instance().remove(key);
                 field->setPlaceholderText(tr("Not configured"));
-                status_lbl->setText("Cleared");
+                status_lbl->setText(tr("Cleared"));
                 status_lbl->setStyleSheet(
                     QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
                 LOG_INFO("Credentials", "Cleared key: " + key);
@@ -526,7 +526,7 @@ QWidget* SettingsScreen::build_appearance() {
     vl->setSpacing(8);
 
     // ── TYPOGRAPHY ────────────────────────────────────────────────────────────
-    auto* t = new QLabel("TYPOGRAPHY");
+    auto* t = new QLabel(tr("TYPOGRAPHY"));
     t->setStyleSheet(section_title_ss());
     vl->addWidget(t);
     vl->addWidget(make_sep());
@@ -566,7 +566,7 @@ QWidget* SettingsScreen::build_appearance() {
     vl->addSpacing(8);
 
     // ── THEME ─────────────────────────────────────────────────────────────────
-    auto* t2 = new QLabel("THEME");
+    auto* t2 = new QLabel(tr("THEME"));
     t2->setStyleSheet(sub_title_ss());
     vl->addWidget(t2);
     vl->addSpacing(4);
@@ -584,7 +584,7 @@ QWidget* SettingsScreen::build_appearance() {
     vl->addSpacing(8);
 
     // ── INTERFACE ─────────────────────────────────────────────────────────────
-    auto* t3 = new QLabel("INTERFACE");
+    auto* t3 = new QLabel(tr("INTERFACE"));
     t3->setStyleSheet(sub_title_ss());
     vl->addWidget(t3);
     vl->addSpacing(4);
@@ -608,7 +608,7 @@ QWidget* SettingsScreen::build_appearance() {
     vl->addSpacing(16);
 
     // ── SAVE ──────────────────────────────────────────────────────────────────
-    auto* apply_btn = new QPushButton("Save Settings");
+    auto* apply_btn = new QPushButton(tr("Save Settings"));
     apply_btn->setFixedWidth(160);
     apply_btn->setStyleSheet(btn_primary_ss());
     connect(apply_btn, &QPushButton::clicked, this, [this]() {
@@ -836,7 +836,7 @@ QWidget* SettingsScreen::build_notifications() {
     vl->setContentsMargins(24, 24, 24, 24);
     vl->setSpacing(6);
 
-    auto* hdr_lbl = new QLabel("NOTIFICATION PROVIDERS");
+    auto* hdr_lbl = new QLabel(tr("NOTIFICATION PROVIDERS"));
     hdr_lbl->setStyleSheet(section_title_ss());
     vl->addWidget(hdr_lbl);
     vl->addWidget(make_sep());
@@ -906,7 +906,7 @@ QWidget* SettingsScreen::build_notifications() {
         thl->setContentsMargins(0, 4, 0, 0);
         thl->setSpacing(8);
 
-        pw.test_btn = new QPushButton("Test Send");
+        pw.test_btn = new QPushButton(tr("Test Send"));
         pw.test_btn->setFixedWidth(100);
         pw.test_btn->setStyleSheet(btn_secondary_ss());
 
@@ -975,7 +975,7 @@ QWidget* SettingsScreen::build_notifications() {
     vl->addSpacing(8);
 
     // ── Alert triggers ────────────────────────────────────────────────────────
-    auto* trig_hdr = new QLabel("ALERT TRIGGERS");
+    auto* trig_hdr = new QLabel(tr("ALERT TRIGGERS"));
     trig_hdr->setStyleSheet(sub_title_ss());
     vl->addWidget(trig_hdr);
     vl->addSpacing(4);
@@ -1031,7 +1031,7 @@ QWidget* SettingsScreen::build_notifications() {
     vl->addSpacing(16);
 
     // ── Save ──────────────────────────────────────────────────────────────────
-    auto* save_btn = new QPushButton("Save All Providers");
+    auto* save_btn = new QPushButton(tr("Save All Providers"));
     save_btn->setFixedWidth(200);
     save_btn->setStyleSheet(btn_primary_ss());
     connect(save_btn, &QPushButton::clicked, this, [this]() {
@@ -1295,7 +1295,7 @@ QWidget* SettingsScreen::build_storage() {
     vl->setSpacing(10);
 
     // Title
-    auto* t = new QLabel("STORAGE & DATA MANAGEMENT");
+    auto* t = new QLabel(tr("STORAGE & DATA MANAGEMENT"));
     t->setStyleSheet(section_title_ss());
     vl->addWidget(t);
     vl->addSpacing(4);
@@ -1311,7 +1311,7 @@ QWidget* SettingsScreen::build_storage() {
     // SECTION 1: DISK USAGE — stat boxes + data rows
     // ═══════════════════════════════════════════════════════════════════════════
     {
-        auto* refresh_lbl = new QLabel("REFRESH");
+        auto* refresh_lbl = new QLabel(tr("REFRESH"));
         refresh_lbl->setStyleSheet(QString("color:%1;font-weight:600;cursor:pointer;").arg(ui::colors::AMBER()));
         refresh_lbl->setCursor(Qt::PointingHandCursor);
         refresh_lbl->installEventFilter(this); // for click
@@ -1370,7 +1370,7 @@ QWidget* SettingsScreen::build_storage() {
         connect(refresh_lbl, &QLabel::linkActivated, this, [this]() { refresh_storage_stats(); });
         // Since QLabel doesn't emit linkActivated for plain text, use eventFilter
         // Actually, let's just use a proper clickable mechanism:
-        auto* refresh_btn = new QPushButton("Refresh");
+        auto* refresh_btn = new QPushButton(tr("Refresh"));
         refresh_btn->setFixedSize(70, 22);
         refresh_btn->setStyleSheet(
             QString("QPushButton{background:rgba(217,119,6,0.1);color:%1;border:1px solid %2;font-weight:700;}"
@@ -1412,15 +1412,15 @@ QWidget* SettingsScreen::build_storage() {
         auto* thl = new QHBoxLayout(th);
         thl->setContentsMargins(12, 0, 12, 0);
         thl->setSpacing(8);
-        auto* th1 = new QLabel("CATEGORY");
+        auto* th1 = new QLabel(tr("CATEGORY"));
         th1->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_DIM()));
         thl->addWidget(th1, 1);
-        auto* th2 = new QLabel("ENTRIES");
+        auto* th2 = new QLabel(tr("ENTRIES"));
         th2->setFixedWidth(70);
         th2->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
         th2->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_DIM()));
         thl->addWidget(th2);
-        auto* th3 = new QLabel("ACTION");
+        auto* th3 = new QLabel(tr("ACTION"));
         th3->setFixedWidth(56);
         th3->setAlignment(Qt::AlignCenter);
         th3->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_DIM()));
@@ -1440,7 +1440,7 @@ QWidget* SettingsScreen::build_storage() {
             }
 
             auto* count_lbl = new QLabel(QString::number(cat.count));
-            auto* clear_btn = new QPushButton("CLR");
+            auto* clear_btn = new QPushButton(tr("CLR"));
 
             QString cat_id = cat.id;
             QString cat_label = cat.label;
@@ -1493,15 +1493,15 @@ QWidget* SettingsScreen::build_storage() {
         auto* thl = new QHBoxLayout(th);
         thl->setContentsMargins(12, 0, 12, 0);
         thl->setSpacing(8);
-        auto* th1 = new QLabel("STORE");
+        auto* th1 = new QLabel(tr("STORE"));
         th1->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_DIM()));
         thl->addWidget(th1, 1);
-        auto* th2 = new QLabel("SIZE");
+        auto* th2 = new QLabel(tr("SIZE"));
         th2->setFixedWidth(80);
         th2->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
         th2->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_DIM()));
         thl->addWidget(th2);
-        auto* th3 = new QLabel("ACTION");
+        auto* th3 = new QLabel(tr("ACTION"));
         th3->setFixedWidth(56);
         th3->setAlignment(Qt::AlignCenter);
         th3->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_DIM()));
@@ -1511,7 +1511,7 @@ QWidget* SettingsScreen::build_storage() {
         // Helper to create file rows with confirmation
         auto add_file_row = [&](const QString& name, QLabel* size_lbl, const QString& confirm_title,
                                 const QString& confirm_msg, std::function<void()> action, bool alt) {
-            auto* btn = new QPushButton("CLR");
+            auto* btn = new QPushButton(tr("CLR"));
             connect(btn, &QPushButton::clicked, this, [this, confirm_title, confirm_msg, action]() {
                 auto answer = QMessageBox::warning(this, confirm_title, confirm_msg,
                                                    QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
@@ -1525,7 +1525,7 @@ QWidget* SettingsScreen::build_storage() {
 
         auto* log_sz = new QLabel("—");
         auto* ws_sz = new QLabel("—");
-        auto* qs_lbl = new QLabel("Registry");
+        auto* qs_lbl = new QLabel(tr("Registry"));
 
         add_file_row(
             "Log Files", log_sz, "Clear Logs", "Clear all application log files?\nCurrent log data will be lost.",
@@ -1562,7 +1562,7 @@ QWidget* SettingsScreen::build_storage() {
         auto* chl = new QHBoxLayout(cache_row);
         chl->setContentsMargins(12, 0, 12, 0);
         chl->setSpacing(4);
-        auto* cache_label = new QLabel("Cache:");
+        auto* cache_label = new QLabel(tr("Cache:"));
         cache_label->setStyleSheet(
             QString("color:%1;font-weight:600;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
         chl->addWidget(cache_label);
@@ -1617,8 +1617,8 @@ QWidget* SettingsScreen::build_storage() {
         irl->setSpacing(6);
 
         sql_db_selector_ = new QComboBox;
-        sql_db_selector_->addItem("fincept.db", "main");
-        sql_db_selector_->addItem("cache.db", "cache");
+        sql_db_selector_->addItem(tr("fincept.db"), "main");
+        sql_db_selector_->addItem(tr("cache.db"), "cache");
         sql_db_selector_->setFixedWidth(110);
         sql_db_selector_->setStyleSheet(combo_ss());
         irl->addWidget(sql_db_selector_);
@@ -1628,7 +1628,7 @@ QWidget* SettingsScreen::build_storage() {
         sql_input_->setStyleSheet(input_ss());
         irl->addWidget(sql_input_, 1);
 
-        auto* exec_btn = new QPushButton("EXEC");
+        auto* exec_btn = new QPushButton(tr("EXEC"));
         exec_btn->setFixedSize(56, 28);
         exec_btn->setStyleSheet(
             QString("QPushButton{background:rgba(217,119,6,0.1);color:%1;border:1px solid %2;font-weight:700;}"
@@ -1639,7 +1639,7 @@ QWidget* SettingsScreen::build_storage() {
         bvl->addWidget(input_row);
 
         // Status line
-        sql_status_ = new QLabel("Ready");
+        sql_status_ = new QLabel(tr("Ready"));
         sql_status_->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         bvl->addWidget(sql_status_);
 
@@ -1672,7 +1672,7 @@ QWidget* SettingsScreen::build_storage() {
         auto* trhl = new QHBoxLayout(tables_row);
         trhl->setContentsMargins(0, 0, 0, 0);
         trhl->setSpacing(4);
-        auto* trl = new QLabel("Quick:");
+        auto* trl = new QLabel(tr("Quick:"));
         trl->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         trhl->addWidget(trl);
 
@@ -1722,7 +1722,7 @@ QWidget* SettingsScreen::build_storage() {
                                                    "This will modify the database:\n\n" + sql + "\n\nContinue?",
                                                    QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
                 if (answer != QMessageBox::Yes) {
-                    sql_status_->setText("Cancelled");
+                    sql_status_->setText(tr("Cancelled"));
                     sql_status_->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::WARNING()));
                     return;
                 }
@@ -1731,7 +1731,7 @@ QWidget* SettingsScreen::build_storage() {
             // Execute
             QSqlQuery query(use_cache ? CacheDatabase::instance().raw_db() : Database::instance().raw_db());
             if (!query.exec(sql)) {
-                sql_status_->setText("Error: " + query.lastError().text());
+                sql_status_->setText(tr("Error: ") + query.lastError().text());
                 sql_status_->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::NEGATIVE()));
                 LOG_ERROR("SQL Console", "Query failed: " + query.lastError().text());
                 return;
@@ -1827,7 +1827,7 @@ QWidget* SettingsScreen::build_storage() {
             QString("background:rgba(220,38,38,0.08);border-bottom:1px solid %1;").arg(ui::colors::NEGATIVE_DIM()));
         auto* hhl = new QHBoxLayout(hdr);
         hhl->setContentsMargins(12, 0, 12, 0);
-        auto* hlbl = new QLabel("DANGER ZONE");
+        auto* hlbl = new QLabel(tr("DANGER ZONE"));
         hlbl->setStyleSheet(QString("color:%1;font-weight:700;letter-spacing:0.5px;background:transparent;")
                                 .arg(ui::colors::NEGATIVE()));
         hhl->addWidget(hlbl);
@@ -1849,14 +1849,14 @@ QWidget* SettingsScreen::build_storage() {
         auto* cd_vl = new QVBoxLayout(cache_desc);
         cd_vl->setContentsMargins(0, 0, 0, 0);
         cd_vl->setSpacing(2);
-        auto* cd1 = new QLabel("Clear All Cache");
+        auto* cd1 = new QLabel(tr("Clear All Cache"));
         cd1->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::TEXT_PRIMARY()));
         cd_vl->addWidget(cd1);
-        auto* cd2 = new QLabel("Delete all temporary cached data. Will be re-fetched on next access.");
+        auto* cd2 = new QLabel(tr("Delete all temporary cached data. Will be re-fetched on next access."));
         cd2->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         cd_vl->addWidget(cd2);
         cr_hl->addWidget(cache_desc, 1);
-        auto* cache_btn = new QPushButton("CLEAR CACHE");
+        auto* cache_btn = new QPushButton(tr("CLEAR CACHE"));
         cache_btn->setFixedSize(110, 26);
         cache_btn->setStyleSheet(
             QString("QPushButton{background:rgba(220,38,38,0.1);color:%1;border:1px solid %3;font-weight:700;}"
@@ -1887,11 +1887,11 @@ QWidget* SettingsScreen::build_storage() {
         auto* nd_vl = new QVBoxLayout(nuke_desc);
         nd_vl->setContentsMargins(0, 0, 0, 0);
         nd_vl->setSpacing(2);
-        auto* nd1 = new QLabel("Clear ALL User Data");
+        auto* nd1 = new QLabel(tr("Clear ALL User Data"));
         nd1->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;").arg(ui::colors::NEGATIVE()));
         nd_vl->addWidget(nd1);
         auto* nd2 =
-            new QLabel("Permanently delete all databases, files, cache, and UI state. OS keychain is preserved.");
+            new QLabel(tr("Permanently delete all databases, files, cache, and UI state. OS keychain is preserved."));
         nd2->setWordWrap(true);
         nd2->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         nd_vl->addWidget(nd2);
@@ -2015,12 +2015,12 @@ QWidget* SettingsScreen::build_data_sources() {
     title_row->setStyleSheet("background:transparent;");
     auto* trl = new QHBoxLayout(title_row);
     trl->setContentsMargins(0, 0, 0, 0);
-    auto* t = new QLabel("DATA SOURCES");
+    auto* t = new QLabel(tr("DATA SOURCES"));
     t->setStyleSheet(section_title_ss());
     trl->addWidget(t);
     trl->addStretch();
 
-    auto* open_full = new QPushButton("OPEN FULL SCREEN");
+    auto* open_full = new QPushButton(tr("OPEN FULL SCREEN"));
     open_full->setFixedHeight(24);
     open_full->setCursor(Qt::PointingHandCursor);
     open_full->setStyleSheet(
@@ -2103,7 +2103,7 @@ QWidget* SettingsScreen::build_data_sources() {
         auto* evl = new QVBoxLayout(empty_body);
         evl->setContentsMargins(12, 16, 12, 16);
         auto* elbl =
-            new QLabel("No data sources configured. Open the full Data Sources screen to browse and add connectors.");
+            new QLabel(tr("No data sources configured. Open the full Data Sources screen to browse and add connectors."));
         elbl->setWordWrap(true);
         elbl->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
         evl->addWidget(elbl);
@@ -2262,7 +2262,7 @@ QWidget* SettingsScreen::build_data_sources() {
         brhl->setSpacing(8);
 
         // Enable all
-        auto* enable_all = new QPushButton("ENABLE ALL");
+        auto* enable_all = new QPushButton(tr("ENABLE ALL"));
         enable_all->setFixedHeight(24);
         enable_all->setStyleSheet(QString("QPushButton{background:rgba(22,163,74,0.1);color:%1;border:1px solid "
                                           "%1;font-weight:700;padding:0 10px;}"
@@ -2288,7 +2288,7 @@ QWidget* SettingsScreen::build_data_sources() {
         brhl->addWidget(enable_all);
 
         // Disable all
-        auto* disable_all = new QPushButton("DISABLE ALL");
+        auto* disable_all = new QPushButton(tr("DISABLE ALL"));
         disable_all->setFixedHeight(24);
         disable_all->setStyleSheet(
             QString("QPushButton{background:rgba(220,38,38,0.1);color:%1;border:1px solid %3;font-weight:700;padding:0 "
@@ -2399,17 +2399,17 @@ QWidget* SettingsScreen::build_logging() {
     vl->setSpacing(16);
 
     // Title
-    auto* t = new QLabel("LOGGING");
+    auto* t = new QLabel(tr("LOGGING"));
     t->setStyleSheet(section_title_ss());
     vl->addWidget(t);
     vl->addWidget(make_sep());
 
     // ── Global level ─────────────────────────────────────────────────────────
-    auto* global_lbl = new QLabel("Global Log Level");
+    auto* global_lbl = new QLabel(tr("Global Log Level"));
     global_lbl->setStyleSheet(sub_title_ss());
     vl->addWidget(global_lbl);
 
-    auto* global_desc = new QLabel("Minimum level for all tags unless overridden.");
+    auto* global_desc = new QLabel(tr("Minimum level for all tags unless overridden."));
     global_desc->setStyleSheet(label_ss());
     global_desc->setWordWrap(true);
     vl->addWidget(global_desc);
@@ -2426,7 +2426,7 @@ QWidget* SettingsScreen::build_logging() {
     vl->addWidget(make_sep());
 
     // ── Output format ────────────────────────────────────────────────────────
-    auto* fmt_title = new QLabel("Output Format");
+    auto* fmt_title = new QLabel(tr("Output Format"));
     fmt_title->setStyleSheet(sub_title_ss());
     vl->addWidget(fmt_title);
 
@@ -2442,7 +2442,7 @@ QWidget* SettingsScreen::build_logging() {
     vl->addWidget(make_sep());
 
     // ── Log file location ────────────────────────────────────────────────────
-    auto* path_title = new QLabel("Log File");
+    auto* path_title = new QLabel(tr("Log File"));
     path_title->setStyleSheet(sub_title_ss());
     vl->addWidget(path_title);
 
@@ -2458,7 +2458,7 @@ QWidget* SettingsScreen::build_logging() {
     path_rl->setContentsMargins(0, 0, 0, 0);
     path_rl->setSpacing(8);
 
-    auto* open_folder_btn = new QPushButton("Open Log Folder");
+    auto* open_folder_btn = new QPushButton(tr("Open Log Folder"));
     open_folder_btn->setStyleSheet(btn_secondary_ss());
     open_folder_btn->setFixedHeight(30);
     open_folder_btn->setFixedWidth(160);
@@ -2466,7 +2466,7 @@ QWidget* SettingsScreen::build_logging() {
         QDesktopServices::openUrl(QUrl::fromLocalFile(AppPaths::logs()));
     });
 
-    auto* copy_path_btn = new QPushButton("Copy Path");
+    auto* copy_path_btn = new QPushButton(tr("Copy Path"));
     copy_path_btn->setStyleSheet(btn_secondary_ss());
     copy_path_btn->setFixedHeight(30);
     copy_path_btn->setFixedWidth(120);
@@ -2482,11 +2482,11 @@ QWidget* SettingsScreen::build_logging() {
     vl->addWidget(make_sep());
 
     // ── Per-tag overrides ────────────────────────────────────────────────────
-    auto* tag_title = new QLabel("Per-Tag Overrides");
+    auto* tag_title = new QLabel(tr("Per-Tag Overrides"));
     tag_title->setStyleSheet(sub_title_ss());
     vl->addWidget(tag_title);
 
-    auto* tag_desc = new QLabel("Override the log level for a specific tag (e.g. ExchangeService, AgentService).");
+    auto* tag_desc = new QLabel(tr("Override the log level for a specific tag (e.g. ExchangeService, AgentService)."));
     tag_desc->setStyleSheet(label_ss());
     tag_desc->setWordWrap(true);
     vl->addWidget(tag_desc);
@@ -2517,7 +2517,7 @@ QWidget* SettingsScreen::build_logging() {
         lvl_combo->setFixedWidth(120);
         lvl_combo->setCurrentIndex(level_to_idx(level));
 
-        auto* del_btn = new QPushButton("Remove");
+        auto* del_btn = new QPushButton(tr("Remove"));
         del_btn->setStyleSheet(btn_danger_ss());
         del_btn->setFixedHeight(28);
         connect(del_btn, &QPushButton::clicked, this, [row]() { row->deleteLater(); });
@@ -2539,7 +2539,7 @@ QWidget* SettingsScreen::build_logging() {
     vl->addWidget(log_tag_list_);
 
     // Add row button
-    auto* add_btn = new QPushButton("+ Add Tag Override");
+    auto* add_btn = new QPushButton(tr("+ Add Tag Override"));
     add_btn->setStyleSheet(btn_secondary_ss());
     add_btn->setFixedHeight(30);
     add_btn->setFixedWidth(180);
@@ -2548,7 +2548,7 @@ QWidget* SettingsScreen::build_logging() {
     vl->addWidget(make_sep());
 
     // ── Save button ──────────────────────────────────────────────────────────
-    auto* save_btn = new QPushButton("Apply & Save");
+    auto* save_btn = new QPushButton(tr("Apply & Save"));
     save_btn->setStyleSheet(btn_primary_ss());
     save_btn->setFixedHeight(34);
     save_btn->setFixedWidth(140);
@@ -2616,7 +2616,7 @@ QWidget* SettingsScreen::build_security() {
     vl->setSpacing(8);
 
     // ── PIN STATUS ────────────────────────────────────────────────────────────
-    auto* t1 = new QLabel("PIN AUTHENTICATION");
+    auto* t1 = new QLabel(tr("PIN AUTHENTICATION"));
     t1->setStyleSheet(section_title_ss());
     vl->addWidget(t1);
     vl->addWidget(make_sep());
@@ -2636,12 +2636,12 @@ QWidget* SettingsScreen::build_security() {
     vl->addSpacing(8);
 
     // ── CHANGE PIN ────────────────────────────────────────────────────────────
-    auto* t2 = new QLabel("CHANGE PIN");
+    auto* t2 = new QLabel(tr("CHANGE PIN"));
     t2->setStyleSheet(sub_title_ss());
     vl->addWidget(t2);
     vl->addSpacing(4);
 
-    sec_change_pin_btn_ = new QPushButton("Change PIN");
+    sec_change_pin_btn_ = new QPushButton(tr("Change PIN"));
     sec_change_pin_btn_->setFixedWidth(140);
     sec_change_pin_btn_->setStyleSheet(btn_secondary_ss());
     vl->addWidget(sec_change_pin_btn_);
@@ -2688,7 +2688,7 @@ QWidget* SettingsScreen::build_security() {
     sec_pin_success_->hide();
     cpfl->addWidget(sec_pin_success_);
 
-    auto* save_pin_btn = new QPushButton("Update PIN");
+    auto* save_pin_btn = new QPushButton(tr("Update PIN"));
     save_pin_btn->setFixedWidth(140);
     save_pin_btn->setStyleSheet(btn_primary_ss());
     cpfl->addWidget(save_pin_btn);
@@ -2786,7 +2786,7 @@ QWidget* SettingsScreen::build_security() {
     vl->addSpacing(8);
 
     // ── AUTO-LOCK ─────────────────────────────────────────────────────────────
-    auto* t3 = new QLabel("AUTO-LOCK");
+    auto* t3 = new QLabel(tr("AUTO-LOCK"));
     t3->setStyleSheet(sub_title_ss());
     vl->addWidget(t3);
     vl->addSpacing(4);
@@ -2797,13 +2797,13 @@ QWidget* SettingsScreen::build_security() {
     vl->addWidget(make_row("Auto-Lock", sec_autolock_toggle_, "Locks the terminal after a period of inactivity."));
 
     sec_lock_timeout_ = new QComboBox;
-    sec_lock_timeout_->addItem("1 min", 1);
-    sec_lock_timeout_->addItem("2 min", 2);
-    sec_lock_timeout_->addItem("5 min", 5);
-    sec_lock_timeout_->addItem("10 min", 10);
-    sec_lock_timeout_->addItem("15 min", 15);
-    sec_lock_timeout_->addItem("30 min", 30);
-    sec_lock_timeout_->addItem("60 min", 60);
+    sec_lock_timeout_->addItem(tr("1 min"), 1);
+    sec_lock_timeout_->addItem(tr("2 min"), 2);
+    sec_lock_timeout_->addItem(tr("5 min"), 5);
+    sec_lock_timeout_->addItem(tr("10 min"), 10);
+    sec_lock_timeout_->addItem(tr("15 min"), 15);
+    sec_lock_timeout_->addItem(tr("30 min"), 30);
+    sec_lock_timeout_->addItem(tr("60 min"), 60);
     sec_lock_timeout_->setCurrentIndex(3); // default 10 min
     sec_lock_timeout_->setStyleSheet(combo_ss());
     vl->addWidget(make_row("Lock Timeout", sec_lock_timeout_, "Time of inactivity before the terminal locks."));
@@ -2820,7 +2820,7 @@ QWidget* SettingsScreen::build_security() {
     vl->addSpacing(16);
 
     // ── SAVE ──────────────────────────────────────────────────────────────────
-    auto* save_btn = new QPushButton("Save Security Settings");
+    auto* save_btn = new QPushButton(tr("Save Security Settings"));
     save_btn->setFixedWidth(200);
     save_btn->setStyleSheet(btn_primary_ss());
     connect(save_btn, &QPushButton::clicked, this, [this]() {
@@ -2854,12 +2854,12 @@ QWidget* SettingsScreen::build_security() {
 
     // ── AUDIT LOG ─────────────────────────────────────────────────────────────
     vl->addSpacing(16);
-    auto* t_audit = new QLabel("AUDIT LOG");
+    auto* t_audit = new QLabel(tr("AUDIT LOG"));
     t_audit->setStyleSheet(sub_title_ss());
     vl->addWidget(t_audit);
     vl->addSpacing(4);
 
-    auto* audit_note = new QLabel("Recent security events (PIN setup, failed unlocks, inactivity locks).");
+    auto* audit_note = new QLabel(tr("Recent security events (PIN setup, failed unlocks, inactivity locks)."));
     audit_note->setWordWrap(true);
     audit_note->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;")
                                   .arg(ui::colors::TEXT_DIM()));
@@ -2874,7 +2874,7 @@ QWidget* SettingsScreen::build_security() {
             .arg(ui::colors::BG_SURFACE(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM()));
     vl->addWidget(sec_audit_list_);
 
-    auto* refresh_audit = new QPushButton("Refresh");
+    auto* refresh_audit = new QPushButton(tr("Refresh"));
     refresh_audit->setFixedWidth(140);
     refresh_audit->setStyleSheet(btn_secondary_ss());
     connect(refresh_audit, &QPushButton::clicked, this, [this]() { refresh_audit_log(); });
@@ -2898,7 +2898,7 @@ void SettingsScreen::refresh_audit_log() {
         sec_audit_list_->addItem(line);
     }
     if (events.isEmpty())
-        sec_audit_list_->addItem("(no events recorded yet)");
+        sec_audit_list_->addItem(tr("(no events recorded yet)"));
 }
 
 void SettingsScreen::load_security() {
@@ -2908,7 +2908,7 @@ void SettingsScreen::load_security() {
     // PIN status
     if (sec_pin_status_) {
         if (pm.has_pin())
-            sec_pin_status_->setText("CONFIGURED");
+            sec_pin_status_->setText(tr("CONFIGURED"));
         else
             sec_pin_status_->setText(tr("NOT SET"));
         sec_pin_status_->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;")
@@ -2919,7 +2919,7 @@ void SettingsScreen::load_security() {
     if (sec_lockout_status_) {
         int attempts = pm.failed_attempts();
         if (attempts == 0) {
-            sec_lockout_status_->setText("0 / 5");
+            sec_lockout_status_->setText(tr("0 / 5"));
         } else {
             sec_lockout_status_->setText(QString("%1 / 5").arg(attempts));
         }
@@ -2976,7 +2976,7 @@ QWidget* SettingsScreen::build_profiles() {
     vl->setContentsMargins(24, 20, 24, 20);
     vl->setSpacing(16);
 
-    auto* title = new QLabel("Profiles");
+    auto* title = new QLabel(tr("Profiles"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
@@ -2995,7 +2995,7 @@ QWidget* SettingsScreen::build_profiles() {
     vl->addWidget(active_lbl);
 
     // Profile list
-    auto* list_title = new QLabel("All profiles");
+    auto* list_title = new QLabel(tr("All profiles"));
     list_title->setStyleSheet(sub_title_ss());
     vl->addWidget(list_title);
 
@@ -3016,14 +3016,14 @@ QWidget* SettingsScreen::build_profiles() {
         hl->addWidget(name_lbl, 1);
 
         if (name == pm.active()) {
-            auto* badge = new QLabel("ACTIVE");
+            auto* badge = new QLabel(tr("ACTIVE"));
             badge->setStyleSheet(QString("color:%1;font-weight:700;font-size:10px;"
                                          "background:transparent;")
                                      .arg(ui::colors::AMBER()));
             hl->addWidget(badge);
         } else {
             // "Switch" launches a new process with --profile <name> then quits this one
-            auto* switch_btn = new QPushButton("Switch");
+            auto* switch_btn = new QPushButton(tr("Switch"));
             switch_btn->setFixedWidth(72);
             switch_btn->setStyleSheet(btn_secondary_ss());
             connect(switch_btn, &QPushButton::clicked, this, [name]() {
@@ -3039,7 +3039,7 @@ QWidget* SettingsScreen::build_profiles() {
     vl->addWidget(make_sep());
 
     // Create new profile
-    auto* new_title = new QLabel("Create new profile");
+    auto* new_title = new QLabel(tr("Create new profile"));
     new_title->setStyleSheet(sub_title_ss());
     vl->addWidget(new_title);
 
@@ -3053,7 +3053,7 @@ QWidget* SettingsScreen::build_profiles() {
     name_input->setStyleSheet(input_ss());
     new_hl->addWidget(name_input, 1);
 
-    auto* create_btn = new QPushButton("Create & Switch");
+    auto* create_btn = new QPushButton(tr("Create & Switch"));
     create_btn->setStyleSheet(btn_primary_ss());
     connect(create_btn, &QPushButton::clicked, this, [name_input]() {
         const QString name = name_input->text().trimmed().toLower();
@@ -3108,7 +3108,7 @@ QWidget* SettingsScreen::build_developer() {
     vl->setContentsMargins(16, 16, 16, 16);
     vl->setSpacing(12);
 
-    auto* title = new QLabel("DataHub Inspector");
+    auto* title = new QLabel(tr("DataHub Inspector"));
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 

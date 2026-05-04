@@ -191,7 +191,7 @@ QWidget* WatchlistScreen::build_sidebar() {
     hl->setContentsMargins(12, 0, 8, 0);
     hl->setSpacing(6);
 
-    sidebar_title_ = new QLabel("WATCHLISTS");
+    sidebar_title_ = new QLabel(tr("WATCHLISTS"));
     hl->addWidget(sidebar_title_);
     hl->addStretch();
 
@@ -208,7 +208,7 @@ QWidget* WatchlistScreen::build_sidebar() {
     lay->addWidget(wl_list_);
 
     // Footer count
-    wl_count_ = new QLabel("0 lists");
+    wl_count_ = new QLabel(tr("0 lists"));
     wl_count_->setFixedHeight(26);
     wl_count_->setAlignment(Qt::AlignCenter);
     lay->addWidget(wl_count_);
@@ -232,7 +232,7 @@ QWidget* WatchlistScreen::build_main_panel() {
     tl->setContentsMargins(14, 0, 14, 0);
     tl->setSpacing(8);
 
-    panel_title_ = new QLabel("Select a watchlist");
+    panel_title_ = new QLabel(tr("Select a watchlist"));
     tl->addWidget(panel_title_);
 
     tl->addStretch();
@@ -240,7 +240,7 @@ QWidget* WatchlistScreen::build_main_panel() {
     stock_count_ = new QLabel;
     tl->addWidget(stock_count_);
 
-    refresh_btn_ = new QPushButton("REFRESH");
+    refresh_btn_ = new QPushButton(tr("REFRESH"));
     connect(refresh_btn_, &QPushButton::clicked, this, &WatchlistScreen::on_refresh);
     tl->addWidget(refresh_btn_);
 
@@ -257,7 +257,7 @@ QWidget* WatchlistScreen::build_main_panel() {
     al->setContentsMargins(14, 0, 14, 0);
     al->setSpacing(6);
 
-    add_label_ = new QLabel("ADD:");
+    add_label_ = new QLabel(tr("ADD:"));
     al->addWidget(add_label_);
 
     add_input_ = new QLineEdit;
@@ -265,12 +265,12 @@ QWidget* WatchlistScreen::build_main_panel() {
     add_input_->setFixedHeight(28);
     al->addWidget(add_input_, 1);
 
-    add_btn_ = new QPushButton("ADD");
+    add_btn_ = new QPushButton(tr("ADD"));
     connect(add_btn_, &QPushButton::clicked, this, &WatchlistScreen::on_add_stock);
     connect(add_input_, &QLineEdit::returnPressed, this, &WatchlistScreen::on_add_stock);
     al->addWidget(add_btn_);
 
-    remove_btn_ = new QPushButton("REMOVE SELECTED");
+    remove_btn_ = new QPushButton(tr("REMOVE SELECTED"));
     connect(remove_btn_, &QPushButton::clicked, this, &WatchlistScreen::on_remove_stock);
     al->addWidget(remove_btn_);
 

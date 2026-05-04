@@ -34,12 +34,12 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     auto* h_layout = new QHBoxLayout(header);
     h_layout->setContentsMargins(8, 0, 8, 0);
 
-    auto* title = new QLabel("ORDER ENTRY");
+    auto* title = new QLabel(tr("ORDER ENTRY"));
     title->setObjectName("eqOeTitle");
     h_layout->addWidget(title);
     h_layout->addStretch();
 
-    mode_label_ = new QLabel("PAPER");
+    mode_label_ = new QLabel(tr("PAPER"));
     mode_label_->setObjectName("eqOeMode");
     mode_label_->setStyleSheet(QString("color: %1;").arg(colors::POSITIVE()));
     h_layout->addWidget(mode_label_);
@@ -56,7 +56,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     auto* side_row = new QHBoxLayout;
     side_row->setSpacing(0);
 
-    buy_tab_ = new QPushButton("BUY");
+    buy_tab_ = new QPushButton(tr("BUY"));
     buy_tab_->setObjectName("eqBuyTab");
     buy_tab_->setProperty("active", true);
     buy_tab_->setCursor(Qt::PointingHandCursor);
@@ -64,7 +64,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     connect(buy_tab_, &QPushButton::clicked, this, [this]() { set_buy_side(true); });
     side_row->addWidget(buy_tab_, 1);
 
-    sell_tab_ = new QPushButton("SELL");
+    sell_tab_ = new QPushButton(tr("SELL"));
     sell_tab_->setObjectName("eqSellTab");
     sell_tab_->setProperty("active", false);
     sell_tab_->setCursor(Qt::PointingHandCursor);
@@ -90,7 +90,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addLayout(type_row);
 
     // Product type
-    auto* prod_lbl = new QLabel("PRODUCT");
+    auto* prod_lbl = new QLabel(tr("PRODUCT"));
     prod_lbl->setObjectName("eqOeLabel");
     form->addWidget(prod_lbl);
 
@@ -101,7 +101,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(product_combo_);
 
     // Exchange
-    auto* exch_lbl = new QLabel("EXCHANGE");
+    auto* exch_lbl = new QLabel(tr("EXCHANGE"));
     exch_lbl->setObjectName("eqOeLabel");
     form->addWidget(exch_lbl);
 
@@ -125,12 +125,12 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(balance_label_);
 
     // Market price
-    market_price_label_ = new QLabel("MKT: --");
+    market_price_label_ = new QLabel(tr("MKT: --"));
     market_price_label_->setObjectName("eqOeMarketPrice");
     form->addWidget(market_price_label_);
 
     // Quantity
-    auto* qty_lbl = new QLabel("QTY");
+    auto* qty_lbl = new QLabel(tr("QTY"));
     qty_lbl->setObjectName("eqOeLabel");
     form->addWidget(qty_lbl);
 
@@ -142,7 +142,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(qty_edit_);
 
     // Price
-    auto* price_lbl = new QLabel("PRICE");
+    auto* price_lbl = new QLabel(tr("PRICE"));
     price_lbl->setObjectName("eqOeLabel");
     form->addWidget(price_lbl);
 
@@ -155,7 +155,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(price_edit_);
 
     // Trigger/Stop price
-    auto* stop_lbl = new QLabel("TRIGGER");
+    auto* stop_lbl = new QLabel(tr("TRIGGER"));
     stop_lbl->setObjectName("eqOeLabel");
     form->addWidget(stop_lbl);
 
@@ -167,7 +167,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(stop_price_edit_);
 
     // Advanced toggle
-    advanced_toggle_ = new QPushButton("+ ADVANCED");
+    advanced_toggle_ = new QPushButton(tr("+ ADVANCED"));
     advanced_toggle_->setObjectName("eqAdvToggle");
     advanced_toggle_->setCursor(Qt::PointingHandCursor);
     advanced_toggle_->setFixedHeight(18);
@@ -180,14 +180,14 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     adv_layout->setContentsMargins(0, 0, 0, 0);
     adv_layout->setSpacing(4);
 
-    auto* sl_lbl = new QLabel("SL");
+    auto* sl_lbl = new QLabel(tr("SL"));
     sl_lbl->setObjectName("eqOeLabel");
     sl_edit_ = new QLineEdit;
     sl_edit_->setObjectName("eqOeInput");
     sl_edit_->setPlaceholderText(tr("Stop Loss"));
     sl_edit_->setFixedHeight(26);
 
-    auto* tp_lbl = new QLabel("TP");
+    auto* tp_lbl = new QLabel(tr("TP"));
     tp_lbl->setObjectName("eqOeLabel");
     tp_edit_ = new QLineEdit;
     tp_edit_->setObjectName("eqOeInput");
@@ -207,7 +207,7 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     });
 
     // Cost preview
-    cost_label_ = new QLabel("Est: --");
+    cost_label_ = new QLabel(tr("Est: --"));
     cost_label_->setObjectName("eqOeCost");
     form->addWidget(cost_label_);
 
@@ -221,14 +221,14 @@ EquityOrderEntry::EquityOrderEntry(QWidget* parent) : QWidget(parent) {
     auto* submit_row = new QHBoxLayout;
     submit_row->setSpacing(4);
 
-    submit_btn_ = new QPushButton("BUY RELIANCE");
+    submit_btn_ = new QPushButton(tr("BUY RELIANCE"));
     submit_btn_->setObjectName("eqBuySubmit");
     submit_btn_->setFixedHeight(34);
     submit_btn_->setCursor(Qt::PointingHandCursor);
     connect(submit_btn_, &QPushButton::clicked, this, &EquityOrderEntry::on_submit);
     submit_row->addWidget(submit_btn_, 3);
 
-    broadcast_btn_ = new QPushButton("ALL");
+    broadcast_btn_ = new QPushButton(tr("ALL"));
     broadcast_btn_->setObjectName("eqBroadcastBtn");
     broadcast_btn_->setFixedHeight(34);
     broadcast_btn_->setCursor(Qt::PointingHandCursor);

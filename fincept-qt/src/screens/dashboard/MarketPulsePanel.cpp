@@ -313,7 +313,7 @@ QWidget* MarketPulsePanel::build_header() {
     header_icon_ = new QLabel(QChar(0x25C8));
     hl->addWidget(header_icon_);
 
-    header_title_ = new QLabel("市場脈動");
+    header_title_ = new QLabel(tr("市場脈動"));
     hl->addWidget(header_title_);
     hl->addStretch();
 
@@ -376,7 +376,7 @@ QWidget* MarketPulsePanel::build_fear_greed_section() {
     auto* hrl = new QHBoxLayout(header_row);
     hrl->setContentsMargins(0, 0, 0, 0);
 
-    fg_header_label_ = new QLabel("恐懼與貪婪指數");
+    fg_header_label_ = new QLabel(tr("恐懼與貪婪指數"));
     hrl->addWidget(fg_header_label_);
     hrl->addStretch();
 
@@ -398,12 +398,12 @@ QWidget* MarketPulsePanel::build_fear_greed_section() {
     fg_score_val_ = new QLabel("--");
     srl->addWidget(fg_score_val_);
 
-    fg_score_max_ = new QLabel("/100");
+    fg_score_max_ = new QLabel(tr("/100"));
     srl->addWidget(fg_score_max_);
 
     srl->addStretch();
 
-    fg_sentiment_ = new QLabel("載入中...");
+    fg_sentiment_ = new QLabel(tr("載入中..."));
     srl->addWidget(fg_sentiment_);
     // All styling applied by refresh_theme()
 

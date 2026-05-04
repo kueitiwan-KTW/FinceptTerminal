@@ -259,12 +259,12 @@ void EquityTalippTab::build_ui() {
     cl->addWidget(param_widget_);
     cl->addStretch();
 
-    data_points_lbl_ = new QLabel("—  data points  |  TALIpp Engine");
+    data_points_lbl_ = new QLabel(tr("—  data points  |  TALIpp Engine"));
     data_points_lbl_->setStyleSheet(
         QString("color:%1; font-size:10px; background:transparent; border:0;").arg(ui::colors::TEXT_TERTIARY()));
     cl->addWidget(data_points_lbl_);
 
-    compute_btn_ = new QPushButton("▶  CALCULATE");
+    compute_btn_ = new QPushButton(tr("▶  CALCULATE"));
     compute_btn_->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:0; padding:6px 18px; "
                                         "font-size:10px; font-weight:700; }"
                                         "QPushButton:hover { background:%3; }"
@@ -287,11 +287,11 @@ void EquityTalippTab::build_ui() {
     ew_icon->setAlignment(Qt::AlignCenter);
     ew_icon->setStyleSheet(
         QString("color:%1; font-size:32px; background:transparent; border:0;").arg(ui::colors::TEXT_DIM()));
-    status_label_ = new QLabel("Select an indicator and click CALCULATE");
+    status_label_ = new QLabel(tr("Select an indicator and click CALCULATE"));
     status_label_->setAlignment(Qt::AlignCenter);
     status_label_->setStyleSheet(
         QString("color:%1; font-size:13px; background:transparent; border:0;").arg(ui::colors::TEXT_TERTIARY()));
-    auto* ew_sub = new QLabel("50+ indicators across 6 categories — powered by TALIpp incremental engine");
+    auto* ew_sub = new QLabel(tr("50+ indicators across 6 categories — powered by TALIpp incremental engine"));
     ew_sub->setAlignment(Qt::AlignCenter);
     ew_sub->setStyleSheet(
         QString("color:%1; font-size:10px; background:transparent; border:0;").arg(ui::colors::TEXT_DIM()));

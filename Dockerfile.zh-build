@@ -126,7 +126,17 @@ RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \
     cp -a ${Qt6_DIR}/lib/libicu*.so* /opt/fincept/lib/ 2>/dev/null || true && \
     cp -a ${Qt6_DIR}/lib/libQt6*.so* /opt/fincept/lib/ 2>/dev/null || true && \
     # 複製 resources 目錄（含 requirements-numpy1/2.txt 等安裝所需檔案）
-    cp -r /build/fincept-qt/resources /opt/fincept/bin/resources 2>/dev/null || true
+    cp -r /build/fincept-qt/resources /opt/fincept/bin/resources 2>/dev/null || true && \
+    # 複製 Python scripts 目錄（yfinance_data.py 等資料腳本）
+    # CMake POST_BUILD 會將 scripts/ 複製到 build 輸出目錄；
+    # 若 build 目錄有則用之，否則從原始碼目錄複製
+    if [ -d /build/fincept-qt/build/scripts ]; then \
+        cp -r /build/fincept-qt/build/scripts /opt/fincept/bin/scripts; \
+    else \
+        cp -r /build/fincept-qt/scripts /opt/fincept/bin/scripts; \
+    fi && \
+    # 清理 Python 快取等無用檔案
+    find /opt/fincept/bin/scripts -name "__pycache__" -o -name "*.pyc" -o -name ".pytest_cache" | xargs rm -rf 2>/dev/null || true
 
 # ============================================================
 # 階段 2：執行環境

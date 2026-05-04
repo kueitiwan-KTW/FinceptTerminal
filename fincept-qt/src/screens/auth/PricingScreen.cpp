@@ -73,7 +73,7 @@ void PricingScreen::build_ui() {
     vl->setSpacing(10);
 
     // ── Header ───────────────────────────────────────────────────────────────
-    auto* title = new QLabel("方案與定價");
+    auto* title = new QLabel(tr("方案與定價"));
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet(QString("color: %1; font-size: 20px; font-weight: 700; "
                                  "letter-spacing: 1px; background: transparent; %2")
@@ -81,7 +81,7 @@ void PricingScreen::build_ui() {
                              .arg(MF));
     vl->addWidget(title);
 
-    auto* subtitle = new QLabel("解鎖 Fincept Terminal 的完整功能");
+    auto* subtitle = new QLabel(tr("解鎖 Fincept Terminal 的完整功能"));
     subtitle->setAlignment(Qt::AlignCenter);
     subtitle->setStyleSheet(
         QString("color: %1; font-size: 13px; background: transparent; %2").arg(ui::colors::TEXT_TERTIARY()).arg(MF));
@@ -89,7 +89,7 @@ void PricingScreen::build_ui() {
 
     // SaaS 模式提示
     if (fincept::AppConfig::instance().use_saas_auth()) {
-        auto* saas_note = new QLabel("方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform");
+        auto* saas_note = new QLabel(tr("方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform"));
         saas_note->setAlignment(Qt::AlignCenter);
         saas_note->setStyleSheet(
             QString("color: %1; font-size: 11px; background: rgba(22,163,74,0.08); "
@@ -106,7 +106,7 @@ void PricingScreen::build_ui() {
     vl->addWidget(user_info_label_);
 
     // ── Loading ──────────────────────────────────────────────────────────────
-    loading_label_ = new QLabel("載入方案中...");
+    loading_label_ = new QLabel(tr("載入方案中..."));
     loading_label_->setAlignment(Qt::AlignCenter);
     loading_label_->setStyleSheet(
         QString("color: %1; font-size: 13px; background: transparent; %2").arg(ui::colors::TEXT_DIM()).arg(MF));
@@ -280,7 +280,7 @@ void PricingScreen::render_plan_cards() {
     cards_container_->setLayout(cards_layout_);
 
     if (plans_.empty()) {
-        auto* empty = new QLabel("目前沒有可用方案。");
+        auto* empty = new QLabel(tr("目前沒有可用方案。"));
         empty->setAlignment(Qt::AlignCenter);
         empty->setStyleSheet(
             QString("color: %1; font-size: 13px; background: transparent; %2").arg(ui::colors::TEXT_DIM()).arg(MF));
@@ -314,7 +314,7 @@ QWidget* PricingScreen::create_plan_card(const auth::SubscriptionPlan& plan, int
 
     // Popular badge
     if (is_popular) {
-        auto* badge = new QLabel("推薦方案");
+        auto* badge = new QLabel(tr("推薦方案"));
         badge->setAlignment(Qt::AlignCenter);
         badge->setFixedHeight(20);
         badge->setStyleSheet(QString("color: %1; background: rgba(217,119,6,0.1); "
@@ -349,7 +349,7 @@ QWidget* PricingScreen::create_plan_card(const auth::SubscriptionPlan& plan, int
 
     // Price
     if (plan.is_free) {
-        auto* price = new QLabel("免費");
+        auto* price = new QLabel(tr("免費"));
         price->setAlignment(Qt::AlignCenter);
         price->setStyleSheet(QString("color: %1; font-size: 28px; font-weight: 700; "
                                      "background: transparent; %2")
@@ -415,7 +415,7 @@ QWidget* PricingScreen::create_plan_card(const auth::SubscriptionPlan& plan, int
     btn->setCursor(Qt::PointingHandCursor);
 
     if (is_current) {
-        btn->setText("目前方案");
+        btn->setText(tr("目前方案"));
         btn->setEnabled(false);
         btn->setStyleSheet(QString("QPushButton { background: rgba(22,163,74,0.1); color: %1; "
                                    "border: 1px solid %1; font-size: 11px; font-weight: 700; %2 }"
@@ -596,7 +596,7 @@ void PricingScreen::update_footer() {
     bool user_has_paid = auth_mgr.is_authenticated() && auth_mgr.session().has_paid_plan();
 
     if (user_has_paid) {
-        auto* back_btn = new QPushButton("返回主畫面");
+        auto* back_btn = new QPushButton(tr("返回主畫面"));
         back_btn->setCursor(Qt::PointingHandCursor);
         back_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none; "
                                         "font-size: 12px; %2 }"
@@ -615,12 +615,12 @@ void PricingScreen::update_footer() {
         hl->setAlignment(Qt::AlignCenter);
         hl->setSpacing(6);
 
-        auto* explore = new QLabel("想先體驗看看嗎？");
+        auto* explore = new QLabel(tr("想先體驗看看嗎？"));
         explore->setStyleSheet(
             QString("color: %1; font-size: 12px; background: transparent; %2").arg(ui::colors::TEXT_DIM()).arg(MF));
         hl->addWidget(explore);
 
-        auto* free_btn = new QPushButton("繼續使用免費方案");
+        auto* free_btn = new QPushButton(tr("繼續使用免費方案"));
         free_btn->setCursor(Qt::PointingHandCursor);
         free_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none; "
                                         "font-size: 12px; %2 }"

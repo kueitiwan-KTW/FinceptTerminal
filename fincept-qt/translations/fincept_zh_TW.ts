@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
+<?xml version='1.0' encoding='utf-8'?>
 <TS version="2.1" language="zh_TW">
     <context>
         <name>FinceptTerminal</name>
@@ -7503,11 +7502,5727 @@
             <source>🔍  Search tickets…</source>
             <translation>🔍  搜尋 tickets…</translation>
         </message>
+        <message>
+            <source>  |  PROFESSIONAL RESEARCH DESK</source>
+            <translation>  |  專業研究桌面</translation>
+        </message>
+        <message>
+            <source> LIVE</source>
+            <translation> 即時</translation>
+        </message>
+        <message>
+            <source>(single monitor)</source>
+            <translation>（單螢幕）</translation>
+        </message>
+        <message>
+            <source>ACTIVE</source>
+            <translation>啟用中</translation>
+        </message>
+        <message>
+            <source>AI &amp;&amp; Quant</source>
+            <translation>AI 與量化</translation>
+        </message>
+        <message>
+            <source>AI Chat</source>
+            <translation>AI 對話</translation>
+        </message>
+        <message>
+            <source>About</source>
+            <translation>關於</translation>
+        </message>
+        <message>
+            <source>About Fincept</source>
+            <translation>關於 Fincept</translation>
+        </message>
+        <message>
+            <source>Agent Config</source>
+            <translation>代理設定</translation>
+        </message>
+        <message>
+            <source>Algo Trading</source>
+            <translation>演算法交易</translation>
+        </message>
+        <message>
+            <source>Alpha Arena</source>
+            <translation>Alpha 競技場</translation>
+        </message>
+        <message>
+            <source>Alt. Investments</source>
+            <translation>另類投資</translation>
+        </message>
+        <message>
+            <source>Always on Top</source>
+            <translation>視窗置頂</translation>
+        </message>
+        <message>
+            <source>Asia Markets</source>
+            <translation>亞洲市場</translation>
+        </message>
+        <message>
+            <source>CONNECTED</source>
+            <translation>已連線</translation>
+        </message>
+        <message>
+            <source>Contact Us</source>
+            <translation>聯絡我們</translation>
+        </message>
+        <message>
+            <source>Crypto Trading</source>
+            <translation>加密貨幣交易</translation>
+        </message>
+        <message>
+            <source>DISCONNECTED</source>
+            <translation>已斷線</translation>
+        </message>
+        <message>
+            <source>Dashboard</source>
+            <translation>儀表板</translation>
+        </message>
+        <message>
+            <source>Data Mapping</source>
+            <translation>資料映射</translation>
+        </message>
+        <message>
+            <source>Data Sources</source>
+            <translation>資料來源</translation>
+        </message>
+        <message>
+            <source>Derivatives</source>
+            <translation>衍生性商品</translation>
+        </message>
+        <message>
+            <source>Docs</source>
+            <translation>文件</translation>
+        </message>
+        <message>
+            <source>EMPTY</source>
+            <translation>空白</translation>
+        </message>
+        <message>
+            <source>Economics</source>
+            <translation>經濟</translation>
+        </message>
+        <message>
+            <source>Economics &amp;&amp; Data</source>
+            <translation>經濟與資料</translation>
+        </message>
+        <message>
+            <source>Equity Research</source>
+            <translation>股票研究</translation>
+        </message>
+        <message>
+            <source>Equity Trading</source>
+            <translation>股票交易</translation>
+        </message>
+        <message>
+            <source>Export Workspace</source>
+            <translation>匯出工作區</translation>
+        </message>
+        <message>
+            <source>FEEDS:</source>
+            <translation>資料源：</translation>
+        </message>
+        <message>
+            <source>FREE</source>
+            <translation>免費版</translation>
+        </message>
+        <message>
+            <source>File</source>
+            <translation>檔案</translation>
+        </message>
+        <message>
+            <source>File Manager</source>
+            <translation>檔案管理器</translation>
+        </message>
+        <message>
+            <source>Float Panel</source>
+            <translation>浮動面板</translation>
+        </message>
+        <message>
+            <source>Focus Mode</source>
+            <translation>專注模式</translation>
+        </message>
+        <message>
+            <source>Forum</source>
+            <translation>論壇</translation>
+        </message>
+        <message>
+            <source>Fullscreen</source>
+            <translation>全螢幕</translation>
+        </message>
+        <message>
+            <source>GOVT Data</source>
+            <translation>政府資料</translation>
+        </message>
+        <message>
+            <source>Geopolitics</source>
+            <translation>地緣政治</translation>
+        </message>
+        <message>
+            <source>Geopolitics View</source>
+            <translation>地緣政治檢視</translation>
+        </message>
+        <message>
+            <source>Help</source>
+            <translation>說明</translation>
+        </message>
+        <message>
+            <source>Help Center</source>
+            <translation>說明中心</translation>
+        </message>
+        <message>
+            <source>Import Workspace</source>
+            <translation>匯入工作區</translation>
+        </message>
+        <message>
+            <source>LAT: ---</source>
+            <translation>延遲：---</translation>
+        </message>
+        <message>
+            <source>LAYOUT:</source>
+            <translation>版面：</translation>
+        </message>
+        <message>
+            <source>LOGOUT</source>
+            <translation>登出</translation>
+        </message>
+        <message>
+            <source>Logout</source>
+            <translation>登出</translation>
+        </message>
+        <message>
+            <source>M&amp;&amp;A Analytics</source>
+            <translation>併購分析</translation>
+        </message>
+        <message>
+            <source>M&amp;A Analytics</source>
+            <translation>併購分析</translation>
+        </message>
+        <message>
+            <source>MCP Servers</source>
+            <translation>MCP 伺服器</translation>
+        </message>
+        <message>
+            <source>MEM: OPTIMAL</source>
+            <translation>記憶體：最佳</translation>
+        </message>
+        <message>
+            <source>Maritime</source>
+            <translation>海運</translation>
+        </message>
+        <message>
+            <source>Markets</source>
+            <translation>市場</translation>
+        </message>
+        <message>
+            <source>Markets &amp; Data</source>
+            <translation>市場與資料</translation>
+        </message>
+        <message>
+            <source>Markets View</source>
+            <translation>市場檢視</translation>
+        </message>
+        <message>
+            <source>Move to Monitor</source>
+            <translation>移至螢幕</translation>
+        </message>
+        <message>
+            <source>Navigate</source>
+            <translation>導覽</translation>
+        </message>
+        <message>
+            <source>New Window</source>
+            <translation>新視窗</translation>
+        </message>
+        <message>
+            <source>News Feed</source>
+            <translation>新聞</translation>
+        </message>
+        <message>
+            <source>News View</source>
+            <translation>新聞檢視</translation>
+        </message>
+        <message>
+            <source>Notes</source>
+            <translation>筆記</translation>
+        </message>
+        <message>
+            <source>Portfolio</source>
+            <translation>投資組合</translation>
+        </message>
+        <message>
+            <source>Portfolio View</source>
+            <translation>投組檢視</translation>
+        </message>
+        <message>
+            <source>Prediction Markets</source>
+            <translation>預測市場</translation>
+        </message>
+        <message>
+            <source>Privacy Policy</source>
+            <translation>隱私政策</translation>
+        </message>
+        <message>
+            <source>Quant Lab</source>
+            <translation>量化實驗室</translation>
+        </message>
+        <message>
+            <source>Quick Switch</source>
+            <translation>快速切換</translation>
+        </message>
+        <message>
+            <source>READY</source>
+            <translation>就緒</translation>
+        </message>
+        <message>
+            <source>Refresh All</source>
+            <translation>全部重新整理</translation>
+        </message>
+        <message>
+            <source>Refresh Screen</source>
+            <translation>重新整理</translation>
+        </message>
+        <message>
+            <source>Relationship Map</source>
+            <translation>關係圖譜</translation>
+        </message>
+        <message>
+            <source>Report Builder</source>
+            <translation>報表建構器</translation>
+        </message>
+        <message>
+            <source>Research</source>
+            <translation>研究</translation>
+        </message>
+        <message>
+            <source>Research &amp; Intelligence</source>
+            <translation>研究與情報</translation>
+        </message>
+        <message>
+            <source>SESSION:</source>
+            <translation>工作階段：</translation>
+        </message>
+        <message>
+            <source>Save Workspace</source>
+            <translation>儲存工作區</translation>
+        </message>
+        <message>
+            <source>Support</source>
+            <translation>支援</translation>
+        </message>
+        <message>
+            <source>Surface Analytics</source>
+            <translation>表面分析</translation>
+        </message>
+        <message>
+            <source>Take Screenshot</source>
+            <translation>螢幕截圖</translation>
+        </message>
+        <message>
+            <source>Terms of Service</source>
+            <translation>服務條款</translation>
+        </message>
+        <message>
+            <source>Tools</source>
+            <translation>工具</translation>
+        </message>
+        <message>
+            <source>Tools View</source>
+            <translation>工具檢視</translation>
+        </message>
+        <message>
+            <source>Trade Viz</source>
+            <translation>交易視覺化</translation>
+        </message>
+        <message>
+            <source>Trademarks</source>
+            <translation>商標</translation>
+        </message>
+        <message>
+            <source>Trading</source>
+            <translation>交易</translation>
+        </message>
+        <message>
+            <source>Trading &amp; Portfolio</source>
+            <translation>交易與投組</translation>
+        </message>
+        <message>
+            <source>View</source>
+            <translation>檢視</translation>
+        </message>
+        <message>
+            <source>Watchlist</source>
+            <translation>自選清單</translation>
+        </message>
+        <message>
+            <source>⬡ CHAT</source>
+            <translation>⬡ 對話</translation>
+        </message>
+        <message>
+            <source>  CATEGORIES</source>
+            <translation type="unfinished">  CATEGORIES</translation>
+        </message>
+        <message>
+            <source>  CATEGORY</source>
+            <translation type="unfinished">  CATEGORY</translation>
+        </message>
+        <message>
+            <source>  No contributors yet</source>
+            <translation type="unfinished">  No contributors yet</translation>
+        </message>
+        <message>
+            <source>  RISK METRICS</source>
+            <translation type="unfinished">  RISK METRICS</translation>
+        </message>
+        <message>
+            <source>  loading...</source>
+            <translation type="unfinished">  loading...</translation>
+        </message>
+        <message>
+            <source>  ·  %1 unverified%2</source>
+            <translation type="unfinished">  ·  %1 unverified%2</translation>
+        </message>
+        <message>
+            <source>  ·  %1 without price</source>
+            <translation type="unfinished">  ·  %1 without price</translation>
+        </message>
+        <message>
+            <source>  ⠋  LOADING</source>
+            <translation type="unfinished">  ⠋  LOADING</translation>
+        </message>
+        <message>
+            <source>  取消  </source>
+            <translation type="unfinished">  取消  </translation>
+        </message>
+        <message>
+            <source>  建立中...  </source>
+            <translation type="unfinished">  建立中...  </translation>
+        </message>
+        <message>
+            <source>  建立帳戶  </source>
+            <translation type="unfinished">  建立帳戶  </translation>
+        </message>
+        <message>
+            <source>  我已收到驗證碼  </source>
+            <translation type="unfinished">  我已收到驗證碼  </translation>
+        </message>
+        <message>
+            <source>  登入  </source>
+            <translation type="unfinished">  登入  </translation>
+        </message>
+        <message>
+            <source>  登入中...  </source>
+            <translation type="unfinished">  登入中...  </translation>
+        </message>
+        <message>
+            <source>  登出其他工作階段並繼續  </source>
+            <translation type="unfinished">  登出其他工作階段並繼續  </translation>
+        </message>
+        <message>
+            <source>  發送驗證碼  </source>
+            <translation type="unfinished">  發送驗證碼  </translation>
+        </message>
+        <message>
+            <source>  繼續登入  </source>
+            <translation type="unfinished">  繼續登入  </translation>
+        </message>
+        <message>
+            <source>  解鎖  </source>
+            <translation type="unfinished">  解鎖  </translation>
+        </message>
+        <message>
+            <source>  設定 PIN 碼  </source>
+            <translation type="unfinished">  設定 PIN 碼  </translation>
+        </message>
+        <message>
+            <source>  重新登入  </source>
+            <translation type="unfinished">  重新登入  </translation>
+        </message>
+        <message>
+            <source>  重設密碼  </source>
+            <translation type="unfinished">  重設密碼  </translation>
+        </message>
+        <message>
+            <source>  開啟瀏覽器  </source>
+            <translation type="unfinished">  開啟瀏覽器  </translation>
+        </message>
+        <message>
+            <source>  驗證  </source>
+            <translation type="unfinished">  驗證  </translation>
+        </message>
+        <message>
+            <source>  驗證中...  </source>
+            <translation type="unfinished">  驗證中...  </translation>
+        </message>
+        <message>
+            <source>  驗證帳戶  </source>
+            <translation type="unfinished">  驗證帳戶  </translation>
+        </message>
+        <message>
+            <source> hidden</source>
+            <translation type="unfinished"> hidden</translation>
+        </message>
+        <message>
+            <source>%1 / week (USDC) — %2% weekly real yield at %3 stake</source>
+            <translation type="unfinished">%1 / week (USDC) — %2% weekly real yield at %3 stake</translation>
+        </message>
+        <message>
+            <source>%1 holding(s) excluded — no live price.</source>
+            <translation type="unfinished">%1 holding(s) excluded — no live price.</translation>
+        </message>
+        <message>
+            <source>%1 of %2 events</source>
+            <translation type="unfinished">%1 of %2 events</translation>
+        </message>
+        <message>
+            <source>(No recent reports)</source>
+            <translation type="unfinished">(No recent reports)</translation>
+        </message>
+        <message>
+            <source>(P&amp;L return proxy, top 6 by weight)</source>
+            <translation type="unfinished">(P&amp;L return proxy, top 6 by weight)</translation>
+        </message>
+        <message>
+            <source>(no events recorded yet)</source>
+            <translation type="unfinished">(no events recorded yet)</translation>
+        </message>
+        <message>
+            <source>(no portfolios yet)</source>
+            <translation type="unfinished">(no portfolios yet)</translation>
+        </message>
+        <message>
+            <source>+ ADD</source>
+            <translation type="unfinished">+ ADD</translation>
+        </message>
+        <message>
+            <source>+ ADD CONNECTION</source>
+            <translation type="unfinished">+ ADD CONNECTION</translation>
+        </message>
+        <message>
+            <source>+ ADD CURRENT SERIES</source>
+            <translation type="unfinished">+ ADD CURRENT SERIES</translation>
+        </message>
+        <message>
+            <source>+ ADD SLOT</source>
+            <translation type="unfinished">+ ADD SLOT</translation>
+        </message>
+        <message>
+            <source>+ ADD TO SELECTION</source>
+            <translation type="unfinished">+ ADD TO SELECTION</translation>
+        </message>
+        <message>
+            <source>+ ADD TO TEAM</source>
+            <translation type="unfinished">+ ADD TO TEAM</translation>
+        </message>
+        <message>
+            <source>+ ADVANCED</source>
+            <translation type="unfinished">+ ADVANCED</translation>
+        </message>
+        <message>
+            <source>+ Add</source>
+            <translation type="unfinished">+ Add</translation>
+        </message>
+        <message>
+            <source>+ Add Tag Override</source>
+            <translation type="unfinished">+ Add Tag Override</translation>
+        </message>
+        <message>
+            <source>+ CREATE NEW</source>
+            <translation type="unfinished">+ CREATE NEW</translation>
+        </message>
+        <message>
+            <source>+ Import</source>
+            <translation type="unfinished">+ Import</translation>
+        </message>
+        <message>
+            <source>+ NEW</source>
+            <translation type="unfinished">+ NEW</translation>
+        </message>
+        <message>
+            <source>+ NEW MAPPING</source>
+            <translation type="unfinished">+ NEW MAPPING</translation>
+        </message>
+        <message>
+            <source>+ NEW POST</source>
+            <translation type="unfinished">+ NEW POST</translation>
+        </message>
+        <message>
+            <source>+ New</source>
+            <translation type="unfinished">+ New</translation>
+        </message>
+        <message>
+            <source>+ 新增</source>
+            <translation type="unfinished">+ 新增</translation>
+        </message>
+        <message>
+            <source>-- BEAR</source>
+            <translation type="unfinished">-- BEAR</translation>
+        </message>
+        <message>
+            <source>-- BULL</source>
+            <translation type="unfinished">-- BULL</translation>
+        </message>
+        <message>
+            <source>-- NEUTRAL</source>
+            <translation type="unfinished">-- NEUTRAL</translation>
+        </message>
+        <message>
+            <source>--- RECENT TRADES ---</source>
+            <translation type="unfinished">--- RECENT TRADES ---</translation>
+        </message>
+        <message>
+            <source>-----BEGIN RSA PRIVATE KEY-----\n…paste PEM contents here…\n-----END RSA PRIVATE KEY-----</source>
+            <translation type="unfinished">-----BEGIN RSA PRIVATE KEY-----\n…paste PEM contents here…\n-----END RSA PRIVATE KEY-----</translation>
+        </message>
+        <message>
+            <source>--:--:--</source>
+            <translation type="unfinished">--:--:--</translation>
+        </message>
+        <message>
+            <source>/100</source>
+            <translation type="unfinished">/100</translation>
+        </message>
+        <message>
+            <source>/v2/historical-candle/{symbol}/{interval}</source>
+            <translation type="unfinished">/v2/historical-candle/{symbol}/{interval}</translation>
+        </message>
+        <message>
+            <source>0 / 4000</source>
+            <translation type="unfinished">0 / 4000</translation>
+        </message>
+        <message>
+            <source>0 / 5</source>
+            <translation type="unfinished">0 / 5</translation>
+        </message>
+        <message>
+            <source>0 INDICATORS</source>
+            <translation type="unfinished">0 INDICATORS</translation>
+        </message>
+        <message>
+            <source>0 endpoints</source>
+            <translation type="unfinished">0 endpoints</translation>
+        </message>
+        <message>
+            <source>0 files | 0 B</source>
+            <translation type="unfinished">0 files | 0 B</translation>
+        </message>
+        <message>
+            <source>0 lists</source>
+            <translation type="unfinished">0 lists</translation>
+        </message>
+        <message>
+            <source>0 notes</source>
+            <translation type="unfinished">0 notes</translation>
+        </message>
+        <message>
+            <source>0 個小工具</source>
+            <translation type="unfinished">0 個小工具</translation>
+        </message>
+        <message>
+            <source>0.05, 0.25, 0.5, 0.75, 0.95</source>
+            <translation type="unfinished">0.05, 0.25, 0.5, 0.75, 0.95</translation>
+        </message>
+        <message>
+            <source>0/0</source>
+            <translation type="unfinished">0/0</translation>
+        </message>
+        <message>
+            <source>00000000-0000-0000-0000-000000000000</source>
+            <translation type="unfinished">00000000-0000-0000-0000-000000000000</translation>
+        </message>
+        <message>
+            <source>00:00:00</source>
+            <translation type="unfinished">00:00:00</translation>
+        </message>
+        <message>
+            <source>0x… (64 hex chars)</source>
+            <translation type="unfinished">0x… (64 hex chars)</translation>
+        </message>
+        <message>
+            <source>0x… (optional — derived via CREATE2 for proxy)</source>
+            <translation type="unfinished">0x… (optional — derived via CREATE2 for proxy)</translation>
+        </message>
+        <message>
+            <source>1 / 1</source>
+            <translation type="unfinished">1 / 1</translation>
+        </message>
+        <message>
+            <source>1 min</source>
+            <translation type="unfinished">1 min</translation>
+        </message>
+        <message>
+            <source>10 Years</source>
+            <translation type="unfinished">10 Years</translation>
+        </message>
+        <message>
+            <source>10 min</source>
+            <translation type="unfinished">10 min</translation>
+        </message>
+        <message>
+            <source>10,25,18,40,32,55</source>
+            <translation type="unfinished">10,25,18,40,32,55</translation>
+        </message>
+        <message>
+            <source>10,30,50,100,500</source>
+            <translation type="unfinished">10,30,50,100,500</translation>
+        </message>
+        <message>
+            <source>1000+ CHINESE &amp; GLOBAL FINANCIAL DATA ENDPOINTS</source>
+            <translation type="unfinished">1000+ CHINESE &amp; GLOBAL FINANCIAL DATA ENDPOINTS</translation>
+        </message>
+        <message>
+            <source>10M</source>
+            <translation type="unfinished">10M</translation>
+        </message>
+        <message>
+            <source>10m</source>
+            <translation type="unfinished">10m</translation>
+        </message>
+        <message>
+            <source>15 min</source>
+            <translation type="unfinished">15 min</translation>
+        </message>
+        <message>
+            <source>15M</source>
+            <translation type="unfinished">15M</translation>
+        </message>
+        <message>
+            <source>175,178,182,179,185,188,186,190,189</source>
+            <translation type="unfinished">175,178,182,179,185,188,186,190,189</translation>
+        </message>
+        <message>
+            <source>18 MODULES | 590+ QUANTITATIVE ENDPOINTS</source>
+            <translation type="unfinished">18 MODULES | 590+ QUANTITATIVE ENDPOINTS</translation>
+        </message>
+        <message>
+            <source>1D</source>
+            <translation type="unfinished">1D</translation>
+        </message>
+        <message>
+            <source>1H</source>
+            <translation type="unfinished">1H</translation>
+        </message>
+        <message>
+            <source>2 min</source>
+            <translation type="unfinished">2 min</translation>
+        </message>
+        <message>
+            <source>20 Years</source>
+            <translation type="unfinished">20 Years</translation>
+        </message>
+        <message>
+            <source>20) Browse</source>
+            <translation type="unfinished">20) Browse</translation>
+        </message>
+        <message>
+            <source>24h VOL</source>
+            <translation type="unfinished">24h VOL</translation>
+        </message>
+        <message>
+            <source>27 ANALYZERS  \xB7  10 ASSET CLASSES  \xB7  MULTI-ASSET ANALYTICS</source>
+            <translation type="unfinished">27 ANALYZERS  \xB7  10 ASSET CLASSES  \xB7  MULTI-ASSET ANALYTICS</translation>
+        </message>
+        <message>
+            <source>30 min</source>
+            <translation type="unfinished">30 min</translation>
+        </message>
+        <message>
+            <source>30M</source>
+            <translation type="unfinished">30M</translation>
+        </message>
+        <message>
+            <source>30m</source>
+            <translation type="unfinished">30m</translation>
+        </message>
+        <message>
+            <source>32 global data sources · 1000+ indicators</source>
+            <translation type="unfinished">32 global data sources · 1000+ indicators</translation>
+        </message>
+        <message>
+            <source>35 TOPICS  |  9 CATEGORIES</source>
+            <translation type="unfinished">35 TOPICS  |  9 CATEGORIES</translation>
+        </message>
+        <message>
+            <source>3h</source>
+            <translation type="unfinished">3h</translation>
+        </message>
+        <message>
+            <source>407+ STOCK ENDPOINTS | CN A/B, HK, US, TW</source>
+            <translation type="unfinished">407+ STOCK ENDPOINTS | CN A/B, HK, US, TW</translation>
+        </message>
+        <message>
+            <source>4H</source>
+            <translation type="unfinished">4H</translation>
+        </message>
+        <message>
+            <source>5 Years</source>
+            <translation type="unfinished">5 Years</translation>
+        </message>
+        <message>
+            <source>5 min</source>
+            <translation type="unfinished">5 min</translation>
+        </message>
+        <message>
+            <source>5,10,30,100</source>
+            <translation type="unfinished">5,10,30,100</translation>
+        </message>
+        <message>
+            <source>50 Years</source>
+            <translation type="unfinished">50 Years</translation>
+        </message>
+        <message>
+            <source>50+ indicators across 6 categories — powered by TALIpp incremental engine</source>
+            <translation type="unfinished">50+ indicators across 6 categories — powered by TALIpp incremental engine</translation>
+        </message>
+        <message>
+            <source>5M</source>
+            <translation type="unfinished">5M</translation>
+        </message>
+        <message>
+            <source>5m</source>
+            <translation type="unfinished">5m</translation>
+        </message>
+        <message>
+            <source>60 min</source>
+            <translation type="unfinished">60 min</translation>
+        </message>
+        <message>
+            <source>7 SCHEMAS</source>
+            <translation type="unfinished">7 SCHEMAS</translation>
+        </message>
+        <message>
+            <source>&lt; BACK</source>
+            <translation type="unfinished">&lt; BACK</translation>
+        </message>
+        <message>
+            <source>&lt;&lt;</source>
+            <translation type="unfinished">&lt;&lt;</translation>
+        </message>
+        <message>
+            <source>&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</source>
+            <translation type="unfinished">&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</source>
+            <translation type="unfinished">&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</source>
+            <translation type="unfinished">&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</source>
+            <translation type="unfinished">&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</translation>
+        </message>
+        <message>
+            <source>&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</source>
+            <translation type="unfinished">&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</translation>
+        </message>
+        <message>
+            <source>&gt;&gt;</source>
+            <translation type="unfinished">&gt;&gt;</translation>
+        </message>
+        <message>
+            <source>A profile = named LLM config you can assign to any agent or team.</source>
+            <translation type="unfinished">A profile = named LLM config you can assign to any agent or team.</translation>
+        </message>
+        <message>
+            <source>A:--</source>
+            <translation type="unfinished">A:--</translation>
+        </message>
+        <message>
+            <source>AAPL</source>
+            <translation type="unfinished">AAPL</translation>
+        </message>
+        <message>
+            <source>ACCOUNTS</source>
+            <translation type="unfinished">ACCOUNTS</translation>
+        </message>
+        <message>
+            <source>ACTION</source>
+            <translation>操作</translation>
+        </message>
+        <message>
+            <source>ACTIVITY</source>
+            <translation type="unfinished">ACTIVITY</translation>
+        </message>
+        <message>
+            <source>ADD</source>
+            <translation>新增</translation>
+        </message>
+        <message>
+            <source>ADD TICKER  ·  type to search, click or Enter to add</source>
+            <translation type="unfinished">ADD TICKER  ·  type to search, click or Enter to add</translation>
+        </message>
+        <message>
+            <source>ADD TO SINGLE VIEW</source>
+            <translation type="unfinished">ADD TO SINGLE VIEW</translation>
+        </message>
+        <message>
+            <source>ADD TO TEAM</source>
+            <translation type="unfinished">ADD TO TEAM</translation>
+        </message>
+        <message>
+            <source>ADD WIDGET</source>
+            <translation type="unfinished">ADD WIDGET</translation>
+        </message>
+        <message>
+            <source>ADD:</source>
+            <translation type="unfinished">ADD:</translation>
+        </message>
+        <message>
+            <source>ADF (H₀: unit root → non-stationary)</source>
+            <translation type="unfinished">ADF (H₀: unit root → non-stationary)</translation>
+        </message>
+        <message>
+            <source>AES-256-GCM</source>
+            <translation type="unfinished">AES-256-GCM</translation>
+        </message>
+        <message>
+            <source>AGENCIES</source>
+            <translation type="unfinished">AGENCIES</translation>
+        </message>
+        <message>
+            <source>AGENT CHAT</source>
+            <translation type="unfinished">AGENT CHAT</translation>
+        </message>
+        <message>
+            <source>AGENT MEMORY</source>
+            <translation type="unfinished">AGENT MEMORY</translation>
+        </message>
+        <message>
+            <source>AGENT STUDIO</source>
+            <translation type="unfinished">AGENT STUDIO</translation>
+        </message>
+        <message>
+            <source>AGENT:</source>
+            <translation type="unfinished">AGENT:</translation>
+        </message>
+        <message>
+            <source>AGENTS</source>
+            <translation type="unfinished">AGENTS</translation>
+        </message>
+        <message>
+            <source>AI</source>
+            <translation type="unfinished">AI</translation>
+        </message>
+        <message>
+            <source>AI MODELS (select 2+)</source>
+            <translation type="unfinished">AI MODELS (select 2+)</translation>
+        </message>
+        <message>
+            <source>AKSHARE DATA</source>
+            <translation type="unfinished">AKSHARE DATA</translation>
+        </message>
+        <message>
+            <source>AKSHARE DATA EXPLORER</source>
+            <translation type="unfinished">AKSHARE DATA EXPLORER</translation>
+        </message>
+        <message>
+            <source>ALERT TRIGGERS</source>
+            <translation>警示觸發條件</translation>
+        </message>
+        <message>
+            <source>ALL</source>
+            <translation>全部</translation>
+        </message>
+        <message>
+            <source>ALL SERIES</source>
+            <translation type="unfinished">ALL SERIES</translation>
+        </message>
+        <message>
+            <source>ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)</source>
+            <translation type="unfinished">ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)</translation>
+        </message>
+        <message>
+            <source>ALLOCATION WEIGHTS BY STRATEGY</source>
+            <translation type="unfinished">ALLOCATION WEIGHTS BY STRATEGY</translation>
+        </message>
+        <message>
+            <source>ALPHA ARENA</source>
+            <translation type="unfinished">ALPHA ARENA</translation>
+        </message>
+        <message>
+            <source>ALTERNATIVE INVESTMENTS</source>
+            <translation type="unfinished">ALTERNATIVE INVESTMENTS</translation>
+        </message>
+        <message>
+            <source>ANALYSIS RESULTS</source>
+            <translation type="unfinished">ANALYSIS RESULTS</translation>
+        </message>
+        <message>
+            <source>ANALYSIS TYPE</source>
+            <translation type="unfinished">ANALYSIS TYPE</translation>
+        </message>
+        <message>
+            <source>ANALYZE</source>
+            <translation type="unfinished">ANALYZE</translation>
+        </message>
+        <message>
+            <source>ANALYZER</source>
+            <translation type="unfinished">ANALYZER</translation>
+        </message>
+        <message>
+            <source>API</source>
+            <translation type="unfinished">API</translation>
+        </message>
+        <message>
+            <source>API CONFIGURATION</source>
+            <translation type="unfinished">API CONFIGURATION</translation>
+        </message>
+        <message>
+            <source>API CONFIGURATION &amp; SCHEMA TRANSFORMATION</source>
+            <translation type="unfinished">API CONFIGURATION &amp; SCHEMA TRANSFORMATION</translation>
+        </message>
+        <message>
+            <source>API CREDENTIALS</source>
+            <translation>API 憑證</translation>
+        </message>
+        <message>
+            <source>API KEY</source>
+            <translation type="unfinished">API KEY</translation>
+        </message>
+        <message>
+            <source>API Key</source>
+            <translation type="unfinished">API Key</translation>
+        </message>
+        <message>
+            <source>API Key ID:</source>
+            <translation type="unfinished">API Key ID:</translation>
+        </message>
+        <message>
+            <source>API POWERED</source>
+            <translation type="unfinished">API POWERED</translation>
+        </message>
+        <message>
+            <source>API SECRET</source>
+            <translation type="unfinished">API SECRET</translation>
+        </message>
+        <message>
+            <source>APPLY</source>
+            <translation>套用</translation>
+        </message>
+        <message>
+            <source>APPLY JSON</source>
+            <translation type="unfinished">APPLY JSON</translation>
+        </message>
+        <message>
+            <source>ARCHIVE</source>
+            <translation type="unfinished">ARCHIVE</translation>
+        </message>
+        <message>
+            <source>ASIA MARKETS</source>
+            <translation type="unfinished">ASIA MARKETS</translation>
+        </message>
+        <message>
+            <source>ASIA MARKETS TERMINAL</source>
+            <translation type="unfinished">ASIA MARKETS TERMINAL</translation>
+        </message>
+        <message>
+            <source>ASSET CLASSES</source>
+            <translation type="unfinished">ASSET CLASSES</translation>
+        </message>
+        <message>
+            <source>ASSIGN →</source>
+            <translation type="unfinished">ASSIGN →</translation>
+        </message>
+        <message>
+            <source>AUCTIONS</source>
+            <translation type="unfinished">AUCTIONS</translation>
+        </message>
+        <message>
+            <source>AUDIT LOG</source>
+            <translation type="unfinished">AUDIT LOG</translation>
+        </message>
+        <message>
+            <source>AUTO-LOCK</source>
+            <translation type="unfinished">AUTO-LOCK</translation>
+        </message>
+        <message>
+            <source>AUTO-ROUTE</source>
+            <translation type="unfinished">AUTO-ROUTE</translation>
+        </message>
+        <message>
+            <source>AVAILABLE</source>
+            <translation type="unfinished">AVAILABLE</translation>
+        </message>
+        <message>
+            <source>AVAILABLE AGENTS</source>
+            <translation type="unfinished">AVAILABLE AGENTS</translation>
+        </message>
+        <message>
+            <source>AVAILABLE CREDITS</source>
+            <translation type="unfinished">AVAILABLE CREDITS</translation>
+        </message>
+        <message>
+            <source>AVAILABLE TOOLS</source>
+            <translation type="unfinished">AVAILABLE TOOLS</translation>
+        </message>
+        <message>
+            <source>AWAITING ANALYSIS</source>
+            <translation type="unfinished">AWAITING ANALYSIS</translation>
+        </message>
+        <message>
+            <source>Aborted.</source>
+            <translation type="unfinished">Aborted.</translation>
+        </message>
+        <message>
+            <source>Access-Control-Allow-Headers: Content-Type\r\n</source>
+            <translation type="unfinished">Access-Control-Allow-Headers: Content-Type\r\n</translation>
+        </message>
+        <message>
+            <source>Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n</source>
+            <translation type="unfinished">Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n</translation>
+        </message>
+        <message>
+            <source>Access-Control-Allow-Origin: *\r\n</source>
+            <translation type="unfinished">Access-Control-Allow-Origin: *\r\n</translation>
+        </message>
+        <message>
+            <source>Account</source>
+            <translation type="unfinished">Account</translation>
+        </message>
+        <message>
+            <source>Acquire %1 more $FNCPT to unlock %2% off.</source>
+            <translation type="unfinished">Acquire %1 more $FNCPT to unlock %2% off.</translation>
+        </message>
+        <message>
+            <source>Activity fetch failed: %1</source>
+            <translation type="unfinished">Activity fetch failed: %1</translation>
+        </message>
+        <message>
+            <source>Actual values (must match predicted length)</source>
+            <translation type="unfinished">Actual values (must match predicted length)</translation>
+        </message>
+        <message>
+            <source>Add External MCP Server</source>
+            <translation type="unfinished">Add External MCP Server</translation>
+        </message>
+        <message>
+            <source>Add ticker</source>
+            <translation type="unfinished">Add ticker</translation>
+        </message>
+        <message>
+            <source>Add to existing portfolio</source>
+            <translation type="unfinished">Add to existing portfolio</translation>
+        </message>
+        <message>
+            <source>Agent</source>
+            <translation type="unfinished">Agent</translation>
+        </message>
+        <message>
+            <source>All</source>
+            <translation>全部</translation>
+        </message>
+        <message>
+            <source>All Agencies</source>
+            <translation type="unfinished">All Agencies</translation>
+        </message>
+        <message>
+            <source>All Categories</source>
+            <translation type="unfinished">All Categories</translation>
+        </message>
+        <message>
+            <source>All Commodities</source>
+            <translation type="unfinished">All Commodities</translation>
+        </message>
+        <message>
+            <source>All Events</source>
+            <translation type="unfinished">All Events</translation>
+        </message>
+        <message>
+            <source>All Fincept Terminal features unlocked.</source>
+            <translation type="unfinished">All Fincept Terminal features unlocked.</translation>
+        </message>
+        <message>
+            <source>All Fincept internal tools. Input JSON flows in as arguments.</source>
+            <translation type="unfinished">All Fincept internal tools. Input JSON flows in as arguments.</translation>
+        </message>
+        <message>
+            <source>All Publishers</source>
+            <translation type="unfinished">All Publishers</translation>
+        </message>
+        <message>
+            <source>All Types</source>
+            <translation type="unfinished">All Types</translation>
+        </message>
+        <message>
+            <source>All profiles</source>
+            <translation type="unfinished">All profiles</translation>
+        </message>
+        <message>
+            <source>All registered MCP tools — both internal (built-in) and external (from connected servers).</source>
+            <translation type="unfinished">All registered MCP tools — both internal (built-in) and external (from connected servers).</translation>
+        </message>
+        <message>
+            <source>Amount exceeds available $FNCPT.</source>
+            <translation type="unfinished">Amount exceeds available $FNCPT.</translation>
+        </message>
+        <message>
+            <source>Analytics workspace</source>
+            <translation type="unfinished">Analytics workspace</translation>
+        </message>
+        <message>
+            <source>Annual</source>
+            <translation type="unfinished">Annual</translation>
+        </message>
+        <message>
+            <source>Annual Expense:</source>
+            <translation type="unfinished">Annual Expense:</translation>
+        </message>
+        <message>
+            <source>Apply &amp; Save</source>
+            <translation type="unfinished">Apply &amp; Save</translation>
+        </message>
+        <message>
+            <source>Approve the lock in your wallet.</source>
+            <translation type="unfinished">Approve the lock in your wallet.</translation>
+        </message>
+        <message>
+            <source>Approve the swap in your wallet to complete the trade.</source>
+            <translation type="unfinished">Approve the swap in your wallet to complete the trade.</translation>
+        </message>
+        <message>
+            <source>Approve the transaction in your wallet to complete this action.</source>
+            <translation type="unfinished">Approve the transaction in your wallet to complete this action.</translation>
+        </message>
+        <message>
+            <source>Assign each holding to a sector for allocation analysis.</source>
+            <translation type="unfinished">Assign each holding to a sector for allocation analysis.</translation>
+        </message>
+        <message>
+            <source>Author:</source>
+            <translation type="unfinished">Author:</translation>
+        </message>
+        <message>
+            <source>Auto-generated from\nHeading components.</source>
+            <translation type="unfinished">Auto-generated from\nHeading components.</translation>
+        </message>
+        <message>
+            <source>Auto-login (TOTP)</source>
+            <translation type="unfinished">Auto-login (TOTP)</translation>
+        </message>
+        <message>
+            <source>Auto-start on launch</source>
+            <translation type="unfinished">Auto-start on launch</translation>
+        </message>
+        <message>
+            <source>Available after %1</source>
+            <translation type="unfinished">Available after %1</translation>
+        </message>
+        <message>
+            <source>Available: %1 $FNCPT</source>
+            <translation type="unfinished">Available: %1 $FNCPT</translation>
+        </message>
+        <message>
+            <source>Available: —</source>
+            <translation type="unfinished">Available: —</translation>
+        </message>
+        <message>
+            <source>Awaiting events…</source>
+            <translation type="unfinished">Awaiting events…</translation>
+        </message>
+        <message>
+            <source>Awaiting wallet signature…</source>
+            <translation type="unfinished">Awaiting wallet signature…</translation>
+        </message>
+        <message>
+            <source>B:--</source>
+            <translation type="unfinished">B:--</translation>
+        </message>
+        <message>
+            <source>BACKGROUND TASKS</source>
+            <translation type="unfinished">BACKGROUND TASKS</translation>
+        </message>
+        <message>
+            <source>BACKTEST RESULTS</source>
+            <translation type="unfinished">BACKTEST RESULTS</translation>
+        </message>
+        <message>
+            <source>BANK</source>
+            <translation type="unfinished">BANK</translation>
+        </message>
+        <message>
+            <source>BENCHMARK COMPARISON</source>
+            <translation type="unfinished">BENCHMARK COMPARISON</translation>
+        </message>
+        <message>
+            <source>BILLS</source>
+            <translation type="unfinished">BILLS</translation>
+        </message>
+        <message>
+            <source>BLACK-LITTERMAN MODEL</source>
+            <translation type="unfinished">BLACK-LITTERMAN MODEL</translation>
+        </message>
+        <message>
+            <source>BLACK-SCHOLES PRICING</source>
+            <translation type="unfinished">BLACK-SCHOLES PRICING</translation>
+        </message>
+        <message>
+            <source>BOND PRICE CALCULATOR</source>
+            <translation type="unfinished">BOND PRICE CALCULATOR</translation>
+        </message>
+        <message>
+            <source>BROADCAST ORDER</source>
+            <translation type="unfinished">BROADCAST ORDER</translation>
+        </message>
+        <message>
+            <source>BROKER TEMPLATES</source>
+            <translation type="unfinished">BROKER TEMPLATES</translation>
+        </message>
+        <message>
+            <source>BROWSE</source>
+            <translation type="unfinished">BROWSE</translation>
+        </message>
+        <message>
+            <source>BTC/USDT</source>
+            <translation type="unfinished">BTC/USDT</translation>
+        </message>
+        <message>
+            <source>BUY</source>
+            <translation>買入</translation>
+        </message>
+        <message>
+            <source>BUY ASSET</source>
+            <translation type="unfinished">BUY ASSET</translation>
+        </message>
+        <message>
+            <source>BUY BTC/USDT</source>
+            <translation type="unfinished">BUY BTC/USDT</translation>
+        </message>
+        <message>
+            <source>BUY RELIANCE</source>
+            <translation type="unfinished">BUY RELIANCE</translation>
+        </message>
+        <message>
+            <source>Backtesting, portfolio optimization and legacy quant tools</source>
+            <translation type="unfinished">Backtesting, portfolio optimization and legacy quant tools</translation>
+        </message>
+        <message>
+            <source>Balance fetch failed: %1</source>
+            <translation type="unfinished">Balance fetch failed: %1</translation>
+        </message>
+        <message>
+            <source>Balance: %1 %2</source>
+            <translation type="unfinished">Balance: %1 %2</translation>
+        </message>
+        <message>
+            <source>Balance: 0 %1</source>
+            <translation type="unfinished">Balance: 0 %1</translation>
+        </message>
+        <message>
+            <source>Balance: —</source>
+            <translation type="unfinished">Balance: —</translation>
+        </message>
+        <message>
+            <source>Base URL</source>
+            <translation type="unfinished">Base URL</translation>
+        </message>
+        <message>
+            <source>Be the first to share your thoughts</source>
+            <translation type="unfinished">Be the first to share your thoughts</translation>
+        </message>
+        <message>
+            <source>Be the first to start a conversation</source>
+            <translation type="unfinished">Be the first to start a conversation</translation>
+        </message>
+        <message>
+            <source>Be the first to start a discussion</source>
+            <translation type="unfinished">Be the first to start a discussion</translation>
+        </message>
+        <message>
+            <source>Benchmark daily returns (decimals)</source>
+            <translation type="unfinished">Benchmark daily returns (decimals)</translation>
+        </message>
+        <message>
+            <source>Benchmark returns (optional; same length as portfolio if provided)</source>
+            <translation type="unfinished">Benchmark returns (optional; same length as portfolio if provided)</translation>
+        </message>
+        <message>
+            <source>Benefits &amp; Costs of Trade</source>
+            <translation type="unfinished">Benefits &amp; Costs of Trade</translation>
+        </message>
+        <message>
+            <source>Bilateral Agreement</source>
+            <translation type="unfinished">Bilateral Agreement</translation>
+        </message>
+        <message>
+            <source>Bills</source>
+            <translation type="unfinished">Bills</translation>
+        </message>
+        <message>
+            <source>Bonds</source>
+            <translation>債券</translation>
+        </message>
+        <message>
+            <source>Boosts recognition of financial symbols and proper nouns.</source>
+            <translation type="unfinished">Boosts recognition of financial symbols and proper nouns.</translation>
+        </message>
+        <message>
+            <source>Browse File...</source>
+            <translation type="unfinished">Browse File...</translation>
+        </message>
+        <message>
+            <source>Browse for File...</source>
+            <translation type="unfinished">Browse for File...</translation>
+        </message>
+        <message>
+            <source>Browser login</source>
+            <translation type="unfinished">Browser login</translation>
+        </message>
+        <message>
+            <source>Browser opened. Approve the connection and the signature in your wallet.</source>
+            <translation type="unfinished">Browser opened. Approve the connection and the signature in your wallet.</translation>
+        </message>
+        <message>
+            <source>Building lock transaction…</source>
+            <translation type="unfinished">Building lock transaction…</translation>
+        </message>
+        <message>
+            <source>Building swap transaction…</source>
+            <translation type="unfinished">Building swap transaction…</translation>
+        </message>
+        <message>
+            <source>CACHE &amp; SECURITY SETTINGS</source>
+            <translation type="unfinished">CACHE &amp; SECURITY SETTINGS</translation>
+        </message>
+        <message>
+            <source>CALCULATE</source>
+            <translation type="unfinished">CALCULATE</translation>
+        </message>
+        <message>
+            <source>CANCEL</source>
+            <translation>取消</translation>
+        </message>
+        <message>
+            <source>CATEGORIES</source>
+            <translation type="unfinished">CATEGORIES</translation>
+        </message>
+        <message>
+            <source>CATEGORY</source>
+            <translation>分類</translation>
+        </message>
+        <message>
+            <source>CATEGORY: </source>
+            <translation type="unfinished">CATEGORY: </translation>
+        </message>
+        <message>
+            <source>CATEGORY: REALTIME</source>
+            <translation type="unfinished">CATEGORY: REALTIME</translation>
+        </message>
+        <message>
+            <source>CHANGE PIN</source>
+            <translation type="unfinished">CHANGE PIN</translation>
+        </message>
+        <message>
+            <source>CHANNELS</source>
+            <translation type="unfinished">CHANNELS</translation>
+        </message>
+        <message>
+            <source>CHART</source>
+            <translation>圖表</translation>
+        </message>
+        <message>
+            <source>CHOOSE TEMPLATE</source>
+            <translation type="unfinished">CHOOSE TEMPLATE</translation>
+        </message>
+        <message>
+            <source>CKAN PORTAL:</source>
+            <translation type="unfinished">CKAN PORTAL:</translation>
+        </message>
+        <message>
+            <source>CLEAR</source>
+            <translation>清除</translation>
+        </message>
+        <message>
+            <source>CLEAR ALL</source>
+            <translation type="unfinished">CLEAR ALL</translation>
+        </message>
+        <message>
+            <source>CLEAR CACHE</source>
+            <translation type="unfinished">CLEAR CACHE</translation>
+        </message>
+        <message>
+            <source>CLEAR SELECTION</source>
+            <translation type="unfinished">CLEAR SELECTION</translation>
+        </message>
+        <message>
+            <source>CLR</source>
+            <translation type="unfinished">CLR</translation>
+        </message>
+        <message>
+            <source>COMING SOON</source>
+            <translation type="unfinished">COMING SOON</translation>
+        </message>
+        <message>
+            <source>COMMUNITY</source>
+            <translation type="unfinished">COMMUNITY</translation>
+        </message>
+        <message>
+            <source>COMP: </source>
+            <translation type="unfinished">COMP: </translation>
+        </message>
+        <message>
+            <source>COMPETITION NAME</source>
+            <translation type="unfinished">COMPETITION NAME</translation>
+        </message>
+        <message>
+            <source>CONFIG FIELDS</source>
+            <translation type="unfinished">CONFIG FIELDS</translation>
+        </message>
+        <message>
+            <source>CONFIGURED</source>
+            <translation type="unfinished">CONFIGURED</translation>
+        </message>
+        <message>
+            <source>CONGRESS</source>
+            <translation type="unfinished">CONGRESS</translation>
+        </message>
+        <message>
+            <source>CONNECT</source>
+            <translation type="unfinished">CONNECT</translation>
+        </message>
+        <message>
+            <source>CONNECT WALLET</source>
+            <translation type="unfinished">CONNECT WALLET</translation>
+        </message>
+        <message>
+            <source>CONNECTORS</source>
+            <translation type="unfinished">CONNECTORS</translation>
+        </message>
+        <message>
+            <source>CONSTITUENTS (from portfolio holdings)</source>
+            <translation type="unfinished">CONSTITUENTS (from portfolio holdings)</translation>
+        </message>
+        <message>
+            <source>CONTACT US</source>
+            <translation type="unfinished">CONTACT US</translation>
+        </message>
+        <message>
+            <source>CONTENT</source>
+            <translation>內容</translation>
+        </message>
+        <message>
+            <source>CONVERSATIONS</source>
+            <translation type="unfinished">CONVERSATIONS</translation>
+        </message>
+        <message>
+            <source>COORDINATOR LLM PROFILE</source>
+            <translation type="unfinished">COORDINATOR LLM PROFILE</translation>
+        </message>
+        <message>
+            <source>COPIED</source>
+            <translation type="unfinished">COPIED</translation>
+        </message>
+        <message>
+            <source>COPY</source>
+            <translation>複製</translation>
+        </message>
+        <message>
+            <source>COPY ADDRESS</source>
+            <translation type="unfinished">COPY ADDRESS</translation>
+        </message>
+        <message>
+            <source>CORE</source>
+            <translation type="unfinished">CORE</translation>
+        </message>
+        <message>
+            <source>CORPORATE INTELLIGENCE MAP</source>
+            <translation type="unfinished">CORPORATE INTELLIGENCE MAP</translation>
+        </message>
+        <message>
+            <source>CORRELATION</source>
+            <translation type="unfinished">CORRELATION</translation>
+        </message>
+        <message>
+            <source>CORRELATION MATRIX</source>
+            <translation type="unfinished">CORRELATION MATRIX</translation>
+        </message>
+        <message>
+            <source>COT MARKET SENTIMENT</source>
+            <translation type="unfinished">COT MARKET SENTIMENT</translation>
+        </message>
+        <message>
+            <source>COUNTRY</source>
+            <translation>國家</translation>
+        </message>
+        <message>
+            <source>COUNTRY:</source>
+            <translation type="unfinished">COUNTRY:</translation>
+        </message>
+        <message>
+            <source>CREDIT DEFAULT SWAP PRICING</source>
+            <translation type="unfinished">CREDIT DEFAULT SWAP PRICING</translation>
+        </message>
+        <message>
+            <source>CURRENT MAPPING</source>
+            <translation type="unfinished">CURRENT MAPPING</translation>
+        </message>
+        <message>
+            <source>CUSTOM PLAN QUERY</source>
+            <translation type="unfinished">CUSTOM PLAN QUERY</translation>
+        </message>
+        <message>
+            <source>CUSTOM STREAM</source>
+            <translation type="unfinished">CUSTOM STREAM</translation>
+        </message>
+        <message>
+            <source>Cache-Control: no-store\r\n</source>
+            <translation type="unfinished">Cache-Control: no-store\r\n</translation>
+        </message>
+        <message>
+            <source>Cache:</source>
+            <translation type="unfinished">Cache:</translation>
+        </message>
+        <message>
+            <source>Cancel</source>
+            <translation>取消</translation>
+        </message>
+        <message>
+            <source>Cancelled</source>
+            <translation>已取消</translation>
+        </message>
+        <message>
+            <source>Cancelled.</source>
+            <translation type="unfinished">Cancelled.</translation>
+        </message>
+        <message>
+            <source>Categories</source>
+            <translation type="unfinished">Categories</translation>
+        </message>
+        <message>
+            <source>Center</source>
+            <translation type="unfinished">Center</translation>
+        </message>
+        <message>
+            <source>Change PIN</source>
+            <translation type="unfinished">Change PIN</translation>
+        </message>
+        <message>
+            <source>Change...</source>
+            <translation type="unfinished">Change...</translation>
+        </message>
+        <message>
+            <source>Chart title (e.g. Strategy vs S&amp;P 500)</source>
+            <translation type="unfinished">Chart title (e.g. Strategy vs S&amp;P 500)</translation>
+        </message>
+        <message>
+            <source>Choose a template:</source>
+            <translation type="unfinished">Choose a template:</translation>
+        </message>
+        <message>
+            <source>Choose an amount and duration.</source>
+            <translation type="unfinished">Choose an amount and duration.</translation>
+        </message>
+        <message>
+            <source>Clear</source>
+            <translation>清除</translation>
+        </message>
+        <message>
+            <source>Clear ALL User Data</source>
+            <translation type="unfinished">Clear ALL User Data</translation>
+        </message>
+        <message>
+            <source>Clear All Cache</source>
+            <translation>清除所有快取</translation>
+        </message>
+        <message>
+            <source>Clear Cell</source>
+            <translation type="unfinished">Clear Cell</translation>
+        </message>
+        <message>
+            <source>Clear Kalshi credentials?</source>
+            <translation type="unfinished">Clear Kalshi credentials?</translation>
+        </message>
+        <message>
+            <source>Clear Polymarket credentials?</source>
+            <translation type="unfinished">Clear Polymarket credentials?</translation>
+        </message>
+        <message>
+            <source>Cleared</source>
+            <translation>已清除</translation>
+        </message>
+        <message>
+            <source>Cleared. Public RPC will be used.</source>
+            <translation type="unfinished">Cleared. Public RPC will be used.</translation>
+        </message>
+        <message>
+            <source>Click any post from the feed to read it</source>
+            <translation type="unfinished">Click any post from the feed to read it</translation>
+        </message>
+        <message>
+            <source>Close</source>
+            <translation>關閉</translation>
+        </message>
+        <message>
+            <source>Close / Delete Position</source>
+            <translation type="unfinished">Close / Delete Position</translation>
+        </message>
+        <message>
+            <source>Close Ticket</source>
+            <translation type="unfinished">Close Ticket</translation>
+        </message>
+        <message>
+            <source>Collapse / expand transaction history</source>
+            <translation type="unfinished">Collapse / expand transaction history</translation>
+        </message>
+        <message>
+            <source>Comments are Polymarket-only</source>
+            <translation type="unfinished">Comments are Polymarket-only</translation>
+        </message>
+        <message>
+            <source>Common Market (e.g. EU Single Market)</source>
+            <translation type="unfinished">Common Market (e.g. EU Single Market)</translation>
+        </message>
+        <message>
+            <source>Company:</source>
+            <translation type="unfinished">Company:</translation>
+        </message>
+        <message>
+            <source>Complete</source>
+            <translation type="unfinished">Complete</translation>
+        </message>
+        <message>
+            <source>Configure a URL via the gear icon</source>
+            <translation type="unfinished">Configure a URL via the gear icon</translation>
+        </message>
+        <message>
+            <source>Configure — Geopolitics Events</source>
+            <translation type="unfinished">Configure — Geopolitics Events</translation>
+        </message>
+        <message>
+            <source>Configure — Maritime Vessels</source>
+            <translation type="unfinished">Configure — Maritime Vessels</translation>
+        </message>
+        <message>
+            <source>Configure — Notes</source>
+            <translation type="unfinished">Configure — Notes</translation>
+        </message>
+        <message>
+            <source>Confirm</source>
+            <translation>確認</translation>
+        </message>
+        <message>
+            <source>Confirmed: %1…</source>
+            <translation type="unfinished">Confirmed: %1…</translation>
+        </message>
+        <message>
+            <source>Connect Wallet</source>
+            <translation type="unfinished">Connect Wallet</translation>
+        </message>
+        <message>
+            <source>Connect a trading account</source>
+            <translation type="unfinished">Connect a trading account</translation>
+        </message>
+        <message>
+            <source>Connect a wallet to lock $FNCPT.</source>
+            <translation type="unfinished">Connect a wallet to lock $FNCPT.</translation>
+        </message>
+        <message>
+            <source>Connect a wallet to see your tier.</source>
+            <translation type="unfinished">Connect a wallet to see your tier.</translation>
+        </message>
+        <message>
+            <source>Connect a wallet to swap.</source>
+            <translation type="unfinished">Connect a wallet to swap.</translation>
+        </message>
+        <message>
+            <source>Connect a wallet to view activity.</source>
+            <translation type="unfinished">Connect a wallet to view activity.</translation>
+        </message>
+        <message>
+            <source>Connect an account\nto place orders</source>
+            <translation type="unfinished">Connect an account\nto place orders</translation>
+        </message>
+        <message>
+            <source>Connect with pasted token</source>
+            <translation type="unfinished">Connect with pasted token</translation>
+        </message>
+        <message>
+            <source>Connect your Solana wallet</source>
+            <translation type="unfinished">Connect your Solana wallet</translation>
+        </message>
+        <message>
+            <source>Connection Name</source>
+            <translation type="unfinished">Connection Name</translation>
+        </message>
+        <message>
+            <source>Connection: close\r\n</source>
+            <translation type="unfinished">Connection: close\r\n</translation>
+        </message>
+        <message>
+            <source>Content-Length: </source>
+            <translation type="unfinished">Content-Length: </translation>
+        </message>
+        <message>
+            <source>Content-Type: </source>
+            <translation type="unfinished">Content-Type: </translation>
+        </message>
+        <message>
+            <source>Content-Type: application/json\nAccept: application/json</source>
+            <translation type="unfinished">Content-Type: application/json\nAccept: application/json</translation>
+        </message>
+        <message>
+            <source>Copy</source>
+            <translation>複製</translation>
+        </message>
+        <message>
+            <source>Copy Path</source>
+            <translation type="unfinished">Copy Path</translation>
+        </message>
+        <message>
+            <source>Copy Ticker</source>
+            <translation type="unfinished">Copy Ticker</translation>
+        </message>
+        <message>
+            <source>Could not find request_token in pasted text</source>
+            <translation type="unfinished">Could not find request_token in pasted text</translation>
+        </message>
+        <message>
+            <source>Create</source>
+            <translation>建立</translation>
+        </message>
+        <message>
+            <source>Create &amp; Switch</source>
+            <translation type="unfinished">Create &amp; Switch</translation>
+        </message>
+        <message>
+            <source>Create Isolated Workspaces</source>
+            <translation type="unfinished">Create Isolated Workspaces</translation>
+        </message>
+        <message>
+            <source>Create a new portfolio</source>
+            <translation type="unfinished">Create a new portfolio</translation>
+        </message>
+        <message>
+            <source>Create new portfolio from file</source>
+            <translation type="unfinished">Create new portfolio from file</translation>
+        </message>
+        <message>
+            <source>Create new profile</source>
+            <translation type="unfinished">Create new profile</translation>
+        </message>
+        <message>
+            <source>Create, import, or explore a sample portfolio to get started.</source>
+            <translation type="unfinished">Create, import, or explore a sample portfolio to get started.</translation>
+        </message>
+        <message>
+            <source>Cron-based agent queries (e.g. daily 9 AM).</source>
+            <translation type="unfinished">Cron-based agent queries (e.g. daily 9 AM).</translation>
+        </message>
+        <message>
+            <source>Cross</source>
+            <translation type="unfinished">Cross</translation>
+        </message>
+        <message>
+            <source>Culture</source>
+            <translation type="unfinished">Culture</translation>
+        </message>
+        <message>
+            <source>Current Age:</source>
+            <translation type="unfinished">Current Age:</translation>
+        </message>
+        <message>
+            <source>Custom</source>
+            <translation>自訂</translation>
+        </message>
+        <message>
+            <source>Custom RPC override active.</source>
+            <translation type="unfinished">Custom RPC override active.</translation>
+        </message>
+        <message>
+            <source>Customs Union (e.g. EU, Mercosur)</source>
+            <translation type="unfinished">Customs Union (e.g. EU, Mercosur)</translation>
+        </message>
+        <message>
+            <source>Cut</source>
+            <translation type="unfinished">Cut</translation>
+        </message>
+        <message>
+            <source>DANGER ZONE</source>
+            <translation>危險操作區</translation>
+        </message>
+        <message>
+            <source>DATA MAPPING ENGINE</source>
+            <translation type="unfinished">DATA MAPPING ENGINE</translation>
+        </message>
+        <message>
+            <source>DATA MAPPING v1.0</source>
+            <translation type="unfinished">DATA MAPPING v1.0</translation>
+        </message>
+        <message>
+            <source>DATA MONITORS</source>
+            <translation type="unfinished">DATA MONITORS</translation>
+        </message>
+        <message>
+            <source>DATA SERVICES</source>
+            <translation type="unfinished">DATA SERVICES</translation>
+        </message>
+        <message>
+            <source>DATA SOURCES</source>
+            <translation type="unfinished">DATA SOURCES</translation>
+        </message>
+        <message>
+            <source>DATASET</source>
+            <translation type="unfinished">DATASET</translation>
+        </message>
+        <message>
+            <source>DATASETS</source>
+            <translation type="unfinished">DATASETS</translation>
+        </message>
+        <message>
+            <source>DATE</source>
+            <translation>日期</translation>
+        </message>
+        <message>
+            <source>DEEPGRAM SETTINGS</source>
+            <translation type="unfinished">DEEPGRAM SETTINGS</translation>
+        </message>
+        <message>
+            <source>DEL</source>
+            <translation type="unfinished">DEL</translation>
+        </message>
+        <message>
+            <source>DEPLOY</source>
+            <translation type="unfinished">DEPLOY</translation>
+        </message>
+        <message>
+            <source>DEPLOY WORKFLOW</source>
+            <translation type="unfinished">DEPLOY WORKFLOW</translation>
+        </message>
+        <message>
+            <source>DERIVATIVES</source>
+            <translation>衍生性商品</translation>
+        </message>
+        <message>
+            <source>DERIVATIVES PRICING</source>
+            <translation type="unfinished">DERIVATIVES PRICING</translation>
+        </message>
+        <message>
+            <source>DESCRIPTION</source>
+            <translation>說明</translation>
+        </message>
+        <message>
+            <source>DISABLE ALL</source>
+            <translation type="unfinished">DISABLE ALL</translation>
+        </message>
+        <message>
+            <source>DISCONNECT</source>
+            <translation type="unfinished">DISCONNECT</translation>
+        </message>
+        <message>
+            <source>DISCUSSIONS</source>
+            <translation type="unfinished">DISCUSSIONS</translation>
+        </message>
+        <message>
+            <source>DOCUMENTATION</source>
+            <translation type="unfinished">DOCUMENTATION</translation>
+        </message>
+        <message>
+            <source>DONE</source>
+            <translation>完成</translation>
+        </message>
+        <message>
+            <source>DOWNLOAD DEMO</source>
+            <translation type="unfinished">DOWNLOAD DEMO</translation>
+        </message>
+        <message>
+            <source>DRAFT</source>
+            <translation>草稿</translation>
+        </message>
+        <message>
+            <source>DRAWDOWN &amp; RISK METRICS</source>
+            <translation type="unfinished">DRAWDOWN &amp; RISK METRICS</translation>
+        </message>
+        <message>
+            <source>DUPONT ANALYSIS</source>
+            <translation type="unfinished">DUPONT ANALYSIS</translation>
+        </message>
+        <message>
+            <source>Daily returns (&gt;= 30 values)</source>
+            <translation type="unfinished">Daily returns (&gt;= 30 values)</translation>
+        </message>
+        <message>
+            <source>Daily returns (decimals). Need at least 30 values for stable VaR.</source>
+            <translation type="unfinished">Daily returns (decimals). Need at least 30 values for stable VaR.</translation>
+        </message>
+        <message>
+            <source>Daily returns: comma-, space-, or newline-separated. Need at least 5 values.</source>
+            <translation type="unfinished">Daily returns: comma-, space-, or newline-separated. Need at least 5 values.</translation>
+        </message>
+        <message>
+            <source>Data Services</source>
+            <translation type="unfinished">Data Services</translation>
+        </message>
+        <message>
+            <source>DataHub Inspector</source>
+            <translation type="unfinished">DataHub Inspector</translation>
+        </message>
+        <message>
+            <source>Date:</source>
+            <translation type="unfinished">Date:</translation>
+        </message>
+        <message>
+            <source>Deals JSON with cash_pct and stock_pct fields...</source>
+            <translation type="unfinished">Deals JSON with cash_pct and stock_pct fields...</translation>
+        </message>
+        <message>
+            <source>Deepgram (API key required)</source>
+            <translation type="unfinished">Deepgram (API key required)</translation>
+        </message>
+        <message>
+            <source>Default (Global)</source>
+            <translation type="unfinished">Default (Global)</translation>
+        </message>
+        <message>
+            <source>Default (global LLM)</source>
+            <translation type="unfinished">Default (global LLM)</translation>
+        </message>
+        <message>
+            <source>Delete</source>
+            <translation>刪除</translation>
+        </message>
+        <message>
+            <source>Delete Connection</source>
+            <translation type="unfinished">Delete Connection</translation>
+        </message>
+        <message>
+            <source>Delete Selected Columns</source>
+            <translation type="unfinished">Delete Selected Columns</translation>
+        </message>
+        <message>
+            <source>Delete Selected Rows</source>
+            <translation type="unfinished">Delete Selected Rows</translation>
+        </message>
+        <message>
+            <source>Delete all temporary cached data. Will be re-fetched on next access.</source>
+            <translation type="unfinished">Delete all temporary cached data. Will be re-fetched on next access.</translation>
+        </message>
+        <message>
+            <source>Demo signature — connect a treasury endpoint for a real burn tx.</source>
+            <translation type="unfinished">Demo signature — connect a treasury endpoint for a real burn tx.</translation>
+        </message>
+        <message>
+            <source>Dependent variable y (&gt;= 10 values)</source>
+            <translation type="unfinished">Dependent variable y (&gt;= 10 values)</translation>
+        </message>
+        <message>
+            <source>Description (optional)</source>
+            <translation type="unfinished">Description (optional)</translation>
+        </message>
+        <message>
+            <source>Deselect all</source>
+            <translation type="unfinished">Deselect all</translation>
+        </message>
+        <message>
+            <source>Developed Economy</source>
+            <translation type="unfinished">Developed Economy</translation>
+        </message>
+        <message>
+            <source>Developing Economy</source>
+            <translation type="unfinished">Developing Economy</translation>
+        </message>
+        <message>
+            <source>Discovering agents…</source>
+            <translation type="unfinished">Discovering agents…</translation>
+        </message>
+        <message>
+            <source>Done</source>
+            <translation>完成</translation>
+        </message>
+        <message>
+            <source>Double-click to configure</source>
+            <translation type="unfinished">Double-click to configure</translation>
+        </message>
+        <message>
+            <source>Download Installer</source>
+            <translation type="unfinished">Download Installer</translation>
+        </message>
+        <message>
+            <source>Downloads the tool that manages everything else (~13 MB)</source>
+            <translation type="unfinished">Downloads the tool that manages everything else (~13 MB)</translation>
+        </message>
+        <message>
+            <source>Duplicate</source>
+            <translation type="unfinished">Duplicate</translation>
+        </message>
+        <message>
+            <source>ECONOMICS DATA EXPLORER</source>
+            <translation type="unfinished">ECONOMICS DATA EXPLORER</translation>
+        </message>
+        <message>
+            <source>EDIT</source>
+            <translation>編輯</translation>
+        </message>
+        <message>
+            <source>EDIT MY PROFILE</source>
+            <translation type="unfinished">EDIT MY PROFILE</translation>
+        </message>
+        <message>
+            <source>EFFICIENT FRONTIER</source>
+            <translation type="unfinished">EFFICIENT FRONTIER</translation>
+        </message>
+        <message>
+            <source>ENABLE ALL</source>
+            <translation type="unfinished">ENABLE ALL</translation>
+        </message>
+        <message>
+            <source>ENCRYPTION</source>
+            <translation type="unfinished">ENCRYPTION</translation>
+        </message>
+        <message>
+            <source>END</source>
+            <translation type="unfinished">END</translation>
+        </message>
+        <message>
+            <source>ENDPOINT</source>
+            <translation type="unfinished">ENDPOINT</translation>
+        </message>
+        <message>
+            <source>ENTRIES</source>
+            <translation>筆數</translation>
+        </message>
+        <message>
+            <source>EQUITY CURVE</source>
+            <translation type="unfinished">EQUITY CURVE</translation>
+        </message>
+        <message>
+            <source>EQUITY RESEARCH</source>
+            <translation type="unfinished">EQUITY RESEARCH</translation>
+        </message>
+        <message>
+            <source>ERROR</source>
+            <translation>錯誤</translation>
+        </message>
+        <message>
+            <source>EXCHANGE</source>
+            <translation>交易所</translation>
+        </message>
+        <message>
+            <source>EXEC</source>
+            <translation type="unfinished">EXEC</translation>
+        </message>
+        <message>
+            <source>EXECUTE</source>
+            <translation type="unfinished">EXECUTE</translation>
+        </message>
+        <message>
+            <source>EXECUTE COMPUTATION</source>
+            <translation type="unfinished">EXECUTE COMPUTATION</translation>
+        </message>
+        <message>
+            <source>EXECUTING</source>
+            <translation type="unfinished">EXECUTING</translation>
+        </message>
+        <message>
+            <source>EXECUTION COSTS</source>
+            <translation type="unfinished">EXECUTION COSTS</translation>
+        </message>
+        <message>
+            <source>EXECUTION LOG</source>
+            <translation type="unfinished">EXECUTION LOG</translation>
+        </message>
+        <message>
+            <source>EXECUTION PLAN</source>
+            <translation type="unfinished">EXECUTION PLAN</translation>
+        </message>
+        <message>
+            <source>EXECUTION RESULTS</source>
+            <translation type="unfinished">EXECUTION RESULTS</translation>
+        </message>
+        <message>
+            <source>EXPIRES</source>
+            <translation type="unfinished">EXPIRES</translation>
+        </message>
+        <message>
+            <source>EXPORT</source>
+            <translation>匯出</translation>
+        </message>
+        <message>
+            <source>EXPORT CSV</source>
+            <translation type="unfinished">EXPORT CSV</translation>
+        </message>
+        <message>
+            <source>EXPORT JSON</source>
+            <translation type="unfinished">EXPORT JSON</translation>
+        </message>
+        <message>
+            <source>EXPORT RESULTS</source>
+            <translation type="unfinished">EXPORT RESULTS</translation>
+        </message>
+        <message>
+            <source>Economic Union (e.g. European Union)</source>
+            <translation type="unfinished">Economic Union (e.g. European Union)</translation>
+        </message>
+        <message>
+            <source>Edit Symbols...</source>
+            <translation type="unfinished">Edit Symbols...</translation>
+        </message>
+        <message>
+            <source>Education</source>
+            <translation type="unfinished">Education</translation>
+        </message>
+        <message>
+            <source>Effect series y (the one we ask: 'is this caused by x?')</source>
+            <translation type="unfinished">Effect series y (the one we ask: 'is this caused by x?')</translation>
+        </message>
+        <message>
+            <source>Emerging Industry</source>
+            <translation type="unfinished">Emerging Industry</translation>
+        </message>
+        <message>
+            <source>Empty</source>
+            <translation>空白</translation>
+        </message>
+        <message>
+            <source>Empty input — use CLEAR to remove a stored key.</source>
+            <translation type="unfinished">Empty input — use CLEAR to remove a stored key.</translation>
+        </message>
+        <message>
+            <source>Enable Connection</source>
+            <translation type="unfinished">Enable Connection</translation>
+        </message>
+        <message>
+            <source>English (UK)</source>
+            <translation type="unfinished">English (UK)</translation>
+        </message>
+        <message>
+            <source>English (US)</source>
+            <translation type="unfinished">English (US)</translation>
+        </message>
+        <message>
+            <source>English (auto)</source>
+            <translation type="unfinished">English (auto)</translation>
+        </message>
+        <message>
+            <source>Enter API Key, API Secret, and paste request_token</source>
+            <translation type="unfinished">Enter API Key, API Secret, and paste request_token</translation>
+        </message>
+        <message>
+            <source>Environment Variables</source>
+            <translation type="unfinished">Environment Variables</translation>
+        </message>
+        <message>
+            <source>Error</source>
+            <translation>錯誤</translation>
+        </message>
+        <message>
+            <source>Error: </source>
+            <translation type="unfinished">Error: </translation>
+        </message>
+        <message>
+            <source>Estimated impact of historical and hypothetical market scenarios</source>
+            <translation type="unfinished">Estimated impact of historical and hypothetical market scenarios</translation>
+        </message>
+        <message>
+            <source>Estimated portfolio impact from macro factor shocks, weighted by holdings</source>
+            <translation type="unfinished">Estimated portfolio impact from macro factor shocks, weighted by holdings</translation>
+        </message>
+        <message>
+            <source>Execute From Here</source>
+            <translation type="unfinished">Execute From Here</translation>
+        </message>
+        <message>
+            <source>Exp. Return:</source>
+            <translation type="unfinished">Exp. Return:</translation>
+        </message>
+        <message>
+            <source>Export</source>
+            <translation>匯出</translation>
+        </message>
+        <message>
+            <source>Export CSV</source>
+            <translation type="unfinished">Export CSV</translation>
+        </message>
+        <message>
+            <source>Export JSON</source>
+            <translation type="unfinished">Export JSON</translation>
+        </message>
+        <message>
+            <source>Exports</source>
+            <translation type="unfinished">Exports</translation>
+        </message>
+        <message>
+            <source>Extend flow lands with the Anchor program.</source>
+            <translation type="unfinished">Extend flow lands with the Anchor program.</translation>
+        </message>
+        <message>
+            <source>Extend lock…</source>
+            <translation type="unfinished">Extend lock…</translation>
+        </message>
+        <message>
+            <source>External Servers</source>
+            <translation type="unfinished">External Servers</translation>
+        </message>
+        <message>
+            <source>Externally Owned Account (EOA)</source>
+            <translation type="unfinished">Externally Owned Account (EOA)</translation>
+        </message>
+        <message>
+            <source>FAILED</source>
+            <translation>失敗</translation>
+        </message>
+        <message>
+            <source>FAV</source>
+            <translation type="unfinished">FAV</translation>
+        </message>
+        <message>
+            <source>FEATURES</source>
+            <translation type="unfinished">FEATURES</translation>
+        </message>
+        <message>
+            <source>FETCH</source>
+            <translation type="unfinished">FETCH</translation>
+        </message>
+        <message>
+            <source>FFN ANALYTICS</source>
+            <translation type="unfinished">FFN ANALYTICS</translation>
+        </message>
+        <message>
+            <source>FFN Analysis</source>
+            <translation type="unfinished">FFN Analysis</translation>
+        </message>
+        <message>
+            <source>FIELD MAPPING</source>
+            <translation type="unfinished">FIELD MAPPING</translation>
+        </message>
+        <message>
+            <source>FILE MANAGER</source>
+            <translation type="unfinished">FILE MANAGER</translation>
+        </message>
+        <message>
+            <source>FILES ARE COLLECTED FROM</source>
+            <translation type="unfinished">FILES ARE COLLECTED FROM</translation>
+        </message>
+        <message>
+            <source>FILTERS</source>
+            <translation type="unfinished">FILTERS</translation>
+        </message>
+        <message>
+            <source>FINANCIAL TV</source>
+            <translation type="unfinished">FINANCIAL TV</translation>
+        </message>
+        <message>
+            <source>FINCEPT AGENT</source>
+            <translation type="unfinished">FINCEPT AGENT</translation>
+        </message>
+        <message>
+            <source>FINCEPT MACRO — COMING SOON</source>
+            <translation type="unfinished">FINCEPT MACRO — COMING SOON</translation>
+        </message>
+        <message>
+            <source>FINCEPT MARKETS</source>
+            <translation type="unfinished">FINCEPT MARKETS</translation>
+        </message>
+        <message>
+            <source>FINCEPT TERMINAL v4.0.0</source>
+            <translation type="unfinished">FINCEPT TERMINAL v4.0.0</translation>
+        </message>
+        <message>
+            <source>FIT</source>
+            <translation type="unfinished">FIT</translation>
+        </message>
+        <message>
+            <source>FORCE</source>
+            <translation type="unfinished">FORCE</translation>
+        </message>
+        <message>
+            <source>FORECAST BY STEP</source>
+            <translation type="unfinished">FORECAST BY STEP</translation>
+        </message>
+        <message>
+            <source>FRAMEWORK</source>
+            <translation type="unfinished">FRAMEWORK</translation>
+        </message>
+        <message>
+            <source>FREE API</source>
+            <translation type="unfinished">FREE API</translation>
+        </message>
+        <message>
+            <source>FRN</source>
+            <translation type="unfinished">FRN</translation>
+        </message>
+        <message>
+            <source>FX VANILLA OPTION PRICING</source>
+            <translation type="unfinished">FX VANILLA OPTION PRICING</translation>
+        </message>
+        <message>
+            <source>Factor / signal values (decimals, &gt;= 20)</source>
+            <translation type="unfinished">Factor / signal values (decimals, &gt;= 20)</translation>
+        </message>
+        <message>
+            <source>Failed</source>
+            <translation>失敗</translation>
+        </message>
+        <message>
+            <source>Failed to load LLM providers.</source>
+            <translation type="unfinished">Failed to load LLM providers.</translation>
+        </message>
+        <message>
+            <source>Failed.</source>
+            <translation type="unfinished">Failed.</translation>
+        </message>
+        <message>
+            <source>Failed: %1</source>
+            <translation type="unfinished">Failed: %1</translation>
+        </message>
+        <message>
+            <source>Favorites only</source>
+            <translation type="unfinished">Favorites only</translation>
+        </message>
+        <message>
+            <source>Fetch</source>
+            <translation type="unfinished">Fetch</translation>
+        </message>
+        <message>
+            <source>Fetch Price</source>
+            <translation type="unfinished">Fetch Price</translation>
+        </message>
+        <message>
+            <source>Fields marked with * are required.</source>
+            <translation type="unfinished">Fields marked with * are required.</translation>
+        </message>
+        <message>
+            <source>Fields: </source>
+            <translation type="unfinished">Fields: </translation>
+        </message>
+        <message>
+            <source>Fields: --</source>
+            <translation type="unfinished">Fields: --</translation>
+        </message>
+        <message>
+            <source>Fincept Launchpad</source>
+            <translation type="unfinished">Fincept Launchpad</translation>
+        </message>
+        <message>
+            <source>FinceptInternalAdapter not registered</source>
+            <translation type="unfinished">FinceptInternalAdapter not registered</translation>
+        </message>
+        <message>
+            <source>Find answers, get support, and connect with the Fincept community.</source>
+            <translation type="unfinished">Find answers, get support, and connect with the Fincept community.</translation>
+        </message>
+        <message>
+            <source>Fortitudo backend ready</source>
+            <translation type="unfinished">Fortitudo backend ready</translation>
+        </message>
+        <message>
+            <source>Free Trade Area (e.g. USMCA, ASEAN)</source>
+            <translation type="unfinished">Free Trade Area (e.g. USMCA, ASEAN)</translation>
+        </message>
+        <message>
+            <source>From: </source>
+            <translation type="unfinished">From: </translation>
+        </message>
+        <message>
+            <source>Functime backend ready</source>
+            <translation type="unfinished">Functime backend ready</translation>
+        </message>
+        <message>
+            <source>Funder Address:</source>
+            <translation type="unfinished">Funder Address:</translation>
+        </message>
+        <message>
+            <source>GENERATING</source>
+            <translation type="unfinished">GENERATING</translation>
+        </message>
+        <message>
+            <source>GEO SEARCH</source>
+            <translation type="unfinished">GEO SEARCH</translation>
+        </message>
+        <message>
+            <source>GLOBAL SETTINGS</source>
+            <translation type="unfinished">GLOBAL SETTINGS</translation>
+        </message>
+        <message>
+            <source>GO</source>
+            <translation type="unfinished">GO</translation>
+        </message>
+        <message>
+            <source>GOAL-BASED PLANNING</source>
+            <translation type="unfinished">GOAL-BASED PLANNING</translation>
+        </message>
+        <message>
+            <source>GOVERNMENT DATA EXPLORER</source>
+            <translation type="unfinished">GOVERNMENT DATA EXPLORER</translation>
+        </message>
+        <message>
+            <source>GOVT</source>
+            <translation type="unfinished">GOVT</translation>
+        </message>
+        <message>
+            <source>Get in touch with our team</source>
+            <translation type="unfinished">Get in touch with our team</translation>
+        </message>
+        <message>
+            <source>Global Log Level</source>
+            <translation type="unfinished">Global Log Level</translation>
+        </message>
+        <message>
+            <source>GluonTS backend ready</source>
+            <translation type="unfinished">GluonTS backend ready</translation>
+        </message>
+        <message>
+            <source>Google (free, default)</source>
+            <translation type="unfinished">Google (free, default)</translation>
+        </message>
+        <message>
+            <source>H. Con. Res.</source>
+            <translation type="unfinished">H. Con. Res.</translation>
+        </message>
+        <message>
+            <source>H. Joint Res.</source>
+            <translation type="unfinished">H. Joint Res.</translation>
+        </message>
+        <message>
+            <source>H. Simple Res.</source>
+            <translation type="unfinished">H. Simple Res.</translation>
+        </message>
+        <message>
+            <source>H:--</source>
+            <translation type="unfinished">H:--</translation>
+        </message>
+        <message>
+            <source>HEADER / FOOTER</source>
+            <translation type="unfinished">HEADER / FOOTER</translation>
+        </message>
+        <message>
+            <source>HELP CENTER</source>
+            <translation type="unfinished">HELP CENTER</translation>
+        </message>
+        <message>
+            <source>HIGH-BETA STOCKS</source>
+            <translation type="unfinished">HIGH-BETA STOCKS</translation>
+        </message>
+        <message>
+            <source>HISTORY</source>
+            <translation>歷史</translation>
+        </message>
+        <message>
+            <source>HOLDINGS BREAKDOWN</source>
+            <translation type="unfinished">HOLDINGS BREAKDOWN</translation>
+        </message>
+        <message>
+            <source>HOLDINGS CORRELATION MATRIX</source>
+            <translation type="unfinished">HOLDINGS CORRELATION MATRIX</translation>
+        </message>
+        <message>
+            <source>HOME</source>
+            <translation type="unfinished">HOME</translation>
+        </message>
+        <message>
+            <source>HTTP/1.1 </source>
+            <translation type="unfinished">HTTP/1.1 </translation>
+        </message>
+        <message>
+            <source>Helius RPC — STREAM fully supported.</source>
+            <translation type="unfinished">Helius RPC — STREAM fully supported.</translation>
+        </message>
+        <message>
+            <source>Hide</source>
+            <translation>隱藏</translation>
+        </message>
+        <message>
+            <source>Hide unverified</source>
+            <translation type="unfinished">Hide unverified</translation>
+        </message>
+        <message>
+            <source>High Only</source>
+            <translation type="unfinished">High Only</translation>
+        </message>
+        <message>
+            <source>Holding ≥ %1 $FNCPT — you qualify for the fee discount.</source>
+            <translation type="unfinished">Holding ≥ %1 $FNCPT — you qualify for the fee discount.</translation>
+        </message>
+        <message>
+            <source>House Bill</source>
+            <translation type="unfinished">House Bill</translation>
+        </message>
+        <message>
+            <source>How can I help you?</source>
+            <translation type="unfinished">How can I help you?</translation>
+        </message>
+        <message>
+            <source>IDLE</source>
+            <translation type="unfinished">IDLE</translation>
+        </message>
+        <message>
+            <source>IMF INDICATOR</source>
+            <translation type="unfinished">IMF INDICATOR</translation>
+        </message>
+        <message>
+            <source>IMPLIED VOLATILITY</source>
+            <translation type="unfinished">IMPLIED VOLATILITY</translation>
+        </message>
+        <message>
+            <source>IMPORT</source>
+            <translation>匯入</translation>
+        </message>
+        <message>
+            <source>IMPORT MODE</source>
+            <translation type="unfinished">IMPORT MODE</translation>
+        </message>
+        <message>
+            <source>IMPORT PORTFOLIO</source>
+            <translation type="unfinished">IMPORT PORTFOLIO</translation>
+        </message>
+        <message>
+            <source>IMPORT TO PORTFOLIO</source>
+            <translation type="unfinished">IMPORT TO PORTFOLIO</translation>
+        </message>
+        <message>
+            <source>INDEX PERFORMANCE</source>
+            <translation type="unfinished">INDEX PERFORMANCE</translation>
+        </message>
+        <message>
+            <source>INITIAL CAPITAL ($)</source>
+            <translation type="unfinished">INITIAL CAPITAL ($)</translation>
+        </message>
+        <message>
+            <source>INPUT PARAMETERS</source>
+            <translation type="unfinished">INPUT PARAMETERS</translation>
+        </message>
+        <message>
+            <source>INSPECTOR</source>
+            <translation type="unfinished">INSPECTOR</translation>
+        </message>
+        <message>
+            <source>INSTRUMENT: </source>
+            <translation type="unfinished">INSTRUMENT: </translation>
+        </message>
+        <message>
+            <source>INSTRUMENT: BONDS</source>
+            <translation type="unfinished">INSTRUMENT: BONDS</translation>
+        </message>
+        <message>
+            <source>INTEREST RATE SWAP PRICING</source>
+            <translation type="unfinished">INTEREST RATE SWAP PRICING</translation>
+        </message>
+        <message>
+            <source>INTERFACE</source>
+            <translation>介面</translation>
+        </message>
+        <message>
+            <source>INTERVAL</source>
+            <translation type="unfinished">INTERVAL</translation>
+        </message>
+        <message>
+            <source>INTERVAL (sec)</source>
+            <translation type="unfinished">INTERVAL (sec)</translation>
+        </message>
+        <message>
+            <source>INTERVAL: </source>
+            <translation type="unfinished">INTERVAL: </translation>
+        </message>
+        <message>
+            <source>INTERVAL: 150s</source>
+            <translation type="unfinished">INTERVAL: 150s</translation>
+        </message>
+        <message>
+            <source>Idx:--</source>
+            <translation type="unfinished">Idx:--</translation>
+        </message>
+        <message>
+            <source>Import JSON…</source>
+            <translation type="unfinished">Import JSON…</translation>
+        </message>
+        <message>
+            <source>Imports</source>
+            <translation type="unfinished">Imports</translation>
+        </message>
+        <message>
+            <source>Infant Industry</source>
+            <translation type="unfinished">Infant Industry</translation>
+        </message>
+        <message>
+            <source>Inflation:</source>
+            <translation type="unfinished">Inflation:</translation>
+        </message>
+        <message>
+            <source>Insert Column Left</source>
+            <translation type="unfinished">Insert Column Left</translation>
+        </message>
+        <message>
+            <source>Insert Column Right</source>
+            <translation type="unfinished">Insert Column Right</translation>
+        </message>
+        <message>
+            <source>Insert Row Above</source>
+            <translation type="unfinished">Insert Row Above</translation>
+        </message>
+        <message>
+            <source>Insert Row Below</source>
+            <translation type="unfinished">Insert Row Below</translation>
+        </message>
+        <message>
+            <source>Inserts a page break\nin PDF/print output.</source>
+            <translation type="unfinished">Inserts a page break\nin PDF/print output.</translation>
+        </message>
+        <message>
+            <source>Install Analytics Libraries</source>
+            <translation type="unfinished">Install Analytics Libraries</translation>
+        </message>
+        <message>
+            <source>Install Python Runtime</source>
+            <translation type="unfinished">Install Python Runtime</translation>
+        </message>
+        <message>
+            <source>Install Trading Libraries</source>
+            <translation type="unfinished">Install Trading Libraries</translation>
+        </message>
+        <message>
+            <source>Installing to: </source>
+            <translation type="unfinished">Installing to: </translation>
+        </message>
+        <message>
+            <source>Isolated</source>
+            <translation type="unfinished">Isolated</translation>
+        </message>
+        <message>
+            <source>JSON EDITOR</source>
+            <translation type="unfinished">JSON EDITOR</translation>
+        </message>
+        <message>
+            <source>KEY INDICATORS</source>
+            <translation type="unfinished">KEY INDICATORS</translation>
+        </message>
+        <message>
+            <source>KEY PERFORMANCE INDICATORS</source>
+            <translation type="unfinished">KEY PERFORMANCE INDICATORS</translation>
+        </message>
+        <message>
+            <source>KPSS (H₀: stationary)</source>
+            <translation type="unfinished">KPSS (H₀: stationary)</translation>
+        </message>
+        <message>
+            <source>KRAKEN</source>
+            <translation type="unfinished">KRAKEN</translation>
+        </message>
+        <message>
+            <source>Kalshi</source>
+            <translation type="unfinished">Kalshi</translation>
+        </message>
+        <message>
+            <source>Kalshi credentials cleared.</source>
+            <translation type="unfinished">Kalshi credentials cleared.</translation>
+        </message>
+        <message>
+            <source>Kalshi credentials loaded from secure store.</source>
+            <translation type="unfinished">Kalshi credentials loaded from secure store.</translation>
+        </message>
+        <message>
+            <source>Key terms</source>
+            <translation type="unfinished">Key terms</translation>
+        </message>
+        <message>
+            <source>L2 API credentials: derived (%1…)</source>
+            <translation type="unfinished">L2 API credentials: derived (%1…)</translation>
+        </message>
+        <message>
+            <source>L2 API credentials: not derived</source>
+            <translation type="unfinished">L2 API credentials: not derived</translation>
+        </message>
+        <message>
+            <source>L:--</source>
+            <translation type="unfinished">L:--</translation>
+        </message>
+        <message>
+            <source>LAST UPDATE  --:--:--</source>
+            <translation type="unfinished">LAST UPDATE  --:--:--</translation>
+        </message>
+        <message>
+            <source>LATEST NEWS</source>
+            <translation type="unfinished">LATEST NEWS</translation>
+        </message>
+        <message>
+            <source>LAUNCH</source>
+            <translation type="unfinished">LAUNCH</translation>
+        </message>
+        <message>
+            <source>LAYERED</source>
+            <translation type="unfinished">LAYERED</translation>
+        </message>
+        <message>
+            <source>LEADERBOARD</source>
+            <translation type="unfinished">LEADERBOARD</translation>
+        </message>
+        <message>
+            <source>LEGEND</source>
+            <translation type="unfinished">LEGEND</translation>
+        </message>
+        <message>
+            <source>LEVERAGE</source>
+            <translation type="unfinished">LEVERAGE</translation>
+        </message>
+        <message>
+            <source>LEVERAGE / SOLVENCY</source>
+            <translation type="unfinished">LEVERAGE / SOLVENCY</translation>
+        </message>
+        <message>
+            <source>LIMIT PRICE</source>
+            <translation type="unfinished">LIMIT PRICE</translation>
+        </message>
+        <message>
+            <source>LIQUIDITY</source>
+            <translation type="unfinished">LIQUIDITY</translation>
+        </message>
+        <message>
+            <source>LITE</source>
+            <translation type="unfinished">LITE</translation>
+        </message>
+        <message>
+            <source>LIVE TEST</source>
+            <translation type="unfinished">LIVE TEST</translation>
+        </message>
+        <message>
+            <source>LLM CONFIGURATION</source>
+            <translation type="unfinished">LLM CONFIGURATION</translation>
+        </message>
+        <message>
+            <source>LLM PROFILE</source>
+            <translation type="unfinished">LLM PROFILE</translation>
+        </message>
+        <message>
+            <source>LLM PROFILE:</source>
+            <translation type="unfinished">LLM PROFILE:</translation>
+        </message>
+        <message>
+            <source>LOAD</source>
+            <translation type="unfinished">LOAD</translation>
+        </message>
+        <message>
+            <source>LOAD MORE</source>
+            <translation type="unfinished">LOAD MORE</translation>
+        </message>
+        <message>
+            <source>LOCK</source>
+            <translation type="unfinished">LOCK</translation>
+        </message>
+        <message>
+            <source>LOGGING</source>
+            <translation type="unfinished">LOGGING</translation>
+        </message>
+        <message>
+            <source>LOGS</source>
+            <translation type="unfinished">LOGS</translation>
+        </message>
+        <message>
+            <source>Language</source>
+            <translation type="unfinished">Language</translation>
+        </message>
+        <message>
+            <source>Last updated: January 1, 2026</source>
+            <translation type="unfinished">Last updated: January 1, 2026</translation>
+        </message>
+        <message>
+            <source>Leader:</source>
+            <translation type="unfinished">Leader:</translation>
+        </message>
+        <message>
+            <source>Leave blank to use the LLM assigned to the agent in Agent Config</source>
+            <translation type="unfinished">Leave blank to use the LLM assigned to the agent in Agent Config</translation>
+        </message>
+        <message>
+            <source>Left</source>
+            <translation type="unfinished">Left</translation>
+        </message>
+        <message>
+            <source>Load from file…</source>
+            <translation type="unfinished">Load from file…</translation>
+        </message>
+        <message>
+            <source>Loaded PEM from %1.</source>
+            <translation type="unfinished">Loaded PEM from %1.</translation>
+        </message>
+        <message>
+            <source>Loading LLM providers...</source>
+            <translation type="unfinished">Loading LLM providers...</translation>
+        </message>
+        <message>
+            <source>Loading agents…</source>
+            <translation type="unfinished">Loading agents…</translation>
+        </message>
+        <message>
+            <source>Loading portfolio data…</source>
+            <translation type="unfinished">Loading portfolio data…</translation>
+        </message>
+        <message>
+            <source>Loading portfolios...</source>
+            <translation type="unfinished">Loading portfolios...</translation>
+        </message>
+        <message>
+            <source>Loading thread...</source>
+            <translation type="unfinished">Loading thread...</translation>
+        </message>
+        <message>
+            <source>Loading tools...</source>
+            <translation type="unfinished">Loading tools...</translation>
+        </message>
+        <message>
+            <source>Loading tools…</source>
+            <translation type="unfinished">Loading tools…</translation>
+        </message>
+        <message>
+            <source>Loading…</source>
+            <translation type="unfinished">Loading…</translation>
+        </message>
+        <message>
+            <source>Locks feed error: %1</source>
+            <translation type="unfinished">Locks feed error: %1</translation>
+        </message>
+        <message>
+            <source>Log File</source>
+            <translation type="unfinished">Log File</translation>
+        </message>
+        <message>
+            <source>Long-running agent queries.</source>
+            <translation type="unfinished">Long-running agent queries.</translation>
+        </message>
+        <message>
+            <source>Lower band (optional, same length as actuals)</source>
+            <translation type="unfinished">Lower band (optional, same length as actuals)</translation>
+        </message>
+        <message>
+            <source>MAP HOLDINGS TO SECTORS</source>
+            <translation type="unfinished">MAP HOLDINGS TO SECTORS</translation>
+        </message>
+        <message>
+            <source>MAPPING ENGINE</source>
+            <translation type="unfinished">MAPPING ENGINE</translation>
+        </message>
+        <message>
+            <source>MARGIN</source>
+            <translation type="unfinished">MARGIN</translation>
+        </message>
+        <message>
+            <source>MARKET</source>
+            <translation>市價</translation>
+        </message>
+        <message>
+            <source>MARKET DEPTH</source>
+            <translation type="unfinished">MARKET DEPTH</translation>
+        </message>
+        <message>
+            <source>MARKET SENTIMENT</source>
+            <translation type="unfinished">MARKET SENTIMENT</translation>
+        </message>
+        <message>
+            <source>MARKETPLACE</source>
+            <translation type="unfinished">MARKETPLACE</translation>
+        </message>
+        <message>
+            <source>MARKETS</source>
+            <translation>市場</translation>
+        </message>
+        <message>
+            <source>MAX</source>
+            <translation type="unfinished">MAX</translation>
+        </message>
+        <message>
+            <source>MAX DRAWDOWN</source>
+            <translation type="unfinished">MAX DRAWDOWN</translation>
+        </message>
+        <message>
+            <source>MCP</source>
+            <translation type="unfinished">MCP</translation>
+        </message>
+        <message>
+            <source>MCP SERVERS</source>
+            <translation type="unfinished">MCP SERVERS</translation>
+        </message>
+        <message>
+            <source>MD</source>
+            <translation type="unfinished">MD</translation>
+        </message>
+        <message>
+            <source>MKT: --</source>
+            <translation type="unfinished">MKT: --</translation>
+        </message>
+        <message>
+            <source>MODE</source>
+            <translation type="unfinished">MODE</translation>
+        </message>
+        <message>
+            <source>MODIFY</source>
+            <translation type="unfinished">MODIFY</translation>
+        </message>
+        <message>
+            <source>MODULE: </source>
+            <translation type="unfinished">MODULE: </translation>
+        </message>
+        <message>
+            <source>MODULE: CORE</source>
+            <translation type="unfinished">MODULE: CORE</translation>
+        </message>
+        <message>
+            <source>MODULES</source>
+            <translation type="unfinished">MODULES</translation>
+        </message>
+        <message>
+            <source>MONTE CARLO SIMULATION</source>
+            <translation type="unfinished">MONTE CARLO SIMULATION</translation>
+        </message>
+        <message>
+            <source>MY CUSTOM INDICES</source>
+            <translation type="unfinished">MY CUSTOM INDICES</translation>
+        </message>
+        <message>
+            <source>Machine learning, data science and AI agent frameworks</source>
+            <translation type="unfinished">Machine learning, data science and AI agent frameworks</translation>
+        </message>
+        <message>
+            <source>Manage files across the terminal</source>
+            <translation type="unfinished">Manage files across the terminal</translation>
+        </message>
+        <message>
+            <source>Mark all read</source>
+            <translation type="unfinished">Mark all read</translation>
+        </message>
+        <message>
+            <source>Mature Industry</source>
+            <translation type="unfinished">Mature Industry</translation>
+        </message>
+        <message>
+            <source>Max Tokens</source>
+            <translation type="unfinished">Max Tokens</translation>
+        </message>
+        <message>
+            <source>Medium + High</source>
+            <translation type="unfinished">Medium + High</translation>
+        </message>
+        <message>
+            <source>Mem</source>
+            <translation type="unfinished">Mem</translation>
+        </message>
+        <message>
+            <source>Merge transactions into existing portfolio:</source>
+            <translation type="unfinished">Merge transactions into existing portfolio:</translation>
+        </message>
+        <message>
+            <source>Middle Income</source>
+            <translation type="unfinished">Middle Income</translation>
+        </message>
+        <message>
+            <source>Minimum level for all tags unless overridden.</source>
+            <translation type="unfinished">Minimum level for all tags unless overridden.</translation>
+        </message>
+        <message>
+            <source>Mk:--</source>
+            <translation type="unfinished">Mk:--</translation>
+        </message>
+        <message>
+            <source>Mode:</source>
+            <translation type="unfinished">Mode:</translation>
+        </message>
+        <message>
+            <source>Model</source>
+            <translation type="unfinished">Model</translation>
+        </message>
+        <message>
+            <source>Model Context Protocol tool servers.</source>
+            <translation type="unfinished">Model Context Protocol tool servers.</translation>
+        </message>
+        <message>
+            <source>Model IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)</source>
+            <translation type="unfinished">Model IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)</translation>
+        </message>
+        <message>
+            <source>Model label (e.g. LightGBM, LSTM)</source>
+            <translation type="unfinished">Model label (e.g. LightGBM, LSTM)</translation>
+        </message>
+        <message>
+            <source>Model predictions (decimals, &gt;= 10 values)</source>
+            <translation type="unfinished">Model predictions (decimals, &gt;= 10 values)</translation>
+        </message>
+        <message>
+            <source>Model predictions (decimals, &gt;= 20 values)</source>
+            <translation type="unfinished">Model predictions (decimals, &gt;= 20 values)</translation>
+        </message>
+        <message>
+            <source>Monitor</source>
+            <translation type="unfinished">Monitor</translation>
+        </message>
+        <message>
+            <source>Monthly</source>
+            <translation type="unfinished">Monthly</translation>
+        </message>
+        <message>
+            <source>Monthly Savings:</source>
+            <translation type="unfinished">Monthly Savings:</translation>
+        </message>
+        <message>
+            <source>Multilateral (WTO Round)</source>
+            <translation type="unfinished">Multilateral (WTO Round)</translation>
+        </message>
+        <message>
+            <source>Multilingual (nova-3 only)</source>
+            <translation type="unfinished">Multilingual (nova-3 only)</translation>
+        </message>
+        <message>
+            <source>NAME</source>
+            <translation>名稱</translation>
+        </message>
+        <message>
+            <source>NATIVE DESKTOP FINANCIAL INTELLIGENCE TERMINAL</source>
+            <translation type="unfinished">NATIVE DESKTOP FINANCIAL INTELLIGENCE TERMINAL</translation>
+        </message>
+        <message>
+            <source>NAV PERFORMANCE (FROM SNAPSHOTS)</source>
+            <translation type="unfinished">NAV PERFORMANCE (FROM SNAPSHOTS)</translation>
+        </message>
+        <message>
+            <source>NEXT</source>
+            <translation>下一步</translation>
+        </message>
+        <message>
+            <source>NO</source>
+            <translation>否</translation>
+        </message>
+        <message>
+            <source>NO DISCUSSIONS YET</source>
+            <translation type="unfinished">NO DISCUSSIONS YET</translation>
+        </message>
+        <message>
+            <source>NO POSTS YET</source>
+            <translation type="unfinished">NO POSTS YET</translation>
+        </message>
+        <message>
+            <source>NO REPLIES YET</source>
+            <translation type="unfinished">NO REPLIES YET</translation>
+        </message>
+        <message>
+            <source>NODES</source>
+            <translation type="unfinished">NODES</translation>
+        </message>
+        <message>
+            <source>NORMALITY  (H₀: data is normally distributed; p &gt; 0.05 ⇒ cannot reject normal)</source>
+            <translation type="unfinished">NORMALITY  (H₀: data is normally distributed; p &gt; 0.05 ⇒ cannot reject normal)</translation>
+        </message>
+        <message>
+            <source>NOTIFICATION PROVIDERS</source>
+            <translation>通知供應商</translation>
+        </message>
+        <message>
+            <source>NOTIFICATIONS</source>
+            <translation>通知</translation>
+        </message>
+        <message>
+            <source>NSE</source>
+            <translation type="unfinished">NSE</translation>
+        </message>
+        <message>
+            <source>Need 2+ holdings for correlation</source>
+            <translation type="unfinished">Need 2+ holdings for correlation</translation>
+        </message>
+        <message>
+            <source>Need a template? Download the demo portfolio JSON:</source>
+            <translation type="unfinished">Need a template? Download the demo portfolio JSON:</translation>
+        </message>
+        <message>
+            <source>Net: —</source>
+            <translation type="unfinished">Net: —</translation>
+        </message>
+        <message>
+            <source>New Ticket</source>
+            <translation type="unfinished">New Ticket</translation>
+        </message>
+        <message>
+            <source>Next: lock %1 to reach the next tier.</source>
+            <translation type="unfinished">Next: lock %1 to reach the next tier.</translation>
+        </message>
+        <message>
+            <source>No LLM profiles — configure in Settings → LLM Config</source>
+            <translation type="unfinished">No LLM profiles — configure in Settings → LLM Config</translation>
+        </message>
+        <message>
+            <source>No LLM providers configured. Go to Settings → LLM to add one.</source>
+            <translation type="unfinished">No LLM providers configured. Go to Settings → LLM to add one.</translation>
+        </message>
+        <message>
+            <source>No active locks. Lock $FNCPT above to start earning yield.</source>
+            <translation type="unfinished">No active locks. Lock $FNCPT above to start earning yield.</translation>
+        </message>
+        <message>
+            <source>No anomalies detected at the configured threshold.</source>
+            <translation type="unfinished">No anomalies detected at the configured threshold.</translation>
+        </message>
+        <message>
+            <source>No comments yet</source>
+            <translation type="unfinished">No comments yet</translation>
+        </message>
+        <message>
+            <source>No confirmation after 60 s. Check Solscan.</source>
+            <translation type="unfinished">No confirmation after 60 s. Check Solscan.</translation>
+        </message>
+        <message>
+            <source>No custom indices created yet.\nGo to CREATE INDEX tab to build one from your portfolio.</source>
+            <translation type="unfinished">No custom indices created yet.\nGo to CREATE INDEX tab to build one from your portfolio.</translation>
+        </message>
+        <message>
+            <source>No data sources configured. Open the full Data Sources screen to browse and add connectors.</source>
+            <translation type="unfinished">No data sources configured. Open the full Data Sources screen to browse and add connectors.</translation>
+        </message>
+        <message>
+            <source>No files match your search or filter.</source>
+            <translation type="unfinished">No files match your search or filter.</translation>
+        </message>
+        <message>
+            <source>No files yet</source>
+            <translation type="unfinished">No files yet</translation>
+        </message>
+        <message>
+            <source>No key stored. Public RPC will be used.</source>
+            <translation type="unfinished">No key stored. Public RPC will be used.</translation>
+        </message>
+        <message>
+            <source>No mappings saved yet.\nClick CREATE to build your first data mapping.</source>
+            <translation type="unfinished">No mappings saved yet.\nClick CREATE to build your first data mapping.</translation>
+        </message>
+        <message>
+            <source>No markets configured — click gear to add</source>
+            <translation type="unfinished">No markets configured — click gear to add</translation>
+        </message>
+        <message>
+            <source>No notifications</source>
+            <translation type="unfinished">No notifications</translation>
+        </message>
+        <message>
+            <source>No price history available</source>
+            <translation type="unfinished">No price history available</translation>
+        </message>
+        <message>
+            <source>No related markets</source>
+            <translation type="unfinished">No related markets</translation>
+        </message>
+        <message>
+            <source>No results found</source>
+            <translation>找不到結果</translation>
+        </message>
+        <message>
+            <source>No servers match the current filter.</source>
+            <translation type="unfinished">No servers match the current filter.</translation>
+        </message>
+        <message>
+            <source>No snapshot available.</source>
+            <translation type="unfinished">No snapshot available.</translation>
+        </message>
+        <message>
+            <source>No tools loaded.</source>
+            <translation type="unfinished">No tools loaded.</translation>
+        </message>
+        <message>
+            <source>No transactions yet.</source>
+            <translation type="unfinished">No transactions yet.</translation>
+        </message>
+        <message>
+            <source>No vessels configured — click gear to add IMOs</source>
+            <translation type="unfinished">No vessels configured — click gear to add IMOs</translation>
+        </message>
+        <message>
+            <source>No wallet connected</source>
+            <translation type="unfinished">No wallet connected</translation>
+        </message>
+        <message>
+            <source>None</source>
+            <translation>無</translation>
+        </message>
+        <message>
+            <source>Note: TCP reachability confirmed. API key validity is not verified here.</source>
+            <translation type="unfinished">Note: TCP reachability confirmed. API key validity is not verified here.</translation>
+        </message>
+        <message>
+            <source>Numeric values (&gt;= 30). Fits normal, student-t, lognormal (positive only), skewnormal.</source>
+            <translation type="unfinished">Numeric values (&gt;= 30). Fits normal, student-t, lognormal (positive only), skewnormal.</translation>
+        </message>
+        <message>
+            <source>Numeric values (&gt;= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.</source>
+            <translation type="unfinished">Numeric values (&gt;= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.</translation>
+        </message>
+        <message>
+            <source>Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2.</source>
+            <translation type="unfinished">Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2.</translation>
+        </message>
+        <message>
+            <source>OFFLINE</source>
+            <translation type="unfinished">OFFLINE</translation>
+        </message>
+        <message>
+            <source>OI TREND</source>
+            <translation type="unfinished">OI TREND</translation>
+        </message>
+        <message>
+            <source>ONLINE</source>
+            <translation type="unfinished">ONLINE</translation>
+        </message>
+        <message>
+            <source>OPEN BUY ORDER</source>
+            <translation type="unfinished">OPEN BUY ORDER</translation>
+        </message>
+        <message>
+            <source>OPEN FULL SCREEN</source>
+            <translation type="unfinished">OPEN FULL SCREEN</translation>
+        </message>
+        <message>
+            <source>OPEN INTEREST</source>
+            <translation type="unfinished">OPEN INTEREST</translation>
+        </message>
+        <message>
+            <source>OPTIMAL WEIGHTS</source>
+            <translation type="unfinished">OPTIMAL WEIGHTS</translation>
+        </message>
+        <message>
+            <source>OPTIMIZATION STRESS SCENARIOS</source>
+            <translation type="unfinished">OPTIMIZATION STRESS SCENARIOS</translation>
+        </message>
+        <message>
+            <source>ORDER BOOK</source>
+            <translation type="unfinished">ORDER BOOK</translation>
+        </message>
+        <message>
+            <source>ORDER ENTRY</source>
+            <translation type="unfinished">ORDER ENTRY</translation>
+        </message>
+        <message>
+            <source>OTHER</source>
+            <translation type="unfinished">OTHER</translation>
+        </message>
+        <message>
+            <source>OUTCOME</source>
+            <translation type="unfinished">OUTCOME</translation>
+        </message>
+        <message>
+            <source>OUTCOMES</source>
+            <translation type="unfinished">OUTCOMES</translation>
+        </message>
+        <message>
+            <source>OUTPUT</source>
+            <translation type="unfinished">OUTPUT</translation>
+        </message>
+        <message>
+            <source>One IMO per line (e.g. 9811000)</source>
+            <translation type="unfinished">One IMO per line (e.g. 9811000)</translation>
+        </message>
+        <message>
+            <source>One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz</source>
+            <translation type="unfinished">One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz</translation>
+        </message>
+        <message>
+            <source>Open</source>
+            <translation>開盤</translation>
+        </message>
+        <message>
+            <source>Open Kite login in browser</source>
+            <translation type="unfinished">Open Kite login in browser</translation>
+        </message>
+        <message>
+            <source>Open Log Folder</source>
+            <translation type="unfinished">Open Log Folder</translation>
+        </message>
+        <message>
+            <source>Open Saved Layout…</source>
+            <translation type="unfinished">Open Saved Layout…</translation>
+        </message>
+        <message>
+            <source>Open Squads vault in browser</source>
+            <translation type="unfinished">Open Squads vault in browser</translation>
+        </message>
+        <message>
+            <source>Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.</source>
+            <translation type="unfinished">Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.</translation>
+        </message>
+        <message>
+            <source>Open burn transaction in Solscan</source>
+            <translation type="unfinished">Open burn transaction in Solscan</translation>
+        </message>
+        <message>
+            <source>Opening your browser to complete the handshake…</source>
+            <translation type="unfinished">Opening your browser to complete the handshake…</translation>
+        </message>
+        <message>
+            <source>Opening your browser to relay the transaction…</source>
+            <translation type="unfinished">Opening your browser to relay the transaction…</translation>
+        </message>
+        <message>
+            <source>Optimize</source>
+            <translation type="unfinished">Optimize</translation>
+        </message>
+        <message>
+            <source>Optional</source>
+            <translation type="unfinished">Optional</translation>
+        </message>
+        <message>
+            <source>Order by</source>
+            <translation type="unfinished">Order by</translation>
+        </message>
+        <message>
+            <source>Orders are recorded\nin your portfolio</source>
+            <translation type="unfinished">Orders are recorded\nin your portfolio</translation>
+        </message>
+        <message>
+            <source>Output Format</source>
+            <translation type="unfinished">Output Format</translation>
+        </message>
+        <message>
+            <source>Output:</source>
+            <translation type="unfinished">Output:</translation>
+        </message>
+        <message>
+            <source>Override the log level for a specific tag (e.g. ExchangeService, AgentService).</source>
+            <translation type="unfinished">Override the log level for a specific tag (e.g. ExchangeService, AgentService).</translation>
+        </message>
+        <message>
+            <source>PANEL TITLE</source>
+            <translation type="unfinished">PANEL TITLE</translation>
+        </message>
+        <message>
+            <source>PAPER</source>
+            <translation type="unfinished">PAPER</translation>
+        </message>
+        <message>
+            <source>PARAMETERS</source>
+            <translation type="unfinished">PARAMETERS</translation>
+        </message>
+        <message>
+            <source>PARSER ENGINES</source>
+            <translation type="unfinished">PARSER ENGINES</translation>
+        </message>
+        <message>
+            <source>PASSWORD (OKX/KUCOIN)</source>
+            <translation type="unfinished">PASSWORD (OKX/KUCOIN)</translation>
+        </message>
+        <message>
+            <source>PAST COMPETITIONS</source>
+            <translation type="unfinished">PAST COMPETITIONS</translation>
+        </message>
+        <message>
+            <source>PEERS (comma-separated):</source>
+            <translation type="unfinished">PEERS (comma-separated):</translation>
+        </message>
+        <message>
+            <source>PEM files (*.pem *.key);;All files (*)</source>
+            <translation type="unfinished">PEM files (*.pem *.key);;All files (*)</translation>
+        </message>
+        <message>
+            <source>PER-ASSET MOMENTS</source>
+            <translation type="unfinished">PER-ASSET MOMENTS</translation>
+        </message>
+        <message>
+            <source>PER-QUANTILE SUMMARY</source>
+            <translation type="unfinished">PER-QUANTILE SUMMARY</translation>
+        </message>
+        <message>
+            <source>PERFORMANCE ATTRIBUTION</source>
+            <translation type="unfinished">PERFORMANCE ATTRIBUTION</translation>
+        </message>
+        <message>
+            <source>PERIOD</source>
+            <translation type="unfinished">PERIOD</translation>
+        </message>
+        <message>
+            <source>PIN AUTHENTICATION</source>
+            <translation type="unfinished">PIN AUTHENTICATION</translation>
+        </message>
+        <message>
+            <source>PIN 碼</source>
+            <translation type="unfinished">PIN 碼</translation>
+        </message>
+        <message>
+            <source>PIN 碼不一致</source>
+            <translation type="unfinished">PIN 碼不一致</translation>
+        </message>
+        <message>
+            <source>PIN 碼錯誤</source>
+            <translation type="unfinished">PIN 碼錯誤</translation>
+        </message>
+        <message>
+            <source>PLACE ORDER</source>
+            <translation type="unfinished">PLACE ORDER</translation>
+        </message>
+        <message>
+            <source>PLAN HISTORY</source>
+            <translation type="unfinished">PLAN HISTORY</translation>
+        </message>
+        <message>
+            <source>PLAN TEMPLATES</source>
+            <translation type="unfinished">PLAN TEMPLATES</translation>
+        </message>
+        <message>
+            <source>PLAY</source>
+            <translation type="unfinished">PLAY</translation>
+        </message>
+        <message>
+            <source>POLYMARKET</source>
+            <translation type="unfinished">POLYMARKET</translation>
+        </message>
+        <message>
+            <source>POPULAR</source>
+            <translation>熱門</translation>
+        </message>
+        <message>
+            <source>PORTAL:</source>
+            <translation type="unfinished">PORTAL:</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO ECONOMICS OVERVIEW</source>
+            <translation type="unfinished">PORTFOLIO ECONOMICS OVERVIEW</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO FACTOR SENSITIVITY</source>
+            <translation type="unfinished">PORTFOLIO FACTOR SENSITIVITY</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO INSIGHTS</source>
+            <translation type="unfinished">PORTFOLIO INSIGHTS</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO METRICS OVERVIEW</source>
+            <translation type="unfinished">PORTFOLIO METRICS OVERVIEW</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO OPTIMISATION — WEIGHT COMPARISON</source>
+            <translation type="unfinished">PORTFOLIO OPTIMISATION — WEIGHT COMPARISON</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO RISK OVERVIEW</source>
+            <translation type="unfinished">PORTFOLIO RISK OVERVIEW</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO STRESS TESTING</source>
+            <translation type="unfinished">PORTFOLIO STRESS TESTING</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO SUMMARY REPORT</source>
+            <translation type="unfinished">PORTFOLIO SUMMARY REPORT</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO WORKSPACE</source>
+            <translation type="unfinished">PORTFOLIO WORKSPACE</translation>
+        </message>
+        <message>
+            <source>PORTFOLIO:</source>
+            <translation type="unfinished">PORTFOLIO:</translation>
+        </message>
+        <message>
+            <source>POSITION</source>
+            <translation>部位</translation>
+        </message>
+        <message>
+            <source>PRESET</source>
+            <translation type="unfinished">PRESET</translation>
+        </message>
+        <message>
+            <source>PREVIEW</source>
+            <translation>預覽</translation>
+        </message>
+        <message>
+            <source>PREVIOUS</source>
+            <translation>上一步</translation>
+        </message>
+        <message>
+            <source>PRICE</source>
+            <translation>價格</translation>
+        </message>
+        <message>
+            <source>PRICES</source>
+            <translation type="unfinished">PRICES</translation>
+        </message>
+        <message>
+            <source>PRIVACY POLICY</source>
+            <translation type="unfinished">PRIVACY POLICY</translation>
+        </message>
+        <message>
+            <source>PRODUCT</source>
+            <translation type="unfinished">PRODUCT</translation>
+        </message>
+        <message>
+            <source>PROFESSIONAL VALUATION ENGINE</source>
+            <translation type="unfinished">PROFESSIONAL VALUATION ENGINE</translation>
+        </message>
+        <message>
+            <source>PROFILE &amp; ACCOUNT</source>
+            <translation type="unfinished">PROFILE &amp; ACCOUNT</translation>
+        </message>
+        <message>
+            <source>PROFILES</source>
+            <translation type="unfinished">PROFILES</translation>
+        </message>
+        <message>
+            <source>PROJECTED SAVINGS  ·  reference $%1 SKU</source>
+            <translation type="unfinished">PROJECTED SAVINGS  ·  reference $%1 SKU</translation>
+        </message>
+        <message>
+            <source>PROJECTION RESULTS</source>
+            <translation type="unfinished">PROJECTION RESULTS</translation>
+        </message>
+        <message>
+            <source>PROPERTIES</source>
+            <translation type="unfinished">PROPERTIES</translation>
+        </message>
+        <message>
+            <source>PUBLISH POST</source>
+            <translation type="unfinished">PUBLISH POST</translation>
+        </message>
+        <message>
+            <source>PUBLISHERS</source>
+            <translation type="unfinished">PUBLISHERS</translation>
+        </message>
+        <message>
+            <source>PY</source>
+            <translation type="unfinished">PY</translation>
+        </message>
+        <message>
+            <source>PYTHON ACTIVE</source>
+            <translation type="unfinished">PYTHON ACTIVE</translation>
+        </message>
+        <message>
+            <source>PYTHON ANALYTICS ENGINE</source>
+            <translation type="unfinished">PYTHON ANALYTICS ENGINE</translation>
+        </message>
+        <message>
+            <source>PYTHON ENGINE</source>
+            <translation type="unfinished">PYTHON ENGINE</translation>
+        </message>
+        <message>
+            <source>PYTHON ENVIRONMENTS</source>
+            <translation type="unfinished">PYTHON ENVIRONMENTS</translation>
+        </message>
+        <message>
+            <source>Parser:</source>
+            <translation type="unfinished">Parser:</translation>
+        </message>
+        <message>
+            <source>Parsers: 6</source>
+            <translation type="unfinished">Parsers: 6</translation>
+        </message>
+        <message>
+            <source>Paste</source>
+            <translation>貼上</translation>
+        </message>
+        <message>
+            <source>Paste from Clipboard</source>
+            <translation type="unfinished">Paste from Clipboard</translation>
+        </message>
+        <message>
+            <source>Per-Tag Overrides</source>
+            <translation type="unfinished">Per-Tag Overrides</translation>
+        </message>
+        <message>
+            <source>Per-holding contribution to portfolio value, P&amp;L, and risk</source>
+            <translation type="unfinished">Per-holding contribution to portfolio value, P&amp;L, and risk</translation>
+        </message>
+        <message>
+            <source>Periodicity</source>
+            <translation type="unfinished">Periodicity</translation>
+        </message>
+        <message>
+            <source>Permanently delete all databases, files, cache, and UI state. OS keychain is preserved.</source>
+            <translation type="unfinished">Permanently delete all databases, files, cache, and UI state. OS keychain is preserved.</translation>
+        </message>
+        <message>
+            <source>Pick a template from the list to see a description.</source>
+            <translation type="unfinished">Pick a template from the list to see a description.</translation>
+        </message>
+        <message>
+            <source>Pipeline ID (e.g. my_pipeline)</source>
+            <translation type="unfinished">Pipeline ID (e.g. my_pipeline)</translation>
+        </message>
+        <message>
+            <source>Point forecast (same length as actuals)</source>
+            <translation type="unfinished">Point forecast (same length as actuals)</translation>
+        </message>
+        <message>
+            <source>Polymarket</source>
+            <translation type="unfinished">Polymarket</translation>
+        </message>
+        <message>
+            <source>Polymarket + Kalshi</source>
+            <translation type="unfinished">Polymarket + Kalshi</translation>
+        </message>
+        <message>
+            <source>Polymarket Gnosis Safe</source>
+            <translation type="unfinished">Polymarket Gnosis Safe</translation>
+        </message>
+        <message>
+            <source>Polymarket Proxy Wallet (default)</source>
+            <translation type="unfinished">Polymarket Proxy Wallet (default)</translation>
+        </message>
+        <message>
+            <source>Polymarket credentials cleared.</source>
+            <translation type="unfinished">Polymarket credentials cleared.</translation>
+        </message>
+        <message>
+            <source>Polymarket credentials loaded from secure store.</source>
+            <translation type="unfinished">Polymarket credentials loaded from secure store.</translation>
+        </message>
+        <message>
+            <source>Portfolio daily returns (decimals)</source>
+            <translation type="unfinished">Portfolio daily returns (decimals)</translation>
+        </message>
+        <message>
+            <source>Portfolio daily returns (decimals, same length as benchmark)</source>
+            <translation type="unfinished">Portfolio daily returns (decimals, same length as benchmark)</translation>
+        </message>
+        <message>
+            <source>Potential cause series x (same length as y)</source>
+            <translation type="unfinished">Potential cause series x (same length as y)</translation>
+        </message>
+        <message>
+            <source>Predicted values (same length as actual)</source>
+            <translation type="unfinished">Predicted values (same length as actual)</translation>
+        </message>
+        <message>
+            <source>Prediction Markets — Connect Account</source>
+            <translation type="unfinished">Prediction Markets — Connect Account</translation>
+        </message>
+        <message>
+            <source>Press new key combination...</source>
+            <translation type="unfinished">Press new key combination...</translation>
+        </message>
+        <message>
+            <source>Preview</source>
+            <translation>預覽</translation>
+        </message>
+        <message>
+            <source>Price unavailable: %1. Try again in a moment.</source>
+            <translation type="unfinished">Price unavailable: %1. Try again in a moment.</translation>
+        </message>
+        <message>
+            <source>Private Key (PEM):</source>
+            <translation type="unfinished">Private Key (PEM):</translation>
+        </message>
+        <message>
+            <source>Private Key:</source>
+            <translation type="unfinished">Private Key:</translation>
+        </message>
+        <message>
+            <source>Profiles</source>
+            <translation type="unfinished">Profiles</translation>
+        </message>
+        <message>
+            <source>Provider</source>
+            <translation type="unfinished">Provider</translation>
+        </message>
+        <message>
+            <source>Provider Configuration</source>
+            <translation type="unfinished">Provider Configuration</translation>
+        </message>
+        <message>
+            <source>Providers</source>
+            <translation type="unfinished">Providers</translation>
+        </message>
+        <message>
+            <source>QR Members (free)</source>
+            <translation type="unfinished">QR Members (free)</translation>
+        </message>
+        <message>
+            <source>QR Notifications (free)</source>
+            <translation type="unfinished">QR Notifications (free)</translation>
+        </message>
+        <message>
+            <source>QTY</source>
+            <translation type="unfinished">QTY</translation>
+        </message>
+        <message>
+            <source>QUANTLIB SUITE</source>
+            <translation type="unfinished">QUANTLIB SUITE</translation>
+        </message>
+        <message>
+            <source>QUANTSTATS ANALYSIS</source>
+            <translation type="unfinished">QUANTSTATS ANALYSIS</translation>
+        </message>
+        <message>
+            <source>QUERY</source>
+            <translation type="unfinished">QUERY</translation>
+        </message>
+        <message>
+            <source>QUICK STATS</source>
+            <translation type="unfinished">QUICK STATS</translation>
+        </message>
+        <message>
+            <source>Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback.</source>
+            <translation type="unfinished">Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback.</translation>
+        </message>
+        <message>
+            <source>Quant Reporting backend ready</source>
+            <translation type="unfinished">Quant Reporting backend ready</translation>
+        </message>
+        <message>
+            <source>Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95</source>
+            <translation type="unfinished">Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95</translation>
+        </message>
+        <message>
+            <source>Quarterly</source>
+            <translation type="unfinished">Quarterly</translation>
+        </message>
+        <message>
+            <source>Quick:</source>
+            <translation type="unfinished">Quick:</translation>
+        </message>
+        <message>
+            <source>Quotes refresh as you type.</source>
+            <translation type="unfinished">Quotes refresh as you type.</translation>
+        </message>
+        <message>
+            <source>RADIAL</source>
+            <translation type="unfinished">RADIAL</translation>
+        </message>
+        <message>
+            <source>READ FULL ARTICLE →</source>
+            <translation type="unfinished">READ FULL ARTICLE →</translation>
+        </message>
+        <message>
+            <source>RECEIVE</source>
+            <translation type="unfinished">RECEIVE</translation>
+        </message>
+        <message>
+            <source>RECENT</source>
+            <translation>最近</translation>
+        </message>
+        <message>
+            <source>RECORD</source>
+            <translation type="unfinished">RECORD</translation>
+        </message>
+        <message>
+            <source>RECORD DIVIDEND</source>
+            <translation type="unfinished">RECORD DIVIDEND</translation>
+        </message>
+        <message>
+            <source>REDO</source>
+            <translation type="unfinished">REDO</translation>
+        </message>
+        <message>
+            <source>REFRESH</source>
+            <translation>重新整理</translation>
+        </message>
+        <message>
+            <source>REGENERATE</source>
+            <translation type="unfinished">REGENERATE</translation>
+        </message>
+        <message>
+            <source>REGION: </source>
+            <translation type="unfinished">REGION: </translation>
+        </message>
+        <message>
+            <source>REGION: CN_A</source>
+            <translation type="unfinished">REGION: CN_A</translation>
+        </message>
+        <message>
+            <source>REGISTERED</source>
+            <translation type="unfinished">REGISTERED</translation>
+        </message>
+        <message>
+            <source>RELIANCE</source>
+            <translation type="unfinished">RELIANCE</translation>
+        </message>
+        <message>
+            <source>RELIANCE\nTCS\nINFY\n...</source>
+            <translation type="unfinished">RELIANCE\nTCS\nINFY\n...</translation>
+        </message>
+        <message>
+            <source>REMOVE</source>
+            <translation>移除</translation>
+        </message>
+        <message>
+            <source>REMOVE SELECTED</source>
+            <translation type="unfinished">REMOVE SELECTED</translation>
+        </message>
+        <message>
+            <source>RENAME</source>
+            <translation type="unfinished">RENAME</translation>
+        </message>
+        <message>
+            <source>REPLIES</source>
+            <translation type="unfinished">REPLIES</translation>
+        </message>
+        <message>
+            <source>REPORT BUILDER</source>
+            <translation type="unfinished">REPORT BUILDER</translation>
+        </message>
+        <message>
+            <source>REQUEST BODY (JSON)</source>
+            <translation type="unfinished">REQUEST BODY (JSON)</translation>
+        </message>
+        <message>
+            <source>RESET</source>
+            <translation>重設</translation>
+        </message>
+        <message>
+            <source>REST</source>
+            <translation type="unfinished">REST</translation>
+        </message>
+        <message>
+            <source>RESULT</source>
+            <translation type="unfinished">RESULT</translation>
+        </message>
+        <message>
+            <source>RESULTS</source>
+            <translation type="unfinished">RESULTS</translation>
+        </message>
+        <message>
+            <source>RETIREMENT CALCULATOR</source>
+            <translation type="unfinished">RETIREMENT CALCULATOR</translation>
+        </message>
+        <message>
+            <source>RETURN DISTRIBUTION</source>
+            <translation type="unfinished">RETURN DISTRIBUTION</translation>
+        </message>
+        <message>
+            <source>RETURN METRICS</source>
+            <translation type="unfinished">RETURN METRICS</translation>
+        </message>
+        <message>
+            <source>RFC 8628</source>
+            <translation type="unfinished">RFC 8628</translation>
+        </message>
+        <message>
+            <source>RISK CONTRIBUTION BY HOLDING</source>
+            <translation type="unfinished">RISK CONTRIBUTION BY HOLDING</translation>
+        </message>
+        <message>
+            <source>RISK DECOMPOSITION</source>
+            <translation type="unfinished">RISK DECOMPOSITION</translation>
+        </message>
+        <message>
+            <source>RISK-ADJUSTED RATIOS &amp; WIN/LOSS BREAKDOWN</source>
+            <translation type="unfinished">RISK-ADJUSTED RATIOS &amp; WIN/LOSS BREAKDOWN</translation>
+        </message>
+        <message>
+            <source>ROADMAP</source>
+            <translation type="unfinished">ROADMAP</translation>
+        </message>
+        <message>
+            <source>RUN CYCLE</source>
+            <translation type="unfinished">RUN CYCLE</translation>
+        </message>
+        <message>
+            <source>RUN FFN ANALYSIS</source>
+            <translation type="unfinished">RUN FFN ANALYSIS</translation>
+        </message>
+        <message>
+            <source>RUN FULL ANALYSIS</source>
+            <translation type="unfinished">RUN FULL ANALYSIS</translation>
+        </message>
+        <message>
+            <source>RUNNING</source>
+            <translation>執行中</translation>
+        </message>
+        <message>
+            <source>Raw Databento response</source>
+            <translation type="unfinished">Raw Databento response</translation>
+        </message>
+        <message>
+            <source>Re-checking freshness…</source>
+            <translation type="unfinished">Re-checking freshness…</translation>
+        </message>
+        <message>
+            <source>Re-exports</source>
+            <translation type="unfinished">Re-exports</translation>
+        </message>
+        <message>
+            <source>Re-imports</source>
+            <translation type="unfinished">Re-imports</translation>
+        </message>
+        <message>
+            <source>Ready</source>
+            <translation>就緒</translation>
+        </message>
+        <message>
+            <source>Ready. Click LOCK to build the transaction.</source>
+            <translation type="unfinished">Ready. Click LOCK to build the transaction.</translation>
+        </message>
+        <message>
+            <source>Ready. Click SWAP to build the transaction.</source>
+            <translation type="unfinished">Ready. Click SWAP to build the transaction.</translation>
+        </message>
+        <message>
+            <source>Realized actuals (&gt;= 5 values)</source>
+            <translation type="unfinished">Realized actuals (&gt;= 5 values)</translation>
+        </message>
+        <message>
+            <source>Realized returns (decimals, same length as predictions)</source>
+            <translation type="unfinished">Realized returns (decimals, same length as predictions)</translation>
+        </message>
+        <message>
+            <source>Realized returns (same length as factor)</source>
+            <translation type="unfinished">Realized returns (same length as factor)</translation>
+        </message>
+        <message>
+            <source>Realized returns (same length as predictions)</source>
+            <translation type="unfinished">Realized returns (same length as predictions)</translation>
+        </message>
+        <message>
+            <source>Rebind: </source>
+            <translation type="unfinished">Rebind: </translation>
+        </message>
+        <message>
+            <source>Recent</source>
+            <translation>最近</translation>
+        </message>
+        <message>
+            <source>Recent Layouts</source>
+            <translation type="unfinished">Recent Layouts</translation>
+        </message>
+        <message>
+            <source>Recent security events (PIN setup, failed unlocks, inactivity locks).</source>
+            <translation type="unfinished">Recent security events (PIN setup, failed unlocks, inactivity locks).</translation>
+        </message>
+        <message>
+            <source>Redirect didn't work? Paste request_token manually</source>
+            <translation type="unfinished">Redirect didn't work? Paste request_token manually</translation>
+        </message>
+        <message>
+            <source>Referrer-Policy: no-referrer\r\n</source>
+            <translation type="unfinished">Referrer-Policy: no-referrer\r\n</translation>
+        </message>
+        <message>
+            <source>Refresh</source>
+            <translation>重新整理</translation>
+        </message>
+        <message>
+            <source>Regional Agreement</source>
+            <translation type="unfinished">Regional Agreement</translation>
+        </message>
+        <message>
+            <source>Registry</source>
+            <translation type="unfinished">Registry</translation>
+        </message>
+        <message>
+            <source>Regressor x (single column, same length as y). For multi-feature use the JSON 2D form.</source>
+            <translation type="unfinished">Regressor x (single column, same length as y). For multi-feature use the JSON 2D form.</translation>
+        </message>
+        <message>
+            <source>Related markets are Polymarket-only</source>
+            <translation type="unfinished">Related markets are Polymarket-only</translation>
+        </message>
+        <message>
+            <source>Remove</source>
+            <translation>移除</translation>
+        </message>
+        <message>
+            <source>Remove Pin</source>
+            <translation type="unfinished">Remove Pin</translation>
+        </message>
+        <message>
+            <source>Rename Cell</source>
+            <translation type="unfinished">Rename Cell</translation>
+        </message>
+        <message>
+            <source>Reopen</source>
+            <translation type="unfinished">Reopen</translation>
+        </message>
+        <message>
+            <source>Reopen browser</source>
+            <translation type="unfinished">Reopen browser</translation>
+        </message>
+        <message>
+            <source>Reply</source>
+            <translation type="unfinished">Reply</translation>
+        </message>
+        <message>
+            <source>Report: </source>
+            <translation type="unfinished">Report: </translation>
+        </message>
+        <message>
+            <source>Required for yield_curve and country_data</source>
+            <translation type="unfinished">Required for yield_curve and country_data</translation>
+        </message>
+        <message>
+            <source>Requires BEA_API_KEY</source>
+            <translation type="unfinished">Requires BEA_API_KEY</translation>
+        </message>
+        <message>
+            <source>Requires EIA_API_KEY</source>
+            <translation type="unfinished">Requires EIA_API_KEY</translation>
+        </message>
+        <message>
+            <source>Requires WTO_API_KEY</source>
+            <translation type="unfinished">Requires WTO_API_KEY</translation>
+        </message>
+        <message>
+            <source>Reset</source>
+            <translation>重設</translation>
+        </message>
+        <message>
+            <source>Reset All to Defaults</source>
+            <translation type="unfinished">Reset All to Defaults</translation>
+        </message>
+        <message>
+            <source>Retire Age:</source>
+            <translation type="unfinished">Retire Age:</translation>
+        </message>
+        <message>
+            <source>Reverted.</source>
+            <translation type="unfinished">Reverted.</translation>
+        </message>
+        <message>
+            <source>Right</source>
+            <translation type="unfinished">Right</translation>
+        </message>
+        <message>
+            <source>S. Con. Res.</source>
+            <translation type="unfinished">S. Con. Res.</translation>
+        </message>
+        <message>
+            <source>S. Joint Res.</source>
+            <translation type="unfinished">S. Joint Res.</translation>
+        </message>
+        <message>
+            <source>S. Simple Res.</source>
+            <translation type="unfinished">S. Simple Res.</translation>
+        </message>
+        <message>
+            <source>S:--</source>
+            <translation type="unfinished">S:--</translation>
+        </message>
+        <message>
+            <source>SAVE</source>
+            <translation>儲存</translation>
+        </message>
+        <message>
+            <source>SAVE &amp; CONNECT</source>
+            <translation type="unfinished">SAVE &amp; CONNECT</translation>
+        </message>
+        <message>
+            <source>SAVE AGENT</source>
+            <translation type="unfinished">SAVE AGENT</translation>
+        </message>
+        <message>
+            <source>SAVE CHANGES</source>
+            <translation type="unfinished">SAVE CHANGES</translation>
+        </message>
+        <message>
+            <source>SAVE CONFIG</source>
+            <translation type="unfinished">SAVE CONFIG</translation>
+        </message>
+        <message>
+            <source>SAVE DRAFT</source>
+            <translation type="unfinished">SAVE DRAFT</translation>
+        </message>
+        <message>
+            <source>SAVE MAPPING CONFIGURATION</source>
+            <translation type="unfinished">SAVE MAPPING CONFIGURATION</translation>
+        </message>
+        <message>
+            <source>SAVE PROFILE</source>
+            <translation type="unfinished">SAVE PROFILE</translation>
+        </message>
+        <message>
+            <source>SAVED AGENTS</source>
+            <translation type="unfinished">SAVED AGENTS</translation>
+        </message>
+        <message>
+            <source>SAVED CONNECTIONS</source>
+            <translation type="unfinished">SAVED CONNECTIONS</translation>
+        </message>
+        <message>
+            <source>SAVED MAPPINGS</source>
+            <translation type="unfinished">SAVED MAPPINGS</translation>
+        </message>
+        <message>
+            <source>SAVINGS RATE ANALYSIS</source>
+            <translation type="unfinished">SAVINGS RATE ANALYSIS</translation>
+        </message>
+        <message>
+            <source>SCHEDULED QUERIES</source>
+            <translation type="unfinished">SCHEDULED QUERIES</translation>
+        </message>
+        <message>
+            <source>SCHEMA SELECTION</source>
+            <translation type="unfinished">SCHEMA SELECTION</translation>
+        </message>
+        <message>
+            <source>SECTOR ALLOCATION</source>
+            <translation type="unfinished">SECTOR ALLOCATION</translation>
+        </message>
+        <message>
+            <source>SECTOR BREAKDOWN</source>
+            <translation type="unfinished">SECTOR BREAKDOWN</translation>
+        </message>
+        <message>
+            <source>SECURITY</source>
+            <translation type="unfinished">SECURITY</translation>
+        </message>
+        <message>
+            <source>SECURITY TYPE BREAKDOWN</source>
+            <translation type="unfinished">SECURITY TYPE BREAKDOWN</translation>
+        </message>
+        <message>
+            <source>SELL</source>
+            <translation>賣出</translation>
+        </message>
+        <message>
+            <source>SEND</source>
+            <translation>傳送</translation>
+        </message>
+        <message>
+            <source>SERIES</source>
+            <translation type="unfinished">SERIES</translation>
+        </message>
+        <message>
+            <source>SERIES ID</source>
+            <translation type="unfinished">SERIES ID</translation>
+        </message>
+        <message>
+            <source>SET AS DEFAULT</source>
+            <translation type="unfinished">SET AS DEFAULT</translation>
+        </message>
+        <message>
+            <source>SETTINGS</source>
+            <translation>設定</translation>
+        </message>
+        <message>
+            <source>SHOW</source>
+            <translation>顯示</translation>
+        </message>
+        <message>
+            <source>SIZE</source>
+            <translation>大小</translation>
+        </message>
+        <message>
+            <source>SKILL LEVELS</source>
+            <translation type="unfinished">SKILL LEVELS</translation>
+        </message>
+        <message>
+            <source>SKIP &amp; CONTINUE</source>
+            <translation type="unfinished">SKIP &amp; CONTINUE</translation>
+        </message>
+        <message>
+            <source>SL</source>
+            <translation type="unfinished">SL</translation>
+        </message>
+        <message>
+            <source>SOURCE: </source>
+            <translation type="unfinished">SOURCE: </translation>
+        </message>
+        <message>
+            <source>SOURCE: --</source>
+            <translation type="unfinished">SOURCE: --</translation>
+        </message>
+        <message>
+            <source>SOVEREIGN PORTALS</source>
+            <translation type="unfinished">SOVEREIGN PORTALS</translation>
+        </message>
+        <message>
+            <source>SPREAD PROXIES</source>
+            <translation type="unfinished">SPREAD PROXIES</translation>
+        </message>
+        <message>
+            <source>STAKE</source>
+            <translation type="unfinished">STAKE</translation>
+        </message>
+        <message>
+            <source>START</source>
+            <translation>開始</translation>
+        </message>
+        <message>
+            <source>STEP RESULT</source>
+            <translation type="unfinished">STEP RESULT</translation>
+        </message>
+        <message>
+            <source>STOP</source>
+            <translation>停止</translation>
+        </message>
+        <message>
+            <source>STORAGE &amp; DATA MANAGEMENT</source>
+            <translation>儲存與資料管理</translation>
+        </message>
+        <message>
+            <source>STORE</source>
+            <translation>儲存區</translation>
+        </message>
+        <message>
+            <source>STRATEGY COMPARISON  (populated after optimization)</source>
+            <translation type="unfinished">STRATEGY COMPARISON  (populated after optimization)</translation>
+        </message>
+        <message>
+            <source>STRATEGY PERFORMANCE STATS</source>
+            <translation type="unfinished">STRATEGY PERFORMANCE STATS</translation>
+        </message>
+        <message>
+            <source>SUMMARY</source>
+            <translation>摘要</translation>
+        </message>
+        <message>
+            <source>SWAP</source>
+            <translation type="unfinished">SWAP</translation>
+        </message>
+        <message>
+            <source>SYMBOL</source>
+            <translation>代號</translation>
+        </message>
+        <message>
+            <source>SYMBOLS:</source>
+            <translation type="unfinished">SYMBOLS:</translation>
+        </message>
+        <message>
+            <source>SYSTEM</source>
+            <translation type="unfinished">SYSTEM</translation>
+        </message>
+        <message>
+            <source>SYSTEM CAPABILITIES</source>
+            <translation type="unfinished">SYSTEM CAPABILITIES</translation>
+        </message>
+        <message>
+            <source>Save</source>
+            <translation>儲存</translation>
+        </message>
+        <message>
+            <source>Save &amp; Set Active</source>
+            <translation type="unfinished">Save &amp; Set Active</translation>
+        </message>
+        <message>
+            <source>Save All Providers</source>
+            <translation type="unfinished">Save All Providers</translation>
+        </message>
+        <message>
+            <source>Save Global Settings</source>
+            <translation type="unfinished">Save Global Settings</translation>
+        </message>
+        <message>
+            <source>Save Security Settings</source>
+            <translation type="unfinished">Save Security Settings</translation>
+        </message>
+        <message>
+            <source>Save Settings</source>
+            <translation type="unfinished">Save Settings</translation>
+        </message>
+        <message>
+            <source>Saved Workspaces</source>
+            <translation type="unfinished">Saved Workspaces</translation>
+        </message>
+        <message>
+            <source>Saved layouts arrive in Phase 6</source>
+            <translation type="unfinished">Saved layouts arrive in Phase 6</translation>
+        </message>
+        <message>
+            <source>Saved. Restart streaming to use the new key.</source>
+            <translation type="unfinished">Saved. Restart streaming to use the new key.</translation>
+        </message>
+        <message>
+            <source>Saved: 0</source>
+            <translation type="unfinished">Saved: 0</translation>
+        </message>
+        <message>
+            <source>Sched</source>
+            <translation type="unfinished">Sched</translation>
+        </message>
+        <message>
+            <source>Schema: </source>
+            <translation type="unfinished">Schema: </translation>
+        </message>
+        <message>
+            <source>Schema: --</source>
+            <translation type="unfinished">Schema: --</translation>
+        </message>
+        <message>
+            <source>Schemas: 7</source>
+            <translation type="unfinished">Schemas: 7</translation>
+        </message>
+        <message>
+            <source>Science &amp; Tech</source>
+            <translation type="unfinished">Science &amp; Tech</translation>
+        </message>
+        <message>
+            <source>Search actions, layouts… (Esc to cancel, Enter to run)</source>
+            <translation type="unfinished">Search actions, layouts… (Esc to cancel, Enter to run)</translation>
+        </message>
+        <message>
+            <source>Search for a symbol to load news.</source>
+            <translation type="unfinished">Search for a symbol to load news.</translation>
+        </message>
+        <message>
+            <source>Search markets...</source>
+            <translation type="unfinished">Search markets...</translation>
+        </message>
+        <message>
+            <source>Select Kalshi private key (PEM)</source>
+            <translation type="unfinished">Select Kalshi private key (PEM)</translation>
+        </message>
+        <message>
+            <source>Select a category to begin</source>
+            <translation type="unfinished">Select a category to begin</translation>
+        </message>
+        <message>
+            <source>Select a color theme for your report:</source>
+            <translation type="unfinished">Select a color theme for your report:</translation>
+        </message>
+        <message>
+            <source>Select a component\nto edit properties</source>
+            <translation type="unfinished">Select a component\nto edit properties</translation>
+        </message>
+        <message>
+            <source>Select a data source above\nto load available endpoints</source>
+            <translation type="unfinished">Select a data source above\nto load available endpoints</translation>
+        </message>
+        <message>
+            <source>Select a market to view its price chart</source>
+            <translation type="unfinished">Select a market to view its price chart</translation>
+        </message>
+        <message>
+            <source>Select a node\nto edit properties</source>
+            <translation type="unfinished">Select a node\nto edit properties</translation>
+        </message>
+        <message>
+            <source>Select a note or create a new one</source>
+            <translation type="unfinished">Select a note or create a new one</translation>
+        </message>
+        <message>
+            <source>Select a report to open:</source>
+            <translation type="unfinished">Select a report to open:</translation>
+        </message>
+        <message>
+            <source>Select a server to view details.</source>
+            <translation type="unfinished">Select a server to view details.</translation>
+        </message>
+        <message>
+            <source>Select a template</source>
+            <translation type="unfinished">Select a template</translation>
+        </message>
+        <message>
+            <source>Select a template to reset your dashboard. Current layout will be replaced.</source>
+            <translation type="unfinished">Select a template to reset your dashboard. Current layout will be replaced.</translation>
+        </message>
+        <message>
+            <source>Select a template to view details</source>
+            <translation type="unfinished">Select a template to view details</translation>
+        </message>
+        <message>
+            <source>Select a tool</source>
+            <translation type="unfinished">Select a tool</translation>
+        </message>
+        <message>
+            <source>Select a workflow to configure and run.</source>
+            <translation type="unfinished">Select a workflow to configure and run.</translation>
+        </message>
+        <message>
+            <source>Select a workspace to preview</source>
+            <translation type="unfinished">Select a workspace to preview</translation>
+        </message>
+        <message>
+            <source>Select all</source>
+            <translation type="unfinished">Select all</translation>
+        </message>
+        <message>
+            <source>Select an account to configure credentials</source>
+            <translation type="unfinished">Select an account to configure credentials</translation>
+        </message>
+        <message>
+            <source>Select an agent</source>
+            <translation type="unfinished">Select an agent</translation>
+        </message>
+        <message>
+            <source>Select an index from MY INDICES to see its performance.</source>
+            <translation type="unfinished">Select an index from MY INDICES to see its performance.</translation>
+        </message>
+        <message>
+            <source>Select an indicator and click CALCULATE</source>
+            <translation type="unfinished">Select an indicator and click CALCULATE</translation>
+        </message>
+        <message>
+            <source>Select parameters and click FETCH</source>
+            <translation type="unfinished">Select parameters and click FETCH</translation>
+        </message>
+        <message>
+            <source>Selected files:</source>
+            <translation type="unfinished">Selected files:</translation>
+        </message>
+        <message>
+            <source>Senate Bill</source>
+            <translation type="unfinished">Senate Bill</translation>
+        </message>
+        <message>
+            <source>Send</source>
+            <translation>傳送</translation>
+        </message>
+        <message>
+            <source>Sent. Waiting for confirmation…</source>
+            <translation type="unfinished">Sent. Waiting for confirmation…</translation>
+        </message>
+        <message>
+            <source>Sent: %1…</source>
+            <translation type="unfinished">Sent: %1…</translation>
+        </message>
+        <message>
+            <source>Series values (&gt;= 1). Forecast = repeat last `season_length` observations.</source>
+            <translation type="unfinished">Series values (&gt;= 1). Forecast = repeat last `season_length` observations.</translation>
+        </message>
+        <message>
+            <source>Series values (&gt;= 30)</source>
+            <translation type="unfinished">Series values (&gt;= 30)</translation>
+        </message>
+        <message>
+            <source>Series values (&gt;= 30) — runs ADF + KPSS at each differencing order</source>
+            <translation type="unfinished">Series values (&gt;= 30) — runs ADF + KPSS at each differencing order</translation>
+        </message>
+        <message>
+            <source>Series values (&gt;= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.</source>
+            <translation type="unfinished">Series values (&gt;= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.</translation>
+        </message>
+        <message>
+            <source>Series values (training history, &gt;= 30)</source>
+            <translation type="unfinished">Series values (training history, &gt;= 30)</translation>
+        </message>
+        <message>
+            <source>Share your insights with the community</source>
+            <translation type="unfinished">Share your insights with the community</translation>
+        </message>
+        <message>
+            <source>Short-Term Outlook (STEO)</source>
+            <translation type="unfinished">Short-Term Outlook (STEO)</translation>
+        </message>
+        <message>
+            <source>Show</source>
+            <translation>顯示</translation>
+        </message>
+        <message>
+            <source>Show all</source>
+            <translation type="unfinished">Show all</translation>
+        </message>
+        <message>
+            <source>Show unverified tokens in the holdings panel</source>
+            <translation type="unfinished">Show unverified tokens in the holdings panel</translation>
+        </message>
+        <message>
+            <source>Showing %1 data</source>
+            <translation type="unfinished">Showing %1 data</translation>
+        </message>
+        <message>
+            <source>Sign lock</source>
+            <translation type="unfinished">Sign lock</translation>
+        </message>
+        <message>
+            <source>Sign swap</source>
+            <translation type="unfinished">Sign swap</translation>
+        </message>
+        <message>
+            <source>Sign transaction</source>
+            <translation type="unfinished">Sign transaction</translation>
+        </message>
+        <message>
+            <source>Signature Type:</source>
+            <translation type="unfinished">Signature Type:</translation>
+        </message>
+        <message>
+            <source>Signing failed: %1</source>
+            <translation type="unfinished">Signing failed: %1</translation>
+        </message>
+        <message>
+            <source>Simulation failed: %1. Refusing to sign.</source>
+            <translation type="unfinished">Simulation failed: %1. Refusing to sign.</translation>
+        </message>
+        <message>
+            <source>Solana wallet</source>
+            <translation type="unfinished">Solana wallet</translation>
+        </message>
+        <message>
+            <source>Sort:</source>
+            <translation type="unfinished">Sort:</translation>
+        </message>
+        <message>
+            <source>Spread: --</source>
+            <translation type="unfinished">Spread: --</translation>
+        </message>
+        <message>
+            <source>Stale.</source>
+            <translation type="unfinished">Stale.</translation>
+        </message>
+        <message>
+            <source>Statsmodels backend ready</source>
+            <translation type="unfinished">Statsmodels backend ready</translation>
+        </message>
+        <message>
+            <source>Status: </source>
+            <translation type="unfinished">Status: </translation>
+        </message>
+        <message>
+            <source>Step 1 of 5 — API CONFIG</source>
+            <translation type="unfinished">Step 1 of 5 — API CONFIG</translation>
+        </message>
+        <message>
+            <source>Stop</source>
+            <translation>停止</translation>
+        </message>
+        <message>
+            <source>Storage: 0 B / 500 MB</source>
+            <translation type="unfinished">Storage: 0 B / 500 MB</translation>
+        </message>
+        <message>
+            <source>Store API keys securely in the OS keychain. Keys are never written to disk in plain text.</source>
+            <translation type="unfinished">Store API keys securely in the OS keychain. Keys are never written to disk in plain text.</translation>
+        </message>
+        <message>
+            <source>Stored — input is hidden. Type to replace.</source>
+            <translation type="unfinished">Stored — input is hidden. Type to replace.</translation>
+        </message>
+        <message>
+            <source>Streaming</source>
+            <translation type="unfinished">Streaming</translation>
+        </message>
+        <message>
+            <source>Supply history feed error: %1</source>
+            <translation type="unfinished">Supply history feed error: %1</translation>
+        </message>
+        <message>
+            <source>Swap service unavailable.</source>
+            <translation type="unfinished">Swap service unavailable.</translation>
+        </message>
+        <message>
+            <source>Switch</source>
+            <translation type="unfinished">Switch</translation>
+        </message>
+        <message>
+            <source>Switch Profile…</source>
+            <translation type="unfinished">Switch Profile…</translation>
+        </message>
+        <message>
+            <source>Switch prediction market exchange</source>
+            <translation type="unfinished">Switch prediction market exchange</translation>
+        </message>
+        <message>
+            <source>System Prompt</source>
+            <translation type="unfinished">System Prompt</translation>
+        </message>
+        <message>
+            <source>TEAM</source>
+            <translation type="unfinished">TEAM</translation>
+        </message>
+        <message>
+            <source>TEAM QUERY</source>
+            <translation type="unfinished">TEAM QUERY</translation>
+        </message>
+        <message>
+            <source>TECHNICAL RATING</source>
+            <translation type="unfinished">TECHNICAL RATING</translation>
+        </message>
+        <message>
+            <source>TEMPLATES</source>
+            <translation type="unfinished">TEMPLATES</translation>
+        </message>
+        <message>
+            <source>TERMS OF SERVICE</source>
+            <translation type="unfinished">TERMS OF SERVICE</translation>
+        </message>
+        <message>
+            <source>TEST</source>
+            <translation type="unfinished">TEST</translation>
+        </message>
+        <message>
+            <source>TEST &amp; SAVE</source>
+            <translation type="unfinished">TEST &amp; SAVE</translation>
+        </message>
+        <message>
+            <source>TEST API REQUEST</source>
+            <translation type="unfinished">TEST API REQUEST</translation>
+        </message>
+        <message>
+            <source>THEME</source>
+            <translation>主題</translation>
+        </message>
+        <message>
+            <source>TICKERS</source>
+            <translation type="unfinished">TICKERS</translation>
+        </message>
+        <message>
+            <source>TIPS</source>
+            <translation type="unfinished">TIPS</translation>
+        </message>
+        <message>
+            <source>TITLE</source>
+            <translation>標題</translation>
+        </message>
+        <message>
+            <source>TODAY</source>
+            <translation type="unfinished">TODAY</translation>
+        </message>
+        <message>
+            <source>TOP MOVERS</source>
+            <translation type="unfinished">TOP MOVERS</translation>
+        </message>
+        <message>
+            <source>TOP PROVIDERS</source>
+            <translation type="unfinished">TOP PROVIDERS</translation>
+        </message>
+        <message>
+            <source>TOTAL %1  ·  %2 verified</source>
+            <translation type="unfinished">TOTAL %1  ·  %2 verified</translation>
+        </message>
+        <message>
+            <source>TOTP SECRET (2FA)</source>
+            <translation type="unfinished">TOTP SECRET (2FA)</translation>
+        </message>
+        <message>
+            <source>TP</source>
+            <translation type="unfinished">TP</translation>
+        </message>
+        <message>
+            <source>TRADE</source>
+            <translation type="unfinished">TRADE</translation>
+        </message>
+        <message>
+            <source>TRADEMARKS</source>
+            <translation type="unfinished">TRADEMARKS</translation>
+        </message>
+        <message>
+            <source>TRANSACTION HISTORY</source>
+            <translation type="unfinished">TRANSACTION HISTORY</translation>
+        </message>
+        <message>
+            <source>TRANSLATE</source>
+            <translation type="unfinished">TRANSLATE</translation>
+        </message>
+        <message>
+            <source>TRIGGER</source>
+            <translation type="unfinished">TRIGGER</translation>
+        </message>
+        <message>
+            <source>TYPE</source>
+            <translation>類型</translation>
+        </message>
+        <message>
+            <source>TYPE YOUR EMAIL ADDRESS TO CONFIRM:</source>
+            <translation type="unfinished">TYPE YOUR EMAIL ADDRESS TO CONFIRM:</translation>
+        </message>
+        <message>
+            <source>TYPOGRAPHY</source>
+            <translation>字型排版</translation>
+        </message>
+        <message>
+            <source>Tags</source>
+            <translation>標籤</translation>
+        </message>
+        <message>
+            <source>Tasks</source>
+            <translation type="unfinished">Tasks</translation>
+        </message>
+        <message>
+            <source>Team</source>
+            <translation type="unfinished">Team</translation>
+        </message>
+        <message>
+            <source>Temperature</source>
+            <translation type="unfinished">Temperature</translation>
+        </message>
+        <message>
+            <source>Template</source>
+            <translation type="unfinished">Template</translation>
+        </message>
+        <message>
+            <source>Test Connection</source>
+            <translation type="unfinished">Test Connection</translation>
+        </message>
+        <message>
+            <source>Test Deepgram key</source>
+            <translation type="unfinished">Test Deepgram key</translation>
+        </message>
+        <message>
+            <source>Test Send</source>
+            <translation type="unfinished">Test Send</translation>
+        </message>
+        <message>
+            <source>The programming language engine used for all analytics</source>
+            <translation type="unfinished">The programming language engine used for all analytics</translation>
+        </message>
+        <message>
+            <source>This connector does not support connectivity testing.</source>
+            <translation type="unfinished">This connector does not support connectivity testing.</translation>
+        </message>
+        <message>
+            <source>This module is under active development.\nIt will be available in a future update.</source>
+            <translation type="unfinished">This module is under active development.\nIt will be available in a future update.</translation>
+        </message>
+        <message>
+            <source>Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values</source>
+            <translation type="unfinished">Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values</translation>
+        </message>
+        <message>
+            <source>Tickers (comma-separated, &gt;= 2). Returns fetched via Yahoo Finance.</source>
+            <translation type="unfinished">Tickers (comma-separated, &gt;= 2). Returns fetched via Yahoo Finance.</translation>
+        </message>
+        <message>
+            <source>Time series values (&gt;= 20)</source>
+            <translation type="unfinished">Time series values (&gt;= 20)</translation>
+        </message>
+        <message>
+            <source>Time series values (&gt;= 20). Used for ARIMA(p,q) order selection.</source>
+            <translation type="unfinished">Time series values (&gt;= 20). Used for ARIMA(p,q) order selection.</translation>
+        </message>
+        <message>
+            <source>Time series values (&gt;= 24). Period auto-detected if left at 0.</source>
+            <translation type="unfinished">Time series values (&gt;= 24). Period auto-detected if left at 0.</translation>
+        </message>
+        <message>
+            <source>Time series values (&gt;= 30)</source>
+            <translation type="unfinished">Time series values (&gt;= 30)</translation>
+        </message>
+        <message>
+            <source>Time series values (&gt;= 30). CSV, space, or newline separated.</source>
+            <translation type="unfinished">Time series values (&gt;= 30). CSV, space, or newline separated.</translation>
+        </message>
+        <message>
+            <source>Timed out.</source>
+            <translation type="unfinished">Timed out.</translation>
+        </message>
+        <message>
+            <source>Tip: re-select after editing\ndata to refresh sparkline.</source>
+            <translation type="unfinished">Tip: re-select after editing\ndata to refresh sparkline.</translation>
+        </message>
+        <message>
+            <source>Tip: re-select component after\nediting data to re-render.</source>
+            <translation type="unfinished">Tip: re-select component after\nediting data to re-render.</translation>
+        </message>
+        <message>
+            <source>Title:</source>
+            <translation type="unfinished">Title:</translation>
+        </message>
+        <message>
+            <source>Total (all)</source>
+            <translation type="unfinished">Total (all)</translation>
+        </message>
+        <message>
+            <source>Trade Barrier Removal Impact</source>
+            <translation type="unfinished">Trade Barrier Removal Impact</translation>
+        </message>
+        <message>
+            <source>Trade Flow</source>
+            <translation type="unfinished">Trade Flow</translation>
+        </message>
+        <message>
+            <source>Trade Restrictions Analysis</source>
+            <translation type="unfinished">Trade Restrictions Analysis</translation>
+        </message>
+        <message>
+            <source>Trade Statistics (API key)</source>
+            <translation type="unfinished">Trade Statistics (API key)</translation>
+        </message>
+        <message>
+            <source>Trading Blocs Analysis</source>
+            <translation type="unfinished">Trading Blocs Analysis</translation>
+        </message>
+        <message>
+            <source>Trading workspace</source>
+            <translation type="unfinished">Trading workspace</translation>
+        </message>
+        <message>
+            <source>Training history (optional; enables MASE)</source>
+            <translation type="unfinished">Training history (optional; enables MASE)</translation>
+        </message>
+        <message>
+            <source>Treasury feed error: %1</source>
+            <translation type="unfinished">Treasury feed error: %1</translation>
+        </message>
+        <message>
+            <source>Two sandboxed environments to keep library versions conflict-free</source>
+            <translation type="unfinished">Two sandboxed environments to keep library versions conflict-free</translation>
+        </message>
+        <message>
+            <source>Tx failed on-chain: %1</source>
+            <translation type="unfinished">Tx failed on-chain: %1</translation>
+        </message>
+        <message>
+            <source>Type a command (e.g. 'layout switch \</source>
+            <translation type="unfinished">Type a command (e.g. 'layout switch \</translation>
+        </message>
+        <message>
+            <source>Type a ticker or company name to search</source>
+            <translation type="unfinished">Type a ticker or company name to search</translation>
+        </message>
+        <message>
+            <source>UNDO</source>
+            <translation type="unfinished">UNDO</translation>
+        </message>
+        <message>
+            <source>UPLOAD FILES</source>
+            <translation type="unfinished">UPLOAD FILES</translation>
+        </message>
+        <message>
+            <source>US</source>
+            <translation type="unfinished">US</translation>
+        </message>
+        <message>
+            <source>USA</source>
+            <translation type="unfinished">USA</translation>
+        </message>
+        <message>
+            <source>USE THIS TEMPLATE</source>
+            <translation type="unfinished">USE THIS TEMPLATE</translation>
+        </message>
+        <message>
+            <source>Unconfigured</source>
+            <translation type="unfinished">Unconfigured</translation>
+        </message>
+        <message>
+            <source>Underlying / parent symbol</source>
+            <translation type="unfinished">Underlying / parent symbol</translation>
+        </message>
+        <message>
+            <source>Unilateral Liberalization</source>
+            <translation type="unfinished">Unilateral Liberalization</translation>
+        </message>
+        <message>
+            <source>Unique model ID (e.g. lgbm_sp500)</source>
+            <translation type="unfinished">Unique model ID (e.g. lgbm_sp500)</translation>
+        </message>
+        <message>
+            <source>Unlink</source>
+            <translation type="unfinished">Unlink</translation>
+        </message>
+        <message>
+            <source>Unverified mint: %1</source>
+            <translation type="unfinished">Unverified mint: %1</translation>
+        </message>
+        <message>
+            <source>Update PIN</source>
+            <translation type="unfinished">Update PIN</translation>
+        </message>
+        <message>
+            <source>Upper band (optional, same length as actuals)</source>
+            <translation type="unfinished">Upper band (optional, same length as actuals)</translation>
+        </message>
+        <message>
+            <source>Usage: —</source>
+            <translation type="unfinished">Usage: —</translation>
+        </message>
+        <message>
+            <source>Use /stock, /fund, /index... in command bar to search</source>
+            <translation type="unfinished">Use /stock, /fund, /index... in command bar to search</translation>
+        </message>
+        <message>
+            <source>Use demo (paper trading) environment</source>
+            <translation type="unfinished">Use demo (paper trading) environment</translation>
+        </message>
+        <message>
+            <source>VERSION</source>
+            <translation type="unfinished">VERSION</translation>
+        </message>
+        <message>
+            <source>VIEW: </source>
+            <translation type="unfinished">VIEW: </translation>
+        </message>
+        <message>
+            <source>VIEW: MAPPINGS</source>
+            <translation type="unfinished">VIEW: MAPPINGS</translation>
+        </message>
+        <message>
+            <source>VIX FEAR GAUGE</source>
+            <translation type="unfinished">VIX FEAR GAUGE</translation>
+        </message>
+        <message>
+            <source>VOICE / SPEECH-TO-TEXT</source>
+            <translation type="unfinished">VOICE / SPEECH-TO-TEXT</translation>
+        </message>
+        <message>
+            <source>VOLUME</source>
+            <translation>成交量</translation>
+        </message>
+        <message>
+            <source>Validating with RPC…</source>
+            <translation type="unfinished">Validating with RPC…</translation>
+        </message>
+        <message>
+            <source>Vol:--</source>
+            <translation type="unfinished">Vol:--</translation>
+        </message>
+        <message>
+            <source>WATCHLIST</source>
+            <translation>自選清單</translation>
+        </message>
+        <message>
+            <source>WATCHLISTS</source>
+            <translation type="unfinished">WATCHLISTS</translation>
+        </message>
+        <message>
+            <source>WEIGHT COMPARISON  (all methods, per symbol)</source>
+            <translation type="unfinished">WEIGHT COMPARISON  (all methods, per symbol)</translation>
+        </message>
+        <message>
+            <source>WIN / LOSS BREAKDOWN</source>
+            <translation type="unfinished">WIN / LOSS BREAKDOWN</translation>
+        </message>
+        <message>
+            <source>WIZARD STEPS</source>
+            <translation type="unfinished">WIZARD STEPS</translation>
+        </message>
+        <message>
+            <source>WORKFLOW NAME</source>
+            <translation type="unfinished">WORKFLOW NAME</translation>
+        </message>
+        <message>
+            <source>WORKFLOWS</source>
+            <translation type="unfinished">WORKFLOWS</translation>
+        </message>
+        <message>
+            <source>Waiting</source>
+            <translation type="unfinished">Waiting</translation>
+        </message>
+        <message>
+            <source>Waiting for spot prices…</source>
+            <translation type="unfinished">Waiting for spot prices…</translation>
+        </message>
+        <message>
+            <source>Watch sources, trigger agent analysis.</source>
+            <translation type="unfinished">Watch sources, trigger agent analysis.</translation>
+        </message>
+        <message>
+            <source>Weekly Petroleum (WPSR)</source>
+            <translation type="unfinished">Weekly Petroleum (WPSR)</translation>
+        </message>
+        <message>
+            <source>Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.</source>
+            <translation type="unfinished">Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.</translation>
+        </message>
+        <message>
+            <source>Withdraw</source>
+            <translation type="unfinished">Withdraw</translation>
+        </message>
+        <message>
+            <source>Withdraw flow lands with the Anchor program.</source>
+            <translation type="unfinished">Withdraw flow lands with the Anchor program.</translation>
+        </message>
+        <message>
+            <source>Withdrawal Rate:</source>
+            <translation type="unfinished">Withdrawal Rate:</translation>
+        </message>
+        <message>
+            <source>Workspace Name</source>
+            <translation type="unfinished">Workspace Name</translation>
+        </message>
+        <message>
+            <source>X-Content-Type-Options: nosniff\r\n</source>
+            <translation type="unfinished">X-Content-Type-Options: nosniff\r\n</translation>
+        </message>
+        <message>
+            <source>XXXX-XXXX</source>
+            <translation type="unfinished">XXXX-XXXX</translation>
+        </message>
+        <message>
+            <source>YEARS</source>
+            <translation type="unfinished">YEARS</translation>
+        </message>
+        <message>
+            <source>YES</source>
+            <translation>是</translation>
+        </message>
+        <message>
+            <source>YIELD TO MATURITY</source>
+            <translation type="unfinished">YIELD TO MATURITY</translation>
+        </message>
+        <message>
+            <source>YouTube streams resolved via yt-dlp and played inline.</source>
+            <translation type="unfinished">YouTube streams resolved via yt-dlp and played inline.</translation>
+        </message>
+        <message>
+            <source>Your terminal file index is empty.</source>
+            <translation type="unfinished">Your terminal file index is empty.</translation>
+        </message>
+        <message>
+            <source>Zerodha</source>
+            <translation type="unfinished">Zerodha</translation>
+        </message>
+        <message>
+            <source>[ FM ]</source>
+            <translation type="unfinished">[ FM ]</translation>
+        </message>
+        <message>
+            <source>[ERROR] </source>
+            <translation type="unfinished">[ERROR] </translation>
+        </message>
+        <message>
+            <source>[RETRY]</source>
+            <translation type="unfinished">[RETRY]</translation>
+        </message>
+        <message>
+            <source>[THINK] </source>
+            <translation type="unfinished">[THINK] </translation>
+        </message>
+        <message>
+            <source>\n\n[... truncated at 64K characters ...]</source>
+            <translation type="unfinished">\n\n[... truncated at 64K characters ...]</translation>
+        </message>
+        <message>
+            <source>\r\n</source>
+            <translation type="unfinished">\r\n</translation>
+        </message>
+        <message>
+            <source>\u00D7</source>
+            <translation type="unfinished">\u00D7</translation>
+        </message>
+        <message>
+            <source>\u2190 BACK</source>
+            <translation type="unfinished">\u2190 BACK</translation>
+        </message>
+        <message>
+            <source>\u21BB</source>
+            <translation type="unfinished">\u21BB</translation>
+        </message>
+        <message>
+            <source>\u25B6 RUN MONTE CARLO (1000 paths)</source>
+            <translation type="unfinished">\u25B6 RUN MONTE CARLO (1000 paths)</translation>
+        </message>
+        <message>
+            <source>\u25B6 RUN OPTIMIZATION</source>
+            <translation type="unfinished">\u25B6 RUN OPTIMIZATION</translation>
+        </message>
+        <message>
+            <source>\u25B6 RUN QUANTSTATS</source>
+            <translation type="unfinished">\u25B6 RUN QUANTSTATS</translation>
+        </message>
+        <message>
+            <source>\u25CF</source>
+            <translation type="unfinished">\u25CF</translation>
+        </message>
+        <message>
+            <source>\u2715</source>
+            <translation type="unfinished">\u2715</translation>
+        </message>
+        <message>
+            <source>\xe2\x80\x94</source>
+            <translation type="unfinished">\xe2\x80\x94</translation>
+        </message>
+        <message>
+            <source>agent_memory.db</source>
+            <translation type="unfinished">agent_memory.db</translation>
+        </message>
+        <message>
+            <source>all agents + arena</source>
+            <translation type="unfinished">all agents + arena</translation>
+        </message>
+        <message>
+            <source>all-posts</source>
+            <translation type="unfinished">all-posts</translation>
+        </message>
+        <message>
+            <source>analytics library list</source>
+            <translation type="unfinished">analytics library list</translation>
+        </message>
+        <message>
+            <source>basic API quota</source>
+            <translation type="unfinished">basic API quota</translation>
+        </message>
+        <message>
+            <source>bootstrap,jackknife</source>
+            <translation type="unfinished">bootstrap,jackknife</translation>
+        </message>
+        <message>
+            <source>bridge error: %1</source>
+            <translation type="unfinished">bridge error: %1</translation>
+        </message>
+        <message>
+            <source>build_swap failed: %1</source>
+            <translation type="unfinished">build_swap failed: %1</translation>
+        </message>
+        <message>
+            <source>c = constant only, ct = constant + trend</source>
+            <translation type="unfinished">c = constant only, ct = constant + trend</translation>
+        </message>
+        <message>
+            <source>c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant</source>
+            <translation type="unfinished">c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant</translation>
+        </message>
+        <message>
+            <source>cache.db</source>
+            <translation type="unfinished">cache.db</translation>
+        </message>
+        <message>
+            <source>cancelled by user</source>
+            <translation type="unfinished">cancelled by user</translation>
+        </message>
+        <message>
+            <source>comma-separated: bootstrap,jackknife,permutation</source>
+            <translation type="unfinished">comma-separated: bootstrap,jackknife,permutation</translation>
+        </message>
+        <message>
+            <source>comma-separated: pca,kmeans,agglomerative</source>
+            <translation type="unfinished">comma-separated: pca,kmeans,agglomerative</translation>
+        </message>
+        <message>
+            <source>comma-separated: ridge,lasso,random_forest,svr,knn</source>
+            <translation type="unfinished">comma-separated: ridge,lasso,random_forest,svr,knn</translation>
+        </message>
+        <message>
+            <source>could not start local bridge server</source>
+            <translation type="unfinished">could not start local bridge server</translation>
+        </message>
+        <message>
+            <source>e.g. AAPL — fetched from Yahoo Finance</source>
+            <translation type="unfinished">e.g. AAPL — fetched from Yahoo Finance</translation>
+        </message>
+        <message>
+            <source>e.g. my-mcp-package --flag value</source>
+            <translation type="unfinished">e.g. my-mcp-package --flag value</translation>
+        </message>
+        <message>
+            <source>fincept.db</source>
+            <translation type="unfinished">fincept.db</translation>
+        </message>
+        <message>
+            <source>fincept_lock not deployed — Settings &gt; Lock program ID</source>
+            <translation type="unfinished">fincept_lock not deployed — Settings &gt; Lock program ID</translation>
+        </message>
+        <message>
+            <source>gnu.org/licenses/agpl-3.0</source>
+            <translation type="unfinished">gnu.org/licenses/agpl-3.0</translation>
+        </message>
+        <message>
+            <source>market_lifecycle_v2</source>
+            <translation type="unfinished">market_lifecycle_v2</translation>
+        </message>
+        <message>
+            <source>nova-2</source>
+            <translation type="unfinished">nova-2</translation>
+        </message>
+        <message>
+            <source>nova-3 (recommended)</source>
+            <translation type="unfinished">nova-3 (recommended)</translation>
+        </message>
+        <message>
+            <source>paste API key…</source>
+            <translation type="unfinished">paste API key…</translation>
+        </message>
+        <message>
+            <source>pca,kmeans</source>
+            <translation type="unfinished">pca,kmeans</translation>
+        </message>
+        <message>
+            <source>premium screens</source>
+            <translation type="unfinished">premium screens</translation>
+        </message>
+        <message>
+            <source>restored from storage</source>
+            <translation type="unfinished">restored from storage</translation>
+        </message>
+        <message>
+            <source>ridge,random_forest</source>
+            <translation type="unfinished">ridge,random_forest</translation>
+        </message>
+        <message>
+            <source>set by PumpSwap; capped by slippage</source>
+            <translation type="unfinished">set by PumpSwap; capped by slippage</translation>
+        </message>
+        <message>
+            <source>signature verification failed</source>
+            <translation type="unfinished">signature verification failed</translation>
+        </message>
+        <message>
+            <source>simple,stratified,systematic</source>
+            <translation type="unfinished">simple,stratified,systematic</translation>
+        </message>
+        <message>
+            <source>step 0 / — · reward — · loss —</source>
+            <translation type="unfinished">step 0 / — · reward — · loss —</translation>
+        </message>
+        <message>
+            <source>subs %1 · pred-mkt %2 · misc %3</source>
+            <translation type="unfinished">subs %1 · pred-mkt %2 · misc %3</translation>
+        </message>
+        <message>
+            <source>support@fincept.in</source>
+            <translation type="unfinished">support@fincept.in</translation>
+        </message>
+        <message>
+            <source>timed out waiting for browser callback</source>
+            <translation type="unfinished">timed out waiting for browser callback</translation>
+        </message>
+        <message>
+            <source>trading library list</source>
+            <translation type="unfinished">trading library list</translation>
+        </message>
+        <message>
+            <source>waiting for revenue + spot price…</source>
+            <translation type="unfinished">waiting for revenue + spot price…</translation>
+        </message>
+        <message>
+            <source>yt-dlp error: </source>
+            <translation type="unfinished">yt-dlp error: </translation>
+        </message>
+        <message>
+            <source>© 2024-2026 Fincept Corporation. All rights reserved.</source>
+            <translation type="unfinished">© 2024-2026 Fincept Corporation. All rights reserved.</translation>
+        </message>
+        <message>
+            <source>— agent default —</source>
+            <translation type="unfinished">— agent default —</translation>
+        </message>
+        <message>
+            <source>— select agent —</source>
+            <translation type="unfinished">— select agent —</translation>
+        </message>
+        <message>
+            <source>— select file —</source>
+            <translation type="unfinished">— select file —</translation>
+        </message>
+        <message>
+            <source>— select tool —</source>
+            <translation type="unfinished">— select tool —</translation>
+        </message>
+        <message>
+            <source>…</source>
+            <translation type="unfinished">…</translation>
+        </message>
+        <message>
+            <source>←  Back to Feed</source>
+            <translation type="unfinished">←  Back to Feed</translation>
+        </message>
+        <message>
+            <source>← BACK</source>
+            <translation type="unfinished">← BACK</translation>
+        </message>
+        <message>
+            <source>← Back</source>
+            <translation type="unfinished">← Back</translation>
+        </message>
+        <message>
+            <source>↺  REFRESH</source>
+            <translation type="unfinished">↺  REFRESH</translation>
+        </message>
+        <message>
+            <source>↻</source>
+            <translation type="unfinished">↻</translation>
+        </message>
+        <message>
+            <source>≈ %1 $FNCPT (PumpSwap fills at execution)</source>
+            <translation type="unfinished">≈ %1 $FNCPT (PumpSwap fills at execution)</translation>
+        </message>
+        <message>
+            <source>≈ %1 SOL (PumpSwap fills at execution)</source>
+            <translation type="unfinished">≈ %1 SOL (PumpSwap fills at execution)</translation>
+        </message>
+        <message>
+            <source>── </source>
+            <translation type="unfinished">── </translation>
+        </message>
+        <message>
+            <source>■  Stop</source>
+            <translation type="unfinished">■  Stop</translation>
+        </message>
+        <message>
+            <source>▲  Upvote</source>
+            <translation type="unfinished">▲  Upvote</translation>
+        </message>
+        <message>
+            <source>▲ 0</source>
+            <translation type="unfinished">▲ 0</translation>
+        </message>
+        <message>
+            <source>▶  Start</source>
+            <translation type="unfinished">▶  Start</translation>
+        </message>
+        <message>
+            <source>▶ RUN</source>
+            <translation type="unfinished">▶ RUN</translation>
+        </message>
+        <message>
+            <source>◆ 0 replies</source>
+            <translation type="unfinished">◆ 0 replies</translation>
+        </message>
+        <message>
+            <source>◉ 0 views</source>
+            <translation type="unfinished">◉ 0 views</translation>
+        </message>
+        <message>
+            <source>● = already assigned</source>
+            <translation type="unfinished">● = already assigned</translation>
+        </message>
+        <message>
+            <source>● ACTIVE</source>
+            <translation type="unfinished">● ACTIVE</translation>
+        </message>
+        <message>
+            <source>● HOT</source>
+            <translation type="unfinished">● HOT</translation>
+        </message>
+        <message>
+            <source>● MARKET --</source>
+            <translation type="unfinished">● MARKET --</translation>
+        </message>
+        <message>
+            <source>✓ ADDED</source>
+            <translation type="unfinished">✓ ADDED</translation>
+        </message>
+        <message>
+            <source>✓ VOTED</source>
+            <translation type="unfinished">✓ VOTED</translation>
+        </message>
+        <message>
+            <source>✕ REMOVE</source>
+            <translation type="unfinished">✕ REMOVE</translation>
+        </message>
+        <message>
+            <source>代號 (如 AAPL)</source>
+            <translation type="unfinished">代號 (如 AAPL)</translation>
+        </message>
+        <message>
+            <source>使用者名稱需 3-50 個字元</source>
+            <translation type="unfinished">使用者名稱需 3-50 個字元</translation>
+        </message>
+        <message>
+            <source>價格</source>
+            <translation type="unfinished">價格</translation>
+        </message>
+        <message>
+            <source>儲存</source>
+            <translation type="unfinished">儲存</translation>
+        </message>
+        <message>
+            <source>免費</source>
+            <translation type="unfinished">免費</translation>
+        </message>
+        <message>
+            <source>免費方案</source>
+            <translation type="unfinished">免費方案</translation>
+        </message>
+        <message>
+            <source>即時</source>
+            <translation type="unfinished">即時</translation>
+        </message>
+        <message>
+            <source>國碼為必填（例如 +1、+886）</source>
+            <translation type="unfinished">國碼為必填（例如 +1、+886）</translation>
+        </message>
+        <message>
+            <source>安全</source>
+            <translation type="unfinished">安全</translation>
+        </message>
+        <message>
+            <source>安全設定</source>
+            <translation type="unfinished">安全設定</translation>
+        </message>
+        <message>
+            <source>安全警告</source>
+            <translation type="unfinished">安全警告</translation>
+        </message>
+        <message>
+            <source>密碼</source>
+            <translation type="unfinished">密碼</translation>
+        </message>
+        <message>
+            <source>密碼不一致</source>
+            <translation type="unfinished">密碼不一致</translation>
+        </message>
+        <message>
+            <source>密碼已重設</source>
+            <translation type="unfinished">密碼已重設</translation>
+        </message>
+        <message>
+            <source>密碼至少需要 8 個字元</source>
+            <translation type="unfinished">密碼至少需要 8 個字元</translation>
+        </message>
+        <message>
+            <source>工作階段衝突</source>
+            <translation type="unfinished">工作階段衝突</translation>
+        </message>
+        <message>
+            <source>已有帳戶？</source>
+            <translation type="unfinished">已有帳戶？</translation>
+        </message>
+        <message>
+            <source>市價</source>
+            <translation type="unfinished">市價</translation>
+        </message>
+        <message>
+            <source>市場脈動</source>
+            <translation type="unfinished">市場脈動</translation>
+        </message>
+        <message>
+            <source>帳戶已鎖定</source>
+            <translation type="unfinished">帳戶已鎖定</translation>
+        </message>
+        <message>
+            <source>建立帳戶</source>
+            <translation type="unfinished">建立帳戶</translation>
+        </message>
+        <message>
+            <source>必要</source>
+            <translation type="unfinished">必要</translation>
+        </message>
+        <message>
+            <source>忘記密碼？</source>
+            <translation type="unfinished">忘記密碼？</translation>
+        </message>
+        <message>
+            <source>恐懼與貪婪指數</source>
+            <translation type="unfinished">恐懼與貪婪指數</translation>
+        </message>
+        <message>
+            <source>您的密碼已重設成功。現在可以使用新密碼登入。</source>
+            <translation type="unfinished">您的密碼已重設成功。現在可以使用新密碼登入。</translation>
+        </message>
+        <message>
+            <source>想先體驗看看嗎？</source>
+            <translation type="unfinished">想先體驗看看嗎？</translation>
+        </message>
+        <message>
+            <source>成功</source>
+            <translation type="unfinished">成功</translation>
+        </message>
+        <message>
+            <source>我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</source>
+            <translation type="unfinished">我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</translation>
+        </message>
+        <message>
+            <source>所有欄位皆為必填</source>
+            <translation type="unfinished">所有欄位皆為必填</translation>
+        </message>
+        <message>
+            <source>授權成功！</source>
+            <translation type="unfinished">授權成功！</translation>
+        </message>
+        <message>
+            <source>授權碼</source>
+            <translation type="unfinished">授權碼</translation>
+        </message>
+        <message>
+            <source>授權碼已過期，請重新嘗試。</source>
+            <translation type="unfinished">授權碼已過期，請重新嘗試。</translation>
+        </message>
+        <message>
+            <source>排序</source>
+            <translation type="unfinished">排序</translation>
+        </message>
+        <message>
+            <source>推薦方案</source>
+            <translation type="unfinished">推薦方案</translation>
+        </message>
+        <message>
+            <source>數量</source>
+            <translation type="unfinished">數量</translation>
+        </message>
+        <message>
+            <source>方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</source>
+            <translation type="unfinished">方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</translation>
+        </message>
+        <message>
+            <source>方案與定價</source>
+            <translation type="unfinished">方案與定價</translation>
+        </message>
+        <message>
+            <source>更新方案狀態中...</source>
+            <translation type="unfinished">更新方案狀態中...</translation>
+        </message>
+        <message>
+            <source>未從伺服器收到結帳 Token</source>
+            <translation type="unfinished">未從伺服器收到結帳 Token</translation>
+        </message>
+        <message>
+            <source>未收到？重新發送</source>
+            <translation type="unfinished">未收到？重新發送</translation>
+        </message>
+        <message>
+            <source>查詢</source>
+            <translation type="unfinished">查詢</translation>
+        </message>
+        <message>
+            <source>檢查您的郵件</source>
+            <translation type="unfinished">檢查您的郵件</translation>
+        </message>
+        <message>
+            <source>沒有帳戶？</source>
+            <translation type="unfinished">沒有帳戶？</translation>
+        </message>
+        <message>
+            <source>登入</source>
+            <translation type="unfinished">登入</translation>
+        </message>
+        <message>
+            <source>登入您的終端機帳戶</source>
+            <translation type="unfinished">登入您的終端機帳戶</translation>
+        </message>
+        <message>
+            <source>目前方案</source>
+            <translation type="unfinished">目前方案</translation>
+        </message>
+        <message>
+            <source>目前沒有可用方案。</source>
+            <translation type="unfinished">目前沒有可用方案。</translation>
+        </message>
+        <message>
+            <source>確認 PIN 碼</source>
+            <translation type="unfinished">確認 PIN 碼</translation>
+        </message>
+        <message>
+            <source>等待授權中</source>
+            <translation type="unfinished">等待授權中</translation>
+        </message>
+        <message>
+            <source>等待授權中...</source>
+            <translation type="unfinished">等待授權中...</translation>
+        </message>
+        <message>
+            <source>精簡</source>
+            <translation type="unfinished">精簡</translation>
+        </message>
+        <message>
+            <source>終端機已鎖定</source>
+            <translation type="unfinished">終端機已鎖定</translation>
+        </message>
+        <message>
+            <source>繼續使用免費方案</source>
+            <translation type="unfinished">繼續使用免費方案</translation>
+        </message>
+        <message>
+            <source>繼續免費使用</source>
+            <translation type="unfinished">繼續免費使用</translation>
+        </message>
+        <message>
+            <source>脈動</source>
+            <translation type="unfinished">脈動</translation>
+        </message>
+        <message>
+            <source>處理中...</source>
+            <translation type="unfinished">處理中...</translation>
+        </message>
+        <message>
+            <source>裝置授權</source>
+            <translation type="unfinished">裝置授權</translation>
+        </message>
+        <message>
+            <source>解鎖 Fincept Terminal 的完整功能</source>
+            <translation type="unfinished">解鎖 Fincept Terminal 的完整功能</translation>
+        </message>
+        <message>
+            <source>記住密碼了？返回登入</source>
+            <translation type="unfinished">記住密碼了？返回登入</translation>
+        </message>
+        <message>
+            <source>註冊</source>
+            <translation type="unfinished">註冊</translation>
+        </message>
+        <message>
+            <source>請在瀏覽器中輸入以下驗證碼以授權此終端機。</source>
+            <translation type="unfinished">請在瀏覽器中輸入以下驗證碼以授權此終端機。</translation>
+        </message>
+        <message>
+            <source>請建立 6 位數 PIN 碼以保護您的終端機</source>
+            <translation type="unfinished">請建立 6 位數 PIN 碼以保護您的終端機</translation>
+        </message>
+        <message>
+            <source>請輸入 6 位數 PIN 碼以解鎖</source>
+            <translation type="unfinished">請輸入 6 位數 PIN 碼以解鎖</translation>
+        </message>
+        <message>
+            <source>請輸入 PIN 碼</source>
+            <translation type="unfinished">請輸入 PIN 碼</translation>
+        </message>
+        <message>
+            <source>請輸入您的密碼</source>
+            <translation type="unfinished">請輸入您的密碼</translation>
+        </message>
+        <message>
+            <source>請輸入驗證器的 6 位數驗證碼</source>
+            <translation type="unfinished">請輸入驗證器的 6 位數驗證碼</translation>
+        </message>
+        <message>
+            <source>請輸入驗證碼</source>
+            <translation type="unfinished">請輸入驗證碼</translation>
+        </message>
+        <message>
+            <source>警告</source>
+            <translation type="unfinished">警告</translation>
+        </message>
+        <message>
+            <source>買價 --</source>
+            <translation type="unfinished">買價 --</translation>
+        </message>
+        <message>
+            <source>賣價 --</source>
+            <translation type="unfinished">賣價 --</translation>
+        </message>
+        <message>
+            <source>載入中...</source>
+            <translation type="unfinished">載入中...</translation>
+        </message>
+        <message>
+            <source>載入方案中...</source>
+            <translation type="unfinished">載入方案中...</translation>
+        </message>
+        <message>
+            <source>輸入 PIN 碼</source>
+            <translation type="unfinished">輸入 PIN 碼</translation>
+        </message>
+        <message>
+            <source>輸入密碼</source>
+            <translation type="unfinished">輸入密碼</translation>
+        </message>
+        <message>
+            <source>輸入您的電子郵件，我們將發送驗證碼。</source>
+            <translation type="unfinished">輸入您的電子郵件，我們將發送驗證碼。</translation>
+        </message>
+        <message>
+            <source>輸入郵件中的驗證碼</source>
+            <translation type="unfinished">輸入郵件中的驗證碼</translation>
+        </message>
+        <message>
+            <source>返回主畫面</source>
+            <translation type="unfinished">返回主畫面</translation>
+        </message>
+        <message>
+            <source>返回登入</source>
+            <translation type="unfinished">返回登入</translation>
+        </message>
+        <message>
+            <source>返回表單</source>
+            <translation type="unfinished">返回表單</translation>
+        </message>
+        <message>
+            <source>送出委託</source>
+            <translation type="unfinished">送出委託</translation>
+        </message>
+        <message>
+            <source>選擇方案</source>
+            <translation type="unfinished">選擇方案</translation>
+        </message>
+        <message>
+            <source>重設</source>
+            <translation type="unfinished">重設</translation>
+        </message>
+        <message>
+            <source>重設密碼</source>
+            <translation type="unfinished">重設密碼</translation>
+        </message>
+        <message>
+            <source>金融終端</source>
+            <translation type="unfinished">金融終端</translation>
+        </message>
+        <message>
+            <source>隱藏</source>
+            <translation type="unfinished">隱藏</translation>
+        </message>
+        <message>
+            <source>雙重驗證</source>
+            <translation type="unfinished">雙重驗證</translation>
+        </message>
+        <message>
+            <source>電子郵件</source>
+            <translation type="unfinished">電子郵件</translation>
+        </message>
+        <message>
+            <source>預估總額  --</source>
+            <translation type="unfinished">預估總額  --</translation>
+        </message>
+        <message>
+            <source>顯示</source>
+            <translation type="unfinished">顯示</translation>
+        </message>
+        <message>
+            <source>驗證碼</source>
+            <translation type="unfinished">驗證碼</translation>
+        </message>
+        <message>
+            <source>驗證電子郵件</source>
+            <translation type="unfinished">驗證電子郵件</translation>
+        </message>
+        <message>
+            <source>＋  ADD CUSTOM MCP SERVER</source>
+            <translation type="unfinished">＋  ADD CUSTOM MCP SERVER</translation>
+        </message>
+        <message>
+            <source>＋  Create New Ticket</source>
+            <translation type="unfinished">＋  Create New Ticket</translation>
+        </message>
+        <message>
+            <source>＋  New Ticket</source>
+            <translation type="unfinished">＋  New Ticket</translation>
+        </message>
     </context>
-
-    <!-- ════════════════════════════════════════════════════════════════════ -->
-    <!-- SetupScreen (安裝嚮導) 翻譯                                        -->
-    <!-- ════════════════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::SetupScreen</name>
         <message>
@@ -7621,10 +13336,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>已完成 %1/%2 個步驟</translation>
         </message>
     </context>
-
-    <!-- ════════════════════════════════════════════════════════════════════ -->
-    <!-- LoginScreen (登入畫面) 翻譯                                        -->
-    <!-- ════════════════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::LoginScreen</name>
         <message>
@@ -7716,10 +13427,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>  登入中...  </translation>
         </message>
     </context>
-
-    <!-- ════════════════════════════════════════════════════════════════════ -->
-    <!-- DockScreenRouter (面板標題) 翻譯                                    -->
-    <!-- ════════════════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::DockScreenRouter</name>
         <message>
@@ -7919,10 +13626,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>說明</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 帳號管理：RegisterScreen（註冊畫面）                        -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::RegisterScreen</name>
         <message>
@@ -7970,10 +13673,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>輸入電子郵件中的驗證碼</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 帳號管理：ForgotPasswordScreen（忘記密碼畫面）              -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::ForgotPasswordScreen</name>
         <message>
@@ -7981,10 +13680,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>user@domain.com</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 帳號管理：LockScreen（鎖定畫面）                           -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::LockScreen</name>
         <message>
@@ -8000,10 +13695,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>兩次輸入的 PIN 碼不一致</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 帳號管理：PricingScreen（方案定價畫面）                     -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::PricingScreen</name>
         <message>
@@ -8031,10 +13722,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>正在更新方案狀態...</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 帳號管理：ProfileScreen（個人檔案畫面）                     -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::ProfileScreen</name>
         <message>
@@ -8046,10 +13733,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>編輯個人檔案</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 預測市場：PredictionAccountDialog（帳戶連接對話框）         -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::PredictionAccountDialog</name>
         <message>
@@ -8161,10 +13844,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>已從安全儲存區載入 Polymarket 憑證。</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 預測市場：PolymarketCommandBar                             -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::PolymarketCommandBar</name>
         <message>
@@ -8212,10 +13891,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>切換預測市場交易所</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 預測市場：PolymarketDetailPanel                            -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::PolymarketDetailPanel</name>
         <message>
@@ -8227,14 +13902,10 @@ This only happens the first time — future launches are instant.</source>
             <translation>相關市場功能僅限 Polymarket</translation>
         </message>
         <message>
-            <source>Invalid size — must be > 0</source>
+            <source>Invalid size — must be &gt; 0</source>
             <translation>無效的數量 — 必須大於 0</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 預測市場：PolymarketScreen                                  -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::PolymarketScreen</name>
         <message>
@@ -8246,84 +13917,67 @@ This only happens the first time — future launches are instant.</source>
             <translation>顯示 %1 資料</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- Agent 面板相關遺漏                                          -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::AgentChatPanel</name>
         <message>
-            <source>Active LLM — configure in Settings > LLM Configuration</source>
-            <translation>目前使用的 LLM — 請至設定 > LLM 設定調整</translation>
+            <source>Active LLM — configure in Settings &gt; LLM Configuration</source>
+            <translation>目前使用的 LLM — 請至設定 &gt; LLM 設定調整</translation>
         </message>
         <message>
-            <source>No LLM provider configured — go to Settings > LLM Configuration</source>
-            <translation>尚未設定 LLM 提供者 — 請前往設定 > LLM 設定</translation>
+            <source>No LLM provider configured — go to Settings &gt; LLM Configuration</source>
+            <translation>尚未設定 LLM 提供者 — 請前往設定 &gt; LLM 設定</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::AgentsViewPanel</name>
         <message>
-            <source>No provider configured — go to Settings > LLM Config</source>
-            <translation>尚未設定提供者 — 請前往設定 > LLM 設定</translation>
+            <source>No provider configured — go to Settings &gt; LLM Config</source>
+            <translation>尚未設定提供者 — 請前往設定 &gt; LLM 設定</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::CreateAgentPanel</name>
         <message>
-            <source>LLM profile for this agent. Configure profiles in Settings > LLM Config.</source>
-            <translation>此代理人的 LLM 設定檔。請至設定 > LLM 設定管理設定檔。</translation>
+            <source>LLM profile for this agent. Configure profiles in Settings &gt; LLM Config.</source>
+            <translation>此代理人的 LLM 設定檔。請至設定 &gt; LLM 設定管理設定檔。</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::TeamsViewPanel</name>
         <message>
-            <source>No provider — go to Settings > LLM Config</source>
-            <translation>尚未設定提供者 — 請前往設定 > LLM 設定</translation>
+            <source>No provider — go to Settings &gt; LLM Config</source>
+            <translation>尚未設定提供者 — 請前往設定 &gt; LLM 設定</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::WorkflowsViewPanel</name>
         <message>
-            <source>No provider — Settings > LLM Config</source>
-            <translation>尚未設定提供者 — 設定 > LLM 設定</translation>
+            <source>No provider — Settings &gt; LLM Config</source>
+            <translation>尚未設定提供者 — 設定 &gt; LLM 設定</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- AI 聊天：AiChatScreen 遺漏                                  -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::AiChatScreen</name>
         <message>
-            <source>Active Model — change in Settings > LLM Configuration</source>
-            <translation>目前模型 — 可至設定 > LLM 設定變更</translation>
+            <source>Active Model — change in Settings &gt; LLM Configuration</source>
+            <translation>目前模型 — 可至設定 &gt; LLM 設定變更</translation>
         </message>
         <message>
-            <source>Active model — change in Settings > LLM Configuration</source>
-            <translation>目前模型 — 可至設定 > LLM 設定變更</translation>
+            <source>Active model — change in Settings &gt; LLM Configuration</source>
+            <translation>目前模型 — 可至設定 &gt; LLM 設定變更</translation>
         </message>
         <message>
-            <source>Fincept managed AI service\n\nChange in Settings > LLM Configuration</source>
-            <translation>Fincept 管理的 AI 服務\n\n可至設定 > LLM 設定變更</translation>
+            <source>Fincept managed AI service\n\nChange in Settings &gt; LLM Configuration</source>
+            <translation>Fincept 管理的 AI 服務\n\n可至設定 &gt; LLM 設定變更</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 其他零散遺漏                                                -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::ui::CommandBar</name>
         <message>
-            <source>> Enter Command or /type ...</source>
-            <translation>> 輸入指令或 /type ...</translation>
+            <source>&gt; Enter Command or /type ...</source>
+            <translation>&gt; 輸入指令或 /type ...</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::MAModulePanel</name>
         <message>
@@ -8331,7 +13985,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>正在計算來源與用途...</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::PolymarketPriceWidget</name>
         <message>
@@ -8339,7 +13992,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>每行一個：&lt;資產ID&gt; | &lt;標籤&gt;</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::TodayPnLWidget</name>
         <message>
@@ -8347,7 +13999,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>設定 — 今日損益</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::ui::ToolBar</name>
         <message>
@@ -8355,7 +14006,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>查看方案與定價</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::services::UpdateService</name>
         <message>
@@ -8363,7 +14013,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>下載並安裝</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::WebScraperWidget</name>
         <message>
@@ -8371,7 +14020,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>自動（依 Content-Type / &lt;meta&gt;）</translation>
         </message>
     </context>
-
     <context>
         <name>fincept::screens::LoginScreen</name>
         <message>
@@ -8383,10 +14031,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>跳過並繼續</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 最終補遺：PredictionAccountDialog HTML 狀態訊息             -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::PredictionAccountDialog_html</name>
         <message>
@@ -8422,10 +14066,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>&lt;b&gt;Kalshi（CFTC 監管）&lt;/b&gt;&lt;br&gt;</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 最終補遺：UpdateService                                     -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::services::UpdateService_extra</name>
         <message>
@@ -8433,10 +14073,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>&lt;無&gt;</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 最終補遺：WebScraperWidget 正則表達式（保留原文）            -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::screens::WebScraperWidget_regex</name>
         <message>
@@ -8456,10 +14092,6 @@ This only happens the first time — future launches are instant.</source>
             <translation>&lt;(t[hd])\\b([^&gt;]*)&gt;(.*?)&lt;/\\1&gt;</translation>
         </message>
     </context>
-
-    <!-- ═══════════════════════════════════════════════════════════ -->
-    <!-- 最終補遺：其他技術佔位字串                                   -->
-    <!-- ═══════════════════════════════════════════════════════════ -->
     <context>
         <name>fincept::misc</name>
         <message>
@@ -8491,6 +14123,4 @@ This only happens the first time — future launches are instant.</source>
             <translation>↻</translation>
         </message>
     </context>
-
 </TS>
-

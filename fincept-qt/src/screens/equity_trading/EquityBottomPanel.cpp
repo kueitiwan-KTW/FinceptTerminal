@@ -105,7 +105,7 @@ void EquityBottomPanel::setup_holdings_tab() {
     holdings_pnl_pct_label_   = make_stat("RETURN %");
     strip_layout->addStretch(1);
 
-    holdings_import_btn_ = new QPushButton("IMPORT TO PORTFOLIO");
+    holdings_import_btn_ = new QPushButton(tr("IMPORT TO PORTFOLIO"));
     holdings_import_btn_->setCursor(Qt::PointingHandCursor);
     holdings_import_btn_->setEnabled(false);
     holdings_import_btn_->setStyleSheet(
@@ -271,7 +271,7 @@ void EquityBottomPanel::set_paper_trades(const QVector<trading::PtTrade>& trades
     // Add a separator row
     orders_table_->setRowCount(base + 1 + trades.size());
     auto* sep_item = ensure_item(orders_table_, base, 0);
-    sep_item->setText("--- RECENT TRADES ---");
+    sep_item->setText(tr("--- RECENT TRADES ---"));
     sep_item->setForeground(QColor(fincept::ui::colors::AMBER()));
     for (int c = 1; c < 8; ++c)
         ensure_item(orders_table_, base, c)->setText("");
@@ -282,7 +282,7 @@ void EquityBottomPanel::set_paper_trades(const QVector<trading::PtTrade>& trades
         ensure_item(orders_table_, row, 0)->setText(t.id.left(8));
         ensure_item(orders_table_, row, 1)->setText(t.symbol);
         ensure_item(orders_table_, row, 2)->setText(t.side.toUpper());
-        ensure_item(orders_table_, row, 3)->setText("TRADE");
+        ensure_item(orders_table_, row, 3)->setText(tr("TRADE"));
         ensure_item(orders_table_, row, 4)->setText(QString::number(t.quantity, 'f', 0));
         ensure_item(orders_table_, row, 5)->setText(QString::number(t.price, 'f', 2));
 
@@ -420,7 +420,7 @@ void EquityBottomPanel::set_orders(const QVector<trading::BrokerOrderInfo>& orde
         const bool modifiable = (o.status == "new" || o.status == "partially_filled" || o.status == "accepted" ||
                                  o.status == "pending_new");
         if (modifiable) {
-            auto* btn = new QPushButton("EDIT");
+            auto* btn = new QPushButton(tr("EDIT"));
             btn->setObjectName("eqTableBtn");
             btn->setFixedHeight(18);
             btn->setStyleSheet(QString("QPushButton#eqTableBtn { background: rgba(217,119,6,0.15); "
@@ -453,17 +453,17 @@ void EquityBottomPanel::set_orders(const QVector<trading::BrokerOrderInfo>& orde
                 vlay->setSpacing(6);
                 vlay->setContentsMargins(14, 14, 14, 14);
 
-                auto* qty_lbl = new QLabel("QTY");
+                auto* qty_lbl = new QLabel(tr("QTY"));
                 auto* qty_edit = new QLineEdit(QString::number(qty, 'f', 0));
-                auto* prc_lbl = new QLabel("LIMIT PRICE");
+                auto* prc_lbl = new QLabel(tr("LIMIT PRICE"));
                 auto* prc_edit = new QLineEdit(QString::number(prc, 'f', 2));
 
                 auto* btn_row = new QHBoxLayout;
-                auto* ok_btn = new QPushButton("MODIFY");
+                auto* ok_btn = new QPushButton(tr("MODIFY"));
                 ok_btn->setStyleSheet(QString("background: rgba(217,119,6,0.15); color: %1; border: 1px solid %2;")
                                           .arg(fincept::ui::colors::AMBER())
                                           .arg(fincept::ui::colors::AMBER_DIM()));
-                auto* cancel_btn = new QPushButton("CANCEL");
+                auto* cancel_btn = new QPushButton(tr("CANCEL"));
                 cancel_btn->setStyleSheet(QString("background: rgba(220,38,38,0.1); color: %1; border: 1px solid %2;")
                                               .arg(fincept::ui::colors::NEGATIVE())
                                               .arg(fincept::ui::colors::NEGATIVE_DIM()));
@@ -635,7 +635,7 @@ void EquityBottomPanel::setup_calendar_tab() {
     banner_lay->setContentsMargins(10, 0, 10, 0);
     banner_lay->setSpacing(16);
 
-    clock_status_label_ = new QLabel("● MARKET --");
+    clock_status_label_ = new QLabel(tr("● MARKET --"));
     clock_status_label_->setObjectName("calClockStatus");
     clock_status_label_->setStyleSheet(
         QString("color: %1; font-size: 11px; font-weight: 700;").arg(fincept::ui::colors::TEXT_TERTIARY()));

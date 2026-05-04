@@ -85,7 +85,7 @@ void AccountManagementDialog::setup_ui() {
     auto* left = new QVBoxLayout;
     left->setSpacing(6);
 
-    auto* list_label = new QLabel("ACCOUNTS");
+    auto* list_label = new QLabel(tr("ACCOUNTS"));
     list_label->setObjectName("fieldLabel");
     left->addWidget(list_label);
 
@@ -110,13 +110,13 @@ void AccountManagementDialog::setup_ui() {
     left->addLayout(add_row);
 
     auto* btn_row = new QHBoxLayout;
-    add_btn_ = new QPushButton("+ ADD");
+    add_btn_ = new QPushButton(tr("+ ADD"));
     add_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                 .arg(colors::AMBER(), colors::BG_BASE()));
     connect(add_btn_, &QPushButton::clicked, this, &AccountManagementDialog::on_add_account);
     btn_row->addWidget(add_btn_);
 
-    remove_btn_ = new QPushButton("REMOVE");
+    remove_btn_ = new QPushButton(tr("REMOVE"));
     remove_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                    .arg(colors::NEGATIVE(), colors::TEXT_PRIMARY()));
     remove_btn_->setEnabled(false);
@@ -132,7 +132,7 @@ void AccountManagementDialog::setup_ui() {
     // Empty page (no selection)
     empty_page_ = new QWidget(this);
     auto* empty_layout = new QVBoxLayout(empty_page_);
-    auto* empty_label = new QLabel("Select an account to configure credentials");
+    auto* empty_label = new QLabel(tr("Select an account to configure credentials"));
     empty_label->setAlignment(Qt::AlignCenter);
     empty_label->setStyleSheet(QString("color: %1; font-size: 12px;").arg(colors::TEXT_TERTIARY()));
     empty_layout->addWidget(empty_label);
@@ -163,13 +163,13 @@ void AccountManagementDialog::setup_ui() {
 
     // Action buttons
     auto* action_row = new QHBoxLayout;
-    rename_btn_ = new QPushButton("RENAME");
+    rename_btn_ = new QPushButton(tr("RENAME"));
     rename_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                    .arg(colors::BG_RAISED(), colors::TEXT_PRIMARY()));
     connect(rename_btn_, &QPushButton::clicked, this, &AccountManagementDialog::on_rename_account);
     action_row->addWidget(rename_btn_);
 
-    connect_btn_ = new QPushButton("CONNECT");
+    connect_btn_ = new QPushButton(tr("CONNECT"));
     connect_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                     .arg(colors::AMBER(), colors::BG_BASE()));
     connect(connect_btn_, &QPushButton::clicked, this, &AccountManagementDialog::on_connect_account);
@@ -553,7 +553,7 @@ void AccountManagementDialog::build_zerodha_form() {
     v->setSpacing(10);
 
     // Title + status
-    z_title_ = new QLabel("Zerodha");
+    z_title_ = new QLabel(tr("Zerodha"));
     z_title_->setObjectName("titleLabel");
     v->addWidget(z_title_);
     z_status_ = new QLabel(" ");
@@ -598,8 +598,8 @@ void AccountManagementDialog::build_zerodha_form() {
     // Mode radio
     auto* mode_row = new QHBoxLayout;
     mode_row->setSpacing(16);
-    z_mode_totp_ = new QRadioButton("Auto-login (TOTP)");
-    z_mode_browser_ = new QRadioButton("Browser login");
+    z_mode_totp_ = new QRadioButton(tr("Auto-login (TOTP)"));
+    z_mode_browser_ = new QRadioButton(tr("Browser login"));
     z_mode_totp_->setChecked(true);
     mode_row->addWidget(z_mode_totp_);
     mode_row->addWidget(z_mode_browser_);
@@ -642,11 +642,11 @@ void AccountManagementDialog::build_zerodha_form() {
     auto* bv = new QVBoxLayout(z_browser_group_);
     bv->setContentsMargins(0, 0, 0, 0);
     bv->setSpacing(6);
-    z_browser_btn_ = new QPushButton("Open Kite login in browser");
+    z_browser_btn_ = new QPushButton(tr("Open Kite login in browser"));
     z_browser_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; padding: 10px; font-weight: 700; }")
                                        .arg(colors::AMBER(), colors::BG_BASE()));
     bv->addWidget(z_browser_btn_);
-    z_manual_toggle_ = new QPushButton("Redirect didn't work? Paste request_token manually");
+    z_manual_toggle_ = new QPushButton(tr("Redirect didn't work? Paste request_token manually"));
     z_manual_toggle_->setStyleSheet(QString("text-align:left;background:transparent;color:%1;"
                                             "border:none;padding:4px 0;font-size:11px;")
                                         .arg(colors::TEXT_SECONDARY()));
@@ -657,7 +657,7 @@ void AccountManagementDialog::build_zerodha_form() {
     mv->setSpacing(4);
     z_manual_token_ = make_field("Paste request_token here", false);
     mv->addWidget(z_manual_token_);
-    z_manual_connect_btn_ = new QPushButton("Connect with pasted token");
+    z_manual_connect_btn_ = new QPushButton(tr("Connect with pasted token"));
     z_manual_connect_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                               .arg(colors::BG_RAISED(), colors::TEXT_PRIMARY()));
     mv->addWidget(z_manual_connect_btn_);
@@ -675,11 +675,11 @@ void AccountManagementDialog::build_zerodha_form() {
 
     // Bottom action row
     auto* btn_row = new QHBoxLayout;
-    z_rename_btn_ = new QPushButton("RENAME");
+    z_rename_btn_ = new QPushButton(tr("RENAME"));
     z_rename_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                       .arg(colors::BG_RAISED(), colors::TEXT_PRIMARY()));
     btn_row->addWidget(z_rename_btn_);
-    z_connect_btn_ = new QPushButton("CONNECT");
+    z_connect_btn_ = new QPushButton(tr("CONNECT"));
     z_connect_btn_->setStyleSheet(QString("QPushButton { background: %1; color: %2; padding: 8px 24px; }")
                                        .arg(colors::AMBER(), colors::BG_BASE()));
     btn_row->addWidget(z_connect_btn_);
@@ -859,7 +859,7 @@ void AccountManagementDialog::on_connect_zerodha_manual_paste() {
     const QString api_secret = z_api_secret_->text();
     QString token = z_manual_token_->text().trimmed();
     if (api_key.isEmpty() || api_secret.isEmpty() || token.isEmpty()) {
-        z_status_->setText("Enter API Key, API Secret, and paste request_token");
+        z_status_->setText(tr("Enter API Key, API Secret, and paste request_token"));
         z_status_->setStyleSheet(QString("color:%1;").arg(colors::NEGATIVE()));
         return;
     }
@@ -875,7 +875,7 @@ void AccountManagementDialog::on_connect_zerodha_manual_paste() {
     }
     LOG_INFO("Zerodha", QString("manual paste extracted token: %1").arg(token));
     if (token.contains(QLatin1Char('/')) || token.contains(QLatin1Char('?')) || token.contains(QLatin1Char('='))) {
-        z_status_->setText("Could not find request_token in pasted text");
+        z_status_->setText(tr("Could not find request_token in pasted text"));
         z_status_->setStyleSheet(QString("color:%1;").arg(colors::NEGATIVE()));
         return;
     }

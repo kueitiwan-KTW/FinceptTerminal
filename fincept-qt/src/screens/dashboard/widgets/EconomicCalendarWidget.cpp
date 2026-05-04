@@ -52,7 +52,7 @@ EconomicCalendarWidget::EconomicCalendarWidget(QWidget* parent)
     list_layout_->setContentsMargins(0, 0, 0, 0);
     list_layout_->setSpacing(0);
 
-    status_label_ = new QLabel("Loading...");
+    status_label_ = new QLabel(tr("Loading..."));
     status_label_->setAlignment(Qt::AlignCenter);
     list_layout_->addWidget(status_label_);
     list_layout_->addStretch();

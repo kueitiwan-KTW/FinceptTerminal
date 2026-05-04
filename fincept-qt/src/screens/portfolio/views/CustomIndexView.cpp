@@ -159,7 +159,7 @@ QWidget* CustomIndexView::build_create_panel() {
     layout->addWidget(create_status_);
 
     // Constituents table header
-    auto* const_title = new QLabel("CONSTITUENTS (from portfolio holdings)");
+    auto* const_title = new QLabel(tr("CONSTITUENTS (from portfolio holdings)"));
     const_title->setStyleSheet(
         QString("color:%1; font-size:10px; font-weight:700; letter-spacing:0.5px;").arg(ui::colors::TEXT_SECONDARY()));
     layout->addWidget(const_title);
@@ -186,7 +186,7 @@ QWidget* CustomIndexView::build_index_list_panel() {
 
     // Header row
     auto* header_row = new QHBoxLayout;
-    auto* title = new QLabel("MY CUSTOM INDICES");
+    auto* title = new QLabel(tr("MY CUSTOM INDICES"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     header_row->addWidget(title);
@@ -226,7 +226,7 @@ QWidget* CustomIndexView::build_index_list_panel() {
     layout->addWidget(index_list_table_, 1);
 
     list_empty_msg_ =
-        new QLabel("No custom indices created yet.\nGo to CREATE INDEX tab to build one from your portfolio.");
+        new QLabel(tr("No custom indices created yet.\nGo to CREATE INDEX tab to build one from your portfolio."));
     list_empty_msg_->setAlignment(Qt::AlignCenter);
     list_empty_msg_->setStyleSheet(QString("color:%1; font-size:11px; padding:40px;").arg(ui::colors::TEXT_TERTIARY()));
     layout->addWidget(list_empty_msg_);
@@ -240,7 +240,7 @@ QWidget* CustomIndexView::build_performance_panel() {
     layout->setContentsMargins(16, 12, 16, 12);
     layout->setSpacing(8);
 
-    perf_title_ = new QLabel("INDEX PERFORMANCE");
+    perf_title_ = new QLabel(tr("INDEX PERFORMANCE"));
     perf_title_->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(perf_title_);
@@ -248,7 +248,7 @@ QWidget* CustomIndexView::build_performance_panel() {
     perf_stack_ = new QStackedWidget;
 
     // Page 0 — placeholder
-    auto* placeholder = new QLabel("Select an index from MY INDICES to see its performance.");
+    auto* placeholder = new QLabel(tr("Select an index from MY INDICES to see its performance."));
     placeholder->setAlignment(Qt::AlignCenter);
     placeholder->setStyleSheet(QString("color:%1; font-size:11px; padding:40px;").arg(ui::colors::TEXT_TERTIARY()));
     perf_stack_->addWidget(placeholder);
@@ -372,7 +372,7 @@ void CustomIndexView::create_index() {
     if (result.is_err()) {
         const QString msg = QString::fromStdString(result.error());
         LOG_ERROR("CustomIndex", "Failed to create index: " + msg);
-        create_status_->setText("Error: " + msg);
+        create_status_->setText(tr("Error: ") + msg);
         create_status_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::NEGATIVE()));
         create_status_->show();
         return;

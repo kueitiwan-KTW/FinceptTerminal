@@ -78,7 +78,7 @@ PrivacyScreen::PrivacyScreen(QWidget* parent) : QWidget(parent) {
     vl->setSpacing(6);
 
     // Back
-    auto* back_btn = new QPushButton("< BACK");
+    auto* back_btn = new QPushButton(tr("< BACK"));
     back_btn->setCursor(Qt::PointingHandCursor);
     back_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none; "
                                     "font-size: 12px; %2 } QPushButton:hover { color: %3; }")
@@ -86,13 +86,13 @@ PrivacyScreen::PrivacyScreen(QWidget* parent) : QWidget(parent) {
     connect(back_btn, &QPushButton::clicked, this, &PrivacyScreen::navigate_back);
     vl->addWidget(back_btn, 0, Qt::AlignLeft);
 
-    auto* title = new QLabel("PRIVACY POLICY");
+    auto* title = new QLabel(tr("PRIVACY POLICY"));
     title->setStyleSheet(QString("color: %1; font-size: 20px; font-weight: 700; letter-spacing: 1px; "
                                  "background: transparent; %2")
                              .arg(colors::AMBER(), MF));
     vl->addWidget(title);
 
-    auto* updated = new QLabel("Last updated: January 1, 2026");
+    auto* updated = new QLabel(tr("Last updated: January 1, 2026"));
     updated->setStyleSheet(
         QString("color: %1; font-size: 11px; background: transparent; %2").arg(colors::TEXT_TERTIARY(), MF));
     vl->addWidget(updated);

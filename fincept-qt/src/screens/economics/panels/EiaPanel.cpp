@@ -83,8 +83,8 @@ void EiaPanel::build_controls(QHBoxLayout* thl) {
     };
 
     source_combo_ = new QComboBox;
-    source_combo_->addItem("Weekly Petroleum (WPSR)", "wpsr");
-    source_combo_->addItem("Short-Term Outlook (STEO)", "steo");
+    source_combo_->addItem(tr("Weekly Petroleum (WPSR)"), "wpsr");
+    source_combo_->addItem(tr("Short-Term Outlook (STEO)"), "steo");
     source_combo_->setFixedHeight(26);
     source_combo_->setMinimumWidth(200);
     connect(source_combo_, &QComboBox::currentIndexChanged, this, &EiaPanel::on_source_changed);
@@ -97,7 +97,7 @@ void EiaPanel::build_controls(QHBoxLayout* thl) {
     for (const auto& c : kWpsrCategories)
         category_combo_->addItem(c.first, c.second);
 
-    apikey_notice_ = new QLabel("No API key needed");
+    apikey_notice_ = new QLabel(tr("No API key needed"));
     apikey_notice_->setStyleSheet(
         QString("color:%1; font-size:9px; background:transparent;").arg(ui::colors::POSITIVE()));
 
@@ -121,7 +121,7 @@ void EiaPanel::on_source_changed(int index) {
         // STEO
         for (const auto& t : kSteoTables)
             category_combo_->addItem(t.first, t.second);
-        apikey_notice_->setText("Requires EIA_API_KEY");
+        apikey_notice_->setText(tr("Requires EIA_API_KEY"));
         apikey_notice_->setStyleSheet(notice_style());
     }
 }

@@ -188,8 +188,8 @@ QWidget* ToolsViewPanel::build_left_panel() {
 
     auto* radio_row = new QHBoxLayout;
     radio_row->setSpacing(12);
-    radio_agent_ = new QRadioButton("Agent");
-    radio_team_ = new QRadioButton("Team");
+    radio_agent_ = new QRadioButton(tr("Agent"));
+    radio_team_ = new QRadioButton(tr("Team"));
     radio_agent_->setChecked(true);
     radio_agent_->setStyleSheet(radio_style());
     radio_team_->setStyleSheet(radio_style());
@@ -203,7 +203,7 @@ QWidget* ToolsViewPanel::build_left_panel() {
     target_combo_->setPlaceholderText(tr("Select target..."));
     vl->addWidget(target_combo_);
 
-    target_status_ = new QLabel("No target selected");
+    target_status_ = new QLabel(tr("No target selected"));
     target_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:4px 0;").arg(ui::colors::TEXT_TERTIARY()));
     target_status_->setWordWrap(true);
     vl->addWidget(target_status_);
@@ -225,7 +225,7 @@ QWidget* ToolsViewPanel::build_left_panel() {
     vl->addWidget(selected_list_, 1);
 
     // ── Actions ───────────────────────────────────────────────────────────────
-    remove_btn_ = new QPushButton("REMOVE");
+    remove_btn_ = new QPushButton(tr("REMOVE"));
     remove_btn_->setCursor(Qt::PointingHandCursor);
     remove_btn_->setStyleSheet(btn_secondary_style());
     remove_btn_->setEnabled(false);
@@ -234,12 +234,12 @@ QWidget* ToolsViewPanel::build_left_panel() {
     auto* bottom_row = new QHBoxLayout;
     bottom_row->setSpacing(6);
 
-    clear_btn_ = new QPushButton("CLEAR");
+    clear_btn_ = new QPushButton(tr("CLEAR"));
     clear_btn_->setCursor(Qt::PointingHandCursor);
     clear_btn_->setStyleSheet(btn_danger_style());
     bottom_row->addWidget(clear_btn_);
 
-    assign_btn_ = new QPushButton("ASSIGN →");
+    assign_btn_ = new QPushButton(tr("ASSIGN →"));
     assign_btn_->setCursor(Qt::PointingHandCursor);
     assign_btn_->setStyleSheet(btn_primary_style());
     assign_btn_->setEnabled(false);
@@ -263,7 +263,7 @@ QWidget* ToolsViewPanel::build_center_panel() {
 
     // ── Header ────────────────────────────────────────────────────────────────
     auto* header = new QHBoxLayout;
-    auto* title = new QLabel("AVAILABLE TOOLS");
+    auto* title = new QLabel(tr("AVAILABLE TOOLS"));
     title->setStyleSheet(section_title_style());
     header->addWidget(title);
 
@@ -272,7 +272,7 @@ QWidget* ToolsViewPanel::build_center_panel() {
     header->addWidget(total_count_);
     header->addStretch();
 
-    auto* hint = new QLabel("● = already assigned");
+    auto* hint = new QLabel(tr("● = already assigned"));
     hint->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::TEXT_TERTIARY()));
     header->addWidget(hint);
     vl->addLayout(header);
@@ -296,12 +296,12 @@ QWidget* ToolsViewPanel::build_center_panel() {
     auto* btn_row = new QHBoxLayout;
     btn_row->setSpacing(6);
 
-    add_btn_ = new QPushButton("+ ADD TO SELECTION");
+    add_btn_ = new QPushButton(tr("+ ADD TO SELECTION"));
     add_btn_->setCursor(Qt::PointingHandCursor);
     add_btn_->setStyleSheet(btn_primary_style());
     btn_row->addWidget(add_btn_, 1);
 
-    copy_btn_ = new QPushButton("COPY NAME");
+    copy_btn_ = new QPushButton(tr("COPY NAME"));
     copy_btn_->setCursor(Qt::PointingHandCursor);
     copy_btn_->setStyleSheet(btn_secondary_style());
     btn_row->addWidget(copy_btn_);
@@ -326,7 +326,7 @@ QWidget* ToolsViewPanel::build_right_panel() {
     // ── Tool name ─────────────────────────────────────────────────────────────
     vl->addWidget(section_header("TOOL DETAIL"));
 
-    detail_name_ = new QLabel("Select a tool");
+    detail_name_ = new QLabel(tr("Select a tool"));
     detail_name_->setStyleSheet(
         QString("color:%1;font-size:13px;font-weight:700;padding:2px 0;").arg(ui::colors::TEXT_PRIMARY()));
     detail_name_->setWordWrap(true);

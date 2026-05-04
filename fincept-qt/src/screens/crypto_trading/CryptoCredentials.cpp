@@ -86,7 +86,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     layout->addSpacing(4);
 
     // API Key
-    auto* key_lbl = new QLabel("API KEY");
+    auto* key_lbl = new QLabel(tr("API KEY"));
     key_lbl->setObjectName("credFieldLabel");
     layout->addWidget(key_lbl);
     key_edit_ = new QLineEdit;
@@ -95,7 +95,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     layout->addWidget(key_edit_);
 
     // API Secret
-    auto* secret_lbl = new QLabel("API SECRET");
+    auto* secret_lbl = new QLabel(tr("API SECRET"));
     secret_lbl->setObjectName("credFieldLabel");
     layout->addWidget(secret_lbl);
     secret_edit_ = new QLineEdit;
@@ -105,18 +105,18 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     layout->addWidget(secret_edit_);
 
     // Password
-    auto* pw_lbl = new QLabel("PASSWORD (OKX/KUCOIN)");
+    auto* pw_lbl = new QLabel(tr("PASSWORD (OKX/KUCOIN)"));
     pw_lbl->setObjectName("credFieldLabel");
     layout->addWidget(pw_lbl);
     password_edit_ = new QLineEdit;
-    password_edit_->setPlaceholderText("Optional");
+    password_edit_->setPlaceholderText(tr("Optional"));
     password_edit_->setEchoMode(QLineEdit::Password);
     password_edit_->setFixedHeight(28);
     layout->addWidget(password_edit_);
 
     // TOTP section
     layout->addSpacing(4);
-    auto* totp_lbl = new QLabel("TOTP SECRET (2FA)");
+    auto* totp_lbl = new QLabel(tr("TOTP SECRET (2FA)"));
     totp_lbl->setObjectName("credFieldLabel");
     layout->addWidget(totp_lbl);
 
@@ -129,7 +129,7 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     auto* totp_row = new QHBoxLayout;
     totp_row->setSpacing(8);
 
-    totp_code_label_ = new QLabel("CODE: --");
+    totp_code_label_ = new QLabel(tr("CODE: --"));
     totp_code_label_->setObjectName("credTotpCode");
     totp_row->addWidget(totp_code_label_);
 
@@ -161,14 +161,14 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     // Buttons — Obsidian danger + accent
     auto* btn_row = new QHBoxLayout;
 
-    auto* clear_btn = new QPushButton("CLEAR");
+    auto* clear_btn = new QPushButton(tr("CLEAR"));
     clear_btn->setObjectName("credClearBtn");
     connect(clear_btn, &QPushButton::clicked, this, &CryptoCredentials::on_clear);
     btn_row->addWidget(clear_btn);
 
     btn_row->addStretch();
 
-    auto* save_btn = new QPushButton("SAVE & CONNECT");
+    auto* save_btn = new QPushButton(tr("SAVE & CONNECT"));
     save_btn->setObjectName("credSaveBtn");
     connect(save_btn, &QPushButton::clicked, this, &CryptoCredentials::on_save);
     btn_row->addWidget(save_btn);

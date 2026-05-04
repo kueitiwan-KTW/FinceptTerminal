@@ -119,12 +119,12 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
 
         auto* left = new QVBoxLayout;
         left->setSpacing(4);
-        auto* name = new QLabel("Fincept Terminal");
+        auto* name = new QLabel(tr("Fincept Terminal"));
         name->setStyleSheet(QString("color: %1; font-size: 15px; font-weight: bold; background: transparent; "
                                     "font-family: 'Consolas','Courier New',monospace;")
                                 .arg(ui::colors::TEXT_PRIMARY()));
         left->addWidget(name);
-        auto* sub = new QLabel("NATIVE DESKTOP FINANCIAL INTELLIGENCE TERMINAL");
+        auto* sub = new QLabel(tr("NATIVE DESKTOP FINANCIAL INTELLIGENCE TERMINAL"));
         sub->setStyleSheet(MUTED());
         left->addWidget(sub);
         bhl->addLayout(left);
@@ -165,7 +165,7 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
         pvl->addWidget(body);
 
         // Footer bar
-        auto* foot = new QLabel("© 2024-2026 Fincept Corporation. All rights reserved.");
+        auto* foot = new QLabel(tr("© 2024-2026 Fincept Corporation. All rights reserved."));
         foot->setStyleSheet(QString("color: %1; font-size: 11px; background: %2; "
                                     "padding: 6px 14px; border-top: 1px solid %3; "
                                     "font-family: 'Consolas','Courier New',monospace;")
@@ -203,7 +203,7 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
             pvl->addWidget(body);
 
             // Footer link
-            auto* foot = new QLabel("gnu.org/licenses/agpl-3.0");
+            auto* foot = new QLabel(tr("gnu.org/licenses/agpl-3.0"));
             foot->setStyleSheet(QString("color: %1; font-size: 11px; background: transparent; "
                                         "padding: 6px 14px; border-top: 1px solid %2; "
                                         "font-family: 'Consolas','Courier New',monospace;")
@@ -233,7 +233,7 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
             pvl->addWidget(body);
 
             // Footer link
-            auto* foot = new QLabel("support@fincept.in");
+            auto* foot = new QLabel(tr("support@fincept.in"));
             foot->setStyleSheet(QString("color: %1; font-size: 11px; background: transparent; "
                                         "padding: 6px 14px; border-top: 1px solid %2; "
                                         "font-family: 'Consolas','Courier New',monospace;")

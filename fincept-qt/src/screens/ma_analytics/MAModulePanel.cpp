@@ -1758,7 +1758,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     cmp_vl->addWidget(cmp_hint);
 
     auto* cmp_text = new QTextEdit(cmp);
-    cmp_text->setPlaceholderText("[{\"acquirer\":\"MSFT\",\"target\":\"ATVI\",\"deal_value\":68700,\"premium\":45.3,"
+    cmp_text->setPlaceholderText(tr("[{\")acquirer\":\"MSFT\",\"target\":\"ATVI\",\"deal_value\":68700,\"premium\":45.3,"
                                  "\"ev_revenue\":8.7,\"ev_ebitda\":23.1}]");
     cmp_text->setMaximumHeight(120);
     cmp_text->setStyleSheet(QString("QTextEdit { background:%1; color:%2; border:1px solid %3;"
@@ -1851,7 +1851,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     pay_vl->setSpacing(8);
 
     auto* pay_text = new QTextEdit(pay);
-    pay_text->setPlaceholderText("Deals JSON with cash_pct and stock_pct fields...");
+    pay_text->setPlaceholderText(tr("Deals JSON with cash_pct and stock_pct fields..."));
     pay_text->setMaximumHeight(120);
     pay_text->setStyleSheet(cmp_text->styleSheet());
     pay_vl->addWidget(pay_text);
@@ -1929,7 +1929,7 @@ void MAModulePanel::display_error(const QString& msg) {
                            .arg(ui::fonts::DATA_FAMILY())
                            .arg(neg_rgb));
     results_layout_->addWidget(err);
-    status_label_->setText("Error");
+    status_label_->setText(tr("Error"));
 }
 
 static QString format_value(const QJsonValue& val) {
@@ -2051,7 +2051,7 @@ void MAModulePanel::display_result(const QJsonObject& payload) {
     QString accent = QString("%1,%2,%3").arg(module_.color.red()).arg(module_.color.green()).arg(module_.color.blue());
 
     // Section header
-    auto* header = new QLabel("RESULTS");
+    auto* header = new QLabel(tr("RESULTS"));
     header->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2; letter-spacing:1px;"
                                   "padding:4px 0;")
                               .arg(module_.color.name())
@@ -2173,7 +2173,7 @@ void MAModulePanel::display_result(const QJsonObject& payload) {
     results_layout_->addWidget(raw_btn);
     results_layout_->addWidget(raw_text);
 
-    status_label_->setText("Done");
+    status_label_->setText(tr("Done"));
 }
 
 // ── Service signal handlers ──────────────────────────────────────────────────

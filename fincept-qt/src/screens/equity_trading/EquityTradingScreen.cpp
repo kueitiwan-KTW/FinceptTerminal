@@ -198,7 +198,7 @@ void EquityTradingScreen::setup_ui() {
     cmd_layout->setSpacing(6);
 
     // Account button + menu (replaces broker_btn_)
-    account_btn_ = new QPushButton("NO ACCOUNT");
+    account_btn_ = new QPushButton(tr("NO ACCOUNT"));
     account_btn_->setObjectName("eqBrokerBtn");
     account_btn_->setFixedHeight(22);
     account_btn_->setCursor(Qt::PointingHandCursor);
@@ -212,7 +212,7 @@ void EquityTradingScreen::setup_ui() {
     cmd_layout->addWidget(sep);
 
     // Exchange label
-    exchange_label_ = new QLabel("NSE");
+    exchange_label_ = new QLabel(tr("NSE"));
     exchange_label_->setObjectName("eqExchangeLabel");
     cmd_layout->addWidget(exchange_label_);
 
@@ -244,25 +244,25 @@ void EquityTradingScreen::setup_ui() {
     cmd_layout->addWidget(ticker_bar_, 1);
 
     // Clock
-    clock_label_ = new QLabel("--:--:--");
+    clock_label_ = new QLabel(tr("--:--:--"));
     clock_label_->setObjectName("eqClock");
     cmd_layout->addWidget(clock_label_);
 
     // Connection status indicator (aggregate)
-    conn_label_ = new QLabel("○ NO ACCOUNTS");
+    conn_label_ = new QLabel(tr("○ NO ACCOUNTS"));
     conn_label_->setObjectName("eqConnLabel");
     conn_label_->setStyleSheet(QString("color: %1; font-size: 10px; font-weight: 700;").arg(ui::colors::TEXT_TERTIARY()));
     cmd_layout->addWidget(conn_label_);
 
     // Accounts management button (replaces api_btn_)
-    accounts_btn_ = new QPushButton("ACCOUNTS");
+    accounts_btn_ = new QPushButton(tr("ACCOUNTS"));
     accounts_btn_->setObjectName("eqApiBtn");
     accounts_btn_->setFixedHeight(22);
     accounts_btn_->setCursor(Qt::PointingHandCursor);
     cmd_layout->addWidget(accounts_btn_);
 
     // Mode button (per-account mode toggle)
-    mode_btn_ = new QPushButton("PAPER");
+    mode_btn_ = new QPushButton(tr("PAPER"));
     mode_btn_->setObjectName("eqModeBtn");
     mode_btn_->setProperty("mode", "paper");
     mode_btn_->setCheckable(true);
@@ -1120,8 +1120,8 @@ void EquityTradingScreen::on_import_holdings_requested(const QVector<trading::Br
     v->addWidget(info);
 
     // ── Portfolio target selection ────────────────────────────────────────
-    auto* mode_new = new QRadioButton("Create a new portfolio");
-    auto* mode_existing = new QRadioButton("Add to existing portfolio");
+    auto* mode_new = new QRadioButton(tr("Create a new portfolio"));
+    auto* mode_existing = new QRadioButton(tr("Add to existing portfolio"));
     mode_new->setChecked(true);
 
     auto* mode_row = new QHBoxLayout;
@@ -1141,7 +1141,7 @@ void EquityTradingScreen::on_import_holdings_requested(const QVector<trading::Br
 
     auto* existing_combo = new QComboBox;
     existing_combo->setEnabled(false);
-    existing_combo->addItem("Loading portfolios...");
+    existing_combo->addItem(tr("Loading portfolios..."));
     auto* existing_row = new QWidget;
     auto* existing_form = new QFormLayout(existing_row);
     existing_form->setContentsMargins(18, 0, 0, 0);
@@ -1206,8 +1206,8 @@ void EquityTradingScreen::on_import_holdings_requested(const QVector<trading::Br
 
     // Select/Deselect all helpers
     auto* select_row = new QHBoxLayout;
-    auto* select_all_btn = new QPushButton("Select all");
-    auto* deselect_all_btn = new QPushButton("Deselect all");
+    auto* select_all_btn = new QPushButton(tr("Select all"));
+    auto* deselect_all_btn = new QPushButton(tr("Deselect all"));
     select_row->addWidget(select_all_btn);
     select_row->addWidget(deselect_all_btn);
     select_row->addStretch();
@@ -1225,7 +1225,7 @@ void EquityTradingScreen::on_import_holdings_requested(const QVector<trading::Br
     QObject::connect(deselect_all_btn, &QPushButton::clicked, &dlg, [set_all_checked]() { set_all_checked(false); });
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    buttons->button(QDialogButtonBox::Ok)->setText("IMPORT");
+    buttons->button(QDialogButtonBox::Ok)->setText(tr("IMPORT"));
     v->addWidget(buttons);
 
     auto sync_mode = [&]() {
@@ -1247,7 +1247,7 @@ void EquityTradingScreen::on_import_holdings_requested(const QVector<trading::Br
             if (!combo_guard) return;
             combo_guard->clear();
             if (list.isEmpty()) {
-                combo_guard->addItem("(no portfolios yet)");
+                combo_guard->addItem(tr("(no portfolios yet)"));
                 combo_guard->setEnabled(false);
                 if (existing_guard) existing_guard->setEnabled(false);
             } else {

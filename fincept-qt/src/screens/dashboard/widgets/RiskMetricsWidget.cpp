@@ -28,7 +28,7 @@ RiskMetricsWidget::RiskMetricsWidget(QWidget* parent) : BaseWidget("風險指標
     vcl->setSpacing(4);
 
     auto* vix_header = new QHBoxLayout;
-    vix_header_lbl_ = new QLabel("VIX FEAR GAUGE");
+    vix_header_lbl_ = new QLabel(tr("VIX FEAR GAUGE"));
     vix_header->addWidget(vix_header_lbl_);
     vix_header->addStretch();
 
@@ -65,7 +65,7 @@ RiskMetricsWidget::RiskMetricsWidget(QWidget* parent) : BaseWidget("風險指標
     vl->addWidget(sep1_);
 
     // ── Volatile stocks section ──
-    stocks_hdr_ = new QLabel("HIGH-BETA STOCKS");
+    stocks_hdr_ = new QLabel(tr("HIGH-BETA STOCKS"));
     vl->addWidget(stocks_hdr_);
 
     static const QStringList kVolatile = {"NVDA", "TSLA", "AMD", "META", "PLTR", "COIN"};
@@ -96,7 +96,7 @@ RiskMetricsWidget::RiskMetricsWidget(QWidget* parent) : BaseWidget("風險指標
     sep2_->setFixedHeight(1);
     vl->addWidget(sep2_);
 
-    corr_hdr_ = new QLabel("SPREAD PROXIES");
+    corr_hdr_ = new QLabel(tr("SPREAD PROXIES"));
     vl->addWidget(corr_hdr_);
 
     auto make_spread_row = [&](const QString& label, QLabel*& out) {

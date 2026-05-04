@@ -391,13 +391,13 @@ QWidget* PortfolioScreen::build_empty_state() {
     accent_dot->setStyleSheet(QString("color:%1; font-size:14px; letter-spacing:4px;").arg(ui::colors::AMBER()));
     layout->addWidget(accent_dot);
 
-    auto* title = new QLabel("PORTFOLIO WORKSPACE");
+    auto* title = new QLabel(tr("PORTFOLIO WORKSPACE"));
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet(
         QString("color:%1; font-size:18px; font-weight:700; letter-spacing:2px;").arg(ui::colors::TEXT_PRIMARY()));
     layout->addWidget(title);
 
-    auto* sub = new QLabel("Create, import, or explore a sample portfolio to get started.");
+    auto* sub = new QLabel(tr("Create, import, or explore a sample portfolio to get started."));
     sub->setAlignment(Qt::AlignCenter);
     sub->setStyleSheet(QString("color:%1; font-size:12px; letter-spacing:0.2px;").arg(ui::colors::TEXT_SECONDARY()));
     layout->addWidget(sub);
@@ -481,7 +481,7 @@ QWidget* PortfolioScreen::build_loading_state() {
     outer->addLayout(row4);
 
     // Subtle label beneath skeleton
-    auto* text = new QLabel("Loading portfolio data…");
+    auto* text = new QLabel(tr("Loading portfolio data…"));
     text->setAlignment(Qt::AlignCenter);
     text->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:600; letter-spacing:0.8px;").arg(ui::colors::AMBER()));

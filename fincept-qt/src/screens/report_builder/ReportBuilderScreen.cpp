@@ -521,7 +521,7 @@ QWidget* ReportBuilderScreen::build_toolbar() {
     hl->setContentsMargins(8, 0, 8, 0);
     hl->setSpacing(6);
 
-    auto* title = new QLabel("REPORT BUILDER");
+    auto* title = new QLabel(tr("REPORT BUILDER"));
     title->setStyleSheet(
         QString("color: %1; font-size: 14px; font-weight: bold; background: transparent;").arg(ui::colors::AMBER()));
     hl->addWidget(title);
@@ -771,13 +771,13 @@ void ReportBuilderScreen::show_recent_dialog() {
             .arg(ui::colors::DARK(), ui::colors::WHITE(), ui::colors::PANEL(), ui::colors::BORDER(), ui::colors::BG_RAISED()));
 
     auto* vl = new QVBoxLayout(dlg);
-    auto* lbl = new QLabel("Select a report to open:");
+    auto* lbl = new QLabel(tr("Select a report to open:"));
     lbl->setStyleSheet(QString("color: %1;").arg(ui::colors::MUTED()));
     vl->addWidget(lbl);
 
     auto* list = new QListWidget;
     if (recent.isEmpty()) {
-        list->addItem("(No recent reports)");
+        list->addItem(tr("(No recent reports)"));
     } else {
         list->addItems(recent);
     }
@@ -902,7 +902,7 @@ void ReportBuilderScreen::show_template_dialog() {
     lvl->setContentsMargins(12, 12, 8, 12);
     lvl->setSpacing(6);
 
-    auto* pick_lbl = new QLabel("Choose a template:");
+    auto* pick_lbl = new QLabel(tr("Choose a template:"));
     pick_lbl->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: bold;").arg(ui::colors::MUTED()));
     lvl->addWidget(pick_lbl);
 
@@ -944,12 +944,12 @@ void ReportBuilderScreen::show_template_dialog() {
     rvl->setContentsMargins(12, 12, 12, 12);
     rvl->setSpacing(8);
 
-    auto* tmpl_name_lbl = new QLabel("Select a template");
+    auto* tmpl_name_lbl = new QLabel(tr("Select a template"));
     tmpl_name_lbl->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: bold;").arg(ui::colors::AMBER()));
     tmpl_name_lbl->setWordWrap(true);
     rvl->addWidget(tmpl_name_lbl);
 
-    auto* desc_lbl = new QLabel("Pick a template from the list to see a description.");
+    auto* desc_lbl = new QLabel(tr("Pick a template from the list to see a description."));
     desc_lbl->setWordWrap(true);
     desc_lbl->setAlignment(Qt::AlignTop | Qt::AlignLeft);
     desc_lbl->setStyleSheet(QString("color: %1; font-size: 12px; line-height: 160%;").arg(ui::colors::GRAY()));
@@ -1012,7 +1012,7 @@ void ReportBuilderScreen::show_theme_dialog() {
             .arg(ui::colors::DARK(), ui::colors::WHITE(), ui::colors::PANEL(), ui::colors::BORDER()));
 
     auto* vl = new QVBoxLayout(dlg);
-    vl->addWidget(new QLabel("Select a color theme for your report:"));
+    vl->addWidget(new QLabel(tr("Select a color theme for your report:")));
 
     auto* combo = new QComboBox;
     for (const auto& t : themes)
@@ -1076,13 +1076,13 @@ void ReportBuilderScreen::show_metadata_dialog() {
     date_edit->setPlaceholderText(tr("yyyy-MM-dd"));
 
     auto lbl_style = QString("color: %1;").arg(ui::colors::GRAY());
-    auto* tl = new QLabel("Title:");
+    auto* tl = new QLabel(tr("Title:"));
     tl->setStyleSheet(lbl_style);
-    auto* al = new QLabel("Author:");
+    auto* al = new QLabel(tr("Author:"));
     al->setStyleSheet(lbl_style);
-    auto* cl = new QLabel("Company:");
+    auto* cl = new QLabel(tr("Company:"));
     cl->setStyleSheet(lbl_style);
-    auto* dl = new QLabel("Date:");
+    auto* dl = new QLabel(tr("Date:"));
     dl->setStyleSheet(lbl_style);
 
     form->addRow(tl, title_edit);
@@ -1092,7 +1092,7 @@ void ReportBuilderScreen::show_metadata_dialog() {
     vl->addLayout(form);
 
     // Header/Footer section
-    auto* hf_lbl = new QLabel("HEADER / FOOTER");
+    auto* hf_lbl = new QLabel(tr("HEADER / FOOTER"));
     hf_lbl->setStyleSheet(
         QString("color: %1; font-size: 11px; font-weight: bold; padding-top: 10px;").arg(ui::colors::MUTED()));
     vl->addWidget(hf_lbl);
@@ -1107,12 +1107,12 @@ void ReportBuilderScreen::show_metadata_dialog() {
     auto* fc_edit = new QLineEdit(metadata_.footer_center);
     auto* fr_edit = new QLineEdit(metadata_.footer_right);
 
-    hl_edit->setPlaceholderText("Left");
-    hc_edit->setPlaceholderText("Center");
-    hr_edit->setPlaceholderText("Right");
-    fl_edit->setPlaceholderText("Left");
+    hl_edit->setPlaceholderText(tr("Left"));
+    hc_edit->setPlaceholderText(tr("Center"));
+    hr_edit->setPlaceholderText(tr("Right"));
+    fl_edit->setPlaceholderText(tr("Left"));
     fc_edit->setPlaceholderText(tr("Center (use {page})"));
-    fr_edit->setPlaceholderText("Right");
+    fr_edit->setPlaceholderText(tr("Right"));
 
     auto f_row = [&](const char* left_text, QLineEdit* l, QLineEdit* c, QLineEdit* r) {
         auto* row = new QWidget(this);

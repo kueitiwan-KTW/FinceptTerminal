@@ -104,12 +104,12 @@ void PortfolioSectorPanel::build_ui() {
     // Inline sub-section title (smaller weight than the unified panel header
     // above — this is a sub-block within ▌SECTORS, not a peer panel).
     auto* corr_header = new QHBoxLayout;
-    auto* corr_title = new QLabel("CORRELATION");
+    auto* corr_title = new QLabel(tr("CORRELATION"));
     corr_title->setStyleSheet(
         QString("color:%1; font-size:10px; font-weight:700; letter-spacing:1px;").arg(ui::colors::TEXT_TERTIARY()));
     corr_header->addWidget(corr_title);
 
-    auto* corr_note = new QLabel("(P&L return proxy, top 6 by weight)");
+    auto* corr_note = new QLabel(tr("(P&L return proxy, top 6 by weight)"));
     corr_note->setStyleSheet(QString("color:%1; font-size:10px;").arg(ui::colors::TEXT_DIM()));
     corr_header->addWidget(corr_note);
     corr_header->addStretch();
@@ -265,7 +265,7 @@ void PortfolioSectorPanel::update_correlation() {
 
     if (holdings_.size() < 2) {
         auto* layout = new QVBoxLayout(corr_widget_);
-        auto* msg = new QLabel("Need 2+ holdings for correlation");
+        auto* msg = new QLabel(tr("Need 2+ holdings for correlation"));
         msg->setStyleSheet(QString("color:%1; font-size:11px;").arg(ui::colors::TEXT_TERTIARY()));
         msg->setAlignment(Qt::AlignCenter);
         layout->addWidget(msg);

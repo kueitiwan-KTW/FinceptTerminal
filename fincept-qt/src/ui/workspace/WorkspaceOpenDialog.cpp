@@ -42,7 +42,7 @@ void WorkspaceOpenDialog::setup_ui() {
 
     // ── Left: workspace list ──────────────────────────────────────────────────
     auto* left = new QVBoxLayout;
-    auto* list_label = new QLabel("Saved Workspaces");
+    auto* list_label = new QLabel(tr("Saved Workspaces"));
     list_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     left->addWidget(list_label);
 
@@ -50,7 +50,7 @@ void WorkspaceOpenDialog::setup_ui() {
     workspace_list_->setFixedWidth(320);
     left->addWidget(workspace_list_, 1);
 
-    auto* browse_btn = new QPushButton("Browse for File...");
+    auto* browse_btn = new QPushButton(tr("Browse for File..."));
     left->addWidget(browse_btn);
     root->addLayout(left);
 
@@ -58,11 +58,11 @@ void WorkspaceOpenDialog::setup_ui() {
     auto* right = new QVBoxLayout;
     right->setSpacing(10);
 
-    auto* prev_label = new QLabel("Preview");
+    auto* prev_label = new QLabel(tr("Preview"));
     prev_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     right->addWidget(prev_label);
 
-    preview_label_ = new QLabel("Select a workspace to preview");
+    preview_label_ = new QLabel(tr("Select a workspace to preview"));
     preview_label_->setWordWrap(true);
     preview_label_->setAlignment(Qt::AlignTop | Qt::AlignLeft);
     preview_label_->setStyleSheet("background:#111;border:1px solid #2a2a2a;border-radius:3px;"
@@ -72,8 +72,8 @@ void WorkspaceOpenDialog::setup_ui() {
     // Buttons
     auto* btn_row = new QHBoxLayout;
     btn_row->addStretch();
-    auto* cancel_btn = new QPushButton("Cancel");
-    open_btn_ = new QPushButton("Open");
+    auto* cancel_btn = new QPushButton(tr("Cancel"));
+    open_btn_ = new QPushButton(tr("Open"));
     open_btn_->setObjectName("openBtn");
     open_btn_->setEnabled(false);
     btn_row->addWidget(cancel_btn);

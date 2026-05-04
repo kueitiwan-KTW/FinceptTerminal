@@ -316,12 +316,12 @@ bool NotesWidget::eventFilter(QObject* obj, QEvent* event) {
 
 QDialog* NotesWidget::make_config_dialog(QWidget* parent) {
     auto* dlg = new QDialog(parent);
-    dlg->setWindowTitle("Configure — Notes");
+    dlg->setWindowTitle(tr("Configure — Notes"));
     auto* form = new QFormLayout(dlg);
 
     auto* filter_box = new QComboBox(dlg);
-    filter_box->addItem("Recent", "recent");
-    filter_box->addItem("Favorites only", "favorites");
+    filter_box->addItem(tr("Recent"), "recent");
+    filter_box->addItem(tr("Favorites only"), "favorites");
     const int idx = filter_box->findData(filter_);
     if (idx >= 0)
         filter_box->setCurrentIndex(idx);

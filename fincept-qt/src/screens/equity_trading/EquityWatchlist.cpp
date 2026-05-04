@@ -27,7 +27,7 @@ EquityWatchlist::EquityWatchlist(QWidget* parent) : QWidget(parent) {
     auto* h_layout = new QHBoxLayout(header);
     h_layout->setContentsMargins(8, 0, 8, 0);
 
-    auto* title = new QLabel("WATCHLIST");
+    auto* title = new QLabel(tr("WATCHLIST"));
     title->setObjectName("eqWatchlistTitle");
     h_layout->addWidget(title);
     h_layout->addStretch();

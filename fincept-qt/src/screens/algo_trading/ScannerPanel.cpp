@@ -290,7 +290,7 @@ void ScannerPanel::build_ui() {
     preset_combo_ = new QComboBox(left_col);
     preset_combo_->setStyleSheet(kComboStyle());
     preset_combo_->setFixedHeight(30);
-    preset_combo_->addItem("Custom");
+    preset_combo_->addItem(tr("Custom"));
     const auto presets = scanner_presets();
     for (const auto& p : presets)
         preset_combo_->addItem(p.name);
@@ -357,7 +357,7 @@ void ScannerPanel::build_ui() {
     symbols_edit_ = new QTextEdit(right_col);
     symbols_edit_->setStyleSheet(kTextEditStyle());
     symbols_edit_->setFixedHeight(120);
-    symbols_edit_->setPlaceholderText("RELIANCE\nTCS\nINFY\n...");
+    symbols_edit_->setPlaceholderText(tr("RELIANCE\nTCS\nINFY\n..."));
     right_vl->addWidget(symbols_edit_);
 
     // Quick-add buttons

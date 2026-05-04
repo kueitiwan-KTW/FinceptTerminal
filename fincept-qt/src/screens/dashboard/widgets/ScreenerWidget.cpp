@@ -29,7 +29,7 @@ ScreenerWidget::ScreenerWidget(QWidget* parent) : BaseWidget("股票篩選", par
     fl->setContentsMargins(8, 6, 8, 6);
     fl->setSpacing(8);
 
-    filter_lbl_ = new QLabel("排序");
+    filter_lbl_ = new QLabel(tr("排序"));
     fl->addWidget(filter_lbl_);
 
     filter_combo_ = new QComboBox;

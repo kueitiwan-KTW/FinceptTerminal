@@ -63,7 +63,7 @@ MarginUsageWidget::MarginUsageWidget(const QJsonObject& cfg, QWidget* parent)
     vl->addLayout(grid);
     vl->addSpacing(4);
 
-    usage_pct_label_ = new QLabel("Usage: —");
+    usage_pct_label_ = new QLabel(tr("Usage: —"));
     usage_pct_label_->setObjectName("marginUsagePctLabel");
     vl->addWidget(usage_pct_label_);
 

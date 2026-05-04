@@ -47,7 +47,7 @@ QWidget* QuantModulePanel::build_rl_trading_panel() {
     vl->addWidget(build_input_row("RL Algorithm", algo, w));
 
     auto* ticker = new QLineEdit(w);
-    ticker->setPlaceholderText("AAPL");
+    ticker->setPlaceholderText(tr("AAPL"));
     ticker->setStyleSheet(input_ss());
     text_inputs_["rl_ticker"] = ticker;
     vl->addWidget(build_input_row("Ticker", ticker, w));
@@ -73,11 +73,11 @@ QWidget* QuantModulePanel::build_rl_trading_panel() {
         rl_log_console_->clear();
         rl_progress_bar_->setValue(0);
         rl_progress_bar_->setVisible(true);
-        rl_progress_stats_->setText("step 0 / — · reward — · loss —");
+        rl_progress_stats_->setText(tr("step 0 / — · reward — · loss —"));
         rl_progress_stats_->setVisible(true);
         rl_log_console_->setVisible(true);
         rl_train_button_->setEnabled(false);
-        status_label_->setText("Training RL Agent...");
+        status_label_->setText(tr("Training RL Agent..."));
         QJsonObject params;
         params["algorithm"] = combo_inputs_["rl_algo"]->currentText();
         params["ticker"] = text_inputs_["rl_ticker"]->text();

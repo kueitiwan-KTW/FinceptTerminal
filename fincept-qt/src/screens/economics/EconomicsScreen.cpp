@@ -181,8 +181,8 @@ void EconomicsScreen::build_ui() {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
 
-    title_ = new QLabel("ECONOMICS DATA EXPLORER");
-    subtitle_ = new QLabel("32 global data sources · 1000+ indicators");
+    title_ = new QLabel(tr("ECONOMICS DATA EXPLORER"));
+    subtitle_ = new QLabel(tr("32 global data sources · 1000+ indicators"));
 
     hl->addWidget(title_);
     hl->addWidget(subtitle_);

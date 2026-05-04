@@ -51,7 +51,7 @@ void PropertiesPanel::build_empty_page() {
     auto* vl = new QVBoxLayout(empty_widget_);
     vl->setAlignment(Qt::AlignCenter);
 
-    auto* lbl = new QLabel("Select a component\nto edit properties");
+    auto* lbl = new QLabel(tr("Select a component\nto edit properties"));
     lbl->setAlignment(Qt::AlignCenter);
     lbl->setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(ui::colors::MUTED()));
     vl->addWidget(lbl);
@@ -234,7 +234,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         auto* data_edit = new QTextEdit;
         data_edit->setPlainText(component->config.value("data", ""));
         data_edit->setMaximumHeight(80);
-        data_edit->setPlaceholderText("10,25,18,40,32,55");
+        data_edit->setPlaceholderText(tr("10,25,18,40,32,55"));
         connect(data_edit, &QTextEdit::textChanged, this,
                 [this, data_edit]() { emit config_changed(current_index_, "data", data_edit->toPlainText()); });
         editor_layout_->addWidget(data_edit);
@@ -272,7 +272,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         hist_ticker->setPlaceholderText(tr("e.g. AAPL"));
         hr_hl->addWidget(hist_ticker, 1);
 
-        auto* hist_btn = new QPushButton("Fetch");
+        auto* hist_btn = new QPushButton(tr("Fetch"));
         hist_btn->setFixedWidth(52);
         hist_btn->setStyleSheet(
             QString("QPushButton { background: %1; color: %2; font-weight: bold; border: 1px solid %3; }"
@@ -287,7 +287,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
                 emit config_changed(current_index_, "fetch_history", sym);
         });
 
-        auto* hint = new QLabel("Tip: re-select component after\nediting data to re-render.");
+        auto* hint = new QLabel(tr("Tip: re-select component after\nediting data to re-render."));
         hint->setWordWrap(true);
         hint->setStyleSheet(QString("color: %1; font-size: 10px; background: transparent;").arg(ui::colors::MUTED()));
         editor_layout_->addWidget(hint);
@@ -313,7 +313,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         ticker_edit->setPlaceholderText(tr("e.g. AAPL"));
         tr_hl->addWidget(ticker_edit, 1);
 
-        auto* fetch_stats_btn = new QPushButton("Fetch");
+        auto* fetch_stats_btn = new QPushButton(tr("Fetch"));
         fetch_stats_btn->setFixedWidth(52);
         fetch_stats_btn->setStyleSheet(
             QString("QPushButton { background: %1; color: %2; font-weight: bold; border: 1px solid %3; }"
@@ -404,12 +404,12 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         auto* data_edit = new QTextEdit;
         data_edit->setPlainText(component->config.value("data", ""));
         data_edit->setMaximumHeight(80);
-        data_edit->setPlaceholderText("175,178,182,179,185,188,186,190,189");
+        data_edit->setPlaceholderText(tr("175,178,182,179,185,188,186,190,189"));
         connect(data_edit, &QTextEdit::textChanged, this,
                 [this, data_edit]() { emit config_changed(current_index_, "data", data_edit->toPlainText()); });
         editor_layout_->addWidget(data_edit);
 
-        auto* hint = new QLabel("Tip: re-select after editing\ndata to refresh sparkline.");
+        auto* hint = new QLabel(tr("Tip: re-select after editing\ndata to refresh sparkline."));
         hint->setWordWrap(true);
         hint->setStyleSheet(QString("color: %1; font-size: 10px; background: transparent;").arg(ui::colors::MUTED()));
         editor_layout_->addWidget(hint);
@@ -424,7 +424,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         editor_layout_->addWidget(path_lbl);
 
         // Browse button
-        auto* browse = new QPushButton("Browse File...");
+        auto* browse = new QPushButton(tr("Browse File..."));
         connect(browse, &QPushButton::clicked, this, [this, path_lbl]() {
             QString path =
                 QFileDialog::getOpenFileName(this, "Select Image", "", "Images (*.png *.jpg *.jpeg *.bmp *.svg)");
@@ -437,7 +437,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         editor_layout_->addWidget(browse);
 
         // Paste from clipboard button
-        auto* paste_btn = new QPushButton("Paste from Clipboard");
+        auto* paste_btn = new QPushButton(tr("Paste from Clipboard"));
         paste_btn->setStyleSheet(
             QString("QPushButton { background: %1; color: %2; border: 1px solid %3; }"
                     "QPushButton:hover { background: %4; }")
@@ -509,7 +509,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         sym_edit->setText(component->config.value("symbol", ""));
         editor_layout_->addWidget(sym_edit);
 
-        auto* fetch_btn = new QPushButton("Fetch Price");
+        auto* fetch_btn = new QPushButton(tr("Fetch Price"));
         fetch_btn->setStyleSheet(QString("QPushButton { background: %1; color: %2; font-weight: bold; }"
                                          "QPushButton:hover { background: %3; }")
                                      .arg(ui::colors::AMBER_DIM(), ui::colors::WHITE(), ui::colors::AMBER()));
@@ -548,7 +548,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
 
     // ── Page Break: no extra settings ─────────────────────────────────────────
     if (component->type == "page_break") {
-        auto* info = new QLabel("Inserts a page break\nin PDF/print output.");
+        auto* info = new QLabel(tr("Inserts a page break\nin PDF/print output."));
         info->setAlignment(Qt::AlignCenter);
         info->setStyleSheet(QString("color: %1; font-size: 11px; background: transparent;").arg(ui::colors::MUTED()));
         editor_layout_->addWidget(info);
@@ -556,7 +556,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
 
     // ── TOC: no extra settings ────────────────────────────────────────────────
     if (component->type == "toc") {
-        auto* info = new QLabel("Auto-generated from\nHeading components.");
+        auto* info = new QLabel(tr("Auto-generated from\nHeading components."));
         info->setAlignment(Qt::AlignCenter);
         info->setStyleSheet(QString("color: %1; font-size: 11px; background: transparent;").arg(ui::colors::MUTED()));
         editor_layout_->addWidget(info);
@@ -568,11 +568,11 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
     sep->setStyleSheet(QString("background: %1;").arg(ui::colors::BORDER()));
     editor_layout_->addWidget(sep);
 
-    auto* dup_btn = new QPushButton("Duplicate");
+    auto* dup_btn = new QPushButton(tr("Duplicate"));
     connect(dup_btn, &QPushButton::clicked, this, [this]() { emit duplicate_requested(current_index_); });
     editor_layout_->addWidget(dup_btn);
 
-    auto* del_btn = new QPushButton("Delete");
+    auto* del_btn = new QPushButton(tr("Delete"));
     del_btn->setStyleSheet(QString("QPushButton { color: %1; border: 1px solid %1; }"
                                    "QPushButton:hover { background: %1; color: white; }")
                                .arg(ui::colors::RED()));

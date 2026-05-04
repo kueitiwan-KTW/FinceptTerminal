@@ -119,7 +119,7 @@ void PythonEnvSection::build_ui() {
     root->setSpacing(0);
 
     // Title
-    auto* title = new QLabel("PYTHON ENVIRONMENTS");
+    auto* title = new QLabel(tr("PYTHON ENVIRONMENTS"));
     title->setStyleSheet(section_title_ss());
     root->addWidget(title);
     root->addSpacing(4);

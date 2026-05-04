@@ -197,7 +197,7 @@ void TickerBar::contextMenuEvent(QContextMenuEvent* event) {
             .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(),
                  ui::colors::BORDER_DIM(), ui::colors::AMBER(), ui::colors::BG_BASE()));
 
-    auto* edit_action = menu.addAction("Edit Symbols...");
+    auto* edit_action = menu.addAction(tr("Edit Symbols..."));
     connect(edit_action, &QAction::triggered, this, &TickerBar::show_edit_bar);
 
     menu.exec(event->globalPos());

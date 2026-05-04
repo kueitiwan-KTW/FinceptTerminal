@@ -71,7 +71,7 @@ void TradingEconomicsPanel::build_controls(QHBoxLayout* thl) {
         country_combo_->addItem(c.first, c.second);
     country_combo_->setFixedHeight(26);
     country_combo_->setMinimumWidth(130);
-    country_combo_->setToolTip("Required for yield_curve and country_data");
+    country_combo_->setToolTip(tr("Required for yield_curve and country_data"));
 
     thl->addWidget(lbl("DATASET"));
     thl->addWidget(dataset_combo_);

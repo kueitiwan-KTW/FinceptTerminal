@@ -212,7 +212,7 @@ void EquityFinancialsTab::build_ui() {
     btn_income_->setChecked(true);
     btn_hl->addStretch();
 
-    auto* export_btn = new QPushButton("EXPORT CSV");
+    auto* export_btn = new QPushButton(tr("EXPORT CSV"));
     export_btn->setStyleSheet(QString(R"(
         QPushButton {
             background:transparent; color:%1; border:1px solid %1;
@@ -375,7 +375,7 @@ QWidget* EquityFinancialsTab::build_income_view() {
         auto* rvl = new QVBoxLayout(ret_frame);
         rvl->setContentsMargins(0, 0, 0, 0);
         rvl->setSpacing(6);
-        auto* ret_title = new QLabel("RETURN METRICS");
+        auto* ret_title = new QLabel(tr("RETURN METRICS"));
         ret_title->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; "
                                          "background:transparent; border:0;")
                                      .arg(kCyan));
@@ -394,7 +394,7 @@ QWidget* EquityFinancialsTab::build_income_view() {
         auto* dvl = new QVBoxLayout(dp_frame);
         dvl->setContentsMargins(10, 8, 10, 8);
         dvl->setSpacing(6);
-        auto* dp_title = new QLabel("DUPONT ANALYSIS");
+        auto* dp_title = new QLabel(tr("DUPONT ANALYSIS"));
         dp_title->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; "
                                         "background:transparent; border:0;")
                                     .arg(kPurple));
@@ -510,7 +510,7 @@ QWidget* EquityFinancialsTab::build_balance_view() {
         auto* lvl = new QVBoxLayout(liq);
         lvl->setContentsMargins(0, 0, 0, 0);
         lvl->setSpacing(4);
-        auto* lt = new QLabel("LIQUIDITY");
+        auto* lt = new QLabel(tr("LIQUIDITY"));
         lt->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; "
                                   "background:transparent; border:0;")
                               .arg(kCyan));
@@ -527,7 +527,7 @@ QWidget* EquityFinancialsTab::build_balance_view() {
         auto* evl = new QVBoxLayout(lev);
         evl->setContentsMargins(0, 0, 0, 0);
         evl->setSpacing(4);
-        auto* et = new QLabel("LEVERAGE / SOLVENCY");
+        auto* et = new QLabel(tr("LEVERAGE / SOLVENCY"));
         et->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; "
                                   "background:transparent; border:0;")
                               .arg(kOrange));

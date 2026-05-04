@@ -79,7 +79,7 @@ ContactScreen::ContactScreen(QWidget* parent) : QWidget(parent) {
     vl->setSpacing(12);
 
     // ── Header ───────────────────────────────────────────────────────────────
-    auto* back_btn = new QPushButton("< BACK");
+    auto* back_btn = new QPushButton(tr("< BACK"));
     back_btn->setCursor(Qt::PointingHandCursor);
     back_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none; "
                                     "font-size: 12px; %2 } QPushButton:hover { color: %3; }")
@@ -87,13 +87,13 @@ ContactScreen::ContactScreen(QWidget* parent) : QWidget(parent) {
     connect(back_btn, &QPushButton::clicked, this, &ContactScreen::navigate_back);
     vl->addWidget(back_btn, 0, Qt::AlignLeft);
 
-    auto* title = new QLabel("CONTACT US");
+    auto* title = new QLabel(tr("CONTACT US"));
     title->setStyleSheet(QString("color: %1; font-size: 20px; font-weight: 700; letter-spacing: 1px; "
                                  "background: transparent; %2")
                              .arg(colors::AMBER(), MF));
     vl->addWidget(title);
 
-    auto* subtitle = new QLabel("Get in touch with our team");
+    auto* subtitle = new QLabel(tr("Get in touch with our team"));
     subtitle->setStyleSheet(
         QString("color: %1; font-size: 13px; background: transparent; %2").arg(colors::TEXT_TERTIARY(), MF));
     vl->addWidget(subtitle);

@@ -241,7 +241,7 @@ QWidget* GeopoliticsScreen::build_filter_panel() {
     category_combo_->setStyleSheet(input_style);
     // Populated from API once categories_loaded fires — start with a single
     // "All" entry so the combo renders before the network round-trip.
-    category_combo_->addItem("All Categories", "");
+    category_combo_->addItem(tr("All Categories"), "");
     vl->addWidget(category_combo_);
 
     vl->addSpacing(4);
@@ -473,7 +473,7 @@ void GeopoliticsScreen::on_events_loaded(services::geo::EventsPage page) {
                                           .arg(ui::fonts::DATA_FAMILY));
     }
 
-    status_label_->setText("READY");
+    status_label_->setText(tr("READY"));
     status_label_->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;")
                                      .arg(ui::colors::POSITIVE())
                                      .arg(ui::fonts::TINY)
@@ -492,7 +492,7 @@ void GeopoliticsScreen::on_categories_loaded(QVector<services::geo::UniqueCatego
     if (category_combo_) {
         const QString prev = category_combo_->currentData().toString();
         category_combo_->clear();
-        category_combo_->addItem("All Categories", "");
+        category_combo_->addItem(tr("All Categories"), "");
         for (const auto& c : cats)
             category_combo_->addItem(
                 QString("%1 (%2)").arg(services::geo::pretty_category(c.category)).arg(c.event_count),
@@ -535,7 +535,7 @@ void GeopoliticsScreen::rebuild_legend(const QVector<services::geo::UniqueCatego
 }
 
 void GeopoliticsScreen::on_error(const QString& context, const QString& message) {
-    status_label_->setText("ERROR");
+    status_label_->setText(tr("ERROR"));
     status_label_->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;")
                                      .arg(ui::colors::NEGATIVE())
                                      .arg(ui::fonts::TINY)

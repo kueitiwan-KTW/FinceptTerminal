@@ -126,10 +126,10 @@ void TradeAnalysisPanel::build_ui() {
     // ── Analysis Type selector ────────────────────────────────────────────────
     auto* type_combo = new QComboBox;
     type_combo->setStyleSheet(combo_style());
-    type_combo->addItem("Benefits & Costs of Trade", "benefits_costs");
-    type_combo->addItem("Trade Restrictions Analysis", "restrictions");
-    type_combo->addItem("Trading Blocs Analysis", "trading_blocs");
-    type_combo->addItem("Trade Barrier Removal Impact", "barrier_removal");
+    type_combo->addItem(tr("Benefits & Costs of Trade"), "benefits_costs");
+    type_combo->addItem(tr("Trade Restrictions Analysis"), "restrictions");
+    type_combo->addItem(tr("Trading Blocs Analysis"), "trading_blocs");
+    type_combo->addItem(tr("Trade Barrier Removal Impact"), "barrier_removal");
     cvl->addWidget(make_field("ANALYSIS TYPE", type_combo, content));
 
     // ── Tab widget for params per analysis type ───────────────────────────────
@@ -248,16 +248,16 @@ void TradeAnalysisPanel::build_ui() {
 
     auto* dev_combo = new QComboBox;
     dev_combo->setStyleSheet(combo_style());
-    dev_combo->addItem("Developed Economy", "developed");
-    dev_combo->addItem("Developing Economy", "developing");
-    dev_combo->addItem("Middle Income", "middle");
+    dev_combo->addItem(tr("Developed Economy"), "developed");
+    dev_combo->addItem(tr("Developing Economy"), "developing");
+    dev_combo->addItem(tr("Middle Income"), "middle");
     p1l->addWidget(make_field("DEVELOPMENT LEVEL", dev_combo, p1));
 
     auto* maturity_combo = new QComboBox;
     maturity_combo->setStyleSheet(combo_style());
-    maturity_combo->addItem("Mature Industry", "mature");
-    maturity_combo->addItem("Infant Industry", "infant");
-    maturity_combo->addItem("Emerging Industry", "emerging");
+    maturity_combo->addItem(tr("Mature Industry"), "mature");
+    maturity_combo->addItem(tr("Infant Industry"), "infant");
+    maturity_combo->addItem(tr("Emerging Industry"), "emerging");
     p1l->addWidget(make_field("INDUSTRY MATURITY", maturity_combo, p1));
 
     p1l->addStretch();
@@ -306,10 +306,10 @@ void TradeAnalysisPanel::build_ui() {
 
     auto* bloc_combo = new QComboBox;
     bloc_combo->setStyleSheet(combo_style());
-    bloc_combo->addItem("Free Trade Area (e.g. USMCA, ASEAN)", "fta");
-    bloc_combo->addItem("Customs Union (e.g. EU, Mercosur)", "customs_union");
-    bloc_combo->addItem("Common Market (e.g. EU Single Market)", "common_market");
-    bloc_combo->addItem("Economic Union (e.g. European Union)", "economic_union");
+    bloc_combo->addItem(tr("Free Trade Area (e.g. USMCA, ASEAN)"), "fta");
+    bloc_combo->addItem(tr("Customs Union (e.g. EU, Mercosur)"), "customs_union");
+    bloc_combo->addItem(tr("Common Market (e.g. EU Single Market)"), "common_market");
+    bloc_combo->addItem(tr("Economic Union (e.g. European Union)"), "economic_union");
     p2l->addWidget(make_field("INTEGRATION TYPE", bloc_combo, p2));
 
     auto* tc_spin = new QDoubleSpinBox;
@@ -368,10 +368,10 @@ void TradeAnalysisPanel::build_ui() {
 
     auto* lib_combo = new QComboBox;
     lib_combo->setStyleSheet(combo_style());
-    lib_combo->addItem("Unilateral Liberalization", "unilateral");
-    lib_combo->addItem("Bilateral Agreement", "bilateral");
-    lib_combo->addItem("Regional Agreement", "regional");
-    lib_combo->addItem("Multilateral (WTO Round)", "multilateral");
+    lib_combo->addItem(tr("Unilateral Liberalization"), "unilateral");
+    lib_combo->addItem(tr("Bilateral Agreement"), "bilateral");
+    lib_combo->addItem(tr("Regional Agreement"), "regional");
+    lib_combo->addItem(tr("Multilateral (WTO Round)"), "multilateral");
     p3l->addWidget(make_field("LIBERALIZATION SCOPE", lib_combo, p3));
 
     auto* tariff_cut_spin = new QDoubleSpinBox;
@@ -444,7 +444,7 @@ void TradeAnalysisPanel::display_result(const QJsonObject& payload) {
     sep->setStyleSheet(QString("background:%1;").arg(ui::colors::BORDER_DIM()));
     results_layout_->addWidget(sep);
 
-    auto* hdr = new QLabel("ANALYSIS RESULTS");
+    auto* hdr = new QLabel(tr("ANALYSIS RESULTS"));
     hdr->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;"
                                "letter-spacing:1px; padding:8px 0 4px 0;")
                            .arg(ui::colors::WARNING())
@@ -517,7 +517,7 @@ void TradeAnalysisPanel::on_trade_result(const QString& context, const QJsonObje
 void TradeAnalysisPanel::on_error(const QString& context, const QString& message) {
     if (context != "trade_benefits" && context != "trade_restrictions")
         return;
-    status_label_->setText("Error");
+    status_label_->setText(tr("Error"));
     while (results_layout_->count() > 0) {
         auto* item = results_layout_->takeAt(0);
         if (item->widget())

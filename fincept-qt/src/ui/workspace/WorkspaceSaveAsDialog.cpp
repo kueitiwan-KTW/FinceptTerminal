@@ -39,7 +39,7 @@ void WorkspaceSaveAsDialog::setup_ui() {
     vl->setContentsMargins(20, 20, 20, 20);
     vl->setSpacing(12);
 
-    auto* name_label = new QLabel("Workspace Name");
+    auto* name_label = new QLabel(tr("Workspace Name"));
     name_label->setStyleSheet("color:#888;font-size:11px;font-weight:600;");
     vl->addWidget(name_label);
 
@@ -55,7 +55,7 @@ void WorkspaceSaveAsDialog::setup_ui() {
     auto* path_label = new QLabel(QString("Save to: %1").arg(chosen_path_));
     path_label->setStyleSheet("color:#555;font-size:11px;");
     path_label->setWordWrap(true);
-    auto* change_btn = new QPushButton("Change...");
+    auto* change_btn = new QPushButton(tr("Change..."));
     change_btn->setFixedWidth(80);
     path_row->addWidget(path_label, 1);
     path_row->addWidget(change_btn);
@@ -66,8 +66,8 @@ void WorkspaceSaveAsDialog::setup_ui() {
     // Buttons
     auto* btn_row = new QHBoxLayout;
     btn_row->addStretch();
-    auto* cancel_btn = new QPushButton("Cancel");
-    auto* save_btn = new QPushButton("Save");
+    auto* cancel_btn = new QPushButton(tr("Cancel"));
+    auto* save_btn = new QPushButton(tr("Save"));
     save_btn->setObjectName("saveBtn");
     save_btn->setEnabled(!name_edit_->text().trimmed().isEmpty());
     btn_row->addWidget(cancel_btn);

@@ -161,7 +161,7 @@ void EconPanelBase::build_base_ui(QWidget* container) {
     build_controls(thl);
     thl->addStretch(1);
 
-    fetch_btn_ = new QPushButton("FETCH");
+    fetch_btn_ = new QPushButton(tr("FETCH"));
     fetch_btn_->setObjectName("econFetchBtn");
     fetch_btn_->setCursor(Qt::PointingHandCursor);
     connect(fetch_btn_, &QPushButton::clicked, this, &EconPanelBase::on_fetch);
@@ -227,7 +227,7 @@ void EconPanelBase::build_base_ui(QWidget* container) {
     empty_pg->setObjectName("econEmptyPage");
     auto* evl = new QVBoxLayout(empty_pg);
     evl->setAlignment(Qt::AlignCenter);
-    empty_lbl_ = new QLabel("Select parameters and click FETCH");
+    empty_lbl_ = new QLabel(tr("Select parameters and click FETCH"));
     empty_lbl_->setObjectName("econEmptyMsg");
     empty_lbl_->setAlignment(Qt::AlignCenter);
     empty_lbl_->setWordWrap(true);
@@ -275,7 +275,7 @@ void EconPanelBase::show_error(const QString& msg) {
     empty_lbl_->setObjectName("econErrMsg");
     empty_lbl_->style()->unpolish(empty_lbl_);
     empty_lbl_->style()->polish(empty_lbl_);
-    empty_lbl_->setText("Error: " + msg);
+    empty_lbl_->setText(tr("Error: ") + msg);
     stack_->setCurrentIndex(0);
     if (fetch_btn_)
         fetch_btn_->setEnabled(true);

@@ -67,7 +67,7 @@ QLabel* add_row(QFrame* panel, const QString& key, const char* val_color) {
                          .arg(ui::colors::TEXT_SECONDARY())
                          .arg(FONT_KEY));
 
-    auto* v = new QLabel("\xe2\x80\x94");
+    auto* v = new QLabel(tr("\xe2\x80\x94"));
     v->setStyleSheet(QString("color:%1;font-size:%2px;font-weight:600;background:transparent;border:0;")
                          .arg(val_color)
                          .arg(FONT_VAL));
@@ -387,7 +387,7 @@ QWidget* EquityOverviewTab::build_chart_panel() {
     btn_row->setSpacing(4);
     btn_row->setContentsMargins(0, 0, 0, 0);
 
-    auto* period_lbl = new QLabel("PERIOD");
+    auto* period_lbl = new QLabel(tr("PERIOD"));
     period_lbl->setStyleSheet(QString("color:%1;font-size:12px;font-weight:600;background:transparent;border:0;")
                                   .arg(ui::colors::TEXT_SECONDARY()));
     btn_row->addWidget(period_lbl);
@@ -475,7 +475,7 @@ QWidget* EquityOverviewTab::build_analyst_panel() {
     target_low_val_ = add_row(p, "LOW", ui::colors::NEGATIVE);
     analyst_count_val_ = add_row(p, "ANALYSTS", CYAN);
 
-    rec_key_label_ = new QLabel("\xe2\x80\x94");
+    rec_key_label_ = new QLabel(tr("\xe2\x80\x94"));
     rec_key_label_->setAlignment(Qt::AlignCenter);
     rec_key_label_->setStyleSheet(QString("background:%1;color:%2;border-radius:2px;padding:3px 8px;"
                                           "font-size:12px;font-weight:700;")
@@ -535,7 +535,7 @@ QWidget* EquityOverviewTab::build_bottom_row() {
 
 QWidget* EquityOverviewTab::build_company_desc_panel() {
     auto* p = make_panel("COMPANY OVERVIEW", CYAN);
-    company_desc_ = new QLabel("\xe2\x80\x94");
+    company_desc_ = new QLabel(tr("\xe2\x80\x94"));
     company_desc_->setWordWrap(true);
     company_desc_->setAlignment(Qt::AlignTop | Qt::AlignLeft);
     company_desc_->setStyleSheet(QString("color:%1;font-size:%2px;line-height:1.5;"

@@ -81,7 +81,7 @@ void BlsPanel::build_controls(QHBoxLayout* thl) {
         }
     });
 
-    auto* lbl2 = new QLabel("SERIES ID");
+    auto* lbl2 = new QLabel(tr("SERIES ID"));
     lbl2->setStyleSheet(ctrl_label_style());
 
     series_input_ = new QLineEdit;

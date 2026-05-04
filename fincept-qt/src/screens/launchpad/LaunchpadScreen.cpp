@@ -36,7 +36,7 @@ LaunchpadScreen* LaunchpadScreen::instance() {
 }
 
 LaunchpadScreen::LaunchpadScreen(QWidget* parent) : QMainWindow(parent) {
-    setWindowTitle("Fincept Launchpad");
+    setWindowTitle(tr("Fincept Launchpad"));
     setMinimumSize(480, 320);
     resize(480, 320);
 
@@ -56,24 +56,24 @@ LaunchpadScreen::LaunchpadScreen(QWidget* parent) : QMainWindow(parent) {
     sub->setWordWrap(true);
     vl->addWidget(sub);
 
-    btn_new_window_ = new QPushButton("New Window");
+    btn_new_window_ = new QPushButton(tr("New Window"));
     btn_new_window_->setMinimumHeight(36);
     connect(btn_new_window_, &QPushButton::clicked, this, &LaunchpadScreen::on_new_window);
     vl->addWidget(btn_new_window_);
 
-    btn_open_layout_ = new QPushButton("Open Saved Layout…");
+    btn_open_layout_ = new QPushButton(tr("Open Saved Layout…"));
     btn_open_layout_->setMinimumHeight(36);
     btn_open_layout_->setEnabled(false); // Phase 6 wires LayoutCatalog
-    btn_open_layout_->setToolTip("Saved layouts arrive in Phase 6");
+    btn_open_layout_->setToolTip(tr("Saved layouts arrive in Phase 6"));
     connect(btn_open_layout_, &QPushButton::clicked, this, &LaunchpadScreen::on_open_layout);
     vl->addWidget(btn_open_layout_);
 
-    btn_switch_profile_ = new QPushButton("Switch Profile…");
+    btn_switch_profile_ = new QPushButton(tr("Switch Profile…"));
     btn_switch_profile_->setMinimumHeight(36);
     connect(btn_switch_profile_, &QPushButton::clicked, this, &LaunchpadScreen::on_switch_profile);
     vl->addWidget(btn_switch_profile_);
 
-    auto* recent_label = new QLabel("Recent Layouts");
+    auto* recent_label = new QLabel(tr("Recent Layouts"));
     recent_label->setStyleSheet("font-size: 11px; color: #9ca3af; margin-top: 8px;");
     vl->addWidget(recent_label);
 

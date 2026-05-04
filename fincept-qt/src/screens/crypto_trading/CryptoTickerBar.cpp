@@ -18,7 +18,7 @@ CryptoTickerBar::CryptoTickerBar(QWidget* parent) : QWidget(parent) {
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(10);
 
-    symbol_label_ = new QLabel("BTC/USDT");
+    symbol_label_ = new QLabel(tr("BTC/USDT"));
     symbol_label_->setObjectName("cryptoCommandBarTitle");
     layout->addWidget(symbol_label_);
 
@@ -31,37 +31,37 @@ CryptoTickerBar::CryptoTickerBar(QWidget* parent) : QWidget(parent) {
     layout->addWidget(change_label_);
 
     // Bid / Ask / Spread cluster
-    bid_label_ = new QLabel("B:--");
+    bid_label_ = new QLabel(tr("B:--"));
     bid_label_->setObjectName("cryptoBid");
     layout->addWidget(bid_label_);
 
-    ask_label_ = new QLabel("A:--");
+    ask_label_ = new QLabel(tr("A:--"));
     ask_label_->setObjectName("cryptoAsk");
     layout->addWidget(ask_label_);
 
-    spread_label_ = new QLabel("S:--");
+    spread_label_ = new QLabel(tr("S:--"));
     spread_label_->setObjectName("cryptoSpreadInline");
     layout->addWidget(spread_label_);
 
     // High / Low / Volume
-    high_label_ = new QLabel("H:--");
+    high_label_ = new QLabel(tr("H:--"));
     high_label_->setObjectName("cryptoStatLabel");
     layout->addWidget(high_label_);
 
-    low_label_ = new QLabel("L:--");
+    low_label_ = new QLabel(tr("L:--"));
     low_label_->setObjectName("cryptoStatLabel");
     layout->addWidget(low_label_);
 
-    volume_label_ = new QLabel("Vol:--");
+    volume_label_ = new QLabel(tr("Vol:--"));
     volume_label_->setObjectName("cryptoStatLabel");
     layout->addWidget(volume_label_);
 
-    mark_price_label_ = new QLabel("Mk:--");
+    mark_price_label_ = new QLabel(tr("Mk:--"));
     mark_price_label_->setObjectName("cryptoStatLabel");
     mark_price_label_->setVisible(false);
     layout->addWidget(mark_price_label_);
 
-    index_price_label_ = new QLabel("Idx:--");
+    index_price_label_ = new QLabel(tr("Idx:--"));
     index_price_label_->setObjectName("cryptoStatLabel");
     index_price_label_->setVisible(false);
     layout->addWidget(index_price_label_);

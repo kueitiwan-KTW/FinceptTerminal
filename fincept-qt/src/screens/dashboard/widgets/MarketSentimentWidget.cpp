@@ -40,7 +40,7 @@ MarketSentimentWidget::MarketSentimentWidget(QWidget* parent) : BaseWidget("市�
 
     bl->addWidget(score_row);
 
-    verdict_label_ = new QLabel("載入中...");
+    verdict_label_ = new QLabel(tr("載入中..."));
     verdict_label_->setAlignment(Qt::AlignCenter);
     bl->addWidget(verdict_label_);
 
@@ -69,15 +69,15 @@ MarketSentimentWidget::MarketSentimentWidget(QWidget* parent) : BaseWidget("市�
     auto* bll = new QHBoxLayout(bar_labels);
     bll->setContentsMargins(0, 0, 0, 0);
 
-    bull_label_ = new QLabel("-- BULL");
+    bull_label_ = new QLabel(tr("-- BULL"));
     bll->addWidget(bull_label_);
     bll->addStretch();
 
-    neutral_label_ = new QLabel("-- NEUTRAL");
+    neutral_label_ = new QLabel(tr("-- NEUTRAL"));
     bll->addWidget(neutral_label_);
     bll->addStretch();
 
-    bear_label_ = new QLabel("-- BEAR");
+    bear_label_ = new QLabel(tr("-- BEAR"));
     bll->addWidget(bear_label_);
 
     vl->addWidget(bar_labels);

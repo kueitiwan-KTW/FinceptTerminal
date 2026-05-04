@@ -205,7 +205,7 @@ EquityChart::EquityChart(QWidget* parent) : QWidget(parent) {
     h_layout->setContentsMargins(8, 0, 8, 0);
     h_layout->setSpacing(2);
 
-    auto* title = new QLabel("CHART");
+    auto* title = new QLabel(tr("CHART"));
     title->setObjectName("eqChartTitle");
     h_layout->addWidget(title);
     h_layout->addStretch();

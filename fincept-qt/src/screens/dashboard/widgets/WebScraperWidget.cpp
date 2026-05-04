@@ -224,7 +224,7 @@ void WebScraperWidget::build_ui() {
             &WebScraperWidget::on_table_selected);
     header_row->addWidget(table_combo_, 1);
 
-    status_label_ = new QLabel("Configure a URL via the gear icon");
+    status_label_ = new QLabel(tr("Configure a URL via the gear icon"));
     status_label_->setObjectName("scraperStatus");
     status_label_->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     header_row->addWidget(status_label_, 2);
@@ -946,7 +946,7 @@ QDialog* WebScraperWidget::make_config_dialog(QWidget* parent) {
     for (auto it = headers_.cbegin(); it != headers_.cend(); ++it)
         hdr_text.append(QString("%1: %2\n").arg(it.key(), it.value()));
     headers_edit->setPlainText(hdr_text);
-    headers_edit->setPlaceholderText("One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz");
+    headers_edit->setPlaceholderText(tr("One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz"));
     headers_edit->setMaximumHeight(100);
     form->addRow("Extra headers", headers_edit);
 

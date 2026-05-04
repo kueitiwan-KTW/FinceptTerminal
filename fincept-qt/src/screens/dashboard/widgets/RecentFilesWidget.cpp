@@ -74,7 +74,7 @@ void RecentFilesWidget::refresh_data() {
         files.resize(8);
 
     if (files.isEmpty()) {
-        auto* empty = new QLabel("No files yet");
+        auto* empty = new QLabel(tr("No files yet"));
         empty->setAlignment(Qt::AlignCenter);
         empty->setStyleSheet(
             QString("color:%1;font-size:11px;background:transparent;padding:16px;%2").arg(colors::TEXT_DIM(), MF));

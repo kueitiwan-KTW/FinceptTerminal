@@ -107,7 +107,7 @@ void PortfolioHeatmap::build_ui() {
     movers_sep->setStyleSheet(QString("background:%1;").arg(ui::colors::BORDER_DIM()));
     layout->addWidget(movers_sep);
 
-    auto* movers_header = new QLabel("TOP MOVERS");
+    auto* movers_header = new QLabel(tr("TOP MOVERS"));
     movers_header->setStyleSheet(
         QString("color:%1; font-size:10px; font-weight:700; letter-spacing:1px;"
                 "  padding-top:4px;")

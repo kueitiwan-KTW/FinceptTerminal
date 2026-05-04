@@ -285,7 +285,7 @@ QWidget* MarketsScreen::build_header_bar() {
     };
 
     // Branding
-    auto* brand = new QLabel("FINCEPT MARKETS");
+    auto* brand = new QLabel(tr("FINCEPT MARKETS"));
     brand->setStyleSheet(lbl_ss(ui::colors::TEXT_PRIMARY(), true));
     h->addWidget(brand);
 
@@ -368,13 +368,13 @@ QWidget* MarketsScreen::build_header_bar() {
     auto* iv = new QComboBox;
     iv->setFixedHeight(24);
     iv->setFixedWidth(56);
-    iv->addItem("5M",   300000);
-    iv->addItem("10M",  600000);
-    iv->addItem("15M",  900000);
-    iv->addItem("30M",  1800000);
-    iv->addItem("1H",   3600000);
-    iv->addItem("4H",   14400000);
-    iv->addItem("1D",   86400000);
+    iv->addItem(tr("5M"),   300000);
+    iv->addItem(tr("10M"),  600000);
+    iv->addItem(tr("15M"),  900000);
+    iv->addItem(tr("30M"),  1800000);
+    iv->addItem(tr("1H"),   3600000);
+    iv->addItem(tr("4H"),   14400000);
+    iv->addItem(tr("1D"),   86400000);
     iv->setCurrentIndex(1);
     iv->setStyleSheet(
         QString("QComboBox{background:transparent;color:%1;border:none;"
@@ -435,13 +435,13 @@ QWidget* MarketsScreen::build_header_bar() {
 
     h->addStretch();
 
-    last_upd_label_ = new QLabel("LAST UPDATE  --:--:--");
+    last_upd_label_ = new QLabel(tr("LAST UPDATE  --:--:--"));
     last_upd_label_->setStyleSheet(lbl_ss(ui::colors::TEXT_DIM(), false, 11));
     h->addWidget(last_upd_label_);
 
     h->addWidget(new QLabel("   "));
 
-    status_label_ = new QLabel("● READY");
+    status_label_ = new QLabel(tr("● READY"));
     status_label_->setStyleSheet(lbl_ss(ui::colors::POSITIVE(), true));
     h->addWidget(status_label_);
 

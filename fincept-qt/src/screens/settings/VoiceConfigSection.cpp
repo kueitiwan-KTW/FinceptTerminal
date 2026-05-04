@@ -81,7 +81,7 @@ void VoiceConfigSection::build_ui() {
     vl->setSpacing(14);
 
     // ── Title + blurb ────────────────────────────────────────────────────────
-    auto* title = new QLabel("VOICE / SPEECH-TO-TEXT");
+    auto* title = new QLabel(tr("VOICE / SPEECH-TO-TEXT"));
     title->setStyleSheet(title_ss());
     vl->addWidget(title);
 
@@ -97,12 +97,12 @@ void VoiceConfigSection::build_ui() {
     auto* prov_row = new QWidget;
     auto* prov_hl = new QHBoxLayout(prov_row);
     prov_hl->setContentsMargins(0, 0, 0, 0);
-    auto* prov_lbl = new QLabel("Provider");
+    auto* prov_lbl = new QLabel(tr("Provider"));
     prov_lbl->setStyleSheet(label_ss());
     provider_combo_ = new QComboBox;
     provider_combo_->setStyleSheet(combo_ss());
-    provider_combo_->addItem("Google (free, default)", "google");
-    provider_combo_->addItem("Deepgram (API key required)", "deepgram");
+    provider_combo_->addItem(tr("Google (free, default)"), "google");
+    provider_combo_->addItem(tr("Deepgram (API key required)"), "deepgram");
     prov_hl->addWidget(prov_lbl);
     prov_hl->addStretch();
     prov_hl->addWidget(provider_combo_);
@@ -114,7 +114,7 @@ void VoiceConfigSection::build_ui() {
     dg_vl->setContentsMargins(0, 8, 0, 0);
     dg_vl->setSpacing(10);
 
-    auto* dg_title = new QLabel("DEEPGRAM SETTINGS");
+    auto* dg_title = new QLabel(tr("DEEPGRAM SETTINGS"));
     dg_title->setStyleSheet(QString("color:%1;font-weight:700;letter-spacing:0.5px;background:transparent;")
                                 .arg(ui::colors::TEXT_SECONDARY()));
     dg_vl->addWidget(dg_title);
@@ -123,14 +123,14 @@ void VoiceConfigSection::build_ui() {
     auto* key_row = new QWidget;
     auto* key_hl = new QHBoxLayout(key_row);
     key_hl->setContentsMargins(0, 0, 0, 0);
-    auto* key_lbl = new QLabel("API Key");
+    auto* key_lbl = new QLabel(tr("API Key"));
     key_lbl->setStyleSheet(label_ss());
     api_key_edit_ = new QLineEdit;
     api_key_edit_->setEchoMode(QLineEdit::Password);
-    api_key_edit_->setPlaceholderText("Paste your Deepgram API key");
+    api_key_edit_->setPlaceholderText(tr("Paste your Deepgram API key"));
     api_key_edit_->setStyleSheet(input_ss());
     api_key_edit_->setMinimumWidth(320);
-    show_key_btn_ = new QPushButton("Show");
+    show_key_btn_ = new QPushButton(tr("Show"));
     show_key_btn_->setStyleSheet(btn_secondary_ss());
     show_key_btn_->setCheckable(true);
     key_hl->addWidget(key_lbl);
@@ -143,12 +143,12 @@ void VoiceConfigSection::build_ui() {
     auto* model_row = new QWidget;
     auto* model_hl = new QHBoxLayout(model_row);
     model_hl->setContentsMargins(0, 0, 0, 0);
-    auto* model_lbl = new QLabel("Model");
+    auto* model_lbl = new QLabel(tr("Model"));
     model_lbl->setStyleSheet(label_ss());
     model_combo_ = new QComboBox;
     model_combo_->setStyleSheet(combo_ss());
-    model_combo_->addItem("nova-3 (recommended)", "nova-3");
-    model_combo_->addItem("nova-2", "nova-2");
+    model_combo_->addItem(tr("nova-3 (recommended)"), "nova-3");
+    model_combo_->addItem(tr("nova-2"), "nova-2");
     model_combo_->addItem("enhanced", "enhanced");
     model_combo_->addItem("base", "base");
     model_hl->addWidget(model_lbl);
@@ -160,14 +160,14 @@ void VoiceConfigSection::build_ui() {
     auto* lang_row = new QWidget;
     auto* lang_hl = new QHBoxLayout(lang_row);
     lang_hl->setContentsMargins(0, 0, 0, 0);
-    auto* lang_lbl = new QLabel("Language");
+    auto* lang_lbl = new QLabel(tr("Language"));
     lang_lbl->setStyleSheet(label_ss());
     language_combo_ = new QComboBox;
     language_combo_->setStyleSheet(combo_ss());
-    language_combo_->addItem("English (auto)", "en");
-    language_combo_->addItem("English (US)", "en-US");
-    language_combo_->addItem("English (UK)", "en-GB");
-    language_combo_->addItem("Multilingual (nova-3 only)", "multi");
+    language_combo_->addItem(tr("English (auto)"), "en");
+    language_combo_->addItem(tr("English (US)"), "en-US");
+    language_combo_->addItem(tr("English (UK)"), "en-GB");
+    language_combo_->addItem(tr("Multilingual (nova-3 only)"), "multi");
     lang_hl->addWidget(lang_lbl);
     lang_hl->addStretch();
     lang_hl->addWidget(language_combo_);
@@ -177,10 +177,10 @@ void VoiceConfigSection::build_ui() {
     auto* kt_row = new QWidget;
     auto* kt_hl = new QHBoxLayout(kt_row);
     kt_hl->setContentsMargins(0, 0, 0, 0);
-    auto* kt_lbl = new QLabel("Key terms");
+    auto* kt_lbl = new QLabel(tr("Key terms"));
     kt_lbl->setStyleSheet(label_ss());
     keyterms_edit_ = new QLineEdit;
-    keyterms_edit_->setPlaceholderText("AAPL, BTCUSD, Nifty (comma-separated)");
+    keyterms_edit_->setPlaceholderText(tr("AAPL, BTCUSD, Nifty (comma-separated)"));
     keyterms_edit_->setStyleSheet(input_ss());
     keyterms_edit_->setMinimumWidth(320);
     kt_hl->addWidget(kt_lbl);
@@ -188,7 +188,7 @@ void VoiceConfigSection::build_ui() {
     kt_hl->addWidget(keyterms_edit_);
     dg_vl->addWidget(kt_row);
 
-    auto* kt_hint = new QLabel("Boosts recognition of financial symbols and proper nouns.");
+    auto* kt_hint = new QLabel(tr("Boosts recognition of financial symbols and proper nouns."));
     kt_hint->setStyleSheet(label_ss());
     kt_hint->setWordWrap(true);
     dg_vl->addWidget(kt_hint);
@@ -199,9 +199,9 @@ void VoiceConfigSection::build_ui() {
     auto* btn_row = new QWidget;
     auto* btn_hl = new QHBoxLayout(btn_row);
     btn_hl->setContentsMargins(0, 8, 0, 0);
-    save_btn_ = new QPushButton("Save");
+    save_btn_ = new QPushButton(tr("Save"));
     save_btn_->setStyleSheet(btn_primary_ss());
-    test_btn_ = new QPushButton("Test Deepgram key");
+    test_btn_ = new QPushButton(tr("Test Deepgram key"));
     test_btn_->setStyleSheet(btn_secondary_ss());
     btn_hl->addWidget(save_btn_);
     btn_hl->addWidget(test_btn_);
@@ -268,10 +268,10 @@ void VoiceConfigSection::on_provider_changed(int /*index*/) {
 void VoiceConfigSection::on_show_hide_key() {
     if (show_key_btn_->isChecked()) {
         api_key_edit_->setEchoMode(QLineEdit::Normal);
-        show_key_btn_->setText("Hide");
+        show_key_btn_->setText(tr("Hide"));
     } else {
         api_key_edit_->setEchoMode(QLineEdit::Password);
-        show_key_btn_->setText("Show");
+        show_key_btn_->setText(tr("Show"));
     }
 }
 

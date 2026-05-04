@@ -241,7 +241,7 @@ QGroupBox* SurfaceControlPanel::build_asset_section() {
     l->setSpacing(6);
 
     symbol_edit_ = new QLineEdit(gb);
-    symbol_edit_->setPlaceholderText("Underlying / parent symbol");
+    symbol_edit_->setPlaceholderText(tr("Underlying / parent symbol"));
     symbol_edit_->setText(state_.symbol);
     symbol_edit_->setStyleSheet(line_edit_qss());
     connect(symbol_edit_, &QLineEdit::editingFinished, this, &SurfaceControlPanel::on_symbol_edited);
@@ -406,7 +406,7 @@ QGroupBox* SurfaceControlPanel::build_basket_section() {
     auto* input_row = new QHBoxLayout();
     input_row->setSpacing(4);
     basket_input_ = new QLineEdit(gb);
-    basket_input_->setPlaceholderText("Add ticker");
+    basket_input_->setPlaceholderText(tr("Add ticker"));
     basket_input_->setStyleSheet(line_edit_qss());
     input_row->addWidget(basket_input_, 1);
     basket_add_btn_ = new QPushButton("+", gb);

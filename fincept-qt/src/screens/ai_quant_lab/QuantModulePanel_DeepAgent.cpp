@@ -76,7 +76,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     da_vl->addWidget(desc);
 
     auto* task_edit = new QTextEdit(da_w);
-    task_edit->setPlaceholderText("Describe your analysis task...\n"
+    task_edit->setPlaceholderText(tr("Describe your analysis task...\n")
                                   "e.g. \"Conduct a full investment analysis of NVDA: research fundamentals, "
                                   "assess risks, and give a buy/sell/hold recommendation with price target\"");
     task_edit->setFixedHeight(90);
@@ -94,7 +94,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     da_vl->addWidget(build_input_row("Agent Type", agent_type, da_w));
 
     auto* thread_id = new QLineEdit(da_w);
-    thread_id->setPlaceholderText("Optional — leave blank to auto-generate");
+    thread_id->setPlaceholderText(tr("Optional — leave blank to auto-generate"));
     thread_id->setStyleSheet(QString("QLineEdit { background:%1; color:%2; border:1px solid %3;"
                                      "font-family:%4; font-size:%5px; padding:6px 8px; }")
                                  .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED())
@@ -115,7 +115,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Running...");
+        status_label_->setText(tr("Running..."));
         clear_results();
         QJsonObject params;
         params["task"] = task;
@@ -130,7 +130,7 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
 
     agent_output_ = new QTextEdit(da_w);
     agent_output_->setReadOnly(true);
-    agent_output_->setPlaceholderText("Analysis results will appear here...");
+    agent_output_->setPlaceholderText(tr("Analysis results will appear here..."));
     agent_output_->setMinimumHeight(300);
     agent_output_->setStyleSheet(output_ss());
     da_vl->addWidget(agent_output_, 1);
@@ -193,7 +193,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
                                  .arg(ui::fonts::TINY)
                                  .arg(ui::colors::BG_BASE()));
     connect(check_btn, &QPushButton::clicked, this, [status_txt]() {
-        status_txt->setText("Checking...");
+        status_txt->setText(tr("Checking..."));
         AIQuantLabService::instance().rd_agent_check_status();
     });
     sbl->addWidget(check_btn);
@@ -208,7 +208,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
                               .arg(ui::fonts::TINY)
                               .arg(ui::colors::BG_BASE()));
     connect(ui_btn, &QPushButton::clicked, this, [status_txt]() {
-        status_txt->setText("Starting log viewer...");
+        status_txt->setText(tr("Starting log viewer..."));
         AIQuantLabService::instance().rd_agent_start_ui();
     });
     sbl->addWidget(ui_btn);
@@ -216,7 +216,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     auto* mcp_btn = new QPushButton("MCP TOOLS", status_bar);
     mcp_btn->setCursor(Qt::PointingHandCursor);
     mcp_btn->setCheckable(true);
-    mcp_btn->setToolTip("Start/stop the Fincept MCP tool server\n"
+    mcp_btn->setToolTip(tr("Start/stop the Fincept MCP tool server\n")
                         "Gives RD-Agent loops access to market data,\n"
                         "financial news and economics tools.");
     mcp_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
@@ -230,11 +230,11 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
                                .arg(ui::colors::BG_BASE()));
     connect(mcp_btn, &QPushButton::toggled, this, [mcp_btn, status_txt](bool checked) {
         if (checked) {
-            status_txt->setText("Starting MCP tool server...");
+            status_txt->setText(tr("Starting MCP tool server..."));
             AIQuantLabService::instance().rd_agent_start_mcp_server();
         } else {
-            status_txt->setText("MCP tool server stopped");
-            mcp_btn->setText("MCP TOOLS");
+            status_txt->setText(tr("MCP tool server stopped"));
+            mcp_btn->setText(tr("MCP TOOLS"));
         }
     });
     sbl->addWidget(mcp_btn);
@@ -289,8 +289,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Starting...");
-        status_txt->setText("Factor mining started...");
+        status_label_->setText(tr("Starting..."));
+        status_txt->setText(tr("Factor mining started..."));
         QJsonObject params;
         params["task_description"] = desc_text;
         params["target_market"] = fm_market->currentText();
@@ -342,8 +342,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Starting...");
-        status_txt->setText("Model optimization started...");
+        status_label_->setText(tr("Starting..."));
+        status_txt->setText(tr("Model optimization started..."));
         QJsonObject params;
         params["model_type"] = mo_model->currentText();
         params["optimization_target"] = mo_target->currentText();
@@ -401,8 +401,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             display_error("Select an LLM profile before running.");
             return;
         }
-        status_label_->setText("Starting...");
-        status_txt->setText("Quant research started...");
+        status_label_->setText(tr("Starting..."));
+        status_txt->setText(tr("Quant research started..."));
         QJsonObject params;
         params["research_goal"] = goal;
         params["target_market"] = qr_market->currentText();
@@ -446,7 +446,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     tm_hl->addWidget(refresh_btn);
 
     auto* task_id_input = new QLineEdit(tm_toolbar);
-    task_id_input->setPlaceholderText("Task ID...");
+    task_id_input->setPlaceholderText(tr("Task ID..."));
     task_id_input->setStyleSheet(input_ss());
     task_id_input->setFixedWidth(200);
     tm_hl->addWidget(task_id_input);
@@ -504,7 +504,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     // Output area for factor results
     rd_agent_output_ = new QTextEdit(tm_w);
     rd_agent_output_->setReadOnly(true);
-    rd_agent_output_->setPlaceholderText("Select a task and click GET FACTORS / GET MODEL to view results...");
+    rd_agent_output_->setPlaceholderText(tr("Select a task and click GET FACTORS / GET MODEL to view results..."));
     rd_agent_output_->setFixedHeight(160);
     rd_agent_output_->setStyleSheet(output_ss());
     tm_vl->addWidget(rd_agent_output_);

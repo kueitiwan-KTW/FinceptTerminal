@@ -69,7 +69,7 @@ FortAssetInputs build_fort_asset_row(const QString& key_prefix, QWidget* parent,
     hl->setSpacing(8);
 
     auto* tk = new QLineEdit(row);
-    tk->setPlaceholderText("Tickers (comma-separated, >= 2). Returns fetched via Yahoo Finance.");
+    tk->setPlaceholderText(tr("Tickers (comma-separated, >= 2). Returns fetched via Yahoo Finance."));
     tk->setText(default_tickers);
     tk->setStyleSheet(input_ss());
     text_inputs[key_prefix + "_tickers"] = tk;
@@ -140,7 +140,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     pml->addWidget(build_input_row("History Period", pm_assets.period_combo, pm));
 
     auto* pm_weights = new QLineEdit(pm);
-    pm_weights->setPlaceholderText("Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.");
+    pm_weights->setPlaceholderText(tr("Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank."));
     pm_weights->setStyleSheet(input_ss());
     text_inputs_["ft_pm_weights"] = pm_weights;
     pml->addWidget(build_input_row("Portfolio Weights", pm_weights, pm));
@@ -500,7 +500,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
                                .arg(ui::colors::TEXT_SECONDARY(), ui::colors::BG_SURFACE(),
                                     ui::colors::BORDER_DIM()));
         results_layout_->addWidget(lbl);
-        status_label_->setText("Fortitudo backend ready");
+        status_label_->setText(tr("Fortitudo backend ready"));
         return;
     }
 
@@ -609,7 +609,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
                 }
                 mt->setRowHeight(r, 22);
             }
-            auto* mlbl = new QLabel("PER-ASSET MOMENTS");
+            auto* mlbl = new QLabel(tr("PER-ASSET MOMENTS"));
             mlbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                     .arg(ui::colors::TEXT_TERTIARY()));
             results_layout_->addWidget(mlbl);
@@ -652,7 +652,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
                 }
                 ct->setRowHeight(r, 22);
             }
-            auto* clbl = new QLabel("CORRELATION MATRIX");
+            auto* clbl = new QLabel(tr("CORRELATION MATRIX"));
             clbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                     .arg(ui::colors::TEXT_TERTIARY()));
             results_layout_->addWidget(clbl);
@@ -726,7 +726,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
 
         const QJsonArray weights = d.value("weights").toArray();
         if (!weights.isEmpty()) {
-            auto* wlbl = new QLabel("OPTIMAL WEIGHTS");
+            auto* wlbl = new QLabel(tr("OPTIMAL WEIGHTS"));
             wlbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                     .arg(ui::colors::TEXT_TERTIARY()));
             results_layout_->addWidget(wlbl);

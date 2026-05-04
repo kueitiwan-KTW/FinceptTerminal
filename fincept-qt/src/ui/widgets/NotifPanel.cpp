@@ -32,13 +32,13 @@ NotifPanel::NotifPanel(QWidget* parent) : QFrame(parent, Qt::Popup | Qt::Framele
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(12, 0, 8, 0);
 
-    auto* title_lbl = new QLabel("NOTIFICATIONS");
+    auto* title_lbl = new QLabel(tr("NOTIFICATIONS"));
     title_lbl->setStyleSheet(
         QString("color: %1; font-size: 11px; font-weight: bold; background: transparent;").arg(ui::colors::AMBER()));
     hl->addWidget(title_lbl);
     hl->addStretch();
 
-    auto* mark_all_btn = new QPushButton("Mark all read");
+    auto* mark_all_btn = new QPushButton(tr("Mark all read"));
     mark_all_btn->setFlat(true);
     mark_all_btn->setStyleSheet(
         QString("QPushButton { color: %1; background: transparent; border: none; font-size: 11px; }"
@@ -87,7 +87,7 @@ void NotifPanel::refresh() {
 
     const auto& hist = NotificationService::instance().history();
     if (hist.isEmpty()) {
-        auto* empty = new QLabel("No notifications");
+        auto* empty = new QLabel(tr("No notifications"));
         empty->setAlignment(Qt::AlignCenter);
         empty->setStyleSheet(QString("color: %1; font-size: 12px; background: transparent; padding: 24px;")
                                  .arg(ui::colors::TEXT_TERTIARY()));

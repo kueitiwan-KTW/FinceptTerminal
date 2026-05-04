@@ -189,16 +189,16 @@ QWidget* QuantLibScreen::create_header() {
 
     auto* title_col = new QVBoxLayout;
     title_col->setSpacing(0);
-    auto* title = new QLabel("QUANTLIB SUITE");
+    auto* title = new QLabel(tr("QUANTLIB SUITE"));
     title->setObjectName("qlHeaderTitle");
-    auto* sub = new QLabel("18 MODULES | 590+ QUANTITATIVE ENDPOINTS");
+    auto* sub = new QLabel(tr("18 MODULES | 590+ QUANTITATIVE ENDPOINTS"));
     sub->setObjectName("qlHeaderSub");
     title_col->addWidget(title);
     title_col->addWidget(sub);
     hl->addLayout(title_col);
     hl->addStretch(1);
 
-    auto* badge = new QLabel("API POWERED");
+    auto* badge = new QLabel(tr("API POWERED"));
     badge->setObjectName("qlHeaderBadge");
     hl->addWidget(badge);
 
@@ -213,7 +213,7 @@ QWidget* QuantLibScreen::create_sidebar() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    auto* title = new QLabel("MODULES");
+    auto* title = new QLabel(tr("MODULES"));
     title->setStyleSheet(QString("color: %1; font-weight: 700; "
                                  "letter-spacing: 0.5px; background: transparent; "
                                  "padding: 8px 12px; border-bottom: 1px solid %2;")
@@ -269,7 +269,7 @@ QWidget* QuantLibScreen::create_center_panel() {
     vl->setContentsMargins(16, 16, 16, 16);
     vl->setSpacing(12);
 
-    center_title_ = new QLabel("CORE");
+    center_title_ = new QLabel(tr("CORE"));
     center_title_->setObjectName("qlCenterTitle");
     vl->addWidget(center_title_);
 
@@ -285,7 +285,7 @@ QWidget* QuantLibScreen::create_center_panel() {
     ephdr->setFixedHeight(34);
     auto* ephl = new QHBoxLayout(ephdr);
     ephl->setContentsMargins(12, 0, 12, 0);
-    auto* ept = new QLabel("ENDPOINT");
+    auto* ept = new QLabel(tr("ENDPOINT"));
     ept->setObjectName("qlPanelTitle");
     ephl->addWidget(ept);
     ephl->addStretch(1);
@@ -300,7 +300,7 @@ QWidget* QuantLibScreen::create_center_panel() {
     ebl->addWidget(endpoint_combo_);
 
     // JSON body input — users enter the exact fields the API expects
-    auto* json_label = new QLabel("REQUEST BODY (JSON)");
+    auto* json_label = new QLabel(tr("REQUEST BODY (JSON)"));
     json_label->setObjectName("qlLabel");
     ebl->addWidget(json_label);
 
@@ -344,7 +344,7 @@ QWidget* QuantLibScreen::create_center_panel() {
     param_input4_ = new QLineEdit;
     param_input4_->hide();
 
-    exec_btn_ = new QPushButton("EXECUTE COMPUTATION");
+    exec_btn_ = new QPushButton(tr("EXECUTE COMPUTATION"));
     exec_btn_->setObjectName("qlExecBtn");
     exec_btn_->setCursor(Qt::PointingHandCursor);
     exec_btn_->setFixedHeight(34);
@@ -372,7 +372,7 @@ QWidget* QuantLibScreen::create_right_panel() {
     toolbar->setFixedHeight(32);
     auto* tbl = new QHBoxLayout(toolbar);
     tbl->setContentsMargins(12, 0, 12, 0);
-    auto* rt = new QLabel("RESULTS");
+    auto* rt = new QLabel(tr("RESULTS"));
     rt->setObjectName("qlPanelTitle");
     tbl->addWidget(rt);
     tbl->addStretch(1);
@@ -408,12 +408,12 @@ QWidget* QuantLibScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    auto* left = new QLabel("QUANTLIB SUITE");
+    auto* left = new QLabel(tr("QUANTLIB SUITE"));
     left->setObjectName("qlStatusText");
     hl->addWidget(left);
     hl->addStretch(1);
 
-    status_module_ = new QLabel("MODULE: CORE");
+    status_module_ = new QLabel(tr("MODULE: CORE"));
     status_module_->setObjectName("qlStatusText");
     hl->addWidget(status_module_);
 
@@ -438,7 +438,7 @@ void QuantLibScreen::on_module_changed(int index) {
     active_module_ = index;
 
     const auto& m = modules_[index];
-    status_module_->setText("MODULE: " + m.name.toUpper());
+    status_module_->setText(tr("MODULE: ") + m.name.toUpper());
     center_title_->setText(m.name.toUpper());
 
     populate_panels(index);
@@ -1244,7 +1244,7 @@ void QuantLibScreen::display_result_array(const QJsonArray& arr) {
     if (arr.isEmpty()) {
         result_view_->setPlainText("[]");
         result_stack_->setCurrentIndex(0);
-        result_status_->setText("Empty");
+        result_status_->setText(tr("Empty"));
         return;
     }
 
@@ -1358,7 +1358,7 @@ void QuantLibScreen::display_result(const QJsonObject& result) {
 void QuantLibScreen::display_error(const QString& error) {
     result_view_->setPlainText("ERROR: " + error);
     result_stack_->setCurrentIndex(0);
-    result_status_->setText("Error");
+    result_status_->setText(tr("Error"));
     LOG_ERROR("QuantLib", error);
 }
 

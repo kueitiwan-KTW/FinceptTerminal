@@ -19,7 +19,7 @@ PolymarketStatusBar::PolymarketStatusBar(QWidget* parent) : QWidget(parent) {
     hl->setSpacing(14);
 
     // Brand
-    brand_label_ = new QLabel("POLYMARKET");
+    brand_label_ = new QLabel(tr("POLYMARKET"));
     brand_label_->setStyleSheet(
         QString("color: %1; font-size: 8px; font-weight: 700; letter-spacing: 1.5px; "
                 "background: transparent;")
@@ -49,7 +49,7 @@ PolymarketStatusBar::PolymarketStatusBar(QWidget* parent) : QWidget(parent) {
     hl->addStretch(1);
 
     // View
-    view_label_ = new QLabel("MARKETS");
+    view_label_ = new QLabel(tr("MARKETS"));
     view_label_->setStyleSheet(
         QString("color: %1; font-size: 8px; font-weight: 600; background: transparent;")
             .arg(colors::TEXT_DIM()));

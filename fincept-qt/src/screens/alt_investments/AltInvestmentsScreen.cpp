@@ -507,16 +507,16 @@ QWidget* AltInvestmentsScreen::create_header() {
 
     auto* tc = new QVBoxLayout;
     tc->setSpacing(1);
-    auto* title = new QLabel("ALTERNATIVE INVESTMENTS");
+    auto* title = new QLabel(tr("ALTERNATIVE INVESTMENTS"));
     title->setObjectName("altHeaderTitle");
-    auto* sub = new QLabel("27 ANALYZERS  \xB7  10 ASSET CLASSES  \xB7  MULTI-ASSET ANALYTICS");
+    auto* sub = new QLabel(tr("27 ANALYZERS  \xB7  10 ASSET CLASSES  \xB7  MULTI-ASSET ANALYTICS"));
     sub->setObjectName("altHeaderSub");
     tc->addWidget(title);
     tc->addWidget(sub);
     hl->addLayout(tc);
     hl->addStretch(1);
 
-    auto* badge = new QLabel("PYTHON ANALYTICS ENGINE");
+    auto* badge = new QLabel(tr("PYTHON ANALYTICS ENGINE"));
     badge->setObjectName("altHeaderBadge");
     hl->addWidget(badge);
     return bar;
@@ -529,7 +529,7 @@ QWidget* AltInvestmentsScreen::create_left_panel() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    auto* title = new QLabel("ASSET CLASSES");
+    auto* title = new QLabel(tr("ASSET CLASSES"));
     title->setObjectName("altLeftTitle");
     vl->addWidget(title);
 
@@ -577,7 +577,7 @@ QWidget* AltInvestmentsScreen::create_center_panel() {
 
     auto* combo_col = new QVBoxLayout;
     combo_col->setSpacing(3);
-    auto* combo_lbl = new QLabel("ANALYZER");
+    auto* combo_lbl = new QLabel(tr("ANALYZER"));
     combo_lbl->setObjectName("altComboLabel");
     analyzer_combo_ = new QComboBox;
     analyzer_combo_->setFixedWidth(210);
@@ -600,9 +600,9 @@ QWidget* AltInvestmentsScreen::create_center_panel() {
     fhdr->setFixedHeight(36);
     auto* fhl = new QHBoxLayout(fhdr);
     fhl->setContentsMargins(12, 0, 12, 0);
-    auto* fhtitle = new QLabel("INPUT PARAMETERS");
+    auto* fhtitle = new QLabel(tr("INPUT PARAMETERS"));
     fhtitle->setObjectName("altFormTitle");
-    analyze_btn_ = new QPushButton("ANALYZE");
+    analyze_btn_ = new QPushButton(tr("ANALYZE"));
     analyze_btn_->setObjectName("altAnalyzeBtn");
     analyze_btn_->setCursor(Qt::PointingHandCursor);
     analyze_btn_->setFixedHeight(26);
@@ -636,7 +636,7 @@ QWidget* AltInvestmentsScreen::create_right_panel() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    auto* hdr = new QLabel("ANALYSIS RESULTS");
+    auto* hdr = new QLabel(tr("ANALYSIS RESULTS"));
     hdr->setObjectName("altRightTitle");
     vl->addWidget(hdr);
 
@@ -647,7 +647,7 @@ QWidget* AltInvestmentsScreen::create_right_panel() {
     val->setContentsMargins(12, 10, 12, 8);
     val->setSpacing(5);
 
-    verdict_badge_ = new QLabel("AWAITING ANALYSIS");
+    verdict_badge_ = new QLabel(tr("AWAITING ANALYSIS"));
     verdict_badge_->setObjectName("altVerdictBadge");
     verdict_badge_->setAlignment(Qt::AlignCenter);
     verdict_badge_->setStyleSheet(QString("color:%1; background:%2; font-size:11px; font-weight:700;"
@@ -696,7 +696,7 @@ QWidget* AltInvestmentsScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
     hl->setSpacing(8);
-    auto* lbl = new QLabel("ALTERNATIVE INVESTMENTS");
+    auto* lbl = new QLabel(tr("ALTERNATIVE INVESTMENTS"));
     lbl->setObjectName("altStatusText");
     hl->addWidget(lbl);
     hl->addStretch(1);
@@ -820,7 +820,7 @@ void AltInvestmentsScreen::on_category_changed(int index) {
 
     const auto& cat = categories_[index];
     center_title_->setText(cat.name.toUpper());
-    status_category_->setText("CATEGORY: " + cat.name.toUpper());
+    status_category_->setText(tr("CATEGORY: ") + cat.name.toUpper());
 
     analyzer_combo_->blockSignals(true);
     analyzer_combo_->clear();
@@ -1141,7 +1141,7 @@ QString AltInvestmentsScreen::format_value(const QJsonValue& v) const {
 }
 
 void AltInvestmentsScreen::display_error(const QString& error) {
-    verdict_badge_->setText("ERROR");
+    verdict_badge_->setText(tr("ERROR"));
     verdict_badge_->setStyleSheet(QString("color:%1; background:rgba(220,38,38,0.15);"
                                           " font-size:11px; font-weight:700; padding:4px 14px;")
                                       .arg(colors::NEGATIVE()));

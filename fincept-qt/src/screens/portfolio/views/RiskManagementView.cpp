@@ -63,12 +63,12 @@ void RiskManagementView::build_ui() {
     auto* stress_layout = new QVBoxLayout(stress_w);
     stress_layout->setContentsMargins(12, 8, 12, 8);
 
-    auto* stress_title = new QLabel("PORTFOLIO STRESS TESTING");
+    auto* stress_title = new QLabel(tr("PORTFOLIO STRESS TESTING"));
     stress_title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     stress_layout->addWidget(stress_title);
 
-    auto* stress_note = new QLabel("Estimated impact of historical and hypothetical market scenarios");
+    auto* stress_note = new QLabel(tr("Estimated impact of historical and hypothetical market scenarios"));
     stress_note->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::TEXT_TERTIARY()));
     stress_layout->addWidget(stress_note);
 
@@ -99,7 +99,7 @@ void RiskManagementView::build_ui() {
     auto* contrib_layout = new QVBoxLayout(contrib_w);
     contrib_layout->setContentsMargins(12, 8, 12, 8);
 
-    auto* contrib_title = new QLabel("RISK CONTRIBUTION BY HOLDING");
+    auto* contrib_title = new QLabel(tr("RISK CONTRIBUTION BY HOLDING"));
     contrib_title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     contrib_layout->addWidget(contrib_title);
@@ -147,7 +147,7 @@ void RiskManagementView::update_overview() {
     layout->setContentsMargins(16, 12, 16, 12);
     layout->setSpacing(12);
 
-    auto* title = new QLabel("PORTFOLIO RISK OVERVIEW");
+    auto* title = new QLabel(tr("PORTFOLIO RISK OVERVIEW"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);

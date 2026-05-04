@@ -71,7 +71,7 @@ void ForumThreadPanel::build_ui() {
         spin_lbl_->setStyleSheet(
             QString("color:%1;font-size:28px;background:transparent;%2").arg(ui::colors::AMBER(), M(28)));
 
-        auto* loading_text = new QLabel("Loading thread...");
+        auto* loading_text = new QLabel(tr("Loading thread..."));
         loading_text->setAlignment(Qt::AlignCenter);
         loading_text->setStyleSheet(
             QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_TERTIARY(), M(11)));
@@ -106,7 +106,7 @@ void ForumThreadPanel::build_ui() {
     bb_hl->setContentsMargins(16, 0, 16, 0);
     bb_hl->setSpacing(10);
 
-    auto* back_btn = new QPushButton("←  Back to Feed");
+    auto* back_btn = new QPushButton(tr("←  Back to Feed"));
     back_btn->setCursor(Qt::PointingHandCursor);
     back_btn->setFixedHeight(28);
     back_btn->setStyleSheet(QString("QPushButton{background:rgba(255,255,255,0.03);"
@@ -249,7 +249,7 @@ void ForumThreadPanel::build_ui() {
     eng_hl->setContentsMargins(32, 0, 32, 0);
     eng_hl->setSpacing(12);
 
-    auto* up_btn = new QPushButton("▲  Upvote");
+    auto* up_btn = new QPushButton(tr("▲  Upvote"));
     up_btn->setFixedHeight(30);
     up_btn->setCursor(Qt::PointingHandCursor);
     up_btn->setStyleSheet(QString("QPushButton{background:rgba(217,119,6,0.06);"
@@ -269,17 +269,17 @@ void ForumThreadPanel::build_ui() {
             emit vote_post(current_.post.post_uuid, "up");
     });
 
-    t_likes_lbl_ = new QLabel("▲ 0");
+    t_likes_lbl_ = new QLabel(tr("▲ 0"));
     t_likes_lbl_->setStyleSheet(QString("color:%1;font-size:12px;font-weight:600;"
                                         "background:transparent;padding:0 8px;%2")
                                     .arg(ui::colors::TEXT_TERTIARY(), M(12)));
 
-    t_replies_lbl_ = new QLabel("◆ 0 replies");
+    t_replies_lbl_ = new QLabel(tr("◆ 0 replies"));
     t_replies_lbl_->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;"
                                           "padding:0 8px;%2")
                                       .arg(ui::colors::TEXT_TERTIARY(), M(12)));
 
-    t_views_lbl_ = new QLabel("◉ 0 views");
+    t_views_lbl_ = new QLabel(tr("◉ 0 views"));
     t_views_lbl_->setStyleSheet(
         QString("color:%1;font-size:12px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(12)));
 
@@ -311,7 +311,7 @@ void ForumThreadPanel::build_ui() {
 
     auto* com_dot = new QLabel("◆");
     com_dot->setStyleSheet(QString("color:%1;font-size:8px;background:transparent;").arg(ui::colors::CYAN()));
-    auto* ch_lbl = new QLabel("REPLIES");
+    auto* ch_lbl = new QLabel(tr("REPLIES"));
     ch_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1.5px;"
                                   "background:transparent;%2")
                               .arg(ui::colors::TEXT_TERTIARY(), M(10)));
@@ -386,7 +386,7 @@ void ForumThreadPanel::build_ui() {
                                            ui::colors::BORDER_BRIGHT(), ui::colors::TEXT_PRIMARY(),
                                            ui::colors::TEXT_DIM()));
 
-    auto* send_btn = new QPushButton("Reply");
+    auto* send_btn = new QPushButton(tr("Reply"));
     send_btn->setFixedSize(80, 34);
     send_btn->setCursor(Qt::PointingHandCursor);
     send_btn->setStyleSheet(QString("QPushButton{background:rgba(217,119,6,0.1);color:%1;"
@@ -501,13 +501,13 @@ void ForumThreadPanel::rebuild_comments() {
         icon->setAlignment(Qt::AlignCenter);
         icon->setStyleSheet(QString("color:%1;font-size:24px;background:transparent;").arg(ui::colors::BORDER_DIM()));
 
-        auto* nl = new QLabel("NO REPLIES YET");
+        auto* nl = new QLabel(tr("NO REPLIES YET"));
         nl->setAlignment(Qt::AlignCenter);
         nl->setStyleSheet(QString("color:%1;font-size:11px;font-weight:700;letter-spacing:1.5px;"
                                   "background:transparent;%2")
                               .arg(ui::colors::TEXT_TERTIARY(), M(11)));
 
-        auto* sub = new QLabel("Be the first to share your thoughts");
+        auto* sub = new QLabel(tr("Be the first to share your thoughts"));
         sub->setAlignment(Qt::AlignCenter);
         sub->setStyleSheet(
             QString("color:%1;font-size:10px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(10)));

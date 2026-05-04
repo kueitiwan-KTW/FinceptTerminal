@@ -22,13 +22,13 @@ void PortfolioOrderPanel::build_ui() {
 
     // Header + close
     auto* header_row = new QHBoxLayout;
-    auto* title = new QLabel("ORDER ENTRY");
+    auto* title = new QLabel(tr("ORDER ENTRY"));
     title->setStyleSheet(
         QString("color:%1; font-size:10px; font-weight:700; letter-spacing:1px;").arg(ui::colors::POSITIVE()));
     header_row->addWidget(title);
     header_row->addStretch();
 
-    close_btn_ = new QPushButton("\u2715");
+    close_btn_ = new QPushButton(tr("\u2715"));
     close_btn_->setFixedSize(18, 18);
     close_btn_->setCursor(Qt::PointingHandCursor);
     close_btn_->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:none; font-size:11px; }"
@@ -43,14 +43,14 @@ void PortfolioOrderPanel::build_ui() {
     auto* side_row = new QHBoxLayout;
     side_row->setSpacing(0);
 
-    buy_tab_ = new QPushButton("BUY");
+    buy_tab_ = new QPushButton(tr("BUY"));
     buy_tab_->setFixedHeight(26);
     buy_tab_->setCursor(Qt::PointingHandCursor);
     buy_tab_->setCheckable(true);
     buy_tab_->setChecked(true);
     side_row->addWidget(buy_tab_);
 
-    sell_tab_ = new QPushButton("SELL");
+    sell_tab_ = new QPushButton(tr("SELL"));
     sell_tab_->setFixedHeight(26);
     sell_tab_->setCursor(Qt::PointingHandCursor);
     sell_tab_->setCheckable(true);
@@ -114,7 +114,7 @@ void PortfolioOrderPanel::build_ui() {
     add_info(mv_label_, "MKT VAL");
 
     // Submit button
-    submit_btn_ = new QPushButton("OPEN BUY ORDER");
+    submit_btn_ = new QPushButton(tr("OPEN BUY ORDER"));
     submit_btn_->setFixedHeight(32);
     submit_btn_->setCursor(Qt::PointingHandCursor);
     submit_btn_->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"
@@ -132,7 +132,7 @@ void PortfolioOrderPanel::build_ui() {
     layout->addStretch();
 
     // Footer note
-    auto* note = new QLabel("Orders are recorded\nin your portfolio");
+    auto* note = new QLabel(tr("Orders are recorded\nin your portfolio"));
     note->setWordWrap(true);
     note->setAlignment(Qt::AlignCenter);
     note->setStyleSheet(QString("color:%1; font-size:8px;").arg(ui::colors::TEXT_TERTIARY()));

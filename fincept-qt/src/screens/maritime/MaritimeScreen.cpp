@@ -734,7 +734,7 @@ void MaritimeScreen::on_vessel_found(VesselData vessel) {
     sr_imo_->setText(tr("IMO: ") + vessel.imo);
     sr_position_->setText(QString("Position: %1, %2").arg(vessel.latitude, 0, 'f', 4).arg(vessel.longitude, 0, 'f', 4));
     sr_speed_->setText(QString("Speed: %1 kn").arg(vessel.speed, 0, 'f', 1));
-    sr_from_->setText("From: " + (vessel.from_port.isEmpty() ? "—" : vessel.from_port));
+    sr_from_->setText(tr("From: ") + (vessel.from_port.isEmpty() ? "—" : vessel.from_port));
     sr_to_->setText(tr("To: ") + (vessel.to_port.isEmpty() ? "—" : vessel.to_port));
     set_status("READY", ui::colors::POSITIVE);
 }
@@ -742,7 +742,7 @@ void MaritimeScreen::on_vessel_found(VesselData vessel) {
 void MaritimeScreen::on_error(const QString& context, const QString& message) {
     if (context == "vessel_position") {
         search_result_card_->setVisible(false);
-        search_result_label_->setText("Error: " + message);
+        search_result_label_->setText(tr("Error: ") + message);
         search_result_label_->setVisible(true);
     }
     set_status("ERROR", ui::colors::NEGATIVE);
@@ -758,7 +758,7 @@ void MaritimeScreen::on_route_selected(int row) {
     route_detail_->setVisible(true);
     rd_name_->setText(r.name);
     rd_value_->setText(tr("Trade Value: ") + r.value);
-    rd_status_->setText("Status: " + r.status.toUpper());
+    rd_status_->setText(tr("Status: ") + r.status.toUpper());
     rd_status_->setStyleSheet(QString("color:%1; font-size:9px; font-family:%2;")
                                   .arg(route_status_color(r.status).name())
                                   .arg(ui::fonts::DATA_FAMILY));

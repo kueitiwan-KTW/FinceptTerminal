@@ -130,7 +130,7 @@ BeaPanel::BeaPanel(QWidget* parent) : EconPanelBase(kBeaSourceId, kBeaColor, par
     cat_hdr->setFixedHeight(32);
     auto* chl = new QHBoxLayout(cat_hdr);
     chl->setContentsMargins(8, 0, 8, 0);
-    auto* cat_lbl = new QLabel("CATEGORY");
+    auto* cat_lbl = new QLabel(tr("CATEGORY"));
     cat_lbl->setStyleSheet(ctrl_label_style());
     category_combo_ = new QComboBox;
     for (const auto& c : kBeaCategories)
@@ -203,7 +203,7 @@ void BeaPanel::build_controls(QHBoxLayout* thl) {
     thl->addWidget(end_input_);
 
     // API key notice
-    auto* notice_lbl = new QLabel("Requires BEA_API_KEY");
+    auto* notice_lbl = new QLabel(tr("Requires BEA_API_KEY"));
     notice_lbl->setStyleSheet(notice_style());
     thl->addWidget(notice_lbl);
 }

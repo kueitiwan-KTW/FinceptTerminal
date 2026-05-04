@@ -55,7 +55,7 @@ TermsScreen::TermsScreen(QWidget* parent) : QWidget(parent) {
     vl->setSpacing(6);
 
     // Back button
-    auto* back_btn = new QPushButton("< BACK");
+    auto* back_btn = new QPushButton(tr("< BACK"));
     back_btn->setCursor(Qt::PointingHandCursor);
     back_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none; "
                                     "font-size: 12px; %2 } QPushButton:hover { color: %3; }")
@@ -64,13 +64,13 @@ TermsScreen::TermsScreen(QWidget* parent) : QWidget(parent) {
     vl->addWidget(back_btn, 0, Qt::AlignLeft);
 
     // Title
-    auto* title = new QLabel("TERMS OF SERVICE");
+    auto* title = new QLabel(tr("TERMS OF SERVICE"));
     title->setStyleSheet(QString("color: %1; font-size: 20px; font-weight: 700; letter-spacing: 1px; "
                                  "background: transparent; %2")
                              .arg(colors::AMBER(), MF));
     vl->addWidget(title);
 
-    auto* updated = new QLabel("Last updated: January 1, 2026");
+    auto* updated = new QLabel(tr("Last updated: January 1, 2026"));
     updated->setStyleSheet(
         QString("color: %1; font-size: 11px; background: transparent; %2").arg(colors::TEXT_TERTIARY(), MF));
     vl->addWidget(updated);

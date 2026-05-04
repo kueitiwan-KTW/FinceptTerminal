@@ -78,7 +78,7 @@ void CensusPanel::activate() {
 }
 
 void CensusPanel::build_controls(QHBoxLayout* thl) {
-    auto* lbl = new QLabel("DATASET");
+    auto* lbl = new QLabel(tr("DATASET"));
     lbl->setStyleSheet(ctrl_label_style());
 
     dataset_combo_ = new QComboBox;

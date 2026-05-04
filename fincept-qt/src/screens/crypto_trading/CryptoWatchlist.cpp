@@ -59,12 +59,12 @@ CryptoWatchlist::CryptoWatchlist(QWidget* parent) : QWidget(parent) {
     auto* header_layout = new QHBoxLayout(header_widget);
     header_layout->setContentsMargins(8, 0, 8, 0);
 
-    auto* header = new QLabel("WATCHLIST");
+    auto* header = new QLabel(tr("WATCHLIST"));
     header->setObjectName("cryptoWatchlistTitle");
     header_layout->addWidget(header);
     header_layout->addStretch();
 
-    count_label_ = new QLabel("0/0");
+    count_label_ = new QLabel(tr("0/0"));
     count_label_->setObjectName("cryptoWatchlistCount");
     header_layout->addWidget(count_label_);
     layout->addWidget(header_widget);

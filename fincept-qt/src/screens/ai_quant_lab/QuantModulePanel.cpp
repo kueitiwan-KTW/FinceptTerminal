@@ -183,7 +183,7 @@ QWidget* QuantModulePanel::build_llm_picker(QWidget* parent, QComboBox** out_com
         }
     }
     if (combo->count() == 0)
-        combo->addItem("No LLM profiles — configure in Settings → LLM Config", QVariant());
+        combo->addItem(tr("No LLM profiles — configure in Settings → LLM Config"), QVariant());
 
     // Pre-select the global default if present
     auto resolved = LlmProfileRepository::instance().resolve_for_context("ai_quant_lab");
@@ -435,7 +435,7 @@ QWidget* QuantModulePanel::build_generic_panel() {
 
     // JSON params
     auto* params_edit = new QTextEdit(w);
-    params_edit->setPlaceholderText("JSON parameters (optional)\ne.g. {\"ticker\":\"AAPL\"}");
+    params_edit->setPlaceholderText(tr("JSON parameters (optional)\ne.g. {\")ticker\":\"AAPL\"}");
     params_edit->setMaximumHeight(100);
     params_edit->setStyleSheet(QString("QTextEdit { background:%1; color:%2; border:1px solid %3;"
                                        "font-family:%4; font-size:%5px; padding:6px; }")
@@ -503,7 +503,7 @@ void QuantModulePanel::display_error(const QString& msg) {
                            .arg(ui::fonts::SMALL)
                            .arg(ui::fonts::DATA_FAMILY));
     results_layout_->addWidget(err);
-    status_label_->setText("Error");
+    status_label_->setText(tr("Error"));
 }
 
 static QString format_val(const QJsonValue& val) {
@@ -530,7 +530,7 @@ static QString format_val(const QJsonValue& val) {
 void QuantModulePanel::display_result(const QJsonObject& payload) {
     clear_results();
 
-    auto* header = new QLabel("RESULTS");
+    auto* header = new QLabel(tr("RESULTS"));
     header->setStyleSheet(QString("color:%1; font-weight:700; font-family:%2; letter-spacing:1px;")
                               .arg(module_.color.name())
                               .arg(ui::fonts::DATA_FAMILY));
@@ -573,7 +573,7 @@ void QuantModulePanel::display_result(const QJsonObject& payload) {
     results_layout_->addWidget(raw);
 
     // Export button — saves raw JSON to File Manager
-    auto* export_btn = new QPushButton("EXPORT RESULTS");
+    auto* export_btn = new QPushButton(tr("EXPORT RESULTS"));
     export_btn->setCursor(Qt::PointingHandCursor);
     export_btn->setFixedHeight(28);
     export_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %2; "
@@ -601,7 +601,7 @@ void QuantModulePanel::display_result(const QJsonObject& payload) {
     });
     results_layout_->addWidget(export_btn);
 
-    status_label_->setText("Done");
+    status_label_->setText(tr("Done"));
 }
 
 // ── Signal handlers ──────────────────────────────────────────────────────────

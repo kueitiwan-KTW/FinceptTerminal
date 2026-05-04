@@ -88,7 +88,7 @@ QWidget* ChatMessagePanel::build_header() {
     hl->setContentsMargins(14, 0, 14, 0);
     hl->setSpacing(10);
 
-    hdr_title_lbl_ = new QLabel("New Conversation");
+    hdr_title_lbl_ = new QLabel(tr("New Conversation"));
     hdr_title_lbl_->setStyleSheet(QString("color:%1;font-size:14px;font-weight:600;"
                                           "font-family:%2;background:transparent;")
                                       .arg(ui::colors::TEXT_PRIMARY(), FONT));
@@ -106,7 +106,7 @@ QWidget* ChatMessagePanel::build_header() {
         QString("color:%1;font-size:12px;font-family:%2;background:transparent;").arg(ui::colors::TEXT_TERTIARY(), FONT));
     hl->addWidget(hdr_tools_lbl_);
 
-    mode_btn_ = new QPushButton("LITE");
+    mode_btn_ = new QPushButton(tr("LITE"));
     mode_btn_->setFixedHeight(22);
     mode_btn_->setToolTip(tr("Toggle Lite / Deep mode"));
     mode_btn_->setStyleSheet(
@@ -122,7 +122,7 @@ QWidget* ChatMessagePanel::build_header() {
     });
     hl->addWidget(mode_btn_);
 
-    hdr_tokens_lbl_ = new QLabel("0 tokens");
+    hdr_tokens_lbl_ = new QLabel(tr("0 tokens"));
     hdr_tokens_lbl_->setStyleSheet(
         QString("color:%1;font-size:12px;font-family:%2;background:transparent;").arg(ui::colors::TEXT_DIM(), FONT));
     hl->addWidget(hdr_tokens_lbl_);
@@ -168,7 +168,7 @@ QWidget* ChatMessagePanel::build_welcome() {
     vl->setSpacing(14);
     vl->setAlignment(Qt::AlignCenter);
 
-    auto* logo = new QLabel("FINCEPT AGENT");
+    auto* logo = new QLabel(tr("FINCEPT AGENT"));
     logo->setAlignment(Qt::AlignCenter);
     logo->setStyleSheet(QString("color:%1;font-size:20px;font-weight:700;letter-spacing:1px;"
                                 "font-family:%2;background:transparent;")
@@ -218,7 +218,7 @@ QWidget* ChatMessagePanel::build_typing_indicator() {
     hl->setContentsMargins(14, 4, 14, 4);
     hl->setSpacing(6);
 
-    auto* lbl = new QLabel("Agent");
+    auto* lbl = new QLabel(tr("Agent"));
     lbl->setStyleSheet(QString("color:%1;font-size:12px;font-weight:600;"
                                "font-family:%2;background:transparent;")
                            .arg(ui::colors::AMBER(), FONT));
@@ -267,7 +267,7 @@ QWidget* ChatMessagePanel::build_input_area() {
     auto* bottom = new QHBoxLayout;
     bottom->setSpacing(6);
 
-    char_lbl_ = new QLabel("0 / 4000");
+    char_lbl_ = new QLabel(tr("0 / 4000"));
     char_lbl_->setStyleSheet(
         QString("color:%1;font-size:11px;font-family:%2;background:transparent;").arg(ui::colors::TEXT_DIM(), FONT));
     bottom->addWidget(char_lbl_);
@@ -290,7 +290,7 @@ QWidget* ChatMessagePanel::build_input_area() {
         emit draft_changed();
     });
 
-    optimize_btn_ = new QPushButton("Optimize");
+    optimize_btn_ = new QPushButton(tr("Optimize"));
     optimize_btn_->setFixedHeight(26);
     optimize_btn_->setToolTip(tr("Optimize prompt with AI"));
     optimize_btn_->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:1px solid %3;"
@@ -302,7 +302,7 @@ QWidget* ChatMessagePanel::build_input_area() {
     connect(optimize_btn_, &QPushButton::clicked, this, &ChatMessagePanel::on_optimize_clicked);
     bottom->addWidget(optimize_btn_);
 
-    stop_btn_ = new QPushButton("Stop");
+    stop_btn_ = new QPushButton(tr("Stop"));
     stop_btn_->setFixedHeight(26);
     stop_btn_->setVisible(false);
     stop_btn_->setStyleSheet(QString("QPushButton{background:rgba(50,12,12,0.7);color:%1;"
@@ -313,7 +313,7 @@ QWidget* ChatMessagePanel::build_input_area() {
     connect(stop_btn_, &QPushButton::clicked, this, []() { ChatModeService::instance().abort_stream(); });
     bottom->addWidget(stop_btn_);
 
-    send_btn_ = new QPushButton("Send");
+    send_btn_ = new QPushButton(tr("Send"));
     send_btn_->setFixedHeight(26);
     send_btn_->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:none;"
@@ -443,7 +443,7 @@ QTextEdit* ChatMessagePanel::add_streaming_bubble() {
     auto* row_vl = new QVBoxLayout(row);
     row_vl->setContentsMargins(0, 0, 0, 0);
     row_vl->setSpacing(2);
-    auto* lbl = new QLabel("Agent");
+    auto* lbl = new QLabel(tr("Agent"));
     lbl->setStyleSheet(QString("color:%1;font-size:11px;font-weight:600;font-family:%2;"
                                "background:transparent;letter-spacing:0.5px;")
                            .arg(ui::colors::AMBER(), FONT));
@@ -671,7 +671,7 @@ void ChatMessagePanel::on_optimize_clicked() {
                                                     if (!self)
                                                         return;
                                                     self->optimize_btn_->setEnabled(true);
-                                                    self->optimize_btn_->setText("Optimize");
+                                                    self->optimize_btn_->setText(tr("Optimize"));
                                                     if (!ok) {
                                                         self->on_stream_error("Optimize failed: " + err);
                                                         return;

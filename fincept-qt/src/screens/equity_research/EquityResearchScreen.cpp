@@ -128,7 +128,7 @@ QWidget* EquityResearchScreen::build_title_bar() {
     hl->setContentsMargins(16, 8, 16, 8);
     hl->setSpacing(12);
 
-    auto* title = new QLabel("EQUITY RESEARCH");
+    auto* title = new QLabel(tr("EQUITY RESEARCH"));
     title->setStyleSheet(
         QString("color:%1; font-size:14px; font-weight:700; letter-spacing:2px;").arg(ui::colors::AMBER()));
     hl->addWidget(title);
@@ -147,7 +147,7 @@ QWidget* EquityResearchScreen::build_title_bar() {
 
     hl->addStretch();
 
-    auto* hint = new QLabel("Use /stock, /fund, /index... in command bar to search");
+    auto* hint = new QLabel(tr("Use /stock, /fund, /index... in command bar to search"));
     hint->setStyleSheet(QString("color:%1; font-size:12px;").arg(ui::colors::TEXT_TERTIARY()));
     hl->addWidget(hint);
 

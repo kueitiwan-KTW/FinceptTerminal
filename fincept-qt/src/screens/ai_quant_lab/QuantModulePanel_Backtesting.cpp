@@ -74,7 +74,7 @@ QWidget* QuantModulePanel::build_backtesting_panel() {
     vl->addWidget(build_input_row("Strategy", strat, w));
 
     auto* instruments = new QLineEdit(w);
-    instruments->setPlaceholderText("AAPL,MSFT,GOOG,AMZN");
+    instruments->setPlaceholderText(tr("AAPL,MSFT,GOOG,AMZN"));
     instruments->setStyleSheet(input_ss());
     text_inputs_["bt_instruments"] = instruments;
     vl->addWidget(build_input_row("Instruments", instruments, w));
@@ -105,14 +105,14 @@ QWidget* QuantModulePanel::build_backtesting_panel() {
     vl->addWidget(build_input_row("Top K Positions", topk, w));
 
     auto* benchmark = new QLineEdit(w);
-    benchmark->setPlaceholderText("SH000300 (CSI300)");
+    benchmark->setPlaceholderText(tr("SH000300 (CSI300)"));
     benchmark->setStyleSheet(input_ss());
     text_inputs_["bt_benchmark"] = benchmark;
     vl->addWidget(build_input_row("Benchmark", benchmark, w));
 
     auto* run = make_run_button("RUN BACKTEST", w);
     connect(run, &QPushButton::clicked, this, [this]() {
-        status_label_->setText("Backtesting...");
+        status_label_->setText(tr("Backtesting..."));
         QJsonObject params;
         QJsonObject strategy_config;
         strategy_config["type"] = combo_inputs_["bt_strategy"]->currentText();
@@ -186,7 +186,7 @@ void QuantModulePanel::display_backtest_result(const QJsonObject& payload) {
     header_h->setContentsMargins(0, 0, 0, 8);
     header_h->setSpacing(8);
 
-    auto* title_lbl = new QLabel("BACKTEST RESULTS");
+    auto* title_lbl = new QLabel(tr("BACKTEST RESULTS"));
     title_lbl->setStyleSheet(
         QString("color:%1; font-size:%2px; font-family:%3; font-weight:800; letter-spacing:2px;")
             .arg(accent_hex).arg(fs_lg).arg(font_data));
@@ -384,7 +384,7 @@ void QuantModulePanel::display_backtest_result(const QJsonObject& payload) {
                 .arg(bg_surface, border_dim));
 
         // Chart title label above
-        auto* chart_title = new QLabel("EQUITY CURVE");
+        auto* chart_title = new QLabel(tr("EQUITY CURVE"));
         chart_title->setStyleSheet(
             QString("color:%1; font-size:%2px; font-family:%3; font-weight:700;"
                     "letter-spacing:1px; padding:8px 0 2px 0;")
@@ -418,7 +418,7 @@ void QuantModulePanel::display_backtest_result(const QJsonObject& payload) {
         cost_h->addWidget(w);
     };
 
-    auto* cost_hdr = new QLabel("EXECUTION COSTS");
+    auto* cost_hdr = new QLabel(tr("EXECUTION COSTS"));
     cost_hdr->setStyleSheet(
         QString("color:%1; font-size:%2px; font-family:%3; font-weight:700; letter-spacing:1px;")
             .arg(text_t).arg(fs_sm - 1).arg(font_data));
@@ -438,7 +438,7 @@ void QuantModulePanel::display_backtest_result(const QJsonObject& payload) {
     results_layout_->addWidget(cost_w);
 
     // ── 5. Export button ───────────────────────────────────────────────────
-    auto* export_btn = new QPushButton("EXPORT JSON");
+    auto* export_btn = new QPushButton(tr("EXPORT JSON"));
     export_btn->setCursor(Qt::PointingHandCursor);
     export_btn->setFixedHeight(28);
     export_btn->setStyleSheet(

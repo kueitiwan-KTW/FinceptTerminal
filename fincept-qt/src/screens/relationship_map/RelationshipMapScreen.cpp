@@ -104,7 +104,7 @@ void RelationshipMapScreen::build_ui() {
     hhl->setContentsMargins(12, 0, 12, 0);
     hhl->setSpacing(10);
 
-    auto* title = new QLabel("CORPORATE INTELLIGENCE MAP");
+    auto* title = new QLabel(tr("CORPORATE INTELLIGENCE MAP"));
     title->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700; "
                                  "letter-spacing: 0.5px; %2")
                              .arg(colors::AMBER(), MF()));
@@ -162,7 +162,7 @@ void RelationshipMapScreen::build_ui() {
             fire_asset_search(pending_query_);
     });
 
-    auto* search_btn = new QPushButton("ANALYZE");
+    auto* search_btn = new QPushButton(tr("ANALYZE"));
     search_btn->setCursor(Qt::PointingHandCursor);
     search_btn->setFixedHeight(28);
     search_btn->setStyleSheet(
@@ -176,7 +176,7 @@ void RelationshipMapScreen::build_ui() {
     hhl->addStretch();
 
     // Fit / reset zoom button
-    auto* fit_btn = new QPushButton("FIT");
+    auto* fit_btn = new QPushButton(tr("FIT"));
     fit_btn->setCursor(Qt::PointingHandCursor);
     fit_btn->setFixedHeight(28);
     fit_btn->setToolTip(tr("Fit graph to view (or press Home)"));
@@ -192,9 +192,9 @@ void RelationshipMapScreen::build_ui() {
 
     // Layout selector
     layout_combo_ = new QComboBox;
-    layout_combo_->addItem("LAYERED", (int)LayoutMode::Layered);
-    layout_combo_->addItem("RADIAL", (int)LayoutMode::Radial);
-    layout_combo_->addItem("FORCE", (int)LayoutMode::Force);
+    layout_combo_->addItem(tr("LAYERED"), (int)LayoutMode::Layered);
+    layout_combo_->addItem(tr("RADIAL"), (int)LayoutMode::Radial);
+    layout_combo_->addItem(tr("FORCE"), (int)LayoutMode::Force);
     layout_combo_->setStyleSheet(QString("QComboBox { background: %1; color: %2; border: 1px solid %3; "
                                          "padding: 3px 8px; font-size: 10px; %4 }")
                                      .arg(colors::BG_SURFACE(), colors::TEXT_SECONDARY(), colors::BORDER_DIM(), MF()));
@@ -207,7 +207,7 @@ void RelationshipMapScreen::build_ui() {
     hhl->addWidget(layout_combo_);
 
     // Filter toggle
-    filter_btn_ = new QPushButton("FILTERS");
+    filter_btn_ = new QPushButton(tr("FILTERS"));
     filter_btn_->setCursor(Qt::PointingHandCursor);
     filter_btn_->setCheckable(true);
     filter_btn_->setFixedHeight(28);
@@ -230,7 +230,7 @@ void RelationshipMapScreen::build_ui() {
     auto* phl = new QHBoxLayout(prog_row);
     phl->setContentsMargins(12, 2, 12, 2);
 
-    progress_label_ = new QLabel("Ready");
+    progress_label_ = new QLabel(tr("Ready"));
     progress_label_->setStyleSheet(QString("color: %1; font-size: 9px; %2").arg(colors::TEXT_DIM(), MF()));
     phl->addWidget(progress_label_);
 
@@ -284,7 +284,7 @@ void RelationshipMapScreen::build_ui() {
     auto* shl = new QHBoxLayout(status);
     shl->setContentsMargins(12, 0, 12, 0);
 
-    status_nodes_ = new QLabel("READY");
+    status_nodes_ = new QLabel(tr("READY"));
     status_nodes_->setStyleSheet(QString("color: %1; font-size: 9px; %2").arg(colors::TEXT_DIM(), MF()));
     shl->addWidget(status_nodes_);
 
@@ -321,7 +321,7 @@ QWidget* RelationshipMapScreen::build_filter_panel() {
     vl->setContentsMargins(12, 12, 12, 12);
     vl->setSpacing(8);
 
-    auto* title = new QLabel("FILTERS");
+    auto* title = new QLabel(tr("FILTERS"));
     title->setStyleSheet(QString("color: %1; font-size: 10px; font-weight: 700; "
                                  "letter-spacing: 0.5px; %2")
                              .arg(colors::AMBER(), MF()));
@@ -422,7 +422,7 @@ QWidget* RelationshipMapScreen::build_legend() {
     vl->setContentsMargins(8, 6, 8, 6);
     vl->setSpacing(3);
 
-    auto* title = new QLabel("LEGEND");
+    auto* title = new QLabel(tr("LEGEND"));
     title->setStyleSheet(QString("color: %1; font-size: 8px; font-weight: 700; "
                                  "letter-spacing: 0.5px; %2")
                              .arg(colors::TEXT_DIM(), MF()));
@@ -556,7 +556,7 @@ void RelationshipMapScreen::on_asset_results(const QJsonArray& results) {
         row->setStyleSheet("background:transparent;");
         auto* rl = new QHBoxLayout(row);
         rl->setContentsMargins(8, 4, 8, 4);
-        auto* lbl = new QLabel("No results found");
+        auto* lbl = new QLabel(tr("No results found"));
         lbl->setStyleSheet(QString("color:%1;font-size:11px;%2;background:transparent;")
                                .arg(ui::colors::TEXT_TERTIARY.get(), MF()));
         rl->addWidget(lbl);
@@ -652,7 +652,7 @@ void RelationshipMapScreen::on_data_ready(const RelationshipData& payload) {
     has_data_ = true;
     loaded_ticker_ = payload.company.ticker;
     progress_bar_->hide();
-    progress_label_->setText("Complete");
+    progress_label_->setText(tr("Complete"));
     legend_widget_->show();
     rebuild_graph();
     update_status_bar();
@@ -669,7 +669,7 @@ void RelationshipMapScreen::on_data_ready(const RelationshipData& payload) {
 
 void RelationshipMapScreen::on_fetch_failed(const QString& error) {
     progress_bar_->hide();
-    progress_label_->setText("Error: " + error);
+    progress_label_->setText(tr("Error: ") + error);
     progress_label_->setStyleSheet(QString("color: %1; font-size: 9px; %2").arg(colors::NEGATIVE(), MF()));
 }
 
@@ -786,7 +786,7 @@ void RelationshipMapScreen::on_node_selected() {
 
 void RelationshipMapScreen::update_status_bar() {
     if (!has_data_) {
-        status_nodes_->setText("READY");
+        status_nodes_->setText(tr("READY"));
         status_quality_->setText("");
         return;
     }

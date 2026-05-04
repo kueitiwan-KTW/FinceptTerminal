@@ -64,7 +64,7 @@ void MarketPanelEditor::build_ui() {
     root->setSpacing(10);
 
     // Title
-    auto* title_lbl = new QLabel("PANEL TITLE");
+    auto* title_lbl = new QLabel(tr("PANEL TITLE"));
     title_lbl->setStyleSheet(section_lbl_ss());
     root->addWidget(title_lbl);
 
@@ -84,11 +84,11 @@ void MarketPanelEditor::build_ui() {
     auto* tickers_hdr = new QWidget;
     auto* tickers_hl  = new QHBoxLayout(tickers_hdr);
     tickers_hl->setContentsMargins(0, 0, 0, 0);
-    auto* tickers_lbl = new QLabel("TICKERS");
+    auto* tickers_lbl = new QLabel(tr("TICKERS"));
     tickers_lbl->setStyleSheet(section_lbl_ss());
     tickers_hl->addWidget(tickers_lbl);
     tickers_hl->addStretch();
-    auto* remove_btn = new QPushButton("✕ REMOVE");
+    auto* remove_btn = new QPushButton(tr("✕ REMOVE"));
     remove_btn->setFixedHeight(20);
     remove_btn->setCursor(Qt::PointingHandCursor);
     remove_btn->setStyleSheet(
@@ -111,7 +111,7 @@ void MarketPanelEditor::build_ui() {
     root->addWidget(make_sep());
 
     // Search / add
-    auto* search_lbl = new QLabel("ADD TICKER  ·  type to search, click or Enter to add");
+    auto* search_lbl = new QLabel(tr("ADD TICKER  ·  type to search, click or Enter to add"));
     search_lbl->setStyleSheet(section_lbl_ss());
     root->addWidget(search_lbl);
 

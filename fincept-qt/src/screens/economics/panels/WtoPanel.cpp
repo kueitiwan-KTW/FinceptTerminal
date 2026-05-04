@@ -73,9 +73,9 @@ void WtoPanel::build_controls(QHBoxLayout* thl) {
     };
 
     section_combo_ = new QComboBox;
-    section_combo_->addItem("Trade Statistics (API key)", "timeseries");
-    section_combo_->addItem("QR Members (free)", "qr_members");
-    section_combo_->addItem("QR Notifications (free)", "qr_notifications");
+    section_combo_->addItem(tr("Trade Statistics (API key)"), "timeseries");
+    section_combo_->addItem(tr("QR Members (free)"), "qr_members");
+    section_combo_->addItem(tr("QR Notifications (free)"), "qr_notifications");
     section_combo_->setFixedHeight(26);
     section_combo_->setMinimumWidth(200);
     connect(section_combo_, &QComboBox::currentIndexChanged, this, &WtoPanel::on_section_changed);
@@ -88,7 +88,7 @@ void WtoPanel::build_controls(QHBoxLayout* thl) {
 
     reporter_input_ = new QLineEdit;
     reporter_input_->setPlaceholderText(tr("Reporter (e.g. US, CN, DE)"));
-    reporter_input_->setText("US");
+    reporter_input_->setText(tr("US"));
     reporter_input_->setFixedHeight(26);
     reporter_input_->setFixedWidth(130);
 
@@ -98,7 +98,7 @@ void WtoPanel::build_controls(QHBoxLayout* thl) {
     years_input_->setFixedHeight(26);
     years_input_->setFixedWidth(110);
 
-    apikey_notice_ = new QLabel("Requires WTO_API_KEY");
+    apikey_notice_ = new QLabel(tr("Requires WTO_API_KEY"));
     apikey_notice_->setStyleSheet(notice_style());
 
     thl->addWidget(make_lbl("SECTION"));
@@ -118,7 +118,7 @@ void WtoPanel::on_section_changed(int index) {
     years_input_->setEnabled(is_timeseries);
 
     if (is_timeseries) {
-        apikey_notice_->setText("Requires WTO_API_KEY");
+        apikey_notice_->setText(tr("Requires WTO_API_KEY"));
         apikey_notice_->setStyleSheet(notice_style());
         reporter_input_->setPlaceholderText(tr("Reporter (e.g. US, CN, DE)"));
     } else {

@@ -40,7 +40,7 @@ void BroadcastOrderDialog::setup_ui() {
     root->setContentsMargins(16, 16, 16, 16);
 
     // Header
-    auto* header = new QLabel("BROADCAST ORDER");
+    auto* header = new QLabel(tr("BROADCAST ORDER"));
     header->setObjectName("header");
     root->addWidget(header);
 
@@ -132,7 +132,7 @@ void BroadcastOrderDialog::setup_ui() {
     auto* btn_row = new QHBoxLayout;
     btn_row->addStretch();
 
-    auto* cancel_btn = new QPushButton("CANCEL");
+    auto* cancel_btn = new QPushButton(tr("CANCEL"));
     cancel_btn->setStyleSheet(QString("QPushButton { background: %1; color: %2; }")
                                   .arg(colors::BG_RAISED(), colors::TEXT_PRIMARY()));
     connect(cancel_btn, &QPushButton::clicked, this, &QDialog::reject);
@@ -242,7 +242,7 @@ void BroadcastOrderDialog::show_results(const QVector<UnifiedTrading::BroadcastR
     }
 
     // Re-enable close
-    place_btn_->setText("DONE");
+    place_btn_->setText(tr("DONE"));
     place_btn_->setEnabled(true);
     disconnect(place_btn_, &QPushButton::clicked, this, &BroadcastOrderDialog::on_place_order);
     connect(place_btn_, &QPushButton::clicked, this, &QDialog::accept);

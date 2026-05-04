@@ -224,16 +224,16 @@ QWidget* AkShareScreen::create_header() {
 
     auto* title_col = new QVBoxLayout;
     title_col->setSpacing(0);
-    auto* title = new QLabel("AKSHARE DATA EXPLORER");
+    auto* title = new QLabel(tr("AKSHARE DATA EXPLORER"));
     title->setObjectName("akHeaderTitle");
-    auto* sub = new QLabel("1000+ CHINESE & GLOBAL FINANCIAL DATA ENDPOINTS");
+    auto* sub = new QLabel(tr("1000+ CHINESE & GLOBAL FINANCIAL DATA ENDPOINTS"));
     sub->setObjectName("akHeaderSub");
     title_col->addWidget(title);
     title_col->addWidget(sub);
     hl->addLayout(title_col);
     hl->addStretch(1);
 
-    auto* badge = new QLabel("FREE API");
+    auto* badge = new QLabel(tr("FREE API"));
     badge->setObjectName("akHeaderBadge");
     hl->addWidget(badge);
 
@@ -294,7 +294,7 @@ QWidget* AkShareScreen::create_endpoint_panel() {
     search_input_->setPlaceholderText(tr("Search endpoints..."));
     connect(search_input_, &QLineEdit::textChanged, this, &AkShareScreen::on_search_changed);
 
-    endpoint_count_ = new QLabel("0 endpoints");
+    endpoint_count_ = new QLabel(tr("0 endpoints"));
     endpoint_count_->setObjectName("akEndpointCount");
 
     sbl->addWidget(search_input_, 1);
@@ -308,7 +308,7 @@ QWidget* AkShareScreen::create_endpoint_panel() {
     vl->addWidget(endpoint_list_, 1);
 
     // Empty state
-    auto* empty = new QLabel("Select a data source above\nto load available endpoints");
+    auto* empty = new QLabel(tr("Select a data source above\nto load available endpoints"));
     empty->setObjectName("akEmptyState");
     empty->setAlignment(Qt::AlignCenter);
     empty->setWordWrap(true);
@@ -327,14 +327,14 @@ QWidget* AkShareScreen::create_params_panel() {
     hl->setSpacing(8);
 
     // Symbol
-    auto* sym_label = new QLabel("SYMBOL");
+    auto* sym_label = new QLabel(tr("SYMBOL"));
     sym_label->setObjectName("akParamLabel");
     param_symbol_ = new QLineEdit("000001");
     param_symbol_->setObjectName("akParamInput");
     param_symbol_->setFixedWidth(90);
 
     // Start date
-    auto* start_label = new QLabel("START");
+    auto* start_label = new QLabel(tr("START"));
     start_label->setObjectName("akParamLabel");
     param_start_ = new QLineEdit;
     param_start_->setObjectName("akParamInput");
@@ -342,7 +342,7 @@ QWidget* AkShareScreen::create_params_panel() {
     param_start_->setFixedWidth(100);
 
     // End date
-    auto* end_label = new QLabel("END");
+    auto* end_label = new QLabel(tr("END"));
     end_label->setObjectName("akParamLabel");
     param_end_ = new QLineEdit;
     param_end_->setObjectName("akParamInput");
@@ -350,14 +350,14 @@ QWidget* AkShareScreen::create_params_panel() {
     param_end_->setFixedWidth(100);
 
     // Period
-    auto* period_label = new QLabel("PERIOD");
+    auto* period_label = new QLabel(tr("PERIOD"));
     period_label->setObjectName("akParamLabel");
     param_period_ = new QComboBox;
     param_period_->addItems({"daily", "weekly", "monthly"});
     param_period_->setFixedWidth(90);
 
     // Execute button
-    exec_btn_ = new QPushButton("EXECUTE");
+    exec_btn_ = new QPushButton(tr("EXECUTE"));
     exec_btn_->setObjectName("akExecBtn");
     exec_btn_->setCursor(Qt::PointingHandCursor);
     exec_btn_->setFixedWidth(80);
@@ -395,7 +395,7 @@ QWidget* AkShareScreen::create_data_panel() {
     tbl->setContentsMargins(12, 0, 12, 0);
     tbl->setSpacing(8);
 
-    data_status_ = new QLabel("Ready");
+    data_status_ = new QLabel(tr("Ready"));
     data_status_->setObjectName("akDataStatus");
 
     record_count_ = new QLabel;
@@ -408,7 +408,7 @@ QWidget* AkShareScreen::create_data_panel() {
     view_toggle_btn_->setFixedWidth(50);
     connect(view_toggle_btn_, &QPushButton::clicked, this, &AkShareScreen::on_view_toggle);
 
-    refresh_btn_ = new QPushButton("REFRESH");
+    refresh_btn_ = new QPushButton(tr("REFRESH"));
     refresh_btn_->setObjectName("akRefreshBtn");
     refresh_btn_->setCursor(Qt::PointingHandCursor);
     refresh_btn_->setFixedWidth(70);
@@ -454,12 +454,12 @@ QWidget* AkShareScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    auto* left = new QLabel("AKSHARE DATA");
+    auto* left = new QLabel(tr("AKSHARE DATA"));
     left->setObjectName("akStatusText");
     hl->addWidget(left);
     hl->addStretch(1);
 
-    status_source_ = new QLabel("SOURCE: --");
+    status_source_ = new QLabel(tr("SOURCE: --"));
     status_source_->setObjectName("akStatusText");
     hl->addWidget(status_source_);
 
@@ -486,7 +486,7 @@ void AkShareScreen::on_source_clicked(int index) {
         source_btns_[i]->style()->polish(source_btns_[i]);
     }
 
-    status_source_->setText("SOURCE: " + sources_[index].name.toUpper());
+    status_source_->setText(tr("SOURCE: ") + sources_[index].name.toUpper());
     status_endpoint_->clear();
     search_input_->clear();
 
@@ -785,7 +785,7 @@ void AkShareScreen::display_json_data(const QJsonArray& rows_json) {
 }
 
 void AkShareScreen::display_error(const QString& error) {
-    data_status_->setText("Error");
+    data_status_->setText(tr("Error"));
     record_count_->hide();
 
     // Clear table

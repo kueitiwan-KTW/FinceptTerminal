@@ -204,7 +204,7 @@ void LoginScreen::build_login_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* brand = new QLabel("金融終端");
+    auto* brand = new QLabel(tr("金融終端"));
     brand->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 0.5px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -616,7 +616,7 @@ void LoginScreen::build_device_page() {
     hl->addWidget(title);
     hl->addStretch();
 
-    auto* brand = new QLabel("RFC 8628");
+    auto* brand = new QLabel(tr("RFC 8628"));
     brand->setStyleSheet(QString("color: %1; font-size: 12px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 0.5px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -638,7 +638,7 @@ void LoginScreen::build_device_page() {
     code_lbl->setAlignment(Qt::AlignCenter);
     vl->addWidget(code_lbl);
 
-    device_code_label_ = new QLabel("XXXX-XXXX");
+    device_code_label_ = new QLabel(tr("XXXX-XXXX"));
     device_code_label_->setAlignment(Qt::AlignCenter);
     device_code_label_->setStyleSheet(
         QString("color: %1; font-size: 32px; font-weight: 900;"

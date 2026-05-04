@@ -519,12 +519,12 @@ void CellWidget::update_gutter() {
     }
 
     if (cell_type_ == "markdown") {
-        gutter_type_->setText("MD");
+        gutter_type_->setText(tr("MD"));
         gutter_type_->setStyleSheet(
             QString("color:%1; font-family:%2; font-size:10px; font-weight:600; letter-spacing:0.5px;")
                 .arg(colors::INFO(), fonts::DATA_FAMILY));
     } else {
-        gutter_type_->setText("PY");
+        gutter_type_->setText(tr("PY"));
         gutter_type_->setStyleSheet(
             QString("color:%1; font-family:%2; font-size:10px; font-weight:600; letter-spacing:0.5px;")
                 .arg(colors::TEXT_DIM(), fonts::DATA_FAMILY));
@@ -745,7 +745,7 @@ CellNavigator::CellNavigator(QWidget* parent) : QWidget(parent) {
             return;
 
         QMenu menu(this);
-        auto* rename_action = menu.addAction("Rename Cell");
+        auto* rename_action = menu.addAction(tr("Rename Cell"));
         QAction* chosen = menu.exec(list_->viewport()->mapToGlobal(pos));
         if (chosen == rename_action) {
             emit rename_requested(item->data(Qt::UserRole).toString());

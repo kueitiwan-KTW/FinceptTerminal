@@ -47,7 +47,7 @@ void EquityNewsTab::build_ui() {
     hl->setContentsMargins(14, 8, 14, 8);
     hl->setSpacing(12);
 
-    auto* title = new QLabel("LATEST NEWS");
+    auto* title = new QLabel(tr("LATEST NEWS"));
     title->setStyleSheet(QString("color:%1; font-size:11px; font-weight:700; letter-spacing:2px; "
                                  "background:transparent; border:0;")
                              .arg(ui::colors::AMBER()));
@@ -65,7 +65,7 @@ void EquityNewsTab::build_ui() {
 
     hl->addStretch();
 
-    auto* refresh_btn = new QPushButton("REFRESH");
+    auto* refresh_btn = new QPushButton(tr("REFRESH"));
     refresh_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %2; "
                                        "border-radius:3px; padding:4px 12px; font-size:10px; font-weight:700; }"
                                        "QPushButton:hover { border-color:%3; color:%3; }")
@@ -82,7 +82,7 @@ void EquityNewsTab::build_ui() {
     vl->addWidget(hdr);
 
     // ── Status label ──────────────────────────────────────────────────────────
-    status_label_ = new QLabel("Search for a symbol to load news.");
+    status_label_ = new QLabel(tr("Search for a symbol to load news."));
     status_label_->setAlignment(Qt::AlignCenter);
     status_label_->setStyleSheet(
         QString("color:%1; font-size:12px; padding:20px; background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
@@ -179,7 +179,7 @@ void EquityNewsTab::populate(const QVector<services::equity::NewsArticle>& artic
 
         // ── Read full article ──────────────────────────────────────────────────
         if (!art.url.isEmpty()) {
-            auto* read_lbl = new QLabel("READ FULL ARTICLE →");
+            auto* read_lbl = new QLabel(tr("READ FULL ARTICLE →"));
             read_lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; letter-spacing:1px; "
                                             "background:transparent; border:0;")
                                         .arg(ui::colors::AMBER()));

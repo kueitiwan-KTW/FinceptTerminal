@@ -58,7 +58,7 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
 
     make_sep(ll);
 
-    status_text_ = new QLabel("即時");
+    status_text_ = new QLabel(tr("即時"));
     status_text_->setObjectName("dtStatus");
     ll->addWidget(status_text_);
 
@@ -71,7 +71,7 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
 
     make_sep(ll);
 
-    widget_count_ = new QLabel("0 個小工具");
+    widget_count_ = new QLabel(tr("0 個小工具"));
     widget_count_->setObjectName("dtWidgetCount");
     ll->addWidget(widget_count_);
 
@@ -86,13 +86,13 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
     rl->setContentsMargins(0, 0, 0, 0);
     rl->setSpacing(4);
 
-    compact_btn_ = new QPushButton("精簡");
+    compact_btn_ = new QPushButton(tr("精簡"));
     compact_btn_->setFixedHeight(20);
     compact_btn_->setObjectName("dtBtn");
     connect(compact_btn_, &QPushButton::clicked, this, &DashboardToolBar::toggle_compact_clicked);
     rl->addWidget(compact_btn_);
 
-    pulse_btn_ = new QPushButton("脈動");
+    pulse_btn_ = new QPushButton(tr("脈動"));
     pulse_btn_->setFixedHeight(20);
     pulse_btn_->setObjectName("dtBtn");
     connect(pulse_btn_, &QPushButton::clicked, this, &DashboardToolBar::toggle_pulse_clicked);
@@ -100,19 +100,19 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
 
     make_sep(rl);
 
-    auto* add_btn = new QPushButton("+ 新增");
+    auto* add_btn = new QPushButton(tr("+ 新增"));
     add_btn->setFixedHeight(20);
     add_btn->setObjectName("dtAddBtn");
     connect(add_btn, &QPushButton::clicked, this, &DashboardToolBar::add_widget_clicked);
     rl->addWidget(add_btn);
 
-    auto* save_btn = new QPushButton("儲存");
+    auto* save_btn = new QPushButton(tr("儲存"));
     save_btn->setFixedHeight(20);
     save_btn->setObjectName("dtBtn");
     connect(save_btn, &QPushButton::clicked, this, &DashboardToolBar::save_layout_clicked);
     rl->addWidget(save_btn);
 
-    auto* reset_btn = new QPushButton("重設");
+    auto* reset_btn = new QPushButton(tr("重設"));
     reset_btn->setFixedHeight(20);
     reset_btn->setObjectName("dtResetBtn");
     connect(reset_btn, &QPushButton::clicked, this, &DashboardToolBar::reset_layout_clicked);

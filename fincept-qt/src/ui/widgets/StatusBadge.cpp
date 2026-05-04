@@ -11,11 +11,11 @@ StatusBadge::StatusBadge(QWidget* parent) : QLabel(parent) {
 void StatusBadge::set_status(Status s) {
     switch (s) {
         case Status::Connected:
-            setText("CONNECTED");
+            setText(tr("CONNECTED"));
             setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::GREEN()));
             break;
         case Status::Disconnected:
-            setText("OFFLINE");
+            setText(tr("OFFLINE"));
             setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::RED()));
             break;
         case Status::Loading:
@@ -23,7 +23,7 @@ void StatusBadge::set_status(Status s) {
             setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::GRAY()));
             break;
         case Status::Idle:
-            setText("READY");
+            setText(tr("READY"));
             setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::MUTED()));
             break;
     }

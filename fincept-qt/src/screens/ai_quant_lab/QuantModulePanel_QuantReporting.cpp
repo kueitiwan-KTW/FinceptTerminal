@@ -82,7 +82,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     icvl->setSpacing(8);
 
     auto* ic_preds = new QLineEdit(ic_tab);
-    ic_preds->setPlaceholderText("Model predictions (decimals, >= 10 values)");
+    ic_preds->setPlaceholderText(tr("Model predictions (decimals, >= 10 values)"));
     ic_preds->setStyleSheet(input_ss());
     text_inputs_["rp_ic_preds"] = ic_preds;
     icvl->addWidget(build_input_row("Predictions", ic_preds, ic_tab));
@@ -90,7 +90,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
                                     "252 synthetic predictions (mu=0.05%, sigma=1.2%)"));
 
     auto* ic_rets = new QLineEdit(ic_tab);
-    ic_rets->setPlaceholderText("Realized returns (decimals, same length as predictions)");
+    ic_rets->setPlaceholderText(tr("Realized returns (decimals, same length as predictions)"));
     ic_rets->setStyleSheet(input_ss());
     text_inputs_["rp_ic_rets"] = ic_rets;
     icvl->addWidget(build_input_row("Returns", ic_rets, ic_tab));
@@ -150,7 +150,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     crvl->setSpacing(8);
 
     auto* cr_rets = new QLineEdit(cr_tab);
-    cr_rets->setPlaceholderText("Portfolio daily returns (decimals)");
+    cr_rets->setPlaceholderText(tr("Portfolio daily returns (decimals)"));
     cr_rets->setStyleSheet(input_ss());
     text_inputs_["rp_cr_rets"] = cr_rets;
     crvl->addWidget(build_input_row("Returns", cr_rets, cr_tab));
@@ -158,7 +158,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
                                     "252 synthetic portfolio returns"));
 
     auto* cr_bench = new QLineEdit(cr_tab);
-    cr_bench->setPlaceholderText("Benchmark returns (optional; same length as portfolio if provided)");
+    cr_bench->setPlaceholderText(tr("Benchmark returns (optional; same length as portfolio if provided)"));
     cr_bench->setStyleSheet(input_ss());
     text_inputs_["rp_cr_bench"] = cr_bench;
     crvl->addWidget(build_input_row("Benchmark Returns (optional)", cr_bench, cr_tab));
@@ -166,8 +166,8 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
                                     "252 synthetic benchmark returns"));
 
     auto* cr_title = new QLineEdit(cr_tab);
-    cr_title->setPlaceholderText("Chart title (e.g. Strategy vs S&P 500)");
-    cr_title->setText("Cumulative Returns");
+    cr_title->setPlaceholderText(tr("Chart title (e.g. Strategy vs S&P 500)"));
+    cr_title->setText(tr("Cumulative Returns"));
     cr_title->setStyleSheet(input_ss());
     text_inputs_["rp_cr_title"] = cr_title;
     crvl->addWidget(build_input_row("Title", cr_title, cr_tab));
@@ -216,7 +216,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     rkvl->setSpacing(8);
 
     auto* rk_rets = new QLineEdit(rk_tab);
-    rk_rets->setPlaceholderText("Daily returns (>= 30 values)");
+    rk_rets->setPlaceholderText(tr("Daily returns (>= 30 values)"));
     rk_rets->setStyleSheet(input_ss());
     text_inputs_["rp_rk_rets"] = rk_rets;
     rkvl->addWidget(build_input_row("Returns", rk_rets, rk_tab));
@@ -266,7 +266,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     mpvl->setSpacing(8);
 
     auto* mp_preds = new QLineEdit(mp_tab);
-    mp_preds->setPlaceholderText("Model predictions (decimals, >= 20 values)");
+    mp_preds->setPlaceholderText(tr("Model predictions (decimals, >= 20 values)"));
     mp_preds->setStyleSheet(input_ss());
     text_inputs_["rp_mp_preds"] = mp_preds;
     mpvl->addWidget(build_input_row("Predictions", mp_preds, mp_tab));
@@ -274,7 +274,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
                                     "252 synthetic model predictions"));
 
     auto* mp_rets = new QLineEdit(mp_tab);
-    mp_rets->setPlaceholderText("Realized returns (same length as predictions)");
+    mp_rets->setPlaceholderText(tr("Realized returns (same length as predictions)"));
     mp_rets->setStyleSheet(input_ss());
     text_inputs_["rp_mp_rets"] = mp_rets;
     mpvl->addWidget(build_input_row("Returns", mp_rets, mp_tab));
@@ -282,8 +282,8 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
                                     "252 synthetic realized returns"));
 
     auto* mp_name = new QLineEdit(mp_tab);
-    mp_name->setPlaceholderText("Model label (e.g. LightGBM, LSTM)");
-    mp_name->setText("Model");
+    mp_name->setPlaceholderText(tr("Model label (e.g. LightGBM, LSTM)"));
+    mp_name->setText(tr("Model"));
     mp_name->setStyleSheet(input_ss());
     text_inputs_["rp_mp_name"] = mp_name;
     mpvl->addWidget(build_input_row("Model Name", mp_name, mp_tab));
@@ -336,7 +336,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     fqvl->setSpacing(8);
 
     auto* fq_preds = new QLineEdit(fq_tab);
-    fq_preds->setPlaceholderText("Factor / signal values (decimals, >= 20)");
+    fq_preds->setPlaceholderText(tr("Factor / signal values (decimals, >= 20)"));
     fq_preds->setStyleSheet(input_ss());
     text_inputs_["rp_fq_preds"] = fq_preds;
     fqvl->addWidget(build_input_row("Factor Signal", fq_preds, fq_tab));
@@ -344,7 +344,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
                                     "252 synthetic factor values"));
 
     auto* fq_rets = new QLineEdit(fq_tab);
-    fq_rets->setPlaceholderText("Realized returns (same length as factor)");
+    fq_rets->setPlaceholderText(tr("Realized returns (same length as factor)"));
     fq_rets->setStyleSheet(input_ss());
     text_inputs_["rp_fq_rets"] = fq_rets;
     fqvl->addWidget(build_input_row("Realized Returns", fq_rets, fq_tab));
@@ -448,7 +448,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
                          this, ui::colors::INFO()),
         };
         results_layout_->addWidget(gs_card_row(deps, this));
-        status_label_->setText("Quant Reporting backend ready");
+        status_label_->setText(tr("Quant Reporting backend ready"));
         return;
     }
 

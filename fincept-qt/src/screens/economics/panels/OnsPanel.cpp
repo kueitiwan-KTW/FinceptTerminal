@@ -47,7 +47,7 @@ void OnsPanel::activate() {
 }
 
 void OnsPanel::build_controls(QHBoxLayout* thl) {
-    auto* lbl = new QLabel("SERIES");
+    auto* lbl = new QLabel(tr("SERIES"));
     lbl->setStyleSheet(ctrl_label_style());
 
     series_combo_ = new QComboBox;

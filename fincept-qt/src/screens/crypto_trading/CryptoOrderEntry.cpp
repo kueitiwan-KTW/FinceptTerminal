@@ -25,12 +25,12 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     auto* h_layout = new QHBoxLayout(header);
     h_layout->setContentsMargins(8, 0, 8, 0);
 
-    auto* title = new QLabel("ORDER ENTRY");
+    auto* title = new QLabel(tr("ORDER ENTRY"));
     title->setObjectName("cryptoOeTitle");
     h_layout->addWidget(title);
     h_layout->addStretch();
 
-    mode_label_ = new QLabel("PAPER");
+    mode_label_ = new QLabel(tr("PAPER"));
     mode_label_->setObjectName("cryptoOeMode");
     mode_label_->setProperty("mode", "paper");
     h_layout->addWidget(mode_label_);
@@ -47,7 +47,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     auto* side_row = new QHBoxLayout;
     side_row->setSpacing(0);
 
-    buy_tab_ = new QPushButton("BUY");
+    buy_tab_ = new QPushButton(tr("BUY"));
     buy_tab_->setObjectName("cryptoBuyTab");
     buy_tab_->setProperty("active", true);
     buy_tab_->setCursor(Qt::PointingHandCursor);
@@ -55,7 +55,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     connect(buy_tab_, &QPushButton::clicked, this, [this]() { set_buy_side(true); });
     side_row->addWidget(buy_tab_, 1);
 
-    sell_tab_ = new QPushButton("SELL");
+    sell_tab_ = new QPushButton(tr("SELL"));
     sell_tab_->setObjectName("cryptoSellTab");
     sell_tab_->setProperty("active", false);
     sell_tab_->setCursor(Qt::PointingHandCursor);
@@ -88,12 +88,12 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(balance_label_);
 
     // Market price
-    market_price_label_ = new QLabel("MKT: --");
+    market_price_label_ = new QLabel(tr("MKT: --"));
     market_price_label_->setObjectName("cryptoOeMarketPrice");
     form->addWidget(market_price_label_);
 
     // Quantity
-    auto* qty_lbl = new QLabel("QTY");
+    auto* qty_lbl = new QLabel(tr("QTY"));
     qty_lbl->setObjectName("cryptoOeLabel");
     form->addWidget(qty_lbl);
 
@@ -118,7 +118,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addLayout(pct_row);
 
     // Price
-    auto* price_lbl = new QLabel("PRICE");
+    auto* price_lbl = new QLabel(tr("PRICE"));
     price_lbl->setObjectName("cryptoOeLabel");
     form->addWidget(price_lbl);
 
@@ -131,7 +131,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(price_edit_);
 
     // Stop price
-    auto* stop_lbl = new QLabel("STOP");
+    auto* stop_lbl = new QLabel(tr("STOP"));
     stop_lbl->setObjectName("cryptoOeLabel");
     form->addWidget(stop_lbl);
 
@@ -143,7 +143,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     form->addWidget(stop_price_edit_);
 
     // Advanced toggle
-    advanced_toggle_ = new QPushButton("+ ADVANCED");
+    advanced_toggle_ = new QPushButton(tr("+ ADVANCED"));
     advanced_toggle_->setObjectName("cryptoAdvToggle");
     advanced_toggle_->setCursor(Qt::PointingHandCursor);
     advanced_toggle_->setFixedHeight(18);
@@ -156,14 +156,14 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     adv_layout->setContentsMargins(0, 0, 0, 0);
     adv_layout->setSpacing(4);
 
-    auto* sl_lbl = new QLabel("SL");
+    auto* sl_lbl = new QLabel(tr("SL"));
     sl_lbl->setObjectName("cryptoOeLabel");
     sl_edit_ = new QLineEdit;
     sl_edit_->setObjectName("cryptoOeInput");
     sl_edit_->setPlaceholderText(tr("Stop Loss"));
     sl_edit_->setFixedHeight(26);
 
-    auto* tp_lbl = new QLabel("TP");
+    auto* tp_lbl = new QLabel(tr("TP"));
     tp_lbl->setObjectName("cryptoOeLabel");
     tp_edit_ = new QLineEdit;
     tp_edit_->setObjectName("cryptoOeInput");
@@ -191,7 +191,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
 
     auto* lev_row = new QHBoxLayout;
     lev_row->setSpacing(4);
-    auto* lev_lbl = new QLabel("LEVERAGE");
+    auto* lev_lbl = new QLabel(tr("LEVERAGE"));
     lev_lbl->setObjectName("cryptoOeLabel");
     leverage_spin_ = new QSpinBox;
     leverage_spin_->setObjectName("cryptoOeSpinBox");
@@ -206,12 +206,12 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
 
     auto* margin_row = new QHBoxLayout;
     margin_row->setSpacing(4);
-    auto* margin_lbl = new QLabel("MARGIN");
+    auto* margin_lbl = new QLabel(tr("MARGIN"));
     margin_lbl->setObjectName("cryptoOeLabel");
     margin_mode_combo_ = new QComboBox;
     margin_mode_combo_->setObjectName("cryptoOeCombo");
-    margin_mode_combo_->addItem("Cross", "cross");
-    margin_mode_combo_->addItem("Isolated", "isolated");
+    margin_mode_combo_->addItem(tr("Cross"), "cross");
+    margin_mode_combo_->addItem(tr("Isolated"), "isolated");
     margin_mode_combo_->setFixedHeight(26);
     margin_row->addWidget(margin_lbl);
     margin_row->addStretch();
@@ -225,12 +225,12 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
             [this](int idx) { emit margin_mode_changed(margin_mode_combo_->itemData(idx).toString()); });
 
     // Cost preview
-    cost_label_ = new QLabel("Est: --");
+    cost_label_ = new QLabel(tr("Est: --"));
     cost_label_->setObjectName("cryptoOeCost");
     form->addWidget(cost_label_);
 
     // Submit button
-    submit_btn_ = new QPushButton("BUY BTC/USDT");
+    submit_btn_ = new QPushButton(tr("BUY BTC/USDT"));
     submit_btn_->setObjectName("cryptoBuySubmit");
     submit_btn_->setFixedHeight(34);
     submit_btn_->setCursor(Qt::PointingHandCursor);

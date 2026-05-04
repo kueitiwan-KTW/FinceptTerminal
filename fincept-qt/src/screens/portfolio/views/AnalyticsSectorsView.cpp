@@ -196,7 +196,7 @@ QWidget* AnalyticsSectorsView::build_overview_tab() {
     donut_lay->setContentsMargins(14, 14, 14, 14);
     donut_lay->setSpacing(8);
 
-    auto* donut_title = new QLabel("SECTOR ALLOCATION");
+    auto* donut_title = new QLabel(tr("SECTOR ALLOCATION"));
     donut_title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; letter-spacing:1.5px;")
                                    .arg(text3).arg(ui::fonts::font_px(-4)));
     donut_lay->addWidget(donut_title);
@@ -241,7 +241,7 @@ QWidget* AnalyticsSectorsView::build_overview_tab() {
     table_lay->setContentsMargins(14, 14, 14, 14);
     table_lay->setSpacing(8);
 
-    auto* table_title = new QLabel("SECTOR BREAKDOWN");
+    auto* table_title = new QLabel(tr("SECTOR BREAKDOWN"));
     table_title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; letter-spacing:1.5px;")
                                    .arg(text3).arg(ui::fonts::font_px(-4)));
     table_lay->addWidget(table_title);
@@ -318,7 +318,7 @@ QWidget* AnalyticsSectorsView::build_correlation_tab() {
     lay->setContentsMargins(16, 14, 16, 14);
     lay->setSpacing(10);
 
-    auto* title = new QLabel("HOLDINGS CORRELATION MATRIX");
+    auto* title = new QLabel(tr("HOLDINGS CORRELATION MATRIX"));
     title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; letter-spacing:1.5px;")
                              .arg(ui::colors::TEXT_TERTIARY())
                              .arg(ui::fonts::font_px(-4)));

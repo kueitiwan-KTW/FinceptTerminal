@@ -50,7 +50,7 @@ void GovDataAustraliaPanel::build_ui() {
     auto* bcl = new QHBoxLayout(breadcrumb_);
     bcl->setContentsMargins(14, 0, 14, 0);
     bcl->setSpacing(4);
-    breadcrumb_label_ = new QLabel("All Agencies");
+    breadcrumb_label_ = new QLabel(tr("All Agencies"));
     breadcrumb_label_->setObjectName("govBreadcrumbText");
     bcl->addWidget(breadcrumb_label_);
     bcl->addStretch(1);
@@ -144,7 +144,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
     hl->setSpacing(5);
 
     // Back button — hidden until drilling in
-    back_btn_ = new QPushButton("← BACK");
+    back_btn_ = new QPushButton(tr("← BACK"));
     back_btn_->setObjectName("govBackBtn");
     back_btn_->setVisible(false);
     back_btn_->setCursor(Qt::PointingHandCursor);
@@ -154,7 +154,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
     hl->addSpacing(4);
 
     // Tab: Agencies
-    agencies_btn_ = new QPushButton("AGENCIES");
+    agencies_btn_ = new QPushButton(tr("AGENCIES"));
     agencies_btn_->setObjectName("govTabBtn");
     agencies_btn_->setCheckable(true);
     agencies_btn_->setChecked(true);
@@ -172,7 +172,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
     hl->addWidget(agencies_btn_);
 
     // Tab: Datasets (jump back to cached datasets view)
-    datasets_btn_ = new QPushButton("DATASETS");
+    datasets_btn_ = new QPushButton(tr("DATASETS"));
     datasets_btn_->setObjectName("govTabBtn");
     datasets_btn_->setCheckable(true);
     datasets_btn_->setChecked(false);
@@ -188,7 +188,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
     hl->addWidget(datasets_btn_);
 
     // Tab: Recent
-    recent_btn_ = new QPushButton("RECENT");
+    recent_btn_ = new QPushButton(tr("RECENT"));
     recent_btn_->setObjectName("govTabBtn");
     recent_btn_->setCheckable(true);
     recent_btn_->setChecked(false);
@@ -207,7 +207,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataAustraliaPanel::on_search);
     hl->addWidget(search_input_);
 
-    fetch_btn_ = new QPushButton("FETCH");
+    fetch_btn_ = new QPushButton(tr("FETCH"));
     fetch_btn_->setObjectName("govFetchBtn");
     fetch_btn_->setCursor(Qt::PointingHandCursor);
     connect(fetch_btn_, &QPushButton::clicked, this, &GovDataAustraliaPanel::on_fetch);
@@ -609,7 +609,7 @@ void GovDataAustraliaPanel::show_loading(const QString& message) {
 void GovDataAustraliaPanel::show_error(const QString& message) {
     status_label_->setStyleSheet(
         QString("color:%1; font-size:12px; background:transparent;").arg(ui::colors::NEGATIVE()));
-    status_label_->setText("Error: " + message);
+    status_label_->setText(tr("Error: ") + message);
     content_stack_->setCurrentIndex(Status);
 }
 

@@ -77,7 +77,7 @@ void PortfolioFFNView::build_ui() {
     h_layout->setContentsMargins(8, 0, 8, 0);
     h_layout->setSpacing(8);
 
-    back_btn_ = new QPushButton("\u2190 BACK");
+    back_btn_ = new QPushButton(tr("\u2190 BACK"));
     back_btn_->setFixedHeight(24);
     back_btn_->setCursor(Qt::PointingHandCursor);
     back_btn_->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
@@ -92,7 +92,7 @@ void PortfolioFFNView::build_ui() {
     sep->setStyleSheet(QString("background:%1;").arg(ui::colors::BORDER_MED()));
     h_layout->addWidget(sep);
 
-    auto* title = new QLabel("FFN ANALYTICS");
+    auto* title = new QLabel(tr("FFN ANALYTICS"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     h_layout->addWidget(title);
@@ -103,7 +103,7 @@ void PortfolioFFNView::build_ui() {
     status_label_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::TEXT_TERTIARY()));
     h_layout->addWidget(status_label_);
 
-    run_btn_ = new QPushButton("RUN FFN ANALYSIS");
+    run_btn_ = new QPushButton(tr("RUN FFN ANALYSIS"));
     run_btn_->setFixedHeight(24);
     run_btn_->setCursor(Qt::PointingHandCursor);
     run_btn_->setStyleSheet(
@@ -166,7 +166,7 @@ void PortfolioFFNView::build_ui() {
         auto* vl = new QVBoxLayout(w);
         vl->setContentsMargins(12, 8, 12, 8);
 
-        auto* lbl = new QLabel("PORTFOLIO METRICS OVERVIEW");
+        auto* lbl = new QLabel(tr("PORTFOLIO METRICS OVERVIEW"));
         lbl->setStyleSheet(
             QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
         vl->addWidget(lbl);
@@ -187,7 +187,7 @@ void PortfolioFFNView::build_ui() {
         vl->setContentsMargins(16, 12, 16, 12);
         vl->setSpacing(10);
 
-        auto* hdr = new QLabel("BENCHMARK COMPARISON");
+        auto* hdr = new QLabel(tr("BENCHMARK COMPARISON"));
         hdr->setStyleSheet(
             QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
         vl->addWidget(hdr);
@@ -216,7 +216,7 @@ void PortfolioFFNView::build_ui() {
         vl->setContentsMargins(12, 8, 12, 8);
         vl->setSpacing(10);
 
-        auto* hdr = new QLabel("PORTFOLIO OPTIMISATION — WEIGHT COMPARISON");
+        auto* hdr = new QLabel(tr("PORTFOLIO OPTIMISATION — WEIGHT COMPARISON"));
         hdr->setStyleSheet(
             QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
         vl->addWidget(hdr);
@@ -237,7 +237,7 @@ void PortfolioFFNView::build_ui() {
         tvl->setContentsMargins(0, 0, 0, 0);
         tvl->setSpacing(12);
 
-        auto* weights_hdr = new QLabel("ALLOCATION WEIGHTS BY STRATEGY");
+        auto* weights_hdr = new QLabel(tr("ALLOCATION WEIGHTS BY STRATEGY"));
         weights_hdr->setStyleSheet(
             QString("color:%1; font-size:10px; font-weight:700;").arg(ui::colors::TEXT_SECONDARY()));
         tvl->addWidget(weights_hdr);
@@ -246,7 +246,7 @@ void PortfolioFFNView::build_ui() {
         opt_weights_table_->setColumnWidth(0, 100);
         tvl->addWidget(opt_weights_table_);
 
-        auto* stats_hdr = new QLabel("STRATEGY PERFORMANCE STATS");
+        auto* stats_hdr = new QLabel(tr("STRATEGY PERFORMANCE STATS"));
         stats_hdr->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700;").arg(ui::colors::TEXT_SECONDARY()));
         tvl->addWidget(stats_hdr);
 

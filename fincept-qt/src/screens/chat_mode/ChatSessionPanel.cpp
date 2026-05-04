@@ -32,7 +32,7 @@ void ChatSessionPanel::build_ui() {
     // Header row
     auto* header_row = new QHBoxLayout;
     header_row->setSpacing(4);
-    auto* title_lbl = new QLabel("CONVERSATIONS");
+    auto* title_lbl = new QLabel(tr("CONVERSATIONS"));
     title_lbl->setStyleSheet(QString("color:%1;font-size:11px;font-weight:700;"
                                      "font-family:'Consolas','Courier New',monospace;"
                                      "background:transparent;letter-spacing:1px;")
@@ -275,7 +275,7 @@ void ChatSessionPanel::on_export_clicked() {
 
     ChatModeService::instance().export_sessions(uuids, [this, path](bool ok, QJsonArray payload, QString err) {
         export_btn_->setEnabled(true);
-        export_btn_->setText("Export");
+        export_btn_->setText(tr("Export"));
         if (!ok) {
             QMessageBox::warning(this, "Export Failed", err);
             return;

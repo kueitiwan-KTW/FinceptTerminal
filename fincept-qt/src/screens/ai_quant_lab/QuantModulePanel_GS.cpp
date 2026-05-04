@@ -80,7 +80,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     rvl->setContentsMargins(12, 12, 12, 12);
     rvl->setSpacing(8);
     auto* risk_returns = new QLineEdit(risk);
-    risk_returns->setPlaceholderText("Daily returns: comma-, space-, or newline-separated. Need at least 5 values.");
+    risk_returns->setPlaceholderText(tr("Daily returns: comma-, space-, or newline-separated. Need at least 5 values."));
     risk_returns->setStyleSheet(input_ss());
     text_inputs_["gs_risk_returns"] = risk_returns;
     rvl->addWidget(build_input_row("Daily Returns", risk_returns, risk));
@@ -121,14 +121,14 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     pvl->setContentsMargins(12, 12, 12, 12);
     pvl->setSpacing(8);
     auto* port_ret = new QLineEdit(port);
-    port_ret->setPlaceholderText("Portfolio daily returns (decimals, same length as benchmark)");
+    port_ret->setPlaceholderText(tr("Portfolio daily returns (decimals, same length as benchmark)"));
     port_ret->setStyleSheet(input_ss());
     text_inputs_["gs_port_returns"] = port_ret;
     pvl->addWidget(build_input_row("Portfolio Returns", port_ret, port));
     pvl->addWidget(add_sample_btn(port_ret, port, 21,
                                    "Inserts 252 synthetic portfolio returns (slight outperformance)"));
     auto* bench_ret = new QLineEdit(port);
-    bench_ret->setPlaceholderText("Benchmark daily returns (decimals)");
+    bench_ret->setPlaceholderText(tr("Benchmark daily returns (decimals)"));
     bench_ret->setStyleSheet(input_ss());
     text_inputs_["gs_bench_returns"] = bench_ret;
     pvl->addWidget(build_input_row("Benchmark Returns", bench_ret, port));
@@ -216,7 +216,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     vvl->setContentsMargins(12, 12, 12, 12);
     vvl->setSpacing(8);
     auto* var_ret = new QLineEdit(var);
-    var_ret->setPlaceholderText("Daily returns (decimals). Need at least 30 values for stable VaR.");
+    var_ret->setPlaceholderText(tr("Daily returns (decimals). Need at least 30 values for stable VaR."));
     var_ret->setStyleSheet(input_ss());
     text_inputs_["gs_var_returns"] = var_ret;
     vvl->addWidget(build_input_row("Daily Returns", var_ret, var));
@@ -308,7 +308,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     combo_inputs_["gs_bt_strategy"] = bt_strat;
     bvl->addWidget(build_input_row("Strategy", bt_strat, bt));
     auto* bt_ticker = new QLineEdit(bt);
-    bt_ticker->setPlaceholderText("e.g. AAPL — fetched from Yahoo Finance");
+    bt_ticker->setPlaceholderText(tr("e.g. AAPL — fetched from Yahoo Finance"));
     bt_ticker->setStyleSheet(input_ss());
     text_inputs_["gs_bt_ticker"] = bt_ticker;
     bvl->addWidget(build_input_row("Ticker", bt_ticker, bt));
@@ -358,7 +358,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     stvl->setContentsMargins(12, 12, 12, 12);
     stvl->setSpacing(8);
     auto* st_vals = new QLineEdit(stats);
-    st_vals->setPlaceholderText("Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2.");
+    st_vals->setPlaceholderText(tr("Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2."));
     st_vals->setStyleSheet(input_ss());
     text_inputs_["gs_stats_values"] = st_vals;
     stvl->addWidget(build_input_row("Values", st_vals, stats));

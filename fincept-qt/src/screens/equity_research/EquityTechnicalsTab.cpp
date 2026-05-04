@@ -252,7 +252,7 @@ void EquityTechnicalsTab::build_ui() {
     rp_vl->setContentsMargins(14, 10, 14, 10);
     rp_vl->setSpacing(10);
 
-    auto* rp_title = new QLabel("TECHNICAL RATING");
+    auto* rp_title = new QLabel(tr("TECHNICAL RATING"));
     rp_title->setStyleSheet(
         QString("color:%1;font-size:12px;font-weight:700;letter-spacing:1px;background:transparent;border:0;")
             .arg(ui::colors::AMBER()));
@@ -264,7 +264,7 @@ void EquityTechnicalsTab::build_ui() {
     sep->setStyleSheet(QString("background:%1;border:0;").arg(ui::colors::BORDER_DIM()));
     rp_vl->addWidget(sep);
 
-    rating_label_ = new QLabel("\xe2\x80\x94");
+    rating_label_ = new QLabel(tr("\xe2\x80\x94"));
     rating_label_->setAlignment(Qt::AlignCenter);
     rating_label_->setStyleSheet(
         QString("color:%1;font-size:22px;font-weight:700;letter-spacing:2px;background:transparent;border:0;")
@@ -314,7 +314,7 @@ void EquityTechnicalsTab::build_ui() {
     make_count(ui::colors::NEGATIVE, "STR.SELL", strong_sell_count_);
     rp_vl->addLayout(counts);
 
-    total_label_ = new QLabel("0 INDICATORS");
+    total_label_ = new QLabel(tr("0 INDICATORS"));
     total_label_->setAlignment(Qt::AlignCenter);
     total_label_->setStyleSheet(QString("color:%1;font-size:10px;letter-spacing:1px;background:transparent;border:0;")
                                     .arg(ui::colors::TEXT_TERTIARY()));
@@ -331,7 +331,7 @@ void EquityTechnicalsTab::build_ui() {
     kp_vl->setContentsMargins(10, 10, 10, 10);
     kp_vl->setSpacing(6);
 
-    auto* kp_title = new QLabel("KEY INDICATORS");
+    auto* kp_title = new QLabel(tr("KEY INDICATORS"));
     kp_title->setStyleSheet(
         QString("color:%1;font-size:12px;font-weight:700;letter-spacing:1px;background:transparent;border:0;")
             .arg(CYAN));

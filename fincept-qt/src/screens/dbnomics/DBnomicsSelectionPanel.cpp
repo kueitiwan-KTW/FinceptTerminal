@@ -99,7 +99,7 @@ QListWidget* DBnomicsSelectionPanel::make_styled_list(int fixed_height) {
 }
 
 QPushButton* DBnomicsSelectionPanel::make_load_more_button() {
-    auto* btn = new QPushButton("LOAD MORE");
+    auto* btn = new QPushButton(tr("LOAD MORE"));
     btn->setStyleSheet(kLoadMoreStyle());
     btn->setFixedHeight(22);
     btn->hide();
@@ -323,7 +323,7 @@ QWidget* DBnomicsSelectionPanel::build_action_buttons() {
     layout->setSpacing(4);
 
     // "ADD TO SINGLE VIEW" button — amber style
-    auto* add_btn = new QPushButton("ADD TO SINGLE VIEW");
+    auto* add_btn = new QPushButton(tr("ADD TO SINGLE VIEW"));
     add_btn->setFixedHeight(26);
     add_btn->setStyleSheet(
         QString("QPushButton { background: rgba(217,119,6,0.1); color: %1; "
@@ -336,7 +336,7 @@ QWidget* DBnomicsSelectionPanel::build_action_buttons() {
     layout->addWidget(add_btn);
 
     // "CLEAR ALL" button — red style
-    auto* clear_btn = new QPushButton("CLEAR ALL");
+    auto* clear_btn = new QPushButton(tr("CLEAR ALL"));
     clear_btn->setFixedHeight(26);
     clear_btn->setStyleSheet(
         QString("QPushButton { background: rgba(220,38,38,0.1); color: %1; "
@@ -360,7 +360,7 @@ QWidget* DBnomicsSelectionPanel::build_comparison_slots_section() {
     layout->addWidget(make_section_label("COMPARISON SLOTS"));
 
     // "+ ADD SLOT" button — green style
-    auto* add_slot_btn = new QPushButton("+ ADD SLOT");
+    auto* add_slot_btn = new QPushButton(tr("+ ADD SLOT"));
     add_slot_btn->setFixedHeight(24);
     add_slot_btn->setStyleSheet(
         QString("QPushButton { background: rgba(22,163,74,0.1); color: %1; "
@@ -419,7 +419,7 @@ void DBnomicsSelectionPanel::build_ui() {
     root_layout->addWidget(scroll);
 
     // Status label — fixed outside scroll at bottom
-    status_label_ = new QLabel("Ready");
+    status_label_ = new QLabel(tr("Ready"));
     status_label_->setStyleSheet(QString("color: %1; font-size: 10px; "
                                          "font-family: 'Consolas','Courier New',monospace; "
                                          "padding: 3px 8px; background: %2; "
@@ -467,7 +467,7 @@ void DBnomicsSelectionPanel::add_comparison_slot() {
     slot_layout->addWidget(header_row);
 
     // "+ ADD CURRENT SERIES" button
-    auto* add_series_btn = new QPushButton("+ ADD CURRENT SERIES");
+    auto* add_series_btn = new QPushButton(tr("+ ADD CURRENT SERIES"));
     add_series_btn->setFixedHeight(20);
     add_series_btn->setStyleSheet(QString("QPushButton { background: transparent; color: %1; "
                                           "border: 1px solid %2; "
@@ -706,7 +706,7 @@ void DBnomicsSelectionPanel::update_slot_series(int slot_index, const QVector<se
 
         // Colored dot
         const QString dot_color = dot_colors[i % dot_colors.size()];
-        auto* dot = new QLabel("\u25CF");
+        auto* dot = new QLabel(tr("\u25CF"));
         dot->setStyleSheet(QString("color: %1; font-size: 8px;").arg(dot_color));
         dot->setFixedWidth(12);
         row_layout->addWidget(dot);
@@ -725,7 +725,7 @@ void DBnomicsSelectionPanel::update_slot_series(int slot_index, const QVector<se
 
         // Remove button
         const QString series_id = dp.series_id;
-        auto* remove_btn = new QPushButton("\u00D7");
+        auto* remove_btn = new QPushButton(tr("\u00D7"));
         remove_btn->setFixedSize(14, 14);
         remove_btn->setStyleSheet(
             QString("QPushButton { background: transparent; color: %1; border: none; font-size: 10px; }"

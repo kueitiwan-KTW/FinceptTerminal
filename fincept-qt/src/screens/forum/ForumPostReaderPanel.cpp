@@ -76,7 +76,7 @@ void ForumPostReaderPanel::build_ui() {
                                    "background:transparent;%2")
                                .arg(ui::colors::TEXT_TERTIARY(), M(14)));
 
-        auto* sub = new QLabel("Click any post from the feed to read it");
+        auto* sub = new QLabel(tr("Click any post from the feed to read it"));
         sub->setAlignment(Qt::AlignCenter);
         sub->setStyleSheet(
             QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(11)));
@@ -101,7 +101,7 @@ void ForumPostReaderPanel::build_ui() {
         spin_label_->setStyleSheet(
             QString("color:%1;font-size:24px;background:transparent;%2").arg(ui::colors::AMBER(), M(24)));
 
-        auto* lt = new QLabel("Loading...");
+        auto* lt = new QLabel(tr("Loading..."));
         lt->setAlignment(Qt::AlignCenter);
         lt->setStyleSheet(
             QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_TERTIARY(), M(11)));
@@ -225,7 +225,7 @@ void ForumPostReaderPanel::build_ui() {
     eng_hl->setContentsMargins(20, 0, 20, 0);
     eng_hl->setSpacing(14);
 
-    auto* up_btn = new QPushButton("▲  Upvote");
+    auto* up_btn = new QPushButton(tr("▲  Upvote"));
     up_btn->setFixedHeight(26);
     up_btn->setCursor(Qt::PointingHandCursor);
     up_btn->setStyleSheet(QString("QPushButton{background:rgba(217,119,6,0.06);"
@@ -240,15 +240,15 @@ void ForumPostReaderPanel::build_ui() {
             emit vote_post(current_detail_.post.post_uuid, "up");
     });
 
-    likes_label_ = new QLabel("▲ 0");
+    likes_label_ = new QLabel(tr("▲ 0"));
     likes_label_->setStyleSheet(
         QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_TERTIARY(), M(11)));
 
-    replies_label_ = new QLabel("◆ 0 replies");
+    replies_label_ = new QLabel(tr("◆ 0 replies"));
     replies_label_->setStyleSheet(
         QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_TERTIARY(), M(11)));
 
-    views_label_ = new QLabel("◉ 0 views");
+    views_label_ = new QLabel(tr("◉ 0 views"));
     views_label_->setStyleSheet(
         QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(11)));
 
@@ -269,7 +269,7 @@ void ForumPostReaderPanel::build_ui() {
     com_hdr_hl->setSpacing(6);
     auto* com_dot = new QLabel("◆");
     com_dot->setStyleSheet(QString("color:%1;font-size:7px;background:transparent;").arg(ui::colors::CYAN()));
-    auto* com_hdr_lbl = new QLabel("REPLIES");
+    auto* com_hdr_lbl = new QLabel(tr("REPLIES"));
     com_hdr_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1.5px;"
                                        "background:transparent;%2")
                                    .arg(ui::colors::TEXT_TERTIARY(), M(10)));
@@ -311,7 +311,7 @@ void ForumPostReaderPanel::build_ui() {
                                          ui::colors::BORDER_BRIGHT(), ui::colors::TEXT_PRIMARY(),
                                          ui::colors::TEXT_DIM()));
 
-    auto* send_btn = new QPushButton("Reply");
+    auto* send_btn = new QPushButton(tr("Reply"));
     send_btn->setFixedSize(72, 32);
     send_btn->setCursor(Qt::PointingHandCursor);
     send_btn->setStyleSheet(QString("QPushButton{background:rgba(217,119,6,0.1);color:%1;"
@@ -424,7 +424,7 @@ void ForumPostReaderPanel::rebuild_comments() {
         icon->setAlignment(Qt::AlignCenter);
         icon->setStyleSheet(QString("color:%1;font-size:18px;background:transparent;").arg(ui::colors::BORDER_DIM()));
 
-        auto* lbl = new QLabel("NO REPLIES YET");
+        auto* lbl = new QLabel(tr("NO REPLIES YET"));
         lbl->setAlignment(Qt::AlignCenter);
         lbl->setStyleSheet(QString("color:%1;font-size:11px;font-weight:700;letter-spacing:1px;"
                                    "background:transparent;%2")

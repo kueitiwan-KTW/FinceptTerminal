@@ -166,9 +166,9 @@ QWidget* DerivativesScreen::create_header_bar() {
 
     auto* title_col = new QVBoxLayout;
     title_col->setSpacing(0);
-    auto* title = new QLabel("DERIVATIVES PRICING");
+    auto* title = new QLabel(tr("DERIVATIVES PRICING"));
     title->setObjectName("derivHeaderTitle");
-    auto* sub = new QLabel("PROFESSIONAL VALUATION ENGINE");
+    auto* sub = new QLabel(tr("PROFESSIONAL VALUATION ENGINE"));
     sub->setObjectName("derivHeaderSub");
     title_col->addWidget(title);
     title_col->addWidget(sub);
@@ -178,7 +178,7 @@ QWidget* DerivativesScreen::create_header_bar() {
     hl->addLayout(title_col);
     hl->addStretch(1);
 
-    auto* badge = new QLabel("PYTHON ACTIVE");
+    auto* badge = new QLabel(tr("PYTHON ACTIVE"));
     badge->setObjectName("derivHeaderBadge");
     hl->addWidget(badge);
 
@@ -232,7 +232,7 @@ QWidget* DerivativesScreen::create_bonds_panel() {
     phl->setContentsMargins(12, 0, 12, 0);
     auto* phi = new QLabel("$");
     phi->setObjectName("derivPanelIcon");
-    auto* pht = new QLabel("BOND PRICE CALCULATOR");
+    auto* pht = new QLabel(tr("BOND PRICE CALCULATOR"));
     pht->setObjectName("derivPanelTitle");
     phl->addWidget(phi);
     phl->addSpacing(8);
@@ -282,7 +282,7 @@ QWidget* DerivativesScreen::create_bonds_panel() {
     yhl->setContentsMargins(12, 0, 12, 0);
     auto* yhi = new QLabel("%");
     yhi->setObjectName("derivPanelIcon");
-    auto* yht = new QLabel("YIELD TO MATURITY");
+    auto* yht = new QLabel(tr("YIELD TO MATURITY"));
     yht->setObjectName("derivPanelTitle");
     yhl->addWidget(yhi);
     yhl->addSpacing(8);
@@ -338,7 +338,7 @@ QWidget* DerivativesScreen::create_equity_options_panel() {
     bhl->setContentsMargins(12, 0, 12, 0);
     auto* bhi = new QLabel(tr("\xE2\x86\x97")); // arrow
     bhi->setObjectName("derivPanelIcon");
-    auto* bht = new QLabel("BLACK-SCHOLES PRICING");
+    auto* bht = new QLabel(tr("BLACK-SCHOLES PRICING"));
     bht->setObjectName("derivPanelTitle");
     bhl->addWidget(bhi);
     bhl->addSpacing(8);
@@ -388,7 +388,7 @@ QWidget* DerivativesScreen::create_equity_options_panel() {
     ivhl->setContentsMargins(12, 0, 12, 0);
     auto* ivhi = new QLabel(tr("\xE2\x9A\xA1")); // lightning
     ivhi->setObjectName("derivPanelIcon");
-    auto* ivht = new QLabel("IMPLIED VOLATILITY");
+    auto* ivht = new QLabel(tr("IMPLIED VOLATILITY"));
     ivht->setObjectName("derivPanelTitle");
     ivhl->addWidget(ivhi);
     ivhl->addSpacing(8);
@@ -445,7 +445,7 @@ QWidget* DerivativesScreen::create_fx_options_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel(tr("\xF0\x9F\x92\xB1")); // currency emoji
     icon->setObjectName("derivPanelIcon");
-    auto* title = new QLabel("FX VANILLA OPTION PRICING");
+    auto* title = new QLabel(tr("FX VANILLA OPTION PRICING"));
     title->setObjectName("derivPanelTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -500,7 +500,7 @@ QWidget* DerivativesScreen::create_swaps_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel(tr("\xF0\x9F\x94\x84")); // arrows emoji
     icon->setObjectName("derivPanelIcon");
-    auto* title = new QLabel("INTEREST RATE SWAP PRICING");
+    auto* title = new QLabel(tr("INTEREST RATE SWAP PRICING"));
     title->setObjectName("derivPanelTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -552,7 +552,7 @@ QWidget* DerivativesScreen::create_credit_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel(tr("\xF0\x9F\x8E\xAF")); // target emoji
     icon->setObjectName("derivPanelIcon");
-    auto* title = new QLabel("CREDIT DEFAULT SWAP PRICING");
+    auto* title = new QLabel(tr("CREDIT DEFAULT SWAP PRICING"));
     title->setObjectName("derivPanelTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -593,17 +593,17 @@ QWidget* DerivativesScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    auto* left = new QLabel("DERIVATIVES");
+    auto* left = new QLabel(tr("DERIVATIVES"));
     left->setObjectName("derivStatusText");
     hl->addWidget(left);
     hl->addStretch(1);
 
-    status_instrument_ = new QLabel("INSTRUMENT: BONDS");
+    status_instrument_ = new QLabel(tr("INSTRUMENT: BONDS"));
     status_instrument_->setObjectName("derivStatusText");
     hl->addWidget(status_instrument_);
 
     hl->addSpacing(16);
-    status_engine_ = new QLabel("PYTHON ENGINE");
+    status_engine_ = new QLabel(tr("PYTHON ENGINE"));
     status_engine_->setObjectName("derivStatusEngine");
     hl->addWidget(status_engine_);
 
@@ -624,7 +624,7 @@ QWidget* DerivativesScreen::create_results_panel() {
     hdr->setFixedHeight(34);
     auto* hl = new QHBoxLayout(hdr);
     hl->setContentsMargins(12, 0, 12, 0);
-    auto* title = new QLabel("RESULTS");
+    auto* title = new QLabel(tr("RESULTS"));
     title->setObjectName("derivResultsTitle");
     hl->addWidget(title);
     hl->addStretch(1);
@@ -718,7 +718,7 @@ void DerivativesScreen::on_instrument_changed(int index) {
     }
 
     const QStringList names = {"BONDS", "EQUITY OPTIONS", "FX OPTIONS", "IR SWAPS", "CREDIT"};
-    status_instrument_->setText("INSTRUMENT: " + names[index]);
+    status_instrument_->setText(tr("INSTRUMENT: ") + names[index]);
     LOG_INFO("Derivatives", "Switched to: " + names[index]);
 
     fincept::ScreenStateManager::instance().notify_changed(this);
@@ -945,7 +945,7 @@ void DerivativesScreen::display_error(const QString& error) {
     hl->setContentsMargins(12, 8, 12, 8);
     hl->setSpacing(8);
 
-    auto* err_label = new QLabel("ERROR");
+    auto* err_label = new QLabel(tr("ERROR"));
     err_label->setObjectName("derivErrorLabel");
     auto* err_text = new QLabel(error);
     err_text->setObjectName("derivErrorText");

@@ -37,7 +37,7 @@ PolymarketPriceChart::PolymarketPriceChart(QWidget* parent) : QWidget(parent) {
                 "QComboBox QAbstractItemView { background: %1; color: %2; border: 1px solid %3; }")
             .arg(colors::BG_BASE(), colors::TEXT_PRIMARY(), colors::BORDER_MED());
 
-    auto* lbl = new QLabel("INTERVAL");
+    auto* lbl = new QLabel(tr("INTERVAL"));
     lbl->setStyleSheet(
         QString("color: %1; font-size: 8px; font-weight: 700; letter-spacing: 0.5px; "
                 "background: transparent;")
@@ -57,7 +57,7 @@ PolymarketPriceChart::PolymarketPriceChart(QWidget* parent) : QWidget(parent) {
 
     toolbar->addSpacing(10);
 
-    auto* olbl = new QLabel("OUTCOME");
+    auto* olbl = new QLabel(tr("OUTCOME"));
     olbl->setStyleSheet(lbl->styleSheet());
     toolbar->addWidget(olbl);
 
@@ -82,7 +82,7 @@ PolymarketPriceChart::PolymarketPriceChart(QWidget* parent) : QWidget(parent) {
     chart_container_->setStyleSheet(QString("background: %1;").arg(colors::BG_BASE()));
     auto* ccl = new QVBoxLayout(chart_container_);
     ccl->setContentsMargins(8, 8, 8, 8);
-    auto* empty = new QLabel("Select a market to view its price chart");
+    auto* empty = new QLabel(tr("Select a market to view its price chart"));
     empty->setStyleSheet(
         QString("color: %1; font-size: 12px; background: transparent;").arg(colors::TEXT_DIM()));
     empty->setAlignment(Qt::AlignCenter);
@@ -103,7 +103,7 @@ void PolymarketPriceChart::set_price_history(const PriceHistory& history) {
     }
 
     if (history.points.isEmpty()) {
-        auto* empty = new QLabel("No price history available");
+        auto* empty = new QLabel(tr("No price history available"));
         empty->setStyleSheet(QString("color: %1; font-size: 13px; background: transparent;").arg(colors::TEXT_DIM()));
         empty->setAlignment(Qt::AlignCenter);
         layout->addWidget(empty);

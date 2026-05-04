@@ -106,7 +106,7 @@ void KalshiWsClient::send_subscribe(const QStringList& tickers) {
     channels.append("orderbook_delta");
     channels.append("ticker");
     channels.append("trade");
-    channels.append("market_lifecycle_v2");
+    channels.append(tr("market_lifecycle_v2"));
     params.insert("channels", channels);
     QJsonArray tarr;
     for (const auto& t : tickers) tarr.append(t);

@@ -24,14 +24,14 @@ ComingSoonScreen::ComingSoonScreen(const QString& tab_name, QWidget* parent) : Q
                              .arg(ui::colors::AMBER()));
     vl->addWidget(title);
 
-    auto* sub = new QLabel("COMING SOON");
+    auto* sub = new QLabel(tr("COMING SOON"));
     sub->setAlignment(Qt::AlignCenter);
     sub->setStyleSheet(QString("color:%1;font-size:14px;font-weight:700;background:transparent;"
                                "letter-spacing:3px;")
                            .arg(ui::colors::TEXT_TERTIARY()));
     vl->addWidget(sub);
 
-    auto* desc = new QLabel("This module is under active development.\nIt will be available in a future update.");
+    auto* desc = new QLabel(tr("This module is under active development.\nIt will be available in a future update."));
     desc->setAlignment(Qt::AlignCenter);
     desc->setStyleSheet(QString("color:%1;font-size:13px;background:transparent;").arg(ui::colors::TEXT_DIM()));
     vl->addWidget(desc);

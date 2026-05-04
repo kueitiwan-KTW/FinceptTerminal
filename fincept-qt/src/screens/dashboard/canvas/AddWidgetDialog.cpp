@@ -73,7 +73,7 @@ AddWidgetDialog::AddWidgetDialog(QWidget* parent) : QDialog(parent) {
 
     // ── Title row ──
     auto* title_row = new QHBoxLayout;
-    auto* title = new QLabel("ADD WIDGET");
+    auto* title = new QLabel(tr("ADD WIDGET"));
     title->setStyleSheet(
         QString("color: %1; font-size: 12px; font-weight: bold; letter-spacing: 1px;").arg(ui::colors::AMBER()));
     title_row->addWidget(title);
@@ -123,7 +123,7 @@ AddWidgetDialog::AddWidgetDialog(QWidget* parent) : QDialog(parent) {
     bot->setSpacing(8);
     bot->addStretch();
 
-    auto* cancel_btn = new QPushButton("CANCEL");
+    auto* cancel_btn = new QPushButton(tr("CANCEL"));
     cancel_btn->setFixedSize(90, 30);
     cancel_btn->setCursor(Qt::PointingHandCursor);
     cancel_btn->setStyleSheet(
@@ -134,7 +134,7 @@ AddWidgetDialog::AddWidgetDialog(QWidget* parent) : QDialog(parent) {
     connect(cancel_btn, &QPushButton::clicked, this, &QDialog::reject);
     bot->addWidget(cancel_btn);
 
-    add_btn_ = new QPushButton("ADD WIDGET");
+    add_btn_ = new QPushButton(tr("ADD WIDGET"));
     add_btn_->setFixedSize(110, 30);
     add_btn_->setCursor(Qt::PointingHandCursor);
     add_btn_->setEnabled(false);

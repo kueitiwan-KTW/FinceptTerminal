@@ -33,7 +33,7 @@ PolymarketLeaderboard::PolymarketLeaderboard(QWidget* parent) : QWidget(parent) 
             .arg(colors::BG_RAISED(), colors::BORDER_DIM()));
     auto* hbl = new QHBoxLayout(header_bar);
     hbl->setContentsMargins(12, 0, 8, 0);
-    auto* header = new QLabel("LEADERBOARD");
+    auto* header = new QLabel(tr("LEADERBOARD"));
     header->setStyleSheet(
         QString("color: %1; font-size: 9px; font-weight: 700; letter-spacing: 0.8px; "
                 "background: transparent;")

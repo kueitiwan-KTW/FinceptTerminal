@@ -128,13 +128,13 @@ void WorldBankPanel::load_countries() {
 // ── Controls ──────────────────────────────────────────────────────────────────
 
 void WorldBankPanel::build_controls(QHBoxLayout* thl) {
-    auto* lbl = new QLabel("YEARS");
+    auto* lbl = new QLabel(tr("YEARS"));
     lbl->setStyleSheet(ctrl_label_style());
     date_preset_ = new QComboBox;
-    date_preset_->addItem("5 Years", 5);
-    date_preset_->addItem("10 Years", 10);
-    date_preset_->addItem("20 Years", 20);
-    date_preset_->addItem("50 Years", 50);
+    date_preset_->addItem(tr("5 Years"), 5);
+    date_preset_->addItem(tr("10 Years"), 10);
+    date_preset_->addItem(tr("20 Years"), 20);
+    date_preset_->addItem(tr("50 Years"), 50);
     date_preset_->setCurrentIndex(1);
     date_preset_->setFixedHeight(26);
     thl->addWidget(lbl);

@@ -34,7 +34,7 @@ PerformanceWidget::PerformanceWidget(QWidget* parent)
         rl->addWidget(mr.label);
         rl->addStretch();
 
-        mr.period = new QLabel("TODAY");
+        mr.period = new QLabel(tr("TODAY"));
         rl->addWidget(mr.period);
 
         mr.value = new QLabel("--");

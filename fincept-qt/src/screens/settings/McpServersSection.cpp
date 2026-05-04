@@ -68,7 +68,7 @@ void McpServersSection::build_ui() {
                              QString(ui::colors::BORDER_DIM()) + ";");
     auto* tbl = new QHBoxLayout(title_bar);
     tbl->setContentsMargins(16, 0, 16, 0);
-    auto* title = new QLabel("MCP SERVERS");
+    auto* title = new QLabel(tr("MCP SERVERS"));
     title->setStyleSheet("color:" + QString(ui::colors::AMBER()) + ";font-weight:700;letter-spacing:1px;");
     tbl->addWidget(title);
     tbl->addStretch();
@@ -144,7 +144,7 @@ QWidget* McpServersSection::build_servers_tab() {
     lvl->setContentsMargins(8, 8, 8, 8);
     lvl->setSpacing(6);
 
-    auto* list_lbl = new QLabel("External Servers");
+    auto* list_lbl = new QLabel(tr("External Servers"));
     list_lbl->setStyleSheet("color:" + QString(ui::colors::TEXT_SECONDARY()) + ";font-weight:700;letter-spacing:1px;");
     lvl->addWidget(list_lbl);
 
@@ -165,7 +165,7 @@ QWidget* McpServersSection::build_servers_tab() {
 
     // Action buttons
     auto* btns = new QHBoxLayout;
-    add_btn_ = new QPushButton("+ Add");
+    add_btn_ = new QPushButton(tr("+ Add"));
     add_btn_->setStyleSheet("QPushButton{background:" + QString(ui::colors::BG_RAISED()) + ";color:" +
                             QString(ui::colors::AMBER()) + ";border:1px solid " + QString(ui::colors::AMBER()) +
                             ";"
@@ -174,7 +174,7 @@ QWidget* McpServersSection::build_servers_tab() {
                             QString(ui::colors::BG_RAISED()) + ";}");
     connect(add_btn_, &QPushButton::clicked, this, &McpServersSection::on_add_server);
 
-    remove_btn_ = new QPushButton("Remove");
+    remove_btn_ = new QPushButton(tr("Remove"));
     remove_btn_->setEnabled(false);
     remove_btn_->setStyleSheet(
         "QPushButton{background:" + QString(ui::colors::BG_RAISED()) + ";color:" + QString(ui::colors::NEGATIVE()) +
@@ -214,14 +214,14 @@ QWidget* McpServersSection::build_servers_tab() {
     dvl->setContentsMargins(24, 20, 24, 20);
     dvl->setSpacing(12);
 
-    detail_lbl_ = new QLabel("Select a server to view details.");
+    detail_lbl_ = new QLabel(tr("Select a server to view details."));
     detail_lbl_->setWordWrap(true);
     detail_lbl_->setStyleSheet("color:" + QString(ui::colors::TEXT_TERTIARY()) + ";");
     dvl->addWidget(detail_lbl_);
 
     // Start/Stop buttons
     auto* server_btns = new QHBoxLayout;
-    start_btn_ = new QPushButton("▶  Start");
+    start_btn_ = new QPushButton(tr("▶  Start"));
     start_btn_->setEnabled(false);
     start_btn_->setFixedHeight(32);
     start_btn_->setStyleSheet(
@@ -237,7 +237,7 @@ QWidget* McpServersSection::build_servers_tab() {
         ";background:" + QString(ui::colors::BG_BASE()) + ";}");
     connect(start_btn_, &QPushButton::clicked, this, &McpServersSection::on_start_server);
 
-    stop_btn_ = new QPushButton("■  Stop");
+    stop_btn_ = new QPushButton(tr("■  Stop"));
     stop_btn_->setEnabled(false);
     stop_btn_->setFixedHeight(32);
     stop_btn_->setStyleSheet(
@@ -282,7 +282,7 @@ QWidget* McpServersSection::build_tools_tab() {
     vl->setSpacing(8);
 
     auto* info =
-        new QLabel("All registered MCP tools — both internal (built-in) and external (from connected servers).");
+        new QLabel(tr("All registered MCP tools — both internal (built-in) and external (from connected servers)."));
     info->setStyleSheet("color:" + QString(ui::colors::TEXT_SECONDARY()) + ";");
     info->setWordWrap(true);
     vl->addWidget(info);
@@ -337,7 +337,7 @@ void McpServersSection::on_add_server() {
     vl->setSpacing(12);
     vl->setContentsMargins(16, 16, 16, 16);
 
-    auto* title = new QLabel("Add External MCP Server");
+    auto* title = new QLabel(tr("Add External MCP Server"));
     title->setStyleSheet("color:" + QString(ui::colors::AMBER()) + ";font-weight:700;");
     vl->addWidget(title);
 
@@ -378,7 +378,7 @@ void McpServersSection::on_add_server() {
 
     // Auto-start checkbox
     auto* auto_start_row = new QHBoxLayout;
-    auto* as_lbl = new QLabel("Auto-start on launch");
+    auto* as_lbl = new QLabel(tr("Auto-start on launch"));
     as_lbl->setStyleSheet("color:" + QString(ui::colors::TEXT_SECONDARY()) + ";");
     auto* as_cb = new QCheckBox;
     as_cb->setChecked(false);

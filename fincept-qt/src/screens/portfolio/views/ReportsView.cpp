@@ -43,7 +43,7 @@ void ReportsView::build_ui() {
     auto* txn_layout = new QVBoxLayout(txn_w);
     txn_layout->setContentsMargins(12, 8, 12, 8);
 
-    auto* txn_title = new QLabel("TRANSACTION HISTORY");
+    auto* txn_title = new QLabel(tr("TRANSACTION HISTORY"));
     txn_title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     txn_layout->addWidget(txn_title);
@@ -77,7 +77,7 @@ void ReportsView::build_ui() {
     auto* attr_layout = new QVBoxLayout(attr_w);
     attr_layout->setContentsMargins(12, 8, 12, 8);
 
-    auto* attr_title = new QLabel("PERFORMANCE ATTRIBUTION");
+    auto* attr_title = new QLabel(tr("PERFORMANCE ATTRIBUTION"));
     attr_title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     attr_layout->addWidget(attr_title);
@@ -119,7 +119,7 @@ void ReportsView::update_summary() {
     layout->setContentsMargins(16, 12, 16, 12);
     layout->setSpacing(12);
 
-    auto* title = new QLabel("PORTFOLIO SUMMARY REPORT");
+    auto* title = new QLabel(tr("PORTFOLIO SUMMARY REPORT"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -169,7 +169,7 @@ void ReportsView::update_summary() {
     layout->addLayout(grid);
 
     // Holdings breakdown
-    auto* breakdown_title = new QLabel("HOLDINGS BREAKDOWN");
+    auto* breakdown_title = new QLabel(tr("HOLDINGS BREAKDOWN"));
     breakdown_title->setStyleSheet(
         QString("color:%1; font-size:10px; font-weight:700; letter-spacing:1px;").arg(ui::colors::TEXT_SECONDARY()));
     layout->addWidget(breakdown_title);

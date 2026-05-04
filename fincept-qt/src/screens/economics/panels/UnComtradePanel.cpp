@@ -50,10 +50,10 @@ void UnComtradePanel::build_controls(QHBoxLayout* thl) {
     reporter_combo_->setFixedHeight(26);
 
     flow_combo_ = new QComboBox;
-    flow_combo_->addItem("Exports", "X");
-    flow_combo_->addItem("Imports", "M");
-    flow_combo_->addItem("Re-exports", "RX");
-    flow_combo_->addItem("Re-imports", "RM");
+    flow_combo_->addItem(tr("Exports"), "X");
+    flow_combo_->addItem(tr("Imports"), "M");
+    flow_combo_->addItem(tr("Re-exports"), "RX");
+    flow_combo_->addItem(tr("Re-imports"), "RM");
     flow_combo_->setFixedHeight(26);
 
     // Last 5 years
@@ -64,8 +64,8 @@ void UnComtradePanel::build_controls(QHBoxLayout* thl) {
     period_combo_->setFixedHeight(26);
 
     cmd_combo_ = new QComboBox;
-    cmd_combo_->addItem("All Commodities", "AG2");
-    cmd_combo_->addItem("Total (all)", "TOTAL");
+    cmd_combo_->addItem(tr("All Commodities"), "AG2");
+    cmd_combo_->addItem(tr("Total (all)"), "TOTAL");
     cmd_combo_->setFixedHeight(26);
 
     thl->addWidget(lbl("REPORTER"));

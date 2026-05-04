@@ -160,7 +160,7 @@ void CftcPanel::build_sentiment_widget() {
     auto* hdr_hl = new QHBoxLayout(hdr);
     hdr_hl->setContentsMargins(14, 10, 14, 10);
 
-    auto* title_lbl = new QLabel("COT MARKET SENTIMENT");
+    auto* title_lbl = new QLabel(tr("COT MARKET SENTIMENT"));
     title_lbl->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; background:transparent;").arg(TEXT_PRIMARY()));
 
@@ -196,7 +196,7 @@ void CftcPanel::build_sentiment_widget() {
         bias_out = new QLabel("—");
         bias_out->setObjectName("econStatVal");
 
-        net_out = new QLabel("Net: —");
+        net_out = new QLabel(tr("Net: —"));
         net_out->setStyleSheet(QString("color:%1; font-size:10px; background:transparent;").arg(TEXT_TERTIARY()));
 
         auto* d = new QLabel(desc);
@@ -222,13 +222,13 @@ void CftcPanel::build_sentiment_widget() {
     oi_hl->setContentsMargins(14, 8, 14, 8);
     oi_hl->setSpacing(20);
 
-    auto* oi_lbl = new QLabel("OPEN INTEREST");
+    auto* oi_lbl = new QLabel(tr("OPEN INTEREST"));
     oi_lbl->setStyleSheet(lbl_ss);
     sent_oi_lbl_ = new QLabel("—");
     sent_oi_lbl_->setStyleSheet(
         QString("color:%1; font-size:13px; font-weight:700; background:transparent;").arg(TEXT_PRIMARY()));
 
-    auto* trend_lbl = new QLabel("OI TREND");
+    auto* trend_lbl = new QLabel(tr("OI TREND"));
     trend_lbl->setStyleSheet(lbl_ss);
     sent_oi_trend_ = new QLabel("—");
     sent_oi_trend_->setObjectName("econStatVal");
@@ -341,7 +341,7 @@ void CftcPanel::show_sentiment(const QJsonObject& s) {
 
     // Populate labels
     sent_market_lbl_->setText(s["market_name"].toString(market_combo_->currentText()));
-    sent_date_lbl_->setText("Report: " + s["latest_report"].toString("—"));
+    sent_date_lbl_->setText(tr("Report: ") + s["latest_report"].toString("—"));
 
     const double oi = s["open_interest"].toDouble();
     sent_oi_lbl_->setText(oi > 0 ? QString::number(static_cast<qint64>(oi)) : "—");

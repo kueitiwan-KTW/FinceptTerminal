@@ -104,7 +104,7 @@ void MarketPanel::build_ui() {
     el->setAlignment(Qt::AlignCenter);
     error_label_ = new QLabel;
     error_label_->setAlignment(Qt::AlignCenter);
-    retry_btn_ = new QPushButton("[RETRY]");
+    retry_btn_ = new QPushButton(tr("[RETRY]"));
     retry_btn_->setCursor(Qt::PointingHandCursor);
     retry_btn_->setFlat(true);
     connect(retry_btn_, &QPushButton::clicked, this, &MarketPanel::refresh);
@@ -117,7 +117,7 @@ void MarketPanel::build_ui() {
     loading_widget_ = new QWidget(body_);
     auto* ll = new QVBoxLayout(loading_widget_);
     ll->setAlignment(Qt::AlignCenter);
-    loading_label_ = new QLabel("  ⠋  LOADING");
+    loading_label_ = new QLabel(tr("  ⠋  LOADING"));
     loading_label_->setAlignment(Qt::AlignCenter);
     ll->addWidget(loading_label_);
     bl->addWidget(loading_widget_);

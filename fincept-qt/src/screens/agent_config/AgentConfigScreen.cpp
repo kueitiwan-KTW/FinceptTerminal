@@ -75,7 +75,7 @@ void AgentConfigScreen::build_nav_bar(QVBoxLayout* root) {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(0);
 
-    auto* title = new QLabel("AGENT STUDIO");
+    auto* title = new QLabel(tr("AGENT STUDIO"));
     title->setStyleSheet(QString("color:%1;font-size:13px;font-weight:700;letter-spacing:2px;padding-right:16px;")
                              .arg(ui::colors::AMBER()));
     hl->addWidget(title);
@@ -112,7 +112,7 @@ void AgentConfigScreen::build_status_bar(QVBoxLayout* root) {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(12, 0, 12, 0);
 
-    status_label_ = new QLabel("READY");
+    status_label_ = new QLabel(tr("READY"));
     status_label_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::TEXT_TERTIARY()));
     hl->addWidget(status_label_);
     hl->addStretch();

@@ -669,9 +669,9 @@ QWidget* DataMappingScreen::create_header() {
 
     auto* title_col = new QVBoxLayout;
     title_col->setSpacing(0);
-    auto* title = new QLabel("DATA MAPPING ENGINE");
+    auto* title = new QLabel(tr("DATA MAPPING ENGINE"));
     title->setObjectName("dmHeaderTitle");
-    auto* sub = new QLabel("API CONFIGURATION & SCHEMA TRANSFORMATION");
+    auto* sub = new QLabel(tr("API CONFIGURATION & SCHEMA TRANSFORMATION"));
     sub->setObjectName("dmHeaderSub");
     title_col->addWidget(title);
     title_col->addWidget(sub);
@@ -692,7 +692,7 @@ QWidget* DataMappingScreen::create_header() {
 
     hl->addStretch(1);
 
-    auto* badge = new QLabel("7 SCHEMAS");
+    auto* badge = new QLabel(tr("7 SCHEMAS"));
     badge->setObjectName("dmHeaderBadge");
     hl->addWidget(badge);
 
@@ -788,7 +788,7 @@ QWidget* DataMappingScreen::create_left_panel() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    auto* title = new QLabel("WIZARD STEPS");
+    auto* title = new QLabel(tr("WIZARD STEPS"));
     title->setObjectName("dmPanelTitle");
     vl->addWidget(title);
 
@@ -817,19 +817,19 @@ QWidget* DataMappingScreen::create_left_panel() {
     sl->setContentsMargins(10, 8, 10, 8);
     sl->setSpacing(4);
 
-    auto* stat_title = new QLabel("QUICK STATS");
+    auto* stat_title = new QLabel(tr("QUICK STATS"));
     stat_title->setObjectName("dmLabel");
     sl->addWidget(stat_title);
 
-    status_mappings_ = new QLabel("Saved: 0");
+    status_mappings_ = new QLabel(tr("Saved: 0"));
     status_mappings_->setObjectName("dmInfoValue");
     sl->addWidget(status_mappings_);
 
-    auto* schemas_lbl = new QLabel("Schemas: 7");
+    auto* schemas_lbl = new QLabel(tr("Schemas: 7"));
     schemas_lbl->setObjectName("dmInfoLabel");
     sl->addWidget(schemas_lbl);
 
-    auto* parsers_lbl = new QLabel("Parsers: 6");
+    auto* parsers_lbl = new QLabel(tr("Parsers: 6"));
     parsers_lbl->setObjectName("dmInfoLabel");
     sl->addWidget(parsers_lbl);
 
@@ -844,7 +844,7 @@ QWidget* DataMappingScreen::create_right_panel() {
     vl->setContentsMargins(0, 0, 0, 0);
     vl->setSpacing(0);
 
-    auto* title = new QLabel("SYSTEM");
+    auto* title = new QLabel(tr("SYSTEM"));
     title->setObjectName("dmPanelTitle");
     vl->addWidget(title);
 
@@ -854,18 +854,18 @@ QWidget* DataMappingScreen::create_right_panel() {
     il->setSpacing(6);
 
     // Engine status
-    auto* eng_title = new QLabel("MAPPING ENGINE");
+    auto* eng_title = new QLabel(tr("MAPPING ENGINE"));
     eng_title->setObjectName("dmLabel");
     il->addWidget(eng_title);
 
-    right_engine_status_ = new QLabel("ONLINE");
+    right_engine_status_ = new QLabel(tr("ONLINE"));
     right_engine_status_->setObjectName("dmSuccessBadge");
     il->addWidget(right_engine_status_);
 
     il->addSpacing(8);
 
     // Parser list
-    auto* par_title = new QLabel("PARSER ENGINES");
+    auto* par_title = new QLabel(tr("PARSER ENGINES"));
     par_title->setObjectName("dmLabel");
     il->addWidget(par_title);
 
@@ -879,29 +879,29 @@ QWidget* DataMappingScreen::create_right_panel() {
     il->addSpacing(8);
 
     // Security
-    auto* sec_title = new QLabel("SECURITY");
+    auto* sec_title = new QLabel(tr("SECURITY"));
     sec_title->setObjectName("dmLabel");
     il->addWidget(sec_title);
-    auto* sec_val = new QLabel("AES-256-GCM");
+    auto* sec_val = new QLabel(tr("AES-256-GCM"));
     sec_val->setObjectName("dmInfoValue");
     il->addWidget(sec_val);
 
     il->addSpacing(8);
 
     // Current info
-    auto* cur_title = new QLabel("CURRENT MAPPING");
+    auto* cur_title = new QLabel(tr("CURRENT MAPPING"));
     cur_title->setObjectName("dmLabel");
     il->addWidget(cur_title);
 
-    right_schema_info_ = new QLabel("Schema: --");
+    right_schema_info_ = new QLabel(tr("Schema: --"));
     right_schema_info_->setObjectName("dmInfoLabel");
     il->addWidget(right_schema_info_);
 
-    right_fields_info_ = new QLabel("Fields: --");
+    right_fields_info_ = new QLabel(tr("Fields: --"));
     right_fields_info_->setObjectName("dmInfoLabel");
     il->addWidget(right_fields_info_);
 
-    right_test_info_ = new QLabel("Test: --");
+    right_test_info_ = new QLabel(tr("Test: --"));
     right_test_info_->setObjectName("dmInfoLabel");
     il->addWidget(right_test_info_);
 
@@ -927,7 +927,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel("1");
     icon->setObjectName("dmPanelHeaderIcon");
-    auto* t = new QLabel("API CONFIGURATION");
+    auto* t = new QLabel(tr("API CONFIGURATION"));
     t->setObjectName("dmPanelHeaderTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -947,7 +947,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
     api_base_url_ = new QLineEdit;
     api_base_url_->setPlaceholderText("https://api.example.com");
     api_endpoint_ = new QLineEdit;
-    api_endpoint_->setPlaceholderText("/v2/historical-candle/{symbol}/{interval}");
+    api_endpoint_->setPlaceholderText(tr("/v2/historical-candle/{symbol}/{interval}"));
     bl->addWidget(
         create_form_two_col(create_form_row("BASE URL", api_base_url_), create_form_row("ENDPOINT", api_endpoint_)));
 
@@ -964,7 +964,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
     bl->addWidget(create_form_row("AUTH VALUE", api_auth_value_));
 
     api_headers_ = new QPlainTextEdit;
-    api_headers_->setPlaceholderText("Content-Type: application/json\nAccept: application/json");
+    api_headers_->setPlaceholderText(tr("Content-Type: application/json\nAccept: application/json"));
     api_headers_->setMaximumHeight(60);
     bl->addWidget(create_form_row("HEADERS (one per line)", api_headers_));
 
@@ -984,7 +984,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
     auto* trl = new QHBoxLayout(test_row);
     trl->setContentsMargins(0, 0, 0, 0);
     trl->setSpacing(8);
-    api_test_btn_ = new QPushButton("TEST API REQUEST");
+    api_test_btn_ = new QPushButton(tr("TEST API REQUEST"));
     api_test_btn_->setObjectName("dmCalcBtn");
     api_test_btn_->setCursor(Qt::PointingHandCursor);
     connect(api_test_btn_, &QPushButton::clicked, this, &DataMappingScreen::on_test_api);
@@ -1013,7 +1013,7 @@ QWidget* DataMappingScreen::create_schema_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel("2");
     icon->setObjectName("dmPanelHeaderIcon");
-    auto* t = new QLabel("SCHEMA SELECTION");
+    auto* t = new QLabel(tr("SCHEMA SELECTION"));
     t->setObjectName("dmPanelHeaderTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -1047,9 +1047,9 @@ QWidget* DataMappingScreen::create_schema_panel() {
                 schema_fields_table_->setItem(i, 3, new QTableWidgetItem(fields[i].description));
             }
             if (right_schema_info_)
-                right_schema_info_->setText("Schema: " + g_schemas[idx].name);
+                right_schema_info_->setText(tr("Schema: ") + g_schemas[idx].name);
             if (right_fields_info_)
-                right_fields_info_->setText("Fields: " + QString::number(fields.size()));
+                right_fields_info_->setText(tr("Fields: ") + QString::number(fields.size()));
         }
     });
     bl->addWidget(create_form_row("SELECT SCHEMA", schema_select_));
@@ -1094,7 +1094,7 @@ QWidget* DataMappingScreen::create_field_mapping_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel("3");
     icon->setObjectName("dmPanelHeaderIcon");
-    auto* t = new QLabel("FIELD MAPPING");
+    auto* t = new QLabel(tr("FIELD MAPPING"));
     t->setObjectName("dmPanelHeaderTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -1104,7 +1104,7 @@ QWidget* DataMappingScreen::create_field_mapping_panel() {
     // Parser engine selector
     parser_engine_ = new QComboBox;
     parser_engine_->addItems({"JSONPath", "JSONata", "JMESPath", "Direct", "JavaScript", "Regex"});
-    hl->addWidget(new QLabel("Parser:"));
+    hl->addWidget(new QLabel(tr("Parser:")));
     hl->addWidget(parser_engine_);
     vl->addWidget(hdr);
 
@@ -1150,7 +1150,7 @@ QWidget* DataMappingScreen::create_cache_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel("4");
     icon->setObjectName("dmPanelHeaderIcon");
-    auto* t = new QLabel("CACHE & SECURITY SETTINGS");
+    auto* t = new QLabel(tr("CACHE & SECURITY SETTINGS"));
     t->setObjectName("dmPanelHeaderTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -1179,7 +1179,7 @@ QWidget* DataMappingScreen::create_cache_panel() {
         QString("background: rgba(22,163,74,0.05); border: 1px solid %1; padding: 8px;").arg(colors::BORDER_DIM()));
     auto* sbl = new QVBoxLayout(sec_box);
     sbl->setSpacing(4);
-    auto* sec_title = new QLabel("ENCRYPTION");
+    auto* sec_title = new QLabel(tr("ENCRYPTION"));
     sec_title->setObjectName("dmLabel");
     sbl->addWidget(sec_title);
     auto* sec_detail = new QLabel("API credentials are encrypted with AES-256-GCM before storage.\n"
@@ -1208,7 +1208,7 @@ QWidget* DataMappingScreen::create_test_save_panel() {
     hl->setContentsMargins(12, 0, 12, 0);
     auto* icon = new QLabel("5");
     icon->setObjectName("dmPanelHeaderIcon");
-    auto* t = new QLabel("TEST & SAVE");
+    auto* t = new QLabel(tr("TEST & SAVE"));
     t->setObjectName("dmPanelHeaderTitle");
     hl->addWidget(icon);
     hl->addSpacing(8);
@@ -1227,12 +1227,12 @@ QWidget* DataMappingScreen::create_test_save_panel() {
     trl->setContentsMargins(0, 0, 0, 0);
     trl->setSpacing(8);
 
-    test_btn_ = new QPushButton("RUN TEST");
+    test_btn_ = new QPushButton(tr("RUN TEST"));
     test_btn_->setObjectName("dmCalcBtn");
     test_btn_->setCursor(Qt::PointingHandCursor);
     connect(test_btn_, &QPushButton::clicked, this, &DataMappingScreen::on_test_mapping);
 
-    test_status_ = new QLabel("Not yet tested");
+    test_status_ = new QLabel(tr("Not yet tested"));
     test_status_->setObjectName("dmInfoLabel");
 
     trl->addWidget(test_btn_);
@@ -1249,7 +1249,7 @@ QWidget* DataMappingScreen::create_test_save_panel() {
     bl->addWidget(test_output_);
 
     // Save button
-    save_btn_ = new QPushButton("SAVE MAPPING CONFIGURATION");
+    save_btn_ = new QPushButton(tr("SAVE MAPPING CONFIGURATION"));
     save_btn_->setObjectName("dmSaveBtn");
     save_btn_->setCursor(Qt::PointingHandCursor);
     save_btn_->setFixedHeight(36);
@@ -1276,12 +1276,12 @@ QWidget* DataMappingScreen::create_list_view() {
     auto* toolbar = new QWidget(this);
     auto* tbl = new QHBoxLayout(toolbar);
     tbl->setContentsMargins(0, 0, 0, 0);
-    auto* list_title = new QLabel("SAVED MAPPINGS");
+    auto* list_title = new QLabel(tr("SAVED MAPPINGS"));
     list_title->setObjectName("dmPanelHeaderTitle");
     tbl->addWidget(list_title);
     tbl->addStretch(1);
 
-    auto* run_btn = new QPushButton("▶ RUN");
+    auto* run_btn = new QPushButton(tr("▶ RUN"));
     run_btn->setObjectName("dmCalcBtn");
     run_btn->setCursor(Qt::PointingHandCursor);
     connect(run_btn, &QPushButton::clicked, this, &DataMappingScreen::on_run_mapping);
@@ -1293,7 +1293,7 @@ QWidget* DataMappingScreen::create_list_view() {
     connect(del_btn, &QPushButton::clicked, this, &DataMappingScreen::on_delete_mapping);
     tbl->addWidget(del_btn);
 
-    auto* new_btn = new QPushButton("+ NEW MAPPING");
+    auto* new_btn = new QPushButton(tr("+ NEW MAPPING"));
     new_btn->setObjectName("dmCalcBtn");
     new_btn->setCursor(Qt::PointingHandCursor);
     connect(new_btn, &QPushButton::clicked, this, &DataMappingScreen::on_new_mapping);
@@ -1305,7 +1305,7 @@ QWidget* DataMappingScreen::create_list_view() {
     vl->addWidget(mapping_list_, 1);
 
     // Empty state
-    auto* empty = new QLabel("No mappings saved yet.\nClick CREATE to build your first data mapping.");
+    auto* empty = new QLabel(tr("No mappings saved yet.\nClick CREATE to build your first data mapping."));
     empty->setObjectName("dmEmptyState");
     empty->setAlignment(Qt::AlignCenter);
     empty->setWordWrap(true);
@@ -1339,14 +1339,14 @@ QWidget* DataMappingScreen::create_template_view() {
     dvl->setContentsMargins(16, 16, 16, 16);
     dvl->setSpacing(8);
 
-    template_detail_ = new QLabel("Select a template to view details");
+    template_detail_ = new QLabel(tr("Select a template to view details"));
     template_detail_->setObjectName("dmInfoLabel");
     template_detail_->setWordWrap(true);
     template_detail_->setAlignment(Qt::AlignTop);
     dvl->addWidget(template_detail_);
     dvl->addStretch(1);
 
-    auto* use_btn = new QPushButton("USE THIS TEMPLATE");
+    auto* use_btn = new QPushButton(tr("USE THIS TEMPLATE"));
     use_btn->setObjectName("dmCalcBtn");
     use_btn->setCursor(Qt::PointingHandCursor);
     connect(use_btn, &QPushButton::clicked, this, [this]() {
@@ -1394,7 +1394,7 @@ QWidget* DataMappingScreen::create_template_view() {
     auto* toolbar = new QWidget(this);
     auto* tbl = new QHBoxLayout(toolbar);
     tbl->setContentsMargins(16, 8, 16, 8);
-    auto* tt = new QLabel("BROKER TEMPLATES");
+    auto* tt = new QLabel(tr("BROKER TEMPLATES"));
     tt->setObjectName("dmPanelHeaderTitle");
     tbl->addWidget(tt);
     tbl->addStretch(1);
@@ -1417,17 +1417,17 @@ QWidget* DataMappingScreen::create_nav_footer() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    prev_btn_ = new QPushButton("PREVIOUS");
+    prev_btn_ = new QPushButton(tr("PREVIOUS"));
     prev_btn_->setObjectName("dmSecondaryBtn");
     prev_btn_->setCursor(Qt::PointingHandCursor);
     prev_btn_->setEnabled(false);
     connect(prev_btn_, &QPushButton::clicked, this, &DataMappingScreen::on_prev_step);
 
-    step_label_ = new QLabel("Step 1 of 5 — API CONFIG");
+    step_label_ = new QLabel(tr("Step 1 of 5 — API CONFIG"));
     step_label_->setObjectName("dmStatusText");
     step_label_->setAlignment(Qt::AlignCenter);
 
-    next_btn_ = new QPushButton("NEXT");
+    next_btn_ = new QPushButton(tr("NEXT"));
     next_btn_->setObjectName("dmCalcBtn");
     next_btn_->setCursor(Qt::PointingHandCursor);
     connect(next_btn_, &QPushButton::clicked, this, &DataMappingScreen::on_next_step);
@@ -1449,12 +1449,12 @@ QWidget* DataMappingScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    auto* ver = new QLabel("DATA MAPPING v1.0");
+    auto* ver = new QLabel(tr("DATA MAPPING v1.0"));
     ver->setObjectName("dmStatusText");
     hl->addWidget(ver);
     hl->addStretch(1);
 
-    status_view_ = new QLabel("VIEW: MAPPINGS");
+    status_view_ = new QLabel(tr("VIEW: MAPPINGS"));
     status_view_->setObjectName("dmStatusText");
     hl->addWidget(status_view_);
 
@@ -1570,7 +1570,7 @@ void DataMappingScreen::on_view_changed(int view) {
     }
 
     const QStringList names = {"MAPPINGS", "TEMPLATES", "CREATE"};
-    status_view_->setText("VIEW: " + names[view]);
+    status_view_->setText(tr("VIEW: ") + names[view]);
 
     // Show/hide step bar and nav footer — CREATE is index 2
     nav_footer_->setVisible(view == 2); // only in create mode

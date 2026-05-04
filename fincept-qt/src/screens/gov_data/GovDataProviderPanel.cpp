@@ -150,7 +150,7 @@ void GovDataProviderPanel::build_ui() {
         auto* phl = new QHBoxLayout(portal_bar);
         phl->setContentsMargins(14, 0, 14, 0);
         phl->setSpacing(8);
-        auto* plbl = new QLabel("CKAN PORTAL:");
+        auto* plbl = new QLabel(tr("CKAN PORTAL:"));
         plbl->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700;"
                                     " letter-spacing:0.5px; background:transparent;").arg(text_sec));
         phl->addWidget(plbl);
@@ -283,7 +283,7 @@ QWidget* GovDataProviderPanel::build_toolbar() {
     hl->setSpacing(5);
 
     // Back button
-    back_btn_ = new QPushButton("← BACK");
+    back_btn_ = new QPushButton(tr("← BACK"));
     back_btn_->setObjectName("govBackBtn");
     back_btn_->setVisible(false);
     back_btn_->setCursor(Qt::PointingHandCursor);
@@ -301,7 +301,7 @@ QWidget* GovDataProviderPanel::build_toolbar() {
     connect(orgs_btn_, &QPushButton::clicked, this, [this]() { on_view_changed(Orgs); });
     hl->addWidget(orgs_btn_);
 
-    datasets_btn_ = new QPushButton("DATASETS");
+    datasets_btn_ = new QPushButton(tr("DATASETS"));
     datasets_btn_->setObjectName("govTabBtn");
     datasets_btn_->setCheckable(true);
     datasets_btn_->setCursor(Qt::PointingHandCursor);
@@ -327,7 +327,7 @@ QWidget* GovDataProviderPanel::build_toolbar() {
     connect(search_input_, &QLineEdit::returnPressed, this, &GovDataProviderPanel::on_search);
     hl->addWidget(search_input_);
 
-    fetch_btn_ = new QPushButton("FETCH");
+    fetch_btn_ = new QPushButton(tr("FETCH"));
     fetch_btn_->setObjectName("govFetchBtn");
     fetch_btn_->setCursor(Qt::PointingHandCursor);
     connect(fetch_btn_, &QPushButton::clicked, this, [this]() {
@@ -531,7 +531,7 @@ void GovDataProviderPanel::populate_resources(const QJsonArray& json) {
             no_url->setTextAlignment(Qt::AlignCenter);
             resources_table_->setItem(i, 4, no_url);
         } else {
-            auto* open_btn = new QPushButton("↗ OPEN");
+            auto* open_btn = new QPushButton(tr("↗ OPEN"));
             open_btn->setCursor(Qt::PointingHandCursor);
             open_btn->setFlat(true);
             open_btn->setStyleSheet(
@@ -732,7 +732,7 @@ void GovDataProviderPanel::show_error(const QString& message) {
         loading_timer_->stop();
     status_label_->setStyleSheet(
         QString("color:%1; font-size:12px; background:transparent;").arg(colors::NEGATIVE()));
-    status_label_->setText("Error: " + message);
+    status_label_->setText(tr("Error: ") + message);
     content_stack_->setCurrentIndex(3);
 }
 

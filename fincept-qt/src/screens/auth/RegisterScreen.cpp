@@ -186,7 +186,7 @@ void RegisterScreen::build_form_page() {
     connect(back, &QPushButton::clicked, this, &RegisterScreen::navigate_login);
     hl->addWidget(back);
 
-    auto* title = new QLabel("建立帳戶");
+    auto* title = new QLabel(tr("建立帳戶"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -293,7 +293,7 @@ void RegisterScreen::build_form_page() {
 
     vl->addSpacing(2);
 
-    register_btn_ = new QPushButton("  建立帳戶  ");
+    register_btn_ = new QPushButton(tr("  建立帳戶  "));
     register_btn_->setFixedHeight(32);
     register_btn_->setStyleSheet(btn_primary());
     connect(register_btn_, &QPushButton::clicked, this, &RegisterScreen::on_register);
@@ -308,11 +308,11 @@ void RegisterScreen::build_form_page() {
     lrl->setAlignment(Qt::AlignCenter);
     lrl->setContentsMargins(0, 0, 0, 0);
 
-    auto* have = new QLabel("已有帳戶？");
+    auto* have = new QLabel(tr("已有帳戶？"));
     have->setStyleSheet(muted_style());
     lrl->addWidget(have);
 
-    auto* signin = new QPushButton("登入");
+    auto* signin = new QPushButton(tr("登入"));
     signin->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none;"
                                   "  font-size: 12px; font-weight: 700;"
                                   "  font-family: 'Consolas','Courier New',monospace; }"
@@ -342,7 +342,7 @@ void RegisterScreen::build_otp_page() {
     auto* hl = new QHBoxLayout(header);
     hl->setContentsMargins(14, 0, 14, 0);
 
-    auto* title = new QLabel("驗證電子郵件");
+    auto* title = new QLabel(tr("驗證電子郵件"));
     title->setStyleSheet(QString("color: %1; font-size: 14px; font-weight: 700;"
                                  "background: transparent; letter-spacing: 1px;"
                                  "font-family: 'Consolas','Courier New',monospace;")
@@ -358,7 +358,7 @@ void RegisterScreen::build_otp_page() {
 
     vl->addWidget(make_separator());
 
-    auto* lbl = new QLabel("驗證碼");
+    auto* lbl = new QLabel(tr("驗證碼"));
     lbl->setStyleSheet(label_style());
     vl->addWidget(lbl);
 
@@ -387,18 +387,18 @@ void RegisterScreen::build_otp_page() {
     otp_error_->hide();
     vl->addWidget(otp_error_);
 
-    verify_btn_ = new QPushButton("  驗證  ");
+    verify_btn_ = new QPushButton(tr("  驗證  "));
     verify_btn_->setFixedHeight(32);
     verify_btn_->setStyleSheet(btn_primary());
     connect(verify_btn_, &QPushButton::clicked, this, &RegisterScreen::on_verify_otp);
     vl->addWidget(verify_btn_);
 
-    auto* resend = new QPushButton("未收到？重新發送");
+    auto* resend = new QPushButton(tr("未收到？重新發送"));
     resend->setStyleSheet(link_style());
     connect(resend, &QPushButton::clicked, this, &RegisterScreen::on_resend_otp);
     vl->addWidget(resend, 0, Qt::AlignCenter);
 
-    auto* back2 = new QPushButton("返回表單");
+    auto* back2 = new QPushButton(tr("返回表單"));
     back2->setStyleSheet(link_style());
     connect(back2, &QPushButton::clicked, this, [this]() { pages_->setCurrentIndex(0); });
     vl->addWidget(back2, 0, Qt::AlignCenter);

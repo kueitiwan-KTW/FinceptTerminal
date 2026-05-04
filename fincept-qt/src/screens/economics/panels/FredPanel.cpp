@@ -31,7 +31,7 @@ void FredPanel::activate() {
 }
 
 void FredPanel::build_controls(QHBoxLayout* thl) {
-    auto* lbl1 = new QLabel("PRESET");
+    auto* lbl1 = new QLabel(tr("PRESET"));
     lbl1->setStyleSheet(ctrl_label_style());
 
     preset_combo_ = new QComboBox;
@@ -45,7 +45,7 @@ void FredPanel::build_controls(QHBoxLayout* thl) {
             series_input_->setText(code);
     });
 
-    auto* lbl2 = new QLabel("SERIES ID");
+    auto* lbl2 = new QLabel(tr("SERIES ID"));
     lbl2->setStyleSheet(ctrl_label_style());
 
     series_input_ = new QLineEdit;

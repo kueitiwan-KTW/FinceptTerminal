@@ -43,7 +43,7 @@ void EquityPeersTab::build_ui() {
     hl->setContentsMargins(12, 8, 12, 8);
     hl->setSpacing(10);
 
-    auto* lbl = new QLabel("PEERS (comma-separated):");
+    auto* lbl = new QLabel(tr("PEERS (comma-separated):"));
     lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; letter-spacing:1px; "
                                "background:transparent; border:0;")
                            .arg(ui::colors::TEXT_SECONDARY()));
@@ -57,7 +57,7 @@ void EquityPeersTab::build_ui() {
             .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM(), ui::colors::AMBER()));
     hl->addWidget(peers_edit_, 1);
 
-    auto* load_btn = new QPushButton("LOAD");
+    auto* load_btn = new QPushButton(tr("LOAD"));
     load_btn->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:0; border-radius:3px; "
                                     "padding:5px 18px; font-size:10px; font-weight:700; }"
                                     "QPushButton:hover { background:#b45309; }")
@@ -67,7 +67,7 @@ void EquityPeersTab::build_ui() {
     vl->addWidget(ctrl);
 
     // ── Status ────────────────────────────────────────────────────────────────
-    status_label_ = new QLabel("Loading peer data…");
+    status_label_ = new QLabel(tr("Loading peer data…"));
     status_label_->setStyleSheet(
         QString("color:%1; font-size:11px; padding:4px; background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
     status_label_->hide();

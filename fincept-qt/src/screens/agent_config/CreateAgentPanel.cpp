@@ -111,7 +111,7 @@ QWidget* CreateAgentPanel::build_saved_panel() {
         QString("background:%1;border-bottom:1px solid %2;").arg(ui::colors::BG_RAISED(), ui::colors::BORDER_DIM()));
     auto* hl = new QHBoxLayout(hdr);
     hl->setContentsMargins(10, 0, 10, 0);
-    auto* t = new QLabel("SAVED AGENTS");
+    auto* t = new QLabel(tr("SAVED AGENTS"));
     t->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;").arg(ui::colors::AMBER()));
     hl->addWidget(t);
     hl->addStretch();
@@ -359,7 +359,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
         auto* mr1 = new QHBoxLayout;
         mr1->addWidget(field_lbl("DB Path"));
         memory_db_path_edit_ = new QLineEdit;
-        memory_db_path_edit_->setPlaceholderText("agent_memory.db");
+        memory_db_path_edit_->setPlaceholderText(tr("agent_memory.db"));
         memory_db_path_edit_->setStyleSheet(input_style());
         mr1->addWidget(memory_db_path_edit_, 1);
         mr1->addWidget(field_lbl("Table"));
@@ -434,7 +434,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
     auto* act = new QHBoxLayout;
     act->setSpacing(6);
 
-    save_btn_ = new QPushButton("SAVE AGENT");
+    save_btn_ = new QPushButton(tr("SAVE AGENT"));
     save_btn_->setCursor(Qt::PointingHandCursor);
     save_btn_->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:none;padding:8px 20px;"
                                      "font-size:11px;font-weight:700;letter-spacing:1px;}"
@@ -442,7 +442,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
                                  .arg(ui::colors::AMBER(), ui::colors::BG_BASE(), ui::colors::ORANGE()));
     act->addWidget(save_btn_);
 
-    auto* clr_btn = new QPushButton("CLEAR");
+    auto* clr_btn = new QPushButton(tr("CLEAR"));
     clr_btn->setCursor(Qt::PointingHandCursor);
     clr_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
                                    "padding:8px 14px;font-size:10px;font-weight:600;}"
@@ -482,7 +482,7 @@ QWidget* CreateAgentPanel::build_test_panel() {
         QString("background:%1;border-bottom:1px solid %2;").arg(ui::colors::BG_RAISED(), ui::colors::BORDER_DIM()));
     auto* hl = new QHBoxLayout(hdr);
     hl->setContentsMargins(10, 0, 10, 0);
-    auto* t = new QLabel("LIVE TEST");
+    auto* t = new QLabel(tr("LIVE TEST"));
     t->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;").arg(ui::colors::CYAN()));
     hl->addWidget(t);
     vl->addWidget(hdr);
@@ -493,7 +493,7 @@ QWidget* CreateAgentPanel::build_test_panel() {
     bl->setContentsMargins(10, 10, 10, 10);
     bl->setSpacing(6);
 
-    auto* qlbl = new QLabel("QUERY");
+    auto* qlbl = new QLabel(tr("QUERY"));
     qlbl->setStyleSheet(
         QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;").arg(ui::colors::TEXT_SECONDARY()));
     bl->addWidget(qlbl);
@@ -506,7 +506,7 @@ QWidget* CreateAgentPanel::build_test_panel() {
             .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED()));
     bl->addWidget(test_query_edit_);
 
-    test_btn_ = new QPushButton("RUN TEST");
+    test_btn_ = new QPushButton(tr("RUN TEST"));
     test_btn_->setCursor(Qt::PointingHandCursor);
     test_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %1;"
                                      "padding:7px;font-size:10px;font-weight:700;letter-spacing:1px;}"
@@ -520,7 +520,7 @@ QWidget* CreateAgentPanel::build_test_panel() {
     test_status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::TEXT_TERTIARY()));
     bl->addWidget(test_status_lbl_);
 
-    auto* rlbl = new QLabel("OUTPUT");
+    auto* rlbl = new QLabel(tr("OUTPUT"));
     rlbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;letter-spacing:1px;padding-top:4px;")
                             .arg(ui::colors::TEXT_SECONDARY()));
     bl->addWidget(rlbl);
@@ -597,7 +597,7 @@ void CreateAgentPanel::setup_connections() {
                 QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
         } else {
             test_result_->setPlainText("Error: " + r.error);
-            test_status_lbl_->setText("Failed");
+            test_status_lbl_->setText(tr("Failed"));
             test_status_lbl_->setStyleSheet(
                 QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
         }
@@ -615,7 +615,7 @@ void CreateAgentPanel::setup_connections() {
                 QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
         } else {
             test_result_->setPlainText("Error: " + r.error);
-            test_status_lbl_->setText("Failed");
+            test_status_lbl_->setText(tr("Failed"));
             test_status_lbl_->setStyleSheet(
                 QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
         }
@@ -655,7 +655,7 @@ void CreateAgentPanel::load_profile_combo() {
     const QString prev_id = llm_profile_combo_->currentData().toString();
     llm_profile_combo_->blockSignals(true);
     llm_profile_combo_->clear();
-    llm_profile_combo_->addItem("Default (Global)", QString{});
+    llm_profile_combo_->addItem(tr("Default (Global)"), QString{});
 
     const auto pr = LlmProfileRepository::instance().list_profiles();
     const auto profiles = pr.is_ok() ? pr.value() : QVector<LlmProfile>{};

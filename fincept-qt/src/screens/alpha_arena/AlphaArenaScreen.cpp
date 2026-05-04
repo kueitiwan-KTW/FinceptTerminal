@@ -212,18 +212,18 @@ QWidget* AlphaArenaScreen::create_header() {
     hl->setContentsMargins(16, 0, 16, 0);
     hl->setSpacing(10);
 
-    auto* title = new QLabel("ALPHA ARENA");
+    auto* title = new QLabel(tr("ALPHA ARENA"));
     title->setObjectName("aaHeaderTitle");
     hl->addWidget(title);
 
-    status_badge_ = new QLabel("READY");
+    status_badge_ = new QLabel(tr("READY"));
     status_badge_->setObjectName("aaStatusBadge");
     status_badge_->setStyleSheet(QString("color: %1; background: rgba(217,119,6,0.15); "
                                          "font-size: 8px; font-weight: 700; padding: 2px 6px;")
                                      .arg(colors::AMBER()));
     hl->addWidget(status_badge_);
 
-    cycle_label_ = new QLabel("CYCLE 0");
+    cycle_label_ = new QLabel(tr("CYCLE 0"));
     cycle_label_->setObjectName("aaCycleLabel");
     hl->addWidget(cycle_label_);
 
@@ -234,13 +234,13 @@ QWidget* AlphaArenaScreen::create_header() {
 
     hl->addStretch(1);
 
-    auto* past_btn = new QPushButton("HISTORY");
+    auto* past_btn = new QPushButton(tr("HISTORY"));
     past_btn->setObjectName("aaResetBtn");
     past_btn->setCursor(Qt::PointingHandCursor);
     connect(past_btn, &QPushButton::clicked, this, &AlphaArenaScreen::on_past_competitions_toggle);
     hl->addWidget(past_btn);
 
-    auto* refresh_btn = new QPushButton("REFRESH");
+    auto* refresh_btn = new QPushButton(tr("REFRESH"));
     refresh_btn->setObjectName("aaResetBtn");
     refresh_btn->setCursor(Qt::PointingHandCursor);
     connect(refresh_btn, &QPushButton::clicked, this, &AlphaArenaScreen::on_refresh_leaderboard);
@@ -280,7 +280,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     r1->setSpacing(8);
 
     auto* name_col = new QVBoxLayout;
-    auto* name_lbl = new QLabel("COMPETITION NAME");
+    auto* name_lbl = new QLabel(tr("COMPETITION NAME"));
     name_lbl->setObjectName("aaLabel");
     comp_name_ = new QLineEdit("Alpha Arena Competition");
     name_col->addWidget(name_lbl);
@@ -288,7 +288,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     r1->addLayout(name_col, 2);
 
     auto* type_col = new QVBoxLayout;
-    auto* type_lbl = new QLabel("TYPE");
+    auto* type_lbl = new QLabel(tr("TYPE"));
     type_lbl->setObjectName("aaLabel");
     comp_type_ = new QComboBox;
     comp_type_->addItems({"Crypto Trading", "Prediction Markets"});
@@ -305,7 +305,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     r2->setSpacing(8);
 
     auto* sym_col = new QVBoxLayout;
-    auto* sym_lbl = new QLabel("SYMBOL");
+    auto* sym_lbl = new QLabel(tr("SYMBOL"));
     sym_lbl->setObjectName("aaLabel");
     comp_symbol_ = new QComboBox;
     comp_symbol_->addItems(CRYPTO_SYMBOLS);
@@ -314,7 +314,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     r2->addLayout(sym_col, 1);
 
     auto* mode_col = new QVBoxLayout;
-    auto* mode_lbl = new QLabel("MODE");
+    auto* mode_lbl = new QLabel(tr("MODE"));
     mode_lbl->setObjectName("aaLabel");
     comp_mode_ = new QComboBox;
     comp_mode_->addItems(COMP_MODES);
@@ -323,7 +323,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     r2->addLayout(mode_col, 1);
 
     auto* cap_col = new QVBoxLayout;
-    auto* cap_lbl = new QLabel("INITIAL CAPITAL ($)");
+    auto* cap_lbl = new QLabel(tr("INITIAL CAPITAL ($)"));
     cap_lbl->setObjectName("aaLabel");
     comp_capital_ = new QDoubleSpinBox;
     comp_capital_->setRange(100, 10000000);
@@ -336,7 +336,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     r2->addLayout(cap_col, 1);
 
     auto* int_col = new QVBoxLayout;
-    auto* int_lbl = new QLabel("INTERVAL (sec)");
+    auto* int_lbl = new QLabel(tr("INTERVAL (sec)"));
     int_lbl->setObjectName("aaLabel");
     comp_interval_ = new QSpinBox;
     comp_interval_->setRange(10, 600);
@@ -350,7 +350,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     bl->addLayout(r2);
 
     // AI Models
-    auto* models_lbl = new QLabel("AI MODELS (select 2+)");
+    auto* models_lbl = new QLabel(tr("AI MODELS (select 2+)"));
     models_lbl->setObjectName("aaLabel");
     bl->addWidget(models_lbl);
 
@@ -381,14 +381,14 @@ QWidget* AlphaArenaScreen::create_controls_bar() {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
 
-    run_btn_ = new QPushButton("RUN CYCLE");
+    run_btn_ = new QPushButton(tr("RUN CYCLE"));
     run_btn_->setObjectName("aaRunBtn");
     run_btn_->setCursor(Qt::PointingHandCursor);
     run_btn_->setEnabled(false);
     connect(run_btn_, &QPushButton::clicked, this, &AlphaArenaScreen::on_run_cycle);
     hl->addWidget(run_btn_);
 
-    auto_btn_ = new QPushButton("AUTO RUN");
+    auto_btn_ = new QPushButton(tr("AUTO RUN"));
     auto_btn_->setObjectName("aaAutoBtn");
     auto_btn_->setCursor(Qt::PointingHandCursor);
     auto_btn_->setEnabled(false);
@@ -396,7 +396,7 @@ QWidget* AlphaArenaScreen::create_controls_bar() {
     connect(auto_btn_, &QPushButton::clicked, this, &AlphaArenaScreen::on_toggle_auto_run);
     hl->addWidget(auto_btn_);
 
-    reset_btn_ = new QPushButton("RESET");
+    reset_btn_ = new QPushButton(tr("RESET"));
     reset_btn_->setObjectName("aaResetBtn");
     reset_btn_->setCursor(Qt::PointingHandCursor);
     connect(reset_btn_, &QPushButton::clicked, this, &AlphaArenaScreen::on_reset);
@@ -404,7 +404,7 @@ QWidget* AlphaArenaScreen::create_controls_bar() {
 
     hl->addStretch(1);
 
-    interval_label_ = new QLabel("INTERVAL: 150s");
+    interval_label_ = new QLabel(tr("INTERVAL: 150s"));
     interval_label_->setObjectName("aaIntervalLabel");
     hl->addWidget(interval_label_);
 
@@ -441,11 +441,11 @@ QWidget* AlphaArenaScreen::create_leaderboard_panel() {
     hdr->setFixedHeight(34);
     auto* hhl = new QHBoxLayout(hdr);
     hhl->setContentsMargins(12, 0, 12, 0);
-    auto* ht = new QLabel("LEADERBOARD");
+    auto* ht = new QLabel(tr("LEADERBOARD"));
     ht->setObjectName("aaLeaderboardTitle");
     hhl->addWidget(ht);
     hhl->addStretch(1);
-    leaderboard_cycle_ = new QLabel("Cycle 0");
+    leaderboard_cycle_ = new QLabel(tr("Cycle 0"));
     leaderboard_cycle_->setObjectName("aaStatusText");
     hhl->addWidget(leaderboard_cycle_);
     vl->addWidget(hdr);
@@ -561,7 +561,7 @@ QWidget* AlphaArenaScreen::create_past_competitions_panel() {
     hdr->setFixedHeight(30);
     auto* hhl = new QHBoxLayout(hdr);
     hhl->setContentsMargins(12, 0, 12, 0);
-    auto* ht = new QLabel("PAST COMPETITIONS");
+    auto* ht = new QLabel(tr("PAST COMPETITIONS"));
     ht->setObjectName("aaLeaderboardTitle");
     hhl->addWidget(ht);
     hhl->addStretch(1);
@@ -583,12 +583,12 @@ QWidget* AlphaArenaScreen::create_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
 
-    auto* left = new QLabel("ALPHA ARENA");
+    auto* left = new QLabel(tr("ALPHA ARENA"));
     left->setObjectName("aaStatusText");
     hl->addWidget(left);
     hl->addStretch(1);
 
-    status_comp_ = new QLabel("NO COMPETITION");
+    status_comp_ = new QLabel(tr("NO COMPETITION"));
     status_comp_->setObjectName("aaStatusText");
     hl->addWidget(status_comp_);
 
@@ -658,7 +658,7 @@ void AlphaArenaScreen::on_create_competition() {
             return;
         self->set_loading(false);
         if (!r.success) {
-            self->status_info_->setText("Error: " + r.error.left(60));
+            self->status_info_->setText(tr("Error: ") + r.error.left(60));
             return;
         }
         const QJsonObject obj = r.data;
@@ -672,9 +672,9 @@ void AlphaArenaScreen::on_create_competition() {
         self->status_badge_->setStyleSheet(
             QString("color: %1; background: rgba(22,163,74,0.15); font-size: 8px; font-weight: 700; padding: 2px 6px;")
                 .arg(colors::POSITIVE()));
-        self->status_comp_->setText("COMP: " + self->competition_id_.left(8) + "...");
+        self->status_comp_->setText(tr("COMP: ") + self->competition_id_.left(8) + "...");
         self->status_models_->setText(QString::number(self->model_list_->selectedItems().size()) + " models");
-        self->interval_label_->setText("INTERVAL: " + QString::number(self->comp_interval_->value()) + "s");
+        self->interval_label_->setText(tr("INTERVAL: ") + QString::number(self->comp_interval_->value()) + "s");
         LOG_INFO("AlphaArena", "Competition created: " + self->competition_id_);
     });
 }
@@ -715,7 +715,7 @@ void AlphaArenaScreen::on_reset() {
     is_auto_running_ = false;
     auto_timer_->stop();
 
-    status_badge_->setText("READY");
+    status_badge_->setText(tr("READY"));
     status_badge_->setStyleSheet(QString("color: %1; background: rgba(217,119,6,0.15); "
                                          "font-size: 8px; font-weight: 700; padding: 2px 6px;")
                                      .arg(colors::AMBER()));
@@ -786,7 +786,7 @@ void AlphaArenaScreen::on_past_competition_clicked(QListWidgetItem* item) {
 
     run_btn_->setEnabled(true);
     auto_btn_->setEnabled(true);
-    status_comp_->setText("COMP: " + id.left(8) + "...");
+    status_comp_->setText(tr("COMP: ") + id.left(8) + "...");
 
     on_refresh_leaderboard();
     LOG_INFO("AlphaArena", "Resumed competition: " + id);
@@ -808,7 +808,7 @@ void AlphaArenaScreen::run_python_action(const QString& action, const QJsonObjec
             self->set_loading(false);
 
             if (!r.success) {
-                self->status_info_->setText("Error: " + r.error.left(60));
+                self->status_info_->setText(tr("Error: ") + r.error.left(60));
                 return;
             }
 
@@ -821,7 +821,7 @@ void AlphaArenaScreen::run_python_action(const QString& action, const QJsonObjec
                 self->cycle_label_->setText(tr("CYCLE ") + QString::number(self->cycle_count_));
                 self->leaderboard_cycle_->setText(tr("Cycle ") + QString::number(self->cycle_count_));
 
-                self->status_badge_->setText("RUNNING");
+                self->status_badge_->setText(tr("RUNNING"));
                 self->status_badge_->setStyleSheet(QString("color: %1; background: rgba(22,163,74,0.15); "
                                                            "font-size: 8px; font-weight: 700; padding: 2px 6px;")
                                                        .arg(colors::POSITIVE()));

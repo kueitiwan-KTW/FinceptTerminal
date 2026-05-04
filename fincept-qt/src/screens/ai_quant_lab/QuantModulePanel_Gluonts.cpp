@@ -82,7 +82,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     pfl->setSpacing(8);
 
     auto* pf_vals = new QLineEdit(pf);
-    pf_vals->setPlaceholderText("Series values (>= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.");
+    pf_vals->setPlaceholderText(tr("Series values (>= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands."));
     pf_vals->setStyleSheet(input_ss());
     text_inputs_["gn_pf_values"] = pf_vals;
     pfl->addWidget(build_input_row("Series Values", pf_vals, pf));
@@ -143,15 +143,15 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     qfl->setSpacing(8);
 
     auto* qf_vals = new QLineEdit(qf);
-    qf_vals->setPlaceholderText("Series values (>= 30)");
+    qf_vals->setPlaceholderText(tr("Series values (>= 30)"));
     qf_vals->setStyleSheet(input_ss());
     text_inputs_["gn_qf_values"] = qf_vals;
     qfl->addWidget(build_input_row("Series Values", qf_vals, qf));
     qfl->addWidget(add_sample_btn(qf_vals, qf, 321, "200-pt synthetic series"));
 
     auto* qf_quantiles = new QLineEdit(qf);
-    qf_quantiles->setPlaceholderText("Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95");
-    qf_quantiles->setText("0.05, 0.25, 0.5, 0.75, 0.95");
+    qf_quantiles->setPlaceholderText(tr("Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95"));
+    qf_quantiles->setText(tr("0.05, 0.25, 0.5, 0.75, 0.95"));
     qf_quantiles->setStyleSheet(input_ss());
     text_inputs_["gn_qf_quantiles"] = qf_quantiles;
     qfl->addWidget(build_input_row("Quantile List", qf_quantiles, qf));
@@ -226,7 +226,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     dfl->setSpacing(8);
 
     auto* df_vals = new QLineEdit(df);
-    df_vals->setPlaceholderText("Numeric values (>= 30). Fits normal, student-t, lognormal (positive only), skewnormal.");
+    df_vals->setPlaceholderText(tr("Numeric values (>= 30). Fits normal, student-t, lognormal (positive only), skewnormal."));
     df_vals->setStyleSheet(input_ss());
     text_inputs_["gn_df_values"] = df_vals;
     dfl->addWidget(build_input_row("Values", df_vals, df));
@@ -267,33 +267,33 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     efl->setSpacing(8);
 
     auto* ef_actuals = new QLineEdit(ef);
-    ef_actuals->setPlaceholderText("Realized actuals (>= 5 values)");
+    ef_actuals->setPlaceholderText(tr("Realized actuals (>= 5 values)"));
     ef_actuals->setStyleSheet(input_ss());
     text_inputs_["gn_ef_actuals"] = ef_actuals;
     efl->addWidget(build_input_row("Actuals", ef_actuals, ef));
     efl->addWidget(add_sample_btn(ef_actuals, ef, 341, "100-pt synthetic actuals"));
 
     auto* ef_point = new QLineEdit(ef);
-    ef_point->setPlaceholderText("Point forecast (same length as actuals)");
+    ef_point->setPlaceholderText(tr("Point forecast (same length as actuals)"));
     ef_point->setStyleSheet(input_ss());
     text_inputs_["gn_ef_point"] = ef_point;
     efl->addWidget(build_input_row("Point Forecast", ef_point, ef));
     efl->addWidget(add_sample_btn(ef_point, ef, 342, "100-pt synthetic point forecast"));
 
     auto* ef_lower = new QLineEdit(ef);
-    ef_lower->setPlaceholderText("Lower band (optional, same length as actuals)");
+    ef_lower->setPlaceholderText(tr("Lower band (optional, same length as actuals)"));
     ef_lower->setStyleSheet(input_ss());
     text_inputs_["gn_ef_lower"] = ef_lower;
     efl->addWidget(build_input_row("Lower Band (optional)", ef_lower, ef));
 
     auto* ef_upper = new QLineEdit(ef);
-    ef_upper->setPlaceholderText("Upper band (optional, same length as actuals)");
+    ef_upper->setPlaceholderText(tr("Upper band (optional, same length as actuals)"));
     ef_upper->setStyleSheet(input_ss());
     text_inputs_["gn_ef_upper"] = ef_upper;
     efl->addWidget(build_input_row("Upper Band (optional)", ef_upper, ef));
 
     auto* ef_training = new QLineEdit(ef);
-    ef_training->setPlaceholderText("Training history (optional; enables MASE)");
+    ef_training->setPlaceholderText(tr("Training history (optional; enables MASE)"));
     ef_training->setStyleSheet(input_ss());
     text_inputs_["gn_ef_training"] = ef_training;
     efl->addWidget(build_input_row("Training History (optional)", ef_training, ef));
@@ -381,7 +381,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     snl->setSpacing(8);
 
     auto* sn_vals = new QLineEdit(sn);
-    sn_vals->setPlaceholderText("Series values (>= 1). Forecast = repeat last `season_length` observations.");
+    sn_vals->setPlaceholderText(tr("Series values (>= 1). Forecast = repeat last `season_length` observations."));
     sn_vals->setStyleSheet(input_ss());
     text_inputs_["gn_sn_values"] = sn_vals;
     snl->addWidget(build_input_row("Series Values", sn_vals, sn));
@@ -498,7 +498,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
                                         ui::colors::BORDER_DIM()));
             results_layout_->addWidget(lbl);
         }
-        status_label_->setText("GluonTS backend ready");
+        status_label_->setText(tr("GluonTS backend ready"));
         return;
     }
 
@@ -600,7 +600,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
         // Per-quantile summary cards (up to 4 at a time)
         const QJsonArray q_summary = d.value("quantile_summary").toArray();
         if (!q_summary.isEmpty()) {
-            auto* lbl = new QLabel("PER-QUANTILE SUMMARY");
+            auto* lbl = new QLabel(tr("PER-QUANTILE SUMMARY"));
             lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                    .arg(ui::colors::TEXT_TERTIARY()));
             results_layout_->addWidget(lbl);
@@ -640,7 +640,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
                 keys << it.key();
                 headers << it.key().toUpper();
             }
-            auto* lbl = new QLabel("FORECAST BY STEP");
+            auto* lbl = new QLabel(tr("FORECAST BY STEP"));
             lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:4px 0 0 2px;")
                                    .arg(ui::colors::TEXT_TERTIARY()));
             results_layout_->addWidget(lbl);

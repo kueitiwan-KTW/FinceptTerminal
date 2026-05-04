@@ -36,7 +36,7 @@ void PerformanceRiskView::build_ui() {
     auto* period_bar = new QHBoxLayout;
     period_bar->setContentsMargins(12, 6, 12, 6);
 
-    auto* chart_title = new QLabel("NAV PERFORMANCE (FROM SNAPSHOTS)");
+    auto* chart_title = new QLabel(tr("NAV PERFORMANCE (FROM SNAPSHOTS)"));
     chart_title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     period_bar->addWidget(chart_title);
@@ -80,7 +80,7 @@ void PerformanceRiskView::build_ui() {
     layout->addWidget(sep);
 
     // ── Risk metric cards ──────────────────────────────────────────────────────
-    auto* metrics_header = new QLabel("  RISK METRICS");
+    auto* metrics_header = new QLabel(tr("  RISK METRICS"));
     metrics_header->setFixedHeight(24);
     metrics_header->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700;"
                                           "letter-spacing:1px; background:%2;")

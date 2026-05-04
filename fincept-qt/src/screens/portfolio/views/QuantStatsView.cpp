@@ -101,7 +101,7 @@ void QuantStatsView::build_ui() {
     h_lay->setContentsMargins(12, 0, 12, 0);
     h_lay->setSpacing(8);
 
-    auto* title_lbl = new QLabel("QUANTSTATS ANALYSIS");
+    auto* title_lbl = new QLabel(tr("QUANTSTATS ANALYSIS"));
     title_lbl->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     h_lay->addWidget(title_lbl);
@@ -111,7 +111,7 @@ void QuantStatsView::build_ui() {
     qs_status_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::TEXT_TERTIARY()));
     h_lay->addWidget(qs_status_);
 
-    qs_run_btn_ = new QPushButton("\u25B6 RUN QUANTSTATS");
+    qs_run_btn_ = new QPushButton(tr("\u25B6 RUN QUANTSTATS"));
     qs_run_btn_->setFixedHeight(22);
     qs_run_btn_->setCursor(Qt::PointingHandCursor);
     qs_run_btn_->setStyleSheet(
@@ -144,7 +144,7 @@ void QuantStatsView::build_ui() {
         ml->setContentsMargins(12, 8, 12, 8);
         ml->setSpacing(4);
 
-        auto* section_lbl = new QLabel("KEY PERFORMANCE INDICATORS");
+        auto* section_lbl = new QLabel(tr("KEY PERFORMANCE INDICATORS"));
         section_lbl->setStyleSheet(
             QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
         ml->addWidget(section_lbl);
@@ -214,7 +214,7 @@ void QuantStatsView::build_ui() {
         mcl->setContentsMargins(16, 12, 16, 12);
         mcl->setSpacing(8);
 
-        auto* mc_title = new QLabel("MONTE CARLO SIMULATION");
+        auto* mc_title = new QLabel(tr("MONTE CARLO SIMULATION"));
         mc_title->setStyleSheet(
             QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
         mcl->addWidget(mc_title);
@@ -229,7 +229,7 @@ void QuantStatsView::build_ui() {
         auto* mc_btn_row = new QHBoxLayout;
         mc_btn_row->setSpacing(8);
 
-        mc_run_btn_ = new QPushButton("\u25B6 RUN MONTE CARLO (1000 paths)");
+        mc_run_btn_ = new QPushButton(tr("\u25B6 RUN MONTE CARLO (1000 paths)"));
         mc_run_btn_->setFixedHeight(28);
         mc_run_btn_->setCursor(Qt::PointingHandCursor);
         mc_run_btn_->setStyleSheet(
@@ -479,7 +479,7 @@ void QuantStatsView::update_returns() {
     cl->setContentsMargins(16, 12, 16, 12);
     cl->setSpacing(12);
 
-    auto* title = new QLabel("RETURN DISTRIBUTION");
+    auto* title = new QLabel(tr("RETURN DISTRIBUTION"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     cl->addWidget(title);
@@ -599,7 +599,7 @@ void QuantStatsView::update_drawdown() {
     cl->setContentsMargins(16, 12, 16, 12);
     cl->setSpacing(12);
 
-    auto* title = new QLabel("DRAWDOWN & RISK METRICS");
+    auto* title = new QLabel(tr("DRAWDOWN & RISK METRICS"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     cl->addWidget(title);
@@ -615,7 +615,7 @@ void QuantStatsView::update_drawdown() {
     hero_l->setContentsMargins(16, 12, 16, 12);
     hero_l->setSpacing(2);
 
-    auto* hero_label = new QLabel("MAX DRAWDOWN");
+    auto* hero_label = new QLabel(tr("MAX DRAWDOWN"));
     hero_label->setStyleSheet(
         QString("color:%1; font-size:9px; font-weight:700; letter-spacing:1px;").arg(ui::colors::TEXT_TERTIARY()));
     hero_l->addWidget(hero_label);
@@ -684,7 +684,7 @@ void QuantStatsView::update_rolling() {
     cl->setContentsMargins(16, 12, 16, 12);
     cl->setSpacing(12);
 
-    auto* title = new QLabel("RISK-ADJUSTED RATIOS & WIN/LOSS BREAKDOWN");
+    auto* title = new QLabel(tr("RISK-ADJUSTED RATIOS & WIN/LOSS BREAKDOWN"));
     title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     cl->addWidget(title);
@@ -725,7 +725,7 @@ void QuantStatsView::update_rolling() {
     cl->addWidget(ratios_table);
 
     // Win/Loss breakdown
-    auto* wl_title = new QLabel("WIN / LOSS BREAKDOWN");
+    auto* wl_title = new QLabel(tr("WIN / LOSS BREAKDOWN"));
     wl_title->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; letter-spacing:0.5px;"
                                     " margin-top:8px;")
                                 .arg(ui::colors::TEXT_SECONDARY()));
@@ -999,7 +999,7 @@ void QuantStatsView::run_quantstats() {
                     }
 
                     self->qs_data_ = r.data;
-                    self->qs_status_->setText("Complete");
+                    self->qs_status_->setText(tr("Complete"));
                     self->qs_status_->setStyleSheet(
                         QString("color:%1; font-size:9px;").arg(ui::colors::POSITIVE()));
                     self->update_metrics();

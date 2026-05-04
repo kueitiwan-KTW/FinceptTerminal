@@ -119,7 +119,7 @@ QWidget* GovDataCongressPanel::build_toolbar() {
     hl->setSpacing(5);
 
     // Back button
-    back_btn_ = new QPushButton("← BACK");
+    back_btn_ = new QPushButton(tr("← BACK"));
     back_btn_->setObjectName("govBackBtn");
     back_btn_->setVisible(false);
     back_btn_->setCursor(Qt::PointingHandCursor);
@@ -129,14 +129,14 @@ QWidget* GovDataCongressPanel::build_toolbar() {
     hl->addSpacing(4);
 
     // View tabs
-    bills_btn_ = new QPushButton("BILLS");
+    bills_btn_ = new QPushButton(tr("BILLS"));
     bills_btn_->setObjectName("govTabBtn");
     bills_btn_->setCheckable(true);
     bills_btn_->setChecked(true);
     bills_btn_->setCursor(Qt::PointingHandCursor);
     connect(bills_btn_, &QPushButton::clicked, this, [this]() { on_view_changed(Bills); });
 
-    summary_btn_ = new QPushButton("SUMMARY");
+    summary_btn_ = new QPushButton(tr("SUMMARY"));
     summary_btn_->setObjectName("govTabBtn");
     summary_btn_->setCheckable(true);
     summary_btn_->setCursor(Qt::PointingHandCursor);
@@ -149,7 +149,7 @@ QWidget* GovDataCongressPanel::build_toolbar() {
     // Congress number
     auto lbl_style =
         QString("color:%1; font-size:9px; font-weight:700; background:transparent;").arg(colors::TEXT_TERTIARY());
-    auto* cong_lbl = new QLabel("CONGRESS");
+    auto* cong_lbl = new QLabel(tr("CONGRESS"));
     cong_lbl->setStyleSheet(lbl_style);
     hl->addWidget(cong_lbl);
 
@@ -162,26 +162,26 @@ QWidget* GovDataCongressPanel::build_toolbar() {
     hl->addSpacing(10);
 
     // Bill type
-    auto* type_lbl = new QLabel("TYPE");
+    auto* type_lbl = new QLabel(tr("TYPE"));
     type_lbl->setStyleSheet(lbl_style);
     hl->addWidget(type_lbl);
 
     bill_type_combo_ = new QComboBox;
-    bill_type_combo_->addItem("All Types", "");
-    bill_type_combo_->addItem("House Bill", "hr");
-    bill_type_combo_->addItem("Senate Bill", "s");
-    bill_type_combo_->addItem("H. Joint Res.", "hjres");
-    bill_type_combo_->addItem("S. Joint Res.", "sjres");
-    bill_type_combo_->addItem("H. Con. Res.", "hconres");
-    bill_type_combo_->addItem("S. Con. Res.", "sconres");
-    bill_type_combo_->addItem("H. Simple Res.", "hres");
-    bill_type_combo_->addItem("S. Simple Res.", "sres");
+    bill_type_combo_->addItem(tr("All Types"), "");
+    bill_type_combo_->addItem(tr("House Bill"), "hr");
+    bill_type_combo_->addItem(tr("Senate Bill"), "s");
+    bill_type_combo_->addItem(tr("H. Joint Res."), "hjres");
+    bill_type_combo_->addItem(tr("S. Joint Res."), "sjres");
+    bill_type_combo_->addItem(tr("H. Con. Res."), "hconres");
+    bill_type_combo_->addItem(tr("S. Con. Res."), "sconres");
+    bill_type_combo_->addItem(tr("H. Simple Res."), "hres");
+    bill_type_combo_->addItem(tr("S. Simple Res."), "sres");
     bill_type_combo_->setFixedHeight(26);
     hl->addWidget(bill_type_combo_);
 
     hl->addStretch(1);
 
-    fetch_btn_ = new QPushButton("FETCH");
+    fetch_btn_ = new QPushButton(tr("FETCH"));
     fetch_btn_->setObjectName("govFetchBtn");
     fetch_btn_->setCursor(Qt::PointingHandCursor);
     connect(fetch_btn_, &QPushButton::clicked, this, &GovDataCongressPanel::on_fetch_bills);
@@ -363,7 +363,7 @@ void GovDataCongressPanel::show_loading(const QString& message) {
 
 void GovDataCongressPanel::show_error(const QString& message) {
     status_label_->setStyleSheet(QString("color:%1; font-size:12px; background:transparent;").arg(colors::NEGATIVE()));
-    status_label_->setText("Error: " + message);
+    status_label_->setText(tr("Error: ") + message);
     content_stack_->setCurrentIndex(3);
 }
 

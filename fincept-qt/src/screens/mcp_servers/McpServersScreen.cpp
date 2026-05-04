@@ -261,7 +261,7 @@ QWidget* McpServersScreen::create_header() {
     hl->setContentsMargins(16, 0, 16, 0);
     hl->setSpacing(8);
 
-    auto* title = new QLabel("MCP SERVERS");
+    auto* title = new QLabel(tr("MCP SERVERS"));
     title->setObjectName("mcpHeaderTitle");
     hl->addWidget(title);
 
@@ -288,7 +288,7 @@ QWidget* McpServersScreen::create_header() {
 
     hl->addSpacing(6);
 
-    refresh_btn_ = new QPushButton("↺  REFRESH");
+    refresh_btn_ = new QPushButton(tr("↺  REFRESH"));
     refresh_btn_->setObjectName("mcpRefreshBtn");
     refresh_btn_->setCursor(Qt::PointingHandCursor);
     connect(refresh_btn_, &QPushButton::clicked, this, &McpServersScreen::on_refresh);
@@ -313,7 +313,7 @@ QWidget* McpServersScreen::create_marketplace_view() {
     svl->setContentsMargins(0, 0, 0, 0);
     svl->setSpacing(0);
 
-    auto* cat_header = new QLabel("  CATEGORY");
+    auto* cat_header = new QLabel(tr("  CATEGORY"));
     cat_header->setObjectName("mcpStatusText");
     cat_header->setFixedHeight(32);
     cat_header->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);
@@ -379,7 +379,7 @@ QWidget* McpServersScreen::create_installed_view() {
     vl->addWidget(scroll, 1);
 
     // Sticky "Add server" button at the bottom
-    add_server_btn_ = new QPushButton("＋  ADD CUSTOM MCP SERVER");
+    add_server_btn_ = new QPushButton(tr("＋  ADD CUSTOM MCP SERVER"));
     add_server_btn_->setObjectName("addSrvBtn");
     add_server_btn_->setCursor(Qt::PointingHandCursor);
     add_server_btn_->setFixedHeight(38);
@@ -401,7 +401,7 @@ QWidget* McpServersScreen::create_tools_view() {
     toolbar->setFixedHeight(32);
     auto* tbl = new QHBoxLayout(toolbar);
     tbl->setContentsMargins(12, 0, 12, 0);
-    auto* tt = new QLabel("ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)");
+    auto* tt = new QLabel(tr("ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)"));
     tt->setObjectName("mcpStatusText");
     tbl->addWidget(tt);
     tbl->addStretch(1);
@@ -431,11 +431,11 @@ QWidget* McpServersScreen::create_status_bar() {
     bar->setFixedHeight(26);
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(16, 0, 16, 0);
-    auto* lbl = new QLabel("MCP SERVERS");
+    auto* lbl = new QLabel(tr("MCP SERVERS"));
     lbl->setObjectName("mcpStatusText");
     hl->addWidget(lbl);
     hl->addStretch(1);
-    status_view_ = new QLabel("MARKETPLACE");
+    status_view_ = new QLabel(tr("MARKETPLACE"));
     status_view_->setObjectName("mcpStatusText");
     hl->addWidget(status_view_);
     hl->addSpacing(12);
@@ -498,7 +498,7 @@ void McpServersScreen::on_install_server(int index) {
     // Env vars — one field per required key with sample placeholder
     QList<QPair<QString, QLineEdit*>> env_fields;
     if (!e.env_keys.isEmpty()) {
-        auto* env_header = new QLabel("Environment Variables");
+        auto* env_header = new QLabel(tr("Environment Variables"));
         env_header->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(colors::TEXT_SECONDARY()));
         form->addRow(env_header);
         for (int ki = 0; ki < e.env_keys.size(); ++ki) {
@@ -699,7 +699,7 @@ void McpServersScreen::on_add_server() {
     form->addRow("Command", cmd_edit);
 
     auto* args_edit = new QLineEdit;
-    args_edit->setPlaceholderText("e.g. my-mcp-package --flag value");
+    args_edit->setPlaceholderText(tr("e.g. my-mcp-package --flag value"));
     form->addRow("Arguments", args_edit);
 
     auto* env_edit = new QLineEdit;
@@ -807,7 +807,7 @@ void McpServersScreen::populate_marketplace() {
     }
 
     if (matched.isEmpty()) {
-        auto* empty = new QLabel("No servers match the current filter.");
+        auto* empty = new QLabel(tr("No servers match the current filter."));
         empty->setObjectName("mktCardDesc");
         empty->setAlignment(Qt::AlignCenter);
         mkt_cards_layout_->insertWidget(0, empty);
@@ -881,11 +881,11 @@ void McpServersScreen::populate_marketplace() {
             bottom->addStretch(1);
 
             if (installed) {
-                auto* badge = new QLabel("✓ ADDED");
+                auto* badge = new QLabel(tr("✓ ADDED"));
                 badge->setObjectName("mktInstalledBadge");
                 bottom->addWidget(badge);
             } else {
-                auto* add_btn = new QPushButton("ADD");
+                auto* add_btn = new QPushButton(tr("ADD"));
                 add_btn->setObjectName("mktAddBtn");
                 add_btn->setCursor(Qt::PointingHandCursor);
                 add_btn->setFixedWidth(56);
@@ -1010,7 +1010,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
     log_view->setFixedHeight(140);
     log_view->hide();
 
-    auto* logs_btn = new QPushButton("LOGS");
+    auto* logs_btn = new QPushButton(tr("LOGS"));
     logs_btn->setObjectName("cardLogsBtn");
     logs_btn->setCursor(Qt::PointingHandCursor);
     connect(logs_btn, &QPushButton::clicked, this, [sid, log_view, self]() {
@@ -1043,7 +1043,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
     btns->addStretch(1);
 
     // REMOVE
-    auto* remove_btn = new QPushButton("REMOVE");
+    auto* remove_btn = new QPushButton(tr("REMOVE"));
     remove_btn->setObjectName("cardRemoveBtn");
     remove_btn->setCursor(Qt::PointingHandCursor);
     connect(remove_btn, &QPushButton::clicked, this, [sid, self]() {

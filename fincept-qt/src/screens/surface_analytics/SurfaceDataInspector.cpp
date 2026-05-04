@@ -304,7 +304,7 @@ void SurfaceDataInspector::set_raw_output(const QString& raw_stdout) {
 
 void SurfaceDataInspector::on_view_raw_clicked() {
     QDialog dlg(this);
-    dlg.setWindowTitle("Raw Databento response");
+    dlg.setWindowTitle(tr("Raw Databento response"));
     dlg.resize(720, 480);
     auto* lay = new QVBoxLayout(&dlg);
     auto* edit = new QPlainTextEdit(&dlg);

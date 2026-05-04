@@ -180,7 +180,7 @@ QWidget* GovDataScreen::build_toolbar() {
     hl->setContentsMargins(14, 0, 14, 0);
     hl->setSpacing(8);
 
-    header_title_ = new QLabel("GOVERNMENT DATA EXPLORER");
+    header_title_ = new QLabel(tr("GOVERNMENT DATA EXPLORER"));
     header_title_->setObjectName("govToolbarTitle");
     header_title_->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
     hl->addWidget(header_title_);
@@ -227,7 +227,7 @@ QWidget* GovDataScreen::build_sidebar() {
     auto* hhl = new QHBoxLayout(hdr);
     hhl->setContentsMargins(12, 0, 8, 0);
     hhl->setSpacing(6);
-    auto* htitle = new QLabel("SOVEREIGN PORTALS");
+    auto* htitle = new QLabel(tr("SOVEREIGN PORTALS"));
     htitle->setObjectName("govSidebarTitle");
     const auto& providers = services::GovDataService::providers();
     sidebar_count_ = new QLabel(QString::number(providers.size()));
@@ -274,12 +274,12 @@ QWidget* GovDataScreen::build_status_bar() {
         return l;
     };
 
-    auto* lbl = new QLabel("GOVT");
+    auto* lbl = new QLabel(tr("GOVT"));
     lbl->setObjectName("govStatusText");
     hl->addWidget(lbl);
     hl->addWidget(sep());
 
-    auto* pl = new QLabel("PORTAL:");
+    auto* pl = new QLabel(tr("PORTAL:"));
     pl->setObjectName("govStatusText");
     status_portal_ = new QLabel("—");
     status_portal_->setObjectName("govStatusVal");
@@ -287,7 +287,7 @@ QWidget* GovDataScreen::build_status_bar() {
     hl->addWidget(status_portal_);
     hl->addWidget(sep());
 
-    auto* cl = new QLabel("COUNTRY:");
+    auto* cl = new QLabel(tr("COUNTRY:"));
     cl->setObjectName("govStatusText");
     status_country_ = new QLabel("—");
     status_country_->setObjectName("govStatusVal");
@@ -301,7 +301,7 @@ QWidget* GovDataScreen::build_status_bar() {
     dot->setFixedSize(6, 6);
     dot->setStyleSheet(QString("background:%1; border-radius:3px;").arg(colors::POSITIVE()));
     hl->addWidget(dot);
-    auto* ready = new QLabel("READY");
+    auto* ready = new QLabel(tr("READY"));
     ready->setObjectName("govStatusText");
     ready->setStyleSheet(QString("color:%1; font-size:9px; background:transparent;").arg(colors::POSITIVE()));
     hl->addWidget(ready);

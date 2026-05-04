@@ -69,7 +69,7 @@ void VideoPlayerWidget::build_channel_list() {
     vl->setContentsMargins(6, 6, 6, 6);
     vl->setSpacing(3);
 
-    channel_header_ = new QLabel("FINANCIAL TV");
+    channel_header_ = new QLabel(tr("FINANCIAL TV"));
     vl->addWidget(channel_header_);
 
     for (int i = 0; i < kPresetCount; ++i) {
@@ -113,7 +113,7 @@ void VideoPlayerWidget::build_channel_list() {
     vl->addSpacing(4);
 
     // Custom URL
-    custom_header_ = new QLabel("CUSTOM STREAM");
+    custom_header_ = new QLabel(tr("CUSTOM STREAM"));
     vl->addWidget(custom_header_);
 
     auto* input_row = new QWidget(this);
@@ -127,7 +127,7 @@ void VideoPlayerWidget::build_channel_list() {
     connect(url_input_, &QLineEdit::returnPressed, this, &VideoPlayerWidget::play_custom_url);
     irl->addWidget(url_input_, 1);
 
-    play_btn_ = new QPushButton("PLAY");
+    play_btn_ = new QPushButton(tr("PLAY"));
     play_btn_->setFixedWidth(50);
     play_btn_->setCursor(Qt::PointingHandCursor);
     connect(play_btn_, &QPushButton::clicked, this, &VideoPlayerWidget::play_custom_url);
@@ -135,7 +135,7 @@ void VideoPlayerWidget::build_channel_list() {
 
     vl->addWidget(input_row);
 
-    helper_label_ = new QLabel("YouTube streams resolved via yt-dlp and played inline.");
+    helper_label_ = new QLabel(tr("YouTube streams resolved via yt-dlp and played inline."));
     vl->addWidget(helper_label_);
 
     vl->addStretch();
@@ -167,7 +167,7 @@ void VideoPlayerWidget::build_player_view() {
     player_->setVideoOutput(video_widget_);
 #else
     status_label_placeholder_ =
-        new QLabel("Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback.");
+        new QLabel(tr("Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback."));
     status_label_placeholder_->setAlignment(Qt::AlignCenter);
     vl->addWidget(status_label_placeholder_, 1);
 #endif
@@ -307,7 +307,7 @@ void VideoPlayerWidget::on_ytdlp_finished(int exit_code, QProcess::ExitStatus /*
     if (exit_code != 0) {
         const QString err = proc->readAllStandardError().trimmed();
         set_loading(false);
-        status_label_->setText("yt-dlp error: " + (err.isEmpty() ? QString("Unknown error") : err.left(120)));
+        status_label_->setText(tr("yt-dlp error: ") + (err.isEmpty() ? QString("Unknown error") : err.left(120)));
         status_label_->show();
         LOG_ERROR("VideoPlayer", "yt-dlp failed: " + err.left(250));
         return;

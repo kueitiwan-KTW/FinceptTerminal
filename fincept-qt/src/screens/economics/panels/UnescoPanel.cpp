@@ -91,12 +91,12 @@ UnescoPanel::UnescoPanel(QWidget* parent) : EconPanelBase(kUnescoSourceId, kUnes
     theme_hdr->setFixedHeight(32);
     auto* thl = new QHBoxLayout(theme_hdr);
     thl->setContentsMargins(8, 0, 8, 0);
-    auto* theme_lbl = new QLabel("THEME");
+    auto* theme_lbl = new QLabel(tr("THEME"));
     theme_lbl->setStyleSheet(ctrl_label_style());
     theme_combo_ = new QComboBox;
-    theme_combo_->addItem("Education", "education");
-    theme_combo_->addItem("Science & Tech", "science");
-    theme_combo_->addItem("Culture", "culture");
+    theme_combo_->addItem(tr("Education"), "education");
+    theme_combo_->addItem(tr("Science & Tech"), "science");
+    theme_combo_->addItem(tr("Culture"), "culture");
     theme_combo_->setFixedHeight(22);
     connect(theme_combo_, &QComboBox::currentIndexChanged, this, &UnescoPanel::on_theme_changed);
     thl->addWidget(theme_lbl);
@@ -149,7 +149,7 @@ void UnescoPanel::build_controls(QHBoxLayout* thl) {
 
     country_input_ = new QLineEdit;
     country_input_->setPlaceholderText(tr("Country (e.g. USA, GBR, IND)"));
-    country_input_->setText("USA");
+    country_input_->setText(tr("USA"));
     country_input_->setFixedHeight(26);
     country_input_->setFixedWidth(140);
 

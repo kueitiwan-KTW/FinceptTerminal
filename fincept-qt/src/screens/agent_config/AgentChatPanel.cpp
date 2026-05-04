@@ -87,7 +87,7 @@ AgentChatPanel::AgentChatPanel(QWidget* parent) : QWidget(parent) {
     if (!cached.isEmpty()) {
         agent_selector_->blockSignals(true);
         agent_selector_->clear();
-        agent_selector_->addItem("Default (global LLM)", QString{});
+        agent_selector_->addItem(tr("Default (global LLM)"), QString{});
         for (const auto& a : cached)
             agent_selector_->addItem(QString("[%1] %2").arg(a.category, a.name), a.id);
         agent_selector_->blockSignals(false);
@@ -115,7 +115,7 @@ void AgentChatPanel::build_ui() {
     hl->setContentsMargins(14, 0, 12, 0);
     hl->setSpacing(10);
 
-    auto* title = new QLabel("AGENT CHAT");
+    auto* title = new QLabel(tr("AGENT CHAT"));
     title->setStyleSheet(QString("color:%1;font-size:13px;font-weight:700;letter-spacing:1.5px;").arg(col::AMBER()));
     hl->addWidget(title);
 
@@ -127,13 +127,13 @@ void AgentChatPanel::build_ui() {
     hl->addWidget(div1);
 
     // Agent selector
-    auto* agent_lbl = new QLabel("AGENT:");
+    auto* agent_lbl = new QLabel(tr("AGENT:"));
     agent_lbl->setStyleSheet(
         QString("color:%1;font-size:9px;font-weight:600;letter-spacing:0.5px;").arg(col::TEXT_TERTIARY()));
     hl->addWidget(agent_lbl);
 
     agent_selector_ = new QComboBox;
-    agent_selector_->addItem("Default (global LLM)", QString{});
+    agent_selector_->addItem(tr("Default (global LLM)"), QString{});
     agent_selector_->setMinimumWidth(200);
     agent_selector_->setMaximumWidth(420);
     agent_selector_->setSizeAdjustPolicy(QComboBox::AdjustToContents);
@@ -187,7 +187,7 @@ void AgentChatPanel::build_ui() {
     hl->addStretch();
 
     // Active model pill
-    hdr_model_lbl_ = new QLabel("No model");
+    hdr_model_lbl_ = new QLabel(tr("No model"));
     hdr_model_lbl_->setStyleSheet(QString("color:%1;font-size:9px;background:%2;border:1px solid %3;"
                                           "border-radius:3px;padding:2px 8px;")
                                       .arg(col::TEXT_SECONDARY(), col::BG_BASE(), col::BORDER_MED()));
@@ -195,7 +195,7 @@ void AgentChatPanel::build_ui() {
     hl->addWidget(hdr_model_lbl_);
 
     // Status chip
-    hdr_status_lbl_ = new QLabel("Ready");
+    hdr_status_lbl_ = new QLabel(tr("Ready"));
     hdr_status_lbl_->setFixedWidth(72);
     hdr_status_lbl_->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
@@ -208,7 +208,7 @@ void AgentChatPanel::build_ui() {
     hl->addWidget(div2);
 
     // Auto-route toggle
-    route_toggle_ = new QPushButton("AUTO-ROUTE");
+    route_toggle_ = new QPushButton(tr("AUTO-ROUTE"));
     route_toggle_->setCheckable(true);
     route_toggle_->setCursor(Qt::PointingHandCursor);
     route_toggle_->setFixedHeight(28);
@@ -222,7 +222,7 @@ void AgentChatPanel::build_ui() {
     hl->addWidget(route_toggle_);
 
     // Clear button
-    clear_btn_ = new QPushButton("CLEAR");
+    clear_btn_ = new QPushButton(tr("CLEAR"));
     clear_btn_->setCursor(Qt::PointingHandCursor);
     clear_btn_->setFixedHeight(28);
     clear_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -240,13 +240,13 @@ void AgentChatPanel::build_ui() {
     pl->setContentsMargins(14, 0, 14, 0);
     pl->setSpacing(8);
 
-    auto* plbl = new QLabel("PORTFOLIO:");
+    auto* plbl = new QLabel(tr("PORTFOLIO:"));
     plbl->setStyleSheet(
         QString("color:%1;font-size:9px;font-weight:600;letter-spacing:0.5px;").arg(col::TEXT_TERTIARY()));
     pl->addWidget(plbl);
 
     portfolio_combo_ = new QComboBox;
-    portfolio_combo_->addItem("None");
+    portfolio_combo_->addItem(tr("None"));
     portfolio_combo_->setFixedWidth(160);
     portfolio_combo_->setStyleSheet(QString("QComboBox{background:%1;color:%2;border:1px solid %3;padding:2px 8px;"
                                             "font-size:10px;border-radius:3px;}"
@@ -301,7 +301,7 @@ void AgentChatPanel::build_ui() {
     wvl->setSpacing(16);
     wvl->addStretch();
 
-    auto* w_title = new QLabel("How can I help you?");
+    auto* w_title = new QLabel(tr("How can I help you?"));
     w_title->setAlignment(Qt::AlignCenter);
     w_title->setStyleSheet(
         QString("color:%1;font-size:22px;font-weight:700;background:transparent;").arg(col::TEXT_PRIMARY()));
@@ -355,7 +355,7 @@ void AgentChatPanel::build_ui() {
     typing_indicator_->setStyleSheet("background:transparent;");
     auto* til = new QHBoxLayout(typing_indicator_);
     til->setContentsMargins(4, 0, 0, 0);
-    typing_dots_lbl_ = new QLabel("Agent is thinking");
+    typing_dots_lbl_ = new QLabel(tr("Agent is thinking"));
     typing_dots_lbl_->setStyleSheet(
         QString("color:%1;font-size:11px;font-style:italic;background:transparent;").arg(col::TEXT_DIM()));
     til->addWidget(typing_dots_lbl_);
@@ -392,7 +392,7 @@ void AgentChatPanel::build_ui() {
     });
     il->addWidget(input_edit_, 1);
 
-    send_btn_ = new QPushButton("Send");
+    send_btn_ = new QPushButton(tr("Send"));
     send_btn_->setFixedSize(76, 44);
     send_btn_->setCursor(Qt::PointingHandCursor);
     send_btn_->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:none;border-radius:6px;"
@@ -444,7 +444,7 @@ void AgentChatPanel::setup_connections() {
                 const QString prev_id = agent_selector_->currentData().toString();
                 agent_selector_->blockSignals(true);
                 agent_selector_->clear();
-                agent_selector_->addItem("Default (global LLM)", QString{});
+                agent_selector_->addItem(tr("Default (global LLM)"), QString{});
                 for (const auto& a : agents)
                     agent_selector_->addItem(QString("[%1] %2").arg(a.category, a.name), a.id);
                 // Restore previous selection
@@ -527,11 +527,11 @@ void AgentChatPanel::setup_connections() {
         streaming_text_.clear();
         if (r.success) {
             status_label_->setText(QString("Response received (%1ms)").arg(r.execution_time_ms));
-            hdr_status_lbl_->setText("Ready");
+            hdr_status_lbl_->setText(tr("Ready"));
             hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
         } else {
             status_label_->setText(tr("Agent execution failed"));
-            hdr_status_lbl_->setText("Error");
+            hdr_status_lbl_->setText(tr("Error"));
             hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::NEGATIVE()));
         }
         scroll_to_bottom();
@@ -596,14 +596,14 @@ void AgentChatPanel::update_llm_status() {
         hdr_model_lbl_->setStyleSheet(QString("color:%1;font-size:9px;background:%2;border:1px solid %3;"
                                               "border-radius:3px;padding:2px 8px;")
                                           .arg(col::TEXT_SECONDARY(), col::BG_BASE(), col::BORDER_MED()));
-        hdr_status_lbl_->setText("Ready");
+        hdr_status_lbl_->setText(tr("Ready"));
         hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
     } else {
         hdr_model_lbl_->setText(tr("No LLM configured"));
         hdr_model_lbl_->setStyleSheet(QString("color:%1;font-size:9px;background:%2;border:1px solid %3;"
                                               "border-radius:3px;padding:2px 8px;")
                                           .arg(col::NEGATIVE(), col::BG_BASE(), col::NEGATIVE()));
-        hdr_status_lbl_->setText("Unconfigured");
+        hdr_status_lbl_->setText(tr("Unconfigured"));
         hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::NEGATIVE()));
         status_label_->setText(tr("No LLM provider configured — go to Settings > LLM Configuration"));
     }
@@ -720,7 +720,7 @@ void AgentChatPanel::refresh_portfolios() {
     portfolio_combo_->blockSignals(true);
     const QString prev = portfolio_combo_->currentText();
     portfolio_combo_->clear();
-    portfolio_combo_->addItem("None");
+    portfolio_combo_->addItem(tr("None"));
     const auto result = PortfolioRepository::instance().list_portfolios();
     if (result.is_ok()) {
         for (const auto& p : result.value())
@@ -936,7 +936,7 @@ void AgentChatPanel::set_executing(bool on) {
     send_btn_->setEnabled(!on);
     send_btn_->setText(on ? "..." : "Send");
     if (on) {
-        hdr_status_lbl_->setText("Streaming");
+        hdr_status_lbl_->setText(tr("Streaming"));
         hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::AMBER()));
         status_label_->setText(tr("Processing..."));
     }
@@ -986,7 +986,7 @@ void AgentChatPanel::clear_chat() {
     }
 
     show_welcome(true);
-    hdr_status_lbl_->setText("Ready");
+    hdr_status_lbl_->setText(tr("Ready"));
     hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
     status_label_->clear();
     update_llm_status();

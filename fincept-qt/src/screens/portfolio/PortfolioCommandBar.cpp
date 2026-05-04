@@ -91,7 +91,7 @@ void PortfolioCommandBar::build_row1(QHBoxLayout* layout) {
     layout->addStretch(1);
 
     // Refresh + interval + overflow (right-aligned)
-    refresh_btn_ = new QPushButton("\u21BB");
+    refresh_btn_ = new QPushButton(tr("\u21BB"));
     refresh_btn_->setFixedSize(24, 22);
     refresh_btn_->setCursor(Qt::PointingHandCursor);
     refresh_btn_->setToolTip(tr("Refresh portfolio data"));
@@ -102,13 +102,13 @@ void PortfolioCommandBar::build_row1(QHBoxLayout* layout) {
     interval_cb_ = new QComboBox;
     interval_cb_->setFixedHeight(22);
     interval_cb_->setToolTip(tr("Auto-refresh interval"));
-    interval_cb_->addItem("1m", 60000);
-    interval_cb_->addItem("5m", 300000);
-    interval_cb_->addItem("10m", 600000);
-    interval_cb_->addItem("30m", 1800000);
-    interval_cb_->addItem("1h", 3600000);
-    interval_cb_->addItem("3h", 10800000);
-    interval_cb_->addItem("1d", 86400000);
+    interval_cb_->addItem(tr("1m"), 60000);
+    interval_cb_->addItem(tr("5m"), 300000);
+    interval_cb_->addItem(tr("10m"), 600000);
+    interval_cb_->addItem(tr("30m"), 1800000);
+    interval_cb_->addItem(tr("1h"), 3600000);
+    interval_cb_->addItem(tr("3h"), 10800000);
+    interval_cb_->addItem(tr("1d"), 86400000);
     connect(interval_cb_, QOverload<int>::of(&QComboBox::currentIndexChanged), this,
             [this](int idx) { emit refresh_interval_changed(interval_cb_->itemData(idx).toInt()); });
     layout->addWidget(interval_cb_);
@@ -181,7 +181,7 @@ void PortfolioCommandBar::build_portfolio_selector() {
     auto* btn_row = new QHBoxLayout;
     btn_row->setSpacing(4);
 
-    auto* create_btn = new QPushButton("+ CREATE NEW");
+    auto* create_btn = new QPushButton(tr("+ CREATE NEW"));
     create_btn->setFixedHeight(24);
     create_btn->setCursor(Qt::PointingHandCursor);
     create_btn->setStyleSheet(QString("QPushButton { background:%1; color:%3; border:none;"
@@ -233,11 +233,11 @@ void PortfolioCommandBar::build_overflow_menu() {
                                       .arg(ui::colors::BG_SURFACE(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM(),
                                            ui::colors::AMBER_DIM(), ui::colors::AMBER()));
 
-    auto* export_csv = overflow_menu_->addAction("Export CSV");
-    auto* export_json = overflow_menu_->addAction("Export JSON");
-    auto* import_action = overflow_menu_->addAction("Import JSON…");
+    auto* export_csv = overflow_menu_->addAction(tr("Export CSV"));
+    auto* export_json = overflow_menu_->addAction(tr("Export JSON"));
+    auto* import_action = overflow_menu_->addAction(tr("Import JSON…"));
     overflow_menu_->addSeparator();
-    ffn_action_ = overflow_menu_->addAction("FFN Analysis");
+    ffn_action_ = overflow_menu_->addAction(tr("FFN Analysis"));
     ffn_action_->setCheckable(true);
 
     connect(export_csv, &QAction::triggered, this, &PortfolioCommandBar::export_csv_requested);

@@ -22,7 +22,7 @@ namespace fincept::screens {
 
 KeyCaptureDialog::KeyCaptureDialog(KeyAction action, const QKeySequence& current, QWidget* parent)
     : QDialog(parent), action_(action) {
-    setWindowTitle("Rebind: " + KeyConfigManager::instance().display_name(action));
+    setWindowTitle(tr("Rebind: ") + KeyConfigManager::instance().display_name(action));
     setFixedSize(360, 200);
     setModal(true);
 
@@ -33,7 +33,7 @@ KeyCaptureDialog::KeyCaptureDialog(KeyAction action, const QKeySequence& current
     auto* current_lbl = new QLabel("Current: " + current.toString(QKeySequence::NativeText));
     current_lbl->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_SECONDARY()));
 
-    hint_label_ = new QLabel("Press new key combination...");
+    hint_label_ = new QLabel(tr("Press new key combination..."));
     hint_label_->setStyleSheet(QString("color:%1;font-weight:bold;").arg(ui::colors::TEXT_PRIMARY()));
 
     captured_label_ = new QLabel;
@@ -79,7 +79,7 @@ void KeyCaptureDialog::keyPressEvent(QKeyEvent* event) {
     auto conflict = KeyConfigManager::instance().find_conflict(captured_, action_);
     if (conflict.has_value()) {
         const QString name = KeyConfigManager::instance().display_name(conflict.value());
-        conflict_label_->setText("Warning: already used by \"" + name + "\"");
+        conflict_label_->setText(tr("Warning: already used by \")" + name + "\"");
         conflict_label_->show();
     } else {
         conflict_label_->hide();
@@ -125,7 +125,7 @@ void KeybindingsSection::build_ui() {
     rebuild_rows();
 
     // Reset All button
-    auto* reset_all_btn = new QPushButton("Reset All to Defaults");
+    auto* reset_all_btn = new QPushButton(tr("Reset All to Defaults"));
     reset_all_btn->setStyleSheet(
         QString("QPushButton{background:%1;color:%2;border:1px solid %3;padding:0 12px;height:32px;}"
                 "QPushButton:hover{background:%4;}")
@@ -204,7 +204,7 @@ QWidget* KeybindingsSection::build_group(const QString& group_name, const QList<
             QString("color:%1;font-family:monospace;min-width:120px;").arg(ui::colors::TEXT_SECONDARY()));
         key_lbl->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 
-        auto* reset_btn = new QPushButton("Reset");
+        auto* reset_btn = new QPushButton(tr("Reset"));
         reset_btn->setFixedSize(56, 24);
         reset_btn->setStyleSheet(
             QString("QPushButton{background:%1;color:%2;border:1px solid %3;}"

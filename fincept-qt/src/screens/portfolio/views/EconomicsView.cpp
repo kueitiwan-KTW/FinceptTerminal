@@ -27,12 +27,12 @@ void EconomicsView::build_ui() {
     ind_layout->setContentsMargins(12, 8, 12, 8);
     ind_layout->setSpacing(4);
 
-    auto* ind_title = new QLabel("PORTFOLIO ECONOMICS OVERVIEW");
+    auto* ind_title = new QLabel(tr("PORTFOLIO ECONOMICS OVERVIEW"));
     ind_title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     ind_layout->addWidget(ind_title);
 
-    auto* ind_note = new QLabel("Per-holding contribution to portfolio value, P&L, and risk");
+    auto* ind_note = new QLabel(tr("Per-holding contribution to portfolio value, P&L, and risk"));
     ind_note->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::TEXT_TERTIARY()));
     ind_layout->addWidget(ind_note);
 
@@ -73,12 +73,12 @@ void EconomicsView::build_ui() {
     sens_layout->setContentsMargins(12, 8, 12, 8);
     sens_layout->setSpacing(4);
 
-    auto* sens_title = new QLabel("PORTFOLIO FACTOR SENSITIVITY");
+    auto* sens_title = new QLabel(tr("PORTFOLIO FACTOR SENSITIVITY"));
     sens_title->setStyleSheet(
         QString("color:%1; font-size:11px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     sens_layout->addWidget(sens_title);
 
-    auto* sens_note = new QLabel("Estimated portfolio impact from macro factor shocks, weighted by holdings");
+    auto* sens_note = new QLabel(tr("Estimated portfolio impact from macro factor shocks, weighted by holdings"));
     sens_note->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::TEXT_TERTIARY()));
     sens_layout->addWidget(sens_note);
 

@@ -79,7 +79,7 @@ void ForumPostListPanel::build_ui() {
         QString("color:%1;font-size:20px;font-weight:700;background:transparent;%2").arg(ui::colors::AMBER(), M(20)));
     hash->setFixedWidth(18);
 
-    channel_label_ = new QLabel("all-posts");
+    channel_label_ = new QLabel(tr("all-posts"));
     channel_label_->setStyleSheet(QString("color:%1;font-size:14px;font-weight:700;background:transparent;%2")
                                       .arg(ui::colors::TEXT_PRIMARY(), M(14)));
 
@@ -257,13 +257,13 @@ void ForumPostListPanel::rebuild_feed() {
         icon->setAlignment(Qt::AlignCenter);
         icon->setStyleSheet(QString("color:%1;font-size:24px;background:transparent;").arg(ui::colors::BORDER_DIM()));
 
-        auto* lbl = new QLabel("NO POSTS YET");
+        auto* lbl = new QLabel(tr("NO POSTS YET"));
         lbl->setAlignment(Qt::AlignCenter);
         lbl->setStyleSheet(QString("color:%1;font-size:13px;font-weight:700;letter-spacing:1.5px;"
                                    "background:transparent;%2")
                                .arg(ui::colors::TEXT_TERTIARY(), M(13)));
 
-        auto* sub = new QLabel("Be the first to start a discussion");
+        auto* sub = new QLabel(tr("Be the first to start a discussion"));
         sub->setAlignment(Qt::AlignCenter);
         sub->setStyleSheet(
             QString("color:%1;font-size:11px;background:transparent;%2").arg(ui::colors::TEXT_DIM(), M(11)));
@@ -370,7 +370,7 @@ void ForumPostListPanel::rebuild_feed() {
         eng_hl->addStretch();
 
         if (post.reply_count > 5) {
-            auto* hot = new QLabel("● HOT");
+            auto* hot = new QLabel(tr("● HOT"));
             hot->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;"
                                        "background:rgba(220,38,38,0.08);padding:1px 6px;"
                                        "border-radius:6px;%2")
