@@ -20,6 +20,12 @@ jobs:
     timeout-minutes: 60
 
     steps:
+      - name: 連接 Tailscale VPN
+        uses: tailscale/github-action@v4
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+          tags: tag:ci
+
       - name: SSH 到 ktwserver 執行完整部署流程
         uses: appleboy/ssh-action@v1
         with:
