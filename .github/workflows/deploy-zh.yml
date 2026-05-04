@@ -26,6 +26,14 @@ jobs:
           authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
           tags: tag:ci
 
+      - name: 等待 Tailscale 路由就緒
+        run: |
+          echo "等待 Tailscale 路由建立..."
+          sleep 10
+          tailscale status
+          echo "測試連線到 ktwserver..."
+          tailscale ping --c 3 ${{ secrets.KTWSERVER_TAILSCALE_IP }} || echo "ping 超時，但繼續嘗試 SSH"
+
       - name: SSH 到 ktwserver 執行完整部署流程
         uses: appleboy/ssh-action@v1
         with:
