@@ -37,6 +37,10 @@ const docker = new Docker({ socketPath: process.env.DOCKER_SOCKET || '/var/run/d
 /** @type {Map<string, PoolEntry>} containerId -> 狀態 */
 const pool = new Map()
 
+// 健康檢查設定
+const HEALTH_CHECK_TIMEOUT = parseInt(process.env.HEALTH_CHECK_TIMEOUT || '5000')  // HTTP 探測逾時（毫秒）
+const HEALTH_FAIL_THRESHOLD = parseInt(process.env.HEALTH_FAIL_THRESHOLD || '3')   // 連續失敗幾次清理
+
 /**
  * @typedef {Object} PoolEntry
  * @property {string} containerId    - Docker 容器 ID
@@ -46,6 +50,7 @@ const pool = new Map()
  * @property {number} port           - noVNC 外部端口
  * @property {number} assignedAt     - 分配時間戳
  * @property {number} lastActivity   - 最後活動時間
+ * @property {number} healthFailures - 連續健康檢查失敗次數
  */
 
 let nextPort = 6081 // noVNC 端口分配起始值
@@ -109,6 +114,7 @@ async function scanExistingContainers() {
         port: hostPort,
         assignedAt: tenantLabel ? now() : 0,
         lastActivity: now(),
+        healthFailures: 0,
       }
       pool.set(shortId, entry)
       adopted++
@@ -141,6 +147,41 @@ async function readBody(req) {
   const chunks = []
   for await (const chunk of req) chunks.push(chunk)
   return JSON.parse(Buffer.concat(chunks).toString())
+}
+
+/**
+ * noVNC HTTP 健康探測 — 檢查容器的 noVNC port 是否回應
+ * @param {number} port - noVNC 外部端口
+ * @returns {boolean} true = 健康
+ */
+async function checkNoVncHealth(port) {
+  try {
+    const res = await fetch(`http://localhost:${port}/vnc_lite.html`, {
+      signal: AbortSignal.timeout(HEALTH_CHECK_TIMEOUT),
+    })
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
+/**
+ * 清理幽靈容器 — 停止 + 移除 Docker 容器，從 pool 中刪除
+ * Volume 保留（租戶資料不丟失）
+ * @param {string} id - pool 中的容器 ID
+ * @param {PoolEntry} entry - 容器池項目
+ * @param {string} reason - 清理原因（記錄用）
+ */
+async function cleanupGhostContainer(id, entry, reason) {
+  console.log(`[健康檢查] 🧹 清理幽靈容器 ${id} (tenant=${entry.tenantId}, port=${entry.port}): ${reason}`)
+  try {
+    const container = docker.getContainer(entry.containerId)
+    await container.stop({ t: 5 }).catch(() => {}) // 可能已停止
+    await container.remove({ force: true })
+  } catch (err) {
+    console.error(`[健康檢查] 移除容器 ${id} 失敗:`, err.message)
+  }
+  pool.delete(id)
 }
 
 // ── 容器管理 ────────────────────────────────────────────────────────────────
@@ -214,6 +255,7 @@ async function createTerminalContainer(tenantId = null, options = {}) {
         port,
         assignedAt: tenantId ? now() : 0,
         lastActivity: now(),
+        healthFailures: 0,
       }
 
       pool.set(entry.containerId, entry)
@@ -246,10 +288,19 @@ async function createTerminalContainer(tenantId = null, options = {}) {
  */
 async function allocateContainer(tenantId, jwtToken, options = {}) {
   // 檢查該租戶是否已有容器
-  for (const [, entry] of pool) {
+  for (const [id, entry] of pool) {
     if (entry.tenantId === tenantId && entry.status === 'assigned') {
-      entry.lastActivity = now()
-      return entry
+      // ⭐ 分配前先驗證 noVNC 是否存活，避免回傳死容器
+      const healthy = await checkNoVncHealth(entry.port)
+      if (healthy) {
+        entry.lastActivity = now()
+        entry.healthFailures = 0 // 重置失敗計數
+        return entry
+      }
+      // noVNC 無回應 → 清理幽靈容器，繼續建新的
+      console.log(`[Pool] ⚠️ 租戶 ${tenantId} 的容器 ${id} noVNC 無回應，清理後重建`)
+      await cleanupGhostContainer(id, entry, 'allocate 時 noVNC 探測失敗')
+      break
     }
   }
 
@@ -299,29 +350,61 @@ async function releaseContainer(tenantId) {
 
 /**
  * 健康檢查 + 清理異常容器
- * 按需建立模式下不需要預熱，只需要清理
+ *
+ * 檢查層級（由淺到深）：
+ *   1. Docker 層級 — 容器是否 Running
+ *   2. noVNC 層級 — HTTP 探測 port 是否回應
+ *
+ * 連續失敗 HEALTH_FAIL_THRESHOLD 次才清理（避免單次網路抖動誤殺）
  */
 async function maintenance() {
-  for (const [id, entry] of pool) {
-    if (entry.status === 'assigned') {
-      // 檢查已分配容器是否還活著
-      try {
-        const container = docker.getContainer(entry.containerId)
-        const info = await container.inspect()
-        if (!info.State.Running) {
-          console.log(`[維護] ⚠️ 容器 ${id} 已停止，從池中移除`)
-          pool.delete(id)
-        }
-      } catch {
-        console.log(`[維護] ⚠️ 容器 ${id} 不存在，從池中移除`)
-        pool.delete(id)
+  const entries = [...pool.entries()]
+  if (entries.length === 0) return
+
+  for (const [id, entry] of entries) {
+    if (entry.status !== 'assigned') continue
+
+    // === 第 1 層：Docker 容器狀態 ===
+    let dockerRunning = false
+    try {
+      const container = docker.getContainer(entry.containerId)
+      const info = await container.inspect()
+      dockerRunning = info.State.Running
+    } catch {
+      // Docker API 找不到容器 → 直接移除記錄
+      console.log(`[維護] ⚠️ 容器 ${id} 不存在於 Docker，從池中移除`)
+      pool.delete(id)
+      continue
+    }
+
+    if (!dockerRunning) {
+      await cleanupGhostContainer(id, entry, 'Docker 容器已停止')
+      continue
+    }
+
+    // === 第 2 層：noVNC HTTP 探測 ===
+    const noVncAlive = await checkNoVncHealth(entry.port)
+
+    if (noVncAlive) {
+      // 健康 → 重置失敗計數
+      if (entry.healthFailures > 0) {
+        console.log(`[維護] ✅ 容器 ${id} noVNC 恢復健康（之前失敗 ${entry.healthFailures} 次）`)
+        entry.healthFailures = 0
+      }
+    } else {
+      // 不健康 → 累計失敗次數
+      entry.healthFailures = (entry.healthFailures || 0) + 1
+      console.log(`[維護] ⚠️ 容器 ${id} (tenant=${entry.tenantId}, port=${entry.port}) noVNC 無回應 (${entry.healthFailures}/${HEALTH_FAIL_THRESHOLD})`)
+
+      if (entry.healthFailures >= HEALTH_FAIL_THRESHOLD) {
+        await cleanupGhostContainer(id, entry, `noVNC 連續 ${HEALTH_FAIL_THRESHOLD} 次無回應`)
       }
     }
   }
 }
 
-// 每 60 秒維護一次
-setInterval(maintenance, 60_000)
+// 每 30 秒維護一次（從 60s 縮短，加速偵測幽靈容器）
+setInterval(maintenance, 30_000)
 
 // ── Token Refresh ───────────────────────────────────────────────────────────
 
@@ -411,11 +494,13 @@ const server = createServer(async (req, res) => {
   try {
     // 健康檢查
     if (url.pathname === '/health') {
-      const assigned = [...pool.values()].filter(e => e.status === 'assigned').length
-      const idle = [...pool.values()].filter(e => e.status === 'idle').length
+      const values = [...pool.values()]
+      const assigned = values.filter(e => e.status === 'assigned').length
+      const idle = values.filter(e => e.status === 'idle').length
+      const unhealthy = values.filter(e => (e.healthFailures || 0) > 0).length
       return json(res, 200, {
         status: 'ok',
-        pool: { total: pool.size, assigned, idle, maxSize: MAX_SIZE },
+        pool: { total: pool.size, assigned, idle, unhealthy, maxSize: MAX_SIZE },
       })
     }
 
@@ -469,6 +554,19 @@ const server = createServer(async (req, res) => {
     if (req.method === 'POST' && url.pathname === '/api/pool/refresh-tokens') {
       await refreshAllTokens()
       return json(res, 200, { success: true, message: '已觸發全量 Token Refresh' })
+    }
+
+    // 手動觸發健康檢查（管理端點）
+    if (req.method === 'POST' && url.pathname === '/api/pool/health-check') {
+      await maintenance()
+      const entries = [...pool.values()].map(e => ({
+        containerId: e.containerId,
+        tenantId: e.tenantId,
+        port: e.port,
+        status: e.status,
+        healthFailures: e.healthFailures || 0,
+      }))
+      return json(res, 200, { success: true, pool: entries, message: '健康檢查完成' })
     }
 
     // 查詢租戶容器
