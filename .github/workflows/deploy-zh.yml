@@ -6,8 +6,9 @@ on:
     branches: [main]
     paths:
       - 'fincept-qt/src/**'
-      - 'Dockerfile'
-      - 'entrypoint.sh'
+      - 'fincept-qt/translations/**'
+      - 'Dockerfile.zh-build'
+      - 'docker-entrypoint-zh.sh'
   workflow_dispatch: # 手動觸發
 
 env:
@@ -55,10 +56,12 @@ jobs:
             echo "[1/5] 拉取最新程式碼..."
             OLD_SRC_HASH=$(find fincept-qt/src -name '*.cpp' -o -name '*.h' -o -name '*.ui' 2>/dev/null | sort | xargs sha256sum 2>/dev/null | sha256sum | cut -d' ' -f1)
             OLD_DOCKER_HASH=$(sha256sum Dockerfile.zh-build 2>/dev/null | cut -d' ' -f1 || echo "none")
+            OLD_TS_HASH=$(sha256sum fincept-qt/translations/fincept_zh_TW.ts 2>/dev/null | cut -d' ' -f1 || echo "none")
             git fetch origin main
             git reset --hard origin/main
             NEW_SRC_HASH=$(find fincept-qt/src -name '*.cpp' -o -name '*.h' -o -name '*.ui' 2>/dev/null | sort | xargs sha256sum 2>/dev/null | sha256sum | cut -d' ' -f1)
             NEW_DOCKER_HASH=$(sha256sum Dockerfile.zh-build 2>/dev/null | cut -d' ' -f1 || echo "none")
+            NEW_TS_HASH=$(sha256sum fincept-qt/translations/fincept_zh_TW.ts 2>/dev/null | cut -d' ' -f1 || echo "none")
             echo "✅ 目前 commit: $(git log --oneline -1)"
 
             # 2. 條件式建構 — 只在 C++ 原始碼或 Dockerfile 變更時重建
@@ -69,11 +72,14 @@ jobs:
             elif [ "$OLD_DOCKER_HASH" != "$NEW_DOCKER_HASH" ]; then
               echo "[2/5] ⚡ Dockerfile 有變更，需要重建 image"
               NEED_BUILD=true
+            elif [ "$OLD_TS_HASH" != "$NEW_TS_HASH" ]; then
+              echo "[2/5] ⚡ 翻譯檔有變更，需要重建 image（重新編譯 .ts → .qm）"
+              NEED_BUILD=true
             elif ! docker image inspect ktw/fincept-terminal:zh-latest >/dev/null 2>&1; then
               echo "[2/5] ⚡ Image 不存在，需要首次建構"
               NEED_BUILD=true
             else
-              echo "[2/5] ⏭️ C++ 原始碼與 Dockerfile 均未變更，跳過建構（省 ~35 分鐘）"
+              echo "[2/5] ⏭️ C++ 原始碼、Dockerfile 與翻譯檔均未變更，跳過建構（省 ~35 分鐘）"
             fi
 
             if [ "$NEED_BUILD" = "true" ]; then
@@ -82,7 +88,19 @@ jobs:
                 --tag ktw/fincept-terminal:zh-latest \
                 --tag ktw/fincept-terminal:zh-$(git rev-parse --short HEAD) \
                 .
-              echo "✅ Image 建構完成"
+              # 🔴 Build 後驗證 — 確認 FinceptTerminal 二進位存在
+              if ! docker run --rm --entrypoint='' ktw/fincept-terminal:zh-latest \
+                test -f /opt/fincept/bin/FinceptTerminal; then
+                echo "❌ 致命錯誤: 新 image 缺少 FinceptTerminal 二進位檔！" >&2
+                echo "   回滾 zh-latest tag 到上一版..." >&2
+                PREV_TAG=$(docker images ktw/fincept-terminal --format '{{.Tag}}' | grep '^zh-' | grep -v latest | head -1)
+                if [ -n "$PREV_TAG" ]; then
+                  docker tag ktw/fincept-terminal:$PREV_TAG ktw/fincept-terminal:zh-latest
+                  echo "⚠️ 已回滾至 $PREV_TAG"
+                fi
+                exit 1
+              fi
+              echo "✅ Image 建構完成（FinceptTerminal 驗證通過）"
             fi
 
             # 3. 停止並移除舊的租戶容器
