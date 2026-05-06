@@ -199,20 +199,20 @@ SettingsScreen::SettingsScreen(QWidget* parent) : QWidget(parent) {
         return btn;
     };
 
-    auto* first = make_btn("Credentials", 0);
-    make_btn("Appearance", 1);
-    make_btn("Notifications", 2);
-    make_btn("Storage & Cache", 3);
-    make_btn("Data Sources", 4);
-    make_btn("LLM Config", 5);
-    make_btn("MCP Servers", 6);
-    make_btn("Logging", 7);
-    make_btn("Security", 8);
-    make_btn("Profiles", 9);
-    make_btn("Keybindings", 10);
-    make_btn("Python Env", 11);
-    make_btn("Developer", 12);
-    make_btn("Voice", 13);
+    auto* first = make_btn(tr("Credentials"), 0);
+    make_btn(tr("Appearance"), 1);
+    make_btn(tr("Notifications"), 2);
+    make_btn(tr("Storage & Cache"), 3);
+    make_btn(tr("Data Sources"), 4);
+    make_btn(tr("LLM Config"), 5);
+    make_btn(tr("MCP Servers"), 6);
+    make_btn(tr("Logging"), 7);
+    make_btn(tr("Security"), 8);
+    make_btn(tr("Profiles"), 9);
+    make_btn(tr("Keybindings"), 10);
+    make_btn(tr("Python Env"), 11);
+    make_btn(tr("Developer"), 12);
+    make_btn(tr("Voice"), 13);
 
     first->setChecked(true);
 
@@ -537,13 +537,13 @@ QWidget* SettingsScreen::build_appearance() {
         app_font_size_->addItem(QString("%1px").arg(px));
     app_font_size_->setCurrentText(kDefaultFontSize);
     app_font_size_->setStyleSheet(combo_ss());
-    vl->addWidget(make_row("Font Size", app_font_size_));
+    vl->addWidget(make_row(tr("Font Size"), app_font_size_));
 
     app_font_family_ = new QComboBox;
     app_font_family_->addItems(QFontDatabase::families());
     app_font_family_->setCurrentText(kDefaultFontFamily);
     app_font_family_->setStyleSheet(combo_ss());
-    vl->addWidget(make_row("Font Family", app_font_family_));
+    vl->addWidget(make_row(tr("Font Family"), app_font_family_));
 
     // Debounced live preview — coalesce rapid changes into one apply after 300ms idle
     appearance_debounce_ = new QTimer(this);
@@ -575,7 +575,7 @@ QWidget* SettingsScreen::build_appearance() {
     app_density_->addItems(fincept::ui::ThemeManager::available_densities());
     app_density_->setCurrentText("Default");
     app_density_->setStyleSheet(combo_ss());
-    vl->addWidget(make_row("Content Density", app_density_, "Controls padding and spacing throughout the UI."));
+    vl->addWidget(make_row(tr("Content Density"), app_density_, tr("Controls padding and spacing throughout the UI.")));
 
     connect(app_density_, &QComboBox::currentTextChanged, this, restart_debounce);
 
@@ -589,21 +589,21 @@ QWidget* SettingsScreen::build_appearance() {
     vl->addWidget(t3);
     vl->addSpacing(4);
 
-    chat_bubble_toggle_ = new QCheckBox("Show AI Chat Bubble");
+    chat_bubble_toggle_ = new QCheckBox(tr("Show AI Chat Bubble"));
     chat_bubble_toggle_->setChecked(true);
     chat_bubble_toggle_->setStyleSheet(check_ss());
     vl->addWidget(
-        make_row("AI Chat Bubble", chat_bubble_toggle_, "Floating chat assistant in the bottom-right corner."));
+        make_row(tr("AI Chat Bubble"), chat_bubble_toggle_, tr("Floating chat assistant in the bottom-right corner.")));
 
-    ticker_bar_toggle_ = new QCheckBox("Show Ticker Bar");
+    ticker_bar_toggle_ = new QCheckBox(tr("Show Ticker Bar"));
     ticker_bar_toggle_->setChecked(true);
     ticker_bar_toggle_->setStyleSheet(check_ss());
-    vl->addWidget(make_row("Ticker Bar", ticker_bar_toggle_, "Live price ticker at the bottom of the screen."));
+    vl->addWidget(make_row(tr("Ticker Bar"), ticker_bar_toggle_, tr("Live price ticker at the bottom of the screen.")));
 
-    animations_toggle_ = new QCheckBox("Enable Animations");
+    animations_toggle_ = new QCheckBox(tr("Enable Animations"));
     animations_toggle_->setChecked(true);
     animations_toggle_->setStyleSheet(check_ss());
-    vl->addWidget(make_row("Animations", animations_toggle_, "Fade and transition effects throughout the UI."));
+    vl->addWidget(make_row(tr("Animations"), animations_toggle_, tr("Fade and transition effects throughout the UI.")));
 
     vl->addSpacing(16);
 
@@ -990,9 +990,9 @@ QWidget* SettingsScreen::build_notifications() {
     trigger_orders_->setStyleSheet(check_ss());
 
     vl->addWidget(
-        make_row("In-App Alerts (toast + bell)", trigger_inapp_, "Show slide-in toasts and update bell badge."));
-    vl->addWidget(make_row("Price Alerts", trigger_price_, "Notify when price alert thresholds are crossed."));
-    vl->addWidget(make_row("News Alerts", trigger_news_, "Enable news notifications (configure which types below)."));
+        make_row(tr("In-App Alerts (toast + bell)"), trigger_inapp_, tr("Show slide-in toasts and update bell badge.")));
+    vl->addWidget(make_row(tr("Price Alerts"), trigger_price_, tr("Notify when price alert thresholds are crossed.")));
+    vl->addWidget(make_row(tr("News Alerts"), trigger_news_, tr("Enable news notifications (configure which types below).")));
 
     // ── News alert sub-options ────────────────────────────────────────────────
     news_subopts_frame_ = new QFrame;
@@ -1013,20 +1013,20 @@ QWidget* SettingsScreen::build_notifications() {
     news_flash_ = new QCheckBox;
     news_flash_->setStyleSheet(check_ss());
 
-    sub_vl->addWidget(make_row("Breaking News", news_breaking_, "Notify on FLASH/BREAKING/URGENT priority clusters."));
+    sub_vl->addWidget(make_row(tr("Breaking News"), news_breaking_, tr("Notify on FLASH/BREAKING/URGENT priority clusters.")));
     sub_vl->addWidget(
-        make_row("Monitor Keyword Matches", news_monitors_, "Notify when a news monitor watch list gets new matches."));
-    sub_vl->addWidget(make_row("Category Volume Spikes", news_deviations_,
-                               "Notify when a category has abnormally high article volume (z-score ≥ 3)."));
-    sub_vl->addWidget(make_row("FLASH + High-Impact Articles", news_flash_,
-                               "Notify on individual articles that are both FLASH priority and high market impact."));
+        make_row(tr("Monitor Keyword Matches"), news_monitors_, tr("Notify when a news monitor watch list gets new matches.")));
+    sub_vl->addWidget(make_row(tr("Category Volume Spikes"), news_deviations_,
+                               tr("Notify when a category has abnormally high article volume (z-score ≥ 3).")));
+    sub_vl->addWidget(make_row(tr("FLASH + High-Impact Articles"), news_flash_,
+                               tr("Notify on individual articles that are both FLASH priority and high market impact.")));
 
     vl->addWidget(news_subopts_frame_);
 
     // Show/hide sub-options based on master toggle
     connect(trigger_news_, &QCheckBox::toggled, this, [this](bool on) { news_subopts_frame_->setVisible(on); });
 
-    vl->addWidget(make_row("Order Fill Alerts", trigger_orders_, "Notify when orders are filled or rejected."));
+    vl->addWidget(make_row(tr("Order Fill Alerts"), trigger_orders_, tr("Notify when orders are filled or rejected.")));
 
     vl->addSpacing(16);
 
@@ -1300,8 +1300,8 @@ QWidget* SettingsScreen::build_storage() {
     vl->addWidget(t);
     vl->addSpacing(4);
 
-    auto* info = new QLabel("Manage all persistent data, databases, and files. "
-                            "Execute SQL queries directly against terminal databases.");
+    auto* info = new QLabel(tr("Manage all persistent data, databases, and files. "
+                            "Execute SQL queries directly against terminal databases."));
     info->setWordWrap(true);
     info->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
     vl->addWidget(info);
