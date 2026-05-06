@@ -160,7 +160,11 @@ RUN . /etc/build.env \
          -DCMAKE_PREFIX_PATH="${CMAKE_PREFIX_PATH}" \
          -DOPENSSL_ROOT_DIR=/usr \
     && cmake --build build --parallel 4 \
-    && strip build/FinceptTerminal
+    && strip build/FinceptTerminal \
+    && echo "[i18n] 手動編譯繁體中文翻譯檔 .ts → .qm" \
+    && mkdir -p build/translations \
+    && "${CMAKE_PREFIX_PATH}/bin/lrelease" translations/fincept_zh_TW.ts -qm build/translations/fincept_zh_TW.qm \
+    && ls -la build/translations/
 
 # ── Stage 2: Runtime ─────────────────────────────────────────────────────────
 # Pinned to $TARGETPLATFORM so the final image actually matches the arch the
@@ -231,6 +235,10 @@ WORKDIR /app
 COPY --from=builder /src/fincept-qt/build/FinceptTerminal ./FinceptTerminal
 COPY --from=builder /src/fincept-qt/scripts              ./scripts
 COPY --from=builder /src/fincept-qt/resources            ./resources
+
+# 繁體中文翻譯檔（.qm = lrelease 編譯產出；.ts = 原始碼 fallback）
+COPY --from=builder /src/fincept-qt/build/translations/  ./translations/
+COPY --from=builder /src/fincept-qt/translations/fincept_zh_TW.ts ./translations/fincept_zh_TW.ts
 
 # QGeoView is a FetchContent dependency built as a shared library next to the
 # binary on Linux. Copy it into /usr/local/lib so the map widget can dlopen it.
