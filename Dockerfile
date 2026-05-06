@@ -203,6 +203,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libdecor-0-0 libxkbcommon0 \
         # Used by embedded Python analytics
         libopenblas0 \
+        # ── VNC 遠端顯示堆疊（noVNC Kiosk 模式） ──
+        xvfb fluxbox x11vnc novnc websockify netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
 
 # Resolve the on-disk Qt arch path for this target. Same mapping as builder.
@@ -236,17 +238,9 @@ COPY --from=builder /src/fincept-qt/build/_deps/qgeoview-build/lib/ /usr/local/l
 RUN ldconfig \
     && chmod +x ./FinceptTerminal
 
-# Tiny wrapper resolves QT_PREFIX at runtime (cannot expand $(cat ...) in ENV).
-RUN { \
-      echo '#!/bin/sh'; \
-      echo 'set -e'; \
-      echo 'QT_ARCH="$(cat /etc/qt_arch)"'; \
-      echo 'QT_PREFIX="${QT_ROOT}/'"${QT_VERSION}"'/${QT_ARCH}"'; \
-      echo 'export LD_LIBRARY_PATH="${QT_PREFIX}/lib:/usr/local/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"'; \
-      echo 'export QT_PLUGIN_PATH="${QT_PREFIX}/plugins"'; \
-      echo 'export QT_QPA_PLATFORM_PLUGIN_PATH="${QT_PREFIX}/plugins/platforms"'; \
-      echo 'exec /app/FinceptTerminal "$@"'; \
-    } > /usr/local/bin/fincept-entrypoint.sh \
-    && chmod +x /usr/local/bin/fincept-entrypoint.sh
+# 完整 entrypoint：Xvfb + fluxbox + x11vnc + noVNC + FinceptTerminal
+# 支援 KTW SaaS 多租戶容器池模式
+COPY docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["/usr/local/bin/fincept-entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
