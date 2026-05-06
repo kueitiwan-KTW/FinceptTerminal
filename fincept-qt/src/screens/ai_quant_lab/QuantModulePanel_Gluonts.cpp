@@ -60,7 +60,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
 
     auto add_sample_btn = [this](QLineEdit* edit, QWidget* parent, unsigned seed,
                                   const QString& tip) -> QPushButton* {
-        auto* btn = new QPushButton("LOAD SAMPLE", parent);
+        auto* btn = new QPushButton(tr("LOAD SAMPLE"), parent);
         btn->setCursor(Qt::PointingHandCursor);
         btn->setFixedHeight(22);
         btn->setToolTip(tip);
@@ -134,7 +134,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     });
     pfl->addWidget(pf_run);
     pfl->addStretch();
-    tabs->addTab(pf, "Probabilistic Forecast");
+    tabs->addTab(pf, tr("Probabilistic Forecast"));
 
     // ── Quantile Forecast ────────────────────────────────────────────────────
     auto* qf = new QWidget(this);
@@ -217,7 +217,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     });
     qfl->addWidget(qf_run);
     qfl->addStretch();
-    tabs->addTab(qf, "Quantile Forecast");
+    tabs->addTab(qf, tr("Quantile Forecast"));
 
     // ── Distribution Fit ─────────────────────────────────────────────────────
     auto* df = new QWidget(this);
@@ -258,7 +258,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     });
     dfl->addWidget(df_run);
     dfl->addStretch();
-    tabs->addTab(df, "Distribution Fit");
+    tabs->addTab(df, tr("Distribution Fit"));
 
     // ── Evaluate Forecast ────────────────────────────────────────────────────
     auto* ef = new QWidget(this);
@@ -372,7 +372,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     });
     efl->addWidget(ef_run);
     efl->addStretch();
-    tabs->addTab(ef, "Evaluate Forecast");
+    tabs->addTab(ef, tr("Evaluate Forecast"));
 
     // ── Seasonal Naive ───────────────────────────────────────────────────────
     auto* sn = new QWidget(this);
@@ -436,7 +436,7 @@ QWidget* QuantModulePanel::build_gluonts_panel() {
     });
     snl->addWidget(sn_run);
     snl->addStretch();
-    tabs->addTab(sn, "Seasonal Naive");
+    tabs->addTab(sn, tr("Seasonal Naive"));
 
     vl->addWidget(tabs);
 

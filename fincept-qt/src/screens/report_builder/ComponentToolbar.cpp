@@ -124,13 +124,13 @@ ComponentToolbar::ComponentToolbar(QWidget* parent) : QWidget(parent) {
     font_size_->setValue(12);
     srl->addWidget(font_size_);
 
-    bold_btn_ = new QPushButton("B");
+    bold_btn_ = new QPushButton(tr("B"));
     bold_btn_->setCheckable(true);
     bold_btn_->setFixedSize(28, 28);
     bold_btn_->setStyleSheet("QPushButton { font-weight: bold; }");
     srl->addWidget(bold_btn_);
 
-    italic_btn_ = new QPushButton("I");
+    italic_btn_ = new QPushButton(tr("I"));
     italic_btn_->setCheckable(true);
     italic_btn_->setFixedSize(28, 28);
     italic_btn_->setStyleSheet("QPushButton { font-style: italic; }");

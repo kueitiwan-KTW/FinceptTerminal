@@ -1896,7 +1896,7 @@ QWidget* SettingsScreen::build_storage() {
         nd2->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         nd_vl->addWidget(nd2);
         nr_hl->addWidget(nuke_desc, 1);
-        auto* nuke_btn = new QPushButton("DELETE ALL");
+        auto* nuke_btn = new QPushButton(tr("DELETE ALL"));
         nuke_btn->setFixedSize(110, 26);
         nuke_btn->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:2px solid %1;font-weight:700;}"
                                         "QPushButton:hover{background:%2;color:%3;}")
@@ -2215,7 +2215,7 @@ QWidget* SettingsScreen::build_data_sources() {
                 rhl->addWidget(toggle);
 
                 // Delete button
-                auto* del_btn = new QPushButton("X");
+                auto* del_btn = new QPushButton(tr("X"));
                 del_btn->setFixedSize(22, 18);
                 del_btn->setCursor(Qt::PointingHandCursor);
                 del_btn->setStyleSheet(
@@ -2318,7 +2318,7 @@ QWidget* SettingsScreen::build_data_sources() {
         brhl->addWidget(disable_all);
 
         // Delete all
-        auto* delete_all = new QPushButton("DELETE ALL");
+        auto* delete_all = new QPushButton(tr("DELETE ALL"));
         delete_all->setFixedHeight(24);
         delete_all->setStyleSheet(
             QString("QPushButton{background:%1;color:%2;border:2px solid %2;font-weight:700;padding:0 10px;}"

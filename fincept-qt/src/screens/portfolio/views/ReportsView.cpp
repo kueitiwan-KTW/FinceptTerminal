@@ -36,7 +36,7 @@ void ReportsView::build_ui() {
     // ── Portfolio Summary Report ─────────────────────────────────────────────
     summary_panel_ = new QWidget(this);
     summary_panel_->setStyleSheet(QString("background:%1;").arg(ui::colors::BG_BASE()));
-    tabs_->addTab(summary_panel_, "SUMMARY");
+    tabs_->addTab(summary_panel_, tr("SUMMARY"));
 
     // ── Transaction History ──────────────────────────────────────────────────
     auto* txn_w = new QWidget(this);
@@ -70,7 +70,7 @@ void ReportsView::build_ui() {
                                   .arg(ui::colors::BG_BASE(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM(),
                                        ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(), ui::colors::AMBER()));
     txn_layout->addWidget(txn_table_, 1);
-    tabs_->addTab(txn_w, "TRANSACTIONS");
+    tabs_->addTab(txn_w, tr("TRANSACTIONS"));
 
     // ── Performance Attribution ──────────────────────────────────────────────
     auto* attr_w = new QWidget(this);
@@ -98,7 +98,7 @@ void ReportsView::build_ui() {
                                    .arg(ui::colors::BG_BASE(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM(),
                                         ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(), ui::colors::AMBER()));
     attr_layout->addWidget(attr_table_, 1);
-    tabs_->addTab(attr_w, "ATTRIBUTION");
+    tabs_->addTab(attr_w, tr("ATTRIBUTION"));
 
     layout->addWidget(tabs_);
 }

@@ -236,7 +236,7 @@ QWidget* SurfaceAnalyticsScreen::build_category_bar() {
     hl->addStretch();
 
     // Right controls — flat Obsidian buttons
-    auto* import_btn = new QPushButton("IMPORT CSV", bar);
+    auto* import_btn = new QPushButton(tr("IMPORT CSV"), bar);
     import_btn->setFixedHeight(20);
     import_btn->setStyleSheet(btn_inactive());
     connect(import_btn, &QPushButton::clicked, this, &SurfaceAnalyticsScreen::on_import_csv);
@@ -246,9 +246,9 @@ QWidget* SurfaceAnalyticsScreen::build_category_bar() {
     hl->addWidget(make_sep(bar));
     hl->addSpacing(4);
 
-    btn_3d_ = new QPushButton("3D", bar);
-    btn_table_ = new QPushButton("TABLE", bar);
-    btn_line_ = new QPushButton("LINE", bar);
+    btn_3d_ = new QPushButton(tr("3D"), bar);
+    btn_table_ = new QPushButton(tr("TABLE"), bar);
+    btn_line_ = new QPushButton(tr("LINE"), bar);
     btn_3d_->setFixedHeight(20);
     btn_table_->setFixedHeight(20);
     btn_line_->setFixedHeight(20);
@@ -272,7 +272,7 @@ QWidget* SurfaceAnalyticsScreen::build_category_bar() {
     hl->addWidget(make_sep(bar));
     hl->addSpacing(4);
 
-    auto* ref_btn = new QPushButton("REFRESH", bar);
+    auto* ref_btn = new QPushButton(tr("REFRESH"), bar);
     ref_btn->setFixedHeight(20);
     ref_btn->setStyleSheet(btn_inactive());
     connect(ref_btn, &QPushButton::clicked, this, &SurfaceAnalyticsScreen::on_refresh);

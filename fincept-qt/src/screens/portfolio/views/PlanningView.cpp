@@ -31,9 +31,9 @@ void PlanningView::build_ui() {
                              .arg(ui::colors::BG_BASE(), ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(),
                                   ui::colors::AMBER(), ui::colors::TEXT_PRIMARY()));
 
-    tabs_->addTab(build_retirement_tab(), "RETIREMENT");
-    tabs_->addTab(build_goals_tab(), "GOALS");
-    tabs_->addTab(build_savings_tab(), "SAVINGS");
+    tabs_->addTab(build_retirement_tab(), tr("RETIREMENT"));
+    tabs_->addTab(build_goals_tab(), tr("GOALS"));
+    tabs_->addTab(build_savings_tab(), tr("SAVINGS"));
 
     layout->addWidget(tabs_);
 }

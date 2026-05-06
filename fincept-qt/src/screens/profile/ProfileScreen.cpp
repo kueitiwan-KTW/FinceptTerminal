@@ -259,7 +259,7 @@ QWidget* ProfileScreen::build_overview() {
             .arg(ui::colors::NEGATIVE(), ui::colors::TEXT_PRIMARY()));
     connect(lb, &QPushButton::clicked, this, &ProfileScreen::show_logout_confirm);
     arl->addWidget(lb);
-    auto* dab = new QPushButton("DELETE ACCOUNT");
+    auto* dab = new QPushButton(tr("DELETE ACCOUNT"));
     dab->setFixedHeight(26);
     dab->setStyleSheet(
         QString("QPushButton{background:rgba(220,38,38,0.15);color:%1;border:1px solid #7f1d1d;padding:0 12px;"
@@ -814,7 +814,7 @@ void ProfileScreen::show_delete_account_dialog() {
     connect(cancel, &QPushButton::clicked, dlg, &QDialog::reject);
     brl->addWidget(cancel);
 
-    auto* confirm = new QPushButton("DELETE MY ACCOUNT");
+    auto* confirm = new QPushButton(tr("DELETE MY ACCOUNT"));
     confirm->setFixedHeight(26);
     confirm->setEnabled(false);
     confirm->setStyleSheet(

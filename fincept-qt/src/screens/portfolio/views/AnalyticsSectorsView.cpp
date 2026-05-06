@@ -130,8 +130,8 @@ void AnalyticsSectorsView::build_ui() {
                  ui::colors::AMBER(), ui::colors::TEXT_PRIMARY())
             .arg(ui::fonts::font_px(-3)));
 
-    tabs_->addTab(build_overview_tab(), "OVERVIEW");
-    tabs_->addTab(build_correlation_tab(), "CORRELATION");
+    tabs_->addTab(build_overview_tab(), tr("OVERVIEW"));
+    tabs_->addTab(build_correlation_tab(), tr("CORRELATION"));
     root->addWidget(tabs_);
 }
 
@@ -711,7 +711,7 @@ void AnalyticsSectorsView::update_correlation() {
     }
 
     if (summary_.holdings.size() < 2) {
-        auto* msg = new QLabel("Need 2+ holdings for correlation analysis", corr_panel_);
+        auto* msg = new QLabel(tr("Need 2+ holdings for correlation analysis"), corr_panel_);
         msg->setAlignment(Qt::AlignCenter);
         msg->setStyleSheet(QString("color:%1; font-size:%2px; padding:40px; background:transparent;")
                                 .arg(ui::colors::TEXT_TERTIARY())

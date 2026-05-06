@@ -59,7 +59,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     // Helper: small "load sample" link button next to a CSV input
     auto add_sample_btn = [this](QLineEdit* edit, QWidget* parent, unsigned seed,
                                   const QString& tip) -> QPushButton* {
-        auto* btn = new QPushButton("LOAD SAMPLE", parent);
+        auto* btn = new QPushButton(tr("LOAD SAMPLE"), parent);
         btn->setCursor(Qt::PointingHandCursor);
         btn->setFixedHeight(22);
         btn->setToolTip(tip);
@@ -113,7 +113,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     rvl->addWidget(risk_run);
     rvl->addStretch();
-    tabs->addTab(risk, "Risk Metrics");
+    tabs->addTab(risk, tr("Risk Metrics"));
 
     // ── Portfolio Analytics ──
     auto* port = new QWidget(this);
@@ -167,7 +167,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     pvl->addWidget(port_run);
     pvl->addStretch();
-    tabs->addTab(port, "Portfolio");
+    tabs->addTab(port, tr("Portfolio"));
 
     // ── Options Greeks ──
     auto* greeks = new QWidget(this);
@@ -208,7 +208,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     gvl->addWidget(greeks_run);
     gvl->addStretch();
-    tabs->addTab(greeks, "Greeks");
+    tabs->addTab(greeks, tr("Greeks"));
 
     // ── VaR Analysis ──
     auto* var = new QWidget(this);
@@ -249,7 +249,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     vvl->addWidget(var_run);
     vvl->addStretch();
-    tabs->addTab(var, "VaR");
+    tabs->addTab(var, tr("VaR"));
 
     // ── Stress Test ──
     auto* stress = new QWidget(this);
@@ -295,7 +295,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     svl->addWidget(stress_run);
     svl->addStretch();
-    tabs->addTab(stress, "Stress Test");
+    tabs->addTab(stress, tr("Stress Test"));
 
     // ── Backtest ──
     auto* bt = new QWidget(this);
@@ -350,7 +350,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     bvl->addWidget(bt_run);
     bvl->addStretch();
-    tabs->addTab(bt, "Backtest");
+    tabs->addTab(bt, tr("Backtest"));
 
     // ── Statistics ──
     auto* stats = new QWidget(this);
@@ -383,7 +383,7 @@ QWidget* QuantModulePanel::build_gs_quant_panel() {
     });
     stvl->addWidget(stats_run);
     stvl->addStretch();
-    tabs->addTab(stats, "Statistics");
+    tabs->addTab(stats, tr("Statistics"));
 
     vl->addWidget(tabs);
 

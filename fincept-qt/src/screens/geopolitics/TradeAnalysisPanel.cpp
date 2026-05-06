@@ -98,7 +98,7 @@ void TradeAnalysisPanel::build_ui() {
         QString("background:%1; border-bottom:1px solid %2;").arg(ui::colors::BG_RAISED(), ui::colors::BORDER_DIM()));
     auto* hhl = new QHBoxLayout(header);
     hhl->setContentsMargins(16, 0, 16, 0);
-    auto* title = new QLabel("TRADE GEOPOLITICS ANALYSIS", header);
+    auto* title = new QLabel(tr("TRADE GEOPOLITICS ANALYSIS"), header);
     title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3; letter-spacing:1px;")
                              .arg(ui::colors::WARNING())
                              .arg(ui::fonts::TINY)
@@ -186,7 +186,7 @@ void TradeAnalysisPanel::build_ui() {
     p0l->addStretch();
 
     // Store spinboxes for use in run button
-    auto* run0 = new QPushButton("RUN ANALYSIS", p0);
+    auto* run0 = new QPushButton(tr("RUN ANALYSIS"), p0);
     run0->setCursor(Qt::PointingHandCursor);
     run0->setStyleSheet([&]() {
         QColor w(ui::colors::WARNING());
@@ -208,7 +208,7 @@ void TradeAnalysisPanel::build_ui() {
         GeopoliticsService::instance().analyze_trade_benefits(p);
     });
     p0l->addWidget(run0);
-    tabs_->addTab(p0, "Benefits & Costs");
+    tabs_->addTab(p0, tr("Benefits & Costs"));
 
     // ── Page 1: Restrictions ──────────────────────────────────────────────────
     auto* p1 = new QWidget(this);
@@ -217,7 +217,7 @@ void TradeAnalysisPanel::build_ui() {
     p1l->setSpacing(10);
 
     auto* hint1 =
-        new QLabel("Analyzes economic impact of tariffs, quotas, export subsidies, and non-tariff barriers.", p1);
+        new QLabel(tr("Analyzes economic impact of tariffs, quotas, export subsidies, and non-tariff barriers."), p1);
     hint1->setWordWrap(true);
     hint1->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                              .arg(ui::colors::TEXT_SECONDARY())
@@ -262,7 +262,7 @@ void TradeAnalysisPanel::build_ui() {
 
     p1l->addStretch();
 
-    auto* run1 = new QPushButton("RUN ANALYSIS", p1);
+    auto* run1 = new QPushButton(tr("RUN ANALYSIS"), p1);
     run1->setCursor(Qt::PointingHandCursor);
     run1->setStyleSheet([&]() {
         QColor w(ui::colors::WARNING());
@@ -287,7 +287,7 @@ void TradeAnalysisPanel::build_ui() {
                 GeopoliticsService::instance().analyze_trade_restrictions(p);
             });
     p1l->addWidget(run1);
-    tabs_->addTab(p1, "Restrictions");
+    tabs_->addTab(p1, tr("Restrictions"));
 
     // ── Page 2: Trading Blocs ─────────────────────────────────────────────────
     auto* p2 = new QWidget(this);
@@ -296,7 +296,7 @@ void TradeAnalysisPanel::build_ui() {
     p2l->setSpacing(10);
 
     auto* hint2 =
-        new QLabel("Analyzes trade creation vs. diversion effects for regional trade blocs and economic unions.", p2);
+        new QLabel(tr("Analyzes trade creation vs. diversion effects for regional trade blocs and economic unions."), p2);
     hint2->setWordWrap(true);
     hint2->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                              .arg(ui::colors::TEXT_SECONDARY())
@@ -328,7 +328,7 @@ void TradeAnalysisPanel::build_ui() {
 
     p2l->addStretch();
 
-    auto* run2 = new QPushButton("RUN ANALYSIS", p2);
+    auto* run2 = new QPushButton(tr("RUN ANALYSIS"), p2);
     run2->setCursor(Qt::PointingHandCursor);
     run2->setStyleSheet([&]() {
         QColor w(ui::colors::WARNING());
@@ -350,7 +350,7 @@ void TradeAnalysisPanel::build_ui() {
         GeopoliticsService::instance().analyze_trade_benefits(p); // reuses benefits endpoint with trading_blocs type
     });
     p2l->addWidget(run2);
-    tabs_->addTab(p2, "Trading Blocs");
+    tabs_->addTab(p2, tr("Trading Blocs"));
 
     // ── Page 3: Barrier Removal ───────────────────────────────────────────────
     auto* p3 = new QWidget(this);
@@ -358,7 +358,7 @@ void TradeAnalysisPanel::build_ui() {
     p3l->setContentsMargins(12, 12, 12, 12);
     p3l->setSpacing(10);
 
-    auto* hint3 = new QLabel("Assesses FDI, employment, wage, and GDP impact of removing trade barriers.", p3);
+    auto* hint3 = new QLabel(tr("Assesses FDI, employment, wage, and GDP impact of removing trade barriers."), p3);
     hint3->setWordWrap(true);
     hint3->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                              .arg(ui::colors::TEXT_SECONDARY())
@@ -390,7 +390,7 @@ void TradeAnalysisPanel::build_ui() {
 
     p3l->addStretch();
 
-    auto* run3 = new QPushButton("RUN ANALYSIS", p3);
+    auto* run3 = new QPushButton(tr("RUN ANALYSIS"), p3);
     run3->setCursor(Qt::PointingHandCursor);
     run3->setStyleSheet([&]() {
         QColor w(ui::colors::WARNING());
@@ -412,7 +412,7 @@ void TradeAnalysisPanel::build_ui() {
         GeopoliticsService::instance().analyze_trade_restrictions(p); // reuses restrictions endpoint
     });
     p3l->addWidget(run3);
-    tabs_->addTab(p3, "Barrier Removal");
+    tabs_->addTab(p3, tr("Barrier Removal"));
 
     // Sync analysis type combo → tab
     connect(type_combo, QOverload<int>::of(&QComboBox::currentIndexChanged), tabs_, &QTabWidget::setCurrentIndex);

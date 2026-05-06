@@ -76,9 +76,9 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     da_vl->addWidget(desc);
 
     auto* task_edit = new QTextEdit(da_w);
-    task_edit->setPlaceholderText(tr("Describe your analysis task...\n")
+    task_edit->setPlaceholderText(tr("Describe your analysis task...\n"
                                   "e.g. \"Conduct a full investment analysis of NVDA: research fundamentals, "
-                                  "assess risks, and give a buy/sell/hold recommendation with price target\"");
+                                  "assess risks, and give a buy/sell/hold recommendation with price target\""));
     task_edit->setFixedHeight(90);
     task_edit->setStyleSheet(QString("QTextEdit { background:%1; color:%2; border:1px solid %3;"
                                      "font-family:%4; font-size:%5px; padding:6px; }")
@@ -141,10 +141,10 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     results_layout_->setSpacing(0);
     da_vl->addWidget(rc);
 
-    tabs->addTab(da_w, "Deep Analysis");
+    tabs->addTab(da_w, tr("Deep Analysis"));
 
     // ── Tab 2: RD-Agent ─────────────────────────────────────────────────────
-    tabs->addTab(build_rd_agent_tab(llm_combo), "RD-Agent");
+    tabs->addTab(build_rd_agent_tab(llm_combo), tr("RD-Agent"));
 
     vl->addWidget(tabs, 1);
     return w;
@@ -176,14 +176,14 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     auto* status_dot = new QLabel("●", status_bar);
     status_dot->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_TERTIARY()));
     sbl->addWidget(status_dot);
-    auto* status_txt = new QLabel("RD-Agent ready", status_bar);
+    auto* status_txt = new QLabel(tr("RD-Agent ready"), status_bar);
     status_txt->setObjectName("rdStatusTxt");
     status_txt->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                   .arg(ui::colors::TEXT_TERTIARY())
                                   .arg(ui::fonts::TINY)
                                   .arg(ui::fonts::DATA_FAMILY));
     sbl->addWidget(status_txt, 1);
-    auto* check_btn = new QPushButton("CHECK STATUS", status_bar);
+    auto* check_btn = new QPushButton(tr("CHECK STATUS"), status_bar);
     check_btn->setCursor(Qt::PointingHandCursor);
     check_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
                                      "font-family:%2; font-size:%3px; padding:2px 8px; border-radius:2px; }"
@@ -198,7 +198,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     });
     sbl->addWidget(check_btn);
 
-    auto* ui_btn = new QPushButton("OPEN LOG VIEWER", status_bar);
+    auto* ui_btn = new QPushButton(tr("OPEN LOG VIEWER"), status_bar);
     ui_btn->setCursor(Qt::PointingHandCursor);
     ui_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
                                   "font-family:%2; font-size:%3px; padding:2px 8px; border-radius:2px; }"
@@ -213,12 +213,12 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     });
     sbl->addWidget(ui_btn);
 
-    auto* mcp_btn = new QPushButton("MCP TOOLS", status_bar);
+    auto* mcp_btn = new QPushButton(tr("MCP TOOLS"), status_bar);
     mcp_btn->setCursor(Qt::PointingHandCursor);
     mcp_btn->setCheckable(true);
-    mcp_btn->setToolTip(tr("Start/stop the Fincept MCP tool server\n")
+    mcp_btn->setToolTip(tr("Start/stop the Fincept MCP tool server\n"
                         "Gives RD-Agent loops access to market data,\n"
-                        "financial news and economics tools.");
+                        "financial news and economics tools."));
     mcp_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"
                                    "font-family:%2; font-size:%3px; padding:2px 8px; border-radius:2px; }"
                                    "QPushButton:checked { background:%4; color:%5; border-color:%4; }"
@@ -301,7 +301,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     });
     fm_vl->addWidget(fm_run);
     fm_vl->addStretch();
-    sub->addTab(fm_w, "Factor Mining");
+    sub->addTab(fm_w, tr("Factor Mining"));
 
     // ── Sub-tab 2: Model Optimization ────────────────────────────────────────
     auto* mo_w = new QWidget(sub);
@@ -353,7 +353,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     });
     mo_vl->addWidget(mo_run);
     mo_vl->addStretch();
-    sub->addTab(mo_w, "Model Optimization");
+    sub->addTab(mo_w, tr("Model Optimization"));
 
     // ── Sub-tab 3: Quant Research ─────────────────────────────────────────────
     auto* qr_w = new QWidget(sub);
@@ -412,7 +412,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     });
     qr_vl->addWidget(qr_run);
     qr_vl->addStretch();
-    sub->addTab(qr_w, "Quant Research");
+    sub->addTab(qr_w, tr("Quant Research"));
 
     // ── Sub-tab 4: Task Monitor ───────────────────────────────────────────────
     auto* tm_w = new QWidget(sub);
@@ -432,7 +432,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     filter_combo->setStyleSheet(combo_ss());
     tm_hl->addWidget(filter_combo);
 
-    auto* refresh_btn = new QPushButton("REFRESH", tm_toolbar);
+    auto* refresh_btn = new QPushButton(tr("REFRESH"), tm_toolbar);
     refresh_btn->setCursor(Qt::PointingHandCursor);
     refresh_btn->setStyleSheet(
         QString("QPushButton { background:%1; color:%2; border:none;"
@@ -451,7 +451,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     task_id_input->setFixedWidth(200);
     tm_hl->addWidget(task_id_input);
 
-    auto* stop_btn = new QPushButton("STOP", tm_toolbar);
+    auto* stop_btn = new QPushButton(tr("STOP"), tm_toolbar);
     stop_btn->setCursor(Qt::PointingHandCursor);
     stop_btn->setStyleSheet(
         QString("QPushButton { background:" + QString(ui::colors::NEGATIVE()) +
@@ -464,7 +464,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             .arg(ui::fonts::TINY));
     tm_hl->addWidget(stop_btn);
 
-    auto* resume_btn = new QPushButton("RESUME", tm_toolbar);
+    auto* resume_btn = new QPushButton(tr("RESUME"), tm_toolbar);
     resume_btn->setCursor(Qt::PointingHandCursor);
     resume_btn->setStyleSheet(
         QString("QPushButton { background:" + QString(ui::colors::POSITIVE()) +
@@ -554,7 +554,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             task_id_input->setText(rd_task_table_->item(row, 0)->text());
     });
 
-    sub->addTab(tm_w, "Task Monitor");
+    sub->addTab(tm_w, tr("Task Monitor"));
 
     vl->addWidget(sub, 1);
     return w;

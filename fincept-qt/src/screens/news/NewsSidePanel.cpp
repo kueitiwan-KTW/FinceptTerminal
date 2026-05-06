@@ -25,12 +25,12 @@ NewsSidePanel::NewsSidePanel(QWidget* parent) : QWidget(parent) {
     header_layout->setContentsMargins(10, 0, 6, 0);
     header_layout->setSpacing(0);
 
-    auto* title = new QLabel("INTELLIGENCE", header);
+    auto* title = new QLabel(tr("INTELLIGENCE"), header);
     title->setObjectName("newsDrawerTitle");
     header_layout->addWidget(title);
     header_layout->addStretch();
 
-    auto* close_btn = new QPushButton("x", header);
+    auto* close_btn = new QPushButton(tr("x"), header);
     close_btn->setObjectName("newsDrawerCloseBtn");
     close_btn->setFixedSize(22, 22);
     close_btn->setCursor(Qt::PointingHandCursor);
@@ -96,7 +96,7 @@ void NewsSidePanel::toggle_drawer() {
 }
 
 void NewsSidePanel::build_top_stories_section(QVBoxLayout* parent) {
-    auto* title = new QLabel("TOP STORIES", this);
+    auto* title = new QLabel(tr("TOP STORIES"), this);
     title->setObjectName("newsDrawerSectionTitle");
     parent->addWidget(title);
 
@@ -108,7 +108,7 @@ void NewsSidePanel::build_top_stories_section(QVBoxLayout* parent) {
 }
 
 void NewsSidePanel::build_categories_section(QVBoxLayout* parent) {
-    auto* title = new QLabel("CATEGORIES", this);
+    auto* title = new QLabel(tr("CATEGORIES"), this);
     title->setObjectName("newsDrawerSectionTitle");
     parent->addWidget(title);
 
@@ -120,7 +120,7 @@ void NewsSidePanel::build_categories_section(QVBoxLayout* parent) {
 }
 
 void NewsSidePanel::build_monitors_section(QVBoxLayout* parent) {
-    auto* title = new QLabel("KEYWORD MONITORS", this);
+    auto* title = new QLabel(tr("KEYWORD MONITORS"), this);
     title->setObjectName("newsDrawerSectionTitle");
     parent->addWidget(title);
 
@@ -180,7 +180,7 @@ void NewsSidePanel::build_deviations_section(QVBoxLayout* parent) {
     inner->setContentsMargins(0, 0, 0, 0);
     inner->setSpacing(2);
 
-    auto* title = new QLabel("DEVIATIONS", deviations_section_);
+    auto* title = new QLabel(tr("DEVIATIONS"), deviations_section_);
     title->setObjectName("newsDrawerSectionTitle");
     inner->addWidget(title);
 
@@ -292,7 +292,7 @@ void NewsSidePanel::update_monitors(const QVector<services::NewsMonitor>& monito
         hl->addWidget(toggle);
 
         // Delete button
-        auto* del_btn = new QPushButton("x", this);
+        auto* del_btn = new QPushButton(tr("x"), this);
         del_btn->setObjectName("newsMonitorDeleteBtn");
         del_btn->setFixedSize(18, 18);
         del_btn->setCursor(Qt::PointingHandCursor);

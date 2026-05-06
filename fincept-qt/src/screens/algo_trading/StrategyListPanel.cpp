@@ -82,7 +82,7 @@ void StrategyListPanel::build_ui() {
     top_hl->addWidget(cat_combo_);
 
     // Sort
-    auto* sort_lbl = new QLabel("SORT:", top_bar);
+    auto* sort_lbl = new QLabel(tr("SORT:"), top_bar);
     sort_lbl->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;"
                                     " background:transparent; border:none;")
                                 .arg(colors::TEXT_TERTIARY())
@@ -97,7 +97,7 @@ void StrategyListPanel::build_ui() {
     sort_combo_->setStyleSheet(combo_style);
     top_hl->addWidget(sort_combo_);
 
-    count_label_ = new QLabel("0 strategies", top_bar);
+    count_label_ = new QLabel(tr("0 strategies"), top_bar);
     count_label_->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;"
                                         " background:transparent; border:none;")
                                     .arg(colors::TEXT_SECONDARY())
@@ -159,13 +159,13 @@ void StrategyListPanel::build_ui() {
             .arg(fonts::TINY)
             .arg(fonts::DATA_FAMILY(), colors::CYAN());
 
-    prev_btn_ = new QPushButton("◀ PREV", page_bar);
+    prev_btn_ = new QPushButton(tr("◀ PREV"), page_bar);
     prev_btn_->setFixedHeight(24);
     prev_btn_->setCursor(Qt::PointingHandCursor);
     prev_btn_->setStyleSheet(btn_style);
     page_hl->addWidget(prev_btn_);
 
-    page_label_ = new QLabel("Page 1 of 1", page_bar);
+    page_label_ = new QLabel(tr("Page 1 of 1"), page_bar);
     page_label_->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;"
                                        " background:transparent; border:none;")
                                    .arg(colors::TEXT_SECONDARY())
@@ -174,7 +174,7 @@ void StrategyListPanel::build_ui() {
     page_label_->setAlignment(Qt::AlignCenter);
     page_hl->addWidget(page_label_, 1);
 
-    next_btn_ = new QPushButton("NEXT ▶", page_bar);
+    next_btn_ = new QPushButton(tr("NEXT ▶"), page_bar);
     next_btn_->setFixedHeight(24);
     next_btn_->setCursor(Qt::PointingHandCursor);
     next_btn_->setStyleSheet(btn_style);

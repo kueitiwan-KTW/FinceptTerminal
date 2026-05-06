@@ -1512,7 +1512,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
                     delete cards_vl->takeAt(0)->widget();
 
                 if (schedules.isEmpty()) {
-                    auto* empty = new QLabel("No schedules configured yet.\nUse the Create Schedule tab to add one.",
+                    auto* empty = new QLabel(tr("No schedules configured yet.\nUse the Create Schedule tab to add one."),
                                              cards_w);
                     empty->setAlignment(Qt::AlignCenter);
                     empty->setStyleSheet(QString("color:%1; font-size:12px; padding:24px;")
@@ -1582,7 +1582,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
                         ahl->setContentsMargins(0, 4, 0, 0);
                         ahl->setSpacing(6);
 
-                        auto* run_btn = new QPushButton("Run Now", acts);
+                        auto* run_btn = new QPushButton(tr("Run Now"), acts);
                         run_btn->setStyleSheet(QString(
                             "QPushButton{background:%1;color:%2;border:1px solid %1;"
                             "border-radius:3px;font-size:10px;font-weight:700;padding:3px 10px;}"
@@ -1598,7 +1598,7 @@ void QuantModulePanel::on_result(const QString& module_id, const QString& comman
                         });
                         ahl->addWidget(run_btn);
 
-                        auto* del_btn = new QPushButton("Delete", acts);
+                        auto* del_btn = new QPushButton(tr("Delete"), acts);
                         del_btn->setStyleSheet(QString(
                             "QPushButton{background:transparent;color:#ef4444;border:1px solid #ef4444;"
                             "border-radius:3px;font-size:10px;font-weight:700;padding:3px 10px;}"

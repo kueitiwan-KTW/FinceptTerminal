@@ -76,7 +76,7 @@ void SetupScreen::build_ui() {
     cl->setSpacing(8);
 
     // ── Title block ───────────────────────────────────────────────────────────
-    auto* title = new QLabel("FINCEPT TERMINAL", center);
+    auto* title = new QLabel(tr("FINCEPT TERMINAL"), center);
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet(QString("color:%1; font-family:%2; font-size:24px; font-weight:700; letter-spacing:3px;")
                              .arg(kAccent, fonts::DATA_FAMILY));
@@ -150,17 +150,17 @@ void SetupScreen::build_ui() {
 
     const QString stat_css = QString("color:%1; font-family:%2; font-size:10px;")
                                  .arg(colors::TEXT_SECONDARY(), fonts::DATA_FAMILY);
-    elapsed_lbl_ = new QLabel("Elapsed: 0s", live_row_);
+    elapsed_lbl_ = new QLabel(tr("Elapsed: 0s"), live_row_);
     elapsed_lbl_->setStyleSheet(stat_css);
     elapsed_lbl_->setFixedWidth(120);
     live_hl->addWidget(elapsed_lbl_);
 
-    down_lbl_ = new QLabel("\u2193 0 B/s", live_row_);
+    down_lbl_ = new QLabel(tr("\u2193 0 B/s"), live_row_);
     down_lbl_->setStyleSheet(stat_css);
     down_lbl_->setFixedWidth(110);
     live_hl->addWidget(down_lbl_);
 
-    up_lbl_ = new QLabel("\u2191 0 B/s", live_row_);
+    up_lbl_ = new QLabel(tr("\u2191 0 B/s"), live_row_);
     up_lbl_->setStyleSheet(stat_css);
     up_lbl_->setFixedWidth(110);
     live_hl->addWidget(up_lbl_);

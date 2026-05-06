@@ -195,7 +195,7 @@ void PortfolioCommandBar::build_portfolio_selector() {
     });
     btn_row->addWidget(create_btn);
 
-    auto* delete_btn = new QPushButton("DELETE");
+    auto* delete_btn = new QPushButton(tr("DELETE"));
     delete_btn->setFixedHeight(24);
     delete_btn->setCursor(Qt::PointingHandCursor);
     delete_btn->setStyleSheet(QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"

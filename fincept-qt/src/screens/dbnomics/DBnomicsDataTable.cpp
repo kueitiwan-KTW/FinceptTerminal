@@ -25,7 +25,7 @@ void DBnomicsDataTable::build_ui() {
     root->setSpacing(0);
 
     // ── Section header (always visible) ──────────────────────────────────────
-    auto* header_label = new QLabel("OBSERVATION DATA", this);
+    auto* header_label = new QLabel(tr("OBSERVATION DATA"), this);
     header_label->setStyleSheet(QString("color: %1; font-size: 11px; font-weight: 700; "
                                         "font-family: 'Consolas','Courier New',monospace; "
                                         "padding: 6px 12px; background: %2; "

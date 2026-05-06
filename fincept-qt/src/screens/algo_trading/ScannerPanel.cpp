@@ -125,7 +125,7 @@ static QWidget* build_condition_row(QVBoxLayout* /*owner_layout*/, QWidget* pare
     val_spin->setValue(0);
 
     // Remove
-    auto* rm_btn = new QPushButton("X", row);
+    auto* rm_btn = new QPushButton(QStringLiteral("X"), row);
     rm_btn->setFixedSize(28, 28);
     rm_btn->setCursor(Qt::PointingHandCursor);
     rm_btn->setStyleSheet(QString("QPushButton { background: transparent; color: %1; border: 1px solid %2;"
@@ -278,12 +278,12 @@ void ScannerPanel::build_ui() {
     left_vl->setContentsMargins(0, 0, 0, 0);
     left_vl->setSpacing(8);
 
-    auto* cond_title = new QLabel("SCAN CONDITIONS", left_col);
+    auto* cond_title = new QLabel(tr("SCAN CONDITIONS"), left_col);
     cond_title->setStyleSheet(kSectionLabel());
     left_vl->addWidget(cond_title);
 
     // Preset selector
-    auto* preset_lbl = new QLabel("PRESET", left_col);
+    auto* preset_lbl = new QLabel(tr("PRESET"), left_col);
     preset_lbl->setStyleSheet(kLabelStyle());
     left_vl->addWidget(preset_lbl);
 
@@ -300,7 +300,7 @@ void ScannerPanel::build_ui() {
     // Logic combo
     auto* logic_row = new QHBoxLayout;
     logic_row->setSpacing(8);
-    auto* logic_lbl = new QLabel("LOGIC:", left_col);
+    auto* logic_lbl = new QLabel(tr("LOGIC:"), left_col);
     logic_lbl->setStyleSheet(kLabelStyle());
     logic_row->addWidget(logic_lbl);
 
@@ -321,7 +321,7 @@ void ScannerPanel::build_ui() {
     left_vl->addWidget(cond_container);
 
     // Add condition button
-    auto* add_cond_btn = new QPushButton("+ ADD CONDITION", left_col);
+    auto* add_cond_btn = new QPushButton(tr("+ ADD CONDITION"), left_col);
     add_cond_btn->setCursor(Qt::PointingHandCursor);
     add_cond_btn->setFixedHeight(28);
     add_cond_btn->setStyleSheet(QString("QPushButton { background: transparent; color: %1; border: 1px dashed %2;"
@@ -345,12 +345,12 @@ void ScannerPanel::build_ui() {
     right_vl->setContentsMargins(0, 0, 0, 0);
     right_vl->setSpacing(8);
 
-    auto* sym_title = new QLabel("SYMBOLS & PARAMETERS", right_col);
+    auto* sym_title = new QLabel(tr("SYMBOLS & PARAMETERS"), right_col);
     sym_title->setStyleSheet(kSectionLabel());
     right_vl->addWidget(sym_title);
 
     // Symbols text area
-    auto* sym_lbl = new QLabel("SYMBOLS (comma or newline separated)", right_col);
+    auto* sym_lbl = new QLabel(tr("SYMBOLS (comma or newline separated)"), right_col);
     sym_lbl->setStyleSheet(kLabelStyle());
     right_vl->addWidget(sym_lbl);
 
@@ -364,7 +364,7 @@ void ScannerPanel::build_ui() {
     auto* quick_row = new QHBoxLayout;
     quick_row->setSpacing(8);
 
-    auto* nifty_btn = new QPushButton("NIFTY 50", right_col);
+    auto* nifty_btn = new QPushButton(tr("NIFTY 50"), right_col);
     nifty_btn->setCursor(Qt::PointingHandCursor);
     nifty_btn->setFixedHeight(26);
     nifty_btn->setStyleSheet(
@@ -379,7 +379,7 @@ void ScannerPanel::build_ui() {
             [this]() { symbols_edit_->setPlainText(nifty50_symbols().join("\n")); });
     quick_row->addWidget(nifty_btn);
 
-    auto* banknifty_btn = new QPushButton("BANK NIFTY", right_col);
+    auto* banknifty_btn = new QPushButton(tr("BANK NIFTY"), right_col);
     banknifty_btn->setCursor(Qt::PointingHandCursor);
     banknifty_btn->setFixedHeight(26);
     banknifty_btn->setStyleSheet(nifty_btn->styleSheet());
@@ -391,7 +391,7 @@ void ScannerPanel::build_ui() {
     right_vl->addLayout(quick_row);
 
     // Timeframe
-    auto* tf_lbl = new QLabel("TIMEFRAME", right_col);
+    auto* tf_lbl = new QLabel(tr("TIMEFRAME"), right_col);
     tf_lbl->setStyleSheet(kLabelStyle());
     right_vl->addWidget(tf_lbl);
 
@@ -403,7 +403,7 @@ void ScannerPanel::build_ui() {
     right_vl->addWidget(timeframe_combo_);
 
     // Lookback
-    auto* lb_lbl = new QLabel("LOOKBACK (DAYS)", right_col);
+    auto* lb_lbl = new QLabel(tr("LOOKBACK (DAYS)"), right_col);
     lb_lbl->setStyleSheet(kLabelStyle());
     right_vl->addWidget(lb_lbl);
 
@@ -421,7 +421,7 @@ void ScannerPanel::build_ui() {
     main_vl->addLayout(columns);
 
     // ── SCAN button ─────────────────────────────────────────────────────────
-    auto* scan_btn = new QPushButton("SCAN MARKET", content);
+    auto* scan_btn = new QPushButton(tr("SCAN MARKET"), content);
     scan_btn->setCursor(Qt::PointingHandCursor);
     scan_btn->setFixedHeight(38);
     scan_btn->setStyleSheet(QString("QPushButton { background: rgba(255,196,0,0.1); color: #FFC400;"
@@ -444,7 +444,7 @@ void ScannerPanel::build_ui() {
     main_vl->addWidget(status_label_);
 
     // ── Results area ────────────────────────────────────────────────────────
-    auto* results_title = new QLabel("SCAN RESULTS", content);
+    auto* results_title = new QLabel(tr("SCAN RESULTS"), content);
     results_title->setStyleSheet(kSectionLabel());
     main_vl->addWidget(results_title);
 

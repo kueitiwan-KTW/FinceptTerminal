@@ -91,7 +91,7 @@ QWidget* MAAnalyticsScreen::build_top_bar() {
     hl->setSpacing(12);
 
     // Branding badge
-    brand_label_ = new QLabel("M&A ANALYTICS", bar);
+    brand_label_ = new QLabel(tr("M&A ANALYTICS"), bar);
     brand_label_->setFixedHeight(22);
     hl->addWidget(brand_label_);
 
@@ -116,11 +116,11 @@ QWidget* MAAnalyticsScreen::build_top_bar() {
     hl->addStretch(1);
 
     // Ready badge
-    ready_label_ = new QLabel("READY", bar);
+    ready_label_ = new QLabel(tr("READY"), bar);
     ready_label_->setFixedHeight(22);
     hl->addWidget(ready_label_);
 
-    subtitle_label_ = new QLabel("CORPORATE FINANCE TOOLKIT", bar);
+    subtitle_label_ = new QLabel(tr("CORPORATE FINANCE TOOLKIT"), bar);
     hl->addWidget(subtitle_label_);
 
     return bar;
@@ -141,7 +141,7 @@ QWidget* MAAnalyticsScreen::build_left_sidebar() {
     header->setObjectName("maLeftHeader");
     auto* hhl = new QHBoxLayout(header);
     hhl->setContentsMargins(12, 0, 12, 0);
-    modules_title_ = new QLabel("MODULES", header);
+    modules_title_ = new QLabel(tr("MODULES"), header);
     hhl->addWidget(modules_title_);
     hhl->addStretch();
     vl->addWidget(header);
@@ -199,7 +199,7 @@ QWidget* MAAnalyticsScreen::build_right_sidebar() {
     header->setObjectName("maRightHeader");
     auto* hhl = new QHBoxLayout(header);
     hhl->setContentsMargins(12, 0, 12, 0);
-    info_title_ = new QLabel("MODULE INFO", header);
+    info_title_ = new QLabel(tr("MODULE INFO"), header);
     hhl->addWidget(info_title_);
     hhl->addStretch();
     vl->addWidget(header);
@@ -230,7 +230,7 @@ QWidget* MAAnalyticsScreen::build_right_sidebar() {
     cl->addWidget(info_card);
 
     // Capabilities section
-    cap_header_ = new QLabel("CAPABILITIES", content);
+    cap_header_ = new QLabel(tr("CAPABILITIES"), content);
     cl->addWidget(cap_header_);
 
     auto* cap_container = new QWidget(content);
@@ -245,7 +245,7 @@ QWidget* MAAnalyticsScreen::build_right_sidebar() {
     sl->setContentsMargins(8, 8, 8, 8);
     sl->setSpacing(4);
 
-    stats_title_ = new QLabel("QUICK STATS", stats_card_);
+    stats_title_ = new QLabel(tr("QUICK STATS"), stats_card_);
     sl->addWidget(stats_title_);
 
     auto add_stat = [&](const QString& label, const QString& value) {

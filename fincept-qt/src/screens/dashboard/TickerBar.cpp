@@ -57,7 +57,7 @@ TickerBar::TickerBar(QWidget* parent) : QWidget(parent) {
     hl->setContentsMargins(6, 2, 6, 2);
     hl->setSpacing(4);
 
-    auto* lbl = new QLabel("SYMBOLS:", edit_bar_);
+    auto* lbl = new QLabel(tr("SYMBOLS:"), edit_bar_);
     lbl->setStyleSheet(QString("color:%1; font-size:9px; font-weight:bold; background:transparent;")
                            .arg(ui::colors::TEXT_TERTIARY()));
     hl->addWidget(lbl);

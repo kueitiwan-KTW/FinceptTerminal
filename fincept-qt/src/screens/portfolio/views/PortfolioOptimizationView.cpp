@@ -83,15 +83,15 @@ void PortfolioOptimizationView::build_ui() {
                              .arg(ui::colors::BG_BASE(), ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(),
                                   ui::colors::AMBER(), ui::colors::TEXT_PRIMARY()));
 
-    tabs_->addTab(build_optimize_tab(), "OPTIMIZE");
-    tabs_->addTab(build_frontier_tab(), "FRONTIER");
-    tabs_->addTab(build_allocation_tab(), "ALLOCATION");
-    tabs_->addTab(build_strategies_tab(), "STRATEGIES");
-    tabs_->addTab(build_compare_tab(), "COMPARE");
-    tabs_->addTab(build_backtest_tab(), "BACKTEST");
-    tabs_->addTab(build_risk_tab(), "RISK");
-    tabs_->addTab(build_stress_tab(), "STRESS");
-    tabs_->addTab(build_black_litterman_tab(), "B-L MODEL");
+    tabs_->addTab(build_optimize_tab(), tr("OPTIMIZE"));
+    tabs_->addTab(build_frontier_tab(), tr("FRONTIER"));
+    tabs_->addTab(build_allocation_tab(), tr("ALLOCATION"));
+    tabs_->addTab(build_strategies_tab(), tr("STRATEGIES"));
+    tabs_->addTab(build_compare_tab(), tr("COMPARE"));
+    tabs_->addTab(build_backtest_tab(), tr("BACKTEST"));
+    tabs_->addTab(build_risk_tab(), tr("RISK"));
+    tabs_->addTab(build_stress_tab(), tr("STRESS"));
+    tabs_->addTab(build_black_litterman_tab(), tr("B-L MODEL"));
 
     layout->addWidget(tabs_);
 }

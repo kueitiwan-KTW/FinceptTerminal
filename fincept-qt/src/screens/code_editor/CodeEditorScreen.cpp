@@ -108,7 +108,7 @@ void CellWidget::build_ui() {
             .arg(fonts::TINY));
     gutter_layout->addWidget(gutter_number_);
 
-    gutter_type_ = new QLabel("PY", gutter_);
+    gutter_type_ = new QLabel(tr("PY"), gutter_);
     gutter_type_->setAlignment(Qt::AlignRight);
     gutter_type_->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; font-weight:600;"
                                         " letter-spacing:0.5px; background:transparent;")
@@ -240,7 +240,7 @@ void CellWidget::build_ui() {
     output_vbox->setSpacing(0);
 
     // Output header with collapse toggle
-    output_toggle_ = new QPushButton("OUTPUT", output_area_);
+    output_toggle_ = new QPushButton(tr("OUTPUT"), output_area_);
     output_toggle_->setFixedHeight(22);
     output_toggle_->setCursor(Qt::PointingHandCursor);
     output_toggle_->setStyleSheet(
@@ -708,7 +708,7 @@ CellNavigator::CellNavigator(QWidget* parent) : QWidget(parent) {
     auto* header_layout = new QHBoxLayout(header);
     header_layout->setContentsMargins(10, 0, 10, 0);
 
-    auto* title = new QLabel("CELLS", header);
+    auto* title = new QLabel(tr("CELLS"), header);
     title->setStyleSheet(QString("color:%1; font-family:%2; font-size:%3px; font-weight:700; letter-spacing:1px;")
                              .arg(colors::AMBER(), fonts::DATA_FAMILY)
                              .arg(fonts::TINY));
@@ -874,7 +874,7 @@ QWidget* CodeEditorScreen::build_toolbar() {
     hl->setContentsMargins(10, 0, 10, 0);
     hl->setSpacing(0);
 
-    auto* title = new QLabel("PYTHON NOTEBOOK", bar);
+    auto* title = new QLabel(tr("PYTHON NOTEBOOK"), bar);
     title->setStyleSheet(QString("color:%1; font-family:%2; font-size:%3px; font-weight:700;"
                                  " letter-spacing:1px; padding-right:16px;")
                              .arg(colors::AMBER(), fonts::DATA_FAMILY)
@@ -926,7 +926,7 @@ QWidget* CodeEditorScreen::build_toolbar() {
 
     add_sep();
 
-    auto* run_all_btn = new QPushButton("RUN ALL", bar);
+    auto* run_all_btn = new QPushButton(tr("RUN ALL"), bar);
     run_all_btn->setCursor(Qt::PointingHandCursor);
     run_all_btn->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"
                                        " font-family:%3; font-size:%4px; font-weight:700; padding:4px 14px;"
@@ -946,13 +946,13 @@ QWidget* CodeEditorScreen::build_toolbar() {
 
     add_sep();
 
-    kernel_label_ = new QLabel("KERNEL: IDLE", bar);
+    kernel_label_ = new QLabel(tr("KERNEL: IDLE"), bar);
     kernel_label_->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; font-weight:600;"
                                          " letter-spacing:0.5px; padding:0 8px;")
                                      .arg(colors::POSITIVE(), fonts::DATA_FAMILY));
     hl->addWidget(kernel_label_);
 
-    auto* py_label = new QLabel("Python 3.12", bar);
+    auto* py_label = new QLabel(tr("Python 3.12"), bar);
     py_label->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; padding-left:8px;")
                                 .arg(colors::TEXT_TERTIARY(), fonts::DATA_FAMILY));
     hl->addWidget(py_label);
@@ -968,14 +968,14 @@ QWidget* CodeEditorScreen::build_status_bar() {
     auto* hl = new QHBoxLayout(bar);
     hl->setContentsMargins(10, 0, 10, 0);
 
-    status_label_ = new QLabel("READY", bar);
+    status_label_ = new QLabel(tr("READY"), bar);
     status_label_->setStyleSheet(
         QString("color:%1; font-family:%2; font-size:10px; font-weight:600; letter-spacing:0.5px;")
             .arg(colors::TEXT_SECONDARY(), fonts::DATA_FAMILY));
     hl->addWidget(status_label_);
     hl->addStretch();
 
-    auto* shortcuts = new QLabel("Ctrl+Enter: RUN  |  Shift+Enter: RUN & NEXT  |  Tab: 4 SPACES  |  Ctrl+S: SAVE", bar);
+    auto* shortcuts = new QLabel(tr("Ctrl+Enter: RUN  |  Shift+Enter: RUN & NEXT  |  Tab: 4 SPACES  |  Ctrl+S: SAVE"), bar);
     shortcuts->setStyleSheet(QString("color:%1; font-family:%2; font-size:10px; letter-spacing:0.3px;")
                                  .arg(colors::TEXT_DIM(), fonts::DATA_FAMILY));
     hl->addWidget(shortcuts);

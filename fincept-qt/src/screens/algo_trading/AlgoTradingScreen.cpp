@@ -89,13 +89,13 @@ QWidget* AlgoTradingScreen::build_top_bar() {
     hl->setSpacing(8);
 
     // Title + subtitle matching Economics header style
-    auto* title = new QLabel("ALGO TRADING", bar);
+    auto* title = new QLabel(tr("ALGO TRADING"), bar);
     title->setStyleSheet(QString("color:%1; font-size:12px; font-weight:700;"
                                  "letter-spacing:1.5px; background:transparent;")
                              .arg(ui::colors::TEXT_PRIMARY()));
     hl->addWidget(title);
 
-    auto* subtitle = new QLabel("strategy builder · backtesting · live deployment", bar);
+    auto* subtitle = new QLabel(tr("strategy builder · backtesting · live deployment"), bar);
     subtitle->setStyleSheet(
         QString("color:%1; font-size:10px; background:transparent;").arg(ui::colors::TEXT_TERTIARY()));
     hl->addWidget(subtitle);
@@ -127,7 +127,7 @@ QWidget* AlgoTradingScreen::build_top_bar() {
     hl->addStretch(1);
 
     // Deployment count badge
-    deploy_count_label_ = new QLabel("0 LIVE", bar);
+    deploy_count_label_ = new QLabel(tr("0 LIVE"), bar);
     deploy_count_label_->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2;"
                                                "padding:3px 8px; background:rgba(22,163,74,0.08);"
                                                "border:1px solid rgba(22,163,74,0.25); border-radius:2px;")
@@ -148,7 +148,7 @@ QWidget* AlgoTradingScreen::build_status_bar() {
     hl->setSpacing(16);
     auto s =
         QString("color:%1; font-size:8px; font-family:%2;").arg(ui::colors::TEXT_TERTIARY()).arg(ui::fonts::DATA_FAMILY);
-    auto* l1 = new QLabel("ENGINE:", bar);
+    auto* l1 = new QLabel(tr("ENGINE:"), bar);
     l1->setStyleSheet(s);
     auto* v1 = new QLabel("ALGO v1.0", bar);
     v1->setStyleSheet(QString("color:%1; font-size:8px; font-weight:700; font-family:%2;")
@@ -157,7 +157,7 @@ QWidget* AlgoTradingScreen::build_status_bar() {
     hl->addWidget(l1);
     hl->addWidget(v1);
     hl->addStretch();
-    status_label_ = new QLabel("IDLE", bar);
+    status_label_ = new QLabel(tr("IDLE"), bar);
     status_label_->setStyleSheet(QString("color:%1; font-size:8px; font-weight:700; font-family:%2;")
                                      .arg(ui::colors::POSITIVE())
                                      .arg(ui::fonts::DATA_FAMILY));

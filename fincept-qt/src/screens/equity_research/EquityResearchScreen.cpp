@@ -104,14 +104,14 @@ void EquityResearchScreen::build_ui() {
     news_tab_ = new EquityNewsTab;
     sentiment_tab_ = new EquitySentimentTab;
 
-    tab_widget_->addTab(overview_tab_, "Overview");
-    tab_widget_->addTab(financials_tab_, "Financials");
-    tab_widget_->addTab(analysis_tab_, "Analysis");
-    tab_widget_->addTab(technicals_tab_, "Technicals");
-    tab_widget_->addTab(talipp_tab_, "TALIpp");
-    tab_widget_->addTab(peers_tab_, "Peers");
-    tab_widget_->addTab(news_tab_, "News");
-    tab_widget_->addTab(sentiment_tab_, "Sentiment");
+    tab_widget_->addTab(overview_tab_, tr("Overview"));
+    tab_widget_->addTab(financials_tab_, tr("Financials"));
+    tab_widget_->addTab(analysis_tab_, tr("Analysis"));
+    tab_widget_->addTab(technicals_tab_, tr("Technicals"));
+    tab_widget_->addTab(talipp_tab_, tr("TALIpp"));
+    tab_widget_->addTab(peers_tab_, tr("Peers"));
+    tab_widget_->addTab(news_tab_, tr("News"));
+    tab_widget_->addTab(sentiment_tab_, tr("Sentiment"));
 
     connect(tab_widget_, &QTabWidget::currentChanged, this, &EquityResearchScreen::on_tab_changed);
 

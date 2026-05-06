@@ -242,13 +242,13 @@ QWidget* AiChatBubble::build_panel_header() {
     icon->setStyleSheet(QString("color:%1;font-size:20px;background:transparent;").arg(col::TEXT_PRIMARY()));
     hl->addWidget(icon);
 
-    auto* title = new QLabel("Fincept AI");
+    auto* title = new QLabel(tr("Fincept AI"));
     title->setStyleSheet(
         QString("color:%1;font-size:13px;font-weight:700;background:transparent;").arg(col::TEXT_PRIMARY()));
     hl->addWidget(title, 1);
 
     // Voice mode toggle
-    voice_mode_btn_ = new QPushButton("Voice");
+    voice_mode_btn_ = new QPushButton(tr("Voice"));
     voice_mode_btn_->setFixedHeight(24);
     voice_mode_btn_->setCheckable(true);
     voice_mode_btn_->setCursor(Qt::PointingHandCursor);
@@ -346,11 +346,11 @@ QWidget* AiChatBubble::build_voice_status_bar() {
 
     // Note: voice_status_lbl_ is used for typing indicator above.
     // This bar holds stop button only.
-    auto* status_lbl = new QLabel("Voice mode active");
+    auto* status_lbl = new QLabel(tr("Voice mode active"));
     status_lbl->setStyleSheet(QString("color:%1;font-size:11px;background:transparent;").arg(col::TEXT_TERTIARY()));
     hl->addWidget(status_lbl, 1);
 
-    stop_speech_btn_ = new QPushButton("■ Stop");
+    stop_speech_btn_ = new QPushButton(tr("■ Stop"));
     stop_speech_btn_->setFixedHeight(20);
     stop_speech_btn_->setCursor(Qt::PointingHandCursor);
     stop_speech_btn_->setStyleSheet(QString("QPushButton{background:%1;color:white;border:none;"
@@ -420,7 +420,7 @@ void AiChatBubble::on_new_session() {
     if (res.is_ok()) {
         active_session_id_ = res.value().id;
         // Show a placeholder hint
-        auto* hint = new QLabel("How can I help you?");
+        auto* hint = new QLabel(tr("How can I help you?"));
         hint->setAlignment(Qt::AlignCenter);
         hint->setStyleSheet(
             QString("color:%1;font-size:13px;font-style:italic;background:transparent;").arg(col::TEXT_TERTIARY()));
@@ -428,7 +428,7 @@ void AiChatBubble::on_new_session() {
     } else {
         // Session creation failed — show error and block input so the user
         // isn't silently sending messages with no persistence.
-        auto* err = new QLabel("Session error — please restart.");
+        auto* err = new QLabel(tr("Session error — please restart."));
         err->setAlignment(Qt::AlignCenter);
         err->setStyleSheet("color:#ef4444;font-size:12px;background:transparent;");
         msg_layout_->insertWidget(msg_layout_->count() - 1, err);
@@ -662,7 +662,7 @@ QTextEdit* AiChatBubble::add_streaming_bubble() {
     cvl->setContentsMargins(0, 0, 0, 0);
     cvl->setSpacing(3);
 
-    auto* role_lbl = new QLabel("AI");
+    auto* role_lbl = new QLabel(tr("AI"));
     role_lbl->setAlignment(Qt::AlignLeft);
     role_lbl->setStyleSheet(
         QString("color:%1;font-size:10px;font-weight:700;background:transparent;").arg(col::AMBER()));

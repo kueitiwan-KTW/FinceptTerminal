@@ -157,7 +157,7 @@ void QuantStatsView::build_ui() {
         style_table(metrics_table_);
         ml->addWidget(metrics_table_, 1);
 
-        tabs_->addTab(metrics_w, "METRICS");
+        tabs_->addTab(metrics_w, tr("METRICS"));
     }
 
     // ── RETURNS tab ───────────────────────────────────────────────────────────
@@ -173,7 +173,7 @@ void QuantStatsView::build_ui() {
         // Index 1 is added lazily in update_returns()
         rl->addWidget(returns_stack_);
 
-        tabs_->addTab(returns_w, "RETURNS");
+        tabs_->addTab(returns_w, tr("RETURNS"));
     }
 
     // ── DRAWDOWN tab ──────────────────────────────────────────────────────────
@@ -188,7 +188,7 @@ void QuantStatsView::build_ui() {
         drawdown_stack_->addWidget(make_placeholder("Run QuantStats Analysis for drawdown metrics"));
         dl->addWidget(drawdown_stack_);
 
-        tabs_->addTab(dd_w, "DRAWDOWN");
+        tabs_->addTab(dd_w, tr("DRAWDOWN"));
     }
 
     // ── ROLLING tab ───────────────────────────────────────────────────────────
@@ -203,7 +203,7 @@ void QuantStatsView::build_ui() {
         rolling_stack_->addWidget(make_placeholder("Run QuantStats Analysis for rolling metrics"));
         rll->addWidget(rolling_stack_);
 
-        tabs_->addTab(roll_w, "ROLLING");
+        tabs_->addTab(roll_w, tr("ROLLING"));
     }
 
     // ── MONTE CARLO tab ───────────────────────────────────────────────────────
@@ -257,7 +257,7 @@ void QuantStatsView::build_ui() {
         mc_results_ = new QWidget(this);
         mc_results_->setVisible(false);
 
-        tabs_->addTab(mc_w, "MONTE CARLO");
+        tabs_->addTab(mc_w, tr("MONTE CARLO"));
     }
 
     root->addWidget(tabs_, 1);

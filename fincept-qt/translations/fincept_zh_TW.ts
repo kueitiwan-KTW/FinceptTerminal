@@ -64,7 +64,7 @@
         </message>
         <message>
             <source>  |  Active: %1  |  %2 rows x %3 cols</source>
-            <translation>  |  Active: %1  |  %2 列 x %3 cols</translation>
+            <translation>| 活躍：%1 | %2 行 x %3 列</translation>
         </message>
         <message>
             <source>  · %1 likes</source>
@@ -76,7 +76,7 @@
         </message>
         <message>
             <source> (connect deferred to Phase 7)</source>
-            <translation> (connect deferred 至Phase 7)</translation>
+            <translation>（連接延遲到第 7 階段）</translation>
         </message>
         <message>
             <source> (×%1)</source>
@@ -304,7 +304,7 @@
         </message>
         <message>
             <source>%1 INDICATORS ANALYZED</source>
-            <translation>%1 INDIC (資訊係數)ATORS ANALYZED</translation>
+            <translation>%1 指標分析</translation>
         </message>
         <message>
             <source>%1 ITEMS | %2 PEERS | %3 HOLDERS</source>
@@ -424,7 +424,7 @@
         </message>
         <message>
             <source>%1 high-priority articles</source>
-            <translation>%1 high-priority 文章</translation>
+            <translation>%1 高優先文章</translation>
         </message>
         <message>
             <source>%1 holdings</source>
@@ -444,7 +444,7 @@
         </message>
         <message>
             <source>%1 instruments already loaded (%2 NSE equities), skipping refresh</source>
-            <translation>%1 Instruments (商品) (商品) already已載入 (%2 NSE equities), skipping refresh</translation>
+            <translation>%1 工具已載入（%2 NSE 股票），跳過刷新</translation>
         </message>
         <message>
             <source>%1 internal tools active</source>
@@ -520,7 +520,7 @@
         </message>
         <message>
             <source>%1 refresh already in progress — skipping duplicate</source>
-            <translation>%1 refresh already 於progress — skipping duplicate</translation>
+            <translation>%1 刷新已在進行中 - 跳過重複</translation>
         </message>
         <message>
             <source>%1 replies</source>
@@ -1000,7 +1000,7 @@
         </message>
         <message>
             <source>&gt; %1 thinking steps | tools: %2</source>
-            <translation>&gt; %1 思考中 steps | tools: %2</translation>
+            <translation>&gt; %1 思考步驟|工具：%2</translation>
         </message>
         <message>
             <source>&gt; Enter Command or /type ...</source>
@@ -1008,7 +1008,7 @@
         </message>
         <message>
             <source>A new version of Fincept Terminal is available.\n\n</source>
-            <translation>A new version 的Fincept Terminal is 可用.\n\n</translation>
+            <translation>Fincept Terminal 有新版本可用。\n\n</translation>
         </message>
         <message>
             <source>A:%1</source>
@@ -1096,7 +1096,7 @@
         </message>
         <message>
             <source>Access token expired for account %1 — user must re-authenticate</source>
-            <translation>帳戶 %1 的 Access Token (存取權杖) 已過期 — 使用者必須重新驗證</translation>
+            <translation>帳戶 %1 的存取權杖已過期 - 使用者必須重新進行身份驗證</translation>
         </message>
         <message>
             <source>Account name...</source>
@@ -1128,7 +1128,7 @@
         </message>
         <message>
             <source>Actual returns (comma-separated)</source>
-            <translation>Actual Returns (報酬率) (實際報酬率) （以逗號分隔)</translation>
+            <translation>實際回報（以逗號分隔）</translation>
         </message>
         <message>
             <source>Adanos request failed for %1 (%2): %3</source>
@@ -1172,7 +1172,7 @@
         </message>
         <message>
             <source>Added asset %1 x%2 to portfolio %3</source>
-            <translation>已新增 asset %1 x%2 至Portfolio (投資組合) (投資組合) %3</translation>
+            <translation>將資產 %1 x%2 加入投資組合 %3</translation>
         </message>
         <message>
             <source>Added holding: %1 x%2 @ %3</source>
@@ -1212,7 +1212,7 @@
         </message>
         <message>
             <source>Agent ran in %1ms</source>
-            <translation>Agent ran 於%1ms</translation>
+            <translation>Agent 執行耗時 %1 毫秒</translation>
         </message>
         <message>
             <source>Agents: %1  |  Responses: %2</source>
@@ -1220,7 +1220,7 @@
         </message>
         <message>
             <source>AliceBlue error: status=%1</source>
-            <translation>AliceBlue 錯誤: status=%1</translation>
+            <translation>AliceBlue 錯誤：狀態=%1</translation>
         </message>
         <message>
             <source>All %1 orders failed</source>
@@ -1236,7 +1236,7 @@
         </message>
         <message>
             <source>All bridges wired (%1 pass-through fallbacks)</source>
-            <translation>全部 bridges wired (%1 pass-through fallbacks)</translation>
+            <translation>所有橋接器均已接線（%1 直通回退）</translation>
         </message>
         <message>
             <source>All fields are required</source>
@@ -1244,7 +1244,7 @@
         </message>
         <message>
             <source>Already up to date — local=%1, remote=%2</source>
-            <translation>Already up 至date — local=%1, remote=%2</translation>
+            <translation>已經是最新的 - 本地=%1，遠端=%2</translation>
         </message>
         <message>
             <source>Amend price</source>
@@ -1272,15 +1272,15 @@
         </message>
         <message>
             <source>Analyzing Debt Schedule...</source>
-            <translation>分析中 Debt Schedule...</translation>
+            <translation>分析債務計劃...</translation>
         </message>
         <message>
             <source>Analyzing Industry Deals...</source>
-            <translation>分析中 Industry Deals...</translation>
+            <translation>分析產業交易...</translation>
         </message>
         <message>
             <source>Analyzing Payment Structures...</source>
-            <translation>分析中 Payment Structures...</translation>
+            <translation>分析支付結構...</translation>
         </message>
         <message>
             <source>Analyzing Payment...</source>
@@ -1300,11 +1300,11 @@
         </message>
         <message>
             <source>Annualized portfolio volatility (std deviation of returns).\n</source>
-            <translation>Portfolio (投資組合) 年化 Volatility (波動率)（報酬率標準差）。\n</translation>
+            <translation>年化投資組合波動性（報酬的標準差）。 \n</translation>
         </message>
         <message>
             <source>Applied scanner preset: %1</source>
-            <translation>已套用 Scanner Preset (掃描器預設): %1</translation>
+            <translation>應用的掃描器預設：%1</translation>
         </message>
         <message>
             <source>Applying migration v%1: %2</source>
@@ -1312,15 +1312,15 @@
         </message>
         <message>
             <source>Are you sure you want to delete \</source>
-            <translation>Are you sure you want 至delete \</translation>
+            <translation>您確定要刪除\</translation>
         </message>
         <message>
             <source>Are you sure you want to remove \</source>
-            <translation>Are you sure you want 至remove \</translation>
+            <translation>您確定要刪除 \</translation>
         </message>
         <message>
             <source>Ask anything... (Enter to send, Shift+Enter for new line)</source>
-            <translation>詢問任何問題...（Enter 傳送，Shift+Enter 換行）</translation>
+            <translation>詢問任何內容...（Enter 發送，Shift+Enter 換行）</translation>
         </message>
         <message>
             <source>Ask anything…</source>
@@ -1332,7 +1332,7 @@
         </message>
         <message>
             <source>Asset %1 not found in portfolio %2</source>
-            <translation>Asset (資產) %1 在 Portfolio (投資組合) %2 中找不到</translation>
+            <translation>在投資組合 %2 中找不到資產 %1</translation>
         </message>
         <message>
             <source>Asset names (comma-separated)</source>
@@ -1344,7 +1344,7 @@
         </message>
         <message>
             <source>Asset returns matrix JSON: [[0.01,-0.02,...],[...]]</source>
-            <translation>Asset (資產) returns matrix JSON: [[0.01,-0.02,...],[...]]</translation>
+            <translation>資產回傳矩陣 JSON: [[0.01,-0.02,...],[...]]</translation>
         </message>
         <message>
             <source>Assigning to: %1 (%2)</source>
@@ -1364,7 +1364,7 @@
         </message>
         <message>
             <source>Auth failed on %1, trying %2</source>
-            <translation>Auth失敗 on %1, trying %2</translation>
+            <translation>%1 上的身份驗證失敗，嘗試 %2</translation>
         </message>
         <message>
             <source>Auto-approved (paper): %1</source>
@@ -1384,7 +1384,7 @@
         </message>
         <message>
             <source>Avg fill: %1  |  Slippage: %2 bps  |  %3</source>
-            <translation>Avg fill: %1  |  Slippage (滑價): %2 bps  |  %3</translation>
+            <translation>平均填充：%1 | 滑點：%2 bps | %3</translation>
         </message>
         <message>
             <source>B:%1</source>
@@ -1408,7 +1408,7 @@
         </message>
         <message>
             <source>Backfilled %1 historical snapshots for %2</source>
-            <translation>Backfilled %1 historical snapshots 用於%2</translation>
+            <translation>回填 %2 的 %1 歷史快照</translation>
         </message>
         <message>
             <source>Backtest complete.</source>
@@ -1416,7 +1416,7 @@
         </message>
         <message>
             <source>Backtest end (YYYY-MM-DD)</source>
-            <translation>Backtest (回測) 結束 (YYYY-MM-DD)</translation>
+            <translation>回測結束（YYYY-MM-DD）</translation>
         </message>
         <message>
             <source>Backtest requested: %1 on %2</source>
@@ -1424,7 +1424,7 @@
         </message>
         <message>
             <source>Backtest start (YYYY-MM-DD)</source>
-            <translation>Backtest (回測) 開始 (YYYY-MM-DD)</translation>
+            <translation>回測開始（YYYY-MM-DD）</translation>
         </message>
         <message>
             <source>Backtesting...</source>
@@ -1436,11 +1436,11 @@
         </message>
         <message>
             <source>Base32 secret (optional)</source>
-            <translation>Base32 Secret (選填)</translation>
+            <translation>Base32 秘密（可選）</translation>
         </message>
         <message>
             <source>Batch fetch: %1 unique symbols from %2 requests</source>
-            <translation>Batch fetch: %1 unique Symbol (股票代碼)s 來自%2 requests</translation>
+            <translation>批次取得：來自 %2 請求的 %1 唯一符號</translation>
         </message>
         <message>
             <source>Benchmark %1 fetch failed: %2</source>
@@ -1448,19 +1448,19 @@
         </message>
         <message>
             <source>Benchmark returns (comma-separated)</source>
-            <translation>Benchmark Returns (基準報酬率)（以逗號分隔）</translation>
+            <translation>基準報酬（逗號分隔）</translation>
         </message>
         <message>
             <source>Benchmark returns (optional)</source>
-            <translation>Benchmark (基準) Returns (報酬率) (基準報酬率) (選填)</translation>
+            <translation>基準回報（可選）</translation>
         </message>
         <message>
             <source>Benchmark returns (optional, comma-separated)</source>
-            <translation>Benchmark (基準) Returns (報酬率) (基準報酬率) (選填, 以逗號分隔)</translation>
+            <translation>基準返回（可選，以逗號分隔）</translation>
         </message>
         <message>
             <source>Benchmarking Premium...</source>
-            <translation>Benchmark (基準)ing (基準比較) 中 Premium...</translation>
+            <translation>基準溢價...</translation>
         </message>
         <message>
             <source>Best Model: %1  |  Trained: %2\n\nRanking:\n</source>
@@ -1472,7 +1472,7 @@
         </message>
         <message>
             <source>Best score: %1\nBest params:\n</source>
-            <translation>最佳分數: %1\nBest params:\n</translation>
+            <translation>最佳成績：%1\n最佳參數：\n</translation>
         </message>
         <message>
             <source>Best: %1</source>
@@ -1480,11 +1480,11 @@
         </message>
         <message>
             <source>Bid: %1  Ask: %2  Edge: %3 bps/side</source>
-            <translation>Bid (買價): %1  Ask (賣價): %2  Edge: %3 bps/side</translation>
+            <translation>買價：%1 賣價：%2 邊緣：%3 bps/邊</translation>
         </message>
         <message>
             <source>Binary file — preview not available.\nUse SAVE to download.</source>
-            <translation>二進位檔案 — 無法預覽.\nUse SAVE 至download.</translation>
+            <translation>二進位檔案 - 預覽不可用。 \n使用「儲存」進行下載。</translation>
         </message>
         <message>
             <source>Board (%1/%2)</source>
@@ -1524,7 +1524,7 @@
         </message>
         <message>
             <source>Browser login timed out - try again or paste manually</source>
-            <translation>瀏覽器登入逾時 - try aga於或paste manually</translation>
+            <translation>瀏覽器登入逾時 - 請重試或手動貼上</translation>
         </message>
         <message>
             <source>Building LBO Model...</source>
@@ -1532,7 +1532,7 @@
         </message>
         <message>
             <source>Building Pro Forma...</source>
-            <translation>建立 Pro Forma (備考財務) 中...</translation>
+            <translation>建立備考...</translation>
         </message>
         <message>
             <source>Built panel: %1</source>
@@ -1616,11 +1616,11 @@
         </message>
         <message>
             <source>Cache hit: %1</source>
-            <translation>Cache Hit (快取命中)：%1</translation>
+            <translation>緩存命中：%1</translation>
         </message>
         <message>
             <source>Cached %1 tools from server %2</source>
-            <translation>Cached %1 tools 來自server %2</translation>
+            <translation>從伺服器 %2 快取 %1 工具</translation>
         </message>
         <message>
             <source>Calculating Berkus...</source>
@@ -1628,23 +1628,23 @@
         </message>
         <message>
             <source>Calculating Exchange Ratio...</source>
-            <translation>計算中 Exchange Ratio...</translation>
+            <translation>計算兌換比率...</translation>
         </message>
         <message>
             <source>Calculating FinServ Metrics...</source>
-            <translation>計算中 FinServ Metrics...</translation>
+            <translation>計算 FinServ 指標...</translation>
         </message>
         <message>
             <source>Calculating First Chicago...</source>
-            <translation>計算中 First Chicago...</translation>
+            <translation>計算第一芝加哥...</translation>
         </message>
         <message>
             <source>Calculating Healthcare Metrics...</source>
-            <translation>計算中 Healthcare Metrics...</translation>
+            <translation>計算醫療保健指標...</translation>
         </message>
         <message>
             <source>Calculating Risk Factor...</source>
-            <translation>計算中 Risk (風險) Fact或(因子)...</translation>
+            <translation>計算風險因素...</translation>
         </message>
         <message>
             <source>Calculating Scorecard...</source>
@@ -1656,7 +1656,7 @@
         </message>
         <message>
             <source>Calculating Tech Metrics...</source>
-            <translation>計算中 Tech Metrics...</translation>
+            <translation>計算技術指標...</translation>
         </message>
         <message>
             <source>Calculating VC Method...</source>
@@ -1704,7 +1704,7 @@
         </message>
         <message>
             <source>Cannot open %1 for writing: %2</source>
-            <translation>無法open %1 用於writing: %2</translation>
+            <translation>無法開啟%1進行寫入：%2</translation>
         </message>
         <message>
             <source>Cannot open file for CSV export: %1</source>
@@ -1732,15 +1732,15 @@
         </message>
         <message>
             <source>Cannot reopen %1 for hashing</source>
-            <translation>無法reopen %1 用於hashing</translation>
+            <translation>無法重新開啟 %1 進行雜湊處理</translation>
         </message>
         <message>
             <source>Cannot save the installer to disk:\n%1</source>
-            <translation>無法save the 安裝程式 至disk:\n%1</translation>
+            <translation>無法將安裝程式儲存至磁碟：\n%1</translation>
         </message>
         <message>
             <source>Cannot start stream: account %1 not found</source>
-            <translation>無法start stream: account %1 找不到</translation>
+            <translation>無法開始直播：找不到帳號 %1</translation>
         </message>
         <message>
             <source>Cannot write workspace: %1</source>
@@ -1756,7 +1756,7 @@
         </message>
         <message>
             <source>Chart title (e.g. Strategy vs Benchmark)</source>
-            <translation>Chart 標題 (e.g. Strategy vs Benchmark (基準))</translation>
+            <translation>圖表標題（例如策略與基準）</translation>
         </message>
         <message>
             <source>Check for Updates</source>
@@ -1764,7 +1764,7 @@
         </message>
         <message>
             <source>Checking for updates — platform=%1, local=%2, manifest=%3</source>
-            <translation>Checking 用於updates — platform=%1, local=%2, manifest=%3</translation>
+            <translation>檢查更新 - platform=%1、local=%2、manifest=%3</translation>
         </message>
         <message>
             <source>Checking...</source>
@@ -1812,19 +1812,19 @@
         </message>
         <message>
             <source>Combining rolling results...</source>
-            <translation>Combining rolling 結果...</translation>
+            <translation>結合滾動結果...</translation>
         </message>
         <message>
             <source>Comma-separated tags, e.g. prod, live, trading</source>
-            <translation>Comma-separated tags, e.g. prod, live, 交易</translation>
+            <translation>以逗號分隔的標籤，例如產品、直播、交易</translation>
         </message>
         <message>
             <source>Command '%1' is not supported by provider '%2'</source>
-            <translation>Comm和'%1' is not supported by provider '%2'</translation>
+            <translation>提供者“%2”不支援指令“%1”</translation>
         </message>
         <message>
             <source>Command (e.g. analyze, train, list_models)</source>
-            <translation>命令（例如 analyze、train、list_models）</translation>
+            <translation>指令（例如分析、訓練、list_models）</translation>
         </message>
         <message>
             <source>Command failed: %1\nStderr: %2</source>
@@ -1844,7 +1844,7 @@
         </message>
         <message>
             <source>Complete — %1 paths simulated</source>
-            <translation>完成 — %1 paths simulated</translation>
+            <translation>完整 - %1 路徑模擬</translation>
         </message>
         <message>
             <source>Completed in %1ms</source>
@@ -1852,11 +1852,11 @@
         </message>
         <message>
             <source>Component Browser</source>
-            <translation>Component Browser (元件瀏覽器)</translation>
+            <translation>元件瀏覽器</translation>
         </message>
         <message>
             <source>Composite risk score from 0 (low) to 100 (high).\n</source>
-            <translation>Composite Risk Score (綜合風險分數)，0（低）到 100（高）。\n</translation>
+            <translation>綜合風險評分從 0（低）到 100（高）。 \n</translation>
         </message>
         <message>
             <source>Computing </source>
@@ -1868,7 +1868,7 @@
         </message>
         <message>
             <source>Concentration risk: combined weight of the top 3 holdings.\n</source>
-            <translation>Concentration risk: combined weight 的the top 3 holdings.\n</translation>
+            <translation>集中度風險：前三名持倉權重總和。 \n</translation>
         </message>
         <message>
             <source>Config deleted</source>
@@ -1892,11 +1892,11 @@
         </message>
         <message>
             <source>Configure — Agent Errors</source>
-            <translation>設定 — Agent Errors</translation>
+            <translation>配置 - 代理錯誤</translation>
         </message>
         <message>
             <source>Configure — Crypto Ticker</source>
-            <translation>設定 — Crypto Ticker (股票代碼)</translation>
+            <translation>配置 - 加密貨幣代碼</translation>
         </message>
         <message>
             <source>Configure — Holdings</source>
@@ -1904,15 +1904,15 @@
         </message>
         <message>
             <source>Configure — Margin Usage</source>
-            <translation>設定 — Margin (保證金) Usage</translation>
+            <translation>配置 - 保證金使用</translation>
         </message>
         <message>
             <source>Configure — News Category</source>
-            <translation>設定 — News Category</translation>
+            <translation>配置 - 新聞類別</translation>
         </message>
         <message>
             <source>Configure — Open Positions</source>
-            <translation>設定 — Open Position (持倉)s</translation>
+            <translation>配置 - 未平倉頭寸</translation>
         </message>
         <message>
             <source>Configure — Polymarket</source>
@@ -1920,7 +1920,7 @@
         </message>
         <message>
             <source>Configure — Quote Strip</source>
-            <translation>設定 — Quote (報價) Strip</translation>
+            <translation>配置 - 報價條</translation>
         </message>
         <message>
             <source>Configure — Sparklines</source>
@@ -1940,7 +1940,7 @@
         </message>
         <message>
             <source>Configure — Working Orders</source>
-            <translation>設定 — Working Orders</translation>
+            <translation>配置 - 工作訂單</translation>
         </message>
         <message>
             <source>Confirm Account Deletion</source>
@@ -1980,7 +1980,7 @@
         </message>
         <message>
             <source>Could not clean up orphaned paper portfolio %1: %2</source>
-            <translation>無法clean up orphaned paper Portfolio (投資組合) (投資組合) %1: %2</translation>
+            <translation>無法清理孤立的紙張組合 %1：%2</translation>
         </message>
         <message>
             <source>Could not extract stream URL.</source>
@@ -2000,7 +2000,7 @@
         </message>
         <message>
             <source>Country (e.g. USA, GBR, IND)</source>
-            <translation>國家（如 USA, GBR, IND）</translation>
+            <translation>國家（例如美國、英國、印度）</translation>
         </message>
         <message>
             <source>Country code</source>
@@ -2028,7 +2028,7 @@
         </message>
         <message>
             <source>Created index '%1' (%2) with %3 constituents</source>
-            <translation>已建立 index '%1' (%2) 使用%3 constituents</translation>
+            <translation>創建了包含 %3 成分的指數「%1」(%2)</translation>
         </message>
         <message>
             <source>Created portfolio '%1' (%2)</source>
@@ -2064,7 +2064,7 @@
         </message>
         <message>
             <source>Credentials updated for %1 (persisted=%2)</source>
-            <translation>Credentials updated 用於%1 (persisted=%2)</translation>
+            <translation>更新了 %1 的憑證（持久化=%2）</translation>
         </message>
         <message>
             <source>Crypto price fetched: %1 = %2</source>
@@ -2072,11 +2072,11 @@
         </message>
         <message>
             <source>Cumulative Returns</source>
-            <translation>Cumulative Returns (報酬率) (累積報酬率)</translation>
+            <translation>累積回報</translation>
         </message>
         <message>
             <source>Current market value of all holdings.\n</source>
-            <translation>所有 Holdings (持股) 的目前 Market Value (市值)。\n</translation>
+            <translation>所有持股的當前市值。 \n</translation>
         </message>
         <message>
             <source>Currently holding: %1 shares</source>
@@ -2112,11 +2112,11 @@
         </message>
         <message>
             <source>Daily returns (comma-separated)</source>
-            <translation>Daily returns （以逗號分隔)</translation>
+            <translation>每日回報（以逗號分隔）</translation>
         </message>
         <message>
             <source>Daily returns (comma-separated, e.g. 0.01,-0.02,0.005)</source>
-            <translation>Daily Returns (日報酬率)（以逗號分隔，例如 0.01,-0.02,0.005）</translation>
+            <translation>每日回報（以逗號分隔，例如 0.01,-0.02,0.005）</translation>
         </message>
         <message>
             <source>Daily trade count %1 at limit %2</source>
@@ -2132,19 +2132,19 @@
         </message>
         <message>
             <source>Data fetched — %1 records  |  %2 → %3</source>
-            <translation>Data fetched — %1 筆記錄  |  %2 → %3</translation>
+            <translation>取得的數據 - %1 記錄 | %2 → %3</translation>
         </message>
         <message>
             <source>Data from China National Bureau of Statistics via AkShare</source>
-            <translation>Data 來自China National Bureau 的Statistics via AkShare</translation>
+            <translation>數據來自中國國家統計局 AkShare</translation>
         </message>
         <message>
             <source>Databento API key (db-...)</source>
-            <translation>Databen至API key (db-...)</translation>
+            <translation>Databento API 金鑰 (db-...)</translation>
         </message>
         <message>
             <source>Deals JSON with industry field...</source>
-            <translation>Deals JSON 使用industry field...</translation>
+            <translation>處理 JSON 與產業領域...</translation>
         </message>
         <message>
             <source>Delete %1 selected connection(s)?</source>
@@ -2152,7 +2152,7 @@
         </message>
         <message>
             <source>Delete %1 selected file(s)? This cannot be undone.</source>
-            <translation>刪除 %1 selected file(s)? This cannot be undone.</translation>
+            <translation>刪除 %1 選定的檔案嗎？此操作無法撤銷。</translation>
         </message>
         <message>
             <source>Delete Connections</source>
@@ -2188,7 +2188,7 @@
         </message>
         <message>
             <source>Deleting portfolio %1</source>
-            <translation>Deleting Portfolio (投資組合) (投資組合) %1</translation>
+            <translation>刪除投資組合 %1</translation>
         </message>
         <message>
             <source>Delivered pending state on navigate: %1</source>
@@ -2204,7 +2204,7 @@
         </message>
         <message>
             <source>Delivery failed via %1: %2</source>
-            <translation>Delivery失敗 via %1: %2</translation>
+            <translation>透過 %1 投遞失敗：%2</translation>
         </message>
         <message>
             <source>Deploy Workflow</source>
@@ -2232,23 +2232,23 @@
         </message>
         <message>
             <source>Detected %1 text-based tool call(s) in response</source>
-            <translation>Detected %1 text-based tool call(s) 於response</translation>
+            <translation>檢測到 %1 基於文字的工具呼叫作為回應</translation>
         </message>
         <message>
             <source>Discovered %1 agents in %2 categories</source>
-            <translation>Discovered %1 agents 於%2 categories</translation>
+            <translation>在%2類別中發現%1代理</translation>
         </message>
         <message>
             <source>Discovered Factors: %1  |  Best IC: %2\n\n</source>
-            <translation>Discovered Fact或(因子)s: %1  |  Best IC (資訊係數): %2\n\n</translation>
+            <translation>發現因素：%1 | 最佳IC：%2\n\n</translation>
         </message>
         <message>
             <source>Displayed %1 data points</source>
-            <translation>已顯示 %1 data points</translation>
+            <translation>顯示的 %1 數據點</translation>
         </message>
         <message>
             <source>Displayed %1 data points for %2</source>
-            <translation>已顯示 %1 data points 用於%2</translation>
+            <translation>顯示 %2 的 %1 數據點</translation>
         </message>
         <message>
             <source>Displayed %1 events for %2</source>
@@ -2300,19 +2300,19 @@
         </message>
         <message>
             <source>Done — %1 package(s) failed (will retry on next launch)</source>
-            <translation>完成 — %1 package(s)失敗 (將retry on next launch)</translation>
+            <translation>完成 - %1 軟體包失敗（將在下次啟動時重試）</translation>
         </message>
         <message>
             <source>Done — %1 | Exp. Return: %2%  Vol: %3%  Sharpe: %4</source>
-            <translation>完成 — %1 | Exp. Return: %2%  Vol: %3%  Sharpe (夏普比率): %4</translation>
+            <translation>完成-%1 |过期。 Return: %2% Vol: %3% Sharpe: %4</translation>
         </message>
         <message>
             <source>Done — %1 | Exp. Return: %2%  Vol: %3%  Sharpe: %4 (cached)</source>
-            <translation>完成 — %1 | Exp. Return: %2%  Vol: %3%  Sharpe (夏普比率): %4 (cached)</translation>
+            <translation>完成-%1 |過期。返回：%2% 成交量：%3% 夏普：%4（緩存）</translation>
         </message>
         <message>
             <source>Done — %1% return  |  Sharpe %2</source>
-            <translation>完成 — %1% return  |  Sharpe (夏普比率) %2</translation>
+            <translation>完成 - %1% 回報 | 夏普 %2</translation>
         </message>
         <message>
             <source>Done — thread: %1</source>
@@ -2336,7 +2336,7 @@
         </message>
         <message>
             <source>Download the installer now?</source>
-            <translation>Download the 安裝程式 now?</translation>
+            <translation>現在下載安裝程式嗎？</translation>
         </message>
         <message>
             <source>Downloaded AngelOne master contract: %1 bytes</source>
@@ -2348,11 +2348,11 @@
         </message>
         <message>
             <source>Downloading installer: %1 → %2 (expected sha256=%3)</source>
-            <translation>Downloading 安裝程式: %1 → %2 (expected sha256=%3)</translation>
+            <translation>下載安裝程式：%1 → %2（預期 sha256=%3）</translation>
         </message>
         <message>
             <source>Drag to broadcast this symbol to any panel</source>
-            <translation>Drag 至broadcast this Symbol (股票代碼) 至any panel</translation>
+            <translation>拖曳以將該符號廣播到任何面板</translation>
         </message>
         <message>
             <source>Duplicate id: %1</source>
@@ -2392,7 +2392,7 @@
         </message>
         <message>
             <source>Economic Calendar — %1  (%2 events)</source>
-            <translation>Economic Calendar — %1  (%2 事件)</translation>
+            <translation>經濟日曆 - %1（%2 事件）</translation>
         </message>
         <message>
             <source>Edit  %1</source>
@@ -2468,7 +2468,7 @@
         </message>
         <message>
             <source>Enter API Key and API Secret first</source>
-            <translation>請先輸入 API Key 與 API Secret</translation>
+            <translation>首先輸入 API Key 和 API Secret</translation>
         </message>
         <message>
             <source>Enter API key</source>
@@ -2480,7 +2480,7 @@
         </message>
         <message>
             <source>Enter a Model ID or Config Path to preview.</source>
-            <translation>輸入 a Model ID 或Config Path 至preview.</translation>
+            <translation>輸入模型 ID 或配置路徑進行預覽。</translation>
         </message>
         <message>
             <source>Enter a URL first</source>
@@ -2504,7 +2504,7 @@
         </message>
         <message>
             <source>Enter a symbol for backtesting.</source>
-            <translation>輸入 a Symbol (股票代碼) 用於backtesting.</translation>
+            <translation>輸入回測符號。</translation>
         </message>
         <message>
             <source>Enter a valid quantity</source>
@@ -2632,15 +2632,15 @@
         </message>
         <message>
             <source>Expected returns (comma-separated, e.g. 0.10,0.15,0.12)</source>
-            <translation>Expected Returns (報酬率) (預期報酬率) （以逗號分隔, e.g. 0.10,0.15,0.12)</translation>
+            <translation>預期回報（以逗號分隔，例如 0.10,0.15,0.12）</translation>
         </message>
         <message>
             <source>Export failed: cannot write to %1</source>
-            <translation>匯出失敗: cannot write 至%1</translation>
+            <translation>匯出失敗：無法寫入 %1</translation>
         </message>
         <message>
             <source>Export this note as a Markdown file to the File Manager</source>
-            <translation>Export this note as a Markdown file 至the File Manager</translation>
+            <translation>將此筆記作為 Markdown 文件匯出到文件管理器</translation>
         </message>
         <message>
             <source>Exported %1 connections to %2</source>
@@ -2724,7 +2724,7 @@
         </message>
         <message>
             <source>FETCH OHLCV DATA</source>
-            <translation>FETCH OHLCV (開高低收量) DATA</translation>
+            <translation>取得 OHLCV 數據</translation>
         </message>
         <message>
             <source>FETCH OPTIONS CHAIN</source>
@@ -2744,15 +2744,15 @@
         </message>
         <message>
             <source>FFN analysis complete for %1 symbol(s)</source>
-            <translation>FFN 分析完成 用於%1 Symbol (股票代碼)(s)</translation>
+            <translation>%1 符號的 FFN 分析完成</translation>
         </message>
         <message>
             <source>FFN complete — %1 symbol%2</source>
-            <translation>FFN完成 — %1 Symbol (股票代碼)%2</translation>
+            <translation>FFN 完整 - %1 符號%2</translation>
         </message>
         <message>
             <source>FFN failed — check Python/yfinance</source>
-            <translation>FFN失敗 — check Python/yfinance</translation>
+            <translation>FFN 失敗 - 檢查 Python/yfinance</translation>
         </message>
         <message>
             <source>FLASH: %1</source>
@@ -2764,47 +2764,47 @@
         </message>
         <message>
             <source>Factor Analysis — %1 factors\n\n</source>
-            <translation>Fact或(因子) Analysis — %1 factors\n\n</translation>
+            <translation>因子分析 - %1因子\n\n</translation>
         </message>
         <message>
             <source>Factor Library — %1 factors\n\n</source>
-            <translation>Fact或(因子) Library — %1 factors\n\n</translation>
+            <translation>因子庫 - %1 因子\n\n</translation>
         </message>
         <message>
             <source>Factor mining started...</source>
-            <translation>Factor Mining (因子挖掘) 已開始...</translation>
+            <translation>因子挖掘開始...</translation>
         </message>
         <message>
             <source>Factor name (e.g. momentum)</source>
-            <translation>Fact或(因子) 名稱 (e.g. momentum)</translation>
+            <translation>因子名稱（例如動量）</translation>
         </message>
         <message>
             <source>Factory threw for '%1': %2</source>
-            <translation>Fact或(因子)y threw 用於'%1': %2</translation>
+            <translation>工廠拋出“%1”：%2</translation>
         </message>
         <message>
             <source>Factory threw unknown exception for '%1'</source>
-            <translation>Fact或(因子)y threw unknown exception 用於'%1'</translation>
+            <translation>工廠為「%1」拋出未知異常</translation>
         </message>
         <message>
             <source>Failed to bind loopback: %1</source>
-            <translation>無法 bind loopback: %1</translation>
+            <translation>綁定環回失敗：%1</translation>
         </message>
         <message>
             <source>Failed to clear Deepgram key: %1</source>
-            <translation>無法 clear Deepgram key: %1</translation>
+            <translation>無法清除 Deepgram 金鑰：%1</translation>
         </message>
         <message>
             <source>Failed to create audit table: %1</source>
-            <translation>無法 create audit table: %1</translation>
+            <translation>建立審核表失敗：%1</translation>
         </message>
         <message>
             <source>Failed to create paper portfolio for %1 (%2): %3</source>
-            <translation>無法 create paper Portfolio (投資組合) (投資組合) 用於%1 (%2): %3</translation>
+            <translation>無法為 ZZPH100​​ZZ (%2) 建立紙本檔案袋：%3</translation>
         </message>
         <message>
             <source>Failed to fill order %1: %2</source>
-            <translation>無法 fill order %1: %2</translation>
+            <translation>未填寫訂單 %1：%2</translation>
         </message>
         <message>
             <source>Failed to load calendar</source>
@@ -2816,27 +2816,27 @@
         </message>
         <message>
             <source>Failed to open file: %1</source>
-            <translation>無法 open file: %1</translation>
+            <translation>無法開啟檔案：%1</translation>
         </message>
         <message>
             <source>Failed to persist account %1 (%2) for broker %3: %4</source>
-            <translation>無法 persist account %1 (%2) 用於broker %3: %4</translation>
+            <translation>無法為經紀商 %3 保留帳戶 %1 (%2): %4</translation>
         </message>
         <message>
             <source>Failed to persist normalized record: %1</source>
-            <translation>無法 persist normalized record: %1</translation>
+            <translation>無法保留規範化記錄：%1</translation>
         </message>
         <message>
             <source>Failed to record event '%1': %2</source>
-            <translation>無法 record event '%1': %2</translation>
+            <translation>無法記錄事件“%1”：%2</translation>
         </message>
         <message>
             <source>Failed to remove connection %1</source>
-            <translation>無法 remove connection %1</translation>
+            <translation>無法刪除連接 %1</translation>
         </message>
         <message>
             <source>Failed to save API key: </source>
-            <translation>無法 save API key: </translation>
+            <translation>無法保存 API 金鑰：</translation>
         </message>
         <message>
             <source>Failed to save: </source>
@@ -2848,23 +2848,23 @@
         </message>
         <message>
             <source>Failed to start yt-dlp: </source>
-            <translation>無法 start yt-dlp: </translation>
+            <translation>無法啟動 yt-dlp：</translation>
         </message>
         <message>
             <source>Failed to submit result for %1: %2</source>
-            <translation>無法 submit result 用於%1: %2</translation>
+            <translation>未能提交 %1 的結果：%2</translation>
         </message>
         <message>
             <source>Failed to update connection state for %1</source>
-            <translation>無法 update connection state 用於%1</translation>
+            <translation>無法更新 %1 的連線狀態</translation>
         </message>
         <message>
             <source>Failed to write file: %1</source>
-            <translation>無法 write file: %1</translation>
+            <translation>寫入檔案失敗：%1</translation>
         </message>
         <message>
             <source>Feature importance loaded</source>
-            <translation>Feature Importance (特徵重要度) 已載入</translation>
+            <translation>已載入特徵重要性</translation>
         </message>
         <message>
             <source>Feature values JSON: {\</source>
@@ -2888,7 +2888,7 @@
         </message>
         <message>
             <source>Fetch failed for mapping '%1': %2</source>
-            <translation>Fetch失敗 用於mapping '%1': %2</translation>
+            <translation>映射“%1”獲取失敗：%2</translation>
         </message>
         <message>
             <source>Fetch failed: %1</source>
@@ -2900,7 +2900,7 @@
         </message>
         <message>
             <source>Fetched %1 history points for %2</source>
-            <translation>Fetched %1 history points 用於%2</translation>
+            <translation>已取得 %2 的 %1 歷史積分</translation>
         </message>
         <message>
             <source>Fetched %1 models for %2</source>
@@ -2912,15 +2912,15 @@
         </message>
         <message>
             <source>Fetches live order book + trades, computes book metrics, market making quotes, toxic flow, and slippage in one call</source>
-            <translation>Fetches live Order Book (委託簿) + Trades (交易), computes book metrics, market making Quote (報價)s, toxic flow, 和slippage 於one call</translation>
+            <translation>一次呼叫即可取得即時訂單簿 + 交易，計算訂單簿指標、做市報價、有毒流量和滑點</translation>
         </message>
         <message>
             <source>Fetching 1-year price history...</source>
-            <translation>擷取 1 年 Price History (價格歷史) 中...</translation>
+            <translation>正在取得 1 年價格歷史記錄...</translation>
         </message>
         <message>
             <source>Fetching datasets for %1 offset=%2</source>
-            <translation>Fetching Datasets (資料集) 用於%1 offset=%2</translation>
+            <translation>取得 %1 偏移量=%2 的資料集</translation>
         </message>
         <message>
             <source>Fetching live data + computing quotes...</source>
@@ -2928,23 +2928,23 @@
         </message>
         <message>
             <source>Fetching live order book...</source>
-            <translation>擷取即時 Order Book (委託簿) 中...</translation>
+            <translation>取得即時委託簿中...</translation>
         </message>
         <message>
             <source>Fetching mapping '%1' from %2</source>
-            <translation>Fetching mapping '%1' 來自%2</translation>
+            <translation>從 %2 取得映射“%1”</translation>
         </message>
         <message>
             <source>Fetching observations for %1</source>
-            <translation>Fetching Observations (觀測值) 用於%1</translation>
+            <translation>取得 %1 的觀測值</translation>
         </message>
         <message>
             <source>Fetching series %1 q='%2' offset=%3</source>
-            <translation>Fetching Series (序列) %1 q='%2' offset=%3</translation>
+            <translation>取得系列 %1 q='%2' 偏移量=%3</translation>
         </message>
         <message>
             <source>Fetching trades + analyzing flow...</source>
-            <translation>擷取 Trades (成交) 並分析 Flow (資金流) 中...</translation>
+            <translation>取得交易+分析流程...</translation>
         </message>
         <message>
             <source>Fetching...</source>
@@ -2952,11 +2952,11 @@
         </message>
         <message>
             <source>Fields (comma-separated, e.g. $close,$volume,$open)</source>
-            <translation>欄位 （以逗號分隔, e.g. $close,$volume,$open)</translation>
+            <translation>欄位（以逗號分隔，例如 $close,$volume,$open）</translation>
         </message>
         <message>
             <source>Fields (e.g. $close,$open,$high,$low,$volume)</source>
-            <translation>欄位 (e.g. $close,$open,$high,$low,$volume)</translation>
+            <translation>欄位（例如 $close、$open、$high、$low、$volume）</translation>
         </message>
         <message>
             <source>File selected: </source>
@@ -2972,7 +2972,7 @@
         </message>
         <message>
             <source>Fill in the 'config' fields and set 'enabled' to true. </source>
-            <translation>Fill 於the '設定' fields 和set 'enabled' 至true. </translation>
+            <translation>填寫“配置”欄位並將“啟用”設為 true。</translation>
         </message>
         <message>
             <source>Filter countries…</source>
@@ -3056,11 +3056,11 @@
         </message>
         <message>
             <source>Flushed %1 pending screen states</source>
-            <translation>Flushed %1 pending 螢幕 states</translation>
+            <translation>刷新的 %1 待定螢幕狀態</translation>
         </message>
         <message>
             <source>Flushed %1 seen IDs to DB</source>
-            <translation>Flushed %1 seen IDs 至DB</translation>
+            <translation>將 %1 看到的 ID 刷新到資料庫</translation>
         </message>
         <message>
             <source>Form cleared</source>
@@ -3108,7 +3108,7 @@
         </message>
         <message>
             <source>Futures ready: %1 contracts</source>
-            <translation>Futures (期貨)就緒: %1 contracts</translation>
+            <translation>期貨準備就緒：%1 合約</translation>
         </message>
         <message>
             <source>GENERATE PLAN</source>
@@ -3120,19 +3120,19 @@
         </message>
         <message>
             <source>GRID [%1] -&gt; PANEL 1 (full)</source>
-            <translation>GRID [%1] -&gt; 面板 1 (full)</translation>
+            <translation>網格 [%1] -&gt; 面板 1（完整）</translation>
         </message>
         <message>
             <source>GRID [%1] -&gt; PANEL 2 (right of TL)</source>
-            <translation>GRID [%1] -&gt; PANEL 2 (right 的TL)</translation>
+            <translation>網格 [%1] -&gt; 面板 2（TL 右側）</translation>
         </message>
         <message>
             <source>GRID [%1] -&gt; PANEL 3 (below TL)</source>
-            <translation>GRID [%1] -&gt; 面板 3 (below TL)</translation>
+            <translation>網格 [%1] -&gt; 面板 3（TL 以下）</translation>
         </message>
         <message>
             <source>GRID [%1] -&gt; PANEL 4 (right of BL)</source>
-            <translation>GRID [%1] -&gt; PANEL 4 (right 的BL)</translation>
+            <translation>網格 [%1] -&gt; 面板 4（BL 右側）</translation>
         </message>
         <message>
             <source>GRID [%1] already placed, syncing grid</source>
@@ -3140,7 +3140,7 @@
         </message>
         <message>
             <source>Generating Fairness Opinion...</source>
-            <translation>產生 Fairness Opinion (公平性意見書) 中...</translation>
+            <translation>產生公平意見...</translation>
         </message>
         <message>
             <source>Generating preview...</source>
@@ -3164,7 +3164,7 @@
         </message>
         <message>
             <source>Got session %1 with %2 messages</source>
-            <translation>Got session %1 使用%2 messages</translation>
+            <translation>獲得帶有 %2 訊息的會話 %1</translation>
         </message>
         <message>
             <source>Gr %1%  Net %2%</source>
@@ -3172,7 +3172,7 @@
         </message>
         <message>
             <source>Grid trading strategy configuration.\n</source>
-            <translation>Grid Trading (網格交易) Strategy (策略) 設定。\n</translation>
+            <translation>網格交易策略配置.\n</translation>
         </message>
         <message>
             <source>Group %1</source>
@@ -3184,7 +3184,7 @@
         </message>
         <message>
             <source>Groww error: status=%1</source>
-            <translation>Groww 錯誤: status=%1</translation>
+            <translation>成長錯誤：狀態=%1</translation>
         </message>
         <message>
             <source>H%1 L%2</source>
@@ -3212,7 +3212,7 @@
         </message>
         <message>
             <source>Human-in-the-loop approvals will appear here.\n</source>
-            <translation>Human-in-the-loop (人工審核) 核准會顯示於此。\n</translation>
+            <translation>此處將顯示人機互動批准。 \n</translation>
         </message>
         <message>
             <source>ID: %1\nQuery: %2\nStatus: %3\n</source>
@@ -3232,7 +3232,7 @@
         </message>
         <message>
             <source>Ignoring move-to-monitor %1 — only %2 screen(s) connected</source>
-            <translation>Ignoring move-to-monit或%1 — only %2 螢幕(s) connected</translation>
+            <translation>忽略移動到顯示器 %1 - 僅連接 %2 螢幕</translation>
         </message>
         <message>
             <source>Impact: %1</source>
@@ -3248,7 +3248,7 @@
         </message>
         <message>
             <source>Import complete: %1 imported, %2 skipped</source>
-            <translation>匯入完成: %1 imported, %2 skipped</translation>
+            <translation>導入完成：%1導入，%2跳過</translation>
         </message>
         <message>
             <source>Import failed with no details.</source>
@@ -3256,7 +3256,7 @@
         </message>
         <message>
             <source>Import failed: cannot open %1</source>
-            <translation>匯入失敗: cannot open %1</translation>
+            <translation>導入失敗：無法開啟 %1</translation>
         </message>
         <message>
             <source>Import failed: invalid JSON — %1</source>
@@ -3264,11 +3264,11 @@
         </message>
         <message>
             <source>Import holdings into portfolio</source>
-            <translation>將 Holdings (持股) 匯入 Portfolio (投資組合)</translation>
+            <translation>將持股導入投資組合</translation>
         </message>
         <message>
             <source>Imported %1 holdings into portfolio \</source>
-            <translation>已匯入 %1 holdings in至Portfolio (投資組合) (投資組合) \</translation>
+            <translation>將 %1 資產導入投資組合\</translation>
         </message>
         <message>
             <source>Imported %1 holdings.</source>
@@ -3300,11 +3300,11 @@
         </message>
         <message>
             <source>Importing &lt;b&gt;%1&lt;/b&gt; holdings from &lt;b&gt;%2&lt;/b&gt;. </source>
-            <translation>Importing &lt;b&gt;%1&lt;/b&gt; holdings 來自&lt;b&gt;%2&lt;/b&gt;. </translation>
+            <translation>從 &lt;b&gt;%2&lt;/b&gt; 匯入 &lt;b&gt;%1&lt;/b&gt; 館藏。</translation>
         </message>
         <message>
             <source>Inactivity guard enabled (%1 min timeout)</source>
-            <translation>Inactivity guard enabled (%1 m於timeout)</translation>
+            <translation>啟用不活動保護（%1 分鐘逾時）</translation>
         </message>
         <message>
             <source>Incorrect PIN</source>
@@ -3316,7 +3316,7 @@
         </message>
         <message>
             <source>Indexed view: rebase portfolio and benchmark to 100 at the start of\n</source>
-            <translation>Indexed view: rebase Portfolio (投資組合) (投資組合) 和benchmark 至100 at the start of\n</translation>
+            <translation>索引視圖：在 \n 開始時將投資組合和基準重新調整為 100</translation>
         </message>
         <message>
             <source>Initialized focused account: %1</source>
@@ -3328,15 +3328,15 @@
         </message>
         <message>
             <source>Install finished with errors (exit %1)</source>
-            <translation>Install finished 使用錯誤s (exit %1)</translation>
+            <translation>安裝完成，但發生錯誤（退出 %1）</translation>
         </message>
         <message>
             <source>Install finished with exit code %1</source>
-            <translation>Install finished 使用exit code %1</translation>
+            <translation>安裝完成，退出代碼為 %1</translation>
         </message>
         <message>
             <source>Installer download failed: %1</source>
-            <translation>Installer download失敗: %1</translation>
+            <translation>安裝程式下載失敗：%1</translation>
         </message>
         <message>
             <source>Installing %1/%2: %3</source>
@@ -3348,7 +3348,7 @@
         </message>
         <message>
             <source>Installing packages into %1 from %2</source>
-            <translation>Installing packages in至%1 來自%2</translation>
+            <translation>將軟體套件從 %2 安裝到 %1</translation>
         </message>
         <message>
             <source>Instruments (%1): %2</source>
@@ -3436,7 +3436,7 @@
         </message>
         <message>
             <source>Kalshi adapter: not supported in this call</source>
-            <translation>Kalshi adapter: not supported 於this call</translation>
+            <translation>Kalshi 適配器：此呼叫不支援</translation>
         </message>
         <message>
             <source>Kalshi bridge: non-JSON response — </source>
@@ -3444,11 +3444,11 @@
         </message>
         <message>
             <source>Kalshi cancel-all requires a ticker</source>
-            <translation>Kalshi cancel-all requires a Ticker (股票代碼)</translation>
+            <translation>卡爾希取消全部需要股票代碼</translation>
         </message>
         <message>
             <source>Kalshi command failed</source>
-            <translation>Kalshi command失敗</translation>
+            <translation>Kalshi 命令失敗</translation>
         </message>
         <message>
             <source>Kalshi lifecycle: %1 → %2</source>
@@ -3456,7 +3456,7 @@
         </message>
         <message>
             <source>Kalshi trades require a ticker</source>
-            <translation>Kalshi Trades (交易) require a Ticker (股票代碼)</translation>
+            <translation>卡爾希交易需要股票代碼</translation>
         </message>
         <message>
             <source>L:%1</source>
@@ -3480,7 +3480,7 @@
         </message>
         <message>
             <source>LLM profile for the team coordinator. Members use their own assigned profiles.</source>
-            <translation>團隊協調者使用的 LLM Profile (設定檔)。成員使用各自指定的 Profile。</translation>
+            <translation>團隊協調員的法學碩士簡介。成員使用自己指定的設定檔。</translation>
         </message>
         <message>
             <source>LLM profile for this agent. Configure profiles in Settings &gt; LLM Config.</source>
@@ -3492,7 +3492,7 @@
         </message>
         <message>
             <source>LLM profile used by this workflow run</source>
-            <translation>此 Workflow (工作流程) 執行使用的 LLM Profile (設定檔)</translation>
+            <translation>此工作流程運行使用的 LLM 設定文件</translation>
         </message>
         <message>
             <source>LLM profile used for plan generation and execution</source>
@@ -3524,27 +3524,27 @@
         </message>
         <message>
             <source>Lazy-loaded to %1 articles</source>
-            <translation>Lazy-loaded 至%1 文章</translation>
+            <translation>延遲載入到 %1 文章</translation>
         </message>
         <message>
             <source>Leave blank to inherit from provider</source>
-            <translation>Leave blank 至inherit 來自provider</translation>
+            <translation>留空以從提供者繼承</translation>
         </message>
         <message>
             <source>Leave blank to use global system prompt</source>
-            <translation>Leave blank 至use global system prompt</translation>
+            <translation>留空以使用全域系統提示符</translation>
         </message>
         <message>
             <source>Leave blank to use provider default</source>
-            <translation>Leave blank 至use provider 預設</translation>
+            <translation>留空以使用提供者預設值</translation>
         </message>
         <message>
             <source>Legacy credential migration complete: %1 accounts created</source>
-            <translation>Legacy credential migration完成: %1 accounts created</translation>
+            <translation>舊憑證移轉完成：已建立 %1 帳戶</translation>
         </message>
         <message>
             <source>Limit price</source>
-            <translation>Limit Price (限價)</translation>
+            <translation>限價</translation>
         </message>
         <message>
             <source>Link to Group %1</source>
@@ -3552,7 +3552,7 @@
         </message>
         <message>
             <source>Linked to your Fincept account: </source>
-            <translation>Linked 至your Fincept account: </translation>
+            <translation>連結到您的 Fincept 帳戶：</translation>
         </message>
         <message>
             <source>List failed: %1</source>
@@ -3568,7 +3568,7 @@
         </message>
         <message>
             <source>Load %1 more posts</source>
-            <translation>Load %1 more 貼文</translation>
+            <translation>載入更多 %1 篇文章</translation>
         </message>
         <message>
             <source>Load a saved workflow</source>
@@ -3596,7 +3596,7 @@
         </message>
         <message>
             <source>Loaded %1 broker accounts from DB</source>
-            <translation>已載入 %1 broker accounts 來自DB</translation>
+            <translation>從資料庫載入 %1 經紀商帳戶</translation>
         </message>
         <message>
             <source>Loaded %1 components from %2</source>
@@ -3604,7 +3604,7 @@
         </message>
         <message>
             <source>Loaded %1 connector definitions</source>
-            <translation>已載入 %1 connect或definitions</translation>
+            <translation>已載入 %1 連接器定義</translation>
         </message>
         <message>
             <source>Loaded %1 countries</source>
@@ -3612,7 +3612,7 @@
         </message>
         <message>
             <source>Loaded %1 datasets (total=%2)</source>
-            <translation>已載入 %1 Datasets (資料集) (total=%2)</translation>
+            <translation>已載入 %1 資料集（總計=%2）</translation>
         </message>
         <message>
             <source>Loaded %1 events</source>
@@ -3644,7 +3644,7 @@
         </message>
         <message>
             <source>Loaded %1 sector cache entries</source>
-            <translation>已載入 %1 sect或cache entries</translation>
+            <translation>已載入 %1 磁區快取條目</translation>
         </message>
         <message>
             <source>Loaded %1 series</source>
@@ -3652,7 +3652,7 @@
         </message>
         <message>
             <source>Loaded %1 series (total=%2)</source>
-            <translation>已載入 %1 Series (序列) (total=%2)</translation>
+            <translation>已載入%1系列（總計=%2）</translation>
         </message>
         <message>
             <source>Loaded %1 strategies</source>
@@ -3664,15 +3664,15 @@
         </message>
         <message>
             <source>Loaded %1 widgets for profile '%2'</source>
-            <translation>已載入 %1 widgets 用於profile '%2'</translation>
+            <translation>已載入設定檔“%2”的 %1 小工具</translation>
         </message>
         <message>
             <source>Loaded %1: %2 inst, %3 insiders, %4 peers, quality=%5%</source>
-            <translation>已載入 %1: %2 inst, %3 insiders, %4 peers, quality=%5%</translation>
+            <translation>已加載%1：%2 inst、%3內部人士、%4同行，品質=%5%</translation>
         </message>
         <message>
             <source>Loaded layout with %1 tiles, %2 cols</source>
-            <translation>已載入 layout 使用%1 tiles, %2 cols</translation>
+            <translation>已加載帶有 %1 瓷磚、%2 列的佈局</translation>
         </message>
         <message>
             <source>Loaded registry from %1</source>
@@ -3684,7 +3684,7 @@
         </message>
         <message>
             <source>Loaded workflow: %1 (%2 nodes, %3 edges)</source>
-            <translation>已載入 workflow: %1 (%2 節點s, %3 edges)</translation>
+            <translation>載入的工作流程：%1（%2 節點，%3 邊）</translation>
         </message>
         <message>
             <source>Loaded: %1</source>
@@ -3692,7 +3692,7 @@
         </message>
         <message>
             <source>Loaded: %1  •  Click ADD TO SINGLE VIEW</source>
-            <translation>已載入: %1  •  點擊ADD TO SINGLE VIEW</translation>
+            <translation>已載入：%1 • 按一下“新增至單一檢視”</translation>
         </message>
         <message>
             <source>Loading datasets for %1...</source>
@@ -3708,7 +3708,7 @@
         </message>
         <message>
             <source>Loading market sentiment…</source>
-            <translation>載入 Market Sentiment (市場情緒) 中…</translation>
+            <translation>正在加載市場情緒...</translation>
         </message>
         <message>
             <source>Loading news…</source>
@@ -3740,7 +3740,7 @@
         </message>
         <message>
             <source>Logging config saved: global=%1, tags=%2</source>
-            <translation>Logging 設定已儲存: global=%1, tags=%2</translation>
+            <translation>日誌設定已儲存：全域=%1，標籤=%2</translation>
         </message>
         <message>
             <source>Logging in...</source>
@@ -3772,11 +3772,11 @@
         </message>
         <message>
             <source>MCP server '%1' exited with code %2</source>
-            <translation>MCP server '%1' exited 使用code %2</translation>
+            <translation>MCP 伺服器「%1」退出，代碼為 %2</translation>
         </message>
         <message>
             <source>MCP server available: %1\npydantic-ai MCP: %2\nRunning ports: %3</source>
-            <translation>MCP server 可用: %1\npydantic-ai MCP: %2\n執行中 ports: %3</translation>
+            <translation>可用 MCP 伺服器：%1\npydantic-ai MCP：%2\n運作埠：%3</translation>
         </message>
         <message>
             <source>MCP server failed</source>
@@ -3784,11 +3784,11 @@
         </message>
         <message>
             <source>MCP server failed to start:\n%1\n\nInstall: %2</source>
-            <translation>MCP server失敗 至start:\n%1\n\nInstall: %2</translation>
+            <translation>MCP 伺服器啟動失敗：\n%1\n\n安裝：%2</translation>
         </message>
         <message>
             <source>MCP tool server running at %1\n\nAvailable tools:\n  %2\n\n</source>
-            <translation>MCP tool server 執行中 at %1\n\nAvailable 工具:\n  %2\n\n</translation>
+            <translation>運行在 %1\n\n 上的 MCP 工具伺服器可用工具：\n %2\n\n</translation>
         </message>
         <message>
             <source>MCP tool server stopped</source>
@@ -3816,27 +3816,27 @@
         </message>
         <message>
             <source>Manifest JSON parse failed: %1</source>
-            <translation>Manifest JSON parse失敗: %1</translation>
+            <translation>清單 JSON 解析失敗：%1</translation>
         </message>
         <message>
             <source>Manifest entry for '%1' is missing latest-version or download-url</source>
-            <translation>Manifest entry 用於'%1' is missing latest-version 或download-url</translation>
+            <translation>「%1」的清單項目缺少最新版本或下載網址</translation>
         </message>
         <message>
             <source>Manifest fetch failed: %1 (%2)</source>
-            <translation>Manifest fetch失敗: %1 (%2)</translation>
+            <translation>清單取得失敗：%1 (%2)</translation>
         </message>
         <message>
             <source>Manifest has no entry for '%1' — no update available</source>
-            <translation>Manifest has no entry 用於'%1' — no update 可用</translation>
+            <translation>清單中沒有「%1」條目 - 無可用更新</translation>
         </message>
         <message>
             <source>Map: %1 events → %2 pins (%3 skipped, %4 unique coords)</source>
-            <translation>Map: %1 事件 → %2 pins (%3 skipped, %4 unique coords)</translation>
+            <translation>地圖：%1 事件 → %2 腳位（%3 已跳過，%4 獨特座標）</translation>
         </message>
         <message>
             <source>Mapping '%1' produced %2 validation error(s)</source>
-            <translation>Mapping '%1' produced %2 有效ation 錯誤(s)</translation>
+            <translation>映射“%1”產生了 %2 驗證錯誤</translation>
         </message>
         <message>
             <source>Market caps (comma-separated, e.g. 2000,1500,800)</source>
@@ -3868,7 +3868,7 @@
         </message>
         <message>
             <source>Market sentiment analysis will appear here.\n</source>
-            <translation>Market Sentiment (市場情緒) 分析會顯示於此。\n</translation>
+            <translation>市場情緒分析將出現在這裡。 \n</translation>
         </message>
         <message>
             <source>Max %1</source>
@@ -3876,7 +3876,7 @@
         </message>
         <message>
             <source>Max Drawdown</source>
-            <translation>Max Drawdown (最大回撤)</translation>
+            <translation>最大回撤</translation>
         </message>
         <message>
             <source>Maximum peak-to-trough decline in portfolio value.\n</source>
@@ -3892,15 +3892,15 @@
         </message>
         <message>
             <source>Message agent... (Shift+Enter for new line, Enter to send)</source>
-            <translation>向 Agent 發送訊息...（Shift+Enter 換行，Enter 傳送）</translation>
+            <translation>訊息代理程式...（Shift+Enter 換行，Enter 發送）</translation>
         </message>
         <message>
             <source>Migrated %1 settings from legacy DB</source>
-            <translation>Migrated %1 settings 來自legacy DB</translation>
+            <translation>從舊資料庫遷移 %1 設定</translation>
         </message>
         <message>
             <source>Migrated legacy credentials for %1 → account %2</source>
-            <translation>Migrated legacy credentials 用於%1 → account %2</translation>
+            <translation>已移轉 %1 的舊憑證 → 帳號 %2</translation>
         </message>
         <message>
             <source>Migration v%1 applied successfully</source>
@@ -3912,11 +3912,11 @@
         </message>
         <message>
             <source>Missing required field: </source>
-            <translation>Missing 必填 field: </translation>
+            <translation>缺少必填欄位：</translation>
         </message>
         <message>
             <source>Missing required field: %1</source>
-            <translation>Missing 必填 field: %1</translation>
+            <translation>缺少必填欄位：%1</translation>
         </message>
         <message>
             <source>Model ID</source>
@@ -3932,7 +3932,7 @@
         </message>
         <message>
             <source>Model ID (optional, auto-generated if blank)</source>
-            <translation>Model ID (選填, 自動產生 if blank)</translation>
+            <translation>型號 ID（可選，如果為空則自動產生）</translation>
         </message>
         <message>
             <source>Model ID is required.</source>
@@ -3948,7 +3948,7 @@
         </message>
         <message>
             <source>Model keys (from selection output, comma-separated)</source>
-            <translation>Model keys (來自selection output, 以逗號分隔)</translation>
+            <translation>模型鍵（來自選擇輸出，以逗號分隔）</translation>
         </message>
         <message>
             <source>Model list populated: %1 entries</source>
@@ -3956,19 +3956,19 @@
         </message>
         <message>
             <source>Model name (e.g. LightGBM)</source>
-            <translation>Model 名稱 (e.g. LightGBM)</translation>
+            <translation>型號名稱（例如 LightGBM）</translation>
         </message>
         <message>
             <source>Model optimization started...</source>
-            <translation>Model Optimization (模型最佳化) 已開始...</translation>
+            <translation>模型優化開始...</translation>
         </message>
         <message>
             <source>Model predictions (comma-separated)</source>
-            <translation>Model Prediction (預測)s (模型預測) （以逗號分隔)</translation>
+            <translation>模型預測（逗號分隔）</translation>
         </message>
         <message>
             <source>Model: %1  [%2]\nSamples: %3  |  MAE: %4\nDrift: %5\nLast updated: %6</source>
-            <translation>Model: %1  [%2]\nSamples: %3  |  MAE (平均絕對誤差): %4\nDrift: %5\n最後更新: %6</translation>
+            <translation>型號：%1 [%2]\n樣品：%3 | MAE：%4ZNEWLINEZZ漂移：%5\n最後更新：%6</translation>
         </message>
         <message>
             <source>Modify Order</source>
@@ -3976,7 +3976,7 @@
         </message>
         <message>
             <source>Monte Carlo: %1</source>
-            <translation>Monte Carlo (蒙地卡羅): %1</translation>
+            <translation>蒙特卡羅：%1</translation>
         </message>
         <message>
             <source>More actions</source>
@@ -3988,7 +3988,7 @@
         </message>
         <message>
             <source>Moved window %1 to monitor '%2'</source>
-            <translation>Moved window %1 至monit或'%2'</translation>
+            <translation>移動視窗 %1 以監視“%2”</translation>
         </message>
         <message>
             <source>Multi vessel: %1 found</source>
@@ -4052,7 +4052,7 @@
         </message>
         <message>
             <source>NODES: %1  |  CONFLICTS: %2  |  ORGANIZATIONS: %3</source>
-            <translation>NODES: %1  |  CONFLIC (資訊係數)TS: %2  |  ORGANIZATIONS: %3</translation>
+            <translation>節點：%1 | 衝突：%2 | 組織：%3</translation>
         </message>
         <message>
             <source>NOT SET</source>
@@ -4096,7 +4096,7 @@
         </message>
         <message>
             <source>New limit price (0.01 – 0.99):</source>
-            <translation>新的 Limit Price (限價)（0.01–0.99）：</translation>
+            <translation>新限價（0.01 - 0.99）：</translation>
         </message>
         <message>
             <source>New post</source>
@@ -4160,7 +4160,7 @@
         </message>
         <message>
             <source>No data fetched yet</source>
-            <translation>無資料 fetched yet</translation>
+            <translation>尚未取得數據</translation>
         </message>
         <message>
             <source>No data from %1</source>
@@ -4232,11 +4232,11 @@
         </message>
         <message>
             <source>No sample data — test API first (Step 1)</source>
-            <translation>無sample data — test API first (Step 1)</translation>
+            <translation>無範例資料 - 首先測試 API（第 1 步）</translation>
         </message>
         <message>
             <source>No symbol loaded. Search for a symbol first.</source>
-            <translation>尚未載入 Symbol (股票代碼)。請先搜尋 Symbol。</translation>
+            <translation>沒有加載符號。先搜尋一個符號。</translation>
         </message>
         <message>
             <source>No target selected</source>
@@ -4244,7 +4244,7 @@
         </message>
         <message>
             <source>Node %1 failed: %2 — aborting</source>
-            <translation>Node %1失敗: %2 — aborting</translation>
+            <translation>節點 %1 失敗：%2 - 正在中止</translation>
         </message>
         <message>
             <source>Not configured</source>
@@ -4268,11 +4268,11 @@
         </message>
         <message>
             <source>Number of distinct holdings in this portfolio,\n</source>
-            <translation>此 Portfolio (投資組合) 中不同 Holdings (持股) 的數量，\n</translation>
+            <translation>此投資組合中不同持股數量，\n</translation>
         </message>
         <message>
             <source>OHLCV ready: %1 symbols</source>
-            <translation>OHLCV (開高低收量)就緒: %1 Symbol (股票代碼)s</translation>
+            <translation>OHLCV 就緒：%1 個標的</translation>
         </message>
         <message>
             <source>OK — %1 row(s) affected</source>
@@ -4304,7 +4304,7 @@
         </message>
         <message>
             <source>Observations loaded for: %1</source>
-            <translation>Observations已載入 for: %1</translation>
+            <translation>已載入觀測值：%1</translation>
         </message>
         <message>
             <source>One per line:  &lt;asset_id&gt; | &lt;label&gt;</source>
@@ -4348,7 +4348,7 @@
         </message>
         <message>
             <source>Optional alternative data</source>
-            <translation>選填 alternative data</translation>
+            <translation>可選替代數據</translation>
         </message>
         <message>
             <source>Optional note</source>
@@ -4360,7 +4360,7 @@
         </message>
         <message>
             <source>Optional system prompt for the LLM...</source>
-            <translation>選填 system prompt 用於the LLM...</translation>
+            <translation>LLM 的可選系統提示...</translation>
         </message>
         <message>
             <source>Optional — leave blank to auto-generate</source>
@@ -4372,11 +4372,11 @@
         </message>
         <message>
             <source>Optional: path to Qlib YAML config (leave blank for built-in LightGBM+Alpha158)</source>
-            <translation>選填: 路徑至 Qlib YAML 設定 (留空 用於built-於LightGBM+Alpha (超額報酬)158)</translation>
+            <translation>選用：Qlib YAML 配置的路徑（內建 LightGBM+Alpha158 留空）</translation>
         </message>
         <message>
             <source>Options chain ready: %1 strikes x %2 expiries</source>
-            <translation>Options (選擇權) chain就緒: %1 strikes x %2 expiries</translation>
+            <translation>選擇權鏈就緒：%1 個履約價 x %2 個到期日</translation>
         </message>
         <message>
             <source>Order failed: %1</source>
@@ -4388,7 +4388,7 @@
         </message>
         <message>
             <source>Order modify failed: %1</source>
-            <translation>Order modify失敗: %1</translation>
+            <translation>訂單修改失敗：%1</translation>
         </message>
         <message>
             <source>Order placed ✓  ID: %1</source>
@@ -4408,7 +4408,7 @@
         </message>
         <message>
             <source>Overlay benchmark index (auto-selected by portfolio currency)</source>
-            <translation>Overlay benchmark index (auto-selected by Portfolio (投資組合) (投資組合) currency)</translation>
+            <translation>疊加基準指數（以投資組合貨幣自動選擇）</translation>
         </message>
         <message>
             <source>P&amp;L  %1%2%</source>
@@ -4440,11 +4440,11 @@
         </message>
         <message>
             <source>PIN must be exactly 6 digits</source>
-            <translation>PIN 必須be exactly 6 digits</translation>
+            <translation>PIN 碼必須剛好是 6 位數字</translation>
         </message>
         <message>
             <source>PIN must contain only digits</source>
-            <translation>PIN 必須conta於only digits</translation>
+            <translation>PIN 碼必須僅包含數字</translation>
         </message>
         <message>
             <source>PIN updated successfully</source>
@@ -4452,7 +4452,7 @@
         </message>
         <message>
             <source>PIN verification failed (attempt %1/%2)</source>
-            <translation>PIN verification失敗 (attempt %1/%2)</translation>
+            <translation>PIN 驗證失敗（嘗試 %1/%2）</translation>
         </message>
         <message>
             <source>PINs do not match</source>
@@ -4488,11 +4488,11 @@
         </message>
         <message>
             <source>Paper order failed: %1</source>
-            <translation>Paper order失敗: %1</translation>
+            <translation>紙本訂單失敗：%1</translation>
         </message>
         <message>
             <source>Paper order filled: %1 %2 @ %3</source>
-            <translation>Paper Order (模擬訂單) 已成交：%1 %2 @ %3</translation>
+            <translation>紙本訂單已填寫：%1 %2 @ %3</translation>
         </message>
         <message>
             <source>Paper order filled: %1 @ %2</source>
@@ -4512,19 +4512,19 @@
         </message>
         <message>
             <source>Parsed %1 AngelOne instruments</source>
-            <translation>Parsed %1 AngelOne Instruments (商品) (商品)</translation>
+            <translation>解析%1 AngelOne儀器</translation>
         </message>
         <message>
             <source>Parsed %1 instruments</source>
-            <translation>Parsed %1 Instruments (商品) (商品)</translation>
+            <translation>解析的 %1 樂器</translation>
         </message>
         <message>
             <source>Parsed %1 instruments (skipped %2 malformed rows)</source>
-            <translation>Parsed %1 Instruments (商品) (商品) (skipped %2 malformed 列)</translation>
+            <translation>已解析 %1 個商品（跳過 %2 筆格式錯誤的列）</translation>
         </message>
         <message>
             <source>Partial execution from %1: %2 nodes</source>
-            <translation>Partial execution 來自%1: %2 節點s</translation>
+            <translation>從 %1 部分執行：%2 節點</translation>
         </message>
         <message>
             <source>Password must be at least 8 characters</source>
@@ -4548,7 +4548,7 @@
         </message>
         <message>
             <source>Perform risk analysis on portfolio '%1' — VaR, drawdown, stress test.</source>
-            <translation>對 Portfolio (投資組合)「%1」執行風險分析 — VaR (風險值)、Drawdown (回撤)、Stress Test (壓力測試)。</translation>
+            <translation>對投資組合「%1」進行風險分析 - VaR、回撤、壓力測試。</translation>
         </message>
         <message>
             <source>Person: %1</source>
@@ -4576,15 +4576,15 @@
         </message>
         <message>
             <source>PnL: $%1, Trades: %2, Volume: $%3</source>
-            <translation>PnL (損益)：$%1，Trades (交易)：%2，Volume (成交量)：$%3</translation>
+            <translation>損益：$%1，成交：%2，成交量：$%3</translation>
         </message>
         <message>
             <source>Polymarket adapter: not supported in this call</source>
-            <translation>Polymarket adapter: not supported 於this call</translation>
+            <translation>Polymarket 適配器：此通話不支援</translation>
         </message>
         <message>
             <source>Polymarket trades require condition id</source>
-            <translation>Polymarket Trades (交易) require condition id</translation>
+            <translation>Polymarket 交易需要條件 ID</translation>
         </message>
         <message>
             <source>Populated %1 categories</source>
@@ -4608,11 +4608,11 @@
         </message>
         <message>
             <source>Populated %1 schema columns</source>
-            <translation>已填入 %1 schema columns</translation>
+            <translation>填滿的 %1 架構列</translation>
         </message>
         <message>
             <source>Port %1 busy - falling back to ephemeral</source>
-            <translation>Port %1 busy - falling back 至ephemeral</translation>
+            <translation>連接埠 %1 繁忙 - 回落到短暫狀態</translation>
         </message>
         <message>
             <source>Port 5010 busy - use manual paste fallback</source>
@@ -4624,11 +4624,11 @@
         </message>
         <message>
             <source>Portfolio context: %1</source>
-            <translation>Portfolio (投資組合) context：%1</translation>
+            <translation>產品組合背景：%1</translation>
         </message>
         <message>
             <source>Portfolio returns (comma-separated)</source>
-            <translation>Portfolio Returns (投資組合報酬率)（以逗號分隔）</translation>
+            <translation>投資組合報酬（以逗號分隔）</translation>
         </message>
         <message>
             <source>Portfolio sensitivity to broad market moves.\n</source>
@@ -4636,15 +4636,15 @@
         </message>
         <message>
             <source>Portfolio to use as context for rebalance / analysis plans</source>
-            <translation>作為 Rebalance (再平衡) / 分析計畫 context 的 Portfolio (投資組合)</translation>
+            <translation>用作再平衡/分析計劃背景的投資組合</translation>
         </message>
         <message>
             <source>Portfolio: %1  |  NAV: %2 %3</source>
-            <translation>Portfolio (投資組合): %1  |  NAV (淨值): %2 %3</translation>
+            <translation>產品組合：%1 | 導航：%2 %3</translation>
         </message>
         <message>
             <source>Position size %1% exceeds max %2%</source>
-            <translation>Position Size (部位規模) %1% 超過上限 %2%</translation>
+            <translation>部位規模 %1% 超過最大 %2%</translation>
         </message>
         <message>
             <source>Position: %1, %2</source>
@@ -4672,11 +4672,11 @@
         </message>
         <message>
             <source>Press Enter to close all except %1</source>
-            <translation>Press 輸入 至close all except %1</translation>
+            <translation>按 Enter 鍵關閉 %1 以外的所有內容</translation>
         </message>
         <message>
             <source>Preview: %1 rolling windows  (step=%2, horizon=%3)</source>
-            <translation>預覽: %1 rolling windows  (step=%2, horizon=%3)</translation>
+            <translation>預覽：%1 滾動視窗（步長=%2，地平線=%3）</translation>
         </message>
         <message>
             <source>Preview: %1 windows</source>
@@ -4684,7 +4684,7 @@
         </message>
         <message>
             <source>Price data (comma-separated, e.g. 100,102,101,105,108)</source>
-            <translation>Price Data (價格資料) （以逗號分隔, e.g. 100,102,101,105,108)</translation>
+            <translation>價格資料（以逗號分隔，例如 100,102,101,105,108）</translation>
         </message>
         <message>
             <source>Price feed started (interval=%1s)</source>
@@ -4704,7 +4704,7 @@
         </message>
         <message>
             <source>Progressive fetch complete: %1 articles, %2 sources</source>
-            <translation>Progressive fetch完成: %1 文章, %2 sources</translation>
+            <translation>漸進式取得完成：%1 文章、%2 來源</translation>
         </message>
         <message>
             <source>Prompt optimized: %1 chars -&gt; %2 chars</source>
@@ -4728,7 +4728,7 @@
         </message>
         <message>
             <source>Python check: path=%1  exists=%2</source>
-            <translation>Python 檢查：path=%1  exists=%2</translation>
+            <translation>Python檢查：路徑=%1存在=%2</translation>
         </message>
         <message>
             <source>Python command failed</source>
@@ -4768,11 +4768,11 @@
         </message>
         <message>
             <source>Qlib: %1\nAvailable: %2\nUnavailable: %3</source>
-            <translation>Qlib: %1\nAvailable: %2\nUn可用: %3</translation>
+            <translation>Qlib：%1\n可用：%2\n不可用：%3</translation>
         </message>
         <message>
             <source>Quant research started...</source>
-            <translation>Quant Research (量化研究) 已開始...</translation>
+            <translation>量化研究開始了…</translation>
         </message>
         <message>
             <source>QuantStats: %1</source>
@@ -4864,7 +4864,7 @@
         </message>
         <message>
             <source>Ready to connect to </source>
-            <translation>Ready 至connect 至</translation>
+            <translation>準備連接到</translation>
         </message>
         <message>
             <source>Rebound %1 to %2</source>
@@ -4892,7 +4892,7 @@
         </message>
         <message>
             <source>Refresh complete: %1 instruments for %2</source>
-            <translation>Refresh完成: %1 Instruments (商品) (商品) 用於%2</translation>
+            <translation>刷新完成：%2 的 %1 儀器</translation>
         </message>
         <message>
             <source>Refresh order state</source>
@@ -4904,7 +4904,7 @@
         </message>
         <message>
             <source>Refresh requested for %1 (force=%2)</source>
-            <translation>Refresh requested 用於%1 (force=%2)</translation>
+            <translation>請求刷新 %1（強制=%2）</translation>
         </message>
         <message>
             <source>Refresh tickets</source>
@@ -4924,11 +4924,11 @@
         </message>
         <message>
             <source>Refreshing market sentiment…</source>
-            <translation>重新整理 Market Sentiment (市場情緒) 中…</translation>
+            <translation>刷新市場情緒...</translation>
         </message>
         <message>
             <source>Registered %1 MA Analytics tools</source>
-            <translation>已註冊 %1 MA Analytics tools</translation>
+            <translation>註冊%1 MA分析工具</translation>
         </message>
         <message>
             <source>Registered %1 brokers</source>
@@ -4936,11 +4936,11 @@
         </message>
         <message>
             <source>Registered %1 internal MCP tools</source>
-            <translation>已註冊 %1 internal MCP tools</translation>
+            <translation>註冊%1內部MCP工具</translation>
         </message>
         <message>
             <source>Registered %1 tools successfully</source>
-            <translation>已註冊 %1 tools successfully</translation>
+            <translation>註冊%1工具成功</translation>
         </message>
         <message>
             <source>Registered '%1' (id=%2, screen=%3)</source>
@@ -4948,11 +4948,11 @@
         </message>
         <message>
             <source>Registering %1 terminal tools (v%2)</source>
-            <translation>註冊中 %1 terminal tools (v%2)</translation>
+            <translation>註冊 %1 個終端工具（v%2）</translation>
         </message>
         <message>
             <source>Registering %1 tools (gen %2)</source>
-            <translation>註冊中 %1 tools (gen %2)</translation>
+            <translation>註冊 %1 個工具（第 %2 代）</translation>
         </message>
         <message>
             <source>Rejected stale filter gen %1</source>
@@ -4984,15 +4984,15 @@
         </message>
         <message>
             <source>Removed series from slot %1</source>
-            <translation>移除d Series (序列) 來自slot %1</translation>
+            <translation>從插槽 %1 中刪除了系列</translation>
         </message>
         <message>
             <source>Rendered %1 series</source>
-            <translation>Rendered %1 Series (序列)</translation>
+            <translation>已繪製 %1 個資料系列</translation>
         </message>
         <message>
             <source>Replaced %1 instruments for %2</source>
-            <translation>Replaced %1 Instruments (商品) (商品) 用於%2</translation>
+            <translation>將 %1 儀器替換為 %2</translation>
         </message>
         <message>
             <source>Report Metadata</source>
@@ -5024,7 +5024,7 @@
         </message>
         <message>
             <source>Requirements file not found: %1\n</source>
-            <translation>Requirements file 找不到: %1\n</translation>
+            <translation>找不到需求檔案：%1\n</translation>
         </message>
         <message>
             <source>Reset Panels</source>
@@ -5040,7 +5040,7 @@
         </message>
         <message>
             <source>Resolved [%1] via global default → profile '%2'</source>
-            <translation>Resolved [%1] via global 預設 → profile '%2'</translation>
+            <translation>透過全域預設解析 [%1] → 設定檔「%2」</translation>
         </message>
         <message>
             <source>Resolved [%1] via legacy active provider fallback</source>
@@ -5048,7 +5048,7 @@
         </message>
         <message>
             <source>Resolved [%1] via type-default → profile '%2'</source>
-            <translation>Resolved [%1] via type-預設 → profile '%2'</translation>
+            <translation>透過型別預設 → 設定檔「%2」解決了 [%1]</translation>
         </message>
         <message>
             <source>Resolving stream via yt-dlp...</source>
@@ -5060,15 +5060,15 @@
         </message>
         <message>
             <source>Restart cap (%1) reached — giving up, pending requests will fail</source>
-            <translation>Restart cap (%1) reached — giving up, pending requests 將fail</translation>
+            <translation>達到重啟上限 (%1) - 放棄，待處理的請求將失敗</translation>
         </message>
         <message>
             <source>Restarting server %1 (attempt %2/%3)</source>
-            <translation>重新啟動中 server %1 (attempt %2/%3)</translation>
+            <translation>重新啟動伺服器 %1（嘗試 %2/%3）</translation>
         </message>
         <message>
             <source>Restored %1 secondary window(s) from last session</source>
-            <translation>已還原 %1 secondary window(s) 來自last session</translation>
+            <translation>從上次會話中恢復了 %1 輔助視窗</translation>
         </message>
         <message>
             <source>Result ready [%1]</source>
@@ -5100,11 +5100,11 @@
         </message>
         <message>
             <source>Risk %1/10  Audit %2</source>
-            <translation>Risk (風險) %1/10  Audit %2</translation>
+            <translation>風險 %1/10 審核 %2</translation>
         </message>
         <message>
             <source>Rolling window in trading days (default: 252)</source>
-            <translation>Rolling Window (滾動視窗) 於交易 days (預設: 252)</translation>
+            <translation>交易日捲動視窗（預設：252）</translation>
         </message>
         <message>
             <source>Routed to: %1 (intent: %2, confidence: %3%)</source>
@@ -5128,27 +5128,27 @@
         </message>
         <message>
             <source>Running %1 analysis through the agent stack…</source>
-            <translation>執行中 %1 分析 through the agent stack…</translation>
+            <translation>透過代理堆疊運行 %1 分析...</translation>
         </message>
         <message>
             <source>Running %1 on this portfolio…</source>
-            <translation>執行中 %1 on this Portfolio (投資組合) (投資組合)…</translation>
+            <translation>在此產品組合上運行 %1...</translation>
         </message>
         <message>
             <source>Running (%1/%2 active, %3 queued): %4 %5</source>
-            <translation>執行中 (%1/%2 active, %3 queued): %4 %5</translation>
+            <translation>正在運行（%1/%2 活動，%3 排隊）：%4 %5</translation>
         </message>
         <message>
             <source>Running 1000 simulation paths...</source>
-            <translation>執行 1000 條 Simulation Paths (模擬路徑) 中...</translation>
+            <translation>運行 1000 條模擬路徑...</translation>
         </message>
         <message>
             <source>Running Accretion/Dilution...</source>
-            <translation>執行 Accretion/Dilution (增厚/稀釋) 分析中...</translation>
+            <translation>運行增加/稀釋...</translation>
         </message>
         <message>
             <source>Running BL...</source>
-            <translation>執行 BL (Black-Litterman) 中...</translation>
+            <translation>運行BL...</translation>
         </message>
         <message>
             <source>Running Comprehensive...</source>
@@ -5164,7 +5164,7 @@
         </message>
         <message>
             <source>Running LBO Sensitivity...</source>
-            <translation>執行中 LBO (槓桿收購) Sensitivity...</translation>
+            <translation>運行 LBO 靈敏度...</translation>
         </message>
         <message>
             <source>Running LBO...</source>
@@ -5172,11 +5172,11 @@
         </message>
         <message>
             <source>Running Monte Carlo...</source>
-            <translation>執行 Monte Carlo (蒙地卡羅) 中...</translation>
+            <translation>運行蒙特卡羅...</translation>
         </message>
         <message>
             <source>Running Precedent Txns...</source>
-            <translation>執行 Precedent Transactions (可比交易分析) 中...</translation>
+            <translation>運行先例 Txns...</translation>
         </message>
         <message>
             <source>Running Regression...</source>
@@ -5184,11 +5184,11 @@
         </message>
         <message>
             <source>Running Trading Comps...</source>
-            <translation>執行 Trading Comps (可比公司分析) 中...</translation>
+            <translation>運行交易比較...</translation>
         </message>
         <message>
             <source>Running agent query [%1]: %2</source>
-            <translation>執行中 agent query [%1]: %2</translation>
+            <translation>執行代理查詢[%1]：%2</translation>
         </message>
         <message>
             <source>Running backtest...</source>
@@ -5204,15 +5204,15 @@
         </message>
         <message>
             <source>Running script: %1 with %2 args</source>
-            <translation>執行 Script: %1 使用%2 args</translation>
+            <translation>運行腳本：帶有 %2 args 的 %1</translation>
         </message>
         <message>
             <source>Running structured agent [%1] (%2): %3</source>
-            <translation>執行中 structured agent [%1] (%2): %3</translation>
+            <translation>運行結構化代理[%1]（%2）：%3</translation>
         </message>
         <message>
             <source>Running team query [%1]: %2</source>
-            <translation>執行中 team query [%1]: %2</translation>
+            <translation>跑步隊伍查詢[%1]：%2</translation>
         </message>
         <message>
             <source>Running test...</source>
@@ -5236,7 +5236,7 @@
         </message>
         <message>
             <source>SEC filings and company research.\n</source>
-            <translation>SEC Filings (申報文件) 與公司研究。\n</translation>
+            <translation>SEC 文件和公司研究。 \n</translation>
         </message>
         <message>
             <source>SELECT PLAN</source>
@@ -5344,7 +5344,7 @@
         </message>
         <message>
             <source>Saved %1 widgets for profile '%2'</source>
-            <translation>已儲存 %1 widgets 用於profile '%2'</translation>
+            <translation>為設定檔“%2”儲存的 %1 小工具</translation>
         </message>
         <message>
             <source>Saved agent config: %1</source>
@@ -5368,7 +5368,7 @@
         </message>
         <message>
             <source>Saved workflow: %1 (%2 nodes, %3 edges)</source>
-            <translation>已儲存 workflow: %1 (%2 節點s, %3 edges)</translation>
+            <translation>已儲存的工作流程：%1（%2 節點、%3 邊）</translation>
         </message>
         <message>
             <source>Saved workspace as: %1</source>
@@ -5384,7 +5384,7 @@
         </message>
         <message>
             <source>Saved. Changes apply on next voice session.</source>
-            <translation>已儲存. Changes apply on next voice session.</translation>
+            <translation>已儲存。變更適用於下一個語音會話。</translation>
         </message>
         <message>
             <source>Saved: </source>
@@ -5392,7 +5392,7 @@
         </message>
         <message>
             <source>Saving %1 message to session %2</source>
-            <translation>Saving %1 message 至session %2</translation>
+            <translation>將 %1 訊息儲存到會話 %2</translation>
         </message>
         <message>
             <source>Saving strategy: %1</source>
@@ -5404,7 +5404,7 @@
         </message>
         <message>
             <source>Scan complete: %1 matches out of %2 symbols</source>
-            <translation>掃描完成: %1 matches out 的%2 Symbol (股票代碼)s</translation>
+            <translation>掃描完成：%1 匹配 %2 符號</translation>
         </message>
         <message>
             <source>Scan results: %1 matches</source>
@@ -5412,7 +5412,7 @@
         </message>
         <message>
             <source>Scan started: %1 conditions, %2 symbols</source>
-            <translation>S可以started: %1 conditions, %2 Symbol (股票代碼)s</translation>
+            <translation>掃描開始：%1 條件、%2 符號</translation>
         </message>
         <message>
             <source>Scanning %1 symbols...</source>
@@ -5420,15 +5420,15 @@
         </message>
         <message>
             <source>Scanning SEC EDGAR...</source>
-            <translation>掃描中 SEC EDGAR...</translation>
+            <translation>掃描 SEC EDGAR...</translation>
         </message>
         <message>
             <source>Schedule created — switch to Schedules tab to view</source>
-            <translation>排程已建立 — switch 至Schedules tab 至view</translation>
+            <translation>已建立計劃 - 切換到「計劃」標籤以查看</translation>
         </message>
         <message>
             <source>Schedule created: %1\nFreq: %2  |  Window: %3 days  |  Next: %4%5</source>
-            <translation>排程已建立: %1\nFreq: %2  |  Window: %3 days  |  Next: %4%5</translation>
+            <translation>已建立的時間表：%1\n頻率：%2 | 視窗：%3天| 下一頁： %4%5</translation>
         </message>
         <message>
             <source>Schema at version %1</source>
@@ -5440,15 +5440,15 @@
         </message>
         <message>
             <source>Script %1 failed in %2ms (exit=%3): %4</source>
-            <translation>Script %1失敗 於%2ms (exit=%3): %4</translation>
+            <translation>腳本 %1 在 %2ms 失敗（退出 = %3）：%4</translation>
         </message>
         <message>
             <source>Script %1 finished in %2ms</source>
-            <translation>Script %1 finished 於%2ms</translation>
+            <translation>腳本%1在%2ms完成</translation>
         </message>
         <message>
             <source>Script exited with code %1</source>
-            <translation>Script exited 使用code %1</translation>
+            <translation>腳本退出，代碼為 %1</translation>
         </message>
         <message>
             <source>Script failed: %1</source>
@@ -5456,7 +5456,7 @@
         </message>
         <message>
             <source>Script reported error</source>
-            <translation>Script reported 錯誤</translation>
+            <translation>腳本報告錯誤</translation>
         </message>
         <message>
             <source>Script reported failure</source>
@@ -5468,7 +5468,7 @@
         </message>
         <message>
             <source>Search HDX datasets...</source>
-            <translation>搜尋 HDX Datasets (資料集)...</translation>
+            <translation>搜尋 HDX 資料集...</translation>
         </message>
         <message>
             <source>Search actions...</source>
@@ -5480,7 +5480,7 @@
         </message>
         <message>
             <source>Search assets (AAPL, Tesla, RELIANCE...)</source>
-            <translation>搜尋 Assets (資產)（AAPL、Tesla、RELIANCE...）</translation>
+            <translation>搜尋資產（AAPL、特斯拉、RELIANCE...）</translation>
         </message>
         <message>
             <source>Search components…</source>
@@ -5500,7 +5500,7 @@
         </message>
         <message>
             <source>Search deals by target, acquirer, or industry...</source>
-            <translation>依 Target (標的)、Acquirer (收購方) 或 Industry (產業) 搜尋交易...</translation>
+            <translation>依目標、收購方或產業搜尋交易...</translation>
         </message>
         <message>
             <source>Search discussions...</source>
@@ -5512,7 +5512,7 @@
         </message>
         <message>
             <source>Search files by name, type, or source...</source>
-            <translation>搜尋 files by 名稱, type, 或source...</translation>
+            <translation>按名稱、類型或來源搜尋檔案...</translation>
         </message>
         <message>
             <source>Search history...</source>
@@ -5532,7 +5532,7 @@
         </message>
         <message>
             <source>Search providers, datasets...</source>
-            <translation>搜尋 Providers (提供者), Datasets (資料集)...</translation>
+            <translation>搜尋提供者、資料集...</translation>
         </message>
         <message>
             <source>Search series...</source>
@@ -5548,7 +5548,7 @@
         </message>
         <message>
             <source>Search symbol or name: AAPL, Reliance, Bitcoin ...</source>
-            <translation>搜尋 Symbol (股票代碼) 或名稱: AAPL, Reliance, Bitco於...</translation>
+            <translation>搜尋符號或名稱： AAPL, Reliance, Bitcoin ...</translation>
         </message>
         <message>
             <source>Search tools...</source>
@@ -5568,7 +5568,7 @@
         </message>
         <message>
             <source>Searching: '%1' offset=%2</source>
-            <translation>搜尋ing: '%1' offset=%2</translation>
+            <translation>搜尋：「%1」偏移量=%2</translation>
         </message>
         <message>
             <source>Search…</source>
@@ -5576,27 +5576,27 @@
         </message>
         <message>
             <source>Sector Mapping</source>
-            <translation>Sector (產業類別) Mapping (對應)</translation>
+            <translation>扇區映射</translation>
         </message>
         <message>
             <source>SecureStorage.store(kalshi) failed: </source>
-            <translation>Secure儲存空間.store(kalshi)失敗: </translation>
+            <translation>SecureStorage.store（kalshi）失敗：</translation>
         </message>
         <message>
             <source>SecureStorage.store(polymarket) failed: </source>
-            <translation>Secure儲存空間.store(polymarket)失敗: </translation>
+            <translation>SecureStorage.store（polymarket）失敗：</translation>
         </message>
         <message>
             <source>SecureStorage: failed to persist %1</source>
-            <translation>Secure儲存空間:失敗 至persist %1</translation>
+            <translation>SecureStorage：無法持久保存 %1</translation>
         </message>
         <message>
             <source>Security ID not found for %1:%2 — instrument DB not loaded?</source>
-            <translation>Security ID 找不到 用於%1:%2 — instrument DB not已載入?</translation>
+            <translation>未找到 %1:%2 的安全 ID - 儀器資料庫未載入？</translation>
         </message>
         <message>
             <source>Security settings saved: autolock=%1, timeout=%2min</source>
-            <translation>Security settings已儲存: autolock=%1, timeout=%2min</translation>
+            <translation>已儲存的安全設定：自動鎖定=%1，逾時=%2min</translation>
         </message>
         <message>
             <source>Select JSON file...</source>
@@ -5604,7 +5604,7 @@
         </message>
         <message>
             <source>Select a configured agent, or Default to use the global LLM.</source>
-            <translation>選擇已設定的 Agent，或選擇 Default 使用全域 LLM。</translation>
+            <translation>選擇已配置的代理，或預設使用全域 LLM。</translation>
         </message>
         <message>
             <source>Select a connector</source>
@@ -5620,11 +5620,11 @@
         </message>
         <message>
             <source>Select a module and endpoint, then execute to see results...</source>
-            <translation>選擇 Module (模組) 和 Endpoint，然後執行以查看結果...</translation>
+            <translation>選擇一個模組和端點，然後執行以查看結果...</translation>
         </message>
         <message>
             <source>Select a task and click GET FACTORS / GET MODEL to view results...</source>
-            <translation>選擇 a task 和click GET FACTORS / GET MODEL 至view 結果...</translation>
+            <translation>選擇一個任務並點擊“獲取因素/獲取模型”以查看結果...</translation>
         </message>
         <message>
             <source>Select a watchlist</source>
@@ -5700,11 +5700,11 @@
         </message>
         <message>
             <source>Series added to single view: %1</source>
-            <translation>Series added 至single view: %1</translation>
+            <translation>新增至單一視圖的系列：%1</translation>
         </message>
         <message>
             <source>Series added to slot %1: %2</source>
-            <translation>Series added 至slot %1: %2</translation>
+            <translation>加入插槽 %1 的系列：%2</translation>
         </message>
         <message>
             <source>Series: %1</source>
@@ -5748,7 +5748,7 @@
         </message>
         <message>
             <source>Sharpe Ratio: risk-adjusted return over a risk-free rate.\n</source>
-            <translation>Sharpe Ratio (夏普比率)：相對 Risk-Free Rate (無風險利率) 的風險調整後報酬。\n</translation>
+            <translation>夏普比率：相對於無風險利率的風險調整報酬。 \n</translation>
         </message>
         <message>
             <source>Sheet%1</source>
@@ -5768,7 +5768,7 @@
         </message>
         <message>
             <source>Showing %1 of 1000 simulated paths over 252 trading days (GBM).</source>
-            <translation>顯示 %1 的1000 simulated paths over 252 交易 days (GBM).</translation>
+            <translation>顯示 %1 超過 252 個交易日 (GBM) 的 1000 條模擬路徑。</translation>
         </message>
         <message>
             <source>Showing first %1 of %2 rows</source>
@@ -5776,15 +5776,15 @@
         </message>
         <message>
             <source>Signal Data — %1 records\nInstruments: %2\nRange: %3 → %4</source>
-            <translation>Signal Data — %1 筆記錄\nInstruments (商品): %2\nRange: %3 → %4</translation>
+            <translation>訊號資料 - %1 記錄\n儀器：%2\n範圍：%3 → %4</translation>
         </message>
         <message>
             <source>Signal values (comma-separated)</source>
-            <translation>Signal Values (訊號值) （以逗號分隔)</translation>
+            <translation>訊號值（逗號分隔）</translation>
         </message>
         <message>
             <source>Skipping update check — running version '%1' is not a release build</source>
-            <translation>Skipping update check — 執行中 版本 '%1' is not a release build</translation>
+            <translation>跳過更新檢查 - 運行版本“%1”不是發布版本</translation>
         </message>
         <message>
             <source>Slot %1 removed. Remaining: %2</source>
@@ -5824,15 +5824,15 @@
         </message>
         <message>
             <source>Started %1 data streams for active accounts</source>
-            <translation>Started %1 data streams 用於active accounts</translation>
+            <translation>為活躍帳號啟動 %1 資料流</translation>
         </message>
         <message>
             <source>Started data stream for account %1</source>
-            <translation>Started data stream 用於account %1</translation>
+            <translation>已啟動帳戶 %1 的資料流</translation>
         </message>
         <message>
             <source>Started stream for account %1 (%2)</source>
-            <translation>Started stream 用於account %1 (%2)</translation>
+            <translation>已開始為帳號 %1 (%2) 直播</translation>
         </message>
         <message>
             <source>Started: %1 (%2 nodes)</source>
@@ -5844,11 +5844,11 @@
         </message>
         <message>
             <source>Starting execution: %1 (%2 nodes)</source>
-            <translation>Starting execution: %1 (%2 節點s)</translation>
+            <translation>開始執行：%1（%2節點）</translation>
         </message>
         <message>
             <source>Starting log viewer...</source>
-            <translation>啟動 Log Viewer (記錄檢視器) 中...</translation>
+            <translation>正在啟動日誌檢視器...</translation>
         </message>
         <message>
             <source>Starting retrain: %1  |  %2 windows</source>
@@ -5860,7 +5860,7 @@
         </message>
         <message>
             <source>Startup sweep removed %1 expired cache rows</source>
-            <translation>Startup sweep removed %1 expired cache 列</translation>
+            <translation>啟動掃描刪除了 %1 過期的快取行</translation>
         </message>
         <message>
             <source>Status: %1</source>
@@ -5872,11 +5872,11 @@
         </message>
         <message>
             <source>Step size between windows (default: 20)</source>
-            <translation>步長 between windows (預設: 20)</translation>
+            <translation>視窗之間的步長（預設值：20）</translation>
         </message>
         <message>
             <source>Stock analysis plan: %1</source>
-            <translation>Stock 分析 plan: %1</translation>
+            <translation>庫存分析計畫：%1</translation>
         </message>
         <message>
             <source>Stock analysis: %1</source>
@@ -5884,11 +5884,11 @@
         </message>
         <message>
             <source>Stop Loss</source>
-            <translation>Stop Loss (停損)</translation>
+            <translation>停損</translation>
         </message>
         <message>
             <source>Stop price</source>
-            <translation>Stop Price (停損觸發價)</translation>
+            <translation>停損價</translation>
         </message>
         <message>
             <source>Stop requested: %1</source>
@@ -5896,11 +5896,11 @@
         </message>
         <message>
             <source>Stopped data stream for account %1</source>
-            <translation>Stopped data stream 用於account %1</translation>
+            <translation>帳號 %1 的資料流已停止</translation>
         </message>
         <message>
             <source>Stopped stream for account %1</source>
-            <translation>Stopped stream 用於account %1</translation>
+            <translation>帳號 %1 已停止直播</translation>
         </message>
         <message>
             <source>Storage: %1 / 500 MB</source>
@@ -5932,7 +5932,7 @@
         </message>
         <message>
             <source>Streaming message to session %1 [%2]: \</source>
-            <translation>Streaming message 至session %1 [%2]: \</translation>
+            <translation>將訊息串流傳輸到會話 %1 [%2]：\</translation>
         </message>
         <message>
             <source>Streaming...</source>
@@ -5940,7 +5940,7 @@
         </message>
         <message>
             <source>Stress testing...</source>
-            <translation>Stress Test (壓力測試) 中...</translation>
+            <translation>壓力測試...</translation>
         </message>
         <message>
             <source>Submit Ticket →</source>
@@ -5956,7 +5956,7 @@
         </message>
         <message>
             <source>Suggest rebalancing for portfolio '%1' to optimize risk-return.</source>
-            <translation>建議 Portfolio (投資組合)「%1」的 Rebalancing (再平衡)，以最佳化風險報酬。</translation>
+            <translation>建議重新平衡投資組合「%1」以優化風險回報。</translation>
         </message>
         <message>
             <source>Supply (%1)</source>
@@ -5988,7 +5988,7 @@
         </message>
         <message>
             <source>Symbol changed: %1 → %2</source>
-            <translation>Symbol (股票代碼) changed: %1 → %2</translation>
+            <translation>符號變更：%1 → %2</translation>
         </message>
         <message>
             <source>Symbol is required</source>
@@ -6004,11 +6004,11 @@
         </message>
         <message>
             <source>System prompt / instructions...</source>
-            <translation>System Prompt (系統提示) / 指示...</translation>
+            <translation>系統提示/說明...</translation>
         </message>
         <message>
             <source>System prompt — role, goals, constraints, persona...</source>
-            <translation>System Prompt (系統提示) — 角色、目標、限制、persona...</translation>
+            <translation>系統提示-角色、目標、限制、人物...</translation>
         </message>
         <message>
             <source>TAGS: %1</source>
@@ -6024,7 +6024,7 @@
         </message>
         <message>
             <source>TICKERS: %1</source>
-            <translation>TIC (資訊係數)KERS: %1</translation>
+            <translation>代碼：%1</translation>
         </message>
         <message>
             <source>TOK %1</source>
@@ -6036,7 +6036,7 @@
         </message>
         <message>
             <source>TOXIC FLOW DETECTED — score: %1 — %2</source>
-            <translation>TOXIC (資訊係數) FLOW DETECTED — score: %1 — %2</translation>
+            <translation>偵測到有毒流量 - 分數：%1 - %2</translation>
         </message>
         <message>
             <source>Table %1</source>
@@ -6052,7 +6052,7 @@
         </message>
         <message>
             <source>Take Profit</source>
-            <translation>Take Profit (停利)</translation>
+            <translation>止盈</translation>
         </message>
         <message>
             <source>Takes about 3–5 minutes. Needs an internet connection.</source>
@@ -6060,11 +6060,11 @@
         </message>
         <message>
             <source>Target returns (comma-separated)</source>
-            <translation>Target returns （以逗號分隔)</translation>
+            <translation>目標回報（以逗號分隔）</translation>
         </message>
         <message>
             <source>Target ticker (e.g. AAPL)</source>
-            <translation>Target Ticker (目標股票代碼)（例如 AAPL）</translation>
+            <translation>目標程式碼（例如 AAPL）</translation>
         </message>
         <message>
             <source>Target value (e.g. 0.02)</source>
@@ -6088,7 +6088,7 @@
         </message>
         <message>
             <source>Task started: %1\nEstimated time: %2\n\nUse Task Monitor → REFRESH to track progress.</source>
-            <translation>Task started: %1\nEstimated time: %2\n\nUse Task Monit或→ REFRESH 至track progress.</translation>
+            <translation>任務已開始：%1\nE預計時間：%2\n\n使用任務監視器 → 刷新來追蹤進度。</translation>
         </message>
         <message>
             <source>Team completed in %1ms</source>
@@ -6100,11 +6100,11 @@
         </message>
         <message>
             <source>Template write failed: %1</source>
-            <translation>Template write失敗: %1</translation>
+            <translation>模板寫入失敗：%1</translation>
         </message>
         <message>
             <source>Template written: %1 connectors to %2</source>
-            <translation>Template (範本) 已寫入: %1 connectors 至%2</translation>
+            <translation>編寫的模板：%1 連接器至 %2</translation>
         </message>
         <message>
             <source>Test %1: %2 — %3</source>
@@ -6112,7 +6112,7 @@
         </message>
         <message>
             <source>Test results will appear here...</source>
-            <translation>Test 結果 將appear here...</translation>
+            <translation>測試結果將出現在這裡...</translation>
         </message>
         <message>
             <source>Test: %1</source>
@@ -6140,7 +6140,7 @@
         </message>
         <message>
             <source>The downloaded installer failed integrity verification. </source>
-            <translation>The downloaded 安裝程式失敗 integrity verification. </translation>
+            <translation>下載的安裝程式未通過完整性驗證。</translation>
         </message>
         <message>
             <source>The installer could not be downloaded.\n\n%1</source>
@@ -6148,7 +6148,7 @@
         </message>
         <message>
             <source>The installer has been downloaded to:\n%1\n\n</source>
-            <translation>The 安裝程式 has been downloaded to:\n%1\n\n</translation>
+            <translation>安裝程式已下載至：\n%1\n\n</translation>
         </message>
         <message>
             <source>The update manifest is malformed.</source>
@@ -6164,7 +6164,7 @@
         </message>
         <message>
             <source>This will permanently delete your Fincept account (%1) and all associated data.\n\n</source>
-            <translation>This 將permanently delete your Fincept account (%1) 和all associated data.\n\n</translation>
+            <translation>這將永久刪除您的 Fincept 帳戶 (%1) 和所有關聯資料。 \n\n</translation>
         </message>
         <message>
             <source>Threat: %1 (%2, %3% conf)</source>
@@ -6172,7 +6172,7 @@
         </message>
         <message>
             <source>Ticker symbol (e.g. AAPL) or comma-separated values</source>
-            <translation>Ticker Symbol (股票代碼)（例如 AAPL）或逗號分隔數值</translation>
+            <translation>股票代碼（例如 AAPL）或逗號分隔值</translation>
         </message>
         <message>
             <source>Ticket #%1</source>
@@ -6184,7 +6184,7 @@
         </message>
         <message>
             <source>Toggle Lite / Deep mode</source>
-            <translation>切換 Lite / Deep 模式</translation>
+            <translation>切換精簡/深度模式</translation>
         </message>
         <message>
             <source>Toggle intelligence drawer</source>
@@ -6196,7 +6196,7 @@
         </message>
         <message>
             <source>Token not found for %1:%2 (instrument cache not loaded yet?)</source>
-            <translation>Token 找不到 用於%1:%2 (instrument cache not已載入 yet?)</translation>
+            <translation>未找到 %1:%2 的令牌（儀器快取尚未載入？）</translation>
         </message>
         <message>
             <source>Tool '%1' %2</source>
@@ -6216,15 +6216,15 @@
         </message>
         <message>
             <source>Tool execution error: </source>
-            <translation>Tool execution 錯誤: </translation>
+            <translation>工具執行錯誤：</translation>
         </message>
         <message>
             <source>Total P&amp;L: %1%  |  Day Change: %2%  |  Positions: %3</source>
-            <translation>Total P&amp;L (損益): %1%  |  Day Change: %2%  |  Position (持倉) (位置)s: %3</translation>
+            <translation>總損益：%1% | 日變動：%2% | 職位：%3</translation>
         </message>
         <message>
             <source>Total amount invested — sum of (avg buy price × quantity)\n</source>
-            <translation>Total amount invested — sum 的(avg buy price × 數量)\n</translation>
+            <translation>投資總額 - (平均買入價 × 數量)\n 總和</translation>
         </message>
         <message>
             <source>Total cost basis — the dashed horizontal line on the chart.</source>
@@ -6244,7 +6244,7 @@
         </message>
         <message>
             <source>Trade Value: </source>
-            <translation>Trade Value (交易金額)：</translation>
+            <translation>貿易價值：</translation>
         </message>
         <message>
             <source>Trade value $%1 exceeds max $%2</source>
@@ -6272,7 +6272,7 @@
         </message>
         <message>
             <source>Trained — Samples: %1  |  MAE: %2\nDrift: %3</source>
-            <translation>已訓練 — Samples: %1  |  MAE (平均絕對誤差): %2\nDrift: %3</translation>
+            <translation>已訓練 - 樣品：%1 | MAE：%2\n漂移：%3</translation>
         </message>
         <message>
             <source>Trained: %1</source>
@@ -6304,7 +6304,7 @@
         </message>
         <message>
             <source>Transaction %1 %2 x%3 in portfolio %4</source>
-            <translation>Transaction (交易) %1 %2 x%3 於Portfolio (投資組合) (投資組合) %4</translation>
+            <translation>投資組合 %4 中的交易 %1 %2 x%3</translation>
         </message>
         <message>
             <source>Transcript: \</source>
@@ -6312,7 +6312,7 @@
         </message>
         <message>
             <source>Trigger price</source>
-            <translation>Trigger Price (觸發價)</translation>
+            <translation>觸發價</translation>
         </message>
         <message>
             <source>Trigger suppressed by filter: %1</source>
@@ -6324,7 +6324,7 @@
         </message>
         <message>
             <source>Type a symbol or name to search %1s...</source>
-            <translation>Type a Symbol (股票代碼) 或名稱 至search %1s...</translation>
+            <translation>輸入符號或名稱來搜尋 %1...</translation>
         </message>
         <message>
             <source>Type your reply…</source>
@@ -6372,7 +6372,7 @@
         </message>
         <message>
             <source>Unrealized profit or loss across all open positions.\n</source>
-            <translation>所有未平倉 Positions (持倉) 的 Unrealized P&amp;L (未實現損益)。\n</translation>
+            <translation>所有未平倉部位的未實現利潤或損失。 \n</translation>
         </message>
         <message>
             <source>Unsupported platform/arch: %1 / %2</source>
@@ -6384,7 +6384,7 @@
         </message>
         <message>
             <source>Unusual volume detected (z-score: %1). More %2 articles than normal.</source>
-            <translation>偵測到異常 Volume (成交量) (z-score: %1). More %2 文章 than normal.</translation>
+            <translation>偵測到異常音量（z 分數：%1）。 %2 文章比平常多。</translation>
         </message>
         <message>
             <source>Update Available</source>
@@ -6436,7 +6436,7 @@
         </message>
         <message>
             <source>Value at Risk at 95% confidence — the maximum expected\n</source>
-            <translation>Value at Risk (風險值) 95% 信心水準 — 最大預期\n</translation>
+            <translation>95% 信賴度下的風險價值 - 最大預期\n</translation>
         </message>
         <message>
             <source>Value for \</source>
@@ -6460,7 +6460,7 @@
         </message>
         <message>
             <source>Vessel history: %1 — %2 positions</source>
-            <translation>Vessel history: %1 — %2 Position (持倉)s (持倉)</translation>
+            <translation>船舶歷史: %1 - %2 持股位置</translation>
         </message>
         <message>
             <source>View Plans &amp; Pricing</source>
@@ -6468,7 +6468,7 @@
         </message>
         <message>
             <source>View Release Notes</source>
-            <translation>查看 Release Notes (版本說明)</translation>
+            <translation>看發行說明</translation>
         </message>
         <message>
             <source>View confidences (e.g. 0.8,0.6)</source>
@@ -6480,7 +6480,7 @@
         </message>
         <message>
             <source>Voice config saved (provider=%1)</source>
-            <translation>Voice 設定已儲存 (provider=%1)</translation>
+            <translation>語音配置已儲存（提供者=%1）</translation>
         </message>
         <message>
             <source>Voice input</source>
@@ -6512,7 +6512,7 @@
         </message>
         <message>
             <source>Voice script not found: </source>
-            <translation>Voice script 找不到: </translation>
+            <translation>未找到語音腳本：</translation>
         </message>
         <message>
             <source>Vol: %1%</source>
@@ -6532,7 +6532,7 @@
         </message>
         <message>
             <source>WS stream start requested for %1/%2</source>
-            <translation>WS stream start requested 用於%1/%2</translation>
+            <translation>%1/%2 請求 WS 流啟動</translation>
         </message>
         <message>
             <source>Waiting for browser login on port %1 (120s)...</source>
@@ -6540,11 +6540,11 @@
         </message>
         <message>
             <source>Walking order book...</source>
-            <translation>掃描 Order Book (委託簿) 中...</translation>
+            <translation>行走訂單...</translation>
         </message>
         <message>
             <source>Warning: already used by \</source>
-            <translation>警告: already used by \</translation>
+            <translation>警告：已被 \ 使用</translation>
         </message>
         <message>
             <source>Weekly loss $%1 exceeds limit $%2</source>
@@ -6552,7 +6552,7 @@
         </message>
         <message>
             <source>Weight of the three largest sectors (%1)</source>
-            <translation>Weight 的the three largest sectors (%1)</translation>
+            <translation>三個最大扇區的權重 (%1)</translation>
         </message>
         <message>
             <source>What is this workspace for?</source>
@@ -6568,7 +6568,7 @@
         </message>
         <message>
             <source>When enabled, the AI can interact with the terminal: navigate screens, fetch market </source>
-            <translation>When enabled, the AI 可以interact 使用the terminal: navigate 螢幕s, fetch market </translation>
+            <translation>啟用後，人工智慧可以與終端互動：導航螢幕、獲取市場</translation>
         </message>
         <message>
             <source>Window %1/%2</source>
@@ -6592,7 +6592,7 @@
         </message>
         <message>
             <source>Write query: %1 rows affected</source>
-            <translation>Write query: %1 列 affected</translation>
+            <translation>寫入查詢：受影響的 %1 行</translation>
         </message>
         <message>
             <source>Write your note here...</source>
@@ -6636,7 +6636,7 @@
         </message>
         <message>
             <source>[%1 Chart — enter data in Properties panel]</source>
-            <translation>[%1 Chart — enter data 於Properties panel]</translation>
+            <translation>[%1 圖表 - 在屬性面板中輸入資料]</translation>
         </message>
         <message>
             <source>[%1 items]</source>
@@ -6700,11 +6700,11 @@
         </message>
         <message>
             <source>[%1] All packages installed individually</source>
-            <translation>[%1] 全部 packages installed individually</translation>
+            <translation>[%1] 所有軟體包均單獨安裝</translation>
         </message>
         <message>
             <source>[%1] Command options loaded</source>
-            <translation>[%1] Comm和options已載入</translation>
+            <translation>[%1] 已載入指令選項</translation>
         </message>
         <message>
             <source>[%1] Failed: %2</source>
@@ -6724,7 +6724,7 @@
         </message>
         <message>
             <source>[%1] Pass 1: bulk install from %2</source>
-            <translation>[%1] Pass 1: bulk install 來自%2</translation>
+            <translation>[%1] 第 1 遍：從 %2 大量安裝</translation>
         </message>
         <message>
             <source>[%1] Result ready</source>
@@ -6736,11 +6736,11 @@
         </message>
         <message>
             <source>[%1] Symbol map updated: %2 remaps</source>
-            <translation>[%1] Symbol (股票代碼) map updated: %2 remaps</translation>
+            <translation>[%1] 符號圖已更新：%2 重新映射</translation>
         </message>
         <message>
             <source>[%1] WS process errorOccurred: %2</source>
-            <translation>[%1] WS process 錯誤Occurred: %2</translation>
+            <translation>[%1] WS 進程發生錯誤：%2</translation>
         </message>
         <message>
             <source>[%1] WS status: %2</source>
@@ -6796,11 +6796,11 @@
         </message>
         <message>
             <source>[PARAM] symbol=%1</source>
-            <translation>[PARAM] Symbol (股票代碼)=%1</translation>
+            <translation>[參數]符號=%1</translation>
         </message>
         <message>
             <source>[Portfolio context: %1]\n</source>
-            <translation>[Portfolio (投資組合) context: %1]\n</translation>
+            <translation>[投資組合上下文：%1]\n</translation>
         </message>
         <message>
             <source>[Portfolio: %1 (id: %2)]\n\n%3</source>
@@ -6816,11 +6816,11 @@
         </message>
         <message>
             <source>[START] Running team (%1 members, mode: %2)</source>
-            <translation>[START] 執行中 team (%1 members, mode: %2)</translation>
+            <translation>[START] 跑團（%1成員，模式：%2）</translation>
         </message>
         <message>
             <source>[TOOLS] %1 tool(s) selected from TOOLS tab</source>
-            <translation>[TOOLS] %1 tool(s) selected 來自TOOLS tab</translation>
+            <translation>[工具] 從「工具」標籤中選擇的 %1 工具</translation>
         </message>
         <message>
             <source>[{\</source>
@@ -6836,11 +6836,11 @@
         </message>
         <message>
             <source>\nBuilt-in LightGBM+Alpha158 template generated at:\n%1</source>
-            <translation>\nBuilt-於LightGBM+Alpha (超額報酬)158 template generated at:\n%1</translation>
+            <translation>\n內建LightGBM+Alpha158範本產生於：\n%1</translation>
         </message>
         <message>
             <source>\nDone — %1 windows in %2s  |  Experiment: %3</source>
-            <translation>\n完成 — %1 windows 於%2s  |  Experiment: %3</translation>
+            <translation>\nDone - %2 中的 %1 窗戶 | 實驗：%3</translation>
         </message>
         <message>
             <source>\nError: %1</source>
@@ -6848,7 +6848,7 @@
         </message>
         <message>
             <source>\nPrediction: %1  →  Actual: %2  |  Error: %3</source>
-            <translation>\nPrediction (預測): %1  →  Actual: %2  |  錯誤: %3</translation>
+            <translation>\n預測：%1 → 實際：%2 | 錯誤：%3</translation>
         </message>
         <message>
             <source>\n…</source>
@@ -6912,11 +6912,11 @@
         </message>
         <message>
             <source>\u26A0 Shortfall of %1 %2. Consider increasing monthly savings </source>
-            <translation>\u26A0 Shortfall 的%1 %2. Consider increasing monthly savings </translation>
+            <translation>\u26A0 %1 %2 的短缺。考慮增加每月儲蓄</translation>
         </message>
         <message>
             <source>\u2713 On track! Your projected retirement fund of %1 %2 </source>
-            <translation>\u2713 On track! Your projected retirement fund 的%1 %2 </translation>
+            <translation>\u2713 步入正軌！您預計的退休基金為 %1 %2</translation>
         </message>
         <message>
             <source>\xE2\x86\x97</source>
@@ -6992,7 +6992,7 @@
         </message>
         <message>
             <source>auto (from Content-Type / &lt;meta&gt;)</source>
-            <translation>au至(來自Content-Type / &lt;meta&gt;)</translation>
+            <translation>自動（來自 Content-Type / &lt;meta&gt;）</translation>
         </message>
         <message>
             <source>broker.%1.</source>
@@ -7012,7 +7012,7 @@
         </message>
         <message>
             <source>datasets fetch failed: %1</source>
-            <translation>Datasets (資料集) fetch失敗: %1</translation>
+            <translation>資料集取得失敗：%1</translation>
         </message>
         <message>
             <source>download-url</source>
@@ -7052,11 +7052,11 @@
         </message>
         <message>
             <source>e.g. AAPL, Apple, Reliance…</source>
-            <translation>例如：AAPL, Apple, Reliance…</translation>
+            <translation>例如AAPL、蘋果、信實…</translation>
         </message>
         <message>
             <source>e.g. AAPL, BTC-USD, ^GSPC</source>
-            <translation>例如：AAPL, BTC-USD, ^GSPC</translation>
+            <translation>例如AAPL、BTC-美元、^GSPC</translation>
         </message>
         <message>
             <source>e.g. AAPL, MSFT, GOOGL</source>
@@ -7068,15 +7068,15 @@
         </message>
         <message>
             <source>e.g. BTC/USD</source>
-            <translation>例如：BTC/USD</translation>
+            <translation>例如比特幣/美元</translation>
         </message>
         <message>
             <source>e.g. BTC/USD, ETH/USD, SOL/USD</source>
-            <translation>例如：BTC/USD, ETH/USD, SOL/USD</translation>
+            <translation>例如BTC/美元、ETH/美元、SOL/美元</translation>
         </message>
         <message>
             <source>e.g. BTC/USDT, ETH/USDT</source>
-            <translation>例如：BTC/USDT, ETH/USDT</translation>
+            <translation>例如BTC/USDT、ETH/USDT</translation>
         </message>
         <message>
             <source>e.g. CES0000000001</source>
@@ -7084,11 +7084,11 @@
         </message>
         <message>
             <source>e.g. Fast Groq, Careful Claude, Coding minimax</source>
-            <translation>例如：Fast Groq, Careful Claude, Coding minimax</translation>
+            <translation>例如快速 Groq、小心克勞德、編碼極小極大</translation>
         </message>
         <message>
             <source>e.g. Figure 1: Revenue growth</source>
-            <translation>例如：Figure 1: Revenue growth</translation>
+            <translation>例如圖 1：收入成長</translation>
         </message>
         <message>
             <source>e.g. GDPC1</source>
@@ -7096,7 +7096,7 @@
         </message>
         <message>
             <source>e.g. Key Risk, Note, Important</source>
-            <translation>例如：Key Risk (風險), Note, Important</translation>
+            <translation>例如主要風險、注意、重要</translation>
         </message>
         <message>
             <source>e.g. Kyiv</source>
@@ -7104,11 +7104,11 @@
         </message>
         <message>
             <source>e.g. Mean(close, 5) / Std(close, 20)</source>
-            <translation>例如：Mean(close, 5) / Std(close, 20)</translation>
+            <translation>例如平均值（收盤價，5）/標準差（收盤價，20）</translation>
         </message>
         <message>
             <source>e.g. My Custom Server</source>
-            <translation>例如：My Custom Server</translation>
+            <translation>例如我的自訂伺服器</translation>
         </message>
         <message>
             <source>e.g. My Equity Analyst</source>
@@ -7116,7 +7116,7 @@
         </message>
         <message>
             <source>e.g. My Tech Stocks</source>
-            <translation>例如：My Tech Stocks</translation>
+            <translation>例如我的科技股</translation>
         </message>
         <message>
             <source>e.g. Ukraine</source>
@@ -7124,11 +7124,11 @@
         </message>
         <message>
             <source>e.g. Upstox OHLCV</source>
-            <translation>例如：Upstox OHLCV (開高低收量)</translation>
+            <translation>例如Upstox OHLCV</translation>
         </message>
         <message>
             <source>e.g. data.items  (JSON only)</source>
-            <translation>例如：data.items  (JSON only)</translation>
+            <translation>例如data.items（僅限 JSON）</translation>
         </message>
         <message>
             <source>e.g. openai</source>
@@ -7188,7 +7188,7 @@
         </message>
         <message>
             <source>markets | geopolitics | crypto | …</source>
-            <translation>markets | geopolitics | cryp至| …</translation>
+            <translation>市場 |地緣政治|加密 | …</translation>
         </message>
         <message>
             <source>navigate('%1') suppressed — terminal locked</source>
@@ -7204,11 +7204,11 @@
         </message>
         <message>
             <source>profile-name  (alphanumeric, - and _ only)</source>
-            <translation>profile-名稱  (alphanumeric, - 和_ only)</translation>
+            <translation>設定檔名稱（僅限字母數字、- 和 _）</translation>
         </message>
         <message>
             <source>providers fetch failed: %1</source>
-            <translation>Providers (提供者) fetch失敗: %1</translation>
+            <translation>提供者取得失敗：%1</translation>
         </message>
         <message>
             <source>r_%1</source>
@@ -7216,7 +7216,7 @@
         </message>
         <message>
             <source>request(): %1 topic(s) have no producer — likely unregistered </source>
-            <translation>request()：%1 個主題沒有 producer — 可能尚未註冊 </translation>
+            <translation>request(): %1 主題沒有生產者 - 可能未註冊</translation>
         </message>
         <message>
             <source>root[]</source>
@@ -7228,7 +7228,7 @@
         </message>
         <message>
             <source>series fetch failed: %1</source>
-            <translation>Series (序列) fetch失敗: %1</translation>
+            <translation>系列獲取失敗：%1</translation>
         </message>
         <message>
             <source>sha256</source>
@@ -7288,7 +7288,7 @@
         </message>
         <message>
             <source>worker restart cap reached</source>
-            <translation>工作程序 restart cap reached</translation>
+            <translation>達到工人重啟上限</translation>
         </message>
         <message>
             <source>worker shutting down</source>
@@ -7296,7 +7296,7 @@
         </message>
         <message>
             <source>yt-dlp not found. Bundle yt-dlp.exe next to FinceptTerminal.exe.</source>
-            <translation>yt-dlp 找不到. Bundle yt-dlp.exe next 至FinceptTerminal.exe.</translation>
+            <translation>未找到 yt-dlp。將 yt-dlp.exe 捆綁到 FinceptTerminal.exe 旁邊。</translation>
         </message>
         <message>
             <source>yyyy-MM-dd</source>
@@ -7456,7 +7456,7 @@
         </message>
         <message>
             <source>⚠ No TTS engine found (install speech-dispatcher on Linux). </source>
-            <translation>⚠ 找不到 TTS 引擎（請在 Linux 上安裝 speech-dispatcher）。 </translation>
+            <translation>⚠ 找不到 TTS 引擎（在 Linux 上安裝語音調度程式）。</translation>
         </message>
         <message>
             <source>⚠ Voice responses unavailable — Qt TextToSpeech not installed. </source>
@@ -7468,7 +7468,7 @@
         </message>
         <message>
             <source>✓ %1 tool(s) added to %2</source>
-            <translation>✓ %1 tool(s) added 至%2</translation>
+            <translation>✓ %1 工具加入到 %2</translation>
         </message>
         <message>
             <source>✓ SAVED</source>
@@ -7864,27 +7864,27 @@
         </message>
         <message>
             <source>  CATEGORY</source>
-        <translation>分類</translation>
+            <translation>分類</translation>
         </message>
         <message>
             <source>  No contributors yet</source>
-        <translation>尚無貢獻者</translation>
+            <translation>尚無貢獻者</translation>
         </message>
         <message>
             <source>  RISK METRICS</source>
-        <translation>風險指標</translation>
+            <translation>風險指標</translation>
         </message>
         <message>
             <source>  loading...</source>
-        <translation>載入中...</translation>
+            <translation>載入中...</translation>
         </message>
         <message>
             <source>  ·  %1 unverified%2</source>
-        <translation>·  %1 筆未驗證%2</translation>
+            <translation>·  %1 筆未驗證%2</translation>
         </message>
         <message>
             <source>  ·  %1 without price</source>
-        <translation>·  %1 筆無報價</translation>
+            <translation>·  %1 筆無報價</translation>
         </message>
         <message>
             <source>  ⠋  LOADING</source>
@@ -7964,23 +7964,23 @@
         </message>
         <message>
             <source>%1 / week (USDC) — %2% weekly real yield at %3 stake</source>
-        <translation>%1 / 週 (USDC) — %2% 每週實際收益率，質押 %3</translation>
+            <translation>%1 / 週 (USDC) — %2% 每週實際收益率，質押 %3</translation>
         </message>
         <message>
             <source>%1 holding(s) excluded — no live price.</source>
-        <translation>已排除 %1 檔持倉 — 無即時報價。</translation>
+            <translation>已排除 %1 檔持倉 — 無即時報價。</translation>
         </message>
         <message>
             <source>%1 of %2 events</source>
-        <translation>%2 個事件中的 %1 個</translation>
+            <translation>%2 個事件中的 %1 個</translation>
         </message>
         <message>
             <source>(No recent reports)</source>
-        <translation>(無近期報告)</translation>
+            <translation>(無近期報告)</translation>
         </message>
         <message>
             <source>(P&amp;L return proxy, top 6 by weight)</source>
-            <translation>(P&amp;L 報酬 proxy, 頂部 6 by weight)</translation>
+            <translation>（損益回報代理，權重前6名）</translation>
         </message>
         <message>
             <source>(no events recorded yet)</source>
@@ -8072,7 +8072,7 @@
         </message>
         <message>
             <source>-----BEGIN RSA PRIVATE KEY-----\n…paste PEM contents here…\n-----END RSA PRIVATE KEY-----</source>
-            <translation>-----BEGIN RSA PRIVATE KEY-----\n…paste PEM contents here…\n-----END RSA PRIVATE KEY-----</translation>
+            <translation>-----BEGIN RSA PRIVATE KEY-----\n…在此處貼上 PEM 內容…\n-----END RSA PRIVATE KEY-----</translation>
         </message>
         <message>
             <source>--:--:--</source>
@@ -8196,7 +8196,7 @@
         </message>
         <message>
             <source>1D</source>
-        <translation>1日</translation>
+            <translation>1日</translation>
         </message>
         <message>
             <source>1H</source>
@@ -8220,7 +8220,7 @@
         </message>
         <message>
             <source>27 ANALYZERS  \xB7  10 ASSET CLASSES  \xB7  MULTI-ASSET ANALYTICS</source>
-            <translation>27 分析工具  \xB7  10 資產 類別  \xB7  MULTI-ASSET ANALYTICS</translation>
+            <translation>27 個分析器 \xB7 10 個資產類別 \xB7 多重資產分析</translation>
         </message>
         <message>
             <source>30 min</source>
@@ -8272,7 +8272,7 @@
         </message>
         <message>
             <source>50+ indicators across 6 categories — powered by TALIpp incremental engine</source>
-            <translation>50+ 指標 across 6 分類 — 驅動 by TALIpp incremental 引擎</translation>
+            <translation>跨越 6 個類別的 50 多個指標 - 由 TALIPp 增量引擎提供支持</translation>
         </message>
         <message>
             <source>5M</source>
@@ -8300,23 +8300,23 @@
         </message>
         <message>
             <source>&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#16a34a'&gt;Kalshi 認證資訊 saved.&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#16a34a'&gt;Polymarket 認證資訊 saved.&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#dc2626'&gt;私鑰為必填。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#dc2626'&gt;需要私鑰。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#dc2626'&gt;儲存 失敗 — see logs.&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#dc2626'&gt;儲存失敗 - 請參閱日誌。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&gt;&gt;</source>
@@ -8324,7 +8324,7 @@
         </message>
         <message>
             <source>A profile = named LLM config you can assign to any agent or team.</source>
-            <translation>A 設定檔 = 命名的 LLM 設定 you can 指派 to any 代理 or team.</translation>
+            <translation>您可以將設定檔 = 名為 LLM 設定指派給任何代理或團隊。</translation>
         </message>
         <message>
             <source>A:--</source>
@@ -8352,7 +8352,7 @@
         </message>
         <message>
             <source>ADD TICKER  ·  type to search, click or Enter to add</source>
-            <translation>ADD TICKER  ·  類型 to search, click or 輸入 to add</translation>
+            <translation>添加股票代碼·鍵入進行搜索，單擊或 Enter 進行添加</translation>
         </message>
         <message>
             <source>ADD TO SINGLE VIEW</source>
@@ -8416,7 +8416,7 @@
         </message>
         <message>
             <source>AKSHARE DATA EXPLORER</source>
-            <translation>AKSHARE DATA 瀏覽器</translation>
+            <translation>AKSHARE 資料瀏覽器</translation>
         </message>
         <message>
             <source>ALERT TRIGGERS</source>
@@ -8432,7 +8432,7 @@
         </message>
         <message>
             <source>ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)</source>
-            <translation>ALL 工具 — 內部 + 外部  (check/uncheck to enable/disable 內部 tools)</translation>
+            <translation>所有工具 - 內部 + 外部（選取/取消選取以啟用/停用內部工具）</translation>
         </message>
         <message>
             <source>ALLOCATION WEIGHTS BY STRATEGY</source>
@@ -8572,7 +8572,7 @@
         </message>
         <message>
             <source>Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n</source>
-            <translation>Access-Control-Allow-Methods: GET, 文章, OPTIONS\r\n</translation>
+            <translation>存取控制允許方法：GET、POST、OPTIONS\r\n</translation>
         </message>
         <message>
             <source>Access-Control-Allow-Origin: *\r\n</source>
@@ -8580,19 +8580,19 @@
         </message>
         <message>
             <source>Account</source>
-        <translation>帳戶</translation>
+            <translation>帳戶</translation>
         </message>
         <message>
             <source>Acquire %1 more $FNCPT to unlock %2% off.</source>
-            <translation>Acquire %1 more $FNCPT to 解鎖 %2% off.</translation>
+            <translation>取得 %1 更多 FNCPT 即可解鎖 %2% 折扣。</translation>
         </message>
         <message>
             <source>Activity fetch failed: %1</source>
-            <translation>活動 fetch failed: %1</translation>
+            <translation>活動獲取失敗：%1</translation>
         </message>
         <message>
             <source>Actual values (must match predicted length)</source>
-            <translation>實際 values (must match predicted length)</translation>
+            <translation>實際值（必須與預測長度相符）</translation>
         </message>
         <message>
             <source>Add External MCP Server</source>
@@ -8604,7 +8604,7 @@
         </message>
         <message>
             <source>Add to existing portfolio</source>
-            <translation>Add to existing 投資組合</translation>
+            <translation>新增至現有投資組合</translation>
         </message>
         <message>
             <source>Agent</source>
@@ -8636,7 +8636,7 @@
         </message>
         <message>
             <source>All Fincept internal tools. Input JSON flows in as arguments.</source>
-            <translation>All Fincept 內部 tools. Input JSON flows in as arguments.</translation>
+            <translation>所有 Fincept 內部工具。輸入 JSON 作為參數流入。</translation>
         </message>
         <message>
             <source>All Publishers</source>
@@ -8652,11 +8652,11 @@
         </message>
         <message>
             <source>All registered MCP tools — both internal (built-in) and external (from connected servers).</source>
-            <translation>All registered MCP 工具 — both 內部 (built-in) and 外部 (from 已連線 servers).</translation>
+            <translation>所有註冊的 MCP 工具 - 內部（內建）和外部（來自連接的伺服器）。</translation>
         </message>
         <message>
             <source>Amount exceeds available $FNCPT.</source>
-            <translation>Amount exceeds 可用 $FNCPT.</translation>
+            <translation>金額超過可用的 $FNCPT。</translation>
         </message>
         <message>
             <source>Analytics workspace</source>
@@ -8676,19 +8676,19 @@
         </message>
         <message>
             <source>Approve the lock in your wallet.</source>
-            <translation>Approve the 鎖定 in your wallet.</translation>
+            <translation>批准鎖定您的錢包。</translation>
         </message>
         <message>
             <source>Approve the swap in your wallet to complete the trade.</source>
-            <translation>Approve the 交換 in your 錢包 to complete the trade.</translation>
+            <translation>批准您錢包中的交換以完成交易。</translation>
         </message>
         <message>
             <source>Approve the transaction in your wallet to complete this action.</source>
-            <translation>Approve the transaction in your 錢包 to complete this action.</translation>
+            <translation>批准您錢包中的交易以完成此操作。</translation>
         </message>
         <message>
             <source>Assign each holding to a sector for allocation analysis.</source>
-            <translation>指派 each holding to a 類股 for 配置 analysis.</translation>
+            <translation>將每個資產分配到一個部門進行分配分析。</translation>
         </message>
         <message>
             <source>Author:</source>
@@ -8724,7 +8724,7 @@
         </message>
         <message>
             <source>Awaiting wallet signature…</source>
-            <translation>Awaiting 錢包 signature…</translation>
+            <translation>等待錢包簽名...</translation>
         </message>
         <message>
             <source>B:--</source>
@@ -8752,11 +8752,11 @@
         </message>
         <message>
             <source>BLACK-LITTERMAN MODEL</source>
-            <translation>BLACK-LITTERMAN 模型</translation>
+            <translation>黑利特曼模型</translation>
         </message>
         <message>
             <source>BLACK-SCHOLES PRICING</source>
-            <translation>BLACK-SCHOLES 定價</translation>
+            <translation>布萊克-斯科爾斯定價法</translation>
         </message>
         <message>
             <source>BOND PRICE CALCULATOR</source>
@@ -8788,7 +8788,7 @@
         </message>
         <message>
             <source>BUY BTC/USDT</source>
-            <translation>買入 BTC/USDT</translation>
+            <translation>買進 BTC/USDT</translation>
         </message>
         <message>
             <source>BUY RELIANCE</source>
@@ -8800,7 +8800,7 @@
         </message>
         <message>
             <source>Balance fetch failed: %1</source>
-            <translation>餘額 fetch failed: %1</translation>
+            <translation>餘額獲取失敗：%1</translation>
         </message>
         <message>
             <source>Balance: %1 %2</source>
@@ -8820,27 +8820,27 @@
         </message>
         <message>
             <source>Be the first to share your thoughts</source>
-            <translation>Be the 第一 to share your thoughts</translation>
+            <translation>成為第一個分享您想法的人</translation>
         </message>
         <message>
             <source>Be the first to start a conversation</source>
-            <translation>Be the 第一 to 開始 a conversation</translation>
+            <translation>成為第一個開始對話的人</translation>
         </message>
         <message>
             <source>Be the first to start a discussion</source>
-            <translation>Be the 第一 to 開始 a discussion</translation>
+            <translation>成為第一個發起討論的人</translation>
         </message>
         <message>
             <source>Benchmark daily returns (decimals)</source>
-            <translation>基準 每日 returns (decimals)</translation>
+            <translation>基準每日回報（小數）</translation>
         </message>
         <message>
             <source>Benchmark returns (optional; same length as portfolio if provided)</source>
-            <translation>基準 returns (optional; same length as 投資組合 if provided)</translation>
+            <translation>基準回報（可選；如果提供，則與投資組合長度相同）</translation>
         </message>
         <message>
             <source>Benefits &amp; Costs of Trade</source>
-            <translation>Benefits &amp; Costs of 交易</translation>
+            <translation>貿易的好處和成本</translation>
         </message>
         <message>
             <source>Bilateral Agreement</source>
@@ -8856,7 +8856,7 @@
         </message>
         <message>
             <source>Boosts recognition of financial symbols and proper nouns.</source>
-            <translation>Boosts recognition of 金融 symbols and proper nouns.</translation>
+            <translation>提高對金融符號和專有名詞的辨識。</translation>
         </message>
         <message>
             <source>Browse File...</source>
@@ -8864,7 +8864,7 @@
         </message>
         <message>
             <source>Browse for File...</source>
-            <translation>瀏覽 for File...</translation>
+            <translation>瀏覽文件...</translation>
         </message>
         <message>
             <source>Browser login</source>
@@ -8872,19 +8872,19 @@
         </message>
         <message>
             <source>Browser opened. Approve the connection and the signature in your wallet.</source>
-            <translation>Browser 已開啟. Approve the 連線 and the signature in your wallet.</translation>
+            <translation>瀏覽器打開。批准連接並在錢包中簽名。</translation>
         </message>
         <message>
             <source>Building lock transaction…</source>
-            <translation>Building 鎖定 transaction…</translation>
+            <translation>樓鎖交易...</translation>
         </message>
         <message>
             <source>Building swap transaction…</source>
-            <translation>Building 交換 transaction…</translation>
+            <translation>建立互換交易...</translation>
         </message>
         <message>
             <source>CACHE &amp; SECURITY SETTINGS</source>
-            <translation>CACHE &amp; SECURITY 設定</translation>
+            <translation>快取和安全設置</translation>
         </message>
         <message>
             <source>CALCULATE</source>
@@ -8952,7 +8952,7 @@
         </message>
         <message>
             <source>COMING SOON</source>
-        <translation>即將推出</translation>
+            <translation>即將推出</translation>
         </message>
         <message>
             <source>COMMUNITY</source>
@@ -8980,7 +8980,7 @@
         </message>
         <message>
             <source>CONNECT</source>
-        <translation>連線</translation>
+            <translation>連線</translation>
         </message>
         <message>
             <source>CONNECT WALLET</source>
@@ -8992,7 +8992,7 @@
         </message>
         <message>
             <source>CONSTITUENTS (from portfolio holdings)</source>
-            <translation>CONSTITUENTS (from 投資組合 holdings)</translation>
+            <translation>成分股（來自投資組合持股）</translation>
         </message>
         <message>
             <source>CONTACT US</source>
@@ -9032,7 +9032,7 @@
         </message>
         <message>
             <source>CORRELATION</source>
-        <translation>相關性</translation>
+            <translation>相關性</translation>
         </message>
         <message>
             <source>CORRELATION MATRIX</source>
@@ -9040,7 +9040,7 @@
         </message>
         <message>
             <source>COT MARKET SENTIMENT</source>
-            <translation>COT 市場 SENTIMENT</translation>
+            <translation>COT 市場情緒</translation>
         </message>
         <message>
             <source>COUNTRY</source>
@@ -9172,7 +9172,7 @@
         </message>
         <message>
             <source>Common Market (e.g. EU Single Market)</source>
-            <translation>Common 市場 (e.g. EU 單一 Market)</translation>
+            <translation>共同市場（例如歐盟單一市場）</translation>
         </message>
         <message>
             <source>Company:</source>
@@ -9188,7 +9188,7 @@
         </message>
         <message>
             <source>Configure — Geopolitics Events</source>
-            <translation>Configure — Geopolitics 事件</translation>
+            <translation>配置 - 地緣政治事件</translation>
         </message>
         <message>
             <source>Configure — Maritime Vessels</source>
@@ -9220,7 +9220,7 @@
         </message>
         <message>
             <source>Connect a wallet to see your tier.</source>
-            <translation>連線 a 錢包 to see your tier.</translation>
+            <translation>連接錢包以查看您的等級。</translation>
         </message>
         <message>
             <source>Connect a wallet to swap.</source>
@@ -9232,15 +9232,15 @@
         </message>
         <message>
             <source>Connect an account\nto place orders</source>
-            <translation>連線 an account\nto place orders</translation>
+            <translation>連結帳戶\n下訂單</translation>
         </message>
         <message>
             <source>Connect with pasted token</source>
-            <translation>連線 with pasted token</translation>
+            <translation>使用貼上的令牌連接</translation>
         </message>
         <message>
             <source>Connect your Solana wallet</source>
-            <translation>連線 your Solana 錢包</translation>
+            <translation>連接您的 Solana 錢包</translation>
         </message>
         <message>
             <source>Connection Name</source>
@@ -9296,7 +9296,7 @@
         </message>
         <message>
             <source>Create new portfolio from file</source>
-            <translation>建立 新增 投資組合 from file</translation>
+            <translation>從文件創建新的投資組合</translation>
         </message>
         <message>
             <source>Create new profile</source>
@@ -9304,11 +9304,11 @@
         </message>
         <message>
             <source>Create, import, or explore a sample portfolio to get started.</source>
-            <translation>Create, import, or explore a sample 投資組合 to get started.</translation>
+            <translation>建立、匯入或探索範例作品集以開始使用。</translation>
         </message>
         <message>
             <source>Cron-based agent queries (e.g. daily 9 AM).</source>
-            <translation>Cron-based 代理 queries (e.g. 每日 9 AM).</translation>
+            <translation>基於 Cron 的代理查詢（例如每天上午 9 點）。</translation>
         </message>
         <message>
             <source>Cross</source>
@@ -9328,7 +9328,7 @@
         </message>
         <message>
             <source>Custom RPC override active.</source>
-            <translation>自訂 RPC override active.</translation>
+            <translation>自訂 RPC 覆蓋處於活動狀態。</translation>
         </message>
         <message>
             <source>Customs Union (e.g. EU, Mercosur)</source>
@@ -9364,7 +9364,7 @@
         </message>
         <message>
             <source>DATASET</source>
-        <translation>資料集</translation>
+            <translation>資料集</translation>
         </message>
         <message>
             <source>DATASETS</source>
@@ -9408,7 +9408,7 @@
         </message>
         <message>
             <source>DISCONNECT</source>
-        <translation>中斷連線</translation>
+            <translation>中斷連線</translation>
         </message>
         <message>
             <source>DISCUSSIONS</source>
@@ -9440,15 +9440,15 @@
         </message>
         <message>
             <source>Daily returns (&gt;= 30 values)</source>
-            <translation>每日 returns (&gt;= 30 values)</translation>
+            <translation>每日回報（&gt;= 30 個值）</translation>
         </message>
         <message>
             <source>Daily returns (decimals). Need at least 30 values for stable VaR.</source>
-            <translation>每日 returns (decimals). Need at least 30 values for stable VaR.</translation>
+            <translation>每日回報（小數）。穩定的 VaR 至少需要 30 個值。</translation>
         </message>
         <message>
             <source>Daily returns: comma-, space-, or newline-separated. Need at least 5 values.</source>
-            <translation>每日 returns: comma-, space-, or newline-separated. Need at least 5 values.</translation>
+            <translation>每日回傳：以逗號、空格或換行符號分隔。至少需要 5 個值。</translation>
         </message>
         <message>
             <source>Data Services</source>
@@ -9464,7 +9464,7 @@
         </message>
         <message>
             <source>Deals JSON with cash_pct and stock_pct fields...</source>
-            <translation>含 cash_pct 和 stock_pct 欄位的交易 JSON...</translation>
+            <translation>使用 cash_pct 和 stock_pct 欄位處理 JSON...</translation>
         </message>
         <message>
             <source>Deepgram (API key required)</source>
@@ -9496,11 +9496,11 @@
         </message>
         <message>
             <source>Delete all temporary cached data. Will be re-fetched on next access.</source>
-            <translation>刪除 all temporary cached data. Will be re-fetched on 下一步 access.</translation>
+            <translation>刪除所有臨時快取資料。將在下次訪問時重新獲取。</translation>
         </message>
         <message>
             <source>Demo signature — connect a treasury endpoint for a real burn tx.</source>
-            <translation>示範 signature — 連線 a treasury 端點 for a 實際 burn tx.</translation>
+            <translation>示範簽名 - 連接金庫端點以進行真實的銷毀交易。</translation>
         </message>
         <message>
             <source>Dependent variable y (&gt;= 10 values)</source>
@@ -9512,7 +9512,7 @@
         </message>
         <message>
             <source>Deselect all</source>
-        <translation>取消全選</translation>
+            <translation>取消全選</translation>
         </message>
         <message>
             <source>Developed Economy</source>
@@ -9548,7 +9548,7 @@
         </message>
         <message>
             <source>ECONOMICS DATA EXPLORER</source>
-            <translation>ECONOMICS DATA 瀏覽器</translation>
+            <translation>經濟數據探索者</translation>
         </message>
         <message>
             <source>EDIT</source>
@@ -9652,7 +9652,7 @@
         </message>
         <message>
             <source>Economic Union (e.g. European Union)</source>
-            <translation>經濟 Union (e.g. European Union)</translation>
+            <translation>經濟聯盟（例如歐盟）</translation>
         </message>
         <message>
             <source>Edit Symbols...</source>
@@ -9664,7 +9664,7 @@
         </message>
         <message>
             <source>Effect series y (the one we ask: 'is this caused by x?')</source>
-            <translation>Effect 序列 y (the one we ask: 'is this caused by x?')</translation>
+            <translation>效應系列 y（我們問：「這是由 x 引起的嗎？」）</translation>
         </message>
         <message>
             <source>Emerging Industry</source>
@@ -9676,7 +9676,7 @@
         </message>
         <message>
             <source>Empty input — use CLEAR to remove a stored key.</source>
-            <translation>Empty input — use CLEAR to 移除 a stored key.</translation>
+            <translation>空輸入 - 使用 CLEAR 刪除儲存的金鑰。</translation>
         </message>
         <message>
             <source>Enable Connection</source>
@@ -9696,7 +9696,7 @@
         </message>
         <message>
             <source>Enter API Key, API Secret, and paste request_token</source>
-        <translation>輸入API Key, API Secret, and paste request_token</translation>
+            <translation>輸入 API Key、API Secret，然後貼上 request_token</translation>
         </message>
         <message>
             <source>Environment Variables</source>
@@ -9712,11 +9712,11 @@
         </message>
         <message>
             <source>Estimated impact of historical and hypothetical market scenarios</source>
-            <translation>Estimated impact of historical and hypothetical 市場 scenarios</translation>
+            <translation>歷史和假設市場情景的估計影響</translation>
         </message>
         <message>
             <source>Estimated portfolio impact from macro factor shocks, weighted by holdings</source>
-            <translation>Estimated 投資組合 impact from macro factor shocks, weighted by holdings</translation>
+            <translation>宏觀因素衝擊對投資組合的估計影響（以持有量加權）</translation>
         </message>
         <message>
             <source>Execute From Here</source>
@@ -9768,7 +9768,7 @@
         </message>
         <message>
             <source>FEATURES</source>
-        <translation>特徵</translation>
+            <translation>特徵</translation>
         </message>
         <message>
             <source>FETCH</source>
@@ -9792,7 +9792,7 @@
         </message>
         <message>
             <source>FILES ARE COLLECTED FROM</source>
-            <translation>檔案 ARE COLLECTED FROM</translation>
+            <translation>文件收集自</translation>
         </message>
         <message>
             <source>FILTERS</source>
@@ -9844,11 +9844,11 @@
         </message>
         <message>
             <source>FX VANILLA OPTION PRICING</source>
-            <translation>FX VANILLA OPTION 定價</translation>
+            <translation>外匯普通期權定價</translation>
         </message>
         <message>
             <source>Factor / signal values (decimals, &gt;= 20)</source>
-            <translation>Factor / 訊號 values (decimals, &gt;= 20)</translation>
+            <translation>因子/訊號值（小數，&gt;= 20）</translation>
         </message>
         <message>
             <source>Failed</source>
@@ -9856,7 +9856,7 @@
         </message>
         <message>
             <source>Failed to load LLM providers.</source>
-            <translation>失敗 to load LLM providers.</translation>
+            <translation>無法載入 LLM 提供者。</translation>
         </message>
         <message>
             <source>Failed.</source>
@@ -9896,11 +9896,11 @@
         </message>
         <message>
             <source>FinceptInternalAdapter not registered</source>
-            <translation>FinceptInternalAdapter not 已註冊</translation>
+            <translation>FinceptInternalAdapter 未註冊</translation>
         </message>
         <message>
             <source>Find answers, get support, and connect with the Fincept community.</source>
-            <translation>Find answers, get support, and 連線 with the Fincept community.</translation>
+            <translation>尋找答案、獲得支持並與 Fincept 社群聯繫。</translation>
         </message>
         <message>
             <source>Fortitudo backend ready</source>
@@ -9908,7 +9908,7 @@
         </message>
         <message>
             <source>Free Trade Area (e.g. USMCA, ASEAN)</source>
-            <translation>Free 交易 Area (e.g. USMCA, ASEAN)</translation>
+            <translation>自由貿易區（如 USMCA、東協）</translation>
         </message>
         <message>
             <source>From: </source>
@@ -9944,7 +9944,7 @@
         </message>
         <message>
             <source>GOVERNMENT DATA EXPLORER</source>
-            <translation>GOVERNMENT DATA 瀏覽器</translation>
+            <translation>政府資料探索者</translation>
         </message>
         <message>
             <source>GOVT</source>
@@ -10004,11 +10004,11 @@
         </message>
         <message>
             <source>HOLDINGS CORRELATION MATRIX</source>
-            <translation>HOLDINGS 相關性 MATRIX</translation>
+            <translation>持股相關矩陣</translation>
         </message>
         <message>
             <source>HOME</source>
-        <translation>首頁</translation>
+            <translation>首頁</translation>
         </message>
         <message>
             <source>HTTP/1.1 </source>
@@ -10016,7 +10016,7 @@
         </message>
         <message>
             <source>Helius RPC — STREAM fully supported.</source>
-            <translation>Helius RPC — STREAM fully 已支援.</translation>
+            <translation>完全支援 Helius RPC - STREAM。</translation>
         </message>
         <message>
             <source>Hide</source>
@@ -10032,7 +10032,7 @@
         </message>
         <message>
             <source>Holding ≥ %1 $FNCPT — you qualify for the fee discount.</source>
-            <translation>Holding ≥ %1 $FNCPT — you qualify for the 手續費 discount.</translation>
+            <translation>持有 ≥ %1 $FNCPT - 您有資格享有費用折扣。</translation>
         </message>
         <message>
             <source>House Bill</source>
@@ -10096,7 +10096,7 @@
         </message>
         <message>
             <source>INTEREST RATE SWAP PRICING</source>
-            <translation>INTEREST RATE 交換 定價</translation>
+            <translation>利率掉期定價</translation>
         </message>
         <message>
             <source>INTERFACE</source>
@@ -10140,23 +10140,23 @@
         </message>
         <message>
             <source>Insert Column Left</source>
-            <translation>Insert Column 左</translation>
+            <translation>向左插入列</translation>
         </message>
         <message>
             <source>Insert Column Right</source>
-            <translation>Insert Column 右</translation>
+            <translation>右插入列</translation>
         </message>
         <message>
             <source>Insert Row Above</source>
-            <translation>Insert 列 Above</translation>
+            <translation>在上方插入行</translation>
         </message>
         <message>
             <source>Insert Row Below</source>
-            <translation>Insert 列 Below</translation>
+            <translation>在下面插入行</translation>
         </message>
         <message>
             <source>Inserts a page break\nin PDF/print output.</source>
-            <translation>Inserts a page break\nin PDF/print 輸出.</translation>
+            <translation>在 PDF/列印輸出中插入分頁符號 \n。</translation>
         </message>
         <message>
             <source>Install Analytics Libraries</source>
@@ -10248,7 +10248,7 @@
         </message>
         <message>
             <source>LEGEND</source>
-        <translation>圖例</translation>
+            <translation>圖例</translation>
         </message>
         <message>
             <source>LEVERAGE</source>
@@ -10264,7 +10264,7 @@
         </message>
         <message>
             <source>LIQUIDITY</source>
-        <translation>流動性</translation>
+            <translation>流動性</translation>
         </message>
         <message>
             <source>LITE</source>
@@ -10308,11 +10308,11 @@
         </message>
         <message>
             <source>Language</source>
-        <translation>語言</translation>
+            <translation>語言</translation>
         </message>
         <message>
             <source>Last updated: January 1, 2026</source>
-            <translation>最後 updated: January 1, 2026</translation>
+            <translation>最後更新時間：2026 年 1 月 1 日</translation>
         </message>
         <message>
             <source>Leader:</source>
@@ -10320,7 +10320,7 @@
         </message>
         <message>
             <source>Leave blank to use the LLM assigned to the agent in Agent Config</source>
-            <translation>Leave blank to use the LLM 已指派 to the 代理 in 代理 設定</translation>
+            <translation>留空以使用代理配置中指派給代理程式的 LLM</translation>
         </message>
         <message>
             <source>Left</source>
@@ -10368,7 +10368,7 @@
         </message>
         <message>
             <source>Locks feed error: %1</source>
-            <translation>Locks feed 錯誤: %1</translation>
+            <translation>鎖定進給錯誤：%1</translation>
         </message>
         <message>
             <source>Log File</source>
@@ -10376,7 +10376,7 @@
         </message>
         <message>
             <source>Long-running agent queries.</source>
-            <translation>Long-running 代理 queries.</translation>
+            <translation>長時間運行的代理查詢。</translation>
         </message>
         <message>
             <source>Lower band (optional, same length as actuals)</source>
@@ -10392,7 +10392,7 @@
         </message>
         <message>
             <source>MARGIN</source>
-        <translation>利潤率</translation>
+            <translation>利潤率</translation>
         </message>
         <message>
             <source>MARKET</source>
@@ -10460,7 +10460,7 @@
         </message>
         <message>
             <source>MONTE CARLO SIMULATION</source>
-            <translation>MONTE CARLO 模擬</translation>
+            <translation>蒙特卡羅模擬</translation>
         </message>
         <message>
             <source>MY CUSTOM INDICES</source>
@@ -10472,7 +10472,7 @@
         </message>
         <message>
             <source>Manage files across the terminal</source>
-            <translation>Manage 檔案 across the terminal</translation>
+            <translation>透過終端管理文件</translation>
         </message>
         <message>
             <source>Mark all read</source>
@@ -10504,7 +10504,7 @@
         </message>
         <message>
             <source>Minimum level for all tags unless overridden.</source>
-            <translation>Minimum level for all 標籤 unless overridden.</translation>
+            <translation>除非被覆蓋，否則所有標籤的最低等級。</translation>
         </message>
         <message>
             <source>Mk:--</source>
@@ -10516,27 +10516,27 @@
         </message>
         <message>
             <source>Model</source>
-        <translation>模型</translation>
+            <translation>模型</translation>
         </message>
         <message>
             <source>Model Context Protocol tool servers.</source>
-            <translation>模型 Context 協定 工具 servers.</translation>
+            <translation>模型上下文協定工具伺服器。</translation>
         </message>
         <message>
             <source>Model IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)</source>
-            <translation>模型 IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)</translation>
+            <translation>模型 ID（逗號分隔，例如 lightgbm、xgboost、random_forest）</translation>
         </message>
         <message>
             <source>Model label (e.g. LightGBM, LSTM)</source>
-            <translation>模型 label (e.g. LightGBM, LSTM)</translation>
+            <translation>模型標籤（例如 LightGBM、LSTM）</translation>
         </message>
         <message>
             <source>Model predictions (decimals, &gt;= 10 values)</source>
-            <translation>模型 predictions (decimals, &gt;= 10 values)</translation>
+            <translation>模型預測（小數，&gt;= 10 值）</translation>
         </message>
         <message>
             <source>Model predictions (decimals, &gt;= 20 values)</source>
-            <translation>模型 predictions (decimals, &gt;= 20 values)</translation>
+            <translation>模型預測（小數，&gt;= 20 個值）</translation>
         </message>
         <message>
             <source>Monitor</source>
@@ -10564,11 +10564,11 @@
         </message>
         <message>
             <source>NATIVE DESKTOP FINANCIAL INTELLIGENCE TERMINAL</source>
-            <translation>NATIVE DESKTOP 金融 INTELLIGENCE TERMINAL</translation>
+            <translation>原生桌面金融情報終端</translation>
         </message>
         <message>
             <source>NAV PERFORMANCE (FROM SNAPSHOTS)</source>
-            <translation>NAV 績效 (FROM SNAPSHOTS)</translation>
+            <translation>導航效能（來自快照）</translation>
         </message>
         <message>
             <source>NEXT</source>
@@ -10612,11 +10612,11 @@
         </message>
         <message>
             <source>Need 2+ holdings for correlation</source>
-            <translation>Need 2+ holdings for 相關性</translation>
+            <translation>需要持有 2 個以上的股票才能實現相關性</translation>
         </message>
         <message>
             <source>Need a template? Download the demo portfolio JSON:</source>
-            <translation>Need a template? 下載 the 示範 投資組合 JSON:</translation>
+            <translation>需要模板嗎？下載演示組合 JSON：</translation>
         </message>
         <message>
             <source>Net: —</source>
@@ -10628,7 +10628,7 @@
         </message>
         <message>
             <source>Next: lock %1 to reach the next tier.</source>
-            <translation>Next: 鎖定 %1 to reach the 下一步 tier.</translation>
+            <translation>下一步：鎖定 %1 以到達下一層。</translation>
         </message>
         <message>
             <source>No LLM profiles — configure in Settings → LLM Config</source>
@@ -10636,11 +10636,11 @@
         </message>
         <message>
             <source>No LLM providers configured. Go to Settings → LLM to add one.</source>
-            <translation>No LLM providers configured. Go to 設定 → LLM to add one.</translation>
+            <translation>未配置 LLM 提供者。轉至設定 → LLM 新增一個。</translation>
         </message>
         <message>
             <source>No active locks. Lock $FNCPT above to start earning yield.</source>
-            <translation>No 活躍 locks. 鎖定 $FNCPT above to 開始 earning yield.</translation>
+            <translation>沒有活動鎖。锁定$FNCPT上方即可开始赚取收益。</translation>
         </message>
         <message>
             <source>No anomalies detected at the configured threshold.</source>
@@ -10652,19 +10652,19 @@
         </message>
         <message>
             <source>No confirmation after 60 s. Check Solscan.</source>
-            <translation>No confirmation after 60 s. 檢查 Solscan.</translation>
+            <translation>60 秒後未確認。請檢查 Solscan。</translation>
         </message>
         <message>
             <source>No custom indices created yet.\nGo to CREATE INDEX tab to build one from your portfolio.</source>
-            <translation>No 自訂 indices 已建立 yet.\nGo to 建立 INDEX 標籤頁 to 建構 one from your portfolio.</translation>
+            <translation>尚未建立自訂指數。 \n轉到「建立指數」選項卡，從您的投資組合中建立一個指數。</translation>
         </message>
         <message>
             <source>No data sources configured. Open the full Data Sources screen to browse and add connectors.</source>
-            <translation>No data 來源 configured. 開啟 the full Data 來源 screen to 瀏覽 and add connectors.</translation>
+            <translation>未配置資料來源。開啟完整的資料來源畫面以瀏覽和新增連接器。</translation>
         </message>
         <message>
             <source>No files match your search or filter.</source>
-            <translation>No 檔案 match your 搜尋 or filter.</translation>
+            <translation>沒有文件與您的搜尋或篩選器相符。</translation>
         </message>
         <message>
             <source>No files yet</source>
@@ -10676,7 +10676,7 @@
         </message>
         <message>
             <source>No mappings saved yet.\nClick CREATE to build your first data mapping.</source>
-            <translation>No 對應 已儲存 yet.\nClick 建立 to 建構 your 第一 data mapping.</translation>
+            <translation>尚未儲存映射。 \n點擊「建立」以建立您的第一個資料映射。</translation>
         </message>
         <message>
             <source>No markets configured — click gear to add</source>
@@ -10728,7 +10728,7 @@
         </message>
         <message>
             <source>Note: TCP reachability confirmed. API key validity is not verified here.</source>
-            <translation>Note: TCP reachability 已確認. API key validity is not 已驗證 here.</translation>
+            <translation>注意：TCP 可達性已確認。此處未驗證 API 金鑰的有效性。</translation>
         </message>
         <message>
             <source>Numeric values (&gt;= 30). Fits normal, student-t, lognormal (positive only), skewnormal.</source>
@@ -10736,7 +10736,7 @@
         </message>
         <message>
             <source>Numeric values (&gt;= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.</source>
-            <translation>數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
+            <translation>數值 (&gt;= 8)。包括 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
         </message>
         <message>
             <source>Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2.</source>
@@ -10744,7 +10744,7 @@
         </message>
         <message>
             <source>OFFLINE</source>
-        <translation>離線</translation>
+            <translation>離線</translation>
         </message>
         <message>
             <source>OI TREND</source>
@@ -10752,7 +10752,7 @@
         </message>
         <message>
             <source>ONLINE</source>
-        <translation>線上</translation>
+            <translation>線上</translation>
         </message>
         <message>
             <source>OPEN BUY ORDER</source>
@@ -10760,7 +10760,7 @@
         </message>
         <message>
             <source>OPEN FULL SCREEN</source>
-            <translation>開啟 FULL SCREEN</translation>
+            <translation>開啟全螢幕</translation>
         </message>
         <message>
             <source>OPEN INTEREST</source>
@@ -10812,7 +10812,7 @@
         </message>
         <message>
             <source>Open Kite login in browser</source>
-            <translation>開啟 Kite login in browser</translation>
+            <translation>在瀏覽器中開啟Kite登入</translation>
         </message>
         <message>
             <source>Open Log Folder</source>
@@ -10824,15 +10824,15 @@
         </message>
         <message>
             <source>Open Squads vault in browser</source>
-            <translation>開啟 Squads vault in browser</translation>
+            <translation>在瀏覽器中開啟 Squads 庫</translation>
         </message>
         <message>
             <source>Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.</source>
-            <translation>開啟 a symbol and 啟用 Adanos 市場 Sentiment in Data 來源 to load a snapshot.</translation>
+            <translation>開啟交易品種並在資料來源中啟用 Adanos 市場情緒以載入快照。</translation>
         </message>
         <message>
             <source>Open burn transaction in Solscan</source>
-            <translation>開啟 burn transaction in Solscan</translation>
+            <translation>在 Solscan 中開啟銷毀交易</translation>
         </message>
         <message>
             <source>Opening your browser to complete the handshake…</source>
@@ -10844,11 +10844,11 @@
         </message>
         <message>
             <source>Optimize</source>
-        <translation>最佳化</translation>
+            <translation>最佳化</translation>
         </message>
         <message>
             <source>Optional</source>
-        <translation>選填</translation>
+            <translation>選填</translation>
         </message>
         <message>
             <source>Order by</source>
@@ -10856,7 +10856,7 @@
         </message>
         <message>
             <source>Orders are recorded\nin your portfolio</source>
-            <translation>Orders are recorded\nin your 投資組合</translation>
+            <translation>訂單已記錄在您的投資組合中\n</translation>
         </message>
         <message>
             <source>Output Format</source>
@@ -10868,7 +10868,7 @@
         </message>
         <message>
             <source>Override the log level for a specific tag (e.g. ExchangeService, AgentService).</source>
-            <translation>Override the 日誌 level for a specific tag (e.g. ExchangeService, AgentService).</translation>
+            <translation>覆寫特定標記（例如 ExchangeService、AgentService）的日誌等級。</translation>
         </message>
         <message>
             <source>PANEL TITLE</source>
@@ -10880,7 +10880,7 @@
         </message>
         <message>
             <source>PARAMETERS</source>
-        <translation>參數</translation>
+            <translation>參數</translation>
         </message>
         <message>
             <source>PARSER ENGINES</source>
@@ -10888,7 +10888,7 @@
         </message>
         <message>
             <source>PASSWORD (OKX/KUCOIN)</source>
-            <translation>密碼 (OKX/KUCOIN)</translation>
+            <translation>密碼（OKX/KUCOIN）</translation>
         </message>
         <message>
             <source>PAST COMPETITIONS</source>
@@ -10900,7 +10900,7 @@
         </message>
         <message>
             <source>PEM files (*.pem *.key);;All files (*)</source>
-            <translation>PEM 檔案 (*.pem *.key);;All 檔案 (*)</translation>
+            <translation>PEM 檔案 (*.pem *.key);;所有檔案 (*)</translation>
         </message>
         <message>
             <source>PER-ASSET MOMENTS</source>
@@ -10908,7 +10908,7 @@
         </message>
         <message>
             <source>PER-QUANTILE SUMMARY</source>
-            <translation>PER-QUANTILE 摘要</translation>
+            <translation>每分位數總結</translation>
         </message>
         <message>
             <source>PERFORMANCE ATTRIBUTION</source>
@@ -10920,7 +10920,7 @@
         </message>
         <message>
             <source>PIN AUTHENTICATION</source>
-            <translation>PIN 碼 AUTHENTICATION</translation>
+            <translation>密碼驗證</translation>
         </message>
         <message>
             <source>PIN 碼</source>
@@ -10968,7 +10968,7 @@
         </message>
         <message>
             <source>PORTFOLIO FACTOR SENSITIVITY</source>
-            <translation>投資組合 FACTOR SENSITIVITY</translation>
+            <translation>投資組合因素敏感性</translation>
         </message>
         <message>
             <source>PORTFOLIO INSIGHTS</source>
@@ -10988,7 +10988,7 @@
         </message>
         <message>
             <source>PORTFOLIO STRESS TESTING</source>
-            <translation>投資組合 STRESS TESTING</translation>
+            <translation>投資組合壓力測試</translation>
         </message>
         <message>
             <source>PORTFOLIO SUMMARY REPORT</source>
@@ -11036,7 +11036,7 @@
         </message>
         <message>
             <source>PROFESSIONAL VALUATION ENGINE</source>
-            <translation>PROFESSIONAL VALUATION 引擎</translation>
+            <translation>專業估值引擎</translation>
         </message>
         <message>
             <source>PROFILE &amp; ACCOUNT</source>
@@ -11100,7 +11100,7 @@
         </message>
         <message>
             <source>Paste from Clipboard</source>
-            <translation>貼上 from Clipboard</translation>
+            <translation>從剪貼簿貼上</translation>
         </message>
         <message>
             <source>Per-Tag Overrides</source>
@@ -11108,7 +11108,7 @@
         </message>
         <message>
             <source>Per-holding contribution to portfolio value, P&amp;L, and risk</source>
-            <translation>Per-holding contribution to 投資組合 value, P&amp;L, and 風險</translation>
+            <translation>每個持股對投資組合價值、損益和風險的貢獻</translation>
         </message>
         <message>
             <source>Periodicity</source>
@@ -11116,19 +11116,19 @@
         </message>
         <message>
             <source>Permanently delete all databases, files, cache, and UI state. OS keychain is preserved.</source>
-            <translation>Permanently 刪除 all databases, files, cache, and UI state. OS keychain is preserved.</translation>
+            <translation>永久刪除所有資料庫、檔案、快取和 UI 狀態。作業系統鑰匙圈被保留。</translation>
         </message>
         <message>
             <source>Pick a template from the list to see a description.</source>
-            <translation>Pick a 範本 from the list to see a description.</translation>
+            <translation>從清單中選擇一個模板以查看說明。</translation>
         </message>
         <message>
             <source>Pipeline ID (e.g. my_pipeline)</source>
-            <translation>Pipeline ID（如 my_pipeline）</translation>
+            <translation>管道 ID（例如 my_pipeline）</translation>
         </message>
         <message>
             <source>Point forecast (same length as actuals)</source>
-            <translation>Point 預測 (same length as actuals)</translation>
+            <translation>點預測（與實際長度相同）</translation>
         </message>
         <message>
             <source>Polymarket</source>
@@ -11156,15 +11156,15 @@
         </message>
         <message>
             <source>Portfolio daily returns (decimals)</source>
-            <translation>投資組合 每日 returns (decimals)</translation>
+            <translation>投資組合每日回報（小數）</translation>
         </message>
         <message>
             <source>Portfolio daily returns (decimals, same length as benchmark)</source>
-            <translation>投資組合 每日 returns (decimals, same length as benchmark)</translation>
+            <translation>投資組合每日報酬率（小數，與基準長度相同）</translation>
         </message>
         <message>
             <source>Potential cause series x (same length as y)</source>
-            <translation>Potential cause 序列 x (same length as y)</translation>
+            <translation>潛在原因係列x（與y長度相同）</translation>
         </message>
         <message>
             <source>Predicted values (same length as actual)</source>
@@ -11176,7 +11176,7 @@
         </message>
         <message>
             <source>Press new key combination...</source>
-            <translation>Press 新增 key combination...</translation>
+            <translation>按新的組合鍵...</translation>
         </message>
         <message>
             <source>Preview</source>
@@ -11184,7 +11184,7 @@
         </message>
         <message>
             <source>Price unavailable: %1. Try again in a moment.</source>
-            <translation>價格 unavailable: %1. Try again in a moment.</translation>
+            <translation>價格不詳：%1。稍後再試一次。</translation>
         </message>
         <message>
             <source>Private Key (PEM):</source>
@@ -11244,7 +11244,7 @@
         </message>
         <message>
             <source>Quant Reporting backend ready</source>
-            <translation>Quant Reporting 後端 就緒</translation>
+            <translation>定量報告後端準備就緒</translation>
         </message>
         <message>
             <source>Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95</source>
@@ -11260,7 +11260,7 @@
         </message>
         <message>
             <source>Quotes refresh as you type.</source>
-            <translation>Quotes 重新整理 as you type.</translation>
+            <translation>引號會在您鍵入時刷新。</translation>
         </message>
         <message>
             <source>RADIAL</source>
@@ -11376,7 +11376,7 @@
         </message>
         <message>
             <source>RISK CONTRIBUTION BY HOLDING</source>
-            <translation>風險 CONTRIBUTION BY HOLDING</translation>
+            <translation>所持有的風險貢獻</translation>
         </message>
         <message>
             <source>RISK DECOMPOSITION</source>
@@ -11384,7 +11384,7 @@
         </message>
         <message>
             <source>RISK-ADJUSTED RATIOS &amp; WIN/LOSS BREAKDOWN</source>
-            <translation>RISK-ADJUSTED RATIOS &amp; WIN/LOSS 分解</translation>
+            <translation>風險調整比率與贏/輸細分</translation>
         </message>
         <message>
             <source>ROADMAP</source>
@@ -11408,7 +11408,7 @@
         </message>
         <message>
             <source>Raw Databento response</source>
-            <translation>Raw Databento 回應</translation>
+            <translation>原始資料便當響應</translation>
         </message>
         <message>
             <source>Re-checking freshness…</source>
@@ -11428,11 +11428,11 @@
         </message>
         <message>
             <source>Ready. Click LOCK to build the transaction.</source>
-            <translation>Ready. Click 鎖定 to 建構 the transaction.</translation>
+            <translation>準備好。點擊“鎖定”以建立交易。</translation>
         </message>
         <message>
             <source>Ready. Click SWAP to build the transaction.</source>
-            <translation>Ready. Click 交換 to 建構 the transaction.</translation>
+            <translation>準備好。點擊“SWAP”以建立交易。</translation>
         </message>
         <message>
             <source>Realized actuals (&gt;= 5 values)</source>
@@ -11464,11 +11464,11 @@
         </message>
         <message>
             <source>Recent security events (PIN setup, failed unlocks, inactivity locks).</source>
-            <translation>Recent security 事件 (PIN setup, 失敗 unlocks, inactivity locks).</translation>
+            <translation>最近的安全事件（PIN 設定、解鎖失敗、不活動鎖定）。</translation>
         </message>
         <message>
             <source>Redirect didn't work? Paste request_token manually</source>
-            <translation>Redirect didn't work? 貼上 request_token manually</translation>
+            <translation>重定向不起作用？手動貼上 request_token</translation>
         </message>
         <message>
             <source>Referrer-Policy: no-referrer\r\n</source>
@@ -11524,7 +11524,7 @@
         </message>
         <message>
             <source>Required for yield_curve and country_data</source>
-            <translation>必填 for yield_curve and country_data</translation>
+            <translation>產量曲線和國家數據必需</translation>
         </message>
         <message>
             <source>Requires BEA_API_KEY</source>
@@ -11544,7 +11544,7 @@
         </message>
         <message>
             <source>Reset All to Defaults</source>
-            <translation>重設 All to Defaults</translation>
+            <translation>全部重設為預設值</translation>
         </message>
         <message>
             <source>Retire Age:</source>
@@ -11620,7 +11620,7 @@
         </message>
         <message>
             <source>SAVINGS RATE ANALYSIS</source>
-            <translation>SAVINGS RATE 分析</translation>
+            <translation>儲蓄率分析</translation>
         </message>
         <message>
             <source>SCHEDULED QUERIES</source>
@@ -11732,7 +11732,7 @@
         </message>
         <message>
             <source>STRATEGY COMPARISON  (populated after optimization)</source>
-            <translation>策略 比較  (populated after optimization)</translation>
+            <translation>策略比較（最佳化後填入）</translation>
         </message>
         <message>
             <source>STRATEGY PERFORMANCE STATS</source>
@@ -11772,7 +11772,7 @@
         </message>
         <message>
             <source>Save All Providers</source>
-            <translation>儲存 All Providers</translation>
+            <translation>保存所有提供者</translation>
         </message>
         <message>
             <source>Save Global Settings</source>
@@ -11792,11 +11792,11 @@
         </message>
         <message>
             <source>Saved layouts arrive in Phase 6</source>
-            <translation>已儲存 layouts arrive in Phase 6</translation>
+            <translation>儲存的佈局到達第 6 階段</translation>
         </message>
         <message>
             <source>Saved. Restart streaming to use the new key.</source>
-            <translation>Saved. Restart streaming to use the 新增 key.</translation>
+            <translation>已儲存。重新啟動串流以使用新密鑰。</translation>
         </message>
         <message>
             <source>Saved: 0</source>
@@ -11824,11 +11824,11 @@
         </message>
         <message>
             <source>Search actions, layouts… (Esc to cancel, Enter to run)</source>
-            <translation>搜尋 actions, layouts… (Esc to cancel, 輸入 to run)</translation>
+            <translation>搜尋操作、佈局...（Esc 取消，Enter 運行）</translation>
         </message>
         <message>
             <source>Search for a symbol to load news.</source>
-            <translation>搜尋 for a symbol to load news.</translation>
+            <translation>搜尋符號以加載新聞。</translation>
         </message>
         <message>
             <source>Search markets...</source>
@@ -11836,91 +11836,91 @@
         </message>
         <message>
             <source>Select Kalshi private key (PEM)</source>
-        <translation>選擇Kalshi private key (PEM)</translation>
+            <translation>選擇 Kalshi 私鑰 (PEM)</translation>
         </message>
         <message>
             <source>Select a category to begin</source>
-        <translation>選擇a category to begin</translation>
+            <translation>選擇一個類別開始</translation>
         </message>
         <message>
             <source>Select a color theme for your report:</source>
-        <translation>選擇a color theme for your report:</translation>
+            <translation>為您的報告選擇顏色主題：</translation>
         </message>
         <message>
             <source>Select a component\nto edit properties</source>
-        <translation>選擇a component\nto edit properties</translation>
+            <translation>選擇一個元件\n以編輯屬性</translation>
         </message>
         <message>
             <source>Select a data source above\nto load available endpoints</source>
-        <translation>選擇a data source above\nto load available endpoints</translation>
+            <translation>選擇上面的資料來源\n以載入可用端點</translation>
         </message>
         <message>
             <source>Select a market to view its price chart</source>
-        <translation>選擇a market to view its price chart</translation>
+            <translation>選擇一個市場以查看其價格圖表</translation>
         </message>
         <message>
             <source>Select a node\nto edit properties</source>
-        <translation>選擇a node\nto edit properties</translation>
+            <translation>選擇節點\n編輯屬性</translation>
         </message>
         <message>
             <source>Select a note or create a new one</source>
-        <translation>選擇a note or create a new one</translation>
+            <translation>選擇註釋或建立新註釋</translation>
         </message>
         <message>
             <source>Select a report to open:</source>
-        <translation>選擇a report to open:</translation>
+            <translation>選擇要開啟的報告：</translation>
         </message>
         <message>
             <source>Select a server to view details.</source>
-        <translation>選擇a server to view details.</translation>
+            <translation>選擇伺服器以查看詳細資訊。</translation>
         </message>
         <message>
             <source>Select a template</source>
-        <translation>選擇a template</translation>
+            <translation>選擇a template</translation>
         </message>
         <message>
             <source>Select a template to reset your dashboard. Current layout will be replaced.</source>
-        <translation>選擇a template to reset your dashboard. Current layout will be replaced.</translation>
+            <translation>選擇一個範本來重設儀表板。當前佈局將被取代。</translation>
         </message>
         <message>
             <source>Select a template to view details</source>
-        <translation>選擇a template to view details</translation>
+            <translation>選擇模板查看詳情</translation>
         </message>
         <message>
             <source>Select a tool</source>
-        <translation>選擇a tool</translation>
+            <translation>選擇a tool</translation>
         </message>
         <message>
             <source>Select a workflow to configure and run.</source>
-        <translation>選擇a workflow to configure and run.</translation>
+            <translation>選擇要配置和運行的工作流程。</translation>
         </message>
         <message>
             <source>Select a workspace to preview</source>
-        <translation>選擇a workspace to preview</translation>
+            <translation>選擇要預覽的工作區</translation>
         </message>
         <message>
             <source>Select all</source>
-        <translation>全選</translation>
+            <translation>全選</translation>
         </message>
         <message>
             <source>Select an account to configure credentials</source>
-        <translation>選擇an account to configure credentials</translation>
+            <translation>選擇一個帳戶來設定憑證</translation>
         </message>
         <message>
             <source>Select an agent</source>
-        <translation>選擇an agent</translation>
+            <translation>選擇an agent</translation>
         </message>
         <message>
             <source>Select an index from MY INDICES to see its performance.</source>
-        <translation>選擇an index from MY INDICES to see its performance.</translation>
+            <translation>從“我的索引”中選擇一個索引以查看其效能。</translation>
         </message>
         <message>
             <source>Select an indicator and click CALCULATE</source>
-        <translation>選擇an indicator and click CALCULATE</translation>
+            <translation>選擇一個指標並點擊“計算”</translation>
         </message>
         <message>
             <source>Select parameters and click FETCH</source>
-        <translation>選擇parameters and click FETCH</translation>
+            <translation>選擇參數並點擊 FETCH</translation>
         </message>
         <message>
             <source>Selected files:</source>
@@ -11936,7 +11936,7 @@
         </message>
         <message>
             <source>Sent. Waiting for confirmation…</source>
-            <translation>已傳送. 等候中 for confirmation…</translation>
+            <translation>發送。等待確認...</translation>
         </message>
         <message>
             <source>Sent: %1…</source>
@@ -11944,7 +11944,7 @@
         </message>
         <message>
             <source>Series values (&gt;= 1). Forecast = repeat last `season_length` observations.</source>
-            <translation>序列 values (&gt;= 1). 預測 = repeat 最後 `season_length` observations.</translation>
+            <translation>系列值 (&gt;= 1)。預測=重複最後的“season_length”觀察。</translation>
         </message>
         <message>
             <source>Series values (&gt;= 30)</source>
@@ -11952,15 +11952,15 @@
         </message>
         <message>
             <source>Series values (&gt;= 30) — runs ADF + KPSS at each differencing order</source>
-            <translation>序列 values (&gt;= 30) — runs ADF + KPSS at each differencing 訂單</translation>
+            <translation>系列值 (&gt;= 30) - 在每個差分階次執行 ADF + KPSS</translation>
         </message>
         <message>
             <source>Series values (&gt;= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.</source>
-            <translation>序列 values (&gt;= 30). Bootstrap residual ensemble forecasts the 下一步 H steps with quantile bands.</translation>
+            <translation>系列值 (&gt;= 30)。 Bootstrap 殘差整合使用分位數帶預測接下來的 H 個步驟。</translation>
         </message>
         <message>
             <source>Series values (training history, &gt;= 30)</source>
-            <translation>序列 values (training history, &gt;= 30)</translation>
+            <translation>系列值（訓練歷史，&gt;= 30）</translation>
         </message>
         <message>
             <source>Share your insights with the community</source>
@@ -11980,7 +11980,7 @@
         </message>
         <message>
             <source>Show unverified tokens in the holdings panel</source>
-        <translation>顯示unverified tokens in the holdings panel</translation>
+            <translation>在持有面板中顯示未經驗證的代幣</translation>
         </message>
         <message>
             <source>Showing %1 data</source>
@@ -12008,7 +12008,7 @@
         </message>
         <message>
             <source>Simulation failed: %1. Refusing to sign.</source>
-            <translation>模擬 failed: %1. Refusing to sign.</translation>
+            <translation>模擬失敗：%1。拒絕簽字。</translation>
         </message>
         <message>
             <source>Solana wallet</source>
@@ -12052,7 +12052,7 @@
         </message>
         <message>
             <source>Stored — input is hidden. Type to replace.</source>
-            <translation>Stored — input is hidden. 類型 to replace.</translation>
+            <translation>儲存 - 輸入被隱藏。鍵入要替換的內容。</translation>
         </message>
         <message>
             <source>Streaming</source>
@@ -12060,11 +12060,11 @@
         </message>
         <message>
             <source>Supply history feed error: %1</source>
-            <translation>Supply 歷史 feed error: %1</translation>
+            <translation>供應歷史進給錯誤：%1</translation>
         </message>
         <message>
             <source>Swap service unavailable.</source>
-            <translation>交換 service unavailable.</translation>
+            <translation>不提供換貨服務。</translation>
         </message>
         <message>
             <source>Switch</source>
@@ -12104,7 +12104,7 @@
         </message>
         <message>
             <source>TEST</source>
-        <translation>測試</translation>
+            <translation>測試</translation>
         </message>
         <message>
             <source>TEST &amp; SAVE</source>
@@ -12144,7 +12144,7 @@
         </message>
         <message>
             <source>TOTAL %1  ·  %2 verified</source>
-        <translation>總%1  ·  %2 verified</translation>
+            <translation>總%1  ·  %2 verified</translation>
         </message>
         <message>
             <source>TOTP SECRET (2FA)</source>
@@ -12156,7 +12156,7 @@
         </message>
         <message>
             <source>TRADE</source>
-        <translation>交易</translation>
+            <translation>交易</translation>
         </message>
         <message>
             <source>TRADEMARKS</source>
@@ -12180,7 +12180,7 @@
         </message>
         <message>
             <source>TYPE YOUR EMAIL ADDRESS TO CONFIRM:</source>
-            <translation>類型 YOUR EMAIL 地址 TO CONFIRM:</translation>
+            <translation>輸入您的電子郵件地址以確認：</translation>
         </message>
         <message>
             <source>TYPOGRAPHY</source>
@@ -12228,35 +12228,35 @@
         </message>
         <message>
             <source>This module is under active development.\nIt will be available in a future update.</source>
-            <translation>This module is under 活躍 development.\nIt will be 可用 in a future update.</translation>
+            <translation>該模組正在積極開發中。 \n它將在未來的更新中提供。</translation>
         </message>
         <message>
             <source>Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values</source>
-            <translation>股票代碼 (AAPL, ^GSPC, BTC-USD) or comma-separated values</translation>
+            <translation>代碼（AAPL、^GSPC、BTC-USD）或逗號分隔值</translation>
         </message>
         <message>
             <source>Tickers (comma-separated, &gt;= 2). Returns fetched via Yahoo Finance.</source>
-            <translation>股票代碼（逗號分隔，≥ 2）。報酬率透過 Yahoo Finance 擷取。</translation>
+            <translation>代碼（以逗號分隔，&gt;= 2）。透過雅虎財經獲取的回報。</translation>
         </message>
         <message>
             <source>Time series values (&gt;= 20)</source>
-            <translation>Time 序列 values (&gt;= 20)</translation>
+            <translation>時間序列值 (&gt;= 20)</translation>
         </message>
         <message>
             <source>Time series values (&gt;= 20). Used for ARIMA(p,q) order selection.</source>
-            <translation>Time 序列 values (&gt;= 20). Used for ARIMA(p,q) 訂單 selection.</translation>
+            <translation>時間序列值 (&gt;= 20)。用於 ARIMA(p,q) 訂單選擇。</translation>
         </message>
         <message>
             <source>Time series values (&gt;= 24). Period auto-detected if left at 0.</source>
-            <translation>Time 序列 values (&gt;= 24). Period auto-detected if 左 at 0.</translation>
+            <translation>時間序列值 (&gt;= 24)。如果保留為 0，則自動偵測週期。</translation>
         </message>
         <message>
             <source>Time series values (&gt;= 30)</source>
-            <translation>Time 序列 values (&gt;= 30)</translation>
+            <translation>時間序列值 (&gt;= 30)</translation>
         </message>
         <message>
             <source>Time series values (&gt;= 30). CSV, space, or newline separated.</source>
-            <translation>Time 序列 values (&gt;= 30). CSV, space, or newline separated.</translation>
+            <translation>時間序列值 (&gt;= 30)。以 CSV、空格或換行符分隔。</translation>
         </message>
         <message>
             <source>Timed out.</source>
@@ -12264,7 +12264,7 @@
         </message>
         <message>
             <source>Tip: re-select after editing\ndata to refresh sparkline.</source>
-            <translation>Tip: re-select after editing\ndata to 重新整理 sparkline.</translation>
+            <translation>提示：編輯\n資料後重新選擇可刷新迷你圖。</translation>
         </message>
         <message>
             <source>Tip: re-select component after\nediting data to re-render.</source>
@@ -12276,11 +12276,11 @@
         </message>
         <message>
             <source>Total (all)</source>
-        <translation>總(all)</translation>
+            <translation>總(all)</translation>
         </message>
         <message>
             <source>Trade Barrier Removal Impact</source>
-            <translation>交易 Barrier Removal Impact</translation>
+            <translation>貿易壁壘消除的影響</translation>
         </message>
         <message>
             <source>Trade Flow</source>
@@ -12292,11 +12292,11 @@
         </message>
         <message>
             <source>Trade Statistics (API key)</source>
-            <translation>交易 Statistics (API key)</translation>
+            <translation>貿易統計（API 金鑰）</translation>
         </message>
         <message>
             <source>Trading Blocs Analysis</source>
-            <translation>Trading Blocs 分析</translation>
+            <translation>貿易區分析</translation>
         </message>
         <message>
             <source>Trading workspace</source>
@@ -12304,11 +12304,11 @@
         </message>
         <message>
             <source>Training history (optional; enables MASE)</source>
-            <translation>Training 歷史 (optional; enables MASE)</translation>
+            <translation>培訓歷史（可選；啟用 MASE）</translation>
         </message>
         <message>
             <source>Treasury feed error: %1</source>
-            <translation>Treasury feed 錯誤: %1</translation>
+            <translation>庫房進給錯誤：%1</translation>
         </message>
         <message>
             <source>Two sandboxed environments to keep library versions conflict-free</source>
@@ -12320,11 +12320,11 @@
         </message>
         <message>
             <source>Type a command (e.g. 'layout switch \</source>
-            <translation>類型 a command (e.g. 'layout switch \</translation>
+            <translation>輸入指令（例如“佈局開關\</translation>
         </message>
         <message>
             <source>Type a ticker or company name to search</source>
-            <translation>類型 a ticker or company name to 搜尋</translation>
+            <translation>輸入股票代碼或公司名稱進行搜尋</translation>
         </message>
         <message>
             <source>UNDO</source>
@@ -12344,7 +12344,7 @@
         </message>
         <message>
             <source>USE THIS TEMPLATE</source>
-            <translation>USE THIS 範本</translation>
+            <translation>使用此模板</translation>
         </message>
         <message>
             <source>Unconfigured</source>
@@ -12352,7 +12352,7 @@
         </message>
         <message>
             <source>Underlying / parent symbol</source>
-            <translation>Underlying / parent 代碼</translation>
+            <translation>基礎/母代號</translation>
         </message>
         <message>
             <source>Unilateral Liberalization</source>
@@ -12360,7 +12360,7 @@
         </message>
         <message>
             <source>Unique model ID (e.g. lgbm_sp500)</source>
-            <translation>Unique 模型 ID (e.g. lgbm_sp500)</translation>
+            <translation>唯一型號 ID（例如 lgbm_sp500）</translation>
         </message>
         <message>
             <source>Unlink</source>
@@ -12384,7 +12384,7 @@
         </message>
         <message>
             <source>Use /stock, /fund, /index... in command bar to search</source>
-            <translation>Use /stock, /fund, /index... in command bar to 搜尋</translation>
+            <translation>在命令列中使用 /stock、/fund、/index... 進行搜索</translation>
         </message>
         <message>
             <source>Use demo (paper trading) environment</source>
@@ -12408,7 +12408,7 @@
         </message>
         <message>
             <source>VOICE / SPEECH-TO-TEXT</source>
-            <translation>語音 / SPEECH-TO-TEXT</translation>
+            <translation>語音/語音轉文本</translation>
         </message>
         <message>
             <source>VOLUME</source>
@@ -12432,7 +12432,7 @@
         </message>
         <message>
             <source>WEIGHT COMPARISON  (all methods, per symbol)</source>
-            <translation>權重 比較  (all methods, per symbol)</translation>
+            <translation>權重比較（所有方法，按標的）</translation>
         </message>
         <message>
             <source>WIN / LOSS BREAKDOWN</source>
@@ -12460,15 +12460,15 @@
         </message>
         <message>
             <source>Watch sources, trigger agent analysis.</source>
-            <translation>Watch sources, 觸發 代理 analysis.</translation>
+            <translation>監控來源，觸發 Agent 分析。</translation>
         </message>
         <message>
             <source>Weekly Petroleum (WPSR)</source>
-            <translation>每週 Petroleum (WPSR)</translation>
+            <translation>每周石油 (WPSR)</translation>
         </message>
         <message>
             <source>Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.</source>
-            <translation>權重 (comma-separated, will be normalized to 1.0). Equal-weight if blank.</translation>
+            <translation>權重（以逗號分隔，將標準化為 1.0）。如果空白則等重。</translation>
         </message>
         <message>
             <source>Withdraw</source>
@@ -12508,7 +12508,7 @@
         </message>
         <message>
             <source>YouTube streams resolved via yt-dlp and played inline.</source>
-            <translation>YouTube streams 已解析 via yt-dlp and played inline.</translation>
+            <translation>YouTube 串流透過 yt-dlp 解析並內嵌播放。</translation>
         </message>
         <message>
             <source>Your terminal file index is empty.</source>
@@ -12556,7 +12556,7 @@
         </message>
         <message>
             <source>\u25B6 RUN MONTE CARLO (1000 paths)</source>
-            <translation>\u25B6 執行 MONTE CARLO (1000 paths)</translation>
+            <translation>\u25B6 運行蒙地卡羅（1000 條路徑）</translation>
         </message>
         <message>
             <source>\u25B6 RUN OPTIMIZATION</source>
@@ -12608,15 +12608,15 @@
         </message>
         <message>
             <source>build_swap failed: %1</source>
-            <translation>build_swap 失敗: %1</translation>
+            <translation>建置交換失敗：%1</translation>
         </message>
         <message>
             <source>c = constant only, ct = constant + trend</source>
-            <translation>c = constant only, ct = constant + 趨勢</translation>
+            <translation>c = 僅常數，ct = 常數 + 趨勢</translation>
         </message>
         <message>
             <source>c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant</source>
-            <translation>c = constant, ct = constant + trend, ctt = constant + 趨勢 + quadratic trend, n = no constant</translation>
+            <translation>c = 常數, ct = 常數 + 趨勢, ctt = 常數 + 趨勢 + 二次趨勢, n = 無常數</translation>
         </message>
         <message>
             <source>cache.db</source>
@@ -12628,27 +12628,27 @@
         </message>
         <message>
             <source>comma-separated: bootstrap,jackknife,permutation</source>
-            <translation>逗號分隔: bootstrap,jackknife,permutation</translation>
+            <translation>逗號分隔：bootstrap、jackknife、排列</translation>
         </message>
         <message>
             <source>comma-separated: pca,kmeans,agglomerative</source>
-            <translation>逗號分隔: pca,kmeans,agglomerative</translation>
+            <translation>以逗號分隔：pca,kmeans,agglomerative</translation>
         </message>
         <message>
             <source>comma-separated: ridge,lasso,random_forest,svr,knn</source>
-            <translation>逗號分隔: ridge,lasso,random_forest,svr,knn</translation>
+            <translation>逗號分隔：ridge,lasso,random_forest,svr,knn</translation>
         </message>
         <message>
             <source>could not start local bridge server</source>
-            <translation>could not 開始 local 橋接 伺服器</translation>
+            <translation>無法啟動本地橋接伺服器</translation>
         </message>
         <message>
             <source>e.g. AAPL — fetched from Yahoo Finance</source>
-            <translation>如 AAPL — 透過 Yahoo Finance 擷取</translation>
+            <translation>例如AAPL - 取自雅虎財經</translation>
         </message>
         <message>
             <source>e.g. my-mcp-package --flag value</source>
-            <translation>e.g. my-mcp-package --flag 價值</translation>
+            <translation>例如my-mcp-package --標誌值</translation>
         </message>
         <message>
             <source>fincept.db</source>
@@ -12656,7 +12656,7 @@
         </message>
         <message>
             <source>fincept_lock not deployed — Settings &gt; Lock program ID</source>
-            <translation>fincept_lock not deployed — 設定 &gt; 鎖定 program ID</translation>
+            <translation>fincept_lock 未部署 - 設定 &gt; 鎖定程式 ID</translation>
         </message>
         <message>
             <source>gnu.org/licenses/agpl-3.0</source>
@@ -12700,7 +12700,7 @@
         </message>
         <message>
             <source>signature verification failed</source>
-            <translation>signature verification 失敗</translation>
+            <translation>簽名驗證失敗</translation>
         </message>
         <message>
             <source>simple,stratified,systematic</source>
@@ -12720,7 +12720,7 @@
         </message>
         <message>
             <source>timed out waiting for browser callback</source>
-            <translation>timed out 等候中 for browser callback</translation>
+            <translation>等待瀏覽器回呼逾時</translation>
         </message>
         <message>
             <source>trading library list</source>
@@ -12728,7 +12728,7 @@
         </message>
         <message>
             <source>waiting for revenue + spot price…</source>
-            <translation>等候中 for revenue + spot 價格…</translation>
+            <translation>等待收入+現貨價格...</translation>
         </message>
         <message>
             <source>yt-dlp error: </source>
@@ -12780,11 +12780,11 @@
         </message>
         <message>
             <source>≈ %1 $FNCPT (PumpSwap fills at execution)</source>
-            <translation>≈ %1 $FNCPT（PumpSwap 成交時執行）</translation>
+            <translation>≈ %1 $FNCPT（PumpSwap 在執行時填充）</translation>
         </message>
         <message>
             <source>≈ %1 SOL (PumpSwap fills at execution)</source>
-            <translation>≈ %1 SOL（PumpSwap 成交時執行）</translation>
+            <translation>≈ %1 SOL（PumpSwap 在執行時填充）</translation>
         </message>
         <message>
             <source>── </source>
@@ -13221,6 +13221,34 @@
         <message>
             <source>＋  New Ticket</source>
             <translation>＋  新增 Ticket</translation>
+        </message>
+        <message>
+            <source>Feature values JSON: {rsi:[...],macd:[...]}</source>
+            <translation type="unfinished">Feature values JSON: {rsi:[...],macd:[...]}</translation>
+        </message>
+        <message>
+            <source>JSON parameters (optional)\ne.g. {ticker:AAPL}</source>
+            <translation type="unfinished">JSON parameters (optional)\ne.g. {ticker:AAPL}</translation>
+        </message>
+        <message>
+            <source>Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss.</source>
+            <translation type="unfinished">Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss.</translation>
+        </message>
+        <message>
+            <source>Warning: already used by </source>
+            <translation type="unfinished">Warning: already used by </translation>
+        </message>
+        <message>
+            <source>24H</source>
+            <translation type="unfinished">24H</translation>
+        </message>
+        <message>
+            <source>New Chat</source>
+            <translation>新對話</translation>
+        </message>
+        <message>
+            <source>market</source>
+            <translation type="unfinished">market</translation>
         </message>
     </context>
     <context>
@@ -14017,7 +14045,7 @@ This only happens the first time — future launches are instant.</source>
         <name>fincept::screens::WebScraperWidget</name>
         <message>
             <source>auto (from Content-Type / &lt;meta&gt;)</source>
-            <translation>自動（依 Content-Type / &lt;meta&gt;）</translation>
+            <translation>自動（來自 Content-Type / &lt;meta&gt;）</translation>
         </message>
     </context>
     <context>
@@ -14035,23 +14063,23 @@ This only happens the first time — future launches are instant.</source>
         <name>fincept::screens::PredictionAccountDialog_html</name>
         <message>
             <source>&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#dc2626'&gt;私鑰為必填。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#dc2626'&gt;需要私鑰。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</source>
-            <translation>&lt;span style='color:#dc2626'&gt;儲存失敗 — 請檢視日誌。&lt;/span&gt;</translation>
+            <translation>&lt;span style='color:#dc2626'&gt;儲存失敗 - 請參閱日誌。 &lt;/span&gt;</translation>
         </message>
         <message>
             <source>PEM files (*.pem *.key);;All files (*)</source>
@@ -14063,7 +14091,7 @@ This only happens the first time — future launches are instant.</source>
         </message>
         <message>
             <source>&lt;b&gt;Kalshi (CFTC-regulated)&lt;/b&gt;&lt;br&gt;</source>
-            <translation>&lt;b&gt;Kalshi（CFTC 監管）&lt;/b&gt;&lt;br&gt;</translation>
+            <translation>&lt;b&gt;Kalshi（受 CFTC 監管）&lt;/b&gt;&lt;br&gt;</translation>
         </message>
     </context>
     <context>
@@ -14096,7 +14124,7 @@ This only happens the first time — future launches are instant.</source>
         <name>fincept::misc</name>
         <message>
             <source>-----BEGIN RSA PRIVATE KEY-----\n…paste PEM contents here…\n-----END RSA PRIVATE KEY-----</source>
-            <translation>-----BEGIN RSA PRIVATE KEY-----\n…在此貼上 PEM 內容…\n-----END RSA PRIVATE KEY-----</translation>
+            <translation>-----BEGIN RSA PRIVATE KEY-----\n…在此處貼上 PEM 內容…\n-----END RSA PRIVATE KEY-----</translation>
         </message>
         <message>
             <source>00000000-0000-0000-0000-000000000000</source>

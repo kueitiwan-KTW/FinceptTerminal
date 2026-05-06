@@ -67,7 +67,7 @@ void RelationshipPanel::build_ui() {
     hhl->setContentsMargins(16, 0, 16, 0);
     hhl->setSpacing(12);
 
-    auto* title = new QLabel("GEOPOLITICAL RELATIONSHIP NETWORK", header);
+    auto* title = new QLabel(tr("GEOPOLITICAL RELATIONSHIP NETWORK"), header);
     title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3; letter-spacing:1px;")
                              .arg(ui::colors::INFO())
                              .arg(ui::fonts::TINY)
@@ -225,7 +225,7 @@ QWidget* RelationshipPanel::build_node_card(const RelationshipNode& node, QWidge
                               .arg(ui::fonts::DATA_FAMILY));
     ds_hl->addWidget(ds_num);
 
-    auto* ds_lbl = new QLabel("datasets", ds_row);
+    auto* ds_lbl = new QLabel(tr("datasets"), ds_row);
     ds_lbl->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                               .arg(ui::colors::TEXT_TERTIARY())
                               .arg(ui::fonts::SMALL)

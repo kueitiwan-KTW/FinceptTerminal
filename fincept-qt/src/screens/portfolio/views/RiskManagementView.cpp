@@ -56,7 +56,7 @@ void RiskManagementView::build_ui() {
     // ── Risk Overview tab ────────────────────────────────────────────────────
     overview_panel_ = new QWidget(this);
     overview_panel_->setStyleSheet(QString("background:%1;").arg(ui::colors::BG_BASE()));
-    tabs_->addTab(overview_panel_, "RISK OVERVIEW");
+    tabs_->addTab(overview_panel_, tr("RISK OVERVIEW"));
 
     // ── Stress Test tab ──────────────────────────────────────────────────────
     auto* stress_w = new QWidget(this);
@@ -92,7 +92,7 @@ void RiskManagementView::build_ui() {
                                      .arg(ui::colors::BG_BASE(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM(),
                                           ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(), ui::colors::AMBER()));
     stress_layout->addWidget(stress_table_, 1);
-    tabs_->addTab(stress_w, "STRESS TEST");
+    tabs_->addTab(stress_w, tr("STRESS TEST"));
 
     // ── Risk Contribution tab ────────────────────────────────────────────────
     auto* contrib_w = new QWidget(this);
@@ -121,7 +121,7 @@ void RiskManagementView::build_ui() {
                                       .arg(ui::colors::BG_BASE(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_DIM(),
                                            ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(), ui::colors::AMBER()));
     contrib_layout->addWidget(contrib_table_, 1);
-    tabs_->addTab(contrib_w, "RISK CONTRIBUTION");
+    tabs_->addTab(contrib_w, tr("RISK CONTRIBUTION"));
 
     layout->addWidget(tabs_);
 }

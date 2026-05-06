@@ -288,7 +288,7 @@ void SpreadsheetWidget::build_ui(int rows, int cols) {
     fhl->setContentsMargins(8, 0, 8, 0);
     fhl->setSpacing(6);
 
-    cell_ref_label_ = new QLabel("A1", formula_row);
+    cell_ref_label_ = new QLabel(tr("A1"), formula_row);
     cell_ref_label_->setFixedWidth(50);
     cell_ref_label_->setAlignment(Qt::AlignCenter);
     cell_ref_label_->setStyleSheet(QString("color:%1; font-family:%2; font-size:11px; font-weight:700;"
@@ -296,7 +296,7 @@ void SpreadsheetWidget::build_ui(int rows, int cols) {
                                        .arg(colors::AMBER(), fonts::DATA_FAMILY, colors::BORDER_MED()));
     fhl->addWidget(cell_ref_label_);
 
-    auto* fx_label = new QLabel("fx", formula_row);
+    auto* fx_label = new QLabel(tr("fx"), formula_row);
     fx_label->setStyleSheet(QString("color:%1; font-family:%2; font-size:11px; font-weight:700;")
                                 .arg(colors::TEXT_TERTIARY(), fonts::DATA_FAMILY));
     fhl->addWidget(fx_label);

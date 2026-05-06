@@ -59,7 +59,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     // Local sample-button helper — same shape as gs_quant's
     auto add_sample_btn = [this](QLineEdit* edit, QWidget* parent, unsigned seed,
                                   const QString& tip, bool walk = false) -> QPushButton* {
-        auto* btn = new QPushButton("LOAD SAMPLE", parent);
+        auto* btn = new QPushButton(tr("LOAD SAMPLE"), parent);
         btn->setCursor(Qt::PointingHandCursor);
         btn->setFixedHeight(22);
         btn->setToolTip(tip);
@@ -149,7 +149,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     });
     fcl->addWidget(fc_run);
     fcl->addStretch();
-    tabs->addTab(fc, "Forecast");
+    tabs->addTab(fc, tr("Forecast"));
 
     // ── Anomaly Detection ────────────────────────────────────────────────────
     auto* an = new QWidget(this);
@@ -207,7 +207,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     });
     anl->addWidget(an_run);
     anl->addStretch();
-    tabs->addTab(an, "Anomalies");
+    tabs->addTab(an, tr("Anomalies"));
 
     // ── Seasonality ──────────────────────────────────────────────────────────
     auto* se = new QWidget(this);
@@ -258,7 +258,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     });
     sel->addWidget(se_run);
     sel->addStretch();
-    tabs->addTab(se, "Seasonality");
+    tabs->addTab(se, tr("Seasonality"));
 
     // ── Metrics ──────────────────────────────────────────────────────────────
     auto* me = new QWidget(this);
@@ -311,7 +311,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     });
     mel->addWidget(me_run);
     mel->addStretch();
-    tabs->addTab(me, "Metrics");
+    tabs->addTab(me, tr("Metrics"));
 
     // ── Confidence Intervals ─────────────────────────────────────────────────
     auto* ci = new QWidget(this);
@@ -383,7 +383,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     });
     cil->addWidget(ci_run);
     cil->addStretch();
-    tabs->addTab(ci, "Confidence Intervals");
+    tabs->addTab(ci, tr("Confidence Intervals"));
 
     // ── Stationarity ─────────────────────────────────────────────────────────
     auto* st = new QWidget(this);
@@ -426,7 +426,7 @@ QWidget* QuantModulePanel::build_functime_panel() {
     });
     stl->addWidget(st_run);
     stl->addStretch();
-    tabs->addTab(st, "Stationarity");
+    tabs->addTab(st, tr("Stationarity"));
 
     vl->addWidget(tabs);
 

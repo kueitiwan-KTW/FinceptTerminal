@@ -62,7 +62,7 @@ void EquityBottomPanel::setup_positions_tab() {
     positions_table_->setShowGrid(false);
     positions_table_->horizontalHeader()->setStretchLastSection(true);
     positions_table_->verticalHeader()->setDefaultSectionSize(22);
-    tabs_->addTab(positions_table_, "POSITIONS");
+    tabs_->addTab(positions_table_, tr("POSITIONS"));
 }
 
 // ── Holdings Tab ───────────────────────────────────────────────────────────
@@ -144,7 +144,7 @@ void EquityBottomPanel::setup_holdings_tab() {
     holdings_table_->horizontalScrollBar()->setSingleStep(16);
 
     v->addWidget(holdings_table_, 1);
-    tabs_->addTab(tab, "HOLDINGS");
+    tabs_->addTab(tab, tr("HOLDINGS"));
 }
 
 // ── Orders Tab ─────────────────────────────────────────────────────────────
@@ -161,7 +161,7 @@ void EquityBottomPanel::setup_orders_tab() {
     orders_table_->setShowGrid(false);
     orders_table_->horizontalHeader()->setStretchLastSection(true);
     orders_table_->verticalHeader()->setDefaultSectionSize(22);
-    tabs_->addTab(orders_table_, "ORDERS");
+    tabs_->addTab(orders_table_, tr("ORDERS"));
 }
 
 // ── Funds Tab ──────────────────────────────────────────────────────────────
@@ -192,7 +192,7 @@ void EquityBottomPanel::setup_funds_tab() {
     collateral_label_ = make_row("Collateral");
 
     layout->addStretch();
-    tabs_->addTab(widget, "FUNDS");
+    tabs_->addTab(widget, tr("FUNDS"));
 }
 
 // ── Stats Tab ──────────────────────────────────────────────────────────────
@@ -218,7 +218,7 @@ void EquityBottomPanel::setup_stats_tab() {
     }
 
     layout->addStretch();
-    tabs_->addTab(widget, "STATS");
+    tabs_->addTab(widget, tr("STATS"));
 }
 
 // ── Data Setters ───────────────────────────────────────────────────────────
@@ -515,7 +515,7 @@ void EquityBottomPanel::setup_auctions_tab() {
     auctions_table_->horizontalHeader()->setStretchLastSection(true);
     auctions_table_->verticalHeader()->setDefaultSectionSize(20);
     auctions_table_->setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
-    tabs_->addTab(auctions_table_, "AUCTIONS");
+    tabs_->addTab(auctions_table_, tr("AUCTIONS"));
 }
 
 void EquityBottomPanel::set_auctions(const QVector<trading::BrokerAuction>& auctions) {
@@ -569,7 +569,7 @@ void EquityBottomPanel::setup_time_sales_tab() {
     time_sales_table_->verticalHeader()->setDefaultSectionSize(20);
     time_sales_table_->setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
     time_sales_table_->setHorizontalScrollMode(QAbstractItemView::ScrollPerPixel);
-    tabs_->addTab(time_sales_table_, "TIME & SALES");
+    tabs_->addTab(time_sales_table_, tr("TIME & SALES"));
 }
 
 static void fill_trade_row(QTableWidget* table, int row, const trading::BrokerTrade& t,
@@ -665,7 +665,7 @@ void EquityBottomPanel::setup_calendar_tab() {
     calendar_table_->setHorizontalScrollMode(QAbstractItemView::ScrollPerPixel);
     vlay->addWidget(calendar_table_);
 
-    tabs_->addTab(container, "CALENDAR");
+    tabs_->addTab(container, tr("CALENDAR"));
 }
 
 void EquityBottomPanel::set_calendar(const QVector<trading::MarketCalendarDay>& days) {

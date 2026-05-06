@@ -69,7 +69,7 @@ FortAssetInputs build_fort_asset_row(const QString& key_prefix, QWidget* parent,
     hl->setSpacing(8);
 
     auto* tk = new QLineEdit(row);
-    tk->setPlaceholderText(tr("Tickers (comma-separated, >= 2). Returns fetched via Yahoo Finance."));
+    tk->setPlaceholderText(QObject::tr("Tickers (comma-separated, >= 2). Returns fetched via Yahoo Finance."));
     tk->setText(default_tickers);
     tk->setStyleSheet(input_ss());
     text_inputs[key_prefix + "_tickers"] = tk;
@@ -175,7 +175,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     });
     pml->addWidget(pm_run);
     pml->addStretch();
-    tabs->addTab(pm, "Portfolio Metrics");
+    tabs->addTab(pm, tr("Portfolio Metrics"));
 
     // ── Covariance / Correlation ─────────────────────────────────────────────
     auto* cv = new QWidget(this);
@@ -209,7 +209,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     });
     cvl->addWidget(cv_run);
     cvl->addStretch();
-    tabs->addTab(cv, "Covariance");
+    tabs->addTab(cv, tr("Covariance"));
 
     // ── Mean-Variance Optimization ───────────────────────────────────────────
     auto* mv = new QWidget(this);
@@ -274,7 +274,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     });
     mvl->addWidget(mv_run);
     mvl->addStretch();
-    tabs->addTab(mv, "MV Optimize");
+    tabs->addTab(mv, tr("MV Optimize"));
 
     // ── Mean-CVaR Optimization ───────────────────────────────────────────────
     auto* cvopt = new QWidget(this);
@@ -336,7 +336,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     });
     cvol->addWidget(cvopt_run);
     cvol->addStretch();
-    tabs->addTab(cvopt, "CVaR Optimize");
+    tabs->addTab(cvopt, tr("CVaR Optimize"));
 
     // ── Efficient Frontier ───────────────────────────────────────────────────
     auto* ef = new QWidget(this);
@@ -391,7 +391,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     });
     efl->addWidget(ef_run);
     efl->addStretch();
-    tabs->addTab(ef, "Efficient Frontier");
+    tabs->addTab(ef, tr("Efficient Frontier"));
 
     // ── Exponential Decay Probabilities ──────────────────────────────────────
     auto* ed = new QWidget(this);
@@ -435,7 +435,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     });
     edl->addWidget(ed_run);
     edl->addStretch();
-    tabs->addTab(ed, "Decay Weights");
+    tabs->addTab(ed, tr("Decay Weights"));
 
     vl->addWidget(tabs);
 

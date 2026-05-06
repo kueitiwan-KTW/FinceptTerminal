@@ -268,7 +268,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     dcf_vl->addWidget(dcf_run);
     dcf_vl->addStretch();
-    sub_tabs_->addTab(dcf, "DCF");
+    sub_tabs_->addTab(dcf, tr("DCF"));
 
     // ── LBO Tab ──
     auto* lbo = new QWidget(this);
@@ -324,7 +324,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     lbo_vl->addWidget(lbo_run);
     lbo_vl->addStretch();
-    sub_tabs_->addTab(lbo, "LBO Returns");
+    sub_tabs_->addTab(lbo, tr("LBO Returns"));
 
     // ── LBO Full Model Tab ──
     auto* lbo_full = new QWidget(this);
@@ -374,7 +374,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     lbof_vl->addWidget(lbof_run);
     lbof_vl->addStretch();
-    sub_tabs_->addTab(lbo_full, "LBO Model");
+    sub_tabs_->addTab(lbo_full, tr("LBO Model"));
 
     // ── LBO Debt Schedule Tab ──
     auto* lbo_ds = new QWidget(this);
@@ -419,7 +419,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     ds_vl->addWidget(ds_run);
     ds_vl->addStretch();
-    sub_tabs_->addTab(lbo_ds, "Debt Schedule");
+    sub_tabs_->addTab(lbo_ds, tr("Debt Schedule"));
 
     // ── LBO Sensitivity Tab ──
     auto* lbo_sens = new QWidget(this);
@@ -428,7 +428,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     sens_vl->setSpacing(8);
 
     auto* sens_hint =
-        new QLabel("Sensitivity analysis varies entry multiple and exit multiple around base case.", lbo_sens);
+        new QLabel(tr("Sensitivity analysis varies entry multiple and exit multiple around base case."), lbo_sens);
     sens_hint->setWordWrap(true);
     sens_hint->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                  .arg(ui::colors::TEXT_SECONDARY())
@@ -466,7 +466,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     sens_vl->addWidget(sens_run);
     sens_vl->addStretch();
-    sub_tabs_->addTab(lbo_sens, "Sensitivity");
+    sub_tabs_->addTab(lbo_sens, tr("Sensitivity"));
 
     // ── Trading Comps Tab ──
     auto* comps = new QWidget(this);
@@ -474,7 +474,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     comps_vl->setContentsMargins(12, 12, 12, 12);
     comps_vl->setSpacing(8);
 
-    auto* comps_hint = new QLabel("Enter target ticker and comparable tickers (comma-separated):", comps);
+    auto* comps_hint = new QLabel(tr("Enter target ticker and comparable tickers (comma-separated):"), comps);
     comps_hint->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                   .arg(ui::colors::TEXT_SECONDARY())
                                   .arg(ui::fonts::SMALL)
@@ -509,7 +509,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     comps_vl->addWidget(comps_run);
     comps_vl->addStretch();
-    sub_tabs_->addTab(comps, "Trading Comps");
+    sub_tabs_->addTab(comps, tr("Trading Comps"));
 
     // ── Precedent Transactions Tab ──
     auto* prec = new QWidget(this);
@@ -535,7 +535,7 @@ QWidget* MAModulePanel::build_valuation_panel() {
     });
     prec_vl->addWidget(prec_run);
     prec_vl->addStretch();
-    sub_tabs_->addTab(prec, "Precedent Txns");
+    sub_tabs_->addTab(prec, tr("Precedent Txns"));
 
     vl->addWidget(sub_tabs_);
 
@@ -568,7 +568,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     ad_vl->setContentsMargins(12, 12, 12, 12);
     ad_vl->setSpacing(8);
 
-    auto* sec_acq = new QLabel("ACQUIRER", ad);
+    auto* sec_acq = new QLabel(tr("ACQUIRER"), ad);
     sec_acq->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2;"
                                    "letter-spacing:1px;")
                                .arg(module_.color.name())
@@ -591,7 +591,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     double_inputs_["acq_shares"] = acq_shares;
     ad_vl->addWidget(build_input_row("Shares Outstanding", acq_shares, ad));
 
-    auto* sec_tgt = new QLabel("TARGET", ad);
+    auto* sec_tgt = new QLabel(tr("TARGET"), ad);
     sec_tgt->setStyleSheet(sec_acq->styleSheet());
     ad_vl->addWidget(sec_tgt);
 
@@ -603,7 +603,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     double_inputs_["tgt_net_income"] = tgt_ni;
     ad_vl->addWidget(build_input_row("Net Income ($)", tgt_ni, ad));
 
-    auto* sec_deal = new QLabel("DEAL TERMS", ad);
+    auto* sec_deal = new QLabel(tr("DEAL TERMS"), ad);
     sec_deal->setStyleSheet(sec_acq->styleSheet());
     ad_vl->addWidget(sec_deal);
 
@@ -640,7 +640,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     ad_vl->addWidget(ad_run);
     ad_vl->addStretch();
-    sub_tabs_->addTab(ad, "Accretion/Dilution");
+    sub_tabs_->addTab(ad, tr("Accretion/Dilution"));
 
     // ── Synergies ──
     auto* syn = new QWidget(this);
@@ -676,7 +676,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     syn_vl->addWidget(syn_run);
     syn_vl->addStretch();
-    sub_tabs_->addTab(syn, "Synergies");
+    sub_tabs_->addTab(syn, tr("Synergies"));
 
     // ── Pro Forma ──
     auto* pf = new QWidget(this);
@@ -712,7 +712,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     pf_vl->addWidget(pf_run);
     pf_vl->addStretch();
-    sub_tabs_->addTab(pf, "Pro Forma");
+    sub_tabs_->addTab(pf, tr("Pro Forma"));
 
     // ── Sources & Uses ──
     auto* su = new QWidget(this);
@@ -744,7 +744,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     su_vl->addWidget(su_run);
     su_vl->addStretch();
-    sub_tabs_->addTab(su, "Sources & Uses");
+    sub_tabs_->addTab(su, tr("Sources & Uses"));
 
     // ── Contribution Analysis ──
     auto* contrib = new QWidget(this);
@@ -752,7 +752,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     contrib_vl->setContentsMargins(12, 12, 12, 12);
     contrib_vl->setSpacing(8);
 
-    auto* contrib_hint = new QLabel("Calculates each party's % contribution to the combined entity.", contrib);
+    auto* contrib_hint = new QLabel(tr("Calculates each party's % contribution to the combined entity."), contrib);
     contrib_hint->setWordWrap(true);
     contrib_hint->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                     .arg(ui::colors::TEXT_SECONDARY())
@@ -782,7 +782,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     contrib_vl->addWidget(contrib_run);
     contrib_vl->addStretch();
-    sub_tabs_->addTab(contrib, "Contribution");
+    sub_tabs_->addTab(contrib, tr("Contribution"));
 
     // ── Payment Structure ──
     auto* pay_str = new QWidget(this);
@@ -818,7 +818,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     pay_vl->addWidget(pay_run);
     pay_vl->addStretch();
-    sub_tabs_->addTab(pay_str, "Payment");
+    sub_tabs_->addTab(pay_str, tr("Payment"));
 
     // ── Earnout ──
     auto* earn = new QWidget(this);
@@ -854,7 +854,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     earn_vl->addWidget(earn_run);
     earn_vl->addStretch();
-    sub_tabs_->addTab(earn, "Earnout");
+    sub_tabs_->addTab(earn, tr("Earnout"));
 
     // ── Exchange Ratio ──
     auto* exch = new QWidget(this);
@@ -885,7 +885,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     exch_vl->addWidget(exch_run);
     exch_vl->addStretch();
-    sub_tabs_->addTab(exch, "Exchange Ratio");
+    sub_tabs_->addTab(exch, tr("Exchange Ratio"));
 
     // ── Collar Mechanism ──
     auto* collar = new QWidget(this);
@@ -916,7 +916,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     collar_vl->addWidget(collar_run);
     collar_vl->addStretch();
-    sub_tabs_->addTab(collar, "Collar");
+    sub_tabs_->addTab(collar, tr("Collar"));
 
     // ── CVR (Contingent Value Rights) ──
     auto* cvr = new QWidget(this);
@@ -958,7 +958,7 @@ QWidget* MAModulePanel::build_merger_panel() {
     });
     cvr_vl->addWidget(cvr_run);
     cvr_vl->addStretch();
-    sub_tabs_->addTab(cvr, "CVR");
+    sub_tabs_->addTab(cvr, tr("CVR"));
 
     vl->addWidget(sub_tabs_);
 
@@ -989,7 +989,7 @@ QWidget* MAModulePanel::build_deals_panel() {
 
     auto* scan_days = make_int_spin(1, 365, 30, ctl);
     int_inputs_["scan_days"] = scan_days;
-    ctl_hl->addWidget(new QLabel("Scan Days:", ctl));
+    ctl_hl->addWidget(new QLabel(tr("Scan Days:"), ctl));
     ctl_hl->addWidget(scan_days);
 
     auto* scan_btn = make_run_button("SCAN SEC FILINGS", ctl);
@@ -1078,7 +1078,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     });
     bvl->addWidget(berkus_run);
     bvl->addStretch();
-    sub_tabs_->addTab(berkus, "Berkus");
+    sub_tabs_->addTab(berkus, tr("Berkus"));
 
     // ── Scorecard ──
     auto* sc = new QWidget(this);
@@ -1117,7 +1117,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     });
     scvl->addWidget(sc_run);
     scvl->addStretch();
-    sub_tabs_->addTab(sc, "Scorecard");
+    sub_tabs_->addTab(sc, tr("Scorecard"));
 
     // ── VC Method ──
     auto* vc = new QWidget(this);
@@ -1153,7 +1153,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     });
     vc_vl->addWidget(vc_run);
     vc_vl->addStretch();
-    sub_tabs_->addTab(vc, "VC Method");
+    sub_tabs_->addTab(vc, tr("VC Method"));
 
     // ── First Chicago ──
     auto* fc = new QWidget(this);
@@ -1197,7 +1197,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     });
     fc_vl->addWidget(fc_run);
     fc_vl->addStretch();
-    sub_tabs_->addTab(fc, "First Chicago");
+    sub_tabs_->addTab(fc, tr("First Chicago"));
 
     // ── Risk Factor ──
     auto* rf = new QWidget(this);
@@ -1231,7 +1231,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     });
     rf_vl->addWidget(rf_run);
     rf_vl->addStretch();
-    sub_tabs_->addTab(rf, "Risk Factor");
+    sub_tabs_->addTab(rf, tr("Risk Factor"));
 
     // ── Comprehensive ──
     auto* comp = new QWidget(this);
@@ -1239,7 +1239,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     comp_vl->setContentsMargins(12, 12, 12, 12);
     comp_vl->setSpacing(8);
 
-    auto* comp_hint = new QLabel("Runs all 5 methods with current inputs and returns a consensus range.", comp);
+    auto* comp_hint = new QLabel(tr("Runs all 5 methods with current inputs and returns a consensus range."), comp);
     comp_hint->setWordWrap(true);
     comp_hint->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                  .arg(ui::colors::TEXT_SECONDARY())
@@ -1265,7 +1265,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     });
     comp_vl->addWidget(comp_run);
     comp_vl->addStretch();
-    sub_tabs_->addTab(comp, "All Methods");
+    sub_tabs_->addTab(comp, tr("All Methods"));
 
     vl->addWidget(sub_tabs_);
 
@@ -1334,7 +1334,7 @@ QWidget* MAModulePanel::build_fairness_panel() {
     });
     fa_vl->addWidget(fa_run);
     fa_vl->addStretch();
-    sub_tabs_->addTab(fa, "Fairness Analysis");
+    sub_tabs_->addTab(fa, tr("Fairness Analysis"));
 
     // ── Premium Analysis ──
     auto* pa = new QWidget(this);
@@ -1370,7 +1370,7 @@ QWidget* MAModulePanel::build_fairness_panel() {
     });
     pa_vl->addWidget(pa_run);
     pa_vl->addStretch();
-    sub_tabs_->addTab(pa, "Premium Analysis");
+    sub_tabs_->addTab(pa, tr("Premium Analysis"));
 
     // ── Process Quality ──
     auto* pq = new QWidget(this);
@@ -1398,7 +1398,7 @@ QWidget* MAModulePanel::build_fairness_panel() {
     });
     pq_vl->addWidget(pq_run);
     pq_vl->addStretch();
-    sub_tabs_->addTab(pq, "Process Quality");
+    sub_tabs_->addTab(pq, tr("Process Quality"));
 
     vl->addWidget(sub_tabs_);
 
@@ -1484,7 +1484,7 @@ QWidget* MAModulePanel::build_industry_panel() {
     });
     tech_vl->addWidget(tech_run);
     tech_vl->addStretch();
-    sub_tabs_->addTab(tech, "Technology");
+    sub_tabs_->addTab(tech, tr("Technology"));
 
     // ── Healthcare ──
     auto* hc = new QWidget(this);
@@ -1537,7 +1537,7 @@ QWidget* MAModulePanel::build_industry_panel() {
     });
     hc_vl->addWidget(hc_run);
     hc_vl->addStretch();
-    sub_tabs_->addTab(hc, "Healthcare");
+    sub_tabs_->addTab(hc, tr("Healthcare"));
 
     // ── Financial Services ──
     auto* fs = new QWidget(this);
@@ -1595,7 +1595,7 @@ QWidget* MAModulePanel::build_industry_panel() {
     });
     fs_vl->addWidget(fs_run);
     fs_vl->addStretch();
-    sub_tabs_->addTab(fs, "Financial Services");
+    sub_tabs_->addTab(fs, tr("Financial Services"));
 
     vl->addWidget(sub_tabs_);
 
@@ -1670,7 +1670,7 @@ QWidget* MAModulePanel::build_advanced_panel() {
     });
     mc_vl->addWidget(mc_run);
     mc_vl->addStretch();
-    sub_tabs_->addTab(mc, "Monte Carlo");
+    sub_tabs_->addTab(mc, tr("Monte Carlo"));
 
     // ── Regression ──
     auto* reg = new QWidget(this);
@@ -1714,7 +1714,7 @@ QWidget* MAModulePanel::build_advanced_panel() {
     });
     reg_vl->addWidget(reg_run);
     reg_vl->addStretch();
-    sub_tabs_->addTab(reg, "Regression");
+    sub_tabs_->addTab(reg, tr("Regression"));
 
     vl->addWidget(sub_tabs_);
 
@@ -1778,7 +1778,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     });
     cmp_vl->addWidget(cmp_run);
     cmp_vl->addStretch();
-    sub_tabs_->addTab(cmp, "Compare");
+    sub_tabs_->addTab(cmp, tr("Compare"));
 
     // ── Rank ──
     auto* rank = new QWidget(this);
@@ -1813,7 +1813,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     });
     rank_vl->addWidget(rank_run);
     rank_vl->addStretch();
-    sub_tabs_->addTab(rank, "Rank");
+    sub_tabs_->addTab(rank, tr("Rank"));
 
     // ── Benchmark ──
     auto* bench = new QWidget(this);
@@ -1842,7 +1842,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     });
     bench_vl->addWidget(bench_run);
     bench_vl->addStretch();
-    sub_tabs_->addTab(bench, "Benchmark");
+    sub_tabs_->addTab(bench, tr("Benchmark"));
 
     // ── Payment Structure ──
     auto* pay = new QWidget(this);
@@ -1866,7 +1866,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     });
     pay_vl->addWidget(pay_run);
     pay_vl->addStretch();
-    sub_tabs_->addTab(pay, "Payment");
+    sub_tabs_->addTab(pay, tr("Payment"));
 
     // ── Industry ──
     auto* ind = new QWidget(this);
@@ -1890,7 +1890,7 @@ QWidget* MAModulePanel::build_comparison_panel() {
     });
     ind_vl->addWidget(ind_run);
     ind_vl->addStretch();
-    sub_tabs_->addTab(ind, "Industry");
+    sub_tabs_->addTab(ind, tr("Industry"));
 
     vl->addWidget(sub_tabs_);
 
@@ -2142,7 +2142,7 @@ void MAModulePanel::display_result(const QJsonObject& payload) {
     }
 
     // 3. Raw JSON viewer (collapsed)
-    auto* raw_btn = new QPushButton("Show Raw JSON", this);
+    auto* raw_btn = new QPushButton(tr("Show Raw JSON"), this);
     raw_btn->setCursor(Qt::PointingHandCursor);
     raw_btn->setStyleSheet(QString("QPushButton { color:%1; font-size:%2px; font-family:%3;"
                                    "background:transparent; border:1px solid %4; padding:4px 12px; }"

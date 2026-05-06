@@ -296,7 +296,7 @@ void RelationshipMapScreen::build_ui() {
 
     shl->addStretch();
 
-    status_brand_ = new QLabel("FINCEPT TERMINAL");
+    status_brand_ = new QLabel(tr("FINCEPT TERMINAL"));
     status_brand_->setStyleSheet(QString("color: %1; font-size: 9px; font-weight: 700; %2").arg(colors::AMBER(), MF()));
     shl->addWidget(status_brand_);
 
@@ -376,7 +376,7 @@ QWidget* RelationshipMapScreen::build_detail_panel() {
     header->addWidget(detail_title_);
     header->addStretch();
 
-    auto* close_btn = new QPushButton("X");
+    auto* close_btn = new QPushButton(tr("X"));
     close_btn->setFixedSize(20, 20);
     close_btn->setCursor(Qt::PointingHandCursor);
     close_btn->setStyleSheet(QString("QPushButton { color: %1; background: transparent; border: none; "

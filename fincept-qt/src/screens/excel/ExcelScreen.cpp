@@ -81,7 +81,7 @@ void ExcelScreen::build_ui() {
 
     // Add initial sheet
     auto* sheet1 = new SpreadsheetWidget("Sheet1", 100, 26, sheet_tabs_);
-    sheet_tabs_->addTab(sheet1, "Sheet1");
+    sheet_tabs_->addTab(sheet1, tr("Sheet1"));
 
     connect(sheet_tabs_, &QTabWidget::currentChanged, this, &ExcelScreen::on_tab_changed);
 
@@ -118,7 +118,7 @@ QWidget* ExcelScreen::build_toolbar() {
     hl->setSpacing(4);
 
     // Title
-    auto* title = new QLabel("EXCEL SPREADSHEET", bar);
+    auto* title = new QLabel(tr("EXCEL SPREADSHEET"), bar);
     title->setStyleSheet(QString("color:%1; font-family:%2; font-size:11px; font-weight:700; margin-right:12px;")
                              .arg(kAccent(), fonts::DATA_FAMILY));
     hl->addWidget(title);

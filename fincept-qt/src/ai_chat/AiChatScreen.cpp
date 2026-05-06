@@ -248,7 +248,7 @@ void AiChatScreen::build_sidebar() {
     icon->setStyleSheet(QString("color:%1;font-size:22px;").arg(col::TEXT_PRIMARY()));
     hhl->addWidget(icon);
 
-    auto* title = new QLabel("Fincept AI");
+    auto* title = new QLabel(tr("Fincept AI"));
     title->setStyleSheet(QString("color:%1;font-size:%2px;font-weight:700;").arg(col::TEXT_PRIMARY()).arg(fnt::BODY));
     hhl->addWidget(title, 1);
 
@@ -312,7 +312,7 @@ void AiChatScreen::build_sidebar() {
     al->setContentsMargins(10, 0, 10, 0);
     al->setSpacing(6);
 
-    rename_btn_ = new QPushButton("Rename");
+    rename_btn_ = new QPushButton(tr("Rename"));
     rename_btn_->setEnabled(false);
     rename_btn_->setFixedHeight(26);
     rename_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -327,7 +327,7 @@ void AiChatScreen::build_sidebar() {
 
     al->addStretch();
 
-    delete_btn_ = new QPushButton("Delete");
+    delete_btn_ = new QPushButton(tr("Delete"));
     delete_btn_->setEnabled(false);
     delete_btn_->setFixedHeight(26);
     delete_btn_->setStyleSheet(
@@ -350,11 +350,11 @@ void AiChatScreen::build_sidebar() {
     fl->setContentsMargins(14, 7, 14, 7);
     fl->setSpacing(2);
 
-    provider_lbl_ = new QLabel("No provider");
+    provider_lbl_ = new QLabel(tr("No provider"));
     provider_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;font-weight:600;").arg(col::AMBER()).arg(fnt::SMALL));
     provider_lbl_->setToolTip(tr("Active LLM Provider"));
 
-    model_lbl_ = new QLabel("No model");
+    model_lbl_ = new QLabel(tr("No model"));
     model_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;").arg(col::TEXT_SECONDARY()).arg(fnt::TINY));
     model_lbl_->setToolTip(tr("Active Model — change in Settings > LLM Configuration"));
 
@@ -418,7 +418,7 @@ QWidget* AiChatScreen::build_header_bar() {
     hl->addWidget(hdr_status_dot_);
 
     // Session name
-    hdr_session_lbl_ = new QLabel("New Conversation");
+    hdr_session_lbl_ = new QLabel(tr("New Conversation"));
     hdr_session_lbl_->setStyleSheet(
         QString("color:%1;font-size:%2px;font-weight:600;").arg(col::TEXT_PRIMARY()).arg(fnt::BODY));
     hl->addWidget(hdr_session_lbl_);
@@ -438,7 +438,7 @@ QWidget* AiChatScreen::build_header_bar() {
     hl->addWidget(div);
 
     // Active model pill
-    hdr_model_lbl_ = new QLabel("No model");
+    hdr_model_lbl_ = new QLabel(tr("No model"));
     hdr_model_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;background:%3;border:1px solid %4;"
                                           "border-radius:0px;padding:2px 8px;")
                                       .arg(col::TEXT_SECONDARY())
@@ -448,7 +448,7 @@ QWidget* AiChatScreen::build_header_bar() {
     hl->addWidget(hdr_model_lbl_);
 
     // Status text
-    hdr_status_lbl_ = new QLabel("Ready");
+    hdr_status_lbl_ = new QLabel(tr("Ready"));
     hdr_status_lbl_->setFixedWidth(64);
     hdr_status_lbl_->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     hdr_status_lbl_->setStyleSheet(
@@ -467,7 +467,7 @@ QWidget* AiChatScreen::build_typing_indicator() {
     auto* hl = new QHBoxLayout(typing_indicator_);
     hl->setContentsMargins(36, 0, 0, 0);
 
-    typing_dots_lbl_ = new QLabel("AI is thinking");
+    typing_dots_lbl_ = new QLabel(tr("AI is thinking"));
     typing_dots_lbl_->setStyleSheet(
         QString("color:%1;font-size:%2px;font-style:italic;").arg(col::TEXT_SECONDARY()).arg(fnt::SMALL));
     hl->addWidget(typing_dots_lbl_);
@@ -486,7 +486,7 @@ QWidget* AiChatScreen::build_welcome() {
     vl->setContentsMargins(48, 36, 48, 28);
     vl->setSpacing(20);
 
-    auto* heading = new QLabel("How can I help you?");
+    auto* heading = new QLabel(tr("How can I help you?"));
     heading->setAlignment(Qt::AlignCenter);
     heading->setStyleSheet(
         QString("color:%1;font-size:%2px;font-weight:700;").arg(col::TEXT_PRIMARY()).arg(fnt::TITLE));
@@ -604,7 +604,7 @@ QWidget* AiChatScreen::build_input_area() {
                                      .arg(col::AMBER(), "font-family:'Consolas',monospace;"));
     hl->addWidget(attach_badge_);
 
-    send_btn_ = new QPushButton("Send  ↑");
+    send_btn_ = new QPushButton(tr("Send  ↑"));
     send_btn_->setFixedSize(82, 44);
     send_btn_->setCursor(Qt::PointingHandCursor);
     send_btn_->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:none;border-radius:0px;"
@@ -1067,7 +1067,7 @@ void AiChatScreen::add_message_bubble(const QString& role, const QString& conten
 
     if (!is_user && !is_system) {
         fhl->addStretch();
-        auto* copy_btn = new QPushButton("Copy");
+        auto* copy_btn = new QPushButton(tr("Copy"));
         copy_btn->setFixedHeight(20);
         copy_btn->setCursor(Qt::PointingHandCursor);
         copy_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -1080,7 +1080,7 @@ void AiChatScreen::add_message_bubble(const QString& role, const QString& conten
         connect(copy_btn, &QPushButton::clicked, this, [plain, copy_btn]() {
             QApplication::clipboard()->setText(plain);
             copy_btn->setText(tr("Copied!"));
-            QTimer::singleShot(1500, copy_btn, [copy_btn]() { copy_btn->setText("Copy"); });
+            QTimer::singleShot(1500, copy_btn, [copy_btn]() { copy_btn->setText(tr("Copy")); });
         });
         fhl->addWidget(copy_btn);
     }
@@ -1109,7 +1109,7 @@ QLabel* AiChatScreen::add_streaming_bubble() {
     cvl->setContentsMargins(0, 0, 0, 0);
     cvl->setSpacing(4);
 
-    auto* role_lbl = new QLabel("AI");
+    auto* role_lbl = new QLabel(tr("AI"));
     role_lbl->setAlignment(Qt::AlignLeft);
     role_lbl->setStyleSheet(
         QString("color:%1;font-size:%2px;font-weight:600;background:transparent;").arg(col::AMBER()).arg(fnt::TINY));
@@ -1141,7 +1141,7 @@ QLabel* AiChatScreen::add_streaming_bubble() {
     cvl->addWidget(bubble);
 
     // Copy button — hidden during streaming, shown when done
-    auto* copy_btn = new QPushButton("Copy");
+    auto* copy_btn = new QPushButton(tr("Copy"));
     copy_btn->setFixedHeight(20);
     copy_btn->setCursor(Qt::PointingHandCursor);
     copy_btn->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid %2;"
@@ -1154,7 +1154,7 @@ QLabel* AiChatScreen::add_streaming_bubble() {
     connect(copy_btn, &QPushButton::clicked, this, [body, copy_btn]() {
         QApplication::clipboard()->setText(body->property("acc").toString());
         copy_btn->setText(tr("Copied!"));
-        QTimer::singleShot(1500, copy_btn, [copy_btn]() { copy_btn->setText("Copy"); });
+        QTimer::singleShot(1500, copy_btn, [copy_btn]() { copy_btn->setText(tr("Copy")); });
     });
     auto* footer = new QWidget;
     footer->setStyleSheet("background:transparent;");

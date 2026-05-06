@@ -154,8 +154,8 @@ void LlmConfigSection::build_ui() {
                                ";}"
                                "QTabBar::tab:hover{color:" +
                                QString(ui::colors::TEXT_PRIMARY()) + ";}");
-    tab_widget_->addTab(build_providers_tab(), "PROVIDERS");
-    tab_widget_->addTab(build_profiles_tab(), "PROFILES");
+    tab_widget_->addTab(build_providers_tab(), tr("PROVIDERS"));
+    tab_widget_->addTab(build_profiles_tab(), tr("PROFILES"));
     root->addWidget(tab_widget_, 1);
 }
 

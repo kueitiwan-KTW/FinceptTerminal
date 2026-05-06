@@ -79,9 +79,9 @@ void CustomIndexView::build_ui() {
                              .arg(ui::colors::BG_BASE(), ui::colors::BG_SURFACE(), ui::colors::TEXT_SECONDARY(),
                                   ui::colors::AMBER(), ui::colors::TEXT_PRIMARY()));
 
-    tabs_->addTab(build_create_panel(), "CREATE INDEX");
-    tabs_->addTab(build_index_list_panel(), "MY INDICES");
-    tabs_->addTab(build_performance_panel(), "PERFORMANCE");
+    tabs_->addTab(build_create_panel(), tr("CREATE INDEX"));
+    tabs_->addTab(build_index_list_panel(), tr("MY INDICES"));
+    tabs_->addTab(build_performance_panel(), tr("PERFORMANCE"));
 
     layout->addWidget(tabs_);
 }
@@ -92,7 +92,7 @@ QWidget* CustomIndexView::build_create_panel() {
     layout->setContentsMargins(16, 12, 16, 12);
     layout->setSpacing(10);
 
-    auto* title = new QLabel("CREATE CUSTOM INDEX");
+    auto* title = new QLabel(tr("CREATE CUSTOM INDEX"));
     title->setStyleSheet(
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -131,7 +131,7 @@ QWidget* CustomIndexView::build_create_panel() {
 
     config->addStretch();
 
-    create_btn_ = new QPushButton("CREATE INDEX");
+    create_btn_ = new QPushButton(tr("CREATE INDEX"));
     create_btn_->setFixedHeight(26);
     create_btn_->setCursor(Qt::PointingHandCursor);
     create_btn_->setStyleSheet(QString("QPushButton { background:%1; color:%3; border:none;"
@@ -192,7 +192,7 @@ QWidget* CustomIndexView::build_index_list_panel() {
     header_row->addWidget(title);
     header_row->addStretch();
 
-    delete_btn_ = new QPushButton("DELETE SELECTED");
+    delete_btn_ = new QPushButton(tr("DELETE SELECTED"));
     delete_btn_->setFixedHeight(26);
     delete_btn_->setCursor(Qt::PointingHandCursor);
     delete_btn_->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"

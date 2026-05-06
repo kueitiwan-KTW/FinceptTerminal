@@ -296,20 +296,21 @@ void LocalWalletBridge::write_response(QTcpSocket* socket, int status,
     default: status_text = "Error"; break;
     }
     QByteArray response;
-    response.append(tr("HTTP/1.1 ") + QByteArray::number(status) + " " + status_text + "\r\n");
-    response.append(tr("Content-Type: ") + content_type + "\r\n");
-    response.append(tr("Content-Length: ") + QByteArray::number(body.size()) + "\r\n");
-    response.append(tr("Connection: close\r\n"));
-    response.append(tr("Cache-Control: no-store\r\n"));
-    response.append(tr("X-Content-Type-Options: nosniff\r\n"));
-    response.append(tr("Referrer-Policy: no-referrer\r\n"));
+    // HTTP 協議字串不應翻譯，直接用 QByteArray
+    response.append("HTTP/1.1 " + QByteArray::number(status) + " " + status_text + "\r\n");
+    response.append("Content-Type: " + content_type + "\r\n");
+    response.append("Content-Length: " + QByteArray::number(body.size()) + "\r\n");
+    response.append("Connection: close\r\n");
+    response.append("Cache-Control: no-store\r\n");
+    response.append("X-Content-Type-Options: nosniff\r\n");
+    response.append("Referrer-Policy: no-referrer\r\n");
     // Same-origin in practice (page + fetch both served by us), but some
     // browsers (and some Phantom builds) trip on missing CORS for any
     // localhost POST. Echoing the page's own origin keeps it safe.
-    response.append(tr("Access-Control-Allow-Origin: *\r\n"));
-    response.append(tr("Access-Control-Allow-Headers: Content-Type\r\n"));
-    response.append(tr("Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n"));
-    response.append(tr("\r\n"));
+    response.append("Access-Control-Allow-Origin: *\r\n");
+    response.append("Access-Control-Allow-Headers: Content-Type\r\n");
+    response.append("Access-Control-Allow-Methods: GET, POST, OPTIONS\r\n");
+    response.append("\r\n");
     response.append(body);
     socket->write(response);
     socket->flush();

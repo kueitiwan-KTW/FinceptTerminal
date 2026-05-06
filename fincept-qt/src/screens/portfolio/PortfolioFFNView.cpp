@@ -176,7 +176,7 @@ void PortfolioFFNView::build_ui() {
         overview_table_->setColumnWidth(1, 140);
         vl->addWidget(overview_table_, 1);
 
-        tabs_->addTab(w, "OVERVIEW");
+        tabs_->addTab(w, tr("OVERVIEW"));
     }
 
     // ── BENCHMARK tab ────────────────────────────────────────────────────────
@@ -205,7 +205,7 @@ void PortfolioFFNView::build_ui() {
         vl->addWidget(benchmark_info_label_);
 
         vl->addStretch();
-        tabs_->addTab(benchmark_panel_, "BENCHMARK");
+        tabs_->addTab(benchmark_panel_, tr("BENCHMARK"));
     }
 
     // ── OPTIMISATION tab ─────────────────────────────────────────────────────
@@ -257,7 +257,7 @@ void PortfolioFFNView::build_ui() {
         opt_stack_->addWidget(tables_w);
         vl->addWidget(opt_stack_, 1);
 
-        tabs_->addTab(optimization_panel_, "OPTIMISATION");
+        tabs_->addTab(optimization_panel_, tr("OPTIMISATION"));
     }
 
     // ── REBASED tab ───────────────────────────────────────────────────────────
@@ -282,7 +282,7 @@ void PortfolioFFNView::build_ui() {
         rebased_stack_->addWidget(rebased_chart_view_);
 
         vl->addWidget(rebased_stack_, 1);
-        tabs_->addTab(rebased_panel_, "REBASED");
+        tabs_->addTab(rebased_panel_, tr("REBASED"));
     }
 
     // ── DRAWDOWNS tab ─────────────────────────────────────────────────────────
@@ -305,7 +305,7 @@ void PortfolioFFNView::build_ui() {
         drawdowns_stack_->addWidget(drawdowns_chart_view_);
 
         vl->addWidget(drawdowns_stack_, 1);
-        tabs_->addTab(drawdowns_panel_, "DRAWDOWNS");
+        tabs_->addTab(drawdowns_panel_, tr("DRAWDOWNS"));
     }
 
     // ── ROLLING CORRELATIONS tab ──────────────────────────────────────────────
@@ -328,7 +328,7 @@ void PortfolioFFNView::build_ui() {
         rolling_stack_->addWidget(rolling_chart_view_);
 
         vl->addWidget(rolling_stack_, 1);
-        tabs_->addTab(rolling_panel_, "ROLLING");
+        tabs_->addTab(rolling_panel_, tr("ROLLING"));
     }
 
     layout->addWidget(tabs_);

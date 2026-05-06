@@ -182,17 +182,17 @@ void PythonEnvSection::build_ui() {
 
     thl->addStretch();
 
-    refresh_btn_ = new QPushButton("Refresh", this);
+    refresh_btn_ = new QPushButton(tr("Refresh"), this);
     refresh_btn_->setStyleSheet(btn_secondary_ss());
     refresh_btn_->setCursor(Qt::PointingHandCursor);
     thl->addWidget(refresh_btn_);
 
-    install_missing_btn_ = new QPushButton("Install Missing", this);
+    install_missing_btn_ = new QPushButton(tr("Install Missing"), this);
     install_missing_btn_->setStyleSheet(btn_secondary_ss());
     install_missing_btn_->setCursor(Qt::PointingHandCursor);
     thl->addWidget(install_missing_btn_);
 
-    upgrade_all_btn_ = new QPushButton("Upgrade All", this);
+    upgrade_all_btn_ = new QPushButton(tr("Upgrade All"), this);
     upgrade_all_btn_->setStyleSheet(btn_secondary_ss());
     upgrade_all_btn_->setCursor(Qt::PointingHandCursor);
     thl->addWidget(upgrade_all_btn_);
@@ -231,7 +231,7 @@ void PythonEnvSection::build_ui() {
     bhl->setContentsMargins(0, 0, 0, 0);
     bhl->setSpacing(10);
 
-    batch_action_btn_ = new QPushButton("Install / Upgrade Selected", this);
+    batch_action_btn_ = new QPushButton(tr("Install / Upgrade Selected"), this);
     batch_action_btn_->setStyleSheet(btn_primary_ss());
     batch_action_btn_->setCursor(Qt::PointingHandCursor);
     bhl->addWidget(batch_action_btn_);

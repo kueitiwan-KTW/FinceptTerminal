@@ -142,7 +142,7 @@ void SurfaceControlPanel::setup_ui() {
     outer->setSpacing(0);
 
     // ── Header ─────────────────────────────────────────────────────────────
-    auto* header = new QLabel("CONTROL PANEL", this);
+    auto* header = new QLabel(tr("CONTROL PANEL"), this);
     header->setStyleSheet(QString("background:%1; color:%2; font-size:10px; font-weight:bold; "
                                   "padding:8px 10px; border-bottom:1px solid %3;")
                               .arg(colors::BG_SURFACE())
@@ -159,7 +159,7 @@ void SurfaceControlPanel::setup_ui() {
     prov_layout->setContentsMargins(8, 6, 8, 6);
     prov_layout->setSpacing(3);
 
-    auto* prov_title = new QLabel("DATA PROVIDERS", providers_box_);
+    auto* prov_title = new QLabel(tr("DATA PROVIDERS"), providers_box_);
     prov_title->setStyleSheet(
         QString("color:%1; font-size:9px; font-weight:bold; letter-spacing:0.5px;")
             .arg(colors::TEXT_DIM()));
@@ -177,7 +177,7 @@ void SurfaceControlPanel::setup_ui() {
                                     .arg(colors::TEXT_PRIMARY()));
         name_lbl->setMinimumWidth(80);
         row->addWidget(name_lbl);
-        auto* state_lbl = new QLabel("not configured", providers_box_);
+        auto* state_lbl = new QLabel(tr("not configured"), providers_box_);
         state_lbl->setStyleSheet(QString("color:%1; font-size:9px;").arg(colors::TEXT_DIM()));
         row->addWidget(state_lbl, 1);
         auto* detail_lbl = new QLabel("", providers_box_);
@@ -223,7 +223,7 @@ void SurfaceControlPanel::setup_ui() {
                               .arg(colors::BORDER_DIM()));
     auto* footer_layout = new QVBoxLayout(footer);
     footer_layout->setContentsMargins(8, 8, 8, 8);
-    fetch_btn_ = new QPushButton("FETCH", footer);
+    fetch_btn_ = new QPushButton(tr("FETCH"), footer);
     fetch_btn_->setStyleSheet(fetch_btn_qss(true));
     fetch_btn_->setMinimumHeight(34);
     connect(fetch_btn_, &QPushButton::clicked, this, &SurfaceControlPanel::on_fetch_clicked);
@@ -266,7 +266,7 @@ QGroupBox* SurfaceControlPanel::build_asset_section() {
 
     auto* row = new QHBoxLayout();
     row->setSpacing(6);
-    auto* ds_lbl = new QLabel("Dataset:", gb);
+    auto* ds_lbl = new QLabel(tr("Dataset:"), gb);
     ds_lbl->setStyleSheet(QString("color:%1; font-size:9px;").arg(colors::TEXT_SECONDARY()));
     row->addWidget(ds_lbl);
     dataset_combo_ = new QComboBox(gb);
@@ -276,11 +276,11 @@ QGroupBox* SurfaceControlPanel::build_asset_section() {
     row->addWidget(dataset_combo_, 1);
     l->addLayout(row);
 
-    spot_label_ = new QLabel("Spot: —", gb);
+    spot_label_ = new QLabel(tr("Spot: —"), gb);
     spot_label_->setStyleSheet(QString("color:%1; font-size:9px;").arg(colors::TEXT_DIM()));
     l->addWidget(spot_label_);
 
-    tier_badge_ = new QLabel("DEMO", gb);
+    tier_badge_ = new QLabel(tr("DEMO"), gb);
     tier_badge_->setAlignment(Qt::AlignCenter);
     tier_badge_->setStyleSheet(
         QString("background:%1; color:#000; font-size:9px; font-weight:bold; "
@@ -381,7 +381,7 @@ QGroupBox* SurfaceControlPanel::build_options_section() {
 
     auto* iv_row = new QHBoxLayout();
     iv_row->setSpacing(6);
-    auto* iv_lbl = new QLabel("IV method:", gb);
+    auto* iv_lbl = new QLabel(tr("IV method:"), gb);
     iv_lbl->setStyleSheet(QString("color:%1; font-size:9px;").arg(colors::TEXT_SECONDARY()));
     iv_lbl->setMinimumWidth(110);
     iv_row->addWidget(iv_lbl);

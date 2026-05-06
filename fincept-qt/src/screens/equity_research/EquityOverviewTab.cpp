@@ -67,7 +67,7 @@ QLabel* add_row(QFrame* panel, const QString& key, const char* val_color) {
                          .arg(ui::colors::TEXT_SECONDARY())
                          .arg(FONT_KEY));
 
-    auto* v = new QLabel(tr("\xe2\x80\x94"));
+    auto* v = new QLabel(QStringLiteral("\xe2\x80\x94"));
     v->setStyleSheet(QString("color:%1;font-size:%2px;font-weight:600;background:transparent;border:0;")
                          .arg(val_color)
                          .arg(FONT_VAL));

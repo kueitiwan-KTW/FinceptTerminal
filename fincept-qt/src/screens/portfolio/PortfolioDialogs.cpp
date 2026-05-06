@@ -50,7 +50,7 @@ CreatePortfolioDialog::CreatePortfolioDialog(QWidget* parent) : QDialog(parent) 
     layout->setContentsMargins(20, 16, 20, 16);
 
     // Header
-    auto* title = new QLabel("CREATE NEW PORTFOLIO");
+    auto* title = new QLabel(tr("CREATE NEW PORTFOLIO"));
     title->setStyleSheet(
         QString("color:%1; font-size:13px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
@@ -95,7 +95,7 @@ CreatePortfolioDialog::CreatePortfolioDialog(QWidget* parent) : QDialog(parent) 
     connect(cancel_btn, &QPushButton::clicked, this, &QDialog::reject);
     btn_layout->addWidget(cancel_btn);
 
-    auto* create_btn = new QPushButton("CREATE");
+    auto* create_btn = new QPushButton(tr("CREATE"));
     create_btn->setFixedSize(90, 30);
     create_btn->setCursor(Qt::PointingHandCursor);
     create_btn->setStyleSheet(QString("QPushButton { background:%1; color:%3; border:none;"
@@ -161,7 +161,7 @@ ConfirmDeleteDialog::ConfirmDeleteDialog(const QString& portfolio_name, QWidget*
     connect(cancel_btn, &QPushButton::clicked, this, &QDialog::reject);
     btn_layout->addWidget(cancel_btn);
 
-    auto* delete_btn = new QPushButton("DELETE");
+    auto* delete_btn = new QPushButton(tr("DELETE"));
     delete_btn->setFixedSize(90, 30);
     delete_btn->setCursor(Qt::PointingHandCursor);
     delete_btn->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"

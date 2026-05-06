@@ -135,7 +135,7 @@ void ConflictMonitorPanel::build_ui() {
     svl->setContentsMargins(12, 12, 12, 12);
     svl->setSpacing(8);
 
-    auto* stats_title = new QLabel("TOP CATEGORIES", sidebar);
+    auto* stats_title = new QLabel(tr("TOP CATEGORIES"), sidebar);
     stats_title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3;"
                                        "letter-spacing:1px; padding-bottom:6px; border-bottom:1px solid %4;")
                                    .arg(ui::colors::NEGATIVE())
@@ -150,7 +150,7 @@ void ConflictMonitorPanel::build_ui() {
     stats_layout_->setSpacing(3);
     svl->addWidget(stats_container);
 
-    stats_label_ = new QLabel("No data", sidebar);
+    stats_label_ = new QLabel(tr("No data"), sidebar);
     stats_label_->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                     .arg(ui::colors::TEXT_TERTIARY())
                                     .arg(ui::fonts::SMALL)
@@ -175,7 +175,7 @@ void ConflictMonitorPanel::build_ui() {
     dvl->setContentsMargins(10, 10, 10, 10);
     dvl->setSpacing(6);
 
-    auto* detail_title = new QLabel("SELECTED EVENT", detail_panel_);
+    auto* detail_title = new QLabel(tr("SELECTED EVENT"), detail_panel_);
     detail_title->setStyleSheet(
         QString("color:%1; font-size:%2px; font-weight:700; font-family:%3; letter-spacing:1px;")
             .arg(ui::colors::NEGATIVE())

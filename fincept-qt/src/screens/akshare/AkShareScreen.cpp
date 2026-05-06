@@ -402,7 +402,7 @@ QWidget* AkShareScreen::create_data_panel() {
     record_count_->setObjectName("akRecordCount");
     record_count_->hide();
 
-    view_toggle_btn_ = new QPushButton("JSON");
+    view_toggle_btn_ = new QPushButton(tr("JSON"));
     view_toggle_btn_->setObjectName("akViewToggle");
     view_toggle_btn_->setCursor(Qt::PointingHandCursor);
     view_toggle_btn_->setFixedWidth(50);

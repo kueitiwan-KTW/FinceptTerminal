@@ -80,7 +80,7 @@ QWidget* AIQuantLabScreen::build_top_bar() {
     hl->setSpacing(8);
 
     // Brand chip
-    auto* brand = new QLabel("AI QUANT LAB", top_bar_);
+    auto* brand = new QLabel(tr("AI QUANT LAB"), top_bar_);
     brand->setObjectName("aqBrand");
     hl->addWidget(brand);
 
@@ -143,7 +143,7 @@ QWidget* AIQuantLabScreen::build_left_sidebar() {
     header->setFixedHeight(36);
     auto* hhl = new QHBoxLayout(header);
     hhl->setContentsMargins(12, 0, 12, 0);
-    sidebar_title_ = new QLabel("MODULES", header);
+    sidebar_title_ = new QLabel(tr("MODULES"), header);
     sidebar_title_->setObjectName("aqSidebarTitle");
     hhl->addWidget(sidebar_title_);
     hhl->addStretch();
@@ -199,7 +199,7 @@ QWidget* AIQuantLabScreen::build_right_sidebar() {
     vl->setContentsMargins(12, 12, 12, 12);
     vl->setSpacing(10);
 
-    auto* info_title = new QLabel("MODULE INFO", right_panel_);
+    auto* info_title = new QLabel(tr("MODULE INFO"), right_panel_);
     info_title->setObjectName("aqInfoTitle");
     vl->addWidget(info_title);
 
@@ -227,7 +227,7 @@ QWidget* AIQuantLabScreen::build_right_sidebar() {
     svl->setContentsMargins(10, 10, 10, 10);
     svl->setSpacing(4);
 
-    stats_title_ = new QLabel("PLATFORM STATS", stats_card_);
+    stats_title_ = new QLabel(tr("PLATFORM STATS"), stats_card_);
     stats_title_->setObjectName("aqStatsTitle");
     svl->addWidget(stats_title_);
 
@@ -264,15 +264,15 @@ QWidget* AIQuantLabScreen::build_status_bar() {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(16);
 
-    auto* engine_lbl = new QLabel("ENGINE:", status_bar_);
+    auto* engine_lbl = new QLabel(tr("ENGINE:"), status_bar_);
     engine_lbl->setObjectName("aqStatusLabel");
-    status_engine_val_ = new QLabel("QLIB + GS QUANT + PYTHON", status_bar_);
+    status_engine_val_ = new QLabel(tr("QLIB + GS QUANT + PYTHON"), status_bar_);
     status_engine_val_->setObjectName("aqStatusValue");
     hl->addWidget(engine_lbl);
     hl->addWidget(status_engine_val_);
     hl->addStretch();
 
-    status_ready_lbl_ = new QLabel("READY", status_bar_);
+    status_ready_lbl_ = new QLabel(tr("READY"), status_bar_);
     status_ready_lbl_->setObjectName("aqStatusReady");
     hl->addWidget(status_ready_lbl_);
 

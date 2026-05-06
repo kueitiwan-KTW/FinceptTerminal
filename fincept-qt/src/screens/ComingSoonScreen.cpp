@@ -12,7 +12,7 @@ ComingSoonScreen::ComingSoonScreen(const QString& tab_name, QWidget* parent) : Q
     vl->setAlignment(Qt::AlignCenter);
     vl->setSpacing(12);
 
-    auto* icon = new QLabel("\xe2\x9a\xa1"); // ⚡
+    auto* icon = new QLabel(tr("\xe2\x9a\xa1")); // ⚡
     icon->setAlignment(Qt::AlignCenter);
     icon->setStyleSheet("font-size:48px;background:transparent;");
     vl->addWidget(icon);

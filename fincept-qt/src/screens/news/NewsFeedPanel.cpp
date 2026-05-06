@@ -96,7 +96,7 @@ void NewsFeedPanel::build_breaking_banner() {
     layout->setContentsMargins(8, 0, 8, 0);
     layout->setSpacing(8);
 
-    banner_tag_ = new QLabel("FLASH", banner_widget_);
+    banner_tag_ = new QLabel(tr("FLASH"), banner_widget_);
     banner_tag_->setObjectName("newsBreakingTag");
     banner_tag_->setFixedWidth(48);
     banner_tag_->setAlignment(Qt::AlignCenter);
@@ -109,7 +109,7 @@ void NewsFeedPanel::build_breaking_banner() {
     banner_source_->setFixedWidth(80);
     banner_source_->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
 
-    auto* dismiss_btn = new QPushButton("x", banner_widget_);
+    auto* dismiss_btn = new QPushButton(tr("x"), banner_widget_);
     dismiss_btn->setObjectName("newsBreakingDismiss");
     dismiss_btn->setFixedSize(20, 20);
     connect(dismiss_btn, &QPushButton::clicked, this, &NewsFeedPanel::clear_breaking);

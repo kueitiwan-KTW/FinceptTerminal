@@ -386,7 +386,7 @@ QWidget* PortfolioScreen::build_empty_state() {
     layout->setSpacing(6);
     layout->setAlignment(Qt::AlignCenter);
 
-    auto* accent_dot = new QLabel("\u25C6"); // diamond
+    auto* accent_dot = new QLabel(tr("\u25C6")); // diamond
     accent_dot->setAlignment(Qt::AlignCenter);
     accent_dot->setStyleSheet(QString("color:%1; font-size:14px; letter-spacing:4px;").arg(ui::colors::AMBER()));
     layout->addWidget(accent_dot);
@@ -882,7 +882,7 @@ QWidget* PortfolioScreen::build_main_view() {
     filter_hl->setContentsMargins(8, 0, 8, 0);
     filter_hl->setSpacing(6);
 
-    auto* filter_icon = new QLabel("\u2315"); // ⌕ search glyph
+    auto* filter_icon = new QLabel(tr("\u2315")); // ⌕ search glyph
     filter_icon->setStyleSheet(
         QString("color:%1; font-size:12px; background:transparent; border:none;").arg(ui::colors::TEXT_TERTIARY()));
     filter_hl->addWidget(filter_icon);

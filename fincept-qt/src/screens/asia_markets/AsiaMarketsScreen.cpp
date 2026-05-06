@@ -324,7 +324,7 @@ QWidget* AsiaMarketsScreen::create_data_panel() {
     exec_btn_->setEnabled(false);
     connect(exec_btn_, &QPushButton::clicked, this, &AsiaMarketsScreen::on_execute);
 
-    view_toggle_btn_ = new QPushButton("JSON");
+    view_toggle_btn_ = new QPushButton(tr("JSON"));
     view_toggle_btn_->setObjectName("asiaViewToggle");
     view_toggle_btn_->setCursor(Qt::PointingHandCursor);
     view_toggle_btn_->setFixedWidth(50);

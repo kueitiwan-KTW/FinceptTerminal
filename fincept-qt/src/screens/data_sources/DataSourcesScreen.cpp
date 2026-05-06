@@ -1116,7 +1116,7 @@ QWidget* DataSourcesScreen::build_connections_page() {
     connect(bulk_disable_btn_, &QPushButton::clicked, this, &DataSourcesScreen::on_bulk_disable_all);
     tb_hl->addWidget(bulk_disable_btn_);
 
-    bulk_delete_btn_ = new QPushButton("DELETE SEL");
+    bulk_delete_btn_ = new QPushButton(tr("DELETE SEL"));
     bulk_delete_btn_->setObjectName("dsBtnDanger");
     bulk_delete_btn_->setFixedHeight(22);
     bulk_delete_btn_->setCursor(Qt::PointingHandCursor);

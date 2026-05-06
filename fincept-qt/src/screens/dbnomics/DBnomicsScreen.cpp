@@ -153,12 +153,12 @@ void DBnomicsScreen::build_ui() {
             .arg(ui::fonts::DATA_FAMILY)
             .arg(ui::colors::BG_HOVER());
 
-    single_btn_ = new QPushButton("SINGLE", toggle_bar);
+    single_btn_ = new QPushButton(tr("SINGLE"), toggle_bar);
     single_btn_->setCheckable(true);
     single_btn_->setChecked(true);
     single_btn_->setStyleSheet(btn_style_checked);
 
-    compare_btn_ = new QPushButton("COMPARE", toggle_bar);
+    compare_btn_ = new QPushButton(tr("COMPARE"), toggle_bar);
     compare_btn_->setCheckable(true);
     compare_btn_->setChecked(false);
     compare_btn_->setStyleSheet(btn_style_unchecked);
@@ -185,7 +185,7 @@ void DBnomicsScreen::build_ui() {
     toggle_hl->addWidget(compare_btn_);
     toggle_hl->addStretch();
 
-    auto* chart_type_label = new QLabel("CHART:", toggle_bar);
+    auto* chart_type_label = new QLabel(tr("CHART:"), toggle_bar);
     chart_type_label->setStyleSheet(QString("color:%1; font-family:%2; font-size:11px; font-weight:600;")
                                         .arg(ui::colors::TEXT_TERTIARY())
                                         .arg(ui::fonts::DATA_FAMILY));
@@ -268,7 +268,7 @@ void DBnomicsScreen::build_ui() {
 
     // Initial placeholder
     auto* init_placeholder =
-        new QLabel("NO COMPARISON SLOTS\nClick  + ADD SLOT  in the left panel to begin", comparison_content_);
+        new QLabel(tr("NO COMPARISON SLOTS\nClick  + ADD SLOT  in the left panel to begin"), comparison_content_);
     init_placeholder->setAlignment(Qt::AlignCenter);
     init_placeholder->setWordWrap(true);
     init_placeholder->setStyleSheet(QString("color:%1; font-family:%2; font-size:13px;")
@@ -297,7 +297,7 @@ void DBnomicsScreen::build_ui() {
     status_hl->setContentsMargins(12, 0, 12, 0);
     status_hl->setSpacing(0);
 
-    status_label_ = new QLabel("Ready", status_bar);
+    status_label_ = new QLabel(tr("Ready"), status_bar);
     status_label_->setStyleSheet(QString("color:%1; font-family:%2; font-size:11px;")
                                      .arg(ui::colors::TEXT_SECONDARY())
                                      .arg(ui::fonts::DATA_FAMILY));
@@ -328,7 +328,7 @@ QWidget* DBnomicsScreen::build_toolbar() {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
 
-    auto* title = new QLabel("DBNOMICS TERMINAL", toolbar);
+    auto* title = new QLabel(tr("DBNOMICS TERMINAL"), toolbar);
     title->setStyleSheet(QString("color:%1; font-family:%2; font-size:14px; font-weight:700;")
                              .arg(ui::colors::AMBER())
                              .arg(ui::fonts::DATA_FAMILY));
@@ -345,15 +345,15 @@ QWidget* DBnomicsScreen::build_toolbar() {
                                   .arg(ui::colors::AMBER_DIM())
                                   .arg(ui::fonts::DATA_FAMILY);
 
-    auto* fetch_btn = new QPushButton("FETCH", toolbar);
+    auto* fetch_btn = new QPushButton(tr("FETCH"), toolbar);
     fetch_btn->setStyleSheet(btn_style);
     connect(fetch_btn, &QPushButton::clicked, this, &DBnomicsScreen::on_fetch_clicked);
 
-    auto* refresh_btn = new QPushButton("REFRESH", toolbar);
+    auto* refresh_btn = new QPushButton(tr("REFRESH"), toolbar);
     refresh_btn->setStyleSheet(btn_style);
     connect(refresh_btn, &QPushButton::clicked, this, &DBnomicsScreen::on_refresh_clicked);
 
-    auto* export_btn = new QPushButton("EXPORT CSV", toolbar);
+    auto* export_btn = new QPushButton(tr("EXPORT CSV"), toolbar);
     export_btn->setStyleSheet(btn_style);
     connect(export_btn, &QPushButton::clicked, this, &DBnomicsScreen::on_export_csv);
 
@@ -731,7 +731,7 @@ void DBnomicsScreen::rebuild_comparison_view() {
 
     if (slots_.isEmpty()) {
         auto* placeholder =
-            new QLabel("NO COMPARISON SLOTS\nClick  + ADD SLOT  in the left panel to begin", comparison_content_);
+            new QLabel(tr("NO COMPARISON SLOTS\nClick  + ADD SLOT  in the left panel to begin"), comparison_content_);
         placeholder->setAlignment(Qt::AlignCenter);
         placeholder->setWordWrap(true);
         placeholder->setStyleSheet(QString("color:%1; font-family:%2; font-size:13px;")

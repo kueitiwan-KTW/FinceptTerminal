@@ -263,7 +263,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     hdr->setFixedHeight(34);
     auto* hhl = new QHBoxLayout(hdr);
     hhl->setContentsMargins(12, 0, 12, 0);
-    auto* ht = new QLabel("CREATE COMPETITION");
+    auto* ht = new QLabel(tr("CREATE COMPETITION"));
     ht->setObjectName("aaCreateTitle");
     hhl->addWidget(ht);
     hhl->addStretch(1);
@@ -361,7 +361,7 @@ QWidget* AlphaArenaScreen::create_create_panel() {
     bl->addWidget(model_list_);
 
     // Create button
-    create_btn_ = new QPushButton("CREATE COMPETITION");
+    create_btn_ = new QPushButton(tr("CREATE COMPETITION"));
     create_btn_->setObjectName("aaCreateBtn");
     create_btn_->setCursor(Qt::PointingHandCursor);
     create_btn_->setFixedHeight(34);
@@ -668,7 +668,7 @@ void AlphaArenaScreen::on_create_competition() {
         self->create_panel_->hide();
         self->run_btn_->setEnabled(true);
         self->auto_btn_->setEnabled(true);
-        self->status_badge_->setText("CREATED");
+        self->status_badge_->setText(tr("CREATED"));
         self->status_badge_->setStyleSheet(
             QString("color: %1; background: rgba(22,163,74,0.15); font-size: 8px; font-weight: 700; padding: 2px 6px;")
                 .arg(colors::POSITIVE()));

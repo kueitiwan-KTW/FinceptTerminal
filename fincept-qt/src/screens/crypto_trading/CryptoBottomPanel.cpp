@@ -81,11 +81,11 @@ CryptoBottomPanel::CryptoBottomPanel(QWidget* parent) : QWidget(parent) {
 
     // Time & Sales
     time_sales_ = new CryptoTimeSales;
-    tabs_->addTab(time_sales_, "T&S");
+    tabs_->addTab(time_sales_, tr("T&S"));
 
     // Depth Chart
     depth_chart_ = new CryptoDepthChart;
-    tabs_->addTab(depth_chart_, "DEPTH");
+    tabs_->addTab(depth_chart_, tr("DEPTH"));
 
     setup_market_info_tab();
     setup_stats_tab();
@@ -95,27 +95,27 @@ CryptoBottomPanel::CryptoBottomPanel(QWidget* parent) : QWidget(parent) {
 
 void CryptoBottomPanel::setup_positions_tab() {
     positions_table_ = make_table(7, {"Symbol", "Side", "Qty", "Entry", "Current", "P&L", "Lev"});
-    tabs_->addTab(positions_table_, "POS");
+    tabs_->addTab(positions_table_, tr("POS"));
 }
 
 void CryptoBottomPanel::setup_orders_tab() {
     orders_table_ = make_table(7, {"Symbol", "Side", "Type", "Qty", "Price", "Status", ""});
-    tabs_->addTab(orders_table_, "ORD");
+    tabs_->addTab(orders_table_, tr("ORD"));
 }
 
 void CryptoBottomPanel::setup_trades_tab() {
     trades_table_ = make_table(7, {"Symbol", "Side", "Price", "Qty", "Fee", "P&L", "Time"});
-    tabs_->addTab(trades_table_, "HIST");
+    tabs_->addTab(trades_table_, tr("HIST"));
 }
 
 void CryptoBottomPanel::setup_my_trades_tab() {
     my_trades_table_ = make_table(8, {"Symbol", "Side", "Price", "Amount", "Cost", "Fee", "Ccy", "Time"});
-    tabs_->addTab(my_trades_table_, "MY TRADES");
+    tabs_->addTab(my_trades_table_, tr("MY TRADES"));
 }
 
 void CryptoBottomPanel::setup_fees_tab() {
     fees_table_ = make_table(3, {"Symbol", "Maker %", "Taker %"});
-    tabs_->addTab(fees_table_, "FEES");
+    tabs_->addTab(fees_table_, tr("FEES"));
 }
 
 void CryptoBottomPanel::setup_market_info_tab() {
@@ -151,7 +151,7 @@ void CryptoBottomPanel::setup_market_info_tab() {
     next_funding_label_ = make_row("NEXT FUNDING");
     grid->addStretch();
 
-    tabs_->addTab(widget, "MKT");
+    tabs_->addTab(widget, tr("MKT"));
 }
 
 void CryptoBottomPanel::setup_stats_tab() {
@@ -180,7 +180,7 @@ void CryptoBottomPanel::setup_stats_tab() {
     }
     grid->addStretch();
 
-    tabs_->addTab(widget, "STATS");
+    tabs_->addTab(widget, tr("STATS"));
 }
 
 // ── Forwarding methods for new widgets ──────────────────────────────────────
@@ -320,7 +320,7 @@ void CryptoBottomPanel::set_orders(const QVector<trading::PtOrder>& orders) {
             // Update the stored order ID without recreating the widget
             existing->setProperty("order_id", o.id);
         } else {
-            auto* cancel_btn = new QPushButton("X");
+            auto* cancel_btn = new QPushButton(tr("X"));
             cancel_btn->setObjectName("cryptoCancelBtn");
             cancel_btn->setFixedSize(20, 18);
             cancel_btn->setCursor(Qt::PointingHandCursor);
@@ -464,7 +464,7 @@ void CryptoBottomPanel::set_live_orders(const QJsonArray& orders) {
         if (existing_btn) {
             existing_btn->setProperty("order_id", o.value("id").toString());
         } else {
-            auto* cancel_btn = new QPushButton("X");
+            auto* cancel_btn = new QPushButton(tr("X"));
             cancel_btn->setObjectName("cryptoCancelBtn");
             cancel_btn->setFixedSize(20, 18);
             cancel_btn->setCursor(Qt::PointingHandCursor);

@@ -274,7 +274,7 @@ QWidget* NotesScreen::build_editor_panel() {
     connect(archive_btn, &QPushButton::clicked, this, &NotesScreen::on_toggle_archive);
     view_toolbar->addWidget(archive_btn);
 
-    auto* del_btn = new QPushButton("DELETE");
+    auto* del_btn = new QPushButton(tr("DELETE"));
     del_btn->setStyleSheet(kDangerBtn());
     connect(del_btn, &QPushButton::clicked, this, &NotesScreen::on_delete_note);
     view_toolbar->addWidget(del_btn);

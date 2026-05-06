@@ -56,7 +56,7 @@ void ComponentBrowserDialog::build_ui() {
     hl->setContentsMargins(16, 8, 16, 8);
     hl->setSpacing(12);
 
-    auto* title = new QLabel("COMPONENT BROWSER", header);
+    auto* title = new QLabel(tr("COMPONENT BROWSER"), header);
     title->setStyleSheet("color:#d97706;font-size:13px;font-weight:700;letter-spacing:2px;");
     hl->addWidget(title);
 

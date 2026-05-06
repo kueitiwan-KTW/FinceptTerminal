@@ -1,0 +1,3277 @@
+[
+  {
+    "source": "  |  Active: %1  |  %2 rows x %3 cols",
+    "current_translation": "  |  Active: %1  |  %2 列 x %3 cols",
+    "fixed_translation": "| 活躍：%1 | %2 行 x %3 列"
+  },
+  {
+    "source": " (connect deferred to Phase 7)",
+    "current_translation": " (connect deferred 至Phase 7)",
+    "fixed_translation": "（連接延遲到第 7 階段）"
+  },
+  {
+    "source": "%1 INDICATORS ANALYZED",
+    "current_translation": "%1 INDIC (資訊係數)ATORS ANALYZED",
+    "fixed_translation": "%1 指標分析"
+  },
+  {
+    "source": "%1 high-priority articles",
+    "current_translation": "%1 high-priority 文章",
+    "fixed_translation": "%1 高優先文章"
+  },
+  {
+    "source": "%1 instruments already loaded (%2 NSE equities), skipping refresh",
+    "current_translation": "%1 Instruments (商品) (商品) already已載入 (%2 NSE equities), skipping refresh",
+    "fixed_translation": "%1 工具已載入（%2 NSE 股票），跳過刷新"
+  },
+  {
+    "source": "%1 refresh already in progress — skipping duplicate",
+    "current_translation": "%1 refresh already 於progress — skipping duplicate",
+    "fixed_translation": "%1 刷新已在進行中 - 跳過重複"
+  },
+  {
+    "source": "> %1 thinking steps | tools: %2",
+    "current_translation": "> %1 思考中 steps | tools: %2",
+    "fixed_translation": "> %1 思考步驟|工具：%2"
+  },
+  {
+    "source": "A new version of Fincept Terminal is available.\\n\\n",
+    "current_translation": "A new version 的Fincept Terminal is 可用.\\n\\n",
+    "fixed_translation": "Fincept Terminal 有新版本可用。\\n\\n"
+  },
+  {
+    "source": "Access token expired for account %1 — user must re-authenticate",
+    "current_translation": "帳戶 %1 的 Access Token (存取權杖) 已過期 — 使用者必須重新驗證",
+    "fixed_translation": "帳戶 %1 的存取權杖已過期 - 使用者必須重新進行身份驗證"
+  },
+  {
+    "source": "Actual returns (comma-separated)",
+    "current_translation": "Actual Returns (報酬率) (實際報酬率) （以逗號分隔)",
+    "fixed_translation": "實際回報（以逗號分隔）"
+  },
+  {
+    "source": "Added asset %1 x%2 to portfolio %3",
+    "current_translation": "已新增 asset %1 x%2 至Portfolio (投資組合) (投資組合) %3",
+    "fixed_translation": "將資產 %1 x%2 加入投資組合 %3"
+  },
+  {
+    "source": "Agent ran in %1ms",
+    "current_translation": "Agent ran 於%1ms",
+    "fixed_translation": "Agent 執行耗時 %1 毫秒"
+  },
+  {
+    "source": "AliceBlue error: status=%1",
+    "current_translation": "AliceBlue 錯誤: status=%1",
+    "fixed_translation": "AliceBlue 錯誤：狀態=%1"
+  },
+  {
+    "source": "All bridges wired (%1 pass-through fallbacks)",
+    "current_translation": "全部 bridges wired (%1 pass-through fallbacks)",
+    "fixed_translation": "所有橋接器均已接線（%1 直通回退）"
+  },
+  {
+    "source": "Already up to date — local=%1, remote=%2",
+    "current_translation": "Already up 至date — local=%1, remote=%2",
+    "fixed_translation": "已經是最新的 - 本地=%1，遠端=%2"
+  },
+  {
+    "source": "Analyzing Debt Schedule...",
+    "current_translation": "分析中 Debt Schedule...",
+    "fixed_translation": "分析債務計劃..."
+  },
+  {
+    "source": "Analyzing Industry Deals...",
+    "current_translation": "分析中 Industry Deals...",
+    "fixed_translation": "分析產業交易..."
+  },
+  {
+    "source": "Analyzing Payment Structures...",
+    "current_translation": "分析中 Payment Structures...",
+    "fixed_translation": "分析支付結構..."
+  },
+  {
+    "source": "Annualized portfolio volatility (std deviation of returns).\\n",
+    "current_translation": "Portfolio (投資組合) 年化 Volatility (波動率)（報酬率標準差）。\\n",
+    "fixed_translation": "年化投資組合波動性（報酬的標準差）。 \\n"
+  },
+  {
+    "source": "Applied scanner preset: %1",
+    "current_translation": "已套用 Scanner Preset (掃描器預設): %1",
+    "fixed_translation": "應用的掃描器預設：%1"
+  },
+  {
+    "source": "Are you sure you want to delete \\",
+    "current_translation": "Are you sure you want 至delete \\",
+    "fixed_translation": "您確定要刪除\\"
+  },
+  {
+    "source": "Are you sure you want to remove \\",
+    "current_translation": "Are you sure you want 至remove \\",
+    "fixed_translation": "您確定要刪除 \\"
+  },
+  {
+    "source": "Ask anything... (Enter to send, Shift+Enter for new line)",
+    "current_translation": "詢問任何問題...（Enter 傳送，Shift+Enter 換行）",
+    "fixed_translation": "詢問任何內容...（Enter 發送，Shift+Enter 換行）"
+  },
+  {
+    "source": "Asset %1 not found in portfolio %2",
+    "current_translation": "Asset (資產) %1 在 Portfolio (投資組合) %2 中找不到",
+    "fixed_translation": "在投資組合 %2 中找不到資產 %1"
+  },
+  {
+    "source": "Asset returns matrix JSON: [[0.01,-0.02,...],[...]]",
+    "current_translation": "Asset (資產) returns matrix JSON: [[0.01,-0.02,...],[...]]",
+    "fixed_translation": "資產回傳矩陣 JSON: [[0.01,-0.02,...],[...]]"
+  },
+  {
+    "source": "Auth failed on %1, trying %2",
+    "current_translation": "Auth失敗 on %1, trying %2",
+    "fixed_translation": "%1 上的身份驗證失敗，嘗試 %2"
+  },
+  {
+    "source": "Avg fill: %1  |  Slippage: %2 bps  |  %3",
+    "current_translation": "Avg fill: %1  |  Slippage (滑價): %2 bps  |  %3",
+    "fixed_translation": "平均填充：%1 | 滑點：%2 bps | %3"
+  },
+  {
+    "source": "Backfilled %1 historical snapshots for %2",
+    "current_translation": "Backfilled %1 historical snapshots 用於%2",
+    "fixed_translation": "回填 %2 的 %1 歷史快照"
+  },
+  {
+    "source": "Backtest end (YYYY-MM-DD)",
+    "current_translation": "Backtest (回測) 結束 (YYYY-MM-DD)",
+    "fixed_translation": "回測結束（YYYY-MM-DD）"
+  },
+  {
+    "source": "Backtest start (YYYY-MM-DD)",
+    "current_translation": "Backtest (回測) 開始 (YYYY-MM-DD)",
+    "fixed_translation": "回測開始（YYYY-MM-DD）"
+  },
+  {
+    "source": "Base32 secret (optional)",
+    "current_translation": "Base32 Secret (選填)",
+    "fixed_translation": "Base32 秘密（可選）"
+  },
+  {
+    "source": "Batch fetch: %1 unique symbols from %2 requests",
+    "current_translation": "Batch fetch: %1 unique Symbol (股票代碼)s 來自%2 requests",
+    "fixed_translation": "批次取得：來自 %2 請求的 %1 唯一符號"
+  },
+  {
+    "source": "Benchmark returns (comma-separated)",
+    "current_translation": "Benchmark Returns (基準報酬率)（以逗號分隔）",
+    "fixed_translation": "基準報酬（逗號分隔）"
+  },
+  {
+    "source": "Benchmark returns (optional)",
+    "current_translation": "Benchmark (基準) Returns (報酬率) (基準報酬率) (選填)",
+    "fixed_translation": "基準回報（可選）"
+  },
+  {
+    "source": "Benchmark returns (optional, comma-separated)",
+    "current_translation": "Benchmark (基準) Returns (報酬率) (基準報酬率) (選填, 以逗號分隔)",
+    "fixed_translation": "基準返回（可選，以逗號分隔）"
+  },
+  {
+    "source": "Benchmarking Premium...",
+    "current_translation": "Benchmark (基準)ing (基準比較) 中 Premium...",
+    "fixed_translation": "基準溢價..."
+  },
+  {
+    "source": "Best score: %1\\nBest params:\\n",
+    "current_translation": "最佳分數: %1\\nBest params:\\n",
+    "fixed_translation": "最佳成績：%1\\n最佳參數：\\n"
+  },
+  {
+    "source": "Bid: %1  Ask: %2  Edge: %3 bps/side",
+    "current_translation": "Bid (買價): %1  Ask (賣價): %2  Edge: %3 bps/side",
+    "fixed_translation": "買價：%1 賣價：%2 邊緣：%3 bps/邊"
+  },
+  {
+    "source": "Binary file — preview not available.\\nUse SAVE to download.",
+    "current_translation": "二進位檔案 — 無法預覽.\\nUse SAVE 至download.",
+    "fixed_translation": "二進位檔案 - 預覽不可用。 \\n使用「儲存」進行下載。"
+  },
+  {
+    "source": "Browser login timed out - try again or paste manually",
+    "current_translation": "瀏覽器登入逾時 - try aga於或paste manually",
+    "fixed_translation": "瀏覽器登入逾時 - 請重試或手動貼上"
+  },
+  {
+    "source": "Building Pro Forma...",
+    "current_translation": "建立 Pro Forma (備考財務) 中...",
+    "fixed_translation": "建立備考..."
+  },
+  {
+    "source": "Cache hit: %1",
+    "current_translation": "Cache Hit (快取命中)：%1",
+    "fixed_translation": "緩存命中：%1"
+  },
+  {
+    "source": "Cached %1 tools from server %2",
+    "current_translation": "Cached %1 tools 來自server %2",
+    "fixed_translation": "從伺服器 %2 快取 %1 工具"
+  },
+  {
+    "source": "Calculating Exchange Ratio...",
+    "current_translation": "計算中 Exchange Ratio...",
+    "fixed_translation": "計算兌換比率..."
+  },
+  {
+    "source": "Calculating FinServ Metrics...",
+    "current_translation": "計算中 FinServ Metrics...",
+    "fixed_translation": "計算 FinServ 指標..."
+  },
+  {
+    "source": "Calculating First Chicago...",
+    "current_translation": "計算中 First Chicago...",
+    "fixed_translation": "計算第一芝加哥..."
+  },
+  {
+    "source": "Calculating Healthcare Metrics...",
+    "current_translation": "計算中 Healthcare Metrics...",
+    "fixed_translation": "計算醫療保健指標..."
+  },
+  {
+    "source": "Calculating Risk Factor...",
+    "current_translation": "計算中 Risk (風險) Fact或(因子)...",
+    "fixed_translation": "計算風險因素..."
+  },
+  {
+    "source": "Calculating Tech Metrics...",
+    "current_translation": "計算中 Tech Metrics...",
+    "fixed_translation": "計算技術指標..."
+  },
+  {
+    "source": "Cannot open %1 for writing: %2",
+    "current_translation": "無法open %1 用於writing: %2",
+    "fixed_translation": "無法開啟%1進行寫入：%2"
+  },
+  {
+    "source": "Cannot reopen %1 for hashing",
+    "current_translation": "無法reopen %1 用於hashing",
+    "fixed_translation": "無法重新開啟 %1 進行雜湊處理"
+  },
+  {
+    "source": "Cannot save the installer to disk:\\n%1",
+    "current_translation": "無法save the 安裝程式 至disk:\\n%1",
+    "fixed_translation": "無法將安裝程式儲存至磁碟：\\n%1"
+  },
+  {
+    "source": "Cannot start stream: account %1 not found",
+    "current_translation": "無法start stream: account %1 找不到",
+    "fixed_translation": "無法開始直播：找不到帳號 %1"
+  },
+  {
+    "source": "Chart title (e.g. Strategy vs Benchmark)",
+    "current_translation": "Chart 標題 (e.g. Strategy vs Benchmark (基準))",
+    "fixed_translation": "圖表標題（例如策略與基準）"
+  },
+  {
+    "source": "Checking for updates — platform=%1, local=%2, manifest=%3",
+    "current_translation": "Checking 用於updates — platform=%1, local=%2, manifest=%3",
+    "fixed_translation": "檢查更新 - platform=%1、local=%2、manifest=%3"
+  },
+  {
+    "source": "Combining rolling results...",
+    "current_translation": "Combining rolling 結果...",
+    "fixed_translation": "結合滾動結果..."
+  },
+  {
+    "source": "Comma-separated tags, e.g. prod, live, trading",
+    "current_translation": "Comma-separated tags, e.g. prod, live, 交易",
+    "fixed_translation": "以逗號分隔的標籤，例如產品、直播、交易"
+  },
+  {
+    "source": "Command '%1' is not supported by provider '%2'",
+    "current_translation": "Comm和'%1' is not supported by provider '%2'",
+    "fixed_translation": "提供者“%2”不支援指令“%1”"
+  },
+  {
+    "source": "Command (e.g. analyze, train, list_models)",
+    "current_translation": "命令（例如 analyze、train、list_models）",
+    "fixed_translation": "指令（例如分析、訓練、list_models）"
+  },
+  {
+    "source": "Complete — %1 paths simulated",
+    "current_translation": "完成 — %1 paths simulated",
+    "fixed_translation": "完整 - %1 路徑模擬"
+  },
+  {
+    "source": "Component Browser",
+    "current_translation": "Component Browser (元件瀏覽器)",
+    "fixed_translation": "元件瀏覽器"
+  },
+  {
+    "source": "Composite risk score from 0 (low) to 100 (high).\\n",
+    "current_translation": "Composite Risk Score (綜合風險分數)，0（低）到 100（高）。\\n",
+    "fixed_translation": "綜合風險評分從 0（低）到 100（高）。 \\n"
+  },
+  {
+    "source": "Concentration risk: combined weight of the top 3 holdings.\\n",
+    "current_translation": "Concentration risk: combined weight 的the top 3 holdings.\\n",
+    "fixed_translation": "集中度風險：前三名持倉權重總和。 \\n"
+  },
+  {
+    "source": "Configure — Agent Errors",
+    "current_translation": "設定 — Agent Errors",
+    "fixed_translation": "配置 - 代理錯誤"
+  },
+  {
+    "source": "Configure — Crypto Ticker",
+    "current_translation": "設定 — Crypto Ticker (股票代碼)",
+    "fixed_translation": "配置 - 加密貨幣代碼"
+  },
+  {
+    "source": "Configure — Margin Usage",
+    "current_translation": "設定 — Margin (保證金) Usage",
+    "fixed_translation": "配置 - 保證金使用"
+  },
+  {
+    "source": "Configure — News Category",
+    "current_translation": "設定 — News Category",
+    "fixed_translation": "配置 - 新聞類別"
+  },
+  {
+    "source": "Configure — Open Positions",
+    "current_translation": "設定 — Open Position (持倉)s",
+    "fixed_translation": "配置 - 未平倉頭寸"
+  },
+  {
+    "source": "Configure — Quote Strip",
+    "current_translation": "設定 — Quote (報價) Strip",
+    "fixed_translation": "配置 - 報價條"
+  },
+  {
+    "source": "Configure — Web Scraper",
+    "current_translation": "設定 — Web Scraper",
+    "fixed_translation": "設定 — Web Scraper"
+  },
+  {
+    "source": "Configure — Working Orders",
+    "current_translation": "設定 — Working Orders",
+    "fixed_translation": "配置 - 工作訂單"
+  },
+  {
+    "source": "Could not clean up orphaned paper portfolio %1: %2",
+    "current_translation": "無法clean up orphaned paper Portfolio (投資組合) (投資組合) %1: %2",
+    "fixed_translation": "無法清理孤立的紙張組合 %1：%2"
+  },
+  {
+    "source": "Country (e.g. USA, GBR, IND)",
+    "current_translation": "國家（如 USA, GBR, IND）",
+    "fixed_translation": "國家（例如美國、英國、印度）"
+  },
+  {
+    "source": "Created index '%1' (%2) with %3 constituents",
+    "current_translation": "已建立 index '%1' (%2) 使用%3 constituents",
+    "fixed_translation": "創建了包含 %3 成分的指數「%1」(%2)"
+  },
+  {
+    "source": "Credentials updated for %1 (persisted=%2)",
+    "current_translation": "Credentials updated 用於%1 (persisted=%2)",
+    "fixed_translation": "更新了 %1 的憑證（持久化=%2）"
+  },
+  {
+    "source": "Cumulative Returns",
+    "current_translation": "Cumulative Returns (報酬率) (累積報酬率)",
+    "fixed_translation": "累積回報"
+  },
+  {
+    "source": "Current market value of all holdings.\\n",
+    "current_translation": "所有 Holdings (持股) 的目前 Market Value (市值)。\\n",
+    "fixed_translation": "所有持股的當前市值。 \\n"
+  },
+  {
+    "source": "Daily returns (comma-separated)",
+    "current_translation": "Daily returns （以逗號分隔)",
+    "fixed_translation": "每日回報（以逗號分隔）"
+  },
+  {
+    "source": "Daily returns (comma-separated, e.g. 0.01,-0.02,0.005)",
+    "current_translation": "Daily Returns (日報酬率)（以逗號分隔，例如 0.01,-0.02,0.005）",
+    "fixed_translation": "每日回報（以逗號分隔，例如 0.01,-0.02,0.005）"
+  },
+  {
+    "source": "Data fetched — %1 records  |  %2 → %3",
+    "current_translation": "Data fetched — %1 筆記錄  |  %2 → %3",
+    "fixed_translation": "取得的數據 - %1 記錄 | %2 → %3"
+  },
+  {
+    "source": "Data from China National Bureau of Statistics via AkShare",
+    "current_translation": "Data 來自China National Bureau 的Statistics via AkShare",
+    "fixed_translation": "數據來自中國國家統計局 AkShare"
+  },
+  {
+    "source": "Databento API key (db-...)",
+    "current_translation": "Databen至API key (db-...)",
+    "fixed_translation": "Databento API 金鑰 (db-...)"
+  },
+  {
+    "source": "Deals JSON with industry field...",
+    "current_translation": "Deals JSON 使用industry field...",
+    "fixed_translation": "處理 JSON 與產業領域..."
+  },
+  {
+    "source": "Delete %1 selected file(s)? This cannot be undone.",
+    "current_translation": "刪除 %1 selected file(s)? This cannot be undone.",
+    "fixed_translation": "刪除 %1 選定的檔案嗎？此操作無法撤銷。"
+  },
+  {
+    "source": "Deleting portfolio %1",
+    "current_translation": "Deleting Portfolio (投資組合) (投資組合) %1",
+    "fixed_translation": "刪除投資組合 %1"
+  },
+  {
+    "source": "Delivery failed via %1: %2",
+    "current_translation": "Delivery失敗 via %1: %2",
+    "fixed_translation": "透過 %1 投遞失敗：%2"
+  },
+  {
+    "source": "Detected %1 text-based tool call(s) in response",
+    "current_translation": "Detected %1 text-based tool call(s) 於response",
+    "fixed_translation": "檢測到 %1 基於文字的工具呼叫作為回應"
+  },
+  {
+    "source": "Discovered %1 agents in %2 categories",
+    "current_translation": "Discovered %1 agents 於%2 categories",
+    "fixed_translation": "在%2類別中發現%1代理"
+  },
+  {
+    "source": "Discovered Factors: %1  |  Best IC: %2\\n\\n",
+    "current_translation": "Discovered Fact或(因子)s: %1  |  Best IC (資訊係數): %2\\n\\n",
+    "fixed_translation": "發現因素：%1 | 最佳IC：%2\\n\\n"
+  },
+  {
+    "source": "Displayed %1 data points",
+    "current_translation": "已顯示 %1 data points",
+    "fixed_translation": "顯示的 %1 數據點"
+  },
+  {
+    "source": "Displayed %1 data points for %2",
+    "current_translation": "已顯示 %1 data points 用於%2",
+    "fixed_translation": "顯示 %2 的 %1 數據點"
+  },
+  {
+    "source": "Done — %1 package(s) failed (will retry on next launch)",
+    "current_translation": "完成 — %1 package(s)失敗 (將retry on next launch)",
+    "fixed_translation": "完成 - %1 軟體包失敗（將在下次啟動時重試）"
+  },
+  {
+    "source": "Done — %1 | Exp. Return: %2%  Vol: %3%  Sharpe: %4",
+    "current_translation": "完成 — %1 | Exp. Return: %2%  Vol: %3%  Sharpe (夏普比率): %4",
+    "fixed_translation": "完成-%1 |过期。 Return: %2% Vol: %3% Sharpe: %4"
+  },
+  {
+    "source": "Done — %1 | Exp. Return: %2%  Vol: %3%  Sharpe: %4 (cached)",
+    "current_translation": "完成 — %1 | Exp. Return: %2%  Vol: %3%  Sharpe (夏普比率): %4 (cached)",
+    "fixed_translation": "完成-%1 |過期。返回：%2% 成交量：%3% 夏普：%4（緩存）"
+  },
+  {
+    "source": "Done — %1% return  |  Sharpe %2",
+    "current_translation": "完成 — %1% return  |  Sharpe (夏普比率) %2",
+    "fixed_translation": "完成 - %1% 回報 | 夏普 %2"
+  },
+  {
+    "source": "Download the installer now?",
+    "current_translation": "Download the 安裝程式 now?",
+    "fixed_translation": "現在下載安裝程式嗎？"
+  },
+  {
+    "source": "Downloading installer: %1 → %2 (expected sha256=%3)",
+    "current_translation": "Downloading 安裝程式: %1 → %2 (expected sha256=%3)",
+    "fixed_translation": "下載安裝程式：%1 → %2（預期 sha256=%3）"
+  },
+  {
+    "source": "Drag to broadcast this symbol to any panel",
+    "current_translation": "Drag 至broadcast this Symbol (股票代碼) 至any panel",
+    "fixed_translation": "拖曳以將該符號廣播到任何面板"
+  },
+  {
+    "source": "Economic Calendar — %1  (%2 events)",
+    "current_translation": "Economic Calendar — %1  (%2 事件)",
+    "fixed_translation": "經濟日曆 - %1（%2 事件）"
+  },
+  {
+    "source": "Enter API Key and API Secret first",
+    "current_translation": "請先輸入 API Key 與 API Secret",
+    "fixed_translation": "首先輸入 API Key 和 API Secret"
+  },
+  {
+    "source": "Enter a Model ID or Config Path to preview.",
+    "current_translation": "輸入 a Model ID 或Config Path 至preview.",
+    "fixed_translation": "輸入模型 ID 或配置路徑進行預覽。"
+  },
+  {
+    "source": "Enter a symbol for backtesting.",
+    "current_translation": "輸入 a Symbol (股票代碼) 用於backtesting.",
+    "fixed_translation": "輸入回測符號。"
+  },
+  {
+    "source": "Expected returns (comma-separated, e.g. 0.10,0.15,0.12)",
+    "current_translation": "Expected Returns (報酬率) (預期報酬率) （以逗號分隔, e.g. 0.10,0.15,0.12)",
+    "fixed_translation": "預期回報（以逗號分隔，例如 0.10,0.15,0.12）"
+  },
+  {
+    "source": "Export failed: cannot write to %1",
+    "current_translation": "匯出失敗: cannot write 至%1",
+    "fixed_translation": "匯出失敗：無法寫入 %1"
+  },
+  {
+    "source": "Export this note as a Markdown file to the File Manager",
+    "current_translation": "Export this note as a Markdown file 至the File Manager",
+    "fixed_translation": "將此筆記作為 Markdown 文件匯出到文件管理器"
+  },
+  {
+    "source": "FETCH OHLCV DATA",
+    "current_translation": "FETCH OHLCV (開高低收量) DATA",
+    "fixed_translation": "取得 OHLCV 數據"
+  },
+  {
+    "source": "FFN analysis complete for %1 symbol(s)",
+    "current_translation": "FFN 分析完成 用於%1 Symbol (股票代碼)(s)",
+    "fixed_translation": "%1 符號的 FFN 分析完成"
+  },
+  {
+    "source": "FFN complete — %1 symbol%2",
+    "current_translation": "FFN完成 — %1 Symbol (股票代碼)%2",
+    "fixed_translation": "FFN 完整 - %1 符號%2"
+  },
+  {
+    "source": "FFN failed — check Python/yfinance",
+    "current_translation": "FFN失敗 — check Python/yfinance",
+    "fixed_translation": "FFN 失敗 - 檢查 Python/yfinance"
+  },
+  {
+    "source": "Factor Analysis — %1 factors\\n\\n",
+    "current_translation": "Fact或(因子) Analysis — %1 factors\\n\\n",
+    "fixed_translation": "因子分析 - %1因子\\n\\n"
+  },
+  {
+    "source": "Factor Library — %1 factors\\n\\n",
+    "current_translation": "Fact或(因子) Library — %1 factors\\n\\n",
+    "fixed_translation": "因子庫 - %1 因子\\n\\n"
+  },
+  {
+    "source": "Factor mining started...",
+    "current_translation": "Factor Mining (因子挖掘) 已開始...",
+    "fixed_translation": "因子挖掘開始..."
+  },
+  {
+    "source": "Factor name (e.g. momentum)",
+    "current_translation": "Fact或(因子) 名稱 (e.g. momentum)",
+    "fixed_translation": "因子名稱（例如動量）"
+  },
+  {
+    "source": "Factory threw for '%1': %2",
+    "current_translation": "Fact或(因子)y threw 用於'%1': %2",
+    "fixed_translation": "工廠拋出“%1”：%2"
+  },
+  {
+    "source": "Factory threw unknown exception for '%1'",
+    "current_translation": "Fact或(因子)y threw unknown exception 用於'%1'",
+    "fixed_translation": "工廠為「%1」拋出未知異常"
+  },
+  {
+    "source": "Failed to bind loopback: %1",
+    "current_translation": "無法 bind loopback: %1",
+    "fixed_translation": "綁定環回失敗：%1"
+  },
+  {
+    "source": "Failed to clear Deepgram key: %1",
+    "current_translation": "無法 clear Deepgram key: %1",
+    "fixed_translation": "無法清除 Deepgram 金鑰：%1"
+  },
+  {
+    "source": "Failed to create audit table: %1",
+    "current_translation": "無法 create audit table: %1",
+    "fixed_translation": "建立審核表失敗：%1"
+  },
+  {
+    "source": "Failed to create paper portfolio for %1 (%2): %3",
+    "current_translation": "無法 create paper Portfolio (投資組合) (投資組合) 用於%1 (%2): %3",
+    "fixed_translation": "無法為 ZZPH100​​ZZ (%2) 建立紙本檔案袋：%3"
+  },
+  {
+    "source": "Failed to fill order %1: %2",
+    "current_translation": "無法 fill order %1: %2",
+    "fixed_translation": "未填寫訂單 %1：%2"
+  },
+  {
+    "source": "Failed to open file: %1",
+    "current_translation": "無法 open file: %1",
+    "fixed_translation": "無法開啟檔案：%1"
+  },
+  {
+    "source": "Failed to persist account %1 (%2) for broker %3: %4",
+    "current_translation": "無法 persist account %1 (%2) 用於broker %3: %4",
+    "fixed_translation": "無法為經紀商 %3 保留帳戶 %1 (%2): %4"
+  },
+  {
+    "source": "Failed to persist normalized record: %1",
+    "current_translation": "無法 persist normalized record: %1",
+    "fixed_translation": "無法保留規範化記錄：%1"
+  },
+  {
+    "source": "Failed to record event '%1': %2",
+    "current_translation": "無法 record event '%1': %2",
+    "fixed_translation": "無法記錄事件“%1”：%2"
+  },
+  {
+    "source": "Failed to remove connection %1",
+    "current_translation": "無法 remove connection %1",
+    "fixed_translation": "無法刪除連接 %1"
+  },
+  {
+    "source": "Failed to save API key: ",
+    "current_translation": "無法 save API key: ",
+    "fixed_translation": "無法保存 API 金鑰："
+  },
+  {
+    "source": "Failed to start yt-dlp: ",
+    "current_translation": "無法 start yt-dlp: ",
+    "fixed_translation": "無法啟動 yt-dlp："
+  },
+  {
+    "source": "Failed to submit result for %1: %2",
+    "current_translation": "無法 submit result 用於%1: %2",
+    "fixed_translation": "未能提交 %1 的結果：%2"
+  },
+  {
+    "source": "Failed to update connection state for %1",
+    "current_translation": "無法 update connection state 用於%1",
+    "fixed_translation": "無法更新 %1 的連線狀態"
+  },
+  {
+    "source": "Failed to write file: %1",
+    "current_translation": "無法 write file: %1",
+    "fixed_translation": "寫入檔案失敗：%1"
+  },
+  {
+    "source": "Feature importance loaded",
+    "current_translation": "Feature Importance (特徵重要度) 已載入",
+    "fixed_translation": "已載入特徵重要性"
+  },
+  {
+    "source": "Fetch failed for mapping '%1': %2",
+    "current_translation": "Fetch失敗 用於mapping '%1': %2",
+    "fixed_translation": "映射“%1”獲取失敗：%2"
+  },
+  {
+    "source": "Fetched %1 history points for %2",
+    "current_translation": "Fetched %1 history points 用於%2",
+    "fixed_translation": "已取得 %2 的 %1 歷史積分"
+  },
+  {
+    "source": "Fetches live order book + trades, computes book metrics, market making quotes, toxic flow, and slippage in one call",
+    "current_translation": "Fetches live Order Book (委託簿) + Trades (交易), computes book metrics, market making Quote (報價)s, toxic flow, 和slippage 於one call",
+    "fixed_translation": "一次呼叫即可取得即時訂單簿 + 交易，計算訂單簿指標、做市報價、有毒流量和滑點"
+  },
+  {
+    "source": "Fetching 1-year price history...",
+    "current_translation": "擷取 1 年 Price History (價格歷史) 中...",
+    "fixed_translation": "正在取得 1 年價格歷史記錄..."
+  },
+  {
+    "source": "Fetching datasets for %1 offset=%2",
+    "current_translation": "Fetching Datasets (資料集) 用於%1 offset=%2",
+    "fixed_translation": "取得 %1 偏移量=%2 的資料集"
+  },
+  {
+    "source": "Fetching live order book...",
+    "current_translation": "擷取即時 Order Book (委託簿) 中...",
+    "fixed_translation": "取得即時委託簿中..."
+  },
+  {
+    "source": "Fetching mapping '%1' from %2",
+    "current_translation": "Fetching mapping '%1' 來自%2",
+    "fixed_translation": "從 %2 取得映射“%1”"
+  },
+  {
+    "source": "Fetching observations for %1",
+    "current_translation": "Fetching Observations (觀測值) 用於%1",
+    "fixed_translation": "取得 %1 的觀測值"
+  },
+  {
+    "source": "Fetching series %1 q='%2' offset=%3",
+    "current_translation": "Fetching Series (序列) %1 q='%2' offset=%3",
+    "fixed_translation": "取得系列 %1 q='%2' 偏移量=%3"
+  },
+  {
+    "source": "Fetching trades + analyzing flow...",
+    "current_translation": "擷取 Trades (成交) 並分析 Flow (資金流) 中...",
+    "fixed_translation": "取得交易+分析流程..."
+  },
+  {
+    "source": "Fields (comma-separated, e.g. $close,$volume,$open)",
+    "current_translation": "欄位 （以逗號分隔, e.g. $close,$volume,$open)",
+    "fixed_translation": "欄位（以逗號分隔，例如 $close,$volume,$open）"
+  },
+  {
+    "source": "Fields (e.g. $close,$open,$high,$low,$volume)",
+    "current_translation": "欄位 (e.g. $close,$open,$high,$low,$volume)",
+    "fixed_translation": "欄位（例如 $close、$open、$high、$low、$volume）"
+  },
+  {
+    "source": "Fill in the 'config' fields and set 'enabled' to true. ",
+    "current_translation": "Fill 於the '設定' fields 和set 'enabled' 至true. ",
+    "fixed_translation": "填寫“配置”欄位並將“啟用”設為 true。"
+  },
+  {
+    "source": "Flushed %1 pending screen states",
+    "current_translation": "Flushed %1 pending 螢幕 states",
+    "fixed_translation": "刷新的 %1 待定螢幕狀態"
+  },
+  {
+    "source": "Flushed %1 seen IDs to DB",
+    "current_translation": "Flushed %1 seen IDs 至DB",
+    "fixed_translation": "將 %1 看到的 ID 刷新到資料庫"
+  },
+  {
+    "source": "Futures ready: %1 contracts",
+    "current_translation": "Futures (期貨)就緒: %1 contracts",
+    "fixed_translation": "期貨準備就緒：%1 合約"
+  },
+  {
+    "source": "GRID [%1] -> PANEL 1 (full)",
+    "current_translation": "GRID [%1] -> 面板 1 (full)",
+    "fixed_translation": "網格 [%1] -> 面板 1（完整）"
+  },
+  {
+    "source": "GRID [%1] -> PANEL 2 (right of TL)",
+    "current_translation": "GRID [%1] -> PANEL 2 (right 的TL)",
+    "fixed_translation": "網格 [%1] -> 面板 2（TL 右側）"
+  },
+  {
+    "source": "GRID [%1] -> PANEL 3 (below TL)",
+    "current_translation": "GRID [%1] -> 面板 3 (below TL)",
+    "fixed_translation": "網格 [%1] -> 面板 3（TL 以下）"
+  },
+  {
+    "source": "GRID [%1] -> PANEL 4 (right of BL)",
+    "current_translation": "GRID [%1] -> PANEL 4 (right 的BL)",
+    "fixed_translation": "網格 [%1] -> 面板 4（BL 右側）"
+  },
+  {
+    "source": "Generating Fairness Opinion...",
+    "current_translation": "產生 Fairness Opinion (公平性意見書) 中...",
+    "fixed_translation": "產生公平意見..."
+  },
+  {
+    "source": "Got session %1 with %2 messages",
+    "current_translation": "Got session %1 使用%2 messages",
+    "fixed_translation": "獲得帶有 %2 訊息的會話 %1"
+  },
+  {
+    "source": "Grid trading strategy configuration.\\n",
+    "current_translation": "Grid Trading (網格交易) Strategy (策略) 設定。\\n",
+    "fixed_translation": "網格交易策略配置.\\n"
+  },
+  {
+    "source": "Groww error: status=%1",
+    "current_translation": "Groww 錯誤: status=%1",
+    "fixed_translation": "成長錯誤：狀態=%1"
+  },
+  {
+    "source": "Human-in-the-loop approvals will appear here.\\n",
+    "current_translation": "Human-in-the-loop (人工審核) 核准會顯示於此。\\n",
+    "fixed_translation": "此處將顯示人機互動批准。 \\n"
+  },
+  {
+    "source": "Ignoring move-to-monitor %1 — only %2 screen(s) connected",
+    "current_translation": "Ignoring move-to-monit或%1 — only %2 螢幕(s) connected",
+    "fixed_translation": "忽略移動到顯示器 %1 - 僅連接 %2 螢幕"
+  },
+  {
+    "source": "Import complete: %1 imported, %2 skipped",
+    "current_translation": "匯入完成: %1 imported, %2 skipped",
+    "fixed_translation": "導入完成：%1導入，%2跳過"
+  },
+  {
+    "source": "Import failed: cannot open %1",
+    "current_translation": "匯入失敗: cannot open %1",
+    "fixed_translation": "導入失敗：無法開啟 %1"
+  },
+  {
+    "source": "Import holdings into portfolio",
+    "current_translation": "將 Holdings (持股) 匯入 Portfolio (投資組合)",
+    "fixed_translation": "將持股導入投資組合"
+  },
+  {
+    "source": "Imported %1 holdings into portfolio \\",
+    "current_translation": "已匯入 %1 holdings in至Portfolio (投資組合) (投資組合) \\",
+    "fixed_translation": "將 %1 資產導入投資組合\\"
+  },
+  {
+    "source": "Importing <b>%1</b> holdings from <b>%2</b>. ",
+    "current_translation": "Importing <b>%1</b> holdings 來自<b>%2</b>. ",
+    "fixed_translation": "從 <b>%2</b> 匯入 <b>%1</b> 館藏。"
+  },
+  {
+    "source": "Inactivity guard enabled (%1 min timeout)",
+    "current_translation": "Inactivity guard enabled (%1 m於timeout)",
+    "fixed_translation": "啟用不活動保護（%1 分鐘逾時）"
+  },
+  {
+    "source": "Indexed view: rebase portfolio and benchmark to 100 at the start of\\n",
+    "current_translation": "Indexed view: rebase Portfolio (投資組合) (投資組合) 和benchmark 至100 at the start of\\n",
+    "fixed_translation": "索引視圖：在 \\n 開始時將投資組合和基準重新調整為 100"
+  },
+  {
+    "source": "Install finished with errors (exit %1)",
+    "current_translation": "Install finished 使用錯誤s (exit %1)",
+    "fixed_translation": "安裝完成，但發生錯誤（退出 %1）"
+  },
+  {
+    "source": "Install finished with exit code %1",
+    "current_translation": "Install finished 使用exit code %1",
+    "fixed_translation": "安裝完成，退出代碼為 %1"
+  },
+  {
+    "source": "Installer download failed: %1",
+    "current_translation": "Installer download失敗: %1",
+    "fixed_translation": "安裝程式下載失敗：%1"
+  },
+  {
+    "source": "Installing packages into %1 from %2",
+    "current_translation": "Installing packages in至%1 來自%2",
+    "fixed_translation": "將軟體套件從 %2 安裝到 %1"
+  },
+  {
+    "source": "Kalshi adapter: not supported in this call",
+    "current_translation": "Kalshi adapter: not supported 於this call",
+    "fixed_translation": "Kalshi 適配器：此呼叫不支援"
+  },
+  {
+    "source": "Kalshi cancel-all requires a ticker",
+    "current_translation": "Kalshi cancel-all requires a Ticker (股票代碼)",
+    "fixed_translation": "卡爾希取消全部需要股票代碼"
+  },
+  {
+    "source": "Kalshi command failed",
+    "current_translation": "Kalshi command失敗",
+    "fixed_translation": "Kalshi 命令失敗"
+  },
+  {
+    "source": "Kalshi trades require a ticker",
+    "current_translation": "Kalshi Trades (交易) require a Ticker (股票代碼)",
+    "fixed_translation": "卡爾希交易需要股票代碼"
+  },
+  {
+    "source": "LLM profile for the team coordinator. Members use their own assigned profiles.",
+    "current_translation": "團隊協調者使用的 LLM Profile (設定檔)。成員使用各自指定的 Profile。",
+    "fixed_translation": "團隊協調員的法學碩士簡介。成員使用自己指定的設定檔。"
+  },
+  {
+    "source": "LLM profile used by this workflow run",
+    "current_translation": "此 Workflow (工作流程) 執行使用的 LLM Profile (設定檔)",
+    "fixed_translation": "此工作流程運行使用的 LLM 設定文件"
+  },
+  {
+    "source": "Lazy-loaded to %1 articles",
+    "current_translation": "Lazy-loaded 至%1 文章",
+    "fixed_translation": "延遲載入到 %1 文章"
+  },
+  {
+    "source": "Leave blank to inherit from provider",
+    "current_translation": "Leave blank 至inherit 來自provider",
+    "fixed_translation": "留空以從提供者繼承"
+  },
+  {
+    "source": "Leave blank to use global system prompt",
+    "current_translation": "Leave blank 至use global system prompt",
+    "fixed_translation": "留空以使用全域系統提示符"
+  },
+  {
+    "source": "Leave blank to use provider default",
+    "current_translation": "Leave blank 至use provider 預設",
+    "fixed_translation": "留空以使用提供者預設值"
+  },
+  {
+    "source": "Legacy credential migration complete: %1 accounts created",
+    "current_translation": "Legacy credential migration完成: %1 accounts created",
+    "fixed_translation": "舊憑證移轉完成：已建立 %1 帳戶"
+  },
+  {
+    "source": "Limit price",
+    "current_translation": "Limit Price (限價)",
+    "fixed_translation": "限價"
+  },
+  {
+    "source": "Linked to your Fincept account: ",
+    "current_translation": "Linked 至your Fincept account: ",
+    "fixed_translation": "連結到您的 Fincept 帳戶："
+  },
+  {
+    "source": "Load %1 more posts",
+    "current_translation": "Load %1 more 貼文",
+    "fixed_translation": "載入更多 %1 篇文章"
+  },
+  {
+    "source": "Loaded %1 broker accounts from DB",
+    "current_translation": "已載入 %1 broker accounts 來自DB",
+    "fixed_translation": "從資料庫載入 %1 經紀商帳戶"
+  },
+  {
+    "source": "Loaded %1 connector definitions",
+    "current_translation": "已載入 %1 connect或definitions",
+    "fixed_translation": "已載入 %1 連接器定義"
+  },
+  {
+    "source": "Loaded %1 datasets (total=%2)",
+    "current_translation": "已載入 %1 Datasets (資料集) (total=%2)",
+    "fixed_translation": "已載入 %1 資料集（總計=%2）"
+  },
+  {
+    "source": "Loaded %1 sector cache entries",
+    "current_translation": "已載入 %1 sect或cache entries",
+    "fixed_translation": "已載入 %1 磁區快取條目"
+  },
+  {
+    "source": "Loaded %1 series (total=%2)",
+    "current_translation": "已載入 %1 Series (序列) (total=%2)",
+    "fixed_translation": "已載入%1系列（總計=%2）"
+  },
+  {
+    "source": "Loaded %1 widgets for profile '%2'",
+    "current_translation": "已載入 %1 widgets 用於profile '%2'",
+    "fixed_translation": "已載入設定檔“%2”的 %1 小工具"
+  },
+  {
+    "source": "Loaded %1: %2 inst, %3 insiders, %4 peers, quality=%5%",
+    "current_translation": "已載入 %1: %2 inst, %3 insiders, %4 peers, quality=%5%",
+    "fixed_translation": "已加載%1：%2 inst、%3內部人士、%4同行，品質=%5%"
+  },
+  {
+    "source": "Loaded layout with %1 tiles, %2 cols",
+    "current_translation": "已載入 layout 使用%1 tiles, %2 cols",
+    "fixed_translation": "已加載帶有 %1 瓷磚、%2 列的佈局"
+  },
+  {
+    "source": "Loaded workflow: %1 (%2 nodes, %3 edges)",
+    "current_translation": "已載入 workflow: %1 (%2 節點s, %3 edges)",
+    "fixed_translation": "載入的工作流程：%1（%2 節點，%3 邊）"
+  },
+  {
+    "source": "Loaded: %1  •  Click ADD TO SINGLE VIEW",
+    "current_translation": "已載入: %1  •  點擊ADD TO SINGLE VIEW",
+    "fixed_translation": "已載入：%1 • 按一下“新增至單一檢視”"
+  },
+  {
+    "source": "Loading market sentiment…",
+    "current_translation": "載入 Market Sentiment (市場情緒) 中…",
+    "fixed_translation": "正在加載市場情緒..."
+  },
+  {
+    "source": "Logging config saved: global=%1, tags=%2",
+    "current_translation": "Logging 設定已儲存: global=%1, tags=%2",
+    "fixed_translation": "日誌設定已儲存：全域=%1，標籤=%2"
+  },
+  {
+    "source": "MCP server '%1' exited with code %2",
+    "current_translation": "MCP server '%1' exited 使用code %2",
+    "fixed_translation": "MCP 伺服器「%1」退出，代碼為 %2"
+  },
+  {
+    "source": "MCP server available: %1\\npydantic-ai MCP: %2\\nRunning ports: %3",
+    "current_translation": "MCP server 可用: %1\\npydantic-ai MCP: %2\\n執行中 ports: %3",
+    "fixed_translation": "可用 MCP 伺服器：%1\\npydantic-ai MCP：%2\\n運作埠：%3"
+  },
+  {
+    "source": "MCP server failed to start:\\n%1\\n\\nInstall: %2",
+    "current_translation": "MCP server失敗 至start:\\n%1\\n\\nInstall: %2",
+    "fixed_translation": "MCP 伺服器啟動失敗：\\n%1\\n\\n安裝：%2"
+  },
+  {
+    "source": "MCP tool server running at %1\\n\\nAvailable tools:\\n  %2\\n\\n",
+    "current_translation": "MCP tool server 執行中 at %1\\n\\nAvailable 工具:\\n  %2\\n\\n",
+    "fixed_translation": "運行在 %1\\n\\n 上的 MCP 工具伺服器可用工具：\\n %2\\n\\n"
+  },
+  {
+    "source": "Manifest JSON parse failed: %1",
+    "current_translation": "Manifest JSON parse失敗: %1",
+    "fixed_translation": "清單 JSON 解析失敗：%1"
+  },
+  {
+    "source": "Manifest entry for '%1' is missing latest-version or download-url",
+    "current_translation": "Manifest entry 用於'%1' is missing latest-version 或download-url",
+    "fixed_translation": "「%1」的清單項目缺少最新版本或下載網址"
+  },
+  {
+    "source": "Manifest fetch failed: %1 (%2)",
+    "current_translation": "Manifest fetch失敗: %1 (%2)",
+    "fixed_translation": "清單取得失敗：%1 (%2)"
+  },
+  {
+    "source": "Manifest has no entry for '%1' — no update available",
+    "current_translation": "Manifest has no entry 用於'%1' — no update 可用",
+    "fixed_translation": "清單中沒有「%1」條目 - 無可用更新"
+  },
+  {
+    "source": "Map: %1 events → %2 pins (%3 skipped, %4 unique coords)",
+    "current_translation": "Map: %1 事件 → %2 pins (%3 skipped, %4 unique coords)",
+    "fixed_translation": "地圖：%1 事件 → %2 腳位（%3 已跳過，%4 獨特座標）"
+  },
+  {
+    "source": "Mapping '%1' produced %2 validation error(s)",
+    "current_translation": "Mapping '%1' produced %2 有效ation 錯誤(s)",
+    "fixed_translation": "映射“%1”產生了 %2 驗證錯誤"
+  },
+  {
+    "source": "Market sentiment analysis will appear here.\\n",
+    "current_translation": "Market Sentiment (市場情緒) 分析會顯示於此。\\n",
+    "fixed_translation": "市場情緒分析將出現在這裡。 \\n"
+  },
+  {
+    "source": "Max Drawdown",
+    "current_translation": "Max Drawdown (最大回撤)",
+    "fixed_translation": "最大回撤"
+  },
+  {
+    "source": "Message agent... (Shift+Enter for new line, Enter to send)",
+    "current_translation": "向 Agent 發送訊息...（Shift+Enter 換行，Enter 傳送）",
+    "fixed_translation": "訊息代理程式...（Shift+Enter 換行，Enter 發送）"
+  },
+  {
+    "source": "Migrated %1 settings from legacy DB",
+    "current_translation": "Migrated %1 settings 來自legacy DB",
+    "fixed_translation": "從舊資料庫遷移 %1 設定"
+  },
+  {
+    "source": "Migrated legacy credentials for %1 → account %2",
+    "current_translation": "Migrated legacy credentials 用於%1 → account %2",
+    "fixed_translation": "已移轉 %1 的舊憑證 → 帳號 %2"
+  },
+  {
+    "source": "Missing required field: ",
+    "current_translation": "Missing 必填 field: ",
+    "fixed_translation": "缺少必填欄位："
+  },
+  {
+    "source": "Missing required field: %1",
+    "current_translation": "Missing 必填 field: %1",
+    "fixed_translation": "缺少必填欄位：%1"
+  },
+  {
+    "source": "Model ID (optional, auto-generated if blank)",
+    "current_translation": "Model ID (選填, 自動產生 if blank)",
+    "fixed_translation": "型號 ID（可選，如果為空則自動產生）"
+  },
+  {
+    "source": "Model keys (from selection output, comma-separated)",
+    "current_translation": "Model keys (來自selection output, 以逗號分隔)",
+    "fixed_translation": "模型鍵（來自選擇輸出，以逗號分隔）"
+  },
+  {
+    "source": "Model name (e.g. LightGBM)",
+    "current_translation": "Model 名稱 (e.g. LightGBM)",
+    "fixed_translation": "型號名稱（例如 LightGBM）"
+  },
+  {
+    "source": "Model optimization started...",
+    "current_translation": "Model Optimization (模型最佳化) 已開始...",
+    "fixed_translation": "模型優化開始..."
+  },
+  {
+    "source": "Model predictions (comma-separated)",
+    "current_translation": "Model Prediction (預測)s (模型預測) （以逗號分隔)",
+    "fixed_translation": "模型預測（逗號分隔）"
+  },
+  {
+    "source": "Model: %1  [%2]\\nSamples: %3  |  MAE: %4\\nDrift: %5\\nLast updated: %6",
+    "current_translation": "Model: %1  [%2]\\nSamples: %3  |  MAE (平均絕對誤差): %4\\nDrift: %5\\n最後更新: %6",
+    "fixed_translation": "型號：%1 [%2]\\n樣品：%3 | MAE：%4ZNEWLINEZZ漂移：%5\\n最後更新：%6"
+  },
+  {
+    "source": "Monte Carlo: %1",
+    "current_translation": "Monte Carlo (蒙地卡羅): %1",
+    "fixed_translation": "蒙特卡羅：%1"
+  },
+  {
+    "source": "Moved window %1 to monitor '%2'",
+    "current_translation": "Moved window %1 至monit或'%2'",
+    "fixed_translation": "移動視窗 %1 以監視“%2”"
+  },
+  {
+    "source": "NODES: %1  |  CONFLICTS: %2  |  ORGANIZATIONS: %3",
+    "current_translation": "NODES: %1  |  CONFLIC (資訊係數)TS: %2  |  ORGANIZATIONS: %3",
+    "fixed_translation": "節點：%1 | 衝突：%2 | 組織：%3"
+  },
+  {
+    "source": "New limit price (0.01 – 0.99):",
+    "current_translation": "新的 Limit Price (限價)（0.01–0.99）：",
+    "fixed_translation": "新限價（0.01 - 0.99）："
+  },
+  {
+    "source": "No data fetched yet",
+    "current_translation": "無資料 fetched yet",
+    "fixed_translation": "尚未取得數據"
+  },
+  {
+    "source": "No sample data — test API first (Step 1)",
+    "current_translation": "無sample data — test API first (Step 1)",
+    "fixed_translation": "無範例資料 - 首先測試 API（第 1 步）"
+  },
+  {
+    "source": "No symbol loaded. Search for a symbol first.",
+    "current_translation": "尚未載入 Symbol (股票代碼)。請先搜尋 Symbol。",
+    "fixed_translation": "沒有加載符號。先搜尋一個符號。"
+  },
+  {
+    "source": "Node %1 failed: %2 — aborting",
+    "current_translation": "Node %1失敗: %2 — aborting",
+    "fixed_translation": "節點 %1 失敗：%2 - 正在中止"
+  },
+  {
+    "source": "Number of distinct holdings in this portfolio,\\n",
+    "current_translation": "此 Portfolio (投資組合) 中不同 Holdings (持股) 的數量，\\n",
+    "fixed_translation": "此投資組合中不同持股數量，\\n"
+  },
+  {
+    "source": "OHLCV ready: %1 symbols",
+    "current_translation": "OHLCV (開高低收量)就緒: %1 Symbol (股票代碼)s",
+    "fixed_translation": "OHLCV 就緒：%1 個標的"
+  },
+  {
+    "source": "Observations loaded for: %1",
+    "current_translation": "Observations已載入 for: %1",
+    "fixed_translation": "已載入觀測值：%1"
+  },
+  {
+    "source": "Optional alternative data",
+    "current_translation": "選填 alternative data",
+    "fixed_translation": "可選替代數據"
+  },
+  {
+    "source": "Optional system prompt for the LLM...",
+    "current_translation": "選填 system prompt 用於the LLM...",
+    "fixed_translation": "LLM 的可選系統提示..."
+  },
+  {
+    "source": "Optional: path to Qlib YAML config (leave blank for built-in LightGBM+Alpha158)",
+    "current_translation": "選填: 路徑至 Qlib YAML 設定 (留空 用於built-於LightGBM+Alpha (超額報酬)158)",
+    "fixed_translation": "選用：Qlib YAML 配置的路徑（內建 LightGBM+Alpha158 留空）"
+  },
+  {
+    "source": "Options chain ready: %1 strikes x %2 expiries",
+    "current_translation": "Options (選擇權) chain就緒: %1 strikes x %2 expiries",
+    "fixed_translation": "選擇權鏈就緒：%1 個履約價 x %2 個到期日"
+  },
+  {
+    "source": "Order modify failed: %1",
+    "current_translation": "Order modify失敗: %1",
+    "fixed_translation": "訂單修改失敗：%1"
+  },
+  {
+    "source": "Overlay benchmark index (auto-selected by portfolio currency)",
+    "current_translation": "Overlay benchmark index (auto-selected by Portfolio (投資組合) (投資組合) currency)",
+    "fixed_translation": "疊加基準指數（以投資組合貨幣自動選擇）"
+  },
+  {
+    "source": "PIN must be exactly 6 digits",
+    "current_translation": "PIN 必須be exactly 6 digits",
+    "fixed_translation": "PIN 碼必須剛好是 6 位數字"
+  },
+  {
+    "source": "PIN must contain only digits",
+    "current_translation": "PIN 必須conta於only digits",
+    "fixed_translation": "PIN 碼必須僅包含數字"
+  },
+  {
+    "source": "PIN verification failed (attempt %1/%2)",
+    "current_translation": "PIN verification失敗 (attempt %1/%2)",
+    "fixed_translation": "PIN 驗證失敗（嘗試 %1/%2）"
+  },
+  {
+    "source": "Paper order failed: %1",
+    "current_translation": "Paper order失敗: %1",
+    "fixed_translation": "紙本訂單失敗：%1"
+  },
+  {
+    "source": "Paper order filled: %1 %2 @ %3",
+    "current_translation": "Paper Order (模擬訂單) 已成交：%1 %2 @ %3",
+    "fixed_translation": "紙本訂單已填寫：%1 %2 @ %3"
+  },
+  {
+    "source": "Parsed %1 AngelOne instruments",
+    "current_translation": "Parsed %1 AngelOne Instruments (商品) (商品)",
+    "fixed_translation": "解析%1 AngelOne儀器"
+  },
+  {
+    "source": "Parsed %1 instruments",
+    "current_translation": "Parsed %1 Instruments (商品) (商品)",
+    "fixed_translation": "解析的 %1 樂器"
+  },
+  {
+    "source": "Parsed %1 instruments (skipped %2 malformed rows)",
+    "current_translation": "Parsed %1 Instruments (商品) (商品) (skipped %2 malformed 列)",
+    "fixed_translation": "已解析 %1 個商品（跳過 %2 筆格式錯誤的列）"
+  },
+  {
+    "source": "Partial execution from %1: %2 nodes",
+    "current_translation": "Partial execution 來自%1: %2 節點s",
+    "fixed_translation": "從 %1 部分執行：%2 節點"
+  },
+  {
+    "source": "Perform risk analysis on portfolio '%1' — VaR, drawdown, stress test.",
+    "current_translation": "對 Portfolio (投資組合)「%1」執行風險分析 — VaR (風險值)、Drawdown (回撤)、Stress Test (壓力測試)。",
+    "fixed_translation": "對投資組合「%1」進行風險分析 - VaR、回撤、壓力測試。"
+  },
+  {
+    "source": "PnL: $%1, Trades: %2, Volume: $%3",
+    "current_translation": "PnL (損益)：$%1，Trades (交易)：%2，Volume (成交量)：$%3",
+    "fixed_translation": "損益：$%1，成交：%2，成交量：$%3"
+  },
+  {
+    "source": "Polymarket adapter: not supported in this call",
+    "current_translation": "Polymarket adapter: not supported 於this call",
+    "fixed_translation": "Polymarket 適配器：此通話不支援"
+  },
+  {
+    "source": "Polymarket trades require condition id",
+    "current_translation": "Polymarket Trades (交易) require condition id",
+    "fixed_translation": "Polymarket 交易需要條件 ID"
+  },
+  {
+    "source": "Populated %1 schema columns",
+    "current_translation": "已填入 %1 schema columns",
+    "fixed_translation": "填滿的 %1 架構列"
+  },
+  {
+    "source": "Port %1 busy - falling back to ephemeral",
+    "current_translation": "Port %1 busy - falling back 至ephemeral",
+    "fixed_translation": "連接埠 %1 繁忙 - 回落到短暫狀態"
+  },
+  {
+    "source": "Portfolio context: %1",
+    "current_translation": "Portfolio (投資組合) context：%1",
+    "fixed_translation": "產品組合背景：%1"
+  },
+  {
+    "source": "Portfolio returns (comma-separated)",
+    "current_translation": "Portfolio Returns (投資組合報酬率)（以逗號分隔）",
+    "fixed_translation": "投資組合報酬（以逗號分隔）"
+  },
+  {
+    "source": "Portfolio to use as context for rebalance / analysis plans",
+    "current_translation": "作為 Rebalance (再平衡) / 分析計畫 context 的 Portfolio (投資組合)",
+    "fixed_translation": "用作再平衡/分析計劃背景的投資組合"
+  },
+  {
+    "source": "Portfolio: %1  |  NAV: %2 %3",
+    "current_translation": "Portfolio (投資組合): %1  |  NAV (淨值): %2 %3",
+    "fixed_translation": "產品組合：%1 | 導航：%2 %3"
+  },
+  {
+    "source": "Position size %1% exceeds max %2%",
+    "current_translation": "Position Size (部位規模) %1% 超過上限 %2%",
+    "fixed_translation": "部位規模 %1% 超過最大 %2%"
+  },
+  {
+    "source": "Press Enter to close all except %1",
+    "current_translation": "Press 輸入 至close all except %1",
+    "fixed_translation": "按 Enter 鍵關閉 %1 以外的所有內容"
+  },
+  {
+    "source": "Preview: %1 rolling windows  (step=%2, horizon=%3)",
+    "current_translation": "預覽: %1 rolling windows  (step=%2, horizon=%3)",
+    "fixed_translation": "預覽：%1 滾動視窗（步長=%2，地平線=%3）"
+  },
+  {
+    "source": "Price data (comma-separated, e.g. 100,102,101,105,108)",
+    "current_translation": "Price Data (價格資料) （以逗號分隔, e.g. 100,102,101,105,108)",
+    "fixed_translation": "價格資料（以逗號分隔，例如 100,102,101,105,108）"
+  },
+  {
+    "source": "Progressive fetch complete: %1 articles, %2 sources",
+    "current_translation": "Progressive fetch完成: %1 文章, %2 sources",
+    "fixed_translation": "漸進式取得完成：%1 文章、%2 來源"
+  },
+  {
+    "source": "Python check: path=%1  exists=%2",
+    "current_translation": "Python 檢查：path=%1  exists=%2",
+    "fixed_translation": "Python檢查：路徑=%1存在=%2"
+  },
+  {
+    "source": "Qlib: %1\\nAvailable: %2\\nUnavailable: %3",
+    "current_translation": "Qlib: %1\\nAvailable: %2\\nUn可用: %3",
+    "fixed_translation": "Qlib：%1\\n可用：%2\\n不可用：%3"
+  },
+  {
+    "source": "Quant research started...",
+    "current_translation": "Quant Research (量化研究) 已開始...",
+    "fixed_translation": "量化研究開始了…"
+  },
+  {
+    "source": "Ready to connect to ",
+    "current_translation": "Ready 至connect 至",
+    "fixed_translation": "準備連接到"
+  },
+  {
+    "source": "Refresh complete: %1 instruments for %2",
+    "current_translation": "Refresh完成: %1 Instruments (商品) (商品) 用於%2",
+    "fixed_translation": "刷新完成：%2 的 %1 儀器"
+  },
+  {
+    "source": "Refresh requested for %1 (force=%2)",
+    "current_translation": "Refresh requested 用於%1 (force=%2)",
+    "fixed_translation": "請求刷新 %1（強制=%2）"
+  },
+  {
+    "source": "Refreshing market sentiment…",
+    "current_translation": "重新整理 Market Sentiment (市場情緒) 中…",
+    "fixed_translation": "刷新市場情緒..."
+  },
+  {
+    "source": "Registered %1 MA Analytics tools",
+    "current_translation": "已註冊 %1 MA Analytics tools",
+    "fixed_translation": "註冊%1 MA分析工具"
+  },
+  {
+    "source": "Registered %1 internal MCP tools",
+    "current_translation": "已註冊 %1 internal MCP tools",
+    "fixed_translation": "註冊%1內部MCP工具"
+  },
+  {
+    "source": "Registered %1 tools successfully",
+    "current_translation": "已註冊 %1 tools successfully",
+    "fixed_translation": "註冊%1工具成功"
+  },
+  {
+    "source": "Registering %1 terminal tools (v%2)",
+    "current_translation": "註冊中 %1 terminal tools (v%2)",
+    "fixed_translation": "註冊 %1 個終端工具（v%2）"
+  },
+  {
+    "source": "Registering %1 tools (gen %2)",
+    "current_translation": "註冊中 %1 tools (gen %2)",
+    "fixed_translation": "註冊 %1 個工具（第 %2 代）"
+  },
+  {
+    "source": "Removed series from slot %1",
+    "current_translation": "移除d Series (序列) 來自slot %1",
+    "fixed_translation": "從插槽 %1 中刪除了系列"
+  },
+  {
+    "source": "Rendered %1 series",
+    "current_translation": "Rendered %1 Series (序列)",
+    "fixed_translation": "已繪製 %1 個資料系列"
+  },
+  {
+    "source": "Replaced %1 instruments for %2",
+    "current_translation": "Replaced %1 Instruments (商品) (商品) 用於%2",
+    "fixed_translation": "將 %1 儀器替換為 %2"
+  },
+  {
+    "source": "Requirements file not found: %1\\n",
+    "current_translation": "Requirements file 找不到: %1\\n",
+    "fixed_translation": "找不到需求檔案：%1\\n"
+  },
+  {
+    "source": "Resolved [%1] via global default → profile '%2'",
+    "current_translation": "Resolved [%1] via global 預設 → profile '%2'",
+    "fixed_translation": "透過全域預設解析 [%1] → 設定檔「%2」"
+  },
+  {
+    "source": "Resolved [%1] via type-default → profile '%2'",
+    "current_translation": "Resolved [%1] via type-預設 → profile '%2'",
+    "fixed_translation": "透過型別預設 → 設定檔「%2」解決了 [%1]"
+  },
+  {
+    "source": "Restart cap (%1) reached — giving up, pending requests will fail",
+    "current_translation": "Restart cap (%1) reached — giving up, pending requests 將fail",
+    "fixed_translation": "達到重啟上限 (%1) - 放棄，待處理的請求將失敗"
+  },
+  {
+    "source": "Restarting server %1 (attempt %2/%3)",
+    "current_translation": "重新啟動中 server %1 (attempt %2/%3)",
+    "fixed_translation": "重新啟動伺服器 %1（嘗試 %2/%3）"
+  },
+  {
+    "source": "Restored %1 secondary window(s) from last session",
+    "current_translation": "已還原 %1 secondary window(s) 來自last session",
+    "fixed_translation": "從上次會話中恢復了 %1 輔助視窗"
+  },
+  {
+    "source": "Risk %1/10  Audit %2",
+    "current_translation": "Risk (風險) %1/10  Audit %2",
+    "fixed_translation": "風險 %1/10 審核 %2"
+  },
+  {
+    "source": "Rolling window in trading days (default: 252)",
+    "current_translation": "Rolling Window (滾動視窗) 於交易 days (預設: 252)",
+    "fixed_translation": "交易日捲動視窗（預設：252）"
+  },
+  {
+    "source": "Running %1 analysis through the agent stack…",
+    "current_translation": "執行中 %1 分析 through the agent stack…",
+    "fixed_translation": "透過代理堆疊運行 %1 分析..."
+  },
+  {
+    "source": "Running %1 on this portfolio…",
+    "current_translation": "執行中 %1 on this Portfolio (投資組合) (投資組合)…",
+    "fixed_translation": "在此產品組合上運行 %1..."
+  },
+  {
+    "source": "Running (%1/%2 active, %3 queued): %4 %5",
+    "current_translation": "執行中 (%1/%2 active, %3 queued): %4 %5",
+    "fixed_translation": "正在運行（%1/%2 活動，%3 排隊）：%4 %5"
+  },
+  {
+    "source": "Running 1000 simulation paths...",
+    "current_translation": "執行 1000 條 Simulation Paths (模擬路徑) 中...",
+    "fixed_translation": "運行 1000 條模擬路徑..."
+  },
+  {
+    "source": "Running Accretion/Dilution...",
+    "current_translation": "執行 Accretion/Dilution (增厚/稀釋) 分析中...",
+    "fixed_translation": "運行增加/稀釋..."
+  },
+  {
+    "source": "Running BL...",
+    "current_translation": "執行 BL (Black-Litterman) 中...",
+    "fixed_translation": "運行BL..."
+  },
+  {
+    "source": "Running LBO Sensitivity...",
+    "current_translation": "執行中 LBO (槓桿收購) Sensitivity...",
+    "fixed_translation": "運行 LBO 靈敏度..."
+  },
+  {
+    "source": "Running Monte Carlo...",
+    "current_translation": "執行 Monte Carlo (蒙地卡羅) 中...",
+    "fixed_translation": "運行蒙特卡羅..."
+  },
+  {
+    "source": "Running Precedent Txns...",
+    "current_translation": "執行 Precedent Transactions (可比交易分析) 中...",
+    "fixed_translation": "運行先例 Txns..."
+  },
+  {
+    "source": "Running Trading Comps...",
+    "current_translation": "執行 Trading Comps (可比公司分析) 中...",
+    "fixed_translation": "運行交易比較..."
+  },
+  {
+    "source": "Running agent query [%1]: %2",
+    "current_translation": "執行中 agent query [%1]: %2",
+    "fixed_translation": "執行代理查詢[%1]：%2"
+  },
+  {
+    "source": "Running script: %1 with %2 args",
+    "current_translation": "執行 Script: %1 使用%2 args",
+    "fixed_translation": "運行腳本：帶有 %2 args 的 %1"
+  },
+  {
+    "source": "Running structured agent [%1] (%2): %3",
+    "current_translation": "執行中 structured agent [%1] (%2): %3",
+    "fixed_translation": "運行結構化代理[%1]（%2）：%3"
+  },
+  {
+    "source": "Running team query [%1]: %2",
+    "current_translation": "執行中 team query [%1]: %2",
+    "fixed_translation": "跑步隊伍查詢[%1]：%2"
+  },
+  {
+    "source": "SEC filings and company research.\\n",
+    "current_translation": "SEC Filings (申報文件) 與公司研究。\\n",
+    "fixed_translation": "SEC 文件和公司研究。 \\n"
+  },
+  {
+    "source": "Saved %1 widgets for profile '%2'",
+    "current_translation": "已儲存 %1 widgets 用於profile '%2'",
+    "fixed_translation": "為設定檔“%2”儲存的 %1 小工具"
+  },
+  {
+    "source": "Saved workflow: %1 (%2 nodes, %3 edges)",
+    "current_translation": "已儲存 workflow: %1 (%2 節點s, %3 edges)",
+    "fixed_translation": "已儲存的工作流程：%1（%2 節點、%3 邊）"
+  },
+  {
+    "source": "Saved. Changes apply on next voice session.",
+    "current_translation": "已儲存. Changes apply on next voice session.",
+    "fixed_translation": "已儲存。變更適用於下一個語音會話。"
+  },
+  {
+    "source": "Saving %1 message to session %2",
+    "current_translation": "Saving %1 message 至session %2",
+    "fixed_translation": "將 %1 訊息儲存到會話 %2"
+  },
+  {
+    "source": "Scan complete: %1 matches out of %2 symbols",
+    "current_translation": "掃描完成: %1 matches out 的%2 Symbol (股票代碼)s",
+    "fixed_translation": "掃描完成：%1 匹配 %2 符號"
+  },
+  {
+    "source": "Scan started: %1 conditions, %2 symbols",
+    "current_translation": "S可以started: %1 conditions, %2 Symbol (股票代碼)s",
+    "fixed_translation": "掃描開始：%1 條件、%2 符號"
+  },
+  {
+    "source": "Scanning SEC EDGAR...",
+    "current_translation": "掃描中 SEC EDGAR...",
+    "fixed_translation": "掃描 SEC EDGAR..."
+  },
+  {
+    "source": "Schedule created — switch to Schedules tab to view",
+    "current_translation": "排程已建立 — switch 至Schedules tab 至view",
+    "fixed_translation": "已建立計劃 - 切換到「計劃」標籤以查看"
+  },
+  {
+    "source": "Schedule created: %1\\nFreq: %2  |  Window: %3 days  |  Next: %4%5",
+    "current_translation": "排程已建立: %1\\nFreq: %2  |  Window: %3 days  |  Next: %4%5",
+    "fixed_translation": "已建立的時間表：%1\\n頻率：%2 | 視窗：%3天| 下一頁： %4%5"
+  },
+  {
+    "source": "Script %1 failed in %2ms (exit=%3): %4",
+    "current_translation": "Script %1失敗 於%2ms (exit=%3): %4",
+    "fixed_translation": "腳本 %1 在 %2ms 失敗（退出 = %3）：%4"
+  },
+  {
+    "source": "Script %1 finished in %2ms",
+    "current_translation": "Script %1 finished 於%2ms",
+    "fixed_translation": "腳本%1在%2ms完成"
+  },
+  {
+    "source": "Script exited with code %1",
+    "current_translation": "Script exited 使用code %1",
+    "fixed_translation": "腳本退出，代碼為 %1"
+  },
+  {
+    "source": "Script reported error",
+    "current_translation": "Script reported 錯誤",
+    "fixed_translation": "腳本報告錯誤"
+  },
+  {
+    "source": "Search HDX datasets...",
+    "current_translation": "搜尋 HDX Datasets (資料集)...",
+    "fixed_translation": "搜尋 HDX 資料集..."
+  },
+  {
+    "source": "Search assets (AAPL, Tesla, RELIANCE...)",
+    "current_translation": "搜尋 Assets (資產)（AAPL、Tesla、RELIANCE...）",
+    "fixed_translation": "搜尋資產（AAPL、特斯拉、RELIANCE...）"
+  },
+  {
+    "source": "Search deals by target, acquirer, or industry...",
+    "current_translation": "依 Target (標的)、Acquirer (收購方) 或 Industry (產業) 搜尋交易...",
+    "fixed_translation": "依目標、收購方或產業搜尋交易..."
+  },
+  {
+    "source": "Search files by name, type, or source...",
+    "current_translation": "搜尋 files by 名稱, type, 或source...",
+    "fixed_translation": "按名稱、類型或來源搜尋檔案..."
+  },
+  {
+    "source": "Search providers, datasets...",
+    "current_translation": "搜尋 Providers (提供者), Datasets (資料集)...",
+    "fixed_translation": "搜尋提供者、資料集..."
+  },
+  {
+    "source": "Search symbol or name: AAPL, Reliance, Bitcoin ...",
+    "current_translation": "搜尋 Symbol (股票代碼) 或名稱: AAPL, Reliance, Bitco於...",
+    "fixed_translation": "搜尋符號或名稱： AAPL, Reliance, Bitcoin ..."
+  },
+  {
+    "source": "Searching: '%1' offset=%2",
+    "current_translation": "搜尋ing: '%1' offset=%2",
+    "fixed_translation": "搜尋：「%1」偏移量=%2"
+  },
+  {
+    "source": "Sector Mapping",
+    "current_translation": "Sector (產業類別) Mapping (對應)",
+    "fixed_translation": "扇區映射"
+  },
+  {
+    "source": "SecureStorage.store(kalshi) failed: ",
+    "current_translation": "Secure儲存空間.store(kalshi)失敗: ",
+    "fixed_translation": "SecureStorage.store（kalshi）失敗："
+  },
+  {
+    "source": "SecureStorage.store(polymarket) failed: ",
+    "current_translation": "Secure儲存空間.store(polymarket)失敗: ",
+    "fixed_translation": "SecureStorage.store（polymarket）失敗："
+  },
+  {
+    "source": "SecureStorage: failed to persist %1",
+    "current_translation": "Secure儲存空間:失敗 至persist %1",
+    "fixed_translation": "SecureStorage：無法持久保存 %1"
+  },
+  {
+    "source": "Security ID not found for %1:%2 — instrument DB not loaded?",
+    "current_translation": "Security ID 找不到 用於%1:%2 — instrument DB not已載入?",
+    "fixed_translation": "未找到 %1:%2 的安全 ID - 儀器資料庫未載入？"
+  },
+  {
+    "source": "Security settings saved: autolock=%1, timeout=%2min",
+    "current_translation": "Security settings已儲存: autolock=%1, timeout=%2min",
+    "fixed_translation": "已儲存的安全設定：自動鎖定=%1，逾時=%2min"
+  },
+  {
+    "source": "Select a configured agent, or Default to use the global LLM.",
+    "current_translation": "選擇已設定的 Agent，或選擇 Default 使用全域 LLM。",
+    "fixed_translation": "選擇已配置的代理，或預設使用全域 LLM。"
+  },
+  {
+    "source": "Select a module and endpoint, then execute to see results...",
+    "current_translation": "選擇 Module (模組) 和 Endpoint，然後執行以查看結果...",
+    "fixed_translation": "選擇一個模組和端點，然後執行以查看結果..."
+  },
+  {
+    "source": "Select a task and click GET FACTORS / GET MODEL to view results...",
+    "current_translation": "選擇 a task 和click GET FACTORS / GET MODEL 至view 結果...",
+    "fixed_translation": "選擇一個任務並點擊“獲取因素/獲取模型”以查看結果..."
+  },
+  {
+    "source": "Series added to single view: %1",
+    "current_translation": "Series added 至single view: %1",
+    "fixed_translation": "新增至單一視圖的系列：%1"
+  },
+  {
+    "source": "Series added to slot %1: %2",
+    "current_translation": "Series added 至slot %1: %2",
+    "fixed_translation": "加入插槽 %1 的系列：%2"
+  },
+  {
+    "source": "Sharpe Ratio: risk-adjusted return over a risk-free rate.\\n",
+    "current_translation": "Sharpe Ratio (夏普比率)：相對 Risk-Free Rate (無風險利率) 的風險調整後報酬。\\n",
+    "fixed_translation": "夏普比率：相對於無風險利率的風險調整報酬。 \\n"
+  },
+  {
+    "source": "Showing %1 of 1000 simulated paths over 252 trading days (GBM).",
+    "current_translation": "顯示 %1 的1000 simulated paths over 252 交易 days (GBM).",
+    "fixed_translation": "顯示 %1 超過 252 個交易日 (GBM) 的 1000 條模擬路徑。"
+  },
+  {
+    "source": "Signal Data — %1 records\\nInstruments: %2\\nRange: %3 → %4",
+    "current_translation": "Signal Data — %1 筆記錄\\nInstruments (商品): %2\\nRange: %3 → %4",
+    "fixed_translation": "訊號資料 - %1 記錄\\n儀器：%2\\n範圍：%3 → %4"
+  },
+  {
+    "source": "Signal values (comma-separated)",
+    "current_translation": "Signal Values (訊號值) （以逗號分隔)",
+    "fixed_translation": "訊號值（逗號分隔）"
+  },
+  {
+    "source": "Skipping update check — running version '%1' is not a release build",
+    "current_translation": "Skipping update check — 執行中 版本 '%1' is not a release build",
+    "fixed_translation": "跳過更新檢查 - 運行版本“%1”不是發布版本"
+  },
+  {
+    "source": "Started %1 data streams for active accounts",
+    "current_translation": "Started %1 data streams 用於active accounts",
+    "fixed_translation": "為活躍帳號啟動 %1 資料流"
+  },
+  {
+    "source": "Started data stream for account %1",
+    "current_translation": "Started data stream 用於account %1",
+    "fixed_translation": "已啟動帳戶 %1 的資料流"
+  },
+  {
+    "source": "Started stream for account %1 (%2)",
+    "current_translation": "Started stream 用於account %1 (%2)",
+    "fixed_translation": "已開始為帳號 %1 (%2) 直播"
+  },
+  {
+    "source": "Starting execution: %1 (%2 nodes)",
+    "current_translation": "Starting execution: %1 (%2 節點s)",
+    "fixed_translation": "開始執行：%1（%2節點）"
+  },
+  {
+    "source": "Starting log viewer...",
+    "current_translation": "啟動 Log Viewer (記錄檢視器) 中...",
+    "fixed_translation": "正在啟動日誌檢視器..."
+  },
+  {
+    "source": "Startup sweep removed %1 expired cache rows",
+    "current_translation": "Startup sweep removed %1 expired cache 列",
+    "fixed_translation": "啟動掃描刪除了 %1 過期的快取行"
+  },
+  {
+    "source": "Step size between windows (default: 20)",
+    "current_translation": "步長 between windows (預設: 20)",
+    "fixed_translation": "視窗之間的步長（預設值：20）"
+  },
+  {
+    "source": "Stock analysis plan: %1",
+    "current_translation": "Stock 分析 plan: %1",
+    "fixed_translation": "庫存分析計畫：%1"
+  },
+  {
+    "source": "Stop Loss",
+    "current_translation": "Stop Loss (停損)",
+    "fixed_translation": "停損"
+  },
+  {
+    "source": "Stop price",
+    "current_translation": "Stop Price (停損觸發價)",
+    "fixed_translation": "停損價"
+  },
+  {
+    "source": "Stopped data stream for account %1",
+    "current_translation": "Stopped data stream 用於account %1",
+    "fixed_translation": "帳號 %1 的資料流已停止"
+  },
+  {
+    "source": "Stopped stream for account %1",
+    "current_translation": "Stopped stream 用於account %1",
+    "fixed_translation": "帳號 %1 已停止直播"
+  },
+  {
+    "source": "Streaming message to session %1 [%2]: \\",
+    "current_translation": "Streaming message 至session %1 [%2]: \\",
+    "fixed_translation": "將訊息串流傳輸到會話 %1 [%2]：\\"
+  },
+  {
+    "source": "Stress testing...",
+    "current_translation": "Stress Test (壓力測試) 中...",
+    "fixed_translation": "壓力測試..."
+  },
+  {
+    "source": "Suggest rebalancing for portfolio '%1' to optimize risk-return.",
+    "current_translation": "建議 Portfolio (投資組合)「%1」的 Rebalancing (再平衡)，以最佳化風險報酬。",
+    "fixed_translation": "建議重新平衡投資組合「%1」以優化風險回報。"
+  },
+  {
+    "source": "Symbol changed: %1 → %2",
+    "current_translation": "Symbol (股票代碼) changed: %1 → %2",
+    "fixed_translation": "符號變更：%1 → %2"
+  },
+  {
+    "source": "System prompt / instructions...",
+    "current_translation": "System Prompt (系統提示) / 指示...",
+    "fixed_translation": "系統提示/說明..."
+  },
+  {
+    "source": "System prompt — role, goals, constraints, persona...",
+    "current_translation": "System Prompt (系統提示) — 角色、目標、限制、persona...",
+    "fixed_translation": "系統提示-角色、目標、限制、人物..."
+  },
+  {
+    "source": "TICKERS: %1",
+    "current_translation": "TIC (資訊係數)KERS: %1",
+    "fixed_translation": "代碼：%1"
+  },
+  {
+    "source": "TOXIC FLOW DETECTED — score: %1 — %2",
+    "current_translation": "TOXIC (資訊係數) FLOW DETECTED — score: %1 — %2",
+    "fixed_translation": "偵測到有毒流量 - 分數：%1 - %2"
+  },
+  {
+    "source": "Take Profit",
+    "current_translation": "Take Profit (停利)",
+    "fixed_translation": "止盈"
+  },
+  {
+    "source": "Target returns (comma-separated)",
+    "current_translation": "Target returns （以逗號分隔)",
+    "fixed_translation": "目標回報（以逗號分隔）"
+  },
+  {
+    "source": "Target ticker (e.g. AAPL)",
+    "current_translation": "Target Ticker (目標股票代碼)（例如 AAPL）",
+    "fixed_translation": "目標程式碼（例如 AAPL）"
+  },
+  {
+    "source": "Task started: %1\\nEstimated time: %2\\n\\nUse Task Monitor → REFRESH to track progress.",
+    "current_translation": "Task started: %1\\nEstimated time: %2\\n\\nUse Task Monit或→ REFRESH 至track progress.",
+    "fixed_translation": "任務已開始：%1\\nE預計時間：%2\\n\\n使用任務監視器 → 刷新來追蹤進度。"
+  },
+  {
+    "source": "Template write failed: %1",
+    "current_translation": "Template write失敗: %1",
+    "fixed_translation": "模板寫入失敗：%1"
+  },
+  {
+    "source": "Template written: %1 connectors to %2",
+    "current_translation": "Template (範本) 已寫入: %1 connectors 至%2",
+    "fixed_translation": "編寫的模板：%1 連接器至 %2"
+  },
+  {
+    "source": "Test results will appear here...",
+    "current_translation": "Test 結果 將appear here...",
+    "fixed_translation": "測試結果將出現在這裡..."
+  },
+  {
+    "source": "The downloaded installer failed integrity verification. ",
+    "current_translation": "The downloaded 安裝程式失敗 integrity verification. ",
+    "fixed_translation": "下載的安裝程式未通過完整性驗證。"
+  },
+  {
+    "source": "The installer has been downloaded to:\\n%1\\n\\n",
+    "current_translation": "The 安裝程式 has been downloaded to:\\n%1\\n\\n",
+    "fixed_translation": "安裝程式已下載至：\\n%1\\n\\n"
+  },
+  {
+    "source": "This will permanently delete your Fincept account (%1) and all associated data.\\n\\n",
+    "current_translation": "This 將permanently delete your Fincept account (%1) 和all associated data.\\n\\n",
+    "fixed_translation": "這將永久刪除您的 Fincept 帳戶 (%1) 和所有關聯資料。 \\n\\n"
+  },
+  {
+    "source": "Ticker symbol (e.g. AAPL) or comma-separated values",
+    "current_translation": "Ticker Symbol (股票代碼)（例如 AAPL）或逗號分隔數值",
+    "fixed_translation": "股票代碼（例如 AAPL）或逗號分隔值"
+  },
+  {
+    "source": "Toggle Lite / Deep mode",
+    "current_translation": "切換 Lite / Deep 模式",
+    "fixed_translation": "切換精簡/深度模式"
+  },
+  {
+    "source": "Token not found for %1:%2 (instrument cache not loaded yet?)",
+    "current_translation": "Token 找不到 用於%1:%2 (instrument cache not已載入 yet?)",
+    "fixed_translation": "未找到 %1:%2 的令牌（儀器快取尚未載入？）"
+  },
+  {
+    "source": "Tool execution error: ",
+    "current_translation": "Tool execution 錯誤: ",
+    "fixed_translation": "工具執行錯誤："
+  },
+  {
+    "source": "Total P&L: %1%  |  Day Change: %2%  |  Positions: %3",
+    "current_translation": "Total P&L (損益): %1%  |  Day Change: %2%  |  Position (持倉) (位置)s: %3",
+    "fixed_translation": "總損益：%1% | 日變動：%2% | 職位：%3"
+  },
+  {
+    "source": "Total amount invested — sum of (avg buy price × quantity)\\n",
+    "current_translation": "Total amount invested — sum 的(avg buy price × 數量)\\n",
+    "fixed_translation": "投資總額 - (平均買入價 × 數量)\\n 總和"
+  },
+  {
+    "source": "Trade Value: ",
+    "current_translation": "Trade Value (交易金額)：",
+    "fixed_translation": "貿易價值："
+  },
+  {
+    "source": "Trained — Samples: %1  |  MAE: %2\\nDrift: %3",
+    "current_translation": "已訓練 — Samples: %1  |  MAE (平均絕對誤差): %2\\nDrift: %3",
+    "fixed_translation": "已訓練 - 樣品：%1 | MAE：%2\\n漂移：%3"
+  },
+  {
+    "source": "Transaction %1 %2 x%3 in portfolio %4",
+    "current_translation": "Transaction (交易) %1 %2 x%3 於Portfolio (投資組合) (投資組合) %4",
+    "fixed_translation": "投資組合 %4 中的交易 %1 %2 x%3"
+  },
+  {
+    "source": "Trigger price",
+    "current_translation": "Trigger Price (觸發價)",
+    "fixed_translation": "觸發價"
+  },
+  {
+    "source": "Type a symbol or name to search %1s...",
+    "current_translation": "Type a Symbol (股票代碼) 或名稱 至search %1s...",
+    "fixed_translation": "輸入符號或名稱來搜尋 %1..."
+  },
+  {
+    "source": "Unrealized profit or loss across all open positions.\\n",
+    "current_translation": "所有未平倉 Positions (持倉) 的 Unrealized P&L (未實現損益)。\\n",
+    "fixed_translation": "所有未平倉部位的未實現利潤或損失。 \\n"
+  },
+  {
+    "source": "Unusual volume detected (z-score: %1). More %2 articles than normal.",
+    "current_translation": "偵測到異常 Volume (成交量) (z-score: %1). More %2 文章 than normal.",
+    "fixed_translation": "偵測到異常音量（z 分數：%1）。 %2 文章比平常多。"
+  },
+  {
+    "source": "Value at Risk at 95% confidence — the maximum expected\\n",
+    "current_translation": "Value at Risk (風險值) 95% 信心水準 — 最大預期\\n",
+    "fixed_translation": "95% 信賴度下的風險價值 - 最大預期\\n"
+  },
+  {
+    "source": "Vessel history: %1 — %2 positions",
+    "current_translation": "Vessel history: %1 — %2 Position (持倉)s (持倉)",
+    "fixed_translation": "船舶歷史: %1 - %2 持股位置"
+  },
+  {
+    "source": "View Release Notes",
+    "current_translation": "查看 Release Notes (版本說明)",
+    "fixed_translation": "看發行說明"
+  },
+  {
+    "source": "Voice config saved (provider=%1)",
+    "current_translation": "Voice 設定已儲存 (provider=%1)",
+    "fixed_translation": "語音配置已儲存（提供者=%1）"
+  },
+  {
+    "source": "Voice script not found: ",
+    "current_translation": "Voice script 找不到: ",
+    "fixed_translation": "未找到語音腳本："
+  },
+  {
+    "source": "WS stream start requested for %1/%2",
+    "current_translation": "WS stream start requested 用於%1/%2",
+    "fixed_translation": "%1/%2 請求 WS 流啟動"
+  },
+  {
+    "source": "Walking order book...",
+    "current_translation": "掃描 Order Book (委託簿) 中...",
+    "fixed_translation": "行走訂單..."
+  },
+  {
+    "source": "Warning: already used by \\",
+    "current_translation": "警告: already used by \\",
+    "fixed_translation": "警告：已被 \\ 使用"
+  },
+  {
+    "source": "Weight of the three largest sectors (%1)",
+    "current_translation": "Weight 的the three largest sectors (%1)",
+    "fixed_translation": "三個最大扇區的權重 (%1)"
+  },
+  {
+    "source": "When enabled, the AI can interact with the terminal: navigate screens, fetch market ",
+    "current_translation": "When enabled, the AI 可以interact 使用the terminal: navigate 螢幕s, fetch market ",
+    "fixed_translation": "啟用後，人工智慧可以與終端互動：導航螢幕、獲取市場"
+  },
+  {
+    "source": "Write query: %1 rows affected",
+    "current_translation": "Write query: %1 列 affected",
+    "fixed_translation": "寫入查詢：受影響的 %1 行"
+  },
+  {
+    "source": "YouTube URL, HLS (.m3u8), MP4, or direct stream...",
+    "current_translation": "YouTube URL、HLS (.m3u8)、MP4 或直接串流...",
+    "fixed_translation": "YouTube URL、HLS (.m3u8)、MP4 或直接串流..."
+  },
+  {
+    "source": "[%1 Chart — enter data in Properties panel]",
+    "current_translation": "[%1 Chart — enter data 於Properties panel]",
+    "fixed_translation": "[%1 圖表 - 在屬性面板中輸入資料]"
+  },
+  {
+    "source": "[%1] All packages installed individually",
+    "current_translation": "[%1] 全部 packages installed individually",
+    "fixed_translation": "[%1] 所有軟體包均單獨安裝"
+  },
+  {
+    "source": "[%1] Command options loaded",
+    "current_translation": "[%1] Comm和options已載入",
+    "fixed_translation": "[%1] 已載入指令選項"
+  },
+  {
+    "source": "[%1] Pass 1: bulk install from %2",
+    "current_translation": "[%1] Pass 1: bulk install 來自%2",
+    "fixed_translation": "[%1] 第 1 遍：從 %2 大量安裝"
+  },
+  {
+    "source": "[%1] Symbol map updated: %2 remaps",
+    "current_translation": "[%1] Symbol (股票代碼) map updated: %2 remaps",
+    "fixed_translation": "[%1] 符號圖已更新：%2 重新映射"
+  },
+  {
+    "source": "[%1] WS process errorOccurred: %2",
+    "current_translation": "[%1] WS process 錯誤Occurred: %2",
+    "fixed_translation": "[%1] WS 進程發生錯誤：%2"
+  },
+  {
+    "source": "[PARAM] symbol=%1",
+    "current_translation": "[PARAM] Symbol (股票代碼)=%1",
+    "fixed_translation": "[參數]符號=%1"
+  },
+  {
+    "source": "[Portfolio context: %1]\\n",
+    "current_translation": "[Portfolio (投資組合) context: %1]\\n",
+    "fixed_translation": "[投資組合上下文：%1]\\n"
+  },
+  {
+    "source": "[START] Running team (%1 members, mode: %2)",
+    "current_translation": "[START] 執行中 team (%1 members, mode: %2)",
+    "fixed_translation": "[START] 跑團（%1成員，模式：%2）"
+  },
+  {
+    "source": "[TOOLS] %1 tool(s) selected from TOOLS tab",
+    "current_translation": "[TOOLS] %1 tool(s) selected 來自TOOLS tab",
+    "fixed_translation": "[工具] 從「工具」標籤中選擇的 %1 工具"
+  },
+  {
+    "source": "\\nBuilt-in LightGBM+Alpha158 template generated at:\\n%1",
+    "current_translation": "\\nBuilt-於LightGBM+Alpha (超額報酬)158 template generated at:\\n%1",
+    "fixed_translation": "\\n內建LightGBM+Alpha158範本產生於：\\n%1"
+  },
+  {
+    "source": "\\nDone — %1 windows in %2s  |  Experiment: %3",
+    "current_translation": "\\n完成 — %1 windows 於%2s  |  Experiment: %3",
+    "fixed_translation": "\\nDone - %2 中的 %1 窗戶 | 實驗：%3"
+  },
+  {
+    "source": "\\nPrediction: %1  →  Actual: %2  |  Error: %3",
+    "current_translation": "\\nPrediction (預測): %1  →  Actual: %2  |  錯誤: %3",
+    "fixed_translation": "\\n預測：%1 → 實際：%2 | 錯誤：%3"
+  },
+  {
+    "source": "\\u26A0 Shortfall of %1 %2. Consider increasing monthly savings ",
+    "current_translation": "\\u26A0 Shortfall 的%1 %2. Consider increasing monthly savings ",
+    "fixed_translation": "\\u26A0 %1 %2 的短缺。考慮增加每月儲蓄"
+  },
+  {
+    "source": "\\u2713 On track! Your projected retirement fund of %1 %2 ",
+    "current_translation": "\\u2713 On track! Your projected retirement fund 的%1 %2 ",
+    "fixed_translation": "\\u2713 步入正軌！您預計的退休基金為 %1 %2"
+  },
+  {
+    "source": "auto (from Content-Type / <meta>)",
+    "current_translation": "自動（依 Content-Type / <meta>）",
+    "fixed_translation": "自動（來自 Content-Type / <meta>）"
+  },
+  {
+    "source": "datasets fetch failed: %1",
+    "current_translation": "Datasets (資料集) fetch失敗: %1",
+    "fixed_translation": "資料集取得失敗：%1"
+  },
+  {
+    "source": "e.g. AAPL, Apple, Reliance…",
+    "current_translation": "例如：AAPL, Apple, Reliance…",
+    "fixed_translation": "例如AAPL、蘋果、信實…"
+  },
+  {
+    "source": "e.g. AAPL, BTC-USD, ^GSPC",
+    "current_translation": "例如：AAPL, BTC-USD, ^GSPC",
+    "fixed_translation": "例如AAPL、BTC-美元、^GSPC"
+  },
+  {
+    "source": "e.g. BTC/USD",
+    "current_translation": "例如：BTC/USD",
+    "fixed_translation": "例如比特幣/美元"
+  },
+  {
+    "source": "e.g. BTC/USD, ETH/USD, SOL/USD",
+    "current_translation": "例如：BTC/USD, ETH/USD, SOL/USD",
+    "fixed_translation": "例如BTC/美元、ETH/美元、SOL/美元"
+  },
+  {
+    "source": "e.g. BTC/USDT, ETH/USDT",
+    "current_translation": "例如：BTC/USDT, ETH/USDT",
+    "fixed_translation": "例如BTC/USDT、ETH/USDT"
+  },
+  {
+    "source": "e.g. Fast Groq, Careful Claude, Coding minimax",
+    "current_translation": "例如：Fast Groq, Careful Claude, Coding minimax",
+    "fixed_translation": "例如快速 Groq、小心克勞德、編碼極小極大"
+  },
+  {
+    "source": "e.g. Figure 1: Revenue growth",
+    "current_translation": "例如：Figure 1: Revenue growth",
+    "fixed_translation": "例如圖 1：收入成長"
+  },
+  {
+    "source": "e.g. Key Risk, Note, Important",
+    "current_translation": "例如：Key Risk (風險), Note, Important",
+    "fixed_translation": "例如主要風險、注意、重要"
+  },
+  {
+    "source": "e.g. Mean(close, 5) / Std(close, 20)",
+    "current_translation": "例如：Mean(close, 5) / Std(close, 20)",
+    "fixed_translation": "例如平均值（收盤價，5）/標準差（收盤價，20）"
+  },
+  {
+    "source": "e.g. My Custom Server",
+    "current_translation": "例如：My Custom Server",
+    "fixed_translation": "例如我的自訂伺服器"
+  },
+  {
+    "source": "e.g. My Tech Stocks",
+    "current_translation": "例如：My Tech Stocks",
+    "fixed_translation": "例如我的科技股"
+  },
+  {
+    "source": "e.g. Upstox OHLCV",
+    "current_translation": "例如：Upstox OHLCV (開高低收量)",
+    "fixed_translation": "例如Upstox OHLCV"
+  },
+  {
+    "source": "e.g. data.items  (JSON only)",
+    "current_translation": "例如：data.items  (JSON only)",
+    "fixed_translation": "例如data.items（僅限 JSON）"
+  },
+  {
+    "source": "markets | geopolitics | crypto | …",
+    "current_translation": "markets | geopolitics | cryp至| …",
+    "fixed_translation": "市場 |地緣政治|加密 | …"
+  },
+  {
+    "source": "profile-name  (alphanumeric, - and _ only)",
+    "current_translation": "profile-名稱  (alphanumeric, - 和_ only)",
+    "fixed_translation": "設定檔名稱（僅限字母數字、- 和 _）"
+  },
+  {
+    "source": "providers fetch failed: %1",
+    "current_translation": "Providers (提供者) fetch失敗: %1",
+    "fixed_translation": "提供者取得失敗：%1"
+  },
+  {
+    "source": "request(): %1 topic(s) have no producer — likely unregistered ",
+    "current_translation": "request()：%1 個主題沒有 producer — 可能尚未註冊 ",
+    "fixed_translation": "request(): %1 主題沒有生產者 - 可能未註冊"
+  },
+  {
+    "source": "series fetch failed: %1",
+    "current_translation": "Series (序列) fetch失敗: %1",
+    "fixed_translation": "系列獲取失敗：%1"
+  },
+  {
+    "source": "worker restart cap reached",
+    "current_translation": "工作程序 restart cap reached",
+    "fixed_translation": "達到工人重啟上限"
+  },
+  {
+    "source": "yt-dlp not found. Bundle yt-dlp.exe next to FinceptTerminal.exe.",
+    "current_translation": "yt-dlp 找不到. Bundle yt-dlp.exe next 至FinceptTerminal.exe.",
+    "fixed_translation": "未找到 yt-dlp。將 yt-dlp.exe 捆綁到 FinceptTerminal.exe 旁邊。"
+  },
+  {
+    "source": "⚠ No TTS engine found (install speech-dispatcher on Linux). ",
+    "current_translation": "⚠ 找不到 TTS 引擎（請在 Linux 上安裝 speech-dispatcher）。 ",
+    "fixed_translation": "⚠ 找不到 TTS 引擎（在 Linux 上安裝語音調度程式）。"
+  },
+  {
+    "source": "✓ %1 tool(s) added to %2",
+    "current_translation": "✓ %1 tool(s) added 至%2",
+    "fixed_translation": "✓ %1 工具加入到 %2"
+  },
+  {
+    "source": "(P&L return proxy, top 6 by weight)",
+    "current_translation": "(P&L 報酬 proxy, 頂部 6 by weight)",
+    "fixed_translation": "（損益回報代理，權重前6名）"
+  },
+  {
+    "source": "-----BEGIN RSA PRIVATE KEY-----\\n…paste PEM contents here…\\n-----END RSA PRIVATE KEY-----",
+    "current_translation": "-----BEGIN RSA PRIVATE KEY-----\\n…在此貼上 PEM 內容…\\n-----END RSA PRIVATE KEY-----",
+    "fixed_translation": "-----BEGIN RSA PRIVATE KEY-----\\n…在此處貼上 PEM 內容…\\n-----END RSA PRIVATE KEY-----"
+  },
+  {
+    "source": "27 ANALYZERS  \\xB7  10 ASSET CLASSES  \\xB7  MULTI-ASSET ANALYTICS",
+    "current_translation": "27 分析工具  \\xB7  10 資產 類別  \\xB7  MULTI-ASSET ANALYTICS",
+    "fixed_translation": "27 個分析器 \\xB7 10 個資產類別 \\xB7 多重資產分析"
+  },
+  {
+    "source": "50+ indicators across 6 categories — powered by TALIpp incremental engine",
+    "current_translation": "50+ 指標 across 6 分類 — 驅動 by TALIpp incremental 引擎",
+    "fixed_translation": "跨越 6 個類別的 50 多個指標 - 由 TALIPp 增量引擎提供支持"
+  },
+  {
+    "source": "<span style='color:#16a34a'>Kalshi credentials saved.</span>",
+    "current_translation": "<span style='color:#16a34a'>Kalshi 憑證已儲存。</span>",
+    "fixed_translation": "<span style='color:#16a34a'>Kalshi 憑證已儲存。 </span>"
+  },
+  {
+    "source": "<span style='color:#16a34a'>Polymarket credentials saved.</span>",
+    "current_translation": "<span style='color:#16a34a'>Polymarket 憑證已儲存。</span>",
+    "fixed_translation": "<span style='color:#16a34a'>Polymarket 憑證已儲存。 </span>"
+  },
+  {
+    "source": "<span style='color:#dc2626'>Could not read %1.</span>",
+    "current_translation": "<span style='color:#dc2626'>無法讀取 %1。</span>",
+    "fixed_translation": "<span style='color:#dc2626'>無法讀取 %1。 </span>"
+  },
+  {
+    "source": "<span style='color:#dc2626'>Private key is required.</span>",
+    "current_translation": "<span style='color:#dc2626'>私鑰為必填。</span>",
+    "fixed_translation": "<span style='color:#dc2626'>需要私鑰。 </span>"
+  },
+  {
+    "source": "<span style='color:#dc2626'>Save failed — see logs.</span>",
+    "current_translation": "<span style='color:#dc2626'>儲存失敗 — 請檢視日誌。</span>",
+    "fixed_translation": "<span style='color:#dc2626'>儲存失敗 - 請參閱日誌。 </span>"
+  },
+  {
+    "source": "A profile = named LLM config you can assign to any agent or team.",
+    "current_translation": "A 設定檔 = 命名的 LLM 設定 you can 指派 to any 代理 or team.",
+    "fixed_translation": "您可以將設定檔 = 名為 LLM 設定指派給任何代理或團隊。"
+  },
+  {
+    "source": "ADD TICKER  ·  type to search, click or Enter to add",
+    "current_translation": "ADD TICKER  ·  類型 to search, click or 輸入 to add",
+    "fixed_translation": "添加股票代碼·鍵入進行搜索，單擊或 Enter 進行添加"
+  },
+  {
+    "source": "AKSHARE DATA EXPLORER",
+    "current_translation": "AKSHARE DATA 瀏覽器",
+    "fixed_translation": "AKSHARE 資料瀏覽器"
+  },
+  {
+    "source": "ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)",
+    "current_translation": "ALL 工具 — 內部 + 外部  (check/uncheck to enable/disable 內部 tools)",
+    "fixed_translation": "所有工具 - 內部 + 外部（選取/取消選取以啟用/停用內部工具）"
+  },
+  {
+    "source": "Access-Control-Allow-Methods: GET, POST, OPTIONS\\r\\n",
+    "current_translation": "Access-Control-Allow-Methods: GET, 文章, OPTIONS\\r\\n",
+    "fixed_translation": "存取控制允許方法：GET、POST、OPTIONS\\r\\n"
+  },
+  {
+    "source": "Acquire %1 more $FNCPT to unlock %2% off.",
+    "current_translation": "Acquire %1 more $FNCPT to 解鎖 %2% off.",
+    "fixed_translation": "取得 %1 更多 FNCPT 即可解鎖 %2% 折扣。"
+  },
+  {
+    "source": "Activity fetch failed: %1",
+    "current_translation": "活動 fetch failed: %1",
+    "fixed_translation": "活動獲取失敗：%1"
+  },
+  {
+    "source": "Actual values (must match predicted length)",
+    "current_translation": "實際 values (must match predicted length)",
+    "fixed_translation": "實際值（必須與預測長度相符）"
+  },
+  {
+    "source": "Add to existing portfolio",
+    "current_translation": "Add to existing 投資組合",
+    "fixed_translation": "新增至現有投資組合"
+  },
+  {
+    "source": "All Fincept internal tools. Input JSON flows in as arguments.",
+    "current_translation": "All Fincept 內部 tools. Input JSON flows in as arguments.",
+    "fixed_translation": "所有 Fincept 內部工具。輸入 JSON 作為參數流入。"
+  },
+  {
+    "source": "All registered MCP tools — both internal (built-in) and external (from connected servers).",
+    "current_translation": "All registered MCP 工具 — both 內部 (built-in) and 外部 (from 已連線 servers).",
+    "fixed_translation": "所有註冊的 MCP 工具 - 內部（內建）和外部（來自連接的伺服器）。"
+  },
+  {
+    "source": "Amount exceeds available $FNCPT.",
+    "current_translation": "Amount exceeds 可用 $FNCPT.",
+    "fixed_translation": "金額超過可用的 $FNCPT。"
+  },
+  {
+    "source": "Approve the lock in your wallet.",
+    "current_translation": "Approve the 鎖定 in your wallet.",
+    "fixed_translation": "批准鎖定您的錢包。"
+  },
+  {
+    "source": "Approve the swap in your wallet to complete the trade.",
+    "current_translation": "Approve the 交換 in your 錢包 to complete the trade.",
+    "fixed_translation": "批准您錢包中的交換以完成交易。"
+  },
+  {
+    "source": "Approve the transaction in your wallet to complete this action.",
+    "current_translation": "Approve the transaction in your 錢包 to complete this action.",
+    "fixed_translation": "批准您錢包中的交易以完成此操作。"
+  },
+  {
+    "source": "Assign each holding to a sector for allocation analysis.",
+    "current_translation": "指派 each holding to a 類股 for 配置 analysis.",
+    "fixed_translation": "將每個資產分配到一個部門進行分配分析。"
+  },
+  {
+    "source": "Awaiting wallet signature…",
+    "current_translation": "Awaiting 錢包 signature…",
+    "fixed_translation": "等待錢包簽名..."
+  },
+  {
+    "source": "BLACK-LITTERMAN MODEL",
+    "current_translation": "BLACK-LITTERMAN 模型",
+    "fixed_translation": "黑利特曼模型"
+  },
+  {
+    "source": "BLACK-SCHOLES PRICING",
+    "current_translation": "BLACK-SCHOLES 定價",
+    "fixed_translation": "布萊克-斯科爾斯定價法"
+  },
+  {
+    "source": "BUY BTC/USDT",
+    "current_translation": "買入 BTC/USDT",
+    "fixed_translation": "買進 BTC/USDT"
+  },
+  {
+    "source": "Balance fetch failed: %1",
+    "current_translation": "餘額 fetch failed: %1",
+    "fixed_translation": "餘額獲取失敗：%1"
+  },
+  {
+    "source": "Be the first to share your thoughts",
+    "current_translation": "Be the 第一 to share your thoughts",
+    "fixed_translation": "成為第一個分享您想法的人"
+  },
+  {
+    "source": "Be the first to start a conversation",
+    "current_translation": "Be the 第一 to 開始 a conversation",
+    "fixed_translation": "成為第一個開始對話的人"
+  },
+  {
+    "source": "Be the first to start a discussion",
+    "current_translation": "Be the 第一 to 開始 a discussion",
+    "fixed_translation": "成為第一個發起討論的人"
+  },
+  {
+    "source": "Benchmark daily returns (decimals)",
+    "current_translation": "基準 每日 returns (decimals)",
+    "fixed_translation": "基準每日回報（小數）"
+  },
+  {
+    "source": "Benchmark returns (optional; same length as portfolio if provided)",
+    "current_translation": "基準 returns (optional; same length as 投資組合 if provided)",
+    "fixed_translation": "基準回報（可選；如果提供，則與投資組合長度相同）"
+  },
+  {
+    "source": "Benefits & Costs of Trade",
+    "current_translation": "Benefits & Costs of 交易",
+    "fixed_translation": "貿易的好處和成本"
+  },
+  {
+    "source": "Boosts recognition of financial symbols and proper nouns.",
+    "current_translation": "Boosts recognition of 金融 symbols and proper nouns.",
+    "fixed_translation": "提高對金融符號和專有名詞的辨識。"
+  },
+  {
+    "source": "Browse for File...",
+    "current_translation": "瀏覽 for File...",
+    "fixed_translation": "瀏覽文件..."
+  },
+  {
+    "source": "Browser opened. Approve the connection and the signature in your wallet.",
+    "current_translation": "Browser 已開啟. Approve the 連線 and the signature in your wallet.",
+    "fixed_translation": "瀏覽器打開。批准連接並在錢包中簽名。"
+  },
+  {
+    "source": "Building lock transaction…",
+    "current_translation": "Building 鎖定 transaction…",
+    "fixed_translation": "樓鎖交易..."
+  },
+  {
+    "source": "Building swap transaction…",
+    "current_translation": "Building 交換 transaction…",
+    "fixed_translation": "建立互換交易..."
+  },
+  {
+    "source": "CACHE & SECURITY SETTINGS",
+    "current_translation": "CACHE & SECURITY 設定",
+    "fixed_translation": "快取和安全設置"
+  },
+  {
+    "source": "CONSTITUENTS (from portfolio holdings)",
+    "current_translation": "CONSTITUENTS (from 投資組合 holdings)",
+    "fixed_translation": "成分股（來自投資組合持股）"
+  },
+  {
+    "source": "COT MARKET SENTIMENT",
+    "current_translation": "COT 市場 SENTIMENT",
+    "fixed_translation": "COT 市場情緒"
+  },
+  {
+    "source": "Common Market (e.g. EU Single Market)",
+    "current_translation": "Common 市場 (e.g. EU 單一 Market)",
+    "fixed_translation": "共同市場（例如歐盟單一市場）"
+  },
+  {
+    "source": "Configure — Geopolitics Events",
+    "current_translation": "Configure — Geopolitics 事件",
+    "fixed_translation": "配置 - 地緣政治事件"
+  },
+  {
+    "source": "Connect a wallet to see your tier.",
+    "current_translation": "連線 a 錢包 to see your tier.",
+    "fixed_translation": "連接錢包以查看您的等級。"
+  },
+  {
+    "source": "Connect an account\\nto place orders",
+    "current_translation": "連線 an account\\nto place orders",
+    "fixed_translation": "連結帳戶\\n下訂單"
+  },
+  {
+    "source": "Connect with pasted token",
+    "current_translation": "連線 with pasted token",
+    "fixed_translation": "使用貼上的令牌連接"
+  },
+  {
+    "source": "Connect your Solana wallet",
+    "current_translation": "連線 your Solana 錢包",
+    "fixed_translation": "連接您的 Solana 錢包"
+  },
+  {
+    "source": "Could not find request_token in pasted text",
+    "current_translation": "在貼上的文字中找不到 request_token",
+    "fixed_translation": "在貼上的文字中找不到 request_token"
+  },
+  {
+    "source": "Create new portfolio from file",
+    "current_translation": "建立 新增 投資組合 from file",
+    "fixed_translation": "從文件創建新的投資組合"
+  },
+  {
+    "source": "Create, import, or explore a sample portfolio to get started.",
+    "current_translation": "Create, import, or explore a sample 投資組合 to get started.",
+    "fixed_translation": "建立、匯入或探索範例作品集以開始使用。"
+  },
+  {
+    "source": "Cron-based agent queries (e.g. daily 9 AM).",
+    "current_translation": "Cron-based 代理 queries (e.g. 每日 9 AM).",
+    "fixed_translation": "基於 Cron 的代理查詢（例如每天上午 9 點）。"
+  },
+  {
+    "source": "Custom RPC override active.",
+    "current_translation": "自訂 RPC override active.",
+    "fixed_translation": "自訂 RPC 覆蓋處於活動狀態。"
+  },
+  {
+    "source": "Daily returns (>= 30 values)",
+    "current_translation": "每日 returns (>= 30 values)",
+    "fixed_translation": "每日回報（>= 30 個值）"
+  },
+  {
+    "source": "Daily returns (decimals). Need at least 30 values for stable VaR.",
+    "current_translation": "每日 returns (decimals). Need at least 30 values for stable VaR.",
+    "fixed_translation": "每日回報（小數）。穩定的 VaR 至少需要 30 個值。"
+  },
+  {
+    "source": "Daily returns: comma-, space-, or newline-separated. Need at least 5 values.",
+    "current_translation": "每日 returns: comma-, space-, or newline-separated. Need at least 5 values.",
+    "fixed_translation": "每日回傳：以逗號、空格或換行符號分隔。至少需要 5 個值。"
+  },
+  {
+    "source": "Deals JSON with cash_pct and stock_pct fields...",
+    "current_translation": "含 cash_pct 和 stock_pct 欄位的交易 JSON...",
+    "fixed_translation": "使用 cash_pct 和 stock_pct 欄位處理 JSON..."
+  },
+  {
+    "source": "Delete all temporary cached data. Will be re-fetched on next access.",
+    "current_translation": "刪除 all temporary cached data. Will be re-fetched on 下一步 access.",
+    "fixed_translation": "刪除所有臨時快取資料。將在下次訪問時重新獲取。"
+  },
+  {
+    "source": "Demo signature — connect a treasury endpoint for a real burn tx.",
+    "current_translation": "示範 signature — 連線 a treasury 端點 for a 實際 burn tx.",
+    "fixed_translation": "示範簽名 - 連接金庫端點以進行真實的銷毀交易。"
+  },
+  {
+    "source": "ECONOMICS DATA EXPLORER",
+    "current_translation": "ECONOMICS DATA 瀏覽器",
+    "fixed_translation": "經濟數據探索者"
+  },
+  {
+    "source": "Economic Union (e.g. European Union)",
+    "current_translation": "經濟 Union (e.g. European Union)",
+    "fixed_translation": "經濟聯盟（例如歐盟）"
+  },
+  {
+    "source": "Effect series y (the one we ask: 'is this caused by x?')",
+    "current_translation": "Effect 序列 y (the one we ask: 'is this caused by x?')",
+    "fixed_translation": "效應系列 y（我們問：「這是由 x 引起的嗎？」）"
+  },
+  {
+    "source": "Empty input — use CLEAR to remove a stored key.",
+    "current_translation": "Empty input — use CLEAR to 移除 a stored key.",
+    "fixed_translation": "空輸入 - 使用 CLEAR 刪除儲存的金鑰。"
+  },
+  {
+    "source": "Enter API Key, API Secret, and paste request_token",
+    "current_translation": "輸入API Key, API Secret, and paste request_token",
+    "fixed_translation": "輸入 API Key、API Secret，然後貼上 request_token"
+  },
+  {
+    "source": "Estimated impact of historical and hypothetical market scenarios",
+    "current_translation": "Estimated impact of historical and hypothetical 市場 scenarios",
+    "fixed_translation": "歷史和假設市場情景的估計影響"
+  },
+  {
+    "source": "Estimated portfolio impact from macro factor shocks, weighted by holdings",
+    "current_translation": "Estimated 投資組合 impact from macro factor shocks, weighted by holdings",
+    "fixed_translation": "宏觀因素衝擊對投資組合的估計影響（以持有量加權）"
+  },
+  {
+    "source": "FILES ARE COLLECTED FROM",
+    "current_translation": "檔案 ARE COLLECTED FROM",
+    "fixed_translation": "文件收集自"
+  },
+  {
+    "source": "FX VANILLA OPTION PRICING",
+    "current_translation": "FX VANILLA OPTION 定價",
+    "fixed_translation": "外匯普通期權定價"
+  },
+  {
+    "source": "Factor / signal values (decimals, >= 20)",
+    "current_translation": "Factor / 訊號 values (decimals, >= 20)",
+    "fixed_translation": "因子/訊號值（小數，>= 20）"
+  },
+  {
+    "source": "Failed to load LLM providers.",
+    "current_translation": "失敗 to load LLM providers.",
+    "fixed_translation": "無法載入 LLM 提供者。"
+  },
+  {
+    "source": "FinceptInternalAdapter not registered",
+    "current_translation": "FinceptInternalAdapter not 已註冊",
+    "fixed_translation": "FinceptInternalAdapter 未註冊"
+  },
+  {
+    "source": "Find answers, get support, and connect with the Fincept community.",
+    "current_translation": "Find answers, get support, and 連線 with the Fincept community.",
+    "fixed_translation": "尋找答案、獲得支持並與 Fincept 社群聯繫。"
+  },
+  {
+    "source": "Free Trade Area (e.g. USMCA, ASEAN)",
+    "current_translation": "Free 交易 Area (e.g. USMCA, ASEAN)",
+    "fixed_translation": "自由貿易區（如 USMCA、東協）"
+  },
+  {
+    "source": "GOVERNMENT DATA EXPLORER",
+    "current_translation": "GOVERNMENT DATA 瀏覽器",
+    "fixed_translation": "政府資料探索者"
+  },
+  {
+    "source": "HOLDINGS CORRELATION MATRIX",
+    "current_translation": "HOLDINGS 相關性 MATRIX",
+    "fixed_translation": "持股相關矩陣"
+  },
+  {
+    "source": "Helius RPC — STREAM fully supported.",
+    "current_translation": "Helius RPC — STREAM fully 已支援.",
+    "fixed_translation": "完全支援 Helius RPC - STREAM。"
+  },
+  {
+    "source": "Holding ≥ %1 $FNCPT — you qualify for the fee discount.",
+    "current_translation": "Holding ≥ %1 $FNCPT — you qualify for the 手續費 discount.",
+    "fixed_translation": "持有 ≥ %1 $FNCPT - 您有資格享有費用折扣。"
+  },
+  {
+    "source": "INTEREST RATE SWAP PRICING",
+    "current_translation": "INTEREST RATE 交換 定價",
+    "fixed_translation": "利率掉期定價"
+  },
+  {
+    "source": "Insert Column Left",
+    "current_translation": "Insert Column 左",
+    "fixed_translation": "向左插入列"
+  },
+  {
+    "source": "Insert Column Right",
+    "current_translation": "Insert Column 右",
+    "fixed_translation": "右插入列"
+  },
+  {
+    "source": "Insert Row Above",
+    "current_translation": "Insert 列 Above",
+    "fixed_translation": "在上方插入行"
+  },
+  {
+    "source": "Insert Row Below",
+    "current_translation": "Insert 列 Below",
+    "fixed_translation": "在下面插入行"
+  },
+  {
+    "source": "Inserts a page break\\nin PDF/print output.",
+    "current_translation": "Inserts a page break\\nin PDF/print 輸出.",
+    "fixed_translation": "在 PDF/列印輸出中插入分頁符號 \\n。"
+  },
+  {
+    "source": "Last updated: January 1, 2026",
+    "current_translation": "最後 updated: January 1, 2026",
+    "fixed_translation": "最後更新時間：2026 年 1 月 1 日"
+  },
+  {
+    "source": "Leave blank to use the LLM assigned to the agent in Agent Config",
+    "current_translation": "Leave blank to use the LLM 已指派 to the 代理 in 代理 設定",
+    "fixed_translation": "留空以使用代理配置中指派給代理程式的 LLM"
+  },
+  {
+    "source": "Locks feed error: %1",
+    "current_translation": "Locks feed 錯誤: %1",
+    "fixed_translation": "鎖定進給錯誤：%1"
+  },
+  {
+    "source": "Long-running agent queries.",
+    "current_translation": "Long-running 代理 queries.",
+    "fixed_translation": "長時間運行的代理查詢。"
+  },
+  {
+    "source": "MONTE CARLO SIMULATION",
+    "current_translation": "MONTE CARLO 模擬",
+    "fixed_translation": "蒙特卡羅模擬"
+  },
+  {
+    "source": "Manage files across the terminal",
+    "current_translation": "Manage 檔案 across the terminal",
+    "fixed_translation": "透過終端管理文件"
+  },
+  {
+    "source": "Minimum level for all tags unless overridden.",
+    "current_translation": "Minimum level for all 標籤 unless overridden.",
+    "fixed_translation": "除非被覆蓋，否則所有標籤的最低等級。"
+  },
+  {
+    "source": "Model Context Protocol tool servers.",
+    "current_translation": "模型 Context 協定 工具 servers.",
+    "fixed_translation": "模型上下文協定工具伺服器。"
+  },
+  {
+    "source": "Model IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)",
+    "current_translation": "模型 IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)",
+    "fixed_translation": "模型 ID（逗號分隔，例如 lightgbm、xgboost、random_forest）"
+  },
+  {
+    "source": "Model label (e.g. LightGBM, LSTM)",
+    "current_translation": "模型 label (e.g. LightGBM, LSTM)",
+    "fixed_translation": "模型標籤（例如 LightGBM、LSTM）"
+  },
+  {
+    "source": "Model predictions (decimals, >= 10 values)",
+    "current_translation": "模型 predictions (decimals, >= 10 values)",
+    "fixed_translation": "模型預測（小數，>= 10 值）"
+  },
+  {
+    "source": "Model predictions (decimals, >= 20 values)",
+    "current_translation": "模型 predictions (decimals, >= 20 values)",
+    "fixed_translation": "模型預測（小數，>= 20 個值）"
+  },
+  {
+    "source": "NATIVE DESKTOP FINANCIAL INTELLIGENCE TERMINAL",
+    "current_translation": "NATIVE DESKTOP 金融 INTELLIGENCE TERMINAL",
+    "fixed_translation": "原生桌面金融情報終端"
+  },
+  {
+    "source": "NAV PERFORMANCE (FROM SNAPSHOTS)",
+    "current_translation": "NAV 績效 (FROM SNAPSHOTS)",
+    "fixed_translation": "導航效能（來自快照）"
+  },
+  {
+    "source": "Need 2+ holdings for correlation",
+    "current_translation": "Need 2+ holdings for 相關性",
+    "fixed_translation": "需要持有 2 個以上的股票才能實現相關性"
+  },
+  {
+    "source": "Need a template? Download the demo portfolio JSON:",
+    "current_translation": "Need a template? 下載 the 示範 投資組合 JSON:",
+    "fixed_translation": "需要模板嗎？下載演示組合 JSON："
+  },
+  {
+    "source": "Next: lock %1 to reach the next tier.",
+    "current_translation": "Next: 鎖定 %1 to reach the 下一步 tier.",
+    "fixed_translation": "下一步：鎖定 %1 以到達下一層。"
+  },
+  {
+    "source": "No LLM providers configured. Go to Settings → LLM to add one.",
+    "current_translation": "No LLM providers configured. Go to 設定 → LLM to add one.",
+    "fixed_translation": "未配置 LLM 提供者。轉至設定 → LLM 新增一個。"
+  },
+  {
+    "source": "No active locks. Lock $FNCPT above to start earning yield.",
+    "current_translation": "No 活躍 locks. 鎖定 $FNCPT above to 開始 earning yield.",
+    "fixed_translation": "沒有活動鎖。锁定$FNCPT上方即可开始赚取收益。"
+  },
+  {
+    "source": "No confirmation after 60 s. Check Solscan.",
+    "current_translation": "No confirmation after 60 s. 檢查 Solscan.",
+    "fixed_translation": "60 秒後未確認。請檢查 Solscan。"
+  },
+  {
+    "source": "No custom indices created yet.\\nGo to CREATE INDEX tab to build one from your portfolio.",
+    "current_translation": "No 自訂 indices 已建立 yet.\\nGo to 建立 INDEX 標籤頁 to 建構 one from your portfolio.",
+    "fixed_translation": "尚未建立自訂指數。 \\n轉到「建立指數」選項卡，從您的投資組合中建立一個指數。"
+  },
+  {
+    "source": "No data sources configured. Open the full Data Sources screen to browse and add connectors.",
+    "current_translation": "No data 來源 configured. 開啟 the full Data 來源 screen to 瀏覽 and add connectors.",
+    "fixed_translation": "未配置資料來源。開啟完整的資料來源畫面以瀏覽和新增連接器。"
+  },
+  {
+    "source": "No files match your search or filter.",
+    "current_translation": "No 檔案 match your 搜尋 or filter.",
+    "fixed_translation": "沒有文件與您的搜尋或篩選器相符。"
+  },
+  {
+    "source": "No mappings saved yet.\\nClick CREATE to build your first data mapping.",
+    "current_translation": "No 對應 已儲存 yet.\\nClick 建立 to 建構 your 第一 data mapping.",
+    "fixed_translation": "尚未儲存映射。 \\n點擊「建立」以建立您的第一個資料映射。"
+  },
+  {
+    "source": "Note: TCP reachability confirmed. API key validity is not verified here.",
+    "current_translation": "Note: TCP reachability 已確認. API key validity is not 已驗證 here.",
+    "fixed_translation": "注意：TCP 可達性已確認。此處未驗證 API 金鑰的有效性。"
+  },
+  {
+    "source": "Numeric values (>= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.",
+    "current_translation": "數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。",
+    "fixed_translation": "數值 (>= 8)。包括 Jarque-Bera + Shapiro-Wilk 常態性檢定。"
+  },
+  {
+    "source": "OPEN FULL SCREEN",
+    "current_translation": "開啟 FULL SCREEN",
+    "fixed_translation": "開啟全螢幕"
+  },
+  {
+    "source": "Open Kite login in browser",
+    "current_translation": "開啟 Kite login in browser",
+    "fixed_translation": "在瀏覽器中開啟Kite登入"
+  },
+  {
+    "source": "Open Squads vault in browser",
+    "current_translation": "開啟 Squads vault in browser",
+    "fixed_translation": "在瀏覽器中開啟 Squads 庫"
+  },
+  {
+    "source": "Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.",
+    "current_translation": "開啟 a symbol and 啟用 Adanos 市場 Sentiment in Data 來源 to load a snapshot.",
+    "fixed_translation": "開啟交易品種並在資料來源中啟用 Adanos 市場情緒以載入快照。"
+  },
+  {
+    "source": "Open burn transaction in Solscan",
+    "current_translation": "開啟 burn transaction in Solscan",
+    "fixed_translation": "在 Solscan 中開啟銷毀交易"
+  },
+  {
+    "source": "Orders are recorded\\nin your portfolio",
+    "current_translation": "Orders are recorded\\nin your 投資組合",
+    "fixed_translation": "訂單已記錄在您的投資組合中\\n"
+  },
+  {
+    "source": "Override the log level for a specific tag (e.g. ExchangeService, AgentService).",
+    "current_translation": "Override the 日誌 level for a specific tag (e.g. ExchangeService, AgentService).",
+    "fixed_translation": "覆寫特定標記（例如 ExchangeService、AgentService）的日誌等級。"
+  },
+  {
+    "source": "PASSWORD (OKX/KUCOIN)",
+    "current_translation": "密碼 (OKX/KUCOIN)",
+    "fixed_translation": "密碼（OKX/KUCOIN）"
+  },
+  {
+    "source": "PEM files (*.pem *.key);;All files (*)",
+    "current_translation": "PEM 檔案 (*.pem *.key);;所有檔案 (*)",
+    "fixed_translation": "PEM 檔案 (*.pem *.key);;所有檔案 (*)"
+  },
+  {
+    "source": "PER-QUANTILE SUMMARY",
+    "current_translation": "PER-QUANTILE 摘要",
+    "fixed_translation": "每分位數總結"
+  },
+  {
+    "source": "PIN AUTHENTICATION",
+    "current_translation": "PIN 碼 AUTHENTICATION",
+    "fixed_translation": "密碼驗證"
+  },
+  {
+    "source": "PORTFOLIO FACTOR SENSITIVITY",
+    "current_translation": "投資組合 FACTOR SENSITIVITY",
+    "fixed_translation": "投資組合因素敏感性"
+  },
+  {
+    "source": "PORTFOLIO STRESS TESTING",
+    "current_translation": "投資組合 STRESS TESTING",
+    "fixed_translation": "投資組合壓力測試"
+  },
+  {
+    "source": "PROFESSIONAL VALUATION ENGINE",
+    "current_translation": "PROFESSIONAL VALUATION 引擎",
+    "fixed_translation": "專業估值引擎"
+  },
+  {
+    "source": "Paste from Clipboard",
+    "current_translation": "貼上 from Clipboard",
+    "fixed_translation": "從剪貼簿貼上"
+  },
+  {
+    "source": "Per-holding contribution to portfolio value, P&L, and risk",
+    "current_translation": "Per-holding contribution to 投資組合 value, P&L, and 風險",
+    "fixed_translation": "每個持股對投資組合價值、損益和風險的貢獻"
+  },
+  {
+    "source": "Permanently delete all databases, files, cache, and UI state. OS keychain is preserved.",
+    "current_translation": "Permanently 刪除 all databases, files, cache, and UI state. OS keychain is preserved.",
+    "fixed_translation": "永久刪除所有資料庫、檔案、快取和 UI 狀態。作業系統鑰匙圈被保留。"
+  },
+  {
+    "source": "Pick a template from the list to see a description.",
+    "current_translation": "Pick a 範本 from the list to see a description.",
+    "fixed_translation": "從清單中選擇一個模板以查看說明。"
+  },
+  {
+    "source": "Pipeline ID (e.g. my_pipeline)",
+    "current_translation": "Pipeline ID（如 my_pipeline）",
+    "fixed_translation": "管道 ID（例如 my_pipeline）"
+  },
+  {
+    "source": "Point forecast (same length as actuals)",
+    "current_translation": "Point 預測 (same length as actuals)",
+    "fixed_translation": "點預測（與實際長度相同）"
+  },
+  {
+    "source": "Portfolio daily returns (decimals)",
+    "current_translation": "投資組合 每日 returns (decimals)",
+    "fixed_translation": "投資組合每日回報（小數）"
+  },
+  {
+    "source": "Portfolio daily returns (decimals, same length as benchmark)",
+    "current_translation": "投資組合 每日 returns (decimals, same length as benchmark)",
+    "fixed_translation": "投資組合每日報酬率（小數，與基準長度相同）"
+  },
+  {
+    "source": "Potential cause series x (same length as y)",
+    "current_translation": "Potential cause 序列 x (same length as y)",
+    "fixed_translation": "潛在原因係列x（與y長度相同）"
+  },
+  {
+    "source": "Press new key combination...",
+    "current_translation": "Press 新增 key combination...",
+    "fixed_translation": "按新的組合鍵..."
+  },
+  {
+    "source": "Price unavailable: %1. Try again in a moment.",
+    "current_translation": "價格 unavailable: %1. Try again in a moment.",
+    "fixed_translation": "價格不詳：%1。稍後再試一次。"
+  },
+  {
+    "source": "Quant Reporting backend ready",
+    "current_translation": "Quant Reporting 後端 就緒",
+    "fixed_translation": "定量報告後端準備就緒"
+  },
+  {
+    "source": "Quotes refresh as you type.",
+    "current_translation": "Quotes 重新整理 as you type.",
+    "fixed_translation": "引號會在您鍵入時刷新。"
+  },
+  {
+    "source": "RISK CONTRIBUTION BY HOLDING",
+    "current_translation": "風險 CONTRIBUTION BY HOLDING",
+    "fixed_translation": "所持有的風險貢獻"
+  },
+  {
+    "source": "RISK-ADJUSTED RATIOS & WIN/LOSS BREAKDOWN",
+    "current_translation": "RISK-ADJUSTED RATIOS & WIN/LOSS 分解",
+    "fixed_translation": "風險調整比率與贏/輸細分"
+  },
+  {
+    "source": "Raw Databento response",
+    "current_translation": "Raw Databento 回應",
+    "fixed_translation": "原始資料便當響應"
+  },
+  {
+    "source": "Ready. Click LOCK to build the transaction.",
+    "current_translation": "Ready. Click 鎖定 to 建構 the transaction.",
+    "fixed_translation": "準備好。點擊“鎖定”以建立交易。"
+  },
+  {
+    "source": "Ready. Click SWAP to build the transaction.",
+    "current_translation": "Ready. Click 交換 to 建構 the transaction.",
+    "fixed_translation": "準備好。點擊“SWAP”以建立交易。"
+  },
+  {
+    "source": "Recent security events (PIN setup, failed unlocks, inactivity locks).",
+    "current_translation": "Recent security 事件 (PIN setup, 失敗 unlocks, inactivity locks).",
+    "fixed_translation": "最近的安全事件（PIN 設定、解鎖失敗、不活動鎖定）。"
+  },
+  {
+    "source": "Redirect didn't work? Paste request_token manually",
+    "current_translation": "Redirect didn't work? 貼上 request_token manually",
+    "fixed_translation": "重定向不起作用？手動貼上 request_token"
+  },
+  {
+    "source": "Required for yield_curve and country_data",
+    "current_translation": "必填 for yield_curve and country_data",
+    "fixed_translation": "產量曲線和國家數據必需"
+  },
+  {
+    "source": "Requires BEA_API_KEY",
+    "current_translation": "需要 BEA_API_KEY",
+    "fixed_translation": "需要 BEA_API_KEY"
+  },
+  {
+    "source": "Requires EIA_API_KEY",
+    "current_translation": "需要 EIA_API_KEY",
+    "fixed_translation": "需要 EIA_API_KEY"
+  },
+  {
+    "source": "Requires WTO_API_KEY",
+    "current_translation": "需要 WTO_API_KEY",
+    "fixed_translation": "需要 WTO_API_KEY"
+  },
+  {
+    "source": "Reset All to Defaults",
+    "current_translation": "重設 All to Defaults",
+    "fixed_translation": "全部重設為預設值"
+  },
+  {
+    "source": "SAVINGS RATE ANALYSIS",
+    "current_translation": "SAVINGS RATE 分析",
+    "fixed_translation": "儲蓄率分析"
+  },
+  {
+    "source": "STRATEGY COMPARISON  (populated after optimization)",
+    "current_translation": "策略 比較  (populated after optimization)",
+    "fixed_translation": "策略比較（最佳化後填入）"
+  },
+  {
+    "source": "Save All Providers",
+    "current_translation": "儲存 All Providers",
+    "fixed_translation": "保存所有提供者"
+  },
+  {
+    "source": "Saved layouts arrive in Phase 6",
+    "current_translation": "已儲存 layouts arrive in Phase 6",
+    "fixed_translation": "儲存的佈局到達第 6 階段"
+  },
+  {
+    "source": "Saved. Restart streaming to use the new key.",
+    "current_translation": "Saved. Restart streaming to use the 新增 key.",
+    "fixed_translation": "已儲存。重新啟動串流以使用新密鑰。"
+  },
+  {
+    "source": "Search actions, layouts… (Esc to cancel, Enter to run)",
+    "current_translation": "搜尋 actions, layouts… (Esc to cancel, 輸入 to run)",
+    "fixed_translation": "搜尋操作、佈局...（Esc 取消，Enter 運行）"
+  },
+  {
+    "source": "Search for a symbol to load news.",
+    "current_translation": "搜尋 for a symbol to load news.",
+    "fixed_translation": "搜尋符號以加載新聞。"
+  },
+  {
+    "source": "Select Kalshi private key (PEM)",
+    "current_translation": "選擇 Kalshi 私鑰 (PEM)",
+    "fixed_translation": "選擇 Kalshi 私鑰 (PEM)"
+  },
+  {
+    "source": "Select a category to begin",
+    "current_translation": "選擇a category to begin",
+    "fixed_translation": "選擇一個類別開始"
+  },
+  {
+    "source": "Select a color theme for your report:",
+    "current_translation": "選擇a color theme for your report:",
+    "fixed_translation": "為您的報告選擇顏色主題："
+  },
+  {
+    "source": "Select a component\\nto edit properties",
+    "current_translation": "選擇a component\\nto edit properties",
+    "fixed_translation": "選擇一個元件\\n以編輯屬性"
+  },
+  {
+    "source": "Select a data source above\\nto load available endpoints",
+    "current_translation": "選擇a data source above\\nto load available endpoints",
+    "fixed_translation": "選擇上面的資料來源\\n以載入可用端點"
+  },
+  {
+    "source": "Select a market to view its price chart",
+    "current_translation": "選擇a market to view its price chart",
+    "fixed_translation": "選擇一個市場以查看其價格圖表"
+  },
+  {
+    "source": "Select a node\\nto edit properties",
+    "current_translation": "選擇a node\\nto edit properties",
+    "fixed_translation": "選擇節點\\n編輯屬性"
+  },
+  {
+    "source": "Select a note or create a new one",
+    "current_translation": "選擇a note or create a new one",
+    "fixed_translation": "選擇註釋或建立新註釋"
+  },
+  {
+    "source": "Select a report to open:",
+    "current_translation": "選擇a report to open:",
+    "fixed_translation": "選擇要開啟的報告："
+  },
+  {
+    "source": "Select a server to view details.",
+    "current_translation": "選擇a server to view details.",
+    "fixed_translation": "選擇伺服器以查看詳細資訊。"
+  },
+  {
+    "source": "Select a template to reset your dashboard. Current layout will be replaced.",
+    "current_translation": "選擇a template to reset your dashboard. Current layout will be replaced.",
+    "fixed_translation": "選擇一個範本來重設儀表板。當前佈局將被取代。"
+  },
+  {
+    "source": "Select a template to view details",
+    "current_translation": "選擇a template to view details",
+    "fixed_translation": "選擇模板查看詳情"
+  },
+  {
+    "source": "Select a workflow to configure and run.",
+    "current_translation": "選擇a workflow to configure and run.",
+    "fixed_translation": "選擇要配置和運行的工作流程。"
+  },
+  {
+    "source": "Select a workspace to preview",
+    "current_translation": "選擇a workspace to preview",
+    "fixed_translation": "選擇要預覽的工作區"
+  },
+  {
+    "source": "Select an account to configure credentials",
+    "current_translation": "選擇an account to configure credentials",
+    "fixed_translation": "選擇一個帳戶來設定憑證"
+  },
+  {
+    "source": "Select an index from MY INDICES to see its performance.",
+    "current_translation": "選擇an index from MY INDICES to see its performance.",
+    "fixed_translation": "從“我的索引”中選擇一個索引以查看其效能。"
+  },
+  {
+    "source": "Select an indicator and click CALCULATE",
+    "current_translation": "選擇an indicator and click CALCULATE",
+    "fixed_translation": "選擇一個指標並點擊“計算”"
+  },
+  {
+    "source": "Select parameters and click FETCH",
+    "current_translation": "選擇parameters and click FETCH",
+    "fixed_translation": "選擇參數並點擊 FETCH"
+  },
+  {
+    "source": "Sent. Waiting for confirmation…",
+    "current_translation": "已傳送. 等候中 for confirmation…",
+    "fixed_translation": "發送。等待確認..."
+  },
+  {
+    "source": "Series values (>= 1). Forecast = repeat last `season_length` observations.",
+    "current_translation": "序列 values (>= 1). 預測 = repeat 最後 `season_length` observations.",
+    "fixed_translation": "系列值 (>= 1)。預測=重複最後的“season_length”觀察。"
+  },
+  {
+    "source": "Series values (>= 30) — runs ADF + KPSS at each differencing order",
+    "current_translation": "序列 values (>= 30) — runs ADF + KPSS at each differencing 訂單",
+    "fixed_translation": "系列值 (>= 30) - 在每個差分階次執行 ADF + KPSS"
+  },
+  {
+    "source": "Series values (>= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.",
+    "current_translation": "序列 values (>= 30). Bootstrap residual ensemble forecasts the 下一步 H steps with quantile bands.",
+    "fixed_translation": "系列值 (>= 30)。 Bootstrap 殘差整合使用分位數帶預測接下來的 H 個步驟。"
+  },
+  {
+    "source": "Series values (training history, >= 30)",
+    "current_translation": "序列 values (training history, >= 30)",
+    "fixed_translation": "系列值（訓練歷史，>= 30）"
+  },
+  {
+    "source": "Show unverified tokens in the holdings panel",
+    "current_translation": "顯示unverified tokens in the holdings panel",
+    "fixed_translation": "在持有面板中顯示未經驗證的代幣"
+  },
+  {
+    "source": "Simulation failed: %1. Refusing to sign.",
+    "current_translation": "模擬 failed: %1. Refusing to sign.",
+    "fixed_translation": "模擬失敗：%1。拒絕簽字。"
+  },
+  {
+    "source": "Stored — input is hidden. Type to replace.",
+    "current_translation": "Stored — input is hidden. 類型 to replace.",
+    "fixed_translation": "儲存 - 輸入被隱藏。鍵入要替換的內容。"
+  },
+  {
+    "source": "Supply history feed error: %1",
+    "current_translation": "Supply 歷史 feed error: %1",
+    "fixed_translation": "供應歷史進給錯誤：%1"
+  },
+  {
+    "source": "Swap service unavailable.",
+    "current_translation": "交換 service unavailable.",
+    "fixed_translation": "不提供換貨服務。"
+  },
+  {
+    "source": "TYPE YOUR EMAIL ADDRESS TO CONFIRM:",
+    "current_translation": "類型 YOUR EMAIL 地址 TO CONFIRM:",
+    "fixed_translation": "輸入您的電子郵件地址以確認："
+  },
+  {
+    "source": "This module is under active development.\\nIt will be available in a future update.",
+    "current_translation": "This module is under 活躍 development.\\nIt will be 可用 in a future update.",
+    "fixed_translation": "該模組正在積極開發中。 \\n它將在未來的更新中提供。"
+  },
+  {
+    "source": "Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values",
+    "current_translation": "股票代碼 (AAPL, ^GSPC, BTC-USD) or comma-separated values",
+    "fixed_translation": "代碼（AAPL、^GSPC、BTC-USD）或逗號分隔值"
+  },
+  {
+    "source": "Tickers (comma-separated, >= 2). Returns fetched via Yahoo Finance.",
+    "current_translation": "股票代碼（逗號分隔，≥ 2）。報酬率透過 Yahoo Finance 擷取。",
+    "fixed_translation": "代碼（以逗號分隔，>= 2）。透過雅虎財經獲取的回報。"
+  },
+  {
+    "source": "Time series values (>= 20)",
+    "current_translation": "Time 序列 values (>= 20)",
+    "fixed_translation": "時間序列值 (>= 20)"
+  },
+  {
+    "source": "Time series values (>= 20). Used for ARIMA(p,q) order selection.",
+    "current_translation": "Time 序列 values (>= 20). Used for ARIMA(p,q) 訂單 selection.",
+    "fixed_translation": "時間序列值 (>= 20)。用於 ARIMA(p,q) 訂單選擇。"
+  },
+  {
+    "source": "Time series values (>= 24). Period auto-detected if left at 0.",
+    "current_translation": "Time 序列 values (>= 24). Period auto-detected if 左 at 0.",
+    "fixed_translation": "時間序列值 (>= 24)。如果保留為 0，則自動偵測週期。"
+  },
+  {
+    "source": "Time series values (>= 30)",
+    "current_translation": "Time 序列 values (>= 30)",
+    "fixed_translation": "時間序列值 (>= 30)"
+  },
+  {
+    "source": "Time series values (>= 30). CSV, space, or newline separated.",
+    "current_translation": "Time 序列 values (>= 30). CSV, space, or newline separated.",
+    "fixed_translation": "時間序列值 (>= 30)。以 CSV、空格或換行符分隔。"
+  },
+  {
+    "source": "Tip: re-select after editing\\ndata to refresh sparkline.",
+    "current_translation": "Tip: re-select after editing\\ndata to 重新整理 sparkline.",
+    "fixed_translation": "提示：編輯\\n資料後重新選擇可刷新迷你圖。"
+  },
+  {
+    "source": "Trade Barrier Removal Impact",
+    "current_translation": "交易 Barrier Removal Impact",
+    "fixed_translation": "貿易壁壘消除的影響"
+  },
+  {
+    "source": "Trade Statistics (API key)",
+    "current_translation": "交易 Statistics (API key)",
+    "fixed_translation": "貿易統計（API 金鑰）"
+  },
+  {
+    "source": "Trading Blocs Analysis",
+    "current_translation": "Trading Blocs 分析",
+    "fixed_translation": "貿易區分析"
+  },
+  {
+    "source": "Training history (optional; enables MASE)",
+    "current_translation": "Training 歷史 (optional; enables MASE)",
+    "fixed_translation": "培訓歷史（可選；啟用 MASE）"
+  },
+  {
+    "source": "Treasury feed error: %1",
+    "current_translation": "Treasury feed 錯誤: %1",
+    "fixed_translation": "庫房進給錯誤：%1"
+  },
+  {
+    "source": "Type a command (e.g. 'layout switch \\",
+    "current_translation": "類型 a command (e.g. 'layout switch \\",
+    "fixed_translation": "輸入指令（例如“佈局開關\\"
+  },
+  {
+    "source": "Type a ticker or company name to search",
+    "current_translation": "類型 a ticker or company name to 搜尋",
+    "fixed_translation": "輸入股票代碼或公司名稱進行搜尋"
+  },
+  {
+    "source": "USE THIS TEMPLATE",
+    "current_translation": "USE THIS 範本",
+    "fixed_translation": "使用此模板"
+  },
+  {
+    "source": "Underlying / parent symbol",
+    "current_translation": "Underlying / parent 代碼",
+    "fixed_translation": "基礎/母代號"
+  },
+  {
+    "source": "Unique model ID (e.g. lgbm_sp500)",
+    "current_translation": "Unique 模型 ID (e.g. lgbm_sp500)",
+    "fixed_translation": "唯一型號 ID（例如 lgbm_sp500）"
+  },
+  {
+    "source": "Use /stock, /fund, /index... in command bar to search",
+    "current_translation": "Use /stock, /fund, /index... in command bar to 搜尋",
+    "fixed_translation": "在命令列中使用 /stock、/fund、/index... 進行搜索"
+  },
+  {
+    "source": "VOICE / SPEECH-TO-TEXT",
+    "current_translation": "語音 / SPEECH-TO-TEXT",
+    "fixed_translation": "語音/語音轉文本"
+  },
+  {
+    "source": "WEIGHT COMPARISON  (all methods, per symbol)",
+    "current_translation": "權重 比較  (all methods, per symbol)",
+    "fixed_translation": "權重比較（所有方法，按標的）"
+  },
+  {
+    "source": "Watch sources, trigger agent analysis.",
+    "current_translation": "Watch sources, 觸發 代理 analysis.",
+    "fixed_translation": "監控來源，觸發 Agent 分析。"
+  },
+  {
+    "source": "Weekly Petroleum (WPSR)",
+    "current_translation": "每週 Petroleum (WPSR)",
+    "fixed_translation": "每周石油 (WPSR)"
+  },
+  {
+    "source": "Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.",
+    "current_translation": "權重 (comma-separated, will be normalized to 1.0). Equal-weight if blank.",
+    "fixed_translation": "權重（以逗號分隔，將標準化為 1.0）。如果空白則等重。"
+  },
+  {
+    "source": "YouTube streams resolved via yt-dlp and played inline.",
+    "current_translation": "YouTube streams 已解析 via yt-dlp and played inline.",
+    "fixed_translation": "YouTube 串流透過 yt-dlp 解析並內嵌播放。"
+  },
+  {
+    "source": "\\u25B6 RUN MONTE CARLO (1000 paths)",
+    "current_translation": "\\u25B6 執行 MONTE CARLO (1000 paths)",
+    "fixed_translation": "\\u25B6 運行蒙地卡羅（1000 條路徑）"
+  },
+  {
+    "source": "build_swap failed: %1",
+    "current_translation": "build_swap 失敗: %1",
+    "fixed_translation": "建置交換失敗：%1"
+  },
+  {
+    "source": "c = constant only, ct = constant + trend",
+    "current_translation": "c = constant only, ct = constant + 趨勢",
+    "fixed_translation": "c = 僅常數，ct = 常數 + 趨勢"
+  },
+  {
+    "source": "c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant",
+    "current_translation": "c = constant, ct = constant + trend, ctt = constant + 趨勢 + quadratic trend, n = no constant",
+    "fixed_translation": "c = 常數, ct = 常數 + 趨勢, ctt = 常數 + 趨勢 + 二次趨勢, n = 無常數"
+  },
+  {
+    "source": "comma-separated: bootstrap,jackknife,permutation",
+    "current_translation": "逗號分隔: bootstrap,jackknife,permutation",
+    "fixed_translation": "逗號分隔：bootstrap、jackknife、排列"
+  },
+  {
+    "source": "comma-separated: pca,kmeans,agglomerative",
+    "current_translation": "逗號分隔: pca,kmeans,agglomerative",
+    "fixed_translation": "以逗號分隔：pca,kmeans,agglomerative"
+  },
+  {
+    "source": "comma-separated: ridge,lasso,random_forest,svr,knn",
+    "current_translation": "逗號分隔: ridge,lasso,random_forest,svr,knn",
+    "fixed_translation": "逗號分隔：ridge,lasso,random_forest,svr,knn"
+  },
+  {
+    "source": "could not start local bridge server",
+    "current_translation": "could not 開始 local 橋接 伺服器",
+    "fixed_translation": "無法啟動本地橋接伺服器"
+  },
+  {
+    "source": "e.g. AAPL — fetched from Yahoo Finance",
+    "current_translation": "如 AAPL — 透過 Yahoo Finance 擷取",
+    "fixed_translation": "例如AAPL - 取自雅虎財經"
+  },
+  {
+    "source": "e.g. my-mcp-package --flag value",
+    "current_translation": "e.g. my-mcp-package --flag 價值",
+    "fixed_translation": "例如my-mcp-package --標誌值"
+  },
+  {
+    "source": "fincept_lock not deployed — Settings > Lock program ID",
+    "current_translation": "fincept_lock not deployed — 設定 > 鎖定 program ID",
+    "fixed_translation": "fincept_lock 未部署 - 設定 > 鎖定程式 ID"
+  },
+  {
+    "source": "signature verification failed",
+    "current_translation": "signature verification 失敗",
+    "fixed_translation": "簽名驗證失敗"
+  },
+  {
+    "source": "timed out waiting for browser callback",
+    "current_translation": "timed out 等候中 for browser callback",
+    "fixed_translation": "等待瀏覽器回呼逾時"
+  },
+  {
+    "source": "waiting for revenue + spot price…",
+    "current_translation": "等候中 for revenue + spot 價格…",
+    "fixed_translation": "等待收入+現貨價格..."
+  },
+  {
+    "source": "≈ %1 $FNCPT (PumpSwap fills at execution)",
+    "current_translation": "≈ %1 $FNCPT（PumpSwap 成交時執行）",
+    "fixed_translation": "≈ %1 $FNCPT（PumpSwap 在執行時填充）"
+  },
+  {
+    "source": "≈ %1 SOL (PumpSwap fills at execution)",
+    "current_translation": "≈ %1 SOL（PumpSwap 成交時執行）",
+    "fixed_translation": "≈ %1 SOL（PumpSwap 在執行時填充）"
+  },
+  {
+    "source": "<b>Kalshi (CFTC-regulated)</b><br>",
+    "current_translation": "<b>Kalshi（CFTC 監管）</b><br>",
+    "fixed_translation": "<b>Kalshi（受 CFTC 監管）</b><br>"
+  }
+]

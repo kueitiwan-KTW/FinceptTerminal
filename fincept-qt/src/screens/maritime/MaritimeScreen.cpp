@@ -250,18 +250,18 @@ QWidget* MaritimeScreen::build_top_bar() {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(12);
 
-    brand_label_ = new QLabel("FINCEPT MARITIME INTELLIGENCE", bar);
+    brand_label_ = new QLabel(tr("FINCEPT MARITIME INTELLIGENCE"), bar);
     hl->addWidget(brand_label_);
 
-    classified_label_ = new QLabel("CLASSIFIED // TRADE ROUTE ANALYSIS", bar);
+    classified_label_ = new QLabel(tr("CLASSIFIED // TRADE ROUTE ANALYSIS"), bar);
     hl->addWidget(classified_label_);
 
     hl->addStretch(1);
 
-    threat_badge_ = new QLabel("THREAT: LOW", bar);
+    threat_badge_ = new QLabel(tr("THREAT: LOW"), bar);
     hl->addWidget(threat_badge_);
 
-    vessel_count_label_ = new QLabel("0 VESSELS", bar);
+    vessel_count_label_ = new QLabel(tr("0 VESSELS"), bar);
     hl->addWidget(vessel_count_label_);
 
     return bar;
@@ -276,13 +276,13 @@ QWidget* MaritimeScreen::build_left_panel() {
     vl->setContentsMargins(12, 12, 12, 12);
     vl->setSpacing(8);
 
-    auto* load_btn = new QPushButton("LOAD VESSELS (MUMBAI AREA)", panel);
+    auto* load_btn = new QPushButton(tr("LOAD VESSELS (MUMBAI AREA)"), panel);
     load_btn->setCursor(Qt::PointingHandCursor);
     load_btn->setStyleSheet(btn_primary_ss());
     connect(load_btn, &QPushButton::clicked, this, &MaritimeScreen::on_load_vessels);
     vl->addWidget(load_btn);
 
-    auto* intel_title = new QLabel("INTELLIGENCE", panel);
+    auto* intel_title = new QLabel(tr("INTELLIGENCE"), panel);
     intel_title->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2; letter-spacing:1px;")
                                    .arg(ui::colors::AMBER())
                                    .arg(ui::fonts::DATA_FAMILY));
@@ -336,7 +336,7 @@ QWidget* MaritimeScreen::build_left_panel() {
     vl->addLayout(grid);
 
     vl->addSpacing(8);
-    auto* routes_title = new QLabel("TRADE CORRIDORS", panel);
+    auto* routes_title = new QLabel(tr("TRADE CORRIDORS"), panel);
     routes_title->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2; letter-spacing:1px;")
                                     .arg(ui::colors::AMBER())
                                     .arg(ui::fonts::DATA_FAMILY));
@@ -370,14 +370,14 @@ QWidget* MaritimeScreen::build_center_panel() {
         QString("background:%1; border-bottom:1px solid %2;").arg(C(ui::colors::BG_RAISED), C(ui::colors::BORDER_DIM)));
     auto* hhl = new QHBoxLayout(header);
     hhl->setContentsMargins(16, 0, 16, 0);
-    auto* title = new QLabel("VESSEL TRACKING — AIS FEED", header);
+    auto* title = new QLabel(tr("VESSEL TRACKING — AIS FEED"), header);
     title->setStyleSheet(QString("color:%1; font-size:%2px; font-weight:700; font-family:%3; letter-spacing:1px;")
                              .arg(ui::colors::AMBER())
                              .arg(ui::fonts::TINY)
                              .arg(ui::fonts::DATA_FAMILY));
     hhl->addWidget(title);
     hhl->addStretch();
-    auto* ais_badge = new QLabel("AIS: STREAMING", header);
+    auto* ais_badge = new QLabel(tr("AIS: STREAMING"), header);
     ais_badge->setStyleSheet(QString("color:%1; font-size:9px; font-family:%2; font-weight:700;")
                                  .arg(ui::colors::POSITIVE())
                                  .arg(ui::fonts::DATA_FAMILY));
@@ -433,11 +433,11 @@ QWidget* MaritimeScreen::build_right_panel() {
     vl->setSpacing(10);
 
     // ── Vessel Search ──────────────────────────────────────────────────────
-    auto* search_title = new QLabel("VESSEL SEARCH", content);
+    auto* search_title = new QLabel(tr("VESSEL SEARCH"), content);
     search_title->setStyleSheet(section_label_ss());
     vl->addWidget(search_title);
 
-    auto* imo_lbl = new QLabel("IMO NUMBER", content);
+    auto* imo_lbl = new QLabel(tr("IMO NUMBER"), content);
     imo_lbl->setStyleSheet(tiny_label_ss());
     vl->addWidget(imo_lbl);
 
@@ -449,13 +449,13 @@ QWidget* MaritimeScreen::build_right_panel() {
             [this](const QString&) { fincept::ScreenStateManager::instance().notify_changed(this); });
     vl->addWidget(imo_edit_);
 
-    auto* track_btn = new QPushButton("TRACK", content);
+    auto* track_btn = new QPushButton(tr("TRACK"), content);
     track_btn->setCursor(Qt::PointingHandCursor);
     track_btn->setStyleSheet(btn_primary_ss());
     connect(track_btn, &QPushButton::clicked, this, &MaritimeScreen::on_search_vessel);
     vl->addWidget(track_btn);
 
-    auto* history_btn = new QPushButton("VOYAGE HISTORY", content);
+    auto* history_btn = new QPushButton(tr("VOYAGE HISTORY"), content);
     history_btn->setCursor(Qt::PointingHandCursor);
     history_btn->setStyleSheet(btn_outline_ss());
     connect(history_btn, &QPushButton::clicked, this, [this]() {
@@ -504,7 +504,7 @@ QWidget* MaritimeScreen::build_right_panel() {
 
     // ── Area Search ────────────────────────────────────────────────────────
     vl->addSpacing(8);
-    auto* area_title = new QLabel("AREA SEARCH", content);
+    auto* area_title = new QLabel(tr("AREA SEARCH"), content);
     area_title->setStyleSheet(section_label_ss());
     vl->addWidget(area_title);
 
@@ -526,7 +526,7 @@ QWidget* MaritimeScreen::build_right_panel() {
     area_min_lng_ = make_coord("MIN LONGITUDE", 72.0);
     area_max_lng_ = make_coord("MAX LONGITUDE", 73.5);
 
-    auto* area_btn = new QPushButton("SEARCH AREA", content);
+    auto* area_btn = new QPushButton(tr("SEARCH AREA"), content);
     area_btn->setCursor(Qt::PointingHandCursor);
     area_btn->setStyleSheet(btn_primary_ss());
     connect(area_btn, &QPushButton::clicked, this, [this]() {
@@ -548,7 +548,7 @@ QWidget* MaritimeScreen::build_right_panel() {
     rdvl->setContentsMargins(10, 10, 10, 10);
     rdvl->setSpacing(4);
 
-    auto* rd_title = new QLabel("SELECTED ROUTE", route_detail_);
+    auto* rd_title = new QLabel(tr("SELECTED ROUTE"), route_detail_);
     rd_title->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2; letter-spacing:1px;")
                                 .arg(ui::colors::AMBER())
                                 .arg(ui::fonts::DATA_FAMILY));
@@ -572,7 +572,7 @@ QWidget* MaritimeScreen::build_right_panel() {
 
     // ── System Status ──────────────────────────────────────────────────────
     vl->addSpacing(8);
-    auto* sys_title = new QLabel("SYSTEM STATUS", content);
+    auto* sys_title = new QLabel(tr("SYSTEM STATUS"), content);
     sys_title->setStyleSheet(tiny_label_ss());
     vl->addWidget(sys_title);
 
@@ -594,7 +594,7 @@ QWidget* MaritimeScreen::build_right_panel() {
         vl->addWidget(lbl);
     }
 
-    auto* cls = new QLabel("CLASSIFIED — AUTHORIZED PERSONNEL ONLY", content);
+    auto* cls = new QLabel(tr("CLASSIFIED — AUTHORIZED PERSONNEL ONLY"), content);
     cls->setWordWrap(true);
     cls->setAlignment(Qt::AlignCenter);
     cls->setStyleSheet(QString("color:%1; font-size:8px; font-family:%2; font-weight:700;"
@@ -629,23 +629,23 @@ QWidget* MaritimeScreen::build_status_bar() {
                   .arg(ui::colors::TEXT_PRIMARY())
                   .arg(ui::fonts::DATA_FAMILY);
 
-    auto* lbl1 = new QLabel("SOURCE:", bar);
+    auto* lbl1 = new QLabel(tr("SOURCE:"), bar);
     lbl1->setStyleSheet(s);
-    auto* val1 = new QLabel("AIS FEED + FINCEPT API", bar);
+    auto* val1 = new QLabel(tr("AIS FEED + FINCEPT API"), bar);
     val1->setStyleSheet(sv);
     hl->addWidget(lbl1);
     hl->addWidget(val1);
 
-    auto* lbl2 = new QLabel("REFRESH:", bar);
+    auto* lbl2 = new QLabel(tr("REFRESH:"), bar);
     lbl2->setStyleSheet(s);
-    auto* val2 = new QLabel("5 MIN", bar);
+    auto* val2 = new QLabel(tr("5 MIN"), bar);
     val2->setStyleSheet(sv);
     hl->addWidget(lbl2);
     hl->addWidget(val2);
 
     hl->addStretch();
 
-    status_label_ = new QLabel("READY", bar);
+    status_label_ = new QLabel(tr("READY"), bar);
     hl->addWidget(status_label_);
 
     return bar;

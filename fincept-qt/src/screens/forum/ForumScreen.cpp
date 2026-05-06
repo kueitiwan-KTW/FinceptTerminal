@@ -456,7 +456,7 @@ void ForumScreen::show_new_post_dialog(int category_id) {
                               .arg(ui::colors::AMBER(), ui::colors::ORANGE()));
     vl->addWidget(accent);
 
-    auto* hdr = new QLabel("CREATE NEW POST");
+    auto* hdr = new QLabel(tr("CREATE NEW POST"));
     hdr->setStyleSheet(QString("color:%1;font-size:15px;font-weight:700;letter-spacing:1.5px;%2")
                            .arg(ui::colors::TEXT_PRIMARY(), M(15)));
     vl->addWidget(hdr);

@@ -244,7 +244,7 @@ QWidget* WatchlistScreen::build_main_panel() {
     connect(refresh_btn_, &QPushButton::clicked, this, &WatchlistScreen::on_refresh);
     tl->addWidget(refresh_btn_);
 
-    del_wl_btn_ = new QPushButton("DELETE LIST");
+    del_wl_btn_ = new QPushButton(tr("DELETE LIST"));
     connect(del_wl_btn_, &QPushButton::clicked, this, &WatchlistScreen::on_delete_watchlist);
     tl->addWidget(del_wl_btn_);
 

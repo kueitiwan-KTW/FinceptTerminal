@@ -37,12 +37,12 @@ NewsDetailPanel::NewsDetailPanel(QWidget* parent) : QWidget(parent) {
     header_layout->setContentsMargins(10, 0, 6, 0);
     header_layout->setSpacing(0);
 
-    auto* title = new QLabel("ARTICLE DETAIL", header);
+    auto* title = new QLabel(tr("ARTICLE DETAIL"), header);
     title->setObjectName("newsDetailHeaderTitle");
     header_layout->addWidget(title);
     header_layout->addStretch();
 
-    close_btn_ = new QPushButton("x", header);
+    close_btn_ = new QPushButton(tr("x"), header);
     close_btn_->setObjectName("newsDetailCloseBtn");
     close_btn_->setFixedSize(22, 22);
     close_btn_->setCursor(Qt::PointingHandCursor);
@@ -73,7 +73,7 @@ QWidget* NewsDetailPanel::build_empty_state() {
     auto* empty = new QWidget(this);
     auto* layout = new QVBoxLayout(empty);
     layout->setAlignment(Qt::AlignCenter);
-    auto* label = new QLabel("Select an article", empty);
+    auto* label = new QLabel(tr("Select an article"), empty);
     label->setObjectName("newsDetailEmpty");
     label->setAlignment(Qt::AlignCenter);
     layout->addWidget(label);
@@ -156,28 +156,28 @@ QWidget* NewsDetailPanel::build_content_view() {
     action_layout->setContentsMargins(0, 4, 0, 4);
     action_layout->setSpacing(6);
 
-    open_btn_ = new QPushButton("OPEN", content);
+    open_btn_ = new QPushButton(tr("OPEN"), content);
     open_btn_->setObjectName("newsDetailOpenBtn");
     open_btn_->setFixedHeight(24);
-    copy_btn_ = new QPushButton("COPY URL", content);
+    copy_btn_ = new QPushButton(tr("COPY URL"), content);
     copy_btn_->setObjectName("newsDetailCopyBtn");
     copy_btn_->setFixedHeight(24);
-    analyze_btn_ = new QPushButton("ANALYZE", content);
+    analyze_btn_ = new QPushButton(tr("ANALYZE"), content);
     analyze_btn_->setObjectName("newsDetailAnalyzeBtn");
     analyze_btn_->setFixedHeight(24);
-    save_btn_ = new QPushButton("SAVE", content);
+    save_btn_ = new QPushButton(tr("SAVE"), content);
     save_btn_->setObjectName("newsDetailSaveBtn");
     save_btn_->setFixedHeight(24);
     save_btn_->setToolTip(tr("Save article to File Manager"));
 
-    bookmark_btn_ = new QPushButton("BOOKMARK", content);
+    bookmark_btn_ = new QPushButton(tr("BOOKMARK"), content);
     bookmark_btn_->setObjectName("newsDetailSaveBtn");
     bookmark_btn_->setFixedHeight(24);
     bookmark_btn_->setToolTip(tr("Bookmark article"));
     bookmark_btn_->setCheckable(true);
 
     // Translate button
-    translate_btn_ = new QPushButton("TRANSLATE", content);
+    translate_btn_ = new QPushButton(tr("TRANSLATE"), content);
     translate_btn_->setObjectName("newsDetailOpenBtn");
     translate_btn_->setFixedHeight(24);
 
@@ -267,7 +267,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     analysis_layout->setContentsMargins(0, 4, 0, 4);
     analysis_layout->setSpacing(4);
 
-    auto* ai_title = new QLabel("AI ANALYSIS", analysis_section_);
+    auto* ai_title = new QLabel(tr("AI ANALYSIS"), analysis_section_);
     ai_title->setObjectName("newsDetailSectionTitle");
     analysis_layout->addWidget(ai_title);
 
@@ -289,7 +289,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     ai_row_layout->addStretch();
     analysis_layout->addWidget(ai_row);
 
-    auto* kp_title = new QLabel("KEY POINTS", analysis_section_);
+    auto* kp_title = new QLabel(tr("KEY POINTS"), analysis_section_);
     kp_title->setObjectName("newsDetailSubTitle");
     analysis_layout->addWidget(kp_title);
 
@@ -299,7 +299,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     key_points_layout_->setSpacing(2);
     analysis_layout->addWidget(kp_container);
 
-    auto* risk_title = new QLabel("RISK SIGNALS", analysis_section_);
+    auto* risk_title = new QLabel(tr("RISK SIGNALS"), analysis_section_);
     risk_title->setObjectName("newsDetailSubTitle");
     analysis_layout->addWidget(risk_title);
 
@@ -309,7 +309,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     risk_layout_->setSpacing(2);
     analysis_layout->addWidget(risk_container);
 
-    auto* topics_title = new QLabel("TOPICS", analysis_section_);
+    auto* topics_title = new QLabel(tr("TOPICS"), analysis_section_);
     topics_title->setObjectName("newsDetailSubTitle");
     analysis_layout->addWidget(topics_title);
 
@@ -327,7 +327,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     auto* mon_layout = new QVBoxLayout(monitor_section_);
     mon_layout->setContentsMargins(0, 4, 0, 4);
     mon_layout->setSpacing(2);
-    auto* mon_title = new QLabel("MONITOR MATCHES", monitor_section_);
+    auto* mon_title = new QLabel(tr("MONITOR MATCHES"), monitor_section_);
     mon_title->setObjectName("newsDetailSectionTitle");
     mon_layout->addWidget(mon_title);
     auto* mon_container = new QWidget(monitor_section_);
@@ -343,7 +343,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     auto* rel_layout_outer = new QVBoxLayout(related_section_);
     rel_layout_outer->setContentsMargins(0, 4, 0, 4);
     rel_layout_outer->setSpacing(2);
-    auto* rel_title = new QLabel("RELATED", related_section_);
+    auto* rel_title = new QLabel(tr("RELATED"), related_section_);
     rel_title->setObjectName("newsDetailSectionTitle");
     rel_layout_outer->addWidget(rel_title);
     auto* rel_container = new QWidget(related_section_);
@@ -359,7 +359,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     auto* ent_layout_outer = new QVBoxLayout(entities_section_);
     ent_layout_outer->setContentsMargins(0, 4, 0, 4);
     ent_layout_outer->setSpacing(2);
-    auto* ent_title = new QLabel("ENTITIES", entities_section_);
+    auto* ent_title = new QLabel(tr("ENTITIES"), entities_section_);
     ent_title->setObjectName("newsDetailSectionTitle");
     ent_layout_outer->addWidget(ent_title);
     auto* ent_container = new QWidget(entities_section_);
@@ -375,7 +375,7 @@ QWidget* NewsDetailPanel::build_content_view() {
     auto* infra_layout_outer = new QVBoxLayout(infra_section_);
     infra_layout_outer->setContentsMargins(0, 4, 0, 4);
     infra_layout_outer->setSpacing(2);
-    auto* infra_title = new QLabel("NEARBY INFRASTRUCTURE", infra_section_);
+    auto* infra_title = new QLabel(tr("NEARBY INFRASTRUCTURE"), infra_section_);
     infra_title->setObjectName("newsDetailSectionTitle");
     infra_layout_outer->addWidget(infra_title);
     auto* infra_container = new QWidget(infra_section_);

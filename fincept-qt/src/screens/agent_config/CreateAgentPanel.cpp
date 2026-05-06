@@ -364,7 +364,7 @@ QWidget* CreateAgentPanel::build_form_panel() {
         mr1->addWidget(memory_db_path_edit_, 1);
         mr1->addWidget(field_lbl("Table"));
         memory_table_edit_ = new QLineEdit;
-        memory_table_edit_->setPlaceholderText("agent_memory");
+        memory_table_edit_->setPlaceholderText(tr("agent_memory"));
         memory_table_edit_->setStyleSheet(input_style());
         mr1->addWidget(memory_table_edit_, 1);
         sl->addLayout(mr1);

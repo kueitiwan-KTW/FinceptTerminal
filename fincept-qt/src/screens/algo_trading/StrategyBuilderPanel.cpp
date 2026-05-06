@@ -172,7 +172,7 @@ QWidget* StrategyBuilderPanel::build_condition_row(QWidget* parent) {
     val_spin->setDecimals(4);
     val_spin->setValue(0);
 
-    auto* rm_btn = new QPushButton("X", row);
+    auto* rm_btn = new QPushButton(tr("X"), row);
     rm_btn->setFixedSize(28, 28);
     rm_btn->setCursor(Qt::PointingHandCursor);
     rm_btn->setStyleSheet(
@@ -231,11 +231,11 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     vl->setSpacing(8);
 
     // ── Strategy Definition ─────────────────────────────────────────────────
-    auto* id_sec = new QLabel("STRATEGY DEFINITION", content);
+    auto* id_sec = new QLabel(tr("STRATEGY DEFINITION"), content);
     id_sec->setStyleSheet(kSectionLabel());
     vl->addWidget(id_sec);
 
-    auto* name_lbl = new QLabel("NAME", content);
+    auto* name_lbl = new QLabel(tr("NAME"), content);
     name_lbl->setStyleSheet(kLabelStyle());
     vl->addWidget(name_lbl);
     name_edit_ = new QLineEdit(content);
@@ -244,7 +244,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     name_edit_->setFixedHeight(30);
     vl->addWidget(name_edit_);
 
-    auto* desc_lbl = new QLabel("DESCRIPTION", content);
+    auto* desc_lbl = new QLabel(tr("DESCRIPTION"), content);
     desc_lbl->setStyleSheet(kLabelStyle());
     vl->addWidget(desc_lbl);
     desc_edit_ = new QLineEdit(content);
@@ -253,7 +253,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     desc_edit_->setFixedHeight(30);
     vl->addWidget(desc_edit_);
 
-    auto* tf_lbl = new QLabel("TIMEFRAME", content);
+    auto* tf_lbl = new QLabel(tr("TIMEFRAME"), content);
     tf_lbl->setStyleSheet(kLabelStyle());
     vl->addWidget(tf_lbl);
     timeframe_combo_ = new QComboBox(content);
@@ -267,10 +267,10 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     auto* entry_hdr_hl = new QHBoxLayout(entry_hdr);
     entry_hdr_hl->setContentsMargins(0, 8, 0, 0);
     entry_hdr_hl->setSpacing(8);
-    auto* entry_lbl = new QLabel("ENTRY CONDITIONS", entry_hdr);
+    auto* entry_lbl = new QLabel(tr("ENTRY CONDITIONS"), entry_hdr);
     entry_lbl->setStyleSheet(kSectionLabel());
     entry_hdr_hl->addWidget(entry_lbl);
-    auto* entry_logic_lbl = new QLabel("Logic:", entry_hdr);
+    auto* entry_logic_lbl = new QLabel(tr("Logic:"), entry_hdr);
     entry_logic_lbl->setStyleSheet(kLabelStyle());
     entry_hdr_hl->addWidget(entry_logic_lbl);
     entry_logic_combo_ = new QComboBox(entry_hdr);
@@ -288,7 +288,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     entry_conditions_layout_->setSpacing(4);
     vl->addWidget(entry_container);
 
-    auto* add_entry_btn = new QPushButton("+ ADD ENTRY CONDITION", content);
+    auto* add_entry_btn = new QPushButton(tr("+ ADD ENTRY CONDITION"), content);
     add_entry_btn->setCursor(Qt::PointingHandCursor);
     add_entry_btn->setFixedHeight(28);
     add_entry_btn->setStyleSheet(
@@ -309,10 +309,10 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     auto* exit_hdr_hl = new QHBoxLayout(exit_hdr);
     exit_hdr_hl->setContentsMargins(0, 8, 0, 0);
     exit_hdr_hl->setSpacing(8);
-    auto* exit_lbl = new QLabel("EXIT CONDITIONS", exit_hdr);
+    auto* exit_lbl = new QLabel(tr("EXIT CONDITIONS"), exit_hdr);
     exit_lbl->setStyleSheet(kSectionLabel());
     exit_hdr_hl->addWidget(exit_lbl);
-    auto* exit_logic_lbl = new QLabel("Logic:", exit_hdr);
+    auto* exit_logic_lbl = new QLabel(tr("Logic:"), exit_hdr);
     exit_logic_lbl->setStyleSheet(kLabelStyle());
     exit_hdr_hl->addWidget(exit_logic_lbl);
     exit_logic_combo_ = new QComboBox(exit_hdr);
@@ -330,7 +330,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     exit_conditions_layout_->setSpacing(4);
     vl->addWidget(exit_container);
 
-    auto* add_exit_btn = new QPushButton("+ ADD EXIT CONDITION", content);
+    auto* add_exit_btn = new QPushButton(tr("+ ADD EXIT CONDITION"), content);
     add_exit_btn->setCursor(Qt::PointingHandCursor);
     add_exit_btn->setFixedHeight(28);
     add_exit_btn->setStyleSheet(add_entry_btn->styleSheet());
@@ -340,7 +340,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     vl->addWidget(add_exit_btn);
 
     // ── Risk Management ─────────────────────────────────────────────────────
-    auto* risk_lbl = new QLabel("RISK MANAGEMENT", content);
+    auto* risk_lbl = new QLabel(tr("RISK MANAGEMENT"), content);
     risk_lbl->setStyleSheet(kSectionLabel());
     vl->addWidget(risk_lbl);
 
@@ -378,7 +378,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     vl->addStretch();
 
     // ── Save button ─────────────────────────────────────────────────────────
-    auto* save_btn = new QPushButton("SAVE STRATEGY", content);
+    auto* save_btn = new QPushButton(tr("SAVE STRATEGY"), content);
     save_btn->setCursor(Qt::PointingHandCursor);
     save_btn->setFixedHeight(36);
     save_btn->setStyleSheet(
@@ -424,7 +424,7 @@ QWidget* StrategyBuilderPanel::build_right_pane() {
     vl->setSpacing(8);
 
     // ── Backtest Parameters ─────────────────────────────────────────────────
-    auto* bt_sec = new QLabel("BACKTEST PARAMETERS", content);
+    auto* bt_sec = new QLabel(tr("BACKTEST PARAMETERS"), content);
     bt_sec->setStyleSheet(kSectionLabel());
     vl->addWidget(bt_sec);
 
@@ -479,7 +479,7 @@ QWidget* StrategyBuilderPanel::build_right_pane() {
     vl->addWidget(params_grid);
 
     // RUN BACKTEST button
-    auto* bt_btn = new QPushButton("RUN BACKTEST", content);
+    auto* bt_btn = new QPushButton(tr("RUN BACKTEST"), content);
     bt_btn->setCursor(Qt::PointingHandCursor);
     bt_btn->setFixedHeight(36);
     bt_btn->setStyleSheet(
@@ -510,7 +510,7 @@ QWidget* StrategyBuilderPanel::build_right_pane() {
     results_layout_->setSpacing(8);
 
     // Empty state
-    bt_empty_label_ = new QLabel("Run a backtest to see results", results_container);
+    bt_empty_label_ = new QLabel(tr("Run a backtest to see results"), results_container);
     bt_empty_label_->setAlignment(Qt::AlignCenter);
     bt_empty_label_->setStyleSheet(
         QString("color: %1; font-size: %2px; %3 background: transparent; border: none; padding: 24px;")

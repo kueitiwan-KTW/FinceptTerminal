@@ -234,7 +234,7 @@ QWidget* AgentsViewPanel::build_config_panel() {
                 "font-size:11px;font-weight:600;letter-spacing:1px;}QPushButton:hover{background:%3;}")
             .arg(ui::colors::AMBER(), ui::colors::BG_BASE(), ui::colors::ORANGE()));
     acts->addWidget(save_btn_);
-    delete_btn_ = new QPushButton("DELETE");
+    delete_btn_ = new QPushButton(tr("DELETE"));
     delete_btn_->setCursor(Qt::PointingHandCursor);
     delete_btn_->setStyleSheet(
         QString("QPushButton{background:transparent;color:%1;border:1px solid %1;padding:8px 16px;"

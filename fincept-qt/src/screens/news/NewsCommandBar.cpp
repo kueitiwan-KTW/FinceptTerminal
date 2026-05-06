@@ -42,7 +42,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     hl->setSpacing(2);
 
     // Drawer toggle button
-    drawer_btn_ = new QPushButton("INTEL", row);
+    drawer_btn_ = new QPushButton(tr("INTEL"), row);
     drawer_btn_->setObjectName("newsDrawerBtn");
     drawer_btn_->setFixedHeight(20);
     drawer_btn_->setCursor(Qt::PointingHandCursor);
@@ -178,7 +178,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     connect(variant_combo_, &QComboBox::currentTextChanged, this, &NewsCommandBar::variant_changed);
 
     // RTL toggle
-    auto* rtl_btn = new QPushButton("RTL", row);
+    auto* rtl_btn = new QPushButton(tr("RTL"), row);
     rtl_btn->setObjectName("newsCommandBarPill");
     rtl_btn->setFixedHeight(18);
     rtl_btn->setCursor(Qt::PointingHandCursor);
@@ -190,7 +190,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     });
 
     // Summarize button
-    summarize_btn_ = new QPushButton("AI", row);
+    summarize_btn_ = new QPushButton(tr("AI"), row);
     summarize_btn_->setObjectName("newsDetailAnalyzeBtn");
     summarize_btn_->setFixedHeight(20);
     summarize_btn_->setToolTip(tr("AI Brief — summarize headlines"));
@@ -198,7 +198,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     connect(summarize_btn_, &QPushButton::clicked, this, &NewsCommandBar::summarize_clicked);
 
     // Refresh button
-    refresh_btn_ = new QPushButton("REFRESH", row);
+    refresh_btn_ = new QPushButton(tr("REFRESH"), row);
     refresh_btn_->setObjectName("newsCommandBarRefresh");
     refresh_btn_->setFixedHeight(20);
     hl->addWidget(refresh_btn_);
@@ -249,7 +249,7 @@ void NewsCommandBar::build_intel_row(QVBoxLayout* root) {
     sent_layout->setContentsMargins(0, 0, 0, 0);
     sent_layout->setSpacing(4);
 
-    auto* sent_label = new QLabel("SENT", sent_container);
+    auto* sent_label = new QLabel(tr("SENT"), sent_container);
     sent_label->setObjectName("newsIntelLabel");
     sent_layout->addWidget(sent_label);
 
@@ -284,7 +284,7 @@ void NewsCommandBar::build_intel_row(QVBoxLayout* root) {
     hl->addWidget(sep2);
 
     // Monitor alerts summary
-    intel_monitors_ = new QLabel("0 WATCHES", row);
+    intel_monitors_ = new QLabel(tr("0 WATCHES"), row);
     intel_monitors_->setObjectName("newsIntelMonitors");
     hl->addWidget(intel_monitors_);
 

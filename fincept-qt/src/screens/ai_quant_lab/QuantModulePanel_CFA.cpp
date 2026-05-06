@@ -60,7 +60,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
     vl->setSpacing(12);
 
     // ── Section header ──────────────────────────────────────────────────────
-    auto* data_lbl = new QLabel("DATA INPUT", w);
+    auto* data_lbl = new QLabel(tr("DATA INPUT"), w);
     data_lbl->setStyleSheet(QString("color:%1; font-weight:700; font-family:%2;"
                                     "letter-spacing:1px;")
                                 .arg(module_.color.name())
@@ -103,7 +103,7 @@ QWidget* QuantModulePanel::build_cfa_quant_panel() {
     vl->addWidget(build_input_row("Analysis Type", analysis_type, w));
 
     // ── Per-analysis parameter stack ────────────────────────────────────────
-    auto* params_lbl = new QLabel("ANALYSIS PARAMETERS", w);
+    auto* params_lbl = new QLabel(tr("ANALYSIS PARAMETERS"), w);
     params_lbl->setStyleSheet(QString("color:%1; font-weight:700; font-family:%2;"
                                       "letter-spacing:1px; margin-top:8px;")
                                   .arg(module_.color.name())

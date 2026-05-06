@@ -1287,7 +1287,7 @@ QWidget* DataMappingScreen::create_list_view() {
     connect(run_btn, &QPushButton::clicked, this, &DataMappingScreen::on_run_mapping);
     tbl->addWidget(run_btn);
 
-    auto* del_btn = new QPushButton("DELETE");
+    auto* del_btn = new QPushButton(tr("DELETE"));
     del_btn->setObjectName("dmDestructiveBtn");
     del_btn->setCursor(Qt::PointingHandCursor);
     connect(del_btn, &QPushButton::clicked, this, &DataMappingScreen::on_delete_mapping);

@@ -52,7 +52,7 @@ DashboardToolBar::DashboardToolBar(QWidget* parent) : QWidget(parent) {
     brand->setObjectName("dtBrand");
     ll->addWidget(brand);
 
-    auto* sub = new QLabel("TERMINAL");
+    auto* sub = new QLabel(tr("TERMINAL"));
     sub->setObjectName("dtSub");
     ll->addWidget(sub);
 

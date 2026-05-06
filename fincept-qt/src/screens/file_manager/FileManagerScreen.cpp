@@ -118,7 +118,7 @@ void FileManagerScreen::build_ui() {
         QString("color:%1;font-size:11px;background:transparent;%2").arg(colors::TEXT_SECONDARY(), MF));
     bbl->addWidget(sel_lbl);
 
-    bulk_delete_btn_ = new QPushButton("DELETE SELECTED");
+    bulk_delete_btn_ = new QPushButton(tr("DELETE SELECTED"));
     bulk_delete_btn_->setCursor(Qt::PointingHandCursor);
     bulk_delete_btn_->setStyleSheet(QString("QPushButton{background:transparent;color:%1;border:1px solid #7f1d1d;"
                                             "padding:3px 12px;font-size:11px;font-weight:700;%2}"

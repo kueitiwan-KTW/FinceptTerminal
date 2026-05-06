@@ -27,7 +27,7 @@ Card::Card(const QString& title, QWidget* parent) : QFrame(parent) {
 
     hl->addStretch();
 
-    auto* close_btn = new QPushButton("x");
+    auto* close_btn = new QPushButton(tr("x"));
     close_btn->setFixedSize(20, 20);
     close_btn->setStyleSheet(styles::card_close_button());
     connect(close_btn, &QPushButton::clicked, this, &Card::close_requested);

@@ -40,7 +40,7 @@ void ChatSessionPanel::build_ui() {
     header_row->addWidget(title_lbl);
     header_row->addStretch();
 
-    exit_btn_ = new QPushButton("TERMINAL");
+    exit_btn_ = new QPushButton(tr("TERMINAL"));
     exit_btn_->setFixedHeight(20);
     exit_btn_->setCursor(Qt::PointingHandCursor);
     exit_btn_->setToolTip(tr("Switch to Terminal Mode (F9)"));

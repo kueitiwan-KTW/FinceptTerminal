@@ -61,7 +61,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     // Same LOAD SAMPLE helper shape as functime
     auto add_sample_btn = [this](QLineEdit* edit, QWidget* parent, unsigned seed,
                                   const QString& tip, bool walk = false) -> QPushButton* {
-        auto* btn = new QPushButton("LOAD SAMPLE", parent);
+        auto* btn = new QPushButton(tr("LOAD SAMPLE"), parent);
         btn->setCursor(Qt::PointingHandCursor);
         btn->setFixedHeight(22);
         btn->setToolTip(tip);
@@ -134,7 +134,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     });
     oll->addWidget(ols_run);
     oll->addStretch();
-    tabs->addTab(ols, "OLS Regression");
+    tabs->addTab(ols, tr("OLS Regression"));
 
     // ── ARIMA ────────────────────────────────────────────────────────────────
     auto* ar = new QWidget(this);
@@ -205,7 +205,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     });
     arl->addWidget(ar_run);
     arl->addStretch();
-    tabs->addTab(ar, "ARIMA");
+    tabs->addTab(ar, tr("ARIMA"));
 
     // ── Stationarity Tests (single d, full ADF + KPSS detail) ────────────────
     auto* st = new QWidget(this);
@@ -264,7 +264,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     });
     stl->addWidget(st_run);
     stl->addStretch();
-    tabs->addTab(st, "Stationarity");
+    tabs->addTab(st, tr("Stationarity"));
 
     // ── ACF / PACF ───────────────────────────────────────────────────────────
     auto* ap = new QWidget(this);
@@ -307,7 +307,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     });
     apl->addWidget(ap_run);
     apl->addStretch();
-    tabs->addTab(ap, "ACF / PACF");
+    tabs->addTab(ap, tr("ACF / PACF"));
 
     // ── Granger Causality ────────────────────────────────────────────────────
     auto* gc = new QWidget(this);
@@ -376,7 +376,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     });
     gcl->addWidget(gc_run);
     gcl->addStretch();
-    tabs->addTab(gc, "Granger Causality");
+    tabs->addTab(gc, tr("Granger Causality"));
 
     // ── Descriptive + Normality ──────────────────────────────────────────────
     auto* de = new QWidget(this);
@@ -411,7 +411,7 @@ QWidget* QuantModulePanel::build_statsmodels_panel() {
     });
     del->addWidget(de_run);
     del->addStretch();
-    tabs->addTab(de, "Descriptive");
+    tabs->addTab(de, tr("Descriptive"));
 
     vl->addWidget(tabs);
 

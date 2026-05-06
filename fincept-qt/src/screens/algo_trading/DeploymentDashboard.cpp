@@ -247,7 +247,7 @@ QWidget* DeploymentDashboard::build_deployment_card(const AlgoDeployment& d, QWi
     btn_row->addStretch();
 
     if (d.status == "running" || d.status == "starting") {
-        auto* stop_btn = new QPushButton("STOP", card);
+        auto* stop_btn = new QPushButton(tr("STOP"), card);
         stop_btn->setCursor(Qt::PointingHandCursor);
         stop_btn->setFixedHeight(26);
         stop_btn->setStyleSheet(QString("QPushButton { background: transparent; color: %1; border: 1px solid %1;"
@@ -360,7 +360,7 @@ void DeploymentDashboard::build_ui() {
         eq_vl->setSpacing(4);
 
         auto* eq_header_row = new QHBoxLayout;
-        auto* eq_title = new QLabel("EQUITY CURVE", equity_placeholder_);
+        auto* eq_title = new QLabel(tr("EQUITY CURVE"), equity_placeholder_);
         eq_title->setStyleSheet(kSectionLabel());
         eq_header_row->addWidget(eq_title);
         eq_header_row->addStretch();
@@ -368,7 +368,7 @@ void DeploymentDashboard::build_ui() {
 
         eq_vl->addStretch();
 
-        auto* eq_hint = new QLabel("Select a deployment to view curve", equity_placeholder_);
+        auto* eq_hint = new QLabel(tr("Select a deployment to view curve"), equity_placeholder_);
         eq_hint->setAlignment(Qt::AlignCenter);
         eq_hint->setStyleSheet(
             QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
@@ -384,7 +384,7 @@ void DeploymentDashboard::build_ui() {
     auto* control_bar = new QHBoxLayout;
     control_bar->setSpacing(8);
 
-    auto* refresh_btn = new QPushButton("REFRESH", content);
+    auto* refresh_btn = new QPushButton(tr("REFRESH"), content);
     refresh_btn->setCursor(Qt::PointingHandCursor);
     refresh_btn->setFixedHeight(30);
     refresh_btn->setStyleSheet(
@@ -400,7 +400,7 @@ void DeploymentDashboard::build_ui() {
 
     control_bar->addStretch();
 
-    auto* stop_all_btn = new QPushButton("STOP ALL", content);
+    auto* stop_all_btn = new QPushButton(tr("STOP ALL"), content);
     stop_all_btn->setCursor(Qt::PointingHandCursor);
     stop_all_btn->setFixedHeight(30);
     stop_all_btn->setStyleSheet(
@@ -420,12 +420,12 @@ void DeploymentDashboard::build_ui() {
     vl->addLayout(control_bar);
 
     // ── Deployments section ─────────────────────────────────────────────────
-    auto* dep_title = new QLabel("DEPLOYMENTS", content);
+    auto* dep_title = new QLabel(tr("DEPLOYMENTS"), content);
     dep_title->setStyleSheet(kSectionLabel());
     vl->addWidget(dep_title);
 
     // Status label
-    status_label_ = new QLabel("No deployments loaded.", content);
+    status_label_ = new QLabel(tr("No deployments loaded."), content);
     status_label_->setStyleSheet(QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                                      .arg(fincept::ui::colors::TEXT_TERTIARY())
                                      .arg(fincept::ui::fonts::SMALL)

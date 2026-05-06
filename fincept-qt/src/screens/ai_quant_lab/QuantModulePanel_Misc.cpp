@@ -178,7 +178,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     });
     ivl->addWidget(ind_run);
     ivl->addStretch();
-    tabs->addTab(ind, "Indicators");
+    tabs->addTab(ind, tr("Indicators"));
 
     // ── Feature Selection tab ──
     auto* sel = new QWidget(this);
@@ -219,7 +219,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     });
     svl->addWidget(sel_run);
     svl->addStretch();
-    tabs->addTab(sel, "Feature Selection");
+    tabs->addTab(sel, tr("Feature Selection"));
 
     // ── Expression Engine tab ──
     auto* expr = new QWidget(this);
@@ -252,7 +252,7 @@ QWidget* QuantModulePanel::build_feature_engineering_panel() {
     });
     evl->addWidget(expr_run);
     evl->addStretch();
-    tabs->addTab(expr, "Expression Engine");
+    tabs->addTab(expr, tr("Expression Engine"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -388,7 +388,7 @@ QWidget* QuantModulePanel::build_portfolio_opt_panel() {
     });
     blvl->addWidget(bl_run);
     blvl->addStretch();
-    tabs->addTab(bl, "Black-Litterman");
+    tabs->addTab(bl, tr("Black-Litterman"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -444,7 +444,7 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     });
     icvl->addWidget(ic_run);
     icvl->addStretch();
-    tabs->addTab(ic, "IC Metrics");
+    tabs->addTab(ic, tr("IC Metrics"));
 
     // ── Full Report tab ──
     auto* rep = new QWidget(this);
@@ -482,7 +482,7 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     });
     repvl->addWidget(rep_run);
     repvl->addStretch();
-    tabs->addTab(rep, "Full Report");
+    tabs->addTab(rep, tr("Full Report"));
 
     // ── Risk Metrics tab ──
     auto* risk = new QWidget(this);
@@ -522,7 +522,7 @@ QWidget* QuantModulePanel::build_factor_evaluation_panel() {
     });
     riskvl->addWidget(risk_run);
     riskvl->addStretch();
-    tabs->addTab(risk, "Risk Metrics");
+    tabs->addTab(risk, tr("Risk Metrics"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -578,7 +578,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     });
     tkvl->addWidget(tk_run);
     tkvl->addStretch();
-    tabs->addTab(topk, "TopK-Dropout");
+    tabs->addTab(topk, tr("TopK-Dropout"));
 
     // ── Risk Parity ──
     auto* rp = new QWidget(this);
@@ -611,7 +611,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     });
     rpvl->addWidget(rp_run);
     rpvl->addStretch();
-    tabs->addTab(rp, "Risk Parity");
+    tabs->addTab(rp, tr("Risk Parity"));
 
     // ── Portfolio Metrics ──
     auto* pm = new QWidget(this);
@@ -651,7 +651,7 @@ QWidget* QuantModulePanel::build_strategy_builder_panel() {
     });
     pmvl->addWidget(pm_run);
     pmvl->addStretch();
-    tabs->addTab(pm, "Portfolio Metrics");
+    tabs->addTab(pm, tr("Portfolio Metrics"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -676,7 +676,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     auto* ltvl = new QVBoxLayout(list_tab);
     ltvl->setContentsMargins(12, 12, 12, 12);
     ltvl->setSpacing(8);
-    auto* lt_info = new QLabel("Browse all available data normalizers and transformation processors.", list_tab);
+    auto* lt_info = new QLabel(tr("Browse all available data normalizers and transformation processors."), list_tab);
     lt_info->setWordWrap(true);
     lt_info->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                .arg(ui::colors::TEXT_SECONDARY())
@@ -690,7 +690,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     });
     ltvl->addWidget(lt_run);
     ltvl->addStretch();
-    tabs->addTab(list_tab, "Browse");
+    tabs->addTab(list_tab, tr("Browse"));
 
     // ── Create Pipeline ──
     auto* pipe_tab = new QWidget(this);
@@ -719,7 +719,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     });
     ptvl->addWidget(pipe_run);
     ptvl->addStretch();
-    tabs->addTab(pipe_tab, "Create Pipeline");
+    tabs->addTab(pipe_tab, tr("Create Pipeline"));
 
     // ── Process Data ──
     auto* proc_tab = new QWidget(this);
@@ -748,7 +748,7 @@ QWidget* QuantModulePanel::build_data_processors_panel() {
     });
     procvl->addWidget(proc_run);
     procvl->addStretch();
-    tabs->addTab(proc_tab, "Process Data");
+    tabs->addTab(proc_tab, tr("Process Data"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -773,7 +773,7 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     auto* libvl = new QVBoxLayout(lib_tab);
     libvl->setContentsMargins(12, 12, 12, 12);
     libvl->setSpacing(8);
-    auto* lib_info = new QLabel("Browse all built-in Qlib alpha factors and expressions.", lib_tab);
+    auto* lib_info = new QLabel(tr("Browse all built-in Qlib alpha factors and expressions."), lib_tab);
     lib_info->setWordWrap(true);
     lib_info->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                 .arg(ui::colors::TEXT_SECONDARY())
@@ -793,7 +793,7 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     });
     libvl->addWidget(inst_run);
     libvl->addStretch();
-    tabs->addTab(lib_tab, "Factor Library");
+    tabs->addTab(lib_tab, tr("Factor Library"));
 
     // ── Fetch Data ──
     auto* data_tab = new QWidget(this);
@@ -842,7 +842,7 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     });
     datavl->addWidget(fd_run);
     datavl->addStretch();
-    tabs->addTab(data_tab, "Fetch Data");
+    tabs->addTab(data_tab, tr("Fetch Data"));
 
     // ── Calendar ──
     auto* cal_tab = new QWidget(this);
@@ -871,7 +871,7 @@ QWidget* QuantModulePanel::build_factor_discovery_panel() {
     });
     calvl->addWidget(cal_run);
     calvl->addStretch();
-    tabs->addTab(cal_tab, "Calendar");
+    tabs->addTab(cal_tab, tr("Calendar"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -897,7 +897,7 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     btvl->setContentsMargins(12, 12, 12, 12);
     btvl->setSpacing(8);
     auto* bt_info =
-        new QLabel("List all available Qlib models (LightGBM, XGBoost, LSTM, Transformer, etc.).", browse_tab);
+        new QLabel(tr("List all available Qlib models (LightGBM, XGBoost, LSTM, Transformer, etc.)."), browse_tab);
     bt_info->setWordWrap(true);
     bt_info->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                .arg(ui::colors::TEXT_SECONDARY())
@@ -917,7 +917,7 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     });
     btvl->addWidget(bt_status);
     btvl->addStretch();
-    tabs->addTab(browse_tab, "Browse");
+    tabs->addTab(browse_tab, tr("Browse"));
 
     // ── Train Model ──
     auto* train_tab = new QWidget(this);
@@ -962,7 +962,7 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     });
     ttvl->addWidget(ml_run);
     ttvl->addStretch();
-    tabs->addTab(train_tab, "Train Model");
+    tabs->addTab(train_tab, tr("Train Model"));
 
     // ── Backtest ──
     auto* bt_tab = new QWidget(this);
@@ -1007,7 +1007,7 @@ QWidget* QuantModulePanel::build_model_library_panel() {
     });
     btvl2->addWidget(bt_run2);
     btvl2->addStretch();
-    tabs->addTab(bt_tab, "Backtest");
+    tabs->addTab(bt_tab, tr("Backtest"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -1074,7 +1074,7 @@ QWidget* QuantModulePanel::build_live_signals_panel() {
     });
     sigvl->addWidget(sig_run);
     sigvl->addStretch();
-    tabs->addTab(sig_tab, "Signal Data");
+    tabs->addTab(sig_tab, tr("Signal Data"));
 
     // ── Factor Analysis ──
     auto* fa_tab = new QWidget(this);
@@ -1113,7 +1113,7 @@ QWidget* QuantModulePanel::build_live_signals_panel() {
     });
     favl->addWidget(fa_run);
     favl->addStretch();
-    tabs->addTab(fa_tab, "Factor Analysis");
+    tabs->addTab(fa_tab, tr("Factor Analysis"));
 
     // ── Feature Importance ──
     auto* fi_tab = new QWidget(this);
@@ -1134,7 +1134,7 @@ QWidget* QuantModulePanel::build_live_signals_panel() {
     });
     fivl->addWidget(fi_run);
     fivl->addStretch();
-    tabs->addTab(fi_tab, "Feature Importance");
+    tabs->addTab(fi_tab, tr("Feature Importance"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -1159,7 +1159,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     auto* mtvl = new QVBoxLayout(models_tab);
     mtvl->setContentsMargins(12, 12, 12, 12);
     mtvl->setSpacing(8);
-    auto* mt_info = new QLabel("Incrementally trained models that update on each new data point.", models_tab);
+    auto* mt_info = new QLabel(tr("Incrementally trained models that update on each new data point."), models_tab);
     mt_info->setWordWrap(true);
     mt_info->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                .arg(ui::colors::TEXT_SECONDARY())
@@ -1173,7 +1173,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     });
     mtvl->addWidget(mt_list);
     mtvl->addStretch();
-    tabs->addTab(models_tab, "Models");
+    tabs->addTab(models_tab, tr("Models"));
 
     // ── Create Model ──
     auto* create_tab = new QWidget(this);
@@ -1202,7 +1202,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     });
     ctvl->addWidget(ol_create);
     ctvl->addStretch();
-    tabs->addTab(create_tab, "Create Model");
+    tabs->addTab(create_tab, tr("Create Model"));
 
     // ── Incremental Train ──
     auto* train_tab = new QWidget(this);
@@ -1237,7 +1237,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     });
     ttvl->addWidget(ol_train);
     ttvl->addStretch();
-    tabs->addTab(train_tab, "Incremental Train");
+    tabs->addTab(train_tab, tr("Incremental Train"));
 
     // ── Predict ──
     auto* pred_tab = new QWidget(this);
@@ -1274,7 +1274,7 @@ QWidget* QuantModulePanel::build_online_learning_panel() {
     });
     predvl->addWidget(ol_perf);
     predvl->addStretch();
-    tabs->addTab(pred_tab, "Predict");
+    tabs->addTab(pred_tab, tr("Predict"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -1299,7 +1299,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     auto* selvl = new QVBoxLayout(sel_tab);
     selvl->setContentsMargins(12, 12, 12, 12);
     selvl->setSpacing(8);
-    auto* sel_info = new QLabel("Automatically select the best model from a set of candidates.", sel_tab);
+    auto* sel_info = new QLabel(tr("Automatically select the best model from a set of candidates."), sel_tab);
     sel_info->setWordWrap(true);
     sel_info->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                 .arg(ui::colors::TEXT_SECONDARY())
@@ -1336,7 +1336,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     });
     selvl->addWidget(sel_run);
     selvl->addStretch();
-    tabs->addTab(sel_tab, "Model Selection");
+    tabs->addTab(sel_tab, tr("Model Selection"));
 
     // ── Ensemble ──
     auto* ens_tab = new QWidget(this);
@@ -1367,7 +1367,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     });
     ensvl->addWidget(ens_run);
     ensvl->addStretch();
-    tabs->addTab(ens_tab, "Ensemble");
+    tabs->addTab(ens_tab, tr("Ensemble"));
 
     // ── Hyperparameter Tuning ──
     auto* tune_tab = new QWidget(this);
@@ -1408,7 +1408,7 @@ QWidget* QuantModulePanel::build_meta_learning_panel() {
     });
     tunevl->addWidget(results_btn);
     tunevl->addStretch();
-    tabs->addTab(tune_tab, "Hyperparameter Tuning");
+    tabs->addTab(tune_tab, tr("Hyperparameter Tuning"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;
@@ -1435,7 +1435,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     top_hl->setContentsMargins(12, 8, 12, 8);
     top_hl->setSpacing(8);
 
-    auto* exch_lbl = new QLabel("EXCHANGE", top_bar);
+    auto* exch_lbl = new QLabel(tr("EXCHANGE"), top_bar);
     exch_lbl->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; letter-spacing:0.5px;")
                                 .arg(ui::colors::TEXT_TERTIARY()));
     auto* hft_exchange = new QComboBox(top_bar);
@@ -1444,7 +1444,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     hft_exchange->setFixedWidth(110);
     combo_inputs_["hft_exchange"] = hft_exchange;
 
-    auto* sym_lbl = new QLabel("SYMBOL", top_bar);
+    auto* sym_lbl = new QLabel(tr("SYMBOL"), top_bar);
     sym_lbl->setStyleSheet(exch_lbl->styleSheet());
     auto* hft_symbol = new QLineEdit(top_bar);
     hft_symbol->setText(tr("BTC/USDT"));
@@ -1453,7 +1453,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     hft_symbol->setToolTip(tr("e.g. BTC/USDT, ETH/USDT"));
     text_inputs_["hft_symbol"] = hft_symbol;
 
-    auto* depth_lbl = new QLabel("DEPTH", top_bar);
+    auto* depth_lbl = new QLabel(tr("DEPTH"), top_bar);
     depth_lbl->setStyleSheet(exch_lbl->styleSheet());
     auto* hft_depth = new QComboBox(top_bar);
     hft_depth->addItems({"10", "20", "50", "100"});
@@ -1471,7 +1471,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     top_hl->addStretch();
 
     // Live latency badge
-    auto* latency_lbl = new QLabel("LATENCY —", top_bar);
+    auto* latency_lbl = new QLabel(tr("LATENCY —"), top_bar);
     latency_lbl->setObjectName("hftLatency");
     latency_lbl->setStyleSheet(QString("color:%1; font-size:9px; font-family:'Courier New'; background:transparent;")
                                    .arg(ui::colors::TEXT_TERTIARY()));
@@ -1560,7 +1560,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     auto* bids_vl = new QVBoxLayout(bids_frame);
     bids_vl->setContentsMargins(0, 0, 0, 0);
     bids_vl->setSpacing(0);
-    auto* bids_hdr = new QLabel("  BIDS", bids_frame);
+    auto* bids_hdr = new QLabel(tr("  BIDS"), bids_frame);
     bids_hdr->setFixedHeight(24);
     bids_hdr->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; letter-spacing:1px;"
                                     "background:%2; border-bottom:1px solid %3;")
@@ -1589,7 +1589,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     auto* asks_vl = new QVBoxLayout(asks_frame);
     asks_vl->setContentsMargins(0, 0, 0, 0);
     asks_vl->setSpacing(0);
-    auto* asks_hdr = new QLabel("  ASKS", asks_frame);
+    auto* asks_hdr = new QLabel(tr("  ASKS"), asks_frame);
     asks_hdr->setFixedHeight(24);
     asks_hdr->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; letter-spacing:1px;"
                                     "background:%2; border-bottom:1px solid %3;")
@@ -1609,7 +1609,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     books_row->addWidget(bids_frame, 1);
     books_row->addWidget(asks_frame, 1);
     ob_root->addLayout(books_row, 1);
-    tabs->addTab(ob_tab, "Live Order Book");
+    tabs->addTab(ob_tab, tr("Live Order Book"));
 
     // ════════════════════════════════════════════════════════
     // TAB 2 — MICROSTRUCTURE (Market Making + Toxic Flow)
@@ -1627,7 +1627,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     mm_vl->setContentsMargins(12, 10, 12, 10);
     mm_vl->setSpacing(8);
 
-    auto* mm_title = new QLabel("MARKET MAKING  —  Avellaneda-Stoikov Model", mm_section);
+    auto* mm_title = new QLabel(tr("MARKET MAKING  —  Avellaneda-Stoikov Model"), mm_section);
     mm_title->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; letter-spacing:0.5px; background:transparent;")
                                 .arg(accent));
     mm_vl->addWidget(mm_title);
@@ -1687,7 +1687,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     tox_vl->setContentsMargins(12, 10, 12, 10);
     tox_vl->setSpacing(8);
 
-    auto* tox_title = new QLabel("TOXIC FLOW DETECTION  —  PIN Score Model", tox_section);
+    auto* tox_title = new QLabel(tr("TOXIC FLOW DETECTION  —  PIN Score Model"), tox_section);
     tox_title->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; letter-spacing:0.5px; background:transparent;")
                                  .arg(accent));
     tox_vl->addWidget(tox_title);
@@ -1734,7 +1734,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     tox_vl->addLayout(tox_results);
     micro_root->addWidget(tox_section);
     micro_root->addStretch();
-    tabs->addTab(micro_tab, "Microstructure");
+    tabs->addTab(micro_tab, tr("Microstructure"));
 
     // ════════════════════════════════════════════════════════
     // TAB 3 — SLIPPAGE ESTIMATOR
@@ -1751,7 +1751,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
     slip_vl->setContentsMargins(12, 10, 12, 10);
     slip_vl->setSpacing(8);
 
-    auto* slip_title = new QLabel("SLIPPAGE ESTIMATOR  —  Real Order Book Walk", slip_section);
+    auto* slip_title = new QLabel(tr("SLIPPAGE ESTIMATOR  —  Real Order Book Walk"), slip_section);
     slip_title->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; letter-spacing:0.5px; background:transparent;")
                                   .arg(accent));
     slip_vl->addWidget(slip_title);
@@ -1827,7 +1827,7 @@ QWidget* QuantModulePanel::build_hft_panel() {
 
     slip_root->addWidget(slip_section);
     slip_root->addStretch();
-    tabs->addTab(slip_tab, "Slippage Estimator");
+    tabs->addTab(slip_tab, tr("Slippage Estimator"));
 
     // ── Full Analyze button (bottom bar) ─────────────────────────────────────
     auto* bottom_bar = new QWidget(w);
@@ -1912,7 +1912,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
         AIQuantLabService::instance().rolling_list_schedules();
     });
     ltvl->addWidget(lt_run);
-    tabs->addTab(list_tab, "Schedules");
+    tabs->addTab(list_tab, tr("Schedules"));
 
     // ── Tab 2: Create Schedule ───────────────────────────────────────────────
     auto* create_tab = new QWidget;
@@ -2009,7 +2009,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     btn_hl->addWidget(rr_create, 1);
     ctvl->addWidget(btn_row);
     ctvl->addStretch();
-    tabs->addTab(create_tab, "Create Schedule");
+    tabs->addTab(create_tab, tr("Create Schedule"));
 
     // ── Tab 3: Execute Retrain ───────────────────────────────────────────────
     auto* retrain_tab = new QWidget;
@@ -2074,7 +2074,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
         AIQuantLabService::instance().rolling_execute_retrain(params);
     });
     retrainvl->addWidget(rr_exec);
-    tabs->addTab(retrain_tab, "Execute Retrain");
+    tabs->addTab(retrain_tab, tr("Execute Retrain"));
 
     vl->addWidget(tabs, 1);
     results_layout_ = new QVBoxLayout;

@@ -60,7 +60,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     // Local LOAD SAMPLE helper — same shape as the other panels.
     auto add_sample_btn = [this](QLineEdit* edit, QWidget* parent, unsigned seed,
                                   const QString& tip) -> QPushButton* {
-        auto* btn = new QPushButton("LOAD SAMPLE", parent);
+        auto* btn = new QPushButton(tr("LOAD SAMPLE"), parent);
         btn->setCursor(Qt::PointingHandCursor);
         btn->setFixedHeight(22);
         btn->setToolTip(tip);
@@ -141,7 +141,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     });
     icvl->addWidget(ic_run);
     icvl->addStretch();
-    tabs->addTab(ic_tab, "IC Analysis");
+    tabs->addTab(ic_tab, tr("IC Analysis"));
 
     // ── Cumulative Returns ───────────────────────────────────────────────────
     auto* cr_tab = new QWidget(this);
@@ -207,7 +207,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     });
     crvl->addWidget(cr_run);
     crvl->addStretch();
-    tabs->addTab(cr_tab, "Cumulative Returns");
+    tabs->addTab(cr_tab, tr("Cumulative Returns"));
 
     // ── Risk Report ──────────────────────────────────────────────────────────
     auto* rk_tab = new QWidget(this);
@@ -257,7 +257,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     });
     rkvl->addWidget(rk_run);
     rkvl->addStretch();
-    tabs->addTab(rk_tab, "Risk Report");
+    tabs->addTab(rk_tab, tr("Risk Report"));
 
     // ── Model Performance ────────────────────────────────────────────────────
     auto* mp_tab = new QWidget(this);
@@ -327,7 +327,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     });
     mpvl->addWidget(mp_run);
     mpvl->addStretch();
-    tabs->addTab(mp_tab, "Model Performance");
+    tabs->addTab(mp_tab, tr("Model Performance"));
 
     // ── Factor Quantiles ─────────────────────────────────────────────────────
     auto* fq_tab = new QWidget(this);
@@ -396,7 +396,7 @@ QWidget* QuantModulePanel::build_quant_reporting_panel() {
     });
     fqvl->addWidget(fq_run);
     fqvl->addStretch();
-    tabs->addTab(fq_tab, "Factor Quantiles");
+    tabs->addTab(fq_tab, tr("Factor Quantiles"));
 
     vl->addWidget(tabs, 1);
 
