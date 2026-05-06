@@ -904,7 +904,7 @@
         </message>
         <message>
             <source>1min</source>
-            <translation>1min</translation>
+            <translation>1 分鐘</translation>
         </message>
         <message>
             <source>1w</source>
@@ -912,7 +912,7 @@
         </message>
         <message>
             <source>5min</source>
-            <translation>5min</translation>
+            <translation>5 分鐘</translation>
         </message>
         <message>
             <source>6h</source>
@@ -976,7 +976,7 @@
         </message>
         <message>
             <source>&lt;none&gt;</source>
-            <translation>&lt;none&gt;</translation>
+            <translation>&lt;無&gt;</translation>
         </message>
         <message>
             <source>&lt;pre&gt;%1&lt;/pre&gt;</source>
@@ -1608,7 +1608,7 @@
         </message>
         <message>
             <source>CYCLE 0</source>
-            <translation>CYCLE 0</translation>
+            <translation>週期 0</translation>
         </message>
         <message>
             <source>Cache hit [%1]</source>
@@ -2088,7 +2088,7 @@
         </message>
         <message>
             <source>Cycle 0</source>
-            <translation>Cycle 0</translation>
+            <translation>週期 0</translation>
         </message>
         <message>
             <source>DAY  %1%2%</source>
@@ -3136,7 +3136,7 @@
         </message>
         <message>
             <source>GRID [%1] already placed, syncing grid</source>
-            <translation>GRID [%1] already placed, syncing grid</translation>
+            <translation>GRID [%1] 已放置，同步中</translation>
         </message>
         <message>
             <source>Generating Fairness Opinion...</source>
@@ -3228,7 +3228,8 @@
         </message>
         <message>
             <source>ISO-2 country code, e.g. USA, GBR, DEU\n</source>
-            <translation>ISO-2 country code, e.g. USA, GBR, DEU\n</translation>
+            <translation>ISO-2 國家代碼，如 USA、GBR、DEU
+</translation>
         </message>
         <message>
             <source>Ignoring move-to-monitor %1 — only %2 screen(s) connected</source>
@@ -6212,7 +6213,7 @@
         </message>
         <message>
             <source>Tool '%1' threw unknown exception</source>
-            <translation>Tool '%1' threw unknown exception</translation>
+            <translation>工具 '%1' 發生未知例外</translation>
         </message>
         <message>
             <source>Tool execution error: </source>
@@ -8696,7 +8697,7 @@
         </message>
         <message>
             <source>Auto-generated from\nHeading components.</source>
-            <translation>Auto-generated from\nHeading components.</translation>
+            <translation>從標題元件自動產生。</translation>
         </message>
         <message>
             <source>Auto-login (TOTP)</source>
@@ -9460,7 +9461,7 @@
         </message>
         <message>
             <source>Date:</source>
-            <translation>Date:</translation>
+            <translation>日期：</translation>
         </message>
         <message>
             <source>Deals JSON with cash_pct and stock_pct fields...</source>
@@ -10120,7 +10121,7 @@
         </message>
         <message>
             <source>Idx:--</source>
-            <translation>Idx:--</translation>
+            <translation>索引：--</translation>
         </message>
         <message>
             <source>Import JSON…</source>
@@ -10492,7 +10493,7 @@
         </message>
         <message>
             <source>Mem</source>
-            <translation>Mem</translation>
+            <translation>記憶體</translation>
         </message>
         <message>
             <source>Merge transactions into existing portfolio:</source>
@@ -10512,7 +10513,7 @@
         </message>
         <message>
             <source>Mode:</source>
-            <translation>Mode:</translation>
+            <translation>模式：</translation>
         </message>
         <message>
             <source>Model</source>
@@ -10804,7 +10805,9 @@
         </message>
         <message>
             <source>One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz</source>
-            <translation>One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz</translation>
+            <translation>每行一個：
+Authorization: Bearer abc
+X-API-Key: xyz</translation>
         </message>
         <message>
             <source>Open</source>
@@ -11240,7 +11243,8 @@
         </message>
         <message>
             <source>Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback.</source>
-            <translation>Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback.</translation>
+            <translation>Qt Multimedia 不可用。
+請以 Qt6 Multimedia 建構以支援內嵌播放。</translation>
         </message>
         <message>
             <source>Quant Reporting backend ready</source>
@@ -11804,7 +11808,7 @@
         </message>
         <message>
             <source>Sched</source>
-            <translation>Sched</translation>
+            <translation>排程</translation>
         </message>
         <message>
             <source>Schema: </source>
@@ -12016,7 +12020,7 @@
         </message>
         <message>
             <source>Sort:</source>
-            <translation>Sort:</translation>
+            <translation>排序：</translation>
         </message>
         <message>
             <source>Spread: --</source>
@@ -12268,7 +12272,7 @@
         </message>
         <message>
             <source>Tip: re-select component after\nediting data to re-render.</source>
-            <translation>Tip: re-select component after\nediting data to re-render.</translation>
+            <translation>提示：編輯資料後重新選取元件以重新渲染。</translation>
         </message>
         <message>
             <source>Title:</source>
@@ -12528,7 +12532,7 @@
         </message>
         <message>
             <source>[RETRY]</source>
-            <translation>[RETRY]</translation>
+            <translation>[重試]</translation>
         </message>
         <message>
             <source>[THINK] </source>
@@ -13224,19 +13228,20 @@
         </message>
         <message>
             <source>Feature values JSON: {rsi:[...],macd:[...]}</source>
-            <translation type="unfinished">Feature values JSON: {rsi:[...],macd:[...]}</translation>
+            <translation type="unfinished">特徵值 JSON：{rsi:[...],macd:[...]}</translation>
         </message>
         <message>
             <source>JSON parameters (optional)\ne.g. {ticker:AAPL}</source>
-            <translation type="unfinished">JSON parameters (optional)\ne.g. {ticker:AAPL}</translation>
+            <translation type="unfinished">JSON 參數（選填）
+例如 {ticker:AAPL}</translation>
         </message>
         <message>
             <source>Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss.</source>
-            <translation type="unfinished">Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss.</translation>
+            <translation type="unfinished">輸入指令（例如：'layout switch Morning'、AAPL、?）。按 Esc 關閉。</translation>
         </message>
         <message>
             <source>Warning: already used by </source>
-            <translation type="unfinished">Warning: already used by </translation>
+            <translation type="unfinished">警告：已被以下使用 </translation>
         </message>
         <message>
             <source>24H</source>
@@ -13248,7 +13253,7 @@
         </message>
         <message>
             <source>market</source>
-            <translation type="unfinished">market</translation>
+            <translation type="unfinished">市場</translation>
         </message>
     </context>
     <context>
@@ -14151,4 +14156,1935 @@ This only happens the first time — future launches are instant.</source>
             <translation>↻</translation>
         </message>
     </context>
+<context>
+    <name>BatchTranslate</name>
+    <message>
+        <source>  ASKS</source>
+        <translation>  ASKS</translation>
+    </message>
+    <message>
+        <source>  BIDS</source>
+        <translation>  BIDS</translation>
+    </message>
+    <message>
+        <source>(P&amp;L return proxy, top 6 by weight)</source>
+        <translation>（損益代理報酬，權重前 6 名）</translation>
+    </message>
+    <message>
+        <source>+ ADD CONDITION</source>
+        <translation>+ 新增條件</translation>
+    </message>
+    <message>
+        <source>+ ADD ENTRY CONDITION</source>
+        <translation>+ 新增進場條件</translation>
+    </message>
+    <message>
+        <source>+ ADD EXIT CONDITION</source>
+        <translation>+ 新增出場條件</translation>
+    </message>
+    <message>
+        <source>0 EVENTS</source>
+        <translation>0 事件</translation>
+    </message>
+    <message>
+        <source>0 LIVE</source>
+        <translation>0 即時</translation>
+    </message>
+    <message>
+        <source>0 VESSELS</source>
+        <translation>0 船隻</translation>
+    </message>
+    <message>
+        <source>0 WATCHES</source>
+        <translation>0 觀察</translation>
+    </message>
+    <message>
+        <source>0 datasets</source>
+        <translation>0 個資料集</translation>
+    </message>
+    <message>
+        <source>0 strategies</source>
+        <translation>0 個策略</translation>
+    </message>
+    <message>
+        <source>1000+ CHINESE &amp; GLOBAL FINANCIAL DATA ENDPOINTS</source>
+        <translation>1000+ 中國與全球金融資料端點</translation>
+    </message>
+    <message>
+        <source>3D</source>
+        <translation>3D</translation>
+    </message>
+    <message>
+        <source>5 MIN</source>
+        <translation>5 分鐘</translation>
+    </message>
+    <message>
+        <source>&lt; BACK</source>
+        <translation>&lt; 返回</translation>
+    </message>
+    <message>
+        <source>&lt;%1&gt; × %2</source>
+        <translation>&lt;%1&gt; × %2</translation>
+    </message>
+    <message>
+        <source>&lt;(t[hd])\\b([^&gt;]*)&gt;(.*?)&lt;/\\1&gt;</source>
+        <translation>&lt;(t[hd])\\b([^&gt;]*)&gt;(.*?)&lt;/\\1&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;&lt;</source>
+        <translation>&lt;&lt;</translation>
+    </message>
+    <message>
+        <source>&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</source>
+        <translation>&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;none&gt;</source>
+        <translation>&lt;無&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</source>
+        <translation>&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</source>
+        <translation>&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</source>
+        <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</source>
+        <translation>&lt;span style='color:#dc2626'&gt;需要私鑰。&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</source>
+        <translation>&lt;span style='color:#dc2626'&gt;儲存失敗 — 請查看日誌。&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;table\\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</source>
+        <translation>&lt;table\\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;tr\\b[^&gt;]*&gt;(.*?)&lt;/tr&gt;</source>
+        <translation>&lt;tr\\b[^&gt;]*&gt;(.*?)&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <source>&gt; Enter Command or /type ...</source>
+        <translation>&gt; 輸入指令或 /輸入 ...</translation>
+    </message>
+    <message>
+        <source>&gt;&gt;</source>
+        <translation>&gt;&gt;</translation>
+    </message>
+    <message>
+        <source>A1</source>
+        <translation>A1</translation>
+    </message>
+    <message>
+        <source>ACF / PACF</source>
+        <translation>ACF / PACF</translation>
+    </message>
+    <message>
+        <source>ACQUIRER</source>
+        <translation>ACQUIRER</translation>
+    </message>
+    <message>
+        <source>ADVANCED</source>
+        <translation>進階</translation>
+    </message>
+    <message>
+        <source>AI &amp;&amp; Quant</source>
+        <translation>AI 與量化</translation>
+    </message>
+    <message>
+        <source>AI ANALYSIS</source>
+        <translation>AI 分析</translation>
+    </message>
+    <message>
+        <source>AI QUANT LAB</source>
+        <translation>AI 量化實驗室</translation>
+    </message>
+    <message>
+        <source>AIS FEED + FINCEPT API</source>
+        <translation>AIS 資料流 + Fincept API</translation>
+    </message>
+    <message>
+        <source>AIS: STREAMING</source>
+        <translation>AIS：串流中</translation>
+    </message>
+    <message>
+        <source>ALGO TRADING</source>
+        <translation>演算法交易</translation>
+    </message>
+    <message>
+        <source>ALLOCATION</source>
+        <translation>配置</translation>
+    </message>
+    <message>
+        <source>ANALYSIS PARAMETERS</source>
+        <translation>分析參數</translation>
+    </message>
+    <message>
+        <source>API CONFIGURATION &amp; SCHEMA TRANSFORMATION</source>
+        <translation>API 設定與結構轉換</translation>
+    </message>
+    <message>
+        <source>APPLY FILTERS</source>
+        <translation>套用篩選</translation>
+    </message>
+    <message>
+        <source>AREA SEARCH</source>
+        <translation>區域搜尋</translation>
+    </message>
+    <message>
+        <source>ARIMA</source>
+        <translation>ARIMA</translation>
+    </message>
+    <message>
+        <source>ARTICLE DETAIL</source>
+        <translation>文章詳情</translation>
+    </message>
+    <message>
+        <source>ATTRIBUTION</source>
+        <translation>歸因</translation>
+    </message>
+    <message>
+        <source>Accretion/Dilution</source>
+        <translation>增值/稀釋</translation>
+    </message>
+    <message>
+        <source>Active LLM — configure in Settings &gt; LLM Configuration</source>
+        <translation>目前使用的 LLM — 在設定 &gt; LLM 設定中配置</translation>
+    </message>
+    <message>
+        <source>Active Model — change in Settings &gt; LLM Configuration</source>
+        <translation>目前模型 — 在設定 &gt; LLM 設定中變更</translation>
+    </message>
+    <message>
+        <source>Active model — change in Settings &gt; LLM Configuration</source>
+        <translation>目前模型 — 在設定 &gt; LLM 設定中變更</translation>
+    </message>
+    <message>
+        <source>All Methods</source>
+        <translation>所有方法</translation>
+    </message>
+    <message>
+        <source>Analysis</source>
+        <translation>分析</translation>
+    </message>
+    <message>
+        <source>Analyzes economic impact of tariffs, quotas, export subsidies, and non-tariff barriers.</source>
+        <translation>分析關稅、配額、出口補貼及非關稅障礙的經濟影響。</translation>
+    </message>
+    <message>
+        <source>Analyzes trade creation vs. diversion effects for regional trade blocs and economic unions.</source>
+        <translation>分析區域貿易集團與經濟聯盟的貿易創造與貿易轉移效果。</translation>
+    </message>
+    <message>
+        <source>Anomalies</source>
+        <translation>異常值</translation>
+    </message>
+    <message>
+        <source>Apply &amp; Save</source>
+        <translation>套用並儲存</translation>
+    </message>
+    <message>
+        <source>Assesses FDI, employment, wage, and GDP impact of removing trade barriers.</source>
+        <translation>評估移除貿易障礙對 FDI、就業、薪資及 GDP 的影響。</translation>
+    </message>
+    <message>
+        <source>Automatically select the best model from a set of candidates.</source>
+        <translation>從候選模型中自動選取最佳模型。</translation>
+    </message>
+    <message>
+        <source>B</source>
+        <translation>B</translation>
+    </message>
+    <message>
+        <source>B-L MODEL</source>
+        <translation>B-L 模型</translation>
+    </message>
+    <message>
+        <source>BACKTEST</source>
+        <translation>回測</translation>
+    </message>
+    <message>
+        <source>BACKTEST PARAMETERS</source>
+        <translation>回測參數</translation>
+    </message>
+    <message>
+        <source>BACKTESTING</source>
+        <translation>回測</translation>
+    </message>
+    <message>
+        <source>BANK NIFTY</source>
+        <translation>BANK NIFTY</translation>
+    </message>
+    <message>
+        <source>BENCHMARK</source>
+        <translation>基準</translation>
+    </message>
+    <message>
+        <source>BOOKMARK</source>
+        <translation>書籤</translation>
+    </message>
+    <message>
+        <source>Backtest</source>
+        <translation>回測</translation>
+    </message>
+    <message>
+        <source>Barrier Removal</source>
+        <translation>障礙移除</translation>
+    </message>
+    <message>
+        <source>Benchmark</source>
+        <translation>基準</translation>
+    </message>
+    <message>
+        <source>Benefits &amp; Costs</source>
+        <translation>收益與成本</translation>
+    </message>
+    <message>
+        <source>Benefits &amp; Costs of Trade</source>
+        <translation>貿易收益與成本</translation>
+    </message>
+    <message>
+        <source>Berkus</source>
+        <translation>Berkus</translation>
+    </message>
+    <message>
+        <source>Black-Litterman</source>
+        <translation>Black-Litterman</translation>
+    </message>
+    <message>
+        <source>Browse</source>
+        <translation>瀏覽</translation>
+    </message>
+    <message>
+        <source>Browse all available data normalizers and transformation processors.</source>
+        <translation>瀏覽所有可用的資料正規化器與轉換處理器。</translation>
+    </message>
+    <message>
+        <source>Browse all built-in Qlib alpha factors and expressions.</source>
+        <translation>瀏覽所有內建的 Qlib Alpha 因子與表達式。</translation>
+    </message>
+    <message>
+        <source>CACHE &amp; SECURITY SETTINGS</source>
+        <translation>快取與安全設定</translation>
+    </message>
+    <message>
+        <source>CALENDAR</source>
+        <translation>行事曆</translation>
+    </message>
+    <message>
+        <source>CAPABILITIES</source>
+        <translation>CAPABILITIES</translation>
+    </message>
+    <message>
+        <source>CELLS</source>
+        <translation>CELLS</translation>
+    </message>
+    <message>
+        <source>CHART:</source>
+        <translation>圖表：</translation>
+    </message>
+    <message>
+        <source>CHECK STATUS</source>
+        <translation>檢查狀態</translation>
+    </message>
+    <message>
+        <source>CITY</source>
+        <translation>CITY</translation>
+    </message>
+    <message>
+        <source>CLASSIFIED // TRADE ROUTE ANALYSIS</source>
+        <translation>機密 // 貿易航線分析</translation>
+    </message>
+    <message>
+        <source>CLASSIFIED — AUTHORIZED PERSONNEL ONLY</source>
+        <translation>機密 — 僅限授權人員</translation>
+    </message>
+    <message>
+        <source>CLOSE</source>
+        <translation>CLOSE</translation>
+    </message>
+    <message>
+        <source>COMMANDS</source>
+        <translation>COMMANDS</translation>
+    </message>
+    <message>
+        <source>COMMISSION (%)</source>
+        <translation>佣金 (%)</translation>
+    </message>
+    <message>
+        <source>COMPARE</source>
+        <translation>COMPARE</translation>
+    </message>
+    <message>
+        <source>COMPONENT BROWSER</source>
+        <translation>元件瀏覽器</translation>
+    </message>
+    <message>
+        <source>CONTROL PANEL</source>
+        <translation>控制面板</translation>
+    </message>
+    <message>
+        <source>COPY URL</source>
+        <translation>複製 URL</translation>
+    </message>
+    <message>
+        <source>CORPORATE FINANCE TOOLKIT</source>
+        <translation>企業財務工具包</translation>
+    </message>
+    <message>
+        <source>CREATE</source>
+        <translation>CREATE</translation>
+    </message>
+    <message>
+        <source>CREATE COMPETITION</source>
+        <translation>建立競賽</translation>
+    </message>
+    <message>
+        <source>CREATE CUSTOM INDEX</source>
+        <translation>建立自訂指數</translation>
+    </message>
+    <message>
+        <source>CREATE INDEX</source>
+        <translation>建立指數</translation>
+    </message>
+    <message>
+        <source>CREATE NEW PORTFOLIO</source>
+        <translation>建立新投資組合</translation>
+    </message>
+    <message>
+        <source>CREATE NEW POST</source>
+        <translation>建立新貼文</translation>
+    </message>
+    <message>
+        <source>CREATED</source>
+        <translation>CREATED</translation>
+    </message>
+    <message>
+        <source>CREDITS: —</source>
+        <translation>額度：—</translation>
+    </message>
+    <message>
+        <source>CV SPLITS</source>
+        <translation>交叉驗證分割</translation>
+    </message>
+    <message>
+        <source>CVR</source>
+        <translation>CVR</translation>
+    </message>
+    <message>
+        <source>CVaR Optimize</source>
+        <translation>CVaR 最佳化</translation>
+    </message>
+    <message>
+        <source>Calculates each party's % contribution to the combined entity.</source>
+        <translation>計算各方對合併實體的百分比貢獻。</translation>
+    </message>
+    <message>
+        <source>Calculating Sources &amp; Uses...</source>
+        <translation>計算資金來源與用途...</translation>
+    </message>
+    <message>
+        <source>Calendar</source>
+        <translation>行事曆</translation>
+    </message>
+    <message>
+        <source>Chart title (e.g. Strategy vs S&amp;P 500)</source>
+        <translation>圖表標題（例如：策略 vs S&amp;P 500）</translation>
+    </message>
+    <message>
+        <source>Collar</source>
+        <translation>Collar 策略</translation>
+    </message>
+    <message>
+        <source>Compare</source>
+        <translation>比較</translation>
+    </message>
+    <message>
+        <source>Confidence Intervals</source>
+        <translation>信賴區間</translation>
+    </message>
+    <message>
+        <source>Configure — Today P&amp;L</source>
+        <translation>設定 — 今日損益</translation>
+    </message>
+    <message>
+        <source>Contribution</source>
+        <translation>貢獻度</translation>
+    </message>
+    <message>
+        <source>Covariance</source>
+        <translation>共變異數</translation>
+    </message>
+    <message>
+        <source>Create &amp; Switch</source>
+        <translation>建立並切換</translation>
+    </message>
+    <message>
+        <source>Create Model</source>
+        <translation>建立模型</translation>
+    </message>
+    <message>
+        <source>Create Pipeline</source>
+        <translation>建立管線</translation>
+    </message>
+    <message>
+        <source>Create Schedule</source>
+        <translation>建立排程</translation>
+    </message>
+    <message>
+        <source>Ctrl+Enter: RUN  |  Shift+Enter: RUN &amp; NEXT  |  Tab: 4 SPACES  |  Ctrl+S: SAVE</source>
+        <translation>Ctrl+Enter：執行 | Shift+Enter：執行並下一步 | Tab：4 空格 | Ctrl+S：儲存</translation>
+    </message>
+    <message>
+        <source>DATA INPUT</source>
+        <translation>資料輸入</translation>
+    </message>
+    <message>
+        <source>DATA PROVIDERS</source>
+        <translation>資料供應商</translation>
+    </message>
+    <message>
+        <source>DBNOMICS TERMINAL</source>
+        <translation>DBnomics 終端機</translation>
+    </message>
+    <message>
+        <source>DCF</source>
+        <translation>DCF</translation>
+    </message>
+    <message>
+        <source>DEAL TERMS</source>
+        <translation>交易條款</translation>
+    </message>
+    <message>
+        <source>DELETE</source>
+        <translation>DELETE</translation>
+    </message>
+    <message>
+        <source>DELETE ACCOUNT</source>
+        <translation>刪除帳號</translation>
+    </message>
+    <message>
+        <source>DELETE ALL</source>
+        <translation>全部刪除</translation>
+    </message>
+    <message>
+        <source>DELETE LIST</source>
+        <translation>刪除清單</translation>
+    </message>
+    <message>
+        <source>DELETE MY ACCOUNT</source>
+        <translation>刪除我的帳號</translation>
+    </message>
+    <message>
+        <source>DELETE SEL</source>
+        <translation>刪除所選</translation>
+    </message>
+    <message>
+        <source>DELETE SELECTED</source>
+        <translation>刪除已選</translation>
+    </message>
+    <message>
+        <source>DEMO</source>
+        <translation>DEMO</translation>
+    </message>
+    <message>
+        <source>DEPLOYMENTS</source>
+        <translation>DEPLOYMENTS</translation>
+    </message>
+    <message>
+        <source>DEPTH</source>
+        <translation>DEPTH</translation>
+    </message>
+    <message>
+        <source>DEVIATIONS</source>
+        <translation>DEVIATIONS</translation>
+    </message>
+    <message>
+        <source>DRAWDOWN</source>
+        <translation>DRAWDOWN</translation>
+    </message>
+    <message>
+        <source>DRAWDOWN &amp; RISK METRICS</source>
+        <translation>回撤與風險指標</translation>
+    </message>
+    <message>
+        <source>DRAWDOWNS</source>
+        <translation>DRAWDOWNS</translation>
+    </message>
+    <message>
+        <source>Daily returns (&gt;= 30 values)</source>
+        <translation>每日報酬（≥ 30 個數值）</translation>
+    </message>
+    <message>
+        <source>Dataset:</source>
+        <translation>資料集：</translation>
+    </message>
+    <message>
+        <source>Debt Schedule</source>
+        <translation>負債排程</translation>
+    </message>
+    <message>
+        <source>Decay Weights</source>
+        <translation>衰減權重</translation>
+    </message>
+    <message>
+        <source>Deep Analysis</source>
+        <translation>深度分析</translation>
+    </message>
+    <message>
+        <source>Dependent variable y (&gt;= 10 values)</source>
+        <translation>因變數 y（≥ 10 個數值）</translation>
+    </message>
+    <message>
+        <source>Descriptive</source>
+        <translation>描述統計</translation>
+    </message>
+    <message>
+        <source>Distribution Fit</source>
+        <translation>分配擬合</translation>
+    </message>
+    <message>
+        <source>Download &amp;&amp; Install</source>
+        <translation>下載並安裝</translation>
+    </message>
+    <message>
+        <source>Drag any symbol here to pin</source>
+        <translation>拖曳任何代碼至此處以釘選</translation>
+    </message>
+    <message>
+        <source>ENGINE:</source>
+        <translation>引擎：</translation>
+    </message>
+    <message>
+        <source>ENTITIES</source>
+        <translation>ENTITIES</translation>
+    </message>
+    <message>
+        <source>ENTRY CONDITIONS</source>
+        <translation>進場條件</translation>
+    </message>
+    <message>
+        <source>EXCEL SPREADSHEET</source>
+        <translation>Excel 試算表</translation>
+    </message>
+    <message>
+        <source>EXECUTION</source>
+        <translation>EXECUTION</translation>
+    </message>
+    <message>
+        <source>EXIT CONDITIONS</source>
+        <translation>出場條件</translation>
+    </message>
+    <message>
+        <source>Earnout</source>
+        <translation>Earnout（績效對價）</translation>
+    </message>
+    <message>
+        <source>Economics &amp;&amp; Data</source>
+        <translation>經濟與資料</translation>
+    </message>
+    <message>
+        <source>Efficient Frontier</source>
+        <translation>效率前緣</translation>
+    </message>
+    <message>
+        <source>Ensemble</source>
+        <translation>集成方法</translation>
+    </message>
+    <message>
+        <source>Enter target ticker and comparable tickers (comma-separated):</source>
+        <translation>輸入目標代碼與可比較代碼（以逗號分隔）：</translation>
+    </message>
+    <message>
+        <source>Evaluate Forecast</source>
+        <translation>評估預測</translation>
+    </message>
+    <message>
+        <source>Exchange Ratio</source>
+        <translation>換股比率</translation>
+    </message>
+    <message>
+        <source>Execute Retrain</source>
+        <translation>執行重新訓練</translation>
+    </message>
+    <message>
+        <source>Expression Engine</source>
+        <translation>表達式引擎</translation>
+    </message>
+    <message>
+        <source>FEES</source>
+        <translation>FEES</translation>
+    </message>
+    <message>
+        <source>FINCEPT MARITIME INTELLIGENCE</source>
+        <translation>Fincept 海事情報</translation>
+    </message>
+    <message>
+        <source>FINCEPT TERMINAL</source>
+        <translation>Fincept 終端機</translation>
+    </message>
+    <message>
+        <source>FLASH</source>
+        <translation>FLASH</translation>
+    </message>
+    <message>
+        <source>FRONTIER</source>
+        <translation>FRONTIER</translation>
+    </message>
+    <message>
+        <source>FUNDS</source>
+        <translation>FUNDS</translation>
+    </message>
+    <message>
+        <source>Factor / signal values (decimals, &gt;= 20)</source>
+        <translation>因子/訊號值（小數，≥ 20）</translation>
+    </message>
+    <message>
+        <source>Factor Analysis</source>
+        <translation>因子分析</translation>
+    </message>
+    <message>
+        <source>Factor Library</source>
+        <translation>因子庫</translation>
+    </message>
+    <message>
+        <source>Factor Mining</source>
+        <translation>因子探勘</translation>
+    </message>
+    <message>
+        <source>Factor Quantiles</source>
+        <translation>因子分位數</translation>
+    </message>
+    <message>
+        <source>Fairness Analysis</source>
+        <translation>公平性分析</translation>
+    </message>
+    <message>
+        <source>Feature Importance</source>
+        <translation>特徵重要性</translation>
+    </message>
+    <message>
+        <source>Feature Selection</source>
+        <translation>特徵選取</translation>
+    </message>
+    <message>
+        <source>Fetch Data</source>
+        <translation>擷取資料</translation>
+    </message>
+    <message>
+        <source>Financial Services</source>
+        <translation>金融服務</translation>
+    </message>
+    <message>
+        <source>Financials</source>
+        <translation>財務數據</translation>
+    </message>
+    <message>
+        <source>Fincept AI</source>
+        <translation>Fincept AI</translation>
+    </message>
+    <message>
+        <source>Fincept managed AI service\n\nChange in Settings &gt; LLM Configuration</source>
+        <translation>Fincept 託管 AI 服務
+
+在設定 &gt; LLM 設定中變更</translation>
+    </message>
+    <message>
+        <source>First Chicago</source>
+        <translation>First Chicago 估值法</translation>
+    </message>
+    <message>
+        <source>Forecast</source>
+        <translation>預測</translation>
+    </message>
+    <message>
+        <source>Full Report</source>
+        <translation>完整報表</translation>
+    </message>
+    <message>
+        <source>GENERATOR TYPE</source>
+        <translation>產生器類型</translation>
+    </message>
+    <message>
+        <source>GEOPOLITICAL RELATIONSHIP NETWORK</source>
+        <translation>地緣政治關係網路</translation>
+    </message>
+    <message>
+        <source>GOALS</source>
+        <translation>GOALS</translation>
+    </message>
+    <message>
+        <source>Granger Causality</source>
+        <translation>Granger 因果檢定</translation>
+    </message>
+    <message>
+        <source>Greeks</source>
+        <translation>Greeks（希臘值）</translation>
+    </message>
+    <message>
+        <source>HDX HUMANITARIAN DATA</source>
+        <translation>HDX 人道主義資料</translation>
+    </message>
+    <message>
+        <source>HIST</source>
+        <translation>HIST</translation>
+    </message>
+    <message>
+        <source>HOLDINGS</source>
+        <translation>HOLDINGS</translation>
+    </message>
+    <message>
+        <source>HORIZON</source>
+        <translation>HORIZON</translation>
+    </message>
+    <message>
+        <source>Healthcare</source>
+        <translation>醫療保健</translation>
+    </message>
+    <message>
+        <source>Hyperparameter Tuning</source>
+        <translation>超參數調校</translation>
+    </message>
+    <message>
+        <source>I</source>
+        <translation>I</translation>
+    </message>
+    <message>
+        <source>IC Analysis</source>
+        <translation>IC 分析</translation>
+    </message>
+    <message>
+        <source>IC Metrics</source>
+        <translation>IC 指標</translation>
+    </message>
+    <message>
+        <source>IMO NUMBER</source>
+        <translation>IMO 編號</translation>
+    </message>
+    <message>
+        <source>IMPORT CSV</source>
+        <translation>匯入 CSV</translation>
+    </message>
+    <message>
+        <source>INDICATOR</source>
+        <translation>INDICATOR</translation>
+    </message>
+    <message>
+        <source>INDICATOR SIGNALS</source>
+        <translation>指標訊號</translation>
+    </message>
+    <message>
+        <source>INDICATOR TYPE</source>
+        <translation>指標類型</translation>
+    </message>
+    <message>
+        <source>INTEL</source>
+        <translation>INTEL</translation>
+    </message>
+    <message>
+        <source>INTELLIGENCE</source>
+        <translation>INTELLIGENCE</translation>
+    </message>
+    <message>
+        <source>IV method:</source>
+        <translation>隱含波動率方法：</translation>
+    </message>
+    <message>
+        <source>Idle</source>
+        <translation>閒置</translation>
+    </message>
+    <message>
+        <source>Incremental Train</source>
+        <translation>增量訓練</translation>
+    </message>
+    <message>
+        <source>Incrementally trained models that update on each new data point.</source>
+        <translation>增量訓練模型，每當有新資料點時自動更新。</translation>
+    </message>
+    <message>
+        <source>Indicators</source>
+        <translation>指標</translation>
+    </message>
+    <message>
+        <source>Industry</source>
+        <translation>產業</translation>
+    </message>
+    <message>
+        <source>Install / Upgrade Selected</source>
+        <translation>安裝 / 升級所選</translation>
+    </message>
+    <message>
+        <source>Install Missing</source>
+        <translation>安裝缺少項目</translation>
+    </message>
+    <message>
+        <source>Invalid size — must be &gt; 0</source>
+        <translation>大小無效 — 必須 &gt; 0</translation>
+    </message>
+    <message>
+        <source>JSON</source>
+        <translation>JSON</translation>
+    </message>
+    <message>
+        <source>KEY POINTS</source>
+        <translation>重點摘要</translation>
+    </message>
+    <message>
+        <source>KEYWORD MONITORS</source>
+        <translation>關鍵字監控</translation>
+    </message>
+    <message>
+        <source>LABEL TYPE</source>
+        <translation>標籤類型</translation>
+    </message>
+    <message>
+        <source>LATENCY —</source>
+        <translation>延遲 —</translation>
+    </message>
+    <message>
+        <source>LBO Model</source>
+        <translation>LBO 模型</translation>
+    </message>
+    <message>
+        <source>LBO Returns</source>
+        <translation>LBO 報酬</translation>
+    </message>
+    <message>
+        <source>LINE</source>
+        <translation>LINE</translation>
+    </message>
+    <message>
+        <source>LINEAGE</source>
+        <translation>LINEAGE</translation>
+    </message>
+    <message>
+        <source>LLM profile for this agent. Configure profiles in Settings &gt; LLM Config.</source>
+        <translation>此代理的 LLM 設定檔。在設定 &gt; LLM 設定中配置。</translation>
+    </message>
+    <message>
+        <source>LOAD SAMPLE</source>
+        <translation>載入範例</translation>
+    </message>
+    <message>
+        <source>LOAD VESSELS (MUMBAI AREA)</source>
+        <translation>載入船隻（孟買區域）</translation>
+    </message>
+    <message>
+        <source>LOGIC:</source>
+        <translation>邏輯：</translation>
+    </message>
+    <message>
+        <source>LOOKBACK (DAYS)</source>
+        <translation>回顧天數</translation>
+    </message>
+    <message>
+        <source>List all available Qlib models (LightGBM, XGBoost, LSTM, Transformer, etc.).</source>
+        <translation>列出所有可用的 Qlib 模型（LightGBM、XGBoost、LSTM、Transformer 等）。</translation>
+    </message>
+    <message>
+        <source>Live Order Book</source>
+        <translation>即時委託簿</translation>
+    </message>
+    <message>
+        <source>Loading HDX data...</source>
+        <translation>正在載入 HDX 資料...</translation>
+    </message>
+    <message>
+        <source>Logic:</source>
+        <translation>邏輯：</translation>
+    </message>
+    <message>
+        <source>M&amp;&amp;A Analytics</source>
+        <translation>M&amp;A 分析</translation>
+    </message>
+    <message>
+        <source>M&amp;A ANALYTICS</source>
+        <translation>M&amp;A 分析</translation>
+    </message>
+    <message>
+        <source>M&amp;A Analytics</source>
+        <translation>M&amp;A 分析</translation>
+    </message>
+    <message>
+        <source>MARKET DATA</source>
+        <translation>市場資料</translation>
+    </message>
+    <message>
+        <source>MARKET MAKING  —  Avellaneda-Stoikov Model</source>
+        <translation>造市 — Avellaneda-Stoikov 模型</translation>
+    </message>
+    <message>
+        <source>MAX ITERATIONS</source>
+        <translation>最大迭代次數</translation>
+    </message>
+    <message>
+        <source>METHOD</source>
+        <translation>METHOD</translation>
+    </message>
+    <message>
+        <source>METRICS</source>
+        <translation>METRICS</translation>
+    </message>
+    <message>
+        <source>MKT</source>
+        <translation>MKT</translation>
+    </message>
+    <message>
+        <source>ML LABELS</source>
+        <translation>ML 標籤</translation>
+    </message>
+    <message>
+        <source>MODULE INFO</source>
+        <translation>模組資訊</translation>
+    </message>
+    <message>
+        <source>MONITOR MATCHES</source>
+        <translation>監控匹配</translation>
+    </message>
+    <message>
+        <source>MONTE CARLO</source>
+        <translation>蒙地卡羅</translation>
+    </message>
+    <message>
+        <source>MV Optimize</source>
+        <translation>均值-變異數最佳化</translation>
+    </message>
+    <message>
+        <source>MY INDICES</source>
+        <translation>我的指數</translation>
+    </message>
+    <message>
+        <source>MY TRADES</source>
+        <translation>我的交易</translation>
+    </message>
+    <message>
+        <source>Markets &amp; Data</source>
+        <translation>市場與資料</translation>
+    </message>
+    <message>
+        <source>Metrics</source>
+        <translation>指標</translation>
+    </message>
+    <message>
+        <source>Microstructure</source>
+        <translation>市場微結構</translation>
+    </message>
+    <message>
+        <source>Model Optimization</source>
+        <translation>模型最佳化</translation>
+    </message>
+    <message>
+        <source>Model Performance</source>
+        <translation>模型表現</translation>
+    </message>
+    <message>
+        <source>Model Selection</source>
+        <translation>模型選擇</translation>
+    </message>
+    <message>
+        <source>Model predictions (decimals, &gt;= 10 values)</source>
+        <translation>模型預測（小數，≥ 10 個數值）</translation>
+    </message>
+    <message>
+        <source>Model predictions (decimals, &gt;= 20 values)</source>
+        <translation>模型預測（小數，≥ 20 個數值）</translation>
+    </message>
+    <message>
+        <source>Models</source>
+        <translation>模型</translation>
+    </message>
+    <message>
+        <source>Monte Carlo</source>
+        <translation>蒙地卡羅</translation>
+    </message>
+    <message>
+        <source>NEARBY INFRASTRUCTURE</source>
+        <translation>附近基礎設施</translation>
+    </message>
+    <message>
+        <source>NEWS-EVENTS API + HDX</source>
+        <translation>新聞事件 API + HDX</translation>
+    </message>
+    <message>
+        <source>NEXT ▶</source>
+        <translation>下一步 ▶</translation>
+    </message>
+    <message>
+        <source>NIFTY 50</source>
+        <translation>NIFTY 50</translation>
+    </message>
+    <message>
+        <source>NO COMPARISON SLOTS\nClick  + ADD SLOT  in the left panel to begin</source>
+        <translation>無比較欄位
+點擊左側面板的 + 新增欄位 開始</translation>
+    </message>
+    <message>
+        <source>NORMALITY  (H₀: data is normally distributed; p &gt; 0.05 ⇒ cannot reject normal)</source>
+        <translation>常態性（H₀：資料為常態分配；p &gt; 0.05 ⇒ 無法拒絕常態）</translation>
+    </message>
+    <message>
+        <source>NUMBER OF SPLITS</source>
+        <translation>分割數量</translation>
+    </message>
+    <message>
+        <source>Need 2+ holdings for correlation analysis</source>
+        <translation>需要 2 個以上持股才能進行相關性分析</translation>
+    </message>
+    <message>
+        <source>No LLM provider configured — go to Settings &gt; LLM Configuration</source>
+        <translation>尚未設定 LLM 供應商 — 前往設定 &gt; LLM 設定</translation>
+    </message>
+    <message>
+        <source>No deployments loaded.</source>
+        <translation>尚未載入部署。</translation>
+    </message>
+    <message>
+        <source>No provider configured — go to Settings &gt; LLM Config</source>
+        <translation>尚未設定供應商 — 前往設定 &gt; LLM 設定</translation>
+    </message>
+    <message>
+        <source>No provider — Settings &gt; LLM Config</source>
+        <translation>無供應商 — 設定 &gt; LLM 設定</translation>
+    </message>
+    <message>
+        <source>No provider — go to Settings &gt; LLM Config</source>
+        <translation>無供應商 — 前往設定 &gt; LLM 設定</translation>
+    </message>
+    <message>
+        <source>No schedules configured yet.\nUse the Create Schedule tab to add one.</source>
+        <translation>尚未設定排程。
+使用「建立排程」分頁新增。</translation>
+    </message>
+    <message>
+        <source>Numeric values (&gt;= 30). Fits normal, student-t, lognormal (positive only), skewnormal.</source>
+        <translation>數值（≥ 30）。擬合常態、Student-t、對數常態（僅正值）、偏態常態分配。</translation>
+    </message>
+    <message>
+        <source>Numeric values (&gt;= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.</source>
+        <translation>數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
+    </message>
+    <message>
+        <source>OBJECTIVE</source>
+        <translation>OBJECTIVE</translation>
+    </message>
+    <message>
+        <source>OBSERVATION DATA</source>
+        <translation>觀測資料</translation>
+    </message>
+    <message>
+        <source>OLS Regression</source>
+        <translation>OLS 迴歸</translation>
+    </message>
+    <message>
+        <source>OPEN</source>
+        <translation>OPEN</translation>
+    </message>
+    <message>
+        <source>OPEN LOG VIEWER</source>
+        <translation>開啟日誌檢視器</translation>
+    </message>
+    <message>
+        <source>OPTIMISATION</source>
+        <translation>OPTIMISATION</translation>
+    </message>
+    <message>
+        <source>OPTIMIZATION</source>
+        <translation>OPTIMIZATION</translation>
+    </message>
+    <message>
+        <source>OPTIMIZE</source>
+        <translation>OPTIMIZE</translation>
+    </message>
+    <message>
+        <source>ORD</source>
+        <translation>ORD</translation>
+    </message>
+    <message>
+        <source>ORDERS</source>
+        <translation>ORDERS</translation>
+    </message>
+    <message>
+        <source>OVERVIEW</source>
+        <translation>OVERVIEW</translation>
+    </message>
+    <message>
+        <source>One per line:  &lt;asset_id&gt; | &lt;label&gt;</source>
+        <translation>每行一個：&lt;asset_id&gt; | &lt;label&gt;</translation>
+    </message>
+    <message>
+        <source>Overview</source>
+        <translation>概覽</translation>
+    </message>
+    <message>
+        <source>PERFORMANCE</source>
+        <translation>PERFORMANCE</translation>
+    </message>
+    <message>
+        <source>PLATFORM STATS</source>
+        <translation>平台統計</translation>
+    </message>
+    <message>
+        <source>POS</source>
+        <translation>POS</translation>
+    </message>
+    <message>
+        <source>POSITION SIZING</source>
+        <translation>部位大小</translation>
+    </message>
+    <message>
+        <source>POSITIONS</source>
+        <translation>POSITIONS</translation>
+    </message>
+    <message>
+        <source>PROFILE &amp; ACCOUNT</source>
+        <translation>個人資料與帳號</translation>
+    </message>
+    <message>
+        <source>PROVIDERS</source>
+        <translation>供應商</translation>
+    </message>
+    <message>
+        <source>PROVIDERS:</source>
+        <translation>供應商：</translation>
+    </message>
+    <message>
+        <source>PYTHON + C++</source>
+        <translation>Python + C++</translation>
+    </message>
+    <message>
+        <source>PYTHON NOTEBOOK</source>
+        <translation>Python 筆記本</translation>
+    </message>
+    <message>
+        <source>Page 1 of 1</source>
+        <translation>第 1 頁，共 1 頁</translation>
+    </message>
+    <message>
+        <source>Payment</source>
+        <translation>付款</translation>
+    </message>
+    <message>
+        <source>Peers</source>
+        <translation>同業比較</translation>
+    </message>
+    <message>
+        <source>Per-holding contribution to portfolio value, P&amp;L, and risk</source>
+        <translation>各持股對投資組合價值、損益與風險的貢獻</translation>
+    </message>
+    <message>
+        <source>Portfolio Metrics</source>
+        <translation>投資組合指標</translation>
+    </message>
+    <message>
+        <source>Precedent Txns</source>
+        <translation>先例交易</translation>
+    </message>
+    <message>
+        <source>Predict</source>
+        <translation>預測</translation>
+    </message>
+    <message>
+        <source>Premium Analysis</source>
+        <translation>溢價分析</translation>
+    </message>
+    <message>
+        <source>Pro Forma</source>
+        <translation>預估損益</translation>
+    </message>
+    <message>
+        <source>Probabilistic Forecast</source>
+        <translation>機率預測</translation>
+    </message>
+    <message>
+        <source>Process Data</source>
+        <translation>處理資料</translation>
+    </message>
+    <message>
+        <source>Process Quality</source>
+        <translation>處理品質</translation>
+    </message>
+    <message>
+        <source>Python 3.12</source>
+        <translation>Python 3.12</translation>
+    </message>
+    <message>
+        <source>QLIB + GS QUANT + PYTHON</source>
+        <translation>Qlib + GS Quant + Python</translation>
+    </message>
+    <message>
+        <source>Quant Research</source>
+        <translation>量化研究</translation>
+    </message>
+    <message>
+        <source>Quantile Forecast</source>
+        <translation>分位數預測</translation>
+    </message>
+    <message>
+        <source>RAW DATA</source>
+        <translation>原始資料</translation>
+    </message>
+    <message>
+        <source>RAW JSON</source>
+        <translation>原始 JSON</translation>
+    </message>
+    <message>
+        <source>RD-Agent</source>
+        <translation>RD-Agent</translation>
+    </message>
+    <message>
+        <source>RD-Agent ready</source>
+        <translation>RD-Agent 就緒</translation>
+    </message>
+    <message>
+        <source>REBASED</source>
+        <translation>REBASED</translation>
+    </message>
+    <message>
+        <source>REFRESH:</source>
+        <translation>重新整理：</translation>
+    </message>
+    <message>
+        <source>RELATED</source>
+        <translation>RELATED</translation>
+    </message>
+    <message>
+        <source>RESUME</source>
+        <translation>RESUME</translation>
+    </message>
+    <message>
+        <source>RETIREMENT</source>
+        <translation>RETIREMENT</translation>
+    </message>
+    <message>
+        <source>RETURNS</source>
+        <translation>RETURNS</translation>
+    </message>
+    <message>
+        <source>RETURNS ANALYSIS</source>
+        <translation>報酬分析</translation>
+    </message>
+    <message>
+        <source>RISK</source>
+        <translation>RISK</translation>
+    </message>
+    <message>
+        <source>RISK CONTRIBUTION</source>
+        <translation>風險貢獻</translation>
+    </message>
+    <message>
+        <source>RISK MANAGEMENT</source>
+        <translation>風險管理</translation>
+    </message>
+    <message>
+        <source>RISK OVERVIEW</source>
+        <translation>風險概覽</translation>
+    </message>
+    <message>
+        <source>RISK SIGNALS</source>
+        <translation>風險訊號</translation>
+    </message>
+    <message>
+        <source>RISK-ADJUSTED RATIOS &amp; WIN/LOSS BREAKDOWN</source>
+        <translation>風險調整比率與勝負分析</translation>
+    </message>
+    <message>
+        <source>ROLLING</source>
+        <translation>ROLLING</translation>
+    </message>
+    <message>
+        <source>ROLLING WINDOW</source>
+        <translation>滾動窗口</translation>
+    </message>
+    <message>
+        <source>RTL</source>
+        <translation>RTL</translation>
+    </message>
+    <message>
+        <source>RUN</source>
+        <translation>RUN</translation>
+    </message>
+    <message>
+        <source>RUN ALL</source>
+        <translation>全部執行</translation>
+    </message>
+    <message>
+        <source>RUN ANALYSIS</source>
+        <translation>執行分析</translation>
+    </message>
+    <message>
+        <source>RUN BACKTEST</source>
+        <translation>執行回測</translation>
+    </message>
+    <message>
+        <source>Rank</source>
+        <translation>排名</translation>
+    </message>
+    <message>
+        <source>Realized actuals (&gt;= 5 values)</source>
+        <translation>實際值（≥ 5 個數值）</translation>
+    </message>
+    <message>
+        <source>Regression</source>
+        <translation>迴歸分析</translation>
+    </message>
+    <message>
+        <source>Rename</source>
+        <translation>重新命名</translation>
+    </message>
+    <message>
+        <source>Research &amp; Intelligence</source>
+        <translation>研究與情報</translation>
+    </message>
+    <message>
+        <source>Restrictions</source>
+        <translation>限制條件</translation>
+    </message>
+    <message>
+        <source>Risk Factor</source>
+        <translation>風險因子</translation>
+    </message>
+    <message>
+        <source>Risk Metrics</source>
+        <translation>風險指標</translation>
+    </message>
+    <message>
+        <source>Risk Parity</source>
+        <translation>風險均等</translation>
+    </message>
+    <message>
+        <source>Risk Report</source>
+        <translation>風險報表</translation>
+    </message>
+    <message>
+        <source>Run Now</source>
+        <translation>立即執行</translation>
+    </message>
+    <message>
+        <source>Run a backtest to see results</source>
+        <translation>執行回測以查看結果</translation>
+    </message>
+    <message>
+        <source>Runs all 5 methods with current inputs and returns a consensus range.</source>
+        <translation>以目前輸入執行全部 5 種方法，回傳共識範圍。</translation>
+    </message>
+    <message>
+        <source>SAVE &amp; CONNECT</source>
+        <translation>儲存並連線</translation>
+    </message>
+    <message>
+        <source>SAVE STRATEGY</source>
+        <translation>儲存策略</translation>
+    </message>
+    <message>
+        <source>SAVINGS</source>
+        <translation>SAVINGS</translation>
+    </message>
+    <message>
+        <source>SCAN CONDITIONS</source>
+        <translation>掃描條件</translation>
+    </message>
+    <message>
+        <source>SCAN MARKET</source>
+        <translation>掃描市場</translation>
+    </message>
+    <message>
+        <source>SCAN RESULTS</source>
+        <translation>掃描結果</translation>
+    </message>
+    <message>
+        <source>SEARCH</source>
+        <translation>SEARCH</translation>
+    </message>
+    <message>
+        <source>SEARCH AREA</source>
+        <translation>搜尋區域</translation>
+    </message>
+    <message>
+        <source>SELECTED EVENT</source>
+        <translation>已選事件</translation>
+    </message>
+    <message>
+        <source>SELECTED ROUTE</source>
+        <translation>已選航線</translation>
+    </message>
+    <message>
+        <source>SENT</source>
+        <translation>SENT</translation>
+    </message>
+    <message>
+        <source>SIGNAL GENERATORS</source>
+        <translation>訊號產生器</translation>
+    </message>
+    <message>
+        <source>SIGNAL MODE</source>
+        <translation>訊號模式</translation>
+    </message>
+    <message>
+        <source>SINGLE</source>
+        <translation>SINGLE</translation>
+    </message>
+    <message>
+        <source>SKIP &amp; CONTINUE</source>
+        <translation>跳過並繼續</translation>
+    </message>
+    <message>
+        <source>SLIPPAGE (%)</source>
+        <translation>滑價 (%)</translation>
+    </message>
+    <message>
+        <source>SLIPPAGE ESTIMATOR  —  Real Order Book Walk</source>
+        <translation>滑價估算器 — 實際委託簿模擬</translation>
+    </message>
+    <message>
+        <source>SORT:</source>
+        <translation>排序：</translation>
+    </message>
+    <message>
+        <source>SOURCE:</source>
+        <translation>來源：</translation>
+    </message>
+    <message>
+        <source>SPLITTER TYPE</source>
+        <translation>分割器類型</translation>
+    </message>
+    <message>
+        <source>STATS</source>
+        <translation>STATS</translation>
+    </message>
+    <message>
+        <source>STATUS / ERRORS</source>
+        <translation>狀態 / 錯誤</translation>
+    </message>
+    <message>
+        <source>STEP SIZE</source>
+        <translation>步長</translation>
+    </message>
+    <message>
+        <source>STOP ALL</source>
+        <translation>全部停止</translation>
+    </message>
+    <message>
+        <source>STOP LOSS (%)</source>
+        <translation>停損 (%)</translation>
+    </message>
+    <message>
+        <source>STORAGE &amp; DATA MANAGEMENT</source>
+        <translation>儲存與資料管理</translation>
+    </message>
+    <message>
+        <source>STRATEGIES</source>
+        <translation>STRATEGIES</translation>
+    </message>
+    <message>
+        <source>STRATEGIES:</source>
+        <translation>策略：</translation>
+    </message>
+    <message>
+        <source>STRATEGY</source>
+        <translation>STRATEGY</translation>
+    </message>
+    <message>
+        <source>STRATEGY DEFINITION</source>
+        <translation>策略定義</translation>
+    </message>
+    <message>
+        <source>STRESS</source>
+        <translation>STRESS</translation>
+    </message>
+    <message>
+        <source>STRESS TEST</source>
+        <translation>壓力測試</translation>
+    </message>
+    <message>
+        <source>SYMBOLS</source>
+        <translation>SYMBOLS</translation>
+    </message>
+    <message>
+        <source>SYMBOLS &amp; PARAMETERS</source>
+        <translation>代碼與參數</translation>
+    </message>
+    <message>
+        <source>SYMBOLS (comma or newline separated)</source>
+        <translation>代碼（以逗號或換行分隔）</translation>
+    </message>
+    <message>
+        <source>SYSTEM STATUS</source>
+        <translation>系統狀態</translation>
+    </message>
+    <message>
+        <source>Save &amp; Set Active</source>
+        <translation>儲存並啟用</translation>
+    </message>
+    <message>
+        <source>Scan Days:</source>
+        <translation>掃描天數：</translation>
+    </message>
+    <message>
+        <source>Schedules</source>
+        <translation>排程</translation>
+    </message>
+    <message>
+        <source>Science &amp; Tech</source>
+        <translation>科學與科技</translation>
+    </message>
+    <message>
+        <source>Scorecard</source>
+        <translation>計分卡</translation>
+    </message>
+    <message>
+        <source>Seasonal Naive</source>
+        <translation>季節性樸素法</translation>
+    </message>
+    <message>
+        <source>Seasonality</source>
+        <translation>季節性</translation>
+    </message>
+    <message>
+        <source>Select a deployment to view curve</source>
+        <translation>選取部署以檢視曲線</translation>
+    </message>
+    <message>
+        <source>Select an article</source>
+        <translation>選取文章</translation>
+    </message>
+    <message>
+        <source>Send  ↑</source>
+        <translation>送出 ↑</translation>
+    </message>
+    <message>
+        <source>Sensitivity</source>
+        <translation>敏感度分析</translation>
+    </message>
+    <message>
+        <source>Sensitivity analysis varies entry multiple and exit multiple around base case.</source>
+        <translation>敏感度分析在基準情境周圍變動進場倍數與出場倍數。</translation>
+    </message>
+    <message>
+        <source>Sentiment</source>
+        <translation>情緒分析</translation>
+    </message>
+    <message>
+        <source>Series values (&gt;= 1). Forecast = repeat last `season_length` observations.</source>
+        <translation>序列值（≥ 1）。預測 = 重複最後 season_length 個觀測值。</translation>
+    </message>
+    <message>
+        <source>Series values (&gt;= 30)</source>
+        <translation>序列值（≥ 30）</translation>
+    </message>
+    <message>
+        <source>Series values (&gt;= 30) — runs ADF + KPSS at each differencing order</source>
+        <translation>序列值（≥ 30）— 在每個差分階數執行 ADF + KPSS</translation>
+    </message>
+    <message>
+        <source>Series values (&gt;= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.</source>
+        <translation>序列值（≥ 30）。Bootstrap 殘差集成預測接下來 H 步驟，附分位數帶。</translation>
+    </message>
+    <message>
+        <source>Series values (training history, &gt;= 30)</source>
+        <translation>序列值（訓練歷史，≥ 30）</translation>
+    </message>
+    <message>
+        <source>Session error — please restart.</source>
+        <translation>工作階段錯誤 — 請重新啟動。</translation>
+    </message>
+    <message>
+        <source>Sheet1</source>
+        <translation>工作表1</translation>
+    </message>
+    <message>
+        <source>Show Raw JSON</source>
+        <translation>顯示原始 JSON</translation>
+    </message>
+    <message>
+        <source>Signal Data</source>
+        <translation>訊號資料</translation>
+    </message>
+    <message>
+        <source>Slippage Estimator</source>
+        <translation>滑價估算器</translation>
+    </message>
+    <message>
+        <source>Sources &amp; Uses</source>
+        <translation>資金來源與用途</translation>
+    </message>
+    <message>
+        <source>Spot: —</source>
+        <translation>現貨：—</translation>
+    </message>
+    <message>
+        <source>Stationarity</source>
+        <translation>定態性</translation>
+    </message>
+    <message>
+        <source>Statistics</source>
+        <translation>統計</translation>
+    </message>
+    <message>
+        <source>Stress Test</source>
+        <translation>壓力測試</translation>
+    </message>
+    <message>
+        <source>Synergies</source>
+        <translation>綜效</translation>
+    </message>
+    <message>
+        <source>T&amp;S</source>
+        <translation>成交明細</translation>
+    </message>
+    <message>
+        <source>TABLE</source>
+        <translation>TABLE</translation>
+    </message>
+    <message>
+        <source>TAKE PROFIT (%)</source>
+        <translation>停利 (%)</translation>
+    </message>
+    <message>
+        <source>TALIpp</source>
+        <translation>TALIpp</translation>
+    </message>
+    <message>
+        <source>TARGET</source>
+        <translation>TARGET</translation>
+    </message>
+    <message>
+        <source>TERMINAL</source>
+        <translation>TERMINAL</translation>
+    </message>
+    <message>
+        <source>TEST &amp; SAVE</source>
+        <translation>測試並儲存</translation>
+    </message>
+    <message>
+        <source>THREAT: LOW</source>
+        <translation>威脅：低</translation>
+    </message>
+    <message>
+        <source>THRESHOLD</source>
+        <translation>THRESHOLD</translation>
+    </message>
+    <message>
+        <source>TIME &amp; SALES</source>
+        <translation>成交明細</translation>
+    </message>
+    <message>
+        <source>TIMEFRAME</source>
+        <translation>TIMEFRAME</translation>
+    </message>
+    <message>
+        <source>TOP CATEGORIES</source>
+        <translation>熱門分類</translation>
+    </message>
+    <message>
+        <source>TOP STORIES</source>
+        <translation>頭條新聞</translation>
+    </message>
+    <message>
+        <source>TOPIC:</source>
+        <translation>主題：</translation>
+    </message>
+    <message>
+        <source>TOPICS</source>
+        <translation>TOPICS</translation>
+    </message>
+    <message>
+        <source>TOXIC FLOW DETECTION  —  PIN Score Model</source>
+        <translation>毒性流動偵測 — PIN 分數模型</translation>
+    </message>
+    <message>
+        <source>TRACK</source>
+        <translation>TRACK</translation>
+    </message>
+    <message>
+        <source>TRADE CORRIDORS</source>
+        <translation>貿易走廊</translation>
+    </message>
+    <message>
+        <source>TRADE GEOPOLITICS ANALYSIS</source>
+        <translation>貿易地緣政治分析</translation>
+    </message>
+    <message>
+        <source>TRADES</source>
+        <translation>TRADES</translation>
+    </message>
+    <message>
+        <source>TRAIN RATIO</source>
+        <translation>訓練比例</translation>
+    </message>
+    <message>
+        <source>TRANSACTIONS</source>
+        <translation>TRANSACTIONS</translation>
+    </message>
+    <message>
+        <source>Task Monitor</source>
+        <translation>任務監控</translation>
+    </message>
+    <message>
+        <source>Technicals</source>
+        <translation>技術面</translation>
+    </message>
+    <message>
+        <source>Technology</source>
+        <translation>科技</translation>
+    </message>
+    <message>
+        <source>Tickers (comma-separated, &gt;= 2). Returns fetched via Yahoo Finance.</source>
+        <translation>代碼（逗號分隔，≥ 2 個）。報酬經由 Yahoo Finance 擷取。</translation>
+    </message>
+    <message>
+        <source>Time series values (&gt;= 20)</source>
+        <translation>時間序列值（≥ 20）</translation>
+    </message>
+    <message>
+        <source>Time series values (&gt;= 20). Used for ARIMA(p,q) order selection.</source>
+        <translation>時間序列值（≥ 20）。用於 ARIMA(p,q) 階數選擇。</translation>
+    </message>
+    <message>
+        <source>Time series values (&gt;= 24). Period auto-detected if left at 0.</source>
+        <translation>時間序列值（≥ 24）。週期設為 0 時自動偵測。</translation>
+    </message>
+    <message>
+        <source>Time series values (&gt;= 30)</source>
+        <translation>時間序列值（≥ 30）</translation>
+    </message>
+    <message>
+        <source>Time series values (&gt;= 30). CSV, space, or newline separated.</source>
+        <translation>時間序列值（≥ 30）。以 CSV、空格或換行分隔。</translation>
+    </message>
+    <message>
+        <source>TopK-Dropout</source>
+        <translation>TopK-Dropout</translation>
+    </message>
+    <message>
+        <source>Trading &amp; Portfolio</source>
+        <translation>交易與投資組合</translation>
+    </message>
+    <message>
+        <source>Trading Blocs</source>
+        <translation>貿易集團</translation>
+    </message>
+    <message>
+        <source>Trading Comps</source>
+        <translation>交易比較</translation>
+    </message>
+    <message>
+        <source>Train Model</source>
+        <translation>訓練模型</translation>
+    </message>
+    <message>
+        <source>UTC --:--</source>
+        <translation>UTC --:--</translation>
+    </message>
+    <message>
+        <source>Upgrade All</source>
+        <translation>全部升級</translation>
+    </message>
+    <message>
+        <source>VC Method</source>
+        <translation>VC 估值法</translation>
+    </message>
+    <message>
+        <source>VESSEL SEARCH</source>
+        <translation>船隻搜尋</translation>
+    </message>
+    <message>
+        <source>VESSEL TRACKING — AIS FEED</source>
+        <translation>船隻追蹤 — AIS 資料流</translation>
+    </message>
+    <message>
+        <source>VIEW RAW RESPONSE</source>
+        <translation>檢視原始回應</translation>
+    </message>
+    <message>
+        <source>VOYAGE HISTORY</source>
+        <translation>航程歷史</translation>
+    </message>
+    <message>
+        <source>VaR</source>
+        <translation>VaR</translation>
+    </message>
+    <message>
+        <source>View Plans &amp; Pricing</source>
+        <translation>查看方案與定價</translation>
+    </message>
+    <message>
+        <source>Voice</source>
+        <translation>語音</translation>
+    </message>
+    <message>
+        <source>Voice mode active</source>
+        <translation>語音模式啟用中</translation>
+    </message>
+    <message>
+        <source>WALK-FORWARD</source>
+        <translation>WALK-FORWARD</translation>
+    </message>
+    <message>
+        <source>WINDOW LENGTH</source>
+        <translation>窗口長度</translation>
+    </message>
+    <message>
+        <source>X</source>
+        <translation>X</translation>
+    </message>
+    <message>
+        <source>\u2315</source>
+        <translation>\u2315</translation>
+    </message>
+    <message>
+        <source>\u25C6</source>
+        <translation>\u25C6</translation>
+    </message>
+    <message>
+        <source>\xe2\x9a\xa1</source>
+        <translation>\xe2\x9a\xa1</translation>
+    </message>
+    <message>
+        <source>agent_memory</source>
+        <translation>agent_memory</translation>
+    </message>
+    <message>
+        <source>auto (from Content-Type / &lt;meta&gt;)</source>
+        <translation>自動（從 Content-Type / &lt;meta&gt; 偵測）</translation>
+    </message>
+    <message>
+        <source>datasets</source>
+        <translation>資料集</translation>
+    </message>
+    <message>
+        <source>fincept_lock not deployed — Settings &gt; Lock program ID</source>
+        <translation>fincept_lock 尚未部署 — 設定 &gt; Lock 程式 ID</translation>
+    </message>
+    <message>
+        <source>fx</source>
+        <translation>fx</translation>
+    </message>
+    <message>
+        <source>not configured</source>
+        <translation>尚未設定</translation>
+    </message>
+    <message>
+        <source>strategy builder · backtesting · live deployment</source>
+        <translation>策略建構器 · 回測 · 即時部署</translation>
+    </message>
+    <message>
+        <source>x</source>
+        <translation>x</translation>
+    </message>
+    <message>
+        <source>■ Stop</source>
+        <translation>■ 停止</translation>
+    </message>
+    <message>
+        <source>◀ PREV</source>
+        <translation>◀ 上一步</translation>
+    </message>
+</context>
 </TS>
