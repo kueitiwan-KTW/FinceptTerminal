@@ -910,36 +910,36 @@ QDialog* WebScraperWidget::make_config_dialog(QWidget* parent) {
     auto* url_edit = new QLineEdit(dlg);
     url_edit->setText(url_);
     url_edit->setPlaceholderText("https://example.com/table-page or API endpoint");
-    form->addRow("URL", url_edit);
+    form->addRow(tr("URL"), url_edit);
 
     auto* refresh_spin = new QSpinBox(dlg);
     refresh_spin->setRange(0, 86400);
-    refresh_spin->setSuffix(" sec");
+    refresh_spin->setSuffix(tr(" sec"));
     refresh_spin->setSpecialValueText("manual only");
     refresh_spin->setValue(refresh_sec_);
-    form->addRow("Auto-refresh", refresh_spin);
+    form->addRow(tr("Auto-refresh"), refresh_spin);
 
     auto* ua_edit = new QLineEdit(dlg);
     ua_edit->setText(user_agent_);
     ua_edit->setPlaceholderText(QString::fromLatin1(kDefaultUA));
-    form->addRow("User-Agent", ua_edit);
+    form->addRow(tr("User-Agent"), ua_edit);
 
     auto* fmt_combo = new QComboBox(dlg);
-    fmt_combo->addItems({"Auto-detect", "HTML", "JSON", "CSV", "TSV", "XML"});
+    fmt_combo->addItems({tr("Auto-detect"), tr("HTML"), tr("JSON"), tr("CSV"), tr("TSV"), tr("XML")});
     const QMap<QString, int> fmt_idx = {{"", 0},    {"html", 1}, {"json", 2},
                                          {"csv", 3}, {"tsv", 4},  {"xml", 5}};
     fmt_combo->setCurrentIndex(fmt_idx.value(force_format_.toLower(), 0));
-    form->addRow("Format", fmt_combo);
+    form->addRow(tr("Format"), fmt_combo);
 
     auto* enc_edit = new QLineEdit(dlg);
     enc_edit->setText(encoding_);
     enc_edit->setPlaceholderText(tr("auto (from Content-Type / <meta>)"));
-    form->addRow("Encoding", enc_edit);
+    form->addRow(tr("Encoding"), enc_edit);
 
     auto* json_path_edit = new QLineEdit(dlg);
     json_path_edit->setText(json_path_);
     json_path_edit->setPlaceholderText(tr("e.g. data.items  (JSON only)"));
-    form->addRow("JSON path", json_path_edit);
+    form->addRow(tr("JSON path"), json_path_edit);
 
     auto* headers_edit = new QPlainTextEdit(dlg);
     QString hdr_text;
@@ -948,7 +948,7 @@ QDialog* WebScraperWidget::make_config_dialog(QWidget* parent) {
     headers_edit->setPlainText(hdr_text);
     headers_edit->setPlaceholderText(tr("One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz"));
     headers_edit->setMaximumHeight(100);
-    form->addRow("Extra headers", headers_edit);
+    form->addRow(tr("Extra headers"), headers_edit);
 
     auto* help = new QLabel(
         "Auto-detects HTML tables, JSON arrays/objects, CSV/TSV, XML/RSS/Atom. "

@@ -190,7 +190,7 @@ void VideoPlayerWidget::build_player_view() {
     now_playing_ = new QLabel("—");
     cl->addWidget(now_playing_, 1);
 
-    stop_btn_ = new QPushButton(QString(QChar(0x25A0)) + " STOP");
+    stop_btn_ = new QPushButton(QString(QChar(0x25A0)) + tr(" STOP"));
     stop_btn_->setCursor(Qt::PointingHandCursor);
     stop_btn_->setFixedHeight(20);
     connect(stop_btn_, &QPushButton::clicked, this, &VideoPlayerWidget::stop_playback);

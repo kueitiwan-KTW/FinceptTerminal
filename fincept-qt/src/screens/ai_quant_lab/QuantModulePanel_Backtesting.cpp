@@ -471,7 +471,7 @@ void QuantModulePanel::display_backtest_result(const QJsonObject& payload) {
     export_hl->addWidget(export_btn);
     results_layout_->addWidget(export_row);
 
-    status_label_->setText(QString("Done — %1% return  |  Sharpe %2")
+    status_label_->setText(tr("Done — %1% return  |  Sharpe %2")
                                .arg(total_ret, 0, 'f', 2)
                                .arg(sharpe, 0, 'f', 3));
 }

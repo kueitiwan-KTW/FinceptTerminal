@@ -1860,14 +1860,14 @@ void ReportBuilderScreen::apply_template(const QString& name) {
 void ReportBuilderScreen::load_report(const QString& path) {
     QFile f(path);
     if (!f.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        QMessageBox::warning(this, "Open Report", "Could not open file:\n" + path);
+        QMessageBox::warning(this, tr("Open Report"), tr("Could not open file:\n") + path);
         return;
     }
     QString json = QString::fromUtf8(f.readAll());
     f.close();
 
     if (!deserialize_from_json(json)) {
-        QMessageBox::warning(this, "Open Report", "Could not parse report file:\n" + path);
+        QMessageBox::warning(this, tr("Open Report"), tr("Could not parse report file:\n") + path);
         return;
     }
 
@@ -1880,7 +1880,7 @@ void ReportBuilderScreen::load_report(const QString& path) {
 }
 
 void ReportBuilderScreen::on_new() {
-    auto answer = QMessageBox::question(this, "New Report", "Create a new report? Unsaved changes will be lost.",
+    auto answer = QMessageBox::question(this, tr("New Report"), tr("Create a new report? Unsaved changes will be lost."),
                                         QMessageBox::Yes | QMessageBox::No);
     if (answer != QMessageBox::Yes)
         return;
@@ -1899,7 +1899,8 @@ void ReportBuilderScreen::on_new() {
 }
 
 void ReportBuilderScreen::on_open() {
-    QString path = QFileDialog::getOpenFileName(this, "Open Report", "", "Fincept Report (*.fincept);;JSON (*.json)");
+    QString path = QFileDialog::getOpenFileName(this, tr("Open Report"), "",
+                                                tr("Fincept Report (*.fincept);;JSON (*.json)"));
     if (path.isEmpty())
         return;
     load_report(path);
@@ -1908,8 +1909,8 @@ void ReportBuilderScreen::on_open() {
 void ReportBuilderScreen::on_save() {
     QString path = current_file_;
     if (path.isEmpty()) {
-        path = QFileDialog::getSaveFileName(this, "Save Report", metadata_.title,
-                                            "Fincept Report (*.fincept);;JSON (*.json)");
+        path = QFileDialog::getSaveFileName(this, tr("Save Report"), metadata_.title,
+                                            tr("Fincept Report (*.fincept);;JSON (*.json)"));
         if (path.isEmpty())
             return;
         current_file_ = path;
@@ -1917,7 +1918,7 @@ void ReportBuilderScreen::on_save() {
 
     QFile f(path);
     if (!f.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        QMessageBox::warning(this, "Save Report", "Could not save to:\n" + path);
+        QMessageBox::warning(this, tr("Save Report"), tr("Could not save to:\n") + path);
         return;
     }
     f.write(serialize_to_json().toUtf8());
@@ -1940,7 +1941,7 @@ void ReportBuilderScreen::on_auto_save() {
 }
 
 void ReportBuilderScreen::on_export_pdf() {
-    QString path = QFileDialog::getSaveFileName(this, "Export PDF", metadata_.title, "PDF (*.pdf)");
+    QString path = QFileDialog::getSaveFileName(this, tr("Export PDF"), metadata_.title, tr("PDF (*.pdf)"));
     if (path.isEmpty())
         return;
 
@@ -1971,7 +1972,7 @@ void ReportBuilderScreen::on_export_pdf() {
 
         QPainter painter;
         if (!painter.begin(&printer)) {
-            QMessageBox::warning(this, "Export PDF", "Failed to start PDF painter.");
+            QMessageBox::warning(this, tr("Export PDF"), tr("Failed to start PDF painter."));
             doc->deleteLater();
             return;
         }
@@ -2041,7 +2042,7 @@ void ReportBuilderScreen::on_export_pdf() {
         doc->deleteLater();
     }
 
-    QMessageBox::information(this, "Export PDF", "Report exported successfully to:\n" + path);
+    QMessageBox::information(this, tr("Export PDF"), tr("Report exported successfully to:\n") + path);
 
     // Register exported PDF with File Manager
     services::FileManagerService::instance().import_file(path, "report_builder");

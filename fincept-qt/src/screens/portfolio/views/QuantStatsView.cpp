@@ -219,8 +219,8 @@ void QuantStatsView::build_ui() {
             QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
         mcl->addWidget(mc_title);
 
-        auto* mc_desc = new QLabel("Simulate 1,000 portfolio return paths using GBM to estimate probability\n"
-                                   "distributions of future returns, drawdowns, and terminal wealth.");
+        auto* mc_desc = new QLabel(tr("Simulate 1,000 portfolio return paths using GBM to estimate probability\n"
+                                      "distributions of future returns, drawdowns, and terminal wealth."));
         mc_desc->setWordWrap(true);
         mc_desc->setStyleSheet(QString("color:%1; font-size:11px;").arg(ui::colors::TEXT_TERTIARY()));
         mcl->addWidget(mc_desc);
@@ -933,7 +933,7 @@ void QuantStatsView::update_monte_carlo_chart() {
 
     // Caption
     int n_shown = mc_data_["num_paths_shown"].toInt();
-    auto* caption = new QLabel(QString("Showing %1 of 1000 simulated paths over 252 trading days (GBM)."
+    auto* caption = new QLabel(tr("Showing %1 of 1000 simulated paths over 252 trading days (GBM)."
                                        " Bright line = median path.")
                                    .arg(n_shown));
     caption->setStyleSheet(QString("color:%1; font-size:9px; padding:4px 16px;").arg(ui::colors::TEXT_TERTIARY()));
@@ -992,7 +992,7 @@ void QuantStatsView::run_quantstats() {
                     self->qs_run_btn_->setEnabled(true);
 
                     if (!r.success) {
-                        self->qs_status_->setText(QString("QuantStats: %1").arg(r.error));
+                        self->qs_status_->setText(self->tr("QuantStats: %1").arg(r.error));
                         self->qs_status_->setStyleSheet(
                             QString("color:%1; font-size:9px;").arg(ui::colors::NEGATIVE()));
                         return;
@@ -1042,7 +1042,7 @@ void QuantStatsView::run_monte_carlo() {
                     self->mc_run_btn_->setEnabled(true);
 
                     if (!r.success) {
-                        self->mc_status_->setText(QString("Monte Carlo: %1").arg(r.error));
+                        self->mc_status_->setText(self->tr("Monte Carlo: %1").arg(r.error));
                         self->mc_status_->setStyleSheet(
                             QString("color:%1; font-size:10px;").arg(ui::colors::NEGATIVE()));
                         return;

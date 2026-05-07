@@ -871,7 +871,7 @@ QWidget* DataMappingScreen::create_right_panel() {
 
     const QStringList parsers = {"JSONPath", "JSONata", "JMESPath", "Direct", "JavaScript", "Regex"};
     for (const auto& p : parsers) {
-        auto* lbl = new QLabel(p + " — READY");
+        auto* lbl = new QLabel(p + tr(" — READY"));
         lbl->setObjectName("dmInfoLabel");
         il->addWidget(lbl);
     }
@@ -952,9 +952,9 @@ QWidget* DataMappingScreen::create_api_config_panel() {
         create_form_two_col(create_form_row("BASE URL", api_base_url_), create_form_row("ENDPOINT", api_endpoint_)));
 
     api_method_ = new QComboBox;
-    api_method_->addItems({"GET", "POST", "PUT", "DELETE", "PATCH"});
+    api_method_->addItems({tr("GET"), tr("POST"), tr("PUT"), tr("DELETE"), tr("PATCH")});
     api_auth_type_ = new QComboBox;
-    api_auth_type_->addItems({"None", "API Key", "Bearer Token", "Basic Auth", "OAuth2"});
+    api_auth_type_->addItems({tr("None"), tr("API Key"), tr("Bearer Token"), tr("Basic Auth"), tr("OAuth2")});
     bl->addWidget(create_form_two_col(create_form_row("HTTP METHOD", api_method_),
                                       create_form_row("AUTHENTICATION", api_auth_type_)));
 
@@ -976,7 +976,7 @@ QWidget* DataMappingScreen::create_api_config_panel() {
     api_timeout_ = new QSpinBox;
     api_timeout_->setRange(1, 120);
     api_timeout_->setValue(30);
-    api_timeout_->setSuffix(" sec");
+    api_timeout_->setSuffix(tr(" sec"));
     bl->addWidget(create_form_row("TIMEOUT", api_timeout_));
 
     // Test button + status
@@ -1027,7 +1027,7 @@ QWidget* DataMappingScreen::create_schema_panel() {
     bl->setSpacing(10);
 
     schema_type_ = new QComboBox;
-    schema_type_->addItems({"Predefined Schema", "Custom Schema"});
+    schema_type_->addItems({tr("Predefined Schema"), tr("Custom Schema")});
     bl->addWidget(create_form_row("SCHEMA TYPE", schema_type_));
 
     schema_select_ = new QComboBox;
@@ -1043,7 +1043,7 @@ QWidget* DataMappingScreen::create_schema_panel() {
             for (int i = 0; i < fields.size(); ++i) {
                 schema_fields_table_->setItem(i, 0, new QTableWidgetItem(fields[i].name));
                 schema_fields_table_->setItem(i, 1, new QTableWidgetItem(fields[i].type));
-                schema_fields_table_->setItem(i, 2, new QTableWidgetItem(fields[i].required ? "Yes" : "No"));
+                schema_fields_table_->setItem(i, 2, new QTableWidgetItem(fields[i].required ? tr("Yes") : tr("No")));
                 schema_fields_table_->setItem(i, 3, new QTableWidgetItem(fields[i].description));
             }
             if (right_schema_info_)
@@ -1103,7 +1103,7 @@ QWidget* DataMappingScreen::create_field_mapping_panel() {
 
     // Parser engine selector
     parser_engine_ = new QComboBox;
-    parser_engine_->addItems({"JSONPath", "JSONata", "JMESPath", "Direct", "JavaScript", "Regex"});
+    parser_engine_->addItems({tr("JSONPath"), tr("JSONata"), tr("JMESPath"), tr("Direct"), tr("JavaScript"), tr("Regex")});
     hl->addWidget(new QLabel(tr("Parser:")));
     hl->addWidget(parser_engine_);
     vl->addWidget(hdr);
@@ -1114,7 +1114,7 @@ QWidget* DataMappingScreen::create_field_mapping_panel() {
 
     // JSON explorer
     json_tree_ = new QTreeWidget;
-    json_tree_->setHeaderLabels({"Key", "Value", "Type"});
+    json_tree_->setHeaderLabels({tr("Key"), tr("Value"), tr("Type")});
     json_tree_->setColumnWidth(0, 160);
     json_tree_->setColumnWidth(1, 200);
     json_tree_->setMinimumWidth(250);
@@ -1164,13 +1164,13 @@ QWidget* DataMappingScreen::create_cache_panel() {
     bl->setSpacing(10);
 
     cache_enabled_ = new QComboBox;
-    cache_enabled_->addItems({"Enabled", "Disabled"});
+    cache_enabled_->addItems({tr("Enabled"), tr("Disabled")});
     bl->addWidget(create_form_row("RESPONSE CACHING", cache_enabled_));
 
     cache_ttl_ = new QSpinBox;
     cache_ttl_->setRange(0, 86400);
     cache_ttl_->setValue(300);
-    cache_ttl_->setSuffix(" sec");
+    cache_ttl_->setSuffix(tr(" sec"));
     bl->addWidget(create_form_row("CACHE TTL", cache_ttl_));
 
     // Security info
@@ -1182,8 +1182,8 @@ QWidget* DataMappingScreen::create_cache_panel() {
     auto* sec_title = new QLabel(tr("ENCRYPTION"));
     sec_title->setObjectName("dmLabel");
     sbl->addWidget(sec_title);
-    auto* sec_detail = new QLabel("API credentials are encrypted with AES-256-GCM before storage.\n"
-                                  "Sensitive data never stored in plaintext.");
+    auto* sec_detail = new QLabel(tr("API credentials are encrypted with AES-256-GCM before storage.\n"
+                                     "Sensitive data never stored in plaintext."));
     sec_detail->setObjectName("dmInfoLabel");
     sec_detail->setWordWrap(true);
     sbl->addWidget(sec_detail);
@@ -1398,7 +1398,7 @@ QWidget* DataMappingScreen::create_template_view() {
     tt->setObjectName("dmPanelHeaderTitle");
     tbl->addWidget(tt);
     tbl->addStretch(1);
-    auto* count = new QLabel(QString::number(g_templates.size()) + " templates");
+    auto* count = new QLabel(QString::number(g_templates.size()) + tr(" templates"));
     count->setObjectName("dmInfoLabel");
     tbl->addWidget(count);
     vl->addWidget(toolbar);
@@ -1498,7 +1498,7 @@ void DataMappingScreen::update_step_indicators() {
         step_btns_[i]->style()->unpolish(step_btns_[i]);
         step_btns_[i]->style()->polish(step_btns_[i]);
     }
-    step_label_->setText(QString("Step %1 of 5 — %2").arg(current_step_ + 1).arg(labels[current_step_]));
+    step_label_->setText(tr("Step %1 of 5 — %2").arg(current_step_ + 1).arg(labels[current_step_]));
     prev_btn_->setEnabled(current_step_ > 0);
     next_btn_->setEnabled(current_step_ < 4);
     status_step_->setText(labels[current_step_]);
@@ -1509,33 +1509,33 @@ void DataMappingScreen::populate_json_tree(const QJsonValue& val, QTreeWidgetIte
     item->setText(0, key);
 
     if (val.isObject()) {
-        item->setText(2, "object");
+        item->setText(2, tr("object"));
         auto obj = val.toObject();
         for (auto it = obj.begin(); it != obj.end(); ++it) {
             populate_json_tree(it.value(), item, it.key());
         }
     } else if (val.isArray()) {
         auto arr = val.toArray();
-        item->setText(2, QString("array[%1]").arg(arr.size()));
+        item->setText(2, tr("array[%1]").arg(arr.size()));
         int limit = qMin(arr.size(), 10); // limit display
         for (int i = 0; i < limit; ++i) {
             populate_json_tree(arr[i], item, QString("[%1]").arg(i));
         }
     } else if (val.isDouble()) {
         item->setText(1, QString::number(val.toDouble(), 'g', 10));
-        item->setText(2, "number");
+        item->setText(2, tr("number"));
         item->setForeground(1, QColor(colors::CYAN()));
     } else if (val.isBool()) {
-        item->setText(1, val.toBool() ? "true" : "false");
-        item->setText(2, "boolean");
+        item->setText(1, val.toBool() ? tr("true") : tr("false"));
+        item->setText(2, tr("boolean"));
         item->setForeground(1, QColor(colors::WARNING()));
     } else if (val.isNull()) {
-        item->setText(1, "null");
-        item->setText(2, "null");
+        item->setText(1, tr("null"));
+        item->setText(2, tr("null"));
         item->setForeground(1, QColor(colors::TEXT_DIM()));
     } else {
         item->setText(1, val.toString());
-        item->setText(2, "string");
+        item->setText(2, tr("string"));
     }
 }
 
@@ -1788,7 +1788,7 @@ void DataMappingScreen::on_run_mapping() {
             if (ok) {
                 const QString out = QJsonDocument(rec.normalized).toJson(QJsonDocument::Indented);
                 self->test_output_->setPlainText(out);
-                self->test_status_->setText(QString("RUN OK — %1 fields extracted").arg(rec.normalized.size()));
+                self->test_status_->setText(tr("RUN OK — %1 fields extracted").arg(rec.normalized.size()));
                 LOG_INFO("DataMapping", "Run complete: " + dm.name);
             } else {
                 const QString errs = rec.errors.join(", ");

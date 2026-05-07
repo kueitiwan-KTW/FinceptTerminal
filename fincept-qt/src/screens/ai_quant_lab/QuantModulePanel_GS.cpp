@@ -467,7 +467,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         const QString trough = d.value("trough_date").toString().left(10);
         const QString recov = d.value("recovery_date").toString().left(10);
         if (!peak.isEmpty() && peak != "None") {
-            auto* dd_lbl = new QLabel(QString("Drawdown: peak %1  →  trough %2  →  recovery %3")
+            auto* dd_lbl = new QLabel(tr("Drawdown: peak %1  →  trough %2  →  recovery %3")
                                           .arg(peak, trough, recov.isEmpty() || recov == "None" ? "—" : recov));
             dd_lbl->setStyleSheet(QString("color:%1; font-size:10px; font-family:'Courier New';"
                                           "padding:6px 10px; background:%2; border:1px solid %3;")
@@ -475,7 +475,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
                                            ui::colors::BORDER_DIM()));
             results_layout_->addWidget(dd_lbl);
         }
-        status_label_->setText(QString("Sharpe %1  |  MaxDD %2  |  Vol %3")
+        status_label_->setText(tr("Sharpe %1  |  MaxDD %2  |  Vol %3")
                                    .arg(sharpe, 0, 'f', 2).arg(mdd * 100, 0, 'f', 1)
                                    .arg(d.value("volatility_annualized").toDouble() * 100, 0, 'f', 1));
         return;
@@ -533,7 +533,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         };
         results_layout_->addWidget(gs_card_row(moments, this));
 
-        status_label_->setText(QString("Alpha %1%  |  IR %2  |  R² %3")
+        status_label_->setText(tr("Alpha %1%  |  IR %2  |  R² %3")
                                    .arg(alpha * 100, 0, 'f', 2).arg(info, 0, 'f', 2)
                                    .arg(r2, 0, 'f', 3));
         return;
@@ -549,7 +549,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         const QString moneyness_label = moneyness > 1.02 ? "ITM" : moneyness < 0.98 ? "OTM" : "ATM";
 
         // Contract summary strip
-        auto* summary = new QLabel(QString("%1  |  Spot %2  →  Strike %3  |  %4 (%5)  |  Vol %6%  |  T %7y")
+        auto* summary = new QLabel(tr("%1  |  Spot %2  →  Strike %3  |  %4 (%5)  |  Vol %6%  |  T %7y")
                                        .arg(opt)
                                        .arg(spot, 0, 'f', 2).arg(strike, 0, 'f', 2)
                                        .arg(moneyness_label).arg(moneyness, 0, 'f', 3)
@@ -606,7 +606,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         const QJsonObject cv = d.value("cvar").toObject();
 
         // Header strip with position + confidence
-        auto* hdr = new QLabel(QString("Position %1  |  Confidence %2%  |  1-day horizon")
+        auto* hdr = new QLabel(tr("Position %1  |  Confidence %2%  |  1-day horizon")
                                    .arg(gs_fmt_money(pos)).arg(conf * 100, 0, 'f', 1));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -675,7 +675,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         }
         results_layout_->addWidget(table);
 
-        status_label_->setText(QString("VaR(%1%) param=%2  hist=%3  mc=%4  cvar=%5")
+        status_label_->setText(tr("VaR(%1%) param=%2  hist=%3  mc=%4  cvar=%5")
                                    .arg(conf * 100, 0, 'f', 0)
                                    .arg(gs_fmt_money(parm.value("var_amount").toDouble()))
                                    .arg(gs_fmt_money(hist.value("var_amount").toDouble()))
@@ -694,7 +694,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         QStringList parts;
         for (auto it = positions.begin(); it != positions.end(); ++it)
             parts << QString("%1: %2").arg(it.key(), gs_fmt_money(it.value().toDouble()));
-        auto* alloc = new QLabel(QString("Portfolio %1  |  %2").arg(gs_fmt_money(pos), parts.join("  •  ")));
+        auto* alloc = new QLabel(tr("Portfolio %1  |  %2").arg(gs_fmt_money(pos), parts.join("  •  ")));
         alloc->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New';"
                                       "padding:8px 10px; background:%2; border:1px solid %3;")
                                   .arg(ui::colors::TEXT_PRIMARY(), ui::colors::BG_SURFACE(),
@@ -728,7 +728,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         results_layout_->addWidget(gs_card_row(summary_cards, this));
 
         // Worst/best name strip
-        auto* wb = new QLabel(QString("Worst:  %1   |   Best:  %2").arg(worst_name, best_name));
+        auto* wb = new QLabel(tr("Worst:  %1   |   Best:  %2").arg(worst_name, best_name));
         wb->setStyleSheet(QString("color:%1; font-size:10px; font-family:'Courier New';"
                                   "padding:6px 10px; background:%2; border-left:3px solid %3;")
                               .arg(ui::colors::TEXT_SECONDARY(), ui::colors::BG_SURFACE(),
@@ -769,7 +769,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         }
         results_layout_->addWidget(table);
 
-        status_label_->setText(QString("Worst: %1  (%2)  |  %3 scenarios")
+        status_label_->setText(tr("Worst: %1  (%2)  |  %3 scenarios")
                                    .arg(gs_fmt_signed_money(worst_pnl), worst_name).arg(scenarios.size()));
         return;
     }
@@ -792,7 +792,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
         const int trades = m.value("num_trades").toInt();
 
         // Header strip
-        auto* hdr = new QLabel(QString("%1  |  %2  |  %3  →  %4  |  Initial %5")
+        auto* hdr = new QLabel(tr("%1  |  %2  |  %3  →  %4  |  Initial %5")
                                    .arg(strategy.toUpper().replace('_', ' '), ticker, start, end,
                                         gs_fmt_money(init_cap)));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
@@ -879,7 +879,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
             results_layout_->addWidget(eq_table);
         }
 
-        status_label_->setText(QString("%1 on %2: %3 over %4 trades  (Sharpe %5)")
+        status_label_->setText(tr("%1 on %2: %3 over %4 trades  (Sharpe %5)")
                                    .arg(strategy, ticker).arg(gs_fmt_pct(total_ret)).arg(trades)
                                    .arg(sharpe, 0, 'f', 2));
         return;
@@ -931,7 +931,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
             table->setMaximumHeight(qMin(ordered_keys.size() * 24 + 32, 280));
             for (int i = 0; i < ordered_keys.size(); ++i) {
                 const int k = ordered_keys[i];
-                table->setItem(i, 0, new QTableWidgetItem(QString("p%1").arg(k)));
+                table->setItem(i, 0, new QTableWidgetItem(tr("p%1").arg(k)));
                 auto* v_item = new QTableWidgetItem(gs_fmt_num(pcts.value(QString::number(k)).toDouble(), 4));
                 v_item->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
                 table->setItem(i, 1, v_item);
@@ -940,7 +940,7 @@ void QuantModulePanel::display_gs_result(const QString& command, const QJsonObje
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("μ=%1  σ=%2  n=%3")
+        status_label_->setText(tr("μ=%1  σ=%2  n=%3")
                                    .arg(d.value("mean").toDouble(), 0, 'f', 3)
                                    .arg(d.value("std").toDouble(), 0, 'f', 3)
                                    .arg(d.value("count").toInt()));

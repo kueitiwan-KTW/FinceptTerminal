@@ -495,7 +495,7 @@ void QuantModulePanel::display_cfa_result(const QString& command, const QJsonObj
     const QString analysis_type = payload.value("analysis_type").toString(command);
 
     // ── Header ──────────────────────────────────────────────────────────────
-    auto* header = new QLabel(QString("%1  •  %2  •  %3 ms")
+    auto* header = new QLabel(tr("%1  •  %2  •  %3 ms")
                                   .arg(analysis_type.toUpper())
                                   .arg(method)
                                   .arg(QString::number(calc_time * 1000.0, 'f', 1)));
@@ -507,7 +507,7 @@ void QuantModulePanel::display_cfa_result(const QString& command, const QJsonObj
     // ── validate_data has its own report shape ──────────────────────────────
     if (command == "validate_data") {
         const double score = result.value("quality_score").toDouble();
-        auto* score_lbl = new QLabel(QString("Quality Score: %1 / 100").arg(score, 0, 'f', 1));
+        auto* score_lbl = new QLabel(tr("Quality Score: %1 / 100").arg(score, 0, 'f', 1));
         score_lbl->setStyleSheet(QString("color:%1; font-size:16px; font-weight:700;")
                                      .arg(score >= 80 ? ui::colors::POSITIVE()
                                           : score >= 50 ? ui::colors::WARNING()
@@ -590,7 +590,7 @@ void QuantModulePanel::display_cfa_result(const QString& command, const QJsonObj
             parts.reserve(arr.size());
             for (const auto& v : arr)
                 parts << QString::number(v.toDouble(), 'f', 4);
-            auto* fcst = new QLabel(QString("Forecast (%1 steps): %2").arg(arr.size()).arg(parts.join(", ")));
+            auto* fcst = new QLabel(tr("Forecast (%1 steps): %2").arg(arr.size()).arg(parts.join(", ")));
             fcst->setWordWrap(true);
             fcst->setStyleSheet(QString("color:%1; padding:6px 0;").arg(ui::colors::TEXT_PRIMARY()));
             results_layout_->addWidget(fcst);

@@ -201,7 +201,7 @@ QWidget* GovDataScreen::build_toolbar() {
 
     // Source count badge — compact pill, stored as member for refresh_theme()
     const auto& providers = services::GovDataService::providers();
-    provider_badge_ = new QLabel(QString::number(providers.size()) + " PORTALS");
+    provider_badge_ = new QLabel(QString::number(providers.size()) + tr(" PORTALS"));
     provider_badge_->setFixedHeight(20);
     provider_badge_->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     hl->addWidget(provider_badge_);
@@ -246,7 +246,7 @@ QWidget* GovDataScreen::build_sidebar() {
         auto* item = new QListWidgetItem(provider_list_);
         // Flag + name on first line, country on tooltip
         item->setText(QString("%1  %2").arg(prov.flag, prov.name));
-        item->setToolTip(prov.description + "\n" + prov.country);
+        item->setToolTip(prov.description + tr("\n") + prov.country);
         item->setData(Qt::UserRole, prov.id);
         item->setData(Qt::UserRole + 1, prov.color);
     }

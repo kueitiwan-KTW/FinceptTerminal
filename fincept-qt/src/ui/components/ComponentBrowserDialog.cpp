@@ -158,7 +158,7 @@ void ComponentBrowserDialog::rebuild_cards() {
     }
     grid_layout_->setRowStretch(row + 1, 1);
 
-    count_label_->setText(QString("%1 component%2").arg(shown).arg(shown == 1 ? "" : "s"));
+    count_label_->setText(tr("%n component(s)", nullptr, shown));
 }
 
 void ComponentBrowserDialog::on_search_changed(const QString& query) {

@@ -160,7 +160,7 @@ void DockScreenRouter::attach_group_badge_to_tab(const QString& id, QWidget* scr
         // Non-linked panel: still show the badge so the control is uniform,
         // but disable interaction — there is no IGroupLinked target.
         badge->setEnabled(false);
-        badge->setToolTip(QStringLiteral("This panel doesn't support symbol groups"));
+        badge->setToolTip(tr("This panel doesn't support symbol groups"));
     }
     // Insert at index 0 — before the icon/title label.
     layout->insertWidget(0, badge);
@@ -651,10 +651,10 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
     // Rename — reuses the inline editor code path. Simpler to pop a modal
     // prompt here; the inline editor requires the label's geometry which is
     // awkward to invoke from a menu click.
-    auto* act_rename = menu.addAction("Rename Tab…");
+    auto* act_rename = menu.addAction(tr("Rename Tab…"));
     connect(act_rename, &QAction::triggered, this, [this, id, dw]() {
         bool ok = false;
-        const QString name = QInputDialog::getText(nullptr, "Rename Tab", "New name:",
+        const QString name = QInputDialog::getText(nullptr, tr("Rename Tab"), tr("New name:"),
                                                    QLineEdit::Normal, dw->windowTitle(), &ok);
         if (ok && !name.trimmed().isEmpty()) {
             dw->setWindowTitle(name.trimmed());
@@ -666,7 +666,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
     // from here reliably without re-running the factory lookup, so we flag the
     // item as enabled and let duplicate_panel no-op with a log warning on
     // unsupported screens.
-    auto* act_dup = menu.addAction("Duplicate Panel");
+    auto* act_dup = menu.addAction(tr("Duplicate Panel"));
     connect(act_dup, &QAction::triggered, this, [this, id]() { duplicate_panel(id); });
 
     menu.addSeparator();
@@ -675,7 +675,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
     // re-dock a floating widget we close its view and re-open it, which
     // causes ADS to re-attach it to the main container.
     const bool floating = dw->isFloating();
-    auto* act_float = menu.addAction(floating ? "Re-dock Panel" : "Float Panel");
+    auto* act_float = menu.addAction(floating ? tr("Re-dock Panel") : tr("Float Panel"));
     connect(act_float, &QAction::triggered, this, [this, dw, floating]() {
         if (floating) {
             dw->toggleView(false);
@@ -693,7 +693,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
     if (floating) {
         if (auto* fc = dw->floatingDockContainer()) {
             const bool on = fc->windowFlags().testFlag(Qt::WindowStaysOnTopHint);
-            auto* act_top = menu.addAction("Always on Top");
+            auto* act_top = menu.addAction(tr("Always on Top"));
             act_top->setCheckable(true);
             act_top->setChecked(on);
             connect(act_top, &QAction::triggered, this, [fc, on]() {
@@ -715,12 +715,12 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
     // dw->widget(), so cast from the stored screen to test the interface.
     if (auto* screen = screens_.value(id, nullptr)) {
         if (auto* linked = dynamic_cast<IGroupLinked*>(screen)) {
-            auto* group_menu = menu.addMenu("Link to Group");
+            auto* group_menu = menu.addMenu(tr("Link to Group"));
             group_menu->setStyleSheet(menu.styleSheet());
             const SymbolGroup current = linked->group();
             auto& registry = SymbolGroupRegistry::instance();
 
-            auto* unlink = group_menu->addAction("(None)");
+            auto* unlink = group_menu->addAction(tr("(None)"));
             unlink->setCheckable(true);
             unlink->setChecked(current == SymbolGroup::None);
             connect(unlink, &QAction::triggered, this, [this, id]() {
@@ -742,7 +742,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
                                     .arg(registry.name(g))
                                     .arg(symbol_group_letter(g));
                 if (!en)
-                    label += QStringLiteral("  — disabled");
+                    label += tr("  — disabled");
                 auto* a = group_menu->addAction(label);
                 a->setCheckable(true);
                 a->setChecked(g == current);
@@ -771,7 +771,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
     // Phase 5: tear off into a new WindowFrame. Always offered; the call
     // itself logs + no-ops if the panel can't be torn off (eager screen
     // without a factory).
-    auto* act_tear_off = menu.addAction("Tear off into new window");
+    auto* act_tear_off = menu.addAction(tr("Tear off into new window"));
     connect(act_tear_off, &QAction::triggered, this, [this, id]() { tear_off_to_new_frame(id); });
 
     // Phase 5: move to another open WindowFrame. Submenu lists every
@@ -786,7 +786,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
             if (f && f != this_frame)
                 ++peers;
         if (peers > 0) {
-            auto* move_menu = menu.addMenu("Move to window");
+            auto* move_menu = menu.addMenu(tr("Move to window"));
             move_menu->setStyleSheet(menu.styleSheet());
             int display_num = 1;
             for (auto* f : frames) {
@@ -795,7 +795,7 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
                     ++display_num;
                     continue;
                 }
-                const QString label = QString("Window %1").arg(display_num);
+                const QString label = tr("Window %1").arg(display_num);
                 auto* a = move_menu->addAction(label);
                 connect(a, &QAction::triggered, this, [this, id, f]() {
                     if (f && f->dock_router())
@@ -810,13 +810,13 @@ void DockScreenRouter::show_tab_context_menu(const QString& id, const QPoint& gl
 
     // Copy tab title to clipboard — small but handy for sharing a panel id
     // over chat / for scripting.
-    auto* act_copy = menu.addAction("Copy Tab Title");
+    auto* act_copy = menu.addAction(tr("Copy Tab Title"));
     connect(act_copy, &QAction::triggered, this, [dw]() {
         QApplication::clipboard()->setText(dw->windowTitle());
     });
 
     // Close tab.
-    auto* act_close = menu.addAction("Close Tab");
+    auto* act_close = menu.addAction(tr("Close Tab"));
     connect(act_close, &QAction::triggered, this, [dw]() { dw->toggleView(false); });
 
     menu.exec(global_pos);

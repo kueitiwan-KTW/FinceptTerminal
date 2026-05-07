@@ -35,7 +35,7 @@ AlgoTradingScreen::AlgoTradingScreen(QWidget* parent) : QWidget(parent) {
                     if (d.status == "running" || d.status == "starting")
                         ++active;
                 }
-                deploy_count_label_->setText(QString("%1 LIVE").arg(active));
+                deploy_count_label_->setText(tr("%1 LIVE").arg(active));
             });
 
     LOG_INFO("AlgoTrading", "Screen constructed");
@@ -150,7 +150,7 @@ QWidget* AlgoTradingScreen::build_status_bar() {
         QString("color:%1; font-size:8px; font-family:%2;").arg(ui::colors::TEXT_TERTIARY()).arg(ui::fonts::DATA_FAMILY);
     auto* l1 = new QLabel(tr("ENGINE:"), bar);
     l1->setStyleSheet(s);
-    auto* v1 = new QLabel("ALGO v1.0", bar);
+    auto* v1 = new QLabel(tr("ALGO v1.0"), bar);
     v1->setStyleSheet(QString("color:%1; font-size:8px; font-weight:700; font-family:%2;")
                           .arg(ui::colors::TEXT_PRIMARY())
                           .arg(ui::fonts::DATA_FAMILY));

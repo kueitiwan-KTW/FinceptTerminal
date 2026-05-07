@@ -2,6 +2,7 @@
 
 #include "core/config/ProfileManager.h"
 
+#include <QCoreApplication>
 #include <QSettings>
 
 namespace fincept {
@@ -58,7 +59,7 @@ void SymbolGroupRegistry::reload() {
 QString SymbolGroupRegistry::default_name(SymbolGroup g) {
     if (g == SymbolGroup::None)
         return {};
-    return QStringLiteral("Group %1").arg(symbol_group_letter(g));
+    return QCoreApplication::translate("FinceptTerminal", "Group %1").arg(symbol_group_letter(g));
 }
 
 QColor SymbolGroupRegistry::default_color(SymbolGroup g) {

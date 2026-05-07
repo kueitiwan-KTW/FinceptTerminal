@@ -1279,7 +1279,7 @@ void QuantLibScreen::display_result_array(const QJsonArray& arr) {
         result_table_->resizeColumnsToContents();
         result_table_->setSortingEnabled(true);
         result_stack_->setCurrentIndex(1);
-        result_status_->setText(QString::number(rows) + " results");
+        result_status_->setText(QString::number(rows) + tr(" results"));
     } else {
         // Array of scalars (e.g. currency list, calendar list) → two-column table: Index | Value
         result_table_->setSortingEnabled(false);
@@ -1294,7 +1294,7 @@ void QuantLibScreen::display_result_array(const QJsonArray& arr) {
         result_table_->resizeColumnsToContents();
         result_table_->setSortingEnabled(true);
         result_stack_->setCurrentIndex(1);
-        result_status_->setText(QString::number(rows) + " items");
+        result_status_->setText(QString::number(rows) + tr(" items"));
     }
 }
 
@@ -1303,7 +1303,7 @@ void QuantLibScreen::display_result(const QJsonObject& result) {
     if (result.isEmpty()) {
         result_view_->setPlainText("(empty response)");
         result_stack_->setCurrentIndex(0);
-        result_status_->setText("OK");
+        result_status_->setText(tr("OK"));
         return;
     }
 
@@ -1344,7 +1344,7 @@ void QuantLibScreen::display_result(const QJsonObject& result) {
             result_table_->resizeColumnsToContents();
             result_table_->setSortingEnabled(true);
             result_stack_->setCurrentIndex(1);
-            result_status_->setText(QString::number(obj.size()) + " fields");
+            result_status_->setText(QString::number(obj.size()) + tr(" fields"));
             return;
         }
     }
@@ -1352,7 +1352,7 @@ void QuantLibScreen::display_result(const QJsonObject& result) {
     // Fallback: raw JSON
     result_view_->setPlainText(QJsonDocument(result).toJson(QJsonDocument::Indented));
     result_stack_->setCurrentIndex(0);
-    result_status_->setText("OK");
+    result_status_->setText(tr("OK"));
 }
 
 void QuantLibScreen::display_error(const QString& error) {
@@ -1365,7 +1365,7 @@ void QuantLibScreen::display_error(const QString& error) {
 void QuantLibScreen::set_loading(bool loading) {
     loading_ = loading;
     exec_btn_->setEnabled(!loading);
-    exec_btn_->setText(loading ? "COMPUTING..." : "EXECUTE COMPUTATION");
+    exec_btn_->setText(loading ? tr("COMPUTING...") : tr("EXECUTE COMPUTATION"));
 }
 
 // ── IStatefulScreen ───────────────────────────────────────────────────────────

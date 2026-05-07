@@ -156,7 +156,7 @@ void ChatSessionPanel::populate_list(const QVector<ChatSession>& sessions) {
     for (const auto& s : sessions) {
         auto* item = new QListWidgetItem(session_list_);
         const QString display = s.title.isEmpty() ? "(Untitled)" : s.title;
-        item->setText(display + QString("\n%1 msg").arg(s.message_count));
+        item->setText(display + tr("\n%1 msg").arg(s.message_count));
         item->setData(Qt::UserRole, s.uuid);
         item->setData(Qt::UserRole + 1, s.title);
         if (s.uuid == active_uuid_) {
@@ -196,7 +196,7 @@ void ChatSessionPanel::set_active_session(const QString& uuid) {
 }
 
 void ChatSessionPanel::update_stats(const ChatStats& stats) {
-    stats_lbl_->setText(QString("%1 sessions | %2 messages").arg(stats.total_sessions).arg(stats.total_messages));
+    stats_lbl_->setText(tr("%1 sessions | %2 messages").arg(stats.total_sessions).arg(stats.total_messages));
 }
 
 // ── Slots ─────────────────────────────────────────────────────────────────────
@@ -228,7 +228,7 @@ void ChatSessionPanel::on_delete_clicked() {
     }
     const QString confirm_name = title.isEmpty() ? "(Untitled)" : title;
 
-    if (QMessageBox::question(this, "Delete Conversation", QString("Delete \"%1\"?").arg(confirm_name),
+    if (QMessageBox::question(this, tr("Delete Conversation"), tr("Delete \"%1\"?").arg(confirm_name),
                               QMessageBox::Yes | QMessageBox::No) != QMessageBox::Yes)
         return;
 
@@ -249,7 +249,7 @@ void ChatSessionPanel::on_rename_clicked() {
 
     bool ok = false;
     const QString new_title =
-        QInputDialog::getText(this, "Rename Conversation", "New title:", QLineEdit::Normal, current_title, &ok);
+        QInputDialog::getText(this, tr("Rename Conversation"), tr("New title:"), QLineEdit::Normal, current_title, &ok);
     if (ok && !new_title.trimmed().isEmpty())
         emit rename_session_requested(active_uuid_, new_title.trimmed());
 }
@@ -261,12 +261,12 @@ void ChatSessionPanel::on_export_clicked() {
         uuids.append(s.uuid);
 
     if (uuids.isEmpty()) {
-        QMessageBox::information(this, "Export", "No conversations to export.");
+        QMessageBox::information(this, tr("Export"), tr("No conversations to export."));
         return;
     }
 
     const QString path =
-        QFileDialog::getSaveFileName(this, "Export Conversations", "fincept_chat_export.json", "JSON (*.json)");
+        QFileDialog::getSaveFileName(this, tr("Export Conversations"), "fincept_chat_export.json", tr("JSON (*.json)"));
     if (path.isEmpty())
         return;
 
@@ -277,17 +277,17 @@ void ChatSessionPanel::on_export_clicked() {
         export_btn_->setEnabled(true);
         export_btn_->setText(tr("Export"));
         if (!ok) {
-            QMessageBox::warning(this, "Export Failed", err);
+            QMessageBox::warning(this, tr("Export Failed"), err);
             return;
         }
         QFile file(path);
         if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-            QMessageBox::warning(this, "Export Failed", "Could not write file.");
+            QMessageBox::warning(this, tr("Export Failed"), tr("Could not write file."));
             return;
         }
         file.write(QJsonDocument(payload).toJson(QJsonDocument::Indented));
         file.close();
-        QMessageBox::information(this, "Export", QString("Exported %1 conversations.").arg(payload.size()));
+        QMessageBox::information(this, tr("Export"), tr("Exported %1 conversations.").arg(payload.size()));
     });
 }
 

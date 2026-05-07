@@ -125,7 +125,7 @@ static QWidget* build_condition_row(QVBoxLayout* /*owner_layout*/, QWidget* pare
     val_spin->setValue(0);
 
     // Remove
-    auto* rm_btn = new QPushButton(QStringLiteral("X"), row);
+    auto* rm_btn = new QPushButton(tr("X"), row);
     rm_btn->setFixedSize(28, 28);
     rm_btn->setCursor(Qt::PointingHandCursor);
     rm_btn->setStyleSheet(QString("QPushButton { background: transparent; color: %1; border: 1px solid %2;"
@@ -305,7 +305,7 @@ void ScannerPanel::build_ui() {
     logic_row->addWidget(logic_lbl);
 
     logic_combo_ = new QComboBox(left_col);
-    logic_combo_->addItems({"AND", "OR"});
+    logic_combo_->addItems({tr("AND"), tr("OR")});
     logic_combo_->setStyleSheet(kComboStyle());
     logic_combo_->setFixedHeight(26);
     logic_combo_->setFixedWidth(80);
@@ -520,7 +520,7 @@ void ScannerPanel::on_scan() {
             symbols.append(s);
     }
 
-    status_label_->setText(QString("Scanning %1 symbols...").arg(symbols.size()));
+    status_label_->setText(tr("Scanning %1 symbols...").arg(symbols.size()));
     status_label_->setStyleSheet(QString("color: #FFC400; font-size: %1px; %2 background: transparent; border: none;")
                                      .arg(fincept::ui::fonts::SMALL)
                                      .arg(kMonoFont()));
@@ -626,7 +626,7 @@ void ScannerPanel::on_scan_result(const QJsonObject& payload) {
 
 void ScannerPanel::on_error(const QString& context, const QString& msg) {
     if (status_label_) {
-        status_label_->setText(QString("Error [%1]: %2").arg(context, msg));
+        status_label_->setText(tr("Error [%1]: %2").arg(context, msg));
         status_label_->setStyleSheet(QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                                          .arg(fincept::ui::colors::NEGATIVE())
                                          .arg(fincept::ui::fonts::SMALL)

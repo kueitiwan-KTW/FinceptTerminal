@@ -518,8 +518,8 @@ SellAssetDialog::SellAssetDialog(const QString& symbol, double held_qty, QWidget
     form->setSpacing(8);
 
     quantity_edit_ = new QLineEdit;
-    quantity_edit_->setPlaceholderText(QString("Max %1").arg(held_qty));
-    form->addRow("Quantity:", quantity_edit_);
+    quantity_edit_->setPlaceholderText(tr("Max %1").arg(held_qty));
+    form->addRow(tr("Quantity:"), quantity_edit_);
 
     price_edit_ = new QLineEdit;
     price_edit_->setPlaceholderText(tr("Sell price"));
@@ -627,8 +627,8 @@ ImportPortfolioDialog::ImportPortfolioDialog(const QVector<portfolio::Portfolio>
                                        "QPushButton:hover { background:%1; color:%2; }")
                                    .arg(ui::colors::CYAN(), ui::colors::BG_BASE()));
     connect(demo_dl_btn, &QPushButton::clicked, this, [this]() {
-        QString path = QFileDialog::getSaveFileName(this, "Save Demo Portfolio JSON", "demo_portfolio.json",
-                                                    "JSON Files (*.json)");
+        QString path = QFileDialog::getSaveFileName(this, tr("Save Demo Portfolio JSON"), "demo_portfolio.json",
+                                                    tr("JSON Files (*.json)"));
         if (path.isEmpty())
             return;
 
@@ -674,10 +674,10 @@ ImportPortfolioDialog::ImportPortfolioDialog(const QVector<portfolio::Portfolio>
             f.write(QJsonDocument(root).toJson(QJsonDocument::Indented));
             f.close();
             services::FileManagerService::instance().import_file(path, "portfolio");
-            QMessageBox::information(this, "Demo JSON Saved",
-                                     "Demo portfolio JSON saved.\nYou can now import it using the BROWSE button.");
+            QMessageBox::information(this, tr("Demo JSON Saved"),
+                                     tr("Demo portfolio JSON saved.\nYou can now import it using the BROWSE button."));
         } else {
-            QMessageBox::warning(this, "Save Failed", "Could not write to: " + path);
+            QMessageBox::warning(this, tr("Save Failed"), tr("Could not write to: ") + path);
         }
     });
     demo_row->addWidget(demo_dl_btn);
@@ -741,7 +741,7 @@ ImportPortfolioDialog::ImportPortfolioDialog(const QVector<portfolio::Portfolio>
 }
 
 void ImportPortfolioDialog::browse_file() {
-    QString path = QFileDialog::getOpenFileName(this, "Select Portfolio JSON", QString(), "JSON Files (*.json)");
+    QString path = QFileDialog::getOpenFileName(this, tr("Select Portfolio JSON"), QString(), tr("JSON Files (*.json)"));
     if (!path.isEmpty()) {
         file_edit_->setText(path);
         status_label_->setText(tr("File selected: ") + QFileInfo(path).fileName());

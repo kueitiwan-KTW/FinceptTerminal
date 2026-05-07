@@ -592,7 +592,7 @@ void CreateAgentPanel::setup_connections() {
         test_btn_->setText(tr("RUN TEST"));
         if (r.success) {
             test_result_->setPlainText(r.response);
-            test_status_lbl_->setText(QString("Done in %1ms").arg(r.execution_time_ms));
+            test_status_lbl_->setText(tr("Done in %1ms").arg(r.execution_time_ms));
             test_status_lbl_->setStyleSheet(
                 QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
         } else {
@@ -610,7 +610,7 @@ void CreateAgentPanel::setup_connections() {
         test_btn_->setText(tr("RUN TEST"));
         if (r.success) {
             test_result_->setPlainText(r.response);
-            test_status_lbl_->setText(QString("Done in %1ms").arg(r.execution_time_ms));
+            test_status_lbl_->setText(tr("Done in %1ms").arg(r.execution_time_ms));
             test_status_lbl_->setStyleSheet(
                 QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
         } else {
@@ -811,7 +811,7 @@ void CreateAgentPanel::load_agent_into_form(const AgentConfig& cfg) {
 
     agentic_memory_user_id_edit_->setText(c["agentic_memory_user_id"].toString());
 
-    status_lbl_->setText(QString("Loaded: %1").arg(cfg.name));
+    status_lbl_->setText(tr("Loaded: %1").arg(cfg.name));
     status_lbl_->setStyleSheet(QString("color:%1;font-size:10px;padding:3px 0;").arg(ui::colors::CYAN()));
 }
 
@@ -972,7 +972,7 @@ void CreateAgentPanel::test_agent() {
 
 void CreateAgentPanel::export_json() {
     const QString path =
-        QFileDialog::getSaveFileName(this, "Export Agent Config", "agent_config.json", "JSON (*.json)");
+        QFileDialog::getSaveFileName(this, tr("Export Agent Config"), "agent_config.json", tr("JSON (*.json)"));
     if (path.isEmpty())
         return;
     QJsonObject out;
@@ -988,7 +988,7 @@ void CreateAgentPanel::export_json() {
 }
 
 void CreateAgentPanel::import_json() {
-    const QString path = QFileDialog::getOpenFileName(this, "Import Agent Config", {}, "JSON (*.json)");
+    const QString path = QFileDialog::getOpenFileName(this, tr("Import Agent Config"), {}, tr("JSON (*.json)"));
     if (path.isEmpty())
         return;
     QFile file(path);

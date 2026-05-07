@@ -85,10 +85,10 @@ void LockPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("STAKE / LOCK"), head);
+    auto* title = new QLabel(tr("STAKE / LOCK"), head);
     title->setObjectName(QStringLiteral("lockPanelTitle"));
     auto* subtitle = new QLabel(
-        QStringLiteral("veFNCPT — locked $FNCPT earns USDC yield"), head);
+        tr("veFNCPT — locked $FNCPT earns USDC yield"), head);
     subtitle->setObjectName(QStringLiteral("lockPanelHeadCaption"));
     hl->addWidget(title);
     hl->addStretch();
@@ -107,7 +107,7 @@ void LockPanel::build_ui() {
         row->setSpacing(6);
         auto* col_l = new QVBoxLayout;
         col_l->setSpacing(2);
-        auto* cap = new QLabel(QStringLiteral("AMOUNT"), body);
+        auto* cap = new QLabel(tr("AMOUNT"), body);
         cap->setObjectName(QStringLiteral("lockPanelCaption"));
         col_l->addWidget(cap);
         amount_input_ = new QLineEdit(body);
@@ -122,7 +122,7 @@ void LockPanel::build_ui() {
 
         auto* col_t = new QVBoxLayout;
         col_t->setSpacing(2);
-        auto* cap_t = new QLabel(QStringLiteral("TOKEN"), body);
+        auto* cap_t = new QLabel(tr("TOKEN"), body);
         cap_t->setObjectName(QStringLiteral("lockPanelCaption"));
         col_t->addWidget(cap_t);
         auto* token_chip = new QLabel(QStringLiteral("$FNCPT"), body);
@@ -147,7 +147,7 @@ void LockPanel::build_ui() {
 
     // DURATION row
     {
-        auto* cap = new QLabel(QStringLiteral("DURATION"), body);
+        auto* cap = new QLabel(tr("DURATION"), body);
         cap->setObjectName(QStringLiteral("lockPanelCaption"));
         bl->addWidget(cap);
 
@@ -162,11 +162,11 @@ void LockPanel::build_ui() {
             duration_group_->addButton(slot, static_cast<int>(d));
             dur_row->addWidget(slot);
         };
-        add_dur(Duration::ThreeMonths, dur_3mo_, QStringLiteral("3 MO"));
-        add_dur(Duration::SixMonths,   dur_6mo_, QStringLiteral("6 MO"));
-        add_dur(Duration::OneYear,     dur_1yr_, QStringLiteral("1 YR"));
-        add_dur(Duration::TwoYears,    dur_2yr_, QStringLiteral("2 YR"));
-        add_dur(Duration::FourYears,   dur_4yr_, QStringLiteral("4 YR"));
+        add_dur(Duration::ThreeMonths, dur_3mo_, tr("3 MO"));
+        add_dur(Duration::SixMonths,   dur_6mo_, tr("6 MO"));
+        add_dur(Duration::OneYear,     dur_1yr_, tr("1 YR"));
+        add_dur(Duration::TwoYears,    dur_2yr_, tr("2 YR"));
+        add_dur(Duration::FourYears,   dur_4yr_, tr("4 YR"));
         dur_1yr_->setChecked(true);
         dur_row->addStretch(1);
         bl->addLayout(dur_row);
@@ -192,9 +192,9 @@ void LockPanel::build_ui() {
             row->addWidget(v);
             pl->addLayout(row);
         };
-        add_kv(QStringLiteral("WEIGHT"), weight_calc_);
-        add_kv(QStringLiteral("EST. YIELD"), est_yield_);
-        add_kv(QStringLiteral("TIER"), tier_preview_);
+        add_kv(tr("WEIGHT"), weight_calc_);
+        add_kv(tr("EST. YIELD"), est_yield_);
+        add_kv(tr("TIER"), tier_preview_);
         bl->addWidget(preview);
     }
 
@@ -501,7 +501,7 @@ void LockPanel::recompute_preview() {
     if (tier_after == current_tier_) {
         tier_preview_->setText(fincept::billing::TierConfig::label_for(current_tier_));
     } else {
-        tier_preview_->setText(QStringLiteral("%1 → %2  (after lock)")
+        tier_preview_->setText(tr("%1 → %2  (after lock)")
             .arg(fincept::billing::TierConfig::label_for(current_tier_))
             .arg(fincept::billing::TierConfig::label_for(tier_after)));
     }
@@ -582,25 +582,25 @@ void LockPanel::on_lock_clicked() {
         // Build the user-facing decoded summary. The wallet shows its own
         // decoded preview independently; this is the pre-sign sanity check.
         WalletActionSummary summary;
-        summary.title = QStringLiteral("LOCK $FNCPT");
+        summary.title = self->tr("LOCK $FNCPT");
         summary.lede = self->tr(
             "Approve in your wallet to escrow $FNCPT under the fincept_lock "
             "program. The terminal does not hold your funds — the on-chain "
             "program does, and only releases them after the unlock date.");
-        summary.rows.append({QStringLiteral("AMOUNT"),
+        summary.rows.append({self->tr("AMOUNT"),
                              QStringLiteral("%1 $FNCPT").arg(format_token(amount_ui, 0)),
                              true});
-        summary.rows.append({QStringLiteral("DURATION"),
+        summary.rows.append({self->tr("DURATION"),
                              fincept::wallet::StakingService::label_for(d), true});
         const double mult = fincept::wallet::StakingService::multiplier_for(d);
-        summary.rows.append({QStringLiteral("WEIGHT"),
+        summary.rows.append({self->tr("WEIGHT"),
                              QStringLiteral("%1 veFNCPT")
                                  .arg(format_token(amount_ui * mult, 1)),
                              true});
         summary.warnings.append(self->tr(
             "Locked $FNCPT cannot be withdrawn before the unlock date. "
             "If you need liquidity sooner, do not lock."));
-        summary.primary_button_text = QStringLiteral("LOCK");
+        summary.primary_button_text = self->tr("LOCK");
         summary.primary_is_safe = false; // irreversible action — extra emphasis
         summary.arm_delay_ms = 2500;
 

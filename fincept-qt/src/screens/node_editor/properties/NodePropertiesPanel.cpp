@@ -208,7 +208,7 @@ void NodePropertiesPanel::build_editor(const NodeDef& node, const NodeTypeDef& t
     editor_layout_->insertWidget(pos++, settings_header);
 
     // Disabled toggle
-    auto* disabled_check = new QCheckBox("Disabled");
+    auto* disabled_check = new QCheckBox(tr("Disabled"));
     disabled_check->setChecked(node.disabled);
     disabled_check->setStyleSheet(
         QString("QCheckBox { color: %1; font-family: Consolas; font-size: 12px; }"
@@ -218,7 +218,7 @@ void NodePropertiesPanel::build_editor(const NodeDef& node, const NodeTypeDef& t
     editor_layout_->insertWidget(pos++, disabled_check);
 
     // Continue on fail toggle
-    auto* cof_check = new QCheckBox("Continue on Fail");
+    auto* cof_check = new QCheckBox(tr("Continue on Fail"));
     cof_check->setChecked(node.continue_on_fail);
     cof_check->setStyleSheet(disabled_check->styleSheet());
     editor_layout_->insertWidget(pos++, cof_check);

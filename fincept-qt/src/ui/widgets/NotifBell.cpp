@@ -26,7 +26,7 @@ void NotifBell::set_unread(int count) {
 
 void NotifBell::update_label() {
     const QString color = unread_ > 0 ? ui::colors::WARNING() : ui::colors::TEXT_SECONDARY();
-    const QString text = unread_ > 0 ? QString("ALERTS [%1]").arg(unread_) : QString("ALERTS");
+    const QString text = unread_ > 0 ? tr("ALERTS [%1]").arg(unread_) : tr("ALERTS");
 
     setText(text);
     setStyleSheet(QString("QPushButton { background: transparent; color: %1; border: none; "

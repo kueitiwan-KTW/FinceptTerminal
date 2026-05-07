@@ -176,7 +176,7 @@ void PortfolioOrderPanel::update_display() {
     mv_label_->setText(QString("%1 %2").arg(currency_).arg(QString::number(holding_->market_value, 'f', 2)));
 
     // Update submit button text
-    submit_btn_->setText(QString("OPEN %1 ORDER").arg(side_));
+    submit_btn_->setText(tr("OPEN %1 ORDER").arg(side_));
     const char* btn_color = (side_ == "BUY") ? ui::colors::POSITIVE : ui::colors::NEGATIVE;
     const char* btn_text_color = (side_ == "BUY") ? "#000" : "#fff";
     submit_btn_->setStyleSheet(QString("QPushButton { background:%1; color:%2; border:none;"

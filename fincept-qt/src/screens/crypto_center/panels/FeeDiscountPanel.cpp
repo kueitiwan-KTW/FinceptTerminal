@@ -75,7 +75,7 @@ void FeeDiscountPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("FEE DISCOUNT"), head);
+    auto* title = new QLabel(tr("FEE DISCOUNT"), head);
     title->setObjectName(QStringLiteral("feeDiscountTitle"));
     heading_status_ = new QLabel(QStringLiteral("—"), head);
     heading_status_->setObjectName(QStringLiteral("feeDiscountHeadStatus"));
@@ -110,9 +110,9 @@ void FeeDiscountPanel::build_ui() {
         col->addWidget(v_out);
         rl->addLayout(col);
     };
-    add_kv(QStringLiteral("HOLDING"), balance_value_,
+    add_kv(tr("HOLDING"), balance_value_,
            QStringLiteral("feeDiscountValue"));
-    add_kv(QStringLiteral("THRESHOLD"), threshold_value_,
+    add_kv(tr("THRESHOLD"), threshold_value_,
            QStringLiteral("feeDiscountValueDim"));
     rl->addStretch(1);
     bl->addWidget(row);
@@ -125,7 +125,7 @@ void FeeDiscountPanel::build_ui() {
     progress_->setFixedHeight(8);
     bl->addWidget(progress_);
 
-    auto* skus_caption = new QLabel(QStringLiteral("APPLIED TO"), body);
+    auto* skus_caption = new QLabel(tr("APPLIED TO"), body);
     skus_caption->setObjectName(QStringLiteral("feeDiscountCaption"));
     bl->addWidget(skus_caption);
     skus_value_ = new QLabel(QStringLiteral("—"), body);
@@ -292,17 +292,17 @@ void FeeDiscountPanel::update_view() {
     const bool eligible = have_discount_ ? latest_.eligible
                                          : (fncpt_held_ >= threshold);
     if (eligible) {
-        heading_status_->setText(QStringLiteral("● %1% OFF ACTIVE").arg(discount_pct));
+        heading_status_->setText(tr("● %1% OFF ACTIVE").arg(discount_pct));
         heading_status_->setObjectName(QStringLiteral("feeDiscountHeadStatusOk"));
         const double save = FeeDiscountConfig::kReferencePriceUsd * discount_pct / 100.0;
         const double net = FeeDiscountConfig::kReferencePriceUsd - save;
         savings_value_->setText(
-            QStringLiteral("%1 → %2  (you save %3)")
+            tr("%1 → %2  (you save %3)")
                 .arg(format_usd(FeeDiscountConfig::kReferencePriceUsd))
                 .arg(format_usd(net))
                 .arg(format_usd(save)));
     } else {
-        heading_status_->setText(QStringLiteral("LOCKED"));
+        heading_status_->setText(tr("LOCKED"));
         heading_status_->setObjectName(QStringLiteral("feeDiscountHeadStatus"));
         const double need = std::max(0.0, threshold - fncpt_held_);
         savings_value_->setText(

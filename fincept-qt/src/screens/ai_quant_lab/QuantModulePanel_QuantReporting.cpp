@@ -463,7 +463,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
         const QString ic_verdict = d.value("ic_verdict").toString();
         const QString rank_verdict = d.value("rank_ic_verdict").toString();
 
-        auto* hdr = new QLabel(QString("METHOD: %1   |   ROLLING WINDOW: %2   |   %3 ROLLING POINTS")
+        auto* hdr = new QLabel(tr("METHOD: %1   |   ROLLING WINDOW: %2   |   %3 ROLLING POINTS")
                                    .arg(d.value("method").toString().toUpper())
                                    .arg(d.value("window").toInt())
                                    .arg(d.value("n_rolling_points").toInt()));
@@ -555,7 +555,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("IC: pearson=%1 spearman=%2  ICIR=%3 → %4")
+        status_label_->setText(tr("IC: pearson=%1 spearman=%2  ICIR=%3 → %4")
                                    .arg(pearson, 0, 'f', 3).arg(spearman, 0, 'f', 3)
                                    .arg(icir, 0, 'f', 3).arg(ic_verdict));
         return;
@@ -657,7 +657,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("%1: total %2%  Sharpe %3  MaxDD %4%")
+        status_label_->setText(tr("%1: total %2%  Sharpe %3  MaxDD %4%")
                                    .arg(d.value("title").toString())
                                    .arg(total_ret_pct, 0, 'f', 2).arg(sharpe, 0, 'f', 2)
                                    .arg(mdd_pct, 0, 'f', 2));
@@ -735,7 +735,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
                                          recovered ? ui::colors::POSITIVE() : ui::colors::WARNING()));
         results_layout_->addWidget(timeline);
 
-        status_label_->setText(QString("MaxDD %1%  Cur %2%  Vol %3%  Recovered: %4")
+        status_label_->setText(tr("MaxDD %1%  Cur %2%  Vol %3%  Recovered: %4")
                                    .arg(mdd_pct, 0, 'f', 2).arg(cur_dd, 0, 'f', 2)
                                    .arg(cur_vol * 100, 0, 'f', 2).arg(recovered ? "YES" : "NO"));
         return;
@@ -752,7 +752,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
         const bool monotonic = d.value("monotonic").toBool();
         const QString verdict = d.value("verdict").toString();
 
-        auto* hdr = new QLabel(QString("MODEL: %1   |   %2 QUANTILES   |   %3")
+        auto* hdr = new QLabel(tr("MODEL: %1   |   %2 QUANTILES   |   %3")
                                    .arg(model.toUpper()).arg(d.value("n_quantiles").toInt())
                                    .arg(verdict));
         const bool good = verdict.contains("STRONG") || verdict.contains("MODERATE");
@@ -818,7 +818,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("%1: IC=%2  Spread=%3 bps  → %4")
+        status_label_->setText(tr("%1: IC=%2  Spread=%3 bps  → %4")
                                    .arg(model).arg(spearman, 0, 'f', 3)
                                    .arg(ls_bps, 0, 'f', 1).arg(verdict));
         return;
@@ -832,7 +832,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
         const QString verdict = d.value("verdict").toString();
         const int n_q = d.value("n_quantiles").toInt();
 
-        auto* hdr = new QLabel(QString("%1 QUANTILES   |   %2").arg(n_q).arg(verdict));
+        auto* hdr = new QLabel(tr("%1 QUANTILES   |   %2").arg(n_q).arg(verdict));
         const bool good = verdict.contains("STRONG");
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border-left:3px solid %3;")
@@ -897,7 +897,7 @@ void QuantModulePanel::display_quant_reporting_result(const QString& command, co
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("Spread %1 bps  Sharpe %2  → %3")
+        status_label_->setText(tr("Spread %1 bps  Sharpe %2  → %3")
                                    .arg(spread_bps, 0, 'f', 1).arg(ls_sharpe, 0, 'f', 2).arg(verdict));
         return;
     }

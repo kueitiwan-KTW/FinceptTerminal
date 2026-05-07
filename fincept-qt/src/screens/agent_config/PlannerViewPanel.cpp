@@ -117,8 +117,11 @@ QWidget* PlannerViewPanel::build_templates_panel() {
     vl->addWidget(portfolio_combo_);
 
     template_list_ = new QListWidget;
-    template_list_->addItems({"Stock Analysis Plan", "Portfolio Rebalance Plan", "Market Overview Plan",
-                              "Risk Assessment Plan", "Sector Rotation Plan"});
+    template_list_->addItem(tr("Stock Analysis Plan"));
+    template_list_->addItem(tr("Portfolio Rebalance Plan"));
+    template_list_->addItem(tr("Market Overview Plan"));
+    template_list_->addItem(tr("Risk Assessment Plan"));
+    template_list_->addItem(tr("Sector Rotation Plan"));
     template_list_->setStyleSheet(QString("QListWidget{background:%1;border:1px solid %2;color:%3;font-size:12px;}"
                                           "QListWidget::item{padding:6px 8px;border-bottom:1px solid %2;}"
                                           "QListWidget::item:selected{background:%4;}"
@@ -353,11 +356,11 @@ void PlannerViewPanel::setup_connections() {
             if (!plan.steps[i].result.isEmpty() || !plan.steps[i].error.isEmpty()) {
                 const QString txt = plan.steps[i].result.isEmpty() ? plan.steps[i].error : plan.steps[i].result;
                 result_display_->setHtml(ui::MarkdownRenderer::render(txt));
-                result_header_->setText(QString("STEP %1: %2").arg(i + 1).arg(plan.steps[i].name.toUpper()));
+                result_header_->setText(tr("STEP %1: %2").arg(i + 1).arg(plan.steps[i].name.toUpper()));
             }
         }
         progress_bar_->setValue(plan.steps.isEmpty() ? 0 : (completed * 100 / plan.steps.size()));
-        progress_label_->setText(QString("%1/%2 steps completed").arg(completed).arg(plan.steps.size()));
+        progress_label_->setText(tr("%1/%2 steps completed").arg(completed).arg(plan.steps.size()));
     });
 
     connect(&svc, &services::AgentService::error_occurred, this, [this](const QString& ctx, const QString& msg) {
@@ -382,7 +385,7 @@ void PlannerViewPanel::setup_connections() {
     connect(steps_table_, &QTableWidget::currentCellChanged, this, [this](int row, int, int, int) {
         if (row >= 0 && row < current_plan_.steps.size()) {
             const auto& s = current_plan_.steps[row];
-            result_header_->setText(QString("STEP %1: %2").arg(row + 1).arg(s.name.toUpper()));
+            result_header_->setText(tr("STEP %1: %2").arg(row + 1).arg(s.name.toUpper()));
             const QString txt = !s.result.isEmpty()  ? s.result
                                 : !s.error.isEmpty() ? "**Error:** " + s.error
                                                      : "*(not yet executed)*";
@@ -506,7 +509,7 @@ void PlannerViewPanel::populate_plan(const services::ExecutionPlan& plan) {
         update_step_status(i, s.status);
     }
     progress_bar_->setValue(0);
-    progress_label_->setText(QString("0/%1 steps").arg(plan.steps.size()));
+    progress_label_->setText(tr("0/%1 steps").arg(plan.steps.size()));
 }
 
 void PlannerViewPanel::update_step_status(int row, const QString& status) {

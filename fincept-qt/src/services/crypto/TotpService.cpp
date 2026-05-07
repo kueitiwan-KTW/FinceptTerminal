@@ -3,6 +3,7 @@
 #include "core/logging/Logger.h"
 #include "python/PythonRunner.h"
 
+#include <QCoreApplication>
 #include <QJsonDocument>
 #include <QJsonObject>
 
@@ -17,7 +18,7 @@ void TotpService::generate(const QString& secret, TotpCallback cb) {
     if (secret.isEmpty()) {
         if (cb) {
             TotpResult r;
-            r.error = "empty secret";
+            r.error = QCoreApplication::translate("FinceptTerminal", "empty secret");
             cb(r);
         }
         return;
@@ -31,20 +32,20 @@ void TotpService::generate(const QString& secret, TotpCallback cb) {
         [cb = std::move(cb)](const fincept::python::PythonResult& result) {
             TotpResult out;
             if (!result.success) {
-                out.error = result.output.isEmpty() ? QStringLiteral("totp_gen failed")
+                out.error = result.output.isEmpty() ? QCoreApplication::translate("FinceptTerminal", "totp_gen failed")
                                                    : result.output;
                 if (cb) cb(out);
                 return;
             }
             const auto doc = QJsonDocument::fromJson(result.output.toUtf8());
             if (!doc.isObject()) {
-                out.error = "malformed totp_gen output";
+                out.error = QCoreApplication::translate("FinceptTerminal", "malformed totp_gen output");
                 if (cb) cb(out);
                 return;
             }
             const auto obj = doc.object();
             if (!obj.contains("code")) {
-                out.error = "totp_gen output missing 'code'";
+                out.error = QCoreApplication::translate("FinceptTerminal", "totp_gen output missing 'code'");
                 if (cb) cb(out);
                 return;
             }

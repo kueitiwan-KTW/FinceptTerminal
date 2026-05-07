@@ -185,11 +185,11 @@ void StockQuoteWidget::populate(const services::QuoteData& q) {
 
     // Format volume
     if (q.volume >= 1e9)
-        volume_val_->setText(QString("%1B").arg(q.volume / 1e9, 0, 'f', 1));
+        volume_val_->setText(tr("%1B").arg(q.volume / 1e9, 0, 'f', 1));
     else if (q.volume >= 1e6)
-        volume_val_->setText(QString("%1M").arg(q.volume / 1e6, 0, 'f', 1));
+        volume_val_->setText(tr("%1M").arg(q.volume / 1e6, 0, 'f', 1));
     else if (q.volume >= 1e3)
-        volume_val_->setText(QString("%1K").arg(q.volume / 1e3, 0, 'f', 1));
+        volume_val_->setText(tr("%1K").arg(q.volume / 1e3, 0, 'f', 1));
     else
         volume_val_->setText(QString::number(static_cast<int>(q.volume)));
 }

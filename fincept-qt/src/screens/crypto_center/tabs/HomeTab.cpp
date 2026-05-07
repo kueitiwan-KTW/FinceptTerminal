@@ -15,6 +15,7 @@
 #include <QHBoxLayout>
 #include <QHideEvent>
 #include <QLabel>
+#include <QObject>
 #include <QPushButton>
 #include <QShowEvent>
 #include <QSignalBlocker>
@@ -36,14 +37,14 @@ QString shorten_pubkey(const QString& pk) {
 }
 
 QString relative_time(qint64 ts_ms) {
-    if (ts_ms == 0) return QStringLiteral("never");
+    if (ts_ms == 0) return QObject::tr("never");
     const auto delta = QDateTime::currentMSecsSinceEpoch() - ts_ms;
-    if (delta < 0) return QStringLiteral("just now");
+    if (delta < 0) return QObject::tr("just now");
     const auto seconds = delta / 1000;
-    if (seconds < 60) return QStringLiteral("%1s ago").arg(seconds);
-    if (seconds < 3600) return QStringLiteral("%1m ago").arg(seconds / 60);
-    if (seconds < 86400) return QStringLiteral("%1h ago").arg(seconds / 3600);
-    return QStringLiteral("%1d ago").arg(seconds / 86400);
+    if (seconds < 60) return QObject::tr("%1s ago").arg(seconds);
+    if (seconds < 3600) return QObject::tr("%1m ago").arg(seconds / 60);
+    if (seconds < 86400) return QObject::tr("%1h ago").arg(seconds / 3600);
+    return QObject::tr("%1d ago").arg(seconds / 86400);
 }
 
 } // namespace
@@ -95,9 +96,9 @@ void HomeTab::build_ui() {
         auto* head_l = new QHBoxLayout(head);
         head_l->setContentsMargins(12, 0, 12, 0);
         head_l->setSpacing(0);
-        auto* title = new QLabel(QStringLiteral("WALLET"), head);
+        auto* title = new QLabel(tr("WALLET"), head);
         title->setObjectName(QStringLiteral("homeTabPanelTitle"));
-        auto* status = new QLabel(QStringLiteral("● CONNECTED"), head);
+        auto* status = new QLabel(tr("● CONNECTED"), head);
         status->setObjectName(QStringLiteral("homeTabPanelStatusOk"));
         head_l->addWidget(title);
         head_l->addStretch();
@@ -128,9 +129,9 @@ void HomeTab::build_ui() {
             rl->addWidget(val_out);
             body_l->addWidget(row);
         };
-        add_row(QStringLiteral("PROVIDER"), row_label_value_, false);
-        add_row(QStringLiteral("ADDRESS"), row_pubkey_value_, false);
-        add_row(QStringLiteral("CONNECTED"), row_connected_value_, true);
+        add_row(tr("PROVIDER"), row_label_value_, false);
+        add_row(tr("ADDRESS"), row_pubkey_value_, false);
+        add_row(tr("CONNECTED"), row_connected_value_, true);
         outer->addWidget(body);
 
         auto* btn_row = new QWidget(wallet_panel_);
@@ -169,16 +170,16 @@ void HomeTab::build_ui() {
         auto* head_l = new QHBoxLayout(head);
         head_l->setContentsMargins(12, 0, 12, 0);
         head_l->setSpacing(8);
-        auto* title = new QLabel(QStringLiteral("HOLDINGS"), head);
+        auto* title = new QLabel(tr("HOLDINGS"), head);
         title->setObjectName(QStringLiteral("homeTabPanelTitle"));
 
         // Mode toggle — mirrored from Settings.
-        mode_poll_button_ = new QPushButton(QStringLiteral("POLL"), head);
+        mode_poll_button_ = new QPushButton(tr("POLL"), head);
         mode_poll_button_->setObjectName(QStringLiteral("homeTabToggle"));
         mode_poll_button_->setCheckable(true);
         mode_poll_button_->setFixedHeight(22);
         mode_poll_button_->setCursor(Qt::PointingHandCursor);
-        mode_stream_button_ = new QPushButton(QStringLiteral("STREAM"), head);
+        mode_stream_button_ = new QPushButton(tr("STREAM"), head);
         mode_stream_button_->setObjectName(QStringLiteral("homeTabToggle"));
         mode_stream_button_->setCheckable(true);
         mode_stream_button_->setFixedHeight(22);
@@ -188,7 +189,7 @@ void HomeTab::build_ui() {
         mode_group_->addButton(mode_poll_button_);
         mode_group_->addButton(mode_stream_button_);
 
-        auto* mode_label = new QLabel(QStringLiteral("MAINNET"), head);
+        auto* mode_label = new QLabel(tr("MAINNET"), head);
         mode_label->setObjectName(QStringLiteral("homeTabPanelStatus"));
 
         head_l->addWidget(title);
@@ -262,9 +263,9 @@ void HomeTab::build_ui() {
         auto* head_l = new QHBoxLayout(head);
         head_l->setContentsMargins(12, 0, 12, 0);
         head_l->setSpacing(0);
-        auto* title = new QLabel(QStringLiteral("$FNCPT ROADMAP"), head);
+        auto* title = new QLabel(tr("$FNCPT ROADMAP"), head);
         title->setObjectName(QStringLiteral("homeTabPanelTitle"));
-        auto* phase = new QLabel(QStringLiteral("PHASE 2"), head);
+        auto* phase = new QLabel(tr("PHASE 2"), head);
         phase->setObjectName(QStringLiteral("homeTabPanelStatus"));
         head_l->addWidget(title);
         head_l->addStretch();
@@ -272,11 +273,11 @@ void HomeTab::build_ui() {
         outer->addWidget(head);
 
         roadmap_body_ = new QLabel(
-            QStringLiteral("PHASE 1   WALLET & BALANCE        SHIPPED        connect Solana wallet, view $FNCPT + SOL\n"
-                           "PHASE 2   SWAP & FEE DISCOUNT     IN PROGRESS    buy $FNCPT via PumpPortal, fee discount\n"
-                           "PHASE 3   STAKING & TIERS         UPCOMING       lock $FNCPT for bronze / silver / gold tiers\n"
-                           "PHASE 4   PREDICTION MARKETS      UPCOMING       earnings, fed, weather — settled in $FNCPT\n"
-                           "PHASE 5   BUYBACK & BURN          UPCOMING       terminal revenue auto-buys & burns $FNCPT"),
+            tr("PHASE 1   WALLET & BALANCE        SHIPPED        connect Solana wallet, view $FNCPT + SOL\n"
+               "PHASE 2   SWAP & FEE DISCOUNT     IN PROGRESS    buy $FNCPT via PumpPortal, fee discount\n"
+               "PHASE 3   STAKING & TIERS         UPCOMING       lock $FNCPT for bronze / silver / gold tiers\n"
+               "PHASE 4   PREDICTION MARKETS      UPCOMING       earnings, fed, weather — settled in $FNCPT\n"
+               "PHASE 5   BUYBACK & BURN          UPCOMING       terminal revenue auto-buys & burns $FNCPT"),
             roadmap_panel_);
         roadmap_body_->setObjectName(QStringLiteral("homeTabRoadmapBody"));
         roadmap_body_->setContentsMargins(14, 12, 14, 14);

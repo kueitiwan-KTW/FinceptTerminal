@@ -599,7 +599,7 @@ void PortfolioPerfChart::update_chart() {
     total_return_label_->setStyleSheet(
         QString("color:%1; font-size:14px; font-weight:700;").arg(total_color));
 
-    nav_label_->setText(QString("NAV %1 %2").arg(currency_).arg(QString::number(live_nav, 'f', 2)));
+    nav_label_->setText(tr("NAV %1 %2").arg(currency_).arg(QString::number(live_nav, 'f', 2)));
     if (cost_basis_label_) {
         if (cost_basis > 0)
             cost_basis_label_->setText(

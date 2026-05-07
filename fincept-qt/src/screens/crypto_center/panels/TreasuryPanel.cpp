@@ -76,9 +76,9 @@ void TreasuryPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("TREASURY"), head);
+    auto* title = new QLabel(tr("TREASURY"), head);
     title->setObjectName(QStringLiteral("treasuryTitle"));
-    status_pill_ = new QLabel(QStringLiteral("LIVE"), head);
+    status_pill_ = new QLabel(tr("LIVE"), head);
     status_pill_->setObjectName(QStringLiteral("treasuryPill"));
     hl->addWidget(title);
     hl->addStretch();
@@ -107,16 +107,16 @@ void TreasuryPanel::build_ui() {
         bl->addLayout(row);
     };
 
-    add_kv(QStringLiteral("USDC RESERVES"), usdc_value_);
-    add_kv(QStringLiteral("SOL RESERVES"), sol_value_);
-    add_kv(QStringLiteral("TOTAL USD"), total_usd_value_,
+    add_kv(tr("USDC RESERVES"), usdc_value_);
+    add_kv(tr("SOL RESERVES"), sol_value_);
+    add_kv(tr("TOTAL USD"), total_usd_value_,
            QStringLiteral("treasuryValueAmber"));
-    add_kv(QStringLiteral("RUNWAY @ CURRENT"), runway_value_);
+    add_kv(tr("RUNWAY @ CURRENT"), runway_value_);
 
     // Multisig row — clickable button styled as a link.
     auto* ms_row = new QHBoxLayout;
     ms_row->setSpacing(8);
-    auto* ms_cap = new QLabel(QStringLiteral("MULTI-SIG"), body);
+    auto* ms_cap = new QLabel(tr("MULTI-SIG"), body);
     ms_cap->setObjectName(QStringLiteral("treasuryCaption"));
     multisig_button_ = new QPushButton(QStringLiteral("—"), body);
     multisig_button_->setObjectName(QStringLiteral("treasuryMultisig"));
@@ -250,7 +250,7 @@ void TreasuryPanel::on_runway_update(const QVariant& v) {
         runway_value_->setText(QStringLiteral("—"));
         return;
     }
-    runway_value_->setText(QStringLiteral("%1 months  ($%2/mo)")
+    runway_value_->setText(tr("%1 months  ($%2/mo)")
         .arg(QLocale::system().toString(w.months, 'f', 0))
         .arg(QLocale::system().toString(w.monthly_opex_usd, 'f', 0)));
 }
@@ -284,10 +284,10 @@ void TreasuryPanel::clear_error_strip() {
 void TreasuryPanel::update_demo_chip() {
     const bool any_mock = reserves_is_mock_ || runway_is_mock_;
     if (any_mock) {
-        status_pill_->setText(QStringLiteral("DEMO"));
+        status_pill_->setText(tr("DEMO"));
         status_pill_->setObjectName(QStringLiteral("treasuryPillDemo"));
     } else {
-        status_pill_->setText(QStringLiteral("LIVE"));
+        status_pill_->setText(tr("LIVE"));
         status_pill_->setObjectName(QStringLiteral("treasuryPill"));
     }
     status_pill_->style()->unpolish(status_pill_);

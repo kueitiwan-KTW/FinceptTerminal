@@ -68,13 +68,13 @@ void CryptoCenterScreen::build_ui() {
     hl->setContentsMargins(14, 0, 14, 0);
     hl->setSpacing(8);
 
-    header_brand_ = new QLabel(QStringLiteral("FINCEPT"));
+    header_brand_ = new QLabel(tr("FINCEPT"));
     header_brand_->setObjectName(QStringLiteral("cryptoCenterBrand"));
     header_separator_ = new QLabel(QStringLiteral("/"));
     header_separator_->setObjectName(QStringLiteral("cryptoCenterSep"));
-    header_route_ = new QLabel(QStringLiteral("CRYPTO CENTER"));
+    header_route_ = new QLabel(tr("CRYPTO CENTER"));
     header_route_->setObjectName(QStringLiteral("cryptoCenterRoute"));
-    header_status_ = new QLabel(QStringLiteral("● DISCONNECTED"));
+    header_status_ = new QLabel(tr("● DISCONNECTED"));
     header_status_->setObjectName(QStringLiteral("cryptoCenterHeaderStatusOff"));
 
     hl->addWidget(header_brand_);
@@ -116,11 +116,11 @@ void CryptoCenterScreen::build_empty_page() {
     auto* head_l = new QHBoxLayout(head);
     head_l->setContentsMargins(12, 0, 12, 0);
     head_l->setSpacing(0);
-    auto* head_title = new QLabel(QStringLiteral("CONNECT WALLET"), head);
+    auto* head_title = new QLabel(tr("CONNECT WALLET"), head);
     head_title->setObjectName(QStringLiteral("cryptoCenterPanelTitle"));
     head_l->addWidget(head_title);
     head_l->addStretch();
-    auto* head_status = new QLabel(QStringLiteral("READY"), head);
+    auto* head_status = new QLabel(tr("READY"), head);
     head_status->setObjectName(QStringLiteral("cryptoCenterPanelStatus"));
     head_l->addWidget(head_status);
     panel_l->addWidget(head);
@@ -144,7 +144,7 @@ void CryptoCenterScreen::build_empty_page() {
 
     body_l->addSpacing(4);
 
-    empty_security_label_ = new QLabel(QStringLiteral("SECURITY"), body);
+    empty_security_label_ = new QLabel(tr("SECURITY"), body);
     empty_security_label_->setObjectName(QStringLiteral("cryptoCenterCaptionAccent"));
     body_l->addWidget(empty_security_label_);
 
@@ -315,7 +315,7 @@ void CryptoCenterScreen::apply_theme() {
 
 void CryptoCenterScreen::on_wallet_connected(const QString& /*pubkey*/,
                                              const QString& /*label*/) {
-    header_status_->setText(QStringLiteral("● CONNECTED"));
+    header_status_->setText(tr("● CONNECTED"));
     header_status_->setObjectName(QStringLiteral("cryptoCenterHeaderStatusOn"));
     header_status_->style()->unpolish(header_status_);
     header_status_->style()->polish(header_status_);
@@ -323,7 +323,7 @@ void CryptoCenterScreen::on_wallet_connected(const QString& /*pubkey*/,
 }
 
 void CryptoCenterScreen::on_wallet_disconnected() {
-    header_status_->setText(QStringLiteral("● DISCONNECTED"));
+    header_status_->setText(tr("● DISCONNECTED"));
     header_status_->setObjectName(QStringLiteral("cryptoCenterHeaderStatusOff"));
     header_status_->style()->unpolish(header_status_);
     header_status_->style()->polish(header_status_);

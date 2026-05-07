@@ -707,7 +707,7 @@ void CommandBar::on_text_changed(const QString& text) {
             row->setStyleSheet("background:transparent;");
             auto* rl = new QHBoxLayout(row);
             rl->setContentsMargins(10, 6, 10, 6);
-            auto* hint = new QLabel(QString("Type a symbol or name to search %1s...").arg(active_asset_type_));
+            auto* hint = new QLabel(tr("Type a symbol or name to search %1s...").arg(active_asset_type_));
             hint->setStyleSheet(
                 QString("color:%1;font-size:11px;font-family:'Consolas',monospace;background:transparent;")
                     .arg(colors::TEXT_TERTIARY.get()));
@@ -799,7 +799,7 @@ void CommandBar::on_text_changed(const QString& text) {
                     row->setStyleSheet("background:transparent;");
                     auto* hl2 = new QHBoxLayout(row);
                     hl2->setContentsMargins(10, 6, 10, 6);
-                    auto* lbl = new QLabel(QString("Press Enter to close all except %1")
+                    auto* lbl = new QLabel(tr("Press Enter to close all except %1")
                                                .arg(resolve_screen_id(first_token).toUpper().replace("_", " ")));
                     lbl->setStyleSheet(QString("color:%1;font-size:11px;"
                                                "font-family:'Consolas',monospace;background:transparent;")
@@ -1331,7 +1331,7 @@ void CommandBar::show_dock_secondary_suggestions(const QString& verb, const QStr
         row->setStyleSheet("background:transparent;");
         auto* hl = new QHBoxLayout(row);
         hl->setContentsMargins(10, 4, 10, 4);
-        auto* lbl = new QLabel(QString("%1 — pick a screen:").arg(verb.toUpper()));
+        auto* lbl = new QLabel(tr("%1 — pick a screen:").arg(verb.toUpper()));
         lbl->setStyleSheet(QString("color:%1;font-size:10px;font-family:'Consolas',monospace;background:transparent;")
                                .arg(colors::AMBER.get()));
         hl->addWidget(lbl);

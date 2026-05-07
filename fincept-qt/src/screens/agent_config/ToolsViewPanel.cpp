@@ -184,7 +184,7 @@ QWidget* ToolsViewPanel::build_left_panel() {
     vl->setSpacing(8);
 
     // ── Assign To ────────────────────────────────────────────────────────────
-    vl->addWidget(section_header("ASSIGN TO"));
+    vl->addWidget(section_header(tr("ASSIGN TO")));
 
     auto* radio_row = new QHBoxLayout;
     radio_row->setSpacing(12);
@@ -212,7 +212,7 @@ QWidget* ToolsViewPanel::build_left_panel() {
 
     // ── Selected Tools ────────────────────────────────────────────────────────
     auto* sel_header = new QHBoxLayout;
-    sel_header->addWidget(section_header("SELECTED TOOLS"));
+    sel_header->addWidget(section_header(tr("SELECTED TOOLS")));
     selected_count_ = new QLabel("0");
     selected_count_->setStyleSheet(badge_style());
     sel_header->addWidget(selected_count_);
@@ -324,7 +324,7 @@ QWidget* ToolsViewPanel::build_right_panel() {
     vl->setSpacing(8);
 
     // ── Tool name ─────────────────────────────────────────────────────────────
-    vl->addWidget(section_header("TOOL DETAIL"));
+    vl->addWidget(section_header(tr("TOOL DETAIL")));
 
     detail_name_ = new QLabel(tr("Select a tool"));
     detail_name_->setStyleSheet(
@@ -340,7 +340,7 @@ QWidget* ToolsViewPanel::build_right_panel() {
     vl->addWidget(h_line());
 
     // ── Description ───────────────────────────────────────────────────────────
-    vl->addWidget(section_header("DESCRIPTION"));
+    vl->addWidget(section_header(tr("DESCRIPTION")));
     detail_desc_ = new QTextEdit;
     detail_desc_->setReadOnly(true);
     detail_desc_->setStyleSheet(textedit_style());
@@ -351,18 +351,18 @@ QWidget* ToolsViewPanel::build_right_panel() {
     vl->addWidget(h_line());
 
     // ── Parameters ────────────────────────────────────────────────────────────
-    vl->addWidget(section_header("PARAMETERS"));
+    vl->addWidget(section_header(tr("PARAMETERS")));
     detail_params_ = new QTextEdit;
     detail_params_->setReadOnly(true);
     detail_params_->setStyleSheet(textedit_style());
     detail_params_->setFixedHeight(110);
-    detail_params_->setPlaceholderText("—");
+    detail_params_->setPlaceholderText(tr("—"));
     vl->addWidget(detail_params_);
 
     vl->addWidget(h_line());
 
     // ── Used By ───────────────────────────────────────────────────────────────
-    vl->addWidget(section_header("USED BY"));
+    vl->addWidget(section_header(tr("USED BY")));
     detail_used_by_ = new QTextEdit;
     detail_used_by_->setReadOnly(true);
     detail_used_by_->setStyleSheet(textedit_style());
@@ -443,8 +443,8 @@ void ToolsViewPanel::setup_connections() {
             return;
         }
         QString name = target_combo_->currentText();
-        QString type = radio_agent_->isChecked() ? "Agent" : "Team";
-        target_status_->setText(QString("Assigning to: %1 (%2)").arg(name, type));
+        QString type = radio_agent_->isChecked() ? tr("Agent") : tr("Team");
+        target_status_->setText(tr("Assigning to: %1 (%2)").arg(name, type));
         assign_btn_->setEnabled(!selected_tools_.isEmpty());
         update_assigned_dots();
     });
@@ -571,8 +571,8 @@ void ToolsViewPanel::load_assign_targets() {
     }
 
     if (target_combo_->count() == 0) {
-        target_status_->setText(use_agents ? "No agents found — create one first"
-                                           : "No teams found — create one first");
+        target_status_->setText(use_agents ? tr("No agents found — create one first")
+                                           : tr("No teams found — create one first"));
         assign_btn_->setEnabled(false);
     }
 }
@@ -710,7 +710,7 @@ void ToolsViewPanel::assign_to_target() {
     // Load existing config
     auto result = AgentConfigRepository::instance().get(id);
     if (!result.is_ok()) {
-        target_status_->setText(QString("Error: could not load %1").arg(name));
+        target_status_->setText(tr("Error: could not load %1").arg(name));
         return;
     }
 
@@ -752,14 +752,14 @@ void ToolsViewPanel::assign_to_target() {
         QTimer::singleShot(5000, this, [this]() {
             if (target_combo_->currentIndex() >= 0) {
                 target_status_->setText(
-                    QString("Target: %1 (%2)")
-                        .arg(target_combo_->currentText(), radio_agent_->isChecked() ? "Agent" : "Team"));
+                    tr("Target: %1 (%2)")
+                        .arg(target_combo_->currentText(), radio_agent_->isChecked() ? tr("Agent") : tr("Team")));
                 target_status_->setStyleSheet(
                     QString("color:%1;font-size:11px;padding:2px 0;").arg(ui::colors::TEXT_SECONDARY()));
             }
         });
     } else {
-        target_status_->setText(QString("Error saving to %1").arg(name));
+        target_status_->setText(tr("Error saving to %1").arg(name));
         target_status_->setStyleSheet(QString("color:%1;font-size:11px;padding:2px 0;").arg(ui::colors::NEGATIVE()));
     }
 }

@@ -2,6 +2,7 @@
 
 #include "core/actions/ActionRegistry.h"
 
+#include <QObject>
 #include <QRegularExpression>
 #include <QStringList>
 
@@ -134,7 +135,7 @@ ParsedCommand CommandParser::try_verb_object_(const QString& input) {
     ParsedCommand p;
     p.kind = ParsedCommand::Kind::Unknown;
     p.raw_remainder = input;
-    p.error = QString("Unknown command: '%1'").arg(input);
+    p.error = QObject::tr("Unknown command: '%1'").arg(input);
     return p;
 }
 

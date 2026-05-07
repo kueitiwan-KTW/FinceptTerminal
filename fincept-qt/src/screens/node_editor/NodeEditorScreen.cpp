@@ -403,7 +403,7 @@ void NodeEditorScreen::on_delete_node(const QString& node_id) {
 }
 
 void NodeEditorScreen::on_clear_workflow() {
-    auto result = QMessageBox::question(this, "Clear Workflow", "Are you sure you want to clear all nodes and edges?",
+    auto result = QMessageBox::question(this, tr("Clear Workflow"), tr("Are you sure you want to clear all nodes and edges?"),
                                         QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
     if (result == QMessageBox::Yes) {
@@ -541,7 +541,7 @@ void NodeEditorScreen::on_load_workflow() {
             delete conn;
 
             if (workflows.isEmpty()) {
-                QMessageBox::information(this, "Load Workflow", "No saved workflows found.");
+                QMessageBox::information(this, tr("Load Workflow"), tr("No saved workflows found."));
                 return;
             }
 

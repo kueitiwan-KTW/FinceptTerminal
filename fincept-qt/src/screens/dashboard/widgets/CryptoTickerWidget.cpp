@@ -164,12 +164,12 @@ QDialog* CryptoTickerWidget::make_config_dialog(QWidget* parent) {
     auto* combo = new QComboBox(dlg);
     combo->addItems({"kraken", "hyperliquid"});
     combo->setCurrentText(exchange_);
-    form->addRow("Exchange", combo);
+    form->addRow(tr("Exchange"), combo);
 
     auto* edit = new QLineEdit(dlg);
     edit->setText(pairs_.join(", "));
     edit->setPlaceholderText(tr("e.g. BTC/USD, ETH/USD, SOL/USD"));
-    form->addRow("Pairs", edit);
+    form->addRow(tr("Pairs"), edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

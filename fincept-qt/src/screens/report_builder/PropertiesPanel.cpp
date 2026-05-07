@@ -427,7 +427,7 @@ void PropertiesPanel::show_properties(const ReportComponent* component, int inde
         auto* browse = new QPushButton(tr("Browse File..."));
         connect(browse, &QPushButton::clicked, this, [this, path_lbl]() {
             QString path =
-                QFileDialog::getOpenFileName(this, "Select Image", "", "Images (*.png *.jpg *.jpeg *.bmp *.svg)");
+                QFileDialog::getOpenFileName(this, tr("Select Image"), "", tr("Images (*.png *.jpg *.jpeg *.bmp *.svg)"));
             if (!path.isEmpty()) {
                 path_lbl->setText(QFileInfo(path).fileName());
                 emit config_changed(current_index_, "path", path);

@@ -96,9 +96,9 @@ void HoldingsTable::build_ui() {
     table_->setObjectName(QStringLiteral("holdingsTableView"));
     table_->setColumnCount(5);
     table_->setHorizontalHeaderLabels(
-        {QStringLiteral("TOKEN"), QStringLiteral("BALANCE"),
-         QStringLiteral("PRICE"), QStringLiteral("USD VALUE"),
-         QStringLiteral("% OF PORT")});
+        {tr("TOKEN"), tr("BALANCE"),
+         tr("PRICE"), tr("USD VALUE"),
+         tr("% OF PORT")});
     table_->verticalHeader()->setVisible(false);
     table_->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     table_->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);

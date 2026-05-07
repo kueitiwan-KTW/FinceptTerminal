@@ -1316,7 +1316,7 @@ QWidget* SettingsScreen::build_storage() {
         refresh_lbl->setCursor(Qt::PointingHandCursor);
         refresh_lbl->installEventFilter(this); // for click
 
-        auto* panel = make_panel("DISK USAGE", refresh_lbl);
+        auto* panel = make_panel(tr("DISK USAGE"), refresh_lbl);
         auto* body = new QWidget(this);
         body->setStyleSheet("background:transparent;");
         auto* bvl = new QVBoxLayout(body);
@@ -1354,17 +1354,17 @@ QWidget* SettingsScreen::build_storage() {
             shl->addWidget(box, 1);
         };
 
-        make_stat_box("MAIN DB", storage_main_db_);
-        make_stat_box("CACHE DB", storage_cache_db_);
-        make_stat_box("LOG FILES", storage_log_size_);
-        make_stat_box("WORKSPACES", storage_ws_size_);
-        make_stat_box("TOTAL", storage_total_size_);
+        make_stat_box(tr("MAIN DB"), storage_main_db_);
+        make_stat_box(tr("CACHE DB"), storage_cache_db_);
+        make_stat_box(tr("LOG FILES"), storage_log_size_);
+        make_stat_box(tr("WORKSPACES"), storage_ws_size_);
+        make_stat_box(tr("TOTAL"), storage_total_size_);
 
         bvl->addWidget(stat_row);
 
         // Detail rows
         storage_count_ = new QLabel("—");
-        bvl->addWidget(make_data_row("Cache Entries", storage_count_, false));
+        bvl->addWidget(make_data_row(tr("Cache Entries"), storage_count_, false));
 
         // Connect refresh click
         connect(refresh_lbl, &QLabel::linkActivated, this, [this]() { refresh_storage_stats(); });
@@ -1396,7 +1396,7 @@ QWidget* SettingsScreen::build_storage() {
     // SECTION 2: DATA CATEGORIES — grouped table with counts + clear
     // ═══════════════════════════════════════════════════════════════════════════
     {
-        auto* panel = make_panel("DATA CATEGORIES");
+        auto* panel = make_panel(tr("DATA CATEGORIES"));
         auto* body = new QWidget(this);
         body->setStyleSheet("background:transparent;");
 
@@ -1445,10 +1445,9 @@ QWidget* SettingsScreen::build_storage() {
             QString cat_id = cat.id;
             QString cat_label = cat.label;
             connect(clear_btn, &QPushButton::clicked, this, [this, cat_id, cat_label, count_lbl]() {
-                auto answer = QMessageBox::warning(this, "Clear " + cat_label,
-                                                   "Permanently delete all " + cat_label.toLower() +
-                                                       "?\n\n"
-                                                       "This cannot be undone.",
+                auto answer = QMessageBox::warning(this, tr("Clear ") + cat_label,
+                                                   tr("Permanently delete all ") + cat_label.toLower() +
+                                                       tr("?\n\nThis cannot be undone."),
                                                    QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
                 if (answer != QMessageBox::Yes)
                     return;
@@ -1458,8 +1457,8 @@ QWidget* SettingsScreen::build_storage() {
                     count_lbl->setText("0");
                     LOG_INFO("Settings", "Cleared: " + cat_label);
                 } else {
-                    QMessageBox::critical(this, "Error",
-                                          "Failed to clear " + cat_label + ":\n" + QString::fromStdString(r.error()));
+                    QMessageBox::critical(this, tr("Error"),
+                                          tr("Failed to clear ") + cat_label + ":\n" + QString::fromStdString(r.error()));
                 }
                 refresh_storage_stats();
             });
@@ -1478,7 +1477,7 @@ QWidget* SettingsScreen::build_storage() {
     // SECTION 3: FILE & STATE MANAGEMENT
     // ═══════════════════════════════════════════════════════════════════════════
     {
-        auto* panel = make_panel("FILE & STATE MANAGEMENT");
+        auto* panel = make_panel(tr("FILE & STATE MANAGEMENT"));
         auto* body = new QWidget(this);
         body->setStyleSheet("background:transparent;");
         auto* bvl = new QVBoxLayout(body);
@@ -1528,7 +1527,7 @@ QWidget* SettingsScreen::build_storage() {
         auto* qs_lbl = new QLabel(tr("Registry"));
 
         add_file_row(
-            "Log Files", log_sz, "Clear Logs", "Clear all application log files?\nCurrent log data will be lost.",
+            tr("Log Files"), log_sz, tr("Clear Logs"), tr("Clear all application log files?\nCurrent log data will be lost."),
             []() {
                 StorageManager::instance().clear_log_files();
                 LOG_INFO("Settings", "Logs cleared");
@@ -1536,8 +1535,8 @@ QWidget* SettingsScreen::build_storage() {
             false);
 
         add_file_row(
-            "Workspace Files (.fwsp)", ws_sz, "Delete Workspaces",
-            "Delete all saved workspace files?\nThis cannot be undone.",
+            tr("Workspace Files (.fwsp)"), ws_sz, tr("Delete Workspaces"),
+            tr("Delete all saved workspace files?\nThis cannot be undone."),
             []() {
                 StorageManager::instance().clear_workspace_files();
                 LOG_INFO("Settings", "Workspaces deleted");
@@ -1545,9 +1544,9 @@ QWidget* SettingsScreen::build_storage() {
             true);
 
         add_file_row(
-            "Window & UI State", qs_lbl, "Reset UI State",
-            "Reset all window positions, dock layouts, and perspectives?\n"
-            "Takes effect on next restart.",
+            tr("Window & UI State"), qs_lbl, tr("Reset UI State"),
+            tr("Reset all window positions, dock layouts, and perspectives?\n"
+               "Takes effect on next restart."),
             []() {
                 StorageManager::instance().clear_qsettings();
                 LOG_INFO("Settings", "QSettings cleared");
@@ -1596,15 +1595,15 @@ QWidget* SettingsScreen::build_storage() {
     // SECTION 4: SQL CONSOLE — direct database access
     // ═══════════════════════════════════════════════════════════════════════════
     {
-        auto* panel = make_panel("SQL CONSOLE");
+        auto* panel = make_panel(tr("SQL CONSOLE"));
         auto* body = new QWidget(this);
         body->setStyleSheet("background:transparent;");
         auto* bvl = new QVBoxLayout(body);
         bvl->setContentsMargins(10, 8, 10, 8);
         bvl->setSpacing(6);
 
-        auto* hint = new QLabel("Execute SQL queries directly against terminal databases. "
-                                "Use SELECT to inspect data, or INSERT/UPDATE/DELETE to modify.");
+        auto* hint = new QLabel(tr("Execute SQL queries directly against terminal databases. "
+                                   "Use SELECT to inspect data, or INSERT/UPDATE/DELETE to modify."));
         hint->setWordWrap(true);
         hint->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         bvl->addWidget(hint);
@@ -1718,8 +1717,8 @@ QWidget* SettingsScreen::build_storage() {
 
             if (is_write) {
                 // Confirm write operations
-                auto answer = QMessageBox::warning(this, "Execute Write Query",
-                                                   "This will modify the database:\n\n" + sql + "\n\nContinue?",
+                auto answer = QMessageBox::warning(this, tr("Execute Write Query"),
+                                                   tr("This will modify the database:\n\n") + sql + tr("\n\nContinue?"),
                                                    QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
                 if (answer != QMessageBox::Yes) {
                     sql_status_->setText(tr("Cancelled"));
@@ -1739,7 +1738,7 @@ QWidget* SettingsScreen::build_storage() {
 
             if (is_write) {
                 int affected = query.numRowsAffected();
-                sql_status_->setText(QString("OK — %1 row(s) affected").arg(affected));
+                sql_status_->setText(tr("OK — %1 row(s) affected").arg(affected));
                 sql_status_->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::POSITIVE()));
                 refresh_storage_stats();
                 LOG_INFO("SQL Console", QString("Write query: %1 rows affected").arg(affected));
@@ -1796,7 +1795,7 @@ QWidget* SettingsScreen::build_storage() {
             }
 
             sql_status_->setText(
-                QString("OK — %1 row(s) returned%2").arg(row_count).arg(row_count >= 100 ? " (limited to 100)" : ""));
+                tr("OK — %1 row(s) returned%2").arg(row_count).arg(row_count >= 100 ? tr(" (limited to 100)") : ""));
             sql_status_->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::POSITIVE()));
         };
 
@@ -1864,7 +1863,7 @@ QWidget* SettingsScreen::build_storage() {
                 .arg(ui::colors::NEGATIVE(), ui::colors::TEXT_PRIMARY(), ui::colors::NEGATIVE_DIM()));
         connect(cache_btn, &QPushButton::clicked, this, [this]() {
             auto answer = QMessageBox::warning(
-                this, "Clear All Cache", "Delete all temporary cached data?\nData will be re-fetched on next access.",
+                this, tr("Clear All Cache"), tr("Delete all temporary cached data?\nData will be re-fetched on next access."),
                 QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
             if (answer != QMessageBox::Yes)
                 return;
@@ -1902,24 +1901,24 @@ QWidget* SettingsScreen::build_storage() {
                                         "QPushButton:hover{background:%2;color:%3;}")
                                     .arg(ui::colors::NEGATIVE(), ui::colors::TEXT_PRIMARY(), ui::colors::BG_BASE()));
         connect(nuke_btn, &QPushButton::clicked, this, [this]() {
-            auto a1 = QMessageBox::critical(this, "Clear ALL User Data",
-                                            "WARNING: This will permanently delete ALL data:\n\n"
-                                            "  Chat history, notes, reports, watchlists\n"
-                                            "  Portfolios, transactions, paper trades\n"
-                                            "  Workflows, dashboard layouts\n"
-                                            "  News articles, RSS feeds, monitors\n"
-                                            "  Data sources, MCP servers\n"
-                                            "  Agent configs, LLM configs & profiles\n"
-                                            "  App settings, credentials, key-value storage\n"
-                                            "  All cache, log files, workspaces, UI state\n\n"
-                                            "OS keychain credentials are NOT affected.\n"
-                                            "This action CANNOT be undone.",
+            auto a1 = QMessageBox::critical(this, tr("Clear ALL User Data"),
+                                            tr("WARNING: This will permanently delete ALL data:\n\n"
+                                               "  Chat history, notes, reports, watchlists\n"
+                                               "  Portfolios, transactions, paper trades\n"
+                                               "  Workflows, dashboard layouts\n"
+                                               "  News articles, RSS feeds, monitors\n"
+                                               "  Data sources, MCP servers\n"
+                                               "  Agent configs, LLM configs & profiles\n"
+                                               "  App settings, credentials, key-value storage\n"
+                                               "  All cache, log files, workspaces, UI state\n\n"
+                                               "OS keychain credentials are NOT affected.\n"
+                                               "This action CANNOT be undone."),
                                             QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
             if (a1 != QMessageBox::Yes)
                 return;
 
-            auto a2 = QMessageBox::critical(this, "Final Confirmation",
-                                            "ALL data will be permanently deleted.\nAre you absolutely sure?",
+            auto a2 = QMessageBox::critical(this, tr("Final Confirmation"),
+                                            tr("ALL data will be permanently deleted.\nAre you absolutely sure?"),
                                             QMessageBox::Yes | QMessageBox::Cancel, QMessageBox::Cancel);
             if (a2 != QMessageBox::Yes)
                 return;
@@ -2033,8 +2032,8 @@ QWidget* SettingsScreen::build_data_sources() {
     trl->addWidget(open_full);
     vl->addWidget(title_row);
 
-    auto* info = new QLabel("Quick management of configured connections. "
-                            "For full browsing, adding, testing, and import/export use the full screen.");
+    auto* info = new QLabel(tr("Quick management of configured connections. "
+                               "For full browsing, adding, testing, and import/export use the full screen."));
     info->setWordWrap(true);
     info->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_SECONDARY()));
     vl->addWidget(info);
@@ -2353,8 +2352,8 @@ QWidget* SettingsScreen::build_data_sources() {
         brhl->addStretch();
         bvl->addWidget(btn_row);
 
-        auto* note = new QLabel("For adding new connections, testing connectivity, and import/export, "
-                                "use the full Data Sources screen.");
+        auto* note = new QLabel(tr("For adding new connections, testing connectivity, and import/export, "
+                                   "use the full Data Sources screen."));
         note->setWordWrap(true);
         note->setStyleSheet(QString("color:%1;background:transparent;").arg(ui::colors::TEXT_DIM()));
         bvl->addWidget(note);
@@ -2700,7 +2699,7 @@ QWidget* SettingsScreen::build_security() {
     connect(sec_change_pin_btn_, &QPushButton::clicked, this, [this]() {
         bool showing = sec_change_pin_form_->isVisible();
         sec_change_pin_form_->setVisible(!showing);
-        sec_change_pin_btn_->setText(showing ? "Change PIN" : "Cancel");
+        sec_change_pin_btn_->setText(showing ? tr("Change PIN") : tr("Cancel"));
         if (!showing) {
             sec_current_pin_->clear();
             sec_new_pin_->clear();
@@ -2791,10 +2790,10 @@ QWidget* SettingsScreen::build_security() {
     vl->addWidget(t3);
     vl->addSpacing(4);
 
-    sec_autolock_toggle_ = new QCheckBox("Enable auto-lock on inactivity");
+    sec_autolock_toggle_ = new QCheckBox(tr("Enable auto-lock on inactivity"));
     sec_autolock_toggle_->setChecked(true);
     sec_autolock_toggle_->setStyleSheet(check_ss());
-    vl->addWidget(make_row("Auto-Lock", sec_autolock_toggle_, "Locks the terminal after a period of inactivity."));
+    vl->addWidget(make_row(tr("Auto-Lock"), sec_autolock_toggle_, tr("Locks the terminal after a period of inactivity.")));
 
     sec_lock_timeout_ = new QComboBox;
     sec_lock_timeout_->addItem(tr("1 min"), 1);
@@ -2806,16 +2805,16 @@ QWidget* SettingsScreen::build_security() {
     sec_lock_timeout_->addItem(tr("60 min"), 60);
     sec_lock_timeout_->setCurrentIndex(3); // default 10 min
     sec_lock_timeout_->setStyleSheet(combo_ss());
-    vl->addWidget(make_row("Lock Timeout", sec_lock_timeout_, "Time of inactivity before the terminal locks."));
+    vl->addWidget(make_row(tr("Lock Timeout"), sec_lock_timeout_, tr("Time of inactivity before the terminal locks.")));
 
     // Enable/disable timeout combo based on toggle
     connect(sec_autolock_toggle_, &QCheckBox::toggled, this,
             [this](bool checked) { sec_lock_timeout_->setEnabled(checked); });
 
-    sec_lock_on_minimize_ = new QCheckBox("Lock when the window is minimized");
+    sec_lock_on_minimize_ = new QCheckBox(tr("Lock when the window is minimized"));
     sec_lock_on_minimize_->setStyleSheet(check_ss());
-    vl->addWidget(make_row("Lock on Minimize", sec_lock_on_minimize_,
-                            "When on, minimizing the terminal immediately shows the PIN screen."));
+    vl->addWidget(make_row(tr("Lock on Minimize"), sec_lock_on_minimize_,
+                            tr("When on, minimizing the terminal immediately shows the PIN screen.")));
 
     vl->addSpacing(16);
 
@@ -2980,9 +2979,9 @@ QWidget* SettingsScreen::build_profiles() {
     title->setStyleSheet(section_title_ss());
     vl->addWidget(title);
 
-    auto* desc = new QLabel("Each profile has its own isolated database, credentials, logs and workspaces.\n"
-                            "Launch the terminal with  --profile <name>  to open a specific profile.\n"
-                            "Different profiles can run simultaneously — useful for separate trading accounts.");
+    auto* desc = new QLabel(tr("Each profile has its own isolated database, credentials, logs and workspaces.\n"
+                               "Launch the terminal with  --profile <name>  to open a specific profile.\n"
+                               "Different profiles can run simultaneously — useful for separate trading accounts."));
     desc->setWordWrap(true);
     desc->setStyleSheet(label_ss());
     vl->addWidget(desc);
@@ -3067,8 +3066,8 @@ QWidget* SettingsScreen::build_profiles() {
     new_hl->addWidget(create_btn);
     vl->addWidget(new_row);
 
-    auto* hint = new QLabel("Creating a profile sets up a fresh data directory. "
-                            "The app will restart with the new profile active.");
+    auto* hint = new QLabel(tr("Creating a profile sets up a fresh data directory. "
+                               "The app will restart with the new profile active."));
     hint->setWordWrap(true);
     hint->setStyleSheet(label_ss());
     vl->addWidget(hint);

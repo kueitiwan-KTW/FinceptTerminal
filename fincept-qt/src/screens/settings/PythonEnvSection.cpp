@@ -176,7 +176,9 @@ void PythonEnvSection::build_ui() {
     thl->addWidget(search_input_);
 
     venv_filter_ = new QComboBox(this);
-    venv_filter_->addItems({"All", "Trading", "Analytics"});
+    venv_filter_->addItem(tr("All"));
+    venv_filter_->addItem(tr("Trading"));
+    venv_filter_->addItem(tr("Analytics"));
     venv_filter_->setStyleSheet(combo_ss());
     thl->addWidget(venv_filter_);
 

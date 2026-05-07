@@ -13,6 +13,7 @@
 #include <QHideEvent>
 #include <QLabel>
 #include <QLocale>
+#include <QObject>
 #include <QSet>
 #include <QShowEvent>
 #include <QStyle>
@@ -52,14 +53,14 @@ QString format_price(double v) {
 }
 
 QString relative_time(qint64 ts_ms) {
-    if (ts_ms == 0) return QStringLiteral("never");
+    if (ts_ms == 0) return QObject::tr("never");
     const auto delta = QDateTime::currentMSecsSinceEpoch() - ts_ms;
-    if (delta < 0) return QStringLiteral("just now");
+    if (delta < 0) return QObject::tr("just now");
     const auto seconds = delta / 1000;
-    if (seconds < 60) return QStringLiteral("%1s ago").arg(seconds);
-    if (seconds < 3600) return QStringLiteral("%1m ago").arg(seconds / 60);
-    if (seconds < 86400) return QStringLiteral("%1h ago").arg(seconds / 3600);
-    return QStringLiteral("%1d ago").arg(seconds / 86400);
+    if (seconds < 60) return QObject::tr("%1s ago").arg(seconds);
+    if (seconds < 3600) return QObject::tr("%1m ago").arg(seconds / 60);
+    if (seconds < 86400) return QObject::tr("%1h ago").arg(seconds / 3600);
+    return QObject::tr("%1d ago").arg(seconds / 86400);
 }
 
 QString rpc_provider_label() {
@@ -132,25 +133,25 @@ void HoldingsBar::build_ui() {
         root->addLayout(col);
     };
 
-    add_metric(QStringLiteral("SOL"), sol_value_,
+    add_metric(tr("SOL"), sol_value_,
                QStringLiteral("holdingsBarValue"));
-    add_metric(QStringLiteral("$FNCPT"), fncpt_value_,
+    add_metric(tr("$FNCPT"), fncpt_value_,
                QStringLiteral("holdingsBarValueAccent"));
-    add_metric(QStringLiteral("TOTAL"), total_value_,
+    add_metric(tr("TOTAL"), total_value_,
                QStringLiteral("holdingsBarValue"));
-    add_metric(QStringLiteral("$FNCPT PRICE"), fncpt_price_value_,
+    add_metric(tr("$FNCPT PRICE"), fncpt_price_value_,
                QStringLiteral("holdingsBarValueDim"));
-    add_metric(QStringLiteral("UPDATED"), updated_value_,
+    add_metric(tr("UPDATED"), updated_value_,
                QStringLiteral("holdingsBarValueDim"));
 
     root->addStretch(1);
 
-    discount_chip_ = new QLabel(QStringLiteral("30% OFF"), this);
+    discount_chip_ = new QLabel(tr("30% OFF"), this);
     discount_chip_->setObjectName(QStringLiteral("holdingsBarDiscountChip"));
     discount_chip_->hide();
     root->addWidget(discount_chip_);
 
-    feed_status_ = new QLabel(QStringLiteral("○ IDLE"), this);
+    feed_status_ = new QLabel(tr("○ IDLE"), this);
     feed_status_->setObjectName(QStringLiteral("holdingsBarFeedIdle"));
     root->addWidget(feed_status_);
 
@@ -223,7 +224,7 @@ void HoldingsBar::on_wallet_connected(const QString& pubkey, const QString& /*la
     fncpt_value_->setText(QStringLiteral("—"));
     total_value_->setText(QStringLiteral("—"));
     fncpt_price_value_->setText(QStringLiteral("—"));
-    updated_value_->setText(QStringLiteral("waiting…"));
+    updated_value_->setText(tr("waiting…"));
     last_balance_ts_ = 0;
     first_publish_received_ = false;
     update_rpc_indicator();
@@ -285,7 +286,7 @@ void HoldingsBar::on_discount_update(const QVariant& v) {
     const auto d = v.value<fincept::wallet::FncptDiscount>();
     if (!discount_chip_) return;
     if (d.eligible) {
-        discount_chip_->setText(QStringLiteral("%1% OFF").arg(d.discount_pct));
+        discount_chip_->setText(tr("%1% OFF").arg(d.discount_pct));
         discount_chip_->setToolTip(
             tr("Holding ≥ %1 $FNCPT — you qualify for the fee discount.")
                 .arg(d.threshold_raw / std::pow(10.0, d.threshold_decimals), 0, 'f', 0));
@@ -409,23 +410,23 @@ void HoldingsBar::set_feed_status(FeedStatus s) {
     QString object_name;
     switch (s) {
         case FeedStatus::Idle:
-            text = QStringLiteral("○ IDLE");
+            text = tr("○ IDLE");
             object_name = QStringLiteral("holdingsBarFeedIdle");
             break;
         case FeedStatus::Connecting:
-            text = QStringLiteral("◌ CONNECTING");
+            text = tr("◌ CONNECTING");
             object_name = QStringLiteral("holdingsBarFeedConnecting");
             break;
         case FeedStatus::Live:
-            text = QStringLiteral("● LIVE");
+            text = tr("● LIVE");
             object_name = QStringLiteral("holdingsBarFeedLive");
             break;
         case FeedStatus::Stale:
-            text = QStringLiteral("◐ STALE");
+            text = tr("◐ STALE");
             object_name = QStringLiteral("holdingsBarFeedStale");
             break;
         case FeedStatus::Error:
-            text = QStringLiteral("✕ ERROR");
+            text = tr("✕ ERROR");
             object_name = QStringLiteral("holdingsBarFeedError");
             break;
     }
@@ -438,7 +439,9 @@ void HoldingsBar::set_feed_status(FeedStatus s) {
 void HoldingsBar::update_rpc_indicator() {
     if (!rpc_indicator_) return;
     const auto label = rpc_provider_label();
-    rpc_indicator_->setText(label);
+    rpc_indicator_->setText(label == QStringLiteral("PUBLIC") ? tr("PUBLIC")
+                            : label == QStringLiteral("HELIUS") ? tr("HELIUS")
+                            : tr("CUSTOM"));
     if (label == QStringLiteral("PUBLIC")) {
         rpc_indicator_->setToolTip(
             tr("Public Solana RPC. STREAM may degrade — add a Helius API key "

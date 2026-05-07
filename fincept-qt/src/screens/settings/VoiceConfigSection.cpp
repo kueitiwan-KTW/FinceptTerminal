@@ -149,8 +149,8 @@ void VoiceConfigSection::build_ui() {
     model_combo_->setStyleSheet(combo_ss());
     model_combo_->addItem(tr("nova-3 (recommended)"), "nova-3");
     model_combo_->addItem(tr("nova-2"), "nova-2");
-    model_combo_->addItem("enhanced", "enhanced");
-    model_combo_->addItem("base", "base");
+    model_combo_->addItem(tr("enhanced"), "enhanced");
+    model_combo_->addItem(tr("base"), "base");
     model_hl->addWidget(model_lbl);
     model_hl->addStretch();
     model_hl->addWidget(model_combo_);
@@ -291,13 +291,13 @@ void VoiceConfigSection::on_save() {
     } else {
         auto r = SecureStorage::instance().store(kSecureKey, api_key);
         if (r.is_err()) {
-            set_status(QStringLiteral("Failed to save API key: ") + QString::fromStdString(r.error()), true);
+            set_status(tr("Failed to save API key: ") + QString::fromStdString(r.error()), true);
             return;
         }
     }
 
     LOG_INFO(TAG, QString("Voice config saved (provider=%1)").arg(provider));
-    set_status(QStringLiteral("Saved. Changes apply on next voice session."), false);
+    set_status(tr("Saved. Changes apply on next voice session."), false);
     emit config_changed();
 }
 

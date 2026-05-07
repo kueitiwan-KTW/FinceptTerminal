@@ -194,7 +194,7 @@ QWidget* GovDataFrancePanel::build_toolbar() {
 
     hl->addStretch(1);
 
-    export_btn_ = new QPushButton("CSV");
+    export_btn_ = new QPushButton(tr("CSV"));
     export_btn_->setObjectName("govCsvBtn");
     export_btn_->setCursor(Qt::PointingHandCursor);
     connect(export_btn_, &QPushButton::clicked, this, &GovDataFrancePanel::on_export_csv);
@@ -225,7 +225,7 @@ void GovDataFrancePanel::on_tab_changed(int tab_index) {
             load_initial_data();
         else {
             content_stack_->setCurrentIndex(Services);
-            row_count_label_->setText(QString::number(current_services_.size()) + " services");
+            row_count_label_->setText(QString::number(current_services_.size()) + tr(" services"));
         }
         update_breadcrumb("Data Services");
     } else if (view == Datasets) {
@@ -233,7 +233,7 @@ void GovDataFrancePanel::on_tab_changed(int tab_index) {
             show_status("Enter a search term above and click FETCH to find datasets.");
         } else {
             content_stack_->setCurrentIndex(Datasets);
-            row_count_label_->setText(QString::number(current_datasets_.size()) + " datasets");
+            row_count_label_->setText(QString::number(current_datasets_.size()) + tr(" datasets"));
         }
         update_breadcrumb("Datasets");
         search_input_->setPlaceholderText(tr("Search datasets…"));
@@ -243,7 +243,7 @@ void GovDataFrancePanel::on_tab_changed(int tab_index) {
             show_status("Enter a municipality name above and click FETCH to search.");
         } else {
             content_stack_->setCurrentIndex(Geo);
-            row_count_label_->setText(QString::number(current_geo_.size()) + " municipalities");
+            row_count_label_->setText(QString::number(current_geo_.size()) + tr(" municipalities"));
         }
         update_breadcrumb("Geo Search — Municipalities");
         search_input_->setPlaceholderText(tr("Municipality name…"));
@@ -302,7 +302,7 @@ void GovDataFrancePanel::on_back() {
         services_btn_->setChecked(false);
         datasets_btn_->setChecked(true);
         geo_btn_->setChecked(false);
-        row_count_label_->setText(QString::number(current_datasets_.size()) + " datasets");
+        row_count_label_->setText(QString::number(current_datasets_.size()) + tr(" datasets"));
         update_breadcrumb("Datasets");
     }
     update_toolbar_state();
@@ -338,7 +338,7 @@ void GovDataFrancePanel::on_result(const QString& request_id, const services::Go
         geo_btn_->setChecked(false);
         content_stack_->setCurrentIndex(Services);
         update_breadcrumb("Data Services");
-        row_count_label_->setText(QString::number(payload.size()) + " services");
+        row_count_label_->setText(QString::number(payload.size()) + tr(" services"));
     } else if (request_id == "fr_datasets") {
         current_datasets_ = payload;
         populate_datasets(payload);
@@ -350,7 +350,7 @@ void GovDataFrancePanel::on_result(const QString& request_id, const services::Go
         update_breadcrumb("Datasets  ›  "
                           " + search_query_ + "
                           "");
-        row_count_label_->setText(QString::number(payload.size()) + " datasets");
+        row_count_label_->setText(QString::number(payload.size()) + tr(" datasets"));
     } else if (request_id == "fr_geo") {
         current_geo_ = payload;
         populate_geo(payload);
@@ -362,14 +362,14 @@ void GovDataFrancePanel::on_result(const QString& request_id, const services::Go
         update_breadcrumb("Municipalities  ›  "
                           " + search_query_ + "
                           "");
-        row_count_label_->setText(QString::number(payload.size()) + " results");
+        row_count_label_->setText(QString::number(payload.size()) + tr(" results"));
     } else if (request_id == "fr_resources") {
         current_resources_ = payload;
         populate_resources(payload);
         current_view_ = Resources;
         content_stack_->setCurrentIndex(Resources);
         update_breadcrumb("Datasets  ›  Column Schema");
-        row_count_label_->setText(QString::number(payload.size()) + " columns");
+        row_count_label_->setText(QString::number(payload.size()) + tr(" columns"));
     }
 
     update_toolbar_state();

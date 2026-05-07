@@ -161,7 +161,7 @@ void CryptoOrderBook::set_data(const QVector<QPair<double, double>>& bids, const
         spread_ = spread;
         spread_pct_ = spread_pct;
     }
-    spread_label_->setText(QString("SPREAD  %1  (%2%)").arg(spread, 0, 'f', 2).arg(spread_pct, 0, 'f', 4));
+    spread_label_->setText(tr("SPREAD  %1  (%2%)").arg(spread, 0, 'f', 2).arg(spread_pct, 0, 'f', 4));
     cache_dirty_ = true;
     if (repaint_timer_ && !repaint_timer_->isActive())
         repaint_timer_->start();

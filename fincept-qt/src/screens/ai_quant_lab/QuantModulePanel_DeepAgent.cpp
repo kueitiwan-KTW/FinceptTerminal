@@ -65,8 +65,8 @@ QWidget* QuantModulePanel::build_deep_agent_panel() {
     da_vl->setSpacing(12);
 
     auto* desc =
-        new QLabel("Multi-agent financial analysis powered by LangGraph. Delegates to specialist subagents "
-                   "(research, data-analyst, trading, risk-analyzer, portfolio-optimizer, backtester, reporter).",
+        new QLabel(tr("Multi-agent financial analysis powered by LangGraph. Delegates to specialist subagents "
+                      "(research, data-analyst, trading, risk-analyzer, portfolio-optimizer, backtester, reporter)."),
                    da_w);
     desc->setWordWrap(true);
     desc->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
@@ -246,8 +246,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     fm_vl->setContentsMargins(14, 14, 14, 14);
     fm_vl->setSpacing(10);
 
-    auto* fm_desc = new QLabel("Autonomous alpha factor discovery via FactorRDLoop. The agent proposes, codes, runs "
-                               "and evaluates factors iteratively until the target IC is reached.",
+    auto* fm_desc = new QLabel(tr("Autonomous alpha factor discovery via FactorRDLoop. The agent proposes, codes, runs "
+                                  "and evaluates factors iteratively until the target IC is reached."),
                                fm_w);
     fm_desc->setWordWrap(true);
     fm_desc->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
@@ -264,7 +264,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     fm_vl->addWidget(build_input_row("Task Description", fm_task, fm_w));
 
     auto* fm_market = new QComboBox(fm_w);
-    fm_market->addItems({"US", "CN", "EU", "IN", "JP", "HK", "GLOBAL"});
+    fm_market->addItems({tr("US"), tr("CN"), tr("EU"), tr("IN"), tr("JP"), tr("HK"), tr("GLOBAL")});
     fm_market->setStyleSheet(combo_ss());
     fm_vl->addWidget(build_input_row("Target Market", fm_market, fm_w));
 
@@ -309,8 +309,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     mo_vl->setContentsMargins(14, 14, 14, 14);
     mo_vl->setSpacing(10);
 
-    auto* mo_desc = new QLabel("ML model hyperparameter optimization via ModelRDLoop. Supports LightGBM, XGBoost, "
-                               "LSTM, GRU, Transformer and TCN. Optimizes for Sharpe, IC, max drawdown, or win rate.",
+    auto* mo_desc = new QLabel(tr("ML model hyperparameter optimization via ModelRDLoop. Supports LightGBM, XGBoost, "
+                                  "LSTM, GRU, Transformer and TCN. Optimizes for Sharpe, IC, max drawdown, or win rate."),
                                mo_w);
     mo_desc->setWordWrap(true);
     mo_desc->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
@@ -361,8 +361,8 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     qr_vl->setContentsMargins(14, 14, 14, 14);
     qr_vl->setSpacing(10);
 
-    auto* qr_desc = new QLabel("Combined factor discovery + model optimization via QuantRDLoop. Runs the full "
-                               "research pipeline end-to-end: propose factors, code them, backtest, refine.",
+    auto* qr_desc = new QLabel(tr("Combined factor discovery + model optimization via QuantRDLoop. Runs the full "
+                                  "research pipeline end-to-end: propose factors, code them, backtest, refine."),
                                qr_w);
     qr_desc->setWordWrap(true);
     qr_desc->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
@@ -379,7 +379,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     qr_vl->addWidget(build_input_row("Research Goal", qr_goal, qr_w));
 
     auto* qr_market = new QComboBox(qr_w);
-    qr_market->addItems({"US", "CN", "EU", "IN", "JP", "HK", "GLOBAL"});
+    qr_market->addItems({tr("US"), tr("CN"), tr("EU"), tr("IN"), tr("JP"), tr("HK"), tr("GLOBAL")});
     qr_market->setStyleSheet(combo_ss());
     qr_vl->addWidget(build_input_row("Target Market", qr_market, qr_w));
 
@@ -427,7 +427,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
     tm_hl->setSpacing(6);
 
     auto* filter_combo = new QComboBox(tm_toolbar);
-    filter_combo->addItems({"All", "running", "completed", "stopped", "failed"});
+    filter_combo->addItems({tr("All"), "running", "completed", "stopped", "failed"});
     filter_combo->setFixedWidth(120);
     filter_combo->setStyleSheet(combo_ss());
     tm_hl->addWidget(filter_combo);
@@ -477,7 +477,7 @@ QWidget* QuantModulePanel::build_rd_agent_tab(QComboBox* llm_combo) {
             .arg(ui::fonts::TINY));
     tm_hl->addWidget(resume_btn);
 
-    auto* factors_btn = new QPushButton("GET FACTORS", tm_toolbar);
+    auto* factors_btn = new QPushButton(tr("GET FACTORS"), tm_toolbar);
     factors_btn->setCursor(Qt::PointingHandCursor);
     factors_btn->setStyleSheet(
         QString("QPushButton { background:transparent; color:%1; border:1px solid %1;"

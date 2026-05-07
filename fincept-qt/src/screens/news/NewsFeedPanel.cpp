@@ -52,12 +52,10 @@ NewsFeedPanel::NewsFeedPanel(QWidget* parent) : QWidget(parent) {
         layout->setContentsMargins(24, 24, 24, 24);
         layout->setSpacing(8);
         layout->addStretch();
-        auto* title = new QLabel(QStringLiteral("No articles available"), empty_state_);
+        auto* title = new QLabel(tr("No articles available"), empty_state_);
         title->setObjectName("newsEmptyStateTitle");
         title->setAlignment(Qt::AlignCenter);
-        auto* hint = new QLabel(
-            QStringLiteral("Check your network connection and click Refresh to retry."),
-            empty_state_);
+        auto* hint = new QLabel(tr("Check your network connection and click Refresh to retry."), empty_state_);
         hint->setObjectName("newsEmptyStateHint");
         hint->setAlignment(Qt::AlignCenter);
         hint->setWordWrap(true);

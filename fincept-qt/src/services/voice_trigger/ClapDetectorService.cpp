@@ -11,6 +11,7 @@
 #include "python/PythonRunner.h"
 #include "python/PythonSetupManager.h"
 
+#include <QCoreApplication>
 #include <QFileInfo>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -57,7 +58,7 @@ void ClapDetectorService::start() {
         python_exe = python::PythonRunner::instance().python_path();
     if (python_exe.isEmpty()) {
         LOG_ERROR(CLAP_TAG, "No Python interpreter — cannot start clap detector");
-        emit error_occurred(QStringLiteral("Python not available — clap-to-start unavailable"));
+        emit error_occurred(QCoreApplication::translate("FinceptTerminal", "Python not available — clap-to-start unavailable"));
         return;
     }
 
@@ -65,7 +66,7 @@ void ClapDetectorService::start() {
     const QString script = scripts_dir + QStringLiteral("/voice/clap_detector.py");
     if (!QFileInfo::exists(script)) {
         LOG_ERROR(CLAP_TAG, QString("Clap detector script missing at '%1'").arg(script));
-        emit error_occurred(QStringLiteral("clap_detector.py not found: ") + script);
+        emit error_occurred(QCoreApplication::translate("FinceptTerminal", "clap_detector.py not found: ") + script);
         return;
     }
 
@@ -125,7 +126,7 @@ void ClapDetectorService::start() {
     connect(process_, &QProcess::errorOccurred, this, [this](QProcess::ProcessError err) {
         LOG_ERROR(CLAP_TAG, QString("QProcess::errorOccurred err=%1").arg(static_cast<int>(err)));
         if (err == QProcess::FailedToStart) {
-            emit error_occurred(QStringLiteral("Failed to start clap detector"));
+            emit error_occurred(QCoreApplication::translate("FinceptTerminal", "Failed to start clap detector"));
             stop();
         }
     });

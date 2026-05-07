@@ -369,14 +369,14 @@ QWidget* NotesScreen::build_editor_panel() {
         return l;
     };
 
-    meta_row->addWidget(make_label("CAT:"));
+    meta_row->addWidget(make_label(tr("CAT:")));
     edit_category_ = new QComboBox;
     edit_category_->setStyleSheet(kCombo());
     for (int i = 1; i < kCategories.size(); ++i) // skip "ALL"
         edit_category_->addItem(kCategories[i].label, kCategories[i].id);
     meta_row->addWidget(edit_category_);
 
-    meta_row->addWidget(make_label("PRI:"));
+    meta_row->addWidget(make_label(tr("PRI:")));
     edit_priority_ = new QComboBox;
     edit_priority_->setStyleSheet(kCombo());
     for (const auto& p : kPriorities)
@@ -384,7 +384,7 @@ QWidget* NotesScreen::build_editor_panel() {
     edit_priority_->setCurrentText("MEDIUM");
     meta_row->addWidget(edit_priority_);
 
-    meta_row->addWidget(make_label("SENT:"));
+    meta_row->addWidget(make_label(tr("SENT:")));
     edit_sentiment_ = new QComboBox;
     edit_sentiment_->setStyleSheet(kCombo());
     for (const auto& s : kSentiments)
@@ -398,13 +398,13 @@ QWidget* NotesScreen::build_editor_panel() {
     // Tags + Tickers row
     auto* tag_row = new QHBoxLayout;
     tag_row->setSpacing(8);
-    tag_row->addWidget(make_label("TAGS:"));
+    tag_row->addWidget(make_label(tr("TAGS:")));
     edit_tags_ = new QLineEdit;
     edit_tags_->setPlaceholderText(tr("tag1, tag2, ..."));
     edit_tags_->setStyleSheet(kInput());
     tag_row->addWidget(edit_tags_);
 
-    tag_row->addWidget(make_label("TICKERS:"));
+    tag_row->addWidget(make_label(tr("TICKERS:")));
     edit_tickers_ = new QLineEdit;
     edit_tickers_->setPlaceholderText(tr("AAPL, MSFT, ..."));
     edit_tickers_->setStyleSheet(kInput());
@@ -469,7 +469,7 @@ void NotesScreen::update_notes_list() {
     }
     notes_list_->blockSignals(false);
 
-    count_label_->setText(QString("%1 notes").arg(filtered_notes_.size()));
+    count_label_->setText(tr("%1 notes").arg(filtered_notes_.size()));
 
     // Update stats
     int fav_count = 0;
@@ -477,7 +477,7 @@ void NotesScreen::update_notes_list() {
         if (n.is_favorite)
             ++fav_count;
     }
-    stats_label_->setText(QString("Total: %1  |  Fav: %2").arg(notes_.size()).arg(fav_count));
+    stats_label_->setText(tr("Total: %1  |  Fav: %2").arg(notes_.size()).arg(fav_count));
 }
 
 // ── Slots ────────────────────────────────────────────────────────────────────
@@ -569,7 +569,7 @@ void NotesScreen::on_delete_note() {
     if (selected_note_id_ <= 0)
         return;
 
-    auto reply = QMessageBox::question(this, "Delete Note", "Are you sure you want to delete this note?",
+    auto reply = QMessageBox::question(this, tr("Delete Note"), tr("Are you sure you want to delete this note?"),
                                        QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
     if (reply != QMessageBox::Yes)
@@ -646,7 +646,7 @@ void NotesScreen::on_export_note() {
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 void NotesScreen::show_note(const fincept::FinancialNote& note) {
-    view_title_->setText(note.is_favorite ? ("* " + note.title) : note.title);
+    view_title_->setText(note.is_favorite ? (tr("* ") + note.title) : note.title);
 
     QStringList meta_parts;
     meta_parts << note.category;

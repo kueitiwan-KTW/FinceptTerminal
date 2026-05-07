@@ -103,12 +103,12 @@ void PortfolioStatusBar::set_summary(const portfolio::PortfolioSummary& s) {
     auto fmt = [](double v) { return QString::number(v, 'f', 2); };
 
     set_portfolio_name(s.portfolio.name);
-    positions_label_->setText(QString("%1 positions").arg(s.total_positions));
+    positions_label_->setText(tr("%1 positions").arg(s.total_positions));
 
-    nav_label_->setText(QString("NAV %1 %2").arg(s.portfolio.currency, fmt(s.total_market_value)));
+    nav_label_->setText(tr("NAV %1 %2").arg(s.portfolio.currency, fmt(s.total_market_value)));
 
     double pnl = s.total_unrealized_pnl;
-    pnl_label_->setText(QString("P&L %1%2").arg(pnl >= 0 ? "+" : "").arg(fmt(pnl)));
+    pnl_label_->setText(tr("P&L %1%2").arg(pnl >= 0 ? "+" : "").arg(fmt(pnl)));
     pnl_label_->setStyleSheet(QString("color:%1; font-size:10px; font-weight:600;")
                                   .arg(pnl >= 0 ? ui::colors::POSITIVE() : ui::colors::NEGATIVE()));
 }

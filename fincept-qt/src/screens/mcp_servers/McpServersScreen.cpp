@@ -484,16 +484,16 @@ void McpServersScreen::on_install_server(int index) {
     form->setSpacing(10);
 
     auto* name_edit = new QLineEdit(e.name);
-    form->addRow("Name", name_edit);
+    form->addRow(tr("Name"), name_edit);
 
     auto* desc_edit = new QLineEdit(e.description);
-    form->addRow("Description", desc_edit);
+    form->addRow(tr("Description"), desc_edit);
 
     auto* cmd_edit = new QLineEdit(e.command);
-    form->addRow("Command", cmd_edit);
+    form->addRow(tr("Command"), cmd_edit);
 
     auto* args_edit = new QLineEdit(e.args.join(' '));
-    form->addRow("Arguments", args_edit);
+    form->addRow(tr("Arguments"), args_edit);
 
     // Env vars — one field per required key with sample placeholder
     QList<QPair<QString, QLineEdit*>> env_fields;
@@ -519,10 +519,10 @@ void McpServersScreen::on_install_server(int index) {
     auto* cat_combo = new QComboBox;
     cat_combo->addItems({"utilities", "developer", "database"});
     cat_combo->setCurrentText(e.category);
-    form->addRow("Category", cat_combo);
+    form->addRow(tr("Category"), cat_combo);
 
-    auto* autostart_check = new QCheckBox("Auto-start on launch");
-    form->addRow("", autostart_check);
+    auto* autostart_check = new QCheckBox(tr("Auto-start on launch"));
+    form->addRow(addRow("", autostart_check);
 
     auto* btns = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     connect(btns, &QDialogButtonBox::accepted, dlg, &QDialog::accept);
@@ -617,7 +617,7 @@ void McpServersScreen::on_remove_server() {
             break;
         }
 
-    QMessageBox mb(QMessageBox::Question, "Remove Server", "Remove \"" + name + "\"?\nThis cannot be undone.",
+    QMessageBox mb(QMessageBox::Question, tr("Remove Server"), tr("Remove \"") + name + tr("\"?\nThis cannot be undone."),
                    QMessageBox::Yes | QMessageBox::Cancel, this);
     if (mb.exec() != QMessageBox::Yes)
         return;
@@ -689,29 +689,29 @@ void McpServersScreen::on_add_server() {
 
     auto* name_edit = new QLineEdit;
     name_edit->setPlaceholderText(tr("e.g. My Custom Server"));
-    form->addRow("Name", name_edit);
+    form->addRow(tr("Name"), name_edit);
 
     auto* desc_edit = new QLineEdit;
     desc_edit->setPlaceholderText(tr("Short description"));
-    form->addRow("Description", desc_edit);
+    form->addRow(tr("Description"), desc_edit);
 
     auto* cmd_edit = new QLineEdit("uvx");
-    form->addRow("Command", cmd_edit);
+    form->addRow(tr("Command"), cmd_edit);
 
     auto* args_edit = new QLineEdit;
     args_edit->setPlaceholderText(tr("e.g. my-mcp-package --flag value"));
-    form->addRow("Arguments", args_edit);
+    form->addRow(tr("Arguments"), args_edit);
 
     auto* env_edit = new QLineEdit;
     env_edit->setPlaceholderText(tr("KEY=value KEY2=value2"));
-    form->addRow("Env Vars", env_edit);
+    form->addRow(tr("Env Vars"), env_edit);
 
     auto* cat_combo = new QComboBox;
     cat_combo->addItems({"utilities", "developer", "database"});
-    form->addRow("Category", cat_combo);
+    form->addRow(tr("Category"), cat_combo);
 
-    auto* autostart_check = new QCheckBox("Auto-start on launch");
-    form->addRow("", autostart_check);
+    auto* autostart_check = new QCheckBox(tr("Auto-start on launch"));
+    form->addRow(addRow("", autostart_check);
 
     auto* btns = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     connect(btns, &QDialogButtonBox::accepted, dlg, &QDialog::accept);
@@ -873,7 +873,7 @@ void McpServersScreen::populate_marketplace() {
             bottom->addWidget(cat_badge);
 
             if (!e.env_keys.isEmpty()) {
-                auto* env_lbl = new QLabel("Needs: " + e.env_keys.join(", "));
+                auto* env_lbl = new QLabel(tr("Needs: ") + e.env_keys.join(", "));
                 env_lbl->setObjectName("mktCardEnv");
                 bottom->addWidget(env_lbl);
             }
@@ -926,7 +926,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
     top->addWidget(name_lbl);
 
     auto* status_pill =
-        new QLabel(running ? "● RUNNING" : (starting ? "⟳ STARTING" : (error ? "● ERROR" : "○ STOPPED")));
+        new QLabel(running ? tr("● RUNNING") : (starting ? tr("⟳ STARTING") : (error ? tr("● ERROR") : tr("○ STOPPED"))));
     status_pill->setObjectName(running ? "pillRunning"
                                        : (starting ? "pillRunning" : (error ? "pillError" : "pillStopped")));
     top->addWidget(status_pill);
@@ -937,7 +937,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
     const QString sid = s.id;
     QPointer<McpServersScreen> self = this;
 
-    auto* toggle_btn = new QPushButton(running ? "● ENABLED" : (starting ? "⟳ STARTING..." : "○ DISABLED"));
+    auto* toggle_btn = new QPushButton(running ? tr("● ENABLED") : (starting ? tr("⟳ STARTING...") : tr("○ DISABLED")));
     toggle_btn->setObjectName(running ? "cardToggleOn" : "cardToggleOff");
     toggle_btn->setCursor(Qt::PointingHandCursor);
     toggle_btn->setFixedWidth(110);
@@ -968,7 +968,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
                         if (r.is_err()) {
                             const QString msg = QString::fromStdString(r.error());
                             LOG_ERROR("McpServers", "Start failed: " + msg);
-                            QMessageBox::warning(self, "Server Failed to Start", msg);
+                            QMessageBox::warning(self, tr("Server Failed to Start"), msg);
                         }
                         self->refresh_installed();
                         self->update_status_bar();
@@ -1055,7 +1055,7 @@ QWidget* McpServersScreen::build_server_card(const McpServerConfig& s) {
                 name = srv.name;
                 break;
             }
-        QMessageBox mb(QMessageBox::Question, "Remove Server", "Remove \"" + name + "\"?\nThis cannot be undone.",
+        QMessageBox mb(QMessageBox::Question, tr("Remove Server"), tr("Remove \"") + name + tr("\"?\nThis cannot be undone."),
                        QMessageBox::Yes | QMessageBox::Cancel, self);
         if (mb.exec() != QMessageBox::Yes)
             return;
@@ -1127,11 +1127,11 @@ void McpServersScreen::refresh_tools() {
         chk->setFlags(Qt::ItemIsUserCheckable | Qt::ItemIsEnabled);
         tools_table_->setItem(row, 0, chk);
         tools_table_->setItem(row, 1, new QTableWidgetItem(t.name));
-        auto* si = new QTableWidgetItem("Fincept Terminal");
+        auto* si = new QTableWidgetItem(tr("Fincept Terminal"));
         si->setData(Qt::UserRole, QString(INTERNAL_SERVER_ID));
         si->setForeground(QColor(colors::AMBER()));
         tools_table_->setItem(row, 2, si);
-        tools_table_->setItem(row, 3, new QTableWidgetItem("internal"));
+        tools_table_->setItem(row, 3, new QTableWidgetItem(tr("internal")));
         tools_table_->setItem(row, 4, new QTableWidgetItem(t.description));
         tools_table_->setRowHeight(row, 26);
         ++row;
@@ -1146,7 +1146,7 @@ void McpServersScreen::refresh_tools() {
         si->setData(Qt::UserRole, t.server_id);
         si->setForeground(QColor(colors::CYAN()));
         tools_table_->setItem(row, 2, si);
-        tools_table_->setItem(row, 3, new QTableWidgetItem("external"));
+        tools_table_->setItem(row, 3, new QTableWidgetItem(tr("external")));
         tools_table_->setItem(row, 4, new QTableWidgetItem(t.description));
         tools_table_->setRowHeight(row, 26);
         ++row;
@@ -1156,7 +1156,7 @@ void McpServersScreen::refresh_tools() {
     tools_table_->resizeColumnToContents(2);
     tools_table_->resizeColumnToContents(3);
     tools_table_->setSortingEnabled(true);
-    tools_count_->setText(QString("%1 tools  (%2 internal · %3 external)")
+    tools_count_->setText(tr("%1 tools  (%2 internal · %3 external)")
                               .arg(total)
                               .arg(internal_tools.size())
                               .arg(external_tools.size()));
@@ -1170,8 +1170,8 @@ void McpServersScreen::update_status_bar() {
     for (const auto& s : servers)
         if (s.status == ServerStatus::Running)
             ++running;
-    status_count_->setText(QString::number(servers.size()) + " servers");
-    status_running_->setText(QString::number(running) + " running");
+    status_count_->setText(QString::number(servers.size()) + tr(" servers"));
+    status_running_->setText(QString::number(running) + tr(" running"));
 }
 
 // ── IStatefulScreen ───────────────────────────────────────────────────────────

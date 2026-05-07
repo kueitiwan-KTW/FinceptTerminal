@@ -370,7 +370,7 @@ QWidget* RelationshipMapScreen::build_detail_panel() {
     vl->setSpacing(8);
 
     auto* header = new QHBoxLayout;
-    detail_title_ = new QLabel("SELECT A NODE");
+    detail_title_ = new QLabel(tr("SELECT A NODE"));
     detail_title_->setStyleSheet(
         QString("color: %1; font-size: 12px; font-weight: 700; %2").arg(colors::TEXT_PRIMARY(), MF()));
     header->addWidget(detail_title_);
@@ -713,7 +713,7 @@ void RelationshipMapScreen::on_node_selected() {
             }
         }
 
-        detail_title_->setText(label.isEmpty() ? "NODE" : label);
+        detail_title_->setText(label.isEmpty() ? tr("NODE") : label);
         detail_category_->setText(category_text);
         detail_category_->setStyleSheet(
             QString("color: %1; font-size: 9px; font-weight: 700; letter-spacing: 0.5px; %2").arg(colors::AMBER(), MF()));
@@ -791,11 +791,11 @@ void RelationshipMapScreen::update_status_bar() {
         return;
     }
     int node_count = scene_->items().size(); // approximate
-    status_nodes_->setText(QString("%1 ITEMS | %2 PEERS | %3 HOLDERS")
+    status_nodes_->setText(tr("%1 ITEMS | %2 PEERS | %3 HOLDERS")
                                .arg(node_count)
                                .arg(current_data_.peers.size())
                                .arg(current_data_.institutional_holders.size()));
-    status_quality_->setText(QString("QUALITY: %1%").arg(current_data_.data_quality));
+    status_quality_->setText(tr("QUALITY: %1%").arg(current_data_.data_quality));
 }
 
 // ── IStatefulScreen ───────────────────────────────────────────────────────────

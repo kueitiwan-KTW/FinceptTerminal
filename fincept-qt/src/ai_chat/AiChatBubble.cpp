@@ -450,8 +450,8 @@ void AiChatBubble::on_send() {
     // Fail fast if LLM is not configured — show inline error instead of a
     // confusing delayed "No provider" message after the network round-trip.
     if (!ai_chat::LlmService::instance().is_configured()) {
-        add_bubble("assistant", "AI chat is not configured. Please go to **Settings → LLM Config** "
-                                "and add an API key or select the Fincept provider.");
+        add_bubble("assistant", tr("AI chat is not configured. Please go to **Settings → LLM Config** "
+                                   "and add an API key or select the Fincept provider."));
         return;
     }
 
@@ -604,7 +604,7 @@ void AiChatBubble::add_bubble(const QString& role, const QString& text) {
     cvl->setSpacing(3);
 
     // Role micro-label
-    auto* role_lbl = new QLabel(is_user ? "You" : "AI");
+    auto* role_lbl = new QLabel(is_user ? tr("You") : tr("AI"));
     role_lbl->setAlignment(is_user ? Qt::AlignRight : Qt::AlignLeft);
     role_lbl->setStyleSheet(QString("color:%1;font-size:10px;font-weight:700;background:transparent;")
                                 .arg(is_user ? col::AMBER() : col::AMBER()));

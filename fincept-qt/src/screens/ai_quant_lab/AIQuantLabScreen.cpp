@@ -120,7 +120,7 @@ QWidget* AIQuantLabScreen::build_top_bar() {
     hl->addWidget(badge_scroll_, 1);
 
     // Module count chip
-    auto* count_lbl = new QLabel(QString("%1 MODULES").arg(modules_.size()), top_bar_);
+    auto* count_lbl = new QLabel(tr("%1 MODULES").arg(modules_.size()), top_bar_);
     count_lbl->setObjectName("aqModuleCount");
     hl->addWidget(count_lbl);
 
@@ -443,7 +443,7 @@ void AIQuantLabScreen::update_right_panel() {
     right_title_->setText(mod.label.toUpper());
     right_title_->setStyleSheet(
         QString("color:%1; font-weight:700; font-size:11px; background:transparent;").arg(mod.color.name()));
-    right_category_->setText(QString(mod.category).replace('_', '/') + " module");
+    right_category_->setText(QString(mod.category).replace('_', '/') + tr(" module"));
     right_desc_->setText(mod.description);
     right_script_->setText(tr("Script: ") + mod.script);
 }

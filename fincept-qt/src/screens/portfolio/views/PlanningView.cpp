@@ -220,8 +220,8 @@ QWidget* PlanningView::build_goals_tab() {
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
 
-    auto* desc = new QLabel("Define financial goals (house, education, emergency fund)\n"
-                            "and track your progress toward each target.");
+    auto* desc = new QLabel(tr("Define financial goals (house, education, emergency fund)\n"
+                               "and track your progress toward each target."));
     desc->setAlignment(Qt::AlignCenter);
     desc->setWordWrap(true);
     desc->setStyleSheet(QString("color:%1; font-size:11px;").arg(ui::colors::TEXT_TERTIARY()));
@@ -242,8 +242,8 @@ QWidget* PlanningView::build_savings_tab() {
         QString("color:%1; font-size:12px; font-weight:700; letter-spacing:1px;").arg(ui::colors::AMBER()));
     layout->addWidget(title);
 
-    auto* desc = new QLabel("Analyze how different savings rates and contribution schedules\n"
-                            "affect your long-term wealth accumulation.");
+    auto* desc = new QLabel(tr("Analyze how different savings rates and contribution schedules\n"
+                               "affect your long-term wealth accumulation."));
     desc->setAlignment(Qt::AlignCenter);
     desc->setWordWrap(true);
     desc->setStyleSheet(QString("color:%1; font-size:11px;").arg(ui::colors::TEXT_TERTIARY()));
@@ -294,7 +294,7 @@ void PlanningView::recalculate() {
     gap_label_->setStyleSheet(QString("color:%1; font-size:18px; font-weight:700;").arg(gap_color));
 
     if (gap >= 0) {
-        status_label_->setText(QString("\u2713 On track! Your projected retirement fund of %1 %2 "
+        status_label_->setText(tr("\u2713 On track! Your projected retirement fund of %1 %2 "
                                        "exceeds your target of %1 %3 by %1 %4.")
                                    .arg(currency_)
                                    .arg(QString::number(projected, 'f', 0))
@@ -303,7 +303,7 @@ void PlanningView::recalculate() {
         status_label_->setStyleSheet(QString("color:%1; font-size:12px; padding:12px;").arg(ui::colors::POSITIVE()));
     } else {
         double needed_monthly = (-gap) / ((std::pow(1.0 + monthly_rate, months) - 1.0) / monthly_rate);
-        status_label_->setText(QString("\u26A0 Shortfall of %1 %2. Consider increasing monthly savings "
+        status_label_->setText(tr("\u26A0 Shortfall of %1 %2. Consider increasing monthly savings "
                                        "by %1 %3 to close the gap.")
                                    .arg(currency_)
                                    .arg(QString::number(std::abs(gap), 'f', 0))

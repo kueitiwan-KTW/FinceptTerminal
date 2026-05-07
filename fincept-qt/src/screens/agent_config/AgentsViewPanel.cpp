@@ -204,22 +204,22 @@ QWidget* AgentsViewPanel::build_config_panel() {
     vl->addWidget(section_hdr("FEATURES"));
     const QString chk_style = QString("QCheckBox{color:%1;font-size:11px;spacing:6px;}").arg(ui::colors::TEXT_PRIMARY());
     auto* feat_grid = new QGridLayout;
-    reasoning_check_ = new QCheckBox("Reasoning");
+    reasoning_check_ = new QCheckBox(tr("Reasoning"));
     reasoning_check_->setStyleSheet(chk_style);
     feat_grid->addWidget(reasoning_check_, 0, 0);
-    memory_check_ = new QCheckBox("Memory");
+    memory_check_ = new QCheckBox(tr("Memory"));
     memory_check_->setStyleSheet(chk_style);
     feat_grid->addWidget(memory_check_, 0, 1);
-    knowledge_check_ = new QCheckBox("Knowledge");
+    knowledge_check_ = new QCheckBox(tr("Knowledge"));
     knowledge_check_->setStyleSheet(chk_style);
     feat_grid->addWidget(knowledge_check_, 1, 0);
-    guardrails_check_ = new QCheckBox("Guardrails");
+    guardrails_check_ = new QCheckBox(tr("Guardrails"));
     guardrails_check_->setStyleSheet(chk_style);
     feat_grid->addWidget(guardrails_check_, 1, 1);
-    tracing_check_ = new QCheckBox("Tracing");
+    tracing_check_ = new QCheckBox(tr("Tracing"));
     tracing_check_->setStyleSheet(chk_style);
     feat_grid->addWidget(tracing_check_, 2, 0);
-    agentic_memory_check_ = new QCheckBox("Agentic Memory");
+    agentic_memory_check_ = new QCheckBox(tr("Agentic Memory"));
     agentic_memory_check_->setStyleSheet(chk_style);
     feat_grid->addWidget(agentic_memory_check_, 2, 1);
     vl->addLayout(feat_grid);
@@ -300,7 +300,7 @@ QWidget* AgentsViewPanel::build_query_panel() {
     vl->addWidget(section_hdr("TEST QUERY"));
 
     auto* opts = new QHBoxLayout;
-    auto_route_check_ = new QCheckBox("Auto-Route");
+    auto_route_check_ = new QCheckBox(tr("Auto-Route"));
     auto_route_check_->setStyleSheet(QString("QCheckBox{color:%1;font-size:10px;}").arg(ui::colors::POSITIVE()));
     opts->addWidget(auto_route_check_);
 
@@ -436,7 +436,7 @@ void AgentsViewPanel::setup_connections() {
         run_btn_->setText(tr("RUN AGENT"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
-            result_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
+            result_status_->setText(tr("Completed in %1ms").arg(r.execution_time_ms));
             result_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
         } else {
             result_display_->setPlainText("Error: " + r.error);
@@ -472,7 +472,7 @@ void AgentsViewPanel::setup_connections() {
         run_btn_->setText(tr("RUN AGENT"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
-            result_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
+            result_status_->setText(tr("Completed in %1ms").arg(r.execution_time_ms));
             result_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
         } else {
             result_display_->setPlainText("Error: " + r.error);
@@ -485,7 +485,7 @@ void AgentsViewPanel::setup_connections() {
         if (r.request_id != pending_request_id_)
             return;
         if (r.success) {
-            routing_info_label_->setText(QString("Routed → %1 (intent: %2, confidence: %3%)")
+            routing_info_label_->setText(tr("Routed → %1 (intent: %2, confidence: %3%)")
                                              .arg(r.agent_id, r.intent)
                                              .arg(static_cast<int>(r.confidence * 100)));
             routing_info_label_->show();

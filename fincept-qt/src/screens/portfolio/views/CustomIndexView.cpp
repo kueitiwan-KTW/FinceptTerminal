@@ -387,7 +387,7 @@ void CustomIndexView::create_index() {
     const QString today = QDateTime::currentDateTime().toString("yyyy-MM-dd");
     CustomIndexRepository::instance().save_value(index_id, today, current_val);
 
-    create_status_->setText(QString("Index '%1' created successfully.").arg(name));
+    create_status_->setText(tr("Index '%1' created successfully.").arg(name));
     create_status_->setStyleSheet(QString("color:%1; font-size:9px;").arg(ui::colors::POSITIVE()));
     create_status_->show();
     name_edit_->clear();
@@ -464,7 +464,7 @@ void CustomIndexView::show_index_performance(const QString& index_id, const QStr
     auto result = CustomIndexRepository::instance().get_values(index_id, 365);
 
     if (result.is_err() || result.value().isEmpty()) {
-        perf_title_->setText(QString("PERFORMANCE — %1  (no data)").arg(name));
+        perf_title_->setText(tr("PERFORMANCE — %1  (no data)").arg(name));
         perf_stack_->setCurrentIndex(0);
         return;
     }
@@ -509,7 +509,7 @@ void CustomIndexView::show_index_performance(const QString& index_id, const QStr
     chart->addAxis(y_axis, Qt::AlignLeft);
     series->attachAxis(y_axis);
 
-    perf_title_->setText(QString("PERFORMANCE — %1").arg(name));
+    perf_title_->setText(tr("PERFORMANCE — %1").arg(name));
     perf_stack_->setCurrentIndex(1);
 }
 

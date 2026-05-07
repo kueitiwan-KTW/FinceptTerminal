@@ -11,6 +11,7 @@
 #include <QHeaderView>
 #include <QLabel>
 #include <QLocale>
+#include <QObject>
 #include <QPainter>
 #include <QPieSeries>
 #include <QScrollArea>
@@ -65,20 +66,20 @@ class SectorCardClickForwarder : public QObject {
 QString verdict_for_hhi(double hhi) {
     // HHI convention uses fractions of 10,000; we use percent-squared so
     // divide by 100 to get the standard range. 1500-2500 = moderate, 2500+ = concentrated.
-    if (hhi < 1500) return QStringLiteral("Diversified");
-    if (hhi < 2500) return QStringLiteral("Balanced");
-    return QStringLiteral("Concentrated");
+    if (hhi < 1500) return QObject::tr("Diversified");
+    if (hhi < 2500) return QObject::tr("Balanced");
+    return QObject::tr("Concentrated");
 }
 
 QString verdict_for_top3(double pct) {
-    if (pct < 50.0) return QStringLiteral("Diversified");
-    if (pct < 75.0) return QStringLiteral("Balanced");
-    return QStringLiteral("Concentrated");
+    if (pct < 50.0) return QObject::tr("Diversified");
+    if (pct < 75.0) return QObject::tr("Balanced");
+    return QObject::tr("Concentrated");
 }
 
 QColor verdict_color(const QString& verdict) {
-    if (verdict == QStringLiteral("Diversified")) return QColor(ui::colors::POSITIVE());
-    if (verdict == QStringLiteral("Balanced")) return QColor(ui::colors::AMBER());
+    if (verdict == QObject::tr("Diversified")) return QColor(ui::colors::POSITIVE());
+    if (verdict == QObject::tr("Balanced")) return QColor(ui::colors::AMBER());
     return QColor(ui::colors::NEGATIVE());
 }
 
@@ -358,7 +359,7 @@ void AnalyticsSectorsView::set_data(const portfolio::PortfolioSummary& summary, 
 QVector<AnalyticsSectorsView::SectorInfo> AnalyticsSectorsView::compute_sectors() const {
     QHash<QString, SectorInfo> map;
     for (const auto& h : summary_.holdings) {
-        QString sec = h.sector.isEmpty() ? QStringLiteral("Unclassified") : h.sector;
+        QString sec = h.sector.isEmpty() ? tr("Unclassified") : h.sector;
         auto& info = map[sec];
         info.name = sec;
         info.weight += h.weight;
@@ -426,7 +427,7 @@ void AnalyticsSectorsView::update_donut(const QVector<SectorInfo>& sectors) {
     });
 
     // Center label
-    donut_center_->setText(QString("%1\nsectors").arg(sectors.size()));
+    donut_center_->setText(tr("%1\nsectors").arg(sectors.size()));
     donut_center_->adjustSize();
     auto reposition_center = [this]() {
         if (!donut_view_ || !donut_center_)
@@ -472,7 +473,7 @@ void AnalyticsSectorsView::update_donut(const QVector<SectorInfo>& sectors) {
         legend_lay->addLayout(row);
     }
     if (sectors.size() > shown) {
-        auto* more = new QLabel(QString("+%1 more").arg(sectors.size() - shown), legend_container_);
+        auto* more = new QLabel(tr("+%1 more").arg(sectors.size() - shown), legend_container_);
         more->setStyleSheet(QString("color:%1; font-size:%2px; background:transparent;")
                                  .arg(ui::colors::TEXT_TERTIARY())
                                  .arg(ui::fonts::font_px(-3)));
@@ -588,7 +589,7 @@ void AnalyticsSectorsView::update_performers(const QVector<SectorInfo>& sectors)
                                    .arg(ui::fonts::DATA_FAMILY));
         cl->addWidget(metric);
 
-        auto* sub = new QLabel(QString("%1 positions").arg(c.s->count), card);
+        auto* sub = new QLabel(tr("%1 positions").arg(c.s->count), card);
         sub->setStyleSheet(QString("color:%1; font-size:%2px; background:transparent;")
                                 .arg(ui::colors::TEXT_TERTIARY())
                                 .arg(ui::fonts::font_px(-3)));

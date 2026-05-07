@@ -154,7 +154,7 @@ void NotesWidget::refresh_data() {
     auto& repo = fincept::NotesRepository::instance();
     auto result = repo.list_all(/*include_archived=*/false);
     if (!result.is_ok()) {
-        auto* err = new QLabel(QString("Failed to load notes: %1").arg(QString::fromStdString(result.error())));
+        auto* err = new QLabel(tr("Failed to load notes: %1").arg(QString::fromStdString(result.error())));
         err->setAlignment(Qt::AlignCenter);
         err->setStyleSheet(QString("color:%1;font-size:10px;background:transparent;padding:16px;")
                                .arg(ui::colors::NEGATIVE()));
@@ -248,7 +248,7 @@ void NotesWidget::refresh_data() {
 
         if (!note.priority.isEmpty()) {
             auto* prio = new QLabel(QStringLiteral("●"));
-            prio->setToolTip(QStringLiteral("Priority: ") + note.priority);
+            prio->setToolTip(tr("Priority: ") + note.priority);
             prio->setStyleSheet(QString("color:%1;font-size:9px;background:transparent;")
                                     .arg(priority_color(note.priority)));
             bot->addWidget(prio);
@@ -325,12 +325,12 @@ QDialog* NotesWidget::make_config_dialog(QWidget* parent) {
     const int idx = filter_box->findData(filter_);
     if (idx >= 0)
         filter_box->setCurrentIndex(idx);
-    form->addRow("Filter", filter_box);
+    form->addRow(tr("Filter"), filter_box);
 
     auto* spin = new QSpinBox(dlg);
     spin->setRange(3, 50);
     spin->setValue(max_rows_);
-    form->addRow("Max rows", spin);
+    form->addRow(tr("Max rows"), spin);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

@@ -91,8 +91,8 @@ void SettingsTab::build_ui() {
 
     // ── Balance refresh mode ──────────────────────────────────────────────
     {
-        auto [panel, body] = make_panel(QStringLiteral("BALANCE REFRESH"),
-                                        QStringLiteral("Mirrored on HOME"));
+        auto [panel, body] = make_panel(tr("BALANCE REFRESH"),
+                                        tr("Mirrored on HOME"));
         auto* hint = new QLabel(
             tr("POLL refreshes balances on a TTL via the configured RPC. "
                "STREAM opens a WebSocket account subscription — requires Helius "
@@ -104,12 +104,12 @@ void SettingsTab::build_ui() {
 
         auto* row = new QHBoxLayout;
         row->setSpacing(6);
-        mode_poll_button_ = new QPushButton(QStringLiteral("POLL"), panel);
+        mode_poll_button_ = new QPushButton(tr("POLL"), panel);
         mode_poll_button_->setObjectName(QStringLiteral("settingsTabToggle"));
         mode_poll_button_->setCheckable(true);
         mode_poll_button_->setFixedHeight(28);
         mode_poll_button_->setCursor(Qt::PointingHandCursor);
-        mode_stream_button_ = new QPushButton(QStringLiteral("STREAM"), panel);
+        mode_stream_button_ = new QPushButton(tr("STREAM"), panel);
         mode_stream_button_->setObjectName(QStringLiteral("settingsTabToggle"));
         mode_stream_button_->setCheckable(true);
         mode_stream_button_->setFixedHeight(28);
@@ -137,8 +137,8 @@ void SettingsTab::build_ui() {
 
     // ── Helius API key ────────────────────────────────────────────────────
     {
-        auto [panel, body] = make_panel(QStringLiteral("HELIUS API KEY"),
-                                        QStringLiteral("optional"));
+        auto [panel, body] = make_panel(tr("HELIUS API KEY"),
+                                        tr("optional"));
         auto* hint = new QLabel(
             tr("Paste a Helius API key for reliable account-subscribe streaming "
                "and parsed transaction history. Stored in SecureStorage; never "
@@ -184,7 +184,7 @@ void SettingsTab::build_ui() {
 
     // ── Default slippage ──────────────────────────────────────────────────
     {
-        auto [panel, body] = make_panel(QStringLiteral("DEFAULT SLIPPAGE"),
+        auto [panel, body] = make_panel(tr("DEFAULT SLIPPAGE"),
                                         QStringLiteral("1% – 5%"));
         auto* hint = new QLabel(
             tr("Default slippage tolerance for swaps. Quotes whose route "
@@ -221,8 +221,8 @@ void SettingsTab::build_ui() {
 
     // ── Asset filters ─────────────────────────────────────────────────────
     {
-        auto [panel, body] = make_panel(QStringLiteral("ASSET FILTERS"),
-                                        QStringLiteral("affects holdings"));
+        auto [panel, body] = make_panel(tr("ASSET FILTERS"),
+                                        tr("affects holdings"));
         auto* hint = new QLabel(
             tr("Pump.fun-launched wallets accumulate airdropped junk over time. "
                "By default the holdings panel hides tokens that aren't in "

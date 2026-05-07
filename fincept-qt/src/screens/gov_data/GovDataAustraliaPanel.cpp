@@ -215,7 +215,7 @@ QWidget* GovDataAustraliaPanel::build_toolbar() {
 
     hl->addStretch(1);
 
-    export_btn_ = new QPushButton("CSV");
+    export_btn_ = new QPushButton(tr("CSV"));
     export_btn_->setObjectName("govCsvBtn");
     export_btn_->setCursor(Qt::PointingHandCursor);
     connect(export_btn_, &QPushButton::clicked, this, &GovDataAustraliaPanel::on_export_csv);
@@ -354,7 +354,7 @@ void GovDataAustraliaPanel::populate_agencies(const QJsonArray& json) {
         agencies_table_->setItem(i, 2, created_item);
     }
 
-    row_count_label_->setText(QString::number(json.size()) + " agencies");
+    row_count_label_->setText(QString::number(json.size()) + tr(" agencies"));
 }
 
 void GovDataAustraliaPanel::populate_datasets(const QJsonArray& json, int total_count) {
@@ -416,7 +416,7 @@ void GovDataAustraliaPanel::populate_datasets(const QJsonArray& json, int total_
         datasets_table_->setItem(i, 4, mod_item);
     }
 
-    row_count_label_->setText(QString("Showing %1 of %2").arg(json.size()).arg(total_count));
+    row_count_label_->setText(tr("Showing %1 of %2").arg(json.size()).arg(total_count));
 }
 
 void GovDataAustraliaPanel::populate_resources(const QJsonArray& resources) {
@@ -454,7 +454,7 @@ void GovDataAustraliaPanel::populate_resources(const QJsonArray& resources) {
         resources_table_->setItem(i, 2, sz_item);
 
         const QString url = obj["url"].toString();
-        auto* url_item = new QTableWidgetItem(url.isEmpty() ? "—" : "↗ OPEN");
+        auto* url_item = new QTableWidgetItem(url.isEmpty() ? "—" : tr("↗ OPEN"));
         url_item->setData(Qt::UserRole, url);
         if (!url.isEmpty())
             url_item->setForeground(QColor(kGovDataAustraliaColor));
@@ -462,7 +462,7 @@ void GovDataAustraliaPanel::populate_resources(const QJsonArray& resources) {
         resources_table_->setItem(i, 3, url_item);
     }
 
-    row_count_label_->setText(QString::number(resources.size()) + " files");
+    row_count_label_->setText(QString::number(resources.size()) + tr(" files"));
 }
 
 // ── Navigation slots ──────────────────────────────────────────────────────────

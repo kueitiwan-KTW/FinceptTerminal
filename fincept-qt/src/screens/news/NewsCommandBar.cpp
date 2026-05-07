@@ -185,7 +185,7 @@ void NewsCommandBar::build_command_row(QVBoxLayout* root) {
     rtl_btn->setCheckable(true);
     hl->addWidget(rtl_btn);
     connect(rtl_btn, &QPushButton::toggled, this, [this, rtl_btn](bool checked) {
-        rtl_btn->setText(checked ? "LTR" : "RTL");
+        rtl_btn->setText(checked ? tr("LTR") : tr("RTL"));
         emit rtl_toggled();
     });
 
@@ -325,7 +325,7 @@ void NewsCommandBar::set_active_category(const QString& cat) {
 
 void NewsCommandBar::set_loading(bool loading) {
     refresh_btn_->setEnabled(!loading);
-    refresh_btn_->setText(loading ? "..." : "REFRESH");
+    refresh_btn_->setText(loading ? "..." : tr("REFRESH"));
 }
 
 void NewsCommandBar::set_loading_progress(int done, int total) {
@@ -343,7 +343,7 @@ void NewsCommandBar::set_article_count(int count) {
 
 void NewsCommandBar::set_alert_count(int count) {
     if (count > 0) {
-        alert_label_->setText(QString("%1 ALERTS").arg(count));
+        alert_label_->setText(tr("%1 ALERTS").arg(count));
         alert_label_->show();
     } else {
         alert_label_->hide();
@@ -352,7 +352,7 @@ void NewsCommandBar::set_alert_count(int count) {
 
 void NewsCommandBar::set_unseen_count(int count) {
     if (count > 0) {
-        unseen_label_->setText(QString("%1 NEW").arg(count));
+        unseen_label_->setText(tr("%1 NEW").arg(count));
         unseen_label_->show();
     } else {
         unseen_label_->hide();
@@ -371,7 +371,7 @@ void NewsCommandBar::hide_summary() {
 }
 
 void NewsCommandBar::set_summarizing(bool busy) {
-    summarize_btn_->setText(busy ? "..." : "AI");
+    summarize_btn_->setText(busy ? "..." : tr("AI"));
     summarize_btn_->setEnabled(!busy);
 }
 
@@ -418,9 +418,9 @@ void NewsCommandBar::update_deviations(const QVector<QPair<QString, double>>& de
 
 void NewsCommandBar::update_monitor_summary(int total_monitors, int active_alerts) {
     if (active_alerts > 0)
-        intel_monitors_->setText(QString("%1 WATCHES  %2 HIT").arg(total_monitors).arg(active_alerts));
+        intel_monitors_->setText(tr("%1 WATCHES  %2 HIT").arg(total_monitors).arg(active_alerts));
     else
-        intel_monitors_->setText(QString("%1 WATCHES").arg(total_monitors));
+        intel_monitors_->setText(tr("%1 WATCHES").arg(total_monitors));
 }
 
 } // namespace fincept::screens

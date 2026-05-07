@@ -556,7 +556,7 @@ QWidget* DataSourcesScreen::build_screen_header() {
     sep->setStyleSheet(QString("background:%1;margin:8px 12px;").arg(col::BORDER_DIM()));
     hl->addWidget(sep);
 
-    auto* subtitle = new QLabel(QString("%1 CONNECTORS").arg(ConnectorRegistry::instance().count()));
+    auto* subtitle = new QLabel(tr("%1 CONNECTORS").arg(ConnectorRegistry::instance().count()));
     subtitle->setObjectName("dsScreenSubtitle");
     hl->addWidget(subtitle);
 
@@ -1240,8 +1240,8 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     title_vl->setContentsMargins(0, 0, 0, 0);
     title_vl->setSpacing(2);
 
-    auto* dlg_title = new QLabel(editing     ? QString("Edit  %1").arg(config.name)
-                                 : duplicate ? QString("Clone  %1").arg(config.name)
+    auto* dlg_title = new QLabel(editing     ? tr("Edit  %1").arg(config.name)
+                                 : duplicate ? tr("Clone  %1").arg(config.name)
                                              : config.name);
     dlg_title->setStyleSheet(
         QString("color:%1;font-size:14px;font-weight:700;background:transparent;").arg(col::AMBER()));
@@ -1279,9 +1279,9 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     form->addWidget(name_lbl, row, 0);
 
     auto* name_edit = new QLineEdit;
-    name_edit->setPlaceholderText(config.name + " Connection");
+    name_edit->setPlaceholderText(tr("%1 Connection").arg(config.name));
     name_edit->setText(
-        existing_loaded ? (duplicate ? QString("Copy of %1").arg(existing.display_name) : existing.display_name) : "");
+        existing_loaded ? (duplicate ? tr("Copy of %1").arg(existing.display_name) : existing.display_name) : "");
     name_edit->setFixedHeight(34);
     form->addWidget(name_edit, row, 1);
     ++row;
@@ -1290,7 +1290,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
     enabled_lbl->setAlignment(Qt::AlignRight | Qt::AlignVCenter);
     form->addWidget(enabled_lbl, row, 0);
 
-    auto* enabled_check = new QCheckBox("Active");
+    auto* enabled_check = new QCheckBox(tr("Active"));
     enabled_check->setChecked(existing_loaded ? existing.enabled : true);
     form->addWidget(enabled_check, row, 1);
     ++row;
@@ -1304,7 +1304,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
 
         QWidget* input = nullptr;
         if (field.type == FieldType::Checkbox) {
-            auto* check = new QCheckBox(field.required ? "Required" : "Optional");
+            auto* check = new QCheckBox(field.required ? tr("Required") : tr("Optional"));
             const bool value = existing_cfg.contains(field.name) ? existing_cfg.value(field.name).toBool()
                                                                  : (field.default_value == "true");
             check->setChecked(value);
@@ -1389,7 +1389,7 @@ void DataSourcesScreen::show_config_dialog(const ConnectorConfig& config, const 
                               .arg(col::BG_BASE(), col::TEXT_SECONDARY(), col::BORDER_MED(), col::TEXT_PRIMARY()));
     footer_hl->addWidget(cancel);
 
-    auto* save = new QPushButton(editing ? "Update Connection" : "Save Connection");
+    auto* save = new QPushButton(editing ? tr("Update Connection") : tr("Save Connection"));
     save->setCursor(Qt::PointingHandCursor);
     save->setDefault(true);
     save->setAutoDefault(true);
@@ -1798,10 +1798,10 @@ void DataSourcesScreen::update_detail_panel() {
     // Metadata
     detail_category_value_->setText(category_label(cfg->category));
     detail_transport_value_->setText(connector_transport(*cfg));
-    detail_auth_value_->setText(cfg->requires_auth ? "Required" : "None");
+    detail_auth_value_->setText(cfg->requires_auth ? tr("Required") : tr("None"));
     detail_auth_value_->setStyleSheet(QString("color:%1;font-size:11px;font-weight:700;background:transparent;")
                                           .arg(cfg->requires_auth ? col::WARNING() : col::POSITIVE()));
-    detail_test_value_->setText(cfg->testable ? "Yes" : "No");
+    detail_test_value_->setText(cfg->testable ? tr("Yes") : tr("No"));
 
     const int total = total_connections_for_provider(connections_cache_, cfg->id);
     const int active = enabled_connections_for_provider(connections_cache_, cfg->id);
@@ -2322,7 +2322,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
     const auto* connector_cfg = find_connector_config(ds.provider);
     if (connector_cfg && !connector_cfg->testable) {
         QDialog result_dlg(this);
-        result_dlg.setWindowTitle(QString("Test: %1").arg(ds.display_name));
+        result_dlg.setWindowTitle(tr("Test: %1").arg(ds.display_name));
         result_dlg.resize(420, 160);
         result_dlg.setModal(true);
         result_dlg.setStyleSheet(
@@ -2488,7 +2488,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
 
     if (test_url.isEmpty() && (host.isEmpty() || port <= 0)) {
         QDialog result_dlg(this);
-        result_dlg.setWindowTitle(QString("Test: %1").arg(display));
+        result_dlg.setWindowTitle(tr("Test: %1").arg(display));
         result_dlg.resize(420, 160);
         result_dlg.setModal(true);
         result_dlg.setStyleSheet(
@@ -2501,8 +2501,8 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
         auto* vl = new QVBoxLayout(&result_dlg);
         vl->setContentsMargins(24, 20, 24, 16);
         vl->setSpacing(10);
-        auto* lbl = new QLabel("No testable endpoint found in the saved configuration.\n"
-                               "Ensure required fields (URL, host, or API key) are filled in.");
+        auto* lbl = new QLabel(tr("No testable endpoint found in the saved configuration.\n"
+                                  "Ensure required fields (URL, host, or API key) are filled in."));
         lbl->setWordWrap(true);
         lbl->setStyleSheet(QString("color:%1;font-size:13px;background:transparent;").arg(col::TEXT_SECONDARY()));
         vl->addWidget(lbl);
@@ -2525,7 +2525,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
     const auto test_future =
         QtConcurrent::run([self, conn_id, display, captured_test_url, captured_host, captured_port]() {
             bool success = false;
-            QString message = "No testable endpoint found";
+            QString message = self ? self->tr("No testable endpoint found") : QStringLiteral("No testable endpoint found");
 
             auto tcp_probe = [](const QString& h, int p, int timeout_ms) -> std::pair<bool, QString> {
                 QTcpSocket socket;
@@ -2540,7 +2540,8 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
             if (!captured_test_url.isEmpty()) {
                 const QUrl url(captured_test_url);
                 if (!url.isValid() || url.host().isEmpty()) {
-                    message = QString("Invalid URL: %1").arg(captured_test_url);
+                    message = self ? self->tr("Invalid URL: %1").arg(captured_test_url)
+                                   : QString("Invalid URL: %1").arg(captured_test_url);
                 } else {
                     const QString url_host = url.host();
                     const QString scheme = url.scheme().toLower();
@@ -2548,7 +2549,9 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
                     const int url_port = url.port(default_port);
                     auto [ok, msg] = tcp_probe(url_host, url_port, 5000);
                     success = ok;
-                    message = ok ? QString("Endpoint reachable: %1").arg(captured_test_url) : msg;
+                    message = ok ? (self ? self->tr("Endpoint reachable: %1").arg(captured_test_url)
+                                          : QString("Endpoint reachable: %1").arg(captured_test_url))
+                                 : msg;
                 }
             } else if (!captured_host.isEmpty() && captured_port > 0) {
                 auto [ok, msg] = tcp_probe(captured_host, captured_port, 3000);
@@ -2567,7 +2570,7 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
                     self->update_detail_panel();
 
                     QDialog result_dlg(self);
-                    result_dlg.setWindowTitle(QString("Test: %1").arg(display));
+                    result_dlg.setWindowTitle(self->tr("Test: %1").arg(display));
                     result_dlg.resize(440, 190);
                     result_dlg.setModal(true);
                     result_dlg.setStyleSheet(
@@ -2582,7 +2585,8 @@ void DataSourcesScreen::on_connection_test(const QString& conn_id) {
                     vl->setContentsMargins(24, 20, 24, 16);
                     vl->setSpacing(10);
 
-                    auto* status_lbl = new QLabel(success ? "Connection successful" : "Connection failed");
+                    auto* status_lbl =
+                        new QLabel(success ? self->tr("Connection successful") : self->tr("Connection failed"));
                     status_lbl->setStyleSheet(
                         QString("color:%1;font-size:14px;font-weight:700;background:transparent;")
                             .arg(success ? col::POSITIVE.operator QString() : col::NEGATIVE.operator QString()));
@@ -2785,7 +2789,7 @@ void DataSourcesScreen::on_bulk_delete_selected() {
 
     QMessageBox confirm(this);
     confirm.setWindowTitle(tr("Delete Connections"));
-    confirm.setText(QString("Delete %1 selected connection(s)?").arg(selected_ids.size()));
+    confirm.setText(tr("Delete %1 selected connection(s)?").arg(selected_ids.size()));
     confirm.setInformativeText(tr("This cannot be undone."));
     confirm.setStandardButtons(QMessageBox::Yes | QMessageBox::Cancel);
     confirm.setDefaultButton(QMessageBox::Cancel);
@@ -2810,8 +2814,8 @@ void DataSourcesScreen::on_bulk_delete_selected() {
 }
 
 void DataSourcesScreen::on_export_connections() {
-    const QString path = QFileDialog::getSaveFileName(this, "Export Connections", "fincept_connections.json",
-                                                      "JSON Files (*.json);;All Files (*)");
+    const QString path = QFileDialog::getSaveFileName(this, tr("Export Connections"), "fincept_connections.json",
+                                                      tr("JSON Files (*.json);;All Files (*)"));
     if (path.isEmpty())
         return;
 
@@ -2851,7 +2855,7 @@ void DataSourcesScreen::on_export_connections() {
 
 void DataSourcesScreen::on_import_connections() {
     const QString path =
-        QFileDialog::getOpenFileName(this, "Import Connections", "", "JSON Files (*.json);;All Files (*)");
+        QFileDialog::getOpenFileName(this, tr("Import Connections"), "", tr("JSON Files (*.json);;All Files (*)"));
     if (path.isEmpty())
         return;
 
@@ -2908,7 +2912,7 @@ void DataSourcesScreen::on_import_connections() {
 
 void DataSourcesScreen::on_download_template() {
     const QString path = QFileDialog::getSaveFileName(
-        this, "Save Connector Template", "fincept_connections_template.json", "JSON Files (*.json);;All Files (*)");
+        this, tr("Save Connector Template"), "fincept_connections_template.json", tr("JSON Files (*.json);;All Files (*)"));
     if (path.isEmpty())
         return;
 

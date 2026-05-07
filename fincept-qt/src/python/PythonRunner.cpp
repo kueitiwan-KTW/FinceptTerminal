@@ -297,13 +297,13 @@ QString PythonRunner::find_scripts_dir() const {
 
 void PythonRunner::run(const QString& script, const QStringList& args, Callback cb, StreamCallback on_line) {
     if (python_init_done_ && python_path_.isEmpty()) {
-        cb({false, {}, "Python not available — run first-time setup from the app", -1});
+        cb({false, {}, tr("Python not available — run first-time setup from the app"), -1});
         return;
     }
 
     QString script_path = scripts_dir_ + "/" + script;
     if (!QFileInfo::exists(script_path)) {
-        cb({false, {}, "Script not found: " + script_path, -1});
+        cb({false, {}, tr("Script not found: ") + script_path, -1});
         return;
     }
 
@@ -316,7 +316,7 @@ void PythonRunner::run(const QString& script, const QStringList& args, Callback 
 /// Creates a temp file, executes it, returns output.
 void PythonRunner::run_code(const QString& code, Callback cb) {
     if (python_init_done_ && python_path_.isEmpty()) {
-        cb({false, {}, "Python not available — run first-time setup from the app", -1});
+        cb({false, {}, tr("Python not available — run first-time setup from the app"), -1});
         return;
     }
 
@@ -326,7 +326,7 @@ void PythonRunner::run_code(const QString& code, Callback cb) {
 
     QFile file(temp_path);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        cb({false, {}, "Failed to create temp script file", -1});
+        cb({false, {}, tr("Failed to create temp script file"), -1});
         return;
     }
     file.write(code.toUtf8());
@@ -347,7 +347,7 @@ void PythonRunner::start_next() {
 
         if (python_path_.isEmpty()) {
             // Python became unavailable — fail the request
-            req.cb({false, {}, "Python not available", -1});
+            req.cb({false, {}, tr("Python not available"), -1});
             continue;
         }
 
@@ -555,7 +555,7 @@ void PythonRunner::start_next() {
             proc->deleteLater();
             if (is_code && !temp_file.isEmpty())
                 QFile::remove(temp_file);
-            cb({false, {}, "Process error: " + error_msg, -1});
+            cb({false, {}, tr("Process error: ") + error_msg, -1});
 
             --active_count_;
             start_next(); // drain queue

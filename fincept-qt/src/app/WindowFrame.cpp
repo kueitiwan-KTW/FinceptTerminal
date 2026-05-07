@@ -336,7 +336,7 @@ WindowFrame::WindowFrame(int window_id, QWidget* parent) : QMainWindow(parent), 
     connect(&WorkspaceManager::instance(), &WorkspaceManager::workspace_loaded, this,
             [this](const WorkspaceDef&) { update_window_title(); });
     connect(&WorkspaceManager::instance(), &WorkspaceManager::workspace_error, this,
-            [this](const QString& msg) { QMessageBox::warning(this, "Workspace Error", msg); });
+            [this](const QString& msg) { QMessageBox::warning(this, tr("Workspace Error"), msg); });
 
     dock_router_ = new DockScreenRouter(dock_manager_, this);
     setup_dock_screens();
@@ -546,7 +546,7 @@ WindowFrame::WindowFrame(int window_id, QWidget* parent) : QMainWindow(parent), 
             if (dock_manager_) {
                 bool ok = false;
                 const QString name =
-                    QInputDialog::getText(this, "Save Layout", "Layout name:", QLineEdit::Normal, QString(), &ok);
+                    QInputDialog::getText(this, tr("Save Layout"), tr("Layout name:"), QLineEdit::Normal, QString(), &ok);
                 if (ok && !name.trimmed().isEmpty()) {
                     dock_manager_->addPerspective(name.trimmed());
                     LOG_INFO("WindowFrame", QString("Saved perspective: %1").arg(name.trimmed()));
@@ -633,12 +633,12 @@ WindowFrame::WindowFrame(int window_id, QWidget* parent) : QMainWindow(parent), 
             dlg->deleteLater();
         } else if (action == "import_data") {
             QString path =
-                QFileDialog::getOpenFileName(this, "Import Workspace", QDir::homePath(), "Fincept Workspace (*.fwsp)");
+                QFileDialog::getOpenFileName(this, tr("Import Workspace"), QDir::homePath(), tr("Fincept Workspace (*.fwsp)"));
             if (!path.isEmpty())
                 WorkspaceManager::instance().import_workspace(path);
         } else if (action == "export_data") {
             QString path =
-                QFileDialog::getSaveFileName(this, "Export Workspace", QDir::homePath(), "Fincept Workspace (*.fwsp)");
+                QFileDialog::getSaveFileName(this, tr("Export Workspace"), QDir::homePath(), tr("Fincept Workspace (*.fwsp)"));
             if (!path.isEmpty())
                 WorkspaceManager::instance().export_workspace(path);
         } else if (action == "screenshot") {
@@ -647,9 +647,9 @@ WindowFrame::WindowFrame(int window_id, QWidget* parent) : QMainWindow(parent), 
                 scr = QApplication::primaryScreen();
             QPixmap px = scr->grabWindow(winId());
             QString path = QFileDialog::getSaveFileName(
-                this, "Save Screenshot",
+                this, tr("Save Screenshot"),
                 QDir::homePath() + "/fincept_" + QDateTime::currentDateTime().toString("yyyyMMdd_HHmmss") + ".png",
-                "PNG Images (*.png)");
+                tr("PNG Images (*.png)"));
             if (!path.isEmpty()) {
                 px.save(path, "PNG");
                 LOG_INFO("WindowFrame", QString("Screenshot saved: %1").arg(path));

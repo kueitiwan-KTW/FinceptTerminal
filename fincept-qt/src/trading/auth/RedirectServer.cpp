@@ -9,17 +9,6 @@
 
 namespace fincept::trading::auth {
 
-namespace {
-constexpr const char* kResponseHtml =
-    "<!doctype html><html><head><meta charset='utf-8'>"
-    "<title>Fincept - Zerodha login</title>"
-    "<style>body{font-family:system-ui;background:#0f172a;color:#e2e8f0;"
-    "display:flex;align-items:center;justify-content:center;height:100vh;margin:0}"
-    "div{text-align:center}h1{color:#d97706;font-size:20px}p{color:#94a3b8}</style>"
-    "</head><body><div><h1>Login captured</h1>"
-    "<p>You can close this tab and return to Fincept Terminal.</p></div></body></html>";
-}
-
 RedirectServer::RedirectServer(QObject* parent)
     : QObject(parent),
       server_(new QTcpServer(this)),
@@ -75,13 +64,20 @@ void RedirectServer::handle_new_connection() {
             token = q.queryItemValue("request_token");
             if (token.isEmpty()) {
                 const QString err = q.queryItemValue("error");
-                error_msg = err.isEmpty() ? QStringLiteral("request_token missing in redirect") : err;
+                error_msg = err.isEmpty() ? tr("request_token missing in redirect") : err;
             }
         } else {
             error_msg = tr("Malformed request");
         }
 
-        const QByteArray body(kResponseHtml);
+        const QByteArray body = tr(
+            "<!doctype html><html><head><meta charset='utf-8'>"
+            "<title>Fincept - Zerodha login</title>"
+            "<style>body{font-family:system-ui;background:#0f172a;color:#e2e8f0;"
+            "display:flex;align-items:center;justify-content:center;height:100vh;margin:0}"
+            "div{text-align:center}h1{color:#d97706;font-size:20px}p{color:#94a3b8}</style>"
+            "</head><body><div><h1>Login captured</h1>"
+            "<p>You can close this tab and return to Fincept Terminal.</p></div></body></html>").toUtf8();
         QByteArray response = "HTTP/1.1 200 OK\r\n";
         response += "Content-Type: text/html; charset=utf-8\r\n";
         response += "Content-Length: " + QByteArray::number(body.size()) + "\r\n";

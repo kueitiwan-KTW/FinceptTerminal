@@ -16,6 +16,7 @@
 #include <QLabel>
 #include <QLocale>
 #include <QMenu>
+#include <QObject>
 #include <QShowEvent>
 #include <QStyle>
 #include <QTableWidget>
@@ -59,13 +60,13 @@ QString format_unlock_date(qint64 ts_ms) {
 QString format_duration(qint64 secs) {
     constexpr qint64 kMonth = 30LL * 24 * 60 * 60;
     constexpr qint64 kYear  = 365LL * 24 * 60 * 60;
-    if (secs >= kYear * 4)  return QStringLiteral("4 yr");
-    if (secs >= kYear * 2)  return QStringLiteral("2 yr");
-    if (secs >= kYear)      return QStringLiteral("1 yr");
-    if (secs >= kMonth * 6) return QStringLiteral("6 mo");
-    if (secs >= kMonth * 3) return QStringLiteral("3 mo");
+    if (secs >= kYear * 4)  return QObject::tr("4 yr");
+    if (secs >= kYear * 2)  return QObject::tr("2 yr");
+    if (secs >= kYear)      return QObject::tr("1 yr");
+    if (secs >= kMonth * 6) return QObject::tr("6 mo");
+    if (secs >= kMonth * 3) return QObject::tr("3 mo");
     // Off-grid (custom duration via on-chain extend) — show approx months.
-    return QStringLiteral("%1 mo").arg(secs / kMonth);
+    return QObject::tr("%1 mo").arg(secs / kMonth);
 }
 
 bool position_is_expired(const fincept::wallet::LockPosition& p) {
@@ -110,11 +111,11 @@ void ActiveLocksPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("ACTIVE LOCKS"), head);
+    auto* title = new QLabel(tr("ACTIVE LOCKS"), head);
     title->setObjectName(QStringLiteral("activeLocksTitle"));
-    summary_label_ = new QLabel(QStringLiteral("0 positions · 0 veFNCPT"), head);
+    summary_label_ = new QLabel(tr("0 positions · 0 veFNCPT"), head);
     summary_label_->setObjectName(QStringLiteral("activeLocksHeadCaption"));
-    status_pill_ = new QLabel(QStringLiteral("LIVE"), head);
+    status_pill_ = new QLabel(tr("LIVE"), head);
     status_pill_->setObjectName(QStringLiteral("activeLocksPill"));
     hl->addWidget(title);
     hl->addWidget(summary_label_);
@@ -133,11 +134,11 @@ void ActiveLocksPanel::build_ui() {
     table_->setObjectName(QStringLiteral("activeLocksTable"));
     table_->setColumnCount(5);
     table_->setHorizontalHeaderLabels({
-        QStringLiteral("LOCKED"),
-        QStringLiteral("DURATION"),
-        QStringLiteral("UNLOCKS"),
-        QStringLiteral("WEIGHT"),
-        QStringLiteral("YIELD (LIFETIME)"),
+        tr("LOCKED"),
+        tr("DURATION"),
+        tr("UNLOCKS"),
+        tr("WEIGHT"),
+        tr("YIELD (LIFETIME)"),
     });
     table_->verticalHeader()->setVisible(false);
     table_->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
@@ -283,7 +284,7 @@ void ActiveLocksPanel::rebuild_table() {
         table_->setRowCount(0);
         table_->hide();
         empty_state_->show();
-        summary_label_->setText(QStringLiteral("0 positions · 0 veFNCPT"));
+        summary_label_->setText(tr("0 positions · 0 veFNCPT"));
         update_demo_chip(false);
         return;
     }
@@ -315,7 +316,7 @@ void ActiveLocksPanel::rebuild_table() {
 
     // TOTAL row — visually distinct via item-level styling.
     const int total_row = latest_.size();
-    auto* tot_label = new QTableWidgetItem(QStringLiteral("TOTAL"));
+    auto* tot_label = new QTableWidgetItem(tr("TOTAL"));
     tot_label->setData(Qt::UserRole, QString()); // no position id
     table_->setItem(total_row, 0, tot_label);
     table_->setItem(total_row, 1, new QTableWidgetItem(QStringLiteral("—")));
@@ -323,10 +324,12 @@ void ActiveLocksPanel::rebuild_table() {
     table_->setItem(total_row, 3, new QTableWidgetItem(format_token(total_weight_ui, 1)));
     table_->setItem(total_row, 4, new QTableWidgetItem(format_usdc(total_yield_ui)));
 
-    summary_label_->setText(QStringLiteral("%1 position%2 · %3 veFNCPT")
-        .arg(latest_.size())
-        .arg(latest_.size() == 1 ? QString() : QStringLiteral("s"))
-        .arg(format_token(total_weight_ui, 1)));
+    summary_label_->setText(
+        (latest_.size() == 1
+             ? tr("%1 position · %2 veFNCPT")
+             : tr("%1 positions · %2 veFNCPT"))
+            .arg(latest_.size())
+            .arg(format_token(total_weight_ui, 1)));
     update_demo_chip(any_mock);
     clear_error_strip();
 }
@@ -380,10 +383,10 @@ void ActiveLocksPanel::clear_error_strip() {
 
 void ActiveLocksPanel::update_demo_chip(bool is_mock) {
     if (is_mock) {
-        status_pill_->setText(QStringLiteral("DEMO"));
+        status_pill_->setText(tr("DEMO"));
         status_pill_->setObjectName(QStringLiteral("activeLocksPillDemo"));
     } else {
-        status_pill_->setText(QStringLiteral("LIVE"));
+        status_pill_->setText(tr("LIVE"));
         status_pill_->setObjectName(QStringLiteral("activeLocksPill"));
     }
     status_pill_->style()->unpolish(status_pill_);

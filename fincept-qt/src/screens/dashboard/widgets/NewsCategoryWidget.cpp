@@ -118,12 +118,12 @@ QDialog* NewsCategoryWidget::make_config_dialog(QWidget* parent) {
     auto* edit = new QLineEdit(dlg);
     edit->setText(category_);
     edit->setPlaceholderText(tr("markets | geopolitics | crypto | …"));
-    form->addRow("Category", edit);
+    form->addRow(tr("Category"), edit);
 
     auto* spin = new QSpinBox(dlg);
     spin->setRange(3, 50);
     spin->setValue(max_rows_);
-    form->addRow("Max rows", spin);
+    form->addRow(tr("Max rows"), spin);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

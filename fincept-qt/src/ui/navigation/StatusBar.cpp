@@ -27,7 +27,7 @@ StatusBar::StatusBar(QWidget* parent) : QWidget(parent) {
         hl->addWidget(mk(" ", "sbSpacer"));
     }
     hl->addStretch();
-    ready_label_ = mk("READY", "sbReady");
+    ready_label_ = mk(tr("READY"), "sbReady");
     hl->addWidget(ready_label_);
 
     connect(&ThemeManager::instance(), &ThemeManager::theme_changed, this,
@@ -49,7 +49,7 @@ void StatusBar::refresh_theme() {
 }
 
 void StatusBar::set_ready(bool ready) {
-    ready_label_->setText(ready ? "READY" : "BUSY");
+    ready_label_->setText(ready ? tr("READY") : tr("BUSY"));
     ready_label_->setStyleSheet(QString("color:%1;font-weight:700;background:transparent;")
                                     .arg(ready ? colors::POSITIVE() : colors::TEXT_TERTIARY()));
 }

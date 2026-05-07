@@ -193,7 +193,7 @@ QDialog* SparklineStripWidget::make_config_dialog(QWidget* parent) {
     auto* edit = new QLineEdit(dlg);
     edit->setText(symbols_.join(", "));
     edit->setPlaceholderText(tr("e.g. AAPL, MSFT, NVDA"));
-    form->addRow("Symbols", edit);
+    form->addRow(tr("Symbols"), edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

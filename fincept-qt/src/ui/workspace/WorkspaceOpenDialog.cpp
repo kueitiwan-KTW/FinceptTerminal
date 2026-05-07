@@ -111,12 +111,12 @@ void WorkspaceOpenDialog::load_workspaces() {
 
 void WorkspaceOpenDialog::browse_for_file() {
     QString path =
-        QFileDialog::getOpenFileName(this, "Open Workspace File", {}, "Fincept Workspace (*.fwsp);;All Files (*)");
+        QFileDialog::getOpenFileName(this, tr("Open Workspace File"), {}, tr("Fincept Workspace (*.fwsp);;All Files (*)"));
     if (path.isEmpty())
         return;
     selected_path_ = path;
     open_btn_->setEnabled(true);
-    preview_label_->setText(QString("File: %1").arg(path));
+    preview_label_->setText(tr("File: %1").arg(path));
     accept();
 }
 
@@ -127,8 +127,8 @@ void WorkspaceOpenDialog::update_preview(int row) {
     selected_path_ = item->data(Qt::UserRole).toString();
     QString desc = item->data(Qt::UserRole + 1).toString();
     QString date = item->data(Qt::UserRole + 2).toString();
-    preview_label_->setText(QString("<b>%1</b><br><br>%2<br><br><span style='color:#555'>Last saved: %3</span>")
-                                .arg(item->text(), desc.isEmpty() ? "No description" : desc, date));
+    preview_label_->setText(tr("<b>%1</b><br><br>%2<br><br><span style='color:#555'>Last saved: %3</span>")
+                                .arg(item->text(), desc.isEmpty() ? tr("No description") : desc, date));
     open_btn_->setEnabled(true);
 }
 

@@ -165,7 +165,7 @@ QDialog* PolymarketPriceWidget::make_config_dialog(QWidget* parent) {
         lines.append(e.asset_id + " | " + e.label);
     edit->setPlainText(lines.join("\n"));
     edit->setFixedHeight(120);
-    form->addRow("Markets", edit);
+    form->addRow(tr("Markets"), edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

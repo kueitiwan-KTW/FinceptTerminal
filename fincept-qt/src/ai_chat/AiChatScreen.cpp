@@ -492,8 +492,8 @@ QWidget* AiChatScreen::build_welcome() {
         QString("color:%1;font-size:%2px;font-weight:700;").arg(col::TEXT_PRIMARY()).arg(fnt::TITLE));
     vl->addWidget(heading);
 
-    auto* sub = new QLabel("Ask about markets, portfolios, macro data, or any financial topic.\n"
-                           "Conversations are saved automatically.");
+    auto* sub = new QLabel(tr("Ask about markets, portfolios, macro data, or any financial topic.\n"
+                              "Conversations are saved automatically."));
     sub->setAlignment(Qt::AlignCenter);
     sub->setWordWrap(true);
     sub->setStyleSheet(QString("color:%1;font-size:%2px;").arg(col::TEXT_SECONDARY()).arg(fnt::SMALL));
@@ -771,7 +771,7 @@ void AiChatScreen::on_rename_session() {
         return;
     bool ok = false;
     const QString name =
-        QInputDialog::getText(this, "Rename Session", "Session name:", QLineEdit::Normal, active_session_title_, &ok);
+        QInputDialog::getText(this, tr("Rename Session"), tr("Session name:"), QLineEdit::Normal, active_session_title_, &ok);
     if (!ok || name.trimmed().isEmpty())
         return;
     ChatRepository::instance().update_session_title(active_session_id_, name.trimmed());
@@ -796,8 +796,8 @@ void AiChatScreen::on_delete_session() {
 void AiChatScreen::on_attach_file() {
     // Let user pick from File Manager index or browse disk
     QStringList paths = QFileDialog::getOpenFileNames(
-        this, "Attach File to Message", QString(),
-        "All Files (*);;Text Files (*.txt *.md *.csv *.json);;Notebooks (*.ipynb);;PDF (*.pdf)");
+        this, tr("Attach File to Message"), QString(),
+        tr("All Files (*);;Text Files (*.txt *.md *.csv *.json);;Notebooks (*.ipynb);;PDF (*.pdf)"));
     if (paths.isEmpty())
         return;
 
@@ -821,12 +821,12 @@ void AiChatScreen::on_send() {
     if (active_session_id_.isEmpty())
         create_new_session();
     if (active_session_id_.isEmpty()) {
-        add_message_bubble("system", "Failed to create chat session. Please try again.");
+        add_message_bubble("system", tr("Failed to create chat session. Please try again."));
         return;
     }
     if (!ai_chat::LlmService::instance().is_configured()) {
         add_message_bubble("system",
-                           "No LLM provider configured. Go to Settings > LLM Configuration to set up a provider.");
+                           tr("No LLM provider configured. Go to Settings > LLM Configuration to set up a provider."));
         return;
     }
 
@@ -1024,7 +1024,7 @@ void AiChatScreen::add_message_bubble(const QString& role, const QString& conten
     cvl->setSpacing(4);
 
     // Role label
-    auto* role_lbl = new QLabel(is_user ? "You" : (is_system ? "System" : "AI"));
+    auto* role_lbl = new QLabel(is_user ? tr("You") : (is_system ? tr("System") : tr("AI")));
     role_lbl->setAlignment(is_user ? Qt::AlignRight : Qt::AlignLeft);
     role_lbl->setStyleSheet(QString("color:%1;font-size:%2px;font-weight:600;background:transparent;")
                                 .arg(is_user ? col::AMBER() : (is_system ? col::NEGATIVE() : col::AMBER()))
@@ -1201,12 +1201,12 @@ void AiChatScreen::set_input_enabled(bool enabled) {
     session_list_->setEnabled(enabled);
     delete_btn_->setEnabled(enabled && !active_session_id_.isEmpty());
     rename_btn_->setEnabled(enabled && !active_session_id_.isEmpty());
-    send_btn_->setText(enabled ? "Send" : "···");
+    send_btn_->setText(enabled ? tr("Send") : tr("···"));
 
     // Status dot + label
     const QString status_color = enabled ? col::POSITIVE() : col::AMBER();
     hdr_status_dot_->setStyleSheet(QString("background:%1;border-radius:0px;").arg(status_color));
-    hdr_status_lbl_->setText(enabled ? "Ready" : "Streaming");
+    hdr_status_lbl_->setText(enabled ? tr("Ready") : tr("Streaming"));
     hdr_status_lbl_->setStyleSheet(
         QString("color:%1;font-size:%2px;font-weight:600;").arg(status_color).arg(fnt::SMALL));
 }
@@ -1237,7 +1237,7 @@ void AiChatScreen::update_stats() {
         const QString prov_display = is_fincept ? "Fincept LLM" : provider_raw.toUpper();
         const QString model_raw = llm.active_model();
         // For fincept, don't expose internal model name
-        const QString model_display = is_fincept ? "Fincept LLM" : model_raw;
+        const QString model_display = is_fincept ? tr("Fincept LLM") : model_raw;
         QString model_short = model_display;
         if (model_short.length() > 24)
             model_short = model_short.left(22) + "..";
@@ -1246,8 +1246,8 @@ void AiChatScreen::update_stats() {
         provider_lbl_->setText(prov_display);
         provider_lbl_->setStyleSheet(
             QString("color:%1;font-size:%2px;font-weight:600;").arg(col::AMBER()).arg(fnt::SMALL));
-        model_lbl_->setText(is_fincept ? "Managed by Fincept" : model_short);
-        model_lbl_->setToolTip(is_fincept ? "Fincept LLM — managed AI service" : model_raw);
+        model_lbl_->setText(is_fincept ? tr("Managed by Fincept") : model_short);
+        model_lbl_->setToolTip(is_fincept ? tr("Fincept LLM — managed AI service") : model_raw);
         model_lbl_->setStyleSheet(QString("color:%1;font-size:%2px;").arg(col::TEXT_SECONDARY()).arg(fnt::TINY));
 
         // Header model pill — show "Provider / Model" for clarity

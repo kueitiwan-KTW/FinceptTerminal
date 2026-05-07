@@ -134,17 +134,17 @@ QDialog* TradeTapeWidget::make_config_dialog(QWidget* parent) {
     auto* ex = new QComboBox(dlg);
     ex->addItems({"kraken", "hyperliquid"});
     ex->setCurrentText(exchange_);
-    form->addRow("Exchange", ex);
+    form->addRow(tr("Exchange"), ex);
 
     auto* pair = new QLineEdit(dlg);
     pair->setText(pair_);
     pair->setPlaceholderText(tr("e.g. BTC/USD"));
-    form->addRow("Pair", pair);
+    form->addRow(tr("Pair"), pair);
 
     auto* spin = new QSpinBox(dlg);
     spin->setRange(5, 200);
     spin->setValue(max_rows_);
-    form->addRow("Max rows", spin);
+    form->addRow(tr("Max rows"), spin);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

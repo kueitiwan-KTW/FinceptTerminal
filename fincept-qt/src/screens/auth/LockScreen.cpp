@@ -236,8 +236,8 @@ void LockScreen::build_setup_page() {
     subtitle->setStyleSheet(muted_style());
     vl->addWidget(subtitle);
 
-    auto* info = new QLabel("每次開啟終端機或閒置一段時間後，\n"
-                            "都需要輸入此 PIN 碼。");
+    auto* info = new QLabel(tr("每次開啟終端機或閒置一段時間後，\n"
+                               "都需要輸入此 PIN 碼。"));
     info->setWordWrap(true);
     info->setStyleSheet(QString("color: %1; font-size: 12px; background: transparent;"
                                 "font-family: 'Consolas','Courier New',monospace;")
@@ -293,8 +293,8 @@ void LockScreen::build_setup_page() {
     vl->addWidget(setup_btn_);
 
     // Security note
-    auto* note = new QLabel("PIN 碼已加密並儲存於本機裝置。\n"
-                            "忘記後無法復原。");
+    auto* note = new QLabel(tr("PIN 碼已加密並儲存於本機裝置。\n"
+                               "忘記後無法復原。"));
     note->setWordWrap(true);
     note->setStyleSheet(QString("color: %1; font-size: 11px; background: transparent;"
                                 "font-family: 'Consolas','Courier New',monospace;")
@@ -440,10 +440,10 @@ void LockScreen::build_lockout_page() {
     hl->addWidget(warn);
     vl->addWidget(header);
 
-    lockout_msg_ = new QLabel("PIN 碼嘗試次數過多。\n\n"
-                              "為確保安全，終端機已被鎖定。\n"
-                              "請使用電子郵件和密碼重新登入，\n"
-                              "以重設 PIN 碼並恢復存取。");
+    lockout_msg_ = new QLabel(tr("PIN 碼嘗試次數過多。\n\n"
+                                 "為確保安全，終端機已被鎖定。\n"
+                                 "請使用電子郵件和密碼重新登入，\n"
+                                 "以重設 PIN 碼並恢復存取。"));
     lockout_msg_->setWordWrap(true);
     lockout_msg_->setStyleSheet(QString("color: %1; font-size: 14px; background: transparent;"
                                         "font-family: 'Consolas','Courier New',monospace;")

@@ -340,7 +340,7 @@ QWidget* GovDataProviderPanel::build_toolbar() {
 
     hl->addStretch(1);
 
-    export_btn_ = new QPushButton("CSV");
+    export_btn_ = new QPushButton(tr("CSV"));
     export_btn_->setObjectName("govCsvBtn");
     export_btn_->setCursor(Qt::PointingHandCursor);
     connect(export_btn_, &QPushButton::clicked, this, &GovDataProviderPanel::on_export_csv);
@@ -486,7 +486,7 @@ void GovDataProviderPanel::populate_datasets(const QJsonArray& json, int total_c
         datasets_table_->setItem(i, 3, tag_item);
     }
 
-    row_count_label_->setText(QString("Showing %1 of %2").arg(json.size()).arg(total_count));
+    row_count_label_->setText(tr("Showing %1 of %2").arg(json.size()).arg(total_count));
 }
 
 void GovDataProviderPanel::populate_resources(const QJsonArray& json) {
@@ -546,7 +546,7 @@ void GovDataProviderPanel::populate_resources(const QJsonArray& json) {
         }
     }
 
-    row_count_label_->setText(QString::number(json.size()) + " files");
+    row_count_label_->setText(QString::number(json.size()) + tr(" files"));
 }
 
 // ── View navigation ──────────────────────────────────────────────────────────
@@ -762,7 +762,7 @@ void GovDataProviderPanel::on_export_csv() {
     QFile file(path);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
         export_btn_->setText(tr("✗ FAILED"));
-        QTimer::singleShot(2000, this, [this]() { export_btn_->setText("CSV"); });
+        QTimer::singleShot(2000, this, [this]() { export_btn_->setText(tr("CSV")); });
         return;
     }
     QTextStream out(&file);
@@ -787,7 +787,7 @@ void GovDataProviderPanel::on_export_csv() {
     }
 
     export_btn_->setText(tr("✓ SAVED"));
-    QTimer::singleShot(1500, this, [this]() { export_btn_->setText("CSV"); });
+    QTimer::singleShot(1500, this, [this]() { export_btn_->setText(tr("CSV")); });
 }
 
 // ── Shared CSV export utility (used by all gov_data panels) ─────────────────

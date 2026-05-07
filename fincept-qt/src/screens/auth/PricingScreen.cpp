@@ -480,7 +480,7 @@ void PricingScreen::on_select_plan(const QString& plan_id) {
         }
 
         if (!r.success) {
-            error_label_->setText(r.error.isEmpty() ? "無法產生結帳 Token" : r.error);
+            error_label_->setText(r.error.isEmpty() ? tr("無法產生結帳 Token") : r.error);
             error_label_->show();
             return;
         }

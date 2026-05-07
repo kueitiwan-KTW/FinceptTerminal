@@ -388,7 +388,7 @@ void CryptoBottomPanel::set_market_info(const MarketInfoData& info) {
     funding_label_->setText(QString("%1%").arg(info.funding_rate * 100.0, 0, 'f', 4));
     mark_label_->setText(QString("$%1").arg(info.mark_price, 0, 'f', 2));
     index_label_->setText(QString("$%1").arg(info.index_price, 0, 'f', 2));
-    oi_label_->setText(QString("$%1M").arg(info.open_interest_value / 1e6, 0, 'f', 2));
+    oi_label_->setText(tr("$%1M").arg(info.open_interest_value / 1e6, 0, 'f', 2));
     fees_label_->setText(
         QString("%1% / %2%").arg(info.maker_fee * 100, 0, 'f', 3).arg(info.taker_fee * 100, 0, 'f', 3));
     if (info.next_funding_time > 0)

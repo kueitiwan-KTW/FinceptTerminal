@@ -15,8 +15,8 @@ TopMoversWidget::TopMoversWidget(QWidget* parent) : BaseWidget("漲跌排行", p
     tl->setContentsMargins(4, 2, 4, 2);
     tl->setSpacing(0);
 
-    gainers_btn_ = new QPushButton(QString(QChar(0x25B2)) + " GAINERS");
-    losers_btn_ = new QPushButton(QString(QChar(0x25BC)) + " LOSERS");
+    gainers_btn_ = new QPushButton(QString(QChar(0x25B2)) + tr(" GAINERS"));
+    losers_btn_ = new QPushButton(QString(QChar(0x25BC)) + tr(" LOSERS"));
 
     connect(gainers_btn_, &QPushButton::clicked, this, [this]() { show_tab(true); });
     connect(losers_btn_, &QPushButton::clicked, this, [this]() { show_tab(false); });

@@ -17,7 +17,7 @@ namespace fincept::ui {
 
 SymbolChip::SymbolChip(SymbolRef ref, QWidget* parent) : QWidget(parent), ref_(std::move(ref)) {
     setCursor(Qt::PointingHandCursor);
-    setToolTip(ref_.display() + "\nLeft-click: broadcast to Group A\nDrag: send to any panel\nRight-click: menu");
+    setToolTip(ref_.display() + tr("\nLeft-click: broadcast to Group A\nDrag: send to any panel\nRight-click: menu"));
     setAttribute(Qt::WA_Hover);
 }
 
@@ -71,7 +71,7 @@ void SymbolChip::contextMenuEvent(QContextMenuEvent* e) {
 
     menu.addSeparator();
     for (SymbolGroup g : all_symbol_groups()) {
-        auto* act = menu.addAction(QString("Broadcast to Group %1").arg(symbol_group_letter(g)));
+        auto* act = menu.addAction(tr("Broadcast to Group %1").arg(symbol_group_letter(g)));
         connect(act, &QAction::triggered, this, [this, g]() { broadcast_to_group(g); });
     }
     menu.exec(e->globalPos());

@@ -52,7 +52,7 @@ void WorkspaceSaveAsDialog::setup_ui() {
 
     // Path row
     auto* path_row = new QHBoxLayout;
-    auto* path_label = new QLabel(QString("Save to: %1").arg(chosen_path_));
+    auto* path_label = new QLabel(tr("Save to: %1").arg(chosen_path_));
     path_label->setStyleSheet("color:#555;font-size:11px;");
     path_label->setWordWrap(true);
     auto* change_btn = new QPushButton(tr("Change..."));
@@ -78,10 +78,10 @@ void WorkspaceSaveAsDialog::setup_ui() {
             [save_btn](const QString& t) { save_btn->setEnabled(!t.trimmed().isEmpty()); });
 
     connect(change_btn, &QPushButton::clicked, this, [this, path_label]() {
-        QString dir = QFileDialog::getExistingDirectory(this, "Choose Save Location", chosen_path_);
+        QString dir = QFileDialog::getExistingDirectory(this, tr("Choose Save Location"), chosen_path_);
         if (!dir.isEmpty()) {
             chosen_path_ = dir;
-            path_label->setText(QString("Save to: %1").arg(dir));
+            path_label->setText(tr("Save to: %1").arg(dir));
         }
     });
 

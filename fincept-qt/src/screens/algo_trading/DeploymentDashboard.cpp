@@ -462,7 +462,7 @@ void DeploymentDashboard::on_deployments_loaded(QVector<AlgoDeployment> deployme
         status_label_->setText(tr("No active deployments."));
         status_label_->setVisible(true);
     } else {
-        status_label_->setText(QString("%1 deployment(s)").arg(deployments.size()));
+        status_label_->setText(tr("%1 deployment(s)").arg(deployments.size()));
         status_label_->setStyleSheet(QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                                          .arg(fincept::ui::colors::TEXT_SECONDARY())
                                          .arg(fincept::ui::fonts::SMALL)
@@ -478,7 +478,7 @@ void DeploymentDashboard::on_deployments_loaded(QVector<AlgoDeployment> deployme
 
 void DeploymentDashboard::on_error(const QString& context, const QString& msg) {
     if (status_label_) {
-        status_label_->setText(QString("Error [%1]: %2").arg(context, msg));
+        status_label_->setText(tr("Error [%1]: %2").arg(context, msg));
         status_label_->setStyleSheet(QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                                          .arg(fincept::ui::colors::NEGATIVE())
                                          .arg(fincept::ui::fonts::SMALL)

@@ -14,6 +14,7 @@
 #include <QHeaderView>
 #include <QHideEvent>
 #include <QLabel>
+#include <QObject>
 #include <QPushButton>
 #include <QShowEvent>
 #include <QTableWidget>
@@ -39,12 +40,12 @@ QString format_time(qint64 ts_ms) {
 QString kind_label(fincept::wallet::ParsedActivity::Kind k) {
     using K = fincept::wallet::ParsedActivity::Kind;
     switch (k) {
-        case K::Swap:    return QStringLiteral("SWAP");
-        case K::Receive: return QStringLiteral("RECEIVE");
-        case K::Send:    return QStringLiteral("SEND");
-        case K::Other:   return QStringLiteral("OTHER");
+        case K::Swap:    return QObject::tr("SWAP");
+        case K::Receive: return QObject::tr("RECEIVE");
+        case K::Send:    return QObject::tr("SEND");
+        case K::Other:   return QObject::tr("OTHER");
     }
-    return QStringLiteral("OTHER");
+    return QObject::tr("OTHER");
 }
 
 QString shorten_sig(const QString& sig) {
@@ -120,9 +121,9 @@ void ActivityTab::build_ui() {
     table_->setObjectName(QStringLiteral("activityTabTable"));
     table_->setColumnCount(6);
     table_->setHorizontalHeaderLabels(
-        {QStringLiteral("TIMESTAMP"), QStringLiteral("EVENT"),
-         QStringLiteral("ASSET"), QStringLiteral("AMOUNT"),
-         QStringLiteral("STATUS"), QStringLiteral("SIGNATURE")});
+        {tr("TIMESTAMP"), tr("EVENT"),
+         tr("ASSET"), tr("AMOUNT"),
+         tr("STATUS"), tr("SIGNATURE")});
     table_->verticalHeader()->setVisible(false);
     table_->horizontalHeader()->setSectionResizeMode(QHeaderView::ResizeToContents);
     table_->horizontalHeader()->setSectionResizeMode(2, QHeaderView::Stretch);

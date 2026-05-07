@@ -494,28 +494,28 @@ void PythonSetupManager::run_setup() {
 
         // ── Step 1: Download UV standalone binary (~13MB) ────────────────────
         if (!status.uv_installed) {
-            self->emit_progress("uv", 0, "Downloading UV package manager...");
+            self->emit_progress("uv", 0, self->tr("Downloading UV package manager..."));
             if (!self->download_uv()) {
-                self->emit_progress("uv", 0, "Failed to download UV", true);
-                fail("UV download failed");
+                self->emit_progress("uv", 0, self->tr("Failed to download UV"), true);
+                fail(self->tr("UV download failed"));
                 return;
             }
-            self->emit_progress("uv", 100, "UV ready");
+            self->emit_progress("uv", 100, self->tr("UV ready"));
         } else {
-            self->emit_progress("uv", 100, "UV already installed");
+            self->emit_progress("uv", 100, self->tr("UV already installed"));
         }
 
         // ── Step 2: Install Python via UV ────────────────────────────────────
         if (!status.python_installed) {
-            self->emit_progress("python", 0, "Installing Python 3.12 via UV...");
+            self->emit_progress("python", 0, self->tr("Installing Python 3.12 via UV..."));
             if (!self->install_python_via_uv()) {
-                self->emit_progress("python", 0, "Failed to install Python", true);
-                fail("Python installation failed");
+                self->emit_progress("python", 0, self->tr("Failed to install Python"), true);
+                fail(self->tr("Python installation failed"));
                 return;
             }
-            self->emit_progress("python", 100, "Python 3.12 installed");
+            self->emit_progress("python", 100, self->tr("Python 3.12 installed"));
         } else {
-            self->emit_progress("python", 100, "Python already installed: " + status.python_version);
+            self->emit_progress("python", 100, self->tr("Python already installed: ") + status.python_version);
         }
 
         // ── Step 3: Create both venvs in PARALLEL ───────────────────────────
@@ -525,7 +525,7 @@ void PythonSetupManager::run_setup() {
         bool need_venv2 = !status.venv_numpy2_created;
 
         if (need_venv1 || need_venv2) {
-            self->emit_progress("venv", 0, "Creating virtual environments...");
+            self->emit_progress("venv", 0, self->tr("Creating virtual environments..."));
 
             std::atomic<bool> v1_ok{!need_venv1}; // already OK if not needed
             std::atomic<bool> v2_ok{!need_venv2};
@@ -544,13 +544,13 @@ void PythonSetupManager::run_setup() {
                 f2.waitForFinished();
 
             if (!v1_ok || !v2_ok) {
-                self->emit_progress("venv", 0, "Failed to create virtual environments", true);
-                fail("Venv creation failed");
+                self->emit_progress("venv", 0, self->tr("Failed to create virtual environments"), true);
+                fail(self->tr("Venv creation failed"));
                 return;
             }
-            self->emit_progress("venv", 100, "Virtual environments created");
+            self->emit_progress("venv", 100, self->tr("Virtual environments created"));
         } else {
-            self->emit_progress("venv", 100, "Virtual environments already ready");
+            self->emit_progress("venv", 100, self->tr("Virtual environments already ready"));
         }
 
         // ── Step 4: Install packages in PARALLEL ────────────────────────────
@@ -564,14 +564,14 @@ void PythonSetupManager::run_setup() {
         std::atomic<bool> p2_ok{!need_pkg2};
 
         if (need_pkg1) {
-            self->emit_progress("packages-numpy1", 0, "Installing NumPy 1.x packages...");
+            self->emit_progress("packages-numpy1", 0, self->tr("Installing NumPy 1.x packages..."));
         } else {
-            self->emit_progress("packages-numpy1", 100, "NumPy 1.x packages ready");
+            self->emit_progress("packages-numpy1", 100, self->tr("NumPy 1.x packages ready"));
         }
         if (need_pkg2) {
-            self->emit_progress("packages-numpy2", 0, "Installing NumPy 2.x packages...");
+            self->emit_progress("packages-numpy2", 0, self->tr("Installing NumPy 2.x packages..."));
         } else {
-            self->emit_progress("packages-numpy2", 100, "NumPy 2.x packages ready");
+            self->emit_progress("packages-numpy2", 100, self->tr("NumPy 2.x packages ready"));
         }
 
         // Run both package installations in parallel
@@ -581,7 +581,7 @@ void PythonSetupManager::run_setup() {
                 p1_ok = self && self->install_packages("venv-numpy1", "requirements-numpy1.txt");
                 if (self) {
                     self->emit_progress("packages-numpy1", p1_ok ? 100 : 0,
-                                        p1_ok ? "NumPy 1.x packages installed" : "NumPy 1.x package install failed",
+                                        p1_ok ? self->tr("NumPy 1.x packages installed") : self->tr("NumPy 1.x package install failed"),
                                         !p1_ok);
                 }
             });
@@ -591,7 +591,7 @@ void PythonSetupManager::run_setup() {
                 p2_ok = self && self->install_packages("venv-numpy2", "requirements-numpy2.txt");
                 if (self) {
                     self->emit_progress("packages-numpy2", p2_ok ? 100 : 0,
-                                        p2_ok ? "NumPy 2.x packages installed" : "NumPy 2.x package install failed",
+                                        p2_ok ? self->tr("NumPy 2.x packages installed") : self->tr("NumPy 2.x package install failed"),
                                         !p2_ok);
                 }
             });
@@ -603,7 +603,7 @@ void PythonSetupManager::run_setup() {
             pf2.waitForFinished();
 
         if (!p1_ok || !p2_ok) {
-            fail("Package installation failed");
+            fail(self->tr("Package installation failed"));
             return;
         }
 
@@ -618,7 +618,7 @@ void PythonSetupManager::run_setup() {
         }
 
         // ── Done ────────────────────────────────────────────────────────────
-        self->emit_progress("complete", 100, "Setup complete! All environments ready.");
+        self->emit_progress("complete", 100, self->tr("Setup complete! All environments ready."));
         QMetaObject::invokeMethod(
             self,
             [self]() {
@@ -658,7 +658,7 @@ bool PythonSetupManager::download_uv() {
     QString archive_path = dir + "/" + archive_name;
 
     LOG_INFO("PythonSetup", "Downloading UV from: " + url);
-    emit_progress("uv", 20, "Downloading UV binary...");
+    emit_progress("uv", 20, tr("Downloading UV binary..."));
 
     QString err = download_file(url, archive_path);
     if (!err.isEmpty()) {
@@ -666,7 +666,7 @@ bool PythonSetupManager::download_uv() {
         return false;
     }
 
-    emit_progress("uv", 60, "Extracting UV...");
+    emit_progress("uv", 60, tr("Extracting UV..."));
 
     // Extract — prefer tar.exe (ships with Windows 10 1803+, much faster than
     // PowerShell Expand-Archive). Fall back to PowerShell on older systems.
@@ -717,7 +717,7 @@ bool PythonSetupManager::download_uv() {
     }
 
     // Verify
-    emit_progress("uv", 80, "Verifying UV...");
+    emit_progress("uv", 80, tr("Verifying UV..."));
     if (!run_command(uv_path(), {"--version"})) {
         LOG_ERROR("PythonSetup", "UV verification failed");
         return false;
@@ -732,7 +732,7 @@ bool PythonSetupManager::download_uv() {
 // ─────────────────────────────────────────────────────────────────────────────
 
 bool PythonSetupManager::install_python_via_uv() {
-    emit_progress("python", 20, "UV is downloading Python 3.12...");
+    emit_progress("python", 20, tr("UV is downloading Python 3.12..."));
 
     // Shared UV env (cache dir, hardlinks, bytecode compile, concurrency, timeout).
     QStringList env = uv_env_extra();
@@ -742,7 +742,7 @@ bool PythonSetupManager::install_python_via_uv() {
         return false;
     }
 
-    emit_progress("python", 80, "Verifying Python...");
+    emit_progress("python", 80, tr("Verifying Python..."));
 
     // Clear the cached path — Python was just installed so the previous
     // (empty or stale) cached value must not be returned by base_python_path().
@@ -808,7 +808,7 @@ bool PythonSetupManager::install_packages(const QString& venv_name, const QStrin
                           "  CMakeLists.txt POST_BUILD should copy resources/*.txt — rebuild to fix.")
                       .arg(requirements_file, exe_dir));
         emit_progress(step_key, 0,
-                      QString("Setup file missing: %1 — reinstall the application").arg(requirements_file), true);
+                      tr("Setup file missing: %1 — reinstall the application").arg(requirements_file), true);
         return false;
     }
 
@@ -826,7 +826,7 @@ bool PythonSetupManager::install_packages(const QString& venv_name, const QStrin
     // ── Pass 1: try installing everything at once (fast path) ────────────────
     // This succeeds on most machines and is 10-100x faster than one-by-one.
     LOG_INFO("PythonSetup", QString("[%1] Pass 1: bulk install from %2").arg(venv_name, requirements_file));
-    emit_progress(step_key, 5, "Installing packages (bulk)...");
+    emit_progress(step_key, 5, tr("Installing packages (bulk)..."));
 
     QString bulk_stderr;
     bool bulk_ok =
@@ -837,7 +837,7 @@ bool PythonSetupManager::install_packages(const QString& venv_name, const QStrin
         // Write the requirements hash as the marker — future check_status() calls
         // compare this hash against the current requirements file to detect changes.
         write_marker_hash(venv_name, compute_requirements_hash(requirements_file));
-        emit_progress(step_key, 100, "All packages installed");
+        emit_progress(step_key, 100, tr("All packages installed"));
         return true;
     }
 
@@ -847,7 +847,7 @@ bool PythonSetupManager::install_packages(const QString& venv_name, const QStrin
                      "  UV command: %2 pip install --python %3 -r %4\n"
                      "  stderr (first 600 chars): %5")
                  .arg(venv_name, uv_path(), venv_python, req_path, bulk_stderr.left(600)));
-    emit_progress(step_key, 10, "Bulk install failed — retrying package by package...");
+    emit_progress(step_key, 10, tr("Bulk install failed — retrying package by package..."));
 
     QStringList packages = read_packages_from_file(req_path);
     if (packages.isEmpty()) {
@@ -861,7 +861,7 @@ bool PythonSetupManager::install_packages(const QString& venv_name, const QStrin
         LOG_INFO("PythonSetup", QString("[%1] All packages installed individually").arg(venv_name));
         // Write the requirements hash as the marker — all packages installed.
         write_marker_hash(venv_name, compute_requirements_hash(requirements_file));
-        emit_progress(step_key, 100, "All packages installed");
+        emit_progress(step_key, 100, tr("All packages installed"));
     } else {
         LOG_WARN("PythonSetup", QString("[%1] %2 package(s) failed: %3")
                                     .arg(venv_name)
@@ -871,7 +871,7 @@ bool PythonSetupManager::install_packages(const QString& venv_name, const QStrin
         // marker ensures check_status() returns needs_setup=true on the next
         // launch so the failed packages are retried automatically.
         emit_progress(step_key, 100,
-                      QString("Done — %1 package(s) failed (will retry on next launch)").arg(failed.size()));
+                      tr("Done — %n package(s) failed (will retry on next launch)", nullptr, failed.size()));
     }
 
     return true;
@@ -917,7 +917,7 @@ QStringList PythonSetupManager::install_packages_individually(const QString& ven
     for (int i = 0; i < total; ++i) {
         const QString& pkg = packages[i];
         int pct = 10 + static_cast<int>(90.0 * i / total);
-        emit_progress(step_key, pct, QString("Installing %1/%2: %3").arg(i + 1).arg(total).arg(pkg));
+        emit_progress(step_key, pct, tr("Installing %1/%2: %3").arg(i + 1).arg(total).arg(pkg));
 
         QString pkg_stderr;
         bool ok =
@@ -1091,8 +1091,8 @@ QString PythonSetupManager::download_file(const QString& url, const QString& des
                 .arg(url, dest_path);
         if (!run_process("powershell", {"-NoProfile", "-NonInteractive", "-Command", ps_cmd}, {}, &ps_err)) {
             if (ps_err.isEmpty())
-                ps_err = "unknown error (no stderr)";
-            return "Download failed. Check your internet connection.\nDetail: " + ps_err.left(300);
+                ps_err = tr("unknown error (no stderr)");
+            return tr("Download failed. Check your internet connection.\nDetail: ") + ps_err.left(300);
         }
     }
 #else
@@ -1103,10 +1103,10 @@ QString PythonSetupManager::download_file(const QString& url, const QString& des
         which.start("which", {"curl"});
         which.waitForFinished(3000);
         if (which.exitCode() != 0) {
-            return "curl not found. Install it first:\n"
-                   "  Ubuntu/Debian: sudo apt install curl\n"
-                   "  Fedora/RHEL:   sudo dnf install curl\n"
-                   "  macOS:         brew install curl  (or use system curl)";
+            return tr("curl not found. Install it first:\n"
+                      "  Ubuntu/Debian: sudo apt install curl\n"
+                      "  Fedora/RHEL:   sudo dnf install curl\n"
+                      "  macOS:         brew install curl  (or use system curl)");
         }
     }
     QProcess proc;
@@ -1115,15 +1115,15 @@ QString PythonSetupManager::download_file(const QString& url, const QString& des
     proc.start("curl", {"-L", "--fail", "--retry", "3", "--connect-timeout", "30", "-o", dest_path, url});
     if (!proc.waitForFinished(15 * 60 * 1000)) {
         proc.kill();
-        return "Download timed out";
+        return tr("Download timed out");
     }
     if (proc.exitCode() != 0) {
-        return "curl failed: " + QString::fromUtf8(proc.readAllStandardError()).left(200);
+        return tr("curl failed: ") + QString::fromUtf8(proc.readAllStandardError()).left(200);
     }
 #endif
 
     if (!QFileInfo::exists(dest_path)) {
-        return "Downloaded file not found: " + dest_path;
+        return tr("Downloaded file not found: ") + dest_path;
     }
     return {};
 }

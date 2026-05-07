@@ -197,8 +197,8 @@ void PortfolioFFNView::build_ui() {
         benchmark_table_->setColumnWidth(1, 150);
         vl->addWidget(benchmark_table_);
 
-        benchmark_info_label_ = new QLabel("Portfolio metrics computed from 1-year price history via yfinance.\n"
-                                           "Connect a live benchmark feed to populate the Benchmark column.");
+        benchmark_info_label_ = new QLabel(tr("Portfolio metrics computed from 1-year price history via yfinance.\n"
+                                              "Connect a live benchmark feed to populate the Benchmark column."));
         benchmark_info_label_->setWordWrap(true);
         benchmark_info_label_->setStyleSheet(
             QString("color:%1; font-size:10px; padding:6px 0;").arg(ui::colors::TEXT_TERTIARY()));

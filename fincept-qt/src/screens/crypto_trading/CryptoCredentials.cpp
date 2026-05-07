@@ -63,7 +63,7 @@ namespace fincept::screens::crypto {
 
 CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent)
     : QDialog(parent), exchange_id_(exchange_id) {
-    setWindowTitle(QString("API Credentials — %1").arg(exchange_id.toUpper()));
+    setWindowTitle(tr("API Credentials — %1").arg(exchange_id.toUpper()));
     setMinimumWidth(400);
     // ONE dialog-level stylesheet drives all widgets via objectName selectors.
     setStyleSheet(kDialogStyle());
@@ -73,12 +73,12 @@ CryptoCredentials::CryptoCredentials(const QString& exchange_id, QWidget* parent
     layout->setContentsMargins(14, 14, 14, 14);
 
     // Header
-    auto* title = new QLabel(QString("API CREDENTIALS  %1").arg(exchange_id.toUpper()));
+    auto* title = new QLabel(tr("API CREDENTIALS  %1").arg(exchange_id.toUpper()));
     title->setObjectName("credTitle");
     layout->addWidget(title);
 
-    auto* info = new QLabel("Enter your exchange API credentials for live trading.\n"
-                            "Keys are stored locally in encrypted secure storage.");
+    auto* info = new QLabel(tr("Enter your exchange API credentials for live trading.\n"
+                               "Keys are stored locally in encrypted secure storage."));
     info->setObjectName("credInfo");
     info->setWordWrap(true);
     layout->addWidget(info);
@@ -238,8 +238,8 @@ void CryptoCredentials::refresh_totp() {
                 self->totp_countdown_label_->setText("");
                 return;
             }
-            self->totp_code_label_->setText(QString("CODE: %1").arg(r.code));
-            self->totp_countdown_label_->setText(QString("(%1s)").arg(r.valid_for));
+            self->totp_code_label_->setText(tr("CODE: %1").arg(r.code));
+            self->totp_countdown_label_->setText(tr("(%1s)").arg(r.valid_for));
         });
 }
 

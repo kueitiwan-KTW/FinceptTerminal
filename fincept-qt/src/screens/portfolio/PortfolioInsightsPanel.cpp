@@ -61,12 +61,12 @@ PortfolioInsightsPanel::PortfolioInsightsPanel(QWidget* parent) : QWidget(parent
         header_status_->clear();
         if (r.success && !r.response.isEmpty()) {
             ai_cache_.insert(type, r.response);
-            ai_meta_->setText(QString("Last run %1  •  %2ms").arg(fmt_now()).arg(r.execution_time_ms));
+            ai_meta_->setText(tr("Last run %1  •  %2ms").arg(fmt_now()).arg(r.execution_time_ms));
             render_result(ai_content_, r.response);
             QString upper = type.toUpper();
             if (upper == "OPPORTUNITIES")
                 upper = "OPPS";
-            ai_run_->setText(QString("RE-RUN %1 ANALYSIS").arg(upper));
+            ai_run_->setText(tr("RE-RUN %1 ANALYSIS").arg(upper));
         } else {
             const QString msg = r.error.isEmpty() ? tr("No response received.") : r.error;
             render_error(ai_content_, "Analysis failed.\n\n" + msg);
@@ -117,7 +117,7 @@ PortfolioInsightsPanel::PortfolioInsightsPanel(QWidget* parent) : QWidget(parent
 
                 if (r.success && !final_text.isEmpty()) {
                     agent_cache_.insert(agent_id, final_text);
-                    agent_meta_->setText(QString("Last run %1  •  %2ms").arg(fmt_now()).arg(r.execution_time_ms));
+                    agent_meta_->setText(tr("Last run %1  •  %2ms").arg(fmt_now()).arg(r.execution_time_ms));
                     render_result(agent_content_, final_text);
                     agent_run_->setText(tr("RE-RUN AGENT"));
                 } else if (r.success) {
@@ -349,7 +349,7 @@ QWidget* PortfolioInsightsPanel::build_agent_page() {
     cl->setContentsMargins(16, 12, 16, 12);
     cl->setSpacing(8);
 
-    auto* label = new QLabel("SELECT AGENT");
+    auto* label = new QLabel(tr("SELECT AGENT"));
     label->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; letter-spacing:1.5px;").arg(text3));
     cl->addWidget(label);
 
@@ -459,13 +459,13 @@ void PortfolioInsightsPanel::set_ai_type(const QString& type) {
     QString upper = type.toUpper();
     if (upper == "OPPORTUNITIES")
         upper = "OPPS";
-    ai_run_->setText(ai_cache_.contains(type) ? QString("RE-RUN %1 ANALYSIS").arg(upper)
-                                              : QString("RUN %1 ANALYSIS").arg(upper));
+    ai_run_->setText(ai_cache_.contains(type) ? tr("RE-RUN %1 ANALYSIS").arg(upper)
+                                              : tr("RUN %1 ANALYSIS").arg(upper));
 
     if (ai_cache_.contains(type))
         render_result(ai_content_, ai_cache_.value(type));
     else
-        render_empty(ai_content_, "Press RUN to start this analysis.");
+        render_empty(ai_content_, tr("Press RUN to start this analysis."));
 }
 
 void PortfolioInsightsPanel::reload_agents() {
@@ -576,7 +576,7 @@ void PortfolioInsightsPanel::run_ai(bool force) {
     ai_busy_ = true;
     ai_pending_type_ = ai_type_;
     ai_run_->setEnabled(false);
-    header_status_->setText(QString("● running %1…").arg(ai_type_));
+    header_status_->setText(tr("● running %1…").arg(ai_type_));
     render_empty(ai_content_, QString("Running %1 analysis through the agent stack…").arg(ai_type_));
 
     services::AgentService::instance().run_portfolio_analysis(ai_type_, summary_json);
@@ -629,7 +629,7 @@ void PortfolioInsightsPanel::run_agent(bool force) {
     agent_busy_ = true;
     agent_streaming_text_.clear();
     agent_run_->setEnabled(false);
-    header_status_->setText(QString("● running %1…").arg(agent_name));
+    header_status_->setText(tr("● running %1…").arg(agent_name));
     render_empty(agent_content_, QString("Running %1 on this portfolio…").arg(agent_name));
 
     agent_pending_id_ = agent_id;

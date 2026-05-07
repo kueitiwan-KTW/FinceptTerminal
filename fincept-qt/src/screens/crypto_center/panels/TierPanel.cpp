@@ -12,6 +12,7 @@
 #include <QHideEvent>
 #include <QLabel>
 #include <QLocale>
+#include <QObject>
 #include <QShowEvent>
 #include <QStyle>
 #include <QVBoxLayout>
@@ -74,9 +75,9 @@ void TierPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("TIER"), head);
+    auto* title = new QLabel(tr("TIER"), head);
     title->setObjectName(QStringLiteral("tierTitle"));
-    current_label_ = new QLabel(QStringLiteral("current FREE"), head);
+    current_label_ = new QLabel(tr("current FREE"), head);
     current_label_->setObjectName(QStringLiteral("tierHeadCaption"));
     hl->addWidget(title);
     hl->addStretch();
@@ -105,7 +106,7 @@ void TierPanel::build_ui() {
         row.threshold->setMinimumWidth(140);
         row.unlocks = new QLabel(unlocks, row.host);
         row.unlocks->setObjectName(QStringLiteral("tierRowUnlocks"));
-        row.chip = new QLabel(QStringLiteral("[locked]"), row.host);
+        row.chip = new QLabel(QObject::tr("[locked]"), row.host);
         row.chip->setObjectName(QStringLiteral("tierRowChipLocked"));
         row_l->addWidget(row.label);
         row_l->addWidget(row.threshold);
@@ -114,13 +115,13 @@ void TierPanel::build_ui() {
         bl->addWidget(row.host);
     };
 
-    build_row(bronze_row_, QStringLiteral("BRONZE"),
+    build_row(bronze_row_, tr("BRONZE"),
               QStringLiteral("100+ veFNCPT"),
               tr("basic API quota"));
-    build_row(silver_row_, QStringLiteral("SILVER"),
+    build_row(silver_row_, tr("SILVER"),
               QStringLiteral("1,000+ veFNCPT"),
               tr("premium screens"));
-    build_row(gold_row_, QStringLiteral("GOLD"),
+    build_row(gold_row_, tr("GOLD"),
               QStringLiteral("10,000+ veFNCPT"),
               tr("all agents + arena"));
 
@@ -237,8 +238,8 @@ void TierPanel::render_state(fincept::wallet::TierStatus::Tier current,
     using Tier = fincept::wallet::TierStatus::Tier;
 
     auto set_row = [](TierRow& row, bool achieved, bool is_current) {
-        row.chip->setText(achieved ? QStringLiteral("[achieved]")
-                                   : QStringLiteral("[locked]"));
+        row.chip->setText(achieved ? QObject::tr("[achieved]")
+                                   : QObject::tr("[locked]"));
         row.chip->setObjectName(achieved ? QStringLiteral("tierRowChipAchieved")
                                          : QStringLiteral("tierRowChipLocked"));
         row.host->setObjectName(is_current ? QStringLiteral("tierRowCurrent")
@@ -253,9 +254,9 @@ void TierPanel::render_state(fincept::wallet::TierStatus::Tier current,
     set_row(silver_row_, current >= Tier::Silver, current == Tier::Silver);
     set_row(gold_row_,   current >= Tier::Gold,   current == Tier::Gold);
 
-    QString head_text = QStringLiteral("current %1")
+    QString head_text = tr("current %1")
                              .arg(fincept::billing::TierConfig::label_for(current));
-    if (is_mock) head_text += QStringLiteral(" · DEMO");
+    if (is_mock) head_text += tr(" · DEMO");
     if (!weight_ui_str.isEmpty()) {
         head_text += QStringLiteral("  ·  %1").arg(weight_ui_str);
     }

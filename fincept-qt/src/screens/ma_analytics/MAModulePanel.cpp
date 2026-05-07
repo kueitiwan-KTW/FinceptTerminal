@@ -1165,7 +1165,7 @@ QWidget* MAModulePanel::build_startup_panel() {
     double defaults_prob[] = {25, 50, 25};
     double defaults_val[] = {100e6, 40e6, 10e6};
     for (int i = 0; i < 3; ++i) {
-        auto* lbl = new QLabel(scenarios[i].toUpper() + " CASE", fc);
+        auto* lbl = new QLabel(scenarios[i].toUpper() + tr(" CASE"), fc);
         lbl->setStyleSheet(QString("color:%1; font-size:9px; font-weight:700; font-family:%2;"
                                    "letter-spacing:1px;")
                                .arg(module_.color.name())
@@ -1679,7 +1679,7 @@ QWidget* MAModulePanel::build_advanced_panel() {
     reg_vl->setSpacing(8);
 
     auto* reg_type = new QComboBox(reg);
-    reg_type->addItems({"OLS", "Multiple"});
+    reg_type->addItems({tr("OLS"), tr("Multiple")});
     reg_type->setStyleSheet(QString("QComboBox { background:%1; color:%2; border:1px solid %3;"
                                     "font-family:%4; font-size:%5px; padding:4px 6px; }")
                                 .arg(ui::colors::BG_RAISED(), ui::colors::TEXT_PRIMARY(), ui::colors::BORDER_MED())
@@ -1746,9 +1746,9 @@ QWidget* MAModulePanel::build_comparison_panel() {
     cmp_vl->setContentsMargins(12, 12, 12, 12);
     cmp_vl->setSpacing(8);
 
-    auto* cmp_hint = new QLabel("Enter deal data as JSON array. Each deal: "
-                                "{\"acquirer\":\"...\",\"target\":\"...\",\"deal_value\":N,\"premium\":N,"
-                                "\"ev_revenue\":N,\"ev_ebitda\":N}",
+    auto* cmp_hint = new QLabel(tr("Enter deal data as JSON array. Each deal: ") +
+                                QStringLiteral("{\"acquirer\":\"...\",\"target\":\"...\",\"deal_value\":N,\"premium\":N,"
+                                               "\"ev_revenue\":N,\"ev_ebitda\":N}"),
                                 cmp);
     cmp_hint->setWordWrap(true);
     cmp_hint->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
@@ -2167,7 +2167,7 @@ void MAModulePanel::display_result(const QJsonObject& payload) {
     connect(raw_btn, &QPushButton::clicked, this, [raw_text, raw_btn]() {
         bool showing = raw_text->isVisible();
         raw_text->setVisible(!showing);
-        raw_btn->setText(showing ? "Show Raw JSON" : "Hide Raw JSON");
+        raw_btn->setText(showing ? tr("Show Raw JSON") : tr("Hide Raw JSON"));
     });
 
     results_layout_->addWidget(raw_btn);

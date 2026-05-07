@@ -373,7 +373,7 @@ void CryptoTradingScreen::update_clock() {
     if (connected == last_ws_status_label_state_)
         return;
     last_ws_status_label_state_ = connected;
-    ws_status_->setText(connected ? "LIVE" : "REST");
+    ws_status_->setText(connected ? tr("LIVE") : tr("REST"));
     ws_status_->setStyleSheet(QString("color: %1;").arg(connected ? ui::colors::POSITIVE() : ui::colors::WARNING()));
 }
 
@@ -741,7 +741,7 @@ void CryptoTradingScreen::switch_symbol(const QString& symbol) {
 void CryptoTradingScreen::on_mode_toggled() {
     const bool is_live = mode_btn_->isChecked();
     trading_mode_ = is_live ? TradingMode::Live : TradingMode::Paper;
-    mode_btn_->setText(is_live ? "LIVE" : "PAPER");
+    mode_btn_->setText(is_live ? tr("LIVE") : tr("PAPER"));
     mode_btn_->setProperty("mode", is_live ? "live" : "paper");
     mode_btn_->style()->unpolish(mode_btn_);
     mode_btn_->style()->polish(mode_btn_);

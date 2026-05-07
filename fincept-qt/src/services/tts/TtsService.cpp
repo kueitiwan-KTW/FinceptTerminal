@@ -15,6 +15,7 @@
 #include "python/PythonSetupManager.h"
 #include "storage/secure/SecureStorage.h"
 
+#include <QCoreApplication>
 #include <QFileInfo>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -65,7 +66,7 @@ class PythonTtsProvider : public TtsProvider {
 
         if (python_exe.isEmpty()) {
             LOG_ERROR(TTS_TAG, "No Python interpreter available — aborting TTS");
-            emit error_occurred(QStringLiteral("Python not available — cannot speak response"));
+            emit error_occurred(QCoreApplication::translate("FinceptTerminal", "Python not available — cannot speak response"));
             return;
         }
 
@@ -74,7 +75,7 @@ class PythonTtsProvider : public TtsProvider {
                               .arg(script).arg(QFileInfo::exists(script)));
         if (!QFileInfo::exists(script)) {
             LOG_ERROR(TTS_TAG, QString("TTS script not found at '%1'").arg(script));
-            emit error_occurred(QStringLiteral("TTS script not found: ") + script);
+            emit error_occurred(QCoreApplication::translate("FinceptTerminal", "TTS script not found: ") + script);
             return;
         }
 
@@ -121,7 +122,7 @@ class PythonTtsProvider : public TtsProvider {
             LOG_ERROR(TTS_TAG, QString("Provider[%1]: QProcess::errorOccurred err=%2")
                                    .arg(name()).arg(static_cast<int>(err)));
             if (err == QProcess::FailedToStart) {
-                emit error_occurred(QStringLiteral("Failed to launch TTS process"));
+                emit error_occurred(QCoreApplication::translate("FinceptTerminal", "Failed to launch TTS process"));
                 stop();
             }
         });
@@ -133,7 +134,7 @@ class PythonTtsProvider : public TtsProvider {
 
         if (!process_->waitForStarted(2000)) {
             LOG_ERROR(TTS_TAG, "TTS process did not start within 2 s");
-            emit error_occurred(QStringLiteral("TTS process failed to start"));
+            emit error_occurred(QCoreApplication::translate("FinceptTerminal", "TTS process failed to start"));
             stop();
             return;
         }
@@ -272,7 +273,7 @@ class PythonTtsProvider : public TtsProvider {
             if (status == QProcess::CrashExit || exit_code != 0) {
                 LOG_ERROR(TTS_TAG, QString("Provider[%1] exited abnormally (code=%2)")
                                        .arg(name()).arg(exit_code));
-                emit error_occurred(QStringLiteral("Voice response stopped unexpectedly"));
+                emit error_occurred(QCoreApplication::translate("FinceptTerminal", "Voice response stopped unexpectedly"));
             }
         }
     }
@@ -371,7 +372,7 @@ void TtsService::speak(const QString& text) {
     install_provider();
     if (!provider_) {
         LOG_ERROR(TTS_TAG, "speak: install_provider() left provider_ null — cannot speak");
-        emit error_occurred(QStringLiteral("TTS provider could not be installed"));
+        emit error_occurred(QCoreApplication::translate("FinceptTerminal", "TTS provider could not be installed"));
         return;
     }
     provider_->speak(text);

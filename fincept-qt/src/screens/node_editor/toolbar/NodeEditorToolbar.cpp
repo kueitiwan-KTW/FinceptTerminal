@@ -76,7 +76,7 @@ void NodeEditorToolbar::set_executing(bool running) {
                                  "QPushButton:hover { background: %2; color: %3; }")
                              .arg(ui::colors::NEGATIVE_BG(), ui::colors::NEGATIVE(), ui::colors::TEXT_PRIMARY());
 
-    execute_btn_->setText(running ? "STOP" : "EXECUTE");
+    execute_btn_->setText(running ? tr("STOP") : tr("EXECUTE"));
     execute_btn_->setStyleSheet(running ? stop_style : accent_btn_style());
 }
 

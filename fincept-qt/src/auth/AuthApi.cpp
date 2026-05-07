@@ -80,35 +80,35 @@ void AuthApi::request(const QString& method, const QString& endpoint, const QJso
             QString msg;
             switch (status) {
                 case 400:
-                    msg = "Bad request. Please check your input.";
+                    msg = "請求無效。請確認您的輸入。";
                     break;
                 case 401:
-                    msg = "Incorrect email or password.";
+                    msg = "電子郵件或密碼不正確。";
                     break;
                 case 403:
-                    msg = "Access denied. Your account may be suspended.";
+                    msg = "存取被拒。您的帳戶可能已被停權。";
                     break;
                 case 404:
-                    msg = "Account not found. Please check your email.";
+                    msg = "找不到帳戶。請確認您的電子郵件。";
                     break;
                 case 409:
-                    msg = "An account with this email or username already exists.";
+                    msg = "此電子郵件或使用者名稱的帳戶已存在。";
                     break;
                 case 422:
-                    msg = "Please check your input and try again.";
+                    msg = "請確認您的輸入後重試。";
                     break;
                 case 429:
-                    msg = "Too many attempts. Please wait a moment and try again.";
+                    msg = "嘗試次數過多。請稍候再試。";
                     break;
                 case 500:
-                    msg = "Server error. Please try again later.";
+                    msg = "伺服器錯誤。請稍後再試。";
                     break;
                 case 503:
-                    msg = "Service unavailable. Please try again later.";
+                    msg = "服務暫時無法使用。請稍後再試。";
                     break;
                 default:
-                    msg = status > 0 ? QString("Request failed (HTTP %1). Please try again.").arg(status)
-                                     : "Network error. Check your connection.";
+                    msg = status > 0 ? QString("請求失敗 (HTTP %1)。請重試。").arg(status)
+                                     : "網路錯誤。請檢查您的連線。";
             }
             cb({false, {}, msg, status});
             return;
@@ -146,7 +146,7 @@ void AuthApi::request(const QString& method, const QString& endpoint, const QJso
             if (msg.isEmpty())
                 msg = obj.value("detail").toString();
             if (msg.isEmpty())
-                msg = "Request failed. Please try again.";
+                msg = "請求失敗。請重試。";
             cb({false, obj, msg, 200});
             return;
         }
@@ -354,7 +354,7 @@ void AuthApi::get_subscription_plans(Callback cb) {
         auto& http = fincept::HttpClient::instance();
         http.saas_get("/api/fincept/plans", [cb](fincept::Result<QJsonDocument> r) {
             if (r.is_err()) {
-                cb({false, {}, "Failed to fetch plans", 0});
+                cb({false, {}, "取得方案失敗", 0});
                 return;
             }
             cb({true, r.value().object(), {}, 200});

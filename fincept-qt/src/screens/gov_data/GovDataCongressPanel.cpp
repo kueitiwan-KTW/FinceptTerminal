@@ -187,7 +187,7 @@ QWidget* GovDataCongressPanel::build_toolbar() {
     connect(fetch_btn_, &QPushButton::clicked, this, &GovDataCongressPanel::on_fetch_bills);
     hl->addWidget(fetch_btn_);
 
-    export_btn_ = new QPushButton("CSV");
+    export_btn_ = new QPushButton(tr("CSV"));
     export_btn_->setObjectName("govCsvBtn");
     export_btn_->setCursor(Qt::PointingHandCursor);
     connect(export_btn_, &QPushButton::clicked, this, &GovDataCongressPanel::on_export_csv);

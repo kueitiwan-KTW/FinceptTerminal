@@ -173,7 +173,7 @@ void PortfolioTxnPanel::populate() {
     }
 
     table_->setSortingEnabled(true);
-    count_label_->setText(QString("%1 transactions").arg(txns_.size()));
+    count_label_->setText(tr("%1 transactions").arg(txns_.size()));
 }
 
 void PortfolioTxnPanel::refresh_theme() {

@@ -2,7 +2,7 @@
 
 namespace fincept::ui {
 
-DockToolBar::DockToolBar(QWidget* parent) : QToolBar("Main Toolbar", parent) {
+DockToolBar::DockToolBar(QWidget* parent) : QToolBar(tr("Main Toolbar"), parent) {
     setMovable(false);
     setFloatable(false);
     setAllowedAreas(Qt::TopToolBarArea);

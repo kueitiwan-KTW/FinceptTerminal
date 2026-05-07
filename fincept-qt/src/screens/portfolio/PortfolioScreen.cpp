@@ -207,7 +207,7 @@ void PortfolioScreen::build_ui() {
         }
         QStringList matching;
         for (const auto& h : current_summary_.holdings) {
-            QString h_sector = h.sector.isEmpty() ? QStringLiteral("Unclassified") : h.sector;
+            QString h_sector = h.sector.isEmpty() ? tr("Unclassified") : h.sector;
             if (h_sector == sector)
                 matching.append(h.symbol);
         }
@@ -251,7 +251,7 @@ void PortfolioScreen::build_ui() {
     connect(command_bar_, &PortfolioCommandBar::export_csv_requested, this, [this]() {
         if (selected_id_.isEmpty())
             return;
-        QString path = QFileDialog::getSaveFileName(this, "Export CSV", "portfolio.csv", "CSV Files (*.csv)");
+        QString path = QFileDialog::getSaveFileName(this, tr("Export CSV"), "portfolio.csv", tr("CSV Files (*.csv)"));
         if (!path.isEmpty()) {
             services::PortfolioService::instance().export_csv(selected_id_, path);
             services::FileManagerService::instance().import_file(path, "portfolio");
@@ -260,7 +260,7 @@ void PortfolioScreen::build_ui() {
     connect(command_bar_, &PortfolioCommandBar::export_json_requested, this, [this]() {
         if (selected_id_.isEmpty())
             return;
-        QString path = QFileDialog::getSaveFileName(this, "Export JSON", "portfolio.json", "JSON Files (*.json)");
+        QString path = QFileDialog::getSaveFileName(this, tr("Export JSON"), "portfolio.json", tr("JSON Files (*.json)"));
         if (!path.isEmpty()) {
             services::PortfolioService::instance().export_json(selected_id_, path);
             services::FileManagerService::instance().import_file(path, "portfolio");
@@ -299,7 +299,7 @@ void PortfolioScreen::build_ui() {
                     QString detail = result.errors.isEmpty()
                                          ? QString("Import failed with no details.")
                                          : result.errors.join("\n");
-                    QMessageBox::warning(this, "Portfolio Import Failed",
+                    QMessageBox::warning(this, tr("Portfolio Import Failed"),
                                          "Could not import the portfolio.\n\n" + detail +
                                              "\n\nExpected format:\n"
                                              "{\n"
@@ -820,7 +820,7 @@ QWidget* PortfolioScreen::build_main_view() {
         }
         QStringList matching;
         for (const auto& h : current_summary_.holdings) {
-            QString h_sector = h.sector.isEmpty() ? QStringLiteral("Unclassified") : h.sector;
+            QString h_sector = h.sector.isEmpty() ? tr("Unclassified") : h.sector;
             if (h_sector == sector)
                 matching.append(h.symbol);
         }

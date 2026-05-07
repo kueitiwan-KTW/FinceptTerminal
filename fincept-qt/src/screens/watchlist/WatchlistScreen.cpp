@@ -431,7 +431,7 @@ void WatchlistScreen::load_watchlists() {
     }
     wl_list_->blockSignals(false);
 
-    wl_count_->setText(QString("%1 lists").arg(watchlists_.size()));
+    wl_count_->setText(tr("%1 lists").arg(watchlists_.size()));
 
     // Select first watchlist
     if (!watchlists_.isEmpty()) {
@@ -450,7 +450,7 @@ void WatchlistScreen::load_stocks() {
         stocks_ = r.value();
     }
 
-    stock_count_->setText(QString("%1 symbols").arg(stocks_.size()));
+    stock_count_->setText(tr("%1 symbols").arg(stocks_.size()));
     fetch_quotes();
 }
 
@@ -565,7 +565,7 @@ void WatchlistScreen::on_watchlist_selected(int row) {
 
 void WatchlistScreen::on_add_watchlist() {
     bool ok = false;
-    QString name = QInputDialog::getText(this, "New Watchlist", "Name:", QLineEdit::Normal, "", &ok);
+    QString name = QInputDialog::getText(this, tr("New Watchlist"), tr("Name:"), QLineEdit::Normal, "", &ok);
     if (!ok || name.trimmed().isEmpty())
         return;
 
@@ -581,8 +581,8 @@ void WatchlistScreen::on_delete_watchlist() {
     if (current_wl_id_.isEmpty())
         return;
 
-    auto reply = QMessageBox::question(this, "Delete Watchlist",
-                                       "Are you sure you want to delete this watchlist and all its stocks?",
+    auto reply = QMessageBox::question(this, tr("Delete Watchlist"),
+                                       tr("Are you sure you want to delete this watchlist and all its stocks?"),
                                        QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
     if (reply != QMessageBox::Yes)

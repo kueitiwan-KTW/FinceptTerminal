@@ -179,7 +179,7 @@ CryptoOrderEntry::CryptoOrderEntry(QWidget* parent) : QWidget(parent) {
     connect(advanced_toggle_, &QPushButton::clicked, this, [this]() {
         const bool show = !advanced_section_->isVisible();
         advanced_section_->setVisible(show);
-        advanced_toggle_->setText(show ? "- ADVANCED" : "+ ADVANCED");
+        advanced_toggle_->setText(show ? tr("- ADVANCED") : tr("+ ADVANCED"));
     });
 
     // Futures controls (leverage + margin mode) — hidden for spot markets
@@ -305,13 +305,13 @@ void CryptoOrderEntry::set_balance(double balance) {
 
 void CryptoOrderEntry::set_current_price(double price) {
     current_price_ = price;
-    market_price_label_->setText(QString("MKT: $%1").arg(price, 0, 'f', 2));
+    market_price_label_->setText(tr("MKT: $%1").arg(price, 0, 'f', 2));
     update_cost_preview();
 }
 
 void CryptoOrderEntry::set_mode(bool is_paper) {
     is_paper_ = is_paper;
-    mode_label_->setText(is_paper ? "PAPER" : "LIVE");
+    mode_label_->setText(is_paper ? tr("PAPER") : tr("LIVE"));
     mode_label_->setProperty("mode", is_paper ? "paper" : "live");
     mode_label_->style()->unpolish(mode_label_);
     mode_label_->style()->polish(mode_label_);
@@ -319,7 +319,7 @@ void CryptoOrderEntry::set_mode(bool is_paper) {
 
 void CryptoOrderEntry::set_symbol(const QString& symbol) {
     current_symbol_ = symbol;
-    submit_btn_->setText(QString("%1 %2").arg(is_buy_side_ ? "BUY" : "SELL", symbol));
+    submit_btn_->setText(QString("%1 %2").arg(is_buy_side_ ? tr("BUY") : tr("SELL"), symbol));
 }
 
 void CryptoOrderEntry::on_submit() {
@@ -366,7 +366,7 @@ void CryptoOrderEntry::update_cost_preview() {
             price = limit_p;
     }
     if (qty > 0 && price > 0)
-        cost_label_->setText(QString("Est: $%1").arg(qty * price, 0, 'f', 2));
+        cost_label_->setText(tr("Est: $%1").arg(qty * price, 0, 'f', 2));
     else
         cost_label_->setText(tr("Est: --"));
 }

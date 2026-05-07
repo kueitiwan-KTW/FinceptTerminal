@@ -258,7 +258,7 @@ QDialog* GeopoliticsEventsWidget::make_config_dialog(QWidget* parent) {
     auto* spin = new QSpinBox(dlg);
     spin->setRange(5, 100);
     spin->setValue(max_rows_);
-    form->addRow("Max rows", spin);
+    form->addRow(tr("Max rows"), spin);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

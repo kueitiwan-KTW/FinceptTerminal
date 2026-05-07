@@ -147,7 +147,7 @@ void OrderBookMiniWidget::populate(const QVector<trading::BrokerOrderInfo>& rows
                                        ? ui::colors::POSITIVE()
                                        : ui::colors::NEGATIVE()));
         auto* qty = new QTableWidgetItem(QString::number(o.quantity, 'f', 0));
-        auto* price = new QTableWidgetItem(o.price > 0 ? QString::number(o.price, 'f', 2) : "MKT");
+        auto* price = new QTableWidgetItem(o.price > 0 ? QString::number(o.price, 'f', 2) : tr("MKT"));
         auto* status = new QTableWidgetItem(o.status);
         qty->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
         price->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
@@ -176,7 +176,7 @@ void OrderBookMiniWidget::populate(const QVector<trading::BrokerOrderInfo>& rows
 void OrderBookMiniWidget::cancel_order(const QString& order_id) {
     if (account_id_.isEmpty() || order_id.isEmpty())
         return;
-    if (QMessageBox::question(this, "Cancel Order",
+    if (QMessageBox::question(this, tr("Cancel Order"),
                               QString("Cancel order %1?").arg(order_id),
                               QMessageBox::Yes | QMessageBox::No) != QMessageBox::Yes)
         return;
@@ -206,7 +206,7 @@ QDialog* OrderBookMiniWidget::make_config_dialog(QWidget* parent) {
         if (a.account_id == account_id_)
             combo->setCurrentIndex(combo->count() - 1);
     }
-    form->addRow("Broker account", combo);
+    form->addRow(tr("Broker account"), combo);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

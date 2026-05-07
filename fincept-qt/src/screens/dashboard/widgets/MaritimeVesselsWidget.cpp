@@ -147,8 +147,8 @@ void MaritimeVesselsWidget::build_rows() {
         Row r;
         r.container = row;
 
-        r.name = new QLabel(QStringLiteral("IMO ") + imo);
-        r.name->setToolTip(QStringLiteral("IMO ") + imo);
+        r.name = new QLabel(tr("IMO ") + imo);
+        r.name->setToolTip(tr("IMO ") + imo);
         r.name->setStyleSheet(QString("color:%1;font-size:10px;font-weight:bold;background:transparent;")
                                   .arg(ui::colors::TEXT_PRIMARY()));
         rl->addWidget(r.name, 3);
@@ -223,7 +223,7 @@ void MaritimeVesselsWidget::on_vessel(const QString& imo, const QVariant& v) {
 
     const QString display_name = vd.name.isEmpty() ? (QStringLiteral("IMO ") + imo) : vd.name;
     it->name->setText(display_name);
-    it->name->setToolTip(QStringLiteral("IMO ") + imo +
+    it->name->setToolTip(tr("IMO ") + imo +
                          (vd.last_updated.isEmpty() ? QString() : QStringLiteral("\nUpdated: ") + vd.last_updated));
 
     QString from = vd.from_port.isEmpty() ? QStringLiteral("?") : vd.from_port;
@@ -259,7 +259,7 @@ QDialog* MaritimeVesselsWidget::make_config_dialog(QWidget* parent) {
     edit->setPlaceholderText(tr("One IMO per line (e.g. 9811000)"));
     edit->setPlainText(imos_.join('\n'));
     edit->setFixedHeight(140);
-    form->addRow("IMO numbers", edit);
+    form->addRow(tr("IMO numbers"), edit);
 
     auto* buttons = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, dlg);
     form->addRow(buttons);

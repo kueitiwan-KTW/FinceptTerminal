@@ -104,11 +104,11 @@ void BuybackBurnPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    title_ = new QLabel(QStringLiteral("BUYBACK & BURN"), head);
+    title_ = new QLabel(tr("BUYBACK & BURN"), head);
     title_->setObjectName(QStringLiteral("buybackBurnTitle"));
-    epoch_window_ = new QLabel(QStringLiteral("epoch — · — → —"), head);
+    epoch_window_ = new QLabel(tr("epoch — · — → —"), head);
     epoch_window_->setObjectName(QStringLiteral("buybackBurnHeadCaption"));
-    status_pill_ = new QLabel(QStringLiteral("LIVE"), head);
+    status_pill_ = new QLabel(tr("LIVE"), head);
     status_pill_->setObjectName(QStringLiteral("buybackBurnPill"));
     hl->addWidget(title_);
     hl->addWidget(epoch_window_);
@@ -140,11 +140,11 @@ void BuybackBurnPanel::build_ui() {
 
     // THIS EPOCH section
     {
-        auto* section_title = new QLabel(QStringLiteral("THIS EPOCH"), body);
+        auto* section_title = new QLabel(tr("THIS EPOCH"), body);
         section_title->setObjectName(QStringLiteral("buybackBurnSectionTitle"));
         bl->addWidget(section_title);
 
-        add_kv(bl, QStringLiteral("REVENUE"), revenue_total_,
+        add_kv(bl, tr("REVENUE"), revenue_total_,
                QStringLiteral("buybackBurnValueAmber"));
         revenue_split_ = new QLabel(QString(), body);
         revenue_split_->setObjectName(QStringLiteral("buybackBurnSubMeta"));
@@ -153,11 +153,11 @@ void BuybackBurnPanel::build_ui() {
         // The 50/25/25 split (plan §5.4) — show all three so the value loop
         // is visible end-to-end. The numbers come from the worker; the
         // panel just renders.
-        add_kv(bl, QStringLiteral("BUYBACK (50%)"), buyback_usd_);
-        add_kv(bl, QStringLiteral("STAKER YIELD (25%)"), staker_yield_usd_);
-        add_kv(bl, QStringLiteral("TREASURY TOPUP (25%)"), treasury_topup_usd_);
-        add_kv(bl, QStringLiteral("$FNCPT BOUGHT"), fncpt_bought_);
-        add_kv(bl, QStringLiteral("$FNCPT BURNED"), fncpt_burned_,
+        add_kv(bl, tr("BUYBACK (50%)"), buyback_usd_);
+        add_kv(bl, tr("STAKER YIELD (25%)"), staker_yield_usd_);
+        add_kv(bl, tr("TREASURY TOPUP (25%)"), treasury_topup_usd_);
+        add_kv(bl, tr("$FNCPT BOUGHT"), fncpt_bought_);
+        add_kv(bl, tr("$FNCPT BURNED"), fncpt_burned_,
                QStringLiteral("buybackBurnValueAmber"));
 
         // Burn signature row — clickable. Use a flat QPushButton so the
@@ -165,7 +165,7 @@ void BuybackBurnPanel::build_ui() {
         // mouse-only event filter on a QLabel.
         auto* sig_row = new QHBoxLayout;
         sig_row->setSpacing(8);
-        auto* sig_cap = new QLabel(QStringLiteral("BURN TX"), body);
+        auto* sig_cap = new QLabel(tr("BURN TX"), body);
         sig_cap->setObjectName(QStringLiteral("buybackBurnCaption"));
         burn_signature_link_ = new QPushButton(QStringLiteral("—"), body);
         burn_signature_link_->setObjectName(QStringLiteral("buybackBurnSig"));
@@ -189,14 +189,14 @@ void BuybackBurnPanel::build_ui() {
 
     // ALL-TIME section
     {
-        auto* section_title = new QLabel(QStringLiteral("ALL-TIME"), body);
+        auto* section_title = new QLabel(tr("ALL-TIME"), body);
         section_title->setObjectName(QStringLiteral("buybackBurnSectionTitle"));
         bl->addWidget(section_title);
 
-        add_kv(bl, QStringLiteral("BURNED"), total_burned_,
+        add_kv(bl, tr("BURNED"), total_burned_,
                QStringLiteral("buybackBurnValueAmber"));
-        add_kv(bl, QStringLiteral("SUPPLY REMAINING"), supply_remaining_);
-        add_kv(bl, QStringLiteral("SPENT ON BUYBACK"), spent_on_buyback_);
+        add_kv(bl, tr("SUPPLY REMAINING"), supply_remaining_);
+        add_kv(bl, tr("SPENT ON BUYBACK"), spent_on_buyback_);
     }
 
     // Error strip
@@ -305,7 +305,7 @@ void BuybackBurnPanel::on_epoch_update(const QVariant& v) {
     epoch_is_mock_ = e.is_mock;
     update_demo_chip(epoch_is_mock_ || burn_total_is_mock_);
 
-    epoch_window_->setText(QStringLiteral("epoch %1 · %2")
+    epoch_window_->setText(tr("epoch %1 · %2")
         .arg(e.epoch_no)
         .arg(format_window(e.start_ts_ms, e.end_ts_ms)));
 
@@ -328,7 +328,7 @@ void BuybackBurnPanel::on_epoch_update(const QVariant& v) {
     staker_yield_usd_->setText(fmt_pct(e.staker_yield_usd));
     treasury_topup_usd_->setText(fmt_pct(e.treasury_topup_usd));
 
-    fncpt_bought_->setText(QStringLiteral("%1 $FNCPT  (avg %2)")
+    fncpt_bought_->setText(tr("%1 $FNCPT  (avg %2)")
         .arg(format_token_compact(e.fncpt_bought_raw, e.fncpt_decimals))
         .arg(format_usd_micro(e.avg_buy_price_usd)));
     fncpt_burned_->setText(QStringLiteral("%1 $FNCPT")
@@ -392,10 +392,10 @@ void BuybackBurnPanel::clear_error_strip() {
 
 void BuybackBurnPanel::update_demo_chip(bool any_mock) {
     if (any_mock) {
-        status_pill_->setText(QStringLiteral("DEMO"));
+        status_pill_->setText(tr("DEMO"));
         status_pill_->setObjectName(QStringLiteral("buybackBurnPillDemo"));
     } else {
-        status_pill_->setText(QStringLiteral("LIVE"));
+        status_pill_->setText(tr("LIVE"));
         status_pill_->setObjectName(QStringLiteral("buybackBurnPill"));
     }
     status_pill_->style()->unpolish(status_pill_);

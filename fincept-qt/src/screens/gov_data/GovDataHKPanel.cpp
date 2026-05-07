@@ -181,7 +181,7 @@ QWidget* GovDataHKPanel::build_toolbar() {
 
     hl->addStretch(1);
 
-    export_btn_ = new QPushButton("CSV");
+    export_btn_ = new QPushButton(tr("CSV"));
     export_btn_->setObjectName("govCsvBtn");
     export_btn_->setCursor(Qt::PointingHandCursor);
     connect(export_btn_, &QPushButton::clicked, this, &GovDataHKPanel::on_export_csv);
@@ -211,7 +211,7 @@ void GovDataHKPanel::on_tab_changed(int tab_index) {
             load_initial_data();
         else {
             content_stack_->setCurrentIndex(Categories);
-            row_count_label_->setText(QString::number(current_categories_.size()) + " categories");
+            row_count_label_->setText(QString::number(current_categories_.size()) + tr(" categories"));
         }
         update_breadcrumb("Categories");
     } else if (view == Datasets) {
@@ -220,7 +220,7 @@ void GovDataHKPanel::on_tab_changed(int tab_index) {
                         "or type a filter term above and click FETCH.");
         else {
             content_stack_->setCurrentIndex(Datasets);
-            row_count_label_->setText(QString::number(current_datasets_.size()) + " datasets");
+            row_count_label_->setText(QString::number(current_datasets_.size()) + tr(" datasets"));
         }
         update_breadcrumb("Datasets");
     }
@@ -253,7 +253,7 @@ void GovDataHKPanel::on_fetch() {
         datasets_btn_->setChecked(false);
         content_stack_->setCurrentIndex(Categories);
         update_breadcrumb("Categories");
-        row_count_label_->setText(QString::number(current_categories_.size()) + " categories");
+        row_count_label_->setText(QString::number(current_categories_.size()) + tr(" categories"));
         update_toolbar_state();
     }
 }
@@ -291,7 +291,7 @@ void GovDataHKPanel::filter_datasets_list(const QString& query) {
     update_breadcrumb("Datasets  ›  Filter: "
                       " + query + "
                       "");
-    row_count_label_->setText(QString::number(filtered.size()) + " matched");
+    row_count_label_->setText(QString::number(filtered.size()) + tr(" matched"));
     update_toolbar_state();
 }
 
@@ -325,7 +325,7 @@ void GovDataHKPanel::on_back() {
     if (current_view_ == Resources) {
         content_stack_->setCurrentIndex(Datasets);
         current_view_ = Datasets;
-        row_count_label_->setText(QString::number(current_datasets_.size()) + " datasets");
+        row_count_label_->setText(QString::number(current_datasets_.size()) + tr(" datasets"));
         update_breadcrumb("Datasets  ›  " + selected_category_name_);
     } else if (current_view_ == Datasets) {
         content_stack_->setCurrentIndex(Categories);
@@ -334,7 +334,7 @@ void GovDataHKPanel::on_back() {
         datasets_btn_->setChecked(false);
         selected_category_id_.clear();
         selected_category_name_.clear();
-        row_count_label_->setText(QString::number(current_categories_.size()) + " categories");
+        row_count_label_->setText(QString::number(current_categories_.size()) + tr(" categories"));
         update_breadcrumb("Categories");
     }
     update_toolbar_state();
@@ -369,7 +369,7 @@ void GovDataHKPanel::on_result(const QString& request_id, const services::GovDat
         datasets_btn_->setChecked(false);
         content_stack_->setCurrentIndex(Categories);
         update_breadcrumb("Categories");
-        row_count_label_->setText(QString::number(payload.size()) + " categories");
+        row_count_label_->setText(QString::number(payload.size()) + tr(" categories"));
 
     } else if (request_id == "hk_datasets") {
         if (payload.isEmpty()) {
@@ -395,7 +395,7 @@ void GovDataHKPanel::on_result(const QString& request_id, const services::GovDat
         if (total == 0)
             total = payload.size();
         update_breadcrumb("Datasets  ›  " + selected_category_name_);
-        row_count_label_->setText(QString("Showing %1 of %2").arg(payload.size()).arg(total));
+        row_count_label_->setText(tr("Showing %1 of %2").arg(payload.size()).arg(total));
 
     } else if (request_id == "hk_datasets_list") {
         // Full dataset name list for client-side search
@@ -412,7 +412,7 @@ void GovDataHKPanel::on_result(const QString& request_id, const services::GovDat
         current_view_ = Resources;
         content_stack_->setCurrentIndex(Resources);
         update_breadcrumb("Datasets  ›  Resources");
-        row_count_label_->setText(QString::number(payload.size()) + " files");
+        row_count_label_->setText(QString::number(payload.size()) + tr(" files"));
     }
 
     update_toolbar_state();

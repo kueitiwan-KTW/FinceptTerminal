@@ -384,7 +384,7 @@ void PortfolioOptimizationView::run_optimization() {
                     const double ret = root["expected_annual_return"].toDouble();
                     const double vol = root["annual_volatility"].toDouble();
                     const double sharpe = root["sharpe_ratio"].toDouble();
-                    self->status_label_->setText(QString("Done — %1 | Exp. Return: %2%  Vol: %3%  Sharpe: %4 (cached)")
+                    self->status_label_->setText(self->tr("Done — %1 | Exp. Return: %2%  Vol: %3%  Sharpe: %4 (cached)")
                                                      .arg(self->method_cb_->currentText())
                                                      .arg(ret * 100.0, 0, 'f', 1)
                                                      .arg(vol * 100.0, 0, 'f', 1)

@@ -88,7 +88,7 @@ void ComponentCard::build_ui() {
     cat_row->addStretch(1);
     auto* stars = new QLabel(popularity_stars(meta_.popularity), body);
     stars->setStyleSheet("color:#d97706;font-size:12px;");
-    stars->setToolTip(QString("Use count: %1").arg(meta_.popularity));
+    stars->setToolTip(tr("Use count: %1").arg(meta_.popularity));
     cat_row->addWidget(stars);
     bl->addLayout(cat_row);
 

@@ -307,8 +307,8 @@ void AgentChatPanel::build_ui() {
         QString("color:%1;font-size:22px;font-weight:700;background:transparent;").arg(col::TEXT_PRIMARY()));
     wvl->addWidget(w_title);
 
-    auto* w_sub = new QLabel("Ask about markets, portfolios, or any financial topic.\n"
-                             "Select an agent above, or use Auto-Route to let the system decide.");
+    auto* w_sub = new QLabel(tr("Ask about markets, portfolios, or any financial topic.\n"
+                                "Select an agent above, or use Auto-Route to let the system decide."));
     w_sub->setAlignment(Qt::AlignCenter);
     w_sub->setWordWrap(true);
     w_sub->setStyleSheet(QString("color:%1;font-size:12px;background:transparent;").arg(col::TEXT_SECONDARY()));
@@ -521,12 +521,12 @@ void AgentChatPanel::setup_connections() {
         } else if (r.success && !r.response.isEmpty()) {
             add_assistant_bubble(r.response);
         } else if (!r.success) {
-            add_system_bubble("Error: " + r.error);
+            add_system_bubble(tr("Error: ") + r.error);
         }
 
         streaming_text_.clear();
         if (r.success) {
-            status_label_->setText(QString("Response received (%1ms)").arg(r.execution_time_ms));
+            status_label_->setText(tr("Response received (%1ms)").arg(r.execution_time_ms));
             hdr_status_lbl_->setText(tr("Ready"));
             hdr_status_lbl_->setStyleSheet(QString("color:%1;font-size:9px;font-weight:700;").arg(col::POSITIVE()));
         } else {
@@ -638,7 +638,7 @@ void AgentChatPanel::send_message() {
     // Show which portfolio is active in the status bar
     if (!pf_ctx.isEmpty()) {
         const QString pf_name = portfolio_combo_->currentText();
-        status_label_->setText(QString("Portfolio context: %1").arg(pf_name));
+        status_label_->setText(tr("Portfolio context: %1").arg(pf_name));
     }
 
     // Create streaming bubble — seed with "..." so height bootstraps correctly

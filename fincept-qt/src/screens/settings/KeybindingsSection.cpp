@@ -30,7 +30,7 @@ KeyCaptureDialog::KeyCaptureDialog(KeyAction action, const QKeySequence& current
     layout->setSpacing(12);
     layout->setContentsMargins(20, 20, 20, 20);
 
-    auto* current_lbl = new QLabel("Current: " + current.toString(QKeySequence::NativeText));
+    auto* current_lbl = new QLabel(tr("Current: ") + current.toString(QKeySequence::NativeText));
     current_lbl->setStyleSheet(QString("color:%1;").arg(ui::colors::TEXT_SECONDARY()));
 
     hint_label_ = new QLabel(tr("Press new key combination..."));
@@ -46,8 +46,8 @@ KeyCaptureDialog::KeyCaptureDialog(KeyAction action, const QKeySequence& current
     conflict_label_->hide();
 
     auto* btn_box = new QDialogButtonBox(Qt::Horizontal);
-    apply_btn_ = btn_box->addButton("Apply", QDialogButtonBox::AcceptRole);
-    btn_box->addButton("Cancel", QDialogButtonBox::RejectRole);
+    apply_btn_ = btn_box->addButton(tr("Apply"), QDialogButtonBox::AcceptRole);
+    btn_box->addButton(tr("Cancel"), QDialogButtonBox::RejectRole);
     apply_btn_->setEnabled(false);
 
     connect(btn_box, &QDialogButtonBox::accepted, this, &QDialog::accept);

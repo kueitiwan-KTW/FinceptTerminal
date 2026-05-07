@@ -41,7 +41,7 @@ QWidget* QuantModulePanel::build_rl_trading_panel() {
     vl->setSpacing(12);
 
     auto* algo = new QComboBox(w);
-    algo->addItems({"PPO", "DQN", "A2C", "SAC", "TD3"});
+    algo->addItems({tr("PPO"), tr("DQN"), tr("A2C"), tr("SAC"), tr("TD3")});
     algo->setStyleSheet(combo_ss());
     combo_inputs_["rl_algo"] = algo;
     vl->addWidget(build_input_row("RL Algorithm", algo, w));

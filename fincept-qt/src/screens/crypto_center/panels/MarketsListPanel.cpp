@@ -75,9 +75,9 @@ void MarketsListPanel::build_ui() {
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(0);
 
-    title_ = new QLabel(QStringLiteral("MARKETS"), head);
+    title_ = new QLabel(tr("MARKETS"), head);
     title_->setObjectName(QStringLiteral("marketsListTitle"));
-    status_pill_ = new QLabel(QStringLiteral("DEMO"), head);
+    status_pill_ = new QLabel(tr("DEMO"), head);
     status_pill_->setObjectName(QStringLiteral("marketsListStatusDemo"));
 
     hl->addWidget(title_);
@@ -218,10 +218,10 @@ void MarketsListPanel::on_row_double_clicked(int row, int /*column*/) {
 
 void MarketsListPanel::set_status_demo(bool demo) {
     if (demo) {
-        status_pill_->setText(QStringLiteral("DEMO"));
+        status_pill_->setText(tr("DEMO"));
         status_pill_->setObjectName(QStringLiteral("marketsListStatusDemo"));
     } else {
-        status_pill_->setText(QStringLiteral("● LIVE"));
+        status_pill_->setText(tr("● LIVE"));
         status_pill_->setObjectName(QStringLiteral("marketsListStatusLive"));
     }
     status_pill_->style()->unpolish(status_pill_);
@@ -229,7 +229,7 @@ void MarketsListPanel::set_status_demo(bool demo) {
 }
 
 void MarketsListPanel::set_status_error(const QString& message) {
-    status_pill_->setText(QStringLiteral("ERROR"));
+    status_pill_->setText(tr("ERROR"));
     status_pill_->setObjectName(QStringLiteral("marketsListStatusError"));
     status_pill_->setToolTip(message);
     status_pill_->style()->unpolish(status_pill_);

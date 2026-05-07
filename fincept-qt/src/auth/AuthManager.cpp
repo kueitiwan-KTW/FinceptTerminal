@@ -278,7 +278,7 @@ void AuthManager::login(const QString& email, const QString& password, bool forc
     AuthApi::instance().login(req, [this](ApiResponse r) {
         if (!r.success) {
             set_loading(false);
-            emit login_failed(r.error.isEmpty() ? "Login failed" : r.error);
+            emit login_failed(r.error.isEmpty() ? "登入失敗" : r.error);
             return;
         }
 
@@ -550,7 +550,7 @@ void AuthManager::forgot_password(const QString& email) {
         if (r.success)
             emit forgot_password_sent();
         else
-            emit forgot_password_failed(r.error.isEmpty() ? "Failed to send reset code" : r.error);
+            emit forgot_password_failed(r.error.isEmpty() ? "發送重設碼失敗" : r.error);
     });
 }
 

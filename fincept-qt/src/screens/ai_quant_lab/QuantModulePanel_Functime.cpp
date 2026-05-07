@@ -481,7 +481,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         const auto ops = d.value("ops_available").toArray();
         QStringList op_names;
         for (const auto& v : ops) op_names << v.toString();
-        auto* lbl = new QLabel(QString("Operations available: %1").arg(op_names.join(", ")));
+        auto* lbl = new QLabel(tr("Operations available: %1").arg(op_names.join(", ")));
         lbl->setWordWrap(true);
         lbl->setStyleSheet(QString("color:%1; font-size:10px; font-family:'Courier New';"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -505,7 +505,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         const double first_fc = d.value("first_forecast").toDouble();
         const double last_fc = d.value("last_forecast").toDouble();
 
-        auto* hdr = new QLabel(QString("MODEL %1  |  HORIZON %2 STEPS  |  LAGS %3")
+        auto* hdr = new QLabel(tr("MODEL %1  |  HORIZON %2 STEPS  |  LAGS %3")
                                    .arg(model.toUpper()).arg(horizon).arg(lags));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -574,7 +574,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("%1 trained — R²=%2  |  forecast %3 → %4")
+        status_label_->setText(tr("%1 trained — R²=%2  |  forecast %3 → %4")
                                    .arg(model)
                                    .arg(r2, 0, 'f', 3)
                                    .arg(first_fc, 0, 'f', 3)
@@ -589,7 +589,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         const double rate = d.value("anomaly_rate_pct").toDouble();
         const int n_obs = d.value("n_observations").toInt();
 
-        auto* hdr = new QLabel(QString("METHOD %1  |  %2 / %3 ANOMALIES (%4%)")
+        auto* hdr = new QLabel(tr("METHOD %1  |  %2 / %3 ANOMALIES (%4%)")
                                    .arg(method.toUpper())
                                    .arg(n_anom).arg(n_obs)
                                    .arg(rate, 0, 'f', 2));
@@ -658,7 +658,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
             results_layout_->addWidget(clean);
         }
 
-        status_label_->setText(QString("%1: %2 anomalies in %3 obs (%4%)")
+        status_label_->setText(tr("%1: %2 anomalies in %3 obs (%4%)")
                                    .arg(method).arg(n_anom).arg(n_obs).arg(rate, 0, 'f', 2));
         return;
     }
@@ -671,7 +671,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         const double sstr = d.value("seasonal_strength").toDouble();
         const double rstd = d.value("residual_std").toDouble();
 
-        auto* hdr = new QLabel(QString("PERIOD %1%2  |  STL DECOMPOSITION")
+        auto* hdr = new QLabel(tr("PERIOD %1%2  |  STL DECOMPOSITION")
                                    .arg(period).arg(auto_det ? "  (auto-detected)" : ""));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -737,7 +737,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
             }
             results_layout_->addWidget(table);
         }
-        status_label_->setText(QString("STL period=%1  |  trend=%2  seasonal=%3")
+        status_label_->setText(tr("STL period=%1  |  trend=%2  seasonal=%3")
                                    .arg(period).arg(tstr, 0, 'f', 2).arg(sstr, 0, 'f', 2));
         return;
     }
@@ -778,7 +778,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         };
         results_layout_->addWidget(gs_card_row(pct_row, this));
 
-        status_label_->setText(QString("MAE %1  |  RMSE %2  |  R² %3  |  MAPE %4%")
+        status_label_->setText(tr("MAE %1  |  RMSE %2  |  R² %3  |  MAPE %4%")
                                    .arg(mae, 0, 'f', 3).arg(rmse, 0, 'f', 3)
                                    .arg(r2, 0, 'f', 3).arg(mape, 0, 'f', 2));
         return;
@@ -791,7 +791,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         const double conf = d.value("confidence").toDouble();
         const double mean_w = d.value("mean_width").toDouble();
 
-        auto* hdr = new QLabel(QString("METHOD %1  |  CONFIDENCE %2%  |  HORIZON %3")
+        auto* hdr = new QLabel(tr("METHOD %1  |  CONFIDENCE %2%  |  HORIZON %3")
                                    .arg(method.toUpper()).arg(conf * 100, 0, 'f', 1).arg(horizon));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -856,7 +856,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("%1 intervals @ %2%  |  mean width %3")
+        status_label_->setText(tr("%1 intervals @ %2%  |  mean width %3")
                                    .arg(intervals.size()).arg(conf * 100, 0, 'f', 1)
                                    .arg(mean_w, 0, 'f', 3));
         return;
@@ -868,7 +868,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
         const int max_d = d.value("max_d_tested").toInt();
         const QJsonArray tests = d.value("tests").toArray();
 
-        auto* hdr = new QLabel(QString("RECOMMENDED DIFFERENCING ORDER:  d = %1   (tested 0..%2)")
+        auto* hdr = new QLabel(tr("RECOMMENDED DIFFERENCING ORDER:  d = %1   (tested 0..%2)")
                                    .arg(rec_d).arg(max_d));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border-left:3px solid %3;")
@@ -907,7 +907,7 @@ void QuantModulePanel::display_functime_result(const QString& command, const QJs
                                   .arg(ui::colors::TEXT_TERTIARY(), ui::colors::BG_RAISED()));
         results_layout_->addWidget(legend);
 
-        status_label_->setText(QString("Recommended d = %1 (tested %2 orders)")
+        status_label_->setText(tr("Recommended d = %1 (tested %2 orders)")
                                    .arg(rec_d).arg(tests.size()));
         return;
     }

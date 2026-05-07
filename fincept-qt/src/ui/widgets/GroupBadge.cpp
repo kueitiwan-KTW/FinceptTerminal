@@ -54,7 +54,7 @@ void GroupBadge::contextMenuEvent(QContextMenuEvent* e) {
             [this]() { emit group_change_requested(SymbolGroup::None); });
     menu.addSeparator();
     for (SymbolGroup g : all_symbol_groups()) {
-        auto* act = menu.addAction(QString("Link to Group %1").arg(symbol_group_letter(g)));
+        auto* act = menu.addAction(tr("Link to Group %1").arg(symbol_group_letter(g)));
         act->setCheckable(true);
         act->setChecked(g == group_);
         connect(act, &QAction::triggered, this, [this, g]() { emit group_change_requested(g); });

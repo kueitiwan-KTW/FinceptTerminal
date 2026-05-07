@@ -329,10 +329,10 @@ QWidget* QuantModulePanel::build_portfolio_opt_panel() {
         return t;
     };
 
-    tabs->addTab(make_cov_tab("hierarchical_risk_parity", "RUN HRP", false), "HRP");
-    tabs->addTab(make_cov_tab("minimum_variance", "MIN VARIANCE", false), "Min Variance");
-    tabs->addTab(make_cov_tab("maximum_sharpe", "MAX SHARPE", true), "Max Sharpe");
-    tabs->addTab(make_cov_tab("efficient_frontier", "EFFICIENT FRONTIER", true), "Eff. Frontier");
+    tabs->addTab(make_cov_tab("hierarchical_risk_parity", tr("RUN HRP"), false), tr("HRP"));
+    tabs->addTab(make_cov_tab("minimum_variance", tr("MIN VARIANCE"), false), tr("Min Variance"));
+    tabs->addTab(make_cov_tab("maximum_sharpe", tr("MAX SHARPE"), true), tr("Max Sharpe"));
+    tabs->addTab(make_cov_tab("efficient_frontier", tr("EFFICIENT FRONTIER"), true), tr("Eff. Frontier"));
 
     // ── Black-Litterman ──
     auto* bl = new QWidget(this);
@@ -2036,7 +2036,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
     rr_progress->setRange(0, 100);
     rr_progress->setValue(0);
     rr_progress->setTextVisible(true);
-    rr_progress->setFormat("Idle");
+    rr_progress->setFormat(tr("Idle"));
     rr_progress->setStyleSheet(QString(
         "QProgressBar{background:%1;border:1px solid %2;border-radius:4px;"
         "color:%3;font-size:11px;font-weight:600;text-align:center;height:20px;}"
@@ -2064,7 +2064,7 @@ QWidget* QuantModulePanel::build_rolling_retraining_panel() {
         // Reset progress UI
         if (auto* pb = this->findChild<QProgressBar*>("rr_progress")) {
             pb->setValue(0);
-            pb->setFormat("Starting...");
+            pb->setFormat(tr("Starting..."));
         }
         if (auto* log = this->findChild<QTextEdit*>("rr_log"))
             log->clear();

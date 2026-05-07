@@ -70,7 +70,7 @@ void ForumPostReaderPanel::build_ui() {
         icon->setAlignment(Qt::AlignCenter);
         icon->setStyleSheet(QString("color:%1;font-size:40px;background:transparent;").arg(ui::colors::BORDER_DIM()));
 
-        auto* lbl = new QLabel("SELECT A POST");
+        auto* lbl = new QLabel(tr("SELECT A POST"));
         lbl->setAlignment(Qt::AlignCenter);
         lbl->setStyleSheet(QString("color:%1;font-size:14px;font-weight:700;letter-spacing:2px;"
                                    "background:transparent;%2")
@@ -376,12 +376,12 @@ void ForumPostReaderPanel::show_post(const services::ForumPostDetail& detail) {
     QString av_color = det_color(detail.post.author_display_name);
     QString initials =
         detail.post.author_display_name.isEmpty() ? "?" : detail.post.author_display_name.left(2).toUpper();
-    author_label_->setText(QString("<span style='background:%1;color:%2;font-size:9px;"
-                                   "font-family:Consolas;padding:2px 5px;font-weight:700;"
-                                   "border-radius:10px;'>%3</span>"
-                                   "&nbsp;"
-                                   "<a href='author:%4' style='color:%5;text-decoration:none;"
-                                   "font-family:Consolas;font-size:11px;font-weight:600;'>%6</a>")
+    author_label_->setText(QString(tr("<span style='background:%1;color:%2;font-size:9px;"
+                                      "font-family:Consolas;padding:2px 5px;font-weight:700;"
+                                      "border-radius:10px;'>%3</span>"
+                                      "&nbsp;"
+                                      "<a href='author:%4' style='color:%5;text-decoration:none;"
+                                      "font-family:Consolas;font-size:11px;font-weight:600;'>%6</a>"))
                                .arg(av_color, ui::colors::BG_BASE(), initials, detail.post.author_name,
                                     ui::colors::TEXT_SECONDARY(), detail.post.author_display_name));
 
@@ -398,7 +398,7 @@ void ForumPostReaderPanel::show_post(const services::ForumPostDetail& detail) {
     replies_label_->setText(
         QString("◆ %1 %2").arg(detail.total_comments).arg(detail.total_comments == 1 ? "reply" : "replies"));
 
-    views_label_->setText(QString("◉ %1 views").arg(detail.post.views));
+    views_label_->setText(tr("◉ %1 views").arg(detail.post.views));
 
     rebuild_comments();
     stack_->setCurrentIndex(2);

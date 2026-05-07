@@ -248,7 +248,7 @@ QWidget* NewsDetailPanel::build_content_view() {
                 translate_btn_->setText(tr("TRANSLATE"));
                 translate_btn_->setEnabled(true);
                 if (ok && !translated.isEmpty()) {
-                    summary_label_->setText(QString("[%1 -> EN] %2").arg(detected_lang, translated));
+                    summary_label_->setText(tr("[%1 -> EN] %2").arg(detected_lang, translated));
                 }
             });
     });
@@ -456,13 +456,13 @@ void NewsDetailPanel::show_article(const services::NewsArticle& article) {
     if (article.threat.level != services::ThreatLevel::INFO) {
         QString threat_text = services::threat_level_string(article.threat.level);
         QString threat_color = services::threat_level_color(article.threat.level);
-        impact_label_->setText(QString("Threat: %1 (%2, %3% conf)")
+        impact_label_->setText(tr("Threat: %1 (%2, %3% conf)")
                                    .arg(threat_text, article.threat.category)
                                    .arg(static_cast<int>(article.threat.confidence * 100)));
         impact_label_->setStyleSheet(QString("color: %1; background: transparent;").arg(threat_color));
     }
-    summary_label_->setText(article.summary.isEmpty() ? "No summary available." : article.summary);
-    impact_label_->setText(QString("Impact: %1").arg(services::impact_string(article.impact)));
+    summary_label_->setText(article.summary.isEmpty() ? tr("No summary available.") : article.summary);
+    impact_label_->setText(tr("Impact: %1").arg(services::impact_string(article.impact)));
 
     if (!article.tickers.isEmpty())
         tickers_label_->setText("$" + article.tickers.join("  $"));
@@ -488,7 +488,7 @@ void NewsDetailPanel::show_article(const services::NewsArticle& article) {
             }
         }
         bookmark_btn_->setChecked(is_saved);
-        bookmark_btn_->setText(is_saved ? "BOOKMARKED" : "BOOKMARK");
+        bookmark_btn_->setText(is_saved ? tr("BOOKMARKED") : tr("BOOKMARK"));
     }
 
     // Clear related and monitors
@@ -501,15 +501,15 @@ void NewsDetailPanel::show_analysis(const services::NewsAnalysis& analysis) {
     analyze_btn_->setEnabled(true);
     analyze_timeout_->stop();
 
-    ai_summary_->setText(analysis.summary.isEmpty() ? "No AI summary available." : analysis.summary);
+    ai_summary_->setText(analysis.summary.isEmpty() ? tr("No AI summary available.") : analysis.summary);
 
     double score = std::clamp(analysis.sentiment.score, -1.0, 1.0);
     QString sent_color =
         score > 0.1 ? ui::colors::POSITIVE : (score < -0.1 ? ui::colors::NEGATIVE : ui::colors::WARNING);
-    ai_sentiment_->setText(QString("Sentiment: %1%2").arg(score >= 0 ? "+" : "").arg(score, 0, 'f', 2));
+    ai_sentiment_->setText(tr("Sentiment: %1%2").arg(score >= 0 ? "+" : "").arg(score, 0, 'f', 2));
     ai_sentiment_->setStyleSheet(QString("color: %1;").arg(sent_color));
 
-    ai_urgency_->setText(QString("Urgency: %1").arg(analysis.market_impact.urgency));
+    ai_urgency_->setText(tr("Urgency: %1").arg(analysis.market_impact.urgency));
 
     // Key points
     while (key_points_layout_->count() > 0) {
@@ -540,10 +540,10 @@ void NewsDetailPanel::show_analysis(const services::NewsAnalysis& analysis) {
         lbl->setToolTip(sig.details);
         risk_layout_->addWidget(lbl);
     };
-    add_risk("Regulatory", analysis.regulatory);
-    add_risk("Geopolitical", analysis.geopolitical);
-    add_risk("Operational", analysis.operational);
-    add_risk("Market", analysis.market);
+    add_risk(tr("Regulatory"), analysis.regulatory);
+    add_risk(tr("Geopolitical"), analysis.geopolitical);
+    add_risk(tr("Operational"), analysis.operational);
+    add_risk(tr("Market"), analysis.market);
 
     // Topics
     while (topics_layout_->count() > 0) {
@@ -639,19 +639,19 @@ void NewsDetailPanel::show_entities(const services::EntityResult& entities) {
     bool has_data = false;
 
     for (const auto& [name, code] : entities.countries) {
-        auto* lbl = new QLabel(QString("Country: %1 (%2)").arg(name, code), entities_section_);
+        auto* lbl = new QLabel(tr("Country: %1 (%2)").arg(name, code), entities_section_);
         lbl->setObjectName("newsDetailKeyPoint");
         entities_detail_layout_->addWidget(lbl);
         has_data = true;
     }
     for (const auto& org : entities.organizations) {
-        auto* lbl = new QLabel(QString("Org: %1").arg(org), entities_section_);
+        auto* lbl = new QLabel(tr("Org: %1").arg(org), entities_section_);
         lbl->setObjectName("newsDetailKeyPoint");
         entities_detail_layout_->addWidget(lbl);
         has_data = true;
     }
     for (const auto& person : entities.people) {
-        auto* lbl = new QLabel(QString("Person: %1").arg(person), entities_section_);
+        auto* lbl = new QLabel(tr("Person: %1").arg(person), entities_section_);
         lbl->setObjectName("newsDetailKeyPoint");
         entities_detail_layout_->addWidget(lbl);
         has_data = true;

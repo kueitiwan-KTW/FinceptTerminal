@@ -115,7 +115,7 @@ void StrategyBuilderPanel::connect_service() {
     auto& svc = AlgoTradingService::instance();
     connect(&svc, &AlgoTradingService::strategy_saved, this, [this](const QString& id) {
         if (status_label_)
-            status_label_->setText(QString("Strategy saved: %1").arg(id));
+            status_label_->setText(tr("Strategy saved: %1").arg(id));
         status_label_->setStyleSheet(
             QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                 .arg(fincept::ui::colors::POSITIVE())
@@ -274,7 +274,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     entry_logic_lbl->setStyleSheet(kLabelStyle());
     entry_hdr_hl->addWidget(entry_logic_lbl);
     entry_logic_combo_ = new QComboBox(entry_hdr);
-    entry_logic_combo_->addItems({"AND", "OR"});
+    entry_logic_combo_->addItems({tr("AND"), tr("OR")});
     entry_logic_combo_->setStyleSheet(kComboStyle());
     entry_logic_combo_->setFixedHeight(26);
     entry_logic_combo_->setFixedWidth(80);
@@ -316,7 +316,7 @@ QWidget* StrategyBuilderPanel::build_left_pane() {
     exit_logic_lbl->setStyleSheet(kLabelStyle());
     exit_hdr_hl->addWidget(exit_logic_lbl);
     exit_logic_combo_ = new QComboBox(exit_hdr);
-    exit_logic_combo_->addItems({"AND", "OR"});
+    exit_logic_combo_->addItems({tr("AND"), tr("OR")});
     exit_logic_combo_->setStyleSheet(kComboStyle());
     exit_logic_combo_->setFixedHeight(26);
     exit_logic_combo_->setFixedWidth(80);
@@ -658,7 +658,7 @@ void StrategyBuilderPanel::display_backtest_result(const QJsonObject& payload) {
     // SHARPE
     set_kpi(kpi_sharpe_val_, QString::number(sharpe, 'f', 3),
             sharpe >= 0.5 ? fincept::ui::colors::POSITIVE : fincept::ui::colors::NEGATIVE);
-    kpi_sharpe_sub_->setText(sharpe >= 1.0 ? "Excellent" : sharpe >= 0.5 ? "Good" : "Weak");
+    kpi_sharpe_sub_->setText(sharpe >= 1.0 ? tr("Excellent") : sharpe >= 0.5 ? tr("Good") : tr("Weak"));
 
     // MAX DRAWDOWN (always red)
     set_kpi(kpi_max_dd_val_,
@@ -670,7 +670,7 @@ void StrategyBuilderPanel::display_backtest_result(const QJsonObject& payload) {
     set_kpi(kpi_win_rate_val_,
             QString("%1%").arg(win_rate, 0, 'f', 1),
             win_rate >= 50.0 ? fincept::ui::colors::POSITIVE : fincept::ui::colors::NEGATIVE);
-    kpi_win_rate_sub_->setText(win_rate >= 50.0 ? "Above average" : "Below average");
+    kpi_win_rate_sub_->setText(win_rate >= 50.0 ? tr("Above average") : tr("Below average"));
 
     // TOTAL TRADES
     set_kpi(kpi_trades_val_, QString::number(total_trades), fincept::ui::colors::TEXT_PRIMARY);
@@ -679,7 +679,7 @@ void StrategyBuilderPanel::display_backtest_result(const QJsonObject& payload) {
     // PROFIT FACTOR
     set_kpi(kpi_profit_factor_val_, QString::number(profit_factor, 'f', 2),
             profit_factor >= 1.0 ? fincept::ui::colors::POSITIVE : fincept::ui::colors::NEGATIVE);
-    kpi_profit_factor_sub_->setText(profit_factor >= 1.5 ? "Strong" : profit_factor >= 1.0 ? "Profitable" : "Losing");
+    kpi_profit_factor_sub_->setText(profit_factor >= 1.5 ? tr("Strong") : profit_factor >= 1.0 ? tr("Profitable") : tr("Losing"));
 }
 
 // ── on_backtest_result ───────────────────────────────────────────────────────
@@ -805,7 +805,7 @@ void StrategyBuilderPanel::on_backtest() {
 
 void StrategyBuilderPanel::on_error(const QString& context, const QString& msg) {
     if (status_label_) {
-        status_label_->setText(QString("Error [%1]: %2").arg(context, msg));
+        status_label_->setText(tr("Error [%1]: %2").arg(context, msg));
         status_label_->setStyleSheet(
             QString("color: %1; font-size: %2px; %3 background: transparent; border: none;")
                 .arg(fincept::ui::colors::NEGATIVE())

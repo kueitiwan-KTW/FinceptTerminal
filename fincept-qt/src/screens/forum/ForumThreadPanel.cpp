@@ -454,12 +454,12 @@ void ForumThreadPanel::show_post(const services::ForumPostDetail& detail) {
     // Author with circular avatar
     QString avc = det_color(detail.post.author_display_name);
     QString ini = detail.post.author_display_name.isEmpty() ? "?" : detail.post.author_display_name.left(2).toUpper();
-    t_author_lbl_->setText(QString("<span style='background:%1;color:%2;font-size:10px;"
-                                   "font-family:Consolas;padding:3px 6px;font-weight:700;"
-                                   "border-radius:12px;'>%3</span>"
-                                   "&nbsp;&nbsp;"
-                                   "<a href='author:%4' style='color:%5;text-decoration:none;"
-                                   "font-family:Consolas;font-size:12px;font-weight:600;'>%6</a>")
+    t_author_lbl_->setText(QString(tr("<span style='background:%1;color:%2;font-size:10px;"
+                                      "font-family:Consolas;padding:3px 6px;font-weight:700;"
+                                      "border-radius:12px;'>%3</span>"
+                                      "&nbsp;&nbsp;"
+                                      "<a href='author:%4' style='color:%5;text-decoration:none;"
+                                      "font-family:Consolas;font-size:12px;font-weight:600;'>%6</a>"))
                                .arg(avc, ui::colors::BG_BASE(), ini, detail.post.author_name,
                                     ui::colors::TEXT_SECONDARY(), detail.post.author_display_name));
 
@@ -475,7 +475,7 @@ void ForumThreadPanel::show_post(const services::ForumPostDetail& detail) {
 
     t_replies_lbl_->setText(
         QString("◆ %1 %2").arg(detail.total_comments).arg(detail.total_comments == 1 ? "reply" : "replies"));
-    t_views_lbl_->setText(QString("◉ %1 views").arg(detail.post.views));
+    t_views_lbl_->setText(tr("◉ %1 views").arg(detail.post.views));
 
     rebuild_comments();
     stack_->setCurrentIndex(1);

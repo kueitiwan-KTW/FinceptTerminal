@@ -478,7 +478,7 @@ void WorkflowsViewPanel::on_workflow_selected(int row) {
     if (!def)
         return;
 
-    params_title_->setText(QString("%1  —  PARAMETERS").arg(def->label).toUpper());
+    params_title_->setText(tr("%1  —  PARAMETERS").arg(def->label).toUpper());
     wf_desc_label_->setText(def->desc);
 
     symbol_row_->setVisible(def->needs_symbol);
@@ -499,7 +499,7 @@ void WorkflowsViewPanel::run_current_workflow() {
     run_btn_->setText(tr("RUNNING..."));
     result_display_->clear();
     log_display_->clear();
-    output_title_->setText(QString("OUTPUT  —  %1").arg(current_workflow_type_.toUpper()));
+    output_title_->setText(tr("OUTPUT  —  %1").arg(current_workflow_type_.toUpper()));
     output_status_->setText(tr("Executing..."));
     output_status_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::AMBER()));
     log_display_->append(QString("[START] %1").arg(current_workflow_type_));

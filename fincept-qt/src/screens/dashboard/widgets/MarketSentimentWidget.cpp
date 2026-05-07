@@ -274,9 +274,9 @@ void MarketSentimentWidget::populate(const QVector<services::QuoteData>& quotes)
         bar_layout->setStretch(2, bearish);
     }
 
-    bull_label_->setText(QString("%1 %2 BULL").arg(QChar(0x25B2)).arg(bullish));
-    neutral_label_->setText(QString("%1 NEUTRAL").arg(neutral));
-    bear_label_->setText(QString("%1 %2 BEAR").arg(QChar(0x25BC)).arg(bearish));
+    bull_label_->setText(tr("%1 %2 BULL").arg(QChar(0x25B2)).arg(bullish));
+    neutral_label_->setText(tr("%1 NEUTRAL").arg(neutral));
+    bear_label_->setText(tr("%1 %2 BEAR").arg(QChar(0x25BC)).arg(bearish));
 
     // VIX
     if (vix_price > 0) {
@@ -289,7 +289,7 @@ void MarketSentimentWidget::populate(const QVector<services::QuoteData>& quotes)
     }
 
     // Breadth
-    breadth_label_->setText(QString("%1A / %2D").arg(bullish).arg(bearish));
+    breadth_label_->setText(tr("%1A / %2D").arg(bullish).arg(bearish));
     breadth_label_->setStyleSheet(QString("color: %1; font-size: 10px; font-weight: bold; background: transparent;")
                                       .arg(bullish > bearish ? ui::colors::POSITIVE() : ui::colors::NEGATIVE()));
 }

@@ -85,7 +85,7 @@ void QuickCommandBar::on_submit() {
         case ParsedCommand::Kind::Empty:
             return;
         case ParsedCommand::Kind::Help:
-            show_hint("Help: type any verb (e.g. 'layout switch') or a ticker (AAPL).", false);
+            show_hint(tr("Help: type any verb (e.g. 'layout switch') or a ticker (AAPL)."), false);
             return;
         case ParsedCommand::Kind::Symbol: {
             // Route to link.publish_to_group with the first enabled group
@@ -102,7 +102,7 @@ void QuickCommandBar::on_submit() {
             if (r.is_err()) {
                 show_hint(QString::fromStdString(r.error()), true);
             } else {
-                show_hint(QString("Published %1 to group A").arg(parsed.args.value("symbol").toString()), false);
+                show_hint(tr("Published %1 to group A").arg(parsed.args.value("symbol").toString()), false);
                 input_->clear();
             }
             return;
@@ -126,7 +126,7 @@ void QuickCommandBar::on_submit() {
             return;
         }
         case ParsedCommand::Kind::Unknown:
-            show_hint(parsed.error.isEmpty() ? "Unknown command" : parsed.error, true);
+            show_hint(parsed.error.isEmpty() ? tr("Unknown command") : parsed.error, true);
             return;
     }
 }

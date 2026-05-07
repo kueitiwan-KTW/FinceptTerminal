@@ -284,7 +284,7 @@ void ForumFeedPanel::rebuild_posts() {
         delete item;
     }
 
-    header_count_lbl_->setText(page_.total > 0 ? QString("%1 posts").arg(page_.total) : "");
+    header_count_lbl_->setText(page_.total > 0 ? tr("%1 posts").arg(page_.total) : QString());
 
     if (page_.posts.isEmpty()) {
         auto* empty = new QWidget(this);
@@ -507,7 +507,7 @@ void ForumFeedPanel::rebuild_posts() {
     // ── Load more button ──────────────────────────────────────────────────────
     if (page_.page < page_.pages) {
         int remaining = page_.total - page_.posts.size();
-        auto* more = new QPushButton(QString("Load %1 more posts").arg(remaining));
+        auto* more = new QPushButton(QString(tr("Load %1 more posts")).arg(remaining));
         more->setFixedHeight(36);
         more->setCursor(Qt::PointingHandCursor);
         more->setStyleSheet(QString("QPushButton{background:%1;color:%2;"

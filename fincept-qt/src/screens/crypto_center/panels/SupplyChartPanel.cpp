@@ -69,12 +69,12 @@ void SupplyChartPanel::build_ui() {
     auto* hl = new QHBoxLayout(head);
     hl->setContentsMargins(12, 0, 12, 0);
     hl->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("SUPPLY CHART · 12 MONTHS"), head);
+    auto* title = new QLabel(tr("SUPPLY CHART · 12 MONTHS"), head);
     title->setObjectName(QStringLiteral("supplyChartTitle"));
     auto* legend = new QLabel(
-        QStringLiteral("● TOTAL  ● CIRCULATING  ● BURNED"), head);
+        tr("● TOTAL  ● CIRCULATING  ● BURNED"), head);
     legend->setObjectName(QStringLiteral("supplyChartLegend"));
-    status_pill_ = new QLabel(QStringLiteral("LIVE"), head);
+    status_pill_ = new QLabel(tr("LIVE"), head);
     status_pill_->setObjectName(QStringLiteral("supplyChartPill"));
     hl->addWidget(title);
     hl->addStretch();
@@ -99,15 +99,15 @@ void SupplyChartPanel::build_ui() {
 
     using namespace ui::colors;
     total_series_ = new QLineSeries;
-    total_series_->setName(QStringLiteral("Total"));
+    total_series_->setName(tr("Total"));
     total_series_->setPen(QPen(QColor(QString(BORDER_BRIGHT())), 2));
 
     circulating_series_ = new QLineSeries;
-    circulating_series_->setName(QStringLiteral("Circulating"));
+    circulating_series_->setName(tr("Circulating"));
     circulating_series_->setPen(QPen(QColor(QString(TEXT_TERTIARY())), 2));
 
     burned_series_ = new QLineSeries;
-    burned_series_->setName(QStringLiteral("Burned"));
+    burned_series_->setName(tr("Burned"));
     burned_series_->setPen(QPen(QColor(QString(AMBER())), 2));
 
     chart_->addSeries(total_series_);
@@ -292,10 +292,10 @@ void SupplyChartPanel::clear_error_strip() {
 
 void SupplyChartPanel::update_demo_chip(bool is_mock) {
     if (is_mock) {
-        status_pill_->setText(QStringLiteral("DEMO"));
+        status_pill_->setText(tr("DEMO"));
         status_pill_->setObjectName(QStringLiteral("supplyChartPillDemo"));
     } else {
-        status_pill_->setText(QStringLiteral("LIVE"));
+        status_pill_->setText(tr("LIVE"));
         status_pill_->setObjectName(QStringLiteral("supplyChartPill"));
     }
     status_pill_->style()->unpolish(status_pill_);

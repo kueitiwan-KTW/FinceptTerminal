@@ -20,6 +20,7 @@
 #include "core/window/WindowRegistry.h"
 
 #include <QApplication>
+#include <QCoreApplication>
 #include <QDateTime>
 #include <QDir>
 #include <QFileDialog>
@@ -103,14 +104,14 @@ Result<void> handler_screenshot(const CommandContext& ctx) {
     if (!scr)
         scr = QApplication::primaryScreen();
     if (!scr)
-        return Result<void>::err("No screen available for screenshot");
+        return Result<void>::err(QCoreApplication::translate("FinceptTerminal", "No screen available for screenshot").toStdString());
 
     QPixmap px = scr->grabWindow(ctx.focused_frame->winId());
     const QString path = QFileDialog::getSaveFileName(
-        ctx.focused_frame, "Save Screenshot",
+        ctx.focused_frame, QCoreApplication::translate("FinceptTerminal", "Save Screenshot"),
         QDir::homePath() + "/fincept_" +
             QDateTime::currentDateTime().toString("yyyyMMdd_HHmmss") + ".png",
-        "PNG Images (*.png)");
+        QCoreApplication::translate("FinceptTerminal", "PNG Images (*.png)"));
     if (!path.isEmpty()) {
         px.save(path, "PNG");
         LOG_INFO(kBuiltinTag, QString("Screenshot saved: %1").arg(path));

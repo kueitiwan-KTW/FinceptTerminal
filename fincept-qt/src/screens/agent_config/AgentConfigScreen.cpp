@@ -302,20 +302,20 @@ void AgentConfigScreen::setup_service_connections() {
 
     connect(&svc, &services::AgentService::agents_discovered, this,
             [this](QVector<services::AgentInfo> agents, QVector<services::AgentCategory>) {
-                agent_count_label_->setText(QString("%1 agents").arg(agents.size()));
+                agent_count_label_->setText(tr("%1 agents").arg(agents.size()));
             });
 
     connect(&svc, &services::AgentService::error_occurred, this, [this](const QString& ctx, const QString& msg) {
-        status_label_->setText(QString("ERROR [%1]: %2").arg(ctx, msg.left(60)));
+        status_label_->setText(tr("ERROR [%1]: %2").arg(ctx, msg.left(60)));
         status_label_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::NEGATIVE()));
     });
 
     connect(&svc, &services::AgentService::agent_result, this, [this](services::AgentExecutionResult r) {
         if (r.success) {
-            status_label_->setText(QString("DONE (%1ms)").arg(r.execution_time_ms));
+            status_label_->setText(tr("DONE (%1ms)").arg(r.execution_time_ms));
             status_label_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::POSITIVE()));
         } else {
-            status_label_->setText(QString("FAILED: %1").arg(r.error.left(60)));
+            status_label_->setText(tr("FAILED: %1").arg(r.error.left(60)));
             status_label_->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::NEGATIVE()));
         }
     });

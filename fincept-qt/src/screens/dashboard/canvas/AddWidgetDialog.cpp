@@ -79,7 +79,7 @@ AddWidgetDialog::AddWidgetDialog(QWidget* parent) : QDialog(parent) {
     title_row->addWidget(title);
     title_row->addStretch();
 
-    auto* subtitle = new QLabel(QString("%1 AVAILABLE").arg(WidgetRegistry::instance().all().size()));
+    auto* subtitle = new QLabel(tr("%1 AVAILABLE").arg(WidgetRegistry::instance().all().size()));
     subtitle->setStyleSheet(QString("color: %1; font-size: 10px;").arg(ui::colors::TEXT_TERTIARY()));
     title_row->addWidget(subtitle);
     root->addLayout(title_row);

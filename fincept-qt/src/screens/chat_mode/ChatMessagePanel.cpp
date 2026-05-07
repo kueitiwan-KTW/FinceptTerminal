@@ -117,7 +117,7 @@ QWidget* ChatMessagePanel::build_header() {
             .arg(ui::colors::BG_RAISED(), ui::colors::AMBER(), ui::colors::BORDER_MED(), FONT, ui::colors::BG_HOVER()));
     connect(mode_btn_, &QPushButton::clicked, this, [this]() {
         current_mode_ = (current_mode_ == StreamMode::Lite) ? StreamMode::Deep : StreamMode::Lite;
-        mode_btn_->setText(current_mode_ == StreamMode::Lite ? "LITE" : "DEEP");
+        mode_btn_->setText(current_mode_ == StreamMode::Lite ? tr("LITE") : tr("DEEP"));
         emit mode_toggled(current_mode_);
     });
     hl->addWidget(mode_btn_);
@@ -175,16 +175,16 @@ QWidget* ChatMessagePanel::build_welcome() {
                             .arg(ui::colors::AMBER(), FONT));
     vl->addWidget(logo);
 
-    auto* sub = new QLabel("AI-powered financial intelligence.\n"
-                           "Markets, equities, portfolio, macro insights.");
+    auto* sub = new QLabel(tr("AI-powered financial intelligence.\n"
+                              "Markets, equities, portfolio, macro insights."));
     sub->setAlignment(Qt::AlignCenter);
     sub->setWordWrap(true);
     sub->setStyleSheet(
         QString("color:%1;font-size:13px;font-family:%2;background:transparent;").arg(ui::colors::TEXT_TERTIARY(), FONT));
     vl->addWidget(sub);
 
-    const QStringList chips = {"Outlook for AAPL?", "Today's market news", "Portfolio risk analysis",
-                               "Key indicators this week"};
+    const QStringList chips = {tr("Outlook for AAPL?"), tr("Today's market news"), tr("Portfolio risk analysis"),
+                               tr("Key indicators this week")};
     auto* row = new QWidget(this);
     auto* rl = new QHBoxLayout(row);
     rl->setContentsMargins(0, 8, 0, 0);
@@ -359,12 +359,12 @@ void ChatMessagePanel::clear_messages() {
 }
 
 void ChatMessagePanel::set_session_title(const QString& title) {
-    hdr_title_lbl_->setText(title.isEmpty() ? "New Conversation" : title);
+    hdr_title_lbl_->setText(title.isEmpty() ? tr("New Conversation") : title);
 }
 
 void ChatMessagePanel::set_stream_mode(StreamMode mode) {
     current_mode_ = mode;
-    mode_btn_->setText(mode == StreamMode::Lite ? "LITE" : "DEEP");
+    mode_btn_->setText(mode == StreamMode::Lite ? tr("LITE") : tr("DEEP"));
 }
 
 // ── Bubble creation ──────────────────────────────────────────────────────────
@@ -471,9 +471,9 @@ void ChatMessagePanel::insert_collapsed_thinking_card(int before_index) {
         QStringList tool_names;
         for (const auto& [name, ms] : pending_tools_)
             tool_names.append(QString("%1 (%2ms)").arg(name).arg(ms));
-        summary = QString("> %1 thinking steps | tools: %2").arg(pending_thinking_.size()).arg(tool_names.join(", "));
+        summary = tr("> %1 thinking steps | tools: %2").arg(pending_thinking_.size()).arg(tool_names.join(", "));
     } else {
-        summary = QString("> %1 thinking steps").arg(pending_thinking_.size());
+        summary = tr("> %1 thinking steps").arg(pending_thinking_.size());
     }
 
     auto* header = new QPushButton(summary);
@@ -539,16 +539,16 @@ void ChatMessagePanel::on_stream_text_delta(const QString& text) {
 
 void ChatMessagePanel::on_stream_tool_end(const QString& tool_name, int duration_ms) {
     pending_tools_.append({tool_name, duration_ms});
-    typing_status_lbl_->setText(QString("used %1").arg(tool_name));
+    typing_status_lbl_->setText(tr("used %1").arg(tool_name));
 }
 
 void ChatMessagePanel::on_stream_step_start(int step_number) {
-    typing_status_lbl_->setText(QString("step %1").arg(step_number));
+    typing_status_lbl_->setText(tr("step %1").arg(step_number));
 }
 
 void ChatMessagePanel::on_stream_step_finish(int tokens_used) {
     total_tokens_ += tokens_used;
-    hdr_tokens_lbl_->setText(QString("%1 tokens").arg(total_tokens_));
+    hdr_tokens_lbl_->setText(tr("%1 tokens").arg(total_tokens_));
 }
 
 void ChatMessagePanel::on_stream_thinking(const QString& content) {
@@ -560,7 +560,7 @@ void ChatMessagePanel::on_stream_thinking(const QString& content) {
 
 void ChatMessagePanel::on_stream_finish(int total_tokens) {
     total_tokens_ += total_tokens;
-    hdr_tokens_lbl_->setText(QString("%1 tokens").arg(total_tokens_));
+    hdr_tokens_lbl_->setText(tr("%1 tokens").arg(total_tokens_));
 
     render_timer_->stop();
     if (streaming_bubble_ && !streaming_buffer_.isEmpty()) {
@@ -605,7 +605,7 @@ void ChatMessagePanel::on_stream_error(const QString& message) {
     optimize_btn_->setVisible(true);
     stop_btn_->setVisible(false);
 
-    auto* err = new QLabel("! " + message);
+    auto* err = new QLabel(tr("! ") + message);
     err->setWordWrap(true);
     err->setStyleSheet(error_bubble_ss());
     const int pos = messages_layout_->count() - 1;
@@ -616,16 +616,16 @@ void ChatMessagePanel::on_stream_error(const QString& message) {
 void ChatMessagePanel::on_stream_heartbeat() {}
 
 void ChatMessagePanel::on_insufficient_credits() {
-    on_stream_error("Insufficient credits. Top up to continue.");
+    on_stream_error(tr("Insufficient credits. Top up to continue."));
 }
 
 void ChatMessagePanel::on_tools_registered(int count) {
-    hdr_tools_lbl_->setText(count > 0 ? QString("%1 tools").arg(count) : QString());
+    hdr_tools_lbl_->setText(count > 0 ? tr("%1 tools").arg(count) : QString());
 }
 
 void ChatMessagePanel::set_credits(int credits) {
     if (credits > 0)
-        hdr_credits_lbl_->setText(QString("%1 credits").arg(QLocale(QLocale::English).toString(credits)));
+        hdr_credits_lbl_->setText(tr("%1 credits").arg(QLocale(QLocale::English).toString(credits)));
     else
         hdr_credits_lbl_->setText(tr("0 credits"));
 }
@@ -673,7 +673,7 @@ void ChatMessagePanel::on_optimize_clicked() {
                                                     self->optimize_btn_->setEnabled(true);
                                                     self->optimize_btn_->setText(tr("Optimize"));
                                                     if (!ok) {
-                                                        self->on_stream_error("Optimize failed: " + err);
+                                                        self->on_stream_error(self->tr("Optimize failed: ") + err);
                                                         return;
                                                     }
                                                     if (!result.optimized.isEmpty())

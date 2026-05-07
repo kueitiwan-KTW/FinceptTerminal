@@ -269,8 +269,8 @@ QWidget* MAAnalyticsScreen::build_right_sidebar() {
     cl->addWidget(stats_card_);
 
     // Tips
-    tips_label_ = new QLabel("Click sidebar modules to switch views. "
-                             "Each module provides professional-grade analytics with export capabilities.",
+    tips_label_ = new QLabel(tr("Click sidebar modules to switch views. "
+                                "Each module provides professional-grade analytics with export capabilities."),
                              content);
     tips_label_->setWordWrap(true);
     cl->addWidget(tips_label_);
@@ -370,7 +370,7 @@ void MAAnalyticsScreen::update_right_panel() {
                                     .arg(mod.color.name())
                                     .arg(ui::fonts::SMALL)
                                     .arg(ui::fonts::DATA_FAMILY));
-    right_category_->setText(mod.category + " module");
+    right_category_->setText(mod.category + tr(" module"));
     right_category_->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3;")
                                        .arg(ui::colors::TEXT_SECONDARY())
                                        .arg(ui::fonts::TINY)

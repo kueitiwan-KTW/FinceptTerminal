@@ -73,7 +73,7 @@ TickerBar::TickerBar(QWidget* parent) : QWidget(parent) {
     connect(edit_input_, &QLineEdit::returnPressed, this, &TickerBar::commit_edit);
     hl->addWidget(edit_input_, 1);
 
-    edit_ok_ = new QPushButton("OK", edit_bar_);
+    edit_ok_ = new QPushButton(tr("OK"), edit_bar_);
     edit_ok_->setFixedWidth(32);
     edit_ok_->setStyleSheet(
         QString("QPushButton { background:%1; color:%2; border:none;"

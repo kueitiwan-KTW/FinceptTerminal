@@ -5,6 +5,7 @@
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QLabel>
+#include <QObject>
 #include <QPushButton>
 #include <QShowEvent>
 #include <QTimer>
@@ -27,7 +28,7 @@ QString format_remaining(int ms) {
     // 1500 → "1.5s", 800 → "0.8s", <=0 → ""
     if (ms <= 0) return QString();
     const double secs = ms / 1000.0;
-    return QStringLiteral("%1s").arg(secs, 0, 'f', 1);
+    return QObject::tr("%1s").arg(secs, 0, 'f', 1);
 }
 
 } // namespace
@@ -71,7 +72,7 @@ void WalletActionConfirmDialog::build_ui() {
     title_label_->setObjectName(QStringLiteral("walletActionDialogTitle"));
     hl->addWidget(title_label_);
     hl->addStretch();
-    auto* head_status = new QLabel(QStringLiteral("AWAITING CONFIRMATION"), header);
+    auto* head_status = new QLabel(tr("AWAITING CONFIRMATION"), header);
     head_status->setObjectName(QStringLiteral("walletActionDialogHeadStatus"));
     hl->addWidget(head_status);
     root->addWidget(header);
@@ -270,7 +271,7 @@ void WalletActionConfirmDialog::showEvent(QShowEvent* e) {
         return;
     }
     primary_button_->setEnabled(false);
-    primary_button_->setText(QStringLiteral("%1 in %2")
+    primary_button_->setText(tr("%1 in %2")
                                  .arg(summary_.primary_button_text,
                                       format_remaining(arm_remaining_ms_)));
     arm_timer_->start();
@@ -284,7 +285,7 @@ void WalletActionConfirmDialog::on_arm_tick() {
         primary_button_->setText(summary_.primary_button_text);
         return;
     }
-    primary_button_->setText(QStringLiteral("%1 in %2")
+    primary_button_->setText(tr("%1 in %2")
                                  .arg(summary_.primary_button_text,
                                       format_remaining(arm_remaining_ms_)));
 }

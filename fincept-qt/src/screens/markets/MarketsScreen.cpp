@@ -344,7 +344,7 @@ QWidget* MarketsScreen::build_header_bar() {
     // AUTO toggle — amber when ON
     auto* auto_btn = make_ctrl_btn(auto_update_ ? "[F9] AUTO: ON" : "[F9] AUTO: OFF");
     auto update_auto_style = [this, auto_btn]() {
-        auto_btn->setText(auto_update_ ? "[F9] AUTO: ON" : "[F9] AUTO: OFF");
+        auto_btn->setText(auto_update_ ? tr("[F9] AUTO: ON") : tr("[F9] AUTO: OFF"));
         auto_btn->setStyleSheet(
             QString("QPushButton{background:transparent;color:%1;border:none;"
                     "font-size:%3px;font-family:'%4';padding:0 6px;}"
@@ -462,13 +462,13 @@ void MarketsScreen::update_session_status() {
 
     QString label, color;
     if (!weekday || hhmm < 400 || hhmm >= 2000) {
-        label = "NYSE: CLOSED";    color = ui::colors::TEXT_DIM();
+        label = tr("NYSE: CLOSED");    color = ui::colors::TEXT_DIM();
     } else if (hhmm < 930) {
-        label = "NYSE: PRE-MKT";   color = ui::colors::AMBER();
+        label = tr("NYSE: PRE-MKT");   color = ui::colors::AMBER();
     } else if (hhmm < 1600) {
-        label = "NYSE: OPEN";      color = ui::colors::POSITIVE();
+        label = tr("NYSE: OPEN");      color = ui::colors::POSITIVE();
     } else {
-        label = "NYSE: AFTER-HRS"; color = ui::colors::AMBER();
+        label = tr("NYSE: AFTER-HRS"); color = ui::colors::AMBER();
     }
 
     if (session_label_) {
@@ -480,13 +480,13 @@ void MarketsScreen::update_session_status() {
 void MarketsScreen::update_clocks() {
     QDateTime utc = QDateTime::currentDateTimeUtc();
     if (ny_label_)
-        ny_label_ ->setText(QString("NY %1").arg(
+        ny_label_ ->setText(tr("NY %1").arg(
             utc.toTimeZone(QTimeZone("America/New_York")).toString("HH:mm:ss")));
     if (lon_label_)
-        lon_label_->setText(QString("LON %1").arg(
+        lon_label_->setText(tr("LON %1").arg(
             utc.toTimeZone(QTimeZone("Europe/London")).toString("HH:mm:ss")));
     if (tok_label_)
-        tok_label_->setText(QString("TOK %1").arg(
+        tok_label_->setText(tr("TOK %1").arg(
             utc.toTimeZone(QTimeZone("Asia/Tokyo")).toString("HH:mm:ss")));
 }
 
@@ -563,7 +563,7 @@ void MarketsScreen::refresh_all() {
             }
             if (last_upd_label_) {
                 last_upd_label_->setText(
-                    QString("LAST UPDATE  %1")
+                    tr("LAST UPDATE  %1")
                         .arg(QDateTime::currentDateTime().toString("HH:mm:ss")));
                 last_upd_label_->setStyleSheet(lbl_ss(ui::colors::TEXT_SECONDARY(), false, 11));
             }

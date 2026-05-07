@@ -243,7 +243,7 @@ void ForumPostListPanel::set_posts(const services::ForumPostsPage& page, const Q
 
 void ForumPostListPanel::rebuild_feed() {
     clear();
-    count_label_->setText(current_page_.total > 0 ? QString("%1 posts").arg(current_page_.total) : "");
+    count_label_->setText(current_page_.total > 0 ? tr("%1 posts").arg(current_page_.total) : QString());
 
     if (current_page_.posts.isEmpty()) {
         auto* empty = new QWidget(this);
@@ -399,7 +399,7 @@ void ForumPostListPanel::rebuild_feed() {
     // ── Load more ─────────────────────────────────────────────────────────────
     if (current_page_.page < current_page_.pages) {
         int remaining = current_page_.total - current_page_.posts.size();
-        auto* more_btn = new QPushButton(QString("Load %1 more posts").arg(remaining));
+        auto* more_btn = new QPushButton(QString(tr("Load %1 more posts")).arg(remaining));
         more_btn->setFixedHeight(34);
         more_btn->setCursor(Qt::PointingHandCursor);
         more_btn->setStyleSheet(QString("QPushButton{background:%1;color:%2;border:none;"

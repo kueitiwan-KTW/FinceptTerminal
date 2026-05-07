@@ -514,7 +514,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
         const double first_w = d.value("first_p80_width").toDouble();
         const double last_w = d.value("last_p80_width").toDouble();
 
-        auto* hdr = new QLabel(QString("HORIZON %1 STEPS  |  %2 BOOTSTRAP PATHS  |  LAGS %3")
+        auto* hdr = new QLabel(tr("HORIZON %1 STEPS  |  %2 BOOTSTRAP PATHS  |  LAGS %3")
                                    .arg(horizon).arg(n_paths).arg(d.value("lags").toInt()));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border-left:3px solid %3;")
@@ -571,7 +571,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("Forecast: P50 %1 → %2  |  P80 width %3 → %4")
+        status_label_->setText(tr("Forecast: P50 %1 → %2  |  P80 width %3 → %4")
                                    .arg(first_p50, 0, 'f', 3).arg(last_p50, 0, 'f', 3)
                                    .arg(first_w, 0, 'f', 3).arg(last_w, 0, 'f', 3));
         return;
@@ -582,7 +582,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
         const int horizon = d.value("horizon").toInt();
         const int n_q = d.value("n_quantiles").toInt();
 
-        auto* hdr = new QLabel(QString("HORIZON %1 STEPS  |  %2 QUANTILES  |  %3 BOOTSTRAP PATHS")
+        auto* hdr = new QLabel(tr("HORIZON %1 STEPS  |  %2 QUANTILES  |  %3 BOOTSTRAP PATHS")
                                    .arg(horizon).arg(n_q).arg(d.value("n_paths").toInt()));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border-left:3px solid %3;")
@@ -664,7 +664,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
             }
             results_layout_->addWidget(table);
         }
-        status_label_->setText(QString("%1 quantiles over %2 steps").arg(n_q).arg(horizon));
+        status_label_->setText(tr("%1 quantiles over %2 steps").arg(n_q).arg(horizon));
         return;
     }
 
@@ -673,7 +673,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
         const QString best_aic = d.value("best_by_aic").toString();
         const QString best_bic = d.value("best_by_bic").toString();
 
-        auto* hdr = new QLabel(QString("BEST BY AIC: %1   |   BEST BY BIC: %2")
+        auto* hdr = new QLabel(tr("BEST BY AIC: %1   |   BEST BY BIC: %2")
                                    .arg(best_aic.toUpper()).arg(best_bic.toUpper()));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border-left:3px solid %3;")
@@ -742,7 +742,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("Best fit: %1 (AIC) / %2 (BIC)").arg(best_aic).arg(best_bic));
+        status_label_->setText(tr("Best fit: %1 (AIC) / %2 (BIC)").arg(best_aic).arg(best_bic));
         return;
     }
 
@@ -836,7 +836,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
         const int horizon = d.value("horizon").toInt();
         const int season = d.value("season_length").toInt();
 
-        auto* hdr = new QLabel(QString("METHOD: %1   |   HORIZON %2 STEPS")
+        auto* hdr = new QLabel(tr("METHOD: %1   |   HORIZON %2 STEPS")
                                    .arg(d.value("method").toString().toUpper()).arg(horizon));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
                                    "padding:8px 10px; background:%2; border-left:3px solid %3;")
@@ -889,7 +889,7 @@ void QuantModulePanel::display_gluonts_result(const QString& command, const QJso
             }
             results_layout_->addWidget(table);
         }
-        status_label_->setText(QString("%1 — last %2 → forecast %3")
+        status_label_->setText(tr("%1 — last %2 → forecast %3")
                                    .arg(d.value("method").toString())
                                    .arg(last_actual, 0, 'f', 3)
                                    .arg(first_fc, 0, 'f', 3));

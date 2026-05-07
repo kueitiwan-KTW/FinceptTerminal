@@ -54,7 +54,7 @@ ComingSoonTab::ComingSoonTab(const QString& tab_name,
     description_label_->setWordWrap(true);
     cl->addWidget(description_label_);
 
-    auto* status = new QLabel(QStringLiteral("STATUS  ·  COMING SOON"), card);
+    auto* status = new QLabel(tr("STATUS  ·  COMING SOON"), card);
     status->setObjectName(QStringLiteral("comingSoonStatus"));
     cl->addSpacing(6);
     cl->addWidget(status);

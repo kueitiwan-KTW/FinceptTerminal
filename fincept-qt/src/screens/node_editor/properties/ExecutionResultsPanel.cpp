@@ -92,7 +92,7 @@ static QWidget* make_result_card(const NodeExecutionResult& result) {
     // ── Content ────────────────────────────────────────────────────
     if (!ok) {
         // Error message
-        auto* err = new QLabel(result.error.isEmpty() ? "Unknown error" : result.error);
+        auto* err = new QLabel(result.error.isEmpty() ? tr("Unknown error") : result.error);
         err->setWordWrap(true);
         err->setTextInteractionFlags(Qt::TextSelectableByMouse);
         err->setStyleSheet(QString("color: %1; font-family: Consolas; font-size: 10px;"
@@ -385,7 +385,7 @@ void ExecutionResultsPanel::add_node_result(const NodeExecutionResult& result) {
 
 void ExecutionResultsPanel::set_finished(const WorkflowExecutionResult& result) {
     if (result.success) {
-        status_label_->setText(QString("DONE  %1").arg(format_duration(result.total_duration_ms)));
+        status_label_->setText(tr("DONE  %1").arg(format_duration(result.total_duration_ms)));
         status_label_->setStyleSheet(QString("color: %1; font-family: Consolas;"
                                              " font-size: 10px; font-weight: bold;")
                                          .arg(ui::colors::POSITIVE()));

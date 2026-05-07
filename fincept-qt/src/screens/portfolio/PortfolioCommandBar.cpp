@@ -121,7 +121,7 @@ void PortfolioCommandBar::build_row1(QHBoxLayout* layout) {
 }
 
 void PortfolioCommandBar::build_portfolio_selector() {
-    selector_btn_ = new QPushButton("SELECT PORTFOLIO \u25BE");
+    selector_btn_ = new QPushButton(tr("SELECT PORTFOLIO \u25BE"));
     selector_btn_->setFixedHeight(24);
     selector_btn_->setMinimumWidth(180);
     selector_btn_->setMaximumWidth(260);
@@ -424,7 +424,7 @@ void PortfolioCommandBar::update_selector_label() {
             return;
         }
     }
-    selector_btn_->setText("SELECT PORTFOLIO  \u25BE");
+    selector_btn_->setText(tr("SELECT PORTFOLIO  \u25BE"));
 }
 
 // ── Public setters ───────────────────────────────────────────────────────────

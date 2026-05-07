@@ -46,12 +46,11 @@ LaunchpadScreen::LaunchpadScreen(QWidget* parent) : QMainWindow(parent) {
     vl->setSpacing(16);
 
     const QString profile = ProfileManager::instance().active();
-    greeting_ = new QLabel(QString("Profile: %1").arg(profile));
+    greeting_ = new QLabel(tr("Profile: %1").arg(profile));
     greeting_->setStyleSheet("font-size: 14px; color: #d97706; font-weight: 600;");
     vl->addWidget(greeting_);
 
-    auto* sub = new QLabel(
-        "All windows closed. Open a new window or pick a layout below.");
+    auto* sub = new QLabel(tr("All windows closed. Open a new window or pick a layout below."));
     sub->setStyleSheet("font-size: 11px; color: #9ca3af;");
     sub->setWordWrap(true);
     vl->addWidget(sub);
@@ -139,8 +138,8 @@ void LaunchpadScreen::on_switch_profile() {
     LOG_INFO(kLaunchpadTag, "Switch Profile button clicked");
     bool ok = false;
     const QString name = QInputDialog::getText(
-        this, "Switch Profile",
-        "Enter profile name (will create if not exists):",
+        this, tr("Switch Profile"),
+        tr("Enter profile name (will create if not exists):"),
         QLineEdit::Normal, ProfileManager::instance().active(), &ok);
     if (!ok || name.trimmed().isEmpty())
         return;
@@ -192,7 +191,8 @@ void LaunchpadScreen::refresh_recent_layouts() {
     // user wants to see saved/named layouts here, not the snapshot.
     auto r = LayoutCatalog::instance().recent_layouts(/*limit=*/8, /*include_auto=*/false);
     if (r.is_err() || r.value().isEmpty()) {
-        auto* item = new QListWidgetItem("(No saved layouts yet — use 'layout save \"<name>\"' to save the current state)");
+        auto* item =
+            new QListWidgetItem(tr("(No saved layouts yet — use 'layout save \"<name>\"' to save the current state)"));
         item->setFlags(Qt::NoItemFlags);
         recent_layouts_->addItem(item);
         // Enable the "Open Saved Layout" button if there are any layouts

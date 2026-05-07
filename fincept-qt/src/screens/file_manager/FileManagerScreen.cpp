@@ -401,7 +401,7 @@ void FileManagerScreen::download_file(const QString& file_id) {
     if (QFile::exists(dest))
         QFile::remove(dest);
     if (!QFile::copy(src, dest))
-        QMessageBox::warning(this, "Download Failed", "Could not save file to selected location.");
+        QMessageBox::warning(this, tr("Download Failed"), tr("Could not save file to selected location."));
     else
         LOG_INFO("FileManager", "Downloaded: " + f.original_name);
 }
@@ -410,7 +410,7 @@ void FileManagerScreen::delete_file(const QString& file_id) {
     auto f = FileManagerService::instance().find_by_id(file_id);
     if (f.id.isEmpty())
         return;
-    auto reply = QMessageBox::question(this, "Delete File",
+    auto reply = QMessageBox::question(this, tr("Delete File"),
                                        QString("Delete \"%1\"? This cannot be undone.").arg(f.original_name),
                                        QMessageBox::Yes | QMessageBox::No);
     if (reply == QMessageBox::Yes)
@@ -556,7 +556,7 @@ void FileManagerScreen::update_bulk_bar() {
             selected++;
     bulk_bar_->setVisible(selected > 0);
     if (selected > 0)
-        bulk_delete_btn_->setText(QString("DELETE %1 SELECTED").arg(selected));
+        bulk_delete_btn_->setText(tr("DELETE %1 SELECTED").arg(selected));
 }
 
 // ── Rendering ─────────────────────────────────────────────────────────────────
@@ -638,8 +638,8 @@ void FileManagerScreen::render_files() {
             skl->addWidget(hero_sub);
 
             auto* hero_hint =
-                new QLabel("Files are registered automatically when you export, save, or generate output\n"
-                           "from any screen. You can also upload files manually using the button above.");
+                new QLabel(tr("Files are registered automatically when you export, save, or generate output\n"
+                              "from any screen. You can also upload files manually using the button above."));
             hero_hint->setAlignment(Qt::AlignCenter);
             hero_hint->setWordWrap(true);
             hero_hint->setStyleSheet(
@@ -880,13 +880,13 @@ void FileManagerScreen::update_stats() {
         if (v.isObject())
             total_size += v.toObject()["size"].toInteger();
 
-    stats_label_->setText(QString("%1 files | %2").arg(files.size()).arg(format_size(total_size)));
+    stats_label_->setText(tr("%1 files | %2").arg(files.size()).arg(format_size(total_size)));
 
     // Quota bar
     if (quota_bar_ && quota_label_) {
         int pct = (int)(total_size * 1000 / kQuotaBytes);
         quota_bar_->setValue(qMin(pct, 1000));
-        quota_label_->setText(QString("Storage: %1 / 500 MB").arg(format_size(total_size)));
+        quota_label_->setText(tr("Storage: %1 / 500 MB").arg(format_size(total_size)));
         // Turn red if > 80%
         QString chunk_color = (pct > 800) ? colors::NEGATIVE() : colors::AMBER();
         quota_bar_->setStyleSheet(QString("QProgressBar{background:%1;border:none;border-radius:3px;}"

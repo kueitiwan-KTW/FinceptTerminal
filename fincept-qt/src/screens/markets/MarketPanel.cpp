@@ -57,9 +57,9 @@ void MarketPanel::build_ui() {
         return b;
     };
 
-    cols_btn_   = make_hdr_btn("[COLS]");
-    edit_btn_   = make_hdr_btn("[EDIT]");
-    delete_btn_ = make_hdr_btn("[DEL]");
+    cols_btn_   = make_hdr_btn(tr("[COLS]"));
+    edit_btn_   = make_hdr_btn(tr("[EDIT]"));
+    delete_btn_ = make_hdr_btn(tr("[DEL]"));
 
     hhl->addWidget(cols_btn_);
     hhl->addWidget(edit_btn_);
@@ -311,7 +311,7 @@ void MarketPanel::tick_loading_anim() {
     };
     constexpr int kCount = 10;
     loading_frame_ = (loading_frame_ + 1) % kCount;
-    loading_label_->setText(QString("  %1  LOADING").arg(kFrames[loading_frame_]));
+    loading_label_->setText(tr("  %1  LOADING").arg(kFrames[loading_frame_]));
 }
 
 void MarketPanel::show_data() {

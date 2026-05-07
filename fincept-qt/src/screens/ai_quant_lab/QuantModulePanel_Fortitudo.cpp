@@ -406,7 +406,7 @@ QWidget* QuantModulePanel::build_fortitudo_panel() {
     auto* ed_hl = new QSpinBox(ed);
     ed_hl->setRange(5, 1000);
     ed_hl->setValue(60);
-    ed_hl->setSuffix(" obs");
+    ed_hl->setSuffix(tr(" obs"));
     ed_hl->setStyleSheet(spinbox_ss());
     int_inputs_["ft_ed_half_life"] = ed_hl;
     edl->addWidget(build_input_row("Half-Life (observations)", ed_hl, ed));
@@ -493,7 +493,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
         const auto ops = d.value("ops_available").toArray();
         QStringList names;
         for (const auto& v : ops) names << v.toString();
-        auto* lbl = new QLabel(QString("Operations: %1").arg(names.join(", ")));
+        auto* lbl = new QLabel(tr("Operations: %1").arg(names.join(", ")));
         lbl->setWordWrap(true);
         lbl->setStyleSheet(QString("color:%1; font-size:10px; font-family:'Courier New';"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -555,7 +555,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
             results_layout_->addWidget(fort_weights_table(weights, this));
         }
 
-        status_label_->setText(QString("Sharpe %1  |  Ann. Ret %2%  |  Ann. Vol %3%  |  HHI %4")
+        status_label_->setText(tr("Sharpe %1  |  Ann. Ret %2%  |  Ann. Vol %3%  |  HHI %4")
                                    .arg(sharpe, 0, 'f', 3)
                                    .arg(ann_ret * 100, 0, 'f', 2)
                                    .arg(ann_vol * 100, 0, 'f', 2)
@@ -659,7 +659,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
             results_layout_->addWidget(ct);
         }
 
-        status_label_->setText(QString("%1 assets  |  %2 obs  |  avg ρ = %3")
+        status_label_->setText(tr("%1 assets  |  %2 obs  |  avg ρ = %3")
                                    .arg(d.value("n_assets").toInt())
                                    .arg(d.value("n_observations").toInt())
                                    .arg(avg_corr, 0, 'f', 4));
@@ -676,7 +676,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
         const double cvar = d.value("cvar").toDouble();
         const double hhi = d.value("concentration_hhi").toDouble();
 
-        auto* hdr = new QLabel(QString("OBJECTIVE: %1   |   LONG-ONLY: %2")
+        auto* hdr = new QLabel(tr("OBJECTIVE: %1   |   LONG-ONLY: %2")
                                    .arg(objective.toUpper().replace('_', ' '))
                                    .arg(d.value("long_only").toBool() ? "YES" : "NO"));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
@@ -733,7 +733,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
             results_layout_->addWidget(fort_weights_table(weights, this));
         }
 
-        status_label_->setText(QString("%1 — Sharpe %2  |  Ann. Ret %3%  |  Ann. Vol %4%")
+        status_label_->setText(tr("%1 — Sharpe %2  |  Ann. Ret %3%  |  Ann. Vol %4%")
                                    .arg(objective)
                                    .arg(sharpe, 0, 'f', 3)
                                    .arg(ann_ret * 100, 0, 'f', 2)
@@ -748,7 +748,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
         const int min_var_idx = d.value("min_var_index").toInt();
         const double best_sharpe = d.value("best_sharpe").toDouble();
 
-        auto* hdr = new QLabel(QString("FRONTIER: %1 POINTS  |  ASSETS: %2  |  LONG-ONLY: %3")
+        auto* hdr = new QLabel(tr("FRONTIER: %1 POINTS  |  ASSETS: %2  |  LONG-ONLY: %3")
                                    .arg(n).arg(d.value("n_assets").toInt())
                                    .arg(d.value("long_only").toBool() ? "YES" : "NO"));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
@@ -833,7 +833,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
                         o["weight_pct"] = o.value("weight").toDouble() * 100.0;
                         with_pct.append(o);
                     }
-                    auto* lbl = new QLabel(QString("MAX-SHARPE PORTFOLIO WEIGHTS  (★ Point #%1)")
+                    auto* lbl = new QLabel(tr("MAX-SHARPE PORTFOLIO WEIGHTS  (★ Point #%1)")
                                                .arg(max_sharpe_idx + 1));
                     lbl->setStyleSheet(QString("color:%1; font-size:10px; font-weight:700; padding:6px 0 0 2px;")
                                             .arg(ui::colors::POSITIVE()));
@@ -843,7 +843,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
             }
         }
 
-        status_label_->setText(QString("%1 frontier points  |  best Sharpe %2 @ point %3")
+        status_label_->setText(tr("%1 frontier points  |  best Sharpe %2 @ point %3")
                                    .arg(n).arg(best_sharpe, 0, 'f', 3).arg(max_sharpe_idx + 1));
         return;
     }
@@ -910,7 +910,7 @@ void QuantModulePanel::display_fortitudo_result(const QString& command, const QJ
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("Half-life %1 obs  |  ESS %2 (%3%%)  |  last/first %4×")
+        status_label_->setText(tr("Half-life %1 obs  |  ESS %2 (%3%%)  |  last/first %4×")
                                    .arg(hl).arg(ess, 0, 'f', 1).arg(ess_pct, 0, 'f', 1)
                                    .arg(ratio, 0, 'f', 1));
         return;

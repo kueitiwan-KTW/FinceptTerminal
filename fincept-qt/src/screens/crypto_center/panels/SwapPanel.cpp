@@ -135,10 +135,10 @@ void SwapPanel::build_ui() {
     auto* head_l = new QHBoxLayout(head);
     head_l->setContentsMargins(12, 0, 12, 0);
     head_l->setSpacing(8);
-    auto* title = new QLabel(QStringLiteral("SWAP"), head);
+    auto* title = new QLabel(tr("SWAP"), head);
     title->setObjectName(QStringLiteral("swapPanelTitle"));
     auto* head_status =
-        new QLabel(QStringLiteral("via PumpPortal · pool=auto"), head);
+        new QLabel(tr("via PumpPortal · pool=auto"), head);
     head_status->setObjectName(QStringLiteral("swapPanelHeadStatus"));
     head_l->addWidget(title);
     head_l->addStretch();
@@ -158,7 +158,7 @@ void SwapPanel::build_ui() {
 
         auto* col_l = new QVBoxLayout;
         col_l->setSpacing(2);
-        auto* cap = new QLabel(QStringLiteral("YOU PAY"), body);
+        auto* cap = new QLabel(tr("YOU PAY"), body);
         cap->setObjectName(QStringLiteral("swapPanelCaption"));
         col_l->addWidget(cap);
         amount_input_ = new QLineEdit(body);
@@ -173,7 +173,7 @@ void SwapPanel::build_ui() {
 
         auto* col_t = new QVBoxLayout;
         col_t->setSpacing(2);
-        auto* cap_t = new QLabel(QStringLiteral("FROM"), body);
+        auto* cap_t = new QLabel(tr("FROM"), body);
         cap_t->setObjectName(QStringLiteral("swapPanelCaption"));
         col_t->addWidget(cap_t);
         from_combo_ = new QComboBox(body);
@@ -202,7 +202,7 @@ void SwapPanel::build_ui() {
 
         auto* col_l = new QVBoxLayout;
         col_l->setSpacing(2);
-        auto* cap = new QLabel(QStringLiteral("YOU RECEIVE (EST.)"), body);
+        auto* cap = new QLabel(tr("YOU RECEIVE (EST.)"), body);
         cap->setObjectName(QStringLiteral("swapPanelCaption"));
         col_l->addWidget(cap);
         out_amount_label_ = new QLabel(QStringLiteral("—"), body);
@@ -213,7 +213,7 @@ void SwapPanel::build_ui() {
 
         auto* col_t = new QVBoxLayout;
         col_t->setSpacing(2);
-        auto* cap_t = new QLabel(QStringLiteral("TO"), body);
+        auto* cap_t = new QLabel(tr("TO"), body);
         cap_t->setObjectName(QStringLiteral("swapPanelCaption"));
         col_t->addWidget(cap_t);
         to_combo_ = new QComboBox(body);
@@ -245,9 +245,9 @@ void SwapPanel::build_ui() {
             row->addWidget(v);
             dl->addLayout(row);
         };
-        add_kv(QStringLiteral("ROUTE"), route_label_);
-        add_kv(QStringLiteral("PRICE IMPACT"), impact_label_);
-        add_kv(QStringLiteral("MAX SLIPPAGE"), slippage_label_);
+        add_kv(tr("ROUTE"), route_label_);
+        add_kv(tr("PRICE IMPACT"), impact_label_);
+        add_kv(tr("MAX SLIPPAGE"), slippage_label_);
         bl->addWidget(details);
     }
 
@@ -432,7 +432,7 @@ void SwapPanel::showEvent(QShowEvent* e) {
     }
     resubscribe_prices();
     slippage_label_->setText(format_bps(slippage_bps()));
-    route_label_->setText(QStringLiteral("PumpSwap (auto)"));
+    route_label_->setText(tr("PumpSwap (auto)"));
 }
 
 void SwapPanel::hideEvent(QHideEvent* e) {
@@ -675,7 +675,7 @@ void SwapPanel::recompute_estimate() {
     const double to_usd = price_usd_.value(to_mint_, 0.0);
 
     if (from_sol <= 0.0 || from_usd <= 0.0 || to_sol <= 0.0 || to_usd <= 0.0) {
-        out_amount_label_->setText(QStringLiteral("estimate unavailable"));
+        out_amount_label_->setText(tr("estimate unavailable"));
         status_label_->setText(tr("Waiting for spot prices…"));
         swap_button_->setEnabled(false);
         return;
@@ -693,7 +693,7 @@ void SwapPanel::recompute_estimate() {
                                  .arg(to_sym)
                                  .arg(format_token(est_usd, 2));
     out_amount_label_->setText(out_text);
-    route_label_->setText(QStringLiteral("PumpSwap (auto)"));
+    route_label_->setText(tr("PumpSwap (auto)"));
     impact_label_->setText(tr("set by PumpSwap; capped by slippage"));
     slippage_label_->setText(format_bps(slippage_bps()));
 
@@ -943,45 +943,45 @@ void SwapPanel::on_swap_clicked() {
 
             // ── Confirm dialog ──────────────────────────────────────────
             WalletActionSummary summary;
-            summary.title = QStringLiteral("SWAP");
+            summary.title = QObject::tr("SWAP");
             summary.lede = QObject::tr(
                 "Approve in your wallet to forward this transaction "
                 "to the network. The terminal does not hold any funds.");
-            summary.rows.append({QStringLiteral("ROUTE"),
-                                 QStringLiteral("PumpSwap (pool=auto)"), true});
+            summary.rows.append({QObject::tr("ROUTE"),
+                                 QObject::tr("PumpSwap (pool=auto)"), true});
             if (buying_fncpt) {
-                summary.rows.append({QStringLiteral("YOU PAY"),
+                summary.rows.append({QObject::tr("YOU PAY"),
                                      QStringLiteral("%1 SOL")
                                          .arg(format_token(ui_amount, 6)),
                                      true});
-                summary.rows.append({QStringLiteral("YOU RECEIVE"),
+                summary.rows.append({QObject::tr("YOU RECEIVE"),
                                      QObject::tr("≈ %1 $FNCPT (PumpSwap fills at execution)")
                                          .arg(format_token(est_out, 2)),
                                      true});
             } else {
-                summary.rows.append({QStringLiteral("YOU PAY"),
+                summary.rows.append({QObject::tr("YOU PAY"),
                                      QStringLiteral("%1 $FNCPT")
                                          .arg(format_token(ui_amount, 2)),
                                      true});
-                summary.rows.append({QStringLiteral("YOU RECEIVE"),
+                summary.rows.append({QObject::tr("YOU RECEIVE"),
                                      QObject::tr("≈ %1 SOL (PumpSwap fills at execution)")
                                          .arg(format_token(est_out, 6)),
                                      true});
             }
-            summary.rows.append({QStringLiteral("MAX SLIPPAGE"),
+            summary.rows.append({QObject::tr("MAX SLIPPAGE"),
                                  format_bps(slip_bps_for_display), true});
-            summary.rows.append({QStringLiteral("PRIORITY FEE"),
+            summary.rows.append({QObject::tr("PRIORITY FEE"),
                                  QStringLiteral("%1 SOL")
                                      .arg(format_token(kDefaultPriorityFeeSol, 6)),
                                  true});
-            summary.rows.append({QStringLiteral("RPC SIMULATION"),
-                                 QStringLiteral("OK · %1 CU")
+            summary.rows.append({QObject::tr("RPC SIMULATION"),
+                                 QObject::tr("OK · %1 CU")
                                      .arg(QString::number(sim.units_consumed)),
                                  true});
             summary.warnings.append(QObject::tr(
                 "PumpSwap will reject the trade if execution drifts more than "
                 "the slippage tolerance above. Your funds stay in your wallet."));
-            summary.primary_button_text = QStringLiteral("SWAP");
+            summary.primary_button_text = QObject::tr("SWAP");
             summary.primary_is_safe = true;
             summary.arm_delay_ms = 1500;
 

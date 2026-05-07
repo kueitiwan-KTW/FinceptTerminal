@@ -110,12 +110,12 @@ void CryptoTickerBar::update_data(double price, double change_pct, double high, 
 
     const double high_disp = round_pp(high);
     if (high_disp != last_high_display_) {
-        high_label_->setText(QString("H:%1").arg(high_disp, 0, 'f', 2));
+        high_label_->setText(tr("H:%1").arg(high_disp, 0, 'f', 2));
         last_high_display_ = high_disp;
     }
     const double low_disp = round_pp(low);
     if (low_disp != last_low_display_) {
-        low_label_->setText(QString("L:%1").arg(low_disp, 0, 'f', 2));
+        low_label_->setText(tr("L:%1").arg(low_disp, 0, 'f', 2));
         last_low_display_ = low_disp;
     }
 
@@ -149,15 +149,15 @@ void CryptoTickerBar::update_bid_ask(double bid, double ask, double spread) {
     const double a = round_pp(ask);
     const double s = round_pp(spread);
     if (b != last_bid_display_) {
-        bid_label_->setText(QString("B:%1").arg(b, 0, 'f', 2));
+        bid_label_->setText(tr("B:%1").arg(b, 0, 'f', 2));
         last_bid_display_ = b;
     }
     if (a != last_ask_display_) {
-        ask_label_->setText(QString("A:%1").arg(a, 0, 'f', 2));
+        ask_label_->setText(tr("A:%1").arg(a, 0, 'f', 2));
         last_ask_display_ = a;
     }
     if (s != last_spread_display_) {
-        spread_label_->setText(QString("S:%1").arg(s, 0, 'f', 2));
+        spread_label_->setText(tr("S:%1").arg(s, 0, 'f', 2));
         last_spread_display_ = s;
     }
 }
@@ -169,11 +169,11 @@ void CryptoTickerBar::update_mark_price(double mark_price, double index_price) {
         return;
     }
     if (mark_price > 0) {
-        mark_price_label_->setText(QString("Mk:%1").arg(mark_price, 0, 'f', 2));
+        mark_price_label_->setText(tr("Mk:%1").arg(mark_price, 0, 'f', 2));
         mark_price_label_->setVisible(true);
     }
     if (index_price > 0) {
-        index_price_label_->setText(QString("Idx:%1").arg(index_price, 0, 'f', 2));
+        index_price_label_->setText(tr("Idx:%1").arg(index_price, 0, 'f', 2));
         index_price_label_->setVisible(true);
     }
 }

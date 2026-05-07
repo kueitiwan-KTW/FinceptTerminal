@@ -211,8 +211,8 @@ QWidget* ParameterWidgetFactory::create(const ParamDef& param, const QJsonValue&
 
         // Hint showing allowed extensions
         if (!allowed_exts.isEmpty()) {
-            auto* hint = new QLabel("Accepted: " + allowed_exts.join(", ").toUpper() +
-                                    "  •  Or pick an already-imported file above");
+            auto* hint = new QLabel(tr("Accepted: ") + allowed_exts.join(", ").toUpper() +
+                                    tr("  •  Or pick an already-imported file above"));
             hint->setStyleSheet(
                 QString("color: %1; font-family: Consolas; font-size: 10px;").arg(ui::colors::TEXT_TERTIARY()));
             hint->setWordWrap(true);

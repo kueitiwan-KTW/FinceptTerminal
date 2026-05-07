@@ -466,7 +466,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const auto ops = d.value("ops_available").toArray();
         QStringList names;
         for (const auto& v : ops) names << v.toString();
-        auto* lbl = new QLabel(QString("Operations: %1").arg(names.join(", ")));
+        auto* lbl = new QLabel(tr("Operations: %1").arg(names.join(", ")));
         lbl->setWordWrap(true);
         lbl->setStyleSheet(QString("color:%1; font-size:10px; font-family:'Courier New';"
                                    "padding:8px 10px; background:%2; border:1px solid %3;")
@@ -486,7 +486,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const double dw = d.value("durbin_watson").toDouble();
         const double bp_p = d.value("breusch_pagan_p").toDouble();
 
-        auto* hdr = new QLabel(QString("OLS  |  %1 OBS  |  %2 FEATURES%3")
+        auto* hdr = new QLabel(tr("OLS  |  %1 OBS  |  %2 FEATURES%3")
                                    .arg(d.value("n_observations").toInt())
                                    .arg(d.value("n_features").toInt())
                                    .arg(d.value("has_constant").toBool() ? "  +  CONSTANT" : ""));
@@ -564,7 +564,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("R²=%1  Adj=%2  F=%3 (p=%4)")
+        status_label_->setText(tr("R²=%1  Adj=%2  F=%3 (p=%4)")
                                    .arg(r2, 0, 'f', 4).arg(adj, 0, 'f', 4)
                                    .arg(f_stat, 0, 'f', 2).arg(f_p, 0, 'g', 3));
         return;
@@ -586,7 +586,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const double first_fc = d.value("first_forecast").toDouble();
         const double last_fc = d.value("last_forecast").toDouble();
 
-        auto* hdr = new QLabel(QString("ARIMA(%1,%2,%3)  |  HORIZON %4 STEPS  |  %5 OBS")
+        auto* hdr = new QLabel(tr("ARIMA(%1,%2,%3)  |  HORIZON %4 STEPS  |  %5 OBS")
                                    .arg(p).arg(d_ord).arg(q).arg(horizon)
                                    .arg(d.value("n_observations").toInt()));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
@@ -658,7 +658,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
             results_layout_->addWidget(table);
         }
 
-        status_label_->setText(QString("ARIMA(%1,%2,%3) — AIC=%4  R²=%5  LB(10) p=%6")
+        status_label_->setText(tr("ARIMA(%1,%2,%3) — AIC=%4  R²=%5  LB(10) p=%6")
                                    .arg(p).arg(d_ord).arg(q)
                                    .arg(aic, 0, 'f', 1).arg(r2, 0, 'f', 3).arg(lb_p, 0, 'f', 3));
         return;
@@ -669,7 +669,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const QString verdict = d.value("verdict").toString();
         const int d_ord = d.value("differencing_order").toInt();
 
-        auto* hdr = new QLabel(QString("VERDICT:  %1   |   DIFFERENCING d = %2")
+        auto* hdr = new QLabel(tr("VERDICT:  %1   |   DIFFERENCING d = %2")
                                    .arg(verdict).arg(d_ord));
         const bool stationary = verdict.contains("STATIONARY") && !verdict.contains("NON-");
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
@@ -741,7 +741,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const int q_sug = d.value("suggested_arima_q").toInt();
         const double band = d.value("significance_band_95pct").toDouble();
 
-        auto* hdr = new QLabel(QString("LAGS %1  |  SIGNIFICANCE BAND ±%2  |  SUGGESTED ARIMA(p=%3, q=%4)")
+        auto* hdr = new QLabel(tr("LAGS %1  |  SIGNIFICANCE BAND ±%2  |  SUGGESTED ARIMA(p=%3, q=%4)")
                                    .arg(d.value("nlags").toInt())
                                    .arg(band, 0, 'f', 4).arg(p_sug).arg(q_sug));
         hdr->setStyleSheet(QString("color:%1; font-size:11px; font-family:'Courier New'; font-weight:700;"
@@ -787,7 +787,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
             }
             results_layout_->addWidget(table);
         }
-        status_label_->setText(QString("Suggested ARIMA(p=%1, q=%2)").arg(p_sug).arg(q_sug));
+        status_label_->setText(tr("Suggested ARIMA(p=%1, q=%2)").arg(p_sug).arg(q_sug));
         return;
     }
 
@@ -796,7 +796,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         const bool any_causal = d.value("x_causes_y_at_any_lag").toBool();
         const QJsonArray causal_lags = d.value("causal_lags").toArray();
 
-        auto* hdr = new QLabel(QString("MAX LAG TESTED: %1   |   %2")
+        auto* hdr = new QLabel(tr("MAX LAG TESTED: %1   |   %2")
                                    .arg(d.value("max_lag").toInt())
                                    .arg(d.value("interpretation").toString()));
         hdr->setWordWrap(true);
@@ -848,7 +848,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
                 cp->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
                 cp->setForeground(QColor(causal ? ui::colors::POSITIVE() : ui::colors::TEXT_TERTIARY()));
                 table->setItem(i, 4, cp);
-                auto* yn = new QTableWidgetItem(causal ? "YES" : "NO");
+                auto* yn = new QTableWidgetItem(causal ? tr("YES") : tr("NO"));
                 yn->setForeground(QColor(causal ? ui::colors::POSITIVE() : ui::colors::TEXT_TERTIARY()));
                 yn->setTextAlignment(Qt::AlignCenter);
                 table->setItem(i, 5, yn);
@@ -929,7 +929,7 @@ void QuantModulePanel::display_statsmodels_result(const QString& command, const 
         };
         results_layout_->addWidget(gs_card_row(norm, this));
 
-        status_label_->setText(QString("μ=%1  σ=%2  n=%3  JB p=%4")
+        status_label_->setText(tr("μ=%1  σ=%2  n=%3  JB p=%4")
                                    .arg(d.value("mean").toDouble(), 0, 'f', 3)
                                    .arg(d.value("std").toDouble(), 0, 'f', 3)
                                    .arg(d.value("n_observations").toInt())

@@ -461,9 +461,9 @@ QWidget* BacktestingScreen::build_center_panel() {
     summary_layout_->setSpacing(12);
 
     // Initial hint
-    auto* hint = new QLabel("Select a provider, command, and strategy, then click RUN to execute.\n\n"
-                            "Supported providers: VectorBT, Backtesting.py, FastTrade, Zipline, BT, Fincept\n"
-                            "Commands: Backtest, Optimize, Walk-Forward, Indicators, ML Labels, CV Splits, Returns");
+    auto* hint = new QLabel(tr("Select a provider, command, and strategy, then click RUN to execute.\n\n"
+                               "Supported providers: VectorBT, Backtesting.py, FastTrade, Zipline, BT, Fincept\n"
+                               "Commands: Backtest, Optimize, Walk-Forward, Indicators, ML Labels, CV Splits, Returns"));
     hint->setWordWrap(true);
     hint->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3; line-height:1.6;"
                                 "padding:20px; background:%4; border:1px solid %5;")
@@ -701,7 +701,7 @@ QWidget* BacktestingScreen::build_right_panel() {
         pos_sizing_combo_->addItem(m);
     vl->addWidget(pos_sizing_combo_);
 
-    allow_short_check_ = new QCheckBox("Allow Short Selling", content);
+    allow_short_check_ = new QCheckBox(tr("Allow Short Selling"), content);
     allow_short_check_->setStyleSheet(
         QString("QCheckBox { color:%1; font-family:%2; font-size:%3px; spacing:6px; }"
                 "QCheckBox::indicator { width:14px; height:14px; border:1px solid %4; background:%5; }"
@@ -1454,7 +1454,7 @@ void BacktestingScreen::display_result(const QJsonObject& payload) {
     // If result has a status/message, show it
     if (payload.contains("status")) {
         auto status = payload["status"].toString();
-        auto* status_lbl = new QLabel(QString("Status: %1").arg(status), summary_container_);
+        auto* status_lbl = new QLabel(tr("Status: %1").arg(status), summary_container_);
         status_lbl->setStyleSheet(QString("color:%1; font-size:%2px; font-family:%3; padding:8px;")
                                       .arg(status == "success" ? ui::colors::POSITIVE() : ui::colors::WARNING())
                                       .arg(ui::fonts::SMALL)

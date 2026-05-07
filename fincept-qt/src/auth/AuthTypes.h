@@ -331,11 +331,11 @@ struct ValidationResult {
 
 inline ValidationResult validate_email(const QString& email) {
     if (email.isEmpty())
-        return {false, "Email is required"};
+        return {false, "電子郵件為必填"};
     // Basic email regex
     QRegularExpression re("^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$");
     if (!re.match(email).hasMatch())
-        return {false, "Invalid email format"};
+        return {false, "電子郵件格式無效"};
     return {true, {}};
 }
 

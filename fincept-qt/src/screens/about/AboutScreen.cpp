@@ -260,15 +260,15 @@ AboutScreen::AboutScreen(QWidget* parent) : QWidget(parent) {
         bvl->setContentsMargins(14, 10, 14, 12);
         bvl->setSpacing(6);
 
-        auto* desc = new QLabel("\"Fincept\", \"Fincept Terminal\", and associated logos are trademarks of "
-                                "Fincept Corporation. Use of these marks requires explicit written permission.");
+        auto* desc = new QLabel(tr("\"Fincept\", \"Fincept Terminal\", and associated logos are trademarks of "
+                                   "Fincept Corporation. Use of these marks requires explicit written permission."));
         desc->setStyleSheet(BODY());
         desc->setWordWrap(true);
         bvl->addWidget(desc);
 
         auto* perm =
-            new QLabel("Permission is not granted to use Fincept trademarks in a way that suggests "
-                       "affiliation with or endorsement by Fincept Corporation without prior written consent.");
+            new QLabel(tr("Permission is not granted to use Fincept trademarks in a way that suggests "
+                          "affiliation with or endorsement by Fincept Corporation without prior written consent."));
         perm->setStyleSheet(MUTED());
         perm->setWordWrap(true);
         bvl->addWidget(perm);

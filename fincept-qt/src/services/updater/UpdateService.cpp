@@ -232,8 +232,8 @@ void UpdateService::on_manifest_reply_finished() {
 
     // Prompt the user. Include changelog if present. Always offer a "view release
     // notes" escape hatch via open-url so users can read more before installing.
-    QString prompt = QStringLiteral("A new version of Fincept Terminal is available.\n\n"
-                                    "Current version: %1\nLatest version:  %2\n\n")
+    QString prompt = tr("A new version of Fincept Terminal is available.\n\n"
+                        "Current version: %1\nLatest version:  %2\n\n")
                          .arg(local_version, remote_version);
     if (!changelog.isEmpty()) {
         QString snippet = changelog;
@@ -360,8 +360,8 @@ void UpdateService::on_download_reply_finished() {
         if (actual != pending_expected_sha256_) {
             LOG_ERROR("UpdateService",
                       QString("Sha256 mismatch — expected=%1, actual=%2").arg(pending_expected_sha256_, actual));
-            show_error(QStringLiteral("The downloaded installer failed integrity verification. "
-                                      "It may be corrupt or tampered with."));
+            show_error(tr("The downloaded installer failed integrity verification. "
+                          "It may be corrupt or tampered with."));
             QFile::remove(pending_local_path_);
             finish_check(true);
             return;
@@ -407,8 +407,8 @@ void UpdateService::launch_installer(const QString& path) {
         reveal_in_file_manager(path);
         QMessageBox::information(
             dialog_parent(), tr("Update Downloaded"),
-            QStringLiteral("The installer has been downloaded to:\n%1\n\n"
-                           "Please run it manually to complete the update.")
+            tr("The installer has been downloaded to:\n%1\n\n"
+               "Please run it manually to complete the update.")
                 .arg(QDir::toNativeSeparators(path)));
     }
 }

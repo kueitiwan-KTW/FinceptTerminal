@@ -90,7 +90,9 @@ QWidget* TeamsViewPanel::build_team_panel() {
     ml->setStyleSheet(QString("color:%1;font-size:10px;").arg(ui::colors::TEXT_SECONDARY()));
     vl->addWidget(ml);
     mode_combo_ = new QComboBox;
-    mode_combo_->addItems({"coordinate", "route", "collaborate"});
+    mode_combo_->addItem(tr("coordinate"), "coordinate");
+    mode_combo_->addItem(tr("route"), "route");
+    mode_combo_->addItem(tr("collaborate"), "collaborate");
     mode_combo_->setStyleSheet(QString("QComboBox{%1}QComboBox::drop-down{border:none;}").arg(kIn));
     vl->addWidget(mode_combo_);
 
@@ -109,7 +111,7 @@ QWidget* TeamsViewPanel::build_team_panel() {
     vl->addWidget(leader_combo_);
 
     // Show member responses
-    show_responses_check_ = new QCheckBox("Show member responses");
+    show_responses_check_ = new QCheckBox(tr("Show member responses"));
     show_responses_check_->setStyleSheet(QString("QCheckBox{color:%1;font-size:10px;}").arg(ui::colors::TEXT_PRIMARY()));
     vl->addWidget(show_responses_check_);
 
@@ -290,7 +292,7 @@ void TeamsViewPanel::setup_connections() {
         run_btn_->setText(tr("RUN TEAM"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
-            exec_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
+            exec_status_->setText(tr("Completed in %1ms").arg(r.execution_time_ms));
             exec_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
             log_display_->append(QString("[DONE] Team completed (%1ms)").arg(r.execution_time_ms));
         } else {
@@ -328,7 +330,7 @@ void TeamsViewPanel::setup_connections() {
         run_btn_->setText(tr("RUN TEAM"));
         if (r.success) {
             result_display_->setMarkdown(r.response);
-            exec_status_->setText(QString("Completed in %1ms").arg(r.execution_time_ms));
+            exec_status_->setText(tr("Completed in %1ms").arg(r.execution_time_ms));
             exec_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::POSITIVE()));
             log_display_->append(QString("[DONE] Team completed (%1ms)").arg(r.execution_time_ms));
         } else {
@@ -364,8 +366,10 @@ void TeamsViewPanel::setup_connections() {
         if (row >= 0 && row < all_agents_.size())
             add_to_team(all_agents_[row]);
     });
-    connect(mode_combo_, &QComboBox::currentTextChanged, this,
-            [this](const QString& mode) { mode_desc_label_->setText(kModeDescriptions.value(mode, "")); });
+    connect(mode_combo_, QOverload<int>::of(&QComboBox::currentIndexChanged), this, [this](int) {
+        const QString mode = mode_combo_->currentData().toString();
+        mode_desc_label_->setText(kModeDescriptions.value(mode, ""));
+    });
 }
 
 void TeamsViewPanel::populate_available_agents(const QVector<services::AgentInfo>& agents) {
@@ -490,7 +494,7 @@ void TeamsViewPanel::run_team() {
     exec_status_->setStyleSheet(QString("color:%1;font-size:10px;padding:2px 0;").arg(ui::colors::AMBER()));
     log_display_->append(QString("[START] Running team (%1 members, mode: %2)")
                              .arg(team_members_.size())
-                             .arg(mode_combo_->currentText()));
+                             .arg(mode_combo_->currentData().toString()));
 
     // Resolve coordinator profile
     const QString coord_profile_id = team_profile_combo_->currentData().toString();
@@ -516,7 +520,7 @@ void TeamsViewPanel::run_team() {
 
     QJsonObject tc;
     tc["name"] = "Custom Team";
-    tc["mode"] = mode_combo_->currentText();
+    tc["mode"] = mode_combo_->currentData().toString();
     tc["show_members_responses"] = show_responses_check_->isChecked();
     tc["leader_index"] = leader_combo_->currentIndex();
     tc["model"] = ai_chat::LlmService::profile_to_json(coord);

@@ -507,7 +507,7 @@ QWidget* MarketPulsePanel::build_mover_row(const QString& symbol, double change,
     hl->addWidget(chg);
 
     if (!volume.isEmpty()) {
-        auto* vol = new QLabel(QString("VOL: %1").arg(volume));
+        auto* vol = new QLabel(tr("VOL: %1").arg(volume));
         vol->setStyleSheet(
             QString("color: %1; font-size: 8px; background: transparent;").arg(ui::colors::TEXT_TERTIARY()));
         hl->addWidget(vol);
