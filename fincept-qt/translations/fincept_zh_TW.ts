@@ -17231,69 +17231,69 @@ X-API-Key: xyz</translation>
     <name>fincept::AiChatBubble</name>
     <message>
         <source>AI</source>
-        <translation type="obsolete">AI</translation>
+        <translation>AI</translation>
     </message>
     <message>
         <source>AI is thinking…</source>
-        <translation type="vanished">AI 思考中…</translation>
+        <translation>AI 思考中…</translation>
     </message>
     <message>
         <source>Ask anything…</source>
-        <translation type="vanished">詢問任何問題…</translation>
+        <translation>詢問任何問題…</translation>
     </message>
     <message>
         <source>Fincept AI</source>
-        <translation type="obsolete">Fincept AI</translation>
+        <translation>Fincept AI</translation>
     </message>
     <message>
         <source>How can I help you?</source>
-        <translation type="vanished">有什麼我可以幫您的嗎？</translation>
+        <translation>有什麼我可以幫您的嗎？</translation>
     </message>
     <message>
         <source>New conversation</source>
-        <translation type="vanished">新對話</translation>
+        <translation>新對話</translation>
     </message>
     <message>
         <source>Send  (Enter)</source>
-        <translation type="vanished">傳送 (Enter)</translation>
+        <translation>傳送 (Enter)</translation>
     </message>
     <message>
         <source>Session error — please restart.</source>
-        <translation type="vanished">工作階段錯誤 — 請重新啟動。</translation>
+        <translation>工作階段錯誤 — 請重新啟動。</translation>
     </message>
     <message>
         <source>Voice</source>
-        <translation type="vanished">語音</translation>
+        <translation>語音</translation>
     </message>
     <message>
         <source>Voice input</source>
-        <translation type="vanished">語音輸入</translation>
+        <translation>語音輸入</translation>
     </message>
     <message>
         <source>Voice mode active</source>
-        <translation type="vanished">語音模式啟用中</translation>
+        <translation>語音模式啟用中</translation>
     </message>
     <message>
         <source>Voice response skipped (TTS unavailable)</source>
-        <translation type="vanished">已略過語音回應（TTS 不可用）</translation>
+        <translation>已略過語音回應（TTS 不可用）</translation>
     </message>
     <message>
         <source>■ Stop</source>
-        <translation type="vanished">■ 停止</translation>
+        <translation>■ 停止</translation>
     </message>
     <message>
         <source>▶ AI speaking…</source>
-        <translation type="vanished">▶ AI 朗讀中…</translation>
+        <translation>▶ AI 朗讀中…</translation>
     </message>
     <message>
         <source>● Listening — speak now…</source>
-        <translation type="vanished">● 聆聽中 — 請說話…</translation>
+        <translation>● 聆聽中 — 請說話…</translation>
     </message>
     <message>
         <source>⚠ </source>
-        <translation type="obsolete">⚠ </translation>
+        <translation>⚠ </translation>
     </message>
-</context>
+<message><source>⚠ Voice responses unavailable — Qt TextToSpeech not installed. Input-only mode active.</source><translation>⚠ 語音回覆不可用 — 未安裝 Qt TextToSpeech。僅限輸入模式。</translation></message><message><source>⚠ No TTS engine found (install speech-dispatcher on Linux). Input-only mode active.</source><translation>⚠ 找不到 TTS 引擎（請在 Linux 上安裝 speech-dispatcher）。僅限輸入模式。</translation></message></context>
 <context>
     <name>fincept::DockScreenRouter</name>
     <message>
@@ -17583,59 +17583,59 @@ X-API-Key: xyz</translation>
     <name>fincept::chat_mode::ChatMessagePanel</name>
     <message>
         <source>0 / 4000</source>
-        <translation type="obsolete">0 / 4000</translation>
+        <translation>0 / 4000</translation>
     </message>
     <message>
         <source>0 credits</source>
-        <translation type="vanished">0 點數</translation>
+        <translation>0 點數</translation>
     </message>
     <message>
         <source>0 tokens</source>
-        <translation type="vanished">0 代幣</translation>
+        <translation>0 代幣</translation>
     </message>
     <message>
         <source>Agent</source>
-        <translation type="vanished">代理</translation>
+        <translation>代理</translation>
     </message>
     <message>
         <source>Ask anything... (Enter to send, Shift+Enter for new line)</source>
-        <translation type="vanished">詢問任何內容...（Enter 發送，Shift+Enter 換行）</translation>
+        <translation>詢問任何內容...（Enter 發送，Shift+Enter 換行）</translation>
     </message>
     <message>
         <source>FINCEPT AGENT</source>
-        <translation type="vanished">FINCEPT 代理</translation>
+        <translation>FINCEPT 代理</translation>
     </message>
     <message>
         <source>LITE</source>
-        <translation type="obsolete">LITE</translation>
+        <translation>LITE</translation>
     </message>
     <message>
         <source>New Conversation</source>
-        <translation type="vanished">新對話</translation>
+        <translation>新對話</translation>
     </message>
     <message>
         <source>Optimize</source>
-        <translation type="vanished">最佳化</translation>
+        <translation>最佳化</translation>
     </message>
     <message>
         <source>Optimize prompt with AI</source>
-        <translation type="vanished">使用 AI 最佳化 Prompt (提示)</translation>
+        <translation>使用 AI 最佳化 Prompt (提示)</translation>
     </message>
     <message>
         <source>Send</source>
-        <translation type="vanished">傳送</translation>
+        <translation>傳送</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">停止</translation>
+        <translation>停損</translation>
     </message>
     <message>
         <source>Toggle Lite / Deep mode</source>
-        <translation type="vanished">切換精簡/深度模式</translation>
+        <translation>切換精簡/深度模式</translation>
     </message>
     <message>
         <source>thinking...</source>
-        <translation type="vanished">思考中...</translation>
+        <translation>思考中...</translation>
     </message>
 </context>
 <context>
@@ -17705,23 +17705,23 @@ X-API-Key: xyz</translation>
     <name>fincept::chat_mode::ChatSessionPanel</name>
     <message>
         <source>CONVERSATIONS</source>
-        <translation type="vanished">對話</translation>
+        <translation>對話</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="vanished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <source>Switch to Terminal Mode (F9)</source>
-        <translation type="vanished">切換至終端模式 (F9)</translation>
+        <translation>切換至終端模式 (F9)</translation>
     </message>
     <message>
         <source>TERMINAL</source>
-        <translation type="obsolete">TERMINAL</translation>
+        <translation>TERMINAL</translation>
     </message>
 </context>
 <context>
@@ -17925,46 +17925,46 @@ X-API-Key: xyz</translation>
     <name>fincept::python::PythonWorker</name>
     <message>
         <source>worker restart cap reached</source>
-        <translation type="vanished">達到工人重啟上限</translation>
+        <translation>達到工人重啟上限</translation>
     </message>
     <message>
         <source>worker shutting down</source>
-        <translation type="vanished">Worker 關閉中</translation>
+        <translation>Worker 關閉中</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AIQuantLabScreen</name>
     <message>
         <source>AI QUANT LAB</source>
-        <translation type="vanished">AI 量化實驗室</translation>
+        <translation>AI 量化實驗室</translation>
     </message>
     <message>
         <source>ENGINE:</source>
-        <translation type="vanished">引擎：</translation>
+        <translation>引擎：</translation>
     </message>
     <message>
         <source>MODULE INFO</source>
-        <translation type="vanished">模組資訊</translation>
+        <translation>模組資訊</translation>
     </message>
     <message>
         <source>MODULES</source>
-        <translation type="vanished">模組</translation>
+        <translation>模組</translation>
     </message>
     <message>
         <source>PLATFORM STATS</source>
-        <translation type="vanished">平台統計</translation>
+        <translation>平台統計</translation>
     </message>
     <message>
         <source>QLIB + GS QUANT + PYTHON</source>
-        <translation type="vanished">Qlib + GS Quant + Python</translation>
+        <translation>Qlib + GS Quant + Python</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Script: </source>
-        <translation type="vanished">Script：</translation>
+        <translation>Script：</translation>
     </message>
 </context>
 <context>
@@ -18043,330 +18043,330 @@ X-API-Key: xyz</translation>
         <source>Schedule created — switch to Schedules tab to view</source>
         <translation type="vanished">已建立計劃 - 切換到「計劃」標籤以查看</translation>
     </message>
-</context>
+<message><source>Training ended without result</source><translation>訓練結束但沒有結果</translation></message></context>
 <context>
     <name>fincept::screens::ActivityTab</name>
     <message>
         <source>%1 of %2 events</source>
-        <translation type="vanished">%2 個事件中的 %1 個</translation>
+        <translation>%2 個事件中的 %1 個</translation>
     </message>
     <message>
         <source>ALL</source>
-        <translation type="vanished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>Activity fetch failed: %1</source>
-        <translation type="vanished">活動獲取失敗：%1</translation>
+        <translation>活動獲取失敗：%1</translation>
     </message>
     <message>
         <source>Connect a wallet to view activity.</source>
-        <translation type="vanished">連線 a 錢包 to 檢視 activity.</translation>
+        <translation>連線 a 錢包 to 檢視 activity.</translation>
     </message>
     <message>
         <source>No transactions yet.</source>
-        <translation type="vanished">尚無交易。</translation>
+        <translation>尚無交易。</translation>
     </message>
     <message>
         <source>OTHER</source>
-        <translation type="vanished">其它</translation>
+        <translation>其它</translation>
     </message>
     <message>
         <source>RECEIVE</source>
-        <translation type="vanished">接收</translation>
+        <translation>接收</translation>
     </message>
     <message>
         <source>SEND</source>
-        <translation type="vanished">傳送</translation>
+        <translation>傳送</translation>
     </message>
     <message>
         <source>SWAP</source>
-        <translation type="vanished">交換</translation>
+        <translation>交換</translation>
     </message>
-</context>
+<message><source>  ·  Add a Helius API key in Settings for parsed swap and transfer details.</source><translation>  ·  請在設定中新增 Helius API 金鑰，以取得已解析的交換與轉帳詳情。</translation></message></context>
 <context>
     <name>fincept::screens::AdbPanel</name>
     <message>
         <source>End year</source>
-        <translation type="vanished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
     <message>
         <source>Start year</source>
-        <translation type="vanished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AddWidgetDialog</name>
     <message>
         <source>ADD WIDGET</source>
-        <translation type="vanished">新增小工具</translation>
+        <translation>新增小工具</translation>
     </message>
     <message>
         <source>Add Widget</source>
-        <translation type="vanished">新增 Widget (小工具)</translation>
+        <translation>新增 Widget (小工具)</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Search widgets...</source>
-        <translation type="vanished">搜尋 Widget (小工具)...</translation>
+        <translation>搜尋 Widget (小工具)...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AgentChatPanel</name>
     <message>
         <source>AGENT CHAT</source>
-        <translation type="vanished">代理 對話</translation>
+        <translation>代理 對話</translation>
     </message>
     <message>
         <source>AGENT:</source>
-        <translation type="vanished">代理:</translation>
+        <translation>代理:</translation>
     </message>
     <message>
         <source>AUTO-ROUTE</source>
-        <translation type="vanished">自動路由</translation>
+        <translation>自動路由</translation>
     </message>
     <message>
         <source>Active LLM — configure in Settings &gt; LLM Configuration</source>
-        <translation type="vanished">目前使用的 LLM — 在設定 &gt; LLM 設定中配置</translation>
+        <translation>目前使用的 LLM — 在設定 &gt; LLM 設定中配置</translation>
     </message>
     <message>
         <source>Agent execution failed</source>
-        <translation type="vanished">Agent 執行失敗</translation>
+        <translation>Agent 執行失敗</translation>
     </message>
     <message>
         <source>Agent is thinking</source>
-        <translation type="vanished">Agent 思考中</translation>
+        <translation>Agent 思考中</translation>
     </message>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Default (global LLM)</source>
-        <translation type="vanished">預設 (global LLM)</translation>
+        <translation>預設 (global LLM)</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>How can I help you?</source>
-        <translation type="vanished">有什麼我可以幫您的嗎？</translation>
+        <translation>有什麼我可以幫您的嗎？</translation>
     </message>
     <message>
         <source>Message agent... (Shift+Enter for new line, Enter to send)</source>
-        <translation type="vanished">訊息代理程式...（Shift+Enter 換行，Enter 發送）</translation>
+        <translation>訊息代理程式...（Shift+Enter 換行，Enter 發送）</translation>
     </message>
     <message>
         <source>No LLM configured</source>
-        <translation type="vanished">尚未設定 LLM</translation>
+        <translation>尚未設定 LLM</translation>
     </message>
     <message>
         <source>No LLM provider configured — go to Settings &gt; LLM Configuration</source>
-        <translation type="vanished">尚未設定 LLM 供應商 — 前往設定 &gt; LLM 設定</translation>
+        <translation>尚未設定 LLM 供應商 — 前往設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <source>No model</source>
-        <translation type="vanished">無模型</translation>
+        <translation>無模型</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">無</translation>
+        <translation>無</translation>
     </message>
     <message>
         <source>PORTFOLIO:</source>
-        <translation type="vanished">投資組合:</translation>
+        <translation>投資組合:</translation>
     </message>
     <message>
         <source>Processing...</source>
-        <translation type="vanished">處理中...</translation>
+        <translation>處理中...</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Search agent...</source>
-        <translation type="vanished">搜尋 Agent...</translation>
+        <translation>搜尋 Agent...</translation>
     </message>
     <message>
         <source>Select a configured agent, or Default to use the global LLM.</source>
-        <translation type="vanished">選擇已配置的代理，或預設使用全域 LLM。</translation>
+        <translation>選擇已配置的代理，或預設使用全域 LLM。</translation>
     </message>
     <message>
         <source>Send</source>
-        <translation type="vanished">傳送</translation>
+        <translation>傳送</translation>
     </message>
     <message>
         <source>Streaming</source>
-        <translation type="vanished">串流中</translation>
+        <translation>串流</translation>
     </message>
     <message>
         <source>Streaming...</source>
-        <translation type="vanished">串流中...</translation>
+        <translation>串流中...</translation>
     </message>
     <message>
         <source>Unconfigured</source>
-        <translation type="vanished">未設定</translation>
+        <translation>未設定</translation>
     </message>
     <message>
         <source>When ON, the system picks the best agent for each query.</source>
-        <translation type="vanished">開啟時，系統會為每個查詢選擇最佳 Agent。</translation>
+        <translation>開啟時，系統會為每個查詢選擇最佳 Agent。</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AgentConfigScreen</name>
     <message>
         <source>AGENT STUDIO</source>
-        <translation type="vanished">代理 工作室</translation>
+        <translation>代理 工作室</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AgentsViewPanel</name>
     <message>
         <source>+ ADD TO TEAM</source>
-        <translation type="vanished">+ 新增至團隊</translation>
+        <translation>+ 新增至團隊</translation>
     </message>
     <message>
         <source>AGENTS</source>
-        <translation type="vanished">代理</translation>
+        <translation>代理</translation>
     </message>
     <message>
         <source>APPLY JSON</source>
-        <translation type="vanished">套用 JSON</translation>
+        <translation>套用 JSON</translation>
     </message>
     <message>
         <source>All Categories</source>
-        <translation type="vanished">All 分類</translation>
+        <translation>All 分類</translation>
     </message>
     <message>
         <source>Config deleted</source>
-        <translation type="vanished">設定已刪除</translation>
+        <translation>設定已刪除</translation>
     </message>
     <message>
         <source>Config saved</source>
-        <translation type="vanished">設定已儲存</translation>
+        <translation>設定已儲存</translation>
     </message>
     <message>
         <source>DELETE</source>
-        <translation type="obsolete">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <source>Default (Global)</source>
-        <translation type="vanished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <source>Enter a query to test this agent...</source>
-        <translation type="vanished">輸入查詢以測試此 Agent...</translation>
+        <translation>輸入查詢以測試此 Agent...</translation>
     </message>
     <message>
         <source>Executing...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="vanished">失敗</translation>
+        <translation>失敗</translation>
     </message>
     <message>
         <source>JSON EDITOR</source>
-        <translation type="vanished">JSON 編輯器</translation>
+        <translation>JSON 編輯器</translation>
     </message>
     <message>
         <source>No provider configured — go to Settings &gt; LLM Config</source>
-        <translation type="vanished">尚未設定供應商 — 前往設定 &gt; LLM 設定</translation>
+        <translation>尚未設定供應商 — 前往設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <source>Output:</source>
-        <translation type="vanished">輸出:</translation>
+        <translation>輸出:</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>RESULT</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>RUN AGENT</source>
-        <translation type="vanished">執行 AGENT</translation>
+        <translation>執行 AGENT</translation>
     </message>
     <message>
         <source>RUNNING...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>SAVE CONFIG</source>
-        <translation type="vanished">儲存 設定</translation>
+        <translation>儲存 設定</translation>
     </message>
     <message>
         <source>Select an agent</source>
-        <translation type="vanished">選擇an agent</translation>
+        <translation>選擇an agent</translation>
     </message>
     <message>
         <source>System prompt / instructions...</source>
-        <translation type="vanished">系統提示/說明...</translation>
+        <translation>系統提示/說明...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AiChatScreen</name>
     <message>
         <source>AI</source>
-        <translation type="obsolete">AI</translation>
+        <translation>AI</translation>
     </message>
     <message>
         <source>AI is thinking</source>
-        <translation type="vanished">AI 思考中</translation>
+        <translation>AI 思考中</translation>
     </message>
     <message>
         <source>Active LLM Provider</source>
-        <translation type="vanished">目前的 LLM 提供者</translation>
+        <translation>目前的 LLM 提供者</translation>
     </message>
     <message>
         <source>Active Model — change in Settings &gt; LLM Configuration</source>
-        <translation type="vanished">目前模型 — 在設定 &gt; LLM 設定中變更</translation>
+        <translation>目前模型 — 在設定 &gt; LLM 設定中變更</translation>
     </message>
     <message>
         <source>Active model — change in Settings &gt; LLM Configuration</source>
-        <translation type="vanished">目前模型 — 在設定 &gt; LLM 設定中變更</translation>
+        <translation>目前模型 — 在設定 &gt; LLM 設定中變更</translation>
     </message>
     <message>
         <source>Attach a file to this message</source>
-        <translation type="vanished">附加檔案到此訊息</translation>
+        <translation>附加檔案到此訊息</translation>
     </message>
     <message>
         <source>Calling tool...</source>
-        <translation type="vanished">呼叫工具中...</translation>
+        <translation>呼叫工具中...</translation>
     </message>
     <message>
         <source>Configure in Settings</source>
-        <translation type="vanished">在設定中配置</translation>
+        <translation>在設定中配置</translation>
     </message>
     <message>
         <source>Copied!</source>
-        <translation type="vanished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">刪除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Fincept AI</source>
-        <translation type="obsolete">Fincept AI</translation>
+        <translation>Fincept AI</translation>
     </message>
     <message>
         <source>Fincept LLM</source>
-        <translation type="vanished">Fincept 大語言模型</translation>
+        <translation>Fincept 大語言模型</translation>
     </message>
     <message>
         <source>Fincept managed AI service\n\nChange in Settings &gt; LLM Configuration</source>
@@ -18376,153 +18376,157 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>How can I help you?</source>
-        <translation type="vanished">有什麼我可以幫您的嗎？</translation>
+        <translation>有什麼我可以幫您的嗎？</translation>
     </message>
     <message>
         <source>Message Fincept AI...</source>
-        <translation type="vanished">向 Fincept AI 提問...</translation>
+        <translation>向 Fincept AI 提問...</translation>
     </message>
     <message>
         <source>New Chat  (Ctrl+N)</source>
-        <translation type="vanished">新對話 (Ctrl+N)</translation>
+        <translation>新對話 (Ctrl+N)</translation>
     </message>
     <message>
         <source>New Conversation</source>
-        <translation type="vanished">新對話</translation>
+        <translation>新對話</translation>
     </message>
     <message>
         <source>No model</source>
-        <translation type="vanished">無模型</translation>
+        <translation>無模型</translation>
     </message>
     <message>
         <source>No provider</source>
-        <translation type="vanished">無提供者</translation>
+        <translation>無提供者</translation>
     </message>
     <message>
         <source>Provider: </source>
-        <translation type="vanished">提供者：</translation>
+        <translation>提供者：</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation type="vanished">重新命名</translation>
+        <translation>重新命名</translation>
     </message>
     <message>
         <source>Search sessions...</source>
-        <translation type="vanished">搜尋工作階段...</translation>
+        <translation>搜尋工作階段...</translation>
     </message>
     <message>
         <source>Send  ↑</source>
-        <translation type="vanished">送出 ↑</translation>
+        <translation>送出 ↑</translation>
     </message>
     <message>
         <source>⊕ </source>
-        <translation type="obsolete">⊕ </translation>
+        <translation>⊕ </translation>
     </message>
-</context>
+<message><source>Fincept managed AI service
+
+Change in Settings &gt; LLM Configuration</source><translation>Fincept 代管 AI 服務
+
+可在設定 &gt; LLM 設定中變更</translation></message></context>
 <context>
     <name>fincept::screens::AkShareChinaPanel</name>
     <message>
         <source>Data from China National Bureau of Statistics via AkShare</source>
-        <translation type="vanished">數據來自中國國家統計局 AkShare</translation>
+        <translation>數據來自中國國家統計局 AkShare</translation>
     </message>
     <message>
         <source>SERIES</source>
-        <translation type="vanished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::AkShareScreen</name>
     <message>
         <source>0 endpoints</source>
-        <translation type="vanished">0 個端點</translation>
+        <translation>0 個端點</translation>
     </message>
     <message>
         <source>1000+ CHINESE &amp; GLOBAL FINANCIAL DATA ENDPOINTS</source>
-        <translation type="vanished">1000+ 中國與全球金融資料端點</translation>
+        <translation>1000+ 中國與全球金融資料端點</translation>
     </message>
     <message>
         <source>AKSHARE DATA</source>
-        <translation type="vanished">AKSHARE 資料</translation>
+        <translation>AKSHARE 資料</translation>
     </message>
     <message>
         <source>AKSHARE DATA EXPLORER</source>
-        <translation type="vanished">AKSHARE 資料瀏覽器</translation>
+        <translation>AKSHARE 資料瀏覽器</translation>
     </message>
     <message>
         <source>END</source>
-        <translation type="vanished">結束</translation>
+        <translation>結束</translation>
     </message>
     <message>
         <source>EXECUTE</source>
-        <translation type="vanished">執行</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>FREE API</source>
-        <translation type="vanished">免費 API</translation>
+        <translation>免費 API</translation>
     </message>
     <message>
         <source>Failed to load endpoints</source>
-        <translation type="vanished">載入 endpoints 失敗</translation>
+        <translation>載入 endpoints 失敗</translation>
     </message>
     <message>
         <source>JSON</source>
-        <translation type="obsolete">JSON</translation>
+        <translation>JSON</translation>
     </message>
     <message>
         <source>Loading endpoints...</source>
-        <translation type="vanished">載入 endpoints 中...</translation>
+        <translation>載入 endpoints 中...</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>No data returned</source>
-        <translation type="vanished">沒有回傳資料</translation>
+        <translation>沒有回傳資料</translation>
     </message>
     <message>
         <source>PERIOD</source>
-        <translation type="vanished">期間</translation>
+        <translation>期間</translation>
     </message>
     <message>
         <source>Querying </source>
-        <translation type="vanished">查詢中 </translation>
+        <translation>查詢中 </translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>SOURCE: </source>
-        <translation type="vanished">SOURCE:</translation>
+        <translation>SOURCE:</translation>
     </message>
     <message>
         <source>SOURCE: --</source>
-        <translation type="vanished">來源: --</translation>
+        <translation>來源: --</translation>
     </message>
     <message>
         <source>START</source>
-        <translation type="vanished">開始</translation>
+        <translation>開始</translation>
     </message>
     <message>
         <source>SYMBOL</source>
-        <translation type="vanished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <source>Search endpoints...</source>
-        <translation type="vanished">搜尋 endpoints...</translation>
+        <translation>搜尋 endpoints...</translation>
     </message>
     <message>
         <source>Select a data source above\nto load available endpoints</source>
@@ -18530,13 +18534,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Select an endpoint</source>
-        <translation type="vanished">選擇 endpoint</translation>
+        <translation>選擇 endpoint</translation>
     </message>
     <message>
         <source>YYYY-MM-DD</source>
-        <translation type="obsolete">YYYY-MM-DD</translation>
+        <translation>YYYY-MM-DD</translation>
     </message>
-</context>
+<message><source>Select a data source above
+to load available endpoints</source><translation>請在上方選擇資料來源
+以載入可用端點</translation></message></context>
 <context>
     <name>fincept::screens::AlgoTradingService</name>
     <message>
@@ -18564,121 +18570,131 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::AlphaArenaScreen</name>
     <message>
         <source>AI MODELS (select 2+)</source>
-        <translation type="vanished">AI 模型 (select 2+)</translation>
+        <translation>AI 模型 (select 2+)</translation>
     </message>
     <message>
         <source>ALPHA ARENA</source>
-        <translation type="vanished">ALPHA 競技場</translation>
+        <translation>ALPHA 競技場</translation>
     </message>
     <message>
         <source>AUTO RUN</source>
-        <translation type="vanished">自動執行</translation>
+        <translation>自動執行</translation>
     </message>
     <message>
         <source>COMP: </source>
-        <translation type="vanished">COMP:</translation>
+        <translation>COMP:</translation>
     </message>
     <message>
         <source>COMPETITION NAME</source>
-        <translation type="vanished">競賽名稱</translation>
+        <translation>競賽名稱</translation>
     </message>
     <message>
         <source>CREATE COMPETITION</source>
-        <translation type="vanished">建立競賽</translation>
+        <translation>建立競賽</translation>
     </message>
     <message>
         <source>CREATED</source>
-        <translation type="obsolete">CREATED</translation>
+        <translation>CREATED</translation>
     </message>
     <message>
         <source>CYCLE </source>
-        <translation type="obsolete">CYCLE </translation>
+        <translation>CYCLE </translation>
     </message>
     <message>
         <source>CYCLE 0</source>
-        <translation type="vanished">週期 0</translation>
+        <translation>週期 0</translation>
     </message>
     <message>
         <source>Cycle </source>
-        <translation type="obsolete">Cycle </translation>
+        <translation>Cycle </translation>
     </message>
     <message>
         <source>Cycle 0</source>
-        <translation type="vanished">週期 0</translation>
+        <translation>週期 0</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>HISTORY</source>
-        <translation type="vanished">歷史</translation>
+        <translation>歷史</translation>
     </message>
     <message>
         <source>INITIAL CAPITAL ($)</source>
-        <translation type="vanished">初始資本（$）</translation>
+        <translation>初始資本（$）</translation>
     </message>
     <message>
         <source>INTERVAL (sec)</source>
-        <translation type="vanished">時間間隔 (sec)</translation>
+        <translation>時間間隔 (sec)</translation>
     </message>
     <message>
         <source>INTERVAL: </source>
-        <translation type="vanished">INTERVAL:</translation>
+        <translation>INTERVAL:</translation>
     </message>
     <message>
         <source>INTERVAL: 150s</source>
-        <translation type="vanished">間隔: 150s</translation>
+        <translation>間隔: 150s</translation>
     </message>
     <message>
         <source>LEADERBOARD</source>
-        <translation type="vanished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
     <message>
         <source>MODE</source>
-        <translation type="vanished">模式</translation>
+        <translation>模式</translation>
     </message>
     <message>
         <source>NO COMPETITION</source>
-        <translation type="vanished">無競賽</translation>
+        <translation>無競賽</translation>
     </message>
     <message>
         <source>PAST COMPETITIONS</source>
-        <translation type="vanished">過去競賽</translation>
+        <translation>過去競賽</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>RESET</source>
-        <translation type="vanished">重設</translation>
+        <translation>重設</translation>
     </message>
     <message>
         <source>RUN CYCLE</source>
-        <translation type="vanished">執行 CYCLE</translation>
+        <translation>執行 CYCLE</translation>
     </message>
     <message>
         <source>RUNNING</source>
-        <translation type="vanished">執行中</translation>
+        <translation>執行中</translation>
     </message>
     <message>
         <source>SYMBOL</source>
-        <translation type="vanished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <source>Select at least 2 models</source>
-        <translation type="vanished">請至少選擇 2 個模型</translation>
+        <translation>請至少選擇 2 個模型</translation>
     </message>
     <message>
         <source>TYPE</source>
-        <translation type="vanished">類型</translation>
+        <translation>類型</translation>
     </message>
-</context>
+<message><source>Human-in-the-loop approvals will appear here.
+High-risk trades require manual approval before execution.</source><translation>人工審核核准將顯示於此。
+高風險交易在執行前需要手動核准。</translation></message><message><source>Market sentiment analysis will appear here.
+Mood: RISK_ON / RISK_OFF / MIXED</source><translation>市場情緒分析將顯示於此。
+情緒：風險偏好 / 風險規避 / 混合</translation></message><message><source>Grid trading strategy configuration.
+Place buy/sell orders at regular price intervals.</source><translation>網格交易策略設定。
+以固定價格間隔放置買賣訂單。</translation></message><message><source>SEC filings and company research.
+Search by ticker to load 10-K, 10-Q, 8-K filings.</source><translation>SEC 申報與公司研究。
+依股票代號搜尋以載入 10-K、10-Q、8-K 申報文件。</translation></message><message><source>Broker selection and configuration.
+Supported: Kraken, Binance, Coinbase, and more.</source><translation>券商選擇與設定。
+支援：Kraken、Binance、Coinbase 等。</translation></message></context>
 <context>
     <name>fincept::screens::AltInvestmentsScreen</name>
     <message>
@@ -18687,455 +18703,455 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>ALTERNATIVE INVESTMENTS</source>
-        <translation type="vanished">另類 投資</translation>
+        <translation>另類 投資</translation>
     </message>
     <message>
         <source>ANALYSIS RESULTS</source>
-        <translation type="vanished">分析 結果</translation>
+        <translation>分析 結果</translation>
     </message>
     <message>
         <source>ANALYZE</source>
-        <translation type="vanished">分析</translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>ANALYZER</source>
-        <translation type="vanished">分析工具</translation>
+        <translation>分析工具</translation>
     </message>
     <message>
         <source>ANALYZING...</source>
-        <translation type="vanished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <source>ASSET CLASSES</source>
-        <translation type="vanished">資產類別</translation>
+        <translation>資產類別</translation>
     </message>
     <message>
         <source>AWAITING ANALYSIS</source>
-        <translation type="vanished">AWAITING 分析</translation>
+        <translation>AWAITING 分析</translation>
     </message>
     <message>
         <source>CATEGORY: </source>
-        <translation type="vanished">CATEGORY:</translation>
+        <translation>CATEGORY:</translation>
     </message>
     <message>
         <source>ERROR</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>INPUT PARAMETERS</source>
-        <translation type="vanished">輸入參數</translation>
+        <translation>輸入參數</translation>
     </message>
     <message>
         <source>PYTHON ANALYTICS ENGINE</source>
-        <translation type="vanished">Python ANALYTICS 引擎</translation>
+        <translation>Python ANALYTICS 引擎</translation>
     </message>
-</context>
+<message><source>27 ANALYZERS  �  10 ASSET CLASSES  �  MULTI-ASSET ANALYTICS</source><translation>27 個分析器  �  10 種資產類別  �  多資產分析</translation></message></context>
 <context>
     <name>fincept::screens::AsiaMarketsScreen</name>
     <message>
         <source>0 endpoints</source>
-        <translation type="vanished">0 個端點</translation>
+        <translation>0 個端點</translation>
     </message>
     <message>
         <source>407+ STOCK ENDPOINTS | CN A/B, HK, US, TW</source>
-        <translation type="vanished">407+ 股票 端點 | CN A/B, HK, US, TW</translation>
+        <translation>407+ 股票 端點 | CN A/B, HK, US, TW</translation>
     </message>
     <message>
         <source>ASIA MARKETS</source>
-        <translation type="vanished">亞洲市場</translation>
+        <translation>亞洲市場</translation>
     </message>
     <message>
         <source>ASIA MARKETS TERMINAL</source>
-        <translation type="vanished">亞洲市場終端</translation>
+        <translation>亞洲市場終端</translation>
     </message>
     <message>
         <source>CATEGORY: </source>
-        <translation type="vanished">CATEGORY:</translation>
+        <translation>CATEGORY:</translation>
     </message>
     <message>
         <source>CATEGORY: REALTIME</source>
-        <translation type="vanished">分類: 即時</translation>
+        <translation>分類: 即時</translation>
     </message>
     <message>
         <source>EXECUTE</source>
-        <translation type="vanished">執行</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>Failed to load endpoints</source>
-        <translation type="vanished">載入 endpoints 失敗</translation>
+        <translation>載入 endpoints 失敗</translation>
     </message>
     <message>
         <source>JSON</source>
-        <translation type="obsolete">JSON</translation>
+        <translation>JSON</translation>
     </message>
     <message>
         <source>Loading endpoints...</source>
-        <translation type="vanished">載入 endpoints 中...</translation>
+        <translation>載入 endpoints 中...</translation>
     </message>
     <message>
         <source>No data returned</source>
-        <translation type="vanished">沒有回傳資料</translation>
+        <translation>沒有回傳資料</translation>
     </message>
     <message>
         <source>Querying </source>
-        <translation type="vanished">查詢中 </translation>
+        <translation>查詢中 </translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>REGION: </source>
-        <translation type="vanished">REGION:</translation>
+        <translation>REGION:</translation>
     </message>
     <message>
         <source>REGION: CN_A</source>
-        <translation type="vanished">地區: 中國 A 股</translation>
+        <translation>地區: 中國 A 股</translation>
     </message>
     <message>
         <source>SYMBOL</source>
-        <translation type="vanished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <source>Search endpoints...</source>
-        <translation type="vanished">搜尋 endpoints...</translation>
+        <translation>搜尋 endpoints...</translation>
     </message>
     <message>
         <source>Select a category to begin</source>
-        <translation type="vanished">選擇一個類別開始</translation>
+        <translation>選擇一個類別開始</translation>
     </message>
     <message>
         <source>Select an endpoint</source>
-        <translation type="vanished">選擇 endpoint</translation>
+        <translation>選擇 endpoint</translation>
     </message>
     <message>
         <source>e.g. 000001</source>
-        <translation type="vanished">例如：000001</translation>
+        <translation>例如：000001</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::BacktestingScreen</name>
     <message>
         <source>ADVANCED</source>
-        <translation type="vanished">進階</translation>
+        <translation>進階</translation>
     </message>
     <message>
         <source>ANALYSIS TYPE</source>
-        <translation type="vanished">分析 類型</translation>
+        <translation>分析 類型</translation>
     </message>
     <message>
         <source>BACKTEST RESULTS</source>
-        <translation type="vanished">回測結果</translation>
+        <translation>回測結果</translation>
     </message>
     <message>
         <source>BACKTESTING</source>
-        <translation type="vanished">回測</translation>
+        <translation>回測</translation>
     </message>
     <message>
         <source>BENCHMARK</source>
-        <translation type="vanished">基準</translation>
+        <translation>基準</translation>
     </message>
     <message>
         <source>CATEGORY</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>COMMANDS</source>
-        <translation type="obsolete">COMMANDS</translation>
+        <translation>COMMANDS</translation>
     </message>
     <message>
         <source>COMMISSION (%)</source>
-        <translation type="vanished">佣金 (%)</translation>
+        <translation>佣金 (%)</translation>
     </message>
     <message>
         <source>CV SPLITS</source>
-        <translation type="vanished">交叉驗證分割</translation>
+        <translation>交叉驗證分割</translation>
     </message>
     <message>
         <source>END</source>
-        <translation type="vanished">結束</translation>
+        <translation>結束</translation>
     </message>
     <message>
         <source>EXECUTION</source>
-        <translation type="obsolete">EXECUTION</translation>
+        <translation>EXECUTION</translation>
     </message>
     <message>
         <source>EXPORT JSON</source>
-        <translation type="vanished">匯出 JSON</translation>
+        <translation>匯出 JSON</translation>
     </message>
     <message>
         <source>GENERATOR TYPE</source>
-        <translation type="vanished">產生器類型</translation>
+        <translation>產生器類型</translation>
     </message>
     <message>
         <source>HORIZON</source>
-        <translation type="obsolete">HORIZON</translation>
+        <translation>HORIZON</translation>
     </message>
     <message>
         <source>INDICATOR</source>
-        <translation type="obsolete">INDICATOR</translation>
+        <translation>INDICATOR</translation>
     </message>
     <message>
         <source>INDICATOR SIGNALS</source>
-        <translation type="vanished">指標訊號</translation>
+        <translation>指標訊號</translation>
     </message>
     <message>
         <source>INDICATOR TYPE</source>
-        <translation type="vanished">指標類型</translation>
+        <translation>指標類型</translation>
     </message>
     <message>
         <source>INITIAL CAPITAL ($)</source>
-        <translation type="vanished">初始資本（$）</translation>
+        <translation>初始資本（$）</translation>
     </message>
     <message>
         <source>LABEL TYPE</source>
-        <translation type="vanished">標籤類型</translation>
+        <translation>標籤類型</translation>
     </message>
     <message>
         <source>LEVERAGE</source>
-        <translation type="vanished">槓桿</translation>
+        <translation>槓桿</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>MARKET DATA</source>
-        <translation type="vanished">市場資料</translation>
+        <translation>市場資料</translation>
     </message>
     <message>
         <source>MAX ITERATIONS</source>
-        <translation type="vanished">最大迭代次數</translation>
+        <translation>最大迭代次數</translation>
     </message>
     <message>
         <source>METHOD</source>
-        <translation type="obsolete">METHOD</translation>
+        <translation>METHOD</translation>
     </message>
     <message>
         <source>METRICS</source>
-        <translation type="obsolete">METRICS</translation>
+        <translation>METRICS</translation>
     </message>
     <message>
         <source>ML LABELS</source>
-        <translation type="vanished">ML 標籤</translation>
+        <translation>ML 標籤</translation>
     </message>
     <message>
         <source>NUMBER OF SPLITS</source>
-        <translation type="vanished">分割數量</translation>
+        <translation>分割數量</translation>
     </message>
     <message>
         <source>OBJECTIVE</source>
-        <translation type="obsolete">OBJECTIVE</translation>
+        <translation>OBJECTIVE</translation>
     </message>
     <message>
         <source>OPTIMIZATION</source>
-        <translation type="obsolete">OPTIMIZATION</translation>
+        <translation>OPTIMIZATION</translation>
     </message>
     <message>
         <source>PARAMETERS</source>
-        <translation type="vanished">參數</translation>
+        <translation>參數</translation>
     </message>
     <message>
         <source>POSITION SIZING</source>
-        <translation type="vanished">部位大小</translation>
+        <translation>部位大小</translation>
     </message>
     <message>
         <source>PROVIDERS:</source>
-        <translation type="vanished">供應商：</translation>
+        <translation>供應商：</translation>
     </message>
     <message>
         <source>RAW JSON</source>
-        <translation type="vanished">原始 JSON</translation>
+        <translation>原始 JSON</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>RESULTS</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>RETURNS ANALYSIS</source>
-        <translation type="vanished">報酬分析</translation>
+        <translation>報酬分析</translation>
     </message>
     <message>
         <source>ROLLING WINDOW</source>
-        <translation type="vanished">滾動窗口</translation>
+        <translation>滾動窗口</translation>
     </message>
     <message>
         <source>RUN</source>
-        <translation type="obsolete">RUN</translation>
+        <translation>RUN</translation>
     </message>
     <message>
         <source>SIGNAL GENERATORS</source>
-        <translation type="vanished">訊號產生器</translation>
+        <translation>訊號產生器</translation>
     </message>
     <message>
         <source>SIGNAL MODE</source>
-        <translation type="vanished">訊號模式</translation>
+        <translation>訊號模式</translation>
     </message>
     <message>
         <source>SLIPPAGE (%)</source>
-        <translation type="vanished">滑價 (%)</translation>
+        <translation>滑價 (%)</translation>
     </message>
     <message>
         <source>SPLITTER TYPE</source>
-        <translation type="vanished">分割器類型</translation>
+        <translation>分割器類型</translation>
     </message>
     <message>
         <source>SPY,AAPL,MSFT</source>
-        <translation type="obsolete">SPY,AAPL,MSFT</translation>
+        <translation>SPY,AAPL,MSFT</translation>
     </message>
     <message>
         <source>START</source>
-        <translation type="vanished">開始</translation>
+        <translation>開始</translation>
     </message>
     <message>
         <source>STEP SIZE</source>
-        <translation type="vanished">步長</translation>
+        <translation>步長</translation>
     </message>
     <message>
         <source>STOP LOSS (%)</source>
-        <translation type="vanished">停損 (%)</translation>
+        <translation>停損 (%)</translation>
     </message>
     <message>
         <source>STRATEGIES:</source>
-        <translation type="vanished">策略：</translation>
+        <translation>策略：</translation>
     </message>
     <message>
         <source>STRATEGY</source>
-        <translation type="obsolete">STRATEGY</translation>
+        <translation>STRATEGY</translation>
     </message>
     <message>
         <source>SUMMARY</source>
-        <translation type="vanished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <source>SYMBOLS</source>
-        <translation type="obsolete">SYMBOLS</translation>
+        <translation>SYMBOLS</translation>
     </message>
     <message>
         <source>TAKE PROFIT (%)</source>
-        <translation type="vanished">停利 (%)</translation>
+        <translation>停利 (%)</translation>
     </message>
     <message>
         <source>THRESHOLD</source>
-        <translation type="obsolete">THRESHOLD</translation>
+        <translation>THRESHOLD</translation>
     </message>
     <message>
         <source>TRADES</source>
-        <translation type="obsolete">TRADES</translation>
+        <translation>TRADES</translation>
     </message>
     <message>
         <source>TRAIN RATIO</source>
-        <translation type="vanished">訓練比例</translation>
+        <translation>訓練比例</translation>
     </message>
     <message>
         <source>WALK-FORWARD</source>
-        <translation type="obsolete">WALK-FORWARD</translation>
+        <translation>WALK-FORWARD</translation>
     </message>
     <message>
         <source>WINDOW LENGTH</source>
-        <translation type="vanished">窗口長度</translation>
+        <translation>窗口長度</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::BcbPanel</name>
     <message>
         <source>SERIES</source>
-        <translation type="vanished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::BeaPanel</name>
     <message>
         <source>CATEGORY</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>End year</source>
-        <translation type="vanished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
     <message>
         <source>Filter indicators…</source>
-        <translation type="vanished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <source>Requires BEA_API_KEY</source>
-        <translation type="vanished">需要 BEA_API_KEY</translation>
+        <translation>需要 BEA_API_KEY</translation>
     </message>
     <message>
         <source>Start year</source>
-        <translation type="vanished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::BisPanel</name>
     <message>
         <source>Country code</source>
-        <translation type="vanished">國家代碼</translation>
+        <translation>國家代碼</translation>
     </message>
     <message>
         <source>End year</source>
-        <translation type="vanished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
     <message>
         <source>Start year</source>
-        <translation type="vanished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
     <message>
         <source>US</source>
-        <translation type="obsolete">US</translation>
+        <translation>US</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::BlsPanel</name>
     <message>
         <source>SERIES ID</source>
-        <translation type="vanished">序列 ID</translation>
+        <translation>序列 ID</translation>
     </message>
     <message>
         <source>e.g. CES0000000001</source>
-        <translation type="vanished">例如：CES0000000001</translation>
+        <translation>例如：CES0000000001</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::CensusPanel</name>
     <message>
         <source>ACS 5-year estimates, state level</source>
-        <translation type="vanished">ACS 5 年估計，州級</translation>
+        <translation>ACS 5 年估計，州級</translation>
     </message>
     <message>
         <source>DATASET</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::CftcPanel</name>
     <message>
         <source>COT MARKET SENTIMENT</source>
-        <translation type="vanished">COT 市場情緒</translation>
+        <translation>COT 市場情緒</translation>
     </message>
     <message>
         <source>Net: —</source>
-        <translation type="vanished">淨額: —</translation>
+        <translation>淨額: —</translation>
     </message>
     <message>
         <source>OI TREND</source>
-        <translation type="vanished">OI 趨勢</translation>
+        <translation>OI 趨勢</translation>
     </message>
     <message>
         <source>OPEN INTEREST</source>
-        <translation type="vanished">開啟 INTEREST</translation>
+        <translation>開啟 INTEREST</translation>
     </message>
     <message>
         <source>Report: </source>
-        <translation type="vanished">Report:</translation>
+        <translation>Report:</translation>
     </message>
 </context>
 <context>
@@ -19146,15 +19162,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Ctrl+Enter: RUN  |  Shift+Enter: RUN &amp; NEXT  |  Tab: 4 SPACES  |  Ctrl+S: SAVE</source>
-        <translation type="vanished">Ctrl+Enter：執行 | Shift+Enter：執行並下一步 | Tab：4 空格 | Ctrl+S：儲存</translation>
+        <translation>Ctrl+Enter：執行 | Shift+Enter：執行並下一步 | Tab：4 空格 | Ctrl+S：儲存</translation>
     </message>
     <message>
         <source>KERNEL: BUSY</source>
-        <translation type="vanished">核心: 忙碌</translation>
+        <translation>核心: 忙碌</translation>
     </message>
     <message>
         <source>KERNEL: IDLE</source>
-        <translation type="vanished">KERNEL: 閒置</translation>
+        <translation>KERNEL: 閒置</translation>
     </message>
     <message>
         <source>MD</source>
@@ -19170,19 +19186,19 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>PYTHON NOTEBOOK</source>
-        <translation type="vanished">Python 筆記本</translation>
+        <translation>Python 筆記本</translation>
     </message>
     <message>
         <source>Python 3.12</source>
-        <translation type="obsolete">Python 3.12</translation>
+        <translation>Python 3.12</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>RUN ALL</source>
-        <translation type="vanished">全部執行</translation>
+        <translation>全部執行</translation>
     </message>
     <message>
         <source>Rename Cell</source>
@@ -19197,137 +19213,137 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::ComponentToolbar</name>
     <message>
         <source>B</source>
-        <translation type="obsolete">B</translation>
+        <translation>B</translation>
     </message>
     <message>
         <source>I</source>
-        <translation type="obsolete">I</translation>
+        <translation>I</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ConflictMonitorPanel</name>
     <message>
         <source>No data</source>
-        <translation type="vanished">無資料</translation>
+        <translation>無資料</translation>
     </message>
     <message>
         <source>SELECTED EVENT</source>
-        <translation type="vanished">已選事件</translation>
+        <translation>已選事件</translation>
     </message>
     <message>
         <source>TOP CATEGORIES</source>
-        <translation type="vanished">熱門分類</translation>
+        <translation>熱門分類</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::CreateAgentPanel</name>
     <message>
         <source>Agent deleted</source>
-        <translation type="vanished">Agent 已刪除</translation>
+        <translation>Agent 已刪除</translation>
     </message>
     <message>
         <source>Agent name is required</source>
-        <translation type="vanished">Agent 名稱為必填</translation>
+        <translation>Agent 名稱為必填</translation>
     </message>
     <message>
         <source>Brief description of what this agent does...</source>
-        <translation type="vanished">簡短描述此 Agent 的用途...</translation>
+        <translation>簡短描述此 Agent 的用途...</translation>
     </message>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Default (Global)</source>
-        <translation type="vanished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <source>Enter test query...</source>
-        <translation type="vanished">輸入測試查詢...</translation>
+        <translation>輸入測試查詢...</translation>
     </message>
     <message>
         <source>Exported: </source>
-        <translation type="vanished">已匯出：</translation>
+        <translation>已匯出：</translation>
     </message>
     <message>
         <source>Failed</source>
-        <translation type="vanished">失敗</translation>
+        <translation>失敗</translation>
     </message>
     <message>
         <source>Filter tools...</source>
-        <translation type="vanished">篩選工具...</translation>
+        <translation>篩選工具...</translation>
     </message>
     <message>
         <source>Form cleared</source>
-        <translation type="vanished">表單已清除</translation>
+        <translation>表單已清除</translation>
     </message>
     <message>
         <source>Imported from file</source>
-        <translation type="vanished">已從檔案匯入</translation>
+        <translation>已從檔案匯入</translation>
     </message>
     <message>
         <source>LIVE TEST</source>
-        <translation type="vanished">即時 測試</translation>
+        <translation>即時 測試</translation>
     </message>
     <message>
         <source>LLM profile for this agent. Configure profiles in Settings &gt; LLM Config.</source>
-        <translation type="vanished">此代理的 LLM 設定檔。在設定 &gt; LLM 設定中配置。</translation>
+        <translation>此代理的 LLM 設定檔。在設定 &gt; LLM 設定中配置。</translation>
     </message>
     <message>
         <source>No provider — Settings &gt; LLM Config</source>
-        <translation type="vanished">無供應商 — 設定 &gt; LLM 設定</translation>
+        <translation>無供應商 — 設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <source>OUTPUT</source>
-        <translation type="vanished">輸出</translation>
+        <translation>輸出</translation>
     </message>
     <message>
         <source>QUERY</source>
-        <translation type="vanished">查詢</translation>
+        <translation>查詢</translation>
     </message>
     <message>
         <source>RUN TEST</source>
-        <translation type="vanished">執行測試</translation>
+        <translation>執行測試</translation>
     </message>
     <message>
         <source>RUNNING...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>Running...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>SAVE AGENT</source>
-        <translation type="vanished">儲存 代理</translation>
+        <translation>儲存 代理</translation>
     </message>
     <message>
         <source>SAVED AGENTS</source>
-        <translation type="vanished">已儲存 代理</translation>
+        <translation>已儲存 代理</translation>
     </message>
     <message>
         <source>Saved successfully</source>
-        <translation type="vanished">已成功儲存</translation>
+        <translation>已成功儲存</translation>
     </message>
     <message>
         <source>System prompt — role, goals, constraints, persona...</source>
-        <translation type="vanished">系統提示-角色、目標、限制、人物...</translation>
+        <translation>系統提示-角色、目標、限制、人物...</translation>
     </message>
     <message>
         <source>URLs (one per line)</source>
-        <translation type="vanished">URL（每行一個）</translation>
+        <translation>URL（每行一個）</translation>
     </message>
     <message>
         <source>agent_memory</source>
-        <translation type="obsolete">agent_memory</translation>
+        <translation>agent_memory</translation>
     </message>
     <message>
         <source>agent_memory.db</source>
-        <translation type="obsolete">agent_memory.db</translation>
+        <translation>agent_memory.db</translation>
     </message>
     <message>
         <source>e.g. My Equity Analyst</source>
-        <translation type="vanished">例如：我的 Equity (股票) 分析師</translation>
+        <translation>例如：我的 Equity (股票) 分析師</translation>
     </message>
 </context>
 <context>
@@ -19354,19 +19370,19 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>CREATE</source>
-        <translation type="obsolete">CREATE</translation>
+        <translation>CREATE</translation>
     </message>
     <message>
         <source>CREATE NEW PORTFOLIO</source>
-        <translation type="vanished">建立新投資組合</translation>
+        <translation>建立新投資組合</translation>
     </message>
     <message>
         <source>Create Portfolio</source>
-        <translation type="vanished">建立 Portfolio (投資組合)</translation>
+        <translation>建立 Portfolio (投資組合)</translation>
     </message>
     <message>
         <source>Create new portfolio from file</source>
@@ -19418,7 +19434,7 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>My Portfolio</source>
-        <translation type="vanished">我的 Portfolio (投資組合)</translation>
+        <translation>我的 Portfolio (投資組合)</translation>
     </message>
     <message>
         <source>Need a template? Download the demo portfolio JSON:</source>
@@ -19482,7 +19498,7 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Your name</source>
-        <translation type="vanished">你的名稱</translation>
+        <translation>你的名稱</translation>
     </message>
     <message>
         <source>e.g. 0.88</source>
@@ -19505,82 +19521,88 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::CryptoCenterScreen</name>
     <message>
         <source>ACTIVITY</source>
-        <translation type="vanished">活動</translation>
+        <translation>活動</translation>
     </message>
     <message>
         <source>CONNECT WALLET</source>
-        <translation type="vanished">連線 錢包</translation>
+        <translation>連線 錢包</translation>
     </message>
     <message>
         <source>HOME</source>
-        <translation type="vanished">首頁</translation>
+        <translation>首頁</translation>
     </message>
     <message>
         <source>MARKETS</source>
-        <translation type="vanished">市場</translation>
+        <translation>市場</translation>
     </message>
     <message>
         <source>No wallet connected</source>
-        <translation type="vanished">No 錢包 已連線</translation>
+        <translation>No 錢包 已連線</translation>
     </message>
     <message>
         <source>ROADMAP</source>
-        <translation type="vanished">路線圖</translation>
+        <translation>路線圖</translation>
     </message>
     <message>
         <source>SETTINGS</source>
-        <translation type="vanished">設定</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>STAKE</source>
-        <translation type="vanished">質押</translation>
+        <translation>質押</translation>
     </message>
     <message>
         <source>TRADE</source>
-        <translation type="vanished">交易</translation>
+        <translation>交易</translation>
     </message>
-</context>
+<message><source>Connect a Solana wallet to view your $FNCPT balance, SOL holdings, and live USD valuation. Your private keys never leave your wallet.</source><translation>連接 Solana 錢包以查看您的 $FNCPT 餘額、SOL 持有量與即時美元估值。您的私鑰永遠不會離開您的錢包。</translation></message><message><source>· public address read-only
+· no private keys, no seed phrases
+· local handshake on 127.0.0.1, single-use token
+· cryptographic signature challenge before connect</source><translation>· 僅讀取公開地址
+· 不涉及私鑰或助記詞
+· 在 127.0.0.1 本機握手，一次性 Token
+· 連接前進行密碼學簽名驗證</translation></message></context>
 <context>
     <name>fincept::screens::CustomIndexView</name>
     <message>
         <source>Base value must be positive.</source>
-        <translation type="vanished">基準值必須為正數。</translation>
+        <translation>基準值必須為正數。</translation>
     </message>
     <message>
         <source>CONSTITUENTS (from portfolio holdings)</source>
-        <translation type="vanished">成分股（來自投資組合持股）</translation>
+        <translation>成分股（來自投資組合持股）</translation>
     </message>
     <message>
         <source>CREATE CUSTOM INDEX</source>
-        <translation type="vanished">建立自訂指數</translation>
+        <translation>建立自訂指數</translation>
     </message>
     <message>
         <source>CREATE INDEX</source>
-        <translation type="vanished">建立指數</translation>
+        <translation>建立指數</translation>
     </message>
     <message>
         <source>DELETE SELECTED</source>
-        <translation type="vanished">刪除已選</translation>
+        <translation>刪除已選</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>INDEX PERFORMANCE</source>
-        <translation type="vanished">INDEX 績效</translation>
+        <translation>INDEX 績效</translation>
     </message>
     <message>
         <source>MY CUSTOM INDICES</source>
-        <translation type="vanished">MY 自訂 INDICES</translation>
+        <translation>MY 自訂 INDICES</translation>
     </message>
     <message>
         <source>MY INDICES</source>
-        <translation type="vanished">我的指數</translation>
+        <translation>我的指數</translation>
     </message>
     <message>
         <source>My Custom Index</source>
-        <translation type="vanished">我的自訂指數</translation>
+        <translation>我的自訂指數</translation>
     </message>
     <message>
         <source>No custom indices created yet.\nGo to CREATE INDEX tab to build one from your portfolio.</source>
@@ -19588,60 +19610,62 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>PERFORMANCE</source>
-        <translation type="obsolete">PERFORMANCE</translation>
+        <translation>PERFORMANCE</translation>
     </message>
     <message>
         <source>Select an index from MY INDICES to see its performance.</source>
-        <translation type="vanished">從“我的索引”中選擇一個索引以查看其效能。</translation>
+        <translation>從“我的索引”中選擇一個索引以查看其效能。</translation>
     </message>
     <message>
         <source>Select at least one constituent.</source>
-        <translation type="vanished">請至少選擇一個 Constituent (成分股)。</translation>
+        <translation>請至少選擇一個 Constituent (成分股)。</translation>
     </message>
-</context>
+<message><source>No custom indices created yet.
+Go to CREATE INDEX tab to build one from your portfolio.</source><translation>尚未建立自訂指數。
+前往「建立指數」分頁，從您的投資組合建立一個。</translation></message></context>
 <context>
     <name>fincept::screens::DBnomicsChartWidget</name>
     <message>
         <source>NO DATA — SELECT A SERIES FROM THE LEFT PANEL</source>
-        <translation type="vanished">無資料 — 請從左側面板選擇一個序列</translation>
+        <translation>無資料 — 請從左側面板選擇一個序列</translation>
     </message>
     <message>
         <source>⣾  FETCHING DATA...</source>
-        <translation type="vanished">⣾ 正在擷取資料...</translation>
+        <translation>⣾ 正在擷取資料...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::DBnomicsDataTable</name>
     <message>
         <source>OBSERVATION DATA</source>
-        <translation type="vanished">觀測資料</translation>
+        <translation>觀測資料</translation>
     </message>
     <message>
         <source>⣾  LOADING OBSERVATIONS...</source>
-        <translation type="vanished">⣾ 正在載入觀察資料...</translation>
+        <translation>⣾ 正在載入觀察資料...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::DBnomicsScreen</name>
     <message>
         <source>CHART:</source>
-        <translation type="vanished">圖表：</translation>
+        <translation>圖表：</translation>
     </message>
     <message>
         <source>COMPARE</source>
-        <translation type="obsolete">COMPARE</translation>
+        <translation>COMPARE</translation>
     </message>
     <message>
         <source>DBNOMICS TERMINAL</source>
-        <translation type="vanished">DBnomics 終端機</translation>
+        <translation>DBnomics 終端機</translation>
     </message>
     <message>
         <source>EXPORT CSV</source>
-        <translation type="vanished">匯出 CSV</translation>
+        <translation>匯出 CSV</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>NO COMPARISON SLOTS\nClick  + ADD SLOT  in the left panel to begin</source>
@@ -19650,58 +19674,60 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>SINGLE</source>
-        <translation type="obsolete">SINGLE</translation>
+        <translation>SINGLE</translation>
     </message>
-</context>
+<message><source>NO COMPARISON SLOTS
+Click  + ADD SLOT  in the left panel to begin</source><translation>尚無比較欄位
+點擊左側面板的 + 新增欄位 以開始</translation></message></context>
 <context>
     <name>fincept::screens::DBnomicsSelectionPanel</name>
     <message>
         <source>+ ADD CURRENT SERIES</source>
-        <translation type="vanished">+ 新增目前序列</translation>
+        <translation>+ 新增目前序列</translation>
     </message>
     <message>
         <source>+ ADD SLOT</source>
-        <translation type="vanished">+ 新增插槽</translation>
+        <translation>+ 新增插槽</translation>
     </message>
     <message>
         <source>ADD TO SINGLE VIEW</source>
-        <translation type="vanished">ADD TO 單一 檢視</translation>
+        <translation>ADD TO 單一 檢視</translation>
     </message>
     <message>
         <source>CLEAR ALL</source>
-        <translation type="vanished">全部清除</translation>
+        <translation>全部清除</translation>
     </message>
     <message>
         <source>Filter providers...</source>
-        <translation type="vanished">篩選 Providers (提供者)...</translation>
+        <translation>篩選 Providers (提供者)...</translation>
     </message>
     <message>
         <source>LOAD MORE</source>
-        <translation type="vanished">載入更多</translation>
+        <translation>載入更多</translation>
     </message>
     <message>
         <source>LOADING...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Search providers, datasets...</source>
-        <translation type="vanished">搜尋提供者、資料集...</translation>
+        <translation>搜尋提供者、資料集...</translation>
     </message>
     <message>
         <source>Search series...</source>
-        <translation type="vanished">搜尋 Series (序列)...</translation>
+        <translation>搜尋 Series (序列)...</translation>
     </message>
     <message>
         <source>\u00D7</source>
@@ -19711,134 +19737,134 @@ X-API-Key: xyz</translation>
         <source>\u25CF</source>
         <translation type="obsolete">\u25CF</translation>
     </message>
-</context>
+<message><source>●</source><translation>●</translation></message><message><source>×</source><translation>×</translation></message></context>
 <context>
     <name>fincept::screens::DashboardStatusBar</name>
     <message>
         <source>00:00:00</source>
-        <translation type="obsolete">00:00:00</translation>
+        <translation>00:00:00</translation>
     </message>
     <message>
         <source>ACTIVE</source>
-        <translation type="vanished">啟用中</translation>
+        <translation>啟用中</translation>
     </message>
     <message>
         <source>CONNECTED</source>
-        <translation type="vanished">已連線</translation>
+        <translation>已連線</translation>
     </message>
     <message>
         <source>DISCONNECTED</source>
-        <translation type="vanished">已斷線</translation>
+        <translation>已斷線</translation>
     </message>
     <message>
         <source>EMPTY</source>
-        <translation type="vanished">空白</translation>
+        <translation>空白</translation>
     </message>
     <message>
         <source>FEEDS:</source>
-        <translation type="vanished">資料源：</translation>
+        <translation>資料源：</translation>
     </message>
     <message>
         <source>LAT: %1ms</source>
-        <translation type="vanished">延遲：%1ms</translation>
+        <translation>延遲：%1ms</translation>
     </message>
     <message>
         <source>LAT: ---</source>
-        <translation type="vanished">延遲：---</translation>
+        <translation>延遲：---</translation>
     </message>
     <message>
         <source>LAT: ERR</source>
-        <translation type="obsolete">LAT: ERR</translation>
+        <translation>LAT: ERR</translation>
     </message>
     <message>
         <source>LAYOUT:</source>
-        <translation type="vanished">版面：</translation>
+        <translation>版面：</translation>
     </message>
     <message>
         <source>MEM: OPTIMAL</source>
-        <translation type="vanished">記憶體：最佳</translation>
+        <translation>記憶體：最佳</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>SESSION:</source>
-        <translation type="vanished">工作階段：</translation>
+        <translation>工作階段：</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::DashboardToolBar</name>
     <message>
         <source>+ 新增</source>
-        <translation type="obsolete">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <source>0 個小工具</source>
-        <translation type="obsolete">0 個小工具</translation>
+        <translation>0 個小工具</translation>
     </message>
     <message>
         <source>TERMINAL</source>
-        <translation type="obsolete">TERMINAL</translation>
+        <translation>TERMINAL</translation>
     </message>
     <message>
         <source>儲存</source>
-        <translation type="obsolete">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>即時</source>
-        <translation type="obsolete">即時</translation>
+        <translation>即時</translation>
     </message>
     <message>
         <source>精簡</source>
-        <translation type="obsolete">精簡</translation>
+        <translation>精簡</translation>
     </message>
     <message>
         <source>脈動</source>
-        <translation type="obsolete">脈動</translation>
+        <translation>脈動</translation>
     </message>
     <message>
         <source>重設</source>
-        <translation type="obsolete">重設</translation>
+        <translation>重設</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::DataMappingScreen</name>
     <message>
         <source>+ NEW MAPPING</source>
-        <translation type="vanished">+ 新增對應</translation>
+        <translation>+ 新增對應</translation>
     </message>
     <message>
         <source>/v2/historical-candle/{symbol}/{interval}</source>
-        <translation type="obsolete">/v2/historical-candle/{symbol}/{interval}</translation>
+        <translation>/v2/historical-candle/{symbol}/{interval}</translation>
     </message>
     <message>
         <source>7 SCHEMAS</source>
-        <translation type="vanished">7 結構</translation>
+        <translation>7 結構</translation>
     </message>
     <message>
         <source>AES-256-GCM</source>
-        <translation type="obsolete">AES-256-GCM</translation>
+        <translation>AES-256-GCM</translation>
     </message>
     <message>
         <source>API CONFIGURATION</source>
-        <translation type="vanished">API 設定</translation>
+        <translation>API 設定</translation>
     </message>
     <message>
         <source>API CONFIGURATION &amp; SCHEMA TRANSFORMATION</source>
-        <translation type="vanished">API 設定與結構轉換</translation>
+        <translation>API 設定與結構轉換</translation>
     </message>
     <message>
         <source>BROKER TEMPLATES</source>
-        <translation type="vanished">經紀商範本</translation>
+        <translation>經紀商範本</translation>
     </message>
     <message>
         <source>CACHE &amp; SECURITY SETTINGS</source>
-        <translation type="vanished">快取與安全設定</translation>
+        <translation>快取與安全設定</translation>
     </message>
     <message>
         <source>CURRENT MAPPING</source>
-        <translation type="vanished">CURRENT 對應</translation>
+        <translation>CURRENT 對應</translation>
     </message>
     <message>
         <source>Content-Type: application/json\nAccept: application/json</source>
@@ -19846,51 +19872,51 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>DATA MAPPING ENGINE</source>
-        <translation type="vanished">DATA 對應 引擎</translation>
+        <translation>DATA 對應 引擎</translation>
     </message>
     <message>
         <source>DATA MAPPING v1.0</source>
-        <translation type="vanished">DATA 對應 v1.0</translation>
+        <translation>DATA 對應 v1.0</translation>
     </message>
     <message>
         <source>DELETE</source>
-        <translation type="obsolete">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <source>ENCRYPTION</source>
-        <translation type="vanished">加密</translation>
+        <translation>加密</translation>
     </message>
     <message>
         <source>Enter a URL first</source>
-        <translation type="vanished">請先輸入 URL</translation>
+        <translation>請先輸入 URL</translation>
     </message>
     <message>
         <source>Enter a mapping name first</source>
-        <translation type="vanished">請先輸入 Mapping (對應) 名稱</translation>
+        <translation>請先輸入 Mapping (對應) 名稱</translation>
     </message>
     <message>
         <source>FAILED — </source>
-        <translation type="vanished">失敗 — </translation>
+        <translation>失敗 — </translation>
     </message>
     <message>
         <source>FIELD MAPPING</source>
-        <translation type="vanished">FIELD 對應</translation>
+        <translation>FIELD 對應</translation>
     </message>
     <message>
         <source>Fields: </source>
-        <translation type="vanished">Fields:</translation>
+        <translation>Fields:</translation>
     </message>
     <message>
         <source>Fields: --</source>
-        <translation type="vanished">欄位: --</translation>
+        <translation>欄位: --</translation>
     </message>
     <message>
         <source>MAPPING ENGINE</source>
-        <translation type="vanished">對應 引擎</translation>
+        <translation>對應 引擎</translation>
     </message>
     <message>
         <source>NEXT</source>
-        <translation type="vanished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <source>No mappings saved yet.\nClick CREATE to build your first data mapping.</source>
@@ -19898,234 +19924,238 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>No sample data — test API first (Step 1)</source>
-        <translation type="vanished">無範例資料 - 首先測試 API（第 1 步）</translation>
+        <translation>無範例資料 - 首先測試 API（第 1 步）</translation>
     </message>
     <message>
         <source>Not yet tested</source>
-        <translation type="vanished">尚未測試</translation>
+        <translation>尚未測試</translation>
     </message>
     <message>
         <source>ONLINE</source>
-        <translation type="vanished">線上</translation>
+        <translation>線上</translation>
     </message>
     <message>
         <source>PARSER ENGINES</source>
-        <translation type="vanished">解析引擎</translation>
+        <translation>解析引擎</translation>
     </message>
     <message>
         <source>PREVIOUS</source>
-        <translation type="vanished">上一步</translation>
+        <translation>上一步</translation>
     </message>
     <message>
         <source>Parser:</source>
-        <translation type="vanished">解析器:</translation>
+        <translation>解析器:</translation>
     </message>
     <message>
         <source>Parsers: 6</source>
-        <translation type="vanished">解析器: 6</translation>
+        <translation>解析器: 6</translation>
     </message>
     <message>
         <source>QUICK STATS</source>
-        <translation type="vanished">快速統計</translation>
+        <translation>快速統計</translation>
     </message>
     <message>
         <source>RUN FAILED — </source>
-        <translation type="vanished">執行失敗 — </translation>
+        <translation>執行失敗 — </translation>
     </message>
     <message>
         <source>RUN TEST</source>
-        <translation type="vanished">執行測試</translation>
+        <translation>執行測試</translation>
     </message>
     <message>
         <source>Running test...</source>
-        <translation type="vanished">執行測試中...</translation>
+        <translation>執行測試中...</translation>
     </message>
     <message>
         <source>SAVE MAPPING CONFIGURATION</source>
-        <translation type="vanished">儲存 對應 設定</translation>
+        <translation>儲存 對應 設定</translation>
     </message>
     <message>
         <source>SAVED MAPPINGS</source>
-        <translation type="vanished">已儲存 對應</translation>
+        <translation>已儲存 對應</translation>
     </message>
     <message>
         <source>SCHEMA SELECTION</source>
-        <translation type="vanished">結構 SELECTION</translation>
+        <translation>結構 SELECTION</translation>
     </message>
     <message>
         <source>SECURITY</source>
-        <translation type="vanished">安全性</translation>
+        <translation>安全性</translation>
     </message>
     <message>
         <source>SUCCESS — Sample data received</source>
-        <translation type="vanished">成功 — 已收到樣本資料</translation>
+        <translation>成功 — 已收到樣本資料</translation>
     </message>
     <message>
         <source>SYSTEM</source>
-        <translation type="vanished">系統</translation>
+        <translation>系統</translation>
     </message>
     <message>
         <source>Save failed — database error</source>
-        <translation type="vanished">儲存失敗 — 資料庫錯誤</translation>
+        <translation>儲存失敗 — 資料庫錯誤</translation>
     </message>
     <message>
         <source>Saved: </source>
-        <translation type="vanished">已儲存：</translation>
+        <translation>已儲存：</translation>
     </message>
     <message>
         <source>Saved: 0</source>
-        <translation type="vanished">已儲存: 0</translation>
+        <translation>已儲存: 0</translation>
     </message>
     <message>
         <source>Schema: </source>
-        <translation type="vanished">Schema:</translation>
+        <translation>Schema:</translation>
     </message>
     <message>
         <source>Schema: --</source>
-        <translation type="vanished">結構: --</translation>
+        <translation>結構: --</translation>
     </message>
     <message>
         <source>Schemas: 7</source>
-        <translation type="vanished">結構: 7</translation>
+        <translation>結構: 7</translation>
     </message>
     <message>
         <source>Select a template to view details</source>
-        <translation type="vanished">選擇模板查看詳情</translation>
+        <translation>選擇模板查看詳情</translation>
     </message>
     <message>
         <source>Step 1 of 5 — API CONFIG</source>
-        <translation type="vanished">Step 1 of 5 — API 設定</translation>
+        <translation>Step 1 of 5 — API 設定</translation>
     </message>
     <message>
         <source>TEST &amp; SAVE</source>
-        <translation type="vanished">測試並儲存</translation>
+        <translation>測試並儲存</translation>
     </message>
     <message>
         <source>TEST API REQUEST</source>
-        <translation type="vanished">測試 API 請求</translation>
+        <translation>測試 API 請求</translation>
     </message>
     <message>
         <source>TEST FAILED — No field mappings configured</source>
-        <translation type="vanished">測試失敗 — 尚未設定欄位 Mapping (對應)</translation>
+        <translation>測試失敗 — 尚未設定欄位 Mapping (對應)</translation>
     </message>
     <message>
         <source>TEST PASSED</source>
-        <translation type="vanished">測試通過</translation>
+        <translation>測試通過</translation>
     </message>
     <message>
         <source>Test results will appear here...</source>
-        <translation type="vanished">測試結果將出現在這裡...</translation>
+        <translation>測試結果將出現在這裡...</translation>
     </message>
     <message>
         <source>Test: --</source>
-        <translation type="obsolete">Test: --</translation>
+        <translation>Test: --</translation>
     </message>
     <message>
         <source>Test: FAILED</source>
-        <translation type="vanished">測試：失敗</translation>
+        <translation>測試：失敗</translation>
     </message>
     <message>
         <source>Test: PASSED</source>
-        <translation type="vanished">測試：通過</translation>
+        <translation>測試：通過</translation>
     </message>
     <message>
         <source>Testing...</source>
-        <translation type="vanished">測試中...</translation>
+        <translation>測試中...</translation>
     </message>
     <message>
         <source>Token / API Key value</source>
-        <translation type="vanished">Token / API 金鑰值</translation>
+        <translation>Token / API 金鑰值</translation>
     </message>
     <message>
         <source>USE THIS TEMPLATE</source>
-        <translation type="vanished">使用此模板</translation>
+        <translation>使用此模板</translation>
     </message>
     <message>
         <source>VIEW: </source>
-        <translation type="vanished">VIEW:</translation>
+        <translation>VIEW:</translation>
     </message>
     <message>
         <source>VIEW: MAPPINGS</source>
-        <translation type="vanished">VIEW: 對應</translation>
+        <translation>VIEW: 對應</translation>
     </message>
     <message>
         <source>WIZARD STEPS</source>
-        <translation type="vanished">精靈步驟</translation>
+        <translation>精靈步驟</translation>
     </message>
     <message>
         <source>e.g. Upstox OHLCV</source>
-        <translation type="vanished">例如Upstox OHLCV</translation>
+        <translation>例如Upstox OHLCV</translation>
     </message>
     <message>
         <source>▶ RUN</source>
-        <translation type="vanished">▶ 執行</translation>
+        <translation>▶ 執行</translation>
     </message>
-</context>
+<message><source>Content-Type: application/json
+Accept: application/json</source><translation>Content-Type: application/json
+Accept: application/json</translation></message><message><source>No mappings saved yet.
+Click CREATE to build your first data mapping.</source><translation>尚未儲存任何映射。
+點擊「建立」以建構您的第一個資料映射。</translation></message></context>
 <context>
     <name>fincept::screens::DerivativesScreen</name>
     <message>
         <source>BLACK-SCHOLES PRICING</source>
-        <translation type="vanished">布萊克-斯科爾斯定價法</translation>
+        <translation>布萊克-斯科爾斯定價法</translation>
     </message>
     <message>
         <source>BOND PRICE CALCULATOR</source>
-        <translation type="vanished">債券 價格 CALCULATOR</translation>
+        <translation>債券 價格 CALCULATOR</translation>
     </message>
     <message>
         <source>CREDIT DEFAULT SWAP PRICING</source>
-        <translation type="vanished">CREDIT 預設 交換 定價</translation>
+        <translation>CREDIT 預設 交換 定價</translation>
     </message>
     <message>
         <source>DERIVATIVES</source>
-        <translation type="vanished">衍生性商品</translation>
+        <translation>衍生性商品</translation>
     </message>
     <message>
         <source>DERIVATIVES PRICING</source>
-        <translation type="vanished">DERIVATIVES 定價</translation>
+        <translation>DERIVATIVES 定價</translation>
     </message>
     <message>
         <source>ERROR</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>FX VANILLA OPTION PRICING</source>
-        <translation type="vanished">外匯普通期權定價</translation>
+        <translation>外匯普通期權定價</translation>
     </message>
     <message>
         <source>IMPLIED VOLATILITY</source>
-        <translation type="vanished">IMPLIED 波動率</translation>
+        <translation>IMPLIED 波動率</translation>
     </message>
     <message>
         <source>INSTRUMENT: </source>
-        <translation type="vanished">INSTRUMENT:</translation>
+        <translation>INSTRUMENT:</translation>
     </message>
     <message>
         <source>INSTRUMENT: BONDS</source>
-        <translation type="vanished">工具: 債券</translation>
+        <translation>工具: 債券</translation>
     </message>
     <message>
         <source>INTEREST RATE SWAP PRICING</source>
-        <translation type="vanished">利率掉期定價</translation>
+        <translation>利率掉期定價</translation>
     </message>
     <message>
         <source>PROFESSIONAL VALUATION ENGINE</source>
-        <translation type="vanished">專業估值引擎</translation>
+        <translation>專業估值引擎</translation>
     </message>
     <message>
         <source>PYTHON ACTIVE</source>
-        <translation type="vanished">Python 活躍</translation>
+        <translation>Python 活躍</translation>
     </message>
     <message>
         <source>PYTHON ENGINE</source>
-        <translation type="vanished">Python 引擎</translation>
+        <translation>Python 引擎</translation>
     </message>
     <message>
         <source>RESULTS</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>YIELD TO MATURITY</source>
-        <translation type="vanished">收益率 TO MATURITY</translation>
+        <translation>收益率 TO MATURITY</translation>
     </message>
     <message>
         <source>\xE2\x86\x97</source>
@@ -20151,312 +20181,312 @@ X-API-Key: xyz</translation>
         <source>\xF0\x9F\x94\x84</source>
         <translation type="obsolete">\xF0\x9F\x94\x84</translation>
     </message>
-</context>
+<message><source>📐</source><translation>📐</translation></message><message><source>↗</source><translation>↗</translation></message><message><source>⚡</source><translation>⚡</translation></message><message><source>💱</source><translation>💱</translation></message><message><source>🔄</source><translation>🔄</translation></message><message><source>🎯</source><translation>🎯</translation></message></context>
 <context>
     <name>fincept::screens::DocsScreen</name>
     <message>
         <source>35 TOPICS  |  9 CATEGORIES</source>
-        <translation type="vanished">35 主題  |  9 分類</translation>
+        <translation>35 主題  |  9 分類</translation>
     </message>
     <message>
         <source>DOCUMENTATION</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>FINCEPT TERMINAL v4.0.0</source>
-        <translation type="vanished">FINCEPT 終端 v4.0.0</translation>
+        <translation>FINCEPT 終端 v4.0.0</translation>
     </message>
     <message>
         <source>SKILL LEVELS</source>
-        <translation type="vanished">技能等級</translation>
+        <translation>技能等級</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EconPanelBase</name>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>Select parameters and click FETCH</source>
-        <translation type="vanished">選擇參數並點擊 FETCH</translation>
+        <translation>選擇參數並點擊 FETCH</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EconomicCalendarPanel</name>
     <message>
         <source>All Events</source>
-        <translation type="vanished">All 事件</translation>
+        <translation>All 事件</translation>
     </message>
     <message>
         <source>High Only</source>
-        <translation type="vanished">最高 Only</translation>
+        <translation>最高 Only</translation>
     </message>
     <message>
         <source>Medium + High</source>
-        <translation type="vanished">Medium + 最高</translation>
+        <translation>Medium + 最高</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EconomicsScreen</name>
     <message>
         <source>32 global data sources · 1000+ indicators</source>
-        <translation type="vanished">32 全球 data 來源 · 1000+ 指標</translation>
+        <translation>32 全球 data 來源 · 1000+ 指標</translation>
     </message>
     <message>
         <source>ECONOMICS DATA EXPLORER</source>
-        <translation type="vanished">經濟數據探索者</translation>
+        <translation>經濟數據探索者</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EconomicsView</name>
     <message>
         <source>Estimated portfolio impact from macro factor shocks, weighted by holdings</source>
-        <translation type="vanished">宏觀因素衝擊對投資組合的估計影響（以持有量加權）</translation>
+        <translation>宏觀因素衝擊對投資組合的估計影響（以持有量加權）</translation>
     </message>
     <message>
         <source>PORTFOLIO ECONOMICS OVERVIEW</source>
-        <translation type="vanished">投資組合 ECONOMICS 總覽</translation>
+        <translation>投資組合 ECONOMICS 總覽</translation>
     </message>
     <message>
         <source>PORTFOLIO FACTOR SENSITIVITY</source>
-        <translation type="vanished">投資組合因素敏感性</translation>
+        <translation>投資組合因素敏感性</translation>
     </message>
     <message>
         <source>Per-holding contribution to portfolio value, P&amp;L, and risk</source>
-        <translation type="vanished">各持股對投資組合價值、損益與風險的貢獻</translation>
+        <translation>各持股對投資組合價值、損益與風險的貢獻</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EiaPanel</name>
     <message>
         <source>No API key needed</source>
-        <translation type="vanished">不需要 API Key</translation>
+        <translation>不需要 API Key</translation>
     </message>
     <message>
         <source>Requires EIA_API_KEY</source>
-        <translation type="vanished">需要 EIA_API_KEY</translation>
+        <translation>需要 EIA_API_KEY</translation>
     </message>
     <message>
         <source>Short-Term Outlook (STEO)</source>
-        <translation type="vanished">短期展望（STEO）</translation>
+        <translation>短期展望（STEO）</translation>
     </message>
     <message>
         <source>Weekly Petroleum (WPSR)</source>
-        <translation type="vanished">每周石油 (WPSR)</translation>
+        <translation>每周石油 (WPSR)</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EquityFinancialsTab</name>
     <message>
         <source>DUPONT ANALYSIS</source>
-        <translation type="vanished">DUPONT 分析</translation>
+        <translation>DUPONT 分析</translation>
     </message>
     <message>
         <source>EXPORT CSV</source>
-        <translation type="vanished">匯出 CSV</translation>
+        <translation>匯出 CSV</translation>
     </message>
     <message>
         <source>LEVERAGE / SOLVENCY</source>
-        <translation type="vanished">槓桿 / SOLVENCY</translation>
+        <translation>槓桿 / SOLVENCY</translation>
     </message>
     <message>
         <source>LIQUIDITY</source>
-        <translation type="vanished">流動性</translation>
+        <translation>流動性</translation>
     </message>
     <message>
         <source>RETURN METRICS</source>
-        <translation type="vanished">報酬 指標</translation>
+        <translation>報酬 指標</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EquityNewsTab</name>
     <message>
         <source>LATEST NEWS</source>
-        <translation type="vanished">LATEST 新聞</translation>
+        <translation>LATEST 新聞</translation>
     </message>
     <message>
         <source>Loading news…</source>
-        <translation type="vanished">載入新聞中…</translation>
+        <translation>載入新聞中…</translation>
     </message>
     <message>
         <source>No news found for </source>
-        <translation type="vanished">找不到新聞：</translation>
+        <translation>找不到新聞：</translation>
     </message>
     <message>
         <source>READ FULL ARTICLE →</source>
-        <translation type="vanished">閱讀完整文章 →</translation>
+        <translation>閱讀完整文章 →</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Search for a symbol to load news.</source>
-        <translation type="vanished">搜尋符號以加載新聞。</translation>
+        <translation>搜尋符號以加載新聞。</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EquityPeersTab</name>
     <message>
         <source>LOAD</source>
-        <translation type="vanished">載入</translation>
+        <translation>載入</translation>
     </message>
     <message>
         <source>Loading peer data…</source>
-        <translation type="vanished">載入 Peers (同業比較) 資料中…</translation>
+        <translation>載入 Peers (同業比較) 資料中…</translation>
     </message>
     <message>
         <source>PEERS (comma-separated):</source>
-        <translation type="vanished">同業（逗號分隔）：</translation>
+        <translation>同業（逗號分隔）：</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EquitySentimentTab</name>
     <message>
         <source>Loading market sentiment…</source>
-        <translation type="vanished">正在加載市場情緒...</translation>
+        <translation>正在加載市場情緒...</translation>
     </message>
     <message>
         <source>MARKET SENTIMENT</source>
-        <translation type="vanished">市場 SENTIMENT</translation>
+        <translation>市場 SENTIMENT</translation>
     </message>
     <message>
         <source>No snapshot available.</source>
-        <translation type="vanished">無可用快照。</translation>
+        <translation>無可用快照。</translation>
     </message>
     <message>
         <source>Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.</source>
-        <translation type="vanished">開啟交易品種並在資料來源中啟用 Adanos 市場情緒以載入快照。</translation>
+        <translation>開啟交易品種並在資料來源中啟用 Adanos 市場情緒以載入快照。</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Refreshing market sentiment…</source>
-        <translation type="vanished">刷新市場情緒...</translation>
+        <translation>刷新市場情緒...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EquityTalippTab</name>
     <message>
         <source>50+ indicators across 6 categories — powered by TALIpp incremental engine</source>
-        <translation type="vanished">跨越 6 個類別的 50 多個指標 - 由 TALIPp 增量引擎提供支持</translation>
+        <translation>跨越 6 個類別的 50 多個指標 - 由 TALIPp 增量引擎提供支持</translation>
     </message>
     <message>
         <source>COMPUTING…</source>
-        <translation type="vanished">計算中…</translation>
+        <translation>計算中…</translation>
     </message>
     <message>
         <source>Computing </source>
-        <translation type="vanished">計算中 </translation>
+        <translation>計算中 </translation>
     </message>
     <message>
         <source>No data returned for </source>
-        <translation type="vanished">無資料 returned 用於</translation>
+        <translation>無資料 returned 用於</translation>
     </message>
     <message>
         <source>No symbol loaded. Search for a symbol first.</source>
-        <translation type="vanished">沒有加載符號。先搜尋一個符號。</translation>
+        <translation>沒有加載符號。先搜尋一個符號。</translation>
     </message>
     <message>
         <source>Select an indicator and click CALCULATE</source>
-        <translation type="vanished">選擇一個指標並點擊“計算”</translation>
+        <translation>選擇一個指標並點擊“計算”</translation>
     </message>
     <message>
         <source>Select an indicator and click CALCULATE.</source>
-        <translation type="vanished">選擇 Indicator (指標) 並點擊「計算」。</translation>
+        <translation>選擇 Indicator (指標) 並點擊「計算」。</translation>
     </message>
     <message>
         <source>—  data points  |  TALIpp Engine</source>
-        <translation type="vanished">—  資料點  |  TALIpp 引擎</translation>
+        <translation>—  資料點  |  TALIpp 引擎</translation>
     </message>
     <message>
         <source>▶  CALCULATE</source>
-        <translation type="vanished">▶  計算</translation>
+        <translation>▶  計算</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::EquityTechnicalsTab</name>
     <message>
         <source>0 INDICATORS</source>
-        <translation type="vanished">0 個指標</translation>
+        <translation>0 個指標</translation>
     </message>
     <message>
         <source>KEY INDICATORS</source>
-        <translation type="vanished">KEY 指標</translation>
+        <translation>KEY 指標</translation>
     </message>
     <message>
         <source>TECHNICAL RATING</source>
-        <translation type="vanished">技術面 評等</translation>
+        <translation>技術面 評等</translation>
     </message>
     <message>
         <source>\xe2\x80\x94</source>
         <translation type="obsolete">\xe2\x80\x94</translation>
     </message>
-</context>
+<message><source>—</source><translation>—</translation></message></context>
 <context>
     <name>fincept::screens::EquityTradingScreen</name>
     <message>
         <source>(no portfolios yet)</source>
-        <translation type="vanished">(尚無投資組合)</translation>
+        <translation>(尚無投資組合)</translation>
     </message>
     <message>
         <source>--:--:--</source>
-        <translation type="obsolete">--:--:--</translation>
+        <translation>--:--:--</translation>
     </message>
     <message>
         <source>ACCOUNTS</source>
-        <translation type="vanished">帳戶</translation>
+        <translation>帳戶</translation>
     </message>
     <message>
         <source>Add to existing portfolio</source>
-        <translation type="vanished">新增至現有投資組合</translation>
+        <translation>新增至現有投資組合</translation>
     </message>
     <message>
         <source>Create a new portfolio</source>
-        <translation type="vanished">建立 a 新增 投資組合</translation>
+        <translation>建立 a 新增 投資組合</translation>
     </message>
     <message>
         <source>Deselect all</source>
-        <translation type="vanished">取消全選</translation>
+        <translation>取消全選</translation>
     </message>
     <message>
         <source>IMPORT</source>
-        <translation type="vanished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <source>Import holdings into portfolio</source>
-        <translation type="vanished">將持股導入投資組合</translation>
+        <translation>將持股導入投資組合</translation>
     </message>
     <message>
         <source>Loading portfolios...</source>
-        <translation type="vanished">載入中 portfolios...</translation>
+        <translation>載入中 portfolios...</translation>
     </message>
     <message>
         <source>NO ACCOUNT</source>
-        <translation type="vanished">無帳戶</translation>
+        <translation>無帳戶</translation>
     </message>
     <message>
         <source>NSE</source>
-        <translation type="obsolete">NSE</translation>
+        <translation>NSE</translation>
     </message>
     <message>
         <source>PAPER</source>
-        <translation type="vanished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="vanished">全選</translation>
+        <translation>全選</translation>
     </message>
     <message>
         <source>○ NO ACCOUNTS</source>
-        <translation type="vanished">○ 無帳戶</translation>
+        <translation>○ 無帳戶</translation>
     </message>
 </context>
 <context>
@@ -20490,14 +20520,14 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::FederalReservePanel</name>
     <message>
         <source>SERIES</source>
-        <translation type="vanished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::FileManagerScreen</name>
     <message>
         <source>0 files | 0 B</source>
-        <translation type="vanished">0 檔案 | 0 B</translation>
+        <translation>0 檔案 | 0 B</translation>
     </message>
     <message>
         <source>Binary file — preview not available.\nUse SAVE to download.</source>
@@ -20505,867 +20535,877 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>CLEAR SELECTION</source>
-        <translation type="vanished">清除選取</translation>
+        <translation>清除選取</translation>
     </message>
     <message>
         <source>Cannot open file for preview.</source>
-        <translation type="vanished">無法開啟檔案 用於preview.</translation>
+        <translation>無法開啟檔案 用於preview.</translation>
     </message>
     <message>
         <source>DEL</source>
-        <translation type="obsolete">DEL</translation>
+        <translation>DEL</translation>
     </message>
     <message>
         <source>DELETE SELECTED</source>
-        <translation type="vanished">刪除已選</translation>
+        <translation>刪除已選</translation>
     </message>
     <message>
         <source>FILE MANAGER</source>
-        <translation type="vanished">檔案管理器</translation>
+        <translation>檔案管理器</translation>
     </message>
     <message>
         <source>FILES ARE COLLECTED FROM</source>
-        <translation type="vanished">文件收集自</translation>
+        <translation>文件收集自</translation>
     </message>
     <message>
         <source>Manage files across the terminal</source>
-        <translation type="vanished">透過終端管理文件</translation>
+        <translation>透過終端管理文件</translation>
     </message>
     <message>
         <source>No files match your search or filter.</source>
-        <translation type="vanished">沒有文件與您的搜尋或篩選器相符。</translation>
+        <translation>沒有文件與您的搜尋或篩選器相符。</translation>
     </message>
     <message>
         <source>PREVIEW</source>
-        <translation type="vanished">預覽</translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Search files by name, type, or source...</source>
-        <translation type="vanished">按名稱、類型或來源搜尋檔案...</translation>
+        <translation>按名稱、類型或來源搜尋檔案...</translation>
     </message>
     <message>
         <source>Select a file to preview</source>
-        <translation type="vanished">選擇要預覽的檔案</translation>
+        <translation>選擇要預覽的檔案</translation>
     </message>
     <message>
         <source>Selected files:</source>
-        <translation type="vanished">已選取 files:</translation>
+        <translation>已選取 files:</translation>
     </message>
     <message>
         <source>Sort:</source>
-        <translation type="vanished">排序：</translation>
+        <translation>排序：</translation>
     </message>
     <message>
         <source>Storage: 0 B / 500 MB</source>
-        <translation type="vanished">儲存空間: 0 B / 500 MB</translation>
+        <translation>儲存空間: 0 B / 500 MB</translation>
     </message>
     <message>
         <source>TIPS</source>
-        <translation type="vanished">提示</translation>
+        <translation>提示</translation>
     </message>
     <message>
         <source>UPLOAD FILES</source>
-        <translation type="vanished">上傳 檔案</translation>
+        <translation>上傳 檔案</translation>
     </message>
     <message>
         <source>Your terminal file index is empty.</source>
-        <translation type="vanished">您的終端檔案索引為空。</translation>
+        <translation>您的終端檔案索引為空。</translation>
     </message>
     <message>
         <source>[ FM ]</source>
-        <translation type="obsolete">[ FM ]</translation>
+        <translation>[ FM ]</translation>
     </message>
     <message>
         <source>\n\n[... truncated at 64K characters ...]</source>
         <translation type="obsolete">\n\n[... truncated at 64K characters ...]</translation>
     </message>
-</context>
+<message><source>Binary file — preview not available.
+Use SAVE to download.</source><translation>二進位檔案 — 無法預覽。
+請使用「儲存」下載。</translation></message><message><source>
+
+[... truncated at 64K characters ...]</source><translation>
+
+[… 內容已截斷（超過 64K 字元）…]</translation></message></context>
 <context>
     <name>fincept::screens::FinceptMacroPanel</name>
     <message>
         <source>FINCEPT MACRO — COMING SOON</source>
-        <translation type="vanished">FINCEPT 總經 — 即將推出</translation>
+        <translation>FINCEPT 總經 — 即將推出</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::FiscalDataPanel</name>
     <message>
         <source>DATASET</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ForgotPasswordScreen</name>
     <message>
         <source>  我已收到驗證碼  </source>
-        <translation type="obsolete">  我已收到驗證碼  </translation>
+        <translation>  我已收到驗證碼  </translation>
     </message>
     <message>
         <source>  發送驗證碼  </source>
-        <translation type="obsolete">  發送驗證碼  </translation>
+        <translation>  發送驗證碼  </translation>
     </message>
     <message>
         <source>  繼續登入  </source>
-        <translation type="obsolete">  繼續登入  </translation>
+        <translation>  繼續登入  </translation>
     </message>
     <message>
         <source>  重設密碼  </source>
-        <translation type="obsolete">  重設密碼  </translation>
+        <translation>  重設密碼  </translation>
     </message>
     <message>
         <source>user@domain.com</source>
-        <translation type="obsolete">user@domain.com</translation>
+        <translation>user@domain.com</translation>
     </message>
     <message>
         <source>密碼已重設</source>
-        <translation type="obsolete">密碼已重設</translation>
+        <translation>密碼已重設</translation>
     </message>
     <message>
         <source>您的密碼已重設成功。現在可以使用新密碼登入。</source>
-        <translation type="obsolete">您的密碼已重設成功。現在可以使用新密碼登入。</translation>
+        <translation>您的密碼已重設成功。現在可以使用新密碼登入。</translation>
     </message>
     <message>
         <source>成功</source>
-        <translation type="obsolete">成功</translation>
+        <translation>成功</translation>
     </message>
     <message>
         <source>我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</source>
-        <translation type="obsolete">我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</translation>
+        <translation>我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</translation>
     </message>
     <message>
         <source>未收到？重新發送</source>
-        <translation type="obsolete">未收到？重新發送</translation>
+        <translation>未收到？重新發送</translation>
     </message>
     <message>
         <source>檢查您的郵件</source>
-        <translation type="obsolete">檢查您的郵件</translation>
+        <translation>檢查您的郵件</translation>
     </message>
     <message>
         <source>記住密碼了？返回登入</source>
-        <translation type="obsolete">記住密碼了？返回登入</translation>
+        <translation>記住密碼了？返回登入</translation>
     </message>
     <message>
         <source>輸入您的電子郵件，我們將發送驗證碼。</source>
-        <translation type="obsolete">輸入您的電子郵件，我們將發送驗證碼。</translation>
+        <translation>輸入您的電子郵件，我們將發送驗證碼。</translation>
     </message>
     <message>
         <source>重設密碼</source>
-        <translation type="obsolete">重設密碼</translation>
+        <translation>重設密碼</translation>
     </message>
     <message>
         <source>電子郵件</source>
-        <translation type="obsolete">電子郵件</translation>
+        <translation>電子郵件</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ForumFeedPanel</name>
     <message>
         <source>+ NEW POST</source>
-        <translation type="vanished">+ 新建貼文</translation>
+        <translation>+ 新建貼文</translation>
     </message>
     <message>
         <source>Be the first to start a conversation</source>
-        <translation type="vanished">成為第一個開始對話的人</translation>
+        <translation>成為第一個開始對話的人</translation>
     </message>
     <message>
         <source>DISCUSSIONS</source>
-        <translation type="vanished">討論區</translation>
+        <translation>討論區</translation>
     </message>
     <message>
         <source>NO DISCUSSIONS YET</source>
-        <translation type="vanished">尚無討論</translation>
+        <translation>尚無討論</translation>
     </message>
     <message>
         <source>● ACTIVE</source>
-        <translation type="vanished">● 活躍</translation>
+        <translation>● 活躍</translation>
     </message>
     <message>
         <source>● HOT</source>
-        <translation type="vanished">● 熱門</translation>
+        <translation>● 熱門</translation>
     </message>
     <message>
         <source>✓ VOTED</source>
-        <translation type="vanished">✓ 已投票</translation>
+        <translation>✓ 已投票</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ForumPostListPanel</name>
     <message>
         <source>Be the first to start a discussion</source>
-        <translation type="vanished">成為第一個發起討論的人</translation>
+        <translation>成為第一個發起討論的人</translation>
     </message>
     <message>
         <source>NO POSTS YET</source>
-        <translation type="vanished">尚無文章</translation>
+        <translation>尚無文章</translation>
     </message>
     <message>
         <source>all-posts</source>
-        <translation type="vanished">所有文章</translation>
+        <translation>所有文章</translation>
     </message>
     <message>
         <source>● HOT</source>
-        <translation type="vanished">● 熱門</translation>
+        <translation>● 熱門</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ForumPostReaderPanel</name>
     <message>
         <source>Click any post from the feed to read it</source>
-        <translation type="vanished">點擊動態中的任何文章來閱讀</translation>
+        <translation>點擊動態中的任何文章來閱讀</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>NO REPLIES YET</source>
-        <translation type="vanished">尚無回覆</translation>
+        <translation>尚無回覆</translation>
     </message>
     <message>
         <source>REPLIES</source>
-        <translation type="vanished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <source>Reply</source>
-        <translation type="vanished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <source>Write a reply...</source>
-        <translation type="vanished">撰寫回覆...</translation>
+        <translation>撰寫回覆...</translation>
     </message>
     <message>
         <source>▲  Upvote</source>
-        <translation type="vanished">▲ 按讚</translation>
+        <translation>▲ 按讚</translation>
     </message>
     <message>
         <source>▲ 0</source>
-        <translation type="obsolete">▲ 0</translation>
+        <translation>▲ 0</translation>
     </message>
     <message>
         <source>◆ 0 replies</source>
-        <translation type="vanished">◆ 0 則回覆</translation>
+        <translation>◆ 0 則回覆</translation>
     </message>
     <message>
         <source>◉ 0 views</source>
-        <translation type="vanished">◉ 0 次瀏覽</translation>
+        <translation>◉ 0 次瀏覽</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ForumSidebarPanel</name>
     <message>
         <source>  No contributors yet</source>
-        <translation type="vanished">尚無貢獻者</translation>
+        <translation>尚無貢獻者</translation>
     </message>
     <message>
         <source>  loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>  ▲  TRENDING POSTS</source>
-        <translation type="vanished">  ▲ 熱門文章</translation>
+        <translation>  ▲ 熱門文章</translation>
     </message>
     <message>
         <source>ACTIVITY</source>
-        <translation type="vanished">活動</translation>
+        <translation>活動</translation>
     </message>
     <message>
         <source>CHANNELS</source>
-        <translation type="vanished">頻道</translation>
+        <translation>頻道</translation>
     </message>
     <message>
         <source>COMMUNITY</source>
-        <translation type="vanished">社群</translation>
+        <translation>社群</translation>
     </message>
     <message>
         <source>LEADERBOARD</source>
-        <translation type="vanished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>New post</source>
-        <translation type="vanished">新貼文</translation>
+        <translation>新貼文</translation>
     </message>
     <message>
         <source>Search discussions...</source>
-        <translation type="vanished">搜尋討論...</translation>
+        <translation>搜尋討論...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ForumThreadPanel</name>
     <message>
         <source>Be the first to share your thoughts</source>
-        <translation type="vanished">成為第一個分享您想法的人</translation>
+        <translation>成為第一個分享您想法的人</translation>
     </message>
     <message>
         <source>Loading thread...</source>
-        <translation type="vanished">載入中 thread...</translation>
+        <translation>載入中 thread...</translation>
     </message>
     <message>
         <source>NO REPLIES YET</source>
-        <translation type="vanished">尚無回覆</translation>
+        <translation>尚無回覆</translation>
     </message>
     <message>
         <source>REPLIES</source>
-        <translation type="vanished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <source>Reply</source>
-        <translation type="vanished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <source>Write a reply...</source>
-        <translation type="vanished">撰寫回覆...</translation>
+        <translation>撰寫回覆...</translation>
     </message>
     <message>
         <source>←  Back to Feed</source>
-        <translation type="vanished">←  返回 to Feed</translation>
+        <translation>←  返回 to Feed</translation>
     </message>
     <message>
         <source>▲  Upvote</source>
-        <translation type="vanished">▲ 按讚</translation>
+        <translation>▲ 按讚</translation>
     </message>
     <message>
         <source>▲ 0</source>
-        <translation type="obsolete">▲ 0</translation>
+        <translation>▲ 0</translation>
     </message>
     <message>
         <source>◆ 0 replies</source>
-        <translation type="vanished">◆ 0 則回覆</translation>
+        <translation>◆ 0 則回覆</translation>
     </message>
     <message>
         <source>◉ 0 views</source>
-        <translation type="vanished">◉ 0 次瀏覽</translation>
+        <translation>◉ 0 次瀏覽</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::FredAnalyticsPanel</name>
     <message>
         <source>DATASET</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::FredPanel</name>
     <message>
         <source>PRESET</source>
-        <translation type="vanished">預設</translation>
+        <translation>預設</translation>
     </message>
     <message>
         <source>SERIES ID</source>
-        <translation type="vanished">序列 ID</translation>
+        <translation>序列 ID</translation>
     </message>
     <message>
         <source>e.g. GDPC1</source>
-        <translation type="vanished">例如：GDPC1</translation>
+        <translation>例如：GDPC1</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GeopoliticsScreen</name>
     <message>
         <source>0 EVENTS</source>
-        <translation type="vanished">0 事件</translation>
+        <translation>0 事件</translation>
     </message>
     <message>
         <source>APPLY FILTERS</source>
-        <translation type="vanished">套用篩選</translation>
+        <translation>套用篩選</translation>
     </message>
     <message>
         <source>All Categories</source>
-        <translation type="vanished">All 分類</translation>
+        <translation>All 分類</translation>
     </message>
     <message>
         <source>CATEGORY</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>CITY</source>
-        <translation type="obsolete">CITY</translation>
+        <translation>CITY</translation>
     </message>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>COUNTRY</source>
-        <translation type="vanished">國家</translation>
+        <translation>國家</translation>
     </message>
     <message>
         <source>CREDITS: —</source>
-        <translation type="vanished">額度：—</translation>
+        <translation>額度：—</translation>
     </message>
     <message>
         <source>ENGINE:</source>
-        <translation type="vanished">引擎：</translation>
+        <translation>引擎：</translation>
     </message>
     <message>
         <source>ERROR</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>FILTERS</source>
-        <translation type="vanished">篩選</translation>
+        <translation>篩選</translation>
     </message>
     <message>
         <source>LEGEND</source>
-        <translation type="vanished">圖例</translation>
+        <translation>圖例</translation>
     </message>
     <message>
         <source>LOADING...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>NEWS-EVENTS API + HDX</source>
-        <translation type="vanished">新聞事件 API + HDX</translation>
+        <translation>新聞事件 API + HDX</translation>
     </message>
     <message>
         <source>PYTHON + C++</source>
-        <translation type="vanished">Python + C++</translation>
+        <translation>Python + C++</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>SOURCE:</source>
-        <translation type="vanished">來源：</translation>
+        <translation>來源：</translation>
     </message>
     <message>
         <source>UTC --:--</source>
-        <translation type="obsolete">UTC --:--</translation>
+        <translation>UTC --:--</translation>
     </message>
     <message>
         <source>e.g. Kyiv</source>
-        <translation type="vanished">例如：Kyiv</translation>
+        <translation>例如：Kyiv</translation>
     </message>
     <message>
         <source>e.g. Ukraine</source>
-        <translation type="vanished">例如：Ukraine</translation>
+        <translation>例如：Ukraine</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GlobalCentralBanksPanel</name>
     <message>
         <source>BANK</source>
-        <translation type="vanished">銀行</translation>
+        <translation>銀行</translation>
     </message>
     <message>
         <source>SERIES</source>
-        <translation type="vanished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataAustraliaPanel</name>
     <message>
         <source>AGENCIES</source>
-        <translation type="vanished">機構</translation>
+        <translation>機構</translation>
     </message>
     <message>
         <source>All Agencies</source>
-        <translation type="vanished">All 機構</translation>
+        <translation>All 機構</translation>
     </message>
     <message>
         <source>DATASETS</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>RECENT</source>
-        <translation type="vanished">最近</translation>
+        <translation>最近</translation>
     </message>
     <message>
         <source>Search datasets…</source>
-        <translation type="vanished">搜尋 Datasets (資料集)…</translation>
+        <translation>搜尋 Datasets (資料集)…</translation>
     </message>
     <message>
         <source>← BACK</source>
-        <translation type="vanished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataCongressPanel</name>
     <message>
         <source>All Types</source>
-        <translation type="vanished">所有類型</translation>
+        <translation>所有類型</translation>
     </message>
     <message>
         <source>BILLS</source>
-        <translation type="vanished">票券</translation>
+        <translation>票券</translation>
     </message>
     <message>
         <source>CONGRESS</source>
-        <translation type="vanished">國會</translation>
+        <translation>國會</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>H. Con. Res.</source>
-        <translation type="vanished">眾議院共同決議</translation>
+        <translation>眾議院共同決議</translation>
     </message>
     <message>
         <source>H. Joint Res.</source>
-        <translation type="vanished">眾議院聯合決議</translation>
+        <translation>眾議院聯合決議</translation>
     </message>
     <message>
         <source>H. Simple Res.</source>
-        <translation type="vanished">眾議院簡單決議</translation>
+        <translation>眾議院簡單決議</translation>
     </message>
     <message>
         <source>House Bill</source>
-        <translation type="vanished">眾議院法案</translation>
+        <translation>眾議院法案</translation>
     </message>
     <message>
         <source>S. Con. Res.</source>
-        <translation type="vanished">參議院共同決議</translation>
+        <translation>參議院共同決議</translation>
     </message>
     <message>
         <source>S. Joint Res.</source>
-        <translation type="vanished">參議院聯合決議</translation>
+        <translation>參議院聯合決議</translation>
     </message>
     <message>
         <source>S. Simple Res.</source>
-        <translation type="vanished">參議院簡單決議</translation>
+        <translation>參議院簡單決議</translation>
     </message>
     <message>
         <source>SUMMARY</source>
-        <translation type="vanished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <source>Senate Bill</source>
-        <translation type="vanished">參議院法案</translation>
+        <translation>參議院法案</translation>
     </message>
     <message>
         <source>TYPE</source>
-        <translation type="vanished">類型</translation>
+        <translation>類型</translation>
     </message>
     <message>
         <source>← BACK</source>
-        <translation type="vanished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataFrancePanel</name>
     <message>
         <source>DATA SERVICES</source>
-        <translation type="vanished">資料服務</translation>
+        <translation>資料服務</translation>
     </message>
     <message>
         <source>DATASETS</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <source>Data Services</source>
-        <translation type="vanished">資料服務</translation>
+        <translation>資料服務</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>GEO SEARCH</source>
-        <translation type="vanished">GEO 搜尋</translation>
+        <translation>GEO 搜尋</translation>
     </message>
     <message>
         <source>Municipality name…</source>
-        <translation type="vanished">Municipality 名稱…</translation>
+        <translation>Municipality 名稱…</translation>
     </message>
     <message>
         <source>Search datasets…</source>
-        <translation type="vanished">搜尋 Datasets (資料集)…</translation>
+        <translation>搜尋 Datasets (資料集)…</translation>
     </message>
     <message>
         <source>Search…</source>
-        <translation type="vanished">搜尋…</translation>
+        <translation>搜尋…</translation>
     </message>
     <message>
         <source>← BACK</source>
-        <translation type="vanished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataProviderPanel</name>
     <message>
         <source>CKAN PORTAL:</source>
-        <translation type="vanished">CKAN 入口:</translation>
+        <translation>CKAN 入口:</translation>
     </message>
     <message>
         <source>DATASETS</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>Search datasets…  ↵</source>
-        <translation type="vanished">搜尋 Datasets (資料集)…  ↵</translation>
+        <translation>搜尋 Datasets (資料集)…  ↵</translation>
     </message>
     <message>
         <source>← BACK</source>
-        <translation type="vanished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <source>↗ OPEN</source>
-        <translation type="vanished">↗ 開啟</translation>
+        <translation>↗ 開啟</translation>
     </message>
     <message>
         <source>✓ SAVED</source>
-        <translation type="vanished">✓ 已儲存</translation>
+        <translation>✓ 已儲存</translation>
     </message>
     <message>
         <source>✗ FAILED</source>
-        <translation type="vanished">✗ 失敗</translation>
+        <translation>✗ 失敗</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataScreen</name>
     <message>
         <source>COUNTRY:</source>
-        <translation type="vanished">國家:</translation>
+        <translation>國家:</translation>
     </message>
     <message>
         <source>GOVERNMENT DATA EXPLORER</source>
-        <translation type="vanished">政府資料探索者</translation>
+        <translation>政府資料探索者</translation>
     </message>
     <message>
         <source>GOVT</source>
-        <translation type="vanished">政府</translation>
+        <translation>政府</translation>
     </message>
     <message>
         <source>PORTAL:</source>
-        <translation type="vanished">入口:</translation>
+        <translation>入口:</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>SOVEREIGN PORTALS</source>
-        <translation type="vanished">主權入口</translation>
+        <translation>主權入口</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataTreasuryPanel</name>
     <message>
         <source>AUCTIONS</source>
-        <translation type="vanished">拍賣</translation>
+        <translation>拍賣</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="vanished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>Bills</source>
-        <translation type="vanished">票券</translation>
+        <translation>票券</translation>
     </message>
     <message>
         <source>Bonds</source>
-        <translation type="vanished">債券</translation>
+        <translation>債券</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>FRN</source>
-        <translation type="obsolete">FRN</translation>
+        <translation>FRN</translation>
     </message>
     <message>
         <source>Notes</source>
-        <translation type="vanished">筆記</translation>
+        <translation>筆記</translation>
     </message>
     <message>
         <source>PRICES</source>
-        <translation type="vanished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <source>SECURITY TYPE BREAKDOWN</source>
-        <translation type="vanished">SECURITY 類型 分解</translation>
+        <translation>SECURITY 類型 分解</translation>
     </message>
     <message>
         <source>SUMMARY</source>
-        <translation type="vanished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <source>TIPS</source>
-        <translation type="vanished">提示</translation>
+        <translation>提示</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::GovDataUKPanel</name>
     <message>
         <source>All Publishers</source>
-        <translation type="vanished">所有發布者</translation>
+        <translation>所有發布者</translation>
     </message>
     <message>
         <source>DATASETS</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FETCH</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>POPULAR</source>
-        <translation type="vanished">熱門</translation>
+        <translation>熱門</translation>
     </message>
     <message>
         <source>PUBLISHERS</source>
-        <translation type="vanished">發布者</translation>
+        <translation>發布者</translation>
     </message>
     <message>
         <source>Search datasets…</source>
-        <translation type="vanished">搜尋 Datasets (資料集)…</translation>
+        <translation>搜尋 Datasets (資料集)…</translation>
     </message>
     <message>
         <source>← BACK</source>
-        <translation type="vanished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::HDXDataPanel</name>
     <message>
         <source>0 datasets</source>
-        <translation type="vanished">0 個資料集</translation>
+        <translation>0 個資料集</translation>
     </message>
     <message>
         <source>COUNTRY:</source>
-        <translation type="vanished">國家:</translation>
+        <translation>國家:</translation>
     </message>
     <message>
         <source>HDX HUMANITARIAN DATA</source>
-        <translation type="vanished">HDX 人道主義資料</translation>
+        <translation>HDX 人道主義資料</translation>
     </message>
     <message>
         <source>Loading HDX data...</source>
-        <translation type="vanished">正在載入 HDX 資料...</translation>
+        <translation>正在載入 HDX 資料...</translation>
     </message>
     <message>
         <source>SEARCH</source>
-        <translation type="obsolete">SEARCH</translation>
+        <translation>SEARCH</translation>
     </message>
     <message>
         <source>Search HDX datasets...</source>
-        <translation type="vanished">搜尋 HDX 資料集...</translation>
+        <translation>搜尋 HDX 資料集...</translation>
     </message>
     <message>
         <source>Select country</source>
-        <translation type="vanished">選擇國家</translation>
+        <translation>選擇國家</translation>
     </message>
     <message>
         <source>TOPIC:</source>
-        <translation type="vanished">主題：</translation>
+        <translation>主題：</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::HoldingsBar</name>
     <message>
         <source>%1 holding(s) excluded — no live price.</source>
-        <translation type="vanished">已排除 %1 檔持倉 — 無即時報價。</translation>
+        <translation>已排除 %1 檔持倉 — 無即時報價。</translation>
     </message>
     <message>
         <source>Custom RPC override active.</source>
-        <translation type="vanished">自訂 RPC 覆蓋處於活動狀態。</translation>
+        <translation>自訂 RPC 覆蓋處於活動狀態。</translation>
     </message>
     <message>
         <source>Helius RPC — STREAM fully supported.</source>
-        <translation type="vanished">完全支援 Helius RPC - STREAM。</translation>
+        <translation>完全支援 Helius RPC - STREAM。</translation>
     </message>
     <message>
         <source>Holding ≥ %1 $FNCPT — you qualify for the fee discount.</source>
-        <translation type="vanished">持有 ≥ %1 $FNCPT - 您有資格享有費用折扣。</translation>
+        <translation>持有 ≥ %1 $FNCPT - 您有資格享有費用折扣。</translation>
     </message>
-</context>
+<message><source>Public Solana RPC. STREAM may degrade — add a Helius API key in Settings for reliable WebSocket subscriptions.</source><translation>公共 Solana RPC。串流可能不穩定 — 請在設定中新增 Helius API 金鑰以獲得可靠的 WebSocket 訂閱。</translation></message></context>
 <context>
     <name>fincept::screens::HomeTab</name>
     <message>
         <source>Balance fetch failed: %1</source>
-        <translation type="vanished">餘額獲取失敗：%1</translation>
+        <translation>餘額獲取失敗：%1</translation>
     </message>
     <message>
         <source>COPIED</source>
-        <translation type="vanished">已複製</translation>
+        <translation>已複製</translation>
     </message>
     <message>
         <source>COPY ADDRESS</source>
-        <translation type="vanished">複製 地址</translation>
+        <translation>複製 地址</translation>
     </message>
     <message>
         <source>DISCONNECT</source>
-        <translation type="vanished">中斷連線</translation>
+        <translation>中斷連線</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Solana wallet</source>
-        <translation type="vanished">Solana 錢包</translation>
+        <translation>Solana 錢包</translation>
     </message>
     <message>
         <source>restored from storage</source>
-        <translation type="vanished">已從儲存空間還原</translation>
+        <translation>已從儲存空間還原</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::IlostatPanel</name>
     <message>
         <source>ISO-2 code…</source>
-        <translation type="vanished">ISO-2 代碼…</translation>
+        <translation>ISO-2 代碼…</translation>
     </message>
-</context>
+<message><source>ISO-2 country code, e.g. USA, GBR, DEU
+Multiple: CAN+USA+GBR
+All countries: ALL</source><translation>ISO-2 國家代碼，例如 USA、GBR、DEU
+多國：CAN+USA+GBR
+全部國家：ALL</translation></message></context>
 <context>
     <name>fincept::screens::ImfPanel</name>
     <message>
         <source>COUNTRY</source>
-        <translation type="vanished">國家</translation>
+        <translation>國家</translation>
     </message>
     <message>
         <source>Filter indicators…</source>
-        <translation type="vanished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <source>IMF INDICATOR</source>
-        <translation type="vanished">IMF 指標</translation>
+        <translation>IMF 指標</translation>
     </message>
 </context>
 <context>
@@ -21380,15 +21420,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Reset</source>
-        <translation type="vanished">重設</translation>
+        <translation>重設</translation>
     </message>
     <message>
         <source>Reset All to Defaults</source>
-        <translation type="vanished">全部重設為預設值</translation>
+        <translation>全部重設為預設</translation>
     </message>
     <message>
         <source>Search actions...</source>
-        <translation type="vanished">搜尋動作...</translation>
+        <translation>搜尋操作...</translation>
     </message>
     <message>
         <source>Warning: already used by </source>
@@ -21399,1012 +21439,1012 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::LaunchpadScreen</name>
     <message>
         <source>Fincept Launchpad</source>
-        <translation type="vanished">Fincept 啟動台</translation>
+        <translation>Fincept 啟動台</translation>
     </message>
     <message>
         <source>New Window</source>
-        <translation type="vanished">新視窗</translation>
+        <translation>新視窗</translation>
     </message>
     <message>
         <source>Open Saved Layout…</source>
-        <translation type="vanished">開啟 已儲存 Layout…</translation>
+        <translation>開啟 已儲存 Layout…</translation>
     </message>
     <message>
         <source>Recent Layouts</source>
-        <translation type="vanished">最近佈局</translation>
+        <translation>最近佈局</translation>
     </message>
     <message>
         <source>Saved layouts arrive in Phase 6</source>
-        <translation type="vanished">儲存的佈局到達第 6 階段</translation>
+        <translation>儲存的佈局到達第 6 階段</translation>
     </message>
     <message>
         <source>Switch Profile…</source>
-        <translation type="vanished">切換設定檔…</translation>
+        <translation>切換設定檔…</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::LlmConfigSection</name>
     <message>
         <source>+ Add</source>
-        <translation type="vanished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <source>+ New</source>
-        <translation type="vanished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <source>A profile = named LLM config you can assign to any agent or team.</source>
-        <translation type="vanished">您可以將設定檔 = 名為 LLM 設定指派給任何代理或團隊。</translation>
+        <translation>設定檔 = 可指派給任何代理或團隊的具名 LLM 設定。</translation>
     </message>
     <message>
         <source>API Key</source>
-        <translation type="vanished">API 金鑰</translation>
+        <translation>API 金鑰</translation>
     </message>
     <message>
         <source>Base URL</source>
-        <translation type="vanished">基礎 URL</translation>
+        <translation>基礎 URL</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">刪除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Fetch</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>GLOBAL SETTINGS</source>
-        <translation type="vanished">全球 設定</translation>
+        <translation>全域設定</translation>
     </message>
     <message>
         <source>LLM CONFIGURATION</source>
-        <translation type="vanished">LLM 設定</translation>
+        <translation>LLM 設定</translation>
     </message>
     <message>
         <source>Leave blank to inherit from provider</source>
-        <translation type="vanished">留空以從提供者繼承</translation>
+        <translation>留空則繼承供應商設定</translation>
     </message>
     <message>
         <source>Leave blank to use global system prompt</source>
-        <translation type="vanished">留空以使用全域系統提示符</translation>
+        <translation>留空則使用全域系統提示詞</translation>
     </message>
     <message>
         <source>Leave blank to use provider default</source>
-        <translation type="vanished">留空以使用提供者預設值</translation>
+        <translation>留空則使用供應商預設值</translation>
     </message>
     <message>
         <source>Linked to your Fincept account: </source>
-        <translation type="vanished">連結到您的 Fincept 帳戶：</translation>
+        <translation>已連結您的 Fincept 帳戶：</translation>
     </message>
     <message>
         <source>Login to your Fincept account to enable</source>
-        <translation type="vanished">登入你的 Fincept 帳戶以啟用</translation>
+        <translation>登入您的 Fincept 帳戶以啟用</translation>
     </message>
     <message>
         <source>Max Tokens</source>
-        <translation type="vanished">最大 Tokens</translation>
+        <translation>最大 Token 數</translation>
     </message>
     <message>
         <source>Model</source>
-        <translation type="vanished">模型</translation>
+        <translation>模型</translation>
     </message>
     <message>
         <source>Optional system prompt for the LLM...</source>
-        <translation type="vanished">LLM 的可選系統提示...</translation>
+        <translation>選填 LLM 系統提示詞...</translation>
     </message>
     <message>
         <source>Optional — leave empty for default</source>
-        <translation type="vanished">選填 — 留空使用預設值</translation>
+        <translation>選填 — 留空則使用預設值</translation>
     </message>
     <message>
         <source>PROFILES</source>
-        <translation type="vanished">設定檔</translation>
+        <translation>設定檔</translation>
     </message>
     <message>
         <source>PROVIDERS</source>
-        <translation type="vanished">供應商</translation>
+        <translation>供應商</translation>
     </message>
     <message>
         <source>Provider</source>
-        <translation type="vanished">供應商</translation>
+        <translation>供應商</translation>
     </message>
     <message>
         <source>Provider Configuration</source>
-        <translation type="vanished">Provider 設定</translation>
+        <translation>供應商設定</translation>
     </message>
     <message>
         <source>Providers</source>
-        <translation type="vanished">供應商</translation>
+        <translation>供應商</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>SAVE PROFILE</source>
-        <translation type="vanished">儲存 設定檔</translation>
+        <translation>儲存設定檔</translation>
     </message>
     <message>
         <source>SET AS DEFAULT</source>
-        <translation type="vanished">SET AS 預設</translation>
+        <translation>設為預設</translation>
     </message>
     <message>
         <source>Save &amp; Set Active</source>
-        <translation type="vanished">儲存並啟用</translation>
+        <translation>儲存並啟用</translation>
     </message>
     <message>
         <source>Save Global Settings</source>
-        <translation type="vanished">儲存 全球 設定</translation>
+        <translation>儲存全域設定</translation>
     </message>
     <message>
         <source>Select or type model...</source>
-        <translation type="vanished">選擇或輸入模型...</translation>
+        <translation>選擇或輸入模型...</translation>
     </message>
     <message>
         <source>System Prompt</source>
-        <translation type="vanished">系統提示詞</translation>
+        <translation>系統提示</translation>
     </message>
     <message>
         <source>Temperature</source>
-        <translation type="vanished">溫度</translation>
+        <translation>溫度</translation>
     </message>
     <message>
         <source>Test Connection</source>
-        <translation type="vanished">測試連線</translation>
+        <translation>測試連線</translation>
     </message>
     <message>
         <source>e.g. Fast Groq, Careful Claude, Coding minimax</source>
-        <translation type="vanished">例如快速 Groq、小心克勞德、編碼極小極大</translation>
+        <translation>例如 Fast Groq、Careful Claude、Coding minimax</translation>
     </message>
     <message>
         <source>e.g. openai</source>
-        <translation type="vanished">例如：openai</translation>
+        <translation>例如 openai</translation>
     </message>
     <message>
         <source>sk-...</source>
-        <translation type="obsolete">sk-...</translation>
+        <translation>sk-...</translation>
     </message>
-</context>
+<message><source>When enabled, the AI can interact with the terminal: navigate screens, fetch market data, manage watchlists, etc.</source><translation>啟用後，AI 可與終端互動：切換畫面、擷取市場資料、管理自選清單等。</translation></message></context>
 <context>
     <name>fincept::screens::LockScreen</name>
     <message>
         <source>  解鎖  </source>
-        <translation type="obsolete">  解鎖  </translation>
+        <translation>  解鎖  </translation>
     </message>
     <message>
         <source>  設定 PIN 碼  </source>
-        <translation type="obsolete">  設定 PIN 碼  </translation>
+        <translation>  設定 PIN 碼  </translation>
     </message>
     <message>
         <source>  重新登入  </source>
-        <translation type="obsolete">  重新登入  </translation>
+        <translation>  重新登入  </translation>
     </message>
     <message>
         <source>PIN 碼</source>
-        <translation type="obsolete">PIN 碼</translation>
+        <translation>PIN 碼</translation>
     </message>
     <message>
         <source>PIN 碼不一致</source>
-        <translation type="obsolete">PIN 碼不一致</translation>
+        <translation>PIN 碼不一致</translation>
     </message>
     <message>
         <source>PIN 碼錯誤</source>
-        <translation type="obsolete">PIN 碼錯誤</translation>
+        <translation>PIN 碼錯誤</translation>
     </message>
     <message>
         <source>安全</source>
-        <translation type="obsolete">安全</translation>
+        <translation>安全</translation>
     </message>
     <message>
         <source>安全設定</source>
-        <translation type="obsolete">安全設定</translation>
+        <translation>安全設定</translation>
     </message>
     <message>
         <source>安全警告</source>
-        <translation type="obsolete">安全警告</translation>
+        <translation>安全警告</translation>
     </message>
     <message>
         <source>帳戶已鎖定</source>
-        <translation type="obsolete">帳戶已鎖定</translation>
+        <translation>帳戶已鎖定</translation>
     </message>
     <message>
         <source>必要</source>
-        <translation type="obsolete">必要</translation>
+        <translation>必要</translation>
     </message>
     <message>
         <source>確認 PIN 碼</source>
-        <translation type="obsolete">確認 PIN 碼</translation>
+        <translation>確認 PIN 碼</translation>
     </message>
     <message>
         <source>終端機已鎖定</source>
-        <translation type="obsolete">終端機已鎖定</translation>
+        <translation>終端機已鎖定</translation>
     </message>
     <message>
         <source>請建立 6 位數 PIN 碼以保護您的終端機</source>
-        <translation type="obsolete">請建立 6 位數 PIN 碼以保護您的終端機</translation>
+        <translation>請建立 6 位數 PIN 碼以保護您的終端機</translation>
     </message>
     <message>
         <source>請輸入 6 位數 PIN 碼以解鎖</source>
-        <translation type="obsolete">請輸入 6 位數 PIN 碼以解鎖</translation>
+        <translation>請輸入 6 位數 PIN 碼以解鎖</translation>
     </message>
     <message>
         <source>請輸入 PIN 碼</source>
-        <translation type="obsolete">請輸入 PIN 碼</translation>
+        <translation>請輸入 PIN 碼</translation>
     </message>
     <message>
         <source>輸入 PIN 碼</source>
-        <translation type="obsolete">輸入 PIN 碼</translation>
+        <translation>輸入 PIN 碼</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::MAAnalyticsScreen</name>
     <message>
         <source>CAPABILITIES</source>
-        <translation type="obsolete">CAPABILITIES</translation>
+        <translation>CAPABILITIES</translation>
     </message>
     <message>
         <source>CORPORATE FINANCE TOOLKIT</source>
-        <translation type="vanished">企業財務工具包</translation>
+        <translation>企業財務工具包</translation>
     </message>
     <message>
         <source>M&amp;A ANALYTICS</source>
-        <translation type="vanished">M&amp;A 分析</translation>
+        <translation>M&amp;A 分析</translation>
     </message>
     <message>
         <source>MODULE INFO</source>
-        <translation type="vanished">模組資訊</translation>
+        <translation>模組資訊</translation>
     </message>
     <message>
         <source>MODULES</source>
-        <translation type="vanished">模組</translation>
+        <translation>模組</translation>
     </message>
     <message>
         <source>QUICK STATS</source>
-        <translation type="vanished">快速統計</translation>
+        <translation>快速統計</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::MAModulePanel</name>
     <message>
         <source>ACQUIRER</source>
-        <translation type="obsolete">ACQUIRER</translation>
+        <translation>ACQUIRER</translation>
     </message>
     <message>
         <source>Accretion/Dilution</source>
-        <translation type="vanished">增值/稀釋</translation>
+        <translation>增值/稀釋</translation>
     </message>
     <message>
         <source>All Methods</source>
-        <translation type="vanished">所有方法</translation>
+        <translation>所有方法</translation>
     </message>
     <message>
         <source>Analyzing Collar...</source>
-        <translation type="vanished">分析中 Collar...</translation>
+        <translation>分析中 Collar...</translation>
     </message>
     <message>
         <source>Analyzing Contribution...</source>
-        <translation type="vanished">分析中 Contribution...</translation>
+        <translation>分析中 Contribution...</translation>
     </message>
     <message>
         <source>Analyzing Debt Schedule...</source>
-        <translation type="vanished">分析債務計劃...</translation>
+        <translation>分析債務計劃...</translation>
     </message>
     <message>
         <source>Analyzing Industry Deals...</source>
-        <translation type="vanished">分析產業交易...</translation>
+        <translation>分析產業交易...</translation>
     </message>
     <message>
         <source>Analyzing Payment Structures...</source>
-        <translation type="vanished">分析支付結構...</translation>
+        <translation>分析支付結構...</translation>
     </message>
     <message>
         <source>Analyzing Payment...</source>
-        <translation type="vanished">分析中 Payment...</translation>
+        <translation>分析中 Payment...</translation>
     </message>
     <message>
         <source>Analyzing Premium...</source>
-        <translation type="vanished">分析中 Premium...</translation>
+        <translation>分析中 Premium...</translation>
     </message>
     <message>
         <source>Assessing Process Quality...</source>
-        <translation type="vanished">評估程序品質中...</translation>
+        <translation>評估程序品質中...</translation>
     </message>
     <message>
         <source>Benchmark</source>
-        <translation type="vanished">基準</translation>
+        <translation>基準</translation>
     </message>
     <message>
         <source>Benchmarking Premium...</source>
-        <translation type="vanished">基準溢價...</translation>
+        <translation>基準溢價...</translation>
     </message>
     <message>
         <source>Berkus</source>
-        <translation type="obsolete">Berkus</translation>
+        <translation>Berkus</translation>
     </message>
     <message>
         <source>Building LBO Model...</source>
-        <translation type="vanished">建立 LBO (槓桿收購) 模型中...</translation>
+        <translation>建立 LBO (槓桿收購) 模型中...</translation>
     </message>
     <message>
         <source>Building Pro Forma...</source>
-        <translation type="vanished">建立備考...</translation>
+        <translation>建立備考...</translation>
     </message>
     <message>
         <source>CVR</source>
-        <translation type="obsolete">CVR</translation>
+        <translation>CVR</translation>
     </message>
     <message>
         <source>Calculates each party's % contribution to the combined entity.</source>
-        <translation type="vanished">計算各方對合併實體的百分比貢獻。</translation>
+        <translation>計算各方對合併實體的百分比貢獻。</translation>
     </message>
     <message>
         <source>Calculating Berkus...</source>
-        <translation type="vanished">計算中 Berkus...</translation>
+        <translation>計算中 Berkus...</translation>
     </message>
     <message>
         <source>Calculating Exchange Ratio...</source>
-        <translation type="vanished">計算兌換比率...</translation>
+        <translation>計算兌換比率...</translation>
     </message>
     <message>
         <source>Calculating FinServ Metrics...</source>
-        <translation type="vanished">計算 FinServ 指標...</translation>
+        <translation>計算 FinServ 指標...</translation>
     </message>
     <message>
         <source>Calculating First Chicago...</source>
-        <translation type="vanished">計算第一芝加哥...</translation>
+        <translation>計算第一芝加哥...</translation>
     </message>
     <message>
         <source>Calculating Healthcare Metrics...</source>
-        <translation type="vanished">計算醫療保健指標...</translation>
+        <translation>計算醫療保健指標...</translation>
     </message>
     <message>
         <source>Calculating Risk Factor...</source>
-        <translation type="vanished">計算風險因素...</translation>
+        <translation>計算風險因素...</translation>
     </message>
     <message>
         <source>Calculating Scorecard...</source>
-        <translation type="vanished">計算中 Scorecard...</translation>
+        <translation>計算中 Scorecard...</translation>
     </message>
     <message>
         <source>Calculating Sources &amp; Uses...</source>
-        <translation type="vanished">計算資金來源與用途...</translation>
+        <translation>計算資金來源與用途...</translation>
     </message>
     <message>
         <source>Calculating Tech Metrics...</source>
-        <translation type="vanished">計算技術指標...</translation>
+        <translation>計算技術指標...</translation>
     </message>
     <message>
         <source>Calculating VC Method...</source>
-        <translation type="vanished">計算中 VC Method...</translation>
+        <translation>計算中 VC Method...</translation>
     </message>
     <message>
         <source>Collar</source>
-        <translation type="vanished">Collar 策略</translation>
+        <translation>Collar 策略</translation>
     </message>
     <message>
         <source>Comparable deals JSON array...</source>
-        <translation type="vanished">可比較交易 JSON 陣列...</translation>
+        <translation>可比較交易 JSON 陣列...</translation>
     </message>
     <message>
         <source>Compare</source>
-        <translation type="vanished">比較</translation>
+        <translation>比較</translation>
     </message>
     <message>
         <source>Comparing Deals...</source>
-        <translation type="vanished">比較中 Deals...</translation>
+        <translation>比較中 Deals...</translation>
     </message>
     <message>
         <source>Contribution</source>
-        <translation type="vanished">貢獻度</translation>
+        <translation>貢獻度</translation>
     </message>
     <message>
         <source>DCF</source>
-        <translation type="obsolete">DCF</translation>
+        <translation>DCF</translation>
     </message>
     <message>
         <source>DEAL TERMS</source>
-        <translation type="vanished">交易條款</translation>
+        <translation>交易條款</translation>
     </message>
     <message>
         <source>Deals JSON with cash_pct and stock_pct fields...</source>
-        <translation type="vanished">使用 cash_pct 和 stock_pct 欄位處理 JSON...</translation>
+        <translation>使用 cash_pct 和 stock_pct 欄位處理 JSON...</translation>
     </message>
     <message>
         <source>Deals JSON with industry field...</source>
-        <translation type="vanished">處理 JSON 與產業領域...</translation>
+        <translation>處理 JSON 與產業領域...</translation>
     </message>
     <message>
         <source>Debt Schedule</source>
-        <translation type="vanished">負債排程</translation>
+        <translation>負債排程</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Earnout</source>
-        <translation type="vanished">Earnout（績效對價）</translation>
+        <translation>Earnout（績效對價）</translation>
     </message>
     <message>
         <source>Enter target ticker and comparable tickers (comma-separated):</source>
-        <translation type="vanished">輸入目標代碼與可比較代碼（以逗號分隔）：</translation>
+        <translation>輸入目標代碼與可比較代碼（以逗號分隔）：</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>Exchange Ratio</source>
-        <translation type="vanished">換股比率</translation>
+        <translation>換股比率</translation>
     </message>
     <message>
         <source>Fairness Analysis</source>
-        <translation type="vanished">公平性分析</translation>
+        <translation>公平性分析</translation>
     </message>
     <message>
         <source>Financial Services</source>
-        <translation type="vanished">金融服務</translation>
+        <translation>金融服務</translation>
     </message>
     <message>
         <source>First Chicago</source>
-        <translation type="vanished">First Chicago 估值法</translation>
+        <translation>First Chicago 估值法</translation>
     </message>
     <message>
         <source>Generating Fairness Opinion...</source>
-        <translation type="vanished">產生公平意見...</translation>
+        <translation>產生公平意見...</translation>
     </message>
     <message>
         <source>Healthcare</source>
-        <translation type="vanished">醫療保健</translation>
+        <translation>醫療保健</translation>
     </message>
     <message>
         <source>Industry</source>
-        <translation type="vanished">產業</translation>
+        <translation>產業</translation>
     </message>
     <message>
         <source>LBO Model</source>
-        <translation type="vanished">LBO 模型</translation>
+        <translation>LBO 模型</translation>
     </message>
     <message>
         <source>LBO Returns</source>
-        <translation type="vanished">LBO 報酬</translation>
+        <translation>LBO 報酬</translation>
     </message>
     <message>
         <source>Loading deals...</source>
-        <translation type="vanished">載入交易中...</translation>
+        <translation>載入交易中...</translation>
     </message>
     <message>
         <source>MSFT,GOOG,AMZN</source>
-        <translation type="obsolete">MSFT,GOOG,AMZN</translation>
+        <translation>MSFT,GOOG,AMZN</translation>
     </message>
     <message>
         <source>Monte Carlo</source>
-        <translation type="vanished">蒙地卡羅</translation>
+        <translation>蒙地卡羅</translation>
     </message>
     <message>
         <source>Payment</source>
-        <translation type="vanished">付款</translation>
+        <translation>付款</translation>
     </message>
     <message>
         <source>Precedent Txns</source>
-        <translation type="vanished">先例交易</translation>
+        <translation>先例交易</translation>
     </message>
     <message>
         <source>Premium Analysis</source>
-        <translation type="vanished">溢價分析</translation>
+        <translation>溢價分析</translation>
     </message>
     <message>
         <source>Pro Forma</source>
-        <translation type="vanished">預估損益</translation>
+        <translation>預估損益</translation>
     </message>
     <message>
         <source>Process Quality</source>
-        <translation type="vanished">處理品質</translation>
+        <translation>處理品質</translation>
     </message>
     <message>
         <source>RESULTS</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>Rank</source>
-        <translation type="vanished">排名</translation>
+        <translation>排名</translation>
     </message>
     <message>
         <source>Ranking Deals...</source>
-        <translation type="vanished">排名 Deals...</translation>
+        <translation>排名 Deals...</translation>
     </message>
     <message>
         <source>Regression</source>
-        <translation type="vanished">迴歸分析</translation>
+        <translation>迴歸</translation>
     </message>
     <message>
         <source>Risk Factor</source>
-        <translation type="vanished">風險因子</translation>
+        <translation>風險因子</translation>
     </message>
     <message>
         <source>Running Accretion/Dilution...</source>
-        <translation type="vanished">運行增加/稀釋...</translation>
+        <translation>運行增加/稀釋...</translation>
     </message>
     <message>
         <source>Running Comprehensive...</source>
-        <translation type="vanished">執行中 Comprehensive...</translation>
+        <translation>執行中 Comprehensive...</translation>
     </message>
     <message>
         <source>Running DCF...</source>
-        <translation type="vanished">執行 DCF (現金流量折現法) 中...</translation>
+        <translation>執行 DCF (現金流量折現法) 中...</translation>
     </message>
     <message>
         <source>Running LBO Sensitivity...</source>
-        <translation type="vanished">運行 LBO 靈敏度...</translation>
+        <translation>運行 LBO 靈敏度...</translation>
     </message>
     <message>
         <source>Running LBO...</source>
-        <translation type="vanished">執行 LBO (槓桿收購) 中...</translation>
+        <translation>執行 LBO (槓桿收購) 中...</translation>
     </message>
     <message>
         <source>Running Monte Carlo...</source>
-        <translation type="vanished">運行蒙特卡羅...</translation>
+        <translation>運行蒙特卡羅...</translation>
     </message>
     <message>
         <source>Running Precedent Txns...</source>
-        <translation type="vanished">運行先例 Txns...</translation>
+        <translation>運行先例 Txns...</translation>
     </message>
     <message>
         <source>Running Regression...</source>
-        <translation type="vanished">執行 Regression (迴歸分析) 中...</translation>
+        <translation>執行 Regression (迴歸分析) 中...</translation>
     </message>
     <message>
         <source>Running Trading Comps...</source>
-        <translation type="vanished">運行交易比較...</translation>
+        <translation>運行交易比較...</translation>
     </message>
     <message>
         <source>Runs all 5 methods with current inputs and returns a consensus range.</source>
-        <translation type="vanished">以目前輸入執行全部 5 種方法，回傳共識範圍。</translation>
+        <translation>以目前輸入執行全部 5 種方法，回傳共識範圍。</translation>
     </message>
     <message>
         <source>Same JSON array format as Compare tab...</source>
-        <translation type="vanished">與比較標籤頁相同的 JSON 陣列格式...</translation>
+        <translation>與比較標籤頁相同的 JSON 陣列格式...</translation>
     </message>
     <message>
         <source>Scan Days:</source>
-        <translation type="vanished">掃描天數：</translation>
+        <translation>掃描天數：</translation>
     </message>
     <message>
         <source>Scanning SEC EDGAR...</source>
-        <translation type="vanished">掃描 SEC EDGAR...</translation>
+        <translation>掃描 SEC EDGAR...</translation>
     </message>
     <message>
         <source>Scorecard</source>
-        <translation type="vanished">計分卡</translation>
+        <translation>計分卡</translation>
     </message>
     <message>
         <source>Search deals by target, acquirer, or industry...</source>
-        <translation type="vanished">依目標、收購方或產業搜尋交易...</translation>
+        <translation>依目標、收購方或產業搜尋交易...</translation>
     </message>
     <message>
         <source>Searching deals...</source>
-        <translation type="vanished">搜尋交易中...</translation>
+        <translation>搜尋交易中...</translation>
     </message>
     <message>
         <source>Sensitivity</source>
-        <translation type="vanished">敏感度分析</translation>
+        <translation>敏感度</translation>
     </message>
     <message>
         <source>Sensitivity analysis varies entry multiple and exit multiple around base case.</source>
-        <translation type="vanished">敏感度分析在基準情境周圍變動進場倍數與出場倍數。</translation>
+        <translation>敏感度分析在基準情境周圍變動進場倍數與出場倍數。</translation>
     </message>
     <message>
         <source>Show Raw JSON</source>
-        <translation type="vanished">顯示原始 JSON</translation>
+        <translation>顯示原始 JSON</translation>
     </message>
     <message>
         <source>Sources &amp; Uses</source>
-        <translation type="vanished">資金來源與用途</translation>
+        <translation>資金來源與用途</translation>
     </message>
     <message>
         <source>Synergies</source>
-        <translation type="vanished">綜效</translation>
+        <translation>綜效</translation>
     </message>
     <message>
         <source>TARGET</source>
-        <translation type="obsolete">TARGET</translation>
+        <translation>TARGET</translation>
     </message>
     <message>
         <source>Target ticker (e.g. AAPL)</source>
-        <translation type="vanished">目標程式碼（例如 AAPL）</translation>
+        <translation>目標程式碼（例如 AAPL）</translation>
     </message>
     <message>
         <source>Technology</source>
-        <translation type="vanished">科技</translation>
+        <translation>科技</translation>
     </message>
     <message>
         <source>Trading Comps</source>
-        <translation type="vanished">交易比較</translation>
+        <translation>交易比較</translation>
     </message>
     <message>
         <source>VC Method</source>
-        <translation type="vanished">VC 估值法</translation>
+        <translation>VC 估值法</translation>
     </message>
     <message>
         <source>Valuing CVR...</source>
-        <translation type="vanished">估值中 CVR...</translation>
+        <translation>估值中 CVR...</translation>
     </message>
     <message>
         <source>Valuing Earnout...</source>
-        <translation type="vanished">估值中 Earnout...</translation>
+        <translation>估值中 Earnout...</translation>
     </message>
     <message>
         <source>Valuing Synergies...</source>
-        <translation type="vanished">評估 Synergies (綜效) 中...</translation>
+        <translation>評估 Synergies (綜效) 中...</translation>
     </message>
-</context>
+<message><source>[{acquirer:MSFT, target:ATVI, deal_value:68700, premium:45.3,ev_revenue:8.7, ev_ebitda:23.1}]</source><translation>[{acquirer:MSFT, target:ATVI, deal_value:68700, premium:45.3,ev_revenue:8.7, ev_ebitda:23.1}]</translation></message></context>
 <context>
     <name>fincept::screens::MaritimeScreen</name>
     <message>
         <source>0 VESSELS</source>
-        <translation type="vanished">0 船隻</translation>
+        <translation>0 船隻</translation>
     </message>
     <message>
         <source>5 MIN</source>
-        <translation type="vanished">5 分鐘</translation>
+        <translation>5 分鐘</translation>
     </message>
     <message>
         <source>AIS FEED + FINCEPT API</source>
-        <translation type="vanished">AIS 資料流 + Fincept API</translation>
+        <translation>AIS 資料流 + Fincept API</translation>
     </message>
     <message>
         <source>AIS: STREAMING</source>
-        <translation type="vanished">AIS：串流中</translation>
+        <translation>AIS：串流中</translation>
     </message>
     <message>
         <source>AREA SEARCH</source>
-        <translation type="vanished">區域搜尋</translation>
+        <translation>區域搜尋</translation>
     </message>
     <message>
         <source>CLASSIFIED // TRADE ROUTE ANALYSIS</source>
-        <translation type="vanished">機密 // 貿易航線分析</translation>
+        <translation>機密 // 貿易航線分析</translation>
     </message>
     <message>
         <source>CLASSIFIED — AUTHORIZED PERSONNEL ONLY</source>
-        <translation type="vanished">機密 — 僅限授權人員</translation>
+        <translation>機密 — 僅限授權人員</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FINCEPT MARITIME INTELLIGENCE</source>
-        <translation type="vanished">Fincept 海事情報</translation>
+        <translation>Fincept 海事情報</translation>
     </message>
     <message>
         <source>From: </source>
-        <translation type="vanished">From:</translation>
+        <translation>From:</translation>
     </message>
     <message>
         <source>IMO NUMBER</source>
-        <translation type="vanished">IMO 編號</translation>
+        <translation>IMO 編號</translation>
     </message>
     <message>
         <source>IMO: </source>
-        <translation type="obsolete">IMO: </translation>
+        <translation>IMO: </translation>
     </message>
     <message>
         <source>INTELLIGENCE</source>
-        <translation type="obsolete">INTELLIGENCE</translation>
+        <translation>INTELLIGENCE</translation>
     </message>
     <message>
         <source>LOAD VESSELS (MUMBAI AREA)</source>
-        <translation type="vanished">載入船隻（孟買區域）</translation>
+        <translation>載入船隻（孟買區域）</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>REFRESH:</source>
-        <translation type="vanished">重新整理：</translation>
+        <translation>重新整理：</translation>
     </message>
     <message>
         <source>SEARCH AREA</source>
-        <translation type="vanished">搜尋區域</translation>
+        <translation>搜尋區域</translation>
     </message>
     <message>
         <source>SELECTED ROUTE</source>
-        <translation type="vanished">已選航線</translation>
+        <translation>已選航線</translation>
     </message>
     <message>
         <source>SOURCE:</source>
-        <translation type="vanished">來源：</translation>
+        <translation>來源：</translation>
     </message>
     <message>
         <source>SYSTEM STATUS</source>
-        <translation type="vanished">系統狀態</translation>
+        <translation>系統狀態</translation>
     </message>
     <message>
         <source>Status: </source>
-        <translation type="vanished">Status:</translation>
+        <translation>Status:</translation>
     </message>
     <message>
         <source>THREAT: LOW</source>
-        <translation type="vanished">威脅：低</translation>
+        <translation>威脅：低</translation>
     </message>
     <message>
         <source>TRACK</source>
-        <translation type="obsolete">TRACK</translation>
+        <translation>TRACK</translation>
     </message>
     <message>
         <source>TRADE CORRIDORS</source>
-        <translation type="vanished">貿易走廊</translation>
+        <translation>貿易走廊</translation>
     </message>
     <message>
         <source>To: </source>
-        <translation type="vanished">到：</translation>
+        <translation>到：</translation>
     </message>
     <message>
         <source>Trade Value: </source>
-        <translation type="vanished">貿易價值：</translation>
+        <translation>貿易價值：</translation>
     </message>
     <message>
         <source>VESSEL SEARCH</source>
-        <translation type="vanished">船隻搜尋</translation>
+        <translation>船隻搜尋</translation>
     </message>
     <message>
         <source>VESSEL TRACKING — AIS FEED</source>
-        <translation type="vanished">船隻追蹤 — AIS 資料流</translation>
+        <translation>船隻追蹤 — AIS 資料流</translation>
     </message>
     <message>
         <source>VOYAGE HISTORY</source>
-        <translation type="vanished">航程歷史</translation>
+        <translation>航程歷史</translation>
     </message>
     <message>
         <source>e.g. 9344745</source>
-        <translation type="vanished">例如：9344745</translation>
+        <translation>例如：9344745</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::MarketPanel</name>
     <message>
         <source>  ⠋  LOADING</source>
-        <translation type="vanished">⠋  載入中</translation>
+        <translation>⠋  載入中</translation>
     </message>
     <message>
         <source>[RETRY]</source>
-        <translation type="vanished">[重試]</translation>
+        <translation>[重試]</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::MarketPanelEditor</name>
     <message>
         <source>ADD TICKER  ·  type to search, click or Enter to add</source>
-        <translation type="vanished">添加股票代碼·鍵入進行搜索，單擊或 Enter 進行添加</translation>
+        <translation>添加股票代碼·鍵入進行搜索，單擊或 Enter 進行添加</translation>
     </message>
     <message>
         <source>PANEL TITLE</source>
-        <translation type="vanished">面板 TITLE</translation>
+        <translation>面板 TITLE</translation>
     </message>
     <message>
         <source>Search symbol or name: AAPL, Reliance, Bitcoin ...</source>
-        <translation type="vanished">搜尋符號或名稱： AAPL, Reliance, Bitcoin ...</translation>
+        <translation>搜尋符號或名稱： AAPL, Reliance, Bitcoin ...</translation>
     </message>
     <message>
         <source>TICKERS</source>
-        <translation type="vanished">股票代碼</translation>
+        <translation>股票代碼</translation>
     </message>
     <message>
         <source>e.g. My Tech Stocks</source>
-        <translation type="vanished">例如我的科技股</translation>
+        <translation>例如我的科技股</translation>
     </message>
     <message>
         <source>✕ REMOVE</source>
-        <translation type="vanished">✕ 移除</translation>
+        <translation>✕ 移除</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::MarketPulsePanel</name>
     <message>
         <source>/100</source>
-        <translation type="obsolete">/100</translation>
+        <translation>/100</translation>
     </message>
     <message>
         <source>市場脈動</source>
-        <translation type="obsolete">市場脈動</translation>
+        <translation>市場脈動</translation>
     </message>
     <message>
         <source>恐懼與貪婪指數</source>
-        <translation type="obsolete">恐懼與貪婪指數</translation>
+        <translation>恐懼與貪婪指數</translation>
     </message>
     <message>
         <source>載入中...</source>
-        <translation type="obsolete">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::MarketsScreen</name>
     <message>
         <source>10M</source>
-        <translation type="obsolete">10M</translation>
+        <translation>10M</translation>
     </message>
     <message>
         <source>15M</source>
-        <translation type="obsolete">15M</translation>
+        <translation>15M</translation>
     </message>
     <message>
         <source>1D</source>
-        <translation type="vanished">1日</translation>
+        <translation>1日</translation>
     </message>
     <message>
         <source>1H</source>
-        <translation type="obsolete">1H</translation>
+        <translation>1H</translation>
     </message>
     <message>
         <source>30M</source>
-        <translation type="obsolete">30M</translation>
+        <translation>30M</translation>
     </message>
     <message>
         <source>4H</source>
-        <translation type="obsolete">4H</translation>
+        <translation>4H</translation>
     </message>
     <message>
         <source>5M</source>
-        <translation type="obsolete">5M</translation>
+        <translation>5M</translation>
     </message>
     <message>
         <source>FINCEPT MARKETS</source>
-        <translation type="vanished">Fincept 市場</translation>
+        <translation>Fincept 市場</translation>
     </message>
     <message>
         <source>LAST UPDATE  --:--:--</source>
-        <translation type="vanished">最後 更新  --:--:--</translation>
+        <translation>最後 更新  --:--:--</translation>
     </message>
     <message>
         <source>Remove Panel</source>
-        <translation type="vanished">移除面板</translation>
+        <translation>移除面板</translation>
     </message>
     <message>
         <source>Remove this panel?</source>
-        <translation type="vanished">移除此面板？</translation>
+        <translation>移除此面板？</translation>
     </message>
     <message>
         <source>Reset Panels</source>
-        <translation type="vanished">重設面板</translation>
+        <translation>重設面板</translation>
     </message>
     <message>
         <source>Reset all panels to defaults?</source>
-        <translation type="vanished">將所有面板重設為預設值？</translation>
+        <translation>將所有面板重設為預設值？</translation>
     </message>
     <message>
         <source>● LOADING</source>
-        <translation type="vanished">● 載入中</translation>
+        <translation>● 載入中</translation>
     </message>
     <message>
         <source>● READY</source>
-        <translation type="vanished">● 就緒</translation>
+        <translation>● 就緒</translation>
     </message>
     <message>
         <source>● TIMEOUT</source>
-        <translation type="vanished">● 逾時</translation>
+        <translation>● 逾時</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::McpServersScreen</name>
     <message>
         <source>  CATEGORY</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>ADD</source>
-        <translation type="vanished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <source>ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)</source>
-        <translation type="vanished">所有工具 - 內部 + 外部（選取/取消選取以啟用/停用內部工具）</translation>
+        <translation>所有工具 - 內部 + 外部（選取/取消選取以啟用/停用內部工具）</translation>
     </message>
     <message>
         <source>Add  </source>
-        <translation type="vanished">新增  </translation>
+        <translation>新增  </translation>
     </message>
     <message>
         <source>Add Custom MCP Server</source>
-        <translation type="vanished">新增自訂 MCP Server</translation>
+        <translation>新增自訂 MCP Server</translation>
     </message>
     <message>
         <source>Enter </source>
-        <translation type="vanished">輸入 </translation>
+        <translation>輸入 </translation>
     </message>
     <message>
         <source>Environment Variables</source>
-        <translation type="vanished">環境變數</translation>
+        <translation>環境變數</translation>
     </message>
     <message>
         <source>KEY=value KEY2=value2</source>
-        <translation type="obsolete">KEY=value KEY2=value2</translation>
+        <translation>KEY=value KEY2=value2</translation>
     </message>
     <message>
         <source>LOGS</source>
-        <translation type="vanished">日誌</translation>
+        <translation>日誌</translation>
     </message>
     <message>
         <source>MARKETPLACE</source>
-        <translation type="vanished">市集</translation>
+        <translation>市集</translation>
     </message>
     <message>
         <source>MCP SERVERS</source>
-        <translation type="vanished">MCP 伺服器</translation>
+        <translation>MCP 伺服器</translation>
     </message>
     <message>
         <source>No servers match the current filter.</source>
-        <translation type="vanished">沒有伺服器符合目前的篩選條件。</translation>
+        <translation>沒有伺服器符合目前的篩選條件。</translation>
     </message>
     <message>
         <source>REMOVE</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <source>Short description</source>
-        <translation type="vanished">簡短說明</translation>
+        <translation>簡短說明</translation>
     </message>
     <message>
         <source>e.g. My Custom Server</source>
-        <translation type="vanished">例如我的自訂伺服器</translation>
+        <translation>例如我的自訂伺服器</translation>
     </message>
     <message>
         <source>e.g. my-mcp-package --flag value</source>
-        <translation type="vanished">例如my-mcp-package --標誌值</translation>
+        <translation>例如my-mcp-package --標誌值</translation>
     </message>
     <message>
         <source>↺  REFRESH</source>
-        <translation type="vanished">↺  重新整理</translation>
+        <translation>↺  重新整理</translation>
     </message>
     <message>
         <source>✓ ADDED</source>
-        <translation type="vanished">✓ 已加入</translation>
+        <translation>✓ 已加入</translation>
     </message>
     <message>
         <source>⟳ STARTING...</source>
-        <translation type="vanished">⟳ 啟動中...</translation>
+        <translation>⟳ 啟動中...</translation>
     </message>
     <message>
         <source>＋  ADD CUSTOM MCP SERVER</source>
-        <translation type="vanished">＋  ADD 自訂 MCP 伺服器</translation>
+        <translation>＋  ADD 自訂 MCP 伺服器</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::McpServersSection</name>
     <message>
         <source>+ Add</source>
-        <translation type="vanished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <source>Add External MCP Server</source>
-        <translation type="vanished">Add 外部 MCP 伺服器</translation>
+        <translation>新增外部 MCP 伺服器</translation>
     </message>
     <message>
         <source>Add MCP Server</source>
-        <translation type="vanished">新增 MCP Server</translation>
+        <translation>新增 MCP 伺服器</translation>
     </message>
     <message>
         <source>All registered MCP tools — both internal (built-in) and external (from connected servers).</source>
-        <translation type="vanished">所有註冊的 MCP 工具 - 內部（內建）和外部（來自連接的伺服器）。</translation>
+        <translation>所有已註冊的 MCP 工具 — 包含內建及外部（來自已連線伺服器）。</translation>
     </message>
     <message>
         <source>Auto-start on launch</source>
-        <translation type="vanished">啟動時自動開始</translation>
+        <translation>啟動時自動執行</translation>
     </message>
     <message>
         <source>External Servers</source>
-        <translation type="vanished">外部 Servers</translation>
+        <translation>外部伺服器</translation>
     </message>
     <message>
         <source>MCP SERVERS</source>
-        <translation type="vanished">MCP 伺服器</translation>
+        <translation>MCP 伺服器</translation>
     </message>
     <message>
         <source>No external servers configured.\nClick '+ Add' to add one.</source>
@@ -22412,530 +22452,532 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>Select a server to view details.</source>
-        <translation type="vanished">選擇伺服器以查看詳細資訊。</translation>
+        <translation>選取伺服器以檢視詳細資訊。</translation>
     </message>
     <message>
         <source>■  Stop</source>
-        <translation type="vanished">■  停止</translation>
+        <translation>■  停止</translation>
     </message>
     <message>
         <source>▶  Start</source>
-        <translation type="vanished">▶  開始</translation>
+        <translation>▶  啟動</translation>
     </message>
-</context>
+<message><source>No external servers configured.
+Click '+ Add' to add one.</source><translation>尚未設定外部伺服器。
+點擊「+ 新增」以新增。</translation></message></context>
 <context>
     <name>fincept::screens::NewsCommandBar</name>
     <message>
         <source>0 WATCHES</source>
-        <translation type="vanished">0 觀察</translation>
+        <translation>0 觀察</translation>
     </message>
     <message>
         <source>AI</source>
-        <translation type="obsolete">AI</translation>
+        <translation>AI</translation>
     </message>
     <message>
         <source>AI Brief — summarize headlines</source>
-        <translation type="vanished">AI Brief (AI 摘要) — 摘要標題</translation>
+        <translation>AI Brief (AI 摘要) — 摘要標題</translation>
     </message>
     <message>
         <source>INTEL</source>
-        <translation type="obsolete">INTEL</translation>
+        <translation>INTEL</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>RTL</source>
-        <translation type="obsolete">RTL</translation>
+        <translation>RTL</translation>
     </message>
     <message>
         <source>SENT</source>
-        <translation type="obsolete">SENT</translation>
+        <translation>SENT</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <source>Toggle intelligence drawer</source>
-        <translation type="vanished">切換智慧抽屜</translation>
+        <translation>切換智慧抽屜</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::NewsDetailPanel</name>
     <message>
         <source>AI ANALYSIS</source>
-        <translation type="vanished">AI 分析</translation>
+        <translation>AI 分析</translation>
     </message>
     <message>
         <source>ANALYZE</source>
-        <translation type="vanished">分析</translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>ANALYZING...</source>
-        <translation type="vanished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <source>ARTICLE DETAIL</source>
-        <translation type="vanished">文章詳情</translation>
+        <translation>文章詳情</translation>
     </message>
     <message>
         <source>BOOKMARK</source>
-        <translation type="vanished">書籤</translation>
+        <translation>書籤</translation>
     </message>
     <message>
         <source>Bookmark article</source>
-        <translation type="vanished">收藏文章</translation>
+        <translation>收藏文章</translation>
     </message>
     <message>
         <source>COPY URL</source>
-        <translation type="vanished">複製 URL</translation>
+        <translation>複製 URL</translation>
     </message>
     <message>
         <source>ENTITIES</source>
-        <translation type="obsolete">ENTITIES</translation>
+        <translation>ENTITIES</translation>
     </message>
     <message>
         <source>KEY POINTS</source>
-        <translation type="vanished">重點摘要</translation>
+        <translation>重點摘要</translation>
     </message>
     <message>
         <source>MONITOR MATCHES</source>
-        <translation type="vanished">監控匹配</translation>
+        <translation>監控匹配</translation>
     </message>
     <message>
         <source>NEARBY INFRASTRUCTURE</source>
-        <translation type="vanished">附近基礎設施</translation>
+        <translation>附近基礎設施</translation>
     </message>
     <message>
         <source>OPEN</source>
-        <translation type="obsolete">OPEN</translation>
+        <translation>OPEN</translation>
     </message>
     <message>
         <source>RELATED</source>
-        <translation type="obsolete">RELATED</translation>
+        <translation>RELATED</translation>
     </message>
     <message>
         <source>RISK SIGNALS</source>
-        <translation type="vanished">風險訊號</translation>
+        <translation>風險訊號</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Save article to File Manager</source>
-        <translation type="vanished">將文章儲存至檔案管理器</translation>
+        <translation>將文章儲存至檔案管理器</translation>
     </message>
     <message>
         <source>Select an article</source>
-        <translation type="vanished">選取文章</translation>
+        <translation>選取文章</translation>
     </message>
     <message>
         <source>TOPICS</source>
-        <translation type="obsolete">TOPICS</translation>
+        <translation>TOPICS</translation>
     </message>
     <message>
         <source>TRANSLATE</source>
-        <translation type="vanished">翻譯</translation>
+        <translation>翻譯</translation>
     </message>
     <message>
         <source>x</source>
-        <translation type="obsolete">x</translation>
+        <translation>x</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::NewsFeedPanel</name>
     <message>
         <source>FLASH</source>
-        <translation type="obsolete">FLASH</translation>
+        <translation>FLASH</translation>
     </message>
     <message>
         <source>x</source>
-        <translation type="obsolete">x</translation>
+        <translation>x</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::NewsSidePanel</name>
     <message>
         <source>CATEGORIES</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>DEVIATIONS</source>
-        <translation type="obsolete">DEVIATIONS</translation>
+        <translation>DEVIATIONS</translation>
     </message>
     <message>
         <source>INTELLIGENCE</source>
-        <translation type="obsolete">INTELLIGENCE</translation>
+        <translation>INTELLIGENCE</translation>
     </message>
     <message>
         <source>KEYWORD MONITORS</source>
-        <translation type="vanished">關鍵字監控</translation>
+        <translation>關鍵字監控</translation>
     </message>
     <message>
         <source>TOP STORIES</source>
-        <translation type="vanished">頭條新聞</translation>
+        <translation>頭條新聞</translation>
     </message>
     <message>
         <source>label: kw1, kw2</source>
-        <translation type="vanished">標籤: kw1, kw2</translation>
+        <translation>標籤: kw1, kw2</translation>
     </message>
     <message>
         <source>x</source>
-        <translation type="obsolete">x</translation>
+        <translation>x</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::NotesScreen</name>
     <message>
         <source>  CATEGORIES</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>* </source>
-        <translation type="obsolete">* </translation>
+        <translation>* </translation>
     </message>
     <message>
         <source>+ NEW</source>
-        <translation type="vanished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <source>0 notes</source>
-        <translation type="vanished">0 個筆記</translation>
+        <translation>0 個筆記</translation>
     </message>
     <message>
         <source>AAPL, MSFT, ...</source>
-        <translation type="obsolete">AAPL, MSFT, ...</translation>
+        <translation>AAPL, MSFT, ...</translation>
     </message>
     <message>
         <source>ARCHIVE</source>
-        <translation type="vanished">封存</translation>
+        <translation>封存</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>DELETE</source>
-        <translation type="obsolete">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <source>EDIT</source>
-        <translation type="vanished">編輯</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>EXPORT</source>
-        <translation type="vanished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>Export this note as a Markdown file to the File Manager</source>
-        <translation type="vanished">將此筆記作為 Markdown 文件匯出到文件管理器</translation>
+        <translation>將此筆記作為 Markdown 文件匯出到文件管理器</translation>
     </message>
     <message>
         <source>FAV</source>
-        <translation type="vanished">收藏</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <source>Note title...</source>
-        <translation type="vanished">Note (筆記) 標題...</translation>
+        <translation>Note (筆記) 標題...</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Search notes...</source>
-        <translation type="vanished">搜尋 Notes (筆記)...</translation>
+        <translation>搜尋 Notes (筆記)...</translation>
     </message>
     <message>
         <source>Select a note or create a new one</source>
-        <translation type="vanished">選擇註釋或建立新註釋</translation>
+        <translation>選擇註釋或建立新註釋</translation>
     </message>
     <message>
         <source>Write your note here...</source>
-        <translation type="vanished">在此撰寫 Note (筆記)...</translation>
+        <translation>在此撰寫 Note (筆記)...</translation>
     </message>
     <message>
         <source>tag1, tag2, ...</source>
-        <translation type="vanished">標籤1, 標籤2, ...</translation>
+        <translation>標籤1, 標籤2, ...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::OecdPanel</name>
     <message>
         <source>Annual</source>
-        <translation type="vanished">年度</translation>
+        <translation>年度</translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation type="vanished">每月</translation>
+        <translation>每月</translation>
     </message>
     <message>
         <source>Quarterly</source>
-        <translation type="vanished">每季</translation>
+        <translation>每季</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::OnsPanel</name>
     <message>
         <source>SERIES</source>
-        <translation type="vanished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::OwIdPanel</name>
     <message>
         <source>Country…</source>
-        <translation type="vanished">國家…</translation>
+        <translation>國家…</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PerformanceRiskView</name>
     <message>
         <source>  RISK METRICS</source>
-        <translation type="vanished">風險指標</translation>
+        <translation>風險指標</translation>
     </message>
     <message>
         <source>NAV PERFORMANCE (FROM SNAPSHOTS)</source>
-        <translation type="vanished">導航效能（來自快照）</translation>
+        <translation>導航效能（來自快照）</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PlannerViewPanel</name>
     <message>
         <source>COPIED!</source>
-        <translation type="vanished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <source>COPY</source>
-        <translation type="vanished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <source>CUSTOM PLAN QUERY</source>
-        <translation type="vanished">自訂 方案 QUERY</translation>
+        <translation>自訂 方案 QUERY</translation>
     </message>
     <message>
         <source>Default (Global)</source>
-        <translation type="vanished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <source>Describe what you want to plan...</source>
-        <translation type="vanished">描述你想規劃的內容...</translation>
+        <translation>描述你想規劃的內容...</translation>
     </message>
     <message>
         <source>ERROR</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>EXECUTE PLAN</source>
-        <translation type="vanished">執行計畫</translation>
+        <translation>執行計畫</translation>
     </message>
     <message>
         <source>EXECUTING</source>
-        <translation type="vanished">執行中</translation>
+        <translation>執行中</translation>
     </message>
     <message>
         <source>EXECUTING...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>EXECUTION PLAN</source>
-        <translation type="vanished">執行 方案</translation>
+        <translation>執行 方案</translation>
     </message>
     <message>
         <source>GENERATE PLAN</source>
-        <translation type="vanished">產生計畫</translation>
+        <translation>產生計畫</translation>
     </message>
     <message>
         <source>GENERATING</source>
-        <translation type="vanished">產生中</translation>
+        <translation>產生中</translation>
     </message>
     <message>
         <source>GENERATING...</source>
-        <translation type="vanished">產生中...</translation>
+        <translation>產生中...</translation>
     </message>
     <message>
         <source>LLM PROFILE:</source>
-        <translation type="vanished">LLM 設定檔:</translation>
+        <translation>LLM 設定檔:</translation>
     </message>
     <message>
         <source>LLM profile used for plan generation and execution</source>
-        <translation type="vanished">用於產生與執行計畫的 LLM Profile (設定檔)</translation>
+        <translation>用於產生與執行計畫的 LLM Profile (設定檔)</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="vanished">無</translation>
+        <translation>無</translation>
     </message>
     <message>
         <source>PLAN HISTORY</source>
-        <translation type="vanished">方案 歷史</translation>
+        <translation>方案 歷史</translation>
     </message>
     <message>
         <source>PLAN TEMPLATES</source>
-        <translation type="vanished">方案 TEMPLATES</translation>
+        <translation>方案 TEMPLATES</translation>
     </message>
     <message>
         <source>PORTFOLIO:</source>
-        <translation type="vanished">投資組合:</translation>
+        <translation>投資組合:</translation>
     </message>
     <message>
         <source>Portfolio to use as context for rebalance / analysis plans</source>
-        <translation type="vanished">用作再平衡/分析計劃背景的投資組合</translation>
+        <translation>用作再平衡/分析計劃背景的投資組合</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>STEP RESULT</source>
-        <translation type="vanished">STEP 結果</translation>
+        <translation>STEP 結果</translation>
     </message>
     <message>
         <source>Search history...</source>
-        <translation type="vanished">搜尋歷史...</translation>
+        <translation>搜尋歷史...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PlanningView</name>
     <message>
         <source>Annual Expense:</source>
-        <translation type="vanished">年度 Expense:</translation>
+        <translation>年度 Expense:</translation>
     </message>
     <message>
         <source>CALCULATE</source>
-        <translation type="vanished">計算</translation>
+        <translation>計算</translation>
     </message>
     <message>
         <source>Current Age:</source>
-        <translation type="vanished">目前年齡：</translation>
+        <translation>目前年齡：</translation>
     </message>
     <message>
         <source>Exp. Return:</source>
-        <translation type="vanished">預期報酬率：</translation>
+        <translation>預期報酬率：</translation>
     </message>
     <message>
         <source>GOAL-BASED PLANNING</source>
-        <translation type="vanished">目標導向規劃</translation>
+        <translation>目標導向規劃</translation>
     </message>
     <message>
         <source>GOALS</source>
-        <translation type="obsolete">GOALS</translation>
+        <translation>GOALS</translation>
     </message>
     <message>
         <source>Inflation:</source>
-        <translation type="vanished">通膨率：</translation>
+        <translation>通膨率：</translation>
     </message>
     <message>
         <source>Monthly Savings:</source>
-        <translation type="vanished">每月 Savings:</translation>
+        <translation>每月 Savings:</translation>
     </message>
     <message>
         <source>PROJECTION RESULTS</source>
-        <translation type="vanished">PROJECTION 結果</translation>
+        <translation>PROJECTION 結果</translation>
     </message>
     <message>
         <source>RETIREMENT</source>
-        <translation type="obsolete">RETIREMENT</translation>
+        <translation>RETIREMENT</translation>
     </message>
     <message>
         <source>RETIREMENT CALCULATOR</source>
-        <translation type="vanished">退休計算器</translation>
+        <translation>退休計算器</translation>
     </message>
     <message>
         <source>Retire Age:</source>
-        <translation type="vanished">退休年齡：</translation>
+        <translation>退休年齡：</translation>
     </message>
     <message>
         <source>SAVINGS</source>
-        <translation type="obsolete">SAVINGS</translation>
+        <translation>SAVINGS</translation>
     </message>
     <message>
         <source>SAVINGS RATE ANALYSIS</source>
-        <translation type="vanished">儲蓄率分析</translation>
+        <translation>儲蓄率分析</translation>
     </message>
     <message>
         <source>Withdrawal Rate:</source>
-        <translation type="vanished">提領率：</translation>
+        <translation>提領率：</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PortfolioBlotter</name>
     <message>
         <source>Close / Delete Position</source>
-        <translation type="vanished">關閉 / 刪除 部位</translation>
+        <translation>關閉 / 刪除 部位</translation>
     </message>
     <message>
         <source>Edit Transaction</source>
-        <translation type="vanished">編輯 Transaction (交易)</translation>
+        <translation>編輯 Transaction (交易)</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PortfolioCommandBar</name>
     <message>
         <source>+ CREATE NEW</source>
-        <translation type="vanished">+ 建立新項目</translation>
+        <translation>+ 建立新項目</translation>
     </message>
     <message>
         <source>10m</source>
-        <translation type="vanished">10M</translation>
+        <translation>10M</translation>
     </message>
     <message>
         <source>1d</source>
-        <translation type="obsolete">1d</translation>
+        <translation>1d</translation>
     </message>
     <message>
         <source>1h</source>
-        <translation type="obsolete">1h</translation>
+        <translation>1h</translation>
     </message>
     <message>
         <source>1m</source>
-        <translation type="obsolete">1m</translation>
+        <translation>1m</translation>
     </message>
     <message>
         <source>30m</source>
-        <translation type="obsolete">30m</translation>
+        <translation>30m</translation>
     </message>
     <message>
         <source>3h</source>
-        <translation type="obsolete">3h</translation>
+        <translation>3h</translation>
     </message>
     <message>
         <source>5m</source>
-        <translation type="obsolete">5m</translation>
+        <translation>5m</translation>
     </message>
     <message>
         <source>Auto-refresh interval</source>
-        <translation type="vanished">自動重新整理間隔</translation>
+        <translation>自動重新整理間隔</translation>
     </message>
     <message>
         <source>DELETE</source>
-        <translation type="obsolete">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <source>Export CSV</source>
-        <translation type="vanished">匯出 CSV</translation>
+        <translation>匯出 CSV</translation>
     </message>
     <message>
         <source>Export JSON</source>
-        <translation type="vanished">匯出 JSON</translation>
+        <translation>匯出 JSON</translation>
     </message>
     <message>
         <source>FFN Analysis</source>
-        <translation type="vanished">FFN 分析</translation>
+        <translation>FFN 分析</translation>
     </message>
     <message>
         <source>Import JSON…</source>
-        <translation type="vanished">匯入 JSON…</translation>
+        <translation>匯入 JSON…</translation>
     </message>
     <message>
         <source>More actions</source>
-        <translation type="vanished">更多動作</translation>
+        <translation>更多動作</translation>
     </message>
     <message>
         <source>NO PORTFOLIOS \u2014 CREATE ONE  \u25BE</source>
@@ -22943,11 +22985,11 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Refresh portfolio data</source>
-        <translation type="vanished">重新整理 Portfolio (投資組合) 資料</translation>
+        <translation>重新整理 Portfolio (投資組合) 資料</translation>
     </message>
     <message>
         <source>Search portfolios...</source>
-        <translation type="vanished">搜尋 Portfolios (投資組合)...</translation>
+        <translation>搜尋 Portfolios (投資組合)...</translation>
     </message>
     <message>
         <source>\u21BB</source>
@@ -22957,215 +22999,215 @@ X-API-Key: xyz</translation>
         <source>\u22EF</source>
         <translation type="obsolete">\u22EF</translation>
     </message>
-</context>
+<message><source>↻</source><translation>↻</translation></message><message><source>⋯</source><translation>⋯</translation></message><message><source>NO PORTFOLIOS — CREATE ONE  ▾</source><translation>尚無投資組合 — 建立一個  ▾</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioDetailWrapper</name>
     <message>
         <source>\u2190 BACK</source>
         <translation type="vanished">\u2190 返回</translation>
     </message>
-</context>
+<message><source>← BACK</source><translation>← 返回</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioFFNView</name>
     <message>
         <source>ALLOCATION WEIGHTS BY STRATEGY</source>
-        <translation type="vanished">配置 權重 BY 策略</translation>
+        <translation>配置 權重 BY 策略</translation>
     </message>
     <message>
         <source>BENCHMARK</source>
-        <translation type="vanished">基準</translation>
+        <translation>基準</translation>
     </message>
     <message>
         <source>BENCHMARK COMPARISON</source>
-        <translation type="vanished">基準 比較</translation>
+        <translation>基準 比較</translation>
     </message>
     <message>
         <source>DRAWDOWNS</source>
-        <translation type="obsolete">DRAWDOWNS</translation>
+        <translation>DRAWDOWNS</translation>
     </message>
     <message>
         <source>FFN ANALYTICS</source>
-        <translation type="vanished">FFN 分析</translation>
+        <translation>FFN 分析</translation>
     </message>
     <message>
         <source>FFN failed — check Python/yfinance</source>
-        <translation type="vanished">FFN 失敗 - 檢查 Python/yfinance</translation>
+        <translation>FFN 失敗 - 檢查 Python/yfinance</translation>
     </message>
     <message>
         <source>OPTIMISATION</source>
-        <translation type="obsolete">OPTIMISATION</translation>
+        <translation>OPTIMISATION</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
-        <translation type="obsolete">OVERVIEW</translation>
+        <translation>OVERVIEW</translation>
     </message>
     <message>
         <source>PORTFOLIO METRICS OVERVIEW</source>
-        <translation type="vanished">投資組合 指標 總覽</translation>
+        <translation>投資組合 指標 總覽</translation>
     </message>
     <message>
         <source>PORTFOLIO OPTIMISATION — WEIGHT COMPARISON</source>
-        <translation type="vanished">投資組合 OPTIMISATION — 權重 比較</translation>
+        <translation>投資組合 OPTIMISATION — 權重 比較</translation>
     </message>
     <message>
         <source>REBASED</source>
-        <translation type="obsolete">REBASED</translation>
+        <translation>REBASED</translation>
     </message>
     <message>
         <source>ROLLING</source>
-        <translation type="obsolete">ROLLING</translation>
+        <translation>ROLLING</translation>
     </message>
     <message>
         <source>RUN FFN ANALYSIS</source>
-        <translation type="vanished">執行 FFN 分析</translation>
+        <translation>執行 FFN 分析</translation>
     </message>
     <message>
         <source>Running FFN analysis...</source>
-        <translation type="vanished">執行 FFN 分析中...</translation>
+        <translation>執行 FFN 分析中...</translation>
     </message>
     <message>
         <source>STRATEGY PERFORMANCE STATS</source>
-        <translation type="vanished">策略 績效 STATS</translation>
+        <translation>策略 績效 STATS</translation>
     </message>
     <message>
         <source>\u2190 BACK</source>
         <translation type="vanished">\u2190 返回</translation>
     </message>
-</context>
+<message><source>← BACK</source><translation>← 返回</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioHeatmap</name>
     <message>
         <source>TOP MOVERS</source>
-        <translation type="vanished">漲跌幅前列</translation>
+        <translation>漲跌幅前列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PortfolioInsightsPanel</name>
     <message>
         <source>ANALYSIS TYPE</source>
-        <translation type="vanished">分析 類型</translation>
+        <translation>分析 類型</translation>
     </message>
     <message>
         <source>Close  (Esc)</source>
-        <translation type="vanished">關閉 (Esc)</translation>
+        <translation>關閉 (Esc)</translation>
     </message>
     <message>
         <source>Discovering agents…</source>
-        <translation type="vanished">正在探索代理…</translation>
+        <translation>正在探索代理…</translation>
     </message>
     <message>
         <source>No response received.</source>
-        <translation type="vanished">未收到回應。</translation>
+        <translation>未收到回應。</translation>
     </message>
     <message>
         <source>PORTFOLIO INSIGHTS</source>
-        <translation type="vanished">投資組合 INSIGHTS</translation>
+        <translation>投資組合 INSIGHTS</translation>
     </message>
     <message>
         <source>RE-RUN AGENT</source>
-        <translation type="vanished">重新執行代理</translation>
+        <translation>重新執行代理</translation>
     </message>
     <message>
         <source>RUN AGENT</source>
-        <translation type="vanished">執行 AGENT</translation>
+        <translation>執行 AGENT</translation>
     </message>
     <message>
         <source>RUN FULL ANALYSIS</source>
-        <translation type="vanished">執行 FULL 分析</translation>
+        <translation>執行 FULL 分析</translation>
     </message>
     <message>
         <source>● </source>
-        <translation type="obsolete">● </translation>
+        <translation>● </translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PortfolioOptimizationView</name>
     <message>
         <source>ALLOCATION</source>
-        <translation type="vanished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <source>B-L MODEL</source>
-        <translation type="vanished">B-L 模型</translation>
+        <translation>B-L 模型</translation>
     </message>
     <message>
         <source>BACKTEST</source>
-        <translation type="vanished">回測</translation>
+        <translation>回測</translation>
     </message>
     <message>
         <source>BACKTEST RESULTS</source>
-        <translation type="vanished">回測結果</translation>
+        <translation>回測結果</translation>
     </message>
     <message>
         <source>BLACK-LITTERMAN MODEL</source>
-        <translation type="vanished">黑利特曼模型</translation>
+        <translation>黑利特曼模型</translation>
     </message>
     <message>
         <source>COMPARE</source>
-        <translation type="obsolete">COMPARE</translation>
+        <translation>COMPARE</translation>
     </message>
     <message>
         <source>EFFICIENT FRONTIER</source>
-        <translation type="vanished">效率前緣</translation>
+        <translation>效率前緣</translation>
     </message>
     <message>
         <source>FRONTIER</source>
-        <translation type="obsolete">FRONTIER</translation>
+        <translation>FRONTIER</translation>
     </message>
     <message>
         <source>OPTIMIZATION STRESS SCENARIOS</source>
-        <translation type="vanished">最佳化壓力情境</translation>
+        <translation>最佳化壓力情境</translation>
     </message>
     <message>
         <source>OPTIMIZE</source>
-        <translation type="obsolete">OPTIMIZE</translation>
+        <translation>OPTIMIZE</translation>
     </message>
     <message>
         <source>RISK</source>
-        <translation type="obsolete">RISK</translation>
+        <translation>RISK</translation>
     </message>
     <message>
         <source>RISK DECOMPOSITION</source>
-        <translation type="vanished">風險 DECOMPOSITION</translation>
+        <translation>風險 DECOMPOSITION</translation>
     </message>
     <message>
         <source>Running optimization…</source>
-        <translation type="vanished">最佳化中…</translation>
+        <translation>最佳化中…</translation>
     </message>
     <message>
         <source>STRATEGIES</source>
-        <translation type="obsolete">STRATEGIES</translation>
+        <translation>STRATEGIES</translation>
     </message>
     <message>
         <source>STRATEGY COMPARISON  (populated after optimization)</source>
-        <translation type="vanished">策略比較（最佳化後填入）</translation>
+        <translation>策略比較（最佳化後填入）</translation>
     </message>
     <message>
         <source>STRESS</source>
-        <translation type="obsolete">STRESS</translation>
+        <translation>STRESS</translation>
     </message>
     <message>
         <source>WEIGHT COMPARISON  (all methods, per symbol)</source>
-        <translation type="vanished">權重比較（所有方法，按標的）</translation>
+        <translation>權重比較（所有方法，按標的）</translation>
     </message>
     <message>
         <source>\u25B6 RUN OPTIMIZATION</source>
         <translation type="vanished">\u25B6 執行 OPTIMIZATION</translation>
     </message>
-</context>
+<message><source>▶ RUN OPTIMIZATION</source><translation>▶ 執行最佳化</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioOrderPanel</name>
     <message>
         <source>BUY</source>
-        <translation type="vanished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <source>OPEN BUY ORDER</source>
-        <translation type="vanished">開啟 買入 訂單</translation>
+        <translation>開啟 買入 訂單</translation>
     </message>
     <message>
         <source>ORDER ENTRY</source>
-        <translation type="vanished">訂單 ENTRY</translation>
+        <translation>訂單 ENTRY</translation>
     </message>
     <message>
         <source>Orders are recorded\nin your portfolio</source>
@@ -23173,232 +23215,236 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>SELL</source>
-        <translation type="vanished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <source>\u2715</source>
         <translation type="obsolete">\u2715</translation>
     </message>
-</context>
+<message><source>✕</source><translation>✕</translation></message><message><source>Orders are recorded
+in your portfolio</source><translation>訂單已記錄
+於您的投資組合中</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioPerfChart</name>
     <message>
         <source>Needs intraday data — daily snapshots only.</source>
-        <translation type="vanished">需要日內資料 — 僅有每日快照。</translation>
+        <translation>需要日內資料 — 僅有每日快照。</translation>
     </message>
     <message>
         <source>No data</source>
-        <translation type="vanished">無資料</translation>
+        <translation>無資料</translation>
     </message>
     <message>
         <source>Overlay benchmark index (auto-selected by portfolio currency)</source>
-        <translation type="vanished">疊加基準指數（以投資組合貨幣自動選擇）</translation>
+        <translation>疊加基準指數（以投資組合貨幣自動選擇）</translation>
     </message>
     <message>
         <source>Total cost basis — the dashed horizontal line on the chart.</source>
-        <translation type="vanished">總成本基礎 — 圖表上的虛線水平線。</translation>
+        <translation>總成本基礎 — 圖表上的虛線水平線。</translation>
     </message>
-</context>
+<message><source>Indexed view: rebase portfolio and benchmark to 100 at the start of
+the selected period. Use when comparing different currencies.</source><translation>指數化檢視：將投資組合與基準在所選期間起始點重新設為 100。
+用於比較不同幣別時使用。</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioSectorPanel</name>
     <message>
         <source>(P&amp;L return proxy, top 6 by weight)</source>
-        <translation type="vanished">（損益代理報酬，權重前 6 名）</translation>
+        <translation>（損益代理報酬，權重前 6 名）</translation>
     </message>
     <message>
         <source>CORRELATION</source>
-        <translation type="vanished">相關性</translation>
+        <translation>相關性</translation>
     </message>
     <message>
         <source>Need 2+ holdings for correlation</source>
-        <translation type="vanished">需要持有 2 個以上的股票才能實現相關性</translation>
+        <translation>需要持有 2 個以上的股票才能實現相關性</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PortfolioStatusBar</name>
     <message>
         <source>0 positions</source>
-        <translation type="vanished">0 Position (持倉)s (持倉)</translation>
+        <translation>0 Position (持倉)s (持倉)</translation>
     </message>
     <message>
         <source>PORTFOLIO TERMINAL v4.0</source>
-        <translation type="vanished">投資組合終端 v4.0</translation>
+        <translation>投資組合終端 v4.0</translation>
     </message>
     <message>
         <source>\u25CF LIVE</source>
         <translation type="vanished">\u25CF 即時</translation>
     </message>
-</context>
+<message><source>● LIVE</source><translation>● 即時</translation></message></context>
 <context>
     <name>fincept::screens::PortfolioTxnPanel</name>
     <message>
         <source>Collapse / expand transaction history</source>
-        <translation type="vanished">收合 / 展開 transaction 歷史</translation>
+        <translation>收合 / 展開 transaction 歷史</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::PricingScreen</name>
     <message>
         <source>免費</source>
-        <translation type="obsolete">免費</translation>
+        <translation>免費</translation>
     </message>
     <message>
         <source>免費方案</source>
-        <translation type="obsolete">免費方案</translation>
+        <translation>免費方案</translation>
     </message>
     <message>
         <source>想先體驗看看嗎？</source>
-        <translation type="obsolete">想先體驗看看嗎？</translation>
+        <translation>想先體驗看看嗎？</translation>
     </message>
     <message>
         <source>推薦方案</source>
-        <translation type="obsolete">推薦方案</translation>
+        <translation>推薦方案</translation>
     </message>
     <message>
         <source>方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</source>
-        <translation type="obsolete">方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</translation>
+        <translation>方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</translation>
     </message>
     <message>
         <source>方案與定價</source>
-        <translation type="obsolete">方案與定價</translation>
+        <translation>方案與定價</translation>
     </message>
     <message>
         <source>更新方案狀態中...</source>
-        <translation type="obsolete">更新方案狀態中...</translation>
+        <translation>更新方案狀態中...</translation>
     </message>
     <message>
         <source>未從伺服器收到結帳 Token</source>
-        <translation type="obsolete">未從伺服器收到結帳 Token</translation>
+        <translation>未從伺服器收到結帳 Token</translation>
     </message>
     <message>
         <source>目前方案</source>
-        <translation type="obsolete">目前方案</translation>
+        <translation>目前方案</translation>
     </message>
     <message>
         <source>目前沒有可用方案。</source>
-        <translation type="obsolete">目前沒有可用方案。</translation>
+        <translation>目前沒有可用方案。</translation>
     </message>
     <message>
         <source>繼續使用免費方案</source>
-        <translation type="obsolete">繼續使用免費方案</translation>
+        <translation>繼續使用免費方案</translation>
     </message>
     <message>
         <source>繼續免費使用</source>
-        <translation type="obsolete">繼續免費使用</translation>
+        <translation>繼續免費使用</translation>
     </message>
     <message>
         <source>處理中...</source>
-        <translation type="obsolete">處理中...</translation>
+        <translation>處理中...</translation>
     </message>
     <message>
         <source>解鎖 Fincept Terminal 的完整功能</source>
-        <translation type="obsolete">解鎖 Fincept Terminal 的完整功能</translation>
+        <translation>解鎖 Fincept Terminal 的完整功能</translation>
     </message>
     <message>
         <source>載入方案中...</source>
-        <translation type="obsolete">載入方案中...</translation>
+        <translation>載入方案中...</translation>
     </message>
     <message>
         <source>返回主畫面</source>
-        <translation type="obsolete">返回主畫面</translation>
+        <translation>返回主畫面</translation>
     </message>
     <message>
         <source>選擇方案</source>
-        <translation type="obsolete">選擇方案</translation>
+        <translation>選擇方案</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ProfileScreen</name>
     <message>
         <source>AVAILABLE CREDITS</source>
-        <translation type="vanished">可用 CREDITS</translation>
+        <translation>可用 CREDITS</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>COPIED</source>
-        <translation type="vanished">已複製</translation>
+        <translation>已複製</translation>
     </message>
     <message>
         <source>COPY</source>
-        <translation type="vanished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <source>Confirm Account Deletion</source>
-        <translation type="vanished">確認刪除帳號</translation>
+        <translation>確認刪除帳號</translation>
     </message>
     <message>
         <source>DELETE ACCOUNT</source>
-        <translation type="vanished">刪除帳號</translation>
+        <translation>刪除帳號</translation>
     </message>
     <message>
         <source>DELETE MY ACCOUNT</source>
-        <translation type="vanished">刪除我的帳號</translation>
+        <translation>刪除我的帳號</translation>
     </message>
     <message>
         <source>EDIT PROFILE</source>
-        <translation type="vanished">編輯 Profile (設定檔)</translation>
+        <translation>編輯 Profile (設定檔)</translation>
     </message>
     <message>
         <source>Edit Profile</source>
-        <translation type="vanished">編輯個人檔案</translation>
+        <translation>編輯個人檔案</translation>
     </message>
     <message>
         <source>LOGOUT</source>
-        <translation type="vanished">登出</translation>
+        <translation>登出</translation>
     </message>
     <message>
         <source>PROFILE &amp; ACCOUNT</source>
-        <translation type="vanished">個人資料與帳號</translation>
+        <translation>個人資料與帳戶</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>REGENERATE</source>
-        <translation type="vanished">重新產生</translation>
+        <translation>重新產生</translation>
     </message>
     <message>
         <source>REGISTERED</source>
-        <translation type="vanished">已註冊</translation>
+        <translation>已註冊</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>SHOW</source>
-        <translation type="vanished">顯示</translation>
+        <translation>顯示</translation>
     </message>
     <message>
         <source>TYPE YOUR EMAIL ADDRESS TO CONFIRM:</source>
-        <translation type="vanished">輸入您的電子郵件地址以確認：</translation>
+        <translation>輸入您的電子郵件地址以確認：</translation>
     </message>
     <message>
         <source>\xe2\x80\x94</source>
         <translation type="obsolete">\xe2\x80\x94</translation>
     </message>
-</context>
+<message><source>—</source><translation>—</translation></message></context>
 <context>
     <name>fincept::screens::PropertiesPanel</name>
     <message>
         <source>(clipboard image)</source>
-        <translation type="vanished">(剪貼簿 image)</translation>
+        <translation>(剪貼簿 image)</translation>
     </message>
     <message>
         <source>(no image in clipboard)</source>
-        <translation type="vanished">(no image 於剪貼簿)</translation>
+        <translation>(no image 於剪貼簿)</translation>
     </message>
     <message>
         <source>10,25,18,40,32,55</source>
-        <translation type="obsolete">10,25,18,40,32,55</translation>
+        <translation>10,25,18,40,32,55</translation>
     </message>
     <message>
         <source>175,178,182,179,185,188,186,190,189</source>
-        <translation type="obsolete">175,178,182,179,185,188,186,190,189</translation>
+        <translation>175,178,182,179,185,188,186,190,189</translation>
     </message>
     <message>
         <source>Auto-generated from\nHeading components.</source>
@@ -23406,23 +23452,23 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Browse File...</source>
-        <translation type="vanished">瀏覽 File...</translation>
+        <translation>瀏覽 File...</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="vanished">刪除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Duplicate</source>
-        <translation type="vanished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <source>Fetch</source>
-        <translation type="vanished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <source>Fetch Price</source>
-        <translation type="vanished">Fetch 價格</translation>
+        <translation>Fetch 價格</translation>
     </message>
     <message>
         <source>Inserts a page break\nin PDF/print output.</source>
@@ -23430,11 +23476,11 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Jan,Feb,Mar,Apr,May,Jun</source>
-        <translation type="obsolete">Jan,Feb,Mar,Apr,May,Jun</translation>
+        <translation>Jan,Feb,Mar,Apr,May,Jun</translation>
     </message>
     <message>
         <source>Paste from Clipboard</source>
-        <translation type="vanished">從剪貼簿貼上</translation>
+        <translation>從剪貼簿貼上</translation>
     </message>
     <message>
         <source>Select a component\nto edit properties</source>
@@ -23450,29 +23496,49 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>e.g. $189.30</source>
-        <translation type="vanished">例如：$189.30</translation>
+        <translation>例如：$189.30</translation>
     </message>
     <message>
         <source>e.g. +2.34 or -1.10</source>
-        <translation type="vanished">例如：+2.34 或-1.10</translation>
+        <translation>例如：+2.34 或-1.10</translation>
     </message>
     <message>
         <source>e.g. AAPL</source>
-        <translation type="vanished">例如：AAPL</translation>
+        <translation>例如：AAPL</translation>
     </message>
     <message>
         <source>e.g. AAPL, BTC-USD, ^GSPC</source>
-        <translation type="vanished">例如AAPL、BTC-美元、^GSPC</translation>
+        <translation>例如AAPL、BTC-美元、^GSPC</translation>
     </message>
     <message>
         <source>e.g. Figure 1: Revenue growth</source>
-        <translation type="vanished">例如圖 1：收入成長</translation>
+        <translation>例如圖 1：收入成長</translation>
     </message>
     <message>
         <source>e.g. Key Risk, Note, Important</source>
-        <translation type="vanished">例如主要風險、注意、重要</translation>
+        <translation>例如主要風險、注意、重要</translation>
     </message>
-</context>
+<message><source>Select a component
+to edit properties</source><translation>選取一個元件
+以編輯屬性</translation></message><message><source>Tip: re-select component after
+editing data to re-render.</source><translation>提示：編輯資料後請重新選取元件
+以重新渲染。</translation></message><message><source>P/E Ratio: 28.4
+Market Cap: $2.9T
+52W High: $199.62
+52W Low: $124.17
+Dividend Yield: 0.51%
+EPS: $6.43</source><translation>本益比：28.4
+市值：$2.9T
+52 週最高：$199.62
+52 週最低：$124.17
+殖利率：0.51%
+每股盈餘：$6.43</translation></message><message><source>Tip: re-select after editing
+data to refresh sparkline.</source><translation>提示：編輯資料後請重新選取
+以重新整理走勢圖。</translation></message><message><source>Inserts a page break
+in PDF/print output.</source><translation>在 PDF/列印輸出中
+插入分頁符。</translation></message><message><source>Auto-generated from
+Heading components.</source><translation>從標題元件
+自動產生。</translation></message></context>
 <context>
     <name>fincept::screens::PythonSetupManager</name>
     <message>
@@ -23663,1014 +23729,1014 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::QuantLibScreen</name>
     <message>
         <source>18 MODULES | 590+ QUANTITATIVE ENDPOINTS</source>
-        <translation type="vanished">18 模組 | 590+ 量化 端點</translation>
+        <translation>18 模組 | 590+ 量化 端點</translation>
     </message>
     <message>
         <source>API POWERED</source>
-        <translation type="vanished">API 驅動</translation>
+        <translation>API 驅動</translation>
     </message>
     <message>
         <source>CORE</source>
-        <translation type="vanished">核心</translation>
+        <translation>核心</translation>
     </message>
     <message>
         <source>Computing...</source>
-        <translation type="vanished">計算中...</translation>
+        <translation>計算中...</translation>
     </message>
     <message>
         <source>ENDPOINT</source>
-        <translation type="vanished">端點</translation>
+        <translation>端點</translation>
     </message>
     <message>
         <source>EXECUTE COMPUTATION</source>
-        <translation type="vanished">執行計算</translation>
+        <translation>執行計算</translation>
     </message>
     <message>
         <source>Empty</source>
-        <translation type="vanished">空白</translation>
+        <translation>空</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>MODULE: </source>
-        <translation type="vanished">MODULE:</translation>
+        <translation>MODULE:</translation>
     </message>
     <message>
         <source>MODULE: CORE</source>
-        <translation type="vanished">模組: 核心</translation>
+        <translation>模組: 核心</translation>
     </message>
     <message>
         <source>MODULES</source>
-        <translation type="vanished">模組</translation>
+        <translation>模組</translation>
     </message>
     <message>
         <source>QUANTLIB SUITE</source>
-        <translation type="vanished">QuantLib 套件</translation>
+        <translation>QuantLib 套件</translation>
     </message>
     <message>
         <source>REQUEST BODY (JSON)</source>
-        <translation type="vanished">請求 BODY (JSON)</translation>
+        <translation>請求 BODY (JSON)</translation>
     </message>
     <message>
         <source>RESULTS</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>Select a module and endpoint, then execute to see results...</source>
-        <translation type="vanished">選擇一個模組和端點，然後執行以查看結果...</translation>
+        <translation>選擇一個模組和端點，然後執行以查看結果...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::QuantModulePanel</name>
     <message>
         <source>  ASKS</source>
-        <translation type="obsolete">  ASKS</translation>
+        <translation>  ASKS</translation>
     </message>
     <message>
         <source>  BIDS</source>
-        <translation type="obsolete">  BIDS</translation>
+        <translation>  BIDS</translation>
     </message>
     <message>
         <source>0.05, 0.25, 0.5, 0.75, 0.95</source>
-        <translation type="obsolete">0.05, 0.25, 0.5, 0.75, 0.95</translation>
+        <translation>0.05, 0.25, 0.5, 0.75, 0.95</translation>
     </message>
     <message>
         <source>10,30,50,100,500</source>
-        <translation type="obsolete">10,30,50,100,500</translation>
+        <translation>10,30,50,100,500</translation>
     </message>
     <message>
         <source>5,10,30,100</source>
-        <translation type="obsolete">5,10,30,100</translation>
+        <translation>5,10,30,100</translation>
     </message>
     <message>
         <source>AAPL</source>
-        <translation type="obsolete">AAPL</translation>
+        <translation>AAPL</translation>
     </message>
     <message>
         <source>AAPL,MSFT,GOOG,AMZN</source>
-        <translation type="obsolete">AAPL,MSFT,GOOG,AMZN</translation>
+        <translation>AAPL,MSFT,GOOG,AMZN</translation>
     </message>
     <message>
         <source>ACF / PACF</source>
-        <translation type="obsolete">ACF / PACF</translation>
+        <translation>ACF / PACF</translation>
     </message>
     <message>
         <source>ADF (H₀: unit root → non-stationary)</source>
-        <translation type="vanished">ADF 檢定（H₀: 存在單根 → 非定態）</translation>
+        <translation>ADF 檢定（H₀: 存在單根 → 非定態）</translation>
     </message>
     <message>
         <source>ANALYSIS PARAMETERS</source>
-        <translation type="vanished">分析參數</translation>
+        <translation>分析參數</translation>
     </message>
     <message>
         <source>ARIMA</source>
-        <translation type="obsolete">ARIMA</translation>
+        <translation>ARIMA</translation>
     </message>
     <message>
         <source>Actual returns (comma-separated)</source>
-        <translation type="vanished">實際回報（以逗號分隔）</translation>
+        <translation>實際回報（以逗號分隔）</translation>
     </message>
     <message>
         <source>Actual values (must match predicted length)</source>
-        <translation type="vanished">實際值（必須與預測長度相符）</translation>
+        <translation>實際值（必須與預測長度相符）</translation>
     </message>
     <message>
         <source>Analysis results will appear here...</source>
-        <translation type="vanished">分析結果會顯示於此...</translation>
+        <translation>分析結果會顯示於此...</translation>
     </message>
     <message>
         <source>Analyzing...</source>
-        <translation type="vanished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <source>Anomalies</source>
-        <translation type="vanished">異常值</translation>
+        <translation>異常值</translation>
     </message>
     <message>
         <source>Asset names (comma-separated)</source>
-        <translation type="vanished">Asset (資產) 名稱s （以逗號分隔)</translation>
+        <translation>Asset (資產) 名稱s （以逗號分隔)</translation>
     </message>
     <message>
         <source>Asset names (comma-separated, e.g. AAPL,GOOG,MSFT)</source>
-        <translation type="vanished">Asset (資產) 名稱s （以逗號分隔, e.g. AAPL,GOOG,MSFT)</translation>
+        <translation>Asset (資產) 名稱s （以逗號分隔, e.g. AAPL,GOOG,MSFT)</translation>
     </message>
     <message>
         <source>Asset returns matrix JSON: [[0.01,-0.02,...],[...]]</source>
-        <translation type="vanished">資產回傳矩陣 JSON: [[0.01,-0.02,...],[...]]</translation>
+        <translation>資產回傳矩陣 JSON: [[0.01,-0.02,...],[...]]</translation>
     </message>
     <message>
         <source>Automatically select the best model from a set of candidates.</source>
-        <translation type="vanished">從候選模型中自動選取最佳模型。</translation>
+        <translation>從候選模型中自動選取最佳模型。</translation>
     </message>
     <message>
         <source>BACKTEST RESULTS</source>
-        <translation type="vanished">回測結果</translation>
+        <translation>回測結果</translation>
     </message>
     <message>
         <source>BTC/USDT</source>
-        <translation type="obsolete">BTC/USDT</translation>
+        <translation>BTC/USDT</translation>
     </message>
     <message>
         <source>Backtest</source>
-        <translation type="vanished">回測</translation>
+        <translation>回測</translation>
     </message>
     <message>
         <source>Backtest end (YYYY-MM-DD)</source>
-        <translation type="vanished">回測結束（YYYY-MM-DD）</translation>
+        <translation>回測結束（YYYY-MM-DD）</translation>
     </message>
     <message>
         <source>Backtest start (YYYY-MM-DD)</source>
-        <translation type="vanished">回測開始（YYYY-MM-DD）</translation>
+        <translation>回測開始（YYYY-MM-DD）</translation>
     </message>
     <message>
         <source>Backtesting...</source>
-        <translation type="vanished">Backtest (回測) 中...</translation>
+        <translation>Backtest (回測) 中...</translation>
     </message>
     <message>
         <source>Benchmark daily returns (decimals)</source>
-        <translation type="vanished">基準每日回報（小數）</translation>
+        <translation>基準每日回報（小數）</translation>
     </message>
     <message>
         <source>Benchmark returns (optional)</source>
-        <translation type="vanished">基準回報（可選）</translation>
+        <translation>基準回報（可選）</translation>
     </message>
     <message>
         <source>Benchmark returns (optional, comma-separated)</source>
-        <translation type="vanished">基準返回（可選，以逗號分隔）</translation>
+        <translation>基準返回（可選，以逗號分隔）</translation>
     </message>
     <message>
         <source>Benchmark returns (optional; same length as portfolio if provided)</source>
-        <translation type="vanished">基準回報（可選；如果提供，則與投資組合長度相同）</translation>
+        <translation>基準回報（可選；如果提供，則與投資組合長度相同）</translation>
     </message>
     <message>
         <source>Black-Litterman</source>
-        <translation type="obsolete">Black-Litterman</translation>
+        <translation>Black-Litterman</translation>
     </message>
     <message>
         <source>Browse</source>
-        <translation type="vanished">瀏覽</translation>
+        <translation>瀏覽</translation>
     </message>
     <message>
         <source>Browse all available data normalizers and transformation processors.</source>
-        <translation type="vanished">瀏覽所有可用的資料正規化器與轉換處理器。</translation>
+        <translation>瀏覽所有可用的資料正規化器與轉換處理器。</translation>
     </message>
     <message>
         <source>Browse all built-in Qlib alpha factors and expressions.</source>
-        <translation type="vanished">瀏覽所有內建的 Qlib Alpha 因子與表達式。</translation>
+        <translation>瀏覽所有內建的 Qlib Alpha 因子與表達式。</translation>
     </message>
     <message>
         <source>CHECK STATUS</source>
-        <translation type="vanished">檢查狀態</translation>
+        <translation>檢查狀態</translation>
     </message>
     <message>
         <source>CORRELATION MATRIX</source>
-        <translation type="vanished">相關性 MATRIX</translation>
+        <translation>相關性 MATRIX</translation>
     </message>
     <message>
         <source>CVaR Optimize</source>
-        <translation type="vanished">CVaR 最佳化</translation>
+        <translation>CVaR 最佳化</translation>
     </message>
     <message>
         <source>Calculating...</source>
-        <translation type="vanished">計算中...</translation>
+        <translation>計算中...</translation>
     </message>
     <message>
         <source>Calendar</source>
-        <translation type="vanished">行事曆</translation>
+        <translation>日曆</translation>
     </message>
     <message>
         <source>Chart title (e.g. Strategy vs S&amp;P 500)</source>
-        <translation type="vanished">圖表標題（例如：策略 vs S&amp;P 500）</translation>
+        <translation>圖表標題（例如：策略 vs S&amp;P 500）</translation>
     </message>
     <message>
         <source>Checking...</source>
-        <translation type="vanished">檢查中...</translation>
+        <translation>檢查中...</translation>
     </message>
     <message>
         <source>Computing...</source>
-        <translation type="vanished">計算中...</translation>
+        <translation>計算中...</translation>
     </message>
     <message>
         <source>Confidence Intervals</source>
-        <translation type="vanished">信賴區間</translation>
+        <translation>信賴區間</translation>
     </message>
     <message>
         <source>Covariance</source>
-        <translation type="vanished">共變異數</translation>
+        <translation>共變異數</translation>
     </message>
     <message>
         <source>Covariance matrix JSON: [[0.04,0.01],[0.01,0.09]]</source>
-        <translation type="vanished">共變異數矩陣 JSON: [[0.04,0.01],[0.01,0.09]]</translation>
+        <translation>共變異數矩陣 JSON: [[0.04,0.01],[0.01,0.09]]</translation>
     </message>
     <message>
         <source>Create Model</source>
-        <translation type="vanished">建立模型</translation>
+        <translation>建立模型</translation>
     </message>
     <message>
         <source>Create Pipeline</source>
-        <translation type="vanished">建立管線</translation>
+        <translation>建立管線</translation>
     </message>
     <message>
         <source>Create Schedule</source>
-        <translation type="vanished">建立排程</translation>
+        <translation>建立排程</translation>
     </message>
     <message>
         <source>Creating ensemble...</source>
-        <translation type="vanished">建立 Ensemble (集成模型) 中...</translation>
+        <translation>建立 Ensemble (集成模型) 中...</translation>
     </message>
     <message>
         <source>Creating schedule...</source>
-        <translation type="vanished">建立排程中...</translation>
+        <translation>建立排程中...</translation>
     </message>
     <message>
         <source>Creating...</source>
-        <translation type="vanished">建立中...</translation>
+        <translation>建立中...</translation>
     </message>
     <message>
         <source>Cumulative Returns</source>
-        <translation type="vanished">累積回報</translation>
+        <translation>累積回報</translation>
     </message>
     <message>
         <source>DATA INPUT</source>
-        <translation type="vanished">資料輸入</translation>
+        <translation>資料輸入</translation>
     </message>
     <message>
         <source>DEPTH</source>
-        <translation type="obsolete">DEPTH</translation>
+        <translation>DEPTH</translation>
     </message>
     <message>
         <source>Daily returns (&gt;= 30 values)</source>
-        <translation type="vanished">每日報酬（≥ 30 個數值）</translation>
+        <translation>每日報酬（≥ 30 個數值）</translation>
     </message>
     <message>
         <source>Daily returns (comma-separated)</source>
-        <translation type="vanished">每日回報（以逗號分隔）</translation>
+        <translation>每日回報（以逗號分隔）</translation>
     </message>
     <message>
         <source>Daily returns (decimals). Need at least 30 values for stable VaR.</source>
-        <translation type="vanished">每日回報（小數）。穩定的 VaR 至少需要 30 個值。</translation>
+        <translation>每日回報（小數）。穩定的 VaR 至少需要 30 個值。</translation>
     </message>
     <message>
         <source>Daily returns: comma-, space-, or newline-separated. Need at least 5 values.</source>
-        <translation type="vanished">每日回傳：以逗號、空格或換行符號分隔。至少需要 5 個值。</translation>
+        <translation>每日回傳：以逗號、空格或換行符號分隔。至少需要 5 個值。</translation>
     </message>
     <message>
         <source>Decay Weights</source>
-        <translation type="vanished">衰減權重</translation>
+        <translation>衰減權重</translation>
     </message>
     <message>
         <source>Deep Analysis</source>
-        <translation type="vanished">深度分析</translation>
+        <translation>深度分析</translation>
     </message>
     <message>
         <source>Dependent variable y (&gt;= 10 values)</source>
-        <translation type="vanished">因變數 y（≥ 10 個數值）</translation>
+        <translation>因變數 y（≥ 10 個數值）</translation>
     </message>
     <message>
         <source>Descriptive</source>
-        <translation type="vanished">描述統計</translation>
+        <translation>描述統計</translation>
     </message>
     <message>
         <source>Distribution Fit</source>
-        <translation type="vanished">分配擬合</translation>
+        <translation>分配擬合</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>EQUITY CURVE</source>
-        <translation type="vanished">權益 CURVE</translation>
+        <translation>權益 CURVE</translation>
     </message>
     <message>
         <source>EXCHANGE</source>
-        <translation type="vanished">交易所</translation>
+        <translation>交易所</translation>
     </message>
     <message>
         <source>EXECUTION COSTS</source>
-        <translation type="vanished">執行 COSTS</translation>
+        <translation>執行 COSTS</translation>
     </message>
     <message>
         <source>EXPORT JSON</source>
-        <translation type="vanished">匯出 JSON</translation>
+        <translation>匯出 JSON</translation>
     </message>
     <message>
         <source>EXPORT RESULTS</source>
-        <translation type="vanished">匯出 結果</translation>
+        <translation>匯出 結果</translation>
     </message>
     <message>
         <source>Effect series y (the one we ask: 'is this caused by x?')</source>
-        <translation type="vanished">效應系列 y（我們問：「這是由 x 引起的嗎？」）</translation>
+        <translation>效應系列 y（我們問：「這是由 x 引起的嗎？」）</translation>
     </message>
     <message>
         <source>Efficient Frontier</source>
-        <translation type="vanished">效率前緣</translation>
+        <translation>效率前緣</translation>
     </message>
     <message>
         <source>End date (YYYY-MM-DD)</source>
-        <translation type="vanished">結束日期 (YYYY-MM-DD)</translation>
+        <translation>結束日期 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <source>End date (YYYY-MM-DD, e.g. 2020-11-10)</source>
-        <translation type="vanished">結束日期 (YYYY-MM-DD, e.g. 2020-11-10)</translation>
+        <translation>結束日期 (YYYY-MM-DD, e.g. 2020-11-10)</translation>
     </message>
     <message>
         <source>Ensemble</source>
-        <translation type="vanished">集成方法</translation>
+        <translation>集成方法</translation>
     </message>
     <message>
         <source>Enter a Model ID or Config Path to preview.</source>
-        <translation type="vanished">輸入模型 ID 或配置路徑進行預覽。</translation>
+        <translation>輸入模型 ID 或配置路徑進行預覽。</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>Evaluate Forecast</source>
-        <translation type="vanished">評估預測</translation>
+        <translation>評估預測</translation>
     </message>
     <message>
         <source>Evaluating...</source>
-        <translation type="vanished">評估中...</translation>
+        <translation>評估中...</translation>
     </message>
     <message>
         <source>Execute Retrain</source>
-        <translation type="vanished">執行重新訓練</translation>
+        <translation>執行重新訓練</translation>
     </message>
     <message>
         <source>Expected returns (comma-separated, e.g. 0.10,0.15,0.12)</source>
-        <translation type="vanished">預期回報（以逗號分隔，例如 0.10,0.15,0.12）</translation>
+        <translation>預期回報（以逗號分隔，例如 0.10,0.15,0.12）</translation>
     </message>
     <message>
         <source>Expression Engine</source>
-        <translation type="vanished">表達式引擎</translation>
+        <translation>表達式引擎</translation>
     </message>
     <message>
         <source>FORECAST BY STEP</source>
-        <translation type="vanished">預測 BY STEP</translation>
+        <translation>預測 BY STEP</translation>
     </message>
     <message>
         <source>Factor / signal values (decimals, &gt;= 20)</source>
-        <translation type="vanished">因子/訊號值（小數，≥ 20）</translation>
+        <translation>因子/訊號值（小數，≥ 20）</translation>
     </message>
     <message>
         <source>Factor Analysis</source>
-        <translation type="vanished">因子分析</translation>
+        <translation>因子分析</translation>
     </message>
     <message>
         <source>Factor Library</source>
-        <translation type="vanished">因子庫</translation>
+        <translation>因子庫</translation>
     </message>
     <message>
         <source>Factor Mining</source>
-        <translation type="vanished">因子探勘</translation>
+        <translation>因子探勘</translation>
     </message>
     <message>
         <source>Factor Quantiles</source>
-        <translation type="vanished">因子分位數</translation>
+        <translation>因子分位數</translation>
     </message>
     <message>
         <source>Factor mining started...</source>
-        <translation type="vanished">因子挖掘開始...</translation>
+        <translation>因子挖掘開始...</translation>
     </message>
     <message>
         <source>Factor name (e.g. momentum)</source>
-        <translation type="vanished">因子名稱（例如動量）</translation>
+        <translation>因子名稱（例如動量）</translation>
     </message>
     <message>
         <source>Feature Importance</source>
-        <translation type="vanished">特徵重要性</translation>
+        <translation>特徵重要性</translation>
     </message>
     <message>
         <source>Feature Selection</source>
-        <translation type="vanished">特徵選取</translation>
+        <translation>特徵選取</translation>
     </message>
     <message>
         <source>Feature values JSON: {rsi:[...],macd:[...]}</source>
-        <translation type="vanished">特徵值 JSON：{rsi:[...],macd:[...]}</translation>
+        <translation>特徵值 JSON：{rsi:[...],macd:[...]}</translation>
     </message>
     <message>
         <source>Fetch Data</source>
-        <translation type="vanished">擷取資料</translation>
+        <translation>擷取資料</translation>
     </message>
     <message>
         <source>Fetches live order book + trades, computes book metrics, market making quotes, toxic flow, and slippage in one call</source>
-        <translation type="vanished">一次呼叫即可取得即時訂單簿 + 交易，計算訂單簿指標、做市報價、有毒流量和滑點</translation>
+        <translation>一次呼叫即可取得即時訂單簿 + 交易，計算訂單簿指標、做市報價、有毒流量和滑點</translation>
     </message>
     <message>
         <source>Fetching live data + computing quotes...</source>
-        <translation type="vanished">擷取即時資料並計算 Quotes (報價) 中...</translation>
+        <translation>擷取即時資料並計算 Quotes (報價) 中...</translation>
     </message>
     <message>
         <source>Fetching live order book...</source>
-        <translation type="vanished">取得即時委託簿中...</translation>
+        <translation>取得即時委託簿中...</translation>
     </message>
     <message>
         <source>Fetching trades + analyzing flow...</source>
-        <translation type="vanished">取得交易+分析流程...</translation>
+        <translation>取得交易+分析流程...</translation>
     </message>
     <message>
         <source>Fetching...</source>
-        <translation type="vanished">擷取中...</translation>
+        <translation>擷取中...</translation>
     </message>
     <message>
         <source>Fields (comma-separated, e.g. $close,$volume,$open)</source>
-        <translation type="vanished">欄位（以逗號分隔，例如 $close,$volume,$open）</translation>
+        <translation>欄位（以逗號分隔，例如 $close,$volume,$open）</translation>
     </message>
     <message>
         <source>Fields (e.g. $close,$open,$high,$low,$volume)</source>
-        <translation type="vanished">欄位（例如 $close、$open、$high、$low、$volume）</translation>
+        <translation>欄位（例如 $close、$open、$high、$low、$volume）</translation>
     </message>
     <message>
         <source>Forecast</source>
-        <translation type="vanished">預測</translation>
+        <translation>預測</translation>
     </message>
     <message>
         <source>Fortitudo backend ready</source>
-        <translation type="vanished">Fortitudo 後端 就緒</translation>
+        <translation>Fortitudo 後端 就緒</translation>
     </message>
     <message>
         <source>Full Report</source>
-        <translation type="vanished">完整報表</translation>
+        <translation>完整報表</translation>
     </message>
     <message>
         <source>Functime backend ready</source>
-        <translation type="vanished">Functime 後端 就緒</translation>
+        <translation>Functime 後端 就緒</translation>
     </message>
     <message>
         <source>Generating preview...</source>
-        <translation type="vanished">產生預覽中...</translation>
+        <translation>產生預覽中...</translation>
     </message>
     <message>
         <source>Generating...</source>
-        <translation type="vanished">產生中...</translation>
+        <translation>產生中...</translation>
     </message>
     <message>
         <source>GluonTS backend ready</source>
-        <translation type="vanished">GluonTS 後端 就緒</translation>
+        <translation>GluonTS 後端 就緒</translation>
     </message>
     <message>
         <source>Granger Causality</source>
-        <translation type="vanished">Granger 因果檢定</translation>
+        <translation>Granger 因果檢定</translation>
     </message>
     <message>
         <source>Greeks</source>
-        <translation type="vanished">Greeks（希臘值）</translation>
+        <translation>Greeks（希臘值）</translation>
     </message>
     <message>
         <source>Hyperparameter Tuning</source>
-        <translation type="vanished">超參數調校</translation>
+        <translation>超參數調校</translation>
     </message>
     <message>
         <source>IC Analysis</source>
-        <translation type="vanished">IC 分析</translation>
+        <translation>IC 分析</translation>
     </message>
     <message>
         <source>IC Metrics</source>
-        <translation type="vanished">IC 指標</translation>
+        <translation>IC 指標</translation>
     </message>
     <message>
         <source>Incremental Train</source>
-        <translation type="vanished">增量訓練</translation>
+        <translation>增量訓練</translation>
     </message>
     <message>
         <source>Incrementally trained models that update on each new data point.</source>
-        <translation type="vanished">增量訓練模型，每當有新資料點時自動更新。</translation>
+        <translation>增量訓練模型，每當有新資料點時自動更新。</translation>
     </message>
     <message>
         <source>Indicators</source>
-        <translation type="vanished">指標</translation>
+        <translation>指標</translation>
     </message>
     <message>
         <source>Instruments (comma-separated)</source>
-        <translation type="vanished">Instruments (商品) （以逗號分隔)</translation>
+        <translation>Instruments (商品) （以逗號分隔)</translation>
     </message>
     <message>
         <source>Instruments (comma-separated, e.g. aapl,msft)</source>
-        <translation type="vanished">Instruments (商品) （以逗號分隔, e.g. aapl,msft)</translation>
+        <translation>Instruments (商品) （以逗號分隔, e.g. aapl,msft)</translation>
     </message>
     <message>
         <source>Instruments (comma-separated, e.g. aapl,msft,goog)</source>
-        <translation type="vanished">Instruments (商品) （以逗號分隔, e.g. aapl,msft,goog)</translation>
+        <translation>Instruments (商品) （以逗號分隔, e.g. aapl,msft,goog)</translation>
     </message>
     <message>
         <source>KPSS (H₀: stationary)</source>
-        <translation type="vanished">KPSS 檢定（H₀: 定態）</translation>
+        <translation>KPSS 檢定（H₀: 定態）</translation>
     </message>
     <message>
         <source>LATENCY —</source>
-        <translation type="vanished">延遲 —</translation>
+        <translation>延遲 —</translation>
     </message>
     <message>
         <source>LOAD SAMPLE</source>
-        <translation type="vanished">載入範例</translation>
+        <translation>載入範例</translation>
     </message>
     <message>
         <source>List all available Qlib models (LightGBM, XGBoost, LSTM, Transformer, etc.).</source>
-        <translation type="vanished">列出所有可用的 Qlib 模型（LightGBM、XGBoost、LSTM、Transformer 等）。</translation>
+        <translation>列出所有可用的 Qlib 模型（LightGBM、XGBoost、LSTM、Transformer 等）。</translation>
     </message>
     <message>
         <source>Live Order Book</source>
-        <translation type="vanished">即時委託簿</translation>
+        <translation>即時委託簿</translation>
     </message>
     <message>
         <source>Loading schedules...</source>
-        <translation type="vanished">載入排程中...</translation>
+        <translation>載入排程中...</translation>
     </message>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>Lower band (optional, same length as actuals)</source>
-        <translation type="vanished">下界（選填，與實際值等長）</translation>
+        <translation>下界（選填，與實際值等長）</translation>
     </message>
     <message>
         <source>MARKET MAKING  —  Avellaneda-Stoikov Model</source>
-        <translation type="vanished">造市 — Avellaneda-Stoikov 模型</translation>
+        <translation>造市 — Avellaneda-Stoikov 模型</translation>
     </message>
     <message>
         <source>MCP TOOLS</source>
-        <translation type="vanished">MCP 工具</translation>
+        <translation>MCP 工具</translation>
     </message>
     <message>
         <source>MCP tool server stopped</source>
-        <translation type="vanished">MCP 工具伺服器已停止</translation>
+        <translation>MCP 工具伺服器已停止</translation>
     </message>
     <message>
         <source>MV Optimize</source>
-        <translation type="vanished">均值-變異數最佳化</translation>
+        <translation>均值-變異數最佳化</translation>
     </message>
     <message>
         <source>Market caps (comma-separated, e.g. 2000,1500,800)</source>
-        <translation type="vanished">市場 caps （以逗號分隔, e.g. 2000,1500,800)</translation>
+        <translation>市場 caps （以逗號分隔, e.g. 2000,1500,800)</translation>
     </message>
     <message>
         <source>Metrics</source>
-        <translation type="vanished">指標</translation>
+        <translation>指標</translation>
     </message>
     <message>
         <source>Microstructure</source>
-        <translation type="vanished">市場微結構</translation>
+        <translation>市場微結構</translation>
     </message>
     <message>
         <source>Model</source>
-        <translation type="vanished">模型</translation>
+        <translation>模型</translation>
     </message>
     <message>
         <source>Model ID</source>
-        <translation type="vanished">模型 ID</translation>
+        <translation>模型 ID</translation>
     </message>
     <message>
         <source>Model ID (from training output)</source>
-        <translation type="vanished">Model ID (來自訓練輸出)</translation>
+        <translation>Model ID (來自訓練輸出)</translation>
     </message>
     <message>
         <source>Model ID (must be in Schedules)</source>
-        <translation type="vanished">Model ID (必須在排程中)</translation>
+        <translation>Model ID (必須在排程中)</translation>
     </message>
     <message>
         <source>Model ID (optional, auto-generated if blank)</source>
-        <translation type="vanished">型號 ID（可選，如果為空則自動產生）</translation>
+        <translation>型號 ID（可選，如果為空則自動產生）</translation>
     </message>
     <message>
         <source>Model ID is required.</source>
-        <translation type="vanished">Model ID 為必填。</translation>
+        <translation>Model ID 為必填。</translation>
     </message>
     <message>
         <source>Model IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)</source>
-        <translation type="vanished">模型 ID（逗號分隔，例如 lightgbm、xgboost、random_forest）</translation>
+        <translation>模型 ID（逗號分隔，例如 lightgbm、xgboost、random_forest）</translation>
     </message>
     <message>
         <source>Model Optimization</source>
-        <translation type="vanished">模型最佳化</translation>
+        <translation>模型最佳化</translation>
     </message>
     <message>
         <source>Model Performance</source>
-        <translation type="vanished">模型表現</translation>
+        <translation>模型表現</translation>
     </message>
     <message>
         <source>Model Selection</source>
-        <translation type="vanished">模型選擇</translation>
+        <translation>模型選擇</translation>
     </message>
     <message>
         <source>Model keys (from selection output, comma-separated)</source>
-        <translation type="vanished">模型鍵（來自選擇輸出，以逗號分隔）</translation>
+        <translation>模型鍵（來自選擇輸出，以逗號分隔）</translation>
     </message>
     <message>
         <source>Model label (e.g. LightGBM, LSTM)</source>
-        <translation type="vanished">模型標籤（例如 LightGBM、LSTM）</translation>
+        <translation>模型標籤（例如 LightGBM、LSTM）</translation>
     </message>
     <message>
         <source>Model optimization started...</source>
-        <translation type="vanished">模型優化開始...</translation>
+        <translation>模型優化開始...</translation>
     </message>
     <message>
         <source>Model predictions (decimals, &gt;= 10 values)</source>
-        <translation type="vanished">模型預測（小數，≥ 10 個數值）</translation>
+        <translation>模型預測（小數，≥ 10 個數值）</translation>
     </message>
     <message>
         <source>Model predictions (decimals, &gt;= 20 values)</source>
-        <translation type="vanished">模型預測（小數，≥ 20 個數值）</translation>
+        <translation>模型預測（小數，≥ 20 個數值）</translation>
     </message>
     <message>
         <source>Models</source>
-        <translation type="vanished">模型</translation>
+        <translation>模型</translation>
     </message>
     <message>
         <source>NORMALITY  (H₀: data is normally distributed; p &gt; 0.05 ⇒ cannot reject normal)</source>
-        <translation type="vanished">常態性（H₀：資料為常態分配；p &gt; 0.05 ⇒ 無法拒絕常態）</translation>
+        <translation>常態性（H₀：資料為常態分配；p &gt; 0.05 ⇒ 無法拒絕常態）</translation>
     </message>
     <message>
         <source>No anomalies detected at the configured threshold.</source>
-        <translation type="vanished">在設定的閾值下未偵測到異常。</translation>
+        <translation>在設定的閾值下未偵測到異常。</translation>
     </message>
     <message>
         <source>Numeric values (&gt;= 30). Fits normal, student-t, lognormal (positive only), skewnormal.</source>
-        <translation type="vanished">數值（≥ 30）。擬合常態、Student-t、對數常態（僅正值）、偏態常態分配。</translation>
+        <translation>數值（≥ 30）。擬合常態、Student-t、對數常態（僅正值）、偏態常態分配。</translation>
     </message>
     <message>
         <source>Numeric values (&gt;= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.</source>
-        <translation type="vanished">數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
+        <translation>數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
     </message>
     <message>
         <source>Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2.</source>
-        <translation type="vanished">數值（如 10.5, 11.2, 9.8, 12.1, ...）。至少需要 2 個。</translation>
+        <translation>數值（如 10.5, 11.2, 9.8, 12.1, ...）。至少需要 2 個。</translation>
     </message>
     <message>
         <source>OLS Regression</source>
-        <translation type="vanished">OLS 迴歸</translation>
+        <translation>OLS 迴歸</translation>
     </message>
     <message>
         <source>OPEN LOG VIEWER</source>
-        <translation type="vanished">開啟日誌檢視器</translation>
+        <translation>開啟日誌檢視器</translation>
     </message>
     <message>
         <source>OPTIMAL WEIGHTS</source>
-        <translation type="vanished">OPTIMAL 權重</translation>
+        <translation>OPTIMAL 權重</translation>
     </message>
     <message>
         <source>Optimizing...</source>
-        <translation type="vanished">最佳化中...</translation>
+        <translation>最佳化中...</translation>
     </message>
     <message>
         <source>Optional — leave blank to auto-generate</source>
-        <translation type="vanished">選填 — 留空將自動產生</translation>
+        <translation>選填 — 留空將自動產生</translation>
     </message>
     <message>
         <source>Optional: path to Qlib YAML config (leave blank for built-in LightGBM+Alpha158)</source>
-        <translation type="vanished">選用：Qlib YAML 配置的路徑（內建 LightGBM+Alpha158 留空）</translation>
+        <translation>選用：Qlib YAML 配置的路徑（內建 LightGBM+Alpha158 留空）</translation>
     </message>
     <message>
         <source>PER-ASSET MOMENTS</source>
-        <translation type="vanished">各資產動差</translation>
+        <translation>各資產動差</translation>
     </message>
     <message>
         <source>PER-QUANTILE SUMMARY</source>
-        <translation type="vanished">每分位數總結</translation>
+        <translation>每分位數總結</translation>
     </message>
     <message>
         <source>Pipeline ID (e.g. my_pipeline)</source>
-        <translation type="vanished">管道 ID（例如 my_pipeline）</translation>
+        <translation>管道 ID（例如 my_pipeline）</translation>
     </message>
     <message>
         <source>Pipeline ID (must be created first)</source>
-        <translation type="vanished">Pipeline ID (必須先建立)</translation>
+        <translation>Pipeline ID (必須先建立)</translation>
     </message>
     <message>
         <source>Point forecast (same length as actuals)</source>
-        <translation type="vanished">點預測（與實際長度相同）</translation>
+        <translation>點預測（與實際長度相同）</translation>
     </message>
     <message>
         <source>Portfolio</source>
-        <translation type="vanished">投資組合</translation>
+        <translation>投資組合</translation>
     </message>
     <message>
         <source>Portfolio Metrics</source>
-        <translation type="vanished">投資組合指標</translation>
+        <translation>投資組合指標</translation>
     </message>
     <message>
         <source>Portfolio daily returns (decimals)</source>
-        <translation type="vanished">投資組合每日回報（小數）</translation>
+        <translation>投資組合每日回報（小數）</translation>
     </message>
     <message>
         <source>Portfolio daily returns (decimals, same length as benchmark)</source>
-        <translation type="vanished">投資組合每日報酬率（小數，與基準長度相同）</translation>
+        <translation>投資組合每日報酬率（小數，與基準長度相同）</translation>
     </message>
     <message>
         <source>Portfolio returns (comma-separated)</source>
-        <translation type="vanished">投資組合報酬（以逗號分隔）</translation>
+        <translation>投資組合報酬（以逗號分隔）</translation>
     </message>
     <message>
         <source>Potential cause series x (same length as y)</source>
-        <translation type="vanished">潛在原因係列x（與y長度相同）</translation>
+        <translation>潛在原因係列x（與y長度相同）</translation>
     </message>
     <message>
         <source>Predict</source>
-        <translation type="vanished">預測</translation>
+        <translation>預測</translation>
     </message>
     <message>
         <source>Predicted values (same length as actual)</source>
-        <translation type="vanished">預測值（與實際值等長）</translation>
+        <translation>預測值（與實際值等長）</translation>
     </message>
     <message>
         <source>Predicting...</source>
-        <translation type="vanished">預測中...</translation>
+        <translation>預測中...</translation>
     </message>
     <message>
         <source>Predictions (comma-separated)</source>
-        <translation type="vanished">Prediction (預測)s （以逗號分隔)</translation>
+        <translation>Prediction (預測)s （以逗號分隔)</translation>
     </message>
     <message>
         <source>Predictions (comma-separated, e.g. 0.1,0.2,-0.1,0.3)</source>
-        <translation type="vanished">Prediction (預測)s （以逗號分隔, e.g. 0.1,0.2,-0.1,0.3)</translation>
+        <translation>Prediction (預測)s （以逗號分隔, e.g. 0.1,0.2,-0.1,0.3)</translation>
     </message>
     <message>
         <source>Price data (comma-separated, e.g. 100,102,101,105,108)</source>
-        <translation type="vanished">價格資料（以逗號分隔，例如 100,102,101,105,108）</translation>
+        <translation>價格資料（以逗號分隔，例如 100,102,101,105,108）</translation>
     </message>
     <message>
         <source>Probabilistic Forecast</source>
-        <translation type="vanished">機率預測</translation>
+        <translation>機率預測</translation>
     </message>
     <message>
         <source>Process Data</source>
-        <translation type="vanished">處理資料</translation>
+        <translation>處理資料</translation>
     </message>
     <message>
         <source>Processing...</source>
-        <translation type="vanished">處理中...</translation>
+        <translation>處理中...</translation>
     </message>
     <message>
         <source>Quant Reporting backend ready</source>
-        <translation type="vanished">定量報告後端準備就緒</translation>
+        <translation>定量報告後端準備就緒</translation>
     </message>
     <message>
         <source>Quant Research</source>
-        <translation type="vanished">量化研究</translation>
+        <translation>量化研究</translation>
     </message>
     <message>
         <source>Quant research started...</source>
-        <translation type="vanished">量化研究開始了…</translation>
+        <translation>量化研究開始了…</translation>
     </message>
     <message>
         <source>Quantile Forecast</source>
-        <translation type="vanished">分位數預測</translation>
+        <translation>分位數預測</translation>
     </message>
     <message>
         <source>Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95</source>
-        <translation type="vanished">分位數（0 到 1）— 如 0.05, 0.5, 0.95</translation>
+        <translation>分位數（0 到 1）— 如 0.05, 0.5, 0.95</translation>
     </message>
     <message>
         <source>RD-Agent</source>
-        <translation type="obsolete">RD-Agent</translation>
+        <translation>RD-Agent</translation>
     </message>
     <message>
         <source>RD-Agent ready</source>
-        <translation type="vanished">RD-Agent 就緒</translation>
+        <translation>RD-Agent 就緒</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>RESUME</source>
-        <translation type="obsolete">RESUME</translation>
+        <translation>RESUME</translation>
     </message>
     <message>
         <source>Realized actuals (&gt;= 5 values)</source>
-        <translation type="vanished">實際值（≥ 5 個數值）</translation>
+        <translation>實際值（≥ 5 個數值）</translation>
     </message>
     <message>
         <source>Realized returns (decimals, same length as predictions)</source>
-        <translation type="vanished">已實現報酬率（小數，與預測等長）</translation>
+        <translation>已實現報酬率（小數，與預測等長）</translation>
     </message>
     <message>
         <source>Realized returns (same length as factor)</source>
-        <translation type="vanished">已實現報酬率（與因子等長）</translation>
+        <translation>已實現報酬率（與因子等長）</translation>
     </message>
     <message>
         <source>Realized returns (same length as predictions)</source>
-        <translation type="vanished">已實現報酬率（與預測等長）</translation>
+        <translation>已實現報酬率（與預測等長）</translation>
     </message>
     <message>
         <source>Regressor x (single column, same length as y). For multi-feature use the JSON 2D form.</source>
-        <translation type="vanished">自變數 x（單欄，與 y 等長）。多特徵請使用 JSON 2D 格式。</translation>
+        <translation>自變數 x（單欄，與 y 等長）。多特徵請使用 JSON 2D 格式。</translation>
     </message>
     <message>
         <source>Retraining...</source>
-        <translation type="vanished">重新訓練中...</translation>
+        <translation>重新訓練中...</translation>
     </message>
     <message>
         <source>Returns (comma-separated)</source>
-        <translation type="vanished">Returns (報酬率) （以逗號分隔)</translation>
+        <translation>Returns (報酬率) （以逗號分隔)</translation>
     </message>
     <message>
         <source>Risk Metrics</source>
-        <translation type="vanished">風險指標</translation>
+        <translation>風險指標</translation>
     </message>
     <message>
         <source>Risk Parity</source>
-        <translation type="vanished">風險均等</translation>
+        <translation>風險均等</translation>
     </message>
     <message>
         <source>Risk Report</source>
-        <translation type="vanished">風險報表</translation>
+        <translation>風險報表</translation>
     </message>
     <message>
         <source>Rolling window in trading days (default: 252)</source>
-        <translation type="vanished">交易日捲動視窗（預設：252）</translation>
+        <translation>交易日捲動視窗（預設：252）</translation>
     </message>
     <message>
         <source>Running BL...</source>
-        <translation type="vanished">運行BL...</translation>
+        <translation>運行BL...</translation>
     </message>
     <message>
         <source>Running backtest...</source>
-        <translation type="vanished">執行 Backtest (回測) 中...</translation>
+        <translation>執行 Backtest (回測) 中...</translation>
     </message>
     <message>
         <source>Running full microstructure analysis...</source>
-        <translation type="vanished">執行完整 Microstructure (市場微結構) 分析中...</translation>
+        <translation>執行完整 Microstructure (市場微結構) 分析中...</translation>
     </message>
     <message>
         <source>Running...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>SH000300 (CSI300)</source>
-        <translation type="obsolete">SH000300 (CSI300)</translation>
+        <translation>SH000300 (CSI300)</translation>
     </message>
     <message>
         <source>SLIPPAGE ESTIMATOR  —  Real Order Book Walk</source>
-        <translation type="vanished">滑價估算器 — 實際委託簿模擬</translation>
+        <translation>滑價估算器 — 實際委託簿模擬</translation>
     </message>
     <message>
         <source>STOP</source>
-        <translation type="vanished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>SYMBOL</source>
-        <translation type="vanished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <source>Schedules</source>
-        <translation type="vanished">排程</translation>
+        <translation>排程</translation>
     </message>
     <message>
         <source>Seasonal Naive</source>
-        <translation type="vanished">季節性樸素法</translation>
+        <translation>季節性樸素法</translation>
     </message>
     <message>
         <source>Seasonality</source>
-        <translation type="vanished">季節性</translation>
+        <translation>季節性</translation>
     </message>
     <message>
         <source>Select a task and click GET FACTORS / GET MODEL to view results...</source>
-        <translation type="vanished">選擇一個任務並點擊“獲取因素/獲取模型”以查看結果...</translation>
+        <translation>選擇一個任務並點擊“獲取因素/獲取模型”以查看結果...</translation>
     </message>
     <message>
         <source>Selecting...</source>
-        <translation type="vanished">選取中...</translation>
+        <translation>選取中...</translation>
     </message>
     <message>
         <source>Series values (&gt;= 1). Forecast = repeat last `season_length` observations.</source>
-        <translation type="vanished">序列值（≥ 1）。預測 = 重複最後 season_length 個觀測值。</translation>
+        <translation>序列值（≥ 1）。預測 = 重複最後 season_length 個觀測值。</translation>
     </message>
     <message>
         <source>Series values (&gt;= 30)</source>
-        <translation type="vanished">序列值（≥ 30）</translation>
+        <translation>序列值（≥ 30）</translation>
     </message>
     <message>
         <source>Series values (&gt;= 30) — runs ADF + KPSS at each differencing order</source>
-        <translation type="vanished">序列值（≥ 30）— 在每個差分階數執行 ADF + KPSS</translation>
+        <translation>序列值（≥ 30）— 在每個差分階數執行 ADF + KPSS</translation>
     </message>
     <message>
         <source>Series values (&gt;= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.</source>
-        <translation type="vanished">序列值（≥ 30）。Bootstrap 殘差集成預測接下來 H 步驟，附分位數帶。</translation>
+        <translation>序列值（≥ 30）。Bootstrap 殘差集成預測接下來 H 步驟，附分位數帶。</translation>
     </message>
     <message>
         <source>Series values (training history, &gt;= 30)</source>
-        <translation type="vanished">序列值（訓練歷史，≥ 30）</translation>
+        <translation>序列值（訓練歷史，≥ 30）</translation>
     </message>
     <message>
         <source>Signal Data</source>
-        <translation type="vanished">訊號資料</translation>
+        <translation>訊號資料</translation>
     </message>
     <message>
         <source>Signal values (comma-separated)</source>
-        <translation type="vanished">訊號值（逗號分隔）</translation>
+        <translation>訊號值（逗號分隔）</translation>
     </message>
     <message>
         <source>Slippage Estimator</source>
-        <translation type="vanished">滑價估算器</translation>
+        <translation>滑價估算器</translation>
     </message>
     <message>
         <source>Start date (YYYY-MM-DD)</source>
-        <translation type="vanished">開始日期 (YYYY-MM-DD)</translation>
+        <translation>開始日期 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <source>Start date (YYYY-MM-DD, e.g. 2019-01-01)</source>
-        <translation type="vanished">開始日期 (YYYY-MM-DD, e.g. 2019-01-01)</translation>
+        <translation>開始日期 (YYYY-MM-DD, e.g. 2019-01-01)</translation>
     </message>
     <message>
         <source>Starting MCP tool server...</source>
-        <translation type="vanished">啟動 MCP 工具伺服器中...</translation>
+        <translation>啟動 MCP 工具伺服器中...</translation>
     </message>
     <message>
         <source>Starting log viewer...</source>
-        <translation type="vanished">正在啟動日誌檢視器...</translation>
+        <translation>正在啟動日誌檢視器...</translation>
     </message>
     <message>
         <source>Starting...</source>
-        <translation type="vanished">啟動中...</translation>
+        <translation>啟動中...</translation>
     </message>
     <message>
         <source>Stationarity</source>
-        <translation type="vanished">定態性</translation>
+        <translation>定態性</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation type="vanished">統計</translation>
+        <translation>統計</translation>
     </message>
     <message>
         <source>Statsmodels backend ready</source>
-        <translation type="vanished">Statsmodels 後端 就緒</translation>
+        <translation>Statsmodels 後端 就緒</translation>
     </message>
     <message>
         <source>Step size between windows (default: 20)</source>
-        <translation type="vanished">視窗之間的步長（預設值：20）</translation>
+        <translation>視窗之間的步長（預設值：20）</translation>
     </message>
     <message>
         <source>Stress Test</source>
-        <translation type="vanished">壓力測試</translation>
+        <translation>壓力測試</translation>
     </message>
     <message>
         <source>TOXIC FLOW DETECTION  —  PIN Score Model</source>
-        <translation type="vanished">毒性流動偵測 — PIN 分數模型</translation>
+        <translation>毒性流動偵測 — PIN 分數模型</translation>
     </message>
     <message>
         <source>Target returns (comma-separated)</source>
-        <translation type="vanished">目標回報（以逗號分隔）</translation>
+        <translation>目標回報（以逗號分隔）</translation>
     </message>
     <message>
         <source>Target value (e.g. 0.02)</source>
-        <translation type="vanished">目標值（如 0.02）</translation>
+        <translation>目標值（如 0.02）</translation>
     </message>
     <message>
         <source>Task ID...</source>
-        <translation type="vanished">任務 ID...</translation>
+        <translation>任務 ID...</translation>
     </message>
     <message>
         <source>Task Monitor</source>
-        <translation type="vanished">任務監控</translation>
+        <translation>任務監控</translation>
     </message>
     <message>
         <source>Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values</source>
-        <translation type="vanished">代碼（AAPL、^GSPC、BTC-USD）或逗號分隔值</translation>
+        <translation>代碼（AAPL、^GSPC、BTC-USD）或逗號分隔值</translation>
     </message>
     <message>
         <source>Tickers (comma-separated, &gt;= 2). Returns fetched via Yahoo Finance.</source>
@@ -24678,210 +24744,220 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Time series values (&gt;= 20)</source>
-        <translation type="vanished">時間序列值（≥ 20）</translation>
+        <translation>時間序列值（≥ 20）</translation>
     </message>
     <message>
         <source>Time series values (&gt;= 20). Used for ARIMA(p,q) order selection.</source>
-        <translation type="vanished">時間序列值（≥ 20）。用於 ARIMA(p,q) 階數選擇。</translation>
+        <translation>時間序列值（≥ 20）。用於 ARIMA(p,q) 階數選擇。</translation>
     </message>
     <message>
         <source>Time series values (&gt;= 24). Period auto-detected if left at 0.</source>
-        <translation type="vanished">時間序列值（≥ 24）。週期設為 0 時自動偵測。</translation>
+        <translation>時間序列值（≥ 24）。週期設為 0 時自動偵測。</translation>
     </message>
     <message>
         <source>Time series values (&gt;= 30)</source>
-        <translation type="vanished">時間序列值（≥ 30）</translation>
+        <translation>時間序列值（≥ 30）</translation>
     </message>
     <message>
         <source>Time series values (&gt;= 30). CSV, space, or newline separated.</source>
-        <translation type="vanished">時間序列值（≥ 30）。以 CSV、空格或換行分隔。</translation>
+        <translation>時間序列值（≥ 30）。以 CSV、空格或換行分隔。</translation>
     </message>
     <message>
         <source>TopK-Dropout</source>
-        <translation type="obsolete">TopK-Dropout</translation>
+        <translation>TopK-Dropout</translation>
     </message>
     <message>
         <source>Train Model</source>
-        <translation type="vanished">訓練模型</translation>
+        <translation>訓練模型</translation>
     </message>
     <message>
         <source>Train end (YYYY-MM-DD)</source>
-        <translation type="vanished">訓練結束 (YYYY-MM-DD)</translation>
+        <translation>訓練結束 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <source>Train start (YYYY-MM-DD)</source>
-        <translation type="vanished">訓練開始 (YYYY-MM-DD)</translation>
+        <translation>訓練開始 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <source>Trained model ID</source>
-        <translation type="vanished">已訓練 model ID</translation>
+        <translation>已訓練 model ID</translation>
     </message>
     <message>
         <source>Training RL Agent...</source>
-        <translation type="vanished">訓練 RL Agent (強化學習代理) 中...</translation>
+        <translation>訓練 RL Agent (強化學習代理) 中...</translation>
     </message>
     <message>
         <source>Training history (optional; enables MASE)</source>
-        <translation type="vanished">培訓歷史（可選；啟用 MASE）</translation>
+        <translation>培訓歷史（可選；啟用 MASE）</translation>
     </message>
     <message>
         <source>Training progress will stream here...</source>
-        <translation type="vanished">訓練進度會在此串流顯示...</translation>
+        <translation>訓練進度會在此串流顯示...</translation>
     </message>
     <message>
         <source>Training...</source>
-        <translation type="vanished">訓練中...</translation>
+        <translation>訓練中...</translation>
     </message>
     <message>
         <source>Tuning...</source>
-        <translation type="vanished">調校中...</translation>
+        <translation>調校中...</translation>
     </message>
     <message>
         <source>Unique model ID (e.g. lgbm_sp500)</source>
-        <translation type="vanished">唯一型號 ID（例如 lgbm_sp500）</translation>
+        <translation>唯一型號 ID（例如 lgbm_sp500）</translation>
     </message>
     <message>
         <source>Upper band (optional, same length as actuals)</source>
-        <translation type="vanished">上界（選填，與實際值等長）</translation>
+        <translation>上界（選填，與實際值等長）</translation>
     </message>
     <message>
         <source>VaR</source>
-        <translation type="obsolete">VaR</translation>
+        <translation>VaR</translation>
     </message>
     <message>
         <source>View confidences (e.g. 0.8,0.6)</source>
-        <translation type="vanished">檢視信心度（例如 0.8,0.6）</translation>
+        <translation>檢視信心度（例如 0.8,0.6）</translation>
     </message>
     <message>
         <source>Views (comma-separated, e.g. 0.05,0.10)</source>
-        <translation type="vanished">Views （以逗號分隔, e.g. 0.05,0.10)</translation>
+        <translation>Views （以逗號分隔, e.g. 0.05,0.10)</translation>
     </message>
     <message>
         <source>Walking order book...</source>
-        <translation type="vanished">行走訂單...</translation>
+        <translation>行走訂單...</translation>
     </message>
     <message>
         <source>Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.</source>
-        <translation type="vanished">權重（以逗號分隔，將標準化為 1.0）。如果空白則等重。</translation>
+        <translation>權重（以逗號分隔，將標準化為 1.0）。如果空白則等重。</translation>
     </message>
     <message>
         <source>bootstrap,jackknife</source>
-        <translation type="obsolete">bootstrap,jackknife</translation>
+        <translation>bootstrap,jackknife</translation>
     </message>
     <message>
         <source>c = constant only, ct = constant + trend</source>
-        <translation type="vanished">c = 僅常數，ct = 常數 + 趨勢</translation>
+        <translation>c = 僅常數，ct = 常數 + 趨勢</translation>
     </message>
     <message>
         <source>c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant</source>
-        <translation type="vanished">c = 常數, ct = 常數 + 趨勢, ctt = 常數 + 趨勢 + 二次趨勢, n = 無常數</translation>
+        <translation>c = 常數, ct = 常數 + 趨勢, ctt = 常數 + 趨勢 + 二次趨勢, n = 無常數</translation>
     </message>
     <message>
         <source>comma-separated: bootstrap,jackknife,permutation</source>
-        <translation type="vanished">逗號分隔：bootstrap、jackknife、排列</translation>
+        <translation>逗號分隔：bootstrap、jackknife、排列</translation>
     </message>
     <message>
         <source>comma-separated: pca,kmeans,agglomerative</source>
-        <translation type="vanished">以逗號分隔：pca,kmeans,agglomerative</translation>
+        <translation>以逗號分隔：pca,kmeans,agglomerative</translation>
     </message>
     <message>
         <source>comma-separated: ridge,lasso,random_forest,svr,knn</source>
-        <translation type="vanished">逗號分隔：ridge,lasso,random_forest,svr,knn</translation>
+        <translation>逗號分隔：ridge,lasso,random_forest,svr,knn</translation>
     </message>
     <message>
         <source>e.g. AAPL — fetched from Yahoo Finance</source>
-        <translation type="vanished">例如AAPL - 取自雅虎財經</translation>
+        <translation>例如AAPL - 取自雅虎財經</translation>
     </message>
     <message>
         <source>e.g. BTC/USDT, ETH/USDT</source>
-        <translation type="vanished">例如BTC/USDT、ETH/USDT</translation>
+        <translation>例如BTC/USDT、ETH/USDT</translation>
     </message>
     <message>
         <source>e.g. Mean(close, 5) / Std(close, 20)</source>
-        <translation type="vanished">例如平均值（收盤價，5）/標準差（收盤價，20）</translation>
+        <translation>例如平均值（收盤價，5）/標準差（收盤價，20）</translation>
     </message>
     <message>
         <source>pca,kmeans</source>
-        <translation type="obsolete">pca,kmeans</translation>
+        <translation>pca,kmeans</translation>
     </message>
     <message>
         <source>ridge,random_forest</source>
-        <translation type="obsolete">ridge,random_forest</translation>
+        <translation>ridge,random_forest</translation>
     </message>
     <message>
         <source>simple,stratified,systematic</source>
-        <translation type="obsolete">simple,stratified,systematic</translation>
+        <translation>simple,stratified,systematic</translation>
     </message>
     <message>
         <source>step 0 / — · reward — · loss —</source>
-        <translation type="vanished">step 0 / — · 報酬 — · 虧損 —</translation>
+        <translation>step 0 / — · 報酬 — · 虧損 —</translation>
     </message>
-</context>
+<message><source>No LLM profiles — configure in Settings → LLM Config</source><translation>No LLM 設定檔 — configure in 設定 → LLM 設定</translation></message><message><source>Command (e.g. analyze, train, list_models)</source><translation>指令（例如分析、訓練、list_models）</translation></message><message><source>JSON parameters (optional)
+e.g. {ticker:AAPL}</source><translation>JSON 參數（選填）
+例如 {ticker:AAPL}</translation></message><message><source>RESULTS</source><translation>結果</translation></message><message><source>MCP server failed</source><translation>MCP 伺服器失敗</translation></message><message><source>Feature importance loaded</source><translation>已載入特徵重要性</translation></message><message><source>Model created</source><translation>模型已建立</translation></message><message><source>Prediction ready</source><translation>Prediction (預測) 已就緒</translation></message><message><source>Ensemble created</source><translation>Ensemble (集成模型) 已建立</translation></message><message><source>Combining rolling results...</source><translation>結合滾動結果...</translation></message><message><source>No schedules configured yet.
+Use the Create Schedule tab to add one.</source><translation>尚未設定排程。
+請使用「建立排程」分頁新增。</translation></message><message><source>Run Now</source><translation>立即執行</translation></message><message><source>Delete</source><translation>刪除</translation></message><message><source>Schedule created — switch to Schedules tab to view</source><translation>已建立計劃 - 切換到「計劃」標籤以查看</translation></message><message><source>Describe your analysis task...
+e.g. "Conduct a full investment analysis of NVDA: research fundamentals, assess risks, and give a buy/sell/hold recommendation with price target"</source><translation>描述您的分析任務…
+例如「對 NVDA 進行全面投資分析：研究基本面、評估風險，並給出買入/賣出/持有建議與目標價」</translation></message><message><source>Start/stop the Fincept MCP tool server
+Gives RD-Agent loops access to market data,
+financial news and economics tools.</source><translation>啟動/停止 Fincept MCP 工具伺服器
+讓 RD-Agent 迴圈可存取市場資料、
+財經新聞和經濟分析工具。</translation></message></context>
 <context>
     <name>fincept::screens::QuantStatsView</name>
     <message>
         <source>Complete</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>DRAWDOWN</source>
-        <translation type="obsolete">DRAWDOWN</translation>
+        <translation>DRAWDOWN</translation>
     </message>
     <message>
         <source>DRAWDOWN &amp; RISK METRICS</source>
-        <translation type="vanished">回撤與風險指標</translation>
+        <translation>回撤與風險指標</translation>
     </message>
     <message>
         <source>Fetching 1-year price history...</source>
-        <translation type="vanished">正在取得 1 年價格歷史記錄...</translation>
+        <translation>正在取得 1 年價格歷史記錄...</translation>
     </message>
     <message>
         <source>KEY PERFORMANCE INDICATORS</source>
-        <translation type="vanished">KEY 績效 指標</translation>
+        <translation>KEY 績效 指標</translation>
     </message>
     <message>
         <source>MAX DRAWDOWN</source>
-        <translation type="vanished">最大回撤</translation>
+        <translation>最大回撤</translation>
     </message>
     <message>
         <source>METRICS</source>
-        <translation type="obsolete">METRICS</translation>
+        <translation>METRICS</translation>
     </message>
     <message>
         <source>MONTE CARLO</source>
-        <translation type="vanished">蒙地卡羅</translation>
+        <translation>蒙地卡羅</translation>
     </message>
     <message>
         <source>MONTE CARLO SIMULATION</source>
-        <translation type="vanished">蒙特卡羅模擬</translation>
+        <translation>蒙特卡羅模擬</translation>
     </message>
     <message>
         <source>QUANTSTATS ANALYSIS</source>
-        <translation type="vanished">QUANTSTATS 分析</translation>
+        <translation>QUANTSTATS 分析</translation>
     </message>
     <message>
         <source>RETURN DISTRIBUTION</source>
-        <translation type="vanished">報酬 DISTRIBUTION</translation>
+        <translation>報酬 DISTRIBUTION</translation>
     </message>
     <message>
         <source>RETURNS</source>
-        <translation type="obsolete">RETURNS</translation>
+        <translation>RETURNS</translation>
     </message>
     <message>
         <source>RISK-ADJUSTED RATIOS &amp; WIN/LOSS BREAKDOWN</source>
-        <translation type="vanished">風險調整比率與勝負分析</translation>
+        <translation>風險調整比率與勝負分析</translation>
     </message>
     <message>
         <source>ROLLING</source>
-        <translation type="obsolete">ROLLING</translation>
+        <translation>ROLLING</translation>
     </message>
     <message>
         <source>Running 1000 simulation paths...</source>
-        <translation type="vanished">運行 1000 條模擬路徑...</translation>
+        <translation>運行 1000 條模擬路徑...</translation>
     </message>
     <message>
         <source>WIN / LOSS BREAKDOWN</source>
-        <translation type="vanished">WIN / 虧損 分解</translation>
+        <translation>WIN / 虧損 分解</translation>
     </message>
     <message>
         <source>\u25B6 RUN MONTE CARLO (1000 paths)</source>
@@ -24891,193 +24967,193 @@ X-API-Key: xyz</translation>
         <source>\u25B6 RUN QUANTSTATS</source>
         <translation type="vanished">\u25B6 執行 QUANTSTATS</translation>
     </message>
-</context>
+<message><source>▶ RUN QUANTSTATS</source><translation>▶ 執行 QuantStats</translation></message><message><source>▶ RUN MONTE CARLO (1000 paths)</source><translation>▶ 執行蒙地卡羅模擬（1000 條路徑）</translation></message></context>
 <context>
     <name>fincept::screens::RegisterScreen</name>
     <message>
         <source>  建立中...  </source>
-        <translation type="obsolete">  建立中...  </translation>
+        <translation>  建立中...  </translation>
     </message>
     <message>
         <source>  建立帳戶  </source>
-        <translation type="obsolete">  建立帳戶  </translation>
+        <translation>  建立帳戶  </translation>
     </message>
     <message>
         <source>  驗證  </source>
-        <translation type="obsolete">  驗證  </translation>
+        <translation>  驗證  </translation>
     </message>
     <message>
         <source>  驗證中...  </source>
-        <translation type="obsolete">  驗證中...  </translation>
+        <translation>  驗證中...  </translation>
     </message>
     <message>
         <source>使用者名稱需 3-50 個字元</source>
-        <translation type="obsolete">使用者名稱需 3-50 個字元</translation>
+        <translation>使用者名稱需 3-50 個字元</translation>
     </message>
     <message>
         <source>國碼為必填（例如 +1、+886）</source>
-        <translation type="obsolete">國碼為必填（例如 +1、+886）</translation>
+        <translation>國碼為必填（例如 +1、+886）</translation>
     </message>
     <message>
         <source>密碼不一致</source>
-        <translation type="obsolete">密碼不一致</translation>
+        <translation>密碼不一致</translation>
     </message>
     <message>
         <source>密碼至少需要 8 個字元</source>
-        <translation type="obsolete">密碼至少需要 8 個字元</translation>
+        <translation>密碼至少需要 8 個字元</translation>
     </message>
     <message>
         <source>已有帳戶？</source>
-        <translation type="obsolete">已有帳戶？</translation>
+        <translation>已有帳戶？</translation>
     </message>
     <message>
         <source>建立帳戶</source>
-        <translation type="obsolete">建立帳戶</translation>
+        <translation>建立帳戶</translation>
     </message>
     <message>
         <source>所有欄位皆為必填</source>
-        <translation type="obsolete">所有欄位皆為必填</translation>
+        <translation>所有欄位皆為必填</translation>
     </message>
     <message>
         <source>未收到？重新發送</source>
-        <translation type="obsolete">未收到？重新發送</translation>
+        <translation>未收到？重新發送</translation>
     </message>
     <message>
         <source>登入</source>
-        <translation type="obsolete">登入</translation>
+        <translation>登入</translation>
     </message>
     <message>
         <source>請輸入驗證碼</source>
-        <translation type="obsolete">請輸入驗證碼</translation>
+        <translation>請輸入驗證碼</translation>
     </message>
     <message>
         <source>輸入郵件中的驗證碼</source>
-        <translation type="obsolete">輸入郵件中的驗證碼</translation>
+        <translation>輸入郵件中的驗證碼</translation>
     </message>
     <message>
         <source>返回表單</source>
-        <translation type="obsolete">返回表單</translation>
+        <translation>返回表單</translation>
     </message>
     <message>
         <source>驗證碼</source>
-        <translation type="obsolete">驗證碼</translation>
+        <translation>驗證碼</translation>
     </message>
     <message>
         <source>驗證電子郵件</source>
-        <translation type="obsolete">驗證電子郵件</translation>
+        <translation>驗證電子郵件</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::RelationshipMapScreen</name>
     <message>
         <source>ANALYZE</source>
-        <translation type="vanished">分析</translation>
+        <translation>分析</translation>
     </message>
     <message>
         <source>CORPORATE INTELLIGENCE MAP</source>
-        <translation type="vanished">企業情報地圖</translation>
+        <translation>企業情報地圖</translation>
     </message>
     <message>
         <source>Complete</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <source>FILTERS</source>
-        <translation type="vanished">篩選</translation>
+        <translation>篩選</translation>
     </message>
     <message>
         <source>FINCEPT TERMINAL</source>
-        <translation type="vanished">Fincept 終端機</translation>
+        <translation>FINCEPT 終端機</translation>
     </message>
     <message>
         <source>FIT</source>
-        <translation type="obsolete">FIT</translation>
+        <translation>FIT</translation>
     </message>
     <message>
         <source>FORCE</source>
-        <translation type="vanished">強制</translation>
+        <translation>強制</translation>
     </message>
     <message>
         <source>Fit graph to view (or press Home)</source>
-        <translation type="vanished">讓圖表符合檢視範圍（或按 Home）</translation>
+        <translation>讓圖表符合檢視範圍（或按 Home）</translation>
     </message>
     <message>
         <source>LAYERED</source>
-        <translation type="vanished">分層</translation>
+        <translation>分層</translation>
     </message>
     <message>
         <source>LEGEND</source>
-        <translation type="vanished">圖例</translation>
+        <translation>圖例</translation>
     </message>
     <message>
         <source>No results found</source>
-        <translation type="vanished">找不到結果</translation>
+        <translation>找不到結果</translation>
     </message>
     <message>
         <source>RADIAL</source>
-        <translation type="vanished">放射狀</translation>
+        <translation>放射狀</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Search assets (AAPL, Tesla, RELIANCE...)</source>
-        <translation type="vanished">搜尋資產（AAPL、特斯拉、RELIANCE...）</translation>
+        <translation>搜尋資產（AAPL、特斯拉、RELIANCE...）</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="obsolete">X</translation>
+        <translation>X</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::RelationshipPanel</name>
     <message>
         <source>GEOPOLITICAL RELATIONSHIP NETWORK</source>
-        <translation type="vanished">地緣政治關係網路</translation>
+        <translation>地緣政治關係網路</translation>
     </message>
     <message>
         <source>datasets</source>
-        <translation type="vanished">資料集</translation>
+        <translation>資料集</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ReportsView</name>
     <message>
         <source>ATTRIBUTION</source>
-        <translation type="vanished">歸因</translation>
+        <translation>歸因</translation>
     </message>
     <message>
         <source>HOLDINGS BREAKDOWN</source>
-        <translation type="vanished">HOLDINGS 分解</translation>
+        <translation>HOLDINGS 分解</translation>
     </message>
     <message>
         <source>PERFORMANCE ATTRIBUTION</source>
-        <translation type="vanished">績效 ATTRIBUTION</translation>
+        <translation>績效 ATTRIBUTION</translation>
     </message>
     <message>
         <source>PORTFOLIO SUMMARY REPORT</source>
-        <translation type="vanished">投資組合 摘要 報告</translation>
+        <translation>投資組合 摘要 報告</translation>
     </message>
     <message>
         <source>SUMMARY</source>
-        <translation type="vanished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <source>TRANSACTION HISTORY</source>
-        <translation type="vanished">TRANSACTION 歷史</translation>
+        <translation>TRANSACTION 歷史</translation>
     </message>
     <message>
         <source>TRANSACTIONS</source>
-        <translation type="obsolete">TRANSACTIONS</translation>
+        <translation>TRANSACTIONS</translation>
     </message>
 </context>
 <context>
@@ -25095,70 +25171,70 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::RiskManagementView</name>
     <message>
         <source>Estimated impact of historical and hypothetical market scenarios</source>
-        <translation type="vanished">歷史和假設市場情景的估計影響</translation>
+        <translation>歷史和假設市場情景的估計影響</translation>
     </message>
     <message>
         <source>PORTFOLIO RISK OVERVIEW</source>
-        <translation type="vanished">投資組合 風險 總覽</translation>
+        <translation>投資組合 風險 總覽</translation>
     </message>
     <message>
         <source>PORTFOLIO STRESS TESTING</source>
-        <translation type="vanished">投資組合壓力測試</translation>
+        <translation>投資組合壓力測試</translation>
     </message>
     <message>
         <source>RISK CONTRIBUTION</source>
-        <translation type="vanished">風險貢獻</translation>
+        <translation>風險貢獻</translation>
     </message>
     <message>
         <source>RISK CONTRIBUTION BY HOLDING</source>
-        <translation type="vanished">所持有的風險貢獻</translation>
+        <translation>所持有的風險貢獻</translation>
     </message>
     <message>
         <source>RISK OVERVIEW</source>
-        <translation type="vanished">風險概覽</translation>
+        <translation>風險概覽</translation>
     </message>
     <message>
         <source>STRESS TEST</source>
-        <translation type="vanished">壓力測試</translation>
+        <translation>壓力測試</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::ScannerPanel</name>
     <message>
         <source>+ ADD CONDITION</source>
-        <translation type="vanished">+ 新增條件</translation>
+        <translation>+ 新增條件</translation>
     </message>
     <message>
         <source>Add at least one scan condition.</source>
-        <translation type="vanished">請至少新增一個掃描條件。</translation>
+        <translation>請至少新增一個掃描條件。</translation>
     </message>
     <message>
         <source>BANK NIFTY</source>
-        <translation type="obsolete">BANK NIFTY</translation>
+        <translation>BANK NIFTY</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation type="vanished">自訂</translation>
+        <translation>自訂</translation>
     </message>
     <message>
         <source>Enter symbols to scan.</source>
-        <translation type="vanished">輸入要掃描的 Symbol (股票代碼)。</translation>
+        <translation>輸入要掃描的 Symbol (股票代碼)。</translation>
     </message>
     <message>
         <source>LOGIC:</source>
-        <translation type="vanished">邏輯：</translation>
+        <translation>邏輯：</translation>
     </message>
     <message>
         <source>LOOKBACK (DAYS)</source>
-        <translation type="vanished">回顧天數</translation>
+        <translation>回顧天數</translation>
     </message>
     <message>
         <source>NIFTY 50</source>
-        <translation type="obsolete">NIFTY 50</translation>
+        <translation>NIFTY 50</translation>
     </message>
     <message>
         <source>PRESET</source>
-        <translation type="vanished">預設</translation>
+        <translation>預設</translation>
     </message>
     <message>
         <source>RELIANCE\nTCS\nINFY\n...</source>
@@ -25166,29 +25242,35 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>SCAN CONDITIONS</source>
-        <translation type="vanished">掃描條件</translation>
+        <translation>掃描條件</translation>
     </message>
     <message>
         <source>SCAN MARKET</source>
-        <translation type="vanished">掃描市場</translation>
+        <translation>掃描市場</translation>
     </message>
     <message>
         <source>SCAN RESULTS</source>
-        <translation type="vanished">掃描結果</translation>
+        <translation>掃描結果</translation>
     </message>
     <message>
         <source>SYMBOLS &amp; PARAMETERS</source>
-        <translation type="vanished">代碼與參數</translation>
+        <translation>代碼與參數</translation>
     </message>
     <message>
         <source>SYMBOLS (comma or newline separated)</source>
-        <translation type="vanished">代碼（以逗號或換行分隔）</translation>
+        <translation>代碼（以逗號或換行分隔）</translation>
     </message>
     <message>
         <source>TIMEFRAME</source>
-        <translation type="obsolete">TIMEFRAME</translation>
+        <translation>TIMEFRAME</translation>
     </message>
-</context>
+<message><source>RELIANCE
+TCS
+INFY
+...</source><translation>RELIANCE
+TCS
+INFY
+...</translation></message></context>
 <context>
     <name>fincept::screens::SectorCardClickForwarder</name>
     <message>
@@ -25220,1300 +25302,1300 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::SettingsScreen</name>
     <message>
         <source>(no events recorded yet)</source>
-        <translation type="vanished">(尚無已記錄的事件)</translation>
+        <translation>(尚無已記錄的事件)</translation>
     </message>
     <message>
         <source>+ Add Tag Override</source>
-        <translation type="vanished">+ 新增標籤覆寫</translation>
+        <translation>+ 新增標籤覆寫</translation>
     </message>
     <message>
         <source>0 / 5</source>
-        <translation type="obsolete">0 / 5</translation>
+        <translation>0 / 5</translation>
     </message>
     <message>
         <source>1 min</source>
-        <translation type="vanished">1 分鐘</translation>
+        <translation>1 分鐘</translation>
     </message>
     <message>
         <source>10 min</source>
-        <translation type="vanished">10 分鐘</translation>
+        <translation>10 分鐘</translation>
     </message>
     <message>
         <source>15 min</source>
-        <translation type="vanished">15 分鐘</translation>
+        <translation>15 分鐘</translation>
     </message>
     <message>
         <source>2 min</source>
-        <translation type="vanished">2 最小</translation>
+        <translation>2 最小</translation>
     </message>
     <message>
         <source>30 min</source>
-        <translation type="vanished">30 分鐘</translation>
+        <translation>30 分鐘</translation>
     </message>
     <message>
         <source>5 min</source>
-        <translation type="vanished">5 分鐘</translation>
+        <translation>5 分鐘</translation>
     </message>
     <message>
         <source>60 min</source>
-        <translation type="vanished">60 分鐘</translation>
+        <translation>60 分鐘</translation>
     </message>
     <message>
         <source>ACTION</source>
-        <translation type="vanished">操作</translation>
+        <translation>操作</translation>
     </message>
     <message>
         <source>ACTIVE</source>
-        <translation type="vanished">啟用中</translation>
+        <translation>啟用中</translation>
     </message>
     <message>
         <source>ALERT TRIGGERS</source>
-        <translation type="vanished">警示觸發條件</translation>
+        <translation>警報觸發條件</translation>
     </message>
     <message>
         <source>API CREDENTIALS</source>
-        <translation type="vanished">API 憑證</translation>
+        <translation>API 憑證</translation>
     </message>
     <message>
         <source>AUDIT LOG</source>
-        <translation type="vanished">AUDIT 日誌</translation>
+        <translation>AUDIT 日誌</translation>
     </message>
     <message>
         <source>AUTO-LOCK</source>
-        <translation type="vanished">自動鎖定</translation>
+        <translation>自動鎖定</translation>
     </message>
     <message>
         <source>All profiles</source>
-        <translation type="vanished">All 設定檔</translation>
+        <translation>All 設定檔</translation>
     </message>
     <message>
         <source>Apply &amp; Save</source>
-        <translation type="vanished">套用並儲存</translation>
+        <translation>套用並儲存</translation>
     </message>
     <message>
         <source>CATEGORY</source>
-        <translation type="vanished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <source>CHANGE PIN</source>
-        <translation type="vanished">漲跌 PIN 碼</translation>
+        <translation>漲跌 PIN 碼</translation>
     </message>
     <message>
         <source>CLEAR CACHE</source>
-        <translation type="vanished">清除快取</translation>
+        <translation>清除快取</translation>
     </message>
     <message>
         <source>CLR</source>
-        <translation type="obsolete">CLR</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>CONFIGURED</source>
-        <translation type="vanished">已設定</translation>
+        <translation>已設定</translation>
     </message>
     <message>
         <source>Cache:</source>
-        <translation type="vanished">快取:</translation>
+        <translation>快取：</translation>
     </message>
     <message>
         <source>Cancelled</source>
-        <translation type="vanished">已取消</translation>
+        <translation>已取消</translation>
     </message>
     <message>
         <source>Change PIN</source>
-        <translation type="vanished">漲跌 PIN 碼</translation>
+        <translation>漲跌 PIN 碼</translation>
     </message>
     <message>
         <source>Clear ALL User Data</source>
-        <translation type="vanished">清除所有使用者資料</translation>
+        <translation>清除所有使用者資料</translation>
     </message>
     <message>
         <source>Clear All Cache</source>
-        <translation type="vanished">清除所有快取</translation>
+        <translation>清除所有快取</translation>
     </message>
     <message>
         <source>Cleared</source>
-        <translation type="vanished">已清除</translation>
+        <translation>已清除</translation>
     </message>
     <message>
         <source>Copy Path</source>
-        <translation type="vanished">複製 Path</translation>
+        <translation>複製 Path</translation>
     </message>
     <message>
         <source>Create &amp; Switch</source>
-        <translation type="vanished">建立並切換</translation>
+        <translation>建立並切換</translation>
     </message>
     <message>
         <source>Create new profile</source>
-        <translation type="vanished">建立 新增 設定檔</translation>
+        <translation>建立 新增 設定檔</translation>
     </message>
     <message>
         <source>DANGER ZONE</source>
-        <translation type="vanished">危險操作區</translation>
+        <translation>危險區域</translation>
     </message>
     <message>
         <source>DATA SOURCES</source>
-        <translation type="vanished">資料來源</translation>
+        <translation>資料來源</translation>
     </message>
     <message>
         <source>DELETE ALL</source>
-        <translation type="vanished">全部刪除</translation>
+        <translation>全部刪除</translation>
     </message>
     <message>
         <source>DISABLE ALL</source>
-        <translation type="vanished">停用 ALL</translation>
+        <translation>全部停用</translation>
     </message>
     <message>
         <source>DataHub Inspector</source>
-        <translation type="vanished">DataHub 檢視器</translation>
+        <translation>DataHub 檢視器</translation>
     </message>
     <message>
         <source>Delete all temporary cached data. Will be re-fetched on next access.</source>
-        <translation type="vanished">刪除所有臨時快取資料。將在下次訪問時重新獲取。</translation>
+        <translation>刪除所有暫存資料。下次存取時將重新擷取。</translation>
     </message>
     <message>
         <source>ENABLE ALL</source>
-        <translation type="vanished">啟用 ALL</translation>
+        <translation>全部啟用</translation>
     </message>
     <message>
         <source>ENTRIES</source>
-        <translation type="vanished">筆數</translation>
+        <translation>項目數</translation>
     </message>
     <message>
         <source>EXEC</source>
-        <translation type="obsolete">EXEC</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <source>Error: </source>
-        <translation type="vanished">Error:</translation>
+        <translation>錯誤：</translation>
     </message>
     <message>
         <source>Global Log Level</source>
-        <translation type="vanished">全球 日誌 Level</translation>
+        <translation>全球 日誌 Level</translation>
     </message>
     <message>
         <source>INTERFACE</source>
-        <translation type="vanished">介面</translation>
+        <translation>介面</translation>
     </message>
     <message>
         <source>LOGGING</source>
-        <translation type="vanished">日誌記錄</translation>
+        <translation>日誌記錄</translation>
     </message>
     <message>
         <source>Log File</source>
-        <translation type="vanished">日誌 File</translation>
+        <translation>日誌檔案</translation>
     </message>
     <message>
         <source>Minimum level for all tags unless overridden.</source>
-        <translation type="vanished">除非被覆蓋，否則所有標籤的最低等級。</translation>
+        <translation>除非被覆蓋，否則所有標籤的最低等級。</translation>
     </message>
     <message>
         <source>NOT SET</source>
-        <translation type="vanished">未設定</translation>
+        <translation>未設定</translation>
     </message>
     <message>
         <source>NOTIFICATION PROVIDERS</source>
-        <translation type="vanished">通知供應商</translation>
+        <translation>通知供應商</translation>
     </message>
     <message>
         <source>New PINs do not match</source>
-        <translation type="vanished">新 PIN 不一致</translation>
+        <translation>新 PIN 不一致</translation>
     </message>
     <message>
         <source>No data sources configured. Open the full Data Sources screen to browse and add connectors.</source>
-        <translation type="vanished">未配置資料來源。開啟完整的資料來源畫面以瀏覽和新增連接器。</translation>
+        <translation>尚未設定任何資料來源。請開啟完整的資料來源頁面以瀏覽並新增連接器。</translation>
     </message>
     <message>
         <source>Not configured</source>
-        <translation type="vanished">未設定</translation>
+        <translation>未設定</translation>
     </message>
     <message>
         <source>Not set</source>
-        <translation type="vanished">未設定</translation>
+        <translation>未設定</translation>
     </message>
     <message>
         <source>OK — no columns returned</source>
-        <translation type="vanished">OK — 未回傳欄位</translation>
+        <translation>成功 — 無欄位回傳</translation>
     </message>
     <message>
         <source>OPEN FULL SCREEN</source>
-        <translation type="vanished">開啟全螢幕</translation>
+        <translation>開啟全螢幕</translation>
     </message>
     <message>
         <source>Open Log Folder</source>
-        <translation type="vanished">開啟 日誌 Folder</translation>
+        <translation>開啟 日誌 Folder</translation>
     </message>
     <message>
         <source>Output Format</source>
-        <translation type="vanished">輸出格式</translation>
+        <translation>輸出格式</translation>
     </message>
     <message>
         <source>Override the log level for a specific tag (e.g. ExchangeService, AgentService).</source>
-        <translation type="vanished">覆寫特定標記（例如 ExchangeService、AgentService）的日誌等級。</translation>
+        <translation>覆寫特定標記（例如 ExchangeService、AgentService）的日誌等級。</translation>
     </message>
     <message>
         <source>PIN AUTHENTICATION</source>
-        <translation type="vanished">密碼驗證</translation>
+        <translation>密碼驗證</translation>
     </message>
     <message>
         <source>PIN updated successfully</source>
-        <translation type="vanished">PIN 已成功更新</translation>
+        <translation>PIN 已成功更新</translation>
     </message>
     <message>
         <source>Per-Tag Overrides</source>
-        <translation type="vanished">依標籤覆寫</translation>
+        <translation>依標籤覆寫</translation>
     </message>
     <message>
         <source>Permanently delete all databases, files, cache, and UI state. OS keychain is preserved.</source>
-        <translation type="vanished">永久刪除所有資料庫、檔案、快取和 UI 狀態。作業系統鑰匙圈被保留。</translation>
+        <translation>永久刪除所有資料庫、檔案、快取及介面狀態。作業系統鑰匙圈將被保留。</translation>
     </message>
     <message>
         <source>Profiles</source>
-        <translation type="vanished">設定檔</translation>
+        <translation>設定檔</translation>
     </message>
     <message>
         <source>Quick:</source>
-        <translation type="vanished">快速：</translation>
+        <translation>快速：</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <source>Recent security events (PIN setup, failed unlocks, inactivity locks).</source>
-        <translation type="vanished">最近的安全事件（PIN 設定、解鎖失敗、不活動鎖定）。</translation>
+        <translation>最近的安全事件（PIN 設定、解鎖失敗、不活動鎖定）。</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Registry</source>
-        <translation type="vanished">登錄</translation>
+        <translation>註冊表</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>SETTINGS</source>
-        <translation type="vanished">設定</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>SIZE</source>
-        <translation type="vanished">大小</translation>
+        <translation>大小</translation>
     </message>
     <message>
         <source>STORAGE &amp; DATA MANAGEMENT</source>
-        <translation type="vanished">儲存與資料管理</translation>
+        <translation>儲存與資料管理</translation>
     </message>
     <message>
         <source>STORE</source>
-        <translation type="vanished">儲存區</translation>
+        <translation>儲存區</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Save All Providers</source>
-        <translation type="vanished">保存所有提供者</translation>
+        <translation>儲存所有供應商</translation>
     </message>
     <message>
         <source>Save Security Settings</source>
-        <translation type="vanished">儲存 Security 設定</translation>
+        <translation>儲存 Security 設定</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation type="vanished">儲存 設定</translation>
+        <translation>儲存設定</translation>
     </message>
     <message>
         <source>Save failed</source>
-        <translation type="vanished">儲存失敗</translation>
+        <translation>儲存失敗</translation>
     </message>
     <message>
         <source>Saved ✓</source>
-        <translation type="vanished">已儲存 ✓</translation>
+        <translation>已儲存 ✓</translation>
     </message>
     <message>
         <source>Sending...</source>
-        <translation type="vanished">傳送中...</translation>
+        <translation>發送中...</translation>
     </message>
     <message>
         <source>Store API keys securely in the OS keychain. Keys are never written to disk in plain text.</source>
-        <translation type="vanished">將 API 金鑰安全儲存在作業系統鑰匙圈中。金鑰不會以明文寫入磁碟。</translation>
+        <translation>將 API 金鑰安全存放在作業系統的鑰匙圈中。金鑰絕不會以明文寫入磁碟。</translation>
     </message>
     <message>
         <source>Switch</source>
-        <translation type="vanished">切換</translation>
+        <translation>切換</translation>
     </message>
     <message>
         <source>THEME</source>
-        <translation type="vanished">主題</translation>
+        <translation>主題</translation>
     </message>
     <message>
         <source>TYPOGRAPHY</source>
-        <translation type="vanished">字型排版</translation>
+        <translation>字型排版</translation>
     </message>
     <message>
         <source>Tag name</source>
-        <translation type="vanished">Tag (標籤) 名稱</translation>
+        <translation>Tag (標籤) 名稱</translation>
     </message>
     <message>
         <source>Test Send</source>
-        <translation type="vanished">測試 Send</translation>
+        <translation>測試發送</translation>
     </message>
     <message>
         <source>Update PIN</source>
-        <translation type="vanished">更新 PIN 碼</translation>
+        <translation>更新 PIN 碼</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="obsolete">X</translation>
+        <translation>X</translation>
     </message>
     <message>
         <source>cache.db</source>
-        <translation type="obsolete">cache.db</translation>
+        <translation>cache.db</translation>
     </message>
     <message>
         <source>fincept.db</source>
-        <translation type="obsolete">fincept.db</translation>
+        <translation>fincept.db</translation>
     </message>
     <message>
         <source>profile-name  (alphanumeric, - and _ only)</source>
-        <translation type="vanished">設定檔名稱（僅限字母數字、- 和 _）</translation>
+        <translation>設定檔名稱（僅限字母數字、- 和 _）</translation>
     </message>
     <message>
         <source>•••••••• (saved)</source>
-        <translation type="vanished">•••••••• （已儲存）</translation>
+        <translation>•••••••• (已儲存)</translation>
     </message>
     <message>
         <source>✓ Sent successfully</source>
-        <translation type="vanished">✓ 傳送成功</translation>
+        <translation>✓ 發送成功</translation>
     </message>
     <message>
         <source>✗ </source>
-        <translation type="obsolete">✗ </translation>
+        <translation>✗ </translation>
     </message>
-</context>
+<message><source>Credentials</source><translation>憑證</translation></message><message><source>Appearance</source><translation>外觀</translation></message><message><source>Notifications</source><translation>通知</translation></message><message><source>Storage &amp; Cache</source><translation>儲存與快取</translation></message><message><source>Data Sources</source><translation>資料來源</translation></message><message><source>LLM Config</source><translation>LLM 設定</translation></message><message><source>MCP Servers</source><translation>MCP 伺服器</translation></message><message><source>Logging</source><translation>日誌紀錄</translation></message><message><source>Security</source><translation>安全性</translation></message><message><source>Keybindings</source><translation>快捷鍵</translation></message><message><source>Python Env</source><translation>Python 環境</translation></message><message><source>Developer</source><translation>開發者</translation></message><message><source>Voice</source><translation>語音</translation></message><message><source>Font Size</source><translation>字型大小</translation></message><message><source>Font Family</source><translation>字型</translation></message><message><source>Content Density</source><translation>內容密度</translation></message><message><source>Controls padding and spacing throughout the UI.</source><translation>控制整個介面的間距與留白。</translation></message><message><source>Show AI Chat Bubble</source><translation>顯示 AI 聊天氣泡</translation></message><message><source>AI Chat Bubble</source><translation>AI 聊天氣泡</translation></message><message><source>Floating chat assistant in the bottom-right corner.</source><translation>懸浮在右下角的聊天助手。</translation></message><message><source>Show Ticker Bar</source><translation>顯示行情跑馬燈</translation></message><message><source>Ticker Bar</source><translation>行情跑馬燈</translation></message><message><source>Live price ticker at the bottom of the screen.</source><translation>畫面底部的即時行情跑馬燈。</translation></message><message><source>Enable Animations</source><translation>啟用動畫效果</translation></message><message><source>Animations</source><translation>動畫效果</translation></message><message><source>Fade and transition effects throughout the UI.</source><translation>整個介面的淡入淡出與轉場效果。</translation></message><message><source>In-App Alerts (toast + bell)</source><translation>應用內通知（提示 + 鈴鐺）</translation></message><message><source>Show slide-in toasts and update bell badge.</source><translation>顯示滑入提示並更新鈴鐺標記。</translation></message><message><source>Price Alerts</source><translation>價格警報</translation></message><message><source>Notify when price alert thresholds are crossed.</source><translation>當價格超過警報門檻時發送通知。</translation></message><message><source>News Alerts</source><translation>新聞警報</translation></message><message><source>Enable news notifications (configure which types below).</source><translation>啟用新聞通知（在下方設定接收類型）。</translation></message><message><source>Breaking News</source><translation>突發新聞</translation></message><message><source>Notify on FLASH/BREAKING/URGENT priority clusters.</source><translation>快訊/突發/緊急優先級叢集發生時通知。</translation></message><message><source>Monitor Keyword Matches</source><translation>關鍵字監控匹配</translation></message><message><source>Notify when a news monitor watch list gets new matches.</source><translation>新聞監控的追蹤清單有新匹配時通知。</translation></message><message><source>Category Volume Spikes</source><translation>分類流量異常飆升</translation></message><message><source>Notify when a category has abnormally high article volume (z-score ≥ 3).</source><translation>當某分類的文章數量異常偏高（z-score ≥ 3）時通知。</translation></message><message><source>FLASH + High-Impact Articles</source><translation>快訊 + 高影響力文章</translation></message><message><source>Notify on individual articles that are both FLASH priority and high market impact.</source><translation>同時具備快訊優先級和高市場影響力的個別文章時通知。</translation></message><message><source>Order Fill Alerts</source><translation>訂單成交警報</translation></message><message><source>Notify when orders are filled or rejected.</source><translation>訂單成交或被拒絕時通知。</translation></message><message><source>Manage all persistent data, databases, and files. Execute SQL queries directly against terminal databases.</source><translation>管理所有持久化資料、資料庫和檔案。直接對終端資料庫執行 SQL 查詢。</translation></message></context>
 <context>
     <name>fincept::screens::SettingsTab</name>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Cleared. Public RPC will be used.</source>
-        <translation type="vanished">已清除。將使用公共 RPC。</translation>
+        <translation>已清除。將使用公共 RPC。</translation>
     </message>
     <message>
         <source>Empty input — use CLEAR to remove a stored key.</source>
-        <translation type="vanished">空輸入 - 使用 CLEAR 刪除儲存的金鑰。</translation>
+        <translation>空輸入 - 使用 CLEAR 刪除儲存的金鑰。</translation>
     </message>
     <message>
         <source>Failed: %1</source>
-        <translation type="vanished">失敗：%1</translation>
+        <translation>失敗：%1</translation>
     </message>
     <message>
         <source>No key stored. Public RPC will be used.</source>
-        <translation type="vanished">未儲存金鑰。將使用公共 RPC。</translation>
+        <translation>未儲存金鑰。將使用公共 RPC。</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Saved. Restart streaming to use the new key.</source>
-        <translation type="vanished">已儲存。重新啟動串流以使用新密鑰。</translation>
+        <translation>已儲存。重新啟動串流以使用新密鑰。</translation>
     </message>
     <message>
         <source>Show unverified tokens in the holdings panel</source>
-        <translation type="vanished">在持有面板中顯示未經驗證的代幣</translation>
+        <translation>在持有面板中顯示未經驗證的代幣</translation>
     </message>
     <message>
         <source>Stored — input is hidden. Type to replace.</source>
-        <translation type="vanished">儲存 - 輸入被隱藏。鍵入要替換的內容。</translation>
+        <translation>儲存 - 輸入被隱藏。鍵入要替換的內容。</translation>
     </message>
     <message>
         <source>paste API key…</source>
-        <translation type="vanished">貼上 API key…</translation>
+        <translation>貼上 API key…</translation>
     </message>
-</context>
+<message><source>POLL refreshes balances on a TTL via the configured RPC. STREAM opens a WebSocket account subscription — requires Helius or a private RPC.</source><translation>POLL 透過設定的 RPC 依 TTL 重新整理餘額。STREAM 開啟 WebSocket 帳戶訂閱 — 需要 Helius 或私有 RPC。</translation></message><message><source>Paste a Helius API key for reliable account-subscribe streaming and parsed transaction history. Stored in SecureStorage; never transmitted off-machine except in RPC requests to api.helius.xyz.</source><translation>貼上 Helius API 金鑰以獲得可靠的帳戶訂閱串流和已解析的交易歷史。儲存於 SecureStorage；除了向 api.helius.xyz 發送 RPC 請求外，永遠不會傳送至機器外。</translation></message><message><source>Default slippage tolerance for swaps. Quotes whose route impact exceeds this value are blocked. Adjustable per-swap on the TRADE tab.</source><translation>交換的預設滑點容忍值。路由影響超過此值的報價將被阻擋。可在「交易」分頁中逐筆調整。</translation></message><message><source>Pump.fun-launched wallets accumulate airdropped junk over time. By default the holdings panel hides tokens that aren't in Jupiter's verified-tagged list. Toggle this on to see every SPL token account in the wallet.</source><translation>Pump.fun 發行的錢包會隨時間累積空投的垃圾代幣。預設情況下，持倉面板會隱藏不在 Jupiter 驗證標籤清單中的代幣。開啟此選項可查看錢包中所有 SPL 代幣帳戶。</translation></message></context>
 <context>
     <name>fincept::screens::SpreadsheetWidget</name>
     <message>
         <source>A1</source>
-        <translation type="obsolete">A1</translation>
+        <translation>A1</translation>
     </message>
     <message>
         <source>Clear Cell</source>
-        <translation type="vanished">清除儲存格</translation>
+        <translation>清除儲存格</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="vanished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="vanished">剪下</translation>
+        <translation>剪下</translation>
     </message>
     <message>
         <source>Delete Selected Columns</source>
-        <translation type="vanished">刪除 已選取 欄位</translation>
+        <translation>刪除 已選取 欄位</translation>
     </message>
     <message>
         <source>Delete Selected Rows</source>
-        <translation type="vanished">刪除 已選取 列</translation>
+        <translation>刪除 已選取 列</translation>
     </message>
     <message>
         <source>Insert Column Left</source>
-        <translation type="vanished">向左插入列</translation>
+        <translation>向左插入列</translation>
     </message>
     <message>
         <source>Insert Column Right</source>
-        <translation type="vanished">右插入列</translation>
+        <translation>右插入列</translation>
     </message>
     <message>
         <source>Insert Row Above</source>
-        <translation type="vanished">在上方插入行</translation>
+        <translation>在上方插入行</translation>
     </message>
     <message>
         <source>Insert Row Below</source>
-        <translation type="vanished">在下面插入行</translation>
+        <translation>在下面插入行</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="vanished">貼上</translation>
+        <translation>貼上</translation>
     </message>
     <message>
         <source>fx</source>
-        <translation type="obsolete">fx</translation>
+        <translation>fx</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::StatCanPanel</name>
     <message>
         <source>SERIES</source>
-        <translation type="vanished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::StrategyBuilderPanel</name>
     <message>
         <source>+ ADD ENTRY CONDITION</source>
-        <translation type="vanished">+ 新增進場條件</translation>
+        <translation>+ 新增進場條件</translation>
     </message>
     <message>
         <source>+ ADD EXIT CONDITION</source>
-        <translation type="vanished">+ 新增出場條件</translation>
+        <translation>+ 新增出場條件</translation>
     </message>
     <message>
         <source>BACKTEST PARAMETERS</source>
-        <translation type="vanished">回測參數</translation>
+        <translation>回測參數</translation>
     </message>
     <message>
         <source>Backtest complete.</source>
-        <translation type="vanished">Backtest (回測) 完成。</translation>
+        <translation>Backtest (回測) 完成。</translation>
     </message>
     <message>
         <source>DESCRIPTION</source>
-        <translation type="vanished">說明</translation>
+        <translation>說明</translation>
     </message>
     <message>
         <source>ENTRY CONDITIONS</source>
-        <translation type="vanished">進場條件</translation>
+        <translation>進場條件</translation>
     </message>
     <message>
         <source>EXIT CONDITIONS</source>
-        <translation type="vanished">出場條件</translation>
+        <translation>出場條件</translation>
     </message>
     <message>
         <source>Enter a symbol for backtesting.</source>
-        <translation type="vanished">輸入回測符號。</translation>
+        <translation>輸入回測符號。</translation>
     </message>
     <message>
         <source>Logic:</source>
-        <translation type="vanished">邏輯：</translation>
+        <translation>邏輯：</translation>
     </message>
     <message>
         <source>Max Drawdown</source>
-        <translation type="vanished">最大回撤</translation>
+        <translation>最大回撤</translation>
     </message>
     <message>
         <source>My Strategy</source>
-        <translation type="vanished">我的策略</translation>
+        <translation>我的策略</translation>
     </message>
     <message>
         <source>NAME</source>
-        <translation type="vanished">名稱</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <source>RELIANCE</source>
-        <translation type="obsolete">RELIANCE</translation>
+        <translation>RELIANCE</translation>
     </message>
     <message>
         <source>RISK MANAGEMENT</source>
-        <translation type="vanished">風險管理</translation>
+        <translation>風險管理</translation>
     </message>
     <message>
         <source>RUN BACKTEST</source>
-        <translation type="vanished">執行回測</translation>
+        <translation>執行回測</translation>
     </message>
     <message>
         <source>Run a backtest to see results</source>
-        <translation type="vanished">執行回測以查看結果</translation>
+        <translation>執行回測以查看結果</translation>
     </message>
     <message>
         <source>Running backtest...</source>
-        <translation type="vanished">執行 Backtest (回測) 中...</translation>
+        <translation>執行 Backtest (回測) 中...</translation>
     </message>
     <message>
         <source>SAVE STRATEGY</source>
-        <translation type="vanished">儲存策略</translation>
+        <translation>儲存策略</translation>
     </message>
     <message>
         <source>STRATEGY DEFINITION</source>
-        <translation type="vanished">策略定義</translation>
+        <translation>策略定義</translation>
     </message>
     <message>
         <source>Saving...</source>
-        <translation type="vanished">儲存中...</translation>
+        <translation>儲存中...</translation>
     </message>
     <message>
         <source>Strategy description...</source>
-        <translation type="vanished">Strategy (策略) 說明...</translation>
+        <translation>Strategy (策略) 說明...</translation>
     </message>
     <message>
         <source>Strategy name is required.</source>
-        <translation type="vanished">Strategy (策略) 名稱為必填。</translation>
+        <translation>Strategy (策略) 名稱為必填。</translation>
     </message>
     <message>
         <source>TIMEFRAME</source>
-        <translation type="obsolete">TIMEFRAME</translation>
+        <translation>TIMEFRAME</translation>
     </message>
     <message>
         <source>Total trades</source>
-        <translation type="vanished">總交易筆數</translation>
+        <translation>總交易筆數</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="obsolete">X</translation>
+        <translation>X</translation>
     </message>
     <message>
         <source>YYYY-MM-DD</source>
-        <translation type="obsolete">YYYY-MM-DD</translation>
+        <translation>YYYY-MM-DD</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::StrategyListPanel</name>
     <message>
         <source>0 strategies</source>
-        <translation type="vanished">0 個策略</translation>
+        <translation>0 個策略</translation>
     </message>
     <message>
         <source>All Categories</source>
-        <translation type="vanished">All 分類</translation>
+        <translation>All 分類</translation>
     </message>
     <message>
         <source>NEXT ▶</source>
-        <translation type="vanished">下一步 ▶</translation>
+        <translation>下一步 ▶</translation>
     </message>
     <message>
         <source>Page 1 of 1</source>
-        <translation type="vanished">第 1 頁，共 1 頁</translation>
+        <translation>第 1 頁，共 1 頁</translation>
     </message>
     <message>
         <source>SORT:</source>
-        <translation type="vanished">排序：</translation>
+        <translation>排序：</translation>
     </message>
     <message>
         <source>Search strategies...</source>
-        <translation type="vanished">搜尋策略...</translation>
+        <translation>搜尋策略...</translation>
     </message>
     <message>
         <source>◀ PREV</source>
-        <translation type="vanished">◀ 上一步</translation>
+        <translation>◀ 上一步</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::SystemViewPanel</name>
     <message>
         <source>ACTIVE</source>
-        <translation type="vanished">啟用中</translation>
+        <translation>啟用中</translation>
     </message>
     <message>
         <source>FEATURES</source>
-        <translation type="vanished">特徵</translation>
+        <translation>特徵</translation>
     </message>
     <message>
         <source>FRAMEWORK</source>
-        <translation type="vanished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <source>Failed to load LLM providers.</source>
-        <translation type="vanished">無法載入 LLM 提供者。</translation>
+        <translation>無法載入 LLM 提供者。</translation>
     </message>
     <message>
         <source>Loading LLM providers...</source>
-        <translation type="vanished">載入中 LLM providers...</translation>
+        <translation>載入中 LLM providers...</translation>
     </message>
     <message>
         <source>Loading tools...</source>
-        <translation type="vanished">載入中 tools...</translation>
+        <translation>載入中 tools...</translation>
     </message>
     <message>
         <source>No LLM providers configured. Go to Settings → LLM to add one.</source>
-        <translation type="vanished">未配置 LLM 提供者。轉至設定 → LLM 新增一個。</translation>
+        <translation>未配置 LLM 提供者。轉至設定 → LLM 新增一個。</translation>
     </message>
     <message>
         <source>No tools loaded.</source>
-        <translation type="vanished">No 工具 loaded.</translation>
+        <translation>No 工具 loaded.</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>SYSTEM CAPABILITIES</source>
-        <translation type="vanished">系統能力</translation>
+        <translation>系統能力</translation>
     </message>
     <message>
         <source>VERSION</source>
-        <translation type="vanished">版本</translation>
+        <translation>版本</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::TeamsViewPanel</name>
     <message>
         <source>ADD TO TEAM</source>
-        <translation type="vanished">加入團隊</translation>
+        <translation>加入團隊</translation>
     </message>
     <message>
         <source>AVAILABLE AGENTS</source>
-        <translation type="vanished">可用 代理</translation>
+        <translation>可用 代理</translation>
     </message>
     <message>
         <source>COORDINATOR LLM PROFILE</source>
-        <translation type="vanished">COORDINATOR LLM 設定檔</translation>
+        <translation>COORDINATOR LLM 設定檔</translation>
     </message>
     <message>
         <source>Default (Global)</source>
-        <translation type="vanished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <source>ERROR</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>EXECUTION LOG</source>
-        <translation type="vanished">執行日誌</translation>
+        <translation>執行日誌</translation>
     </message>
     <message>
         <source>Enter a query for the team...</source>
-        <translation type="vanished">輸入團隊查詢...</translation>
+        <translation>輸入團隊查詢...</translation>
     </message>
     <message>
         <source>Executing...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="vanished">失敗</translation>
+        <translation>失敗</translation>
     </message>
     <message>
         <source>LLM profile for the team coordinator. Members use their own assigned profiles.</source>
-        <translation type="vanished">團隊協調員的法學碩士簡介。成員使用自己指定的設定檔。</translation>
+        <translation>團隊協調員的法學碩士簡介。成員使用自己指定的設定檔。</translation>
     </message>
     <message>
         <source>Leader:</source>
-        <translation type="vanished">負責人：</translation>
+        <translation>負責人：</translation>
     </message>
     <message>
         <source>Mode:</source>
-        <translation type="vanished">模式：</translation>
+        <translation>模式：</translation>
     </message>
     <message>
         <source>No provider — go to Settings &gt; LLM Config</source>
-        <translation type="vanished">無供應商 — 前往設定 &gt; LLM 設定</translation>
+        <translation>無供應商 — 前往設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <source>REMOVE</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>RESULT</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>RUN TEAM</source>
-        <translation type="vanished">執行團隊</translation>
+        <translation>執行團隊</translation>
     </message>
     <message>
         <source>RUNNING...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>TEAM</source>
-        <translation type="vanished">團隊</translation>
+        <translation>團隊</translation>
     </message>
     <message>
         <source>TEAM QUERY</source>
-        <translation type="vanished">團隊查詢</translation>
+        <translation>團隊查詢</translation>
     </message>
     <message>
         <source>[ERROR] </source>
-        <translation type="vanished">[ERROR]</translation>
+        <translation>[ERROR]</translation>
     </message>
     <message>
         <source>[THINK] </source>
-        <translation type="vanished">[THINK]</translation>
+        <translation>[THINK]</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::TickerBar</name>
     <message>
         <source>AAPL, MSFT, ^GSPC, BTC-USD ...</source>
-        <translation type="obsolete">AAPL, MSFT, ^GSPC, BTC-USD ...</translation>
+        <translation>AAPL, MSFT, ^GSPC, BTC-USD ...</translation>
     </message>
     <message>
         <source>Edit Symbols...</source>
-        <translation type="vanished">編輯代碼...</translation>
+        <translation>編輯代碼...</translation>
     </message>
     <message>
         <source>SYMBOLS:</source>
-        <translation type="vanished">代碼:</translation>
+        <translation>代碼:</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::TradeAnalysisPanel</name>
     <message>
         <source>ANALYSIS RESULTS</source>
-        <translation type="vanished">分析 結果</translation>
+        <translation>分析 結果</translation>
     </message>
     <message>
         <source>Analyzes economic impact of tariffs, quotas, export subsidies, and non-tariff barriers.</source>
-        <translation type="vanished">分析關稅、配額、出口補貼及非關稅障礙的經濟影響。</translation>
+        <translation>分析關稅、配額、出口補貼及非關稅障礙的經濟影響。</translation>
     </message>
     <message>
         <source>Analyzes trade creation vs. diversion effects for regional trade blocs and economic unions.</source>
-        <translation type="vanished">分析區域貿易集團與經濟聯盟的貿易創造與貿易轉移效果。</translation>
+        <translation>分析區域貿易集團與經濟聯盟的貿易創造與貿易轉移效果。</translation>
     </message>
     <message>
         <source>Analyzing...</source>
-        <translation type="vanished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <source>Assesses FDI, employment, wage, and GDP impact of removing trade barriers.</source>
-        <translation type="vanished">評估移除貿易障礙對 FDI、就業、薪資及 GDP 的影響。</translation>
+        <translation>評估移除貿易障礙對 FDI、就業、薪資及 GDP 的影響。</translation>
     </message>
     <message>
         <source>Barrier Removal</source>
-        <translation type="vanished">障礙移除</translation>
+        <translation>障礙移除</translation>
     </message>
     <message>
         <source>Benefits &amp; Costs</source>
-        <translation type="vanished">收益與成本</translation>
+        <translation>收益與成本</translation>
     </message>
     <message>
         <source>Benefits &amp; Costs of Trade</source>
-        <translation type="vanished">貿易收益與成本</translation>
+        <translation>貿易收益與成本</translation>
     </message>
     <message>
         <source>Bilateral Agreement</source>
-        <translation type="vanished">雙邊協定</translation>
+        <translation>雙邊協定</translation>
     </message>
     <message>
         <source>Common Market (e.g. EU Single Market)</source>
-        <translation type="vanished">共同市場（例如歐盟單一市場）</translation>
+        <translation>共同市場（例如歐盟單一市場）</translation>
     </message>
     <message>
         <source>Customs Union (e.g. EU, Mercosur)</source>
-        <translation type="vanished">關稅同盟（如 EU, Mercosur）</translation>
+        <translation>關稅同盟（如 EU, Mercosur）</translation>
     </message>
     <message>
         <source>Developed Economy</source>
-        <translation type="vanished">已開發經濟體</translation>
+        <translation>已開發經濟體</translation>
     </message>
     <message>
         <source>Developing Economy</source>
-        <translation type="vanished">開發中經濟體</translation>
+        <translation>開發中經濟體</translation>
     </message>
     <message>
         <source>Economic Union (e.g. European Union)</source>
-        <translation type="vanished">經濟聯盟（例如歐盟）</translation>
+        <translation>經濟聯盟（例如歐盟）</translation>
     </message>
     <message>
         <source>Emerging Industry</source>
-        <translation type="vanished">Emerging 產業</translation>
+        <translation>Emerging 產業</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>Free Trade Area (e.g. USMCA, ASEAN)</source>
-        <translation type="vanished">自由貿易區（如 USMCA、東協）</translation>
+        <translation>自由貿易區（如 USMCA、東協）</translation>
     </message>
     <message>
         <source>Infant Industry</source>
-        <translation type="vanished">Infant 產業</translation>
+        <translation>Infant 產業</translation>
     </message>
     <message>
         <source>Mature Industry</source>
-        <translation type="vanished">Mature 產業</translation>
+        <translation>Mature 產業</translation>
     </message>
     <message>
         <source>Middle Income</source>
-        <translation type="vanished">中等收入</translation>
+        <translation>中等收入</translation>
     </message>
     <message>
         <source>Multilateral (WTO Round)</source>
-        <translation type="vanished">多邊（WTO 回合）</translation>
+        <translation>多邊（WTO 回合）</translation>
     </message>
     <message>
         <source>RUN ANALYSIS</source>
-        <translation type="vanished">執行分析</translation>
+        <translation>執行分析</translation>
     </message>
     <message>
         <source>Regional Agreement</source>
-        <translation type="vanished">區域協定</translation>
+        <translation>區域協定</translation>
     </message>
     <message>
         <source>Restrictions</source>
-        <translation type="vanished">限制條件</translation>
+        <translation>限制條件</translation>
     </message>
     <message>
         <source>TRADE GEOPOLITICS ANALYSIS</source>
-        <translation type="vanished">貿易地緣政治分析</translation>
+        <translation>貿易地緣政治分析</translation>
     </message>
     <message>
         <source>Trade Barrier Removal Impact</source>
-        <translation type="vanished">貿易壁壘消除的影響</translation>
+        <translation>貿易壁壘消除的影響</translation>
     </message>
     <message>
         <source>Trade Restrictions Analysis</source>
-        <translation type="vanished">交易 Restrictions 分析</translation>
+        <translation>交易 Restrictions 分析</translation>
     </message>
     <message>
         <source>Trading Blocs</source>
-        <translation type="vanished">貿易集團</translation>
+        <translation>貿易集團</translation>
     </message>
     <message>
         <source>Trading Blocs Analysis</source>
-        <translation type="vanished">貿易區分析</translation>
+        <translation>貿易區分析</translation>
     </message>
     <message>
         <source>Unilateral Liberalization</source>
-        <translation type="vanished">單邊自由化</translation>
+        <translation>單邊自由化</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::TradeVizScreen</name>
     <message>
         <source>20) Browse</source>
-        <translation type="vanished">20) 瀏覽</translation>
+        <translation>20) 瀏覽</translation>
     </message>
     <message>
         <source>&lt;&lt;</source>
-        <translation type="obsolete">&lt;&lt;</translation>
+        <translation>&lt;&lt;</translation>
     </message>
     <message>
         <source>&gt;&gt;</source>
-        <translation type="obsolete">&gt;&gt;</translation>
+        <translation>&gt;&gt;</translation>
     </message>
     <message>
         <source>Order by</source>
-        <translation type="vanished">訂單 by</translation>
+        <translation>訂單 by</translation>
     </message>
     <message>
         <source>Periodicity</source>
-        <translation type="vanished">週期性</translation>
+        <translation>週期性</translation>
     </message>
     <message>
         <source>Trade Flow</source>
-        <translation type="vanished">交易 Flow</translation>
+        <translation>交易 Flow</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::TradingEconomicsPanel</name>
     <message>
         <source>Required for yield_curve and country_data</source>
-        <translation type="vanished">產量曲線和國家數據必需</translation>
+        <translation>產量曲線和國家數據必需</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::UnComtradePanel</name>
     <message>
         <source>All Commodities</source>
-        <translation type="vanished">所有商品</translation>
+        <translation>所有商品</translation>
     </message>
     <message>
         <source>Exports</source>
-        <translation type="vanished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>Imports</source>
-        <translation type="vanished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <source>Re-exports</source>
-        <translation type="vanished">再出口</translation>
+        <translation>再出口</translation>
     </message>
     <message>
         <source>Re-imports</source>
-        <translation type="vanished">再進口</translation>
+        <translation>再進口</translation>
     </message>
     <message>
         <source>Total (all)</source>
-        <translation type="vanished">總(all)</translation>
+        <translation>總(all)</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::UnescoPanel</name>
     <message>
         <source>Country (e.g. USA, GBR, IND)</source>
-        <translation type="vanished">國家（例如美國、英國、印度）</translation>
+        <translation>國家（例如美國、英國、印度）</translation>
     </message>
     <message>
         <source>Culture</source>
-        <translation type="vanished">文化</translation>
+        <translation>文化</translation>
     </message>
     <message>
         <source>Education</source>
-        <translation type="vanished">教育</translation>
+        <translation>教育</translation>
     </message>
     <message>
         <source>End year</source>
-        <translation type="vanished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
     <message>
         <source>Filter indicators…</source>
-        <translation type="vanished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <source>Science &amp; Tech</source>
-        <translation type="vanished">科學與科技</translation>
+        <translation>科學與科技</translation>
     </message>
     <message>
         <source>Start year</source>
-        <translation type="vanished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
     <message>
         <source>THEME</source>
-        <translation type="vanished">主題</translation>
+        <translation>主題</translation>
     </message>
     <message>
         <source>USA</source>
-        <translation type="obsolete">USA</translation>
+        <translation>USA</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::VoiceConfigSection</name>
     <message>
         <source>AAPL, BTCUSD, Nifty (comma-separated)</source>
-        <translation type="vanished">AAPL, BTCUSD, Nifty （以逗號分隔)</translation>
+        <translation>AAPL, BTCUSD, Nifty （以逗號分隔)</translation>
     </message>
     <message>
         <source>API Key</source>
-        <translation type="vanished">API 金鑰</translation>
+        <translation>API 金鑰</translation>
     </message>
     <message>
         <source>Boosts recognition of financial symbols and proper nouns.</source>
-        <translation type="vanished">提高對金融符號和專有名詞的辨識。</translation>
+        <translation>提高對金融符號和專有名詞的辨識。</translation>
     </message>
     <message>
         <source>DEEPGRAM SETTINGS</source>
-        <translation type="vanished">DEEPGRAM 設定</translation>
+        <translation>DEEPGRAM 設定</translation>
     </message>
     <message>
         <source>Deepgram (API key required)</source>
-        <translation type="vanished">Deepgram (API key 必填)</translation>
+        <translation>Deepgram (API key 必填)</translation>
     </message>
     <message>
         <source>English (UK)</source>
-        <translation type="vanished">英文（英國）</translation>
+        <translation>英文（英國）</translation>
     </message>
     <message>
         <source>English (US)</source>
-        <translation type="vanished">英文（美國）</translation>
+        <translation>英文（美國）</translation>
     </message>
     <message>
         <source>English (auto)</source>
-        <translation type="vanished">英文（自動）</translation>
+        <translation>英文（自動）</translation>
     </message>
     <message>
         <source>Google (free, default)</source>
-        <translation type="vanished">Google（免費，預設）</translation>
+        <translation>Google（免費，預設）</translation>
     </message>
     <message>
         <source>Hide</source>
-        <translation type="vanished">隱藏</translation>
+        <translation>隱藏</translation>
     </message>
     <message>
         <source>Key terms</source>
-        <translation type="vanished">關鍵詞</translation>
+        <translation>關鍵詞</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation type="vanished">語言</translation>
+        <translation>語言</translation>
     </message>
     <message>
         <source>Model</source>
-        <translation type="vanished">模型</translation>
+        <translation>模型</translation>
     </message>
     <message>
         <source>Multilingual (nova-3 only)</source>
-        <translation type="vanished">多語言（僅 nova-3）</translation>
+        <translation>多語言（僅 nova-3）</translation>
     </message>
     <message>
         <source>Paste your Deepgram API key</source>
-        <translation type="vanished">貼上你的 Deepgram API Key</translation>
+        <translation>貼上你的 Deepgram API Key</translation>
     </message>
     <message>
         <source>Provider</source>
-        <translation type="vanished">供應商</translation>
+        <translation>供應商</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation type="vanished">顯示</translation>
+        <translation>顯示</translation>
     </message>
     <message>
         <source>Test Deepgram key</source>
-        <translation type="vanished">測試 Deepgram key</translation>
+        <translation>測試 Deepgram key</translation>
     </message>
     <message>
         <source>VOICE / SPEECH-TO-TEXT</source>
-        <translation type="vanished">語音/語音轉文本</translation>
+        <translation>語音/語音轉文本</translation>
     </message>
     <message>
         <source>nova-2</source>
-        <translation type="obsolete">nova-2</translation>
+        <translation>nova-2</translation>
     </message>
     <message>
         <source>nova-3 (recommended)</source>
-        <translation type="vanished">nova-3（推薦）</translation>
+        <translation>nova-3（推薦）</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::WalletActionConfirmDialog</name>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Confirm</source>
-        <translation type="vanished">確認</translation>
+        <translation>確認</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::WatchlistScreen</name>
     <message>
         <source>0 lists</source>
-        <translation type="vanished">0 個列表</translation>
+        <translation>0 個列表</translation>
     </message>
     <message>
         <source>AAPL, MSFT, TSLA...</source>
-        <translation type="obsolete">AAPL, MSFT, TSLA...</translation>
+        <translation>AAPL, MSFT, TSLA...</translation>
     </message>
     <message>
         <source>ADD</source>
-        <translation type="vanished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <source>ADD:</source>
-        <translation type="vanished">新增:</translation>
+        <translation>新增:</translation>
     </message>
     <message>
         <source>DELETE LIST</source>
-        <translation type="vanished">刪除清單</translation>
+        <translation>刪除清單</translation>
     </message>
     <message>
         <source>REFRESH</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>REMOVE SELECTED</source>
-        <translation type="vanished">移除 已選取</translation>
+        <translation>移除 已選取</translation>
     </message>
     <message>
         <source>Select a watchlist</source>
-        <translation type="vanished">選擇自選清單</translation>
+        <translation>選擇自選清單</translation>
     </message>
     <message>
         <source>WATCHLISTS</source>
-        <translation type="vanished">觀察清單</translation>
+        <translation>觀察清單</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::WorkflowsViewPanel</name>
     <message>
         <source>Default (Global)</source>
-        <translation type="vanished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <source>ERROR</source>
-        <translation type="vanished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>EXECUTION LOG</source>
-        <translation type="vanished">執行日誌</translation>
+        <translation>執行日誌</translation>
     </message>
     <message>
         <source>Enter query for this workflow...</source>
-        <translation type="vanished">輸入此 Workflow (工作流程) 的查詢...</translation>
+        <translation>輸入此 Workflow (工作流程) 的查詢...</translation>
     </message>
     <message>
         <source>Executing...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="vanished">失敗</translation>
+        <translation>失敗</translation>
     </message>
     <message>
         <source>LLM PROFILE</source>
-        <translation type="vanished">LLM 設定檔</translation>
+        <translation>LLM 設定檔</translation>
     </message>
     <message>
         <source>LLM profile used by this workflow run</source>
-        <translation type="vanished">此工作流程運行使用的 LLM 設定文件</translation>
+        <translation>此工作流程運行使用的 LLM 設定文件</translation>
     </message>
     <message>
         <source>No provider — Settings &gt; LLM Config</source>
-        <translation type="vanished">無供應商 — 設定 &gt; LLM 設定</translation>
+        <translation>無供應商 — 設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <source>OUTPUT</source>
-        <translation type="vanished">輸出</translation>
+        <translation>輸出</translation>
     </message>
     <message>
         <source>PARAMETERS</source>
-        <translation type="vanished">參數</translation>
+        <translation>參數</translation>
     </message>
     <message>
         <source>QUERY</source>
-        <translation type="vanished">查詢</translation>
+        <translation>查詢</translation>
     </message>
     <message>
         <source>Query is required</source>
-        <translation type="vanished">查詢為必填</translation>
+        <translation>查詢為必填</translation>
     </message>
     <message>
         <source>RESULT</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>RUN WORKFLOW</source>
-        <translation type="vanished">執行 WORKFLOW</translation>
+        <translation>執行 WORKFLOW</translation>
     </message>
     <message>
         <source>RUNNING...</source>
-        <translation type="vanished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <source>SYMBOL</source>
-        <translation type="vanished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <source>Select a workflow to configure and run.</source>
-        <translation type="vanished">選擇要配置和運行的工作流程。</translation>
+        <translation>選擇要配置和運行的工作流程。</translation>
     </message>
     <message>
         <source>Symbol is required</source>
-        <translation type="vanished">Symbol (股票代碼) 為必填</translation>
+        <translation>Symbol (股票代碼) 為必填</translation>
     </message>
     <message>
         <source>WORKFLOWS</source>
-        <translation type="vanished">工作流</translation>
+        <translation>工作流</translation>
     </message>
     <message>
         <source>[ERROR] </source>
-        <translation type="vanished">[ERROR]</translation>
+        <translation>[ERROR]</translation>
     </message>
     <message>
         <source>[THINK] </source>
-        <translation type="vanished">[THINK]</translation>
+        <translation>[THINK]</translation>
     </message>
     <message>
         <source>e.g. AAPL</source>
-        <translation type="vanished">例如：AAPL</translation>
+        <translation>例如：AAPL</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::WorldBankPanel</name>
     <message>
         <source>10 Years</source>
-        <translation type="vanished">10 年</translation>
+        <translation>10 年</translation>
     </message>
     <message>
         <source>20 Years</source>
-        <translation type="vanished">20 年</translation>
+        <translation>20 年</translation>
     </message>
     <message>
         <source>5 Years</source>
-        <translation type="vanished">5 年</translation>
+        <translation>5 年</translation>
     </message>
     <message>
         <source>50 Years</source>
-        <translation type="vanished">50 年</translation>
+        <translation>50 年</translation>
     </message>
     <message>
         <source>Filter countries…</source>
-        <translation type="vanished">篩選 國家…</translation>
+        <translation>篩選 國家…</translation>
     </message>
     <message>
         <source>Filter indicators…</source>
-        <translation type="vanished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <source>YEARS</source>
-        <translation type="vanished">年</translation>
+        <translation>年</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::WtoPanel</name>
     <message>
         <source>Free — no API key</source>
-        <translation type="vanished">免費 — 不需要 API Key</translation>
+        <translation>免費 — 不需要 API Key</translation>
     </message>
     <message>
         <source>Member code (e.g. US, CN)</source>
-        <translation type="vanished">成員 code (e.g. US, CN)</translation>
+        <translation>成員 code (e.g. US, CN)</translation>
     </message>
     <message>
         <source>QR Members (free)</source>
-        <translation type="vanished">QR 會員（免費）</translation>
+        <translation>QR 會員（免費）</translation>
     </message>
     <message>
         <source>QR Notifications (free)</source>
-        <translation type="vanished">QR 通知 (free)</translation>
+        <translation>QR 通知 (free)</translation>
     </message>
     <message>
         <source>Reporter (e.g. US, CN, DE)</source>
-        <translation type="vanished">報告國（如 US, CN, DE）</translation>
+        <translation>報告國（如 US, CN, DE）</translation>
     </message>
     <message>
         <source>Requires WTO_API_KEY</source>
-        <translation type="vanished">需要 WTO_API_KEY</translation>
+        <translation>需要 WTO_API_KEY</translation>
     </message>
     <message>
         <source>Trade Statistics (API key)</source>
-        <translation type="vanished">貿易統計（API 金鑰）</translation>
+        <translation>貿易統計（API 金鑰）</translation>
     </message>
     <message>
         <source>US</source>
-        <translation type="obsolete">US</translation>
+        <translation>US</translation>
     </message>
     <message>
         <source>Years (e.g. 2015-2023)</source>
-        <translation type="vanished">年份（如 2015-2023）</translation>
+        <translation>年份（如 2015-2023）</translation>
     </message>
 </context>
 <context>
@@ -26531,61 +26613,61 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::crypto::CryptoBottomPanel</name>
     <message>
         <source>DEPTH</source>
-        <translation type="obsolete">DEPTH</translation>
+        <translation>DEPTH</translation>
     </message>
     <message>
         <source>FEES</source>
-        <translation type="obsolete">FEES</translation>
+        <translation>FEES</translation>
     </message>
     <message>
         <source>HIST</source>
-        <translation type="obsolete">HIST</translation>
+        <translation>HIST</translation>
     </message>
     <message>
         <source>MKT</source>
-        <translation type="obsolete">MKT</translation>
+        <translation>MKT</translation>
     </message>
     <message>
         <source>MY TRADES</source>
-        <translation type="vanished">我的交易</translation>
+        <translation>我的交易</translation>
     </message>
     <message>
         <source>ORD</source>
-        <translation type="obsolete">ORD</translation>
+        <translation>ORD</translation>
     </message>
     <message>
         <source>POS</source>
-        <translation type="obsolete">POS</translation>
+        <translation>POS</translation>
     </message>
     <message>
         <source>STATS</source>
-        <translation type="obsolete">STATS</translation>
+        <translation>STATS</translation>
     </message>
     <message>
         <source>T&amp;S</source>
-        <translation type="vanished">成交明細</translation>
+        <translation>成交明細</translation>
     </message>
     <message>
         <source>X</source>
-        <translation type="obsolete">X</translation>
+        <translation>X</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::crypto::CryptoChart</name>
     <message>
         <source>CHART</source>
-        <translation type="vanished">圖表</translation>
+        <translation>圖表</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::crypto::CryptoCredentials</name>
     <message>
         <source>API KEY</source>
-        <translation type="vanished">API 金鑰</translation>
+        <translation>API 金鑰</translation>
     </message>
     <message>
         <source>API SECRET</source>
-        <translation type="vanished">API 密鑰</translation>
+        <translation>API 密鑰</translation>
     </message>
     <message>
         <source>Base32 secret (optional)</source>
@@ -26593,15 +26675,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>CODE: --</source>
-        <translation type="vanished">程式碼: --</translation>
+        <translation>程式碼: --</translation>
     </message>
     <message>
         <source>CODE: ERR</source>
-        <translation type="vanished">程式碼: ERR</translation>
+        <translation>程式碼: ERR</translation>
     </message>
     <message>
         <source>Enter API key</source>
@@ -26613,175 +26695,175 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Optional</source>
-        <translation type="vanished">選填</translation>
+        <translation>選用</translation>
     </message>
     <message>
         <source>PASSWORD (OKX/KUCOIN)</source>
-        <translation type="vanished">密碼（OKX/KUCOIN）</translation>
+        <translation>密碼（OKX/KUCOIN）</translation>
     </message>
     <message>
         <source>SAVE &amp; CONNECT</source>
-        <translation type="vanished">儲存並連線</translation>
+        <translation>儲存並連線</translation>
     </message>
     <message>
         <source>TOTP SECRET (2FA)</source>
-        <translation type="vanished">TOTP 密鑰 (2FA)</translation>
+        <translation>TOTP 密鑰 (2FA)</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::crypto::CryptoOrderBook</name>
     <message>
         <source>ORDER BOOK</source>
-        <translation type="vanished">委託簿</translation>
+        <translation>委託簿</translation>
     </message>
     <message>
         <source>Spread: --</source>
-        <translation type="vanished">價差: --</translation>
+        <translation>價差: --</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::crypto::CryptoOrderEntry</name>
     <message>
         <source>+ ADVANCED</source>
-        <translation type="vanished">+ 進階</translation>
+        <translation>+ 進階</translation>
     </message>
     <message>
         <source>BUY</source>
-        <translation type="vanished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <source>BUY BTC/USDT</source>
-        <translation type="vanished">買進 BTC/USDT</translation>
+        <translation>買進 BTC/USDT</translation>
     </message>
     <message>
         <source>Cross</source>
-        <translation type="vanished">交叉</translation>
+        <translation>交叉</translation>
     </message>
     <message>
         <source>Enter a valid quantity</source>
-        <translation type="vanished">請輸入有效數量</translation>
+        <translation>請輸入有效數量</translation>
     </message>
     <message>
         <source>Est: --</source>
-        <translation type="vanished">預估: --</translation>
+        <translation>預估: --</translation>
     </message>
     <message>
         <source>Isolated</source>
-        <translation type="vanished">隔離</translation>
+        <translation>隔離</translation>
     </message>
     <message>
         <source>LEVERAGE</source>
-        <translation type="vanished">槓桿</translation>
+        <translation>槓桿</translation>
     </message>
     <message>
         <source>Limit price</source>
-        <translation type="vanished">限價</translation>
+        <translation>限價</translation>
     </message>
     <message>
         <source>MARGIN</source>
-        <translation type="vanished">利潤率</translation>
+        <translation>利潤率</translation>
     </message>
     <message>
         <source>MKT: --</source>
-        <translation type="vanished">市值: --</translation>
+        <translation>市值: --</translation>
     </message>
     <message>
         <source>ORDER ENTRY</source>
-        <translation type="vanished">訂單 ENTRY</translation>
+        <translation>訂單 ENTRY</translation>
     </message>
     <message>
         <source>PAPER</source>
-        <translation type="vanished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <source>PRICE</source>
-        <translation type="vanished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <source>QTY</source>
-        <translation type="vanished">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <source>SELL</source>
-        <translation type="vanished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <source>SL</source>
-        <translation type="obsolete">SL</translation>
+        <translation>SL</translation>
     </message>
     <message>
         <source>STOP</source>
-        <translation type="vanished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <source>Stop Loss</source>
-        <translation type="vanished">停損</translation>
+        <translation>停損</translation>
     </message>
     <message>
         <source>Stop price</source>
-        <translation type="vanished">停損價</translation>
+        <translation>停損價</translation>
     </message>
     <message>
         <source>TP</source>
-        <translation type="obsolete">TP</translation>
+        <translation>TP</translation>
     </message>
     <message>
         <source>Take Profit</source>
-        <translation type="vanished">止盈</translation>
+        <translation>止盈</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::crypto::CryptoTickerBar</name>
     <message>
         <source>A:--</source>
-        <translation type="obsolete">A:--</translation>
+        <translation>A:--</translation>
     </message>
     <message>
         <source>B:--</source>
-        <translation type="obsolete">B:--</translation>
+        <translation>B:--</translation>
     </message>
     <message>
         <source>BTC/USDT</source>
-        <translation type="obsolete">BTC/USDT</translation>
+        <translation>BTC/USDT</translation>
     </message>
     <message>
         <source>H:--</source>
-        <translation type="obsolete">H:--</translation>
+        <translation>H:--</translation>
     </message>
     <message>
         <source>Idx:--</source>
-        <translation type="vanished">索引：--</translation>
+        <translation>索引：--</translation>
     </message>
     <message>
         <source>L:--</source>
-        <translation type="obsolete">L:--</translation>
+        <translation>L:--</translation>
     </message>
     <message>
         <source>Mk:--</source>
-        <translation type="obsolete">Mk:--</translation>
+        <translation>Mk:--</translation>
     </message>
     <message>
         <source>S:--</source>
-        <translation type="obsolete">S:--</translation>
+        <translation>S:--</translation>
     </message>
     <message>
         <source>Vol:--</source>
-        <translation type="vanished">波動率:--</translation>
+        <translation>波動率:--</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::crypto::CryptoWatchlist</name>
     <message>
         <source>0/0</source>
-        <translation type="obsolete">0/0</translation>
+        <translation>0/0</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation type="vanished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <source>WATCHLIST</source>
-        <translation type="vanished">自選清單</translation>
+        <translation>自選清單</translation>
     </message>
 </context>
 <context>
@@ -26931,70 +27013,70 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>in-flight</source>
-        <translation type="vanished">進行中</translation>
+        <translation>進行中</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::equity::AccountManagementDialog</name>
     <message>
         <source> First-time setup (4 steps)</source>
-        <translation type="vanished"> 首次設定（4 個步驟）</translation>
+        <translation> 首次設定（4 個步驟）</translation>
     </message>
     <message>
         <source>+ ADD</source>
-        <translation type="vanished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <source>ACCOUNTS</source>
-        <translation type="vanished">帳戶</translation>
+        <translation>帳戶</translation>
     </message>
     <message>
         <source>Account name...</source>
-        <translation type="vanished">帳戶名稱...</translation>
+        <translation>帳戶名稱...</translation>
     </message>
     <message>
         <source>Auto-login (TOTP)</source>
-        <translation type="vanished">自動登入（TOTP）</translation>
+        <translation>自動登入（TOTP）</translation>
     </message>
     <message>
         <source>Browser login</source>
-        <translation type="vanished">瀏覽器登入</translation>
+        <translation>瀏覽器登入</translation>
     </message>
     <message>
         <source>Browser login timed out - try again or paste manually</source>
-        <translation type="vanished">瀏覽器登入逾時 - 請重試或手動貼上</translation>
+        <translation>瀏覽器登入逾時 - 請重試或手動貼上</translation>
     </message>
     <message>
         <source>CONNECT</source>
-        <translation type="vanished">連線</translation>
+        <translation>連線</translation>
     </message>
     <message>
         <source>Connect with pasted token</source>
-        <translation type="vanished">使用貼上的令牌連接</translation>
+        <translation>使用貼上的令牌連接</translation>
     </message>
     <message>
         <source>Connecting...</source>
-        <translation type="vanished">連線中...</translation>
+        <translation>連線中...</translation>
     </message>
     <message>
         <source>Could not find request_token in pasted text</source>
-        <translation type="vanished">在貼上的文字中找不到 request_token</translation>
+        <translation>在貼上的文字中找不到 request_token</translation>
     </message>
     <message>
         <source>Enter API Key and API Secret first</source>
-        <translation type="vanished">首先輸入 API Key 和 API Secret</translation>
+        <translation>首先輸入 API Key 和 API Secret</translation>
     </message>
     <message>
         <source>Enter API Key, API Secret, and paste request_token</source>
-        <translation type="vanished">輸入 API Key、API Secret，然後貼上 request_token</translation>
+        <translation>輸入 API Key、API Secret，然後貼上 request_token</translation>
     </message>
     <message>
         <source>Exchanging token...</source>
-        <translation type="vanished">交換 Token (權杖) 中...</translation>
+        <translation>交換 Token (權杖) 中...</translation>
     </message>
     <message>
         <source>Logging in...</source>
-        <translation type="vanished">登入中...</translation>
+        <translation>登入中...</translation>
     </message>
     <message>
         <source>Manage Broker Accounts</source>
@@ -27002,38 +27084,38 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Open Kite login in browser</source>
-        <translation type="vanished">在瀏覽器中開啟Kite登入</translation>
+        <translation>在瀏覽器中開啟Kite登入</translation>
     </message>
     <message>
         <source>Port 5010 busy - use manual paste fallback</source>
-        <translation type="vanished">連接埠 5010 忙碌 - 使用手動貼上備援</translation>
+        <translation>連接埠 5010 忙碌 - 使用手動貼上備援</translation>
     </message>
     <message>
         <source>REMOVE</source>
-        <translation type="vanished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <source>RENAME</source>
-        <translation type="vanished">重新命名</translation>
+        <translation>重新命名</translation>
     </message>
     <message>
         <source>Redirect didn't work? Paste request_token manually</source>
-        <translation type="vanished">重定向不起作用？手動貼上 request_token</translation>
+        <translation>重定向不起作用？手動貼上 request_token</translation>
     </message>
     <message>
         <source>Select an account to configure credentials</source>
-        <translation type="vanished">選擇一個帳戶來設定憑證</translation>
+        <translation>選擇一個帳戶來設定憑證</translation>
     </message>
     <message>
         <source>Zerodha</source>
-        <translation type="obsolete">Zerodha</translation>
+        <translation>Zerodha</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::equity::BroadcastOrderDialog</name>
     <message>
         <source>BROADCAST ORDER</source>
-        <translation type="vanished">BROADCAST 訂單</translation>
+        <translation>BROADCAST 訂單</translation>
     </message>
     <message>
         <source>Broadcast Order</source>
@@ -27041,15 +27123,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>DONE</source>
-        <translation type="vanished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Select at least one account</source>
-        <translation type="vanished">請至少選擇一個帳戶</translation>
+        <translation>請至少選擇一個帳戶</translation>
     </message>
 </context>
 <context>
@@ -27063,102 +27145,102 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::equity::EquityOrderBook</name>
     <message>
         <source>MARKET DEPTH</source>
-        <translation type="vanished">市場 DEPTH</translation>
+        <translation>市場 DEPTH</translation>
     </message>
     <message>
         <source>Spread: --</source>
-        <translation type="vanished">價差: --</translation>
+        <translation>價差: --</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::equity::EquityOrderEntry</name>
     <message>
         <source>+ ADVANCED</source>
-        <translation type="vanished">+ 進階</translation>
+        <translation>+ 進階</translation>
     </message>
     <message>
         <source>ALL</source>
-        <translation type="vanished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>BUY</source>
-        <translation type="vanished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <source>BUY RELIANCE</source>
-        <translation type="vanished">買入 RELIANCE</translation>
+        <translation>買入 RELIANCE</translation>
     </message>
     <message>
         <source>Broadcast this order to multiple accounts</source>
-        <translation type="vanished">將此訂單廣播到多個帳戶</translation>
+        <translation>將此訂單廣播到多個帳戶</translation>
     </message>
     <message>
         <source>EXCHANGE</source>
-        <translation type="vanished">交易所</translation>
+        <translation>交易所</translation>
     </message>
     <message>
         <source>Enter a valid quantity</source>
-        <translation type="vanished">請輸入有效數量</translation>
+        <translation>請輸入有效數量</translation>
     </message>
     <message>
         <source>Est: --</source>
-        <translation type="vanished">預估: --</translation>
+        <translation>預估: --</translation>
     </message>
     <message>
         <source>Limit price</source>
-        <translation type="vanished">限價</translation>
+        <translation>限價</translation>
     </message>
     <message>
         <source>MKT: --</source>
-        <translation type="vanished">市值: --</translation>
+        <translation>市值: --</translation>
     </message>
     <message>
         <source>ORDER ENTRY</source>
-        <translation type="vanished">訂單 ENTRY</translation>
+        <translation>訂單 ENTRY</translation>
     </message>
     <message>
         <source>PAPER</source>
-        <translation type="vanished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <source>PRICE</source>
-        <translation type="vanished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <source>PRODUCT</source>
-        <translation type="vanished">產品</translation>
+        <translation>產品</translation>
     </message>
     <message>
         <source>QTY</source>
-        <translation type="vanished">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <source>SELL</source>
-        <translation type="vanished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <source>SL</source>
-        <translation type="obsolete">SL</translation>
+        <translation>SL</translation>
     </message>
     <message>
         <source>Stop Loss</source>
-        <translation type="vanished">停損</translation>
+        <translation>停損</translation>
     </message>
     <message>
         <source>TP</source>
-        <translation type="obsolete">TP</translation>
+        <translation>TP</translation>
     </message>
     <message>
         <source>TRIGGER</source>
-        <translation type="vanished">觸發</translation>
+        <translation>觸發</translation>
     </message>
     <message>
         <source>Take Profit</source>
-        <translation type="vanished">止盈</translation>
+        <translation>止盈</translation>
     </message>
     <message>
         <source>Trigger price</source>
-        <translation type="vanished">觸發價</translation>
+        <translation>觸發價</translation>
     </message>
 </context>
 <context>
@@ -27180,54 +27262,54 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::panels::ActiveLocksPanel</name>
     <message>
         <source>Available after %1</source>
-        <translation type="vanished">可用 after %1</translation>
+        <translation>可用 after %1</translation>
     </message>
     <message>
         <source>Extend flow lands with the Anchor program.</source>
-        <translation type="vanished">使用 Anchor 程式延伸資金流。</translation>
+        <translation>使用 Anchor 程式延伸資金流。</translation>
     </message>
     <message>
         <source>Extend lock…</source>
-        <translation type="vanished">延長鎖定…</translation>
+        <translation>延長鎖定…</translation>
     </message>
     <message>
         <source>Locks feed error: %1</source>
-        <translation type="vanished">鎖定進給錯誤：%1</translation>
+        <translation>鎖定進給錯誤：%1</translation>
     </message>
     <message>
         <source>No active locks. Lock $FNCPT above to start earning yield.</source>
-        <translation type="vanished">沒有活動鎖。锁定$FNCPT上方即可开始赚取收益。</translation>
+        <translation>沒有活動鎖。锁定$FNCPT上方即可开始赚取收益。</translation>
     </message>
     <message>
         <source>Withdraw</source>
-        <translation type="vanished">提領</translation>
+        <translation>提領</translation>
     </message>
     <message>
         <source>Withdraw flow lands with the Anchor program.</source>
-        <translation type="vanished">使用 Anchor 程式提領資金流。</translation>
+        <translation>使用 Anchor 程式提領資金流。</translation>
     </message>
     <message>
         <source>fincept_lock not deployed — Settings &gt; Lock program ID</source>
-        <translation type="vanished">fincept_lock 尚未部署 — 設定 &gt; Lock 程式 ID</translation>
+        <translation>fincept_lock 尚未部署 — 設定 &gt; Lock 程式 ID</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::panels::BuybackBurnPanel</name>
     <message>
         <source>Demo signature — connect a treasury endpoint for a real burn tx.</source>
-        <translation type="vanished">示範簽名 - 連接金庫端點以進行真實的銷毀交易。</translation>
+        <translation>示範簽名 - 連接金庫端點以進行真實的銷毀交易。</translation>
     </message>
     <message>
         <source>Open burn transaction in Solscan</source>
-        <translation type="vanished">在 Solscan 中開啟銷毀交易</translation>
+        <translation>在 Solscan 中開啟銷毀交易</translation>
     </message>
     <message>
         <source>Treasury feed error: %1</source>
-        <translation type="vanished">庫房進給錯誤：%1</translation>
+        <translation>庫房進給錯誤：%1</translation>
     </message>
     <message>
         <source>subs %1 · pred-mkt %2 · misc %3</source>
-        <translation type="vanished">訂閱 %1 · 預測市場 %2 · 其他 %3</translation>
+        <translation>訂閱 %1 · 預測市場 %2 · 其他 %3</translation>
     </message>
 </context>
 <context>
@@ -27245,46 +27327,46 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::panels::HoldingsTable</name>
     <message>
         <source>  ·  %1 unverified%2</source>
-        <translation type="vanished">·  %1 筆未驗證%2</translation>
+        <translation>·  %1 筆未驗證%2</translation>
     </message>
     <message>
         <source>  ·  %1 without price</source>
-        <translation type="vanished">·  %1 筆無報價</translation>
+        <translation>·  %1 筆無報價</translation>
     </message>
     <message>
         <source> hidden</source>
-        <translation type="vanished">hidden</translation>
+        <translation>hidden</translation>
     </message>
     <message>
         <source>Hide unverified</source>
-        <translation type="vanished">隱藏 unverified</translation>
+        <translation>隱藏 unverified</translation>
     </message>
     <message>
         <source>Show all</source>
-        <translation type="vanished">顯示全部</translation>
+        <translation>顯示全部</translation>
     </message>
     <message>
         <source>TOTAL %1  ·  %2 verified</source>
-        <translation type="vanished">總%1  ·  %2 verified</translation>
+        <translation>總%1  ·  %2 verified</translation>
     </message>
     <message>
         <source>Unverified mint: %1</source>
-        <translation type="vanished">未驗證代幣: %1</translation>
+        <translation>未驗證代幣: %1</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::panels::LockPanel</name>
     <message>
         <source>%1 / week (USDC) — %2% weekly real yield at %3 stake</source>
-        <translation type="vanished">%1 / 週 (USDC) — %2% 每週實際收益率，質押 %3</translation>
+        <translation>%1 / 週 (USDC) — %2% 每週實際收益率，質押 %3</translation>
     </message>
     <message>
         <source>Aborted.</source>
-        <translation type="vanished">已中止。</translation>
+        <translation>已中止。</translation>
     </message>
     <message>
         <source>Amount exceeds available $FNCPT.</source>
-        <translation type="vanished">金額超過可用的 $FNCPT。</translation>
+        <translation>金額超過可用的 $FNCPT。</translation>
     </message>
     <message>
         <source>Approve the lock in your wallet.</source>
@@ -27292,43 +27374,43 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Available: %1 $FNCPT</source>
-        <translation type="vanished">可用: %1 $FNCPT</translation>
+        <translation>可用: %1 $FNCPT</translation>
     </message>
     <message>
         <source>Available: —</source>
-        <translation type="vanished">可用: —</translation>
+        <translation>可用: —</translation>
     </message>
     <message>
         <source>Awaiting wallet signature…</source>
-        <translation type="vanished">等待錢包簽名...</translation>
+        <translation>等待錢包簽名...</translation>
     </message>
     <message>
         <source>Building lock transaction…</source>
-        <translation type="vanished">樓鎖交易...</translation>
+        <translation>樓鎖交易...</translation>
     </message>
     <message>
         <source>Cancelled.</source>
-        <translation type="vanished">已取消。</translation>
+        <translation>已取消。</translation>
     </message>
     <message>
         <source>Choose an amount and duration.</source>
-        <translation type="vanished">選擇金額與期間。</translation>
+        <translation>選擇金額與期間。</translation>
     </message>
     <message>
         <source>Connect a wallet to lock $FNCPT.</source>
-        <translation type="vanished">連線 a 錢包 to 鎖定 $FNCPT.</translation>
+        <translation>連線 a 錢包 to 鎖定 $FNCPT.</translation>
     </message>
     <message>
         <source>LOCK</source>
-        <translation type="vanished">鎖定</translation>
+        <translation>鎖定</translation>
     </message>
     <message>
         <source>MAX</source>
-        <translation type="vanished">最大</translation>
+        <translation>最大</translation>
     </message>
     <message>
         <source>Ready. Click LOCK to build the transaction.</source>
-        <translation type="vanished">準備好。點擊“鎖定”以建立交易。</translation>
+        <translation>準備好。點擊“鎖定”以建立交易。</translation>
     </message>
     <message>
         <source>Sent: %1…</source>
@@ -27344,79 +27426,79 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>waiting for revenue + spot price…</source>
-        <translation type="vanished">等待收入+現貨價格...</translation>
+        <translation>等待收入+現貨價格...</translation>
     </message>
-</context>
+<message><source>DEMO — fincept_lock not deployed; configure SecureStorage fincept.lock_program_id to enable real locks.</source><translation>展示模式 — fincept_lock 尚未部署；請設定 SecureStorage 的 fincept.lock_program_id 以啟用真實鎖倉。</translation></message><message><source>Approve in your wallet to escrow $FNCPT under the fincept_lock program. The terminal does not hold your funds — the on-chain program does, and only releases them after the unlock date.</source><translation>請在錢包中核准，將 $FNCPT 託管於 fincept_lock 程式。終端不持有您的資金 — 鏈上程式會持有，並僅在解鎖日期後釋放。</translation></message><message><source>Locked $FNCPT cannot be withdrawn before the unlock date. If you need liquidity sooner, do not lock.</source><translation>已鎖倉的 $FNCPT 在解鎖日期前無法提領。若您需要更早取得流動性，請勿鎖倉。</translation></message></context>
 <context>
     <name>fincept::screens::panels::MarketsListPanel</name>
     <message>
         <source>24h VOL</source>
-        <translation type="vanished">24 小時成交量</translation>
+        <translation>24 小時成交量</translation>
     </message>
     <message>
         <source>EXPIRES</source>
-        <translation type="vanished">到期</translation>
+        <translation>到期</translation>
     </message>
     <message>
         <source>FinceptInternalAdapter not registered</source>
-        <translation type="vanished">FinceptInternalAdapter 未註冊</translation>
+        <translation>FinceptInternalAdapter 未註冊</translation>
     </message>
     <message>
         <source>MARKET</source>
-        <translation type="vanished">市價</translation>
+        <translation>市價</translation>
     </message>
     <message>
         <source>NO</source>
-        <translation type="vanished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <source>YES</source>
-        <translation type="vanished">是</translation>
+        <translation>是</translation>
     </message>
-</context>
+<message><source>Demo dataset. Set `fincept.markets_endpoint` in SecureStorage and deploy the fincept_market Anchor program for live trading.</source><translation>展示資料集。請在 SecureStorage 中設定 `fincept.markets_endpoint` 並部署 fincept_market Anchor 程式以進行實盤交易。</translation></message></context>
 <context>
     <name>fincept::screens::panels::SupplyChartPanel</name>
     <message>
         <source>Supply history feed error: %1</source>
-        <translation type="vanished">供應歷史進給錯誤：%1</translation>
+        <translation>供應歷史進給錯誤：%1</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::panels::TierPanel</name>
     <message>
         <source>All Fincept Terminal features unlocked.</source>
-        <translation type="vanished">所有 Fincept 終端功能已解鎖。</translation>
+        <translation>所有 Fincept 終端功能已解鎖。</translation>
     </message>
     <message>
         <source>Connect a wallet to see your tier.</source>
-        <translation type="vanished">連接錢包以查看您的等級。</translation>
+        <translation>連接錢包以查看您的等級。</translation>
     </message>
     <message>
         <source>Next: lock %1 to reach the next tier.</source>
-        <translation type="vanished">下一步：鎖定 %1 以到達下一層。</translation>
+        <translation>下一步：鎖定 %1 以到達下一層。</translation>
     </message>
     <message>
         <source>all agents + arena</source>
-        <translation type="vanished">all 代理 + 競技場</translation>
+        <translation>all 代理 + 競技場</translation>
     </message>
     <message>
         <source>basic API quota</source>
-        <translation type="vanished">基本 API 配額</translation>
+        <translation>基本 API 配額</translation>
     </message>
     <message>
         <source>premium screens</source>
-        <translation type="vanished">溢價 screens</translation>
+        <translation>溢價 screens</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::panels::TreasuryPanel</name>
     <message>
         <source>Open Squads vault in browser</source>
-        <translation type="vanished">在瀏覽器中開啟 Squads 庫</translation>
+        <translation>在瀏覽器中開啟 Squads 庫</translation>
     </message>
     <message>
         <source>Treasury feed error: %1</source>
-        <translation type="vanished">庫房進給錯誤：%1</translation>
+        <translation>庫房進給錯誤：%1</translation>
     </message>
 </context>
 <context>
@@ -27474,93 +27556,93 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::polymarket::PolymarketBrowsePanel</name>
     <message>
         <source>1 / 1</source>
-        <translation type="obsolete">1 / 1</translation>
+        <translation>1 / 1</translation>
     </message>
     <message>
         <source>LOADING...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>MARKETS</source>
-        <translation type="vanished">市場</translation>
+        <translation>市場</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::polymarket::PolymarketCommandBar</name>
     <message>
         <source>ALL</source>
-        <translation type="vanished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>ALL SERIES</source>
-        <translation type="vanished">所有系列</translation>
+        <translation>所有系列</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation type="vanished">帳戶</translation>
+        <translation>帳戶</translation>
     </message>
     <message>
         <source>CONNECT</source>
-        <translation type="vanished">連線</translation>
+        <translation>連線</translation>
     </message>
     <message>
         <source>Connect a trading account</source>
-        <translation type="vanished">連結交易帳戶</translation>
+        <translation>連結交易帳戶</translation>
     </message>
     <message>
         <source>DATE</source>
-        <translation type="vanished">日期</translation>
+        <translation>日期</translation>
     </message>
     <message>
         <source>LIQUIDITY</source>
-        <translation type="vanished">流動性</translation>
+        <translation>流動性</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Search markets...</source>
-        <translation type="vanished">搜尋市場...</translation>
+        <translation>搜尋市場...</translation>
     </message>
     <message>
         <source>Switch prediction market exchange</source>
-        <translation type="vanished">切換預測市場交易所</translation>
+        <translation>切換預測市場交易所</translation>
     </message>
     <message>
         <source>VOLUME</source>
-        <translation type="vanished">成交量</translation>
+        <translation>成交量</translation>
     </message>
     <message>
         <source>…</source>
-        <translation type="obsolete">…</translation>
+        <translation>…</translation>
     </message>
     <message>
         <source>↻</source>
-        <translation type="obsolete">↻</translation>
+        <translation>↻</translation>
     </message>
     <message>
         <source>○ OFF</source>
-        <translation type="vanished">○ 關閉</translation>
+        <translation>○ 關閉</translation>
     </message>
     <message>
         <source>● LIVE</source>
-        <translation type="vanished">● 即時</translation>
+        <translation>● 即時</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::polymarket::PolymarketDetailPanel</name>
     <message>
         <source>AVAILABLE</source>
-        <translation type="vanished">可用</translation>
+        <translation>可用</translation>
     </message>
     <message>
         <source>BUY</source>
-        <translation type="vanished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <source>Comments are Polymarket-only</source>
-        <translation type="vanished">留言功能僅限 Polymarket</translation>
+        <translation>留言功能僅限 Polymarket</translation>
     </message>
     <message>
         <source>Connect an account\nto place orders</source>
@@ -27568,123 +27650,125 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Invalid price — enter a value between 0 and 1</source>
-        <translation type="vanished">價格無效 — 請輸入 0 到 1 之間的值</translation>
+        <translation>價格無效 — 請輸入 0 到 1 之間的值</translation>
     </message>
     <message>
         <source>Invalid size — must be &gt; 0</source>
-        <translation type="vanished">大小無效 — 必須 &gt; 0</translation>
+        <translation>大小無效 — 必須 &gt; 0</translation>
     </message>
     <message>
         <source>No comments yet</source>
-        <translation type="vanished">No 留言 yet</translation>
+        <translation>No 留言 yet</translation>
     </message>
     <message>
         <source>No related markets</source>
-        <translation type="vanished">無相關市場</translation>
+        <translation>無相關市場</translation>
     </message>
     <message>
         <source>OUTCOMES</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>PLACE ORDER</source>
-        <translation type="vanished">下單</translation>
+        <translation>下單</translation>
     </message>
     <message>
         <source>POSITION</source>
-        <translation type="vanished">部位</translation>
+        <translation>部位</translation>
     </message>
     <message>
         <source>Related markets are Polymarket-only</source>
-        <translation type="vanished">相關市場功能僅限 Polymarket</translation>
+        <translation>相關市場功能僅限 Polymarket</translation>
     </message>
     <message>
         <source>SELL</source>
-        <translation type="vanished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <source>Select a market to view details</source>
-        <translation type="vanished">選擇市場以查看詳細資訊</translation>
+        <translation>選擇市場以查看詳細資訊</translation>
     </message>
     <message>
         <source>Submitting…</source>
-        <translation type="vanished">提交中…</translation>
+        <translation>提交中…</translation>
     </message>
-</context>
+<message><source>Connect an account
+to place orders</source><translation>連接帳戶
+以下單</translation></message></context>
 <context>
     <name>fincept::screens::polymarket::PolymarketLeaderboard</name>
     <message>
         <source>LEADERBOARD</source>
-        <translation type="vanished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::polymarket::PolymarketOrderBlotter</name>
     <message>
         <source>Amend price</source>
-        <translation type="vanished">修改價格</translation>
+        <translation>修改價格</translation>
     </message>
     <message>
         <source>CANCEL ALL</source>
-        <translation type="vanished">全部取消</translation>
+        <translation>全部取消</translation>
     </message>
     <message>
         <source>Cancel order</source>
-        <translation type="vanished">取消訂單</translation>
+        <translation>取消訂單</translation>
     </message>
     <message>
         <source>Double-click to amend price</source>
-        <translation type="vanished">雙擊以修改價格</translation>
+        <translation>雙擊以修改價格</translation>
     </message>
     <message>
         <source>New limit price (0.01 – 0.99):</source>
-        <translation type="vanished">新限價（0.01 - 0.99）：</translation>
+        <translation>新限價（0.01 - 0.99）：</translation>
     </message>
     <message>
         <source>OPEN ORDERS</source>
-        <translation type="vanished">未成交委託</translation>
+        <translation>未成交委託</translation>
     </message>
     <message>
         <source>Refresh order state</source>
-        <translation type="vanished">重新整理訂單狀態</translation>
+        <translation>重新整理訂單狀態</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::polymarket::PolymarketPriceChart</name>
     <message>
         <source>INTERVAL</source>
-        <translation type="vanished">時間間隔</translation>
+        <translation>時間間隔</translation>
     </message>
     <message>
         <source>No price history available</source>
-        <translation type="vanished">No 價格 歷史 可用</translation>
+        <translation>No 價格 歷史 可用</translation>
     </message>
     <message>
         <source>OUTCOME</source>
-        <translation type="vanished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <source>Select a market to view its price chart</source>
-        <translation type="vanished">選擇一個市場以查看其價格圖表</translation>
+        <translation>選擇一個市場以查看其價格圖表</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::polymarket::PolymarketStatusBar</name>
     <message>
         <source>MARKETS</source>
-        <translation type="vanished">市場</translation>
+        <translation>市場</translation>
     </message>
     <message>
         <source>POLYMARKET</source>
-        <translation type="obsolete">POLYMARKET</translation>
+        <translation>POLYMARKET</translation>
     </message>
     <message>
         <source>○ OFF</source>
-        <translation type="vanished">○ 關閉</translation>
+        <translation>○ 關閉</translation>
     </message>
     <message>
         <source>● LIVE</source>
-        <translation type="vanished">● 即時</translation>
+        <translation>● 即時</translation>
     </message>
 </context>
 <context>
@@ -27695,174 +27779,178 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>00000000-0000-0000-0000-000000000000</source>
-        <translation type="obsolete">00000000-0000-0000-0000-000000000000</translation>
+        <translation>00000000-0000-0000-0000-000000000000</translation>
     </message>
     <message>
         <source>0x</source>
-        <translation type="obsolete">0x</translation>
+        <translation>0x</translation>
     </message>
     <message>
         <source>0x… (64 hex chars)</source>
-        <translation type="vanished">0x…（64 位十六進位字元）</translation>
+        <translation>0x…（64 位十六進位字元）</translation>
     </message>
     <message>
         <source>0x… (optional — derived via CREATE2 for proxy)</source>
-        <translation type="vanished">0x…（選填 — 透過 CREATE2 為代理衍生）</translation>
+        <translation>0x…（選填 — 透過 CREATE2 為代理衍生）</translation>
     </message>
     <message>
         <source>&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</source>
-        <translation type="vanished">&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</source>
-        <translation type="vanished">&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;%1 does not look like a PEM file.&lt;/span&gt;</source>
-        <translation type="obsolete">&lt;span style='color:#dc2626'&gt;%1 does not look like a PEM file.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;%1 does not look like a PEM file.&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;Both API Key ID and PEM private key are required.&lt;/span&gt;</source>
-        <translation type="obsolete">&lt;span style='color:#dc2626'&gt;Both API Key ID and PEM private key are required.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;Both API Key ID and PEM private key are required.&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</source>
-        <translation type="vanished">&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</source>
-        <translation type="vanished">&lt;span style='color:#dc2626'&gt;需要私鑰。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;需要私鑰。&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;Private key must be a PEM-encoded RSA key.&lt;/span&gt;</source>
-        <translation type="obsolete">&lt;span style='color:#dc2626'&gt;Private key must be a PEM-encoded RSA key.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;Private key must be a PEM-encoded RSA key.&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;Private key should be 0x + 64 hex chars.&lt;/span&gt;</source>
-        <translation type="obsolete">&lt;span style='color:#dc2626'&gt;Private key should be 0x + 64 hex chars.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;Private key should be 0x + 64 hex chars.&lt;/span&gt;</translation>
     </message>
     <message>
         <source>&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</source>
-        <translation type="vanished">&lt;span style='color:#dc2626'&gt;儲存失敗 — 請查看日誌。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;儲存失敗 — 請查看日誌。&lt;/span&gt;</translation>
     </message>
     <message>
         <source>API Key ID:</source>
-        <translation type="vanished">API 金鑰 ID：</translation>
+        <translation>API 金鑰 ID：</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>Clear Kalshi credentials?</source>
-        <translation type="vanished">確定要清除 Kalshi 憑證？</translation>
+        <translation>確定要清除 Kalshi 憑證？</translation>
     </message>
     <message>
         <source>Clear Polymarket credentials?</source>
-        <translation type="vanished">確定要清除 Polymarket 憑證？</translation>
+        <translation>確定要清除 Polymarket 憑證？</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="vanished">關閉</translation>
+        <translation>收盤</translation>
     </message>
     <message>
         <source>Externally Owned Account (EOA)</source>
-        <translation type="vanished">外部帳戶 (EOA)</translation>
+        <translation>外部帳戶 (EOA)</translation>
     </message>
     <message>
         <source>Funder Address:</source>
-        <translation type="vanished">出資地址：</translation>
+        <translation>出資地址：</translation>
     </message>
     <message>
         <source>Kalshi</source>
-        <translation type="obsolete">Kalshi</translation>
+        <translation>Kalshi</translation>
     </message>
     <message>
         <source>Kalshi credentials cleared.</source>
-        <translation type="vanished">Kalshi 憑證已清除。</translation>
+        <translation>Kalshi 憑證已清除。</translation>
     </message>
     <message>
         <source>Kalshi credentials loaded from secure store.</source>
-        <translation type="vanished">已從安全儲存區載入 Kalshi 憑證。</translation>
+        <translation>已從安全儲存區載入 Kalshi 憑證。</translation>
     </message>
     <message>
         <source>L2 API credentials: derived (%1…)</source>
-        <translation type="vanished">L2 API 憑證：已衍生 (%1…)</translation>
+        <translation>L2 API 憑證：已衍生 (%1…)</translation>
     </message>
     <message>
         <source>L2 API credentials: not derived</source>
-        <translation type="vanished">L2 API 憑證：未衍生</translation>
+        <translation>L2 API 憑證：未衍生</translation>
     </message>
     <message>
         <source>Load from file…</source>
-        <translation type="vanished">從檔案載入…</translation>
+        <translation>從檔案載入…</translation>
     </message>
     <message>
         <source>Loaded PEM from %1.</source>
-        <translation type="vanished">已從 %1 載入 PEM。</translation>
+        <translation>已從 %1 載入 PEM。</translation>
     </message>
     <message>
         <source>PEM files (*.pem *.key);;All files (*)</source>
-        <translation type="vanished">PEM 檔案 (*.pem *.key);;所有檔案 (*)</translation>
+        <translation>PEM 檔案 (*.pem *.key);;所有檔案 (*)</translation>
     </message>
     <message>
         <source>Polymarket</source>
-        <translation type="obsolete">Polymarket</translation>
+        <translation>Polymarket</translation>
     </message>
     <message>
         <source>Polymarket Gnosis Safe</source>
-        <translation type="obsolete">Polymarket Gnosis Safe</translation>
+        <translation>Polymarket Gnosis Safe</translation>
     </message>
     <message>
         <source>Polymarket Proxy Wallet (default)</source>
-        <translation type="vanished">Polymarket 代理錢包（預設）</translation>
+        <translation>Polymarket 代理錢包（預設）</translation>
     </message>
     <message>
         <source>Polymarket credentials cleared.</source>
-        <translation type="vanished">Polymarket 憑證已清除。</translation>
+        <translation>Polymarket 憑證已清除。</translation>
     </message>
     <message>
         <source>Polymarket credentials loaded from secure store.</source>
-        <translation type="vanished">已從安全儲存區載入 Polymarket 憑證。</translation>
+        <translation>已從安全儲存區載入 Polymarket 憑證。</translation>
     </message>
     <message>
         <source>Prediction Markets — Connect Account</source>
-        <translation type="vanished">預測市場 — 連結帳戶</translation>
+        <translation>預測市場 — 連結帳戶</translation>
     </message>
     <message>
         <source>Private Key (PEM):</source>
-        <translation type="vanished">私鑰 (PEM)：</translation>
+        <translation>私鑰 (PEM)：</translation>
     </message>
     <message>
         <source>Private Key:</source>
-        <translation type="vanished">私鑰：</translation>
+        <translation>私鑰：</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Select Kalshi private key (PEM)</source>
-        <translation type="vanished">選擇 Kalshi 私鑰 (PEM)</translation>
+        <translation>選擇 Kalshi 私鑰 (PEM)</translation>
     </message>
     <message>
         <source>Signature Type:</source>
-        <translation type="vanished">簽章類型：</translation>
+        <translation>簽章類型：</translation>
     </message>
     <message>
         <source>Test Connection</source>
-        <translation type="vanished">測試連線</translation>
+        <translation>測試連線</translation>
     </message>
     <message>
         <source>Use demo (paper trading) environment</source>
-        <translation type="vanished">使用模擬（紙上交易）環境</translation>
+        <translation>使用模擬（紙上交易）環境</translation>
     </message>
-</context>
+<message><source>&lt;b&gt;Polymarket (Polygon)&lt;/b&gt;&lt;br&gt;Trading requires a Polygon-compatible private key. The key is signed locally via &lt;code&gt;py_clob_client&lt;/code&gt; and never leaves your machine in plaintext — it is stored encrypted in your OS credential manager.&lt;br&gt;&lt;br&gt;&lt;b&gt;⚠ Security:&lt;/b&gt; use a dedicated funding wallet, not your primary wallet.</source><translation>&lt;b&gt;Polymarket (Polygon)&lt;/b&gt;&lt;br&gt;交易需要 Polygon 相容的私鑰。私鑰透過 &lt;code&gt;py_clob_client&lt;/code&gt; 在本機簽署，永遠不會以明文離開您的電腦 — 它會加密儲存在作業系統的憑證管理員中。&lt;br&gt;&lt;br&gt;&lt;b&gt;⚠ 安全性：&lt;/b&gt;請使用專用的資金錢包，而非您的主錢包。</translation></message><message><source>&lt;b&gt;Kalshi (CFTC-regulated)&lt;/b&gt;&lt;br&gt;Generate an API key + RSA private key in your Kalshi dashboard (&lt;code&gt;api.elections.kalshi.com&lt;/code&gt;). Requests are signed with RSA-PSS (key stays local, encrypted in your OS credential manager).&lt;br&gt;&lt;br&gt;Use &lt;b&gt;Demo mode&lt;/b&gt; to target &lt;code&gt;demo-api.kalshi.co&lt;/code&gt; for testing.</source><translation>&lt;b&gt;Kalshi（受 CFTC 監管）&lt;/b&gt;&lt;br&gt;在您的 Kalshi 儀表板（&lt;code&gt;api.elections.kalshi.com&lt;/code&gt;）中產生 API 金鑰 + RSA 私鑰。請求以 RSA-PSS 簽署（金鑰保留在本機，加密儲存於作業系統憑證管理員）。&lt;br&gt;&lt;br&gt;使用&lt;b&gt;展示模式&lt;/b&gt;可連接 &lt;code&gt;demo-api.kalshi.co&lt;/code&gt; 進行測試。</translation></message><message><source>-----BEGIN RSA PRIVATE KEY-----
+…paste PEM contents here…
+-----END RSA PRIVATE KEY-----</source><translation>-----BEGIN RSA PRIVATE KEY-----
+…在此貼上 PEM 內容…
+-----END RSA PRIVATE KEY-----</translation></message><message><source>This removes your stored Polymarket private key and API credentials from this machine. You will need to re-enter them to resume trading.</source><translation>這會從本機移除您已儲存的 Polymarket 私鑰和 API 憑證。您需要重新輸入才能繼續交易。</translation></message><message><source>This removes your stored Kalshi API key and RSA private key from this machine.</source><translation>這會從本機移除您已儲存的 Kalshi API 金鑰和 RSA 私鑰。</translation></message></context>
 <context>
     <name>fincept::screens::widgets::AgentErrorsWidget</name>
     <message>
         <source>Configure — Agent Errors</source>
-        <translation type="vanished">配置 - 代理錯誤</translation>
+        <translation>配置 - 代理錯誤</translation>
     </message>
 </context>
 <context>
@@ -27884,318 +27972,318 @@ X-API-Key: xyz</translation>
     <name>fincept::screens::widgets::BrokerHoldingsWidget</name>
     <message>
         <source>Configure — Holdings</source>
-        <translation type="vanished">設定 — Holding (持股)s (持股)</translation>
+        <translation>設定 — Holding (持股)s (持股)</translation>
     </message>
     <message>
         <source>No active account — click gear to configure</source>
-        <translation type="vanished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::CryptoTickerWidget</name>
     <message>
         <source>Configure — Crypto Ticker</source>
-        <translation type="vanished">配置 - 加密貨幣代碼</translation>
+        <translation>配置 - 加密貨幣代碼</translation>
     </message>
     <message>
         <source>e.g. BTC/USD, ETH/USD, SOL/USD</source>
-        <translation type="vanished">例如BTC/美元、ETH/美元、SOL/美元</translation>
+        <translation>例如BTC/美元、ETH/美元、SOL/美元</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::EconomicCalendarWidget</name>
     <message>
         <source>Loading...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>No events available</source>
-        <translation type="vanished">沒有可用事件</translation>
+        <translation>沒有可用事件</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::GeopoliticsEventsWidget</name>
     <message>
         <source>Awaiting events…</source>
-        <translation type="vanished">等候事件…</translation>
+        <translation>等候事件…</translation>
     </message>
     <message>
         <source>Configure — Geopolitics Events</source>
-        <translation type="vanished">配置 - 地緣政治事件</translation>
+        <translation>配置 - 地緣政治事件</translation>
     </message>
     <message>
         <source>Loading…</source>
-        <translation type="vanished">載入中…</translation>
+        <translation>載入中…</translation>
     </message>
     <message>
         <source>No events available</source>
-        <translation type="vanished">沒有可用事件</translation>
+        <translation>沒有可用事件</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::MarginUsageWidget</name>
     <message>
         <source>Configure — Margin Usage</source>
-        <translation type="vanished">配置 - 保證金使用</translation>
+        <translation>配置 - 保證金使用</translation>
     </message>
     <message>
         <source>No active account — click gear to configure</source>
-        <translation type="vanished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
     <message>
         <source>Usage: —</source>
-        <translation type="vanished">用量: —</translation>
+        <translation>用量: —</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::MaritimeVesselsWidget</name>
     <message>
         <source>Configure — Maritime Vessels</source>
-        <translation type="vanished">設定 — 海運船舶</translation>
+        <translation>設定 — 海運船舶</translation>
     </message>
     <message>
         <source>Loading…</source>
-        <translation type="vanished">載入中…</translation>
+        <translation>載入中…</translation>
     </message>
     <message>
         <source>No vessels configured — click gear to add IMOs</source>
-        <translation type="vanished">尚未設定船舶 — 點擊齒輪新增 IMO</translation>
+        <translation>尚未設定船舶 — 點擊齒輪新增 IMO</translation>
     </message>
     <message>
         <source>One IMO per line (e.g. 9811000)</source>
-        <translation type="vanished">每行一個 IMO（例如 9811000）</translation>
+        <translation>每行一個 IMO（例如 9811000）</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::MarketQuoteStripWidget</name>
     <message>
         <source>Configure — Quote Strip</source>
-        <translation type="vanished">配置 - 報價條</translation>
+        <translation>配置 - 報價條</translation>
     </message>
     <message>
         <source>e.g. AAPL, MSFT, GOOGL</source>
-        <translation type="vanished">例如：AAPL, MSFT, GOOGL</translation>
+        <translation>例如：AAPL, MSFT, GOOGL</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::MarketSentimentWidget</name>
     <message>
         <source>-- BEAR</source>
-        <translation type="vanished">-- 看跌</translation>
+        <translation>-- 看跌</translation>
     </message>
     <message>
         <source>-- BULL</source>
-        <translation type="vanished">-- 看漲</translation>
+        <translation>-- 看漲</translation>
     </message>
     <message>
         <source>-- NEUTRAL</source>
-        <translation type="vanished">-- 中性</translation>
+        <translation>-- 中性</translation>
     </message>
     <message>
         <source>載入中...</source>
-        <translation type="obsolete">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::NewsCategoryWidget</name>
     <message>
         <source>Configure — News Category</source>
-        <translation type="vanished">配置 - 新聞類別</translation>
+        <translation>配置 - 新聞類別</translation>
     </message>
     <message>
         <source>markets | geopolitics | crypto | …</source>
-        <translation type="vanished">市場 |地緣政治|加密 | …</translation>
+        <translation>市場 |地緣政治|加密 | …</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::NotesWidget</name>
     <message>
         <source>Configure — Notes</source>
-        <translation type="vanished">Configure — 筆記</translation>
+        <translation>Configure — 筆記</translation>
     </message>
     <message>
         <source>Favorites only</source>
-        <translation type="vanished">僅收藏</translation>
+        <translation>僅收藏</translation>
     </message>
     <message>
         <source>Recent</source>
-        <translation type="vanished">最近</translation>
+        <translation>最近</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::OpenPositionsWidget</name>
     <message>
         <source>Configure — Open Positions</source>
-        <translation type="vanished">配置 - 未平倉頭寸</translation>
+        <translation>配置 - 未平倉頭寸</translation>
     </message>
     <message>
         <source>No active account — click gear to configure</source>
-        <translation type="vanished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::OrderBookMiniWidget</name>
     <message>
         <source>Cancel order </source>
-        <translation type="vanished">取消訂單 </translation>
+        <translation>取消訂單 </translation>
     </message>
     <message>
         <source>Configure — Working Orders</source>
-        <translation type="vanished">配置 - 工作訂單</translation>
+        <translation>配置 - 工作訂單</translation>
     </message>
     <message>
         <source>No active account — click gear to configure</source>
-        <translation type="vanished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::PerformanceWidget</name>
     <message>
         <source>TODAY</source>
-        <translation type="vanished">今日</translation>
+        <translation>今日</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::PolymarketPriceWidget</name>
     <message>
         <source>Configure — Polymarket</source>
-        <translation type="vanished">設定 — Polymarket</translation>
+        <translation>設定 — Polymarket</translation>
     </message>
     <message>
         <source>No markets configured — click gear to add</source>
-        <translation type="vanished">尚未設定市場 — 點擊齒輪新增</translation>
+        <translation>尚未設定市場 — 點擊齒輪新增</translation>
     </message>
     <message>
         <source>One per line:  &lt;asset_id&gt; | &lt;label&gt;</source>
-        <translation type="vanished">每行一個：&lt;asset_id&gt; | &lt;label&gt;</translation>
+        <translation>每行一個：&lt;asset_id&gt; | &lt;label&gt;</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::QuickTradeWidget</name>
     <message>
         <source>AAPL</source>
-        <translation type="obsolete">AAPL</translation>
+        <translation>AAPL</translation>
     </message>
     <message>
         <source>代號 (如 AAPL)</source>
-        <translation type="obsolete">代號 (如 AAPL)</translation>
+        <translation>代號 (如 AAPL)</translation>
     </message>
     <message>
         <source>價格</source>
-        <translation type="obsolete">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <source>市價</source>
-        <translation type="obsolete">市價</translation>
+        <translation>市價</translation>
     </message>
     <message>
         <source>數量</source>
-        <translation type="obsolete">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <source>查詢</source>
-        <translation type="obsolete">查詢</translation>
+        <translation>查詢</translation>
     </message>
     <message>
         <source>買價 --</source>
-        <translation type="obsolete">買價 --</translation>
+        <translation>買價 --</translation>
     </message>
     <message>
         <source>賣價 --</source>
-        <translation type="obsolete">賣價 --</translation>
+        <translation>賣價 --</translation>
     </message>
     <message>
         <source>送出委託</source>
-        <translation type="obsolete">送出委託</translation>
+        <translation>送出委託</translation>
     </message>
     <message>
         <source>預估總額  --</source>
-        <translation type="obsolete">預估總額  --</translation>
+        <translation>預估總額  --</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::RecentFilesWidget</name>
     <message>
         <source>No files yet</source>
-        <translation type="vanished">No 檔案 yet</translation>
+        <translation>No 檔案 yet</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::RiskMetricsWidget</name>
     <message>
         <source>HIGH-BETA STOCKS</source>
-        <translation type="vanished">高 Beta 股票</translation>
+        <translation>高 Beta 股票</translation>
     </message>
     <message>
         <source>SPREAD PROXIES</source>
-        <translation type="vanished">價差 PROXIES</translation>
+        <translation>價差 PROXIES</translation>
     </message>
     <message>
         <source>VIX FEAR GAUGE</source>
-        <translation type="vanished">VIX 恐懼指標</translation>
+        <translation>VIX 恐懼指標</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::ScreenerWidget</name>
     <message>
         <source>排序</source>
-        <translation type="obsolete">排序</translation>
+        <translation>排序</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::SparklineStripWidget</name>
     <message>
         <source>Configure — Sparklines</source>
-        <translation type="vanished">設定 — Sparklines</translation>
+        <translation>設定 — Sparklines</translation>
     </message>
     <message>
         <source>e.g. AAPL, MSFT, NVDA</source>
-        <translation type="vanished">例如：AAPL, MSFT, NVDA</translation>
+        <translation>例如：AAPL, MSFT, NVDA</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::TodayPnLWidget</name>
     <message>
         <source>Configure — Today P&amp;L</source>
-        <translation type="vanished">設定 — 今日損益</translation>
+        <translation>設定 — 今日損益</translation>
     </message>
     <message>
         <source>No active account — click gear to configure</source>
-        <translation type="vanished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::TradeTapeWidget</name>
     <message>
         <source>Configure — Trades</source>
-        <translation type="vanished">設定 — Trades (交易)</translation>
+        <translation>設定 — Trades (交易)</translation>
     </message>
     <message>
         <source>e.g. BTC/USD</source>
-        <translation type="vanished">例如比特幣/美元</translation>
+        <translation>例如比特幣/美元</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::VideoPlayerWidget</name>
     <message>
         <source>CUSTOM STREAM</source>
-        <translation type="vanished">自訂 STREAM</translation>
+        <translation>自訂 STREAM</translation>
     </message>
     <message>
         <source>Could not extract stream URL.</source>
-        <translation type="vanished">無法擷取串流 URL。</translation>
+        <translation>無法擷取串流 URL。</translation>
     </message>
     <message>
         <source>FINANCIAL TV</source>
-        <translation type="vanished">金融 TV</translation>
+        <translation>金融 TV</translation>
     </message>
     <message>
         <source>Failed to start yt-dlp: </source>
-        <translation type="vanished">無法啟動 yt-dlp：</translation>
+        <translation>無法啟動 yt-dlp：</translation>
     </message>
     <message>
         <source>PLAY</source>
-        <translation type="vanished">播放</translation>
+        <translation>播放</translation>
     </message>
     <message>
         <source>Qt Multimedia not available.\nBuild with Qt6 Multimedia for inline playback.</source>
@@ -28204,41 +28292,43 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Resolving stream via yt-dlp...</source>
-        <translation type="vanished">透過 yt-dlp 解析串流中...</translation>
+        <translation>透過 yt-dlp 解析串流中...</translation>
     </message>
     <message>
         <source>YouTube URL, HLS (.m3u8), MP4, or direct stream...</source>
-        <translation type="vanished">YouTube URL、HLS (.m3u8)、MP4 或直接串流...</translation>
+        <translation>YouTube URL、HLS (.m3u8)、MP4 或直接串流...</translation>
     </message>
     <message>
         <source>YouTube streams resolved via yt-dlp and played inline.</source>
-        <translation type="vanished">YouTube 串流透過 yt-dlp 解析並內嵌播放。</translation>
+        <translation>YouTube 串流透過 yt-dlp 解析並內嵌播放。</translation>
     </message>
     <message>
         <source>yt-dlp error: </source>
-        <translation type="vanished">yt-dlp error:</translation>
+        <translation>yt-dlp error:</translation>
     </message>
     <message>
         <source>yt-dlp not found. Bundle yt-dlp.exe next to FinceptTerminal.exe.</source>
-        <translation type="vanished">未找到 yt-dlp。將 yt-dlp.exe 捆綁到 FinceptTerminal.exe 旁邊。</translation>
+        <translation>未找到 yt-dlp。將 yt-dlp.exe 捆綁到 FinceptTerminal.exe 旁邊。</translation>
     </message>
-</context>
+<message><source>Qt Multimedia not available.
+Build with Qt6 Multimedia for inline playback.</source><translation>Qt Multimedia 不可用。
+請以 Qt6 Multimedia 建構以支援內嵌播放。</translation></message></context>
 <context>
     <name>fincept::screens::widgets::WatchlistWidget</name>
     <message>
         <source>GO</source>
-        <translation type="vanished">前往</translation>
+        <translation>前往</translation>
     </message>
     <message>
         <source>SYMBOLS:</source>
-        <translation type="vanished">代碼:</translation>
+        <translation>代碼:</translation>
     </message>
 </context>
 <context>
     <name>fincept::screens::widgets::WebScraperWidget</name>
     <message>
         <source>&lt;%1&gt; × %2</source>
-        <translation type="obsolete">&lt;%1&gt; × %2</translation>
+        <translation>&lt;%1&gt; × %2</translation>
     </message>
     <message>
         <source>&lt;(t[hd])\\b([^&gt;]*)&gt;(.*?)&lt;/\\1&gt;</source>
@@ -28254,7 +28344,7 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</source>
-        <translation type="obsolete">&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</translation>
+        <translation>&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</translation>
     </message>
     <message>
         <source>&lt;table\\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</source>
@@ -28266,11 +28356,11 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Configure a URL via the gear icon</source>
-        <translation type="vanished">透過齒輪圖示設定 URL</translation>
+        <translation>透過齒輪圖示設定 URL</translation>
     </message>
     <message>
         <source>Configure — Web Scraper</source>
-        <translation type="vanished">設定 — Web Scraper</translation>
+        <translation>設定 — Web Scraper</translation>
     </message>
     <message>
         <source>One per line:\nAuthorization: Bearer abc\nX-API-Key: xyz</source>
@@ -28280,21 +28370,25 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>auto (from Content-Type / &lt;meta&gt;)</source>
-        <translation type="vanished">自動（從 Content-Type / &lt;meta&gt; 偵測）</translation>
+        <translation>自動（從 Content-Type / &lt;meta&gt; 偵測）</translation>
     </message>
     <message>
         <source>e.g. data.items  (JSON only)</source>
-        <translation type="vanished">例如data.items（僅限 JSON）</translation>
+        <translation>例如data.items（僅限 JSON）</translation>
     </message>
     <message>
         <source>root[]</source>
-        <translation type="obsolete">root[]</translation>
+        <translation>root[]</translation>
     </message>
     <message>
         <source>utf-8</source>
         <translation type="obsolete">utf-8</translation>
     </message>
-</context>
+<message><source>&lt;table\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</source><translation>&lt;table\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</translation></message><message><source>&lt;tr\b[^&gt;]*&gt;(.*?)&lt;/tr&gt;</source><translation>&lt;tr\b[^&gt;]*&gt;(.*?)&lt;/tr&gt;</translation></message><message><source>&lt;(t[hd])\b([^&gt;]*)&gt;(.*?)&lt;/\1&gt;</source><translation>&lt;(t[hd])\b([^&gt;]*)&gt;(.*?)&lt;/\1&gt;</translation></message><message><source>One per line:
+Authorization: Bearer abc
+X-API-Key: xyz</source><translation>每行一個：
+Authorization: Bearer abc
+X-API-Key: xyz</translation></message></context>
 <context>
     <name>fincept::services::EconomicsService</name>
     <message>
@@ -28325,42 +28419,42 @@ X-API-Key: xyz</translation>
     <name>fincept::services::PortfolioService</name>
     <message>
         <source>^AXJO</source>
-        <translation type="obsolete">^AXJO</translation>
+        <translation>^AXJO</translation>
     </message>
     <message>
         <source>^FTSE</source>
-        <translation type="obsolete">^FTSE</translation>
+        <translation>^FTSE</translation>
     </message>
     <message>
         <source>^GSPTSE</source>
-        <translation type="obsolete">^GSPTSE</translation>
+        <translation>^GSPTSE</translation>
     </message>
     <message>
         <source>^HSI</source>
-        <translation type="obsolete">^HSI</translation>
+        <translation>^HSI</translation>
     </message>
     <message>
         <source>^N225</source>
-        <translation type="obsolete">^N225</translation>
+        <translation>^N225</translation>
     </message>
     <message>
         <source>^NSEI</source>
-        <translation type="obsolete">^NSEI</translation>
+        <translation>^NSEI</translation>
     </message>
     <message>
         <source>^STOXX50E</source>
-        <translation type="obsolete">^STOXX50E</translation>
+        <translation>^STOXX50E</translation>
     </message>
 </context>
 <context>
     <name>fincept::services::UpdateService</name>
     <message>
         <source>&lt;none&gt;</source>
-        <translation type="vanished">&lt;無&gt;</translation>
+        <translation>&lt;無&gt;</translation>
     </message>
     <message>
         <source>Auto-update is not supported on this platform.</source>
-        <translation type="vanished">此平台不支援自動更新。</translation>
+        <translation>此平台不支援自動更新。</translation>
     </message>
     <message>
         <source>Cannot save the installer to disk:\n%1</source>
@@ -28372,19 +28466,19 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Could not verify the downloaded installer.</source>
-        <translation type="vanished">無法驗證已下載的安裝程式。</translation>
+        <translation>無法驗證已下載的安裝程式。</translation>
     </message>
     <message>
         <source>Download &amp;&amp; Install</source>
-        <translation type="vanished">下載並安裝</translation>
+        <translation>下載並安裝</translation>
     </message>
     <message>
         <source>Download the installer now?</source>
-        <translation type="vanished">現在下載安裝程式嗎？</translation>
+        <translation>現在下載安裝程式嗎？</translation>
     </message>
     <message>
         <source>Fincept Terminal</source>
-        <translation type="vanished">Fincept 終端</translation>
+        <translation>Fincept 終端</translation>
     </message>
     <message>
         <source>The installer could not be downloaded.\n\n%1</source>
@@ -28392,23 +28486,23 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>The update manifest is malformed.</source>
-        <translation type="vanished">更新 Manifest (資訊清單) 格式錯誤。</translation>
+        <translation>更新 Manifest (資訊清單) 格式錯誤。</translation>
     </message>
     <message>
         <source>This is a development build (%1). Auto-update is disabled.</source>
-        <translation type="vanished">這是開發版本（%1）。已停用自動更新。</translation>
+        <translation>這是開發版本（%1）。已停用自動更新。</translation>
     </message>
     <message>
         <source>Update Available</source>
-        <translation type="vanished">有可用更新</translation>
+        <translation>有可用更新</translation>
     </message>
     <message>
         <source>Update Downloaded</source>
-        <translation type="vanished">更新已下載</translation>
+        <translation>更新已下載</translation>
     </message>
     <message>
         <source>View Release Notes</source>
-        <translation type="vanished">看發行說明</translation>
+        <translation>看發行說明</translation>
     </message>
     <message>
         <source>What's new:\n%1\n\n</source>
@@ -28416,7 +28510,7 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>You're running the latest version (%1).</source>
-        <translation type="vanished">你正在使用最新版本（%1）。</translation>
+        <translation>你正在使用最新版本（%1）。</translation>
     </message>
     <message>
         <source>\n…</source>
@@ -28428,45 +28522,63 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>download-url</source>
-        <translation type="obsolete">download-url</translation>
+        <translation>download-url</translation>
     </message>
     <message>
         <source>latest-version</source>
-        <translation type="obsolete">latest-version</translation>
+        <translation>latest-version</translation>
     </message>
     <message>
         <source>linux-arm64</source>
-        <translation type="obsolete">linux-arm64</translation>
+        <translation>linux-arm64</translation>
     </message>
     <message>
         <source>linux-x64</source>
-        <translation type="obsolete">linux-x64</translation>
+        <translation>linux-x64</translation>
     </message>
     <message>
         <source>macos-arm64</source>
-        <translation type="obsolete">macos-arm64</translation>
+        <translation>macos-arm64</translation>
     </message>
     <message>
         <source>macos-x64</source>
-        <translation type="obsolete">macos-x64</translation>
+        <translation>macos-x64</translation>
     </message>
     <message>
         <source>open-url</source>
-        <translation type="obsolete">open-url</translation>
+        <translation>open-url</translation>
     </message>
     <message>
         <source>sha256</source>
-        <translation type="obsolete">sha256</translation>
+        <translation>sha256</translation>
     </message>
     <message>
         <source>windows-arm64</source>
-        <translation type="obsolete">windows-arm64</translation>
+        <translation>windows-arm64</translation>
     </message>
     <message>
         <source>windows-x64</source>
-        <translation type="obsolete">windows-x64</translation>
+        <translation>windows-x64</translation>
     </message>
-</context>
+<message><source>^(\d+)\.(\d+)\.(\d+)$</source><translation>^(\d+)\.(\d+)\.(\d+)$</translation></message><message><source>Could not reach the update server.
+
+%1</source><translation>無法連接更新伺服器。
+
+%1</translation></message><message><source>
+…</source><translation>
+…</translation></message><message><source>What's new:
+%1
+
+</source><translation>更新內容：
+%1
+
+</translation></message><message><source>The installer could not be downloaded.
+
+%1</source><translation>安裝程式無法下載。
+
+%1</translation></message><message><source>Cannot save the installer to disk:
+%1</source><translation>無法將安裝程式儲存至磁碟：
+%1</translation></message></context>
 <context>
     <name>fincept::services::akshare::AkShareService</name>
     <message>
@@ -28475,15 +28587,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Empty endpoint response</source>
-        <translation type="vanished">Endpoint 回應為空</translation>
+        <translation>Endpoint 回應為空</translation>
     </message>
     <message>
         <source>Endpoint listing failed</source>
-        <translation type="vanished">Endpoint 清單取得失敗</translation>
+        <translation>Endpoint 清單取得失敗</translation>
     </message>
     <message>
         <source>Invalid endpoint JSON: %1</source>
-        <translation type="vanished">In有效 endpoint JSON: %1</translation>
+        <translation>In有效 endpoint JSON: %1</translation>
     </message>
     <message>
         <source>JSON parse error: %1</source>
@@ -28506,23 +28618,23 @@ X-API-Key: xyz</translation>
     <name>fincept::services::alpha_arena::AlphaArenaService</name>
     <message>
         <source>%1 failed: %2</source>
-        <translation type="vanished">%1失敗: %2</translation>
+        <translation>%1失敗: %2</translation>
     </message>
     <message>
         <source>Engine call failed</source>
-        <translation type="vanished">引擎呼叫失敗</translation>
+        <translation>引擎呼叫失敗</translation>
     </message>
     <message>
         <source>Engine reported failure</source>
-        <translation type="vanished">引擎回報失敗</translation>
+        <translation>引擎回報失敗</translation>
     </message>
     <message>
         <source>Invalid response: %1</source>
-        <translation type="vanished">In有效 response: %1</translation>
+        <translation>In有效 response: %1</translation>
     </message>
     <message>
         <source>No response from engine</source>
-        <translation type="vanished">引擎沒有回應</translation>
+        <translation>引擎沒有回應</translation>
     </message>
 </context>
 <context>
@@ -28533,15 +28645,15 @@ X-API-Key: xyz</translation>
     </message>
     <message>
         <source>Empty endpoint response</source>
-        <translation type="vanished">Endpoint 回應為空</translation>
+        <translation>Endpoint 回應為空</translation>
     </message>
     <message>
         <source>Endpoint listing failed</source>
-        <translation type="vanished">Endpoint 清單取得失敗</translation>
+        <translation>Endpoint 清單取得失敗</translation>
     </message>
     <message>
         <source>Invalid endpoint JSON: %1</source>
-        <translation type="vanished">In有效 endpoint JSON: %1</translation>
+        <translation>In有效 endpoint JSON: %1</translation>
     </message>
     <message>
         <source>JSON parse error: %1</source>
@@ -28650,72 +28762,72 @@ X-API-Key: xyz</translation>
     <name>fincept::services::prediction::kalshi_ns::KalshiRestClient</name>
     <message>
         <source>:no</source>
-        <translation type="obsolete">:no</translation>
+        <translation>:no</translation>
     </message>
     <message>
         <source>:yes</source>
-        <translation type="obsolete">:yes</translation>
+        <translation>:yes</translation>
     </message>
     <message>
         <source>JSON parse: </source>
-        <translation type="obsolete">JSON parse: </translation>
+        <translation>JSON parse: </translation>
     </message>
 </context>
 <context>
     <name>fincept::services::prediction::kalshi_ns::KalshiWsClient</name>
     <message>
         <source> (connect deferred to Phase 7)</source>
-        <translation type="vanished">（連接延遲到第 7 階段）</translation>
+        <translation>（連接延遲到第 7 階段）</translation>
     </message>
     <message>
         <source>:no</source>
-        <translation type="obsolete">:no</translation>
+        <translation>:no</translation>
     </message>
     <message>
         <source>:yes</source>
-        <translation type="obsolete">:yes</translation>
+        <translation>:yes</translation>
     </message>
     <message>
         <source>Ready to connect to </source>
-        <translation type="vanished">準備連接到</translation>
+        <translation>準備連接到</translation>
     </message>
     <message>
         <source>market_lifecycle_v2</source>
-        <translation type="obsolete">market_lifecycle_v2</translation>
+        <translation>market_lifecycle_v2</translation>
     </message>
 </context>
 <context>
     <name>fincept::services::python_cli::PythonCliService</name>
     <message>
         <source>%1 failed: %2</source>
-        <translation type="vanished">%1失敗: %2</translation>
+        <translation>%1失敗: %2</translation>
     </message>
     <message>
         <source>Invalid JSON: %1</source>
-        <translation type="vanished">In有效 JSON: %1</translation>
+        <translation>In有效 JSON: %1</translation>
     </message>
     <message>
         <source>No JSON output from %1</source>
-        <translation type="vanished">無JSON output 來自%1</translation>
+        <translation>無JSON output 來自%1</translation>
     </message>
     <message>
         <source>Python process failed</source>
-        <translation type="vanished">Python process失敗</translation>
+        <translation>Python process失敗</translation>
     </message>
     <message>
         <source>Script reported error</source>
-        <translation type="vanished">腳本報告錯誤</translation>
+        <translation>腳本報告錯誤</translation>
     </message>
     <message>
         <source>Script reported failure</source>
-        <translation type="vanished">腳本回報失敗</translation>
+        <translation>腳本回報失敗</translation>
     </message>
 </context>
 <context>
     <name>fincept::services::quant::AIQuantLabService</name>
     <message>
         <source>Training ended without result</source>
-        <translation type="vanished">訓練結束但沒有結果</translation>
+        <translation>訓練結束但沒有結果</translation>
     </message>
 </context>
 <context>
@@ -28846,594 +28958,594 @@ X-API-Key: xyz</translation>
     <name>fincept::trading::auth::RedirectServer</name>
     <message>
         <source>Malformed request</source>
-        <translation type="vanished">格式錯誤的請求</translation>
+        <translation>格式錯誤的請求</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::Card</name>
     <message>
         <source>x</source>
-        <translation type="obsolete">x</translation>
+        <translation>x</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::CommandBar</name>
     <message>
         <source>&gt; Enter Command or /type ...</source>
-        <translation type="vanished">&gt; 輸入指令或 /輸入 ...</translation>
+        <translation>&gt; 輸入指令或 /輸入 ...</translation>
     </message>
     <message>
         <source>No results found</source>
-        <translation type="vanished">找不到結果</translation>
+        <translation>找不到結果</translation>
     </message>
     <message>
         <source>\u203A</source>
         <translation type="obsolete">\u203A</translation>
     </message>
-</context>
+<message><source>›</source><translation>›</translation></message></context>
 <context>
     <name>fincept::ui::CommandPalette</name>
     <message>
         <source>Search actions, layouts… (Esc to cancel, Enter to run)</source>
-        <translation type="vanished">搜尋操作、佈局...（Esc 取消，Enter 運行）</translation>
+        <translation>搜尋操作、佈局...（Esc 取消，Enter 運行）</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::ComponentBrowserDialog</name>
     <message>
         <source>All</source>
-        <translation type="vanished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <source>COMPONENT BROWSER</source>
-        <translation type="vanished">元件瀏覽器</translation>
+        <translation>元件瀏覽器</translation>
     </message>
     <message>
         <source>Component Browser</source>
-        <translation type="vanished">元件瀏覽器</translation>
+        <translation>元件瀏覽器</translation>
     </message>
     <message>
         <source>Search components…</source>
-        <translation type="vanished">搜尋 Components (元件)…</translation>
+        <translation>搜尋 Components (元件)…</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::GroupBadge</name>
     <message>
         <source>Symbol link group — click to cycle, right-click for menu</source>
-        <translation type="vanished">Symbol (股票代碼) 連動群組 — 點擊切換，右鍵開啟選單</translation>
+        <translation>Symbol (股票代碼) 連動群組 — 點擊切換，右鍵開啟選單</translation>
     </message>
     <message>
         <source>Unlink</source>
-        <translation type="vanished">取消連結</translation>
+        <translation>取消連結</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::NavigationBar</name>
     <message>
         <source> LIVE</source>
-        <translation type="vanished"> 即時</translation>
+        <translation> 即時</translation>
     </message>
     <message>
         <source>LOGOUT</source>
-        <translation type="vanished">登出</translation>
+        <translation>登出</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::NotifPanel</name>
     <message>
         <source>Mark all read</source>
-        <translation type="vanished">全部標為已讀</translation>
+        <translation>全部標為已讀</translation>
     </message>
     <message>
         <source>NOTIFICATIONS</source>
-        <translation type="vanished">通知</translation>
+        <translation>通知</translation>
     </message>
     <message>
         <source>No notifications</source>
-        <translation type="vanished">No 通知</translation>
+        <translation>No 通知</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::PhoneCodeComboBox</name>
     <message>
         <source>Search country…</source>
-        <translation type="vanished">搜尋國家…</translation>
+        <translation>搜尋國家…</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::PushpinBar</name>
     <message>
         <source>Drag any symbol here to pin</source>
-        <translation type="vanished">拖曳任何代碼至此處以釘選</translation>
+        <translation>拖曳任何代碼至此處以釘選</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::QuickCommandBar</name>
     <message>
         <source>Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss.</source>
-        <translation type="vanished">輸入指令（例如：'layout switch Morning'、AAPL、?）。按 Esc 關閉。</translation>
+        <translation>輸入指令（例如：'layout switch Morning'、AAPL、?）。按 Esc 關閉。</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::SearchBar</name>
     <message>
         <source>Enter command or search...</source>
-        <translation type="vanished">輸入命令或搜尋...</translation>
+        <translation>輸入命令或搜尋...</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::StatusBadge</name>
     <message>
         <source>CONNECTED</source>
-        <translation type="vanished">已連線</translation>
+        <translation>已連線</translation>
     </message>
     <message>
         <source>LOADING...</source>
-        <translation type="vanished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <source>OFFLINE</source>
-        <translation type="vanished">離線</translation>
+        <translation>離線</translation>
     </message>
     <message>
         <source>READY</source>
-        <translation type="vanished">就緒</translation>
+        <translation>就緒</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::SymbolChip</name>
     <message>
         <source>Copy Ticker</source>
-        <translation type="vanished">複製 Ticker</translation>
+        <translation>複製 Ticker</translation>
     </message>
     <message>
         <source>Remove Pin</source>
-        <translation type="vanished">移除 PIN 碼</translation>
+        <translation>移除 PIN 碼</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::ToolBar</name>
     <message>
         <source>  |  PROFESSIONAL RESEARCH DESK</source>
-        <translation type="vanished">  |  專業研究桌面</translation>
+        <translation>  |  專業研究桌面</translation>
     </message>
     <message>
         <source> LIVE</source>
-        <translation type="vanished"> 即時</translation>
+        <translation> 即時</translation>
     </message>
     <message>
         <source>(single monitor)</source>
-        <translation type="vanished">（單螢幕）</translation>
+        <translation>（單螢幕）</translation>
     </message>
     <message>
         <source>AI &amp;&amp; Quant</source>
-        <translation type="vanished">AI 與量化</translation>
+        <translation>AI 與量化</translation>
     </message>
     <message>
         <source>AI Chat</source>
-        <translation type="vanished">AI 對話</translation>
+        <translation>AI 對話</translation>
     </message>
     <message>
         <source>About</source>
-        <translation type="vanished">關於</translation>
+        <translation>關於</translation>
     </message>
     <message>
         <source>About Fincept</source>
-        <translation type="vanished">關於 Fincept</translation>
+        <translation>關於 Fincept</translation>
     </message>
     <message>
         <source>Agent Config</source>
-        <translation type="vanished">代理設定</translation>
+        <translation>代理設定</translation>
     </message>
     <message>
         <source>Algo Trading</source>
-        <translation type="vanished">演算法交易</translation>
+        <translation>演算法交易</translation>
     </message>
     <message>
         <source>Alpha Arena</source>
-        <translation type="vanished">Alpha 競技場</translation>
+        <translation>Alpha 競技場</translation>
     </message>
     <message>
         <source>Alt. Investments</source>
-        <translation type="vanished">另類投資</translation>
+        <translation>另類投資</translation>
     </message>
     <message>
         <source>Always on Top</source>
-        <translation type="vanished">視窗置頂</translation>
+        <translation>視窗置頂</translation>
     </message>
     <message>
         <source>Asia Markets</source>
-        <translation type="vanished">亞洲市場</translation>
+        <translation>亞洲市場</translation>
     </message>
     <message>
         <source>Check for Updates</source>
-        <translation type="vanished">檢查更新</translation>
+        <translation>檢查更新</translation>
     </message>
     <message>
         <source>Component Browser</source>
-        <translation type="vanished">元件瀏覽器</translation>
+        <translation>元件瀏覽器</translation>
     </message>
     <message>
         <source>Contact Us</source>
-        <translation type="vanished">聯絡我們</translation>
+        <translation>聯絡我們</translation>
     </message>
     <message>
         <source>Crypto Trading</source>
-        <translation type="vanished">加密貨幣交易</translation>
+        <translation>加密貨幣交易</translation>
     </message>
     <message>
         <source>Dashboard</source>
-        <translation type="vanished">儀表板</translation>
+        <translation>儀表板</translation>
     </message>
     <message>
         <source>Data Mapping</source>
-        <translation type="vanished">資料映射</translation>
+        <translation>資料對映</translation>
     </message>
     <message>
         <source>Data Sources</source>
-        <translation type="vanished">資料來源</translation>
+        <translation>資料來源</translation>
     </message>
     <message>
         <source>Derivatives</source>
-        <translation type="vanished">衍生性商品</translation>
+        <translation>衍生性商品</translation>
     </message>
     <message>
         <source>Docs</source>
-        <translation type="vanished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <source>Economics</source>
-        <translation type="vanished">經濟數據</translation>
+        <translation>經濟學</translation>
     </message>
     <message>
         <source>Economics &amp;&amp; Data</source>
-        <translation type="vanished">經濟與資料</translation>
+        <translation>經濟與資料</translation>
     </message>
     <message>
         <source>Equity Research</source>
-        <translation type="vanished">股票研究</translation>
+        <translation>股票研究</translation>
     </message>
     <message>
         <source>Equity Trading</source>
-        <translation type="vanished">股票交易</translation>
+        <translation>股票交易</translation>
     </message>
     <message>
         <source>Export Workspace</source>
-        <translation type="vanished">匯出工作區</translation>
+        <translation>匯出工作區</translation>
     </message>
     <message>
         <source>FREE</source>
-        <translation type="vanished">免費版</translation>
+        <translation>免費版</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="vanished">檔案</translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <source>File Manager</source>
-        <translation type="vanished">檔案管理</translation>
+        <translation>檔案管理員</translation>
     </message>
     <message>
         <source>Float Panel</source>
-        <translation type="vanished">浮動面板</translation>
+        <translation>浮動面板</translation>
     </message>
     <message>
         <source>Focus Mode</source>
-        <translation type="vanished">專注模式</translation>
+        <translation>專注模式</translation>
     </message>
     <message>
         <source>Forum</source>
-        <translation type="vanished">論壇</translation>
+        <translation>論壇</translation>
     </message>
     <message>
         <source>Fullscreen</source>
-        <translation type="vanished">全螢幕</translation>
+        <translation>全螢幕</translation>
     </message>
     <message>
         <source>GOVT Data</source>
-        <translation type="vanished">政府資料</translation>
+        <translation>政府資料</translation>
     </message>
     <message>
         <source>Geopolitics</source>
-        <translation type="vanished">地緣政治</translation>
+        <translation>地緣政治</translation>
     </message>
     <message>
         <source>Geopolitics View</source>
-        <translation type="vanished">地緣政治檢視</translation>
+        <translation>地緣政治檢視</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation type="vanished">說明</translation>
+        <translation>幫助</translation>
     </message>
     <message>
         <source>Help Center</source>
-        <translation type="vanished">說明中心</translation>
+        <translation>說明中心</translation>
     </message>
     <message>
         <source>Import Workspace</source>
-        <translation type="vanished">匯入工作區</translation>
+        <translation>匯入工作區</translation>
     </message>
     <message>
         <source>LOGOUT</source>
-        <translation type="vanished">登出</translation>
+        <translation>登出</translation>
     </message>
     <message>
         <source>Logout</source>
-        <translation type="vanished">登出</translation>
+        <translation>登出</translation>
     </message>
     <message>
         <source>M&amp;&amp;A Analytics</source>
-        <translation type="vanished">M&amp;A 分析</translation>
+        <translation>M&amp;A 分析</translation>
     </message>
     <message>
         <source>M&amp;A Analytics</source>
-        <translation type="vanished">M&amp;A 分析</translation>
+        <translation>M&amp;A 分析</translation>
     </message>
     <message>
         <source>MCP Servers</source>
-        <translation type="vanished">MCP 伺服器</translation>
+        <translation>MCP 伺服器</translation>
     </message>
     <message>
         <source>Maritime</source>
-        <translation type="vanished">航運追蹤</translation>
+        <translation>海運</translation>
     </message>
     <message>
         <source>Markets</source>
-        <translation type="vanished">市場總覽</translation>
+        <translation>市場</translation>
     </message>
     <message>
         <source>Markets &amp; Data</source>
-        <translation type="vanished">市場與資料</translation>
+        <translation>市場與資料</translation>
     </message>
     <message>
         <source>Markets View</source>
-        <translation type="vanished">市場檢視</translation>
+        <translation>市場檢視</translation>
     </message>
     <message>
         <source>Move to Monitor</source>
-        <translation type="vanished">移至螢幕</translation>
+        <translation>移至螢幕</translation>
     </message>
     <message>
         <source>Navigate</source>
-        <translation type="vanished">導覽</translation>
+        <translation>導覽</translation>
     </message>
     <message>
         <source>New Window</source>
-        <translation type="vanished">新視窗</translation>
+        <translation>新視窗</translation>
     </message>
     <message>
         <source>New Workspace</source>
-        <translation type="vanished">新 Workspace (工作區)</translation>
+        <translation>新 Workspace (工作區)</translation>
     </message>
     <message>
         <source>News Feed</source>
-        <translation type="vanished">新聞</translation>
+        <translation>新聞</translation>
     </message>
     <message>
         <source>News View</source>
-        <translation type="vanished">新聞檢視</translation>
+        <translation>新聞檢視</translation>
     </message>
     <message>
         <source>Notes</source>
-        <translation type="vanished">筆記</translation>
+        <translation>筆記</translation>
     </message>
     <message>
         <source>Open Workspace</source>
-        <translation type="vanished">開啟 Workspace (工作區)</translation>
+        <translation>開啟 Workspace (工作區)</translation>
     </message>
     <message>
         <source>Portfolio</source>
-        <translation type="vanished">投資組合</translation>
+        <translation>投資組合</translation>
     </message>
     <message>
         <source>Portfolio View</source>
-        <translation type="vanished">投組檢視</translation>
+        <translation>投組檢視</translation>
     </message>
     <message>
         <source>Prediction Markets</source>
-        <translation type="vanished">預測市場</translation>
+        <translation>預測市場</translation>
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation type="vanished">隱私政策</translation>
+        <translation>隱私政策</translation>
     </message>
     <message>
         <source>Quant Lab</source>
-        <translation type="vanished">量化實驗室</translation>
+        <translation>量化實驗室</translation>
     </message>
     <message>
         <source>Quick Switch</source>
-        <translation type="vanished">快速切換</translation>
+        <translation>快速切換</translation>
     </message>
     <message>
         <source>Refresh All</source>
-        <translation type="vanished">全部重新整理</translation>
+        <translation>全部重新整理</translation>
     </message>
     <message>
         <source>Refresh Screen</source>
-        <translation type="vanished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>Relationship Map</source>
-        <translation type="vanished">關係圖譜</translation>
+        <translation>關係圖</translation>
     </message>
     <message>
         <source>Report Builder</source>
-        <translation type="vanished">報表產生器</translation>
+        <translation>報表建構器</translation>
     </message>
     <message>
         <source>Research</source>
-        <translation type="vanished">研究</translation>
+        <translation>研究</translation>
     </message>
     <message>
         <source>Research &amp; Intelligence</source>
-        <translation type="vanished">研究與情報</translation>
+        <translation>研究與情報</translation>
     </message>
     <message>
         <source>Save Workspace</source>
-        <translation type="vanished">儲存工作區</translation>
+        <translation>儲存工作區</translation>
     </message>
     <message>
         <source>Save Workspace As</source>
-        <translation type="vanished">另存 Workspace (工作區) 為</translation>
+        <translation>另存 Workspace (工作區) 為</translation>
     </message>
     <message>
         <source>Support</source>
-        <translation type="vanished">技術支援</translation>
+        <translation>支援</translation>
     </message>
     <message>
         <source>Surface Analytics</source>
-        <translation type="vanished">曲面分析</translation>
+        <translation>曲面分析</translation>
     </message>
     <message>
         <source>Switch to Chat Mode (F9)</source>
-        <translation type="vanished">切換至聊天模式 (F9)</translation>
+        <translation>切換至聊天模式 (F9)</translation>
     </message>
     <message>
         <source>Take Screenshot</source>
-        <translation type="vanished">螢幕截圖</translation>
+        <translation>螢幕截圖</translation>
     </message>
     <message>
         <source>Terms of Service</source>
-        <translation type="vanished">服務條款</translation>
+        <translation>服務條款</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation type="vanished">工具</translation>
+        <translation>工具</translation>
     </message>
     <message>
         <source>Tools View</source>
-        <translation type="vanished">工具檢視</translation>
+        <translation>工具檢視</translation>
     </message>
     <message>
         <source>Trade Viz</source>
-        <translation type="vanished">交易視覺化</translation>
+        <translation>交易視覺化</translation>
     </message>
     <message>
         <source>Trademarks</source>
-        <translation type="vanished">商標聲明</translation>
+        <translation>商標</translation>
     </message>
     <message>
         <source>Trading</source>
-        <translation type="vanished">交易</translation>
+        <translation>交易</translation>
     </message>
     <message>
         <source>Trading &amp; Portfolio</source>
-        <translation type="vanished">交易與投資組合</translation>
+        <translation>交易與投資組合</translation>
     </message>
     <message>
         <source>View</source>
-        <translation type="vanished">檢視</translation>
+        <translation>檢視</translation>
     </message>
     <message>
         <source>View Plans &amp; Pricing</source>
-        <translation type="vanished">查看方案與定價</translation>
+        <translation>查看方案與定價</translation>
     </message>
     <message>
         <source>Watchlist</source>
-        <translation type="vanished">自選清單</translation>
+        <translation>自選列表</translation>
     </message>
     <message>
         <source>⬡ CHAT</source>
-        <translation type="vanished">⬡ 對話</translation>
+        <translation>⬡ 對話</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::WorkspaceNewDialog</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Create</source>
-        <translation type="vanished">建立</translation>
+        <translation>建立</translation>
     </message>
     <message>
         <source>Description (optional)</source>
-        <translation type="vanished">說明（選填）</translation>
+        <translation>說明（選填）</translation>
     </message>
     <message>
         <source>My Workspace</source>
-        <translation type="vanished">我的 Workspace (工作區)</translation>
+        <translation>我的 Workspace (工作區)</translation>
     </message>
     <message>
         <source>New Workspace</source>
-        <translation type="vanished">新 Workspace (工作區)</translation>
+        <translation>新 Workspace (工作區)</translation>
     </message>
     <message>
         <source>Preview</source>
-        <translation type="vanished">預覽</translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <source>Template</source>
-        <translation type="vanished">範本</translation>
+        <translation>範本</translation>
     </message>
     <message>
         <source>What is this workspace for?</source>
-        <translation type="vanished">此 Workspace (工作區) 的用途是什麼？</translation>
+        <translation>此 Workspace (工作區) 的用途是什麼？</translation>
     </message>
     <message>
         <source>Workspace Name</source>
-        <translation type="vanished">工作區 Name</translation>
+        <translation>工作區 Name</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::WorkspaceOpenDialog</name>
     <message>
         <source>Browse for File...</source>
-        <translation type="vanished">瀏覽文件...</translation>
+        <translation>瀏覽文件...</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="vanished">開盤</translation>
+        <translation>開盤</translation>
     </message>
     <message>
         <source>Open Workspace</source>
-        <translation type="vanished">開啟 Workspace (工作區)</translation>
+        <translation>開啟 Workspace (工作區)</translation>
     </message>
     <message>
         <source>Preview</source>
-        <translation type="vanished">預覽</translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <source>Saved Workspaces</source>
-        <translation type="vanished">已儲存 Workspaces</translation>
+        <translation>已儲存 Workspaces</translation>
     </message>
     <message>
         <source>Select a workspace to preview</source>
-        <translation type="vanished">選擇要預覽的工作區</translation>
+        <translation>選擇要預覽的工作區</translation>
     </message>
 </context>
 <context>
     <name>fincept::ui::WorkspaceSaveAsDialog</name>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Change...</source>
-        <translation type="vanished">變更...</translation>
+        <translation>變更...</translation>
     </message>
     <message>
         <source>Enter a name</source>
-        <translation type="vanished">輸入名稱</translation>
+        <translation>輸入名稱</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Save Workspace As</source>
-        <translation type="vanished">另存 Workspace (工作區) 為</translation>
+        <translation>另存 Workspace (工作區) 為</translation>
     </message>
     <message>
         <source>Workspace Name</source>
-        <translation type="vanished">工作區 Name</translation>
+        <translation>工作區 Name</translation>
     </message>
 </context>
 <context>
@@ -29714,243 +29826,245 @@ X-API-Key: xyz</translation>
     <name>fincept::wallet::ConnectWalletDialog</name>
     <message>
         <source>Browser opened. Approve the connection and the signature in your wallet.</source>
-        <translation type="vanished">瀏覽器打開。批准連接並在錢包中簽名。</translation>
+        <translation>瀏覽器打開。批准連接並在錢包中簽名。</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Connect Wallet</source>
-        <translation type="vanished">連線 錢包</translation>
+        <translation>連線 錢包</translation>
     </message>
     <message>
         <source>Connect your Solana wallet</source>
-        <translation type="vanished">連接您的 Solana 錢包</translation>
+        <translation>連接您的 Solana 錢包</translation>
     </message>
     <message>
         <source>Opening your browser to complete the handshake…</source>
-        <translation type="vanished">正在開啟瀏覽器以完成交握…</translation>
+        <translation>正在開啟瀏覽器以完成交握…</translation>
     </message>
     <message>
         <source>Reopen browser</source>
-        <translation type="vanished">重新開啟瀏覽器</translation>
+        <translation>重新開啟瀏覽器</translation>
     </message>
     <message>
         <source>bridge error: %1</source>
-        <translation type="vanished">橋接 error: %1</translation>
+        <translation>橋接 error: %1</translation>
     </message>
     <message>
         <source>cancelled by user</source>
-        <translation type="vanished">已取消 by user</translation>
+        <translation>已取消 by user</translation>
     </message>
     <message>
         <source>could not start local bridge server</source>
-        <translation type="vanished">無法啟動本地橋接伺服器</translation>
+        <translation>無法啟動本地橋接伺服器</translation>
     </message>
     <message>
         <source>signature verification failed</source>
-        <translation type="vanished">簽名驗證失敗</translation>
+        <translation>簽名驗證失敗</translation>
     </message>
     <message>
         <source>timed out waiting for browser callback</source>
-        <translation type="vanished">等待瀏覽器回呼逾時</translation>
+        <translation>等待瀏覽器回呼逾時</translation>
     </message>
 </context>
 <context>
     <name>fincept::wallet::SignTransactionDialog</name>
     <message>
         <source>Approve the transaction in your wallet to complete this action.</source>
-        <translation type="vanished">批准您錢包中的交易以完成此操作。</translation>
+        <translation>批准您錢包中的交易以完成此操作。</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Opening your browser to relay the transaction…</source>
-        <translation type="vanished">正在開啟瀏覽器以轉發交易…</translation>
+        <translation>正在開啟瀏覽器以轉發交易…</translation>
     </message>
     <message>
         <source>Reopen browser</source>
-        <translation type="vanished">重新開啟瀏覽器</translation>
+        <translation>重新開啟瀏覽器</translation>
     </message>
     <message>
         <source>Sign transaction</source>
-        <translation type="vanished">簽署交易</translation>
+        <translation>簽署交易</translation>
     </message>
-</context>
+<message><source>Browser opened. Approve the transaction in your wallet. The terminal is waiting on a single-use loopback bridge — this dialog will close automatically when the wallet returns the signature.</source><translation>瀏覽器已開啟。請在錢包中核准交易。終端正在等待一次性回環橋接 — 當錢包返回簽名後，此對話框將自動關閉。</translation></message></context>
 <context>
     <name>fincept::workflow::DeployDialog</name>
     <message>
         <source>CANCEL</source>
-        <translation type="vanished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>DEPLOY</source>
-        <translation type="vanished">部署</translation>
+        <translation>部署</translation>
     </message>
     <message>
         <source>DEPLOY WORKFLOW</source>
-        <translation type="vanished">部署 WORKFLOW</translation>
+        <translation>部署 WORKFLOW</translation>
     </message>
     <message>
         <source>DESCRIPTION</source>
-        <translation type="vanished">說明</translation>
+        <translation>說明</translation>
     </message>
     <message>
         <source>Deploy Workflow</source>
-        <translation type="vanished">部署 Workflow (工作流程)</translation>
+        <translation>部署 Workflow (工作流程)</translation>
     </message>
     <message>
         <source>Describe what this workflow does...</source>
-        <translation type="vanished">描述此 Workflow (工作流程) 的用途...</translation>
+        <translation>描述此 Workflow (工作流程) 的用途...</translation>
     </message>
     <message>
         <source>SAVE DRAFT</source>
-        <translation type="vanished">儲存 DRAFT</translation>
+        <translation>儲存 DRAFT</translation>
     </message>
     <message>
         <source>WORKFLOW NAME</source>
-        <translation type="vanished">工作流名稱</translation>
+        <translation>工作流名稱</translation>
     </message>
 </context>
 <context>
     <name>fincept::workflow::ExecutionResultsPanel</name>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>COPIED!</source>
-        <translation type="vanished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <source>COPY</source>
-        <translation type="vanished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <source>Copy all results to clipboard</source>
-        <translation type="vanished">複製所有結果到剪貼簿</translation>
+        <translation>複製所有結果到剪貼簿</translation>
     </message>
     <message>
         <source>EXECUTION RESULTS</source>
-        <translation type="vanished">執行 結果</translation>
+        <translation>執行 結果</translation>
     </message>
     <message>
         <source>Expand / Collapse</source>
-        <translation type="vanished">展開 / 收合</translation>
+        <translation>展開 / 收合</translation>
     </message>
     <message>
         <source>IDLE</source>
-        <translation type="vanished">閒置</translation>
+        <translation>閒置</translation>
     </message>
     <message>
         <source>RUNNING…</source>
-        <translation type="vanished">執行中…</translation>
+        <translation>執行中…</translation>
     </message>
 </context>
 <context>
     <name>fincept::workflow::NodeEditorToolbar</name>
     <message>
         <source>CLEAR</source>
-        <translation type="vanished">清除</translation>
+        <translation>清除</translation>
     </message>
     <message>
         <source>DEPLOY</source>
-        <translation type="vanished">部署</translation>
+        <translation>部署</translation>
     </message>
     <message>
         <source>DRAFT</source>
-        <translation type="vanished">草稿</translation>
+        <translation>草稿</translation>
     </message>
     <message>
         <source>EXECUTE</source>
-        <translation type="vanished">執行</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <source>EXPORT</source>
-        <translation type="vanished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>IMPORT</source>
-        <translation type="vanished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <source>LOAD</source>
-        <translation type="vanished">載入</translation>
+        <translation>載入</translation>
     </message>
     <message>
         <source>Load a saved workflow</source>
-        <translation type="vanished">載入已儲存的 Workflow (工作流程)</translation>
+        <translation>載入已儲存的 Workflow (工作流程)</translation>
     </message>
     <message>
         <source>REDO</source>
-        <translation type="vanished">重做</translation>
+        <translation>重做</translation>
     </message>
     <message>
         <source>Redo last action (Ctrl+Y)</source>
-        <translation type="vanished">重做上一個動作 (Ctrl+Y)</translation>
+        <translation>重做上一個動作 (Ctrl+Y)</translation>
     </message>
     <message>
         <source>SAVE</source>
-        <translation type="vanished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Save workflow to database</source>
-        <translation type="vanished">將 Workflow (工作流程) 儲存至資料庫</translation>
+        <translation>將 Workflow (工作流程) 儲存至資料庫</translation>
     </message>
     <message>
         <source>TEMPLATES</source>
-        <translation type="vanished">範本</translation>
+        <translation>範本</translation>
     </message>
     <message>
         <source>UNDO</source>
-        <translation type="vanished">復原</translation>
+        <translation>復原</translation>
     </message>
     <message>
         <source>Undo last action (Ctrl+Z)</source>
-        <translation type="vanished">復原上一個動作 (Ctrl+Z)</translation>
+        <translation>復原上一個動作 (Ctrl+Z)</translation>
     </message>
 </context>
 <context>
     <name>fincept::workflow::NodePalette</name>
     <message>
         <source>NODES</source>
-        <translation type="vanished">節點</translation>
+        <translation>節點</translation>
     </message>
     <message>
         <source>Search nodes...</source>
-        <translation type="vanished">搜尋節點...</translation>
+        <translation>搜尋節點...</translation>
     </message>
 </context>
 <context>
     <name>fincept::workflow::NodePropertiesPanel</name>
     <message>
         <source>DEL</source>
-        <translation type="obsolete">DEL</translation>
+        <translation>DEL</translation>
     </message>
     <message>
         <source>NAME</source>
-        <translation type="vanished">名稱</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <source>PARAMETERS</source>
-        <translation type="vanished">參數</translation>
+        <translation>參數</translation>
     </message>
     <message>
         <source>PROPERTIES</source>
-        <translation type="vanished">屬性</translation>
+        <translation>屬性</translation>
     </message>
     <message>
         <source>SETTINGS</source>
-        <translation type="vanished">設定</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>Select a node\nto edit properties</source>
         <translation type="vanished">選擇節點\n編輯屬性</translation>
     </message>
-</context>
+<message><source>Select a node
+to edit properties</source><translation>選取一個節點
+以編輯屬性</translation></message></context>
 <context>
     <name>fincept::workflow::ParameterWidgetFactory</name>
     <message>
@@ -30384,7 +30498,7 @@ X-API-Key: xyz</translation>
         <source>\u25C6</source>
         <translation type="obsolete">\u25C6</translation>
     </message>
-</context>
+<message><source>^GSPTSE</source><translation>^GSPTSE</translation></message><message><source>^FTSE</source><translation>^FTSE</translation></message><message><source>^STOXX50E</source><translation>^STOXX50E</translation></message><message><source>^AXJO</source><translation>^AXJO</translation></message><message><source>^NSEI</source><translation>^NSEI</translation></message><message><source>^N225</source><translation>^N225</translation></message><message><source>^HSI</source><translation>^HSI</translation></message></context>
 <context>
     <name>services::equity::EquityResearchService</name>
     <message>
