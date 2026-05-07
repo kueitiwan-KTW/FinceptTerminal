@@ -5,42 +5,42 @@
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="83" />
         <source>AI QUANT LAB</source>
-        <translation type="unfinished">AI 量化實驗室</translation>
+        <translation>AI 量化實驗室</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="146" />
         <source>MODULES</source>
-        <translation type="unfinished">模組</translation>
+        <translation>模組</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="202" />
         <source>MODULE INFO</source>
-        <translation type="unfinished">模組資訊</translation>
+        <translation>模組資訊</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="230" />
         <source>PLATFORM STATS</source>
-        <translation type="unfinished">平台統計</translation>
+        <translation>平台統計</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="267" />
         <source>ENGINE:</source>
-        <translation type="unfinished">引擎：</translation>
+        <translation>引擎：</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="269" />
         <source>QLIB + GS QUANT + PYTHON</source>
-        <translation type="unfinished">Qlib + GS Quant + Python</translation>
+        <translation>Qlib + GS Quant + Python</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="275" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/AIQuantLabScreen.cpp" line="448" />
         <source>Script: </source>
-        <translation type="unfinished">Script：</translation>
+        <translation>Script：</translation>
     </message>
 </context>
 <context>
@@ -48,7 +48,7 @@
     <message>
         <location filename="../src/services/ai_quant_lab/AIQuantLabService.cpp" line="196" />
         <source>Training ended without result</source>
-        <translation type="unfinished">訓練結束但沒有結果</translation>
+        <translation>訓練結束但沒有結果</translation>
     </message>
 </context>
 <context>
@@ -77,17 +77,17 @@
     <message>
         <location filename="../src/screens/about/AboutScreen.cpp" line="206" />
         <source>gnu.org/licenses/agpl-3.0</source>
-        <translation type="unfinished">gnu.org/licenses/agpl-3.0</translation>
+        <translation>gnu.org/licenses/agpl-3.0</translation>
     </message>
     <message>
         <location filename="../src/screens/about/AboutScreen.cpp" line="236" />
         <source>support@fincept.in</source>
-        <translation type="unfinished">support@fincept.in</translation>
+        <translation>support@fincept.in</translation>
     </message>
     <message>
         <location filename="../src/screens/about/AboutScreen.cpp" line="136" />
         <source>v%1</source>
-        <translation type="unfinished">v%1</translation>
+        <translation>v%1</translation>
     </message>
     <message>
         <location filename="../src/screens/about/AboutScreen.cpp" line="168" />
@@ -100,116 +100,116 @@
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="88" />
         <source>ACCOUNTS</source>
-        <translation type="unfinished">帳戶</translation>
+        <translation>帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="108" />
         <source>Account name...</source>
-        <translation type="unfinished">帳戶名稱...</translation>
+        <translation>帳戶名稱...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="113" />
         <source>+ ADD</source>
-        <translation type="unfinished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="119" />
         <source>REMOVE</source>
-        <translation type="unfinished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="135" />
         <source>Select an account to configure credentials</source>
-        <translation type="unfinished">選擇一個帳戶來設定憑證</translation>
+        <translation>選擇一個帳戶來設定憑證</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="166" />
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="678" />
         <source>RENAME</source>
-        <translation type="unfinished">重新命名</translation>
+        <translation>重新命名</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="172" />
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="682" />
         <source>CONNECT</source>
-        <translation type="unfinished">連線</translation>
+        <translation>連線</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="449" />
         <source>Connecting...</source>
-        <translation type="unfinished">連線中...</translation>
+        <translation>連線中...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="556" />
         <source>Zerodha</source>
-        <translation type="unfinished">Zerodha</translation>
+        <translation>Zerodha</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="564" />
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="595" />
         <source> First-time setup (4 steps)</source>
-        <translation type="unfinished"> 首次設定（4 個步驟）</translation>
+        <translation> 首次設定（4 個步驟）</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="601" />
         <source>Auto-login (TOTP)</source>
-        <translation type="unfinished">自動登入（TOTP）</translation>
+        <translation>自動登入（TOTP）</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="602" />
         <source>Browser login</source>
-        <translation type="unfinished">瀏覽器登入</translation>
+        <translation>瀏覽器登入</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="645" />
         <source>Open Kite login in browser</source>
-        <translation type="unfinished">在瀏覽器中開啟Kite登入</translation>
+        <translation>在瀏覽器中開啟Kite登入</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="649" />
         <source>Redirect didn't work? Paste request_token manually</source>
-        <translation type="unfinished">重定向不起作用？手動貼上 request_token</translation>
+        <translation>重定向不起作用？手動貼上 request_token</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="660" />
         <source>Connect with pasted token</source>
-        <translation type="unfinished">使用貼上的令牌連接</translation>
+        <translation>使用貼上的令牌連接</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="746" />
         <source>Logging in...</source>
-        <translation type="unfinished">登入中...</translation>
+        <translation>登入中...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="804" />
         <source>Enter API Key and API Secret first</source>
-        <translation type="unfinished">首先輸入 API Key 和 API Secret</translation>
+        <translation>首先輸入 API Key 和 API Secret</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="820" />
         <source>Port 5010 busy - use manual paste fallback</source>
-        <translation type="unfinished">連接埠 5010 忙碌 - 使用手動貼上備援</translation>
+        <translation>連接埠 5010 忙碌 - 使用手動貼上備援</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="832" />
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="883" />
         <source>Exchanging token...</source>
-        <translation type="unfinished">交換 Token (權杖) 中...</translation>
+        <translation>交換 Token (權杖) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="841" />
         <source>Browser login timed out - try again or paste manually</source>
-        <translation type="unfinished">瀏覽器登入逾時 - 請重試或手動貼上</translation>
+        <translation>瀏覽器登入逾時 - 請重試或手動貼上</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="862" />
         <source>Enter API Key, API Secret, and paste request_token</source>
-        <translation type="unfinished">輸入 API Key、API Secret，然後貼上 request_token</translation>
+        <translation>輸入 API Key、API Secret，然後貼上 request_token</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="878" />
         <source>Could not find request_token in pasted text</source>
-        <translation type="unfinished">在貼上的文字中找不到 request_token</translation>
+        <translation>在貼上的文字中找不到 request_token</translation>
     </message>
 </context>
 <context>
@@ -217,43 +217,43 @@
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="155" />
         <source>No active locks. Lock $FNCPT above to start earning yield.</source>
-        <translation type="unfinished">沒有活動鎖。锁定$FNCPT上方即可开始赚取收益。</translation>
+        <translation>沒有活動鎖。锁定$FNCPT上方即可开始赚取收益。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="278" />
         <source>Locks feed error: %1</source>
-        <translation type="unfinished">鎖定進給錯誤：%1</translation>
+        <translation>鎖定進給錯誤：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="342" />
         <source>Extend lock…</source>
-        <translation type="unfinished">延長鎖定…</translation>
+        <translation>延長鎖定…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="343" />
         <source>Withdraw</source>
-        <translation type="unfinished">提領</translation>
+        <translation>提領</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="346" />
         <source>Available after %1</source>
-        <translation type="unfinished">可用 after %1</translation>
+        <translation>可用 after %1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="354" />
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="356" />
         <source>fincept_lock not deployed — Settings &gt; Lock program ID</source>
-        <translation type="unfinished">fincept_lock 尚未部署 — 設定 &gt; Lock 程式 ID</translation>
+        <translation>fincept_lock 尚未部署 — 設定 &gt; Lock 程式 ID</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="362" />
         <source>Extend flow lands with the Anchor program.</source>
-        <translation type="unfinished">使用 Anchor 程式延伸資金流。</translation>
+        <translation>使用 Anchor 程式延伸資金流。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/ActiveLocksPanel.cpp" line="364" />
         <source>Withdraw flow lands with the Anchor program.</source>
-        <translation type="unfinished">使用 Anchor 程式提領資金流。</translation>
+        <translation>使用 Anchor 程式提領資金流。</translation>
     </message>
 </context>
 <context>
@@ -261,53 +261,53 @@
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="96" />
         <source>ALL</source>
-        <translation type="unfinished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="97" />
         <source>SWAP</source>
-        <translation type="unfinished">交換</translation>
+        <translation>交換</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="98" />
         <source>SEND</source>
-        <translation type="unfinished">傳送</translation>
+        <translation>傳送</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="99" />
         <source>RECEIVE</source>
-        <translation type="unfinished">接收</translation>
+        <translation>接收</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="100" />
         <source>OTHER</source>
-        <translation type="unfinished">其它</translation>
+        <translation>其它</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="139" />
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="290" />
         <source>No transactions yet.</source>
-        <translation type="unfinished">尚無交易。</translation>
+        <translation>尚無交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="232" />
         <source>Activity fetch failed: %1</source>
-        <translation type="unfinished">活動獲取失敗：%1</translation>
+        <translation>活動獲取失敗：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="288" />
         <source>Connect a wallet to view activity.</source>
-        <translation type="unfinished">連線 a 錢包 to 檢視 activity.</translation>
+        <translation>連線 a 錢包 to 檢視 activity.</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="292" />
         <source>%1 of %2 events</source>
-        <translation type="unfinished">%2 個事件中的 %1 個</translation>
+        <translation>%2 個事件中的 %1 個</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/ActivityTab.cpp" line="294" />
         <source>  ·  Add a Helius API key in Settings for parsed swap and transfer details.</source>
-        <translation type="unfinished" />
+        <translation>  ·  請在設定中新增 Helius API 金鑰，以取得已解析的交換與轉帳詳情。</translation>
     </message>
 </context>
 <context>
@@ -315,12 +315,12 @@
     <message>
         <location filename="../src/screens/economics/panels/AdbPanel.cpp" line="99" />
         <source>Start year</source>
-        <translation type="unfinished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/AdbPanel.cpp" line="104" />
         <source>End year</source>
-        <translation type="unfinished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
 </context>
 <context>
@@ -328,47 +328,47 @@
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="183" />
         <source>Add Asset</source>
-        <translation type="unfinished">新增 Asset (資產)</translation>
+        <translation>新增 Asset (資產)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="197" />
         <source>BUY ASSET</source>
-        <translation type="unfinished">買入 資產</translation>
+        <translation>買入 資產</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="203" />
         <source>Type a ticker or company name to search</source>
-        <translation type="unfinished">輸入股票代碼或公司名稱進行搜尋</translation>
+        <translation>輸入股票代碼或公司名稱進行搜尋</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="211" />
         <source>e.g. AAPL, Apple, Reliance…</source>
-        <translation type="unfinished">例如AAPL、蘋果、信實…</translation>
+        <translation>例如AAPL、蘋果、信實…</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="216" />
         <source>e.g. 10</source>
-        <translation type="unfinished">例如：10</translation>
+        <translation>例如：10</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="220" />
         <source>e.g. 150.00</source>
-        <translation type="unfinished">例如：150.00</translation>
+        <translation>例如：150.00</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="229" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="239" />
         <source>ADD</source>
-        <translation type="unfinished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="348" />
         <source>No results found</source>
-        <translation type="unfinished">找不到結果</translation>
+        <translation>找不到結果</translation>
     </message>
 </context>
 <context>
@@ -376,37 +376,37 @@
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="971" />
         <source>Record Dividend</source>
-        <translation type="unfinished">記錄 Dividend (股利)</translation>
+        <translation>記錄 Dividend (股利)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="979" />
         <source>RECORD DIVIDEND</source>
-        <translation type="unfinished">RECORD 股息</translation>
+        <translation>RECORD 股息</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="994" />
         <source>e.g. 0.88</source>
-        <translation type="unfinished">例如：0.88</translation>
+        <translation>例如：0.88</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="1004" />
         <source>Optional note</source>
-        <translation type="unfinished">選填備註</translation>
+        <translation>選填備註</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="1013" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="1022" />
         <source>RECORD</source>
-        <translation type="unfinished">錄製</translation>
+        <translation>錄製</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="1030" />
         <source>Required!</source>
-        <translation type="unfinished">必填！</translation>
+        <translation>必填！</translation>
     </message>
 </context>
 <context>
@@ -414,23 +414,23 @@
     <message>
         <location filename="../src/screens/dashboard/canvas/AddWidgetDialog.cpp" line="66" />
         <source>Add Widget</source>
-        <translation type="unfinished">新增 Widget (小工具)</translation>
+        <translation>新增 Widget (小工具)</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/canvas/AddWidgetDialog.cpp" line="76" />
         <location filename="../src/screens/dashboard/canvas/AddWidgetDialog.cpp" line="137" />
         <source>ADD WIDGET</source>
-        <translation type="unfinished">新增小工具</translation>
+        <translation>新增小工具</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/canvas/AddWidgetDialog.cpp" line="89" />
         <source>Search widgets...</source>
-        <translation type="unfinished">搜尋 Widget (小工具)...</translation>
+        <translation>搜尋 Widget (小工具)...</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/canvas/AddWidgetDialog.cpp" line="126" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -440,37 +440,37 @@
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="136" />
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="447" />
         <source>Default (global LLM)</source>
-        <translation type="unfinished">預設 (global LLM)</translation>
+        <translation>預設 (global LLM)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="118" />
         <source>AGENT CHAT</source>
-        <translation type="unfinished">代理 對話</translation>
+        <translation>代理 對話</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="130" />
         <source>AGENT:</source>
-        <translation type="unfinished">代理:</translation>
+        <translation>代理:</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="142" />
         <source>Select a configured agent, or Default to use the global LLM.</source>
-        <translation type="unfinished">選擇已配置的代理，或預設使用全域 LLM。</translation>
+        <translation>選擇已配置的代理，或預設使用全域 LLM。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="148" />
         <source>Search agent...</source>
-        <translation type="unfinished">搜尋 Agent...</translation>
+        <translation>搜尋 Agent...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="190" />
         <source>No model</source>
-        <translation type="unfinished">無模型</translation>
+        <translation>無模型</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="194" />
         <source>Active LLM — configure in Settings &gt; LLM Configuration</source>
-        <translation type="unfinished">目前使用的 LLM — 在設定 &gt; LLM 設定中配置</translation>
+        <translation>目前使用的 LLM — 在設定 &gt; LLM 設定中配置</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="198" />
@@ -483,12 +483,12 @@
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="211" />
         <source>AUTO-ROUTE</source>
-        <translation type="unfinished">自動路由</translation>
+        <translation>自動路由</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="215" />
         <source>When ON, the system picks the best agent for each query.</source>
-        <translation type="unfinished">開啟時，系統會為每個查詢選擇最佳 Agent。</translation>
+        <translation>開啟時，系統會為每個查詢選擇最佳 Agent。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="225" />
@@ -498,7 +498,7 @@
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="243" />
         <source>PORTFOLIO:</source>
-        <translation type="unfinished">投資組合:</translation>
+        <translation>投資組合:</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="249" />
@@ -509,18 +509,18 @@
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="304" />
         <source>How can I help you?</source>
-        <translation type="unfinished">有什麼我可以幫您的嗎？</translation>
+        <translation>有什麼我可以幫您的嗎？</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="358" />
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="958" />
         <source>Agent is thinking</source>
-        <translation type="unfinished">Agent 思考中</translation>
+        <translation>Agent 思考中</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="376" />
         <source>Message agent... (Shift+Enter for new line, Enter to send)</source>
-        <translation type="unfinished">訊息代理程式...（Shift+Enter 換行，Enter 發送）</translation>
+        <translation>訊息代理程式...（Shift+Enter 換行，Enter 發送）</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="395" />
@@ -530,12 +530,12 @@
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="496" />
         <source>Streaming...</source>
-        <translation type="unfinished">串流中...</translation>
+        <translation>串流中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="533" />
         <source>Agent execution failed</source>
-        <translation type="unfinished">Agent 執行失敗</translation>
+        <translation>Agent 執行失敗</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="534" />
@@ -545,17 +545,17 @@
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="602" />
         <source>No LLM configured</source>
-        <translation type="unfinished">尚未設定 LLM</translation>
+        <translation>尚未設定 LLM</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="606" />
         <source>Unconfigured</source>
-        <translation type="unfinished">未設定</translation>
+        <translation>未設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="608" />
         <source>No LLM provider configured — go to Settings &gt; LLM Configuration</source>
-        <translation type="unfinished">尚未設定 LLM 供應商 — 前往設定 &gt; LLM 設定</translation>
+        <translation>尚未設定 LLM 供應商 — 前往設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="939" />
@@ -565,7 +565,7 @@
     <message>
         <location filename="../src/screens/agent_config/AgentChatPanel.cpp" line="941" />
         <source>Processing...</source>
-        <translation type="unfinished">處理中...</translation>
+        <translation>處理中...</translation>
     </message>
 </context>
 <context>
@@ -573,12 +573,12 @@
     <message>
         <location filename="../src/screens/agent_config/AgentConfigScreen.cpp" line="78" />
         <source>AGENT STUDIO</source>
-        <translation type="unfinished">代理 工作室</translation>
+        <translation>代理 工作室</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentConfigScreen.cpp" line="115" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
 </context>
 <context>
@@ -586,7 +586,7 @@
     <message>
         <location filename="../src/screens/dashboard/widgets/AgentErrorsWidget.cpp" line="109" />
         <source>Configure — Agent Errors</source>
-        <translation type="unfinished">配置 - 代理錯誤</translation>
+        <translation>配置 - 代理錯誤</translation>
     </message>
 </context>
 <context>
@@ -594,75 +594,75 @@
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="66" />
         <source>AGENTS</source>
-        <translation type="unfinished">代理</translation>
+        <translation>代理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="77" />
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="421" />
         <source>All Categories</source>
-        <translation type="unfinished">All 分類</translation>
+        <translation>All 分類</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="93" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="123" />
         <source>JSON EDITOR</source>
-        <translation type="unfinished">JSON 編輯器</translation>
+        <translation>JSON 編輯器</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="134" />
         <source>+ ADD TO TEAM</source>
-        <translation type="unfinished">+ 新增至團隊</translation>
+        <translation>+ 新增至團隊</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="160" />
         <source>Select an agent</source>
-        <translation type="unfinished">選擇an agent</translation>
+        <translation>選擇an agent</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="189" />
         <source>System prompt / instructions...</source>
-        <translation type="unfinished">系統提示/說明...</translation>
+        <translation>系統提示/說明...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="230" />
         <source>SAVE CONFIG</source>
-        <translation type="unfinished">儲存 設定</translation>
+        <translation>儲存 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="237" />
         <source>DELETE</source>
-        <translation type="unfinished">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="260" />
         <source>APPLY JSON</source>
-        <translation type="unfinished">套用 JSON</translation>
+        <translation>套用 JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="307" />
         <source>Output:</source>
-        <translation type="unfinished">輸出:</translation>
+        <translation>輸出:</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="323" />
         <source>Enter a query to test this agent...</source>
-        <translation type="unfinished">輸入查詢以測試此 Agent...</translation>
+        <translation>輸入查詢以測試此 Agent...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="330" />
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="436" />
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="472" />
         <source>RUN AGENT</source>
-        <translation type="unfinished">執行 AGENT</translation>
+        <translation>執行 AGENT</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="349" />
         <source>RESULT</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="443" />
@@ -673,32 +673,32 @@
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="527" />
         <source>Default (Global)</source>
-        <translation type="unfinished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="601" />
         <source>No provider configured — go to Settings &gt; LLM Config</source>
-        <translation type="unfinished">尚未設定供應商 — 前往設定 &gt; LLM 設定</translation>
+        <translation>尚未設定供應商 — 前往設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="755" />
         <source>Config saved</source>
-        <translation type="unfinished">設定已儲存</translation>
+        <translation>設定已儲存</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="763" />
         <source>Config deleted</source>
-        <translation type="unfinished">設定已刪除</translation>
+        <translation>設定已刪除</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="774" />
         <source>RUNNING...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/AgentsViewPanel.cpp" line="777" />
         <source>Executing...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
 </context>
 <context>
@@ -706,7 +706,7 @@
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="245" />
         <source>Fincept AI</source>
-        <translation type="unfinished">Fincept AI</translation>
+        <translation>Fincept AI</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="251" />
@@ -716,83 +716,83 @@
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="268" />
         <source>New conversation</source>
-        <translation type="unfinished">新對話</translation>
+        <translation>新對話</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="300" />
         <source>Ask anything…</source>
-        <translation type="unfinished">詢問任何問題…</translation>
+        <translation>詢問任何問題…</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="312" />
         <source>Voice input</source>
-        <translation type="unfinished">語音輸入</translation>
+        <translation>語音輸入</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="324" />
         <source>Send  (Enter)</source>
-        <translation type="unfinished">傳送 (Enter)</translation>
+        <translation>傳送 (Enter)</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="349" />
         <source>Voice mode active</source>
-        <translation type="unfinished">語音模式啟用中</translation>
+        <translation>語音模式啟用中</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="353" />
         <source>■ Stop</source>
-        <translation type="unfinished">■ 停止</translation>
+        <translation>■ 停止</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="423" />
         <source>How can I help you?</source>
-        <translation type="unfinished">有什麼我可以幫您的嗎？</translation>
+        <translation>有什麼我可以幫您的嗎？</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="431" />
         <source>Session error — please restart.</source>
-        <translation type="unfinished">工作階段錯誤 — 請重新啟動。</translation>
+        <translation>工作階段錯誤 — 請重新啟動。</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="478" />
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="907" />
         <source>AI is thinking…</source>
-        <translation type="unfinished">AI 思考中…</translation>
+        <translation>AI 思考中…</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="665" />
         <source>AI</source>
-        <translation type="unfinished">AI</translation>
+        <translation>AI</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="779" />
         <source>⚠ </source>
-        <translation type="unfinished">⚠ </translation>
+        <translation>⚠ </translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="794" />
         <source>⚠ Voice responses unavailable — Qt TextToSpeech not installed. Input-only mode active.</source>
-        <translation type="unfinished" />
+        <translation>⚠ 語音回覆不可用 — 未安裝 Qt TextToSpeech。僅限輸入模式。</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="800" />
         <source>⚠ No TTS engine found (install speech-dispatcher on Linux). Input-only mode active.</source>
-        <translation type="unfinished" />
+        <translation>⚠ 找不到 TTS 引擎（請在 Linux 上安裝 speech-dispatcher）。僅限輸入模式。</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="858" />
         <source>Voice response skipped (TTS unavailable)</source>
-        <translation type="unfinished">已略過語音回應（TTS 不可用）</translation>
+        <translation>已略過語音回應（TTS 不可用）</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="899" />
         <source>▶ AI speaking…</source>
-        <translation type="unfinished">▶ AI 朗讀中…</translation>
+        <translation>▶ AI 朗讀中…</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatBubble.cpp" line="903" />
         <source>● Listening — speak now…</source>
-        <translation type="unfinished">● 聆聽中 — 請說話…</translation>
+        <translation>● 聆聽中 — 請說話…</translation>
     </message>
 </context>
 <context>
@@ -800,17 +800,17 @@
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="251" />
         <source>Fincept AI</source>
-        <translation type="unfinished">Fincept AI</translation>
+        <translation>Fincept AI</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="258" />
         <source>New Chat  (Ctrl+N)</source>
-        <translation type="unfinished">新對話 (Ctrl+N)</translation>
+        <translation>新對話 (Ctrl+N)</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="276" />
         <source>Search sessions...</source>
-        <translation type="unfinished">搜尋工作階段...</translation>
+        <translation>搜尋工作階段...</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="315" />
@@ -826,35 +826,35 @@
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="353" />
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1263" />
         <source>No provider</source>
-        <translation type="unfinished">無提供者</translation>
+        <translation>無提供者</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="355" />
         <source>Active LLM Provider</source>
-        <translation type="unfinished">目前的 LLM 提供者</translation>
+        <translation>目前的 LLM 提供者</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="357" />
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="441" />
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1268" />
         <source>No model</source>
-        <translation type="unfinished">無模型</translation>
+        <translation>無模型</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="359" />
         <source>Active Model — change in Settings &gt; LLM Configuration</source>
-        <translation type="unfinished">目前模型 — 在設定 &gt; LLM 設定中變更</translation>
+        <translation>目前模型 — 在設定 &gt; LLM 設定中變更</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="421" />
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1221" />
         <source>New Conversation</source>
-        <translation type="unfinished">新對話</translation>
+        <translation>新對話</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="447" />
         <source>Active model — change in Settings &gt; LLM Configuration</source>
-        <translation type="unfinished">目前模型 — 在設定 &gt; LLM 設定中變更</translation>
+        <translation>目前模型 — 在設定 &gt; LLM 設定中變更</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="451" />
@@ -865,37 +865,37 @@
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="470" />
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="663" />
         <source>AI is thinking</source>
-        <translation type="unfinished">AI 思考中</translation>
+        <translation>AI 思考中</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="489" />
         <source>How can I help you?</source>
-        <translation type="unfinished">有什麼我可以幫您的嗎？</translation>
+        <translation>有什麼我可以幫您的嗎？</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="567" />
         <source>Message Fincept AI...</source>
-        <translation type="unfinished">向 Fincept AI 提問...</translation>
+        <translation>向 Fincept AI 提問...</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="588" />
         <source>Attach a file to this message</source>
-        <translation type="unfinished">附加檔案到此訊息</translation>
+        <translation>附加檔案到此訊息</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="607" />
         <source>Send  ↑</source>
-        <translation type="unfinished">送出 ↑</translation>
+        <translation>送出 ↑</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="807" />
         <source>⊕ </source>
-        <translation type="unfinished">⊕ </translation>
+        <translation>⊕ </translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="917" />
         <source>Calling tool...</source>
-        <translation type="unfinished">呼叫工具中...</translation>
+        <translation>呼叫工具中...</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1070" />
@@ -909,34 +909,36 @@
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1082" />
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1156" />
         <source>Copied!</source>
-        <translation type="unfinished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1112" />
         <source>AI</source>
-        <translation type="unfinished">AI</translation>
+        <translation>AI</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1255" />
         <source>Fincept LLM</source>
-        <translation type="unfinished">Fincept 大語言模型</translation>
+        <translation>Fincept 大語言模型</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1256" />
         <source>Fincept managed AI service
 
 Change in Settings &gt; LLM Configuration</source>
-        <translation type="unfinished" />
+        <translation>Fincept 代管 AI 服務
+
+可在設定 &gt; LLM 設定中變更</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1259" />
         <source>Provider: </source>
-        <translation type="unfinished">提供者：</translation>
+        <translation>提供者：</translation>
     </message>
     <message>
         <location filename="../src/ai_chat/AiChatScreen.cpp" line="1266" />
         <source>Configure in Settings</source>
-        <translation type="unfinished">在設定中配置</translation>
+        <translation>在設定中配置</translation>
     </message>
 </context>
 <context>
@@ -944,12 +946,12 @@ Change in Settings &gt; LLM Configuration</source>
     <message>
         <location filename="../src/screens/economics/panels/AkShareChinaPanel.cpp" line="52" />
         <source>SERIES</source>
-        <translation type="unfinished">序列</translation>
+        <translation>序列</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/AkShareChinaPanel.cpp" line="60" />
         <source>Data from China National Bureau of Statistics via AkShare</source>
-        <translation type="unfinished">數據來自中國國家統計局 AkShare</translation>
+        <translation>數據來自中國國家統計局 AkShare</translation>
     </message>
 </context>
 <context>
@@ -957,64 +959,65 @@ Change in Settings &gt; LLM Configuration</source>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="227" />
         <source>AKSHARE DATA EXPLORER</source>
-        <translation type="unfinished">AKSHARE 資料瀏覽器</translation>
+        <translation>AKSHARE 資料瀏覽器</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="229" />
         <source>1000+ CHINESE &amp; GLOBAL FINANCIAL DATA ENDPOINTS</source>
-        <translation type="unfinished">1000+ 中國與全球金融資料端點</translation>
+        <translation>1000+ 中國與全球金融資料端點</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="236" />
         <source>FREE API</source>
-        <translation type="unfinished">免費 API</translation>
+        <translation>免費 API</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="294" />
         <source>Search endpoints...</source>
-        <translation type="unfinished">搜尋 endpoints...</translation>
+        <translation>搜尋 endpoints...</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="297" />
         <source>0 endpoints</source>
-        <translation type="unfinished">0 個端點</translation>
+        <translation>0 個端點</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="311" />
         <source>Select a data source above
 to load available endpoints</source>
-        <translation type="unfinished" />
+        <translation>請在上方選擇資料來源
+以載入可用端點</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="330" />
         <source>SYMBOL</source>
-        <translation type="unfinished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="337" />
         <source>START</source>
-        <translation type="unfinished">開始</translation>
+        <translation>開始</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="341" />
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="349" />
         <source>YYYY-MM-DD</source>
-        <translation type="unfinished">YYYY-MM-DD</translation>
+        <translation>YYYY-MM-DD</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="345" />
         <source>END</source>
-        <translation type="unfinished">結束</translation>
+        <translation>結束</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="353" />
         <source>PERIOD</source>
-        <translation type="unfinished">期間</translation>
+        <translation>期間</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="360" />
         <source>EXECUTE</source>
-        <translation type="unfinished">執行</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="398" />
@@ -1024,52 +1027,52 @@ to load available endpoints</source>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="405" />
         <source>JSON</source>
-        <translation type="unfinished">JSON</translation>
+        <translation>JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="411" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="457" />
         <source>AKSHARE DATA</source>
-        <translation type="unfinished">AKSHARE 資料</translation>
+        <translation>AKSHARE 資料</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="462" />
         <source>SOURCE: --</source>
-        <translation type="unfinished">來源: --</translation>
+        <translation>來源: --</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="489" />
         <source>SOURCE: </source>
-        <translation type="unfinished">SOURCE:</translation>
+        <translation>SOURCE:</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="575" />
         <source>Loading endpoints...</source>
-        <translation type="unfinished">載入 endpoints 中...</translation>
+        <translation>載入 endpoints 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="588" />
         <source>Failed to load endpoints</source>
-        <translation type="unfinished">載入 endpoints 失敗</translation>
+        <translation>載入 endpoints 失敗</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="651" />
         <source>Select an endpoint</source>
-        <translation type="unfinished">選擇 endpoint</translation>
+        <translation>選擇 endpoint</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="675" />
         <source>Querying </source>
-        <translation type="unfinished">查詢中 </translation>
+        <translation>查詢中 </translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="723" />
         <source>No data returned</source>
-        <translation type="unfinished">沒有回傳資料</translation>
+        <translation>沒有回傳資料</translation>
     </message>
     <message>
         <location filename="../src/screens/akshare/AkShareScreen.cpp" line="788" />
@@ -1087,17 +1090,17 @@ to load available endpoints</source>
     <message>
         <location filename="../src/services/akshare/AkShareService.cpp" line="24" />
         <source>Endpoint listing failed</source>
-        <translation type="unfinished">Endpoint 清單取得失敗</translation>
+        <translation>Endpoint 清單取得失敗</translation>
     </message>
     <message>
         <location filename="../src/services/akshare/AkShareService.cpp" line="35" />
         <source>Empty endpoint response</source>
-        <translation type="unfinished">Endpoint 回應為空</translation>
+        <translation>Endpoint 回應為空</translation>
     </message>
     <message>
         <location filename="../src/services/akshare/AkShareService.cpp" line="43" />
         <source>Invalid endpoint JSON: %1</source>
-        <translation type="unfinished">In有效 endpoint JSON: %1</translation>
+        <translation>In有效 endpoint JSON: %1</translation>
     </message>
 </context>
 <context>
@@ -1105,27 +1108,27 @@ to load available endpoints</source>
     <message>
         <location filename="../src/screens/algo_trading/AlgoTradingScreen.cpp" line="92" />
         <source>ALGO TRADING</source>
-        <translation type="unfinished">演算法交易</translation>
+        <translation>演算法交易</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/AlgoTradingScreen.cpp" line="98" />
         <source>strategy builder · backtesting · live deployment</source>
-        <translation type="unfinished">策略建構器 · 回測 · 即時部署</translation>
+        <translation>策略建構器 · 回測 · 即時部署</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/AlgoTradingScreen.cpp" line="130" />
         <source>0 LIVE</source>
-        <translation type="unfinished">0 即時</translation>
+        <translation>0 即時</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/AlgoTradingScreen.cpp" line="151" />
         <source>ENGINE:</source>
-        <translation type="unfinished">引擎：</translation>
+        <translation>引擎：</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/AlgoTradingScreen.cpp" line="160" />
         <source>IDLE</source>
-        <translation type="unfinished">閒置</translation>
+        <translation>閒置</translation>
     </message>
 </context>
 <context>
@@ -1134,186 +1137,191 @@ to load available endpoints</source>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="215" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="586" />
         <source>ALPHA ARENA</source>
-        <translation type="unfinished">ALPHA 競技場</translation>
+        <translation>ALPHA 競技場</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="219" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="718" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="226" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="722" />
         <source>CYCLE 0</source>
-        <translation type="unfinished">週期 0</translation>
+        <translation>週期 0</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="237" />
         <source>HISTORY</source>
-        <translation type="unfinished">歷史</translation>
+        <translation>歷史</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="243" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="266" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="364" />
         <source>CREATE COMPETITION</source>
-        <translation type="unfinished">建立競賽</translation>
+        <translation>建立競賽</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="283" />
         <source>COMPETITION NAME</source>
-        <translation type="unfinished">競賽名稱</translation>
+        <translation>競賽名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="291" />
         <source>TYPE</source>
-        <translation type="unfinished">類型</translation>
+        <translation>類型</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="308" />
         <source>SYMBOL</source>
-        <translation type="unfinished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="317" />
         <source>MODE</source>
-        <translation type="unfinished">模式</translation>
+        <translation>模式</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="326" />
         <source>INITIAL CAPITAL ($)</source>
-        <translation type="unfinished">初始資本（$）</translation>
+        <translation>初始資本（$）</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="339" />
         <source>INTERVAL (sec)</source>
-        <translation type="unfinished">時間間隔 (sec)</translation>
+        <translation>時間間隔 (sec)</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="353" />
         <source>AI MODELS (select 2+)</source>
-        <translation type="unfinished">AI 模型 (select 2+)</translation>
+        <translation>AI 模型 (select 2+)</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="384" />
         <source>RUN CYCLE</source>
-        <translation type="unfinished">執行 CYCLE</translation>
+        <translation>執行 CYCLE</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="391" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="731" />
         <source>AUTO RUN</source>
-        <translation type="unfinished">自動執行</translation>
+        <translation>自動執行</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="399" />
         <source>RESET</source>
-        <translation type="unfinished">重設</translation>
+        <translation>重設</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="407" />
         <source>INTERVAL: 150s</source>
-        <translation type="unfinished">間隔: 150s</translation>
+        <translation>間隔: 150s</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="444" />
         <source>LEADERBOARD</source>
-        <translation type="unfinished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="448" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="725" />
         <source>Cycle 0</source>
-        <translation type="unfinished">週期 0</translation>
+        <translation>週期 0</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="506" />
         <source>Human-in-the-loop approvals will appear here.
 High-risk trades require manual approval before execution.</source>
-        <translation type="unfinished" />
+        <translation>人工審核核准將顯示於此。
+高風險交易在執行前需要手動核准。</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="513" />
         <source>Market sentiment analysis will appear here.
 Mood: RISK_ON / RISK_OFF / MIXED</source>
-        <translation type="unfinished" />
+        <translation>市場情緒分析將顯示於此。
+情緒：風險偏好 / 風險規避 / 混合</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="529" />
         <source>Grid trading strategy configuration.
 Place buy/sell orders at regular price intervals.</source>
-        <translation type="unfinished" />
+        <translation>網格交易策略設定。
+以固定價格間隔放置買賣訂單。</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="536" />
         <source>SEC filings and company research.
 Search by ticker to load 10-K, 10-Q, 8-K filings.</source>
-        <translation type="unfinished" />
+        <translation>SEC 申報與公司研究。
+依股票代號搜尋以載入 10-K、10-Q、8-K 申報文件。</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="543" />
         <source>Broker selection and configuration.
 Supported: Kraken, Binance, Coinbase, and more.</source>
-        <translation type="unfinished" />
+        <translation>券商選擇與設定。
+支援：Kraken、Binance、Coinbase 等。</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="564" />
         <source>PAST COMPETITIONS</source>
-        <translation type="unfinished">過去競賽</translation>
+        <translation>過去競賽</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="591" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="736" />
         <source>NO COMPETITION</source>
-        <translation type="unfinished">無競賽</translation>
+        <translation>無競賽</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="613" />
         <source>Select at least 2 models</source>
-        <translation type="unfinished">請至少選擇 2 個模型</translation>
+        <translation>請至少選擇 2 個模型</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="661" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="811" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="671" />
         <source>CREATED</source>
-        <translation type="unfinished">CREATED</translation>
+        <translation>CREATED</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="675" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="789" />
         <source>COMP: </source>
-        <translation type="unfinished">COMP:</translation>
+        <translation>COMP:</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="677" />
         <source>INTERVAL: </source>
-        <translation type="unfinished">INTERVAL:</translation>
+        <translation>INTERVAL:</translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="821" />
         <source>CYCLE </source>
-        <translation type="unfinished">CYCLE </translation>
+        <translation>CYCLE </translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="822" />
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="847" />
         <source>Cycle </source>
-        <translation type="unfinished">Cycle </translation>
+        <translation>Cycle </translation>
     </message>
     <message>
         <location filename="../src/screens/alpha_arena/AlphaArenaScreen.cpp" line="824" />
         <source>RUNNING</source>
-        <translation type="unfinished">執行中</translation>
+        <translation>執行中</translation>
     </message>
 </context>
 <context>
@@ -1321,27 +1329,27 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/services/alpha_arena/AlphaArenaService.cpp" line="27" />
         <source>Engine call failed</source>
-        <translation type="unfinished">引擎呼叫失敗</translation>
+        <translation>引擎呼叫失敗</translation>
     </message>
     <message>
         <location filename="../src/services/alpha_arena/AlphaArenaService.cpp" line="30" />
         <source>%1 failed: %2</source>
-        <translation type="unfinished">%1失敗: %2</translation>
+        <translation>%1失敗: %2</translation>
     </message>
     <message>
         <location filename="../src/services/alpha_arena/AlphaArenaService.cpp" line="37" />
         <source>No response from engine</source>
-        <translation type="unfinished">引擎沒有回應</translation>
+        <translation>引擎沒有回應</translation>
     </message>
     <message>
         <location filename="../src/services/alpha_arena/AlphaArenaService.cpp" line="45" />
         <source>Invalid response: %1</source>
-        <translation type="unfinished">In有效 response: %1</translation>
+        <translation>In有效 response: %1</translation>
     </message>
     <message>
         <location filename="../src/services/alpha_arena/AlphaArenaService.cpp" line="52" />
         <source>Engine reported failure</source>
-        <translation type="unfinished">引擎回報失敗</translation>
+        <translation>引擎回報失敗</translation>
     </message>
 </context>
 <context>
@@ -1350,62 +1358,62 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="510" />
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="699" />
         <source>ALTERNATIVE INVESTMENTS</source>
-        <translation type="unfinished">另類 投資</translation>
+        <translation>另類 投資</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="512" />
         <source>27 ANALYZERS  �  10 ASSET CLASSES  �  MULTI-ASSET ANALYTICS</source>
-        <translation type="unfinished" />
+        <translation>27 個分析器  �  10 種資產類別  �  多資產分析</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="519" />
         <source>PYTHON ANALYTICS ENGINE</source>
-        <translation type="unfinished">Python ANALYTICS 引擎</translation>
+        <translation>Python ANALYTICS 引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="532" />
         <source>ASSET CLASSES</source>
-        <translation type="unfinished">資產類別</translation>
+        <translation>資產類別</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="580" />
         <source>ANALYZER</source>
-        <translation type="unfinished">分析工具</translation>
+        <translation>分析工具</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="603" />
         <source>INPUT PARAMETERS</source>
-        <translation type="unfinished">輸入參數</translation>
+        <translation>輸入參數</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="605" />
         <source>ANALYZE</source>
-        <translation type="unfinished">分析</translation>
+        <translation>分析</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="639" />
         <source>ANALYSIS RESULTS</source>
-        <translation type="unfinished">分析 結果</translation>
+        <translation>分析 結果</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="650" />
         <source>AWAITING ANALYSIS</source>
-        <translation type="unfinished">AWAITING 分析</translation>
+        <translation>AWAITING 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="823" />
         <source>CATEGORY: </source>
-        <translation type="unfinished">CATEGORY:</translation>
+        <translation>CATEGORY:</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="901" />
         <source>ANALYZING...</source>
-        <translation type="unfinished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <location filename="../src/screens/alt_investments/AltInvestmentsScreen.cpp" line="1144" />
         <source>ERROR</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
 </context>
 <context>
@@ -1413,32 +1421,32 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/portfolio/views/AnalyticsSectorsView.cpp" line="133" />
         <source>OVERVIEW</source>
-        <translation type="unfinished">OVERVIEW</translation>
+        <translation>OVERVIEW</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/AnalyticsSectorsView.cpp" line="134" />
         <source>CORRELATION</source>
-        <translation type="unfinished">相關性</translation>
+        <translation>相關性</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/AnalyticsSectorsView.cpp" line="199" />
         <source>SECTOR ALLOCATION</source>
-        <translation type="unfinished">類股 配置</translation>
+        <translation>類股 配置</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/AnalyticsSectorsView.cpp" line="244" />
         <source>SECTOR BREAKDOWN</source>
-        <translation type="unfinished">類股 分解</translation>
+        <translation>類股 分解</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/AnalyticsSectorsView.cpp" line="321" />
         <source>HOLDINGS CORRELATION MATRIX</source>
-        <translation type="unfinished">持股相關矩陣</translation>
+        <translation>持股相關矩陣</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/AnalyticsSectorsView.cpp" line="714" />
         <source>Need 2+ holdings for correlation analysis</source>
-        <translation type="unfinished">需要 2 個以上持股才能進行相關性分析</translation>
+        <translation>需要 2 個以上持股才能進行相關性分析</translation>
     </message>
 </context>
 <context>
@@ -1446,102 +1454,102 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="200" />
         <source>ASIA MARKETS TERMINAL</source>
-        <translation type="unfinished">亞洲市場終端</translation>
+        <translation>亞洲市場終端</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="202" />
         <source>407+ STOCK ENDPOINTS | CN A/B, HK, US, TW</source>
-        <translation type="unfinished">407+ 股票 端點 | CN A/B, HK, US, TW</translation>
+        <translation>407+ 股票 端點 | CN A/B, HK, US, TW</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="263" />
         <source>Search endpoints...</source>
-        <translation type="unfinished">搜尋 endpoints...</translation>
+        <translation>搜尋 endpoints...</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="271" />
         <source>SYMBOL</source>
-        <translation type="unfinished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="275" />
         <source>e.g. 000001</source>
-        <translation type="unfinished">例如：000001</translation>
+        <translation>例如：000001</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="280" />
         <source>0 endpoints</source>
-        <translation type="unfinished">0 個端點</translation>
+        <translation>0 個端點</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="313" />
         <source>Select a category to begin</source>
-        <translation type="unfinished">選擇一個類別開始</translation>
+        <translation>選擇一個類別開始</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="320" />
         <source>EXECUTE</source>
-        <translation type="unfinished">執行</translation>
+        <translation>執行</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="327" />
         <source>JSON</source>
-        <translation type="unfinished">JSON</translation>
+        <translation>JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="333" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="378" />
         <source>ASIA MARKETS</source>
-        <translation type="unfinished">亞洲市場</translation>
+        <translation>亞洲市場</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="383" />
         <source>CATEGORY: REALTIME</source>
-        <translation type="unfinished">分類: 即時</translation>
+        <translation>分類: 即時</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="388" />
         <source>REGION: CN_A</source>
-        <translation type="unfinished">地區: 中國 A 股</translation>
+        <translation>地區: 中國 A 股</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="411" />
         <source>CATEGORY: </source>
-        <translation type="unfinished">CATEGORY:</translation>
+        <translation>CATEGORY:</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="433" />
         <source>REGION: </source>
-        <translation type="unfinished">REGION:</translation>
+        <translation>REGION:</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="507" />
         <source>Loading endpoints...</source>
-        <translation type="unfinished">載入 endpoints 中...</translation>
+        <translation>載入 endpoints 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="518" />
         <source>Failed to load endpoints</source>
-        <translation type="unfinished">載入 endpoints 失敗</translation>
+        <translation>載入 endpoints 失敗</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="578" />
         <source>Select an endpoint</source>
-        <translation type="unfinished">選擇 endpoint</translation>
+        <translation>選擇 endpoint</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="628" />
         <source>Querying </source>
-        <translation type="unfinished">查詢中 </translation>
+        <translation>查詢中 </translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="673" />
         <source>No data returned</source>
-        <translation type="unfinished">沒有回傳資料</translation>
+        <translation>沒有回傳資料</translation>
     </message>
     <message>
         <location filename="../src/screens/asia_markets/AsiaMarketsScreen.cpp" line="737" />
@@ -1554,17 +1562,17 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="24" />
         <source>Endpoint listing failed</source>
-        <translation type="unfinished">Endpoint 清單取得失敗</translation>
+        <translation>Endpoint 清單取得失敗</translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="35" />
         <source>Empty endpoint response</source>
-        <translation type="unfinished">Endpoint 回應為空</translation>
+        <translation>Endpoint 回應為空</translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="43" />
         <source>Invalid endpoint JSON: %1</source>
-        <translation type="unfinished">In有效 endpoint JSON: %1</translation>
+        <translation>In有效 endpoint JSON: %1</translation>
     </message>
 </context>
 <context>
@@ -1572,275 +1580,275 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="214" />
         <source>BACKTESTING</source>
-        <translation type="unfinished">回測</translation>
+        <translation>回測</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="244" />
         <source>RUN</source>
-        <translation type="unfinished">RUN</translation>
+        <translation>RUN</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="261" />
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="1044" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="313" />
         <source>COMMANDS</source>
-        <translation type="unfinished">COMMANDS</translation>
+        <translation>COMMANDS</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="329" />
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="352" />
         <source>STRATEGY</source>
-        <translation type="unfinished">STRATEGY</translation>
+        <translation>STRATEGY</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="342" />
         <source>CATEGORY</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="363" />
         <source>PARAMETERS</source>
-        <translation type="unfinished">參數</translation>
+        <translation>參數</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="397" />
         <source>RESULTS</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="405" />
         <source>EXPORT JSON</source>
-        <translation type="unfinished">匯出 JSON</translation>
+        <translation>匯出 JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="478" />
         <source>SUMMARY</source>
-        <translation type="unfinished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="499" />
         <source>METRICS</source>
-        <translation type="unfinished">METRICS</translation>
+        <translation>METRICS</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="508" />
         <source>TRADES</source>
-        <translation type="unfinished">TRADES</translation>
+        <translation>TRADES</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="518" />
         <source>RAW JSON</source>
-        <translation type="unfinished">原始 JSON</translation>
+        <translation>原始 JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="581" />
         <source>MARKET DATA</source>
-        <translation type="unfinished">市場資料</translation>
+        <translation>市場資料</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="585" />
         <source>SYMBOLS</source>
-        <translation type="unfinished">SYMBOLS</translation>
+        <translation>SYMBOLS</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="589" />
         <source>SPY,AAPL,MSFT</source>
-        <translation type="unfinished">SPY,AAPL,MSFT</translation>
+        <translation>SPY,AAPL,MSFT</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="596" />
         <source>INITIAL CAPITAL ($)</source>
-        <translation type="unfinished">初始資本（$）</translation>
+        <translation>初始資本（$）</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="608" />
         <source>START</source>
-        <translation type="unfinished">開始</translation>
+        <translation>開始</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="616" />
         <source>END</source>
-        <translation type="unfinished">結束</translation>
+        <translation>結束</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="628" />
         <source>EXECUTION</source>
-        <translation type="unfinished">EXECUTION</translation>
+        <translation>EXECUTION</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="632" />
         <source>COMMISSION (%)</source>
-        <translation type="unfinished">佣金 (%)</translation>
+        <translation>佣金 (%)</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="643" />
         <source>SLIPPAGE (%)</source>
-        <translation type="unfinished">滑價 (%)</translation>
+        <translation>滑價 (%)</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="656" />
         <source>ADVANCED</source>
-        <translation type="unfinished">進階</translation>
+        <translation>進階</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="660" />
         <source>LEVERAGE</source>
-        <translation type="unfinished">槓桿</translation>
+        <translation>槓桿</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="671" />
         <source>STOP LOSS (%)</source>
-        <translation type="unfinished">停損 (%)</translation>
+        <translation>停損 (%)</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="683" />
         <source>TAKE PROFIT (%)</source>
-        <translation type="unfinished">停利 (%)</translation>
+        <translation>停利 (%)</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="695" />
         <source>POSITION SIZING</source>
-        <translation type="unfinished">部位大小</translation>
+        <translation>部位大小</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="717" />
         <source>BENCHMARK</source>
-        <translation type="unfinished">基準</translation>
+        <translation>基準</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="737" />
         <source>OPTIMIZATION</source>
-        <translation type="unfinished">OPTIMIZATION</translation>
+        <translation>OPTIMIZATION</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="741" />
         <source>OBJECTIVE</source>
-        <translation type="unfinished">OBJECTIVE</translation>
+        <translation>OBJECTIVE</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="750" />
         <source>METHOD</source>
-        <translation type="unfinished">METHOD</translation>
+        <translation>METHOD</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="759" />
         <source>MAX ITERATIONS</source>
-        <translation type="unfinished">最大迭代次數</translation>
+        <translation>最大迭代次數</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="778" />
         <source>WALK-FORWARD</source>
-        <translation type="unfinished">WALK-FORWARD</translation>
+        <translation>WALK-FORWARD</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="782" />
         <source>NUMBER OF SPLITS</source>
-        <translation type="unfinished">分割數量</translation>
+        <translation>分割數量</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="791" />
         <source>TRAIN RATIO</source>
-        <translation type="unfinished">訓練比例</translation>
+        <translation>訓練比例</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="812" />
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="838" />
         <source>INDICATOR</source>
-        <translation type="unfinished">INDICATOR</translation>
+        <translation>INDICATOR</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="816" />
         <source>INDICATOR TYPE</source>
-        <translation type="unfinished">指標類型</translation>
+        <translation>指標類型</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="834" />
         <source>INDICATOR SIGNALS</source>
-        <translation type="unfinished">指標訊號</translation>
+        <translation>指標訊號</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="846" />
         <source>SIGNAL MODE</source>
-        <translation type="unfinished">訊號模式</translation>
+        <translation>訊號模式</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="865" />
         <source>ML LABELS</source>
-        <translation type="unfinished">ML 標籤</translation>
+        <translation>ML 標籤</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="869" />
         <source>LABEL TYPE</source>
-        <translation type="unfinished">標籤類型</translation>
+        <translation>標籤類型</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="878" />
         <source>HORIZON</source>
-        <translation type="unfinished">HORIZON</translation>
+        <translation>HORIZON</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="887" />
         <source>THRESHOLD</source>
-        <translation type="unfinished">THRESHOLD</translation>
+        <translation>THRESHOLD</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="908" />
         <source>CV SPLITS</source>
-        <translation type="unfinished">交叉驗證分割</translation>
+        <translation>交叉驗證分割</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="912" />
         <source>SPLITTER TYPE</source>
-        <translation type="unfinished">分割器類型</translation>
+        <translation>分割器類型</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="921" />
         <source>WINDOW LENGTH</source>
-        <translation type="unfinished">窗口長度</translation>
+        <translation>窗口長度</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="930" />
         <source>STEP SIZE</source>
-        <translation type="unfinished">步長</translation>
+        <translation>步長</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="949" />
         <source>RETURNS ANALYSIS</source>
-        <translation type="unfinished">報酬分析</translation>
+        <translation>報酬分析</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="953" />
         <source>ANALYSIS TYPE</source>
-        <translation type="unfinished">分析 類型</translation>
+        <translation>分析 類型</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="962" />
         <source>ROLLING WINDOW</source>
-        <translation type="unfinished">滾動窗口</translation>
+        <translation>滾動窗口</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="981" />
         <source>SIGNAL GENERATORS</source>
-        <translation type="unfinished">訊號產生器</translation>
+        <translation>訊號產生器</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="985" />
         <source>GENERATOR TYPE</source>
-        <translation type="unfinished">產生器類型</translation>
+        <translation>產生器類型</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="1029" />
         <source>PROVIDERS:</source>
-        <translation type="unfinished">供應商：</translation>
+        <translation>供應商：</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="1036" />
         <source>STRATEGIES:</source>
-        <translation type="unfinished">策略：</translation>
+        <translation>策略：</translation>
     </message>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="1065" />
@@ -1850,7 +1858,7 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/backtesting/BacktestingScreen.cpp" line="1379" />
         <source>BACKTEST RESULTS</source>
-        <translation type="unfinished">回測結果</translation>
+        <translation>回測結果</translation>
     </message>
 </context>
 <context>
@@ -2199,7 +2207,7 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/economics/panels/BcbPanel.cpp" line="63" />
         <source>SERIES</source>
-        <translation type="unfinished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
@@ -2207,27 +2215,27 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/economics/panels/BeaPanel.cpp" line="133" />
         <source>CATEGORY</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BeaPanel.cpp" line="146" />
         <source>Filter indicators…</source>
-        <translation type="unfinished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BeaPanel.cpp" line="189" />
         <source>Start year</source>
-        <translation type="unfinished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BeaPanel.cpp" line="195" />
         <source>End year</source>
-        <translation type="unfinished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BeaPanel.cpp" line="206" />
         <source>Requires BEA_API_KEY</source>
-        <translation type="unfinished">需要 BEA_API_KEY</translation>
+        <translation>需要 BEA_API_KEY</translation>
     </message>
 </context>
 <context>
@@ -2235,22 +2243,22 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/economics/panels/BisPanel.cpp" line="77" />
         <source>Country code</source>
-        <translation type="unfinished">國家代碼</translation>
+        <translation>國家代碼</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BisPanel.cpp" line="78" />
         <source>US</source>
-        <translation type="unfinished">US</translation>
+        <translation>US</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BisPanel.cpp" line="83" />
         <source>Start year</source>
-        <translation type="unfinished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BisPanel.cpp" line="88" />
         <source>End year</source>
-        <translation type="unfinished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
 </context>
 <context>
@@ -2258,12 +2266,12 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/economics/panels/BlsPanel.cpp" line="84" />
         <source>SERIES ID</source>
-        <translation type="unfinished">序列 ID</translation>
+        <translation>序列 ID</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/BlsPanel.cpp" line="88" />
         <source>e.g. CES0000000001</source>
-        <translation type="unfinished">例如：CES0000000001</translation>
+        <translation>例如：CES0000000001</translation>
     </message>
 </context>
 <context>
@@ -2271,22 +2279,22 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/equity_trading/BroadcastOrderDialog.cpp" line="43" />
         <source>BROADCAST ORDER</source>
-        <translation type="unfinished">BROADCAST 訂單</translation>
+        <translation>BROADCAST 訂單</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/BroadcastOrderDialog.cpp" line="135" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/BroadcastOrderDialog.cpp" line="165" />
         <source>Select at least one account</source>
-        <translation type="unfinished">請至少選擇一個帳戶</translation>
+        <translation>請至少選擇一個帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/BroadcastOrderDialog.cpp" line="245" />
         <source>DONE</source>
-        <translation type="unfinished">完成</translation>
+        <translation>完成</translation>
     </message>
 </context>
 <context>
@@ -2294,12 +2302,12 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/BrokerHoldingsWidget.cpp" line="65" />
         <source>No active account — click gear to configure</source>
-        <translation type="unfinished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/BrokerHoldingsWidget.cpp" line="146" />
         <source>Configure — Holdings</source>
-        <translation type="unfinished">設定 — Holding (持股)s (持股)</translation>
+        <translation>設定 — Holding (持股)s (持股)</translation>
     </message>
 </context>
 <context>
@@ -2307,22 +2315,22 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/BuybackBurnPanel.cpp" line="174" />
         <source>Open burn transaction in Solscan</source>
-        <translation type="unfinished">在 Solscan 中開啟銷毀交易</translation>
+        <translation>在 Solscan 中開啟銷毀交易</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/BuybackBurnPanel.cpp" line="313" />
         <source>subs %1 · pred-mkt %2 · misc %3</source>
-        <translation type="unfinished">訂閱 %1 · 預測市場 %2 · 其他 %3</translation>
+        <translation>訂閱 %1 · 預測市場 %2 · 其他 %3</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/BuybackBurnPanel.cpp" line="363" />
         <source>Treasury feed error: %1</source>
-        <translation type="unfinished">庫房進給錯誤：%1</translation>
+        <translation>庫房進給錯誤：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/BuybackBurnPanel.cpp" line="373" />
         <source>Demo signature — connect a treasury endpoint for a real burn tx.</source>
-        <translation type="unfinished">示範簽名 - 連接金庫端點以進行真實的銷毀交易。</translation>
+        <translation>示範簽名 - 連接金庫端點以進行真實的銷毀交易。</translation>
     </message>
 </context>
 <context>
@@ -2330,7 +2338,7 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/ui/widgets/Card.cpp" line="30" />
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
 </context>
 <context>
@@ -2338,12 +2346,12 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="711" />
         <source>CELLS</source>
-        <translation type="unfinished">CELLS</translation>
+        <translation>CELLS</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="748" />
         <source>Rename Cell</source>
-        <translation type="unfinished">重新命名儲存格</translation>
+        <translation>重新命名儲存格</translation>
     </message>
 </context>
 <context>
@@ -2352,22 +2360,22 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="111" />
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="527" />
         <source>PY</source>
-        <translation type="unfinished">PY</translation>
+        <translation>PY</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="243" />
         <source>OUTPUT</source>
-        <translation type="unfinished">輸出</translation>
+        <translation>輸出</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="505" />
         <source>[*]</source>
-        <translation type="unfinished">[*]</translation>
+        <translation>[*]</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="522" />
         <source>MD</source>
-        <translation type="unfinished">MD</translation>
+        <translation>MD</translation>
     </message>
 </context>
 <context>
@@ -2375,12 +2383,12 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/economics/panels/CensusPanel.cpp" line="81" />
         <source>DATASET</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/CensusPanel.cpp" line="89" />
         <source>ACS 5-year estimates, state level</source>
-        <translation type="unfinished">ACS 5 年估計，州級</translation>
+        <translation>ACS 5 年估計，州級</translation>
     </message>
 </context>
 <context>
@@ -2388,27 +2396,27 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/economics/panels/CftcPanel.cpp" line="163" />
         <source>COT MARKET SENTIMENT</source>
-        <translation type="unfinished">COT 市場情緒</translation>
+        <translation>COT 市場情緒</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/CftcPanel.cpp" line="199" />
         <source>Net: —</source>
-        <translation type="unfinished">淨額: —</translation>
+        <translation>淨額: —</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/CftcPanel.cpp" line="225" />
         <source>OPEN INTEREST</source>
-        <translation type="unfinished">開啟 INTEREST</translation>
+        <translation>開啟 INTEREST</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/CftcPanel.cpp" line="231" />
         <source>OI TREND</source>
-        <translation type="unfinished">OI 趨勢</translation>
+        <translation>OI 趨勢</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/CftcPanel.cpp" line="344" />
         <source>Report: </source>
-        <translation type="unfinished">Report:</translation>
+        <translation>Report:</translation>
     </message>
 </context>
 <context>
@@ -2416,77 +2424,77 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="66" />
         <source>Mem</source>
-        <translation type="unfinished">記憶體</translation>
+        <translation>記憶體</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="67" />
         <source>Sched</source>
-        <translation type="unfinished">排程</translation>
+        <translation>排程</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="68" />
         <source>Tasks</source>
-        <translation type="unfinished">任務</translation>
+        <translation>任務</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="69" />
         <source>MCP</source>
-        <translation type="unfinished">MCP</translation>
+        <translation>MCP</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="70" />
         <source>Monitor</source>
-        <translation type="unfinished">監控</translation>
+        <translation>監控</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="112" />
         <source>AGENT MEMORY</source>
-        <translation type="unfinished">代理 記憶體</translation>
+        <translation>代理 記憶體</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="146" />
         <source>SCHEDULED QUERIES</source>
-        <translation type="unfinished">排程查詢</translation>
+        <translation>排程查詢</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="150" />
         <source>Cron-based agent queries (e.g. daily 9 AM).</source>
-        <translation type="unfinished">基於 Cron 的代理查詢（例如每天上午 9 點）。</translation>
+        <translation>基於 Cron 的代理查詢（例如每天上午 9 點）。</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="189" />
         <source>BACKGROUND TASKS</source>
-        <translation type="unfinished">BACKGROUND 任務</translation>
+        <translation>BACKGROUND 任務</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="193" />
         <source>Long-running agent queries.</source>
-        <translation type="unfinished">長時間運行的代理查詢。</translation>
+        <translation>長時間運行的代理查詢。</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="242" />
         <source>MCP SERVERS</source>
-        <translation type="unfinished">MCP 伺服器</translation>
+        <translation>MCP 伺服器</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="246" />
         <source>Model Context Protocol tool servers.</source>
-        <translation type="unfinished">模型上下文協定工具伺服器。</translation>
+        <translation>模型上下文協定工具伺服器。</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="281" />
         <source>DATA MONITORS</source>
-        <translation type="unfinished">資料監控</translation>
+        <translation>資料監控</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="285" />
         <source>Watch sources, trigger agent analysis.</source>
-        <translation type="unfinished">監控來源，觸發 Agent 分析。</translation>
+        <translation>監控來源，觸發 Agent 分析。</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatAgentPanel.cpp" line="424" />
         <source>MCP not available.</source>
-        <translation type="unfinished">MCP 不可用.</translation>
+        <translation>MCP 不可用.</translation>
     </message>
 </context>
 <context>
@@ -2494,44 +2502,44 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="91" />
         <source>New Conversation</source>
-        <translation type="unfinished">新對話</translation>
+        <translation>新對話</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="109" />
         <source>LITE</source>
-        <translation type="unfinished">LITE</translation>
+        <translation>LITE</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="111" />
         <source>Toggle Lite / Deep mode</source>
-        <translation type="unfinished">切換精簡/深度模式</translation>
+        <translation>切換精簡/深度模式</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="125" />
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="357" />
         <source>0 tokens</source>
-        <translation type="unfinished">0 代幣</translation>
+        <translation>0 代幣</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="171" />
         <source>FINCEPT AGENT</source>
-        <translation type="unfinished">FINCEPT 代理</translation>
+        <translation>FINCEPT 代理</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="221" />
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="446" />
         <source>Agent</source>
-        <translation type="unfinished">代理</translation>
+        <translation>代理</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="253" />
         <source>Ask anything... (Enter to send, Shift+Enter for new line)</source>
-        <translation type="unfinished">詢問任何內容...（Enter 發送，Shift+Enter 換行）</translation>
+        <translation>詢問任何內容...（Enter 發送，Shift+Enter 換行）</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="270" />
         <source>0 / 4000</source>
-        <translation type="unfinished">0 / 4000</translation>
+        <translation>0 / 4000</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="293" />
@@ -2542,7 +2550,7 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="295" />
         <source>Optimize prompt with AI</source>
-        <translation type="unfinished">使用 AI 最佳化 Prompt (提示)</translation>
+        <translation>使用 AI 最佳化 Prompt (提示)</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="305" />
@@ -2557,12 +2565,12 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="557" />
         <source>thinking...</source>
-        <translation type="unfinished">思考中...</translation>
+        <translation>思考中...</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatMessagePanel.cpp" line="630" />
         <source>0 credits</source>
-        <translation type="unfinished">0 點數</translation>
+        <translation>0 點數</translation>
     </message>
 </context>
 <context>
@@ -2570,22 +2578,22 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/chat_mode/ChatSessionPanel.cpp" line="35" />
         <source>CONVERSATIONS</source>
-        <translation type="unfinished">對話</translation>
+        <translation>對話</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatSessionPanel.cpp" line="43" />
         <source>TERMINAL</source>
-        <translation type="unfinished">TERMINAL</translation>
+        <translation>TERMINAL</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatSessionPanel.cpp" line="46" />
         <source>Switch to Terminal Mode (F9)</source>
-        <translation type="unfinished">切換至終端模式 (F9)</translation>
+        <translation>切換至終端模式 (F9)</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatSessionPanel.cpp" line="59" />
         <source>Search...</source>
-        <translation type="unfinished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <location filename="../src/screens/chat_mode/ChatSessionPanel.cpp" line="278" />
@@ -2598,38 +2606,38 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="877" />
         <source>PYTHON NOTEBOOK</source>
-        <translation type="unfinished">Python 筆記本</translation>
+        <translation>Python 筆記本</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="929" />
         <source>RUN ALL</source>
-        <translation type="unfinished">全部執行</translation>
+        <translation>全部執行</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="949" />
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="1251" />
         <source>KERNEL: IDLE</source>
-        <translation type="unfinished">KERNEL: 閒置</translation>
+        <translation>KERNEL: 閒置</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="955" />
         <source>Python 3.12</source>
-        <translation type="unfinished">Python 3.12</translation>
+        <translation>Python 3.12</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="971" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="978" />
         <source>Ctrl+Enter: RUN  |  Shift+Enter: RUN &amp; NEXT  |  Tab: 4 SPACES  |  Ctrl+S: SAVE</source>
-        <translation type="unfinished">Ctrl+Enter：執行 | Shift+Enter：執行並下一步 | Tab：4 空格 | Ctrl+S：儲存</translation>
+        <translation>Ctrl+Enter：執行 | Shift+Enter：執行並下一步 | Tab：4 空格 | Ctrl+S：儲存</translation>
     </message>
     <message>
         <location filename="../src/screens/code_editor/CodeEditorScreen.cpp" line="1196" />
         <source>KERNEL: BUSY</source>
-        <translation type="unfinished">核心: 忙碌</translation>
+        <translation>核心: 忙碌</translation>
     </message>
 </context>
 <context>
@@ -2637,7 +2645,7 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
     <message>
         <location filename="../src/screens/ComingSoonScreen.cpp" line="15" />
         <source>⚡</source>
-        <translation type="unfinished" />
+        <translation>⚡</translation>
     </message>
     <message>
         <location filename="../src/screens/ComingSoonScreen.cpp" line="27" />
@@ -2648,7 +2656,8 @@ Supported: Kraken, Binance, Coinbase, and more.</source>
         <location filename="../src/screens/ComingSoonScreen.cpp" line="34" />
         <source>This module is under active development.
 It will be available in a future update.</source>
-        <translation type="unfinished" />
+        <translation>此模組正在積極開發中。
+將在未來的更新中推出。</translation>
     </message>
     <message>
         <source>This module is under active development.\nIt will be available in a future update.</source>
@@ -2664,7 +2673,7 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/ui/navigation/CommandBar.cpp" line="486" />
         <source>&gt; Enter Command or /type ...</source>
-        <translation type="unfinished">&gt; 輸入指令或 /輸入 ...</translation>
+        <translation>&gt; 輸入指令或 /輸入 ...</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/CommandBar.cpp" line="868" />
@@ -2672,12 +2681,12 @@ It will be available in a future update.</source>
         <location filename="../src/ui/navigation/CommandBar.cpp" line="1302" />
         <location filename="../src/ui/navigation/CommandBar.cpp" line="1360" />
         <source>›</source>
-        <translation type="unfinished" />
+        <translation>›</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/CommandBar.cpp" line="1175" />
         <source>No results found</source>
-        <translation type="unfinished">找不到結果</translation>
+        <translation>找不到結果</translation>
     </message>
 </context>
 <context>
@@ -2685,7 +2694,7 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/ui/command/CommandPalette.cpp" line="49" />
         <source>Search actions, layouts… (Esc to cancel, Enter to run)</source>
-        <translation type="unfinished">搜尋操作、佈局...（Esc 取消，Enter 運行）</translation>
+        <translation>搜尋操作、佈局...（Esc 取消，Enter 運行）</translation>
     </message>
 </context>
 <context>
@@ -2693,17 +2702,17 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/ui/components/ComponentBrowserDialog.cpp" line="38" />
         <source>Component Browser</source>
-        <translation type="unfinished">元件瀏覽器</translation>
+        <translation>元件瀏覽器</translation>
     </message>
     <message>
         <location filename="../src/ui/components/ComponentBrowserDialog.cpp" line="59" />
         <source>COMPONENT BROWSER</source>
-        <translation type="unfinished">元件瀏覽器</translation>
+        <translation>元件瀏覽器</translation>
     </message>
     <message>
         <location filename="../src/ui/components/ComponentBrowserDialog.cpp" line="66" />
         <source>Search components…</source>
-        <translation type="unfinished">搜尋 Components (元件)…</translation>
+        <translation>搜尋 Components (元件)…</translation>
     </message>
     <message>
         <location filename="../src/ui/components/ComponentBrowserDialog.cpp" line="96" />
@@ -2716,12 +2725,12 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/report_builder/ComponentToolbar.cpp" line="127" />
         <source>B</source>
-        <translation type="unfinished">B</translation>
+        <translation>B</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ComponentToolbar.cpp" line="133" />
         <source>I</source>
-        <translation type="unfinished">I</translation>
+        <translation>I</translation>
     </message>
 </context>
 <context>
@@ -2729,17 +2738,17 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="129" />
         <source>Delete Portfolio</source>
-        <translation type="unfinished">刪除 Portfolio (投資組合)</translation>
+        <translation>刪除 Portfolio (投資組合)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="154" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="164" />
         <source>DELETE</source>
-        <translation type="unfinished">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
 </context>
 <context>
@@ -2747,7 +2756,7 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/geopolitics/ConflictMonitorPanel.cpp" line="138" />
         <source>TOP CATEGORIES</source>
-        <translation type="unfinished">熱門分類</translation>
+        <translation>熱門分類</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/ConflictMonitorPanel.cpp" line="153" />
@@ -2757,7 +2766,7 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/geopolitics/ConflictMonitorPanel.cpp" line="178" />
         <source>SELECTED EVENT</source>
-        <translation type="unfinished">已選事件</translation>
+        <translation>已選事件</translation>
     </message>
 </context>
 <context>
@@ -2765,22 +2774,22 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="33" />
         <source>Connect Wallet</source>
-        <translation type="unfinished">連線 錢包</translation>
+        <translation>連線 錢包</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="41" />
         <source>Connect your Solana wallet</source>
-        <translation type="unfinished">連接您的 Solana 錢包</translation>
+        <translation>連接您的 Solana 錢包</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="48" />
         <source>Opening your browser to complete the handshake…</source>
-        <translation type="unfinished">正在開啟瀏覽器以完成交握…</translation>
+        <translation>正在開啟瀏覽器以完成交握…</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="55" />
         <source>Reopen browser</source>
-        <translation type="unfinished">重新開啟瀏覽器</translation>
+        <translation>重新開啟瀏覽器</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="56" />
@@ -2790,32 +2799,32 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="64" />
         <source>cancelled by user</source>
-        <translation type="unfinished">已取消 by user</translation>
+        <translation>已取消 by user</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="104" />
         <source>could not start local bridge server</source>
-        <translation type="unfinished">無法啟動本地橋接伺服器</translation>
+        <translation>無法啟動本地橋接伺服器</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="109" />
         <source>Browser opened. Approve the connection and the signature in your wallet.</source>
-        <translation type="unfinished">瀏覽器打開。批准連接並在錢包中簽名。</translation>
+        <translation>瀏覽器打開。批准連接並在錢包中簽名。</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="129" />
         <source>signature verification failed</source>
-        <translation type="unfinished">簽名驗證失敗</translation>
+        <translation>簽名驗證失敗</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="145" />
         <source>timed out waiting for browser callback</source>
-        <translation type="unfinished">等待瀏覽器回呼逾時</translation>
+        <translation>等待瀏覽器回呼逾時</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/ConnectWalletDialog.cpp" line="149" />
         <source>bridge error: %1</source>
-        <translation type="unfinished">橋接 error: %1</translation>
+        <translation>橋接 error: %1</translation>
     </message>
 </context>
 <context>
@@ -2841,52 +2850,52 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="114" />
         <source>SAVED AGENTS</source>
-        <translation type="unfinished">已儲存 代理</translation>
+        <translation>已儲存 代理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="198" />
         <source>e.g. My Equity Analyst</source>
-        <translation type="unfinished">例如：我的 Equity (股票) 分析師</translation>
+        <translation>例如：我的 Equity (股票) 分析師</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="210" />
         <source>Brief description of what this agent does...</source>
-        <translation type="unfinished">簡短描述此 Agent 的用途...</translation>
+        <translation>簡短描述此 Agent 的用途...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="219" />
         <source>LLM profile for this agent. Configure profiles in Settings &gt; LLM Config.</source>
-        <translation type="unfinished">此代理的 LLM 設定檔。在設定 &gt; LLM 設定中配置。</translation>
+        <translation>此代理的 LLM 設定檔。在設定 &gt; LLM 設定中配置。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="232" />
         <source>System prompt — role, goals, constraints, persona...</source>
-        <translation type="unfinished">系統提示-角色、目標、限制、人物...</translation>
+        <translation>系統提示-角色、目標、限制、人物...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="241" />
         <source>Filter tools...</source>
-        <translation type="unfinished">篩選工具...</translation>
+        <translation>篩選工具...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="311" />
         <source>URLs (one per line)</source>
-        <translation type="unfinished">URL（每行一個）</translation>
+        <translation>URL（每行一個）</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="362" />
         <source>agent_memory.db</source>
-        <translation type="unfinished">agent_memory.db</translation>
+        <translation>agent_memory.db</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="367" />
         <source>agent_memory</source>
-        <translation type="unfinished">agent_memory</translation>
+        <translation>agent_memory</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="437" />
         <source>SAVE AGENT</source>
-        <translation type="unfinished">儲存 代理</translation>
+        <translation>儲存 代理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="445" />
@@ -2896,39 +2905,39 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="485" />
         <source>LIVE TEST</source>
-        <translation type="unfinished">即時 測試</translation>
+        <translation>即時 測試</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="496" />
         <source>QUERY</source>
-        <translation type="unfinished">查詢</translation>
+        <translation>查詢</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="502" />
         <source>Enter test query...</source>
-        <translation type="unfinished">輸入測試查詢...</translation>
+        <translation>輸入測試查詢...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="509" />
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="592" />
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="610" />
         <source>RUN TEST</source>
-        <translation type="unfinished">執行測試</translation>
+        <translation>執行測試</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="523" />
         <source>OUTPUT</source>
-        <translation type="unfinished">輸出</translation>
+        <translation>輸出</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="562" />
         <source>Saved successfully</source>
-        <translation type="unfinished">已成功儲存</translation>
+        <translation>已成功儲存</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="567" />
         <source>Agent deleted</source>
-        <translation type="unfinished">Agent 已刪除</translation>
+        <translation>Agent 已刪除</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="600" />
@@ -2939,42 +2948,42 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="658" />
         <source>Default (Global)</source>
-        <translation type="unfinished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="716" />
         <source>No provider — Settings &gt; LLM Config</source>
-        <translation type="unfinished">無供應商 — 設定 &gt; LLM 設定</translation>
+        <translation>無供應商 — 設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="842" />
         <source>Form cleared</source>
-        <translation type="unfinished">表單已清除</translation>
+        <translation>表單已清除</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="934" />
         <source>Agent name is required</source>
-        <translation type="unfinished">Agent 名稱為必填</translation>
+        <translation>Agent 名稱為必填</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="966" />
         <source>RUNNING...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="968" />
         <source>Running...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="986" />
         <source>Exported: </source>
-        <translation type="unfinished">已匯出：</translation>
+        <translation>已匯出：</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/CreateAgentPanel.cpp" line="1005" />
         <source>Imported from file</source>
-        <translation type="unfinished">已從檔案匯入</translation>
+        <translation>已從檔案匯入</translation>
     </message>
 </context>
 <context>
@@ -2982,32 +2991,32 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="33" />
         <source>Create Portfolio</source>
-        <translation type="unfinished">建立 Portfolio (投資組合)</translation>
+        <translation>建立 Portfolio (投資組合)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="53" />
         <source>CREATE NEW PORTFOLIO</source>
-        <translation type="unfinished">建立新投資組合</translation>
+        <translation>建立新投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="64" />
         <source>My Portfolio</source>
-        <translation type="unfinished">我的 Portfolio (投資組合)</translation>
+        <translation>我的 Portfolio (投資組合)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="68" />
         <source>Your name</source>
-        <translation type="unfinished">你的名稱</translation>
+        <translation>你的名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="87" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="98" />
         <source>CREATE</source>
-        <translation type="unfinished">CREATE</translation>
+        <translation>CREATE</translation>
     </message>
 </context>
 <context>
@@ -3020,48 +3029,48 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="88" />
         <source>DEPTH</source>
-        <translation type="unfinished">DEPTH</translation>
+        <translation>DEPTH</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="98" />
         <source>POS</source>
-        <translation type="unfinished">POS</translation>
+        <translation>POS</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="103" />
         <source>ORD</source>
-        <translation type="unfinished">ORD</translation>
+        <translation>ORD</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="108" />
         <source>HIST</source>
-        <translation type="unfinished">HIST</translation>
+        <translation>HIST</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="113" />
         <source>MY TRADES</source>
-        <translation type="unfinished">我的交易</translation>
+        <translation>我的交易</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="118" />
         <source>FEES</source>
-        <translation type="unfinished">FEES</translation>
+        <translation>FEES</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="154" />
         <source>MKT</source>
-        <translation type="unfinished">MKT</translation>
+        <translation>MKT</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="183" />
         <source>STATS</source>
-        <translation type="unfinished">STATS</translation>
+        <translation>STATS</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="323" />
         <location filename="../src/screens/crypto_trading/CryptoBottomPanel.cpp" line="467" />
         <source>X</source>
-        <translation type="unfinished">X</translation>
+        <translation>X</translation>
     </message>
 </context>
 <context>
@@ -3069,12 +3078,12 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="133" />
         <source>No wallet connected</source>
-        <translation type="unfinished">No 錢包 已連線</translation>
+        <translation>No 錢包 已連線</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="138" />
         <source>Connect a Solana wallet to view your $FNCPT balance, SOL holdings, and live USD valuation. Your private keys never leave your wallet.</source>
-        <translation type="unfinished" />
+        <translation>連接 Solana 錢包以查看您的 $FNCPT 餘額、SOL 持有量與即時美元估值。您的私鑰永遠不會離開您的錢包。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="152" />
@@ -3082,27 +3091,30 @@ It will be available in a future update.</source>
 · no private keys, no seed phrases
 · local handshake on 127.0.0.1, single-use token
 · cryptographic signature challenge before connect</source>
-        <translation type="unfinished" />
+        <translation>· 僅讀取公開地址
+· 不涉及私鑰或助記詞
+· 在 127.0.0.1 本機握手，一次性 Token
+· 連接前進行密碼學簽名驗證</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="162" />
         <source>CONNECT WALLET</source>
-        <translation type="unfinished">連線 錢包</translation>
+        <translation>連線 錢包</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="217" />
         <source>HOME</source>
-        <translation type="unfinished">首頁</translation>
+        <translation>首頁</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="218" />
         <source>TRADE</source>
-        <translation type="unfinished">交易</translation>
+        <translation>交易</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="219" />
         <source>ACTIVITY</source>
-        <translation type="unfinished">活動</translation>
+        <translation>活動</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="220" />
@@ -3112,17 +3124,17 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="221" />
         <source>STAKE</source>
-        <translation type="unfinished">質押</translation>
+        <translation>質押</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="222" />
         <source>MARKETS</source>
-        <translation type="unfinished">市場</translation>
+        <translation>市場</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/CryptoCenterScreen.cpp" line="223" />
         <source>ROADMAP</source>
-        <translation type="unfinished">路線圖</translation>
+        <translation>路線圖</translation>
     </message>
 </context>
 <context>
@@ -3130,7 +3142,7 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoChart.cpp" line="41" />
         <source>CHART</source>
-        <translation type="unfinished">圖表</translation>
+        <translation>圖表</translation>
     </message>
 </context>
 <context>
@@ -3138,17 +3150,17 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="89" />
         <source>API KEY</source>
-        <translation type="unfinished">API 金鑰</translation>
+        <translation>API 金鑰</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="98" />
         <source>API SECRET</source>
-        <translation type="unfinished">API 密鑰</translation>
+        <translation>API 密鑰</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="108" />
         <source>PASSWORD (OKX/KUCOIN)</source>
-        <translation type="unfinished">密碼（OKX/KUCOIN）</translation>
+        <translation>密碼（OKX/KUCOIN）</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="112" />
@@ -3158,12 +3170,12 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="119" />
         <source>TOTP SECRET (2FA)</source>
-        <translation type="unfinished">TOTP 密鑰 (2FA)</translation>
+        <translation>TOTP 密鑰 (2FA)</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="132" />
         <source>CODE: --</source>
-        <translation type="unfinished">程式碼: --</translation>
+        <translation>程式碼: --</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="164" />
@@ -3178,7 +3190,7 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="237" />
         <source>CODE: ERR</source>
-        <translation type="unfinished">程式碼: ERR</translation>
+        <translation>程式碼: ERR</translation>
     </message>
 </context>
 <context>
@@ -3186,12 +3198,12 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderBook.cpp" line="90" />
         <source>ORDER BOOK</source>
-        <translation type="unfinished">委託簿</translation>
+        <translation>委託簿</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderBook.cpp" line="109" />
         <source>Spread: --</source>
-        <translation type="unfinished">價差: --</translation>
+        <translation>價差: --</translation>
     </message>
 </context>
 <context>
@@ -3199,113 +3211,113 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="28" />
         <source>ORDER ENTRY</source>
-        <translation type="unfinished">訂單 ENTRY</translation>
+        <translation>訂單 ENTRY</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="33" />
         <source>PAPER</source>
-        <translation type="unfinished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="50" />
         <source>BUY</source>
-        <translation type="unfinished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="58" />
         <source>SELL</source>
-        <translation type="unfinished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="91" />
         <source>MKT: --</source>
-        <translation type="unfinished">市值: --</translation>
+        <translation>市值: --</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="96" />
         <source>QTY</source>
-        <translation type="unfinished">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="121" />
         <source>PRICE</source>
-        <translation type="unfinished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="127" />
         <source>Limit price</source>
-        <translation type="unfinished">限價</translation>
+        <translation>限價</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="134" />
         <source>STOP</source>
-        <translation type="unfinished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="140" />
         <source>Stop price</source>
-        <translation type="unfinished">停損價</translation>
+        <translation>停損價</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="146" />
         <source>+ ADVANCED</source>
-        <translation type="unfinished">+ 進階</translation>
+        <translation>+ 進階</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="159" />
         <source>SL</source>
-        <translation type="unfinished">SL</translation>
+        <translation>SL</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="163" />
         <source>Stop Loss</source>
-        <translation type="unfinished">停損</translation>
+        <translation>停損</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="166" />
         <source>TP</source>
-        <translation type="unfinished">TP</translation>
+        <translation>TP</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="170" />
         <source>Take Profit</source>
-        <translation type="unfinished">止盈</translation>
+        <translation>止盈</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="194" />
         <source>LEVERAGE</source>
-        <translation type="unfinished">槓桿</translation>
+        <translation>槓桿</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="209" />
         <source>MARGIN</source>
-        <translation type="unfinished">利潤率</translation>
+        <translation>利潤率</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="213" />
         <source>Cross</source>
-        <translation type="unfinished">交叉</translation>
+        <translation>交叉</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="214" />
         <source>Isolated</source>
-        <translation type="unfinished">隔離</translation>
+        <translation>隔離</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="228" />
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="371" />
         <source>Est: --</source>
-        <translation type="unfinished">預估: --</translation>
+        <translation>預估: --</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="233" />
         <source>BUY BTC/USDT</source>
-        <translation type="unfinished">買進 BTC/USDT</translation>
+        <translation>買進 BTC/USDT</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoOrderEntry.cpp" line="332" />
         <source>Enter a valid quantity</source>
-        <translation type="unfinished">請輸入有效數量</translation>
+        <translation>請輸入有效數量</translation>
     </message>
 </context>
 <context>
@@ -3313,47 +3325,47 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="21" />
         <source>BTC/USDT</source>
-        <translation type="unfinished">BTC/USDT</translation>
+        <translation>BTC/USDT</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="34" />
         <source>B:--</source>
-        <translation type="unfinished">B:--</translation>
+        <translation>B:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="38" />
         <source>A:--</source>
-        <translation type="unfinished">A:--</translation>
+        <translation>A:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="42" />
         <source>S:--</source>
-        <translation type="unfinished">S:--</translation>
+        <translation>S:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="47" />
         <source>H:--</source>
-        <translation type="unfinished">H:--</translation>
+        <translation>H:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="51" />
         <source>L:--</source>
-        <translation type="unfinished">L:--</translation>
+        <translation>L:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="55" />
         <source>Vol:--</source>
-        <translation type="unfinished">波動率:--</translation>
+        <translation>波動率:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="59" />
         <source>Mk:--</source>
-        <translation type="unfinished">Mk:--</translation>
+        <translation>Mk:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTickerBar.cpp" line="64" />
         <source>Idx:--</source>
-        <translation type="unfinished">索引：--</translation>
+        <translation>索引：--</translation>
     </message>
 </context>
 <context>
@@ -3361,12 +3373,12 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/CryptoTickerWidget.cpp" line="161" />
         <source>Configure — Crypto Ticker</source>
-        <translation type="unfinished">配置 - 加密貨幣代碼</translation>
+        <translation>配置 - 加密貨幣代碼</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/CryptoTickerWidget.cpp" line="171" />
         <source>e.g. BTC/USD, ETH/USD, SOL/USD</source>
-        <translation type="unfinished">例如BTC/美元、ETH/美元、SOL/美元</translation>
+        <translation>例如BTC/美元、ETH/美元、SOL/美元</translation>
     </message>
 </context>
 <context>
@@ -3374,33 +3386,33 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="145" />
         <source>KRAKEN</source>
-        <translation type="unfinished">KRAKEN</translation>
+        <translation>KRAKEN</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="189" />
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="498" />
         <source>REST</source>
-        <translation type="unfinished">REST</translation>
+        <translation>REST</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="195" />
         <source>--:--:--</source>
-        <translation type="unfinished">--:--:--</translation>
+        <translation>--:--:--</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="200" />
         <source>API</source>
-        <translation type="unfinished">API</translation>
+        <translation>API</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="207" />
         <source>PAPER</source>
-        <translation type="unfinished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoTradingScreen.cpp" line="461" />
         <source>:*</source>
-        <translation type="unfinished">:*</translation>
+        <translation>:*</translation>
     </message>
 </context>
 <context>
@@ -3408,17 +3420,17 @@ It will be available in a future update.</source>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoWatchlist.cpp" line="62" />
         <source>WATCHLIST</source>
-        <translation type="unfinished">自選清單</translation>
+        <translation>自選清單</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoWatchlist.cpp" line="67" />
         <source>0/0</source>
-        <translation type="unfinished">0/0</translation>
+        <translation>0/0</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoWatchlist.cpp" line="75" />
         <source>Search...</source>
-        <translation type="unfinished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
 </context>
 <context>
@@ -3427,73 +3439,74 @@ It will be available in a future update.</source>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="82" />
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="134" />
         <source>CREATE INDEX</source>
-        <translation type="unfinished">建立指數</translation>
+        <translation>建立指數</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="83" />
         <source>MY INDICES</source>
-        <translation type="unfinished">我的指數</translation>
+        <translation>我的指數</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="84" />
         <source>PERFORMANCE</source>
-        <translation type="unfinished">PERFORMANCE</translation>
+        <translation>PERFORMANCE</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="95" />
         <source>CREATE CUSTOM INDEX</source>
-        <translation type="unfinished">建立自訂指數</translation>
+        <translation>建立自訂指數</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="112" />
         <source>My Custom Index</source>
-        <translation type="unfinished">我的自訂指數</translation>
+        <translation>我的自訂指數</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="162" />
         <source>CONSTITUENTS (from portfolio holdings)</source>
-        <translation type="unfinished">成分股（來自投資組合持股）</translation>
+        <translation>成分股（來自投資組合持股）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="189" />
         <source>MY CUSTOM INDICES</source>
-        <translation type="unfinished">MY 自訂 INDICES</translation>
+        <translation>MY 自訂 INDICES</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="195" />
         <source>DELETE SELECTED</source>
-        <translation type="unfinished">刪除已選</translation>
+        <translation>刪除已選</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="229" />
         <source>No custom indices created yet.
 Go to CREATE INDEX tab to build one from your portfolio.</source>
-        <translation type="unfinished" />
+        <translation>尚未建立自訂指數。
+前往「建立指數」分頁，從您的投資組合建立一個。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="243" />
         <source>INDEX PERFORMANCE</source>
-        <translation type="unfinished">INDEX 績效</translation>
+        <translation>INDEX 績效</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="251" />
         <source>Select an index from MY INDICES to see its performance.</source>
-        <translation type="unfinished">從“我的索引”中選擇一個索引以查看其效能。</translation>
+        <translation>從“我的索引”中選擇一個索引以查看其效能。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="327" />
         <source>Base value must be positive.</source>
-        <translation type="unfinished">基準值必須為正數。</translation>
+        <translation>基準值必須為正數。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="358" />
         <source>Select at least one constituent.</source>
-        <translation type="unfinished">請至少選擇一個 Constituent (成分股)。</translation>
+        <translation>請至少選擇一個 Constituent (成分股)。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/CustomIndexView.cpp" line="375" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -3502,12 +3515,12 @@ Go to CREATE INDEX tab to build one from your portfolio.</source>
         <location filename="../src/screens/dbnomics/DBnomicsChartWidget.cpp" line="103" />
         <location filename="../src/screens/dbnomics/DBnomicsChartWidget.cpp" line="146" />
         <source>NO DATA — SELECT A SERIES FROM THE LEFT PANEL</source>
-        <translation type="unfinished">無資料 — 請從左側面板選擇一個序列</translation>
+        <translation>無資料 — 請從左側面板選擇一個序列</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsChartWidget.cpp" line="131" />
         <source>⣾  FETCHING DATA...</source>
-        <translation type="unfinished">⣾ 正在擷取資料...</translation>
+        <translation>⣾ 正在擷取資料...</translation>
     </message>
 </context>
 <context>
@@ -3515,12 +3528,12 @@ Go to CREATE INDEX tab to build one from your portfolio.</source>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsDataTable.cpp" line="28" />
         <source>OBSERVATION DATA</source>
-        <translation type="unfinished">觀測資料</translation>
+        <translation>觀測資料</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsDataTable.cpp" line="104" />
         <source>⣾  LOADING OBSERVATIONS...</source>
-        <translation type="unfinished">⣾ 正在載入觀察資料...</translation>
+        <translation>⣾ 正在載入觀察資料...</translation>
     </message>
 </context>
 <context>
@@ -3528,24 +3541,25 @@ Go to CREATE INDEX tab to build one from your portfolio.</source>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="156" />
         <source>SINGLE</source>
-        <translation type="unfinished">SINGLE</translation>
+        <translation>SINGLE</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="161" />
         <source>COMPARE</source>
-        <translation type="unfinished">COMPARE</translation>
+        <translation>COMPARE</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="188" />
         <source>CHART:</source>
-        <translation type="unfinished">圖表：</translation>
+        <translation>圖表：</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="271" />
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="734" />
         <source>NO COMPARISON SLOTS
 Click  + ADD SLOT  in the left panel to begin</source>
-        <translation type="unfinished" />
+        <translation>尚無比較欄位
+點擊左側面板的 + 新增欄位 以開始</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="300" />
@@ -3555,22 +3569,22 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="331" />
         <source>DBNOMICS TERMINAL</source>
-        <translation type="unfinished">DBnomics 終端機</translation>
+        <translation>DBnomics 終端機</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="348" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="352" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsScreen.cpp" line="356" />
         <source>EXPORT CSV</source>
-        <translation type="unfinished">匯出 CSV</translation>
+        <translation>匯出 CSV</translation>
     </message>
 </context>
 <context>
@@ -3578,37 +3592,37 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="102" />
         <source>LOAD MORE</source>
-        <translation type="unfinished">載入更多</translation>
+        <translation>載入更多</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="122" />
         <source>Search providers, datasets...</source>
-        <translation type="unfinished">搜尋提供者、資料集...</translation>
+        <translation>搜尋提供者、資料集...</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="194" />
         <source>Filter providers...</source>
-        <translation type="unfinished">篩選 Providers (提供者)...</translation>
+        <translation>篩選 Providers (提供者)...</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="288" />
         <source>Search series...</source>
-        <translation type="unfinished">搜尋 Series (序列)...</translation>
+        <translation>搜尋 Series (序列)...</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="326" />
         <source>ADD TO SINGLE VIEW</source>
-        <translation type="unfinished">ADD TO 單一 檢視</translation>
+        <translation>ADD TO 單一 檢視</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="339" />
         <source>CLEAR ALL</source>
-        <translation type="unfinished">全部清除</translation>
+        <translation>全部清除</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="363" />
         <source>+ ADD SLOT</source>
-        <translation type="unfinished">+ 新增插槽</translation>
+        <translation>+ 新增插槽</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="422" />
@@ -3618,22 +3632,22 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="470" />
         <source>+ ADD CURRENT SERIES</source>
-        <translation type="unfinished">+ 新增目前序列</translation>
+        <translation>+ 新增目前序列</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="606" />
         <source>LOADING...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="709" />
         <source>●</source>
-        <translation type="unfinished" />
+        <translation>●</translation>
     </message>
     <message>
         <location filename="../src/screens/dbnomics/DBnomicsSelectionPanel.cpp" line="728" />
         <source>×</source>
-        <translation type="unfinished" />
+        <translation>×</translation>
     </message>
 </context>
 <context>
@@ -3641,69 +3655,69 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="70" />
         <source>SESSION:</source>
-        <translation type="unfinished">工作階段：</translation>
+        <translation>工作階段：</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="71" />
         <source>00:00:00</source>
-        <translation type="unfinished">00:00:00</translation>
+        <translation>00:00:00</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="76" />
         <source>LAYOUT:</source>
-        <translation type="unfinished">版面：</translation>
+        <translation>版面：</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="77" />
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="168" />
         <source>ACTIVE</source>
-        <translation type="unfinished">啟用中</translation>
+        <translation>啟用中</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="82" />
         <source>FEEDS:</source>
-        <translation type="unfinished">資料源：</translation>
+        <translation>資料源：</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="83" />
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="175" />
         <source>CONNECTED</source>
-        <translation type="unfinished">已連線</translation>
+        <translation>已連線</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="96" />
         <source>MEM: OPTIMAL</source>
-        <translation type="unfinished">記憶體：最佳</translation>
+        <translation>記憶體：最佳</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="99" />
         <source>LAT: ---</source>
-        <translation type="unfinished">延遲：---</translation>
+        <translation>延遲：---</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="104" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="168" />
         <source>EMPTY</source>
-        <translation type="unfinished">空白</translation>
+        <translation>空白</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="175" />
         <source>DISCONNECTED</source>
-        <translation type="unfinished">已斷線</translation>
+        <translation>已斷線</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="193" />
         <source>LAT: ERR</source>
-        <translation type="unfinished">LAT: ERR</translation>
+        <translation>LAT: ERR</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardStatusBar.cpp" line="198" />
         <source>LAT: %1ms</source>
-        <translation type="unfinished">延遲：%1ms</translation>
+        <translation>延遲：%1ms</translation>
     </message>
 </context>
 <context>
@@ -3711,42 +3725,42 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="55" />
         <source>TERMINAL</source>
-        <translation type="unfinished">TERMINAL</translation>
+        <translation>TERMINAL</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="61" />
         <source>即時</source>
-        <translation type="unfinished">即時</translation>
+        <translation>即時</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="74" />
         <source>0 個小工具</source>
-        <translation type="unfinished">0 個小工具</translation>
+        <translation>0 個小工具</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="89" />
         <source>精簡</source>
-        <translation type="unfinished">精簡</translation>
+        <translation>精簡</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="95" />
         <source>脈動</source>
-        <translation type="unfinished">脈動</translation>
+        <translation>脈動</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="103" />
         <source>+ 新增</source>
-        <translation type="unfinished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="109" />
         <source>儲存</source>
-        <translation type="unfinished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/DashboardToolBar.cpp" line="115" />
         <source>重設</source>
-        <translation type="unfinished">重設</translation>
+        <translation>重設</translation>
     </message>
 </context>
 <context>
@@ -3754,7 +3768,7 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/devtools/DataHubInspector.cpp" line="66" />
         <source>in-flight</source>
-        <translation type="unfinished">進行中</translation>
+        <translation>進行中</translation>
     </message>
 </context>
 <context>
@@ -3762,159 +3776,160 @@ Click  + ADD SLOT  in the left panel to begin</source>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="672" />
         <source>DATA MAPPING ENGINE</source>
-        <translation type="unfinished">DATA 對應 引擎</translation>
+        <translation>DATA 對應 引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="674" />
         <source>API CONFIGURATION &amp; SCHEMA TRANSFORMATION</source>
-        <translation type="unfinished">API 設定與結構轉換</translation>
+        <translation>API 設定與結構轉換</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="695" />
         <source>7 SCHEMAS</source>
-        <translation type="unfinished">7 結構</translation>
+        <translation>7 結構</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="791" />
         <source>WIZARD STEPS</source>
-        <translation type="unfinished">精靈步驟</translation>
+        <translation>精靈步驟</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="820" />
         <source>QUICK STATS</source>
-        <translation type="unfinished">快速統計</translation>
+        <translation>快速統計</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="824" />
         <source>Saved: 0</source>
-        <translation type="unfinished">已儲存: 0</translation>
+        <translation>已儲存: 0</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="828" />
         <source>Schemas: 7</source>
-        <translation type="unfinished">結構: 7</translation>
+        <translation>結構: 7</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="832" />
         <source>Parsers: 6</source>
-        <translation type="unfinished">解析器: 6</translation>
+        <translation>解析器: 6</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="847" />
         <source>SYSTEM</source>
-        <translation type="unfinished">系統</translation>
+        <translation>系統</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="857" />
         <source>MAPPING ENGINE</source>
-        <translation type="unfinished">對應 引擎</translation>
+        <translation>對應 引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="861" />
         <source>ONLINE</source>
-        <translation type="unfinished">線上</translation>
+        <translation>線上</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="868" />
         <source>PARSER ENGINES</source>
-        <translation type="unfinished">解析引擎</translation>
+        <translation>解析引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="882" />
         <source>SECURITY</source>
-        <translation type="unfinished">安全性</translation>
+        <translation>安全性</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="885" />
         <source>AES-256-GCM</source>
-        <translation type="unfinished">AES-256-GCM</translation>
+        <translation>AES-256-GCM</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="892" />
         <source>CURRENT MAPPING</source>
-        <translation type="unfinished">CURRENT 對應</translation>
+        <translation>CURRENT 對應</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="896" />
         <source>Schema: --</source>
-        <translation type="unfinished">結構: --</translation>
+        <translation>結構: --</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="900" />
         <source>Fields: --</source>
-        <translation type="unfinished">欄位: --</translation>
+        <translation>欄位: --</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="904" />
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1840" />
         <source>Test: --</source>
-        <translation type="unfinished">Test: --</translation>
+        <translation>Test: --</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="930" />
         <source>API CONFIGURATION</source>
-        <translation type="unfinished">API 設定</translation>
+        <translation>API 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="944" />
         <source>e.g. Upstox OHLCV</source>
-        <translation type="unfinished">例如Upstox OHLCV</translation>
+        <translation>例如Upstox OHLCV</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="950" />
         <source>/v2/historical-candle/{symbol}/{interval}</source>
-        <translation type="unfinished">/v2/historical-candle/{symbol}/{interval}</translation>
+        <translation>/v2/historical-candle/{symbol}/{interval}</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="962" />
         <source>Token / API Key value</source>
-        <translation type="unfinished">Token / API 金鑰值</translation>
+        <translation>Token / API 金鑰值</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="967" />
         <source>Content-Type: application/json
 Accept: application/json</source>
-        <translation type="unfinished" />
+        <translation>Content-Type: application/json
+Accept: application/json</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="987" />
         <source>TEST API REQUEST</source>
-        <translation type="unfinished">測試 API 請求</translation>
+        <translation>測試 API 請求</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1016" />
         <source>SCHEMA SELECTION</source>
-        <translation type="unfinished">結構 SELECTION</translation>
+        <translation>結構 SELECTION</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1050" />
         <source>Schema: </source>
-        <translation type="unfinished">Schema:</translation>
+        <translation>Schema:</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1052" />
         <source>Fields: </source>
-        <translation type="unfinished">Fields:</translation>
+        <translation>Fields:</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1097" />
         <source>FIELD MAPPING</source>
-        <translation type="unfinished">FIELD 對應</translation>
+        <translation>FIELD 對應</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1107" />
         <source>Parser:</source>
-        <translation type="unfinished">解析器:</translation>
+        <translation>解析器:</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1153" />
         <source>CACHE &amp; SECURITY SETTINGS</source>
-        <translation type="unfinished">快取與安全設定</translation>
+        <translation>快取與安全設定</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1182" />
         <source>ENCRYPTION</source>
-        <translation type="unfinished">加密</translation>
+        <translation>加密</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1211" />
@@ -3924,164 +3939,165 @@ Accept: application/json</source>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1230" />
         <source>RUN TEST</source>
-        <translation type="unfinished">執行測試</translation>
+        <translation>執行測試</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1235" />
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1838" />
         <source>Not yet tested</source>
-        <translation type="unfinished">尚未測試</translation>
+        <translation>尚未測試</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1248" />
         <source>Test results will appear here...</source>
-        <translation type="unfinished">測試結果將出現在這裡...</translation>
+        <translation>測試結果將出現在這裡...</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1252" />
         <source>SAVE MAPPING CONFIGURATION</source>
-        <translation type="unfinished">儲存 對應 設定</translation>
+        <translation>儲存 對應 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1279" />
         <source>SAVED MAPPINGS</source>
-        <translation type="unfinished">已儲存 對應</translation>
+        <translation>已儲存 對應</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1284" />
         <source>▶ RUN</source>
-        <translation type="unfinished">▶ 執行</translation>
+        <translation>▶ 執行</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1290" />
         <source>DELETE</source>
-        <translation type="unfinished">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1296" />
         <source>+ NEW MAPPING</source>
-        <translation type="unfinished">+ 新增對應</translation>
+        <translation>+ 新增對應</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1308" />
         <source>No mappings saved yet.
 Click CREATE to build your first data mapping.</source>
-        <translation type="unfinished" />
+        <translation>尚未儲存任何映射。
+點擊「建立」以建構您的第一個資料映射。</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1342" />
         <source>Select a template to view details</source>
-        <translation type="unfinished">選擇模板查看詳情</translation>
+        <translation>選擇模板查看詳情</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1349" />
         <source>USE THIS TEMPLATE</source>
-        <translation type="unfinished">使用此模板</translation>
+        <translation>使用此模板</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1397" />
         <source>BROKER TEMPLATES</source>
-        <translation type="unfinished">經紀商範本</translation>
+        <translation>經紀商範本</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1420" />
         <source>PREVIOUS</source>
-        <translation type="unfinished">上一步</translation>
+        <translation>上一步</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1426" />
         <source>Step 1 of 5 — API CONFIG</source>
-        <translation type="unfinished">Step 1 of 5 — API 設定</translation>
+        <translation>Step 1 of 5 — API 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1430" />
         <source>NEXT</source>
-        <translation type="unfinished">下一步</translation>
+        <translation>下一步</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1452" />
         <source>DATA MAPPING v1.0</source>
-        <translation type="unfinished">DATA 對應 v1.0</translation>
+        <translation>DATA 對應 v1.0</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1457" />
         <source>VIEW: MAPPINGS</source>
-        <translation type="unfinished">VIEW: 對應</translation>
+        <translation>VIEW: 對應</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1573" />
         <source>VIEW: </source>
-        <translation type="unfinished">VIEW:</translation>
+        <translation>VIEW:</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1624" />
         <source>Enter a URL first</source>
-        <translation type="unfinished">請先輸入 URL</translation>
+        <translation>請先輸入 URL</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1629" />
         <source>Testing...</source>
-        <translation type="unfinished">測試中...</translation>
+        <translation>測試中...</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1636" />
         <source>SUCCESS — Sample data received</source>
-        <translation type="unfinished">成功 — 已收到樣本資料</translation>
+        <translation>成功 — 已收到樣本資料</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1641" />
         <source>FAILED — </source>
-        <translation type="unfinished">失敗 — </translation>
+        <translation>失敗 — </translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1667" />
         <source>No sample data — test API first (Step 1)</source>
-        <translation type="unfinished">無範例資料 - 首先測試 API（第 1 步）</translation>
+        <translation>無範例資料 - 首先測試 API（第 1 步）</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1672" />
         <source>Running test...</source>
-        <translation type="unfinished">執行測試中...</translation>
+        <translation>執行測試中...</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1720" />
         <source>TEST PASSED</source>
-        <translation type="unfinished">測試通過</translation>
+        <translation>測試通過</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1724" />
         <source>Test: PASSED</source>
-        <translation type="unfinished">測試：通過</translation>
+        <translation>測試：通過</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1726" />
         <source>TEST FAILED — No field mappings configured</source>
-        <translation type="unfinished">測試失敗 — 尚未設定欄位 Mapping (對應)</translation>
+        <translation>測試失敗 — 尚未設定欄位 Mapping (對應)</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1730" />
         <source>Test: FAILED</source>
-        <translation type="unfinished">測試：失敗</translation>
+        <translation>測試：失敗</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1740" />
         <source>Enter a mapping name first</source>
-        <translation type="unfinished">請先輸入 Mapping (對應) 名稱</translation>
+        <translation>請先輸入 Mapping (對應) 名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1766" />
         <source>Save failed — database error</source>
-        <translation type="unfinished">儲存失敗 — 資料庫錯誤</translation>
+        <translation>儲存失敗 — 資料庫錯誤</translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1795" />
         <source>RUN FAILED — </source>
-        <translation type="unfinished">執行失敗 — </translation>
+        <translation>執行失敗 — </translation>
     </message>
     <message>
         <location filename="../src/screens/data_mapping/DataMappingScreen.cpp" line="1878" />
         <source>Saved: </source>
-        <translation type="unfinished">已儲存：</translation>
+        <translation>已儲存：</translation>
     </message>
 </context>
 <context>
@@ -4089,119 +4105,119 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="548" />
         <source>DATA SOURCES</source>
-        <translation type="unfinished">資料來源</translation>
+        <translation>資料來源</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="568" />
         <source>search connectors...</source>
-        <translation type="unfinished">搜尋 Connector (連接器)...</translation>
+        <translation>搜尋 Connector (連接器)...</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="763" />
         <source>CATEGORY</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="781" />
         <source>TOP PROVIDERS</source>
-        <translation type="unfinished">頂部 PROVIDERS</translation>
+        <translation>頂部 PROVIDERS</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="816" />
         <source>CONNECTORS</source>
-        <translation type="unfinished">連接器</translation>
+        <translation>連接器</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="886" />
         <source>INSPECTOR</source>
-        <translation type="unfinished">檢視器</translation>
+        <translation>檢視器</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="919" />
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1767" />
         <source>Select a connector</source>
-        <translation type="unfinished">選擇 Connector (連接器)</translation>
+        <translation>選擇 Connector (連接器)</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="922" />
         <source>Double-click to configure</source>
-        <translation type="unfinished">雙擊以設定</translation>
+        <translation>雙擊以設定</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="964" />
         <source>CONFIG FIELDS</source>
-        <translation type="unfinished">設定 FIELDS</translation>
+        <translation>設定 FIELDS</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="993" />
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1072" />
         <source>SAVED CONNECTIONS</source>
-        <translation type="unfinished">已儲存 CONNECTIONS</translation>
+        <translation>已儲存 CONNECTIONS</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1013" />
         <source>+ ADD CONNECTION</source>
-        <translation type="unfinished">+ 新增連線</translation>
+        <translation>+ 新增連線</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1024" />
         <source>EDIT</source>
-        <translation type="unfinished">編輯</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1033" />
         <source>TEST</source>
-        <translation type="unfinished">測試</translation>
+        <translation>測試</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1077" />
         <source>+ ADD</source>
-        <translation type="unfinished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1097" />
         <source>filter connections...</source>
-        <translation type="unfinished">篩選連線...</translation>
+        <translation>篩選連線...</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1105" />
         <source>ENABLE ALL</source>
-        <translation type="unfinished">啟用 ALL</translation>
+        <translation>啟用 ALL</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1112" />
         <source>DISABLE ALL</source>
-        <translation type="unfinished">停用 ALL</translation>
+        <translation>停用 ALL</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1119" />
         <source>DELETE SEL</source>
-        <translation type="unfinished">刪除所選</translation>
+        <translation>刪除所選</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1277" />
         <source>Connection Name</source>
-        <translation type="unfinished">連線名稱</translation>
+        <translation>連線名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1289" />
         <source>Enable Connection</source>
-        <translation type="unfinished">啟用 Connection</translation>
+        <translation>啟用 Connection</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1350" />
         <source>Tags</source>
-        <translation type="unfinished">標籤</translation>
+        <translation>標籤</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1355" />
         <source>Comma-separated tags, e.g. prod, live, trading</source>
-        <translation type="unfinished">以逗號分隔的標籤，例如產品、直播、交易</translation>
+        <translation>以逗號分隔的標籤，例如產品、直播、交易</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1363" />
         <source>Fields marked with * are required.</source>
-        <translation type="unfinished">標有 * 的欄位為必填。</translation>
+        <translation>標有 * 的欄位為必填。</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1385" />
@@ -4211,22 +4227,22 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1430" />
         <source>Missing required field: </source>
-        <translation type="unfinished">缺少必填欄位：</translation>
+        <translation>缺少必填欄位：</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1452" />
         <source>Failed to save: </source>
-        <translation type="unfinished">無法 save: </translation>
+        <translation>無法 save: </translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="1768" />
         <source>Double-click any row to configure</source>
-        <translation type="unfinished">雙擊任一列進行設定</translation>
+        <translation>雙擊任一列進行設定</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="2338" />
         <source>This connector does not support connectivity testing.</source>
-        <translation type="unfinished">此連接器不支援連線測試。</translation>
+        <translation>此連接器不支援連線測試。</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="2343" />
@@ -4238,17 +4254,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="2599" />
         <source>Note: TCP reachability confirmed. API key validity is not verified here.</source>
-        <translation type="unfinished">注意：TCP 可達性已確認。此處未驗證 API 金鑰的有效性。</translation>
+        <translation>注意：TCP 可達性已確認。此處未驗證 API 金鑰的有效性。</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="2787" />
         <source>Delete Connections</source>
-        <translation type="unfinished">刪除連線</translation>
+        <translation>刪除連線</translation>
     </message>
     <message>
         <location filename="../src/screens/data_sources/DataSourcesScreen.cpp" line="2789" />
         <source>This cannot be undone.</source>
-        <translation type="unfinished">此操作無法復原。</translation>
+        <translation>此操作無法復原。</translation>
     </message>
 </context>
 <context>
@@ -4256,42 +4272,42 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="20" />
         <source>Deploy Workflow</source>
-        <translation type="unfinished">部署 Workflow (工作流程)</translation>
+        <translation>部署 Workflow (工作流程)</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="39" />
         <source>DEPLOY WORKFLOW</source>
-        <translation type="unfinished">部署 WORKFLOW</translation>
+        <translation>部署 WORKFLOW</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="52" />
         <source>WORKFLOW NAME</source>
-        <translation type="unfinished">工作流名稱</translation>
+        <translation>工作流名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="63" />
         <source>DESCRIPTION</source>
-        <translation type="unfinished">說明</translation>
+        <translation>說明</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="69" />
         <source>Describe what this workflow does...</source>
-        <translation type="unfinished">描述此 Workflow (工作流程) 的用途...</translation>
+        <translation>描述此 Workflow (工作流程) 的用途...</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="81" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="95" />
         <source>SAVE DRAFT</source>
-        <translation type="unfinished">儲存 DRAFT</translation>
+        <translation>儲存 DRAFT</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/DeployDialog.cpp" line="110" />
         <source>DEPLOY</source>
-        <translation type="unfinished">部署</translation>
+        <translation>部署</translation>
     </message>
 </context>
 <context>
@@ -4299,42 +4315,42 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="250" />
         <source>STOP</source>
-        <translation type="unfinished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="363" />
         <source>EQUITY CURVE</source>
-        <translation type="unfinished">權益 CURVE</translation>
+        <translation>權益 CURVE</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="371" />
         <source>Select a deployment to view curve</source>
-        <translation type="unfinished">選取部署以檢視曲線</translation>
+        <translation>選取部署以檢視曲線</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="387" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="403" />
         <source>STOP ALL</source>
-        <translation type="unfinished">全部停止</translation>
+        <translation>全部停止</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="423" />
         <source>DEPLOYMENTS</source>
-        <translation type="unfinished">DEPLOYMENTS</translation>
+        <translation>DEPLOYMENTS</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="428" />
         <source>No deployments loaded.</source>
-        <translation type="unfinished">尚未載入部署。</translation>
+        <translation>尚未載入部署。</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/DeploymentDashboard.cpp" line="462" />
         <source>No active deployments.</source>
-        <translation type="unfinished">沒有作用中的部署。</translation>
+        <translation>沒有作用中的部署。</translation>
     </message>
 </context>
 <context>
@@ -4342,112 +4358,112 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="164" />
         <source>📐</source>
-        <translation type="unfinished" />
+        <translation>📐</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="169" />
         <source>DERIVATIVES PRICING</source>
-        <translation type="unfinished">DERIVATIVES 定價</translation>
+        <translation>DERIVATIVES 定價</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="171" />
         <source>PROFESSIONAL VALUATION ENGINE</source>
-        <translation type="unfinished">專業估值引擎</translation>
+        <translation>專業估值引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="181" />
         <source>PYTHON ACTIVE</source>
-        <translation type="unfinished">Python 活躍</translation>
+        <translation>Python 活躍</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="235" />
         <source>BOND PRICE CALCULATOR</source>
-        <translation type="unfinished">債券 價格 CALCULATOR</translation>
+        <translation>債券 價格 CALCULATOR</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="285" />
         <source>YIELD TO MATURITY</source>
-        <translation type="unfinished">收益率 TO MATURITY</translation>
+        <translation>收益率 TO MATURITY</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="339" />
         <source>↗</source>
-        <translation type="unfinished" />
+        <translation>↗</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="341" />
         <source>BLACK-SCHOLES PRICING</source>
-        <translation type="unfinished">布萊克-斯科爾斯定價法</translation>
+        <translation>布萊克-斯科爾斯定價法</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="389" />
         <source>⚡</source>
-        <translation type="unfinished" />
+        <translation>⚡</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="391" />
         <source>IMPLIED VOLATILITY</source>
-        <translation type="unfinished">IMPLIED 波動率</translation>
+        <translation>IMPLIED 波動率</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="446" />
         <source>💱</source>
-        <translation type="unfinished" />
+        <translation>💱</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="448" />
         <source>FX VANILLA OPTION PRICING</source>
-        <translation type="unfinished">外匯普通期權定價</translation>
+        <translation>外匯普通期權定價</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="501" />
         <source>🔄</source>
-        <translation type="unfinished" />
+        <translation>🔄</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="503" />
         <source>INTEREST RATE SWAP PRICING</source>
-        <translation type="unfinished">利率掉期定價</translation>
+        <translation>利率掉期定價</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="553" />
         <source>🎯</source>
-        <translation type="unfinished" />
+        <translation>🎯</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="555" />
         <source>CREDIT DEFAULT SWAP PRICING</source>
-        <translation type="unfinished">CREDIT 預設 交換 定價</translation>
+        <translation>CREDIT 預設 交換 定價</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="596" />
         <source>DERIVATIVES</source>
-        <translation type="unfinished">衍生性商品</translation>
+        <translation>衍生性商品</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="601" />
         <source>INSTRUMENT: BONDS</source>
-        <translation type="unfinished">工具: 債券</translation>
+        <translation>工具: 債券</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="606" />
         <source>PYTHON ENGINE</source>
-        <translation type="unfinished">Python 引擎</translation>
+        <translation>Python 引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="627" />
         <source>RESULTS</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="721" />
         <source>INSTRUMENT: </source>
-        <translation type="unfinished">INSTRUMENT:</translation>
+        <translation>INSTRUMENT:</translation>
     </message>
     <message>
         <location filename="../src/screens/derivatives/DerivativesScreen.cpp" line="948" />
         <source>ERROR</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
 </context>
 <context>
@@ -4455,22 +4471,22 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/docs/DocsScreen.cpp" line="119" />
         <source>SKILL LEVELS</source>
-        <translation type="unfinished">技能等級</translation>
+        <translation>技能等級</translation>
     </message>
     <message>
         <location filename="../src/screens/docs/DocsScreen.cpp" line="1545" />
         <source>DOCUMENTATION</source>
-        <translation type="unfinished">文件</translation>
+        <translation>文件</translation>
     </message>
     <message>
         <location filename="../src/screens/docs/DocsScreen.cpp" line="1556" />
         <source>FINCEPT TERMINAL v4.0.0</source>
-        <translation type="unfinished">FINCEPT 終端 v4.0.0</translation>
+        <translation>FINCEPT 終端 v4.0.0</translation>
     </message>
     <message>
         <location filename="../src/screens/docs/DocsScreen.cpp" line="1565" />
         <source>35 TOPICS  |  9 CATEGORIES</source>
-        <translation type="unfinished">35 主題  |  9 分類</translation>
+        <translation>35 主題  |  9 分類</translation>
     </message>
 </context>
 <context>
@@ -4478,17 +4494,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/economics/panels/EconPanelBase.cpp" line="164" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EconPanelBase.cpp" line="230" />
         <source>Select parameters and click FETCH</source>
-        <translation type="unfinished">選擇參數並點擊 FETCH</translation>
+        <translation>選擇參數並點擊 FETCH</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EconPanelBase.cpp" line="278" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -4496,17 +4512,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/economics/panels/EconomicCalendarPanel.cpp" line="65" />
         <source>All Events</source>
-        <translation type="unfinished">All 事件</translation>
+        <translation>All 事件</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EconomicCalendarPanel.cpp" line="66" />
         <source>Medium + High</source>
-        <translation type="unfinished">Medium + 最高</translation>
+        <translation>Medium + 最高</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EconomicCalendarPanel.cpp" line="67" />
         <source>High Only</source>
-        <translation type="unfinished">最高 Only</translation>
+        <translation>最高 Only</translation>
     </message>
 </context>
 <context>
@@ -4519,7 +4535,7 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/EconomicCalendarWidget.cpp" line="191" />
         <source>No events available</source>
-        <translation type="unfinished">沒有可用事件</translation>
+        <translation>沒有可用事件</translation>
     </message>
 </context>
 <context>
@@ -4527,12 +4543,12 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/economics/EconomicsScreen.cpp" line="184" />
         <source>ECONOMICS DATA EXPLORER</source>
-        <translation type="unfinished">經濟數據探索者</translation>
+        <translation>經濟數據探索者</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/EconomicsScreen.cpp" line="185" />
         <source>32 global data sources · 1000+ indicators</source>
-        <translation type="unfinished">32 全球 data 來源 · 1000+ 指標</translation>
+        <translation>32 全球 data 來源 · 1000+ 指標</translation>
     </message>
 </context>
 <context>
@@ -4540,22 +4556,22 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/portfolio/views/EconomicsView.cpp" line="30" />
         <source>PORTFOLIO ECONOMICS OVERVIEW</source>
-        <translation type="unfinished">投資組合 ECONOMICS 總覽</translation>
+        <translation>投資組合 ECONOMICS 總覽</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/EconomicsView.cpp" line="35" />
         <source>Per-holding contribution to portfolio value, P&amp;L, and risk</source>
-        <translation type="unfinished">各持股對投資組合價值、損益與風險的貢獻</translation>
+        <translation>各持股對投資組合價值、損益與風險的貢獻</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/EconomicsView.cpp" line="76" />
         <source>PORTFOLIO FACTOR SENSITIVITY</source>
-        <translation type="unfinished">投資組合因素敏感性</translation>
+        <translation>投資組合因素敏感性</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/EconomicsView.cpp" line="81" />
         <source>Estimated portfolio impact from macro factor shocks, weighted by holdings</source>
-        <translation type="unfinished">宏觀因素衝擊對投資組合的估計影響（以持有量加權）</translation>
+        <translation>宏觀因素衝擊對投資組合的估計影響（以持有量加權）</translation>
     </message>
 </context>
 <context>
@@ -4563,7 +4579,7 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/node_editor/canvas/EdgeItem.cpp" line="117" />
         <source>Delete Connection</source>
-        <translation type="unfinished">刪除 Connection</translation>
+        <translation>刪除 Connection</translation>
     </message>
 </context>
 <context>
@@ -4571,17 +4587,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="766" />
         <source>Edit Transaction</source>
-        <translation type="unfinished">編輯 Transaction (交易)</translation>
+        <translation>編輯 Transaction (交易)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="811" />
         <source>Optional notes</source>
-        <translation type="unfinished">選填 Notes (備註)</translation>
+        <translation>選填 Notes (備註)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="820" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="830" />
@@ -4594,23 +4610,23 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/economics/panels/EiaPanel.cpp" line="86" />
         <source>Weekly Petroleum (WPSR)</source>
-        <translation type="unfinished">每周石油 (WPSR)</translation>
+        <translation>每周石油 (WPSR)</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EiaPanel.cpp" line="87" />
         <source>Short-Term Outlook (STEO)</source>
-        <translation type="unfinished">短期展望（STEO）</translation>
+        <translation>短期展望（STEO）</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EiaPanel.cpp" line="100" />
         <location filename="../src/screens/economics/panels/EiaPanel.cpp" line="117" />
         <source>No API key needed</source>
-        <translation type="unfinished">不需要 API Key</translation>
+        <translation>不需要 API Key</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/EiaPanel.cpp" line="124" />
         <source>Requires EIA_API_KEY</source>
-        <translation type="unfinished">需要 EIA_API_KEY</translation>
+        <translation>需要 EIA_API_KEY</translation>
     </message>
 </context>
 <context>
@@ -4618,77 +4634,77 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="65" />
         <source>POSITIONS</source>
-        <translation type="unfinished">POSITIONS</translation>
+        <translation>POSITIONS</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="108" />
         <source>IMPORT TO PORTFOLIO</source>
-        <translation type="unfinished">匯入 TO 投資組合</translation>
+        <translation>匯入 TO 投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="147" />
         <source>HOLDINGS</source>
-        <translation type="unfinished">HOLDINGS</translation>
+        <translation>HOLDINGS</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="164" />
         <source>ORDERS</source>
-        <translation type="unfinished">ORDERS</translation>
+        <translation>ORDERS</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="195" />
         <source>FUNDS</source>
-        <translation type="unfinished">FUNDS</translation>
+        <translation>FUNDS</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="221" />
         <source>STATS</source>
-        <translation type="unfinished">STATS</translation>
+        <translation>STATS</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="274" />
         <source>--- RECENT TRADES ---</source>
-        <translation type="unfinished">--- 近期交易 ---</translation>
+        <translation>--- 近期交易 ---</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="285" />
         <source>TRADE</source>
-        <translation type="unfinished">交易</translation>
+        <translation>交易</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="423" />
         <source>EDIT</source>
-        <translation type="unfinished">編輯</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="438" />
         <source>Modify Order</source>
-        <translation type="unfinished">修改訂單</translation>
+        <translation>修改訂單</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="456" />
         <source>QTY</source>
-        <translation type="unfinished">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="458" />
         <source>LIMIT PRICE</source>
-        <translation type="unfinished">限制 價格</translation>
+        <translation>限制 價格</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="462" />
         <source>MODIFY</source>
-        <translation type="unfinished">修改</translation>
+        <translation>修改</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="466" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="518" />
         <source>AUCTIONS</source>
-        <translation type="unfinished">拍賣</translation>
+        <translation>拍賣</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="572" />
@@ -4698,22 +4714,22 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="638" />
         <source>● MARKET --</source>
-        <translation type="unfinished">● 市場 --</translation>
+        <translation>● 市場 --</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="668" />
         <source>CALENDAR</source>
-        <translation type="unfinished">行事曆</translation>
+        <translation>行事曆</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="707" />
         <source>● MARKET OPEN</source>
-        <translation type="unfinished">● 市場開盤</translation>
+        <translation>● 市場開盤</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityBottomPanel.cpp" line="711" />
         <source>● MARKET CLOSED</source>
-        <translation type="unfinished">● 市場休市</translation>
+        <translation>● 市場休市</translation>
     </message>
 </context>
 <context>
@@ -4721,7 +4737,7 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityChart.cpp" line="208" />
         <source>CHART</source>
-        <translation type="unfinished">圖表</translation>
+        <translation>圖表</translation>
     </message>
 </context>
 <context>
@@ -4729,27 +4745,27 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityFinancialsTab.cpp" line="215" />
         <source>EXPORT CSV</source>
-        <translation type="unfinished">匯出 CSV</translation>
+        <translation>匯出 CSV</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityFinancialsTab.cpp" line="378" />
         <source>RETURN METRICS</source>
-        <translation type="unfinished">報酬 指標</translation>
+        <translation>報酬 指標</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityFinancialsTab.cpp" line="397" />
         <source>DUPONT ANALYSIS</source>
-        <translation type="unfinished">DUPONT 分析</translation>
+        <translation>DUPONT 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityFinancialsTab.cpp" line="513" />
         <source>LIQUIDITY</source>
-        <translation type="unfinished">流動性</translation>
+        <translation>流動性</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityFinancialsTab.cpp" line="530" />
         <source>LEVERAGE / SOLVENCY</source>
-        <translation type="unfinished">槓桿 / SOLVENCY</translation>
+        <translation>槓桿 / SOLVENCY</translation>
     </message>
 </context>
 <context>
@@ -4757,32 +4773,32 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityNewsTab.cpp" line="29" />
         <source>Loading news…</source>
-        <translation type="unfinished">載入新聞中…</translation>
+        <translation>載入新聞中…</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityNewsTab.cpp" line="50" />
         <source>LATEST NEWS</source>
-        <translation type="unfinished">LATEST 新聞</translation>
+        <translation>LATEST 新聞</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityNewsTab.cpp" line="68" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityNewsTab.cpp" line="85" />
         <source>Search for a symbol to load news.</source>
-        <translation type="unfinished">搜尋符號以加載新聞。</translation>
+        <translation>搜尋符號以加載新聞。</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityNewsTab.cpp" line="122" />
         <source>No news found for </source>
-        <translation type="unfinished">找不到新聞：</translation>
+        <translation>找不到新聞：</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityNewsTab.cpp" line="182" />
         <source>READ FULL ARTICLE →</source>
-        <translation type="unfinished">閱讀完整文章 →</translation>
+        <translation>閱讀完整文章 →</translation>
     </message>
 </context>
 <context>
@@ -4790,12 +4806,12 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderBook.cpp" line="51" />
         <source>MARKET DEPTH</source>
-        <translation type="unfinished">市場 DEPTH</translation>
+        <translation>市場 DEPTH</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderBook.cpp" line="59" />
         <source>Spread: --</source>
-        <translation type="unfinished">價差: --</translation>
+        <translation>價差: --</translation>
     </message>
 </context>
 <context>
@@ -4803,114 +4819,114 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="37" />
         <source>ORDER ENTRY</source>
-        <translation type="unfinished">訂單 ENTRY</translation>
+        <translation>訂單 ENTRY</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="42" />
         <source>PAPER</source>
-        <translation type="unfinished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="59" />
         <source>BUY</source>
-        <translation type="unfinished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="67" />
         <source>SELL</source>
-        <translation type="unfinished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="93" />
         <source>PRODUCT</source>
-        <translation type="unfinished">產品</translation>
+        <translation>產品</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="104" />
         <source>EXCHANGE</source>
-        <translation type="unfinished">交易所</translation>
+        <translation>交易所</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="128" />
         <source>MKT: --</source>
-        <translation type="unfinished">市值: --</translation>
+        <translation>市值: --</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="133" />
         <source>QTY</source>
-        <translation type="unfinished">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="145" />
         <source>PRICE</source>
-        <translation type="unfinished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="151" />
         <source>Limit price</source>
-        <translation type="unfinished">限價</translation>
+        <translation>限價</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="158" />
         <source>TRIGGER</source>
-        <translation type="unfinished">觸發</translation>
+        <translation>觸發</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="164" />
         <source>Trigger price</source>
-        <translation type="unfinished">觸發價</translation>
+        <translation>觸發價</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="170" />
         <source>+ ADVANCED</source>
-        <translation type="unfinished">+ 進階</translation>
+        <translation>+ 進階</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="183" />
         <source>SL</source>
-        <translation type="unfinished">SL</translation>
+        <translation>SL</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="187" />
         <source>Stop Loss</source>
-        <translation type="unfinished">停損</translation>
+        <translation>停損</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="190" />
         <source>TP</source>
-        <translation type="unfinished">TP</translation>
+        <translation>TP</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="194" />
         <source>Take Profit</source>
-        <translation type="unfinished">止盈</translation>
+        <translation>止盈</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="210" />
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="440" />
         <source>Est: --</source>
-        <translation type="unfinished">預估: --</translation>
+        <translation>預估: --</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="224" />
         <source>BUY RELIANCE</source>
-        <translation type="unfinished">買入 RELIANCE</translation>
+        <translation>買入 RELIANCE</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="231" />
         <source>ALL</source>
-        <translation type="unfinished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="235" />
         <source>Broadcast this order to multiple accounts</source>
-        <translation type="unfinished">將此訂單廣播到多個帳戶</translation>
+        <translation>將此訂單廣播到多個帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="243" />
         <location filename="../src/screens/equity_trading/EquityOrderEntry.cpp" line="393" />
         <source>Enter a valid quantity</source>
-        <translation type="unfinished">請輸入有效數量</translation>
+        <translation>請輸入有效數量</translation>
     </message>
 </context>
 <context>
@@ -4918,13 +4934,13 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityOverviewTab.cpp" line="390" />
         <source>PERIOD</source>
-        <translation type="unfinished">期間</translation>
+        <translation>期間</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityOverviewTab.cpp" line="478" />
         <location filename="../src/screens/equity_research/EquityOverviewTab.cpp" line="538" />
         <source>—</source>
-        <translation type="unfinished" />
+        <translation>—</translation>
     </message>
 </context>
 <context>
@@ -4932,18 +4948,18 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityPeersTab.cpp" line="46" />
         <source>PEERS (comma-separated):</source>
-        <translation type="unfinished">同業（逗號分隔）：</translation>
+        <translation>同業（逗號分隔）：</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityPeersTab.cpp" line="60" />
         <source>LOAD</source>
-        <translation type="unfinished">載入</translation>
+        <translation>載入</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityPeersTab.cpp" line="70" />
         <location filename="../src/screens/equity_research/EquityPeersTab.cpp" line="133" />
         <source>Loading peer data…</source>
-        <translation type="unfinished">載入 Peers (同業比較) 資料中…</translation>
+        <translation>載入 Peers (同業比較) 資料中…</translation>
     </message>
 </context>
 <context>
@@ -4956,7 +4972,7 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="108" />
         <source>Financials</source>
-        <translation type="unfinished">財務數據</translation>
+        <translation>財務數據</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="109" />
@@ -4971,12 +4987,12 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="111" />
         <source>TALIpp</source>
-        <translation type="unfinished">TALIpp</translation>
+        <translation>TALIpp</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="112" />
         <source>Peers</source>
-        <translation type="unfinished">同業比較</translation>
+        <translation>同業比較</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="113" />
@@ -4991,17 +5007,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="131" />
         <source>EQUITY RESEARCH</source>
-        <translation type="unfinished">權益 研究</translation>
+        <translation>權益 研究</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="139" />
         <source>Drag to broadcast this symbol to any panel</source>
-        <translation type="unfinished">拖曳以將該符號廣播到任何面板</translation>
+        <translation>拖曳以將該符號廣播到任何面板</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="150" />
         <source>Use /stock, /fund, /index... in command bar to search</source>
-        <translation type="unfinished">在命令列中使用 /stock、/fund、/index... 進行搜索</translation>
+        <translation>在命令列中使用 /stock、/fund、/index... 進行搜索</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="250" />
@@ -5011,7 +5027,7 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityResearchScreen.cpp" line="310" />
         <source>VOL: </source>
-        <translation type="unfinished">VOL: </translation>
+        <translation>VOL: </translation>
     </message>
 </context>
 <context>
@@ -5019,32 +5035,32 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquitySentimentTab.cpp" line="104" />
         <source>Loading market sentiment…</source>
-        <translation type="unfinished">正在加載市場情緒...</translation>
+        <translation>正在加載市場情緒...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquitySentimentTab.cpp" line="125" />
         <source>MARKET SENTIMENT</source>
-        <translation type="unfinished">市場 SENTIMENT</translation>
+        <translation>市場 SENTIMENT</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquitySentimentTab.cpp" line="144" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquitySentimentTab.cpp" line="154" />
         <source>Refreshing market sentiment…</source>
-        <translation type="unfinished">刷新市場情緒...</translation>
+        <translation>刷新市場情緒...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquitySentimentTab.cpp" line="163" />
         <source>Open a symbol and enable Adanos Market Sentiment in Data Sources to load a snapshot.</source>
-        <translation type="unfinished">開啟交易品種並在資料來源中啟用 Adanos 市場情緒以載入快照。</translation>
+        <translation>開啟交易品種並在資料來源中啟用 Adanos 市場情緒以載入快照。</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquitySentimentTab.cpp" line="261" />
         <source>No snapshot available.</source>
-        <translation type="unfinished">無可用快照。</translation>
+        <translation>無可用快照。</translation>
     </message>
 </context>
 <context>
@@ -5053,48 +5069,48 @@ Click CREATE to build your first data mapping.</source>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="194" />
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="262" />
         <source>—  data points  |  TALIpp Engine</source>
-        <translation type="unfinished">—  資料點  |  TALIpp 引擎</translation>
+        <translation>—  資料點  |  TALIpp 引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="195" />
         <source>Select an indicator and click CALCULATE.</source>
-        <translation type="unfinished">選擇 Indicator (指標) 並點擊「計算」。</translation>
+        <translation>選擇 Indicator (指標) 並點擊「計算」。</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="267" />
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="519" />
         <source>▶  CALCULATE</source>
-        <translation type="unfinished">▶  計算</translation>
+        <translation>▶  計算</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="290" />
         <source>Select an indicator and click CALCULATE</source>
-        <translation type="unfinished">選擇一個指標並點擊“計算”</translation>
+        <translation>選擇一個指標並點擊“計算”</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="294" />
         <source>50+ indicators across 6 categories — powered by TALIpp incremental engine</source>
-        <translation type="unfinished">跨越 6 個類別的 50 多個指標 - 由 TALIPp 增量引擎提供支持</translation>
+        <translation>跨越 6 個類別的 50 多個指標 - 由 TALIPp 增量引擎提供支持</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="407" />
         <source>No symbol loaded. Search for a symbol first.</source>
-        <translation type="unfinished">沒有加載符號。先搜尋一個符號。</translation>
+        <translation>沒有加載符號。先搜尋一個符號。</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="416" />
         <source>COMPUTING…</source>
-        <translation type="unfinished">計算中…</translation>
+        <translation>計算中…</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="417" />
         <source>Computing </source>
-        <translation type="unfinished">計算中 </translation>
+        <translation>計算中 </translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTalippTab.cpp" line="523" />
         <source>No data returned for </source>
-        <translation type="unfinished">無資料 returned 用於</translation>
+        <translation>無資料 returned 用於</translation>
     </message>
 </context>
 <context>
@@ -5102,22 +5118,22 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_research/EquityTechnicalsTab.cpp" line="255" />
         <source>TECHNICAL RATING</source>
-        <translation type="unfinished">技術面 評等</translation>
+        <translation>技術面 評等</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTechnicalsTab.cpp" line="267" />
         <source>—</source>
-        <translation type="unfinished" />
+        <translation>—</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTechnicalsTab.cpp" line="317" />
         <source>0 INDICATORS</source>
-        <translation type="unfinished">0 個指標</translation>
+        <translation>0 個指標</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_research/EquityTechnicalsTab.cpp" line="334" />
         <source>KEY INDICATORS</source>
-        <translation type="unfinished">KEY 指標</translation>
+        <translation>KEY 指標</translation>
     </message>
 </context>
 <context>
@@ -5125,32 +5141,32 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityTickerBar.cpp" line="31" />
         <source>B:--</source>
-        <translation type="unfinished">B:--</translation>
+        <translation>B:--</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTickerBar.cpp" line="35" />
         <source>A:--</source>
-        <translation type="unfinished">A:--</translation>
+        <translation>A:--</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTickerBar.cpp" line="39" />
         <source>S:--</source>
-        <translation type="unfinished">S:--</translation>
+        <translation>S:--</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTickerBar.cpp" line="43" />
         <source>H:--</source>
-        <translation type="unfinished">H:--</translation>
+        <translation>H:--</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTickerBar.cpp" line="47" />
         <source>L:--</source>
-        <translation type="unfinished">L:--</translation>
+        <translation>L:--</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTickerBar.cpp" line="51" />
         <source>Vol:--</source>
-        <translation type="unfinished">波動率:--</translation>
+        <translation>波動率:--</translation>
     </message>
 </context>
 <context>
@@ -5159,73 +5175,73 @@ Click CREATE to build your first data mapping.</source>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="201" />
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="517" />
         <source>NO ACCOUNT</source>
-        <translation type="unfinished">無帳戶</translation>
+        <translation>無帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="215" />
         <source>NSE</source>
-        <translation type="unfinished">NSE</translation>
+        <translation>NSE</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="247" />
         <source>--:--:--</source>
-        <translation type="unfinished">--:--:--</translation>
+        <translation>--:--:--</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="252" />
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="546" />
         <source>○ NO ACCOUNTS</source>
-        <translation type="unfinished">○ 無帳戶</translation>
+        <translation>○ 無帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="258" />
         <source>ACCOUNTS</source>
-        <translation type="unfinished">帳戶</translation>
+        <translation>帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="265" />
         <source>PAPER</source>
-        <translation type="unfinished">模擬</translation>
+        <translation>模擬</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1104" />
         <source>Import holdings into portfolio</source>
-        <translation type="unfinished">將持股導入投資組合</translation>
+        <translation>將持股導入投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1123" />
         <source>Create a new portfolio</source>
-        <translation type="unfinished">建立 a 新增 投資組合</translation>
+        <translation>建立 a 新增 投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1124" />
         <source>Add to existing portfolio</source>
-        <translation type="unfinished">新增至現有投資組合</translation>
+        <translation>新增至現有投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1144" />
         <source>Loading portfolios...</source>
-        <translation type="unfinished">載入中 portfolios...</translation>
+        <translation>載入中 portfolios...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1209" />
         <source>Select all</source>
-        <translation type="unfinished">全選</translation>
+        <translation>全選</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1210" />
         <source>Deselect all</source>
-        <translation type="unfinished">取消全選</translation>
+        <translation>取消全選</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1228" />
         <source>IMPORT</source>
-        <translation type="unfinished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityTradingScreen.cpp" line="1250" />
         <source>(no portfolios yet)</source>
-        <translation type="unfinished">(尚無投資組合)</translation>
+        <translation>(尚無投資組合)</translation>
     </message>
 </context>
 <context>
@@ -5233,17 +5249,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/equity_trading/EquityWatchlist.cpp" line="30" />
         <source>WATCHLIST</source>
-        <translation type="unfinished">自選清單</translation>
+        <translation>自選清單</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityWatchlist.cpp" line="44" />
         <source>Filter...</source>
-        <translation type="unfinished">篩選...</translation>
+        <translation>篩選...</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/EquityWatchlist.cpp" line="58" />
         <source>Add symbol...</source>
-        <translation type="unfinished">新增 Symbol (股票代碼)...</translation>
+        <translation>新增 Symbol (股票代碼)...</translation>
     </message>
 </context>
 <context>
@@ -5251,12 +5267,12 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/excel/ExcelScreen.cpp" line="84" />
         <source>Sheet1</source>
-        <translation type="unfinished">工作表1</translation>
+        <translation>工作表1</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/ExcelScreen.cpp" line="121" />
         <source>EXCEL SPREADSHEET</source>
-        <translation type="unfinished">Excel 試算表</translation>
+        <translation>Excel 試算表</translation>
     </message>
 </context>
 <context>
@@ -5264,18 +5280,18 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="215" />
         <source>Expand / Collapse</source>
-        <translation type="unfinished">展開 / 收合</translation>
+        <translation>展開 / 收合</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="219" />
         <source>EXECUTION RESULTS</source>
-        <translation type="unfinished">執行 結果</translation>
+        <translation>執行 結果</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="234" />
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="324" />
         <source>IDLE</source>
-        <translation type="unfinished">閒置</translation>
+        <translation>閒置</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="247" />
@@ -5286,22 +5302,22 @@ Click CREATE to build your first data mapping.</source>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="257" />
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="271" />
         <source>COPY</source>
-        <translation type="unfinished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="263" />
         <source>Copy all results to clipboard</source>
-        <translation type="unfinished">複製所有結果到剪貼簿</translation>
+        <translation>複製所有結果到剪貼簿</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="266" />
         <source>COPIED!</source>
-        <translation type="unfinished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ExecutionResultsPanel.cpp" line="335" />
         <source>RUNNING…</source>
-        <translation type="unfinished">執行中…</translation>
+        <translation>執行中…</translation>
     </message>
 </context>
 <context>
@@ -5309,7 +5325,7 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/economics/panels/FederalReservePanel.cpp" line="50" />
         <source>SERIES</source>
-        <translation type="unfinished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
@@ -5317,17 +5333,17 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/FeeDiscountPanel.cpp" line="137" />
         <source>PROJECTED SAVINGS  ·  reference $%1 SKU</source>
-        <translation type="unfinished">預估節省 · 參考 $%1 SKU</translation>
+        <translation>預估節省 · 參考 $%1 SKU</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/FeeDiscountPanel.cpp" line="148" />
         <source>Hold ≥ %1 $FNCPT to qualify for the discount on premium screens, AI reports, and deep backtests.</source>
-        <translation type="unfinished" />
+        <translation>持有 ≥ %1 $FNCPT 即可享受進階畫面、AI 報告和深度回測的折扣。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/FeeDiscountPanel.cpp" line="309" />
         <source>Acquire %1 more $FNCPT to unlock %2% off.</source>
-        <translation type="unfinished">取得 %1 更多 FNCPT 即可解鎖 %2% 折扣。</translation>
+        <translation>取得 %1 更多 FNCPT 即可解鎖 %2% 折扣。</translation>
     </message>
 </context>
 <context>
@@ -5335,112 +5351,115 @@ Click CREATE to build your first data mapping.</source>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="63" />
         <source>FILE MANAGER</source>
-        <translation type="unfinished">檔案管理器</translation>
+        <translation>檔案管理器</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="69" />
         <source>Manage files across the terminal</source>
-        <translation type="unfinished">透過終端管理文件</translation>
+        <translation>透過終端管理文件</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="74" />
         <source>0 files | 0 B</source>
-        <translation type="unfinished">0 檔案 | 0 B</translation>
+        <translation>0 檔案 | 0 B</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="79" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="92" />
         <source>UPLOAD FILES</source>
-        <translation type="unfinished">上傳 檔案</translation>
+        <translation>上傳 檔案</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="116" />
         <source>Selected files:</source>
-        <translation type="unfinished">已選取 files:</translation>
+        <translation>已選取 files:</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="121" />
         <source>DELETE SELECTED</source>
-        <translation type="unfinished">刪除已選</translation>
+        <translation>刪除已選</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="131" />
         <source>CLEAR SELECTION</source>
-        <translation type="unfinished">清除選取</translation>
+        <translation>清除選取</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="183" />
         <source>Storage: 0 B / 500 MB</source>
-        <translation type="unfinished">儲存空間: 0 B / 500 MB</translation>
+        <translation>儲存空間: 0 B / 500 MB</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="217" />
         <source>Search files by name, type, or source...</source>
-        <translation type="unfinished">按名稱、類型或來源搜尋檔案...</translation>
+        <translation>按名稱、類型或來源搜尋檔案...</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="226" />
         <source>Sort:</source>
-        <translation type="unfinished">排序：</translation>
+        <translation>排序：</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="302" />
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="822" />
         <source>PREVIEW</source>
-        <translation type="unfinished">預覽</translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="362" />
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="547" />
         <source>Select a file to preview</source>
-        <translation type="unfinished">選擇要預覽的檔案</translation>
+        <translation>選擇要預覽的檔案</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="469" />
         <source>Binary file — preview not available.
 Use SAVE to download.</source>
-        <translation type="unfinished" />
+        <translation>二進位檔案 — 無法預覽。
+請使用「儲存」下載。</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="477" />
         <source>Cannot open file for preview.</source>
-        <translation type="unfinished">無法開啟檔案 用於preview.</translation>
+        <translation>無法開啟檔案 用於preview.</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="535" />
         <source>
 
 [... truncated at 64K characters ...]</source>
-        <translation type="unfinished" />
+        <translation>
+
+[… 內容已截斷（超過 64K 字元）…]</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="628" />
         <source>[ FM ]</source>
-        <translation type="unfinished">[ FM ]</translation>
+        <translation>[ FM ]</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="634" />
         <source>Your terminal file index is empty.</source>
-        <translation type="unfinished">您的終端檔案索引為空。</translation>
+        <translation>您的終端檔案索引為空。</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="654" />
         <source>FILES ARE COLLECTED FROM</source>
-        <translation type="unfinished">文件收集自</translation>
+        <translation>文件收集自</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="721" />
         <source>TIPS</source>
-        <translation type="unfinished">提示</translation>
+        <translation>提示</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="742" />
         <source>No files match your search or filter.</source>
-        <translation type="unfinished">沒有文件與您的搜尋或篩選器相符。</translation>
+        <translation>沒有文件與您的搜尋或篩選器相符。</translation>
     </message>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="848" />
@@ -5450,7 +5469,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/file_manager/FileManagerScreen.cpp" line="859" />
         <source>DEL</source>
-        <translation type="unfinished">DEL</translation>
+        <translation>DEL</translation>
     </message>
 </context>
 <context>
@@ -5458,7 +5477,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/economics/panels/FinceptMacroPanel.cpp" line="40" />
         <source>FINCEPT MACRO — COMING SOON</source>
-        <translation type="unfinished">FINCEPT 總經 — 即將推出</translation>
+        <translation>FINCEPT 總經 — 即將推出</translation>
     </message>
 </context>
 <context>
@@ -5466,32 +5485,32 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/services/prediction/polymarket/PolymarketAdapter.cpp" line="213" />
         <source>Python response is not JSON: </source>
-        <translation type="unfinished">Python 回應不是 JSON：</translation>
+        <translation>Python 回應不是 JSON：</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/polymarket/PolymarketAdapter.cpp" line="219" />
         <source>Python command failed</source>
-        <translation type="unfinished">Python command失敗</translation>
+        <translation>Python command失敗</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/polymarket/PolymarketAdapter.cpp" line="229" />
         <source>No Polymarket credentials — connect an account first</source>
-        <translation type="unfinished">沒有 Polymarket 憑證 — 請先連接帳戶</translation>
+        <translation>沒有 Polymarket 憑證 — 請先連接帳戶</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="231" />
         <source>No Kalshi credentials — connect an account first</source>
-        <translation type="unfinished">沒有 Kalshi 憑證 — 請先連接帳戶</translation>
+        <translation>沒有 Kalshi 憑證 — 請先連接帳戶</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="255" />
         <source>Kalshi bridge: non-JSON response — </source>
-        <translation type="unfinished">Kalshi 橋接：非 JSON 回應 — </translation>
+        <translation>Kalshi 橋接：非 JSON 回應 — </translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="261" />
         <source>Kalshi command failed</source>
-        <translation type="unfinished">Kalshi 命令失敗</translation>
+        <translation>Kalshi 命令失敗</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="54" />
@@ -5500,337 +5519,337 @@ Use SAVE to download.</source>
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="544" />
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="594" />
         <source>:yes</source>
-        <translation type="unfinished">:yes</translation>
+        <translation>:yes</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="55" />
         <source>:no</source>
-        <translation type="unfinished">:no</translation>
+        <translation>:no</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/PredictionCredentialStore.cpp" line="91" />
         <source>SecureStorage.store(polymarket) failed: </source>
-        <translation type="unfinished">SecureStorage.store（polymarket）失敗：</translation>
+        <translation>SecureStorage.store（polymarket）失敗：</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/PredictionCredentialStore.cpp" line="121" />
         <source>SecureStorage.store(kalshi) failed: </source>
-        <translation type="unfinished">SecureStorage.store（kalshi）失敗：</translation>
+        <translation>SecureStorage.store（kalshi）失敗：</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioAnalyticsService.cpp" line="74" />
         <source>%1 returned empty output</source>
-        <translation type="unfinished">%1 回傳空輸出</translation>
+        <translation>%1 回傳空輸出</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioAnalyticsService.cpp" line="77" />
         <source>%1 failed: %2</source>
-        <translation type="unfinished">%1失敗: %2</translation>
+        <translation>%1失敗: %2</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioAnalyticsService.cpp" line="83" />
         <source>%1 returned malformed JSON</source>
-        <translation type="unfinished">%1 回傳格式錯誤的 JSON</translation>
+        <translation>%1 回傳格式錯誤的 JSON</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioAnalyticsService.cpp" line="85" />
         <source>%1: bad JSON: %2</source>
-        <translation type="unfinished">%1：錯誤的 JSON：%2</translation>
+        <translation>%1：錯誤的 JSON：%2</translation>
     </message>
     <message>
         <location filename="../src/services/stt/SpeechService.cpp" line="56" />
         <source>Python not available — cannot start voice input</source>
-        <translation type="unfinished">Python 不可用 — 無法啟動語音輸入</translation>
+        <translation>Python 不可用 — 無法啟動語音輸入</translation>
     </message>
     <message>
         <location filename="../src/services/stt/SpeechService.cpp" line="62" />
         <source>Voice script not found: </source>
-        <translation type="unfinished">未找到語音腳本：</translation>
+        <translation>未找到語音腳本：</translation>
     </message>
     <message>
         <location filename="../src/services/stt/SpeechService.cpp" line="101" />
         <source>Failed to start voice recognition process</source>
-        <translation type="unfinished">啟動語音辨識程序失敗</translation>
+        <translation>啟動語音辨識程序失敗</translation>
     </message>
     <message>
         <location filename="../src/services/stt/SpeechService.cpp" line="214" />
         <source>Voice recognition stopped unexpectedly</source>
-        <translation type="unfinished">語音辨識意外停止</translation>
+        <translation>語音辨識意外停止</translation>
     </message>
     <message>
         <location filename="../src/services/economics/EconomicsService.cpp" line="113" />
         <source>] </source>
-        <translation type="unfinished">] </translation>
+        <translation>] </translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="64" />
         <location filename="../src/services/akshare/AkShareService.cpp" line="64" />
         <source>Query failed</source>
-        <translation type="unfinished">查詢失敗</translation>
+        <translation>查詢失敗</translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="66" />
         <location filename="../src/services/akshare/AkShareService.cpp" line="66" />
         <source>%1 %2 failed: %3</source>
-        <translation type="unfinished">%1 %2失敗: %3</translation>
+        <translation>%1 %2失敗: %3</translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="74" />
         <location filename="../src/services/akshare/AkShareService.cpp" line="74" />
         <source>No data from %1</source>
-        <translation type="unfinished">無資料 來自%1</translation>
+        <translation>無資料 來自%1</translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="82" />
         <location filename="../src/services/akshare/AkShareService.cpp" line="82" />
         <source>JSON parse error: %1</source>
-        <translation type="unfinished">JSON 解析錯誤: %1</translation>
+        <translation>JSON 解析錯誤: %1</translation>
     </message>
     <message>
         <location filename="../src/services/asia_markets/AsiaMarketsService.cpp" line="95" />
         <location filename="../src/services/akshare/AkShareService.cpp" line="95" />
         <source>Query returned failure</source>
-        <translation type="unfinished">查詢回傳失敗</translation>
+        <translation>查詢回傳失敗</translation>
     </message>
     <message>
         <location filename="../src/trading/brokers/zerodha/ZerodhaAutoLogin.cpp" line="98" />
         <source>Invalid Kite user ID or password</source>
-        <translation type="unfinished">Kite 使用者 ID 或密碼無效</translation>
+        <translation>Kite 使用者 ID 或密碼無效</translation>
     </message>
     <message>
         <location filename="../src/app/main.cpp" line="652" />
         <source>Fincept Terminal — First-Time Setup</source>
-        <translation type="unfinished">Fincept Terminal — 首次設定</translation>
+        <translation>Fincept Terminal — 首次設定</translation>
     </message>
     <message>
         <location filename="../src/auth/PinManager.cpp" line="35" />
         <source>PIN must be exactly 6 digits</source>
-        <translation type="unfinished">PIN 碼必須剛好是 6 位數字</translation>
+        <translation>PIN 碼必須剛好是 6 位數字</translation>
     </message>
     <message>
         <location filename="../src/auth/PinManager.cpp" line="38" />
         <source>PIN must contain only digits</source>
-        <translation type="unfinished">PIN 碼必須僅包含數字</translation>
+        <translation>PIN 碼必須僅包含數字</translation>
     </message>
     <message>
         <location filename="../src/auth/PinManager.cpp" line="45" />
         <source>PIN is too simple — use unique digits</source>
-        <translation type="unfinished">PIN 碼太簡單 — 請使用不重複的數字</translation>
+        <translation>PIN 碼太簡單 — 請使用不重複的數字</translation>
     </message>
     <message>
         <location filename="../src/auth/PinManager.cpp" line="53" />
         <source>PIN is too simple — avoid sequential digits</source>
-        <translation type="unfinished">PIN 碼太簡單 — 避免連續數字</translation>
+        <translation>PIN 碼太簡單 — 避免連續數字</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="21" />
         <source>%1¢</source>
-        <translation type="unfinished" />
+        <translation>%1¢</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="23" />
         <source>$%1</source>
-        <translation type="unfinished">$%1</translation>
+        <translation>$%1</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="33" />
         <source>%1%2B</source>
-        <translation type="unfinished">%1%2B</translation>
+        <translation>%1%2B</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="34" />
         <source>%1%2M</source>
-        <translation type="unfinished">%1%2M</translation>
+        <translation>%1%2M</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="35" />
         <source>%1%2K</source>
-        <translation type="unfinished">%1%2K</translation>
+        <translation>%1%2K</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="76" />
         <source>Market is open for trading.</source>
-        <translation type="unfinished">市場開放交易。</translation>
+        <translation>市場開放交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="78" />
         <source> Closes </source>
-        <translation type="unfinished"> 收盤 </translation>
+        <translation> 收盤 </translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="82" />
         <source>Market has not yet opened for trading.</source>
-        <translation type="unfinished">市場尚未開放交易。</translation>
+        <translation>市場尚未開放交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="84" />
         <source> Close time: </source>
-        <translation type="unfinished"> 收盤時間： </translation>
+        <translation> 收盤時間： </translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="93" />
         <source>Market has resolved. No further trading.</source>
-        <translation type="unfinished">市場已結算，不再交易。</translation>
+        <translation>市場已結算，不再交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="97" />
         <source>Market is accepting orders.</source>
-        <translation type="unfinished">市場正在接受委託。</translation>
+        <translation>市場正在接受委託。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/ExchangePresentation.cpp" line="101" />
         <source>Market not currently trading.</source>
-        <translation type="unfinished">市場目前未交易。</translation>
+        <translation>市場目前未交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="911" />
         <source>Kalshi lifecycle: %1 → %2</source>
-        <translation type="unfinished">Kalshi 生命週期：%1 → %2</translation>
+        <translation>Kalshi 生命週期：%1 → %2</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1030" />
         <source>&lt;b&gt;%1&lt;/b&gt;</source>
-        <translation type="unfinished">&lt;b&gt;%1&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1032" />
         <source>Series: %1</source>
-        <translation type="unfinished">序列：%1</translation>
+        <translation>序列：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1034" />
         <source>Frequency: %1</source>
-        <translation type="unfinished">頻率: %1</translation>
+        <translation>頻率: %1</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1036" />
         <source>Fees: %1</source>
-        <translation type="unfinished">手續費：%1</translation>
+        <translation>手續費：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1038" />
         <source> (×%1)</source>
-        <translation type="unfinished"> (×%1)</translation>
+        <translation> (×%1)</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1042" />
         <source>&lt;i&gt;%1&lt;/i&gt;</source>
-        <translation type="unfinished">&lt;i&gt;%1&lt;/i&gt;</translation>
+        <translation>&lt;i&gt;%1&lt;/i&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="1044" />
         <source>&lt;br&gt;</source>
-        <translation type="unfinished">&lt;br&gt;</translation>
+        <translation>&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/BroadcastOrderDialog.cpp" line="22" />
         <source>Broadcast Order</source>
-        <translation type="unfinished">廣播訂單</translation>
+        <translation>廣播訂單</translation>
     </message>
     <message>
         <location filename="../src/screens/equity_trading/AccountManagementDialog.cpp" line="53" />
         <source>Manage Broker Accounts</source>
-        <translation type="unfinished">管理 Broker (券商) 帳戶</translation>
+        <translation>管理 Broker (券商) 帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="93" />
         <source>Enter API key</source>
-        <translation type="unfinished">輸入 API Key</translation>
+        <translation>輸入 API Key</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="102" />
         <source>Enter API secret</source>
-        <translation type="unfinished">輸入 API Secret</translation>
+        <translation>輸入 API Secret</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="124" />
         <source>Base32 secret (optional)</source>
-        <translation type="unfinished">Base32 秘密（可選）</translation>
+        <translation>Base32 秘密（可選）</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_trading/CryptoCredentials.cpp" line="148" />
         <source>CODE: --</source>
-        <translation type="unfinished">程式碼: --</translation>
+        <translation>程式碼: --</translation>
     </message>
     <message>
         <location filename="../src/screens/devtools/DataHubInspector.cpp" line="18" />
         <source>%1 ms</source>
-        <translation type="unfinished">%1 ms</translation>
+        <translation>%1 ms</translation>
     </message>
     <message>
         <location filename="../src/screens/devtools/DataHubInspector.cpp" line="19" />
         <source>%1 s</source>
-        <translation type="unfinished">%1 s</translation>
+        <translation>%1 s</translation>
     </message>
     <message>
         <location filename="../src/screens/devtools/DataHubInspector.cpp" line="20" />
         <source>%1 m</source>
-        <translation type="unfinished">%1 m</translation>
+        <translation>%1 m</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="572" />
         <source>Import Portfolio</source>
-        <translation type="unfinished">匯入 Portfolio (投資組合)</translation>
+        <translation>匯入 Portfolio (投資組合)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="600" />
         <source>Select JSON file...</source>
-        <translation type="unfinished">選擇 JSON 檔案...</translation>
+        <translation>選擇 JSON 檔案...</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="870" />
         <source>Sector Mapping</source>
-        <translation type="unfinished">扇區映射</translation>
+        <translation>扇區映射</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="202" />
         <source>Import a file from your PC into the File Manager</source>
-        <translation type="unfinished">從你的電腦匯入檔案至檔案管理器</translation>
+        <translation>從你的電腦匯入檔案至檔案管理器</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="308" />
         <source>Refresh agent list</source>
-        <translation type="unfinished">重新整理 Agent 清單</translation>
+        <translation>重新整理 Agent 清單</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="413" />
         <source>Refresh tool list</source>
-        <translation type="unfinished">重新整理工具清單</translation>
+        <translation>重新整理工具清單</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="101" />
         <source>&lt;br\s*/?&gt;|&lt;/(p|div|li|tr)&gt;</source>
-        <translation type="unfinished" />
+        <translation>&lt;br\s*/?&gt;|&lt;/(p|div|li|tr)&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="103" />
         <source>&lt;[^&gt;]+&gt;</source>
-        <translation type="unfinished">&lt;[^&gt;]+&gt;</translation>
+        <translation>&lt;[^&gt;]+&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="132" />
         <source>utf-8</source>
-        <translation type="unfinished">utf-8</translation>
+        <translation>utf-8</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/BaseWidget.cpp" line="68" />
         <source>Configure widget</source>
-        <translation type="unfinished">設定 Widget (小工具)</translation>
+        <translation>設定 Widget (小工具)</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/BaseWidget.cpp" line="86" />
         <source>Refresh widget data</source>
-        <translation type="unfinished">重新整理 Widget (小工具) 資料</translation>
+        <translation>重新整理 Widget (小工具) 資料</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/BaseWidget.cpp" line="103" />
         <source>Close widget</source>
-        <translation type="unfinished">關閉 Widget (小工具)</translation>
+        <translation>關閉 Widget (小工具)</translation>
     </message>
     <message>
         <location filename="../src/python/PythonSetupManager.cpp" line="1025" />
         <source>timed out</source>
-        <translation type="unfinished">逾時</translation>
+        <translation>逾時</translation>
     </message>
 </context>
 <context>
@@ -5838,7 +5857,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/economics/panels/FiscalDataPanel.cpp" line="49" />
         <source>DATASET</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
 </context>
 <context>
@@ -5847,77 +5866,77 @@ Use SAVE to download.</source>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="166" />
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="283" />
         <source>重設密碼</source>
-        <translation type="unfinished">重設密碼</translation>
+        <translation>重設密碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="175" />
         <source>輸入您的電子郵件，我們將發送驗證碼。</source>
-        <translation type="unfinished">輸入您的電子郵件，我們將發送驗證碼。</translation>
+        <translation>輸入您的電子郵件，我們將發送驗證碼。</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="182" />
         <source>電子郵件</source>
-        <translation type="unfinished">電子郵件</translation>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="187" />
         <source>user@domain.com</source>
-        <translation type="unfinished">user@domain.com</translation>
+        <translation>user@domain.com</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="202" />
         <source>  發送驗證碼  </source>
-        <translation type="unfinished">  發送驗證碼  </translation>
+        <translation>  發送驗證碼  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="211" />
         <source>記住密碼了？返回登入</source>
-        <translation type="unfinished">記住密碼了？返回登入</translation>
+        <translation>記住密碼了？返回登入</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="236" />
         <source>檢查您的郵件</source>
-        <translation type="unfinished">檢查您的郵件</translation>
+        <translation>檢查您的郵件</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="245" />
         <source>我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</source>
-        <translation type="unfinished">我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</translation>
+        <translation>我們已發送驗證碼。請在下一個畫面輸入以重設密碼。</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="252" />
         <source>  我已收到驗證碼  </source>
-        <translation type="unfinished">  我已收到驗證碼  </translation>
+        <translation>  我已收到驗證碼  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="258" />
         <source>未收到？重新發送</source>
-        <translation type="unfinished">未收到？重新發送</translation>
+        <translation>未收到？重新發送</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="326" />
         <source>  重設密碼  </source>
-        <translation type="unfinished">  重設密碼  </translation>
+        <translation>  重設密碼  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="353" />
         <source>密碼已重設</source>
-        <translation type="unfinished">密碼已重設</translation>
+        <translation>密碼已重設</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="361" />
         <source>成功</source>
-        <translation type="unfinished">成功</translation>
+        <translation>成功</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="369" />
         <source>您的密碼已重設成功。現在可以使用新密碼登入。</source>
-        <translation type="unfinished">您的密碼已重設成功。現在可以使用新密碼登入。</translation>
+        <translation>您的密碼已重設成功。現在可以使用新密碼登入。</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/ForgotPasswordScreen.cpp" line="377" />
         <source>  繼續登入  </source>
-        <translation type="unfinished">  繼續登入  </translation>
+        <translation>  繼續登入  </translation>
     </message>
 </context>
 <context>
@@ -5925,37 +5944,37 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="131" />
         <source>DISCUSSIONS</source>
-        <translation type="unfinished">討論區</translation>
+        <translation>討論區</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="141" />
         <source>+ NEW POST</source>
-        <translation type="unfinished">+ 新建貼文</translation>
+        <translation>+ 新建貼文</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="301" />
         <source>NO DISCUSSIONS YET</source>
-        <translation type="unfinished">尚無討論</translation>
+        <translation>尚無討論</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="307" />
         <source>Be the first to start a conversation</source>
-        <translation type="unfinished">成為第一個開始對話的人</translation>
+        <translation>成為第一個開始對話的人</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="465" />
         <source>✓ VOTED</source>
-        <translation type="unfinished">✓ 已投票</translation>
+        <translation>✓ 已投票</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="473" />
         <source>● HOT</source>
-        <translation type="unfinished">● 熱門</translation>
+        <translation>● 熱門</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumFeedPanel.cpp" line="480" />
         <source>● ACTIVE</source>
-        <translation type="unfinished">● 活躍</translation>
+        <translation>● 活躍</translation>
     </message>
 </context>
 <context>
@@ -5963,22 +5982,22 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumPostListPanel.cpp" line="82" />
         <source>all-posts</source>
-        <translation type="unfinished">所有文章</translation>
+        <translation>所有文章</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostListPanel.cpp" line="260" />
         <source>NO POSTS YET</source>
-        <translation type="unfinished">尚無文章</translation>
+        <translation>尚無文章</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostListPanel.cpp" line="266" />
         <source>Be the first to start a discussion</source>
-        <translation type="unfinished">成為第一個發起討論的人</translation>
+        <translation>成為第一個發起討論的人</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostListPanel.cpp" line="373" />
         <source>● HOT</source>
-        <translation type="unfinished">● 熱門</translation>
+        <translation>● 熱門</translation>
     </message>
 </context>
 <context>
@@ -5986,7 +6005,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="79" />
         <source>Click any post from the feed to read it</source>
-        <translation type="unfinished">點擊動態中的任何文章來閱讀</translation>
+        <translation>點擊動態中的任何文章來閱讀</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="104" />
@@ -5996,42 +6015,42 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="228" />
         <source>▲  Upvote</source>
-        <translation type="unfinished">▲ 按讚</translation>
+        <translation>▲ 按讚</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="243" />
         <source>▲ 0</source>
-        <translation type="unfinished">▲ 0</translation>
+        <translation>▲ 0</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="247" />
         <source>◆ 0 replies</source>
-        <translation type="unfinished">◆ 0 則回覆</translation>
+        <translation>◆ 0 則回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="251" />
         <source>◉ 0 views</source>
-        <translation type="unfinished">◉ 0 次瀏覽</translation>
+        <translation>◉ 0 次瀏覽</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="272" />
         <source>REPLIES</source>
-        <translation type="unfinished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="303" />
         <source>Write a reply...</source>
-        <translation type="unfinished">撰寫回覆...</translation>
+        <translation>撰寫回覆...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="314" />
         <source>Reply</source>
-        <translation type="unfinished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumPostReaderPanel.cpp" line="427" />
         <source>NO REPLIES YET</source>
-        <translation type="unfinished">尚無回覆</translation>
+        <translation>尚無回覆</translation>
     </message>
 </context>
 <context>
@@ -6039,69 +6058,69 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="167" />
         <source>USER PROFILE</source>
-        <translation type="unfinished">使用者 Profile (設定檔)</translation>
+        <translation>使用者 Profile (設定檔)</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="258" />
         <source>EDIT MY PROFILE</source>
-        <translation type="unfinished">EDIT MY 設定檔</translation>
+        <translation>EDIT MY 設定檔</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="436" />
         <source>NEW POST</source>
-        <translation type="unfinished">新貼文</translation>
+        <translation>新貼文</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="459" />
         <source>CREATE NEW POST</source>
-        <translation type="unfinished">建立新貼文</translation>
+        <translation>建立新貼文</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="464" />
         <source>Share your insights with the community</source>
-        <translation type="unfinished">與社群分享您的見解</translation>
+        <translation>與社群分享您的見解</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="470" />
         <source>TITLE</source>
-        <translation type="unfinished">標題</translation>
+        <translation>標題</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="474" />
         <source>Give your post a descriptive title...</source>
-        <translation type="unfinished">為貼文輸入描述性標題...</translation>
+        <translation>為貼文輸入描述性標題...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="477" />
         <source>CONTENT</source>
-        <translation type="unfinished">內容</translation>
+        <translation>內容</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="481" />
         <source>Write your thoughts...</source>
-        <translation type="unfinished">寫下你的想法...</translation>
+        <translation>寫下你的想法...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="494" />
         <location filename="../src/screens/forum/ForumScreen.cpp" line="589" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="505" />
         <source>PUBLISH POST</source>
-        <translation type="unfinished">發布文章</translation>
+        <translation>發布文章</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="539" />
         <location filename="../src/screens/forum/ForumScreen.cpp" line="562" />
         <source>EDIT PROFILE</source>
-        <translation type="unfinished">編輯 Profile (設定檔)</translation>
+        <translation>編輯 Profile (設定檔)</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumScreen.cpp" line="599" />
         <source>SAVE CHANGES</source>
-        <translation type="unfinished">儲存 CHANGES</translation>
+        <translation>儲存 CHANGES</translation>
     </message>
 </context>
 <context>
@@ -6109,7 +6128,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="62" />
         <source>COMMUNITY</source>
-        <translation type="unfinished">社群</translation>
+        <translation>社群</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="100" />
@@ -6119,42 +6138,42 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="135" />
         <source>Search discussions...</source>
-        <translation type="unfinished">搜尋討論...</translation>
+        <translation>搜尋討論...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="175" />
         <source>ACTIVITY</source>
-        <translation type="unfinished">活動</translation>
+        <translation>活動</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="216" />
         <source>  ▲  TRENDING POSTS</source>
-        <translation type="unfinished">  ▲ 熱門文章</translation>
+        <translation>  ▲ 熱門文章</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="236" />
         <source>CHANNELS</source>
-        <translation type="unfinished">頻道</translation>
+        <translation>頻道</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="244" />
         <source>New post</source>
-        <translation type="unfinished">新貼文</translation>
+        <translation>新貼文</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="278" />
         <source>LEADERBOARD</source>
-        <translation type="unfinished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="293" />
         <source>  loading...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumSidebarPanel.cpp" line="445" />
         <source>  No contributors yet</source>
-        <translation type="unfinished">尚無貢獻者</translation>
+        <translation>尚無貢獻者</translation>
     </message>
 </context>
 <context>
@@ -6162,57 +6181,57 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="74" />
         <source>Loading thread...</source>
-        <translation type="unfinished">載入中 thread...</translation>
+        <translation>載入中 thread...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="109" />
         <source>←  Back to Feed</source>
-        <translation type="unfinished">←  返回 to Feed</translation>
+        <translation>←  返回 to Feed</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="252" />
         <source>▲  Upvote</source>
-        <translation type="unfinished">▲ 按讚</translation>
+        <translation>▲ 按讚</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="272" />
         <source>▲ 0</source>
-        <translation type="unfinished">▲ 0</translation>
+        <translation>▲ 0</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="277" />
         <source>◆ 0 replies</source>
-        <translation type="unfinished">◆ 0 則回覆</translation>
+        <translation>◆ 0 則回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="282" />
         <source>◉ 0 views</source>
-        <translation type="unfinished">◉ 0 次瀏覽</translation>
+        <translation>◉ 0 次瀏覽</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="314" />
         <source>REPLIES</source>
-        <translation type="unfinished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="377" />
         <source>Write a reply...</source>
-        <translation type="unfinished">撰寫回覆...</translation>
+        <translation>撰寫回覆...</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="389" />
         <source>Reply</source>
-        <translation type="unfinished">回覆</translation>
+        <translation>回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="504" />
         <source>NO REPLIES YET</source>
-        <translation type="unfinished">尚無回覆</translation>
+        <translation>尚無回覆</translation>
     </message>
     <message>
         <location filename="../src/screens/forum/ForumThreadPanel.cpp" line="510" />
         <source>Be the first to share your thoughts</source>
-        <translation type="unfinished">成為第一個分享您想法的人</translation>
+        <translation>成為第一個分享您想法的人</translation>
     </message>
 </context>
 <context>
@@ -6220,7 +6239,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/economics/panels/FredAnalyticsPanel.cpp" line="61" />
         <source>DATASET</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
 </context>
 <context>
@@ -6228,17 +6247,17 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/economics/panels/FredPanel.cpp" line="34" />
         <source>PRESET</source>
-        <translation type="unfinished">預設</translation>
+        <translation>預設</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/FredPanel.cpp" line="48" />
         <source>SERIES ID</source>
-        <translation type="unfinished">序列 ID</translation>
+        <translation>序列 ID</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/FredPanel.cpp" line="52" />
         <source>e.g. GDPC1</source>
-        <translation type="unfinished">例如：GDPC1</translation>
+        <translation>例如：GDPC1</translation>
     </message>
 </context>
 <context>
@@ -6251,17 +6270,17 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/GeopoliticsEventsWidget.cpp" line="149" />
         <source>Awaiting events…</source>
-        <translation type="unfinished">等候事件…</translation>
+        <translation>等候事件…</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/GeopoliticsEventsWidget.cpp" line="162" />
         <source>No events available</source>
-        <translation type="unfinished">沒有可用事件</translation>
+        <translation>沒有可用事件</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/GeopoliticsEventsWidget.cpp" line="255" />
         <source>Configure — Geopolitics Events</source>
-        <translation type="unfinished">配置 - 地緣政治事件</translation>
+        <translation>配置 - 地緣政治事件</translation>
     </message>
 </context>
 <context>
@@ -6269,53 +6288,53 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="151" />
         <source>UTC --:--</source>
-        <translation type="unfinished">UTC --:--</translation>
+        <translation>UTC --:--</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="168" />
         <source>0 EVENTS</source>
-        <translation type="unfinished">0 事件</translation>
+        <translation>0 事件</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="197" />
         <source>FILTERS</source>
-        <translation type="unfinished">篩選</translation>
+        <translation>篩選</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="219" />
         <source>COUNTRY</source>
-        <translation type="unfinished">國家</translation>
+        <translation>國家</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="223" />
         <source>e.g. Ukraine</source>
-        <translation type="unfinished">例如：Ukraine</translation>
+        <translation>例如：Ukraine</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="228" />
         <source>CITY</source>
-        <translation type="unfinished">CITY</translation>
+        <translation>CITY</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="232" />
         <source>e.g. Kyiv</source>
-        <translation type="unfinished">例如：Kyiv</translation>
+        <translation>例如：Kyiv</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="237" />
         <source>CATEGORY</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="244" />
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="495" />
         <source>All Categories</source>
-        <translation type="unfinished">All 分類</translation>
+        <translation>All 分類</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="249" />
         <source>APPLY FILTERS</source>
-        <translation type="unfinished">套用篩選</translation>
+        <translation>套用篩選</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="265" />
@@ -6325,48 +6344,48 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="285" />
         <source>LEGEND</source>
-        <translation type="unfinished">圖例</translation>
+        <translation>圖例</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="340" />
         <source>SOURCE:</source>
-        <translation type="unfinished">來源：</translation>
+        <translation>來源：</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="342" />
         <source>NEWS-EVENTS API + HDX</source>
-        <translation type="unfinished">新聞事件 API + HDX</translation>
+        <translation>新聞事件 API + HDX</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="347" />
         <source>ENGINE:</source>
-        <translation type="unfinished">引擎：</translation>
+        <translation>引擎：</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="349" />
         <source>PYTHON + C++</source>
-        <translation type="unfinished">Python + C++</translation>
+        <translation>Python + C++</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="359" />
         <source>CREDITS: —</source>
-        <translation type="unfinished">額度：—</translation>
+        <translation>額度：—</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="366" />
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="476" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="381" />
         <source>LOADING...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/GeopoliticsScreen.cpp" line="538" />
         <source>ERROR</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
 </context>
 <context>
@@ -6374,12 +6393,12 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/economics/panels/GlobalCentralBanksPanel.cpp" line="127" />
         <source>BANK</source>
-        <translation type="unfinished">銀行</translation>
+        <translation>銀行</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/GlobalCentralBanksPanel.cpp" line="136" />
         <source>SERIES</source>
-        <translation type="unfinished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
@@ -6387,42 +6406,42 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="53" />
         <source>All Agencies</source>
-        <translation type="unfinished">All 機構</translation>
+        <translation>All 機構</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="147" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="157" />
         <source>AGENCIES</source>
-        <translation type="unfinished">機構</translation>
+        <translation>機構</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="175" />
         <source>DATASETS</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="191" />
         <source>RECENT</source>
-        <translation type="unfinished">最近</translation>
+        <translation>最近</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="204" />
         <source>Search datasets…</source>
-        <translation type="unfinished">搜尋 Datasets (資料集)…</translation>
+        <translation>搜尋 Datasets (資料集)…</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="210" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataAustraliaPanel.cpp" line="612" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -6430,82 +6449,82 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="122" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="132" />
         <source>BILLS</source>
-        <translation type="unfinished">票券</translation>
+        <translation>票券</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="139" />
         <source>SUMMARY</source>
-        <translation type="unfinished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="152" />
         <source>CONGRESS</source>
-        <translation type="unfinished">國會</translation>
+        <translation>國會</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="165" />
         <source>TYPE</source>
-        <translation type="unfinished">類型</translation>
+        <translation>類型</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="170" />
         <source>All Types</source>
-        <translation type="unfinished">所有類型</translation>
+        <translation>所有類型</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="171" />
         <source>House Bill</source>
-        <translation type="unfinished">眾議院法案</translation>
+        <translation>眾議院法案</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="172" />
         <source>Senate Bill</source>
-        <translation type="unfinished">參議院法案</translation>
+        <translation>參議院法案</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="173" />
         <source>H. Joint Res.</source>
-        <translation type="unfinished">眾議院聯合決議</translation>
+        <translation>眾議院聯合決議</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="174" />
         <source>S. Joint Res.</source>
-        <translation type="unfinished">參議院聯合決議</translation>
+        <translation>參議院聯合決議</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="175" />
         <source>H. Con. Res.</source>
-        <translation type="unfinished">眾議院共同決議</translation>
+        <translation>眾議院共同決議</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="176" />
         <source>S. Con. Res.</source>
-        <translation type="unfinished">參議院共同決議</translation>
+        <translation>參議院共同決議</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="177" />
         <source>H. Simple Res.</source>
-        <translation type="unfinished">眾議院簡單決議</translation>
+        <translation>眾議院簡單決議</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="178" />
         <source>S. Simple Res.</source>
-        <translation type="unfinished">參議院簡單決議</translation>
+        <translation>參議院簡單決議</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="184" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataCongressPanel.cpp" line="366" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -6513,52 +6532,52 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="52" />
         <source>Data Services</source>
-        <translation type="unfinished">資料服務</translation>
+        <translation>資料服務</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="148" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="157" />
         <source>DATA SERVICES</source>
-        <translation type="unfinished">資料服務</translation>
+        <translation>資料服務</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="165" />
         <source>DATASETS</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="172" />
         <source>GEO SEARCH</source>
-        <translation type="unfinished">GEO 搜尋</translation>
+        <translation>GEO 搜尋</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="183" />
         <source>Search…</source>
-        <translation type="unfinished">搜尋…</translation>
+        <translation>搜尋…</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="189" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="239" />
         <source>Search datasets…</source>
-        <translation type="unfinished">搜尋 Datasets (資料集)…</translation>
+        <translation>搜尋 Datasets (資料集)…</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="249" />
         <source>Municipality name…</source>
-        <translation type="unfinished">Municipality 名稱…</translation>
+        <translation>Municipality 名稱…</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataFrancePanel.cpp" line="537" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -6566,42 +6585,42 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="56" />
         <source>Categories</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="142" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="151" />
         <source>CATEGORIES</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="159" />
         <source>DATASETS</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="170" />
         <source>Filter datasets…</source>
-        <translation type="unfinished">篩選 Datasets (資料集)…</translation>
+        <translation>篩選 Datasets (資料集)…</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="176" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="505" />
         <source>↗ OPEN</source>
-        <translation type="unfinished">↗ 開啟</translation>
+        <translation>↗ 開啟</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataHKPanel.cpp" line="525" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -6609,47 +6628,47 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="153" />
         <source>CKAN PORTAL:</source>
-        <translation type="unfinished">CKAN 入口:</translation>
+        <translation>CKAN 入口:</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="286" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="304" />
         <source>DATASETS</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="324" />
         <source>Search datasets…  ↵</source>
-        <translation type="unfinished">搜尋 Datasets (資料集)…  ↵</translation>
+        <translation>搜尋 Datasets (資料集)…  ↵</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="330" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="534" />
         <source>↗ OPEN</source>
-        <translation type="unfinished">↗ 開啟</translation>
+        <translation>↗ 開啟</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="735" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="764" />
         <source>✗ FAILED</source>
-        <translation type="unfinished">✗ 失敗</translation>
+        <translation>✗ 失敗</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataProviderPanel.cpp" line="789" />
         <source>✓ SAVED</source>
-        <translation type="unfinished">✓ 已儲存</translation>
+        <translation>✓ 已儲存</translation>
     </message>
 </context>
 <context>
@@ -6657,32 +6676,32 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataScreen.cpp" line="183" />
         <source>GOVERNMENT DATA EXPLORER</source>
-        <translation type="unfinished">政府資料探索者</translation>
+        <translation>政府資料探索者</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataScreen.cpp" line="230" />
         <source>SOVEREIGN PORTALS</source>
-        <translation type="unfinished">主權入口</translation>
+        <translation>主權入口</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataScreen.cpp" line="277" />
         <source>GOVT</source>
-        <translation type="unfinished">政府</translation>
+        <translation>政府</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataScreen.cpp" line="282" />
         <source>PORTAL:</source>
-        <translation type="unfinished">入口:</translation>
+        <translation>入口:</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataScreen.cpp" line="290" />
         <source>COUNTRY:</source>
-        <translation type="unfinished">國家:</translation>
+        <translation>國家:</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataScreen.cpp" line="304" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
 </context>
 <context>
@@ -6690,27 +6709,27 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="189" />
         <source>SECURITY TYPE BREAKDOWN</source>
-        <translation type="unfinished">SECURITY 類型 分解</translation>
+        <translation>SECURITY 類型 分解</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="232" />
         <source>PRICES</source>
-        <translation type="unfinished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="239" />
         <source>AUCTIONS</source>
-        <translation type="unfinished">拍賣</translation>
+        <translation>拍賣</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="245" />
         <source>SUMMARY</source>
-        <translation type="unfinished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="256" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="311" />
@@ -6720,7 +6739,7 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="312" />
         <source>Bills</source>
-        <translation type="unfinished">票券</translation>
+        <translation>票券</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="313" />
@@ -6735,17 +6754,17 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="315" />
         <source>TIPS</source>
-        <translation type="unfinished">提示</translation>
+        <translation>提示</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="316" />
         <source>FRN</source>
-        <translation type="unfinished">FRN</translation>
+        <translation>FRN</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataTreasuryPanel.cpp" line="497" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -6753,42 +6772,42 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="67" />
         <source>All Publishers</source>
-        <translation type="unfinished">所有發布者</translation>
+        <translation>所有發布者</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="157" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="167" />
         <source>PUBLISHERS</source>
-        <translation type="unfinished">發布者</translation>
+        <translation>發布者</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="185" />
         <source>DATASETS</source>
-        <translation type="unfinished">資料集</translation>
+        <translation>資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="203" />
         <source>POPULAR</source>
-        <translation type="unfinished">熱門</translation>
+        <translation>熱門</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="214" />
         <source>Search datasets…</source>
-        <translation type="unfinished">搜尋 Datasets (資料集)…</translation>
+        <translation>搜尋 Datasets (資料集)…</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="220" />
         <source>FETCH</source>
-        <translation type="unfinished">擷取</translation>
+        <translation>擷取</translation>
     </message>
     <message>
         <location filename="../src/screens/gov_data/GovDataUKPanel.cpp" line="548" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -6796,12 +6815,12 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/ui/widgets/GroupBadge.cpp" line="14" />
         <source>Symbol link group — click to cycle, right-click for menu</source>
-        <translation type="unfinished">Symbol (股票代碼) 連動群組 — 點擊切換，右鍵開啟選單</translation>
+        <translation>Symbol (股票代碼) 連動群組 — 點擊切換，右鍵開啟選單</translation>
     </message>
     <message>
         <location filename="../src/ui/widgets/GroupBadge.cpp" line="51" />
         <source>Unlink</source>
-        <translation type="unfinished">取消連結</translation>
+        <translation>取消連結</translation>
     </message>
 </context>
 <context>
@@ -6809,42 +6828,42 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="45" />
         <source>HDX HUMANITARIAN DATA</source>
-        <translation type="unfinished">HDX 人道主義資料</translation>
+        <translation>HDX 人道主義資料</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="79" />
         <source>Search HDX datasets...</source>
-        <translation type="unfinished">搜尋 HDX 資料集...</translation>
+        <translation>搜尋 HDX 資料集...</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="97" />
         <source>0 datasets</source>
-        <translation type="unfinished">0 個資料集</translation>
+        <translation>0 個資料集</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="143" />
         <source>Loading HDX data...</source>
-        <translation type="unfinished">正在載入 HDX 資料...</translation>
+        <translation>正在載入 HDX 資料...</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="174" />
         <source>COUNTRY:</source>
-        <translation type="unfinished">國家:</translation>
+        <translation>國家:</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="180" />
         <source>Select country</source>
-        <translation type="unfinished">選擇國家</translation>
+        <translation>選擇國家</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="185" />
         <source>TOPIC:</source>
-        <translation type="unfinished">主題：</translation>
+        <translation>主題：</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/HDXDataPanel.cpp" line="194" />
         <source>SEARCH</source>
-        <translation type="unfinished">SEARCH</translation>
+        <translation>SEARCH</translation>
     </message>
 </context>
 <context>
@@ -6852,12 +6871,12 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/info/HelpScreen.cpp" line="124" />
         <source>HELP CENTER</source>
-        <translation type="unfinished">幫助中心</translation>
+        <translation>幫助中心</translation>
     </message>
     <message>
         <location filename="../src/screens/info/HelpScreen.cpp" line="130" />
         <source>Find answers, get support, and connect with the Fincept community.</source>
-        <translation type="unfinished">尋找答案、獲得支持並與 Fincept 社群聯繫。</translation>
+        <translation>尋找答案、獲得支持並與 Fincept 社群聯繫。</translation>
     </message>
 </context>
 <context>
@@ -6865,27 +6884,27 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/crypto_center/HoldingsBar.cpp" line="290" />
         <source>Holding ≥ %1 $FNCPT — you qualify for the fee discount.</source>
-        <translation type="unfinished">持有 ≥ %1 $FNCPT - 您有資格享有費用折扣。</translation>
+        <translation>持有 ≥ %1 $FNCPT - 您有資格享有費用折扣。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/HoldingsBar.cpp" line="391" />
         <source>%1 holding(s) excluded — no live price.</source>
-        <translation type="unfinished">已排除 %1 檔持倉 — 無即時報價。</translation>
+        <translation>已排除 %1 檔持倉 — 無即時報價。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/HoldingsBar.cpp" line="444" />
         <source>Public Solana RPC. STREAM may degrade — add a Helius API key in Settings for reliable WebSocket subscriptions.</source>
-        <translation type="unfinished" />
+        <translation>公共 Solana RPC。串流可能不穩定 — 請在設定中新增 Helius API 金鑰以獲得可靠的 WebSocket 訂閱。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/HoldingsBar.cpp" line="447" />
         <source>Helius RPC — STREAM fully supported.</source>
-        <translation type="unfinished">完全支援 Helius RPC - STREAM。</translation>
+        <translation>完全支援 Helius RPC - STREAM。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/HoldingsBar.cpp" line="449" />
         <source>Custom RPC override active.</source>
-        <translation type="unfinished">自訂 RPC 覆蓋處於活動狀態。</translation>
+        <translation>自訂 RPC 覆蓋處於活動狀態。</translation>
     </message>
 </context>
 <context>
@@ -6894,38 +6913,38 @@ Use SAVE to download.</source>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="122" />
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="263" />
         <source>Hide unverified</source>
-        <translation type="unfinished">隱藏 unverified</translation>
+        <translation>隱藏 unverified</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="122" />
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="264" />
         <source>Show all</source>
-        <translation type="unfinished">顯示全部</translation>
+        <translation>顯示全部</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="326" />
         <source>Unverified mint: %1</source>
-        <translation type="unfinished">未驗證代幣: %1</translation>
+        <translation>未驗證代幣: %1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="360" />
         <source>TOTAL %1  ·  %2 verified</source>
-        <translation type="unfinished">總%1  ·  %2 verified</translation>
+        <translation>總%1  ·  %2 verified</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="364" />
         <source>  ·  %1 unverified%2</source>
-        <translation type="unfinished">·  %1 筆未驗證%2</translation>
+        <translation>·  %1 筆未驗證%2</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="366" />
         <source> hidden</source>
-        <translation type="unfinished">hidden</translation>
+        <translation>hidden</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/HoldingsTable.cpp" line="369" />
         <source>  ·  %1 without price</source>
-        <translation type="unfinished">·  %1 筆無報價</translation>
+        <translation>·  %1 筆無報價</translation>
     </message>
 </context>
 <context>
@@ -6934,37 +6953,37 @@ Use SAVE to download.</source>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="142" />
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="293" />
         <source>COPY ADDRESS</source>
-        <translation type="unfinished">複製 地址</translation>
+        <translation>複製 地址</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="146" />
         <source>DISCONNECT</source>
-        <translation type="unfinished">中斷連線</translation>
+        <translation>中斷連線</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="239" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="291" />
         <source>COPIED</source>
-        <translation type="unfinished">已複製</translation>
+        <translation>已複製</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="367" />
         <source>Solana wallet</source>
-        <translation type="unfinished">Solana 錢包</translation>
+        <translation>Solana 錢包</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="374" />
         <source>restored from storage</source>
-        <translation type="unfinished">已從儲存空間還原</translation>
+        <translation>已從儲存空間還原</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/HomeTab.cpp" line="395" />
         <source>Balance fetch failed: %1</source>
-        <translation type="unfinished">餘額獲取失敗：%1</translation>
+        <translation>餘額獲取失敗：%1</translation>
     </message>
 </context>
 <context>
@@ -6972,14 +6991,16 @@ Use SAVE to download.</source>
     <message>
         <location filename="../src/screens/economics/panels/IlostatPanel.cpp" line="67" />
         <source>ISO-2 code…</source>
-        <translation type="unfinished">ISO-2 代碼…</translation>
+        <translation>ISO-2 代碼…</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/IlostatPanel.cpp" line="68" />
         <source>ISO-2 country code, e.g. USA, GBR, DEU
 Multiple: CAN+USA+GBR
 All countries: ALL</source>
-        <translation type="unfinished" />
+        <translation>ISO-2 國家代碼，例如 USA、GBR、DEU
+多國：CAN+USA+GBR
+全部國家：ALL</translation>
     </message>
 </context>
 <context>
@@ -6987,17 +7008,17 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/economics/panels/ImfPanel.cpp" line="68" />
         <source>IMF INDICATOR</source>
-        <translation type="unfinished">IMF 指標</translation>
+        <translation>IMF 指標</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/ImfPanel.cpp" line="73" />
         <source>Filter indicators…</source>
-        <translation type="unfinished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/ImfPanel.cpp" line="106" />
         <source>COUNTRY</source>
-        <translation type="unfinished">國家</translation>
+        <translation>國家</translation>
     </message>
 </context>
 <context>
@@ -7005,52 +7026,52 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="592" />
         <source>IMPORT PORTFOLIO</source>
-        <translation type="unfinished">匯入 投資組合</translation>
+        <translation>匯入 投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="604" />
         <source>BROWSE</source>
-        <translation type="unfinished">瀏覽</translation>
+        <translation>瀏覽</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="618" />
         <source>Need a template? Download the demo portfolio JSON:</source>
-        <translation type="unfinished">需要模板嗎？下載演示組合 JSON：</translation>
+        <translation>需要模板嗎？下載演示組合 JSON：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="622" />
         <source>DOWNLOAD DEMO</source>
-        <translation type="unfinished">下載 示範</translation>
+        <translation>下載 示範</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="687" />
         <source>IMPORT MODE</source>
-        <translation type="unfinished">匯入 MODE</translation>
+        <translation>匯入 MODE</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="692" />
         <source>Create new portfolio from file</source>
-        <translation type="unfinished">從文件創建新的投資組合</translation>
+        <translation>從文件創建新的投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="696" />
         <source>Merge transactions into existing portfolio:</source>
-        <translation type="unfinished">將交易合併至現有投資組合：</translation>
+        <translation>將交易合併至現有投資組合：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="717" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="727" />
         <source>IMPORT</source>
-        <translation type="unfinished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="747" />
         <source>File selected: </source>
-        <translation type="unfinished">已選擇檔案：</translation>
+        <translation>已選擇檔案：</translation>
     </message>
 </context>
 <context>
@@ -7059,55 +7080,55 @@ All countries: ALL</source>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="138" />
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="150" />
         <source>1h</source>
-        <translation type="unfinished">1h</translation>
+        <translation>1h</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="138" />
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="149" />
         <source>6h</source>
-        <translation type="unfinished">6h</translation>
+        <translation>6h</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="139" />
         <source>1d</source>
-        <translation type="unfinished">1d</translation>
+        <translation>1d</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="140" />
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="147" />
         <source>1w</source>
-        <translation type="unfinished">1w</translation>
+        <translation>1w</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="140" />
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="148" />
         <source>1m</source>
-        <translation type="unfinished">1m</translation>
+        <translation>1m</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="142" />
         <source>1min</source>
-        <translation type="unfinished">1 分鐘</translation>
+        <translation>1 分鐘</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="142" />
         <source>5min</source>
-        <translation type="unfinished">5 分鐘</translation>
+        <translation>5 分鐘</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="169" />
         <source>Kalshi trades require a ticker</source>
-        <translation type="unfinished">卡爾希交易需要股票代碼</translation>
+        <translation>卡爾希交易需要股票代碼</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="211" />
         <source>Kalshi adapter: not supported in this call</source>
-        <translation type="unfinished">Kalshi 適配器：此呼叫不支援</translation>
+        <translation>Kalshi 適配器：此呼叫不支援</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiAdapter.cpp" line="406" />
         <source>Kalshi cancel-all requires a ticker</source>
-        <translation type="unfinished">卡爾希取消全部需要股票代碼</translation>
+        <translation>卡爾希取消全部需要股票代碼</translation>
     </message>
 </context>
 <context>
@@ -7115,18 +7136,18 @@ All countries: ALL</source>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="174" />
         <source>JSON parse: </source>
-        <translation type="unfinished">JSON parse: </translation>
+        <translation>JSON parse: </translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="340" />
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="410" />
         <source>:yes</source>
-        <translation type="unfinished">:yes</translation>
+        <translation>:yes</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiRestClient.cpp" line="344" />
         <source>:no</source>
-        <translation type="unfinished">:no</translation>
+        <translation>:no</translation>
     </message>
 </context>
 <context>
@@ -7134,28 +7155,28 @@ All countries: ALL</source>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiWsClient.cpp" line="93" />
         <source>Ready to connect to </source>
-        <translation type="unfinished">準備連接到</translation>
+        <translation>準備連接到</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiWsClient.cpp" line="94" />
         <source> (connect deferred to Phase 7)</source>
-        <translation type="unfinished">（連接延遲到第 7 階段）</translation>
+        <translation>（連接延遲到第 7 階段）</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiWsClient.cpp" line="109" />
         <source>market_lifecycle_v2</source>
-        <translation type="unfinished">market_lifecycle_v2</translation>
+        <translation>market_lifecycle_v2</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiWsClient.cpp" line="168" />
         <location filename="../src/services/prediction/kalshi/KalshiWsClient.cpp" line="177" />
         <source>:yes</source>
-        <translation type="unfinished">:yes</translation>
+        <translation>:yes</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/kalshi/KalshiWsClient.cpp" line="170" />
         <source>:no</source>
-        <translation type="unfinished">:no</translation>
+        <translation>:no</translation>
     </message>
 </context>
 <context>
@@ -7163,17 +7184,17 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/settings/KeybindingsSection.cpp" line="25" />
         <source>Rebind: </source>
-        <translation type="unfinished">Rebind:</translation>
+        <translation>Rebind:</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/KeybindingsSection.cpp" line="36" />
         <source>Press new key combination...</source>
-        <translation type="unfinished">按新的組合鍵...</translation>
+        <translation>按新的組合鍵...</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/KeybindingsSection.cpp" line="82" />
         <source>Warning: already used by </source>
-        <translation type="unfinished">警告：已被以下使用 </translation>
+        <translation>警告：已被以下使用 </translation>
     </message>
 </context>
 <context>
@@ -7199,32 +7220,32 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/launchpad/LaunchpadScreen.cpp" line="39" />
         <source>Fincept Launchpad</source>
-        <translation type="unfinished">Fincept 啟動台</translation>
+        <translation>Fincept 啟動台</translation>
     </message>
     <message>
         <location filename="../src/screens/launchpad/LaunchpadScreen.cpp" line="59" />
         <source>New Window</source>
-        <translation type="unfinished">新視窗</translation>
+        <translation>新視窗</translation>
     </message>
     <message>
         <location filename="../src/screens/launchpad/LaunchpadScreen.cpp" line="64" />
         <source>Open Saved Layout…</source>
-        <translation type="unfinished">開啟 已儲存 Layout…</translation>
+        <translation>開啟 已儲存 Layout…</translation>
     </message>
     <message>
         <location filename="../src/screens/launchpad/LaunchpadScreen.cpp" line="67" />
         <source>Saved layouts arrive in Phase 6</source>
-        <translation type="unfinished">儲存的佈局到達第 6 階段</translation>
+        <translation>儲存的佈局到達第 6 階段</translation>
     </message>
     <message>
         <location filename="../src/screens/launchpad/LaunchpadScreen.cpp" line="71" />
         <source>Switch Profile…</source>
-        <translation type="unfinished">切換設定檔…</translation>
+        <translation>切換設定檔…</translation>
     </message>
     <message>
         <location filename="../src/screens/launchpad/LaunchpadScreen.cpp" line="76" />
         <source>Recent Layouts</source>
-        <translation type="unfinished">最近佈局</translation>
+        <translation>最近佈局</translation>
     </message>
 </context>
 <context>
@@ -7314,7 +7335,7 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/settings/LlmConfigSection.cpp" line="408" />
         <source>When enabled, the AI can interact with the terminal: navigate screens, fetch market data, manage watchlists, etc.</source>
-        <translation type="unfinished" />
+        <translation>啟用後，AI 可與終端互動：切換畫面、擷取市場資料、管理自選清單等。</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/LlmConfigSection.cpp" line="416" />
@@ -7419,89 +7440,89 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="136" />
         <source>MAX</source>
-        <translation type="unfinished">最大</translation>
+        <translation>最大</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="143" />
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="328" />
         <source>Available: —</source>
-        <translation type="unfinished">可用: —</translation>
+        <translation>可用: —</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="221" />
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="524" />
         <source>Choose an amount and duration.</source>
-        <translation type="unfinished">選擇金額與期間。</translation>
+        <translation>選擇金額與期間。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="223" />
         <source>LOCK</source>
-        <translation type="unfinished">鎖定</translation>
+        <translation>鎖定</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="329" />
         <source>Connect a wallet to lock $FNCPT.</source>
-        <translation type="unfinished">連線 a 錢包 to 鎖定 $FNCPT.</translation>
+        <translation>連線 a 錢包 to 鎖定 $FNCPT.</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="391" />
         <source>Available: %1 $FNCPT</source>
-        <translation type="unfinished">可用: %1 $FNCPT</translation>
+        <translation>可用: %1 $FNCPT</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="488" />
         <source>%1 / week (USDC) — %2% weekly real yield at %3 stake</source>
-        <translation type="unfinished">%1 / 週 (USDC) — %2% 每週實際收益率，質押 %3</translation>
+        <translation>%1 / 週 (USDC) — %2% 每週實際收益率，質押 %3</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="493" />
         <source>waiting for revenue + spot price…</source>
-        <translation type="unfinished">等待收入+現貨價格...</translation>
+        <translation>等待收入+現貨價格...</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="517" />
         <source>DEMO — fincept_lock not deployed; configure SecureStorage fincept.lock_program_id to enable real locks.</source>
-        <translation type="unfinished" />
+        <translation>展示模式 — fincept_lock 尚未部署；請設定 SecureStorage 的 fincept.lock_program_id 以啟用真實鎖倉。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="520" />
         <source>Ready. Click LOCK to build the transaction.</source>
-        <translation type="unfinished">準備好。點擊“鎖定”以建立交易。</translation>
+        <translation>準備好。點擊“鎖定”以建立交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="522" />
         <source>Amount exceeds available $FNCPT.</source>
-        <translation type="unfinished">金額超過可用的 $FNCPT。</translation>
+        <translation>金額超過可用的 $FNCPT。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="567" />
         <source>Building lock transaction…</source>
-        <translation type="unfinished">樓鎖交易...</translation>
+        <translation>樓鎖交易...</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="577" />
         <source>Aborted.</source>
-        <translation type="unfinished">已中止。</translation>
+        <translation>已中止。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="586" />
         <source>Approve in your wallet to escrow $FNCPT under the fincept_lock program. The terminal does not hold your funds — the on-chain program does, and only releases them after the unlock date.</source>
-        <translation type="unfinished" />
+        <translation>請在錢包中核准，將 $FNCPT 託管於 fincept_lock 程式。終端不持有您的資金 — 鏈上程式會持有，並僅在解鎖日期後釋放。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="600" />
         <source>Locked $FNCPT cannot be withdrawn before the unlock date. If you need liquidity sooner, do not lock.</source>
-        <translation type="unfinished" />
+        <translation>已鎖倉的 $FNCPT 在解鎖日期前無法提領。若您需要更早取得流動性，請勿鎖倉。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="611" />
         <source>Awaiting wallet signature…</source>
-        <translation type="unfinished">等待錢包簽名...</translation>
+        <translation>等待錢包簽名...</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="639" />
         <source>Cancelled.</source>
-        <translation type="unfinished">已取消。</translation>
+        <translation>已取消。</translation>
     </message>
 </context>
 <context>
@@ -7509,87 +7530,87 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="218" />
         <source>安全設定</source>
-        <translation type="unfinished">安全設定</translation>
+        <translation>安全設定</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="226" />
         <source>必要</source>
-        <translation type="unfinished">必要</translation>
+        <translation>必要</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="234" />
         <source>請建立 6 位數 PIN 碼以保護您的終端機</source>
-        <translation type="unfinished">請建立 6 位數 PIN 碼以保護您的終端機</translation>
+        <translation>請建立 6 位數 PIN 碼以保護您的終端機</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="250" />
         <source>輸入 PIN 碼</source>
-        <translation type="unfinished">輸入 PIN 碼</translation>
+        <translation>輸入 PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="265" />
         <source>確認 PIN 碼</source>
-        <translation type="unfinished">確認 PIN 碼</translation>
+        <translation>確認 PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="289" />
         <source>  設定 PIN 碼  </source>
-        <translation type="unfinished">  設定 PIN 碼  </translation>
+        <translation>  設定 PIN 碼  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="330" />
         <source>終端機已鎖定</source>
-        <translation type="unfinished">終端機已鎖定</translation>
+        <translation>終端機已鎖定</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="338" />
         <source>安全</source>
-        <translation type="unfinished">安全</translation>
+        <translation>安全</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="346" />
         <source>請輸入 6 位數 PIN 碼以解鎖</source>
-        <translation type="unfinished">請輸入 6 位數 PIN 碼以解鎖</translation>
+        <translation>請輸入 6 位數 PIN 碼以解鎖</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="353" />
         <source>PIN 碼</source>
-        <translation type="unfinished">PIN 碼</translation>
+        <translation>PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="397" />
         <source>  解鎖  </source>
-        <translation type="unfinished">  解鎖  </translation>
+        <translation>  解鎖  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="427" />
         <source>帳戶已鎖定</source>
-        <translation type="unfinished">帳戶已鎖定</translation>
+        <translation>帳戶已鎖定</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="435" />
         <source>安全警告</source>
-        <translation type="unfinished">安全警告</translation>
+        <translation>安全警告</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="455" />
         <source>  重新登入  </source>
-        <translation type="unfinished">  重新登入  </translation>
+        <translation>  重新登入  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="521" />
         <source>PIN 碼不一致</source>
-        <translation type="unfinished">PIN 碼不一致</translation>
+        <translation>PIN 碼不一致</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="554" />
         <source>請輸入 PIN 碼</source>
-        <translation type="unfinished">請輸入 PIN 碼</translation>
+        <translation>請輸入 PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LockScreen.cpp" line="585" />
         <source>PIN 碼錯誤</source>
-        <translation type="unfinished">PIN 碼錯誤</translation>
+        <translation>PIN 碼錯誤</translation>
     </message>
 </context>
 <context>
@@ -7597,196 +7618,196 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="199" />
         <source>登入</source>
-        <translation type="unfinished">登入</translation>
+        <translation>登入</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="207" />
         <source>金融終端</source>
-        <translation type="unfinished">金融終端</translation>
+        <translation>金融終端</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="215" />
         <source>登入您的終端機帳戶</source>
-        <translation type="unfinished">登入您的終端機帳戶</translation>
+        <translation>登入您的終端機帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="222" />
         <source>電子郵件</source>
-        <translation type="unfinished">電子郵件</translation>
+        <translation>電子郵件</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="227" />
         <source>user@domain.com</source>
-        <translation type="unfinished">user@domain.com</translation>
+        <translation>user@domain.com</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="233" />
         <source>密碼</source>
-        <translation type="unfinished">密碼</translation>
+        <translation>密碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="244" />
         <source>輸入密碼</source>
-        <translation type="unfinished">輸入密碼</translation>
+        <translation>輸入密碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="250" />
         <location filename="../src/screens/auth/LoginScreen.cpp" line="256" />
         <source>顯示</source>
-        <translation type="unfinished">顯示</translation>
+        <translation>顯示</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="256" />
         <source>隱藏</source>
-        <translation type="unfinished">隱藏</translation>
+        <translation>隱藏</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="285" />
         <source>忘記密碼？</source>
-        <translation type="unfinished">忘記密碼？</translation>
+        <translation>忘記密碼？</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="292" />
         <location filename="../src/screens/auth/LoginScreen.cpp" line="589" />
         <source>  驗證帳戶  </source>
-        <translation type="unfinished">  驗證帳戶  </translation>
+        <translation>  驗證帳戶  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="292" />
         <location filename="../src/screens/auth/LoginScreen.cpp" line="591" />
         <source>  登入  </source>
-        <translation type="unfinished">  登入  </translation>
+        <translation>  登入  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="309" />
         <source>沒有帳戶？</source>
-        <translation type="unfinished">沒有帳戶？</translation>
+        <translation>沒有帳戶？</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="313" />
         <source>註冊</source>
-        <translation type="unfinished">註冊</translation>
+        <translation>註冊</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="351" />
         <source>雙重驗證</source>
-        <translation type="unfinished">雙重驗證</translation>
+        <translation>雙重驗證</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="359" />
         <source>安全</source>
-        <translation type="unfinished">安全</translation>
+        <translation>安全</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="367" />
         <source>請輸入驗證器的 6 位數驗證碼</source>
-        <translation type="unfinished">請輸入驗證器的 6 位數驗證碼</translation>
+        <translation>請輸入驗證器的 6 位數驗證碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="374" />
         <source>驗證碼</source>
-        <translation type="unfinished">驗證碼</translation>
+        <translation>驗證碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="405" />
         <source>  驗證  </source>
-        <translation type="unfinished">  驗證  </translation>
+        <translation>  驗證  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="411" />
         <source>返回登入</source>
-        <translation type="unfinished">返回登入</translation>
+        <translation>返回登入</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="437" />
         <source>工作階段衝突</source>
-        <translation type="unfinished">工作階段衝突</translation>
+        <translation>工作階段衝突</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="445" />
         <source>警告</source>
-        <translation type="unfinished">警告</translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="462" />
         <source>  登出其他工作階段並繼續  </source>
-        <translation type="unfinished">  登出其他工作階段並繼續  </translation>
+        <translation>  登出其他工作階段並繼續  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="468" />
         <location filename="../src/screens/auth/LoginScreen.cpp" line="673" />
         <source>  取消  </source>
-        <translation type="unfinished">  取消  </translation>
+        <translation>  取消  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="500" />
         <source>請輸入您的密碼</source>
-        <translation type="unfinished">請輸入您的密碼</translation>
+        <translation>請輸入您的密碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="512" />
         <source>請輸入驗證碼</source>
-        <translation type="unfinished">請輸入驗證碼</translation>
+        <translation>請輸入驗證碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="589" />
         <source>  驗證中...  </source>
-        <translation type="unfinished">  驗證中...  </translation>
+        <translation>  驗證中...  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="591" />
         <source>  登入中...  </source>
-        <translation type="unfinished">  登入中...  </translation>
+        <translation>  登入中...  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="611" />
         <source>裝置授權</source>
-        <translation type="unfinished">裝置授權</translation>
+        <translation>裝置授權</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="619" />
         <source>RFC 8628</source>
-        <translation type="unfinished">RFC 8628</translation>
+        <translation>RFC 8628</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="628" />
         <source>請在瀏覽器中輸入以下驗證碼以授權此終端機。</source>
-        <translation type="unfinished">請在瀏覽器中輸入以下驗證碼以授權此終端機。</translation>
+        <translation>請在瀏覽器中輸入以下驗證碼以授權此終端機。</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="636" />
         <source>授權碼</source>
-        <translation type="unfinished">授權碼</translation>
+        <translation>授權碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="641" />
         <source>XXXX-XXXX</source>
-        <translation type="unfinished">XXXX-XXXX</translation>
+        <translation>XXXX-XXXX</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="654" />
         <source>  開啟瀏覽器  </source>
-        <translation type="unfinished">  開啟瀏覽器  </translation>
+        <translation>  開啟瀏覽器  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="664" />
         <source>等待授權中...</source>
-        <translation type="unfinished">等待授權中...</translation>
+        <translation>等待授權中...</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="690" />
         <source>等待授權中</source>
-        <translation type="unfinished">等待授權中</translation>
+        <translation>等待授權中</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="712" />
         <source>授權成功！</source>
-        <translation type="unfinished">授權成功！</translation>
+        <translation>授權成功！</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/LoginScreen.cpp" line="727" />
         <source>授權碼已過期，請重新嘗試。</source>
-        <translation type="unfinished">授權碼已過期，請重新嘗試。</translation>
+        <translation>授權碼已過期，請重新嘗試。</translation>
     </message>
 </context>
 <context>
@@ -7799,32 +7820,32 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAAnalyticsScreen.cpp" line="119" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAAnalyticsScreen.cpp" line="123" />
         <source>CORPORATE FINANCE TOOLKIT</source>
-        <translation type="unfinished">企業財務工具包</translation>
+        <translation>企業財務工具包</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAAnalyticsScreen.cpp" line="144" />
         <source>MODULES</source>
-        <translation type="unfinished">模組</translation>
+        <translation>模組</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAAnalyticsScreen.cpp" line="202" />
         <source>MODULE INFO</source>
-        <translation type="unfinished">模組資訊</translation>
+        <translation>模組資訊</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAAnalyticsScreen.cpp" line="233" />
         <source>CAPABILITIES</source>
-        <translation type="unfinished">CAPABILITIES</translation>
+        <translation>CAPABILITIES</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAAnalyticsScreen.cpp" line="248" />
         <source>QUICK STATS</source>
-        <translation type="unfinished">快速統計</translation>
+        <translation>快速統計</translation>
     </message>
 </context>
 <context>
@@ -7832,52 +7853,52 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="255" />
         <source>Running DCF...</source>
-        <translation type="unfinished">執行 DCF (現金流量折現法) 中...</translation>
+        <translation>執行 DCF (現金流量折現法) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="271" />
         <source>DCF</source>
-        <translation type="unfinished">DCF</translation>
+        <translation>DCF</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="313" />
         <source>Running LBO...</source>
-        <translation type="unfinished">執行 LBO (槓桿收購) 中...</translation>
+        <translation>執行 LBO (槓桿收購) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="327" />
         <source>LBO Returns</source>
-        <translation type="unfinished">LBO 報酬</translation>
+        <translation>LBO 報酬</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="361" />
         <source>Building LBO Model...</source>
-        <translation type="unfinished">建立 LBO (槓桿收購) 模型中...</translation>
+        <translation>建立 LBO (槓桿收購) 模型中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="377" />
         <source>LBO Model</source>
-        <translation type="unfinished">LBO 模型</translation>
+        <translation>LBO 模型</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="407" />
         <source>Analyzing Debt Schedule...</source>
-        <translation type="unfinished">分析債務計劃...</translation>
+        <translation>分析債務計劃...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="422" />
         <source>Debt Schedule</source>
-        <translation type="unfinished">負債排程</translation>
+        <translation>負債排程</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="431" />
         <source>Sensitivity analysis varies entry multiple and exit multiple around base case.</source>
-        <translation type="unfinished">敏感度分析在基準情境周圍變動進場倍數與出場倍數。</translation>
+        <translation>敏感度分析在基準情境周圍變動進場倍數與出場倍數。</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="457" />
         <source>Running LBO Sensitivity...</source>
-        <translation type="unfinished">運行 LBO 靈敏度...</translation>
+        <translation>運行 LBO 靈敏度...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="469" />
@@ -7887,67 +7908,67 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="477" />
         <source>Enter target ticker and comparable tickers (comma-separated):</source>
-        <translation type="unfinished">輸入目標代碼與可比較代碼（以逗號分隔）：</translation>
+        <translation>輸入目標代碼與可比較代碼（以逗號分隔）：</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="486" />
         <source>Target ticker (e.g. AAPL)</source>
-        <translation type="unfinished">目標程式碼（例如 AAPL）</translation>
+        <translation>目標程式碼（例如 AAPL）</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="497" />
         <source>MSFT,GOOG,AMZN</source>
-        <translation type="unfinished">MSFT,GOOG,AMZN</translation>
+        <translation>MSFT,GOOG,AMZN</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="504" />
         <source>Running Trading Comps...</source>
-        <translation type="unfinished">運行交易比較...</translation>
+        <translation>運行交易比較...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="512" />
         <source>Trading Comps</source>
-        <translation type="unfinished">交易比較</translation>
+        <translation>交易比較</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="530" />
         <source>Running Precedent Txns...</source>
-        <translation type="unfinished">運行先例 Txns...</translation>
+        <translation>運行先例 Txns...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="538" />
         <source>Precedent Txns</source>
-        <translation type="unfinished">先例交易</translation>
+        <translation>先例交易</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="571" />
         <source>ACQUIRER</source>
-        <translation type="unfinished">ACQUIRER</translation>
+        <translation>ACQUIRER</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="594" />
         <source>TARGET</source>
-        <translation type="unfinished">TARGET</translation>
+        <translation>TARGET</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="606" />
         <source>DEAL TERMS</source>
-        <translation type="unfinished">交易條款</translation>
+        <translation>交易條款</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="624" />
         <source>Running Accretion/Dilution...</source>
-        <translation type="unfinished">運行增加/稀釋...</translation>
+        <translation>運行增加/稀釋...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="643" />
         <source>Accretion/Dilution</source>
-        <translation type="unfinished">增值/稀釋</translation>
+        <translation>增值/稀釋</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="669" />
         <source>Valuing Synergies...</source>
-        <translation type="unfinished">評估 Synergies (綜效) 中...</translation>
+        <translation>評估 Synergies (綜效) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="679" />
@@ -7957,17 +7978,17 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="697" />
         <source>Building Pro Forma...</source>
-        <translation type="unfinished">建立備考...</translation>
+        <translation>建立備考...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="715" />
         <source>Pro Forma</source>
-        <translation type="unfinished">預估損益</translation>
+        <translation>預估損益</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="737" />
         <source>Calculating Sources &amp; Uses...</source>
-        <translation type="unfinished">計算資金來源與用途...</translation>
+        <translation>計算資金來源與用途...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="747" />
@@ -7977,108 +7998,108 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="755" />
         <source>Calculates each party's % contribution to the combined entity.</source>
-        <translation type="unfinished">計算各方對合併實體的百分比貢獻。</translation>
+        <translation>計算各方對合併實體的百分比貢獻。</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="769" />
         <source>Analyzing Contribution...</source>
-        <translation type="unfinished">分析中 Contribution...</translation>
+        <translation>分析中 Contribution...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="785" />
         <source>Contribution</source>
-        <translation type="unfinished">貢獻度</translation>
+        <translation>貢獻度</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="811" />
         <source>Analyzing Payment...</source>
-        <translation type="unfinished">分析中 Payment...</translation>
+        <translation>分析中 Payment...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="821" />
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1869" />
         <source>Payment</source>
-        <translation type="unfinished">付款</translation>
+        <translation>付款</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="847" />
         <source>Valuing Earnout...</source>
-        <translation type="unfinished">估值中 Earnout...</translation>
+        <translation>估值中 Earnout...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="857" />
         <source>Earnout</source>
-        <translation type="unfinished">Earnout（績效對價）</translation>
+        <translation>Earnout（績效對價）</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="879" />
         <source>Calculating Exchange Ratio...</source>
-        <translation type="unfinished">計算兌換比率...</translation>
+        <translation>計算兌換比率...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="888" />
         <source>Exchange Ratio</source>
-        <translation type="unfinished">換股比率</translation>
+        <translation>換股比率</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="910" />
         <source>Analyzing Collar...</source>
-        <translation type="unfinished">分析中 Collar...</translation>
+        <translation>分析中 Collar...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="919" />
         <source>Collar</source>
-        <translation type="unfinished">Collar 策略</translation>
+        <translation>Collar 策略</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="951" />
         <source>Valuing CVR...</source>
-        <translation type="unfinished">估值中 CVR...</translation>
+        <translation>估值中 CVR...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="961" />
         <source>CVR</source>
-        <translation type="unfinished">CVR</translation>
+        <translation>CVR</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="992" />
         <source>Scan Days:</source>
-        <translation type="unfinished">掃描天數：</translation>
+        <translation>掃描天數：</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="997" />
         <source>Scanning SEC EDGAR...</source>
-        <translation type="unfinished">掃描 SEC EDGAR...</translation>
+        <translation>掃描 SEC EDGAR...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1004" />
         <source>Loading deals...</source>
-        <translation type="unfinished">載入交易中...</translation>
+        <translation>載入交易中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1014" />
         <source>Search deals by target, acquirer, or industry...</source>
-        <translation type="unfinished">依目標、收購方或產業搜尋交易...</translation>
+        <translation>依目標、收購方或產業搜尋交易...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1025" />
         <source>Searching deals...</source>
-        <translation type="unfinished">搜尋交易中...</translation>
+        <translation>搜尋交易中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1071" />
         <source>Calculating Berkus...</source>
-        <translation type="unfinished">計算中 Berkus...</translation>
+        <translation>計算中 Berkus...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1081" />
         <source>Berkus</source>
-        <translation type="unfinished">Berkus</translation>
+        <translation>Berkus</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1109" />
         <source>Calculating Scorecard...</source>
-        <translation type="unfinished">計算中 Scorecard...</translation>
+        <translation>計算中 Scorecard...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1120" />
@@ -8088,82 +8109,82 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1146" />
         <source>Calculating VC Method...</source>
-        <translation type="unfinished">計算中 VC Method...</translation>
+        <translation>計算中 VC Method...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1156" />
         <source>VC Method</source>
-        <translation type="unfinished">VC 估值法</translation>
+        <translation>VC 估值法</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1186" />
         <source>Calculating First Chicago...</source>
-        <translation type="unfinished">計算第一芝加哥...</translation>
+        <translation>計算第一芝加哥...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1200" />
         <source>First Chicago</source>
-        <translation type="unfinished">First Chicago 估值法</translation>
+        <translation>First Chicago 估值法</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1223" />
         <source>Calculating Risk Factor...</source>
-        <translation type="unfinished">計算風險因素...</translation>
+        <translation>計算風險因素...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1234" />
         <source>Risk Factor</source>
-        <translation type="unfinished">風險因子</translation>
+        <translation>風險因子</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1242" />
         <source>Runs all 5 methods with current inputs and returns a consensus range.</source>
-        <translation type="unfinished">以目前輸入執行全部 5 種方法，回傳共識範圍。</translation>
+        <translation>以目前輸入執行全部 5 種方法，回傳共識範圍。</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1252" />
         <source>Running Comprehensive...</source>
-        <translation type="unfinished">執行中 Comprehensive...</translation>
+        <translation>執行中 Comprehensive...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1268" />
         <source>All Methods</source>
-        <translation type="unfinished">所有方法</translation>
+        <translation>所有方法</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1318" />
         <source>Generating Fairness Opinion...</source>
-        <translation type="unfinished">產生公平意見...</translation>
+        <translation>產生公平意見...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1337" />
         <source>Fairness Analysis</source>
-        <translation type="unfinished">公平性分析</translation>
+        <translation>公平性分析</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1363" />
         <source>Analyzing Premium...</source>
-        <translation type="unfinished">分析中 Premium...</translation>
+        <translation>分析中 Premium...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1373" />
         <source>Premium Analysis</source>
-        <translation type="unfinished">溢價分析</translation>
+        <translation>溢價分析</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1391" />
         <source>Assessing Process Quality...</source>
-        <translation type="unfinished">評估程序品質中...</translation>
+        <translation>評估程序品質中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1401" />
         <source>Process Quality</source>
-        <translation type="unfinished">處理品質</translation>
+        <translation>處理品質</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1473" />
         <source>Calculating Tech Metrics...</source>
-        <translation type="unfinished">計算技術指標...</translation>
+        <translation>計算技術指標...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1487" />
@@ -8173,37 +8194,37 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1527" />
         <source>Calculating Healthcare Metrics...</source>
-        <translation type="unfinished">計算醫療保健指標...</translation>
+        <translation>計算醫療保健指標...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1540" />
         <source>Healthcare</source>
-        <translation type="unfinished">醫療保健</translation>
+        <translation>醫療保健</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1584" />
         <source>Calculating FinServ Metrics...</source>
-        <translation type="unfinished">計算 FinServ 指標...</translation>
+        <translation>計算 FinServ 指標...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1598" />
         <source>Financial Services</source>
-        <translation type="unfinished">金融服務</translation>
+        <translation>金融服務</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1660" />
         <source>Running Monte Carlo...</source>
-        <translation type="unfinished">運行蒙特卡羅...</translation>
+        <translation>運行蒙特卡羅...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1673" />
         <source>Monte Carlo</source>
-        <translation type="unfinished">蒙地卡羅</translation>
+        <translation>蒙地卡羅</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1705" />
         <source>Running Regression...</source>
-        <translation type="unfinished">執行 Regression (迴歸分析) 中...</translation>
+        <translation>執行 Regression (迴歸分析) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1717" />
@@ -8213,42 +8234,42 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1761" />
         <source>[{acquirer:MSFT, target:ATVI, deal_value:68700, premium:45.3,ev_revenue:8.7, ev_ebitda:23.1}]</source>
-        <translation type="unfinished" />
+        <translation>[{acquirer:MSFT, target:ATVI, deal_value:68700, premium:45.3,ev_revenue:8.7, ev_ebitda:23.1}]</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1773" />
         <source>Comparing Deals...</source>
-        <translation type="unfinished">比較中 Deals...</translation>
+        <translation>比較中 Deals...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1781" />
         <source>Compare</source>
-        <translation type="unfinished">比較</translation>
+        <translation>比較</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1800" />
         <source>Same JSON array format as Compare tab...</source>
-        <translation type="unfinished">與比較標籤頁相同的 JSON 陣列格式...</translation>
+        <translation>與比較標籤頁相同的 JSON 陣列格式...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1807" />
         <source>Ranking Deals...</source>
-        <translation type="unfinished">排名 Deals...</translation>
+        <translation>排名 Deals...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1816" />
         <source>Rank</source>
-        <translation type="unfinished">排名</translation>
+        <translation>排名</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1829" />
         <source>Comparable deals JSON array...</source>
-        <translation type="unfinished">可比較交易 JSON 陣列...</translation>
+        <translation>可比較交易 JSON 陣列...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1836" />
         <source>Benchmarking Premium...</source>
-        <translation type="unfinished">基準溢價...</translation>
+        <translation>基準溢價...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1845" />
@@ -8258,27 +8279,27 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1854" />
         <source>Deals JSON with cash_pct and stock_pct fields...</source>
-        <translation type="unfinished">使用 cash_pct 和 stock_pct 欄位處理 JSON...</translation>
+        <translation>使用 cash_pct 和 stock_pct 欄位處理 JSON...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1861" />
         <source>Analyzing Payment Structures...</source>
-        <translation type="unfinished">分析支付結構...</translation>
+        <translation>分析支付結構...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1878" />
         <source>Deals JSON with industry field...</source>
-        <translation type="unfinished">處理 JSON 與產業領域...</translation>
+        <translation>處理 JSON 與產業領域...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1885" />
         <source>Analyzing Industry Deals...</source>
-        <translation type="unfinished">分析產業交易...</translation>
+        <translation>分析產業交易...</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1893" />
         <source>Industry</source>
-        <translation type="unfinished">產業</translation>
+        <translation>產業</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="1932" />
@@ -8288,12 +8309,12 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="2054" />
         <source>RESULTS</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="2145" />
         <source>Show Raw JSON</source>
-        <translation type="unfinished">顯示原始 JSON</translation>
+        <translation>顯示原始 JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/ma_analytics/MAModulePanel.cpp" line="2176" />
@@ -8306,17 +8327,17 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarginUsageWidget.cpp" line="66" />
         <source>Usage: —</source>
-        <translation type="unfinished">用量: —</translation>
+        <translation>用量: —</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarginUsageWidget.cpp" line="102" />
         <source>No active account — click gear to configure</source>
-        <translation type="unfinished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarginUsageWidget.cpp" line="186" />
         <source>Configure — Margin Usage</source>
-        <translation type="unfinished">配置 - 保證金使用</translation>
+        <translation>配置 - 保證金使用</translation>
     </message>
 </context>
 <context>
@@ -8324,152 +8345,152 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="253" />
         <source>FINCEPT MARITIME INTELLIGENCE</source>
-        <translation type="unfinished">Fincept 海事情報</translation>
+        <translation>Fincept 海事情報</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="256" />
         <source>CLASSIFIED // TRADE ROUTE ANALYSIS</source>
-        <translation type="unfinished">機密 // 貿易航線分析</translation>
+        <translation>機密 // 貿易航線分析</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="261" />
         <source>THREAT: LOW</source>
-        <translation type="unfinished">威脅：低</translation>
+        <translation>威脅：低</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="264" />
         <source>0 VESSELS</source>
-        <translation type="unfinished">0 船隻</translation>
+        <translation>0 船隻</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="279" />
         <source>LOAD VESSELS (MUMBAI AREA)</source>
-        <translation type="unfinished">載入船隻（孟買區域）</translation>
+        <translation>載入船隻（孟買區域）</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="285" />
         <source>INTELLIGENCE</source>
-        <translation type="unfinished">INTELLIGENCE</translation>
+        <translation>INTELLIGENCE</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="339" />
         <source>TRADE CORRIDORS</source>
-        <translation type="unfinished">貿易走廊</translation>
+        <translation>貿易走廊</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="373" />
         <source>VESSEL TRACKING — AIS FEED</source>
-        <translation type="unfinished">船隻追蹤 — AIS 資料流</translation>
+        <translation>船隻追蹤 — AIS 資料流</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="380" />
         <source>AIS: STREAMING</source>
-        <translation type="unfinished">AIS：串流中</translation>
+        <translation>AIS：串流中</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="436" />
         <source>VESSEL SEARCH</source>
-        <translation type="unfinished">船隻搜尋</translation>
+        <translation>船隻搜尋</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="440" />
         <source>IMO NUMBER</source>
-        <translation type="unfinished">IMO 編號</translation>
+        <translation>IMO 編號</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="445" />
         <source>e.g. 9344745</source>
-        <translation type="unfinished">例如：9344745</translation>
+        <translation>例如：9344745</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="452" />
         <source>TRACK</source>
-        <translation type="unfinished">TRACK</translation>
+        <translation>TRACK</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="458" />
         <source>VOYAGE HISTORY</source>
-        <translation type="unfinished">航程歷史</translation>
+        <translation>航程歷史</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="507" />
         <source>AREA SEARCH</source>
-        <translation type="unfinished">區域搜尋</translation>
+        <translation>區域搜尋</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="529" />
         <source>SEARCH AREA</source>
-        <translation type="unfinished">搜尋區域</translation>
+        <translation>搜尋區域</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="551" />
         <source>SELECTED ROUTE</source>
-        <translation type="unfinished">已選航線</translation>
+        <translation>已選航線</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="575" />
         <source>SYSTEM STATUS</source>
-        <translation type="unfinished">系統狀態</translation>
+        <translation>系統狀態</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="597" />
         <source>CLASSIFIED — AUTHORIZED PERSONNEL ONLY</source>
-        <translation type="unfinished">機密 — 僅限授權人員</translation>
+        <translation>機密 — 僅限授權人員</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="632" />
         <source>SOURCE:</source>
-        <translation type="unfinished">來源：</translation>
+        <translation>來源：</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="634" />
         <source>AIS FEED + FINCEPT API</source>
-        <translation type="unfinished">AIS 資料流 + Fincept API</translation>
+        <translation>AIS 資料流 + Fincept API</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="639" />
         <source>REFRESH:</source>
-        <translation type="unfinished">重新整理：</translation>
+        <translation>重新整理：</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="641" />
         <source>5 MIN</source>
-        <translation type="unfinished">5 分鐘</translation>
+        <translation>5 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="648" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="734" />
         <source>IMO: </source>
-        <translation type="unfinished">IMO: </translation>
+        <translation>IMO: </translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="737" />
         <source>From: </source>
-        <translation type="unfinished">From:</translation>
+        <translation>From:</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="738" />
         <source>To: </source>
-        <translation type="unfinished">到：</translation>
+        <translation>到：</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="745" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="760" />
         <source>Trade Value: </source>
-        <translation type="unfinished">貿易價值：</translation>
+        <translation>貿易價值：</translation>
     </message>
     <message>
         <location filename="../src/screens/maritime/MaritimeScreen.cpp" line="761" />
         <source>Status: </source>
-        <translation type="unfinished">Status:</translation>
+        <translation>Status:</translation>
     </message>
 </context>
 <context>
@@ -8482,17 +8503,17 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/MaritimeVesselsWidget.cpp" line="131" />
         <source>No vessels configured — click gear to add IMOs</source>
-        <translation type="unfinished">尚未設定船舶 — 點擊齒輪新增 IMO</translation>
+        <translation>尚未設定船舶 — 點擊齒輪新增 IMO</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MaritimeVesselsWidget.cpp" line="255" />
         <source>Configure — Maritime Vessels</source>
-        <translation type="unfinished">設定 — 海運船舶</translation>
+        <translation>設定 — 海運船舶</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MaritimeVesselsWidget.cpp" line="259" />
         <source>One IMO per line (e.g. 9811000)</source>
-        <translation type="unfinished">每行一個 IMO（例如 9811000）</translation>
+        <translation>每行一個 IMO（例如 9811000）</translation>
     </message>
 </context>
 <context>
@@ -8500,12 +8521,12 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/markets/MarketPanel.cpp" line="107" />
         <source>[RETRY]</source>
-        <translation type="unfinished">[重試]</translation>
+        <translation>[重試]</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketPanel.cpp" line="120" />
         <source>  ⠋  LOADING</source>
-        <translation type="unfinished">⠋  載入中</translation>
+        <translation>⠋  載入中</translation>
     </message>
 </context>
 <context>
@@ -8513,32 +8534,32 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/markets/MarketPanelEditor.cpp" line="67" />
         <source>PANEL TITLE</source>
-        <translation type="unfinished">面板 TITLE</translation>
+        <translation>面板 TITLE</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketPanelEditor.cpp" line="72" />
         <source>e.g. My Tech Stocks</source>
-        <translation type="unfinished">例如我的科技股</translation>
+        <translation>例如我的科技股</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketPanelEditor.cpp" line="87" />
         <source>TICKERS</source>
-        <translation type="unfinished">股票代碼</translation>
+        <translation>股票代碼</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketPanelEditor.cpp" line="91" />
         <source>✕ REMOVE</source>
-        <translation type="unfinished">✕ 移除</translation>
+        <translation>✕ 移除</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketPanelEditor.cpp" line="114" />
         <source>ADD TICKER  ·  type to search, click or Enter to add</source>
-        <translation type="unfinished">添加股票代碼·鍵入進行搜索，單擊或 Enter 進行添加</translation>
+        <translation>添加股票代碼·鍵入進行搜索，單擊或 Enter 進行添加</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketPanelEditor.cpp" line="119" />
         <source>Search symbol or name: AAPL, Reliance, Bitcoin ...</source>
-        <translation type="unfinished">搜尋符號或名稱： AAPL, Reliance, Bitcoin ...</translation>
+        <translation>搜尋符號或名稱： AAPL, Reliance, Bitcoin ...</translation>
     </message>
 </context>
 <context>
@@ -8546,22 +8567,22 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/dashboard/MarketPulsePanel.cpp" line="316" />
         <source>市場脈動</source>
-        <translation type="unfinished">市場脈動</translation>
+        <translation>市場脈動</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/MarketPulsePanel.cpp" line="379" />
         <source>恐懼與貪婪指數</source>
-        <translation type="unfinished">恐懼與貪婪指數</translation>
+        <translation>恐懼與貪婪指數</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/MarketPulsePanel.cpp" line="401" />
         <source>/100</source>
-        <translation type="unfinished">/100</translation>
+        <translation>/100</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/MarketPulsePanel.cpp" line="406" />
         <source>載入中...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
 </context>
 <context>
@@ -8569,12 +8590,12 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarketQuoteStripWidget.cpp" line="154" />
         <source>Configure — Quote Strip</source>
-        <translation type="unfinished">配置 - 報價條</translation>
+        <translation>配置 - 報價條</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarketQuoteStripWidget.cpp" line="159" />
         <source>e.g. AAPL, MSFT, GOOGL</source>
-        <translation type="unfinished">例如：AAPL, MSFT, GOOGL</translation>
+        <translation>例如：AAPL, MSFT, GOOGL</translation>
     </message>
 </context>
 <context>
@@ -8582,22 +8603,22 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarketSentimentWidget.cpp" line="43" />
         <source>載入中...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarketSentimentWidget.cpp" line="72" />
         <source>-- BULL</source>
-        <translation type="unfinished">-- 看漲</translation>
+        <translation>-- 看漲</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarketSentimentWidget.cpp" line="76" />
         <source>-- NEUTRAL</source>
-        <translation type="unfinished">-- 中性</translation>
+        <translation>-- 中性</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/MarketSentimentWidget.cpp" line="80" />
         <source>-- BEAR</source>
-        <translation type="unfinished">-- 看跌</translation>
+        <translation>-- 看跌</translation>
     </message>
 </context>
 <context>
@@ -8605,37 +8626,37 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="92" />
         <source>MARKET</source>
-        <translation type="unfinished">市價</translation>
+        <translation>市價</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="92" />
         <source>YES</source>
-        <translation type="unfinished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="92" />
         <source>NO</source>
-        <translation type="unfinished">否</translation>
+        <translation>否</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="92" />
         <source>24h VOL</source>
-        <translation type="unfinished">24 小時成交量</translation>
+        <translation>24 小時成交量</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="92" />
         <source>EXPIRES</source>
-        <translation type="unfinished">到期</translation>
+        <translation>到期</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="117" />
         <source>Demo dataset. Set `fincept.markets_endpoint` in SecureStorage and deploy the fincept_market Anchor program for live trading.</source>
-        <translation type="unfinished" />
+        <translation>展示資料集。請在 SecureStorage 中設定 `fincept.markets_endpoint` 並部署 fincept_market Anchor 程式以進行實盤交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/MarketsListPanel.cpp" line="169" />
         <source>FinceptInternalAdapter not registered</source>
-        <translation type="unfinished">FinceptInternalAdapter 未註冊</translation>
+        <translation>FinceptInternalAdapter 未註冊</translation>
     </message>
 </context>
 <context>
@@ -8643,83 +8664,83 @@ All countries: ALL</source>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="65" />
         <source>● TIMEOUT</source>
-        <translation type="unfinished">● 逾時</translation>
+        <translation>● 逾時</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="247" />
         <source>Remove Panel</source>
-        <translation type="unfinished">移除面板</translation>
+        <translation>移除面板</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="248" />
         <source>Remove this panel?</source>
-        <translation type="unfinished">移除此面板？</translation>
+        <translation>移除此面板？</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="288" />
         <source>FINCEPT MARKETS</source>
-        <translation type="unfinished">Fincept 市場</translation>
+        <translation>Fincept 市場</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="371" />
         <source>5M</source>
-        <translation type="unfinished">5M</translation>
+        <translation>5M</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="372" />
         <source>10M</source>
-        <translation type="unfinished">10M</translation>
+        <translation>10M</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="373" />
         <source>15M</source>
-        <translation type="unfinished">15M</translation>
+        <translation>15M</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="374" />
         <source>30M</source>
-        <translation type="unfinished">30M</translation>
+        <translation>30M</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="375" />
         <source>1H</source>
-        <translation type="unfinished">1H</translation>
+        <translation>1H</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="376" />
         <source>4H</source>
-        <translation type="unfinished">4H</translation>
+        <translation>4H</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="377" />
         <source>1D</source>
-        <translation type="unfinished">1日</translation>
+        <translation>1日</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="423" />
         <source>Reset Panels</source>
-        <translation type="unfinished">重設面板</translation>
+        <translation>重設面板</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="424" />
         <source>Reset all panels to defaults?</source>
-        <translation type="unfinished">將所有面板重設為預設值？</translation>
+        <translation>將所有面板重設為預設值？</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="438" />
         <source>LAST UPDATE  --:--:--</source>
-        <translation type="unfinished">最後 更新  --:--:--</translation>
+        <translation>最後 更新  --:--:--</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="444" />
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="561" />
         <source>● READY</source>
-        <translation type="unfinished">● 就緒</translation>
+        <translation>● 就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/markets/MarketsScreen.cpp" line="545" />
         <source>● LOADING</source>
-        <translation type="unfinished">● 載入中</translation>
+        <translation>● 載入中</translation>
     </message>
 </context>
 <context>
@@ -8728,107 +8749,107 @@ All countries: ALL</source>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="264" />
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="434" />
         <source>MCP SERVERS</source>
-        <translation type="unfinished">MCP 伺服器</translation>
+        <translation>MCP 伺服器</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="285" />
         <source>Search...</source>
-        <translation type="unfinished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="291" />
         <source>↺  REFRESH</source>
-        <translation type="unfinished">↺  重新整理</translation>
+        <translation>↺  重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="316" />
         <source>  CATEGORY</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="382" />
         <source>＋  ADD CUSTOM MCP SERVER</source>
-        <translation type="unfinished">＋  ADD 自訂 MCP 伺服器</translation>
+        <translation>＋  ADD 自訂 MCP 伺服器</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="404" />
         <source>ALL TOOLS — internal + external  (check/uncheck to enable/disable internal tools)</source>
-        <translation type="unfinished">所有工具 - 內部 + 外部（選取/取消選取以啟用/停用內部工具）</translation>
+        <translation>所有工具 - 內部 + 外部（選取/取消選取以啟用/停用內部工具）</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="438" />
         <source>MARKETPLACE</source>
-        <translation type="unfinished">市集</translation>
+        <translation>市集</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="480" />
         <source>Add  </source>
-        <translation type="unfinished">新增  </translation>
+        <translation>新增  </translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="501" />
         <source>Environment Variables</source>
-        <translation type="unfinished">環境變數</translation>
+        <translation>環境變數</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="512" />
         <source>Enter </source>
-        <translation type="unfinished">輸入 </translation>
+        <translation>輸入 </translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="684" />
         <source>Add Custom MCP Server</source>
-        <translation type="unfinished">新增自訂 MCP Server</translation>
+        <translation>新增自訂 MCP Server</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="691" />
         <source>e.g. My Custom Server</source>
-        <translation type="unfinished">例如我的自訂伺服器</translation>
+        <translation>例如我的自訂伺服器</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="695" />
         <source>Short description</source>
-        <translation type="unfinished">簡短說明</translation>
+        <translation>簡短說明</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="702" />
         <source>e.g. my-mcp-package --flag value</source>
-        <translation type="unfinished">例如my-mcp-package --標誌值</translation>
+        <translation>例如my-mcp-package --標誌值</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="706" />
         <source>KEY=value KEY2=value2</source>
-        <translation type="unfinished">KEY=value KEY2=value2</translation>
+        <translation>KEY=value KEY2=value2</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="810" />
         <source>No servers match the current filter.</source>
-        <translation type="unfinished">沒有伺服器符合目前的篩選條件。</translation>
+        <translation>沒有伺服器符合目前的篩選條件。</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="884" />
         <source>✓ ADDED</source>
-        <translation type="unfinished">✓ 已加入</translation>
+        <translation>✓ 已加入</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="888" />
         <source>ADD</source>
-        <translation type="unfinished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="957" />
         <source>⟳ STARTING...</source>
-        <translation type="unfinished">⟳ 啟動中...</translation>
+        <translation>⟳ 啟動中...</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="1013" />
         <source>LOGS</source>
-        <translation type="unfinished">日誌</translation>
+        <translation>日誌</translation>
     </message>
     <message>
         <location filename="../src/screens/mcp_servers/McpServersScreen.cpp" line="1046" />
         <source>REMOVE</source>
-        <translation type="unfinished">移除</translation>
+        <translation>移除</translation>
     </message>
 </context>
 <context>
@@ -8901,12 +8922,12 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/ui/navigation/NavigationBar.cpp" line="29" />
         <source> LIVE</source>
-        <translation type="unfinished"> 即時</translation>
+        <translation> 即時</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/NavigationBar.cpp" line="44" />
         <source>LOGOUT</source>
-        <translation type="unfinished">登出</translation>
+        <translation>登出</translation>
     </message>
 </context>
 <context>
@@ -8914,12 +8935,12 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/NewsCategoryWidget.cpp" line="115" />
         <source>Configure — News Category</source>
-        <translation type="unfinished">配置 - 新聞類別</translation>
+        <translation>配置 - 新聞類別</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/NewsCategoryWidget.cpp" line="120" />
         <source>markets | geopolitics | crypto | …</source>
-        <translation type="unfinished">市場 |地緣政治|加密 | …</translation>
+        <translation>市場 |地緣政治|加密 | …</translation>
     </message>
 </context>
 <context>
@@ -8927,48 +8948,48 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="45" />
         <source>INTEL</source>
-        <translation type="unfinished">INTEL</translation>
+        <translation>INTEL</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="50" />
         <source>Toggle intelligence drawer</source>
-        <translation type="unfinished">切換智慧抽屜</translation>
+        <translation>切換智慧抽屜</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="59" />
         <source>Search...</source>
-        <translation type="unfinished">搜尋...</translation>
+        <translation>搜尋...</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="181" />
         <source>RTL</source>
-        <translation type="unfinished">RTL</translation>
+        <translation>RTL</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="193" />
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="365" />
         <source>AI</source>
-        <translation type="unfinished">AI</translation>
+        <translation>AI</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="196" />
         <source>AI Brief — summarize headlines</source>
-        <translation type="unfinished">AI Brief (AI 摘要) — 摘要標題</translation>
+        <translation>AI Brief (AI 摘要) — 摘要標題</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="201" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="252" />
         <source>SENT</source>
-        <translation type="unfinished">SENT</translation>
+        <translation>SENT</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsCommandBar.cpp" line="287" />
         <source>0 WATCHES</source>
-        <translation type="unfinished">0 觀察</translation>
+        <translation>0 觀察</translation>
     </message>
 </context>
 <context>
@@ -8976,12 +8997,12 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="40" />
         <source>ARTICLE DETAIL</source>
-        <translation type="unfinished">文章詳情</translation>
+        <translation>文章詳情</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="45" />
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="66" />
@@ -8989,22 +9010,22 @@ Click '+ Add' to add one.</source>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="474" />
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="500" />
         <source>ANALYZE</source>
-        <translation type="unfinished">分析</translation>
+        <translation>分析</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="76" />
         <source>Select an article</source>
-        <translation type="unfinished">選取文章</translation>
+        <translation>選取文章</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="159" />
         <source>OPEN</source>
-        <translation type="unfinished">OPEN</translation>
+        <translation>OPEN</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="162" />
         <source>COPY URL</source>
-        <translation type="unfinished">複製 URL</translation>
+        <translation>複製 URL</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="168" />
@@ -9014,68 +9035,68 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="171" />
         <source>Save article to File Manager</source>
-        <translation type="unfinished">將文章儲存至檔案管理器</translation>
+        <translation>將文章儲存至檔案管理器</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="173" />
         <source>BOOKMARK</source>
-        <translation type="unfinished">書籤</translation>
+        <translation>書籤</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="176" />
         <source>Bookmark article</source>
-        <translation type="unfinished">收藏文章</translation>
+        <translation>收藏文章</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="180" />
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="248" />
         <source>TRANSLATE</source>
-        <translation type="unfinished">翻譯</translation>
+        <translation>翻譯</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="203" />
         <source>ANALYZING...</source>
-        <translation type="unfinished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="270" />
         <source>AI ANALYSIS</source>
-        <translation type="unfinished">AI 分析</translation>
+        <translation>AI 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="292" />
         <source>KEY POINTS</source>
-        <translation type="unfinished">重點摘要</translation>
+        <translation>重點摘要</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="302" />
         <source>RISK SIGNALS</source>
-        <translation type="unfinished">風險訊號</translation>
+        <translation>風險訊號</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="312" />
         <source>TOPICS</source>
-        <translation type="unfinished">TOPICS</translation>
+        <translation>TOPICS</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="330" />
         <source>MONITOR MATCHES</source>
-        <translation type="unfinished">監控匹配</translation>
+        <translation>監控匹配</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="346" />
         <source>RELATED</source>
-        <translation type="unfinished">RELATED</translation>
+        <translation>RELATED</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="362" />
         <source>ENTITIES</source>
-        <translation type="unfinished">ENTITIES</translation>
+        <translation>ENTITIES</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsDetailPanel.cpp" line="378" />
         <source>NEARBY INFRASTRUCTURE</source>
-        <translation type="unfinished">附近基礎設施</translation>
+        <translation>附近基礎設施</translation>
     </message>
 </context>
 <context>
@@ -9083,12 +9104,12 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/news/NewsFeedPanel.cpp" line="99" />
         <source>FLASH</source>
-        <translation type="unfinished">FLASH</translation>
+        <translation>FLASH</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsFeedPanel.cpp" line="112" />
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
 </context>
 <context>
@@ -9096,38 +9117,38 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="28" />
         <source>INTELLIGENCE</source>
-        <translation type="unfinished">INTELLIGENCE</translation>
+        <translation>INTELLIGENCE</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="33" />
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="295" />
         <source>x</source>
-        <translation type="unfinished">x</translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="99" />
         <source>TOP STORIES</source>
-        <translation type="unfinished">頭條新聞</translation>
+        <translation>頭條新聞</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="111" />
         <source>CATEGORIES</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="123" />
         <source>KEYWORD MONITORS</source>
-        <translation type="unfinished">關鍵字監控</translation>
+        <translation>關鍵字監控</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="141" />
         <source>label: kw1, kw2</source>
-        <translation type="unfinished">標籤: kw1, kw2</translation>
+        <translation>標籤: kw1, kw2</translation>
     </message>
     <message>
         <location filename="../src/screens/news/NewsSidePanel.cpp" line="183" />
         <source>DEVIATIONS</source>
-        <translation type="unfinished">DEVIATIONS</translation>
+        <translation>DEVIATIONS</translation>
     </message>
 </context>
 <context>
@@ -9135,27 +9156,27 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="105" />
         <source>DRAFT</source>
-        <translation type="unfinished">草稿</translation>
+        <translation>草稿</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="114" />
         <source>UNDO</source>
-        <translation type="unfinished">復原</translation>
+        <translation>復原</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="117" />
         <source>Undo last action (Ctrl+Z)</source>
-        <translation type="unfinished">復原上一個動作 (Ctrl+Z)</translation>
+        <translation>復原上一個動作 (Ctrl+Z)</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="121" />
         <source>REDO</source>
-        <translation type="unfinished">重做</translation>
+        <translation>重做</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="124" />
         <source>Redo last action (Ctrl+Y)</source>
-        <translation type="unfinished">重做上一個動作 (Ctrl+Y)</translation>
+        <translation>重做上一個動作 (Ctrl+Y)</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="135" />
@@ -9165,17 +9186,17 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="137" />
         <source>Save workflow to database</source>
-        <translation type="unfinished">將 Workflow (工作流程) 儲存至資料庫</translation>
+        <translation>將 Workflow (工作流程) 儲存至資料庫</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="141" />
         <source>LOAD</source>
-        <translation type="unfinished">載入</translation>
+        <translation>載入</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="143" />
         <source>Load a saved workflow</source>
-        <translation type="unfinished">載入已儲存的 Workflow (工作流程)</translation>
+        <translation>載入已儲存的 Workflow (工作流程)</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="147" />
@@ -9185,27 +9206,27 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="159" />
         <source>IMPORT</source>
-        <translation type="unfinished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="164" />
         <source>EXPORT</source>
-        <translation type="unfinished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="176" />
         <source>TEMPLATES</source>
-        <translation type="unfinished">範本</translation>
+        <translation>範本</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="182" />
         <source>DEPLOY</source>
-        <translation type="unfinished">部署</translation>
+        <translation>部署</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/toolbar/NodeEditorToolbar.cpp" line="194" />
         <source>EXECUTE</source>
-        <translation type="unfinished">執行</translation>
+        <translation>執行</translation>
     </message>
 </context>
 <context>
@@ -9218,7 +9239,7 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/node_editor/canvas/NodeItem.cpp" line="254" />
         <source>Execute From Here</source>
-        <translation type="unfinished">從此處執行</translation>
+        <translation>從此處執行</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/canvas/NodeItem.cpp" line="256" />
@@ -9231,12 +9252,12 @@ Click '+ Add' to add one.</source>
     <message>
         <location filename="../src/screens/node_editor/palette/NodePalette.cpp" line="36" />
         <source>NODES</source>
-        <translation type="unfinished">節點</translation>
+        <translation>節點</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/palette/NodePalette.cpp" line="57" />
         <source>Search nodes...</source>
-        <translation type="unfinished">搜尋節點...</translation>
+        <translation>搜尋節點...</translation>
     </message>
 </context>
 <context>
@@ -9245,27 +9266,28 @@ Click '+ Add' to add one.</source>
         <location filename="../src/screens/node_editor/properties/NodePropertiesPanel.cpp" line="32" />
         <source>Select a node
 to edit properties</source>
-        <translation type="unfinished" />
+        <translation>選取一個節點
+以編輯屬性</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/NodePropertiesPanel.cpp" line="109" />
         <source>PROPERTIES</source>
-        <translation type="unfinished">屬性</translation>
+        <translation>屬性</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/NodePropertiesPanel.cpp" line="116" />
         <source>DEL</source>
-        <translation type="unfinished">DEL</translation>
+        <translation>DEL</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/NodePropertiesPanel.cpp" line="143" />
         <source>NAME</source>
-        <translation type="unfinished">名稱</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/NodePropertiesPanel.cpp" line="179" />
         <source>PARAMETERS</source>
-        <translation type="unfinished">參數</translation>
+        <translation>參數</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/NodePropertiesPanel.cpp" line="204" />
@@ -9278,47 +9300,47 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="155" />
         <source>  CATEGORIES</source>
-        <translation type="unfinished">分類</translation>
+        <translation>分類</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="205" />
         <source>Search notes...</source>
-        <translation type="unfinished">搜尋 Notes (筆記)...</translation>
+        <translation>搜尋 Notes (筆記)...</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="211" />
         <source>+ NEW</source>
-        <translation type="unfinished">+ 新增</translation>
+        <translation>+ 新增</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="226" />
         <source>0 notes</source>
-        <translation type="unfinished">0 個筆記</translation>
+        <translation>0 個筆記</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="247" />
         <source>Select a note or create a new one</source>
-        <translation type="unfinished">選擇註釋或建立新註釋</translation>
+        <translation>選擇註釋或建立新註釋</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="262" />
         <source>EDIT</source>
-        <translation type="unfinished">編輯</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="267" />
         <source>FAV</source>
-        <translation type="unfinished">收藏</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="272" />
         <source>ARCHIVE</source>
-        <translation type="unfinished">封存</translation>
+        <translation>封存</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="277" />
         <source>DELETE</source>
-        <translation type="unfinished">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="328" />
@@ -9328,42 +9350,42 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="333" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="345" />
         <source>EXPORT</source>
-        <translation type="unfinished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="347" />
         <source>Export this note as a Markdown file to the File Manager</source>
-        <translation type="unfinished">將此筆記作為 Markdown 文件匯出到文件管理器</translation>
+        <translation>將此筆記作為 Markdown 文件匯出到文件管理器</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="356" />
         <source>Note title...</source>
-        <translation type="unfinished">Note (筆記) 標題...</translation>
+        <translation>Note (筆記) 標題...</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="403" />
         <source>tag1, tag2, ...</source>
-        <translation type="unfinished">標籤1, 標籤2, ...</translation>
+        <translation>標籤1, 標籤2, ...</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="409" />
         <source>AAPL, MSFT, ...</source>
-        <translation type="unfinished">AAPL, MSFT, ...</translation>
+        <translation>AAPL, MSFT, ...</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="417" />
         <source>Write your note here...</source>
-        <translation type="unfinished">在此撰寫 Note (筆記)...</translation>
+        <translation>在此撰寫 Note (筆記)...</translation>
     </message>
     <message>
         <location filename="../src/screens/notes/NotesScreen.cpp" line="467" />
         <source>* </source>
-        <translation type="unfinished">* </translation>
+        <translation>* </translation>
     </message>
 </context>
 <context>
@@ -9371,7 +9393,7 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/NotesWidget.cpp" line="319" />
         <source>Configure — Notes</source>
-        <translation type="unfinished">Configure — 筆記</translation>
+        <translation>Configure — 筆記</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/NotesWidget.cpp" line="323" />
@@ -9381,7 +9403,7 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/NotesWidget.cpp" line="324" />
         <source>Favorites only</source>
-        <translation type="unfinished">僅收藏</translation>
+        <translation>僅收藏</translation>
     </message>
 </context>
 <context>
@@ -9389,17 +9411,17 @@ to edit properties</source>
     <message>
         <location filename="../src/ui/widgets/NotifPanel.cpp" line="35" />
         <source>NOTIFICATIONS</source>
-        <translation type="unfinished">通知</translation>
+        <translation>通知</translation>
     </message>
     <message>
         <location filename="../src/ui/widgets/NotifPanel.cpp" line="41" />
         <source>Mark all read</source>
-        <translation type="unfinished">全部標為已讀</translation>
+        <translation>全部標為已讀</translation>
     </message>
     <message>
         <location filename="../src/ui/widgets/NotifPanel.cpp" line="90" />
         <source>No notifications</source>
-        <translation type="unfinished">No 通知</translation>
+        <translation>No 通知</translation>
     </message>
 </context>
 <context>
@@ -9407,12 +9429,12 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/economics/panels/OecdPanel.cpp" line="61" />
         <source>Annual</source>
-        <translation type="unfinished">年度</translation>
+        <translation>年度</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/OecdPanel.cpp" line="62" />
         <source>Quarterly</source>
-        <translation type="unfinished">每季</translation>
+        <translation>每季</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/OecdPanel.cpp" line="63" />
@@ -9425,7 +9447,7 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/economics/panels/OnsPanel.cpp" line="50" />
         <source>SERIES</source>
-        <translation type="unfinished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
@@ -9433,12 +9455,12 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/OpenPositionsWidget.cpp" line="67" />
         <source>No active account — click gear to configure</source>
-        <translation type="unfinished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/OpenPositionsWidget.cpp" line="148" />
         <source>Configure — Open Positions</source>
-        <translation type="unfinished">配置 - 未平倉頭寸</translation>
+        <translation>配置 - 未平倉頭寸</translation>
     </message>
 </context>
 <context>
@@ -9446,17 +9468,17 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/OrderBookMiniWidget.cpp" line="74" />
         <source>No active account — click gear to configure</source>
-        <translation type="unfinished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/OrderBookMiniWidget.cpp" line="161" />
         <source>Cancel order </source>
-        <translation type="unfinished">取消訂單 </translation>
+        <translation>取消訂單 </translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/OrderBookMiniWidget.cpp" line="198" />
         <source>Configure — Working Orders</source>
-        <translation type="unfinished">配置 - 工作訂單</translation>
+        <translation>配置 - 工作訂單</translation>
     </message>
 </context>
 <context>
@@ -9464,7 +9486,7 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/economics/panels/OwIdPanel.cpp" line="65" />
         <source>Country…</source>
-        <translation type="unfinished">國家…</translation>
+        <translation>國家…</translation>
     </message>
 </context>
 <context>
@@ -9472,12 +9494,12 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/portfolio/views/PerformanceRiskView.cpp" line="39" />
         <source>NAV PERFORMANCE (FROM SNAPSHOTS)</source>
-        <translation type="unfinished">導航效能（來自快照）</translation>
+        <translation>導航效能（來自快照）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PerformanceRiskView.cpp" line="83" />
         <source>  RISK METRICS</source>
-        <translation type="unfinished">風險指標</translation>
+        <translation>風險指標</translation>
     </message>
 </context>
 <context>
@@ -9485,7 +9507,7 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/PerformanceWidget.cpp" line="37" />
         <source>TODAY</source>
-        <translation type="unfinished">今日</translation>
+        <translation>今日</translation>
     </message>
 </context>
 <context>
@@ -9493,7 +9515,7 @@ to edit properties</source>
     <message>
         <location filename="../src/ui/widgets/PhoneCodeComboBox.cpp" line="297" />
         <source>Search country…</source>
-        <translation type="unfinished">搜尋國家…</translation>
+        <translation>搜尋國家…</translation>
     </message>
 </context>
 <context>
@@ -9501,32 +9523,32 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="72" />
         <source>PLAN TEMPLATES</source>
-        <translation type="unfinished">方案 TEMPLATES</translation>
+        <translation>方案 TEMPLATES</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="77" />
         <source>LLM PROFILE:</source>
-        <translation type="unfinished">LLM 設定檔:</translation>
+        <translation>LLM 設定檔:</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="83" />
         <source>LLM profile used for plan generation and execution</source>
-        <translation type="unfinished">用於產生與執行計畫的 LLM Profile (設定檔)</translation>
+        <translation>用於產生與執行計畫的 LLM Profile (設定檔)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="88" />
         <source>Default (Global)</source>
-        <translation type="unfinished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="97" />
         <source>PORTFOLIO:</source>
-        <translation type="unfinished">投資組合:</translation>
+        <translation>投資組合:</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="103" />
         <source>Portfolio to use as context for rebalance / analysis plans</source>
-        <translation type="unfinished">用作再平衡/分析計劃背景的投資組合</translation>
+        <translation>用作再平衡/分析計劃背景的投資組合</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="108" />
@@ -9536,87 +9558,87 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="130" />
         <source>CUSTOM PLAN QUERY</source>
-        <translation type="unfinished">自訂 方案 QUERY</translation>
+        <translation>自訂 方案 QUERY</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="136" />
         <source>Describe what you want to plan...</source>
-        <translation type="unfinished">描述你想規劃的內容...</translation>
+        <translation>描述你想規劃的內容...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="141" />
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="324" />
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="370" />
         <source>GENERATE PLAN</source>
-        <translation type="unfinished">產生計畫</translation>
+        <translation>產生計畫</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="152" />
         <source>PLAN HISTORY</source>
-        <translation type="unfinished">方案 歷史</translation>
+        <translation>方案 歷史</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="159" />
         <source>Search history...</source>
-        <translation type="unfinished">搜尋歷史...</translation>
+        <translation>搜尋歷史...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="187" />
         <source>EXECUTION PLAN</source>
-        <translation type="unfinished">執行 方案</translation>
+        <translation>執行 方案</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="255" />
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="341" />
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="372" />
         <source>EXECUTE PLAN</source>
-        <translation type="unfinished">執行計畫</translation>
+        <translation>執行計畫</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="280" />
         <source>STEP RESULT</source>
-        <translation type="unfinished">STEP 結果</translation>
+        <translation>STEP 結果</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="285" />
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="598" />
         <source>COPY</source>
-        <translation type="unfinished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="329" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="374" />
         <source>ERROR</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="430" />
         <source>GENERATING...</source>
-        <translation type="unfinished">產生中...</translation>
+        <translation>產生中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="435" />
         <source>GENERATING</source>
-        <translation type="unfinished">產生中</translation>
+        <translation>產生中</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="458" />
         <source>EXECUTING...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="461" />
         <source>EXECUTING</source>
-        <translation type="unfinished">執行中</translation>
+        <translation>執行中</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/PlannerViewPanel.cpp" line="597" />
         <source>COPIED!</source>
-        <translation type="unfinished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
 </context>
 <context>
@@ -9624,77 +9646,77 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="34" />
         <source>RETIREMENT</source>
-        <translation type="unfinished">RETIREMENT</translation>
+        <translation>RETIREMENT</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="35" />
         <source>GOALS</source>
-        <translation type="unfinished">GOALS</translation>
+        <translation>GOALS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="36" />
         <source>SAVINGS</source>
-        <translation type="unfinished">SAVINGS</translation>
+        <translation>SAVINGS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="56" />
         <source>RETIREMENT CALCULATOR</source>
-        <translation type="unfinished">退休計算器</translation>
+        <translation>退休計算器</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="80" />
         <source>Current Age:</source>
-        <translation type="unfinished">目前年齡：</translation>
+        <translation>目前年齡：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="89" />
         <source>Retire Age:</source>
-        <translation type="unfinished">退休年齡：</translation>
+        <translation>退休年齡：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="99" />
         <source>Annual Expense:</source>
-        <translation type="unfinished">年度 Expense:</translation>
+        <translation>年度 Expense:</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="109" />
         <source>Monthly Savings:</source>
-        <translation type="unfinished">每月 Savings:</translation>
+        <translation>每月 Savings:</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="119" />
         <source>Exp. Return:</source>
-        <translation type="unfinished">預期報酬率：</translation>
+        <translation>預期報酬率：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="129" />
         <source>Inflation:</source>
-        <translation type="unfinished">通膨率：</translation>
+        <translation>通膨率：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="140" />
         <source>Withdrawal Rate:</source>
-        <translation type="unfinished">提領率：</translation>
+        <translation>提領率：</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="146" />
         <source>CALCULATE</source>
-        <translation type="unfinished">計算</translation>
+        <translation>計算</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="165" />
         <source>PROJECTION RESULTS</source>
-        <translation type="unfinished">PROJECTION 結果</translation>
+        <translation>PROJECTION 結果</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="217" />
         <source>GOAL-BASED PLANNING</source>
-        <translation type="unfinished">目標導向規劃</translation>
+        <translation>目標導向規劃</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PlanningView.cpp" line="239" />
         <source>SAVINGS RATE ANALYSIS</source>
-        <translation type="unfinished">儲蓄率分析</translation>
+        <translation>儲蓄率分析</translation>
     </message>
 </context>
 <context>
@@ -9702,12 +9724,12 @@ to edit properties</source>
     <message>
         <location filename="../src/services/prediction/polymarket/PolymarketAdapter.cpp" line="121" />
         <source>Polymarket trades require condition id</source>
-        <translation type="unfinished">Polymarket 交易需要條件 ID</translation>
+        <translation>Polymarket 交易需要條件 ID</translation>
     </message>
     <message>
         <location filename="../src/services/prediction/polymarket/PolymarketAdapter.cpp" line="177" />
         <source>Polymarket adapter: not supported in this call</source>
-        <translation type="unfinished">Polymarket 適配器：此通話不支援</translation>
+        <translation>Polymarket 適配器：此通話不支援</translation>
     </message>
 </context>
 <context>
@@ -9716,17 +9738,17 @@ to edit properties</source>
         <location filename="../src/screens/polymarket/PolymarketBrowsePanel.cpp" line="34" />
         <location filename="../src/screens/polymarket/PolymarketBrowsePanel.cpp" line="151" />
         <source>MARKETS</source>
-        <translation type="unfinished">市場</translation>
+        <translation>市場</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketBrowsePanel.cpp" line="103" />
         <source>1 / 1</source>
-        <translation type="unfinished">1 / 1</translation>
+        <translation>1 / 1</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketBrowsePanel.cpp" line="141" />
         <source>LOADING...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
 </context>
 <context>
@@ -9734,44 +9756,44 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="153" />
         <source>Switch prediction market exchange</source>
-        <translation type="unfinished">切換預測市場交易所</translation>
+        <translation>切換預測市場交易所</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="165" />
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="436" />
         <source>CONNECT</source>
-        <translation type="unfinished">連線</translation>
+        <translation>連線</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="169" />
         <source>Connect a trading account</source>
-        <translation type="unfinished">連結交易帳戶</translation>
+        <translation>連結交易帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="210" />
         <source>Search markets...</source>
-        <translation type="unfinished">搜尋市場...</translation>
+        <translation>搜尋市場...</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="221" />
         <source>VOLUME</source>
-        <translation type="unfinished">成交量</translation>
+        <translation>成交量</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="221" />
         <source>LIQUIDITY</source>
-        <translation type="unfinished">流動性</translation>
+        <translation>流動性</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="221" />
         <source>DATE</source>
-        <translation type="unfinished">日期</translation>
+        <translation>日期</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="238" />
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="402" />
         <source>↻</source>
-        <translation type="unfinished">↻</translation>
+        <translation>↻</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="242" />
@@ -9781,27 +9803,27 @@ to edit properties</source>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="330" />
         <source>ALL SERIES</source>
-        <translation type="unfinished">所有系列</translation>
+        <translation>所有系列</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="347" />
         <source>ALL</source>
-        <translation type="unfinished">全部</translation>
+        <translation>全部</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="402" />
         <source>…</source>
-        <translation type="unfinished">…</translation>
+        <translation>…</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="407" />
         <source>● LIVE</source>
-        <translation type="unfinished">● 即時</translation>
+        <translation>● 即時</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="413" />
         <source>○ OFF</source>
-        <translation type="unfinished">○ 關閉</translation>
+        <translation>○ 關閉</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketCommandBar.cpp" line="428" />
@@ -9815,80 +9837,81 @@ to edit properties</source>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="105" />
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="890" />
         <source>Select a market to view details</source>
-        <translation type="unfinished">選擇市場以查看詳細資訊</translation>
+        <translation>選擇市場以查看詳細資訊</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="192" />
         <source>OUTCOMES</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="236" />
         <source>Connect an account
 to place orders</source>
-        <translation type="unfinished" />
+        <translation>連接帳戶
+以下單</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="262" />
         <source>AVAILABLE</source>
-        <translation type="unfinished">可用</translation>
+        <translation>可用</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="276" />
         <source>POSITION</source>
-        <translation type="unfinished">部位</translation>
+        <translation>部位</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="301" />
         <source>BUY</source>
-        <translation type="unfinished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="302" />
         <source>SELL</source>
-        <translation type="unfinished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="379" />
         <source>PLACE ORDER</source>
-        <translation type="unfinished">下單</translation>
+        <translation>下單</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="438" />
         <source>Invalid price — enter a value between 0 and 1</source>
-        <translation type="unfinished">價格無效 — 請輸入 0 到 1 之間的值</translation>
+        <translation>價格無效 — 請輸入 0 到 1 之間的值</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="444" />
         <source>Invalid size — must be &gt; 0</source>
-        <translation type="unfinished">大小無效 — 必須 &gt; 0</translation>
+        <translation>大小無效 — 必須 &gt; 0</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="463" />
         <source>Submitting…</source>
-        <translation type="unfinished">提交中…</translation>
+        <translation>提交中…</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="550" />
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="764" />
         <source>No comments yet</source>
-        <translation type="unfinished">No 留言 yet</translation>
+        <translation>No 留言 yet</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="574" />
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="814" />
         <source>No related markets</source>
-        <translation type="unfinished">無相關市場</translation>
+        <translation>無相關市場</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="878" />
         <source>Comments are Polymarket-only</source>
-        <translation type="unfinished">留言功能僅限 Polymarket</translation>
+        <translation>留言功能僅限 Polymarket</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketDetailPanel.cpp" line="879" />
         <source>Related markets are Polymarket-only</source>
-        <translation type="unfinished">相關市場功能僅限 Polymarket</translation>
+        <translation>相關市場功能僅限 Polymarket</translation>
     </message>
 </context>
 <context>
@@ -9896,7 +9919,7 @@ to place orders</source>
     <message>
         <location filename="../src/screens/polymarket/PolymarketLeaderboard.cpp" line="36" />
         <source>LEADERBOARD</source>
-        <translation type="unfinished">排行榜</translation>
+        <translation>排行榜</translation>
     </message>
 </context>
 <context>
@@ -9904,37 +9927,37 @@ to place orders</source>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="68" />
         <source>OPEN ORDERS</source>
-        <translation type="unfinished">未成交委託</translation>
+        <translation>未成交委託</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="76" />
         <source>CANCEL ALL</source>
-        <translation type="unfinished">全部取消</translation>
+        <translation>全部取消</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="180" />
         <source>Double-click to amend price</source>
-        <translation type="unfinished">雙擊以修改價格</translation>
+        <translation>雙擊以修改價格</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="216" />
         <source>Refresh order state</source>
-        <translation type="unfinished">重新整理訂單狀態</translation>
+        <translation>重新整理訂單狀態</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="230" />
         <source>Cancel order</source>
-        <translation type="unfinished">取消訂單</translation>
+        <translation>取消訂單</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="252" />
         <source>Amend price</source>
-        <translation type="unfinished">修改價格</translation>
+        <translation>修改價格</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketOrderBlotter.cpp" line="253" />
         <source>New limit price (0.01 – 0.99):</source>
-        <translation type="unfinished">新限價（0.01 - 0.99）：</translation>
+        <translation>新限價（0.01 - 0.99）：</translation>
     </message>
 </context>
 <context>
@@ -9942,22 +9965,22 @@ to place orders</source>
     <message>
         <location filename="../src/screens/polymarket/PolymarketPriceChart.cpp" line="40" />
         <source>INTERVAL</source>
-        <translation type="unfinished">時間間隔</translation>
+        <translation>時間間隔</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketPriceChart.cpp" line="60" />
         <source>OUTCOME</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketPriceChart.cpp" line="85" />
         <source>Select a market to view its price chart</source>
-        <translation type="unfinished">選擇一個市場以查看其價格圖表</translation>
+        <translation>選擇一個市場以查看其價格圖表</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketPriceChart.cpp" line="106" />
         <source>No price history available</source>
-        <translation type="unfinished">No 價格 歷史 可用</translation>
+        <translation>No 價格 歷史 可用</translation>
     </message>
 </context>
 <context>
@@ -9965,17 +9988,17 @@ to place orders</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/PolymarketPriceWidget.cpp" line="78" />
         <source>No markets configured — click gear to add</source>
-        <translation type="unfinished">尚未設定市場 — 點擊齒輪新增</translation>
+        <translation>尚未設定市場 — 點擊齒輪新增</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/PolymarketPriceWidget.cpp" line="158" />
         <source>Configure — Polymarket</source>
-        <translation type="unfinished">設定 — Polymarket</translation>
+        <translation>設定 — Polymarket</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/PolymarketPriceWidget.cpp" line="162" />
         <source>One per line:  &lt;asset_id&gt; | &lt;label&gt;</source>
-        <translation type="unfinished">每行一個：&lt;asset_id&gt; | &lt;label&gt;</translation>
+        <translation>每行一個：&lt;asset_id&gt; | &lt;label&gt;</translation>
     </message>
 </context>
 <context>
@@ -9985,31 +10008,31 @@ to place orders</source>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="103" />
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="219" />
         <source>Polymarket + Kalshi</source>
-        <translation type="unfinished">Polymarket + Kalshi</translation>
+        <translation>Polymarket + Kalshi</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="90" />
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="104" />
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="220" />
         <source>Polymarket</source>
-        <translation type="unfinished">Polymarket</translation>
+        <translation>Polymarket</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="91" />
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="105" />
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="221" />
         <source>Kalshi</source>
-        <translation type="unfinished">Kalshi</translation>
+        <translation>Kalshi</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="546" />
         <source>Showing %1 data</source>
-        <translation type="unfinished">顯示 %1 資料</translation>
+        <translation>顯示 %1 資料</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketScreen.cpp" line="893" />
         <source>Next open: </source>
-        <translation type="unfinished">下次開盤： </translation>
+        <translation>下次開盤： </translation>
     </message>
 </context>
 <context>
@@ -10017,22 +10040,22 @@ to place orders</source>
     <message>
         <location filename="../src/screens/polymarket/PolymarketStatusBar.cpp" line="22" />
         <source>POLYMARKET</source>
-        <translation type="unfinished">POLYMARKET</translation>
+        <translation>POLYMARKET</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketStatusBar.cpp" line="52" />
         <source>MARKETS</source>
-        <translation type="unfinished">市場</translation>
+        <translation>市場</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketStatusBar.cpp" line="108" />
         <source>● LIVE</source>
-        <translation type="unfinished">● 即時</translation>
+        <translation>● 即時</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PolymarketStatusBar.cpp" line="113" />
         <source>○ OFF</source>
-        <translation type="unfinished">○ 關閉</translation>
+        <translation>○ 關閉</translation>
     </message>
 </context>
 <context>
@@ -10040,12 +10063,12 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioBlotter.cpp" line="423" />
         <source>Edit Transaction</source>
-        <translation type="unfinished">編輯 Transaction (交易)</translation>
+        <translation>編輯 Transaction (交易)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioBlotter.cpp" line="424" />
         <source>Close / Delete Position</source>
-        <translation type="unfinished">關閉 / 刪除 部位</translation>
+        <translation>關閉 / 刪除 部位</translation>
     </message>
 </context>
 <context>
@@ -10053,102 +10076,102 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="94" />
         <source>↻</source>
-        <translation type="unfinished">↻</translation>
+        <translation>↻</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="97" />
         <source>Refresh portfolio data</source>
-        <translation type="unfinished">重新整理 Portfolio (投資組合) 資料</translation>
+        <translation>重新整理 Portfolio (投資組合) 資料</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="104" />
         <source>Auto-refresh interval</source>
-        <translation type="unfinished">自動重新整理間隔</translation>
+        <translation>自動重新整理間隔</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="105" />
         <source>1m</source>
-        <translation type="unfinished">1m</translation>
+        <translation>1m</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="106" />
         <source>5m</source>
-        <translation type="unfinished">5m</translation>
+        <translation>5m</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="107" />
         <source>10m</source>
-        <translation type="unfinished">10M</translation>
+        <translation>10M</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="108" />
         <source>30m</source>
-        <translation type="unfinished">30m</translation>
+        <translation>30m</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="109" />
         <source>1h</source>
-        <translation type="unfinished">1h</translation>
+        <translation>1h</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="110" />
         <source>3h</source>
-        <translation type="unfinished">3h</translation>
+        <translation>3h</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="111" />
         <source>1d</source>
-        <translation type="unfinished">1d</translation>
+        <translation>1d</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="143" />
         <source>Search portfolios...</source>
-        <translation type="unfinished">搜尋 Portfolios (投資組合)...</translation>
+        <translation>搜尋 Portfolios (投資組合)...</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="184" />
         <source>+ CREATE NEW</source>
-        <translation type="unfinished">+ 建立新項目</translation>
+        <translation>+ 建立新項目</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="198" />
         <source>DELETE</source>
-        <translation type="unfinished">DELETE</translation>
+        <translation>DELETE</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="220" />
         <source>⋯</source>
-        <translation type="unfinished" />
+        <translation>⋯</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="223" />
         <source>More actions</source>
-        <translation type="unfinished">更多動作</translation>
+        <translation>更多動作</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="236" />
         <source>Export CSV</source>
-        <translation type="unfinished">匯出 CSV</translation>
+        <translation>匯出 CSV</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="237" />
         <source>Export JSON</source>
-        <translation type="unfinished">匯出 JSON</translation>
+        <translation>匯出 JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="238" />
         <source>Import JSON…</source>
-        <translation type="unfinished">匯入 JSON…</translation>
+        <translation>匯入 JSON…</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="240" />
         <source>FFN Analysis</source>
-        <translation type="unfinished">FFN 分析</translation>
+        <translation>FFN 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioCommandBar.cpp" line="482" />
         <source>NO PORTFOLIOS — CREATE ONE  ▾</source>
-        <translation type="unfinished" />
+        <translation>尚無投資組合 — 建立一個  ▾</translation>
     </message>
 </context>
 <context>
@@ -10156,7 +10179,7 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDetailWrapper.cpp" line="41" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
 </context>
 <context>
@@ -10164,82 +10187,82 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="80" />
         <source>← BACK</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="95" />
         <source>FFN ANALYTICS</source>
-        <translation type="unfinished">FFN 分析</translation>
+        <translation>FFN 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="106" />
         <source>RUN FFN ANALYSIS</source>
-        <translation type="unfinished">執行 FFN 分析</translation>
+        <translation>執行 FFN 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="169" />
         <source>PORTFOLIO METRICS OVERVIEW</source>
-        <translation type="unfinished">投資組合 指標 總覽</translation>
+        <translation>投資組合 指標 總覽</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="179" />
         <source>OVERVIEW</source>
-        <translation type="unfinished">OVERVIEW</translation>
+        <translation>OVERVIEW</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="190" />
         <source>BENCHMARK COMPARISON</source>
-        <translation type="unfinished">基準 比較</translation>
+        <translation>基準 比較</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="208" />
         <source>BENCHMARK</source>
-        <translation type="unfinished">基準</translation>
+        <translation>基準</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="219" />
         <source>PORTFOLIO OPTIMISATION — WEIGHT COMPARISON</source>
-        <translation type="unfinished">投資組合 OPTIMISATION — 權重 比較</translation>
+        <translation>投資組合 OPTIMISATION — 權重 比較</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="240" />
         <source>ALLOCATION WEIGHTS BY STRATEGY</source>
-        <translation type="unfinished">配置 權重 BY 策略</translation>
+        <translation>配置 權重 BY 策略</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="249" />
         <source>STRATEGY PERFORMANCE STATS</source>
-        <translation type="unfinished">策略 績效 STATS</translation>
+        <translation>策略 績效 STATS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="260" />
         <source>OPTIMISATION</source>
-        <translation type="unfinished">OPTIMISATION</translation>
+        <translation>OPTIMISATION</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="285" />
         <source>REBASED</source>
-        <translation type="unfinished">REBASED</translation>
+        <translation>REBASED</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="308" />
         <source>DRAWDOWNS</source>
-        <translation type="unfinished">DRAWDOWNS</translation>
+        <translation>DRAWDOWNS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="331" />
         <source>ROLLING</source>
-        <translation type="unfinished">ROLLING</translation>
+        <translation>ROLLING</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="854" />
         <source>Running FFN analysis...</source>
-        <translation type="unfinished">執行 FFN 分析中...</translation>
+        <translation>執行 FFN 分析中...</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioFFNView.cpp" line="878" />
         <source>FFN failed — check Python/yfinance</source>
-        <translation type="unfinished">FFN 失敗 - 檢查 Python/yfinance</translation>
+        <translation>FFN 失敗 - 檢查 Python/yfinance</translation>
     </message>
 </context>
 <context>
@@ -10247,7 +10270,7 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioHeatmap.cpp" line="110" />
         <source>TOP MOVERS</source>
-        <translation type="unfinished">漲跌幅前列</translation>
+        <translation>漲跌幅前列</translation>
     </message>
 </context>
 <context>
@@ -10256,47 +10279,47 @@ to place orders</source>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="71" />
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="131" />
         <source>No response received.</source>
-        <translation type="unfinished">未收到回應。</translation>
+        <translation>未收到回應。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="80" />
         <source>● </source>
-        <translation type="unfinished">● </translation>
+        <translation>● </translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="122" />
         <source>RE-RUN AGENT</source>
-        <translation type="unfinished">重新執行代理</translation>
+        <translation>重新執行代理</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="190" />
         <source>PORTFOLIO INSIGHTS</source>
-        <translation type="unfinished">投資組合 INSIGHTS</translation>
+        <translation>投資組合 INSIGHTS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="202" />
         <source>Close  (Esc)</source>
-        <translation type="unfinished">關閉 (Esc)</translation>
+        <translation>關閉 (Esc)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="270" />
         <source>ANALYSIS TYPE</source>
-        <translation type="unfinished">分析 類型</translation>
+        <translation>分析 類型</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="299" />
         <source>RUN FULL ANALYSIS</source>
-        <translation type="unfinished">執行 FULL 分析</translation>
+        <translation>執行 FULL 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="381" />
         <source>RUN AGENT</source>
-        <translation type="unfinished">執行 AGENT</translation>
+        <translation>執行 AGENT</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioInsightsPanel.cpp" line="494" />
         <source>Discovering agents…</source>
-        <translation type="unfinished">正在探索代理…</translation>
+        <translation>正在探索代理…</translation>
     </message>
 </context>
 <context>
@@ -10304,92 +10327,92 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="86" />
         <source>OPTIMIZE</source>
-        <translation type="unfinished">OPTIMIZE</translation>
+        <translation>OPTIMIZE</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="87" />
         <source>FRONTIER</source>
-        <translation type="unfinished">FRONTIER</translation>
+        <translation>FRONTIER</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="88" />
         <source>ALLOCATION</source>
-        <translation type="unfinished">配置</translation>
+        <translation>配置</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="89" />
         <source>STRATEGIES</source>
-        <translation type="unfinished">STRATEGIES</translation>
+        <translation>STRATEGIES</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="90" />
         <source>COMPARE</source>
-        <translation type="unfinished">COMPARE</translation>
+        <translation>COMPARE</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="91" />
         <source>BACKTEST</source>
-        <translation type="unfinished">回測</translation>
+        <translation>回測</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="92" />
         <source>RISK</source>
-        <translation type="unfinished">RISK</translation>
+        <translation>RISK</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="93" />
         <source>STRESS</source>
-        <translation type="unfinished">STRESS</translation>
+        <translation>STRESS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="94" />
         <source>B-L MODEL</source>
-        <translation type="unfinished">B-L 模型</translation>
+        <translation>B-L 模型</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="132" />
         <source>▶ RUN OPTIMIZATION</source>
-        <translation type="unfinished" />
+        <translation>▶ 執行最佳化</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="164" />
         <source>EFFICIENT FRONTIER</source>
-        <translation type="unfinished">效率前緣</translation>
+        <translation>效率前緣</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="226" />
         <source>STRATEGY COMPARISON  (populated after optimization)</source>
-        <translation type="unfinished">策略比較（最佳化後填入）</translation>
+        <translation>策略比較（最佳化後填入）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="251" />
         <source>WEIGHT COMPARISON  (all methods, per symbol)</source>
-        <translation type="unfinished">權重比較（所有方法，按標的）</translation>
+        <translation>權重比較（所有方法，按標的）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="273" />
         <source>BACKTEST RESULTS</source>
-        <translation type="unfinished">回測結果</translation>
+        <translation>回測結果</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="289" />
         <source>RISK DECOMPOSITION</source>
-        <translation type="unfinished">風險 DECOMPOSITION</translation>
+        <translation>風險 DECOMPOSITION</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="305" />
         <source>OPTIMIZATION STRESS SCENARIOS</source>
-        <translation type="unfinished">最佳化壓力情境</translation>
+        <translation>最佳化壓力情境</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="320" />
         <source>BLACK-LITTERMAN MODEL</source>
-        <translation type="unfinished">黑利特曼模型</translation>
+        <translation>黑利特曼模型</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/PortfolioOptimizationView.cpp" line="348" />
         <source>Running optimization…</source>
-        <translation type="unfinished">最佳化中…</translation>
+        <translation>最佳化中…</translation>
     </message>
 </context>
 <context>
@@ -10397,33 +10420,34 @@ to place orders</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioOrderPanel.cpp" line="25" />
         <source>ORDER ENTRY</source>
-        <translation type="unfinished">訂單 ENTRY</translation>
+        <translation>訂單 ENTRY</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioOrderPanel.cpp" line="31" />
         <source>✕</source>
-        <translation type="unfinished" />
+        <translation>✕</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioOrderPanel.cpp" line="46" />
         <source>BUY</source>
-        <translation type="unfinished">買入</translation>
+        <translation>買入</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioOrderPanel.cpp" line="53" />
         <source>SELL</source>
-        <translation type="unfinished">賣出</translation>
+        <translation>賣出</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioOrderPanel.cpp" line="117" />
         <source>OPEN BUY ORDER</source>
-        <translation type="unfinished">開啟 買入 訂單</translation>
+        <translation>開啟 買入 訂單</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioOrderPanel.cpp" line="135" />
         <source>Orders are recorded
 in your portfolio</source>
-        <translation type="unfinished" />
+        <translation>訂單已記錄
+於您的投資組合中</translation>
     </message>
 </context>
 <context>
@@ -10431,23 +10455,24 @@ in your portfolio</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioPerfChart.cpp" line="166" />
         <source>Overlay benchmark index (auto-selected by portfolio currency)</source>
-        <translation type="unfinished">疊加基準指數（以投資組合貨幣自動選擇）</translation>
+        <translation>疊加基準指數（以投資組合貨幣自動選擇）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioPerfChart.cpp" line="187" />
         <source>Indexed view: rebase portfolio and benchmark to 100 at the start of
 the selected period. Use when comparing different currencies.</source>
-        <translation type="unfinished" />
+        <translation>指數化檢視：將投資組合與基準在所選期間起始點重新設為 100。
+用於比較不同幣別時使用。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioPerfChart.cpp" line="238" />
         <source>Total cost basis — the dashed horizontal line on the chart.</source>
-        <translation type="unfinished">總成本基礎 — 圖表上的虛線水平線。</translation>
+        <translation>總成本基礎 — 圖表上的虛線水平線。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioPerfChart.cpp" line="339" />
         <source>Needs intraday data — daily snapshots only.</source>
-        <translation type="unfinished">需要日內資料 — 僅有每日快照。</translation>
+        <translation>需要日內資料 — 僅有每日快照。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioPerfChart.cpp" line="358" />
@@ -10460,32 +10485,32 @@ the selected period. Use when comparing different currencies.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioScreen.cpp" line="389" />
         <source>◆</source>
-        <translation type="unfinished" />
+        <translation>◆</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioScreen.cpp" line="394" />
         <source>PORTFOLIO WORKSPACE</source>
-        <translation type="unfinished">投資組合 工作區</translation>
+        <translation>投資組合 工作區</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioScreen.cpp" line="400" />
         <source>Create, import, or explore a sample portfolio to get started.</source>
-        <translation type="unfinished">建立、匯入或探索範例作品集以開始使用。</translation>
+        <translation>建立、匯入或探索範例作品集以開始使用。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioScreen.cpp" line="484" />
         <source>Loading portfolio data…</source>
-        <translation type="unfinished">載入中 投資組合 data…</translation>
+        <translation>載入中 投資組合 data…</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioScreen.cpp" line="885" />
         <source>⌕</source>
-        <translation type="unfinished" />
+        <translation>⌕</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioScreen.cpp" line="891" />
         <source>Filter positions…</source>
-        <translation type="unfinished">篩選 Positions (持倉)…</translation>
+        <translation>篩選 Positions (持倉)…</translation>
     </message>
 </context>
 <context>
@@ -10493,17 +10518,17 @@ the selected period. Use when comparing different currencies.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioSectorPanel.cpp" line="107" />
         <source>CORRELATION</source>
-        <translation type="unfinished">相關性</translation>
+        <translation>相關性</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioSectorPanel.cpp" line="112" />
         <source>(P&amp;L return proxy, top 6 by weight)</source>
-        <translation type="unfinished">（損益代理報酬，權重前 6 名）</translation>
+        <translation>（損益代理報酬，權重前 6 名）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioSectorPanel.cpp" line="268" />
         <source>Need 2+ holdings for correlation</source>
-        <translation type="unfinished">需要持有 2 個以上的股票才能實現相關性</translation>
+        <translation>需要持有 2 個以上的股票才能實現相關性</translation>
     </message>
 </context>
 <context>
@@ -10511,37 +10536,37 @@ the selected period. Use when comparing different currencies.</source>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="435" />
         <source>^GSPTSE</source>
-        <translation type="unfinished">^GSPTSE</translation>
+        <translation>^GSPTSE</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="436" />
         <source>^FTSE</source>
-        <translation type="unfinished">^FTSE</translation>
+        <translation>^FTSE</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="437" />
         <source>^STOXX50E</source>
-        <translation type="unfinished">^STOXX50E</translation>
+        <translation>^STOXX50E</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="438" />
         <source>^AXJO</source>
-        <translation type="unfinished">^AXJO</translation>
+        <translation>^AXJO</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="439" />
         <source>^NSEI</source>
-        <translation type="unfinished">^NSEI</translation>
+        <translation>^NSEI</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="440" />
         <source>^N225</source>
-        <translation type="unfinished">^N225</translation>
+        <translation>^N225</translation>
     </message>
     <message>
         <location filename="../src/services/portfolio/PortfolioService.cpp" line="441" />
         <source>^HSI</source>
-        <translation type="unfinished">^HSI</translation>
+        <translation>^HSI</translation>
     </message>
 </context>
 <context>
@@ -10550,80 +10575,99 @@ the selected period. Use when comparing different currencies.</source>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="35" />
         <source>Current market value of all holdings.
 Sum of (quantity × current price) for every position.</source>
-        <translation type="unfinished" />
+        <translation>所有持倉的目前市值。
+每個部位的（數量 × 現價）總和。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="39" />
         <source>Unrealized profit or loss across all open positions.
 Calculated as: market value − total cost basis.
 This gain/loss is not realized until you sell.</source>
-        <translation type="unfinished" />
+        <translation>所有未平倉部位的未實現損益。
+計算方式：市值 − 總成本基礎。
+在您賣出前，此損益尚未實現。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="44" />
         <source>Total portfolio value change today.
 Weighted sum of each holding's intraday change.</source>
-        <translation type="unfinished" />
+        <translation>今日投資組合總值變動。
+各持倉日內變動的加權總和。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="48" />
         <source>Number of distinct holdings in this portfolio,
 split into gainers (▲) and losers (▼) today.</source>
-        <translation type="unfinished" />
+        <translation>此投資組合中的不同持倉數量，
+分為今日上漲（▲）和下跌（▼）。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="84" />
         <source>Total amount invested — sum of (avg buy price × quantity)
 for all current positions. Used to compute P&amp;L.</source>
-        <translation type="unfinished" />
+        <translation>總投入金額 — 所有目前部位的
+（平均買入價 × 數量）總和。用於計算損益。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="88" />
         <source>Concentration risk: combined weight of the top 3 holdings.
 Values above 50% indicate a concentrated portfolio.
 Lower is generally better for diversification.</source>
-        <translation type="unfinished" />
+        <translation>集中度風險：前 3 大持倉的合計權重。
+超過 50% 表示投資組合過於集中。
+越低通常代表分散化程度越好。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="93" />
         <source>Sharpe Ratio: risk-adjusted return over a risk-free rate.
 Formula: (mean daily return − risk-free rate) / std dev × √252.
 Above 1.0 = good, above 2.0 = very good, below 0 = worse than risk-free.</source>
-        <translation type="unfinished" />
+        <translation>Sharpe 比率：超越無風險利率的風險調整報酬。
+公式：（平均日報酬 − 無風險利率）/ 標準差 × √252。
+大於 1.0 = 良好，大於 2.0 = 非常好，小於 0 = 不如無風險。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="98" />
         <source>Portfolio sensitivity to broad market moves.
 Beta = 1.0: moves with the market. &gt;1.0: more volatile.
 &lt;1.0: less volatile. Negative: inverse correlation.</source>
-        <translation type="unfinished" />
+        <translation>投資組合對大盤變動的敏感度。
+Beta = 1.0：與市場同步。&gt; 1.0：波動更大。
+&lt; 1.0：波動較小。負值：反向相關。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="103" />
         <source>Annualized portfolio volatility (std deviation of returns).
 Formula: std dev of daily returns × √252.
 Higher values indicate greater price swings.</source>
-        <translation type="unfinished" />
+        <translation>年化投資組合波動率（報酬的標準差）。
+公式：日報酬標準差 × √252。
+數值越高表示價格波動越大。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="108" />
         <source>Maximum peak-to-trough decline in portfolio value.
 Measures the worst loss experienced from a high point.
 Lower magnitude = better capital preservation.</source>
-        <translation type="unfinished" />
+        <translation>投資組合價值的最大高點至低點跌幅。
+衡量從高點經歷的最大虧損。
+幅度越小 = 資本保全越好。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="113" />
         <source>Value at Risk at 95% confidence — the maximum expected
 single-day loss 95% of the time based on historical returns.</source>
-        <translation type="unfinished" />
+        <translation>95% 信賴水準的風險值 (VaR) — 根據歷史報酬，
+95% 的時間內預期的最大單日損失。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatsRibbon.cpp" line="117" />
         <source>Composite risk score from 0 (low) to 100 (high).
 Weighted from: volatility, max drawdown, concentration,
 beta, and VaR. Lower is safer.</source>
-        <translation type="unfinished" />
+        <translation>綜合風險分數，從 0（低）到 100（高）。
+加權自：波動率、最大回撤、集中度、
+Beta 和 VaR。數值越低越安全。</translation>
     </message>
 </context>
 <context>
@@ -10631,17 +10675,17 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatusBar.cpp" line="44" />
         <source>PORTFOLIO TERMINAL v4.0</source>
-        <translation type="unfinished">投資組合終端 v4.0</translation>
+        <translation>投資組合終端 v4.0</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatusBar.cpp" line="55" />
         <source>● LIVE</source>
-        <translation type="unfinished">● 即時</translation>
+        <translation>● 即時</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioStatusBar.cpp" line="60" />
         <source>0 positions</source>
-        <translation type="unfinished">0 Position (持倉)s (持倉)</translation>
+        <translation>0 Position (持倉)s (持倉)</translation>
     </message>
 </context>
 <context>
@@ -10649,7 +10693,7 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/portfolio/PortfolioTxnPanel.cpp" line="41" />
         <source>Collapse / expand transaction history</source>
-        <translation type="unfinished">收合 / 展開 transaction 歷史</translation>
+        <translation>收合 / 展開 transaction 歷史</translation>
     </message>
 </context>
 <context>
@@ -10657,7 +10701,7 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="31" />
         <source>Prediction Markets — Connect Account</source>
-        <translation type="unfinished">預測市場 — 連結帳戶</translation>
+        <translation>預測市場 — 連結帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="55" />
@@ -10667,53 +10711,53 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="66" />
         <source>&lt;b&gt;Polymarket (Polygon)&lt;/b&gt;&lt;br&gt;Trading requires a Polygon-compatible private key. The key is signed locally via &lt;code&gt;py_clob_client&lt;/code&gt; and never leaves your machine in plaintext — it is stored encrypted in your OS credential manager.&lt;br&gt;&lt;br&gt;&lt;b&gt;⚠ Security:&lt;/b&gt; use a dedicated funding wallet, not your primary wallet.</source>
-        <translation type="unfinished" />
+        <translation>&lt;b&gt;Polymarket (Polygon)&lt;/b&gt;&lt;br&gt;交易需要 Polygon 相容的私鑰。私鑰透過 &lt;code&gt;py_clob_client&lt;/code&gt; 在本機簽署，永遠不會以明文離開您的電腦 — 它會加密儲存在作業系統的憑證管理員中。&lt;br&gt;&lt;br&gt;&lt;b&gt;⚠ 安全性：&lt;/b&gt;請使用專用的資金錢包，而非您的主錢包。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="79" />
         <source>0x… (64 hex chars)</source>
-        <translation type="unfinished">0x…（64 位十六進位字元）</translation>
+        <translation>0x…（64 位十六進位字元）</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="80" />
         <source>Private Key:</source>
-        <translation type="unfinished">私鑰：</translation>
+        <translation>私鑰：</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="83" />
         <source>0x… (optional — derived via CREATE2 for proxy)</source>
-        <translation type="unfinished">0x…（選填 — 透過 CREATE2 為代理衍生）</translation>
+        <translation>0x…（選填 — 透過 CREATE2 為代理衍生）</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="84" />
         <source>Funder Address:</source>
-        <translation type="unfinished">出資地址：</translation>
+        <translation>出資地址：</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="87" />
         <source>Polymarket Proxy Wallet (default)</source>
-        <translation type="unfinished">Polymarket 代理錢包（預設）</translation>
+        <translation>Polymarket 代理錢包（預設）</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="88" />
         <source>Externally Owned Account (EOA)</source>
-        <translation type="unfinished">外部帳戶 (EOA)</translation>
+        <translation>外部帳戶 (EOA)</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="89" />
         <source>Polymarket Gnosis Safe</source>
-        <translation type="unfinished">Polymarket Gnosis Safe</translation>
+        <translation>Polymarket Gnosis Safe</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="90" />
         <source>Signature Type:</source>
-        <translation type="unfinished">簽章類型：</translation>
+        <translation>簽章類型：</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="92" />
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="251" />
         <source>L2 API credentials: not derived</source>
-        <translation type="unfinished">L2 API 憑證：未衍生</translation>
+        <translation>L2 API 憑證：未衍生</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="103" />
@@ -10736,161 +10780,163 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="119" />
         <source>Polymarket</source>
-        <translation type="unfinished">Polymarket</translation>
+        <translation>Polymarket</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="127" />
         <source>&lt;b&gt;Kalshi (CFTC-regulated)&lt;/b&gt;&lt;br&gt;Generate an API key + RSA private key in your Kalshi dashboard (&lt;code&gt;api.elections.kalshi.com&lt;/code&gt;). Requests are signed with RSA-PSS (key stays local, encrypted in your OS credential manager).&lt;br&gt;&lt;br&gt;Use &lt;b&gt;Demo mode&lt;/b&gt; to target &lt;code&gt;demo-api.kalshi.co&lt;/code&gt; for testing.</source>
-        <translation type="unfinished" />
+        <translation>&lt;b&gt;Kalshi（受 CFTC 監管）&lt;/b&gt;&lt;br&gt;在您的 Kalshi 儀表板（&lt;code&gt;api.elections.kalshi.com&lt;/code&gt;）中產生 API 金鑰 + RSA 私鑰。請求以 RSA-PSS 簽署（金鑰保留在本機，加密儲存於作業系統憑證管理員）。&lt;br&gt;&lt;br&gt;使用&lt;b&gt;展示模式&lt;/b&gt;可連接 &lt;code&gt;demo-api.kalshi.co&lt;/code&gt; 進行測試。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="139" />
         <source>00000000-0000-0000-0000-000000000000</source>
-        <translation type="unfinished">00000000-0000-0000-0000-000000000000</translation>
+        <translation>00000000-0000-0000-0000-000000000000</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="140" />
         <source>API Key ID:</source>
-        <translation type="unfinished">API 金鑰 ID：</translation>
+        <translation>API 金鑰 ID：</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="144" />
         <source>-----BEGIN RSA PRIVATE KEY-----
 …paste PEM contents here…
 -----END RSA PRIVATE KEY-----</source>
-        <translation type="unfinished" />
+        <translation>-----BEGIN RSA PRIVATE KEY-----
+…在此貼上 PEM 內容…
+-----END RSA PRIVATE KEY-----</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="147" />
         <source>Private Key (PEM):</source>
-        <translation type="unfinished">私鑰 (PEM)：</translation>
+        <translation>私鑰 (PEM)：</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="149" />
         <source>Load from file…</source>
-        <translation type="unfinished">從檔案載入…</translation>
+        <translation>從檔案載入…</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="152" />
         <source>Use demo (paper trading) environment</source>
-        <translation type="unfinished">使用模擬（紙上交易）環境</translation>
+        <translation>使用模擬（紙上交易）環境</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="179" />
         <source>Kalshi</source>
-        <translation type="unfinished">Kalshi</translation>
+        <translation>Kalshi</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="190" />
         <source>L2 API credentials: derived (%1…)</source>
-        <translation type="unfinished">L2 API 憑證：已衍生 (%1…)</translation>
+        <translation>L2 API 憑證：已衍生 (%1…)</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="193" />
         <source>Polymarket credentials loaded from secure store.</source>
-        <translation type="unfinished">已從安全儲存區載入 Polymarket 憑證。</translation>
+        <translation>已從安全儲存區載入 Polymarket 憑證。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="199" />
         <source>Kalshi credentials loaded from secure store.</source>
-        <translation type="unfinished">已從安全儲存區載入 Kalshi 憑證。</translation>
+        <translation>已從安全儲存區載入 Kalshi 憑證。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="212" />
         <source>&lt;span style='color:#dc2626'&gt;Private key is required.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;需要私鑰。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;需要私鑰。&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="215" />
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="216" />
         <source>0x</source>
-        <translation type="unfinished">0x</translation>
+        <translation>0x</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="219" />
         <source>&lt;span style='color:#dc2626'&gt;Private key should be 0x + 64 hex chars.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;Private key should be 0x + 64 hex chars.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;Private key should be 0x + 64 hex chars.&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="234" />
         <source>&lt;span style='color:#16a34a'&gt;Polymarket credentials saved.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#16a34a'&gt;Polymarket 憑證已儲存。&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="237" />
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="280" />
         <source>&lt;span style='color:#dc2626'&gt;Save failed — see logs.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;儲存失敗 — 請查看日誌。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;儲存失敗 — 請查看日誌。&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="242" />
         <source>Clear Polymarket credentials?</source>
-        <translation type="unfinished">確定要清除 Polymarket 憑證？</translation>
+        <translation>確定要清除 Polymarket 憑證？</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="243" />
         <source>This removes your stored Polymarket private key and API credentials from this machine. You will need to re-enter them to resume trading.</source>
-        <translation type="unfinished" />
+        <translation>這會從本機移除您已儲存的 Polymarket 私鑰和 API 憑證。您需要重新輸入才能繼續交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="253" />
         <source>Polymarket credentials cleared.</source>
-        <translation type="unfinished">Polymarket 憑證已清除。</translation>
+        <translation>Polymarket 憑證已清除。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="266" />
         <source>&lt;span style='color:#dc2626'&gt;Both API Key ID and PEM private key are required.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;Both API Key ID and PEM private key are required.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;Both API Key ID and PEM private key are required.&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="271" />
         <source>&lt;span style='color:#dc2626'&gt;Private key must be a PEM-encoded RSA key.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;Private key must be a PEM-encoded RSA key.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;Private key must be a PEM-encoded RSA key.&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="277" />
         <source>&lt;span style='color:#16a34a'&gt;Kalshi credentials saved.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#16a34a'&gt;Kalshi 憑證已儲存。&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="285" />
         <source>Clear Kalshi credentials?</source>
-        <translation type="unfinished">確定要清除 Kalshi 憑證？</translation>
+        <translation>確定要清除 Kalshi 憑證？</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="286" />
         <source>This removes your stored Kalshi API key and RSA private key from this machine.</source>
-        <translation type="unfinished" />
+        <translation>這會從本機移除您已儲存的 Kalshi API 金鑰和 RSA 私鑰。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="294" />
         <source>Kalshi credentials cleared.</source>
-        <translation type="unfinished">Kalshi 憑證已清除。</translation>
+        <translation>Kalshi 憑證已清除。</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="300" />
         <source>Select Kalshi private key (PEM)</source>
-        <translation type="unfinished">選擇 Kalshi 私鑰 (PEM)</translation>
+        <translation>選擇 Kalshi 私鑰 (PEM)</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="301" />
         <source>PEM files (*.pem *.key);;All files (*)</source>
-        <translation type="unfinished">PEM 檔案 (*.pem *.key);;所有檔案 (*)</translation>
+        <translation>PEM 檔案 (*.pem *.key);;所有檔案 (*)</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="306" />
         <source>&lt;span style='color:#dc2626'&gt;Could not read %1.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;無法讀取 %1。&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="311" />
         <source>&lt;span style='color:#dc2626'&gt;%1 does not look like a PEM file.&lt;/span&gt;</source>
-        <translation type="unfinished">&lt;span style='color:#dc2626'&gt;%1 does not look like a PEM file.&lt;/span&gt;</translation>
+        <translation>&lt;span style='color:#dc2626'&gt;%1 does not look like a PEM file.&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/polymarket/PredictionAccountDialog.cpp" line="316" />
         <source>Loaded PEM from %1.</source>
-        <translation type="unfinished">已從 %1 載入 PEM。</translation>
+        <translation>已從 %1 載入 PEM。</translation>
     </message>
 </context>
 <context>
@@ -10898,88 +10944,88 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="76" />
         <source>方案與定價</source>
-        <translation type="unfinished">方案與定價</translation>
+        <translation>方案與定價</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="84" />
         <source>解鎖 Fincept Terminal 的完整功能</source>
-        <translation type="unfinished">解鎖 Fincept Terminal 的完整功能</translation>
+        <translation>解鎖 Fincept Terminal 的完整功能</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="92" />
         <source>方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</source>
-        <translation type="unfinished">方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</translation>
+        <translation>方案由 KTW SaaS 平台管理  |  Managed by KTW SaaS Platform</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="109" />
         <source>載入方案中...</source>
-        <translation type="unfinished">載入方案中...</translation>
+        <translation>載入方案中...</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="160" />
         <source>更新方案狀態中...</source>
-        <translation type="unfinished">更新方案狀態中...</translation>
+        <translation>更新方案狀態中...</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="283" />
         <source>目前沒有可用方案。</source>
-        <translation type="unfinished">目前沒有可用方案。</translation>
+        <translation>目前沒有可用方案。</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="317" />
         <source>推薦方案</source>
-        <translation type="unfinished">推薦方案</translation>
+        <translation>推薦方案</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="352" />
         <source>免費</source>
-        <translation type="unfinished">免費</translation>
+        <translation>免費</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="418" />
         <source>目前方案</source>
-        <translation type="unfinished">目前方案</translation>
+        <translation>目前方案</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="428" />
         <source>免費方案</source>
-        <translation type="unfinished">免費方案</translation>
+        <translation>免費方案</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="435" />
         <source>繼續免費使用</source>
-        <translation type="unfinished">繼續免費使用</translation>
+        <translation>繼續免費使用</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="445" />
         <location filename="../src/screens/auth/PricingScreen.cpp" line="478" />
         <source>選擇方案</source>
-        <translation type="unfinished">選擇方案</translation>
+        <translation>選擇方案</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="469" />
         <source>處理中...</source>
-        <translation type="unfinished">處理中...</translation>
+        <translation>處理中...</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="494" />
         <source>未從伺服器收到結帳 Token</source>
-        <translation type="unfinished">未從伺服器收到結帳 Token</translation>
+        <translation>未從伺服器收到結帳 Token</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="599" />
         <source>返回主畫面</source>
-        <translation type="unfinished">返回主畫面</translation>
+        <translation>返回主畫面</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="618" />
         <source>想先體驗看看嗎？</source>
-        <translation type="unfinished">想先體驗看看嗎？</translation>
+        <translation>想先體驗看看嗎？</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/PricingScreen.cpp" line="623" />
         <source>繼續使用免費方案</source>
-        <translation type="unfinished">繼續使用免費方案</translation>
+        <translation>繼續使用免費方案</translation>
     </message>
 </context>
 <context>
@@ -11005,7 +11051,7 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="60" />
         <source>—</source>
-        <translation type="unfinished" />
+        <translation>—</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="114" />
@@ -11015,66 +11061,66 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="131" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="206" />
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="245" />
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="695" />
         <source>EDIT PROFILE</source>
-        <translation type="unfinished">編輯 Profile (設定檔)</translation>
+        <translation>編輯 Profile (設定檔)</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="225" />
         <source>AVAILABLE CREDITS</source>
-        <translation type="unfinished">可用 CREDITS</translation>
+        <translation>可用 CREDITS</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="253" />
         <source>LOGOUT</source>
-        <translation type="unfinished">登出</translation>
+        <translation>登出</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="262" />
         <source>DELETE ACCOUNT</source>
-        <translation type="unfinished">刪除帳號</translation>
+        <translation>刪除帳號</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="358" />
         <source>SHOW</source>
-        <translation type="unfinished">顯示</translation>
+        <translation>顯示</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="371" />
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="382" />
         <source>COPY</source>
-        <translation type="unfinished">複製</translation>
+        <translation>複製</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="381" />
         <source>COPIED</source>
-        <translation type="unfinished">已複製</translation>
+        <translation>已複製</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="386" />
         <source>REGENERATE</source>
-        <translation type="unfinished">重新產生</translation>
+        <translation>重新產生</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="524" />
         <source>REGISTERED</source>
-        <translation type="unfinished">已註冊</translation>
+        <translation>已註冊</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="688" />
         <source>Edit Profile</source>
-        <translation type="unfinished">編輯個人檔案</translation>
+        <translation>編輯個人檔案</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="718" />
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="812" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="722" />
@@ -11084,17 +11130,17 @@ beta, and VaR. Lower is safer.</source>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="789" />
         <source>Confirm Account Deletion</source>
-        <translation type="unfinished">確認刪除帳號</translation>
+        <translation>確認刪除帳號</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="797" />
         <source>TYPE YOUR EMAIL ADDRESS TO CONFIRM:</source>
-        <translation type="unfinished">輸入您的電子郵件地址以確認：</translation>
+        <translation>輸入您的電子郵件地址以確認：</translation>
     </message>
     <message>
         <location filename="../src/screens/profile/ProfileScreen.cpp" line="817" />
         <source>DELETE MY ACCOUNT</source>
-        <translation type="unfinished">刪除我的帳號</translation>
+        <translation>刪除我的帳號</translation>
     </message>
 </context>
 <context>
@@ -11103,24 +11149,25 @@ beta, and VaR. Lower is safer.</source>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="54" />
         <source>Select a component
 to edit properties</source>
-        <translation type="unfinished" />
+        <translation>選取一個元件
+以編輯屬性</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="237" />
         <source>10,25,18,40,32,55</source>
-        <translation type="unfinished">10,25,18,40,32,55</translation>
+        <translation>10,25,18,40,32,55</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="244" />
         <source>Jan,Feb,Mar,Apr,May,Jun</source>
-        <translation type="unfinished">Jan,Feb,Mar,Apr,May,Jun</translation>
+        <translation>Jan,Feb,Mar,Apr,May,Jun</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="272" />
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="313" />
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="384" />
         <source>e.g. AAPL</source>
-        <translation type="unfinished">例如：AAPL</translation>
+        <translation>例如：AAPL</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="275" />
@@ -11132,7 +11179,8 @@ to edit properties</source>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="290" />
         <source>Tip: re-select component after
 editing data to re-render.</source>
-        <translation type="unfinished" />
+        <translation>提示：編輯資料後請重新選取元件
+以重新渲染。</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="341" />
@@ -11142,80 +11190,88 @@ Market Cap: $2.9T
 52W Low: $124.17
 Dividend Yield: 0.51%
 EPS: $6.43</source>
-        <translation type="unfinished" />
+        <translation>本益比：28.4
+市值：$2.9T
+52 週最高：$199.62
+52 週最低：$124.17
+殖利率：0.51%
+每股盈餘：$6.43</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="366" />
         <source>e.g. Key Risk, Note, Important</source>
-        <translation type="unfinished">例如主要風險、注意、重要</translation>
+        <translation>例如主要風險、注意、重要</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="391" />
         <source>e.g. $189.30</source>
-        <translation type="unfinished">例如：$189.30</translation>
+        <translation>例如：$189.30</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="398" />
         <source>e.g. +2.34 or -1.10</source>
-        <translation type="unfinished">例如：+2.34 或-1.10</translation>
+        <translation>例如：+2.34 或-1.10</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="407" />
         <source>175,178,182,179,185,188,186,190,189</source>
-        <translation type="unfinished">175,178,182,179,185,188,186,190,189</translation>
+        <translation>175,178,182,179,185,188,186,190,189</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="412" />
         <source>Tip: re-select after editing
 data to refresh sparkline.</source>
-        <translation type="unfinished" />
+        <translation>提示：編輯資料後請重新選取
+以重新整理走勢圖。</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="427" />
         <source>Browse File...</source>
-        <translation type="unfinished">瀏覽 File...</translation>
+        <translation>瀏覽 File...</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="440" />
         <source>Paste from Clipboard</source>
-        <translation type="unfinished">從剪貼簿貼上</translation>
+        <translation>從剪貼簿貼上</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="454" />
         <source>(clipboard image)</source>
-        <translation type="unfinished">(剪貼簿 image)</translation>
+        <translation>(剪貼簿 image)</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="459" />
         <source>(no image in clipboard)</source>
-        <translation type="unfinished">(no image 於剪貼簿)</translation>
+        <translation>(no image 於剪貼簿)</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="487" />
         <source>e.g. Figure 1: Revenue growth</source>
-        <translation type="unfinished">例如圖 1：收入成長</translation>
+        <translation>例如圖 1：收入成長</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="508" />
         <source>e.g. AAPL, BTC-USD, ^GSPC</source>
-        <translation type="unfinished">例如AAPL、BTC-美元、^GSPC</translation>
+        <translation>例如AAPL、BTC-美元、^GSPC</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="512" />
         <source>Fetch Price</source>
-        <translation type="unfinished">Fetch 價格</translation>
+        <translation>Fetch 價格</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="551" />
         <source>Inserts a page break
 in PDF/print output.</source>
-        <translation type="unfinished" />
+        <translation>在 PDF/列印輸出中
+插入分頁符。</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="559" />
         <source>Auto-generated from
 Heading components.</source>
-        <translation type="unfinished" />
+        <translation>從標題元件
+自動產生。</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/PropertiesPanel.cpp" line="571" />
@@ -11233,7 +11289,7 @@ Heading components.</source>
     <message>
         <location filename="../src/ui/pushpins/PushpinBar.cpp" line="40" />
         <source>Drag any symbol here to pin</source>
-        <translation type="unfinished">拖曳任何代碼至此處以釘選</translation>
+        <translation>拖曳任何代碼至此處以釘選</translation>
     </message>
 </context>
 <context>
@@ -11241,32 +11297,32 @@ Heading components.</source>
     <message>
         <location filename="../src/services/python_cli/PythonCliService.cpp" line="23" />
         <source>Python process failed</source>
-        <translation type="unfinished">Python process失敗</translation>
+        <translation>Python process失敗</translation>
     </message>
     <message>
         <location filename="../src/services/python_cli/PythonCliService.cpp" line="26" />
         <source>%1 failed: %2</source>
-        <translation type="unfinished">%1失敗: %2</translation>
+        <translation>%1失敗: %2</translation>
     </message>
     <message>
         <location filename="../src/services/python_cli/PythonCliService.cpp" line="33" />
         <source>No JSON output from %1</source>
-        <translation type="unfinished">無JSON output 來自%1</translation>
+        <translation>無JSON output 來自%1</translation>
     </message>
     <message>
         <location filename="../src/services/python_cli/PythonCliService.cpp" line="41" />
         <source>Invalid JSON: %1</source>
-        <translation type="unfinished">In有效 JSON: %1</translation>
+        <translation>In有效 JSON: %1</translation>
     </message>
     <message>
         <location filename="../src/services/python_cli/PythonCliService.cpp" line="48" />
         <source>Script reported error</source>
-        <translation type="unfinished">腳本報告錯誤</translation>
+        <translation>腳本報告錯誤</translation>
     </message>
     <message>
         <location filename="../src/services/python_cli/PythonCliService.cpp" line="53" />
         <source>Script reported failure</source>
-        <translation type="unfinished">腳本回報失敗</translation>
+        <translation>腳本回報失敗</translation>
     </message>
 </context>
 <context>
@@ -11312,12 +11368,12 @@ Heading components.</source>
     <message>
         <location filename="../src/python/PythonWorker.cpp" line="93" />
         <source>worker shutting down</source>
-        <translation type="unfinished">Worker 關閉中</translation>
+        <translation>Worker 關閉中</translation>
     </message>
     <message>
         <location filename="../src/python/PythonWorker.cpp" line="179" />
         <source>worker restart cap reached</source>
-        <translation type="unfinished">達到工人重啟上限</translation>
+        <translation>達到工人重啟上限</translation>
     </message>
 </context>
 <context>
@@ -11333,206 +11389,206 @@ Heading components.</source>
         <location filename="../src/ai_chat/ChatBubbleFactory.cpp" line="88" />
         <location filename="../src/ai_chat/ChatBubbleFactory.cpp" line="303" />
         <source>Copied!</source>
-        <translation type="unfinished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="614" />
         <source>Sign lock</source>
-        <translation type="unfinished">Sign 鎖定</translation>
+        <translation>Sign 鎖定</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="615" />
         <source>Approve the lock in your wallet.</source>
-        <translation type="unfinished">批准鎖定您的錢包。</translation>
+        <translation>批准鎖定您的錢包。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="621" />
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1042" />
         <source>Signing failed: %1</source>
-        <translation type="unfinished">Signing 失敗: %1</translation>
+        <translation>Signing 失敗: %1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="623" />
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1044" />
         <source>Cancelled.</source>
-        <translation type="unfinished">已取消。</translation>
+        <translation>已取消。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/LockPanel.cpp" line="629" />
         <source>Sent: %1…</source>
-        <translation type="unfinished">已傳送: %1…</translation>
+        <translation>已傳送: %1…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="822" />
         <source>No confirmation after 60 s. Check Solscan.</source>
-        <translation type="unfinished">60 秒後未確認。請檢查 Solscan。</translation>
+        <translation>60 秒後未確認。請檢查 Solscan。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="823" />
         <source>Timed out.</source>
-        <translation type="unfinished">已逾時。</translation>
+        <translation>已逾時。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="839" />
         <source>Tx failed on-chain: %1</source>
-        <translation type="unfinished">Tx 失敗 on-chain: %1</translation>
+        <translation>Tx 失敗 on-chain: %1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="840" />
         <source>Reverted.</source>
-        <translation type="unfinished">已還原。</translation>
+        <translation>已還原。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="851" />
         <source>Confirmed: %1…</source>
-        <translation type="unfinished">已確認: %1…</translation>
+        <translation>已確認: %1…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="905" />
         <source>build_swap failed: %1</source>
-        <translation type="unfinished">建置交換失敗：%1</translation>
+        <translation>建置交換失敗：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="907" />
         <source>Failed.</source>
-        <translation type="unfinished">失敗。</translation>
+        <translation>失敗。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="916" />
         <source>Validating with RPC…</source>
-        <translation type="unfinished">使用 RPC 驗證中…</translation>
+        <translation>使用 RPC 驗證中…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="927" />
         <source>Simulation failed: %1. Refusing to sign.</source>
-        <translation type="unfinished">模擬失敗：%1。拒絕簽字。</translation>
+        <translation>模擬失敗：%1。拒絕簽字。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="929" />
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="940" />
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1014" />
         <source>Aborted.</source>
-        <translation type="unfinished">已中止。</translation>
+        <translation>已中止。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="938" />
         <source>This swap would fail on-chain: %1. Refusing to sign.</source>
-        <translation type="unfinished" />
+        <translation>此交換會在鏈上失敗：%1。拒絕簽署。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="947" />
         <source>Approve in your wallet to forward this transaction to the network. The terminal does not hold any funds.</source>
-        <translation type="unfinished" />
+        <translation>請在錢包中核准以將此交易轉發至網路。終端不持有任何資金。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="958" />
         <source>≈ %1 $FNCPT (PumpSwap fills at execution)</source>
-        <translation type="unfinished">≈ %1 $FNCPT（PumpSwap 在執行時填充）</translation>
+        <translation>≈ %1 $FNCPT（PumpSwap 在執行時填充）</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="967" />
         <source>≈ %1 SOL (PumpSwap fills at execution)</source>
-        <translation type="unfinished">≈ %1 SOL（PumpSwap 在執行時填充）</translation>
+        <translation>≈ %1 SOL（PumpSwap 在執行時填充）</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="981" />
         <source>PumpSwap will reject the trade if execution drifts more than the slippage tolerance above. Your funds stay in your wallet.</source>
-        <translation type="unfinished" />
+        <translation>若執行滑點超過上方的容忍值，PumpSwap 將拒絕交易。您的資金會留在錢包中。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1000" />
         <source>Re-checking freshness…</source>
-        <translation type="unfinished">重新檢查新鮮度…</translation>
+        <translation>重新檢查新鮮度…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1011" />
         <source>Could not verify freshness: %1. Try the swap again.</source>
-        <translation type="unfinished" />
+        <translation>無法驗證時效性：%1。請重新嘗試交換。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1023" />
         <source>This swap is no longer fresh: %1. Click SWAP again to rebuild.</source>
-        <translation type="unfinished" />
+        <translation>此交換已過期：%1。請再次點擊「交換」重新建立。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1026" />
         <source>Stale.</source>
-        <translation type="unfinished">已過期。</translation>
+        <translation>已過期。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1031" />
         <source>Awaiting wallet signature…</source>
-        <translation type="unfinished">等待錢包簽名...</translation>
+        <translation>等待錢包簽名...</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1034" />
         <source>Sign swap</source>
-        <translation type="unfinished">Sign 交換</translation>
+        <translation>Sign 交換</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1035" />
         <source>Approve the swap in your wallet to complete the trade.</source>
-        <translation type="unfinished">批准您錢包中的交換以完成交易。</translation>
+        <translation>批准您錢包中的交換以完成交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1049" />
         <source>Sent. Waiting for confirmation…</source>
-        <translation type="unfinished">發送。等待確認...</translation>
+        <translation>發送。等待確認...</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="176" />
         <source>— select file —</source>
-        <translation type="unfinished">— 選取 file —</translation>
+        <translation>— 選取 file —</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="200" />
         <source>+ Import</source>
-        <translation type="unfinished">+ 匯入</translation>
+        <translation>+ 匯入</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="268" />
         <source>— select agent —</source>
-        <translation type="unfinished">— 選取 代理 —</translation>
+        <translation>— 選取 代理 —</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="300" />
         <source>Loading agents…</source>
-        <translation type="unfinished">載入中 agents…</translation>
+        <translation>載入中 agents…</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="333" />
         <source>— agent default —</source>
-        <translation type="unfinished">— 代理 預設 —</translation>
+        <translation>— 代理 預設 —</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="347" />
         <source>Leave blank to use the LLM assigned to the agent in Agent Config</source>
-        <translation type="unfinished">留空以使用代理配置中指派給代理程式的 LLM</translation>
+        <translation>留空以使用代理配置中指派給代理程式的 LLM</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="377" />
         <source>— select tool —</source>
-        <translation type="unfinished">— 選取 工具 —</translation>
+        <translation>— 選取 工具 —</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="385" />
         <source>── </source>
-        <translation type="unfinished">──</translation>
+        <translation>──</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="405" />
         <source>Loading tools…</source>
-        <translation type="unfinished">載入中 tools…</translation>
+        <translation>載入中 tools…</translation>
     </message>
     <message>
         <location filename="../src/screens/node_editor/properties/ParameterWidgets.cpp" line="421" />
         <source>All Fincept internal tools. Input JSON flows in as arguments.</source>
-        <translation type="unfinished">所有 Fincept 內部工具。輸入 JSON 作為參數流入。</translation>
+        <translation>所有 Fincept 內部工具。輸入 JSON 作為參數流入。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="72" />
         <source>Tickers (comma-separated, &gt;= 2). Returns fetched via Yahoo Finance.</source>
-        <translation type="unfinished">代碼（逗號分隔，≥ 2 個）。報酬經由 Yahoo Finance 擷取。</translation>
+        <translation>代碼（逗號分隔，≥ 2 個）。報酬經由 Yahoo Finance 擷取。</translation>
     </message>
 </context>
 <context>
@@ -11541,67 +11597,67 @@ Heading components.</source>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="192" />
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="411" />
         <source>QUANTLIB SUITE</source>
-        <translation type="unfinished">QuantLib 套件</translation>
+        <translation>QuantLib 套件</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="194" />
         <source>18 MODULES | 590+ QUANTITATIVE ENDPOINTS</source>
-        <translation type="unfinished">18 模組 | 590+ 量化 端點</translation>
+        <translation>18 模組 | 590+ 量化 端點</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="201" />
         <source>API POWERED</source>
-        <translation type="unfinished">API 驅動</translation>
+        <translation>API 驅動</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="216" />
         <source>MODULES</source>
-        <translation type="unfinished">模組</translation>
+        <translation>模組</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="272" />
         <source>CORE</source>
-        <translation type="unfinished">核心</translation>
+        <translation>核心</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="288" />
         <source>ENDPOINT</source>
-        <translation type="unfinished">端點</translation>
+        <translation>端點</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="303" />
         <source>REQUEST BODY (JSON)</source>
-        <translation type="unfinished">請求 BODY (JSON)</translation>
+        <translation>請求 BODY (JSON)</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="347" />
         <source>EXECUTE COMPUTATION</source>
-        <translation type="unfinished">執行計算</translation>
+        <translation>執行計算</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="375" />
         <source>RESULTS</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="389" />
         <source>Select a module and endpoint, then execute to see results...</source>
-        <translation type="unfinished">選擇一個模組和端點，然後執行以查看結果...</translation>
+        <translation>選擇一個模組和端點，然後執行以查看結果...</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="416" />
         <source>MODULE: CORE</source>
-        <translation type="unfinished">模組: 核心</translation>
+        <translation>模組: 核心</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="441" />
         <source>MODULE: </source>
-        <translation type="unfinished">MODULE:</translation>
+        <translation>MODULE:</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="1214" />
         <source>Computing...</source>
-        <translation type="unfinished">計算中...</translation>
+        <translation>計算中...</translation>
     </message>
     <message>
         <location filename="../src/screens/quantlib/QuantLibScreen.cpp" line="1247" />
@@ -11623,43 +11679,43 @@ Heading components.</source>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="62" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="62" />
         <source>LOAD SAMPLE</source>
-        <translation type="unfinished">載入範例</translation>
+        <translation>載入範例</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="86" />
         <source>Dependent variable y (&gt;= 10 values)</source>
-        <translation type="unfinished">因變數 y（≥ 10 個數值）</translation>
+        <translation>因變數 y（≥ 10 個數值）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="94" />
         <source>Regressor x (single column, same length as y). For multi-feature use the JSON 2D form.</source>
-        <translation type="unfinished">自變數 x（單欄，與 y 等長）。多特徵請使用 JSON 2D 格式。</translation>
+        <translation>自變數 x（單欄，與 y 等長）。多特徵請使用 JSON 2D 格式。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="137" />
         <source>OLS Regression</source>
-        <translation type="unfinished">OLS 迴歸</translation>
+        <translation>OLS 迴歸</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="146" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="217" />
         <source>Time series values (&gt;= 30)</source>
-        <translation type="unfinished">時間序列值（≥ 30）</translation>
+        <translation>時間序列值（≥ 30）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="208" />
         <source>ARIMA</source>
-        <translation type="unfinished">ARIMA</translation>
+        <translation>ARIMA</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="233" />
         <source>c = constant, ct = constant + trend, ctt = constant + trend + quadratic trend, n = no constant</source>
-        <translation type="unfinished">c = 常數, ct = 常數 + 趨勢, ctt = 常數 + 趨勢 + 二次趨勢, n = 無常數</translation>
+        <translation>c = 常數, ct = 常數 + 趨勢, ctt = 常數 + 趨勢 + 二次趨勢, n = 無常數</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="240" />
         <source>c = constant only, ct = constant + trend</source>
-        <translation type="unfinished">c = 僅常數，ct = 常數 + 趨勢</translation>
+        <translation>c = 僅常數，ct = 常數 + 趨勢</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="267" />
@@ -11670,185 +11726,185 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="276" />
         <source>Time series values (&gt;= 20). Used for ARIMA(p,q) order selection.</source>
-        <translation type="unfinished">時間序列值（≥ 20）。用於 ARIMA(p,q) 階數選擇。</translation>
+        <translation>時間序列值（≥ 20）。用於 ARIMA(p,q) 階數選擇。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="310" />
         <source>ACF / PACF</source>
-        <translation type="unfinished">ACF / PACF</translation>
+        <translation>ACF / PACF</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="319" />
         <source>Effect series y (the one we ask: 'is this caused by x?')</source>
-        <translation type="unfinished">效應系列 y（我們問：「這是由 x 引起的嗎？」）</translation>
+        <translation>效應系列 y（我們問：「這是由 x 引起的嗎？」）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="327" />
         <source>Potential cause series x (same length as y)</source>
-        <translation type="unfinished">潛在原因係列x（與y長度相同）</translation>
+        <translation>潛在原因係列x（與y長度相同）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="379" />
         <source>Granger Causality</source>
-        <translation type="unfinished">Granger 因果檢定</translation>
+        <translation>Granger 因果檢定</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="388" />
         <source>Numeric values (&gt;= 8). Includes Jarque-Bera + Shapiro-Wilk normality tests.</source>
-        <translation type="unfinished">數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
+        <translation>數值（≥ 8）。包含 Jarque-Bera + Shapiro-Wilk 常態性檢定。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="414" />
         <source>Descriptive</source>
-        <translation type="unfinished">描述統計</translation>
+        <translation>描述統計</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="476" />
         <source>Statsmodels backend ready</source>
-        <translation type="unfinished">Statsmodels 後端 就緒</translation>
+        <translation>Statsmodels 後端 就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="685" />
         <source>ADF (H₀: unit root → non-stationary)</source>
-        <translation type="unfinished">ADF 檢定（H₀: 存在單根 → 非定態）</translation>
+        <translation>ADF 檢定（H₀: 存在單根 → 非定態）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="710" />
         <source>KPSS (H₀: stationary)</source>
-        <translation type="unfinished">KPSS 檢定（H₀: 定態）</translation>
+        <translation>KPSS 檢定（H₀: 定態）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Statsmodels.cpp" line="904" />
         <source>NORMALITY  (H₀: data is normally distributed; p &gt; 0.05 ⇒ cannot reject normal)</source>
-        <translation type="unfinished">常態性（H₀：資料為常態分配；p &gt; 0.05 ⇒ 無法拒絕常態）</translation>
+        <translation>常態性（H₀：資料為常態分配；p &gt; 0.05 ⇒ 無法拒絕常態）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="85" />
         <source>Series values (&gt;= 30). Bootstrap residual ensemble forecasts the next H steps with quantile bands.</source>
-        <translation type="unfinished">序列值（≥ 30）。Bootstrap 殘差集成預測接下來 H 步驟，附分位數帶。</translation>
+        <translation>序列值（≥ 30）。Bootstrap 殘差集成預測接下來 H 步驟，附分位數帶。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="137" />
         <source>Probabilistic Forecast</source>
-        <translation type="unfinished">機率預測</translation>
+        <translation>機率預測</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="146" />
         <source>Series values (&gt;= 30)</source>
-        <translation type="unfinished">序列值（≥ 30）</translation>
+        <translation>序列值（≥ 30）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="153" />
         <source>Quantiles in (0, 1) — e.g. 0.05, 0.5, 0.95</source>
-        <translation type="unfinished">分位數（0 到 1）— 如 0.05, 0.5, 0.95</translation>
+        <translation>分位數（0 到 1）— 如 0.05, 0.5, 0.95</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="154" />
         <source>0.05, 0.25, 0.5, 0.75, 0.95</source>
-        <translation type="unfinished">0.05, 0.25, 0.5, 0.75, 0.95</translation>
+        <translation>0.05, 0.25, 0.5, 0.75, 0.95</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="220" />
         <source>Quantile Forecast</source>
-        <translation type="unfinished">分位數預測</translation>
+        <translation>分位數預測</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="229" />
         <source>Numeric values (&gt;= 30). Fits normal, student-t, lognormal (positive only), skewnormal.</source>
-        <translation type="unfinished">數值（≥ 30）。擬合常態、Student-t、對數常態（僅正值）、偏態常態分配。</translation>
+        <translation>數值（≥ 30）。擬合常態、Student-t、對數常態（僅正值）、偏態常態分配。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="261" />
         <source>Distribution Fit</source>
-        <translation type="unfinished">分配擬合</translation>
+        <translation>分配擬合</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="270" />
         <source>Realized actuals (&gt;= 5 values)</source>
-        <translation type="unfinished">實際值（≥ 5 個數值）</translation>
+        <translation>實際值（≥ 5 個數值）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="277" />
         <source>Point forecast (same length as actuals)</source>
-        <translation type="unfinished">點預測（與實際長度相同）</translation>
+        <translation>點預測（與實際長度相同）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="284" />
         <source>Lower band (optional, same length as actuals)</source>
-        <translation type="unfinished">下界（選填，與實際值等長）</translation>
+        <translation>下界（選填，與實際值等長）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="290" />
         <source>Upper band (optional, same length as actuals)</source>
-        <translation type="unfinished">上界（選填，與實際值等長）</translation>
+        <translation>上界（選填，與實際值等長）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="296" />
         <source>Training history (optional; enables MASE)</source>
-        <translation type="unfinished">培訓歷史（可選；啟用 MASE）</translation>
+        <translation>培訓歷史（可選；啟用 MASE）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="375" />
         <source>Evaluate Forecast</source>
-        <translation type="unfinished">評估預測</translation>
+        <translation>評估預測</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="384" />
         <source>Series values (&gt;= 1). Forecast = repeat last `season_length` observations.</source>
-        <translation type="unfinished">序列值（≥ 1）。預測 = 重複最後 season_length 個觀測值。</translation>
+        <translation>序列值（≥ 1）。預測 = 重複最後 season_length 個觀測值。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="439" />
         <source>Seasonal Naive</source>
-        <translation type="unfinished">季節性樸素法</translation>
+        <translation>季節性樸素法</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="501" />
         <source>GluonTS backend ready</source>
-        <translation type="unfinished">GluonTS 後端 就緒</translation>
+        <translation>GluonTS 後端 就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="603" />
         <source>PER-QUANTILE SUMMARY</source>
-        <translation type="unfinished">每分位數總結</translation>
+        <translation>每分位數總結</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Gluonts.cpp" line="643" />
         <source>FORECAST BY STEP</source>
-        <translation type="unfinished">預測 BY STEP</translation>
+        <translation>預測 BY STEP</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_RL.cpp" line="50" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="74" />
         <source>AAPL</source>
-        <translation type="unfinished">AAPL</translation>
+        <translation>AAPL</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_RL.cpp" line="76" />
         <source>step 0 / — · reward — · loss —</source>
-        <translation type="unfinished">step 0 / — · 報酬 — · 虧損 —</translation>
+        <translation>step 0 / — · 報酬 — · 虧損 —</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_RL.cpp" line="80" />
         <source>Training RL Agent...</source>
-        <translation type="unfinished">訓練 RL Agent (強化學習代理) 中...</translation>
+        <translation>訓練 RL Agent (強化學習代理) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="110" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="949" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1229" />
         <source>Training...</source>
-        <translation type="unfinished">訓練中...</translation>
+        <translation>訓練中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="151" />
         <source>Price data (comma-separated, e.g. 100,102,101,105,108)</source>
-        <translation type="unfinished">價格資料（以逗號分隔，例如 100,102,101,105,108）</translation>
+        <translation>價格資料（以逗號分隔，例如 100,102,101,105,108）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="172" />
         <source>Computing...</source>
-        <translation type="unfinished">計算中...</translation>
+        <translation>計算中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="181" />
@@ -11858,157 +11914,157 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="190" />
         <source>Feature values JSON: {rsi:[...],macd:[...]}</source>
-        <translation type="unfinished">特徵值 JSON：{rsi:[...],macd:[...]}</translation>
+        <translation>特徵值 JSON：{rsi:[...],macd:[...]}</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="196" />
         <source>Target returns (comma-separated)</source>
-        <translation type="unfinished">目標回報（以逗號分隔）</translation>
+        <translation>目標回報（以逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="210" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1327" />
         <source>Selecting...</source>
-        <translation type="unfinished">選取中...</translation>
+        <translation>選取中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="222" />
         <source>Feature Selection</source>
-        <translation type="unfinished">特徵選取</translation>
+        <translation>特徵選取</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="237" />
         <source>e.g. Mean(close, 5) / Std(close, 20)</source>
-        <translation type="unfinished">例如平均值（收盤價，5）/標準差（收盤價，20）</translation>
+        <translation>例如平均值（收盤價，5）/標準差（收盤價，20）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="244" />
         <source>Evaluating...</source>
-        <translation type="unfinished">評估中...</translation>
+        <translation>評估中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="255" />
         <source>Expression Engine</source>
-        <translation type="unfinished">表達式引擎</translation>
+        <translation>表達式引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="283" />
         <source>Asset names (comma-separated, e.g. AAPL,GOOG,MSFT)</source>
-        <translation type="unfinished">Asset (資產) 名稱s （以逗號分隔, e.g. AAPL,GOOG,MSFT)</translation>
+        <translation>Asset (資產) 名稱s （以逗號分隔, e.g. AAPL,GOOG,MSFT)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="289" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="353" />
         <source>Covariance matrix JSON: [[0.04,0.01],[0.01,0.09]]</source>
-        <translation type="unfinished">共變異數矩陣 JSON: [[0.04,0.01],[0.01,0.09]]</translation>
+        <translation>共變異數矩陣 JSON: [[0.04,0.01],[0.01,0.09]]</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="296" />
         <source>Expected returns (comma-separated, e.g. 0.10,0.15,0.12)</source>
-        <translation type="unfinished">預期回報（以逗號分隔，例如 0.10,0.15,0.12）</translation>
+        <translation>預期回報（以逗號分隔，例如 0.10,0.15,0.12）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="308" />
         <source>Optimizing...</source>
-        <translation type="unfinished">最佳化中...</translation>
+        <translation>最佳化中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="343" />
         <source>Asset names (comma-separated)</source>
-        <translation type="unfinished">Asset (資產) 名稱s （以逗號分隔)</translation>
+        <translation>Asset (資產) 名稱s （以逗號分隔)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="348" />
         <source>Market caps (comma-separated, e.g. 2000,1500,800)</source>
-        <translation type="unfinished">市場 caps （以逗號分隔, e.g. 2000,1500,800)</translation>
+        <translation>市場 caps （以逗號分隔, e.g. 2000,1500,800)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="358" />
         <source>Views (comma-separated, e.g. 0.05,0.10)</source>
-        <translation type="unfinished">Views （以逗號分隔, e.g. 0.05,0.10)</translation>
+        <translation>Views （以逗號分隔, e.g. 0.05,0.10)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="363" />
         <source>View confidences (e.g. 0.8,0.6)</source>
-        <translation type="unfinished">檢視信心度（例如 0.8,0.6）</translation>
+        <translation>檢視信心度（例如 0.8,0.6）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="369" />
         <source>Running BL...</source>
-        <translation type="unfinished">運行BL...</translation>
+        <translation>運行BL...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="391" />
         <source>Black-Litterman</source>
-        <translation type="unfinished">Black-Litterman</translation>
+        <translation>Black-Litterman</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="417" />
         <source>Predictions (comma-separated, e.g. 0.1,0.2,-0.1,0.3)</source>
-        <translation type="unfinished">Prediction (預測)s （以逗號分隔, e.g. 0.1,0.2,-0.1,0.3)</translation>
+        <translation>Prediction (預測)s （以逗號分隔, e.g. 0.1,0.2,-0.1,0.3)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="422" />
         <source>Actual returns (comma-separated)</source>
-        <translation type="unfinished">實際回報（以逗號分隔）</translation>
+        <translation>實際回報（以逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="433" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="507" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="636" />
         <source>Calculating...</source>
-        <translation type="unfinished">計算中...</translation>
+        <translation>計算中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="447" />
         <source>IC Metrics</source>
-        <translation type="unfinished">IC 指標</translation>
+        <translation>IC 指標</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="455" />
         <source>Factor name (e.g. momentum)</source>
-        <translation type="unfinished">因子名稱（例如動量）</translation>
+        <translation>因子名稱（例如動量）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="460" />
         <source>Predictions (comma-separated)</source>
-        <translation type="unfinished">Prediction (預測)s （以逗號分隔)</translation>
+        <translation>Prediction (預測)s （以逗號分隔)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="465" />
         <source>Returns (comma-separated)</source>
-        <translation type="unfinished">Returns (報酬率) （以逗號分隔)</translation>
+        <translation>Returns (報酬率) （以逗號分隔)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="471" />
         <source>Generating...</source>
-        <translation type="unfinished">產生中...</translation>
+        <translation>產生中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="485" />
         <source>Full Report</source>
-        <translation type="unfinished">完整報表</translation>
+        <translation>完整報表</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="493" />
         <source>Daily returns (comma-separated)</source>
-        <translation type="unfinished">每日回報（以逗號分隔）</translation>
+        <translation>每日回報（以逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="498" />
         <source>Benchmark returns (optional, comma-separated)</source>
-        <translation type="unfinished">基準返回（可選，以逗號分隔）</translation>
+        <translation>基準返回（可選，以逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="525" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="116" />
         <source>Risk Metrics</source>
-        <translation type="unfinished">風險指標</translation>
+        <translation>風險指標</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="551" />
         <source>Signal values (comma-separated)</source>
-        <translation type="unfinished">訊號值（逗號分隔）</translation>
+        <translation>訊號值（逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="569" />
@@ -12016,43 +12072,43 @@ Heading components.</source>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="712" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1195" />
         <source>Creating...</source>
-        <translation type="unfinished">建立中...</translation>
+        <translation>建立中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="581" />
         <source>TopK-Dropout</source>
-        <translation type="unfinished">TopK-Dropout</translation>
+        <translation>TopK-Dropout</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="589" />
         <source>Asset returns matrix JSON: [[0.01,-0.02,...],[...]]</source>
-        <translation type="unfinished">資產回傳矩陣 JSON: [[0.01,-0.02,...],[...]]</translation>
+        <translation>資產回傳矩陣 JSON: [[0.01,-0.02,...],[...]]</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="614" />
         <source>Risk Parity</source>
-        <translation type="unfinished">風險均等</translation>
+        <translation>風險均等</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="622" />
         <source>Portfolio returns (comma-separated)</source>
-        <translation type="unfinished">投資組合報酬（以逗號分隔）</translation>
+        <translation>投資組合報酬（以逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="627" />
         <source>Benchmark returns (optional)</source>
-        <translation type="unfinished">基準回報（可選）</translation>
+        <translation>基準回報（可選）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="654" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="178" />
         <source>Portfolio Metrics</source>
-        <translation type="unfinished">投資組合指標</translation>
+        <translation>投資組合指標</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="679" />
         <source>Browse all available data normalizers and transformation processors.</source>
-        <translation type="unfinished">瀏覽所有可用的資料正規化器與轉換處理器。</translation>
+        <translation>瀏覽所有可用的資料正規化器與轉換處理器。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="688" />
@@ -12072,63 +12128,63 @@ Heading components.</source>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="693" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="920" />
         <source>Browse</source>
-        <translation type="unfinished">瀏覽</translation>
+        <translation>瀏覽</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="701" />
         <source>Pipeline ID (e.g. my_pipeline)</source>
-        <translation type="unfinished">管道 ID（例如 my_pipeline）</translation>
+        <translation>管道 ID（例如 my_pipeline）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="722" />
         <source>Create Pipeline</source>
-        <translation type="unfinished">建立管線</translation>
+        <translation>建立管線</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="730" />
         <source>Pipeline ID (must be created first)</source>
-        <translation type="unfinished">Pipeline ID (必須先建立)</translation>
+        <translation>Pipeline ID (必須先建立)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="741" />
         <source>Processing...</source>
-        <translation type="unfinished">處理中...</translation>
+        <translation>處理中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="751" />
         <source>Process Data</source>
-        <translation type="unfinished">處理資料</translation>
+        <translation>處理資料</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="776" />
         <source>Browse all built-in Qlib alpha factors and expressions.</source>
-        <translation type="unfinished">瀏覽所有內建的 Qlib Alpha 因子與表達式。</translation>
+        <translation>瀏覽所有內建的 Qlib Alpha 因子與表達式。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="796" />
         <source>Factor Library</source>
-        <translation type="unfinished">因子庫</translation>
+        <translation>因子庫</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="804" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="933" />
         <source>Instruments (comma-separated, e.g. aapl,msft)</source>
-        <translation type="unfinished">Instruments (商品) （以逗號分隔, e.g. aapl,msft)</translation>
+        <translation>Instruments (商品) （以逗號分隔, e.g. aapl,msft)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="809" />
         <source>Fields (comma-separated, e.g. $close,$volume,$open)</source>
-        <translation type="unfinished">欄位（以逗號分隔，例如 $close,$volume,$open）</translation>
+        <translation>欄位（以逗號分隔，例如 $close,$volume,$open）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="814" />
         <source>Start date (YYYY-MM-DD, e.g. 2019-01-01)</source>
-        <translation type="unfinished">開始日期 (YYYY-MM-DD, e.g. 2019-01-01)</translation>
+        <translation>開始日期 (YYYY-MM-DD, e.g. 2019-01-01)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="819" />
         <source>End date (YYYY-MM-DD, e.g. 2020-11-10)</source>
-        <translation type="unfinished">結束日期 (YYYY-MM-DD, e.g. 2020-11-10)</translation>
+        <translation>結束日期 (YYYY-MM-DD, e.g. 2020-11-10)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="825" />
@@ -12139,21 +12195,21 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="845" />
         <source>Fetch Data</source>
-        <translation type="unfinished">擷取資料</translation>
+        <translation>擷取資料</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="853" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1046" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1090" />
         <source>Start date (YYYY-MM-DD)</source>
-        <translation type="unfinished">開始日期 (YYYY-MM-DD)</translation>
+        <translation>開始日期 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="858" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1051" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1095" />
         <source>End date (YYYY-MM-DD)</source>
-        <translation type="unfinished">結束日期 (YYYY-MM-DD)</translation>
+        <translation>結束日期 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="874" />
@@ -12163,7 +12219,7 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="900" />
         <source>List all available Qlib models (LightGBM, XGBoost, LSTM, Transformer, etc.).</source>
-        <translation type="unfinished">列出所有可用的 Qlib 模型（LightGBM、XGBoost、LSTM、Transformer 等）。</translation>
+        <translation>列出所有可用的 Qlib 模型（LightGBM、XGBoost、LSTM、Transformer 等）。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="915" />
@@ -12174,12 +12230,12 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="938" />
         <source>Train start (YYYY-MM-DD)</source>
-        <translation type="unfinished">訓練開始 (YYYY-MM-DD)</translation>
+        <translation>訓練開始 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="943" />
         <source>Train end (YYYY-MM-DD)</source>
-        <translation type="unfinished">訓練結束 (YYYY-MM-DD)</translation>
+        <translation>訓練結束 (YYYY-MM-DD)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="965" />
@@ -12189,28 +12245,28 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="973" />
         <source>Model ID (from training output)</source>
-        <translation type="unfinished">Model ID (來自訓練輸出)</translation>
+        <translation>Model ID (來自訓練輸出)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="978" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1085" />
         <source>Instruments (comma-separated)</source>
-        <translation type="unfinished">Instruments (商品) （以逗號分隔)</translation>
+        <translation>Instruments (商品) （以逗號分隔)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="983" />
         <source>Backtest start (YYYY-MM-DD)</source>
-        <translation type="unfinished">回測開始（YYYY-MM-DD）</translation>
+        <translation>回測開始（YYYY-MM-DD）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="988" />
         <source>Backtest end (YYYY-MM-DD)</source>
-        <translation type="unfinished">回測結束（YYYY-MM-DD）</translation>
+        <translation>回測結束（YYYY-MM-DD）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="994" />
         <source>Running backtest...</source>
-        <translation type="unfinished">執行 Backtest (回測) 中...</translation>
+        <translation>執行 Backtest (回測) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1010" />
@@ -12221,410 +12277,410 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1036" />
         <source>Instruments (comma-separated, e.g. aapl,msft,goog)</source>
-        <translation type="unfinished">Instruments (商品) （以逗號分隔, e.g. aapl,msft,goog)</translation>
+        <translation>Instruments (商品) （以逗號分隔, e.g. aapl,msft,goog)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1041" />
         <source>Fields (e.g. $close,$open,$high,$low,$volume)</source>
-        <translation type="unfinished">欄位（例如 $close、$open、$high、$low、$volume）</translation>
+        <translation>欄位（例如 $close、$open、$high、$low、$volume）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1077" />
         <source>Signal Data</source>
-        <translation type="unfinished">訊號資料</translation>
+        <translation>訊號資料</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1101" />
         <source>Analyzing...</source>
-        <translation type="unfinished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1116" />
         <source>Factor Analysis</source>
-        <translation type="unfinished">因子分析</translation>
+        <translation>因子分析</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1124" />
         <source>Trained model ID</source>
-        <translation type="unfinished">已訓練 model ID</translation>
+        <translation>已訓練 model ID</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1137" />
         <source>Feature Importance</source>
-        <translation type="unfinished">特徵重要性</translation>
+        <translation>特徵重要性</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1162" />
         <source>Incrementally trained models that update on each new data point.</source>
-        <translation type="unfinished">增量訓練模型，每當有新資料點時自動更新。</translation>
+        <translation>增量訓練模型，每當有新資料點時自動更新。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1176" />
         <source>Models</source>
-        <translation type="unfinished">模型</translation>
+        <translation>模型</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1189" />
         <source>Model ID (optional, auto-generated if blank)</source>
-        <translation type="unfinished">型號 ID（可選，如果為空則自動產生）</translation>
+        <translation>型號 ID（可選，如果為空則自動產生）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1205" />
         <source>Create Model</source>
-        <translation type="unfinished">建立模型</translation>
+        <translation>建立模型</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1213" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1248" />
         <source>Model ID</source>
-        <translation type="unfinished">模型 ID</translation>
+        <translation>模型 ID</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1223" />
         <source>Target value (e.g. 0.02)</source>
-        <translation type="unfinished">目標值（如 0.02）</translation>
+        <translation>目標值（如 0.02）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1240" />
         <source>Incremental Train</source>
-        <translation type="unfinished">增量訓練</translation>
+        <translation>增量訓練</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1259" />
         <source>Predicting...</source>
-        <translation type="unfinished">預測中...</translation>
+        <translation>預測中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1277" />
         <source>Predict</source>
-        <translation type="unfinished">預測</translation>
+        <translation>預測</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1302" />
         <source>Automatically select the best model from a set of candidates.</source>
-        <translation type="unfinished">從候選模型中自動選取最佳模型。</translation>
+        <translation>從候選模型中自動選取最佳模型。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1316" />
         <source>Model IDs (comma-separated, e.g. lightgbm,xgboost,random_forest)</source>
-        <translation type="unfinished">模型 ID（逗號分隔，例如 lightgbm、xgboost、random_forest）</translation>
+        <translation>模型 ID（逗號分隔，例如 lightgbm、xgboost、random_forest）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1339" />
         <source>Model Selection</source>
-        <translation type="unfinished">模型選擇</translation>
+        <translation>模型選擇</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1347" />
         <source>Model keys (from selection output, comma-separated)</source>
-        <translation type="unfinished">模型鍵（來自選擇輸出，以逗號分隔）</translation>
+        <translation>模型鍵（來自選擇輸出，以逗號分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1358" />
         <source>Creating ensemble...</source>
-        <translation type="unfinished">建立 Ensemble (集成模型) 中...</translation>
+        <translation>建立 Ensemble (集成模型) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1370" />
         <source>Ensemble</source>
-        <translation type="unfinished">集成方法</translation>
+        <translation>集成方法</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1394" />
         <source>Tuning...</source>
-        <translation type="unfinished">調校中...</translation>
+        <translation>調校中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1411" />
         <source>Hyperparameter Tuning</source>
-        <translation type="unfinished">超參數調校</translation>
+        <translation>超參數調校</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1438" />
         <source>EXCHANGE</source>
-        <translation type="unfinished">交易所</translation>
+        <translation>交易所</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1447" />
         <source>SYMBOL</source>
-        <translation type="unfinished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1450" />
         <source>BTC/USDT</source>
-        <translation type="unfinished">BTC/USDT</translation>
+        <translation>BTC/USDT</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1453" />
         <source>e.g. BTC/USDT, ETH/USDT</source>
-        <translation type="unfinished">例如BTC/USDT、ETH/USDT</translation>
+        <translation>例如BTC/USDT、ETH/USDT</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1456" />
         <source>DEPTH</source>
-        <translation type="unfinished">DEPTH</translation>
+        <translation>DEPTH</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1474" />
         <source>LATENCY —</source>
-        <translation type="unfinished">延遲 —</translation>
+        <translation>延遲 —</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1498" />
         <source>Fetching live order book...</source>
-        <translation type="unfinished">取得即時委託簿中...</translation>
+        <translation>取得即時委託簿中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1563" />
         <source>  BIDS</source>
-        <translation type="unfinished">  BIDS</translation>
+        <translation>  BIDS</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1592" />
         <source>  ASKS</source>
-        <translation type="unfinished">  ASKS</translation>
+        <translation>  ASKS</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1612" />
         <source>Live Order Book</source>
-        <translation type="unfinished">即時委託簿</translation>
+        <translation>即時委託簿</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1630" />
         <source>MARKET MAKING  —  Avellaneda-Stoikov Model</source>
-        <translation type="unfinished">造市 — Avellaneda-Stoikov 模型</translation>
+        <translation>造市 — Avellaneda-Stoikov 模型</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1651" />
         <source>Fetching live data + computing quotes...</source>
-        <translation type="unfinished">擷取即時資料並計算 Quotes (報價) 中...</translation>
+        <translation>擷取即時資料並計算 Quotes (報價) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1690" />
         <source>TOXIC FLOW DETECTION  —  PIN Score Model</source>
-        <translation type="unfinished">毒性流動偵測 — PIN 分數模型</translation>
+        <translation>毒性流動偵測 — PIN 分數模型</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1708" />
         <source>Fetching trades + analyzing flow...</source>
-        <translation type="unfinished">取得交易+分析流程...</translation>
+        <translation>取得交易+分析流程...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1737" />
         <source>Microstructure</source>
-        <translation type="unfinished">市場微結構</translation>
+        <translation>市場微結構</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1754" />
         <source>SLIPPAGE ESTIMATOR  —  Real Order Book Walk</source>
-        <translation type="unfinished">滑價估算器 — 實際委託簿模擬</translation>
+        <translation>滑價估算器 — 實際委託簿模擬</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1779" />
         <source>Walking order book...</source>
-        <translation type="unfinished">行走訂單...</translation>
+        <translation>行走訂單...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1830" />
         <source>Slippage Estimator</source>
-        <translation type="unfinished">滑價估算器</translation>
+        <translation>滑價估算器</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1839" />
         <source>Fetches live order book + trades, computes book metrics, market making quotes, toxic flow, and slippage in one call</source>
-        <translation type="unfinished">一次呼叫即可取得即時訂單簿 + 交易，計算訂單簿指標、做市報價、有毒流量和滑點</translation>
+        <translation>一次呼叫即可取得即時訂單簿 + 交易，計算訂單簿指標、做市報價、有毒流量和滑點</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1841" />
         <source>Running full microstructure analysis...</source>
-        <translation type="unfinished">執行完整 Microstructure (市場微結構) 分析中...</translation>
+        <translation>執行完整 Microstructure (市場微結構) 分析中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1911" />
         <source>Loading schedules...</source>
-        <translation type="unfinished">載入排程中...</translation>
+        <translation>載入排程中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1915" />
         <source>Schedules</source>
-        <translation type="unfinished">排程</translation>
+        <translation>排程</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1924" />
         <source>Unique model ID (e.g. lgbm_sp500)</source>
-        <translation type="unfinished">唯一型號 ID（例如 lgbm_sp500）</translation>
+        <translation>唯一型號 ID（例如 lgbm_sp500）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1930" />
         <source>Optional: path to Qlib YAML config (leave blank for built-in LightGBM+Alpha158)</source>
-        <translation type="unfinished">選用：Qlib YAML 配置的路徑（內建 LightGBM+Alpha158 留空）</translation>
+        <translation>選用：Qlib YAML 配置的路徑（內建 LightGBM+Alpha158 留空）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1942" />
         <source>Rolling window in trading days (default: 252)</source>
-        <translation type="unfinished">交易日捲動視窗（預設：252）</translation>
+        <translation>交易日捲動視窗（預設：252）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1948" />
         <source>Step size between windows (default: 20)</source>
-        <translation type="unfinished">視窗之間的步長（預設值：20）</translation>
+        <translation>視窗之間的步長（預設值：20）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1976" />
         <source>Enter a Model ID or Config Path to preview.</source>
-        <translation type="unfinished">輸入模型 ID 或配置路徑進行預覽。</translation>
+        <translation>輸入模型 ID 或配置路徑進行預覽。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1979" />
         <source>Generating preview...</source>
-        <translation type="unfinished">產生預覽中...</translation>
+        <translation>產生預覽中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1993" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="2061" />
         <source>Model ID is required.</source>
-        <translation type="unfinished">Model ID 為必填。</translation>
+        <translation>Model ID 為必填。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="1996" />
         <source>Creating schedule...</source>
-        <translation type="unfinished">建立排程中...</translation>
+        <translation>建立排程中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="2012" />
         <source>Create Schedule</source>
-        <translation type="unfinished">建立排程</translation>
+        <translation>建立排程</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="2028" />
         <source>Model ID (must be in Schedules)</source>
-        <translation type="unfinished">Model ID (必須在排程中)</translation>
+        <translation>Model ID (必須在排程中)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="2052" />
         <source>Training progress will stream here...</source>
-        <translation type="unfinished">訓練進度會在此串流顯示...</translation>
+        <translation>訓練進度會在此串流顯示...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="2071" />
         <source>Retraining...</source>
-        <translation type="unfinished">重新訓練中...</translation>
+        <translation>重新訓練中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Misc.cpp" line="2077" />
         <source>Execute Retrain</source>
-        <translation type="unfinished">執行重新訓練</translation>
+        <translation>執行重新訓練</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="143" />
         <source>Weights (comma-separated, will be normalized to 1.0). Equal-weight if blank.</source>
-        <translation type="unfinished">權重（以逗號分隔，將標準化為 1.0）。如果空白則等重。</translation>
+        <translation>權重（以逗號分隔，將標準化為 1.0）。如果空白則等重。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="212" />
         <source>Covariance</source>
-        <translation type="unfinished">共變異數</translation>
+        <translation>共變異數</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="277" />
         <source>MV Optimize</source>
-        <translation type="unfinished">均值-變異數最佳化</translation>
+        <translation>均值-變異數最佳化</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="339" />
         <source>CVaR Optimize</source>
-        <translation type="unfinished">CVaR 最佳化</translation>
+        <translation>CVaR 最佳化</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="394" />
         <source>Efficient Frontier</source>
-        <translation type="unfinished">效率前緣</translation>
+        <translation>效率前緣</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="438" />
         <source>Decay Weights</source>
-        <translation type="unfinished">衰減權重</translation>
+        <translation>衰減權重</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="503" />
         <source>Fortitudo backend ready</source>
-        <translation type="unfinished">Fortitudo 後端 就緒</translation>
+        <translation>Fortitudo 後端 就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="612" />
         <source>PER-ASSET MOMENTS</source>
-        <translation type="unfinished">各資產動差</translation>
+        <translation>各資產動差</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="655" />
         <source>CORRELATION MATRIX</source>
-        <translation type="unfinished">相關性 MATRIX</translation>
+        <translation>相關性 MATRIX</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Fortitudo.cpp" line="729" />
         <source>OPTIMAL WEIGHTS</source>
-        <translation type="unfinished">OPTIMAL 權重</translation>
+        <translation>OPTIMAL 權重</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="85" />
         <source>Model predictions (decimals, &gt;= 10 values)</source>
-        <translation type="unfinished">模型預測（小數，≥ 10 個數值）</translation>
+        <translation>模型預測（小數，≥ 10 個數值）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="93" />
         <source>Realized returns (decimals, same length as predictions)</source>
-        <translation type="unfinished">已實現報酬率（小數，與預測等長）</translation>
+        <translation>已實現報酬率（小數，與預測等長）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="144" />
         <source>IC Analysis</source>
-        <translation type="unfinished">IC 分析</translation>
+        <translation>IC 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="153" />
         <source>Portfolio daily returns (decimals)</source>
-        <translation type="unfinished">投資組合每日回報（小數）</translation>
+        <translation>投資組合每日回報（小數）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="161" />
         <source>Benchmark returns (optional; same length as portfolio if provided)</source>
-        <translation type="unfinished">基準回報（可選；如果提供，則與投資組合長度相同）</translation>
+        <translation>基準回報（可選；如果提供，則與投資組合長度相同）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="169" />
         <source>Chart title (e.g. Strategy vs S&amp;P 500)</source>
-        <translation type="unfinished">圖表標題（例如：策略 vs S&amp;P 500）</translation>
+        <translation>圖表標題（例如：策略 vs S&amp;P 500）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="170" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="210" />
         <source>Cumulative Returns</source>
-        <translation type="unfinished">累積回報</translation>
+        <translation>累積回報</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="219" />
         <source>Daily returns (&gt;= 30 values)</source>
-        <translation type="unfinished">每日報酬（≥ 30 個數值）</translation>
+        <translation>每日報酬（≥ 30 個數值）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="260" />
         <source>Risk Report</source>
-        <translation type="unfinished">風險報表</translation>
+        <translation>風險報表</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="269" />
         <source>Model predictions (decimals, &gt;= 20 values)</source>
-        <translation type="unfinished">模型預測（小數，≥ 20 個數值）</translation>
+        <translation>模型預測（小數，≥ 20 個數值）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="277" />
         <source>Realized returns (same length as predictions)</source>
-        <translation type="unfinished">已實現報酬率（與預測等長）</translation>
+        <translation>已實現報酬率（與預測等長）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="285" />
         <source>Model label (e.g. LightGBM, LSTM)</source>
-        <translation type="unfinished">模型標籤（例如 LightGBM、LSTM）</translation>
+        <translation>模型標籤（例如 LightGBM、LSTM）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="286" />
@@ -12634,77 +12690,77 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="330" />
         <source>Model Performance</source>
-        <translation type="unfinished">模型表現</translation>
+        <translation>模型表現</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="339" />
         <source>Factor / signal values (decimals, &gt;= 20)</source>
-        <translation type="unfinished">因子/訊號值（小數，≥ 20）</translation>
+        <translation>因子/訊號值（小數，≥ 20）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="347" />
         <source>Realized returns (same length as factor)</source>
-        <translation type="unfinished">已實現報酬率（與因子等長）</translation>
+        <translation>已實現報酬率（與因子等長）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="399" />
         <source>Factor Quantiles</source>
-        <translation type="unfinished">因子分位數</translation>
+        <translation>因子分位數</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_QuantReporting.cpp" line="451" />
         <source>Quant Reporting backend ready</source>
-        <translation type="unfinished">定量報告後端準備就緒</translation>
+        <translation>定量報告後端準備就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="77" />
         <source>AAPL,MSFT,GOOG,AMZN</source>
-        <translation type="unfinished">AAPL,MSFT,GOOG,AMZN</translation>
+        <translation>AAPL,MSFT,GOOG,AMZN</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="108" />
         <source>SH000300 (CSI300)</source>
-        <translation type="unfinished">SH000300 (CSI300)</translation>
+        <translation>SH000300 (CSI300)</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="115" />
         <source>Backtesting...</source>
-        <translation type="unfinished">Backtest (回測) 中...</translation>
+        <translation>Backtest (回測) 中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="189" />
         <source>BACKTEST RESULTS</source>
-        <translation type="unfinished">回測結果</translation>
+        <translation>回測結果</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="387" />
         <source>EQUITY CURVE</source>
-        <translation type="unfinished">權益 CURVE</translation>
+        <translation>權益 CURVE</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="421" />
         <source>EXECUTION COSTS</source>
-        <translation type="unfinished">執行 COSTS</translation>
+        <translation>執行 COSTS</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Backtesting.cpp" line="441" />
         <source>EXPORT JSON</source>
-        <translation type="unfinished">匯出 JSON</translation>
+        <translation>匯出 JSON</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="83" />
         <source>Daily returns: comma-, space-, or newline-separated. Need at least 5 values.</source>
-        <translation type="unfinished">每日回傳：以逗號、空格或換行符號分隔。至少需要 5 個值。</translation>
+        <translation>每日回傳：以逗號、空格或換行符號分隔。至少需要 5 個值。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="124" />
         <source>Portfolio daily returns (decimals, same length as benchmark)</source>
-        <translation type="unfinished">投資組合每日報酬率（小數，與基準長度相同）</translation>
+        <translation>投資組合每日報酬率（小數，與基準長度相同）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="131" />
         <source>Benchmark daily returns (decimals)</source>
-        <translation type="unfinished">基準每日回報（小數）</translation>
+        <translation>基準每日回報（小數）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="170" />
@@ -12714,32 +12770,32 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="211" />
         <source>Greeks</source>
-        <translation type="unfinished">Greeks（希臘值）</translation>
+        <translation>Greeks（希臘值）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="219" />
         <source>Daily returns (decimals). Need at least 30 values for stable VaR.</source>
-        <translation type="unfinished">每日回報（小數）。穩定的 VaR 至少需要 30 個值。</translation>
+        <translation>每日回報（小數）。穩定的 VaR 至少需要 30 個值。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="252" />
         <source>VaR</source>
-        <translation type="unfinished">VaR</translation>
+        <translation>VaR</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="298" />
         <source>Stress Test</source>
-        <translation type="unfinished">壓力測試</translation>
+        <translation>壓力測試</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="311" />
         <source>e.g. AAPL — fetched from Yahoo Finance</source>
-        <translation type="unfinished">例如AAPL - 取自雅虎財經</translation>
+        <translation>例如AAPL - 取自雅虎財經</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="361" />
         <source>Numeric values (e.g. 10.5, 11.2, 9.8, 12.1, ...). Need at least 2.</source>
-        <translation type="unfinished">數值（如 10.5, 11.2, 9.8, 12.1, ...）。至少需要 2 個。</translation>
+        <translation>數值（如 10.5, 11.2, 9.8, 12.1, ...）。至少需要 2 個。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_GS.cpp" line="386" />
@@ -12749,25 +12805,26 @@ Heading components.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="186" />
         <source>No LLM profiles — configure in Settings → LLM Config</source>
-        <translation type="unfinished">No LLM 設定檔 — configure in 設定 → LLM 設定</translation>
+        <translation>No LLM 設定檔 — configure in 設定 → LLM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="427" />
         <source>Command (e.g. analyze, train, list_models)</source>
-        <translation type="unfinished">指令（例如分析、訓練、list_models）</translation>
+        <translation>指令（例如分析、訓練、list_models）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="438" />
         <source>JSON parameters (optional)
 e.g. {ticker:AAPL}</source>
-        <translation type="unfinished" />
+        <translation>JSON 參數（選填）
+例如 {ticker:AAPL}</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="449" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="118" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="349" />
         <source>Running...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="506" />
@@ -12778,13 +12835,13 @@ e.g. {ticker:AAPL}</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="533" />
         <source>RESULTS</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="576" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="609" />
         <source>EXPORT RESULTS</source>
-        <translation type="unfinished">匯出 結果</translation>
+        <translation>匯出 結果</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="604" />
@@ -12795,43 +12852,44 @@ e.g. {ticker:AAPL}</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="788" />
         <source>MCP server failed</source>
-        <translation type="unfinished">MCP 伺服器失敗</translation>
+        <translation>MCP 伺服器失敗</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1017" />
         <source>Feature importance loaded</source>
-        <translation type="unfinished">已載入特徵重要性</translation>
+        <translation>已載入特徵重要性</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1056" />
         <source>Model created</source>
-        <translation type="unfinished">模型已建立</translation>
+        <translation>模型已建立</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1086" />
         <source>Prediction ready</source>
-        <translation type="unfinished">Prediction (預測) 已就緒</translation>
+        <translation>Prediction (預測) 已就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1163" />
         <source>Ensemble created</source>
-        <translation type="unfinished">Ensemble (集成模型) 已建立</translation>
+        <translation>Ensemble (集成模型) 已建立</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1478" />
         <source>Combining rolling results...</source>
-        <translation type="unfinished">結合滾動結果...</translation>
+        <translation>結合滾動結果...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1515" />
         <source>No schedules configured yet.
 Use the Create Schedule tab to add one.</source>
-        <translation type="unfinished" />
+        <translation>尚未設定排程。
+請使用「建立排程」分頁新增。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1585" />
         <source>Run Now</source>
-        <translation type="unfinished">立即執行</translation>
+        <translation>立即執行</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1601" />
@@ -12841,138 +12899,141 @@ Use the Create Schedule tab to add one.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel.cpp" line="1641" />
         <source>Schedule created — switch to Schedules tab to view</source>
-        <translation type="unfinished">已建立計劃 - 切換到「計劃」標籤以查看</translation>
+        <translation>已建立計劃 - 切換到「計劃」標籤以查看</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="79" />
         <source>Describe your analysis task...
 e.g. "Conduct a full investment analysis of NVDA: research fundamentals, assess risks, and give a buy/sell/hold recommendation with price target"</source>
-        <translation type="unfinished" />
+        <translation>描述您的分析任務…
+例如「對 NVDA 進行全面投資分析：研究基本面、評估風險，並給出買入/賣出/持有建議與目標價」</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="97" />
         <source>Optional — leave blank to auto-generate</source>
-        <translation type="unfinished">選填 — 留空將自動產生</translation>
+        <translation>選填 — 留空將自動產生</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="133" />
         <source>Analysis results will appear here...</source>
-        <translation type="unfinished">分析結果會顯示於此...</translation>
+        <translation>分析結果會顯示於此...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="144" />
         <source>Deep Analysis</source>
-        <translation type="unfinished">深度分析</translation>
+        <translation>深度分析</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="147" />
         <source>RD-Agent</source>
-        <translation type="unfinished">RD-Agent</translation>
+        <translation>RD-Agent</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="179" />
         <source>RD-Agent ready</source>
-        <translation type="unfinished">RD-Agent 就緒</translation>
+        <translation>RD-Agent 就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="186" />
         <source>CHECK STATUS</source>
-        <translation type="unfinished">檢查狀態</translation>
+        <translation>檢查狀態</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="201" />
         <source>OPEN LOG VIEWER</source>
-        <translation type="unfinished">開啟日誌檢視器</translation>
+        <translation>開啟日誌檢視器</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="211" />
         <source>Starting log viewer...</source>
-        <translation type="unfinished">正在啟動日誌檢視器...</translation>
+        <translation>正在啟動日誌檢視器...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="216" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="237" />
         <source>MCP TOOLS</source>
-        <translation type="unfinished">MCP 工具</translation>
+        <translation>MCP 工具</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="219" />
         <source>Start/stop the Fincept MCP tool server
 Gives RD-Agent loops access to market data,
 financial news and economics tools.</source>
-        <translation type="unfinished" />
+        <translation>啟動/停止 Fincept MCP 工具伺服器
+讓 RD-Agent 迴圈可存取市場資料、
+財經新聞和經濟分析工具。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="233" />
         <source>Starting MCP tool server...</source>
-        <translation type="unfinished">啟動 MCP 工具伺服器中...</translation>
+        <translation>啟動 MCP 工具伺服器中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="236" />
         <source>MCP tool server stopped</source>
-        <translation type="unfinished">MCP 工具伺服器已停止</translation>
+        <translation>MCP 工具伺服器已停止</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="292" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="345" />
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="404" />
         <source>Starting...</source>
-        <translation type="unfinished">啟動中...</translation>
+        <translation>啟動中...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="293" />
         <source>Factor mining started...</source>
-        <translation type="unfinished">因子挖掘開始...</translation>
+        <translation>因子挖掘開始...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="304" />
         <source>Factor Mining</source>
-        <translation type="unfinished">因子探勘</translation>
+        <translation>因子探勘</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="346" />
         <source>Model optimization started...</source>
-        <translation type="unfinished">模型優化開始...</translation>
+        <translation>模型優化開始...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="356" />
         <source>Model Optimization</source>
-        <translation type="unfinished">模型最佳化</translation>
+        <translation>模型最佳化</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="405" />
         <source>Quant research started...</source>
-        <translation type="unfinished">量化研究開始了…</translation>
+        <translation>量化研究開始了…</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="415" />
         <source>Quant Research</source>
-        <translation type="unfinished">量化研究</translation>
+        <translation>量化研究</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="435" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="449" />
         <source>Task ID...</source>
-        <translation type="unfinished">任務 ID...</translation>
+        <translation>任務 ID...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="454" />
         <source>STOP</source>
-        <translation type="unfinished">停止</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="467" />
         <source>RESUME</source>
-        <translation type="unfinished">RESUME</translation>
+        <translation>RESUME</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="507" />
         <source>Select a task and click GET FACTORS / GET MODEL to view results...</source>
-        <translation type="unfinished">選擇一個任務並點擊“獲取因素/獲取模型”以查看結果...</translation>
+        <translation>選擇一個任務並點擊“獲取因素/獲取模型”以查看結果...</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_DeepAgent.cpp" line="557" />
@@ -12982,67 +13043,67 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="63" />
         <source>DATA INPUT</source>
-        <translation type="unfinished">資料輸入</translation>
+        <translation>資料輸入</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="72" />
         <source>Ticker (AAPL, ^GSPC, BTC-USD) or comma-separated values</source>
-        <translation type="unfinished">代碼（AAPL、^GSPC、BTC-USD）或逗號分隔值</translation>
+        <translation>代碼（AAPL、^GSPC、BTC-USD）或逗號分隔值</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="106" />
         <source>ANALYSIS PARAMETERS</source>
-        <translation type="unfinished">分析參數</translation>
+        <translation>分析參數</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="196" />
         <source>ridge,random_forest</source>
-        <translation type="unfinished">ridge,random_forest</translation>
+        <translation>ridge,random_forest</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="197" />
         <source>comma-separated: ridge,lasso,random_forest,svr,knn</source>
-        <translation type="unfinished">逗號分隔：ridge,lasso,random_forest,svr,knn</translation>
+        <translation>逗號分隔：ridge,lasso,random_forest,svr,knn</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="214" />
         <source>pca,kmeans</source>
-        <translation type="unfinished">pca,kmeans</translation>
+        <translation>pca,kmeans</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="215" />
         <source>comma-separated: pca,kmeans,agglomerative</source>
-        <translation type="unfinished">以逗號分隔：pca,kmeans,agglomerative</translation>
+        <translation>以逗號分隔：pca,kmeans,agglomerative</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="248" />
         <source>bootstrap,jackknife</source>
-        <translation type="unfinished">bootstrap,jackknife</translation>
+        <translation>bootstrap,jackknife</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="249" />
         <source>comma-separated: bootstrap,jackknife,permutation</source>
-        <translation type="unfinished">逗號分隔：bootstrap、jackknife、排列</translation>
+        <translation>逗號分隔：bootstrap、jackknife、排列</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="270" />
         <source>simple,stratified,systematic</source>
-        <translation type="unfinished">simple,stratified,systematic</translation>
+        <translation>simple,stratified,systematic</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="285" />
         <source>5,10,30,100</source>
-        <translation type="unfinished">5,10,30,100</translation>
+        <translation>5,10,30,100</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_CFA.cpp" line="306" />
         <source>10,30,50,100,500</source>
-        <translation type="unfinished">10,30,50,100,500</translation>
+        <translation>10,30,50,100,500</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="84" />
         <source>Time series values (&gt;= 30). CSV, space, or newline separated.</source>
-        <translation type="unfinished">時間序列值（≥ 30）。以 CSV、空格或換行分隔。</translation>
+        <translation>時間序列值（≥ 30）。以 CSV、空格或換行分隔。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="152" />
@@ -13052,62 +13113,62 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="161" />
         <source>Time series values (&gt;= 20)</source>
-        <translation type="unfinished">時間序列值（≥ 20）</translation>
+        <translation>時間序列值（≥ 20）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="210" />
         <source>Anomalies</source>
-        <translation type="unfinished">異常值</translation>
+        <translation>異常值</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="219" />
         <source>Time series values (&gt;= 24). Period auto-detected if left at 0.</source>
-        <translation type="unfinished">時間序列值（≥ 24）。週期設為 0 時自動偵測。</translation>
+        <translation>時間序列值（≥ 24）。週期設為 0 時自動偵測。</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="261" />
         <source>Seasonality</source>
-        <translation type="unfinished">季節性</translation>
+        <translation>季節性</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="270" />
         <source>Actual values (must match predicted length)</source>
-        <translation type="unfinished">實際值（必須與預測長度相符）</translation>
+        <translation>實際值（必須與預測長度相符）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="278" />
         <source>Predicted values (same length as actual)</source>
-        <translation type="unfinished">預測值（與實際值等長）</translation>
+        <translation>預測值（與實際值等長）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="314" />
         <source>Metrics</source>
-        <translation type="unfinished">指標</translation>
+        <translation>指標</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="323" />
         <source>Series values (training history, &gt;= 30)</source>
-        <translation type="unfinished">序列值（訓練歷史，≥ 30）</translation>
+        <translation>序列值（訓練歷史，≥ 30）</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="386" />
         <source>Confidence Intervals</source>
-        <translation type="unfinished">信賴區間</translation>
+        <translation>信賴區間</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="395" />
         <source>Series values (&gt;= 30) — runs ADF + KPSS at each differencing order</source>
-        <translation type="unfinished">序列值（≥ 30）— 在每個差分階數執行 ADF + KPSS</translation>
+        <translation>序列值（≥ 30）— 在每個差分階數執行 ADF + KPSS</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="491" />
         <source>Functime backend ready</source>
-        <translation type="unfinished">Functime 後端 就緒</translation>
+        <translation>Functime 後端 就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/ai_quant_lab/QuantModulePanel_Functime.cpp" line="654" />
         <source>No anomalies detected at the configured threshold.</source>
-        <translation type="unfinished">在設定的閾值下未偵測到異常。</translation>
+        <translation>在設定的閾值下未偵測到異常。</translation>
     </message>
 </context>
 <context>
@@ -13115,57 +13176,57 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="104" />
         <source>QUANTSTATS ANALYSIS</source>
-        <translation type="unfinished">QUANTSTATS 分析</translation>
+        <translation>QUANTSTATS 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="114" />
         <source>▶ RUN QUANTSTATS</source>
-        <translation type="unfinished" />
+        <translation>▶ 執行 QuantStats</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="147" />
         <source>KEY PERFORMANCE INDICATORS</source>
-        <translation type="unfinished">KEY 績效 指標</translation>
+        <translation>KEY 績效 指標</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="160" />
         <source>METRICS</source>
-        <translation type="unfinished">METRICS</translation>
+        <translation>METRICS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="176" />
         <source>RETURNS</source>
-        <translation type="unfinished">RETURNS</translation>
+        <translation>RETURNS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="191" />
         <source>DRAWDOWN</source>
-        <translation type="unfinished">DRAWDOWN</translation>
+        <translation>DRAWDOWN</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="206" />
         <source>ROLLING</source>
-        <translation type="unfinished">ROLLING</translation>
+        <translation>ROLLING</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="217" />
         <source>MONTE CARLO SIMULATION</source>
-        <translation type="unfinished">蒙特卡羅模擬</translation>
+        <translation>蒙特卡羅模擬</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="232" />
         <source>▶ RUN MONTE CARLO (1000 paths)</source>
-        <translation type="unfinished" />
+        <translation>▶ 執行蒙地卡羅模擬（1000 條路徑）</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="260" />
         <source>MONTE CARLO</source>
-        <translation type="unfinished">蒙地卡羅</translation>
+        <translation>蒙地卡羅</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="482" />
         <source>RETURN DISTRIBUTION</source>
-        <translation type="unfinished">報酬 DISTRIBUTION</translation>
+        <translation>報酬 DISTRIBUTION</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="602" />
@@ -13175,32 +13236,32 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="618" />
         <source>MAX DRAWDOWN</source>
-        <translation type="unfinished">最大回撤</translation>
+        <translation>最大回撤</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="687" />
         <source>RISK-ADJUSTED RATIOS &amp; WIN/LOSS BREAKDOWN</source>
-        <translation type="unfinished">風險調整比率與勝負分析</translation>
+        <translation>風險調整比率與勝負分析</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="728" />
         <source>WIN / LOSS BREAKDOWN</source>
-        <translation type="unfinished">WIN / 虧損 分解</translation>
+        <translation>WIN / 虧損 分解</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="971" />
         <source>Fetching 1-year price history...</source>
-        <translation type="unfinished">正在取得 1 年價格歷史記錄...</translation>
+        <translation>正在取得 1 年價格歷史記錄...</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="1002" />
         <source>Complete</source>
-        <translation type="unfinished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/QuantStatsView.cpp" line="1021" />
         <source>Running 1000 simulation paths...</source>
-        <translation type="unfinished">運行 1000 條模擬路徑...</translation>
+        <translation>運行 1000 條模擬路徑...</translation>
     </message>
 </context>
 <context>
@@ -13208,7 +13269,7 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/ui/command/QuickCommandBar.cpp" line="43" />
         <source>Type a command (e.g. 'layout switch Morning', AAPL, ?). Esc to dismiss.</source>
-        <translation type="unfinished">輸入指令（例如：'layout switch Morning'、AAPL、?）。按 Esc 關閉。</translation>
+        <translation>輸入指令（例如：'layout switch Morning'、AAPL、?）。按 Esc 關閉。</translation>
     </message>
 </context>
 <context>
@@ -13216,52 +13277,52 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="47" />
         <source>代號 (如 AAPL)</source>
-        <translation type="unfinished">代號 (如 AAPL)</translation>
+        <translation>代號 (如 AAPL)</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="48" />
         <source>AAPL</source>
-        <translation type="unfinished">AAPL</translation>
+        <translation>AAPL</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="51" />
         <source>查詢</source>
-        <translation type="unfinished">查詢</translation>
+        <translation>查詢</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="77" />
         <source>買價 --</source>
-        <translation type="unfinished">買價 --</translation>
+        <translation>買價 --</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="80" />
         <source>賣價 --</source>
-        <translation type="unfinished">賣價 --</translation>
+        <translation>賣價 --</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="110" />
         <source>數量</source>
-        <translation type="unfinished">數量</translation>
+        <translation>數量</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="117" />
         <source>價格</source>
-        <translation type="unfinished">價格</translation>
+        <translation>價格</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="121" />
         <source>市價</source>
-        <translation type="unfinished">市價</translation>
+        <translation>市價</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="126" />
         <source>預估總額  --</source>
-        <translation type="unfinished">預估總額  --</translation>
+        <translation>預估總額  --</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/QuickTradeWidget.cpp" line="130" />
         <source>送出委託</source>
-        <translation type="unfinished">送出委託</translation>
+        <translation>送出委託</translation>
     </message>
 </context>
 <context>
@@ -13269,7 +13330,7 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/RecentFilesWidget.cpp" line="77" />
         <source>No files yet</source>
-        <translation type="unfinished">No 檔案 yet</translation>
+        <translation>No 檔案 yet</translation>
     </message>
 </context>
 <context>
@@ -13277,7 +13338,7 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/trading/auth/RedirectServer.cpp" line="81" />
         <source>Malformed request</source>
-        <translation type="unfinished">格式錯誤的請求</translation>
+        <translation>格式錯誤的請求</translation>
     </message>
 </context>
 <context>
@@ -13287,93 +13348,93 @@ financial news and economics tools.</source>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="121" />
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="296" />
         <source>  建立帳戶  </source>
-        <translation type="unfinished">  建立帳戶  </translation>
+        <translation>  建立帳戶  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="128" />
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="390" />
         <source>  驗證  </source>
-        <translation type="unfinished">  驗證  </translation>
+        <translation>  驗證  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="189" />
         <source>建立帳戶</source>
-        <translation type="unfinished">建立帳戶</translation>
+        <translation>建立帳戶</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="311" />
         <source>已有帳戶？</source>
-        <translation type="unfinished">已有帳戶？</translation>
+        <translation>已有帳戶？</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="315" />
         <source>登入</source>
-        <translation type="unfinished">登入</translation>
+        <translation>登入</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="345" />
         <source>驗證電子郵件</source>
-        <translation type="unfinished">驗證電子郵件</translation>
+        <translation>驗證電子郵件</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="361" />
         <source>驗證碼</source>
-        <translation type="unfinished">驗證碼</translation>
+        <translation>驗證碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="366" />
         <source>輸入郵件中的驗證碼</source>
-        <translation type="unfinished">輸入郵件中的驗證碼</translation>
+        <translation>輸入郵件中的驗證碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="396" />
         <source>未收到？重新發送</source>
-        <translation type="unfinished">未收到？重新發送</translation>
+        <translation>未收到？重新發送</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="401" />
         <source>返回表單</source>
-        <translation type="unfinished">返回表單</translation>
+        <translation>返回表單</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="436" />
         <source>所有欄位皆為必填</source>
-        <translation type="unfinished">所有欄位皆為必填</translation>
+        <translation>所有欄位皆為必填</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="441" />
         <source>國碼為必填（例如 +1、+886）</source>
-        <translation type="unfinished">國碼為必填（例如 +1、+886）</translation>
+        <translation>國碼為必填（例如 +1、+886）</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="457" />
         <source>密碼不一致</source>
-        <translation type="unfinished">密碼不一致</translation>
+        <translation>密碼不一致</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="462" />
         <source>密碼至少需要 8 個字元</source>
-        <translation type="unfinished">密碼至少需要 8 個字元</translation>
+        <translation>密碼至少需要 8 個字元</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="469" />
         <source>使用者名稱需 3-50 個字元</source>
-        <translation type="unfinished">使用者名稱需 3-50 個字元</translation>
+        <translation>使用者名稱需 3-50 個字元</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="475" />
         <source>  建立中...  </source>
-        <translation type="unfinished">  建立中...  </translation>
+        <translation>  建立中...  </translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="483" />
         <source>請輸入驗證碼</source>
-        <translation type="unfinished">請輸入驗證碼</translation>
+        <translation>請輸入驗證碼</translation>
     </message>
     <message>
         <location filename="../src/screens/auth/RegisterScreen.cpp" line="488" />
         <source>  驗證中...  </source>
-        <translation type="unfinished">  驗證中...  </translation>
+        <translation>  驗證中...  </translation>
     </message>
 </context>
 <context>
@@ -13381,48 +13442,48 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="107" />
         <source>CORPORATE INTELLIGENCE MAP</source>
-        <translation type="unfinished">企業情報地圖</translation>
+        <translation>企業情報地圖</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="115" />
         <source>Search assets (AAPL, Tesla, RELIANCE...)</source>
-        <translation type="unfinished">搜尋資產（AAPL、特斯拉、RELIANCE...）</translation>
+        <translation>搜尋資產（AAPL、特斯拉、RELIANCE...）</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="165" />
         <source>ANALYZE</source>
-        <translation type="unfinished">分析</translation>
+        <translation>分析</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="179" />
         <source>FIT</source>
-        <translation type="unfinished">FIT</translation>
+        <translation>FIT</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="182" />
         <source>Fit graph to view (or press Home)</source>
-        <translation type="unfinished">讓圖表符合檢視範圍（或按 Home）</translation>
+        <translation>讓圖表符合檢視範圍（或按 Home）</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="195" />
         <source>LAYERED</source>
-        <translation type="unfinished">分層</translation>
+        <translation>分層</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="196" />
         <source>RADIAL</source>
-        <translation type="unfinished">放射狀</translation>
+        <translation>放射狀</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="197" />
         <source>FORCE</source>
-        <translation type="unfinished">強制</translation>
+        <translation>強制</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="210" />
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="324" />
         <source>FILTERS</source>
-        <translation type="unfinished">篩選</translation>
+        <translation>篩選</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="233" />
@@ -13433,7 +13494,7 @@ financial news and economics tools.</source>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="287" />
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="789" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="299" />
@@ -13443,27 +13504,27 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="379" />
         <source>X</source>
-        <translation type="unfinished">X</translation>
+        <translation>X</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="425" />
         <source>LEGEND</source>
-        <translation type="unfinished">圖例</translation>
+        <translation>圖例</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="559" />
         <source>No results found</source>
-        <translation type="unfinished">找不到結果</translation>
+        <translation>找不到結果</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="655" />
         <source>Complete</source>
-        <translation type="unfinished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <location filename="../src/screens/relationship_map/RelationshipMapScreen.cpp" line="672" />
         <source>Error: </source>
-        <translation type="unfinished">Error:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
@@ -13471,7 +13532,7 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/geopolitics/RelationshipPanel.cpp" line="70" />
         <source>GEOPOLITICAL RELATIONSHIP NETWORK</source>
-        <translation type="unfinished">地緣政治關係網路</translation>
+        <translation>地緣政治關係網路</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/RelationshipPanel.cpp" line="228" />
@@ -13484,109 +13545,109 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="524" />
         <source>REPORT BUILDER</source>
-        <translation type="unfinished">報告 BUILDER</translation>
+        <translation>報告 BUILDER</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="762" />
         <source>Recent Reports</source>
-        <translation type="unfinished">近期報告</translation>
+        <translation>近期報告</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="774" />
         <source>Select a report to open:</source>
-        <translation type="unfinished">選擇要開啟的報告：</translation>
+        <translation>選擇要開啟的報告：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="780" />
         <source>(No recent reports)</source>
-        <translation type="unfinished">(無近期報告)</translation>
+        <translation>(無近期報告)</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="879" />
         <source>Report Templates</source>
-        <translation type="unfinished">報告 Template (範本)</translation>
+        <translation>報告 Template (範本)</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="905" />
         <source>Choose a template:</source>
-        <translation type="unfinished">選擇範本：</translation>
+        <translation>選擇範本：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="947" />
         <source>Select a template</source>
-        <translation type="unfinished">選擇a template</translation>
+        <translation>選擇a template</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="952" />
         <source>Pick a template from the list to see a description.</source>
-        <translation type="unfinished">從清單中選擇一個模板以查看說明。</translation>
+        <translation>從清單中選擇一個模板以查看說明。</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1006" />
         <source>Report Theme</source>
-        <translation type="unfinished">報告主題</translation>
+        <translation>報告主題</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1015" />
         <source>Select a color theme for your report:</source>
-        <translation type="unfinished">為您的報告選擇顏色主題：</translation>
+        <translation>為您的報告選擇顏色主題：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1058" />
         <source>Report Metadata</source>
-        <translation type="unfinished">報告 Metadata (中繼資料)</translation>
+        <translation>報告 Metadata (中繼資料)</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1076" />
         <source>yyyy-MM-dd</source>
-        <translation type="unfinished">yyyy-MM-dd</translation>
+        <translation>yyyy-MM-dd</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1079" />
         <source>Title:</source>
-        <translation type="unfinished">標題：</translation>
+        <translation>標題：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1081" />
         <source>Author:</source>
-        <translation type="unfinished">作者：</translation>
+        <translation>作者：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1083" />
         <source>Company:</source>
-        <translation type="unfinished">公司：</translation>
+        <translation>公司：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1085" />
         <source>Date:</source>
-        <translation type="unfinished">日期：</translation>
+        <translation>日期：</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1095" />
         <source>HEADER / FOOTER</source>
-        <translation type="unfinished">標題列 / 頁尾</translation>
+        <translation>標題列 / 頁尾</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1110" />
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1113" />
         <source>Left</source>
-        <translation type="unfinished">左</translation>
+        <translation>左</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1111" />
         <source>Center</source>
-        <translation type="unfinished">中心</translation>
+        <translation>中心</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1112" />
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1115" />
         <source>Right</source>
-        <translation type="unfinished">右</translation>
+        <translation>右</translation>
     </message>
     <message>
         <location filename="../src/screens/report_builder/ReportBuilderScreen.cpp" line="1114" />
         <source>Center (use {page})</source>
-        <translation type="unfinished">置中（使用 {page}）</translation>
+        <translation>置中（使用 {page}）</translation>
     </message>
 </context>
 <context>
@@ -13594,37 +13655,37 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="39" />
         <source>SUMMARY</source>
-        <translation type="unfinished">摘要</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="46" />
         <source>TRANSACTION HISTORY</source>
-        <translation type="unfinished">TRANSACTION 歷史</translation>
+        <translation>TRANSACTION 歷史</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="73" />
         <source>TRANSACTIONS</source>
-        <translation type="unfinished">TRANSACTIONS</translation>
+        <translation>TRANSACTIONS</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="80" />
         <source>PERFORMANCE ATTRIBUTION</source>
-        <translation type="unfinished">績效 ATTRIBUTION</translation>
+        <translation>績效 ATTRIBUTION</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="101" />
         <source>ATTRIBUTION</source>
-        <translation type="unfinished">歸因</translation>
+        <translation>歸因</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="122" />
         <source>PORTFOLIO SUMMARY REPORT</source>
-        <translation type="unfinished">投資組合 摘要 報告</translation>
+        <translation>投資組合 摘要 報告</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/ReportsView.cpp" line="172" />
         <source>HOLDINGS BREAKDOWN</source>
-        <translation type="unfinished">HOLDINGS 分解</translation>
+        <translation>HOLDINGS 分解</translation>
     </message>
 </context>
 <context>
@@ -13632,37 +13693,37 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="59" />
         <source>RISK OVERVIEW</source>
-        <translation type="unfinished">風險概覽</translation>
+        <translation>風險概覽</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="66" />
         <source>PORTFOLIO STRESS TESTING</source>
-        <translation type="unfinished">投資組合壓力測試</translation>
+        <translation>投資組合壓力測試</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="71" />
         <source>Estimated impact of historical and hypothetical market scenarios</source>
-        <translation type="unfinished">歷史和假設市場情景的估計影響</translation>
+        <translation>歷史和假設市場情景的估計影響</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="95" />
         <source>STRESS TEST</source>
-        <translation type="unfinished">壓力測試</translation>
+        <translation>壓力測試</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="102" />
         <source>RISK CONTRIBUTION BY HOLDING</source>
-        <translation type="unfinished">所持有的風險貢獻</translation>
+        <translation>所持有的風險貢獻</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="124" />
         <source>RISK CONTRIBUTION</source>
-        <translation type="unfinished">風險貢獻</translation>
+        <translation>風險貢獻</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/views/RiskManagementView.cpp" line="150" />
         <source>PORTFOLIO RISK OVERVIEW</source>
-        <translation type="unfinished">投資組合 風險 總覽</translation>
+        <translation>投資組合 風險 總覽</translation>
     </message>
 </context>
 <context>
@@ -13670,17 +13731,17 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/RiskMetricsWidget.cpp" line="31" />
         <source>VIX FEAR GAUGE</source>
-        <translation type="unfinished">VIX 恐懼指標</translation>
+        <translation>VIX 恐懼指標</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/RiskMetricsWidget.cpp" line="68" />
         <source>HIGH-BETA STOCKS</source>
-        <translation type="unfinished">高 Beta 股票</translation>
+        <translation>高 Beta 股票</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/RiskMetricsWidget.cpp" line="99" />
         <source>SPREAD PROXIES</source>
-        <translation type="unfinished">價差 PROXIES</translation>
+        <translation>價差 PROXIES</translation>
     </message>
 </context>
 <context>
@@ -13688,12 +13749,12 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="281" />
         <source>SCAN CONDITIONS</source>
-        <translation type="unfinished">掃描條件</translation>
+        <translation>掃描條件</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="286" />
         <source>PRESET</source>
-        <translation type="unfinished">預設</translation>
+        <translation>預設</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="293" />
@@ -13703,12 +13764,12 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="303" />
         <source>LOGIC:</source>
-        <translation type="unfinished">邏輯：</translation>
+        <translation>邏輯：</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="324" />
         <source>+ ADD CONDITION</source>
-        <translation type="unfinished">+ 新增條件</translation>
+        <translation>+ 新增條件</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="348" />
@@ -13718,7 +13779,7 @@ financial news and economics tools.</source>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="353" />
         <source>SYMBOLS (comma or newline separated)</source>
-        <translation type="unfinished">代碼（以逗號或換行分隔）</translation>
+        <translation>代碼（以逗號或換行分隔）</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="360" />
@@ -13726,47 +13787,50 @@ financial news and economics tools.</source>
 TCS
 INFY
 ...</source>
-        <translation type="unfinished" />
+        <translation>RELIANCE
+TCS
+INFY
+...</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="367" />
         <source>NIFTY 50</source>
-        <translation type="unfinished">NIFTY 50</translation>
+        <translation>NIFTY 50</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="382" />
         <source>BANK NIFTY</source>
-        <translation type="unfinished">BANK NIFTY</translation>
+        <translation>BANK NIFTY</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="394" />
         <source>TIMEFRAME</source>
-        <translation type="unfinished">TIMEFRAME</translation>
+        <translation>TIMEFRAME</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="406" />
         <source>LOOKBACK (DAYS)</source>
-        <translation type="unfinished">回顧天數</translation>
+        <translation>回顧天數</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="424" />
         <source>SCAN MARKET</source>
-        <translation type="unfinished">掃描市場</translation>
+        <translation>掃描市場</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="447" />
         <source>SCAN RESULTS</source>
-        <translation type="unfinished">掃描結果</translation>
+        <translation>掃描結果</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="497" />
         <source>Add at least one scan condition.</source>
-        <translation type="unfinished">請至少新增一個掃描條件。</translation>
+        <translation>請至少新增一個掃描條件。</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/ScannerPanel.cpp" line="508" />
         <source>Enter symbols to scan.</source>
-        <translation type="unfinished">輸入要掃描的 Symbol (股票代碼)。</translation>
+        <translation>輸入要掃描的 Symbol (股票代碼)。</translation>
     </message>
 </context>
 <context>
@@ -13774,7 +13838,7 @@ INFY
     <message>
         <location filename="../src/screens/dashboard/widgets/ScreenerWidget.cpp" line="32" />
         <source>排序</source>
-        <translation type="unfinished">排序</translation>
+        <translation>排序</translation>
     </message>
 </context>
 <context>
@@ -13782,7 +13846,7 @@ INFY
     <message>
         <location filename="../src/ui/widgets/SearchBar.cpp" line="16" />
         <source>Enter command or search...</source>
-        <translation type="unfinished">輸入命令或搜尋...</translation>
+        <translation>輸入命令或搜尋...</translation>
     </message>
 </context>
 <context>
@@ -13790,17 +13854,17 @@ INFY
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="885" />
         <source>MAP HOLDINGS TO SECTORS</source>
-        <translation type="unfinished">將持股對應至類股</translation>
+        <translation>將持股對應至類股</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="890" />
         <source>Assign each holding to a sector for allocation analysis.</source>
-        <translation type="unfinished">將每個資產分配到一個部門進行分配分析。</translation>
+        <translation>將每個資產分配到一個部門進行分配分析。</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="924" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="934" />
@@ -13813,22 +13877,22 @@ INFY
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="494" />
         <source>Sell Asset</source>
-        <translation type="unfinished">賣出 Asset (資產)</translation>
+        <translation>賣出 Asset (資產)</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="525" />
         <source>Sell price</source>
-        <translation type="unfinished">賣出價格</translation>
+        <translation>賣出價格</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="534" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../src/screens/portfolio/PortfolioDialogs.cpp" line="544" />
         <source>SELL</source>
-        <translation type="unfinished">賣出</translation>
+        <translation>賣出</translation>
     </message>
 </context>
 <context>
@@ -14110,22 +14174,22 @@ INFY
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2402" />
         <source>LOGGING</source>
-        <translation type="unfinished">日誌記錄</translation>
+        <translation>日誌記錄</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2408" />
         <source>Global Log Level</source>
-        <translation type="unfinished">全球 日誌 Level</translation>
+        <translation>全球 日誌 Level</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2412" />
         <source>Minimum level for all tags unless overridden.</source>
-        <translation type="unfinished">除非被覆蓋，否則所有標籤的最低等級。</translation>
+        <translation>除非被覆蓋，否則所有標籤的最低等級。</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2429" />
         <source>Output Format</source>
-        <translation type="unfinished">輸出格式</translation>
+        <translation>輸出格式</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2445" />
@@ -14135,27 +14199,27 @@ INFY
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2461" />
         <source>Open Log Folder</source>
-        <translation type="unfinished">開啟 日誌 Folder</translation>
+        <translation>開啟 日誌 Folder</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2469" />
         <source>Copy Path</source>
-        <translation type="unfinished">複製 Path</translation>
+        <translation>複製 Path</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2485" />
         <source>Per-Tag Overrides</source>
-        <translation type="unfinished">依標籤覆寫</translation>
+        <translation>依標籤覆寫</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2489" />
         <source>Override the log level for a specific tag (e.g. ExchangeService, AgentService).</source>
-        <translation type="unfinished">覆寫特定標記（例如 ExchangeService、AgentService）的日誌等級。</translation>
+        <translation>覆寫特定標記（例如 ExchangeService、AgentService）的日誌等級。</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2510" />
         <source>Tag name</source>
-        <translation type="unfinished">Tag (標籤) 名稱</translation>
+        <translation>Tag (標籤) 名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2520" />
@@ -14165,117 +14229,117 @@ INFY
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2542" />
         <source>+ Add Tag Override</source>
-        <translation type="unfinished">+ 新增標籤覆寫</translation>
+        <translation>+ 新增標籤覆寫</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2551" />
         <source>Apply &amp; Save</source>
-        <translation type="unfinished">套用並儲存</translation>
+        <translation>套用並儲存</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2619" />
         <source>PIN AUTHENTICATION</source>
-        <translation type="unfinished">密碼驗證</translation>
+        <translation>密碼驗證</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2639" />
         <source>CHANGE PIN</source>
-        <translation type="unfinished">漲跌 PIN 碼</translation>
+        <translation>漲跌 PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2644" />
         <source>Change PIN</source>
-        <translation type="unfinished">漲跌 PIN 碼</translation>
+        <translation>漲跌 PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2691" />
         <source>Update PIN</source>
-        <translation type="unfinished">更新 PIN 碼</translation>
+        <translation>更新 PIN 碼</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2746" />
         <source>New PINs do not match</source>
-        <translation type="unfinished">新 PIN 不一致</translation>
+        <translation>新 PIN 不一致</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2774" />
         <source>PIN updated successfully</source>
-        <translation type="unfinished">PIN 已成功更新</translation>
+        <translation>PIN 已成功更新</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2789" />
         <source>AUTO-LOCK</source>
-        <translation type="unfinished">自動鎖定</translation>
+        <translation>自動鎖定</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2800" />
         <source>1 min</source>
-        <translation type="unfinished">1 分鐘</translation>
+        <translation>1 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2801" />
         <source>2 min</source>
-        <translation type="unfinished">2 最小</translation>
+        <translation>2 最小</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2802" />
         <source>5 min</source>
-        <translation type="unfinished">5 分鐘</translation>
+        <translation>5 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2803" />
         <source>10 min</source>
-        <translation type="unfinished">10 分鐘</translation>
+        <translation>10 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2804" />
         <source>15 min</source>
-        <translation type="unfinished">15 分鐘</translation>
+        <translation>15 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2805" />
         <source>30 min</source>
-        <translation type="unfinished">30 分鐘</translation>
+        <translation>30 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2806" />
         <source>60 min</source>
-        <translation type="unfinished">60 分鐘</translation>
+        <translation>60 分鐘</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2823" />
         <source>Save Security Settings</source>
-        <translation type="unfinished">儲存 Security 設定</translation>
+        <translation>儲存 Security 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2857" />
         <source>AUDIT LOG</source>
-        <translation type="unfinished">AUDIT 日誌</translation>
+        <translation>AUDIT 日誌</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2862" />
         <source>Recent security events (PIN setup, failed unlocks, inactivity locks).</source>
-        <translation type="unfinished">最近的安全事件（PIN 設定、解鎖失敗、不活動鎖定）。</translation>
+        <translation>最近的安全事件（PIN 設定、解鎖失敗、不活動鎖定）。</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2901" />
         <source>(no events recorded yet)</source>
-        <translation type="unfinished">(尚無已記錄的事件)</translation>
+        <translation>(尚無已記錄的事件)</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2911" />
         <source>CONFIGURED</source>
-        <translation type="unfinished">已設定</translation>
+        <translation>已設定</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2913" />
         <source>NOT SET</source>
-        <translation type="unfinished">未設定</translation>
+        <translation>未設定</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2922" />
         <source>0 / 5</source>
-        <translation type="unfinished">0 / 5</translation>
+        <translation>0 / 5</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2979" />
@@ -14285,27 +14349,27 @@ INFY
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="2998" />
         <source>All profiles</source>
-        <translation type="unfinished">All 設定檔</translation>
+        <translation>All 設定檔</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="3019" />
         <source>ACTIVE</source>
-        <translation type="unfinished">啟用中</translation>
+        <translation>啟用中</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="3026" />
         <source>Switch</source>
-        <translation type="unfinished">切換</translation>
+        <translation>切換</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="3042" />
         <source>Create new profile</source>
-        <translation type="unfinished">建立 新增 設定檔</translation>
+        <translation>建立 新增 設定檔</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="3052" />
         <source>profile-name  (alphanumeric, - and _ only)</source>
-        <translation type="unfinished">設定檔名稱（僅限字母數字、- 和 _）</translation>
+        <translation>設定檔名稱（僅限字母數字、- 和 _）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="3056" />
@@ -14315,7 +14379,7 @@ INFY
     <message>
         <location filename="../src/screens/settings/SettingsScreen.cpp" line="3111" />
         <source>DataHub Inspector</source>
-        <translation type="unfinished">DataHub 檢視器</translation>
+        <translation>DataHub 檢視器</translation>
     </message>
 <message><location filename="../src/screens/settings/SettingsScreen.cpp" line="202" /><source>Credentials</source><translation>憑證</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="203" /><source>Appearance</source><translation>外觀</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="204" /><source>Notifications</source><translation>通知</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="205" /><source>Storage &amp; Cache</source><translation>儲存與快取</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="206" /><source>Data Sources</source><translation>資料來源</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="207" /><source>LLM Config</source><translation>LLM 設定</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="208" /><source>MCP Servers</source><translation>MCP 伺服器</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="209" /><source>Logging</source><translation>日誌紀錄</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="210" /><source>Security</source><translation>安全性</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="212" /><source>Keybindings</source><translation>快捷鍵</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="213" /><source>Python Env</source><translation>Python 環境</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="214" /><source>Developer</source><translation>開發者</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="215" /><source>Voice</source><translation>語音</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="540" /><source>Font Size</source><translation>字型大小</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="546" /><source>Font Family</source><translation>字型</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="578" /><source>Content Density</source><translation>內容密度</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="578" /><source>Controls padding and spacing throughout the UI.</source><translation>控制整個介面的間距與留白。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="592" /><source>Show AI Chat Bubble</source><translation>顯示 AI 聊天氣泡</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="596" /><source>AI Chat Bubble</source><translation>AI 聊天氣泡</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="596" /><source>Floating chat assistant in the bottom-right corner.</source><translation>懸浮在右下角的聊天助手。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="598" /><source>Show Ticker Bar</source><translation>顯示行情跑馬燈</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="601" /><source>Ticker Bar</source><translation>行情跑馬燈</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="601" /><source>Live price ticker at the bottom of the screen.</source><translation>畫面底部的即時行情跑馬燈。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="603" /><source>Enable Animations</source><translation>啟用動畫效果</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="606" /><source>Animations</source><translation>動畫效果</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="606" /><source>Fade and transition effects throughout the UI.</source><translation>整個介面的淡入淡出與轉場效果。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="993" /><source>In-App Alerts (toast + bell)</source><translation>應用內通知（提示 + 鈴鐺）</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="993" /><source>Show slide-in toasts and update bell badge.</source><translation>顯示滑入提示並更新鈴鐺標記。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="994" /><source>Price Alerts</source><translation>價格警報</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="994" /><source>Notify when price alert thresholds are crossed.</source><translation>當價格超過警報門檻時發送通知。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="995" /><source>News Alerts</source><translation>新聞警報</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="995" /><source>Enable news notifications (configure which types below).</source><translation>啟用新聞通知（在下方設定接收類型）。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1016" /><source>Breaking News</source><translation>突發新聞</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1016" /><source>Notify on FLASH/BREAKING/URGENT priority clusters.</source><translation>快訊/突發/緊急優先級叢集發生時通知。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1018" /><source>Monitor Keyword Matches</source><translation>關鍵字監控匹配</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1018" /><source>Notify when a news monitor watch list gets new matches.</source><translation>新聞監控的追蹤清單有新匹配時通知。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1019" /><source>Category Volume Spikes</source><translation>分類流量異常飆升</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1019" /><source>Notify when a category has abnormally high article volume (z-score ≥ 3).</source><translation>當某分類的文章數量異常偏高（z-score ≥ 3）時通知。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1021" /><source>FLASH + High-Impact Articles</source><translation>快訊 + 高影響力文章</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1021" /><source>Notify on individual articles that are both FLASH priority and high market impact.</source><translation>同時具備快訊優先級和高市場影響力的個別文章時通知。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1029" /><source>Order Fill Alerts</source><translation>訂單成交警報</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1029" /><source>Notify when orders are filled or rejected.</source><translation>訂單成交或被拒絕時通知。</translation></message><message><location filename="../src/screens/settings/SettingsScreen.cpp" line="1303" /><source>Manage all persistent data, databases, and files. Execute SQL queries directly against terminal databases.</source><translation>管理所有持久化資料、資料庫和檔案。直接對終端資料庫執行 SQL 查詢。</translation></message></context>
 <context>
@@ -14323,17 +14387,17 @@ INFY
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="97" />
         <source>POLL refreshes balances on a TTL via the configured RPC. STREAM opens a WebSocket account subscription — requires Helius or a private RPC.</source>
-        <translation type="unfinished" />
+        <translation>POLL 透過設定的 RPC 依 TTL 重新整理餘額。STREAM 開啟 WebSocket 帳戶訂閱 — 需要 Helius 或私有 RPC。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="143" />
         <source>Paste a Helius API key for reliable account-subscribe streaming and parsed transaction history. Stored in SecureStorage; never transmitted off-machine except in RPC requests to api.helius.xyz.</source>
-        <translation type="unfinished" />
+        <translation>貼上 Helius API 金鑰以獲得可靠的帳戶訂閱串流和已解析的交易歷史。儲存於 SecureStorage；除了向 api.helius.xyz 發送 RPC 請求外，永遠不會傳送至機器外。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="155" />
         <source>paste API key…</source>
-        <translation type="unfinished">貼上 API key…</translation>
+        <translation>貼上 API key…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="160" />
@@ -14348,48 +14412,48 @@ INFY
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="190" />
         <source>Default slippage tolerance for swaps. Quotes whose route impact exceeds this value are blocked. Adjustable per-swap on the TRADE tab.</source>
-        <translation type="unfinished" />
+        <translation>交換的預設滑點容忍值。路由影響超過此值的報價將被阻擋。可在「交易」分頁中逐筆調整。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="227" />
         <source>Pump.fun-launched wallets accumulate airdropped junk over time. By default the holdings panel hides tokens that aren't in Jupiter's verified-tagged list. Toggle this on to see every SPL token account in the wallet.</source>
-        <translation type="unfinished" />
+        <translation>Pump.fun 發行的錢包會隨時間累積空投的垃圾代幣。預設情況下，持倉面板會隱藏不在 Jupiter 驗證標籤清單中的代幣。開啟此選項可查看錢包中所有 SPL 代幣帳戶。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="237" />
         <source>Show unverified tokens in the holdings panel</source>
-        <translation type="unfinished">在持有面板中顯示未經驗證的代幣</translation>
+        <translation>在持有面板中顯示未經驗證的代幣</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="329" />
         <source>Stored — input is hidden. Type to replace.</source>
-        <translation type="unfinished">儲存 - 輸入被隱藏。鍵入要替換的內容。</translation>
+        <translation>儲存 - 輸入被隱藏。鍵入要替換的內容。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="331" />
         <source>No key stored. Public RPC will be used.</source>
-        <translation type="unfinished">未儲存金鑰。將使用公共 RPC。</translation>
+        <translation>未儲存金鑰。將使用公共 RPC。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="374" />
         <source>Empty input — use CLEAR to remove a stored key.</source>
-        <translation type="unfinished">空輸入 - 使用 CLEAR 刪除儲存的金鑰。</translation>
+        <translation>空輸入 - 使用 CLEAR 刪除儲存的金鑰。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="380" />
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="392" />
         <source>Failed: %1</source>
-        <translation type="unfinished">失敗：%1</translation>
+        <translation>失敗：%1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="384" />
         <source>Saved. Restart streaming to use the new key.</source>
-        <translation type="unfinished">已儲存。重新啟動串流以使用新密鑰。</translation>
+        <translation>已儲存。重新啟動串流以使用新密鑰。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/tabs/SettingsTab.cpp" line="396" />
         <source>Cleared. Public RPC will be used.</source>
-        <translation type="unfinished">已清除。將使用公共 RPC。</translation>
+        <translation>已清除。將使用公共 RPC。</translation>
     </message>
 </context>
 <context>
@@ -14409,7 +14473,8 @@ INFY
         <location filename="../src/screens/setup/SetupScreen.cpp" line="92" />
         <source>We need to download a few tools and data libraries once.
 This only happens the first time — future launches are instant.</source>
-        <translation type="unfinished" />
+        <translation>我們需要下載一些工具和資料庫（僅此一次）。
+這只會在首次啟動時發生 — 之後的啟動將會即時完成。</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="110" />
@@ -14419,7 +14484,7 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="110" />
         <source>Downloads the tool that manages everything else (~13 MB)</source>
-        <translation type="unfinished">下載管理其他一切的工具（約 13 MB）</translation>
+        <translation>下載管理其他一切的工具（約 13 MB）</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="112" />
@@ -14429,7 +14494,7 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="112" />
         <source>The programming language engine used for all analytics</source>
-        <translation type="unfinished">用於所有分析功能的程式語言引擎</translation>
+        <translation>用於所有分析功能的程式語言引擎</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="113" />
@@ -14439,7 +14504,7 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="114" />
         <source>Two sandboxed environments to keep library versions conflict-free</source>
-        <translation type="unfinished">兩個沙箱環境，避免函式庫版本衝突</translation>
+        <translation>兩個沙箱環境，避免函式庫版本衝突</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="115" />
@@ -14449,7 +14514,7 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="116" />
         <source>Backtesting, portfolio optimization and legacy quant tools</source>
-        <translation type="unfinished">回測、投資組合最佳化及傳統量化工具</translation>
+        <translation>回測、投資組合最佳化及傳統量化工具</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="117" />
@@ -14459,7 +14524,7 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="118" />
         <source>Machine learning, data science and AI agent frameworks</source>
-        <translation type="unfinished">機器學習、資料科學及 AI 代理框架</translation>
+        <translation>機器學習、資料科學及 AI 代理框架</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="123" />
@@ -14471,19 +14536,19 @@ This only happens the first time — future launches are instant.</source>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="153" />
         <location filename="../src/screens/setup/SetupScreen.cpp" line="337" />
         <source>Elapsed: 0s</source>
-        <translation type="unfinished">已用時間：0 秒</translation>
+        <translation>已用時間：0 秒</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="158" />
         <location filename="../src/screens/setup/SetupScreen.cpp" line="339" />
         <source>↓ 0 B/s</source>
-        <translation type="unfinished" />
+        <translation>↓ 0 B/s</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="163" />
         <location filename="../src/screens/setup/SetupScreen.cpp" line="341" />
         <source>↑ 0 B/s</source>
-        <translation type="unfinished" />
+        <translation>↑ 0 B/s</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="186" />
@@ -14493,7 +14558,7 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="199" />
         <source>Installing to: </source>
-        <translation type="unfinished">安裝路徑：</translation>
+        <translation>安裝路徑：</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="251" />
@@ -14518,22 +14583,22 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="354" />
         <source>↓ </source>
-        <translation type="unfinished" />
+        <translation>↓ </translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="356" />
         <source>↑ </source>
-        <translation type="unfinished" />
+        <translation>↑ </translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="367" />
         <source>Elapsed: %1s</source>
-        <translation type="unfinished">已耗時：%1 秒</translation>
+        <translation>已耗時：%1 秒</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="369" />
         <source>Elapsed: %1m %2s</source>
-        <translation type="unfinished">已耗時：%1 分 %2 秒</translation>
+        <translation>已耗時：%1 分 %2 秒</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="383" />
@@ -14553,73 +14618,74 @@ This only happens the first time — future launches are instant.</source>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="407" />
         <source>trading library list</source>
-        <translation type="unfinished">交易函式庫清單</translation>
+        <translation>交易函式庫清單</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="408" />
         <source>analytics library list</source>
-        <translation type="unfinished">分析函式庫清單</translation>
+        <translation>分析函式庫清單</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="421" />
         <source>Everything is ready! Launching Fincept Terminal...</source>
-        <translation type="unfinished">一切就緒！正在啟動 Fincept 終端機...</translation>
+        <translation>一切就緒！正在啟動 Fincept 終端機...</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="424" />
         <source>LAUNCH</source>
-        <translation type="unfinished">啟動</translation>
+        <translation>啟動</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="434" />
         <source>RETRY SETUP</source>
-        <translation type="unfinished">重試設定</translation>
+        <translation>重試設定</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="435" />
         <source>Something went wrong during setup. Check your internet connection and try again.</source>
-        <translation type="unfinished">設定期間發生錯誤。請檢查網路連線後再試一次。</translation>
+        <translation>設定期間發生錯誤。請檢查網路連線後再試一次。</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="457" />
         <source>Setup is taking longer than expected — possibly a slow internet connection.
 You can wait or skip and continue with limited functionality.</source>
-        <translation type="unfinished" />
+        <translation>設定花費的時間比預期長 — 可能是網路連線較慢。
+您可以等待，或跳過並以有限功能繼續使用。</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="471" />
         <source>DONE</source>
-        <translation type="unfinished">完成</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="507" />
         <source>Your workspace is fully configured</source>
-        <translation type="unfinished">你的 Workspace (工作區) 已完成設定</translation>
+        <translation>你的 Workspace (工作區) 已完成設定</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="509" />
         <source>ALREADY COMPLETE</source>
-        <translation type="unfinished">已完成</translation>
+        <translation>已完成</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="510" />
         <source>Everything is installed and ready to go.</source>
-        <translation type="unfinished">所有項目皆已安裝並可開始使用。</translation>
+        <translation>所有項目皆已安裝並可開始使用。</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="512" />
         <source>Finishing your workspace setup</source>
-        <translation type="unfinished">正在完成 Workspace (工作區) 設定</translation>
+        <translation>正在完成 Workspace (工作區) 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="513" />
         <source>CONTINUE SETUP</source>
-        <translation type="unfinished">繼續設定</translation>
+        <translation>繼續設定</translation>
     </message>
     <message>
         <location filename="../src/screens/setup/SetupScreen.cpp" line="519" />
         <source>Takes about 3–5 minutes. Needs an internet connection.</source>
-        <translation type="unfinished">大約需要 3–5 分鐘。需要網路連線。</translation>
+        <translation>大約需要 3–5 分鐘。需要網路連線。</translation>
     </message>
 </context>
 <context>
@@ -14628,22 +14694,22 @@ You can wait or skip and continue with limited functionality.</source>
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="23" />
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="31" />
         <source>Sign transaction</source>
-        <translation type="unfinished">簽署交易</translation>
+        <translation>簽署交易</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="37" />
         <source>Approve the transaction in your wallet to complete this action.</source>
-        <translation type="unfinished">批准您錢包中的交易以完成此操作。</translation>
+        <translation>批准您錢包中的交易以完成此操作。</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="46" />
         <source>Opening your browser to relay the transaction…</source>
-        <translation type="unfinished">正在開啟瀏覽器以轉發交易…</translation>
+        <translation>正在開啟瀏覽器以轉發交易…</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="53" />
         <source>Reopen browser</source>
-        <translation type="unfinished">重新開啟瀏覽器</translation>
+        <translation>重新開啟瀏覽器</translation>
     </message>
     <message>
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="54" />
@@ -14653,7 +14719,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/services/wallet/SignTransactionDialog.cpp" line="110" />
         <source>Browser opened. Approve the transaction in your wallet. The terminal is waiting on a single-use loopback bridge — this dialog will close automatically when the wallet returns the signature.</source>
-        <translation type="unfinished" />
+        <translation>瀏覽器已開啟。請在錢包中核准交易。終端正在等待一次性回環橋接 — 當錢包返回簽名後，此對話框將自動關閉。</translation>
     </message>
 </context>
 <context>
@@ -14661,12 +14727,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/SparklineStripWidget.cpp" line="190" />
         <source>Configure — Sparklines</source>
-        <translation type="unfinished">設定 — Sparklines</translation>
+        <translation>設定 — Sparklines</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/SparklineStripWidget.cpp" line="195" />
         <source>e.g. AAPL, MSFT, NVDA</source>
-        <translation type="unfinished">例如：AAPL, MSFT, NVDA</translation>
+        <translation>例如：AAPL, MSFT, NVDA</translation>
     </message>
 </context>
 <context>
@@ -14674,17 +14740,17 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="291" />
         <source>A1</source>
-        <translation type="unfinished">A1</translation>
+        <translation>A1</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="299" />
         <source>fx</source>
-        <translation type="unfinished">fx</translation>
+        <translation>fx</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="504" />
         <source>Cut</source>
-        <translation type="unfinished">剪下</translation>
+        <translation>剪下</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="511" />
@@ -14694,42 +14760,42 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="517" />
         <source>Paste</source>
-        <translation type="unfinished">貼上</translation>
+        <translation>貼上</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="525" />
         <source>Insert Row Above</source>
-        <translation type="unfinished">在上方插入行</translation>
+        <translation>在上方插入行</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="526" />
         <source>Insert Row Below</source>
-        <translation type="unfinished">在下面插入行</translation>
+        <translation>在下面插入行</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="527" />
         <source>Insert Column Left</source>
-        <translation type="unfinished">向左插入列</translation>
+        <translation>向左插入列</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="528" />
         <source>Insert Column Right</source>
-        <translation type="unfinished">右插入列</translation>
+        <translation>右插入列</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="530" />
         <source>Delete Selected Rows</source>
-        <translation type="unfinished">刪除 已選取 列</translation>
+        <translation>刪除 已選取 列</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="531" />
         <source>Delete Selected Columns</source>
-        <translation type="unfinished">刪除 已選取 欄位</translation>
+        <translation>刪除 已選取 欄位</translation>
     </message>
     <message>
         <location filename="../src/screens/excel/SpreadsheetWidget.cpp" line="533" />
         <source>Clear Cell</source>
-        <translation type="unfinished">清除儲存格</translation>
+        <translation>清除儲存格</translation>
     </message>
 </context>
 <context>
@@ -14737,7 +14803,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/economics/panels/StatCanPanel.cpp" line="53" />
         <source>SERIES</source>
-        <translation type="unfinished">序列</translation>
+        <translation>序列</translation>
     </message>
 </context>
 <context>
@@ -14745,22 +14811,22 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/widgets/StatusBadge.cpp" line="14" />
         <source>CONNECTED</source>
-        <translation type="unfinished">已連線</translation>
+        <translation>已連線</translation>
     </message>
     <message>
         <location filename="../src/ui/widgets/StatusBadge.cpp" line="18" />
         <source>OFFLINE</source>
-        <translation type="unfinished">離線</translation>
+        <translation>離線</translation>
     </message>
     <message>
         <location filename="../src/ui/widgets/StatusBadge.cpp" line="22" />
         <source>LOADING...</source>
-        <translation type="unfinished">載入中...</translation>
+        <translation>載入中...</translation>
     </message>
     <message>
         <location filename="../src/ui/widgets/StatusBadge.cpp" line="26" />
         <source>READY</source>
-        <translation type="unfinished">就緒</translation>
+        <translation>就緒</translation>
     </message>
 </context>
 <context>
@@ -14768,99 +14834,99 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="175" />
         <source>X</source>
-        <translation type="unfinished">X</translation>
+        <translation>X</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="234" />
         <source>STRATEGY DEFINITION</source>
-        <translation type="unfinished">策略定義</translation>
+        <translation>策略定義</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="238" />
         <source>NAME</source>
-        <translation type="unfinished">名稱</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="242" />
         <source>My Strategy</source>
-        <translation type="unfinished">我的策略</translation>
+        <translation>我的策略</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="247" />
         <source>DESCRIPTION</source>
-        <translation type="unfinished">說明</translation>
+        <translation>說明</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="251" />
         <source>Strategy description...</source>
-        <translation type="unfinished">Strategy (策略) 說明...</translation>
+        <translation>Strategy (策略) 說明...</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="256" />
         <source>TIMEFRAME</source>
-        <translation type="unfinished">TIMEFRAME</translation>
+        <translation>TIMEFRAME</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="270" />
         <source>ENTRY CONDITIONS</source>
-        <translation type="unfinished">進場條件</translation>
+        <translation>進場條件</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="273" />
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="315" />
         <source>Logic:</source>
-        <translation type="unfinished">邏輯：</translation>
+        <translation>邏輯：</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="291" />
         <source>+ ADD ENTRY CONDITION</source>
-        <translation type="unfinished">+ 新增進場條件</translation>
+        <translation>+ 新增進場條件</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="312" />
         <source>EXIT CONDITIONS</source>
-        <translation type="unfinished">出場條件</translation>
+        <translation>出場條件</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="333" />
         <source>+ ADD EXIT CONDITION</source>
-        <translation type="unfinished">+ 新增出場條件</translation>
+        <translation>+ 新增出場條件</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="343" />
         <source>RISK MANAGEMENT</source>
-        <translation type="unfinished">風險管理</translation>
+        <translation>風險管理</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="381" />
         <source>SAVE STRATEGY</source>
-        <translation type="unfinished">儲存策略</translation>
+        <translation>儲存策略</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="427" />
         <source>BACKTEST PARAMETERS</source>
-        <translation type="unfinished">回測參數</translation>
+        <translation>回測參數</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="451" />
         <source>RELIANCE</source>
-        <translation type="unfinished">RELIANCE</translation>
+        <translation>RELIANCE</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="466" />
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="473" />
         <source>YYYY-MM-DD</source>
-        <translation type="unfinished">YYYY-MM-DD</translation>
+        <translation>YYYY-MM-DD</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="482" />
         <source>RUN BACKTEST</source>
-        <translation type="unfinished">執行回測</translation>
+        <translation>執行回測</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="513" />
         <source>Run a backtest to see results</source>
-        <translation type="unfinished">執行回測以查看結果</translation>
+        <translation>執行回測以查看結果</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="667" />
@@ -14870,32 +14936,32 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="677" />
         <source>Total trades</source>
-        <translation type="unfinished">總交易筆數</translation>
+        <translation>總交易筆數</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="688" />
         <source>Backtest complete.</source>
-        <translation type="unfinished">Backtest (回測) 完成。</translation>
+        <translation>Backtest (回測) 完成。</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="702" />
         <source>Strategy name is required.</source>
-        <translation type="unfinished">Strategy (策略) 名稱為必填。</translation>
+        <translation>Strategy (策略) 名稱為必填。</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="724" />
         <source>Saving...</source>
-        <translation type="unfinished">儲存中...</translation>
+        <translation>儲存中...</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="776" />
         <source>Enter a symbol for backtesting.</source>
-        <translation type="unfinished">輸入回測符號。</translation>
+        <translation>輸入回測符號。</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyBuilderPanel.cpp" line="785" />
         <source>Running backtest...</source>
-        <translation type="unfinished">執行 Backtest (回測) 中...</translation>
+        <translation>執行 Backtest (回測) 中...</translation>
     </message>
 </context>
 <context>
@@ -14903,38 +14969,38 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="56" />
         <source>Search strategies...</source>
-        <translation type="unfinished">搜尋策略...</translation>
+        <translation>搜尋策略...</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="71" />
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="309" />
         <source>All Categories</source>
-        <translation type="unfinished">All 分類</translation>
+        <translation>All 分類</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="85" />
         <source>SORT:</source>
-        <translation type="unfinished">排序：</translation>
+        <translation>排序：</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="100" />
         <source>0 strategies</source>
-        <translation type="unfinished">0 個策略</translation>
+        <translation>0 個策略</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="162" />
         <source>◀ PREV</source>
-        <translation type="unfinished">◀ 上一步</translation>
+        <translation>◀ 上一步</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="168" />
         <source>Page 1 of 1</source>
-        <translation type="unfinished">第 1 頁，共 1 頁</translation>
+        <translation>第 1 頁，共 1 頁</translation>
     </message>
     <message>
         <location filename="../src/screens/algo_trading/StrategyListPanel.cpp" line="177" />
         <source>NEXT ▶</source>
-        <translation type="unfinished">下一步 ▶</translation>
+        <translation>下一步 ▶</translation>
     </message>
 </context>
 <context>
@@ -14942,7 +15008,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/SupplyChartPanel.cpp" line="277" />
         <source>Supply history feed error: %1</source>
-        <translation type="unfinished">供應歷史進給錯誤：%1</translation>
+        <translation>供應歷史進給錯誤：%1</translation>
     </message>
 </context>
 <context>
@@ -14950,32 +15016,32 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="204" />
         <source>Refresh tickets</source>
-        <translation type="unfinished">重新整理 Tickets (工單)</translation>
+        <translation>重新整理 Tickets (工單)</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="314" />
         <source>＋  New Ticket</source>
-        <translation type="unfinished">＋  新增 Ticket</translation>
+        <translation>＋  新增 Ticket</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="322" />
         <source>🔍  Search tickets…</source>
-        <translation type="unfinished">🔍  搜尋 tickets…</translation>
+        <translation>🔍  搜尋 tickets…</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="413" />
         <source>＋  Create New Ticket</source>
-        <translation type="unfinished">＋  建立 新增 Ticket</translation>
+        <translation>＋  建立 新增 Ticket</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="440" />
         <source>← Back</source>
-        <translation type="unfinished">← 返回</translation>
+        <translation>← 返回</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="486" />
         <source>Brief summary of your issue</source>
-        <translation type="unfinished">簡短摘要你的問題</translation>
+        <translation>簡短摘要你的問題</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="534" />
@@ -14984,7 +15050,11 @@ You can wait or skip and continue with limited functionality.</source>
 • What did you expect to happen?
 • What actually happened?
 • Steps to reproduce (if applicable)</source>
-        <translation type="unfinished" />
+        <translation>請描述：
+• 您當時在做什麼？
+• 您期望發生什麼？
+• 實際發生了什麼？
+• 重現步驟（如適用）</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="560" />
@@ -14995,43 +15065,43 @@ You can wait or skip and continue with limited functionality.</source>
         <location filename="../src/screens/support/SupportScreen.cpp" line="567" />
         <location filename="../src/screens/support/SupportScreen.cpp" line="1098" />
         <source>Submit Ticket →</source>
-        <translation type="unfinished">提交工單 →</translation>
+        <translation>提交工單 →</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="643" />
         <source>Close Ticket</source>
-        <translation type="unfinished">關閉 Ticket</translation>
+        <translation>關閉 Ticket</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="650" />
         <source>Reopen</source>
-        <translation type="unfinished">重新開啟</translation>
+        <translation>重新開啟</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="714" />
         <source>New Ticket</source>
-        <translation type="unfinished">新增 Ticket</translation>
+        <translation>新增 Ticket</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="748" />
         <source>Type your reply…</source>
-        <translation type="unfinished">輸入你的回覆…</translation>
+        <translation>輸入你的回覆…</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="755" />
         <location filename="../src/screens/support/SupportScreen.cpp" line="1122" />
         <source>Send Reply →</source>
-        <translation type="unfinished">傳送回覆 →</translation>
+        <translation>傳送回覆 →</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="1093" />
         <source>Submitting…</source>
-        <translation type="unfinished">提交中…</translation>
+        <translation>提交中…</translation>
     </message>
     <message>
         <location filename="../src/screens/support/SupportScreen.cpp" line="1118" />
         <source>Sending…</source>
-        <translation type="unfinished">傳送中…</translation>
+        <translation>傳送中…</translation>
     </message>
 </context>
 <context>
@@ -15039,78 +15109,78 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="186" />
         <source>MAX</source>
-        <translation type="unfinished">最大</translation>
+        <translation>最大</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="193" />
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="414" />
         <source>Balance: —</source>
-        <translation type="unfinished">餘額: —</translation>
+        <translation>餘額: —</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="274" />
         <source>Quotes refresh as you type.</source>
-        <translation type="unfinished">引號會在您鍵入時刷新。</translation>
+        <translation>引號會在您鍵入時刷新。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="276" />
         <source>SWAP</source>
-        <translation type="unfinished">交換</translation>
+        <translation>交換</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="419" />
         <source>Connect a wallet to swap.</source>
-        <translation type="unfinished">連線 a 錢包 to swap.</translation>
+        <translation>連線 a 錢包 to swap.</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="479" />
         <source>Price unavailable: %1. Try again in a moment.</source>
-        <translation type="unfinished">價格不詳：%1。稍後再試一次。</translation>
+        <translation>價格不詳：%1。稍後再試一次。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="655" />
         <source>Balance: 0 %1</source>
-        <translation type="unfinished">餘額: 0 %1</translation>
+        <translation>餘額: 0 %1</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="660" />
         <source>Balance: %1 %2</source>
-        <translation type="unfinished">餘額: %1 %2</translation>
+        <translation>餘額: %1 %2</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="679" />
         <source>Waiting for spot prices…</source>
-        <translation type="unfinished">等候現貨價格…</translation>
+        <translation>等候現貨價格…</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="697" />
         <source>set by PumpSwap; capped by slippage</source>
-        <translation type="unfinished">由 PumpSwap 設定；受滑點限制</translation>
+        <translation>由 PumpSwap 設定；受滑點限制</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="707" />
         <source>Ready. Click SWAP to build the transaction.</source>
-        <translation type="unfinished">準備好。點擊“SWAP”以建立交易。</translation>
+        <translation>準備好。點擊“SWAP”以建立交易。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="742" />
         <source>This pair isn't routable in Phase 2. PumpPortal supports SOL ↔ $FNCPT only; a generalised router lands in Phase 3.</source>
-        <translation type="unfinished" />
+        <translation>此交易對在第 2 階段無法路由。PumpPortal 僅支援 SOL ↔ $FNCPT；通用路由器將在第 3 階段推出。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="864" />
         <source>Swap service unavailable.</source>
-        <translation type="unfinished">不提供換貨服務。</translation>
+        <translation>不提供換貨服務。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="889" />
         <source>Building swap transaction…</source>
-        <translation type="unfinished">建立互換交易...</translation>
+        <translation>建立互換交易...</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/SwapPanel.cpp" line="1059" />
         <source>Cancelled.</source>
-        <translation type="unfinished">已取消。</translation>
+        <translation>已取消。</translation>
     </message>
 </context>
 <context>
@@ -15118,12 +15188,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/pushpins/SymbolChip.cpp" line="61" />
         <source>Copy Ticker</source>
-        <translation type="unfinished">複製 Ticker</translation>
+        <translation>複製 Ticker</translation>
     </message>
     <message>
         <location filename="../src/ui/pushpins/SymbolChip.cpp" line="66" />
         <source>Remove Pin</source>
-        <translation type="unfinished">移除 PIN 碼</translation>
+        <translation>移除 PIN 碼</translation>
     </message>
 </context>
 <context>
@@ -15131,57 +15201,57 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="110" />
         <source>SYSTEM CAPABILITIES</source>
-        <translation type="unfinished">系統能力</translation>
+        <translation>系統能力</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="115" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="196" />
         <source>Loading LLM providers...</source>
-        <translation type="unfinished">載入中 LLM providers...</translation>
+        <translation>載入中 LLM providers...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="206" />
         <source>Loading tools...</source>
-        <translation type="unfinished">載入中 tools...</translation>
+        <translation>載入中 tools...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="219" />
         <source>VERSION</source>
-        <translation type="unfinished">版本</translation>
+        <translation>版本</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="227" />
         <source>FRAMEWORK</source>
-        <translation type="unfinished">框架</translation>
+        <translation>框架</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="259" />
         <source>Failed to load LLM providers.</source>
-        <translation type="unfinished">無法載入 LLM 提供者。</translation>
+        <translation>無法載入 LLM 提供者。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="269" />
         <source>No LLM providers configured. Go to Settings → LLM to add one.</source>
-        <translation type="unfinished">未配置 LLM 提供者。轉至設定 → LLM 新增一個。</translation>
+        <translation>未配置 LLM 提供者。轉至設定 → LLM 新增一個。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="283" />
         <source>ACTIVE</source>
-        <translation type="unfinished">啟用中</translation>
+        <translation>啟用中</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="316" />
         <source>No tools loaded.</source>
-        <translation type="unfinished">No 工具 loaded.</translation>
+        <translation>No 工具 loaded.</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/SystemViewPanel.cpp" line="374" />
         <source>FEATURES</source>
-        <translation type="unfinished">特徵</translation>
+        <translation>特徵</translation>
     </message>
 </context>
 <context>
@@ -15189,52 +15259,52 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="78" />
         <source>TEAM</source>
-        <translation type="unfinished">團隊</translation>
+        <translation>團隊</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="89" />
         <source>Mode:</source>
-        <translation type="unfinished">模式：</translation>
+        <translation>模式：</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="104" />
         <source>Leader:</source>
-        <translation type="unfinished">負責人：</translation>
+        <translation>負責人：</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="126" />
         <source>REMOVE</source>
-        <translation type="unfinished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="151" />
         <source>AVAILABLE AGENTS</source>
-        <translation type="unfinished">可用 代理</translation>
+        <translation>可用 代理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="171" />
         <source>ADD TO TEAM</source>
-        <translation type="unfinished">加入團隊</translation>
+        <translation>加入團隊</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="193" />
         <source>COORDINATOR LLM PROFILE</source>
-        <translation type="unfinished">COORDINATOR LLM 設定檔</translation>
+        <translation>COORDINATOR LLM 設定檔</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="199" />
         <source>LLM profile for the team coordinator. Members use their own assigned profiles.</source>
-        <translation type="unfinished">團隊協調員的法學碩士簡介。成員使用自己指定的設定檔。</translation>
+        <translation>團隊協調員的法學碩士簡介。成員使用自己指定的設定檔。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="211" />
         <source>TEAM QUERY</source>
-        <translation type="unfinished">團隊查詢</translation>
+        <translation>團隊查詢</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="216" />
         <source>Enter a query for the team...</source>
-        <translation type="unfinished">輸入團隊查詢...</translation>
+        <translation>輸入團隊查詢...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="223" />
@@ -15242,17 +15312,17 @@ You can wait or skip and continue with limited functionality.</source>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="328" />
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="355" />
         <source>RUN TEAM</source>
-        <translation type="unfinished">執行團隊</translation>
+        <translation>執行團隊</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="236" />
         <source>EXECUTION LOG</source>
-        <translation type="unfinished">執行日誌</translation>
+        <translation>執行日誌</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="248" />
         <source>RESULT</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="298" />
@@ -15265,37 +15335,37 @@ You can wait or skip and continue with limited functionality.</source>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="338" />
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="358" />
         <source>[ERROR] </source>
-        <translation type="unfinished">[ERROR]</translation>
+        <translation>[ERROR]</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="309" />
         <source>[THINK] </source>
-        <translation type="unfinished">[THINK]</translation>
+        <translation>[THINK]</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="356" />
         <source>ERROR</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="417" />
         <source>Default (Global)</source>
-        <translation type="unfinished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="476" />
         <source>No provider — go to Settings &gt; LLM Config</source>
-        <translation type="unfinished">無供應商 — 前往設定 &gt; LLM 設定</translation>
+        <translation>無供應商 — 前往設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="487" />
         <source>RUNNING...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/TeamsViewPanel.cpp" line="489" />
         <source>Executing...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
 </context>
 <context>
@@ -15349,17 +15419,17 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/dashboard/TickerBar.cpp" line="60" />
         <source>SYMBOLS:</source>
-        <translation type="unfinished">代碼:</translation>
+        <translation>代碼:</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/TickerBar.cpp" line="66" />
         <source>AAPL, MSFT, ^GSPC, BTC-USD ...</source>
-        <translation type="unfinished">AAPL, MSFT, ^GSPC, BTC-USD ...</translation>
+        <translation>AAPL, MSFT, ^GSPC, BTC-USD ...</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/TickerBar.cpp" line="200" />
         <source>Edit Symbols...</source>
-        <translation type="unfinished">編輯代碼...</translation>
+        <translation>編輯代碼...</translation>
     </message>
 </context>
 <context>
@@ -15367,34 +15437,34 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="119" />
         <source>basic API quota</source>
-        <translation type="unfinished">基本 API 配額</translation>
+        <translation>基本 API 配額</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="122" />
         <source>premium screens</source>
-        <translation type="unfinished">溢價 screens</translation>
+        <translation>溢價 screens</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="125" />
         <source>all agents + arena</source>
-        <translation type="unfinished">all 代理 + 競技場</translation>
+        <translation>all 代理 + 競技場</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="127" />
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="199" />
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="265" />
         <source>Connect a wallet to see your tier.</source>
-        <translation type="unfinished">連接錢包以查看您的等級。</translation>
+        <translation>連接錢包以查看您的等級。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="268" />
         <source>Next: lock %1 to reach the next tier.</source>
-        <translation type="unfinished">下一步：鎖定 %1 以到達下一層。</translation>
+        <translation>下一步：鎖定 %1 以到達下一層。</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/TierPanel.cpp" line="272" />
         <source>All Fincept Terminal features unlocked.</source>
-        <translation type="unfinished">所有 Fincept 終端功能已解鎖。</translation>
+        <translation>所有 Fincept 終端功能已解鎖。</translation>
     </message>
 </context>
 <context>
@@ -15402,12 +15472,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/TodayPnLWidget.cpp" line="90" />
         <source>No active account — click gear to configure</source>
-        <translation type="unfinished">沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
+        <translation>沒有作用中的帳戶 — 點擊齒輪進行設定</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/TodayPnLWidget.cpp" line="185" />
         <source>Configure — Today P&amp;L</source>
-        <translation type="unfinished">設定 — 今日損益</translation>
+        <translation>設定 — 今日損益</translation>
     </message>
 </context>
 <context>
@@ -15415,88 +15485,88 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="83" />
         <source>  |  PROFESSIONAL RESEARCH DESK</source>
-        <translation type="unfinished">  |  專業研究桌面</translation>
+        <translation>  |  專業研究桌面</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="88" />
         <source> LIVE</source>
-        <translation type="unfinished"> 即時</translation>
+        <translation> 即時</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="109" />
         <source>View Plans &amp; Pricing</source>
-        <translation type="unfinished">查看方案與定價</translation>
+        <translation>查看方案與定價</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="115" />
         <source>⬡ CHAT</source>
-        <translation type="unfinished">⬡ 對話</translation>
+        <translation>⬡ 對話</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="118" />
         <source>Switch to Chat Mode (F9)</source>
-        <translation type="unfinished">切換至聊天模式 (F9)</translation>
+        <translation>切換至聊天模式 (F9)</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="124" />
         <source>LOGOUT</source>
-        <translation type="unfinished">登出</translation>
+        <translation>登出</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="263" />
         <source>FREE</source>
-        <translation type="unfinished">免費版</translation>
+        <translation>免費版</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="267" />
         <source>File</source>
-        <translation type="unfinished">檔案</translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="269" />
         <source>New Window</source>
-        <translation type="unfinished">新視窗</translation>
+        <translation>新視窗</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="274" />
         <source>Move to Monitor</source>
-        <translation type="unfinished">移至螢幕</translation>
+        <translation>移至螢幕</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="280" />
         <source>(single monitor)</source>
-        <translation type="unfinished">（單螢幕）</translation>
+        <translation>（單螢幕）</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="297" />
         <source>New Workspace</source>
-        <translation type="unfinished">新 Workspace (工作區)</translation>
+        <translation>新 Workspace (工作區)</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="298" />
         <source>Open Workspace</source>
-        <translation type="unfinished">開啟 Workspace (工作區)</translation>
+        <translation>開啟 Workspace (工作區)</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="299" />
         <location filename="../src/ui/navigation/ToolBar.cpp" line="427" />
         <source>Save Workspace</source>
-        <translation type="unfinished">儲存工作區</translation>
+        <translation>儲存工作區</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="300" />
         <source>Save Workspace As</source>
-        <translation type="unfinished">另存 Workspace (工作區) 為</translation>
+        <translation>另存 Workspace (工作區) 為</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="302" />
         <source>Import Workspace</source>
-        <translation type="unfinished">匯入工作區</translation>
+        <translation>匯入工作區</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="303" />
         <source>Export Workspace</source>
-        <translation type="unfinished">匯出工作區</translation>
+        <translation>匯出工作區</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="305" />
@@ -15507,12 +15577,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="307" />
         <source>Refresh All</source>
-        <translation type="unfinished">全部重新整理</translation>
+        <translation>全部重新整理</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="312" />
         <source>Navigate</source>
-        <translation type="unfinished">導覽</translation>
+        <translation>導覽</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="338" />
@@ -15529,7 +15599,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="340" />
         <source>GOVT Data</source>
-        <translation type="unfinished">政府資料</translation>
+        <translation>政府資料</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="343" />
@@ -15544,7 +15614,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="347" />
         <source>Trading &amp; Portfolio</source>
-        <translation type="unfinished">交易與投資組合</translation>
+        <translation>交易與投資組合</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="348" />
@@ -15595,7 +15665,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="358" />
         <source>Alt. Investments</source>
-        <translation type="unfinished">另類投資</translation>
+        <translation>另類投資</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="359" />
@@ -15616,7 +15686,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="364" />
         <source>Tools</source>
-        <translation type="unfinished">工具</translation>
+        <translation>工具</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="365" />
@@ -15677,12 +15747,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="387" />
         <source>View</source>
-        <translation type="unfinished">檢視</translation>
+        <translation>檢視</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="390" />
         <source>Component Browser</source>
-        <translation type="unfinished">元件瀏覽器</translation>
+        <translation>元件瀏覽器</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="393" />
@@ -15692,17 +15762,17 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="395" />
         <source>Focus Mode</source>
-        <translation type="unfinished">專注模式</translation>
+        <translation>專注模式</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="401" />
         <source>Always on Top</source>
-        <translation type="unfinished">視窗置頂</translation>
+        <translation>視窗置頂</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="406" />
         <source>Float Panel</source>
-        <translation type="unfinished">浮動面板</translation>
+        <translation>浮動面板</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="408" />
@@ -15712,7 +15782,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="410" />
         <source>News Feed</source>
-        <translation type="unfinished">新聞</translation>
+        <translation>新聞</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="411" />
@@ -15745,17 +15815,17 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="425" />
         <source>Quick Switch</source>
-        <translation type="unfinished">快速切換</translation>
+        <translation>快速切換</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="431" />
         <source>Trading</source>
-        <translation type="unfinished">交易</translation>
+        <translation>交易</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="438" />
         <source>Research</source>
-        <translation type="unfinished">研究</translation>
+        <translation>研究</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="442" />
@@ -15765,17 +15835,17 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="445" />
         <source>Portfolio View</source>
-        <translation type="unfinished">投組檢視</translation>
+        <translation>投組檢視</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="446" />
         <source>Markets View</source>
-        <translation type="unfinished">市場檢視</translation>
+        <translation>市場檢視</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="447" />
         <source>News View</source>
-        <translation type="unfinished">新聞檢視</translation>
+        <translation>新聞檢視</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="450" />
@@ -15785,32 +15855,32 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="456" />
         <source>Geopolitics View</source>
-        <translation type="unfinished">地緣政治檢視</translation>
+        <translation>地緣政治檢視</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="459" />
         <source>AI &amp;&amp; Quant</source>
-        <translation type="unfinished">AI 與量化</translation>
+        <translation>AI 與量化</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="461" />
         <source>Quant Lab</source>
-        <translation type="unfinished">量化實驗室</translation>
+        <translation>量化實驗室</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="465" />
         <source>Tools View</source>
-        <translation type="unfinished">工具檢視</translation>
+        <translation>工具檢視</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="468" />
         <source>Refresh Screen</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="469" />
         <source>Take Screenshot</source>
-        <translation type="unfinished">螢幕截圖</translation>
+        <translation>螢幕截圖</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="474" />
@@ -15820,27 +15890,27 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="476" />
         <source>About Fincept</source>
-        <translation type="unfinished">關於 Fincept</translation>
+        <translation>關於 Fincept</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="477" />
         <source>Help Center</source>
-        <translation type="unfinished">說明中心</translation>
+        <translation>說明中心</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="479" />
         <source>Contact Us</source>
-        <translation type="unfinished">聯絡我們</translation>
+        <translation>聯絡我們</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="480" />
         <source>Terms of Service</source>
-        <translation type="unfinished">服務條款</translation>
+        <translation>服務條款</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="481" />
         <source>Privacy Policy</source>
-        <translation type="unfinished">隱私政策</translation>
+        <translation>隱私政策</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="482" />
@@ -15850,7 +15920,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="484" />
         <source>Check for Updates</source>
-        <translation type="unfinished">檢查更新</translation>
+        <translation>檢查更新</translation>
     </message>
     <message>
         <location filename="../src/ui/navigation/ToolBar.cpp" line="486" />
@@ -15870,28 +15940,28 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="191" />
         <source>Agent</source>
-        <translation type="unfinished">代理</translation>
+        <translation>代理</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="192" />
         <source>Team</source>
-        <translation type="unfinished">團隊</translation>
+        <translation>團隊</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="203" />
         <source>Select target...</source>
-        <translation type="unfinished">選擇目標...</translation>
+        <translation>選擇目標...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="206" />
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="441" />
         <source>No target selected</source>
-        <translation type="unfinished">尚未選擇目標</translation>
+        <translation>尚未選擇目標</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="228" />
         <source>REMOVE</source>
-        <translation type="unfinished">移除</translation>
+        <translation>移除</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="237" />
@@ -15901,58 +15971,58 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="242" />
         <source>ASSIGN →</source>
-        <translation type="unfinished">指派 →</translation>
+        <translation>指派 →</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="246" />
         <source>Save selected tools to the chosen agent or team</source>
-        <translation type="unfinished">將選取的工具儲存到指定 Agent 或團隊</translation>
+        <translation>將選取的工具儲存到指定 Agent 或團隊</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="266" />
         <source>AVAILABLE TOOLS</source>
-        <translation type="unfinished">可用 工具</translation>
+        <translation>可用 工具</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="275" />
         <source>● = already assigned</source>
-        <translation type="unfinished">● = already 已指派</translation>
+        <translation>● = already 已指派</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="282" />
         <source>Search tools...</source>
-        <translation type="unfinished">搜尋工具...</translation>
+        <translation>搜尋工具...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="299" />
         <source>+ ADD TO SELECTION</source>
-        <translation type="unfinished">+ 新增至選取</translation>
+        <translation>+ 新增至選取</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="304" />
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="793" />
         <source>COPY NAME</source>
-        <translation type="unfinished">複製名稱</translation>
+        <translation>複製名稱</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="329" />
         <source>Select a tool</source>
-        <translation type="unfinished">選擇a tool</translation>
+        <translation>選擇a tool</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="348" />
         <source>Click a tool to see details...</source>
-        <translation type="unfinished">點選工具以查看詳細資訊...</translation>
+        <translation>點選工具以查看詳細資訊...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="369" />
         <source>No agents or teams use this tool yet.</source>
-        <translation type="unfinished">尚無 Agent 或團隊使用此工具。</translation>
+        <translation>尚無 Agent 或團隊使用此工具。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/ToolsViewPanel.cpp" line="792" />
         <source>COPIED!</source>
-        <translation type="unfinished">已複製！</translation>
+        <translation>已複製！</translation>
     </message>
 </context>
 <context>
@@ -15960,27 +16030,27 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="101" />
         <source>TRADE GEOPOLITICS ANALYSIS</source>
-        <translation type="unfinished">貿易地緣政治分析</translation>
+        <translation>貿易地緣政治分析</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="129" />
         <source>Benefits &amp; Costs of Trade</source>
-        <translation type="unfinished">貿易收益與成本</translation>
+        <translation>貿易收益與成本</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="130" />
         <source>Trade Restrictions Analysis</source>
-        <translation type="unfinished">交易 Restrictions 分析</translation>
+        <translation>交易 Restrictions 分析</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="131" />
         <source>Trading Blocs Analysis</source>
-        <translation type="unfinished">貿易區分析</translation>
+        <translation>貿易區分析</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="132" />
         <source>Trade Barrier Removal Impact</source>
-        <translation type="unfinished">貿易壁壘消除的影響</translation>
+        <translation>貿易壁壘消除的影響</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="189" />
@@ -15988,7 +16058,7 @@ You can wait or skip and continue with limited functionality.</source>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="331" />
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="393" />
         <source>RUN ANALYSIS</source>
-        <translation type="unfinished">執行分析</translation>
+        <translation>執行分析</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="203" />
@@ -15996,117 +16066,117 @@ You can wait or skip and continue with limited functionality.</source>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="345" />
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="407" />
         <source>Analyzing...</source>
-        <translation type="unfinished">分析中...</translation>
+        <translation>分析中...</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="211" />
         <source>Benefits &amp; Costs</source>
-        <translation type="unfinished">收益與成本</translation>
+        <translation>收益與成本</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="220" />
         <source>Analyzes economic impact of tariffs, quotas, export subsidies, and non-tariff barriers.</source>
-        <translation type="unfinished">分析關稅、配額、出口補貼及非關稅障礙的經濟影響。</translation>
+        <translation>分析關稅、配額、出口補貼及非關稅障礙的經濟影響。</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="251" />
         <source>Developed Economy</source>
-        <translation type="unfinished">已開發經濟體</translation>
+        <translation>已開發經濟體</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="252" />
         <source>Developing Economy</source>
-        <translation type="unfinished">開發中經濟體</translation>
+        <translation>開發中經濟體</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="253" />
         <source>Middle Income</source>
-        <translation type="unfinished">中等收入</translation>
+        <translation>中等收入</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="258" />
         <source>Mature Industry</source>
-        <translation type="unfinished">Mature 產業</translation>
+        <translation>Mature 產業</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="259" />
         <source>Infant Industry</source>
-        <translation type="unfinished">Infant 產業</translation>
+        <translation>Infant 產業</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="260" />
         <source>Emerging Industry</source>
-        <translation type="unfinished">Emerging 產業</translation>
+        <translation>Emerging 產業</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="290" />
         <source>Restrictions</source>
-        <translation type="unfinished">限制條件</translation>
+        <translation>限制條件</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="299" />
         <source>Analyzes trade creation vs. diversion effects for regional trade blocs and economic unions.</source>
-        <translation type="unfinished">分析區域貿易集團與經濟聯盟的貿易創造與貿易轉移效果。</translation>
+        <translation>分析區域貿易集團與經濟聯盟的貿易創造與貿易轉移效果。</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="309" />
         <source>Free Trade Area (e.g. USMCA, ASEAN)</source>
-        <translation type="unfinished">自由貿易區（如 USMCA、東協）</translation>
+        <translation>自由貿易區（如 USMCA、東協）</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="310" />
         <source>Customs Union (e.g. EU, Mercosur)</source>
-        <translation type="unfinished">關稅同盟（如 EU, Mercosur）</translation>
+        <translation>關稅同盟（如 EU, Mercosur）</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="311" />
         <source>Common Market (e.g. EU Single Market)</source>
-        <translation type="unfinished">共同市場（例如歐盟單一市場）</translation>
+        <translation>共同市場（例如歐盟單一市場）</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="312" />
         <source>Economic Union (e.g. European Union)</source>
-        <translation type="unfinished">經濟聯盟（例如歐盟）</translation>
+        <translation>經濟聯盟（例如歐盟）</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="353" />
         <source>Trading Blocs</source>
-        <translation type="unfinished">貿易集團</translation>
+        <translation>貿易集團</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="361" />
         <source>Assesses FDI, employment, wage, and GDP impact of removing trade barriers.</source>
-        <translation type="unfinished">評估移除貿易障礙對 FDI、就業、薪資及 GDP 的影響。</translation>
+        <translation>評估移除貿易障礙對 FDI、就業、薪資及 GDP 的影響。</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="371" />
         <source>Unilateral Liberalization</source>
-        <translation type="unfinished">單邊自由化</translation>
+        <translation>單邊自由化</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="372" />
         <source>Bilateral Agreement</source>
-        <translation type="unfinished">雙邊協定</translation>
+        <translation>雙邊協定</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="373" />
         <source>Regional Agreement</source>
-        <translation type="unfinished">區域協定</translation>
+        <translation>區域協定</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="374" />
         <source>Multilateral (WTO Round)</source>
-        <translation type="unfinished">多邊（WTO 回合）</translation>
+        <translation>多邊（WTO 回合）</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="415" />
         <source>Barrier Removal</source>
-        <translation type="unfinished">障礙移除</translation>
+        <translation>障礙移除</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="447" />
         <source>ANALYSIS RESULTS</source>
-        <translation type="unfinished">分析 結果</translation>
+        <translation>分析 結果</translation>
     </message>
     <message>
         <location filename="../src/screens/geopolitics/TradeAnalysisPanel.cpp" line="520" />
@@ -16119,12 +16189,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/TradeTapeWidget.cpp" line="131" />
         <source>Configure — Trades</source>
-        <translation type="unfinished">設定 — Trades (交易)</translation>
+        <translation>設定 — Trades (交易)</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/TradeTapeWidget.cpp" line="141" />
         <source>e.g. BTC/USD</source>
-        <translation type="unfinished">例如比特幣/美元</translation>
+        <translation>例如比特幣/美元</translation>
     </message>
 </context>
 <context>
@@ -16132,32 +16202,32 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/trade_viz/TradeVizScreen.cpp" line="323" />
         <source>Trade Flow</source>
-        <translation type="unfinished">交易 Flow</translation>
+        <translation>交易 Flow</translation>
     </message>
     <message>
         <location filename="../src/screens/trade_viz/TradeVizScreen.cpp" line="355" />
         <source>20) Browse</source>
-        <translation type="unfinished">20) 瀏覽</translation>
+        <translation>20) 瀏覽</translation>
     </message>
     <message>
         <location filename="../src/screens/trade_viz/TradeVizScreen.cpp" line="364" />
         <source>Order by</source>
-        <translation type="unfinished">訂單 by</translation>
+        <translation>訂單 by</translation>
     </message>
     <message>
         <location filename="../src/screens/trade_viz/TradeVizScreen.cpp" line="378" />
         <source>Periodicity</source>
-        <translation type="unfinished">週期性</translation>
+        <translation>週期性</translation>
     </message>
     <message>
         <location filename="../src/screens/trade_viz/TradeVizScreen.cpp" line="392" />
         <source>&lt;&lt;</source>
-        <translation type="unfinished">&lt;&lt;</translation>
+        <translation>&lt;&lt;</translation>
     </message>
     <message>
         <location filename="../src/screens/trade_viz/TradeVizScreen.cpp" line="406" />
         <source>&gt;&gt;</source>
-        <translation type="unfinished">&gt;&gt;</translation>
+        <translation>&gt;&gt;</translation>
     </message>
 </context>
 <context>
@@ -16183,7 +16253,7 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/economics/panels/TradingEconomicsPanel.cpp" line="74" />
         <source>Required for yield_curve and country_data</source>
-        <translation type="unfinished">產量曲線和國家數據必需</translation>
+        <translation>產量曲線和國家數據必需</translation>
     </message>
 </context>
 <context>
@@ -16191,12 +16261,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/crypto_center/panels/TreasuryPanel.cpp" line="125" />
         <source>Open Squads vault in browser</source>
-        <translation type="unfinished">在瀏覽器中開啟 Squads 庫</translation>
+        <translation>在瀏覽器中開啟 Squads 庫</translation>
     </message>
     <message>
         <location filename="../src/screens/crypto_center/panels/TreasuryPanel.cpp" line="263" />
         <source>Treasury feed error: %1</source>
-        <translation type="unfinished">庫房進給錯誤：%1</translation>
+        <translation>庫房進給錯誤：%1</translation>
     </message>
 </context>
 <context>
@@ -16204,32 +16274,32 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/economics/panels/UnComtradePanel.cpp" line="53" />
         <source>Exports</source>
-        <translation type="unfinished">匯出</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnComtradePanel.cpp" line="54" />
         <source>Imports</source>
-        <translation type="unfinished">匯入</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnComtradePanel.cpp" line="55" />
         <source>Re-exports</source>
-        <translation type="unfinished">再出口</translation>
+        <translation>再出口</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnComtradePanel.cpp" line="56" />
         <source>Re-imports</source>
-        <translation type="unfinished">再進口</translation>
+        <translation>再進口</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnComtradePanel.cpp" line="67" />
         <source>All Commodities</source>
-        <translation type="unfinished">所有商品</translation>
+        <translation>所有商品</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnComtradePanel.cpp" line="68" />
         <source>Total (all)</source>
-        <translation type="unfinished">總(all)</translation>
+        <translation>總(all)</translation>
     </message>
 </context>
 <context>
@@ -16237,12 +16307,12 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="94" />
         <source>THEME</source>
-        <translation type="unfinished">主題</translation>
+        <translation>主題</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="97" />
         <source>Education</source>
-        <translation type="unfinished">教育</translation>
+        <translation>教育</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="98" />
@@ -16252,32 +16322,32 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="99" />
         <source>Culture</source>
-        <translation type="unfinished">文化</translation>
+        <translation>文化</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="108" />
         <source>Filter indicators…</source>
-        <translation type="unfinished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="151" />
         <source>Country (e.g. USA, GBR, IND)</source>
-        <translation type="unfinished">國家（例如美國、英國、印度）</translation>
+        <translation>國家（例如美國、英國、印度）</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="152" />
         <source>USA</source>
-        <translation type="unfinished">USA</translation>
+        <translation>USA</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="157" />
         <source>Start year</source>
-        <translation type="unfinished">開始年份</translation>
+        <translation>開始年份</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/UnescoPanel.cpp" line="162" />
         <source>End year</source>
-        <translation type="unfinished">結束年份</translation>
+        <translation>結束年份</translation>
     </message>
 </context>
 <context>
@@ -16285,96 +16355,99 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="55" />
         <source>windows-arm64</source>
-        <translation type="unfinished">windows-arm64</translation>
+        <translation>windows-arm64</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="57" />
         <source>windows-x64</source>
-        <translation type="unfinished">windows-x64</translation>
+        <translation>windows-x64</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="61" />
         <source>macos-arm64</source>
-        <translation type="unfinished">macos-arm64</translation>
+        <translation>macos-arm64</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="63" />
         <source>macos-x64</source>
-        <translation type="unfinished">macos-x64</translation>
+        <translation>macos-x64</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="67" />
         <source>linux-arm64</source>
-        <translation type="unfinished">linux-arm64</translation>
+        <translation>linux-arm64</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="69" />
         <source>linux-x64</source>
-        <translation type="unfinished">linux-x64</translation>
+        <translation>linux-x64</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="79" />
         <source>^(\d+)\.(\d+)\.(\d+)$</source>
-        <translation type="unfinished" />
+        <translation>^(\d+)\.(\d+)\.(\d+)$</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="133" />
         <source>This is a development build (%1). Auto-update is disabled.</source>
-        <translation type="unfinished">這是開發版本（%1）。已停用自動更新。</translation>
+        <translation>這是開發版本（%1）。已停用自動更新。</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="143" />
         <source>Auto-update is not supported on this platform.</source>
-        <translation type="unfinished">此平台不支援自動更新。</translation>
+        <translation>此平台不支援自動更新。</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="173" />
         <source>Could not reach the update server.
 
 %1</source>
-        <translation type="unfinished" />
+        <translation>無法連接更新伺服器。
+
+%1</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="184" />
         <source>The update manifest is malformed.</source>
-        <translation type="unfinished">更新 Manifest (資訊清單) 格式錯誤。</translation>
+        <translation>更新 Manifest (資訊清單) 格式錯誤。</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="200" />
         <source>latest-version</source>
-        <translation type="unfinished">latest-version</translation>
+        <translation>latest-version</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="201" />
         <source>download-url</source>
-        <translation type="unfinished">download-url</translation>
+        <translation>download-url</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="202" />
         <source>sha256</source>
-        <translation type="unfinished">sha256</translation>
+        <translation>sha256</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="203" />
         <source>open-url</source>
-        <translation type="unfinished">open-url</translation>
+        <translation>open-url</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="222" />
         <location filename="../src/services/updater/UpdateService.cpp" line="429" />
         <source>Fincept Terminal</source>
-        <translation type="unfinished">Fincept 終端</translation>
+        <translation>Fincept 終端</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="223" />
         <source>You're running the latest version (%1).</source>
-        <translation type="unfinished">你正在使用最新版本（%1）。</translation>
+        <translation>你正在使用最新版本（%1）。</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="241" />
         <source>
 …</source>
-        <translation type="unfinished" />
+        <translation>
+…</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="242" />
@@ -16382,17 +16455,20 @@ You can wait or skip and continue with limited functionality.</source>
 %1
 
 </source>
-        <translation type="unfinished" />
+        <translation>更新內容：
+%1
+
+</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="244" />
         <source>Download the installer now?</source>
-        <translation type="unfinished">現在下載安裝程式嗎？</translation>
+        <translation>現在下載安裝程式嗎？</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="247" />
         <source>Update Available</source>
-        <translation type="unfinished">有可用更新</translation>
+        <translation>有可用更新</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="250" />
@@ -16402,36 +16478,39 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="253" />
         <source>View Release Notes</source>
-        <translation type="unfinished">看發行說明</translation>
+        <translation>看發行說明</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="290" />
         <source>&lt;none&gt;</source>
-        <translation type="unfinished">&lt;無&gt;</translation>
+        <translation>&lt;無&gt;</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="320" />
         <source>The installer could not be downloaded.
 
 %1</source>
-        <translation type="unfinished" />
+        <translation>安裝程式無法下載。
+
+%1</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="330" />
         <source>Cannot save the installer to disk:
 %1</source>
-        <translation type="unfinished" />
+        <translation>無法將安裝程式儲存至磁碟：
+%1</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="344" />
         <location filename="../src/services/updater/UpdateService.cpp" line="353" />
         <source>Could not verify the downloaded installer.</source>
-        <translation type="unfinished">無法驗證已下載的安裝程式。</translation>
+        <translation>無法驗證已下載的安裝程式。</translation>
     </message>
     <message>
         <location filename="../src/services/updater/UpdateService.cpp" line="409" />
         <source>Update Downloaded</source>
-        <translation type="unfinished">更新已下載</translation>
+        <translation>更新已下載</translation>
     </message>
 </context>
 <context>
@@ -16439,58 +16518,59 @@ You can wait or skip and continue with limited functionality.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="72" />
         <source>FINANCIAL TV</source>
-        <translation type="unfinished">金融 TV</translation>
+        <translation>金融 TV</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="116" />
         <source>CUSTOM STREAM</source>
-        <translation type="unfinished">自訂 STREAM</translation>
+        <translation>自訂 STREAM</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="126" />
         <source>YouTube URL, HLS (.m3u8), MP4, or direct stream...</source>
-        <translation type="unfinished">YouTube URL、HLS (.m3u8)、MP4 或直接串流...</translation>
+        <translation>YouTube URL、HLS (.m3u8)、MP4 或直接串流...</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="130" />
         <source>PLAY</source>
-        <translation type="unfinished">播放</translation>
+        <translation>播放</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="138" />
         <source>YouTube streams resolved via yt-dlp and played inline.</source>
-        <translation type="unfinished">YouTube 串流透過 yt-dlp 解析並內嵌播放。</translation>
+        <translation>YouTube 串流透過 yt-dlp 解析並內嵌播放。</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="170" />
         <source>Qt Multimedia not available.
 Build with Qt6 Multimedia for inline playback.</source>
-        <translation type="unfinished" />
+        <translation>Qt Multimedia 不可用。
+請以 Qt6 Multimedia 建構以支援內嵌播放。</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="283" />
         <source>yt-dlp not found. Bundle yt-dlp.exe next to FinceptTerminal.exe.</source>
-        <translation type="unfinished">未找到 yt-dlp。將 yt-dlp.exe 捆綁到 FinceptTerminal.exe 旁邊。</translation>
+        <translation>未找到 yt-dlp。將 yt-dlp.exe 捆綁到 FinceptTerminal.exe 旁邊。</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="310" />
         <source>yt-dlp error: </source>
-        <translation type="unfinished">yt-dlp error:</translation>
+        <translation>yt-dlp error:</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="323" />
         <source>Could not extract stream URL.</source>
-        <translation type="unfinished">無法擷取串流 URL。</translation>
+        <translation>無法擷取串流 URL。</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="338" />
         <source>Failed to start yt-dlp: </source>
-        <translation type="unfinished">無法啟動 yt-dlp：</translation>
+        <translation>無法啟動 yt-dlp：</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/VideoPlayerWidget.cpp" line="371" />
         <source>Resolving stream via yt-dlp...</source>
-        <translation type="unfinished">透過 yt-dlp 解析串流中...</translation>
+        <translation>透過 yt-dlp 解析串流中...</translation>
     </message>
 </context>
 <context>
@@ -16498,7 +16578,7 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="84" />
         <source>VOICE / SPEECH-TO-TEXT</source>
-        <translation type="unfinished">語音/語音轉文本</translation>
+        <translation>語音/語音轉文本</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="100" />
@@ -16508,17 +16588,17 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="104" />
         <source>Google (free, default)</source>
-        <translation type="unfinished">Google（免費，預設）</translation>
+        <translation>Google（免費，預設）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="105" />
         <source>Deepgram (API key required)</source>
-        <translation type="unfinished">Deepgram (API key 必填)</translation>
+        <translation>Deepgram (API key 必填)</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="117" />
         <source>DEEPGRAM SETTINGS</source>
-        <translation type="unfinished">DEEPGRAM 設定</translation>
+        <translation>DEEPGRAM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="126" />
@@ -16528,7 +16608,7 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="130" />
         <source>Paste your Deepgram API key</source>
-        <translation type="unfinished">貼上你的 Deepgram API Key</translation>
+        <translation>貼上你的 Deepgram API Key</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="133" />
@@ -16544,12 +16624,12 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="150" />
         <source>nova-3 (recommended)</source>
-        <translation type="unfinished">nova-3（推薦）</translation>
+        <translation>nova-3（推薦）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="151" />
         <source>nova-2</source>
-        <translation type="unfinished">nova-2</translation>
+        <translation>nova-2</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="163" />
@@ -16559,37 +16639,37 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="167" />
         <source>English (auto)</source>
-        <translation type="unfinished">英文（自動）</translation>
+        <translation>英文（自動）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="168" />
         <source>English (US)</source>
-        <translation type="unfinished">英文（美國）</translation>
+        <translation>英文（美國）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="169" />
         <source>English (UK)</source>
-        <translation type="unfinished">英文（英國）</translation>
+        <translation>英文（英國）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="170" />
         <source>Multilingual (nova-3 only)</source>
-        <translation type="unfinished">多語言（僅 nova-3）</translation>
+        <translation>多語言（僅 nova-3）</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="180" />
         <source>Key terms</source>
-        <translation type="unfinished">關鍵詞</translation>
+        <translation>關鍵詞</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="183" />
         <source>AAPL, BTCUSD, Nifty (comma-separated)</source>
-        <translation type="unfinished">AAPL, BTCUSD, Nifty （以逗號分隔)</translation>
+        <translation>AAPL, BTCUSD, Nifty （以逗號分隔)</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="191" />
         <source>Boosts recognition of financial symbols and proper nouns.</source>
-        <translation type="unfinished">提高對金融符號和專有名詞的辨識。</translation>
+        <translation>提高對金融符號和專有名詞的辨識。</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="202" />
@@ -16599,7 +16679,7 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="204" />
         <source>Test Deepgram key</source>
-        <translation type="unfinished">測試 Deepgram key</translation>
+        <translation>測試 Deepgram key</translation>
     </message>
     <message>
         <location filename="../src/screens/settings/VoiceConfigSection.cpp" line="271" />
@@ -16617,7 +16697,7 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/crypto_center/WalletActionConfirmDialog.cpp" line="154" />
         <source>CANCEL</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -16625,48 +16705,48 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="194" />
         <source>WATCHLISTS</source>
-        <translation type="unfinished">觀察清單</translation>
+        <translation>觀察清單</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="211" />
         <source>0 lists</source>
-        <translation type="unfinished">0 個列表</translation>
+        <translation>0 個列表</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="235" />
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="594" />
         <source>Select a watchlist</source>
-        <translation type="unfinished">選擇自選清單</translation>
+        <translation>選擇自選清單</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="243" />
         <source>REFRESH</source>
-        <translation type="unfinished">重新整理</translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="247" />
         <source>DELETE LIST</source>
-        <translation type="unfinished">刪除清單</translation>
+        <translation>刪除清單</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="260" />
         <source>ADD:</source>
-        <translation type="unfinished">新增:</translation>
+        <translation>新增:</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="264" />
         <source>AAPL, MSFT, TSLA...</source>
-        <translation type="unfinished">AAPL, MSFT, TSLA...</translation>
+        <translation>AAPL, MSFT, TSLA...</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="268" />
         <source>ADD</source>
-        <translation type="unfinished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <location filename="../src/screens/watchlist/WatchlistScreen.cpp" line="273" />
         <source>REMOVE SELECTED</source>
-        <translation type="unfinished">移除 已選取</translation>
+        <translation>移除 已選取</translation>
     </message>
 </context>
 <context>
@@ -16674,12 +16754,12 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/WatchlistWidget.cpp" line="24" />
         <source>SYMBOLS:</source>
-        <translation type="unfinished">代碼:</translation>
+        <translation>代碼:</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WatchlistWidget.cpp" line="30" />
         <source>GO</source>
-        <translation type="unfinished">前往</translation>
+        <translation>前往</translation>
     </message>
 </context>
 <context>
@@ -16687,59 +16767,61 @@ Build with Qt6 Multimedia for inline playback.</source>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="227" />
         <source>Configure a URL via the gear icon</source>
-        <translation type="unfinished">透過齒輪圖示設定 URL</translation>
+        <translation>透過齒輪圖示設定 URL</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="539" />
         <source>&lt;table\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</source>
-        <translation type="unfinished" />
+        <translation>&lt;table\b[^&gt;]*&gt;(.*?)&lt;/table&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="542" />
         <source>&lt;tr\b[^&gt;]*&gt;(.*?)&lt;/tr&gt;</source>
-        <translation type="unfinished" />
+        <translation>&lt;tr\b[^&gt;]*&gt;(.*?)&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="545" />
         <source>&lt;(t[hd])\b([^&gt;]*)&gt;(.*?)&lt;/\1&gt;</source>
-        <translation type="unfinished" />
+        <translation>&lt;(t[hd])\b([^&gt;]*)&gt;(.*?)&lt;/\1&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="550" />
         <source>&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</source>
-        <translation type="unfinished">&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</translation>
+        <translation>&lt;caption[^&gt;]*&gt;(.*?)&lt;/caption&gt;</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="707" />
         <source>root[]</source>
-        <translation type="unfinished">root[]</translation>
+        <translation>root[]</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="876" />
         <source>&lt;%1&gt; × %2</source>
-        <translation type="unfinished">&lt;%1&gt; × %2</translation>
+        <translation>&lt;%1&gt; × %2</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="906" />
         <source>Configure — Web Scraper</source>
-        <translation type="unfinished">設定 — Web Scraper</translation>
+        <translation>設定 — Web Scraper</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="936" />
         <source>auto (from Content-Type / &lt;meta&gt;)</source>
-        <translation type="unfinished">自動（從 Content-Type / &lt;meta&gt; 偵測）</translation>
+        <translation>自動（從 Content-Type / &lt;meta&gt; 偵測）</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="941" />
         <source>e.g. data.items  (JSON only)</source>
-        <translation type="unfinished">例如data.items（僅限 JSON）</translation>
+        <translation>例如data.items（僅限 JSON）</translation>
     </message>
     <message>
         <location filename="../src/screens/dashboard/widgets/WebScraperWidget.cpp" line="949" />
         <source>One per line:
 Authorization: Bearer abc
 X-API-Key: xyz</source>
-        <translation type="unfinished" />
+        <translation>每行一個：
+Authorization: Bearer abc
+X-API-Key: xyz</translation>
     </message>
 </context>
 <context>
@@ -16747,52 +16829,52 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="104" />
         <source>WORKFLOWS</source>
-        <translation type="unfinished">工作流</translation>
+        <translation>工作流</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="146" />
         <source>Select a workflow to configure and run.</source>
-        <translation type="unfinished">選擇要配置和運行的工作流程。</translation>
+        <translation>選擇要配置和運行的工作流程。</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="173" />
         <source>PARAMETERS</source>
-        <translation type="unfinished">參數</translation>
+        <translation>參數</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="186" />
         <source>LLM PROFILE</source>
-        <translation type="unfinished">LLM 設定檔</translation>
+        <translation>LLM 設定檔</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="192" />
         <source>LLM profile used by this workflow run</source>
-        <translation type="unfinished">此工作流程運行使用的 LLM 設定文件</translation>
+        <translation>此工作流程運行使用的 LLM 設定文件</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="198" />
         <source>Default (Global)</source>
-        <translation type="unfinished">預設 (Global)</translation>
+        <translation>預設 (Global)</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="215" />
         <source>SYMBOL</source>
-        <translation type="unfinished">代號</translation>
+        <translation>代號</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="220" />
         <source>e.g. AAPL</source>
-        <translation type="unfinished">例如：AAPL</translation>
+        <translation>例如：AAPL</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="237" />
         <source>QUERY</source>
-        <translation type="unfinished">查詢</translation>
+        <translation>查詢</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="242" />
         <source>Enter query for this workflow...</source>
-        <translation type="unfinished">輸入此 Workflow (工作流程) 的查詢...</translation>
+        <translation>輸入此 Workflow (工作流程) 的查詢...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="255" />
@@ -16802,22 +16884,22 @@ X-API-Key: xyz</source>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="513" />
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="526" />
         <source>RUN WORKFLOW</source>
-        <translation type="unfinished">執行 WORKFLOW</translation>
+        <translation>執行 WORKFLOW</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="291" />
         <source>OUTPUT</source>
-        <translation type="unfinished">輸出</translation>
+        <translation>輸出</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="307" />
         <source>EXECUTION LOG</source>
-        <translation type="unfinished">執行日誌</translation>
+        <translation>執行日誌</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="323" />
         <source>RESULT</source>
-        <translation type="unfinished">結果</translation>
+        <translation>結果</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="374" />
@@ -16830,42 +16912,42 @@ X-API-Key: xyz</source>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="415" />
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="429" />
         <source>[ERROR] </source>
-        <translation type="unfinished">[ERROR]</translation>
+        <translation>[ERROR]</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="385" />
         <source>[THINK] </source>
-        <translation type="unfinished">[THINK]</translation>
+        <translation>[THINK]</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="427" />
         <source>ERROR</source>
-        <translation type="unfinished">錯誤</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="439" />
         <source>No provider — Settings &gt; LLM Config</source>
-        <translation type="unfinished">無供應商 — 設定 &gt; LLM 設定</translation>
+        <translation>無供應商 — 設定 &gt; LLM 設定</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="499" />
         <source>RUNNING...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="503" />
         <source>Executing...</source>
-        <translation type="unfinished">執行中...</translation>
+        <translation>執行中...</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="514" />
         <source>Symbol is required</source>
-        <translation type="unfinished">Symbol (股票代碼) 為必填</translation>
+        <translation>Symbol (股票代碼) 為必填</translation>
     </message>
     <message>
         <location filename="../src/screens/agent_config/WorkflowsViewPanel.cpp" line="527" />
         <source>Query is required</source>
-        <translation type="unfinished">查詢為必填</translation>
+        <translation>查詢為必填</translation>
     </message>
 </context>
 <context>
@@ -16873,37 +16955,37 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="35" />
         <source>New Workspace</source>
-        <translation type="unfinished">新 Workspace (工作區)</translation>
+        <translation>新 Workspace (工作區)</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="49" />
         <source>Template</source>
-        <translation type="unfinished">範本</translation>
+        <translation>範本</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="69" />
         <source>Workspace Name</source>
-        <translation type="unfinished">工作區 Name</translation>
+        <translation>工作區 Name</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="74" />
         <source>My Workspace</source>
-        <translation type="unfinished">我的 Workspace (工作區)</translation>
+        <translation>我的 Workspace (工作區)</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="77" />
         <source>Description (optional)</source>
-        <translation type="unfinished">說明（選填）</translation>
+        <translation>說明（選填）</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="83" />
         <source>What is this workspace for?</source>
-        <translation type="unfinished">此 Workspace (工作區) 的用途是什麼？</translation>
+        <translation>此 Workspace (工作區) 的用途是什麼？</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="86" />
         <source>Preview</source>
-        <translation type="unfinished">預覽</translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceNewDialog.cpp" line="102" />
@@ -16921,27 +17003,27 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/ui/workspace/WorkspaceOpenDialog.cpp" line="30" />
         <source>Open Workspace</source>
-        <translation type="unfinished">開啟 Workspace (工作區)</translation>
+        <translation>開啟 Workspace (工作區)</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceOpenDialog.cpp" line="45" />
         <source>Saved Workspaces</source>
-        <translation type="unfinished">已儲存 Workspaces</translation>
+        <translation>已儲存 Workspaces</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceOpenDialog.cpp" line="53" />
         <source>Browse for File...</source>
-        <translation type="unfinished">瀏覽文件...</translation>
+        <translation>瀏覽文件...</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceOpenDialog.cpp" line="61" />
         <source>Preview</source>
-        <translation type="unfinished">預覽</translation>
+        <translation>預覽</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceOpenDialog.cpp" line="65" />
         <source>Select a workspace to preview</source>
-        <translation type="unfinished">選擇要預覽的工作區</translation>
+        <translation>選擇要預覽的工作區</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceOpenDialog.cpp" line="75" />
@@ -16959,22 +17041,22 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/ui/workspace/WorkspaceSaveAsDialog.cpp" line="29" />
         <source>Save Workspace As</source>
-        <translation type="unfinished">另存 Workspace (工作區) 為</translation>
+        <translation>另存 Workspace (工作區) 為</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceSaveAsDialog.cpp" line="42" />
         <source>Workspace Name</source>
-        <translation type="unfinished">工作區 Name</translation>
+        <translation>工作區 Name</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceSaveAsDialog.cpp" line="47" />
         <source>Enter a name</source>
-        <translation type="unfinished">輸入名稱</translation>
+        <translation>輸入名稱</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceSaveAsDialog.cpp" line="58" />
         <source>Change...</source>
-        <translation type="unfinished">變更...</translation>
+        <translation>變更...</translation>
     </message>
     <message>
         <location filename="../src/ui/workspace/WorkspaceSaveAsDialog.cpp" line="69" />
@@ -16992,37 +17074,37 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="72" />
         <source>Filter countries…</source>
-        <translation type="unfinished">篩選 國家…</translation>
+        <translation>篩選 國家…</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="88" />
         <source>Filter indicators…</source>
-        <translation type="unfinished">篩選 Indicators (指標)…</translation>
+        <translation>篩選 Indicators (指標)…</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="131" />
         <source>YEARS</source>
-        <translation type="unfinished">年</translation>
+        <translation>年</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="134" />
         <source>5 Years</source>
-        <translation type="unfinished">5 年</translation>
+        <translation>5 年</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="135" />
         <source>10 Years</source>
-        <translation type="unfinished">10 年</translation>
+        <translation>10 年</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="136" />
         <source>20 Years</source>
-        <translation type="unfinished">20 年</translation>
+        <translation>20 年</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WorldBankPanel.cpp" line="137" />
         <source>50 Years</source>
-        <translation type="unfinished">50 年</translation>
+        <translation>50 年</translation>
     </message>
 </context>
 <context>
@@ -17030,49 +17112,49 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="76" />
         <source>Trade Statistics (API key)</source>
-        <translation type="unfinished">貿易統計（API 金鑰）</translation>
+        <translation>貿易統計（API 金鑰）</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="77" />
         <source>QR Members (free)</source>
-        <translation type="unfinished">QR 會員（免費）</translation>
+        <translation>QR 會員（免費）</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="78" />
         <source>QR Notifications (free)</source>
-        <translation type="unfinished">QR 通知 (free)</translation>
+        <translation>QR 通知 (free)</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="90" />
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="123" />
         <source>Reporter (e.g. US, CN, DE)</source>
-        <translation type="unfinished">報告國（如 US, CN, DE）</translation>
+        <translation>報告國（如 US, CN, DE）</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="91" />
         <source>US</source>
-        <translation type="unfinished">US</translation>
+        <translation>US</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="96" />
         <source>Years (e.g. 2015-2023)</source>
-        <translation type="unfinished">年份（如 2015-2023）</translation>
+        <translation>年份（如 2015-2023）</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="101" />
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="121" />
         <source>Requires WTO_API_KEY</source>
-        <translation type="unfinished">需要 WTO_API_KEY</translation>
+        <translation>需要 WTO_API_KEY</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="125" />
         <source>Free — no API key</source>
-        <translation type="unfinished">免費 — 不需要 API Key</translation>
+        <translation>免費 — 不需要 API Key</translation>
     </message>
     <message>
         <location filename="../src/screens/economics/panels/WtoPanel.cpp" line="128" />
         <source>Member code (e.g. US, CN)</source>
-        <translation type="unfinished">成員 code (e.g. US, CN)</translation>
+        <translation>成員 code (e.g. US, CN)</translation>
     </message>
 </context>
 <context>
@@ -17277,7 +17359,7 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/app/DockScreenRouter.cpp" line="58" />
         <source>DBnomics</source>
-        <translation type="unfinished" />
+        <translation>DBnomics</translation>
     </message>
     <message>
         <location filename="../src/app/DockScreenRouter.cpp" line="59" />
@@ -17337,7 +17419,7 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/app/DockScreenRouter.cpp" line="70" />
         <source>QuantLib</source>
-        <translation type="unfinished" />
+        <translation>QuantLib</translation>
     </message>
     <message>
         <location filename="../src/app/DockScreenRouter.cpp" line="71" />
@@ -17372,7 +17454,7 @@ X-API-Key: xyz</source>
     <message>
         <location filename="../src/app/DockScreenRouter.cpp" line="77" />
         <source>Excel</source>
-        <translation type="unfinished" />
+        <translation>Excel</translation>
     </message>
     <message>
         <location filename="../src/app/DockScreenRouter.cpp" line="78" />
@@ -28641,7 +28723,7 @@ X-API-Key: xyz</translation>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceAnalyticsScreen.cpp" line="249" />
         <source>3D</source>
-        <translation type="unfinished">3D</translation>
+        <translation>3D</translation>
     </message>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceAnalyticsScreen.cpp" line="239" />
@@ -28651,7 +28733,7 @@ X-API-Key: xyz</translation>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceAnalyticsScreen.cpp" line="251" />
         <source>LINE</source>
-        <translation type="unfinished">LINE</translation>
+        <translation>LINE</translation>
     </message>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceAnalyticsScreen.cpp" line="275" />
@@ -28661,7 +28743,7 @@ X-API-Key: xyz</translation>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceAnalyticsScreen.cpp" line="250" />
         <source>TABLE</source>
-        <translation type="unfinished">TABLE</translation>
+        <translation>TABLE</translation>
     </message>
 </context>
 <context>
@@ -28684,7 +28766,7 @@ X-API-Key: xyz</translation>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceControlPanel.cpp" line="283" />
         <source>DEMO</source>
-        <translation type="unfinished">DEMO</translation>
+        <translation>DEMO</translation>
     </message>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceControlPanel.cpp" line="269" />
@@ -28722,7 +28804,7 @@ X-API-Key: xyz</translation>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceDataInspector.cpp" line="317" />
         <source>CLOSE</source>
-        <translation type="unfinished">CLOSE</translation>
+        <translation>CLOSE</translation>
     </message>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceDataInspector.cpp" line="102" />
@@ -28737,7 +28819,7 @@ X-API-Key: xyz</translation>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceDataInspector.cpp" line="136" />
         <source>LINEAGE</source>
-        <translation type="unfinished">LINEAGE</translation>
+        <translation>LINEAGE</translation>
     </message>
     <message>
         <location filename="../src/screens/surface_analytics/SurfaceDataInspector.cpp" line="98" />
