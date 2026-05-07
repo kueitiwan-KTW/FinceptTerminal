@@ -3,6 +3,7 @@
 #include "ui/theme/Theme.h"
 
 #include <QClipboard>
+#include <QCoreApplication>
 #include <QFrame>
 #include <QGuiApplication>
 #include <QHBoxLayout>
@@ -92,7 +93,7 @@ static QWidget* make_result_card(const NodeExecutionResult& result) {
     // ── Content ────────────────────────────────────────────────────
     if (!ok) {
         // Error message
-        auto* err = new QLabel(result.error.isEmpty() ? tr("Unknown error") : result.error);
+        auto* err = new QLabel(result.error.isEmpty() ? QCoreApplication::translate("ExecutionResultsPanel", "Unknown error") : result.error);
         err->setWordWrap(true);
         err->setTextInteractionFlags(Qt::TextSelectableByMouse);
         err->setStyleSheet(QString("color: %1; font-family: Consolas; font-size: 10px;"

@@ -105,8 +105,18 @@ RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \
         2>&1 | tee /tmp/cmake_config.log | tail -30
 
 # 建構（限制平行數為 2，避免模擬環境 OOM）
+# 使用 pipefail 確保 cmake 失敗時整個管道也失敗
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN cd /build/fincept-qt && \
-    cmake --build build --parallel 2 2>&1 | tee /tmp/cmake_build.log | tail -50
+    cmake --build build --parallel 2 2>&1 | tee /tmp/cmake_build.log; \
+    BUILD_RC=${PIPESTATUS[0]}; \
+    if [ $BUILD_RC -ne 0 ]; then \
+        echo ""; \
+        echo "❌ CMake 建構失敗！最後 100 行錯誤："; \
+        tail -100 /tmp/cmake_build.log; \
+        exit $BUILD_RC; \
+    fi
+SHELL ["/bin/sh", "-c"]
 
 # 安裝
 RUN QT_SUBDIR=$(cat /opt/qt/.qt_subdir) && \

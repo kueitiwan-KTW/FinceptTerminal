@@ -125,7 +125,7 @@ static QWidget* build_condition_row(QVBoxLayout* /*owner_layout*/, QWidget* pare
     val_spin->setValue(0);
 
     // Remove
-    auto* rm_btn = new QPushButton(tr("X"), row);
+    auto* rm_btn = new QPushButton(QStringLiteral("X"), row);
     rm_btn->setFixedSize(28, 28);
     rm_btn->setCursor(Qt::PointingHandCursor);
     rm_btn->setStyleSheet(QString("QPushButton { background: transparent; color: %1; border: 1px solid %2;"
