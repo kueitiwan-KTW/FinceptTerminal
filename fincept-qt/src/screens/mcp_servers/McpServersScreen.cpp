@@ -522,7 +522,7 @@ void McpServersScreen::on_install_server(int index) {
     form->addRow(tr("Category"), cat_combo);
 
     auto* autostart_check = new QCheckBox(tr("Auto-start on launch"));
-    form->addRow(addRow("", autostart_check);
+    form->addRow("", autostart_check);
 
     auto* btns = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     connect(btns, &QDialogButtonBox::accepted, dlg, &QDialog::accept);
@@ -711,7 +711,7 @@ void McpServersScreen::on_add_server() {
     form->addRow(tr("Category"), cat_combo);
 
     auto* autostart_check = new QCheckBox(tr("Auto-start on launch"));
-    form->addRow(addRow("", autostart_check);
+    form->addRow("", autostart_check);
 
     auto* btns = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     connect(btns, &QDialogButtonBox::accepted, dlg, &QDialog::accept);
