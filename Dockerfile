@@ -179,8 +179,8 @@ ARG TARGETARCH
 ARG QT_VERSION=6.8.3
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    LANG=C.UTF-8 \
-    LC_ALL=C.UTF-8
+    LANG=zh_TW.UTF-8 \
+    LC_ALL=zh_TW.UTF-8
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
@@ -209,7 +209,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libopenblas0 \
         # ── VNC 遠端顯示堆疊（noVNC Kiosk 模式） ──
         xvfb fluxbox x11vnc novnc websockify netcat-openbsd \
-    && rm -rf /var/lib/apt/lists/*
+        # ── 繁體中文字型 + Locale ──
+        fonts-noto-cjk locales \
+    && rm -rf /var/lib/apt/lists/* \
+    && echo "zh_TW.UTF-8 UTF-8" >> /etc/locale.gen \
+    && locale-gen
 
 # Resolve the on-disk Qt arch path for this target. Same mapping as builder.
 RUN set -eux; \
