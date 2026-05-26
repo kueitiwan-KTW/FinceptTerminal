@@ -160,3 +160,6 @@ docs/superpowers/
 # ── Local planning docs ───────────────────────────────────────
 plans/
 **/plans/
+
+# CodeGraph 索引快取
+.codegraph/
